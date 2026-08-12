@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install
+        # --frozen fails if uv.lock has drifted from pyproject.toml, which is how
+        # a dependency once reached main without being locked.
+        run: uv sync --frozen --all-extras --group dev --python ${{ matrix.python-version }}
+
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+
+      - name: Import adapters
+        # Nothing else in this workflow imports the adapters, so this is what
+        # catches an adapter that's broken at import time. It does not exercise
+        # the vendor APIs — only a live run can catch an SDK behaviour change.
+        run: uv run python -c "import draco_eval.cli"
+
+      - name: Build
+        run: uv build

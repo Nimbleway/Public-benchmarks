@@ -1,0 +1,47 @@
+[project]
+name = "draco-eval"
+version = "0.1.0"
+description = "Reproducible rubric-based evaluation of deep research agents on the DRACO benchmark"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+keywords = ["evaluation", "benchmark", "deep-research", "llm", "agents", "draco"]
+
+dependencies = [
+  "langchain>=0.3",
+  "pydantic>=2.7",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+data = ["datasets>=2.19"]
+anthropic = ["langchain-anthropic>=0.3"]
+openai = ["langchain-openai>=0.2"]
+bedrock = ["langchain-aws>=0.2"]
+# Lower bounds are the oldest release whose API these adapters actually speak,
+# verified against the installed version — not aspirational minimums.
+# nimble-python in particular renamed task_agent -> agents in 1.x.
+exa = ["exa-py>=2.13.0"]
+parallel = ["parallel-web>=1.0"]
+nimble = ["nimble-python>=1.2"]
+chatgpt = ["openai>=1.60"]  # Responses API; not independently verified as a minimum
+gemini = ["google-genai>=2.3.0"]  # first version with the Interactions API
+
+[project.scripts]
+draco-eval = "draco_eval.cli:main"
+
+[dependency-groups]
+dev = ["ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["draco_eval"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
