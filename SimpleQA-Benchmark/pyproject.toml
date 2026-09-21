@@ -1,0 +1,48 @@
+[project]
+name = "nimble-benchmark"
+version = "0.1.0"
+description = "SimpleQA Benchmark: accuracy, retrieval, and latency evals for Nimble and third-party search APIs."
+requires-python = ">=3.12,<3.14"
+license = { text = "Apache-2.0" }
+readme = "README.md"
+authors = [{ name = "Nimble" }]
+dependencies = [
+  "aiohttp==3.13.4",
+  "aiolimiter>=1.2.0",
+  "firecrawl-py>=4.3.6",
+  "numpy>=2.0.0",
+  "openai==2.53.0",
+  "pandas==2.2.3",
+  "pydantic==2.11.4",
+  "pydantic-settings==2.6.1",
+  "python-dotenv>=1.2.2",
+  "ranx>=0.3.21",
+  "scipy>=1.17.1",
+  "statsmodels>=0.14",
+  "tenacity==9.1.4",
+  "tiktoken>=0.8.0",
+  "tqdm==4.67.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "aioresponses==0.7.8",
+  "pytest>=9.0.3",
+  "pytest-asyncio>=0.25.0",
+  "ruff==0.7.4",
+]
+
+[project.scripts]
+nimble-eval = "nimble_benchmark.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+  "unit: fast, offline",
+  "integration: hits a real Nimble deployment",
+]
+addopts = "-m 'not integration'"

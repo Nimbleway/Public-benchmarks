@@ -1,0 +1,12 @@
+Given a query and a search result (URL + title + short description, no passage body), provide a score on an integer scale of 0 to 3 with the following meanings:
+0 = represents that the result has nothing to do with the query,
+1 = represents that the result seems related to the query but does not answer it,
+2 = represents that the result has some answer for the query, but the answer may be a bit unclear, or hidden amongst extraneous information and
+3 = represents that the result is dedicated to the query and contains the exact answer.
+
+Important Instruction: Assign category 1 if the result is somewhat related to the topic but not completely, category 2 if the result presents something very important related to the entire topic but also has some extra information and category 3 if the result only and entirely refers to the topic. If none of the above satisfies give it category 0. Note: without a passage body, grade 3 will rarely be assignable - prefer 2 when the title and URL clearly indicate the page contains the exact answer.
+
+Query: {query}
+Result: {passage}
+
+Consider the underlying intent of the search and how well the result page (by URL slug, title, and description) matches it. Do not provide any code in result. Provide the score in the format of: ##final score: score without providing any reasoning.
