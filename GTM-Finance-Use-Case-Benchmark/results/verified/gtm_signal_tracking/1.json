@@ -1,0 +1,365 @@
+{
+ "sub_use_case": "gtm_signal_tracking",
+ "input_n": 1,
+ "task": "Check Clay (clay.com) for changes since 2026-09-21",
+ "labels": {
+  "exa": "A",
+  "nimble": "B",
+  "parallel": "C",
+  "firecrawl": "D"
+ },
+ "unit": "event",
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "On 2026-09-28 Clay published the 'Product Roundup Week of September 21, 2026' changelog: Clay Ads company-list sync to LinkedIn with pause/edit/audit of recurring Ad Syncs and sync history, IP Access Restrictions for workspace members (browser and API/MCP access), clickable connection usage traces, and ~1-second workspace creation.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://www.clay.com/changelog/product-roundup-week-of-september-21-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "On 2026-09-29 Clay launched the Clay Skills Marketplace (marketplace.clay.com), with community-built GTM skills that are free to install and run in coding agents such as Claude Code, Codex, or Cursor. Data used by skills consumes Clay credits.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "urls": [
+    "https://www.clay.com/blog/introducing-clay-skills-marketplace"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "On 2026-09-29 Clay announced 24 new and upgraded data integrations covering EMEA/APAC, public sector and real estate, buying and expansion signals, new industries, enrichment, dialers, CRMs, and warehouses. All were available on every plan and the free trial.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "urls": [
+    "https://www.clay.com/changelog/integrations-roundup",
+    "https://www.clay.com/blog/clay-integrations-september-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "On 2026-10-05 Clay published the 'Product Roundup Week of September 28, 2026' changelog: Workflow Budgets to cap credit spend per workflow, bulk re-run for Workflows, trusted/verified-domain workspace access, stable CLI/coding-agent support for Clay Ads, and a redesigned Audiences record details view.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://www.clay.com/changelog/product-roundup-week-of-september-28-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "On 2026-10-08 at Sculpt in San Francisco, Clay introduced an agent-first way to build in Clay: an agent that plans, runs, and improves GTM plays using Knowledge Hub context about the ICP. It was available to Sculpt attendees immediately, with early-access rollout in the coming weeks.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "urls": [
+    "https://www.clay.com/blog/sculpt-2026-recap"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "On 2026-10-08 Clay announced Clay Workflows, a visual canvas for complex GTM plays with branching, looping, code, and agent steps. It was in beta for all users, with launch planned for the fall.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "urls": [
+    "https://www.clay.com/blog/sculpt-2026-recap"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "On 2026-10-08 Clay previewed the Inbound SDR Agent, an agentic seller that qualifies inbound leads through voice conversations and tailored demos, with a pre-beta partner waitlist.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "urls": [
+    "https://www.clay.com/blog/sculpt-2026-recap"
+   ],
+   "conflicts_with": [
+    "c8"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "On 2026-10-08 Clay launched the Inbound SDR Agent at Sculpt.",
+   "asserted_by": [
+    "B"
+   ],
+   "urls": [
+    "https://www.clay.com/blog/sculpt-2026-recap"
+   ],
+   "conflicts_with": [
+    "c7"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "On 2026-10-12 Clay published the 'Product Roundup Week of October 5, 2026' changelog: a redesigned home page with quick access to Workflows and chat, consolidated Audiences sources and exports view (export setup via Workflows), and more accurate Clay Ads audience-size and match-rate reporting aligned with each ad platform.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://www.clay.com/changelog/product-roundup-week-of-october-5-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Per dated captures on 2026-10-16, Clay's Enterprise pricing page added governance and security features including SCIM provisioning, IP allowlists, and user groups. No list-price increase was recorded.",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [
+    "https://pricingsaas.com/companies/clay/diffs/2026D289"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "claims": {
+  "nimble": [
+   {
+    "claim": "Clay published changelog 'Product Roundup Week of October 5, 2026' on Oct 12, 2026: redesigned Clay home page with quick access to Workflows and chat, Audiences sources & exports view (export Audiences data via Workflows), and more accurate Clay Ads match-rate reporting aligned with each ad platform.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-october-5-2026"
+   },
+   {
+    "claim": "On Oct 8, 2026 at its Sculpt conference in San Francisco (2,000 attendees from 30 countries), Clay introduced a new agentic way to build in Clay (an agent that plans, runs and improves GTM plays against a Knowledge Hub record of your ICP), previewed Clay Workflows (visual play canvas, beta for all users, launching this fall), and launched the Inbound SDR Agent; the agentic product is available to Sculpt attendees immediately with broader early-access rollout in coming weeks.",
+    "url": "https://www.clay.com/blog/sculpt-2026-recap"
+   },
+   {
+    "claim": "Clay published changelog 'Product Roundup Week of September 28, 2026' on Oct 5, 2026: Workflow Budgets to cap credit spend per workflow, bulk re-run for Workflows, trusted domain access (one-click workspace joins for company-email teammates), Clay Ads in the CLI/coding agents, and a redesigned Audiences record details view.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-september-28-2026"
+   },
+   {
+    "claim": "On Sep 29, 2026 Clay launched the Clay Skills Marketplace (marketplace.clay.com), where users can find community-built GTM skills, free to install and ready to run in coding agents like Claude Code, Codex, or Cursor.",
+    "url": "https://www.clay.com/blog/introducing-clay-skills-marketplace"
+   },
+   {
+    "claim": "On Sep 29, 2026 Clay published an Integrations Roundup changelog announcing 24 new and upgraded data integrations covering EMEA and APAC coverage, buying signals, new industries, enrichment, dialers, CRMs, and warehouses.",
+    "url": "https://www.clay.com/changelog/integrations-roundup"
+   },
+   {
+    "claim": "Clay published changelog 'Product Roundup Week of September 21, 2026' on Sep 28, 2026: Clay Ads company-list sync to LinkedIn with pause/edit/audit of recurring ad syncs, IP Access Restrictions for workspace members, clickable connection usage traces, and ~1-second workspace creation.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-september-21-2026"
+   }
+  ],
+  "exa": [
+   {
+    "claim": "On 2026-09-29, Clay launched the Clay Skills Marketplace, a free marketplace of community-built skills that can run in Claude Code, Codex, Cursor, and other coding agents.",
+    "url": "https://www.clay.com/blog/introducing-clay-skills-marketplace"
+   },
+   {
+    "claim": "On 2026-09-29, Clay added 24 new and updated integrations spanning EMEA and APAC data, buying and expansion signals, new industries, enrichment, dialers, CRMs, and warehouses.",
+    "url": "https://www.clay.com/blog/clay-integrations-september-2026"
+   },
+   {
+    "claim": "On 2026-10-05, Clay added workflow credit budgets, bulk workflow reruns, verified-domain workspace access, and stable CLI support for creating, editing, and pausing Ads.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-september-28-2026"
+   },
+   {
+    "claim": "On 2026-10-08, at Sculpt, Clay introduced an agent-first Clay experience including a global agent that plans and improves GTM plays, Workflows in beta for all users, and an Inbound SDR Agent previewed for a waitlist.",
+    "url": "https://www.clay.com/blog/sculpt-2026-recap"
+   },
+   {
+    "claim": "On 2026-10-12, Clay shipped a redesigned home page, consolidated Audiences sources and exports with workflow-based export setup, and more accurate Ads audience-size and match-rate reporting.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-october-5-2026"
+   }
+  ],
+  "parallel": [
+   {
+    "claim": "Clay's Enterprise pricing page, per dated captures on 2026-10-16, added governance and security features including SCIM provisioning, IP allowlists and user groups; no list-price increase was recorded.",
+    "url": "https://pricingsaas.com/companies/clay/diffs/2026D289"
+   },
+   {
+    "claim": "On 2026-10-12 Clay released a refreshed homepage with Workflows and chat, consolidated Audiences sources and exports, and aligned Ads match-rate reporting with advertising platforms.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-october-5-2026"
+   },
+   {
+    "claim": "On 2026-10-05 Clay added workflow credit budgets, bulk workflow reruns, trusted-domain workspace access, stable CLI support for Clay Ads and redesigned Audiences record details.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-september-28-2026"
+   },
+   {
+    "claim": "On 2026-09-29 Clay announced 24 new and upgraded data providers, expanding GTM sourcing, enrichment and activation capabilities.",
+    "url": "https://www.clay.com/changelog/integrations-roundup"
+   },
+   {
+    "claim": "On 2026-09-28 Clay released Clay Ads upgrades (LinkedIn company-list targeting, recurring Ad Sync editing and pausing, sync history) and workspace IP restrictions covering browser and API/MCP access.",
+    "url": "https://www.clay.com/changelog/product-roundup-week-of-september-21-2026"
+   }
+  ],
+  "firecrawl": [
+   {
+    "claim": "Clay launched the Clay Skills Marketplace on 2026-09-29, a marketplace of community-built GTM skills that are free to install and run in Claude Code, Codex, or Cursor; data used by skills consumes Clay credits.",
+    "url": "https://www.clay.com/blog/introducing-clay-skills-marketplace"
+   },
+   {
+    "date_note": "2026-09-29",
+    "claim": "Clay announced on 2026-09-29 24 new or updated data-marketplace integrations covering EMEA/APAC, public sector and real estate, buying signals, enrichment, dialers, CRMs, and warehouses; all were available on every plan and the free trial.",
+    "url": "https://www.clay.com/blog/clay-integrations-september-2026"
+   },
+   {
+    "claim": "At Sculpt on 2026-10-08, Clay introduced an agent-first way to build GTM plays, an agent that plans, runs, and improves GTM plays using Knowledge Hub context; it was initially available to Sculpt attendees and was rolling out to early-access users.",
+    "url": "https://www.clay.com/blog/sculpt-2026-recap"
+   },
+   {
+    "claim": "Clay announced Clay Workflows in beta on 2026-10-08, a visual canvas for complex GTM plays with branching, looping, code, and agent steps; it was in beta for all Clay users and planned to launch in the fall.",
+    "url": "https://www.clay.com/blog/sculpt-2026-recap"
+   },
+   {
+    "claim": "Clay previewed an Inbound SDR Agent on 2026-10-08, an agentic seller designed to qualify inbound leads through voice conversations and tailored product demos, with a pre-beta partner waitlist.",
+    "url": "https://www.clay.com/blog/sculpt-2026-recap"
+   }
+  ]
+ },
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.clay.com/changelog/product-roundup-week-of-september-21-2026",
+   "note": "The page is dated 2026-09-28 and matches the claim. The page gives workspace creation as about 1.4s at p95, which the claim rounds to about 1 second. This is a routine weekly roundup."
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.clay.com/blog/introducing-clay-skills-marketplace",
+   "note": "The blog post is dated 2026-09-29. It describes a free marketplace of community skills for coding agents, and skills that pull Clay data use credits."
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.clay.com/changelog/integrations-roundup",
+   "note": "The page is dated 2026-09-29 and confirms 24 new and upgraded providers. I did not check the 'all plans and free trial' detail or the blog URL."
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.clay.com/changelog/product-roundup-week-of-september-28-2026",
+   "note": "The page is dated 2026-10-05 and lists all the claimed features. This is a routine weekly roundup."
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.clay.com/blog/sculpt-2026-recap",
+   "note": "The recap is dated 2026-10-08. It confirms the agent-first build experience, available to Sculpt attendees now and to early-access users in the coming weeks. I did not check the San Francisco location."
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.clay.com/blog/sculpt-2026-recap",
+   "note": "The Oct 8, 2026 post says Workflows is in beta for all users, with a broader launch planned for fall."
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.clay.com/blog/sculpt-2026-recap",
+   "note": "The Oct 8, 2026 post previews the Inbound SDR Agent and recruits pre-beta partners through a waitlist."
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "false",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.clay.com/blog/sculpt-2026-recap",
+   "note": "The agent was only previewed, with a pre-beta waitlist, so the claim that it launched is wrong."
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.clay.com/changelog/product-roundup-week-of-october-5-2026",
+   "note": "The changelog was published Oct 12, 2026 and covers the home page redesign, Audiences sources and exports tabs, and Clay Ads reporting changes. This is a routine roundup."
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://pricingsaas.com/companies/clay/diffs/2026D289",
+   "note": "Captures from Oct 15–16, 2026 show new Enterprise governance and security features (SCIM, IP allowlists, user groups) and no list-price change."
+  }
+ },
+ "audit": {},
+ "scores": {
+  "exa": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 9,
+   "coverage": 0.786,
+   "accuracy": 1.0,
+   "combined": 0.821
+  },
+  "nimble": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 1,
+   "truth": 9,
+   "coverage": 0.714,
+   "accuracy": 0.909,
+   "combined": 0.746
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 9,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.484
+  },
+  "firecrawl": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 9,
+   "coverage": 0.643,
+   "accuracy": 1.0,
+   "combined": 0.692
+  }
+ },
+ "judge_cost_usd": 0.066
+}

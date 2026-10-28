@@ -1,0 +1,1162 @@
+[
+ {
+  "id": "fin_credit_risk",
+  "name": "Credit risk",
+  "vertical": "finance",
+  "tier": "high",
+  "use_case": "research",
+  "instructions": "You assess whether ONE company can pay its debts and honour its obligations.\n\nCollect, each item with a date and source_url:\n- financials: latest revenue, operating income or EBITDA, cash, total debt, and any stated liquidity (revolver,\n  cash runway). Public companies: the latest 10-K/10-Q or annual report. Private: filed accounts (UK Companies House,\n  EU registries) or statements from the company or press; label who stated it.\n- credit_ratings: current ratings and outlook from S&P, Moody's, Fitch or others, and any change in the last 12 months.\n- debt_events: new financings, refinancings, covenant amendments or breaches, missed payments, defaults, distressed\n  exchanges, bankruptcy filings.\n- payment_behaviour: supplier complaints, liens, judgments, collection suits, late-payment reports.\n- ownership: owner type (public, PE-backed by X, founder) and any recent change of control or sponsor.\n- distress_signals: layoffs, hiring freezes, plant or office closures, executive departures (esp. CFO), auditor\n  changes or going-concern language, large customer losses.\n- risk_call: low / moderate / elevated / high, with 2-3 sentences that cite the items above.\nPrefer filings, rating-agency releases, court records and reputable press. Do not use a parent's figures for a subsidiary.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "company": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "financials": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "metric": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "value": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "currency": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "period": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "stated_by": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "credit_ratings": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "debt_events": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "payment_behaviour": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "distress_signals": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "ownership": {
+     "type": "object",
+     "properties": {
+      "value": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "source_url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "as_of": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    "risk_call": {
+     "type": "string",
+     "enum": [
+      "low",
+      "moderate",
+      "elevated",
+      "high"
+     ]
+    },
+    "risk_rationale": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "missing_fields": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "description": "fields you could not verify from a page you opened"
+    }
+   }
+  },
+  "exa_data_sources": [
+   "financial_datasets",
+   "baselayer"
+  ],
+  "inputs": [
+   "Assess the credit and counterparty risk of Spirit Airlines",
+   "Assess the credit and counterparty risk of Carvana",
+   "Assess the credit and counterparty risk of Beyond Meat"
+  ],
+  "scoring_rule": "Unit = credit fact, weighted for a lender: critical 3 (defaults, ratings, liquidity, leverage), useful 2, minor 1.",
+  "unit": {
+   "name": "credit fact",
+   "definition": "One unit per distinct credit-relevant fact: each financial figure (metric+period), each rating action, each debt event, each payment-behaviour item, each distress signal, ownership. Restatements are not units.",
+   "verify_rule": "true if the fact is correct for this exact entity and period."
+  },
+  "judge_tag": {
+   "key": "materiality",
+   "spec": "\"materiality\": \"critical|useful|minor\"  (for a lender; defaults, ratings, liquidity and leverage are critical)"
+  }
+ },
+ {
+  "id": "fin_due_diligence",
+  "name": "Due diligence",
+  "vertical": "finance",
+  "tier": "high",
+  "use_case": "research",
+  "instructions": "You write a first-pass due diligence memo on ONE private company for an investment team.\n\nSections (each a list of short claims, every claim with a source_url and a date):\n- business: what it sells, to whom, business model, geographies.\n- traction: named customers, customer counts, growth statements, partnerships. Mark company claims as \"company claim\".\n- team: founders and current executives, prior companies, notable departures in the last 2 years.\n- funding: rounds, dates, amounts, lead investors, last known valuation.\n- financial_signals: revenue statements or estimates (labelled with who estimated), headcount trend, hiring or layoffs.\n- legal_and_regulatory: lawsuits, regulatory actions, data breaches, sanctions exposure. Court dockets and regulator sites\n  first.\n- reputation: employee reviews trend, customer complaint patterns, critical press.\n- red_flags: only items backed by a cited claim above.\n- verdict: 2-3 sentences: what looks strong, what needs a closer look.\n\nPrefer filings, registries, court records, the company's own pages and reputable press. Label aggregator data.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "company": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "business": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "traction": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "team": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "funding": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "financial_signals": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "legal_and_regulatory": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "reputation": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "red_flags": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "claim": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "verdict": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "missing_fields": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "description": "fields you could not verify from a page you opened"
+    }
+   }
+  },
+  "exa_data_sources": [
+   "fiber",
+   "financial_datasets",
+   "baselayer"
+  ],
+  "inputs": [
+   "Write a due diligence memo on Rippling",
+   "Write a due diligence memo on Canva",
+   "Write a due diligence memo on Deel"
+  ],
+  "scoring_rule": "Unit = material finding, weighted for an investment committee: critical 3, useful 2, minor 1. Red-flag recall reported separately.",
+  "unit": {
+   "name": "material finding",
+   "definition": "One unit per distinct material finding a deal team would use: each funding round, valuation, revenue/traction figure, named customer, executive, lawsuit or regulatory action, red flag, etc. Descriptive filler and restatements are not units.",
+   "verify_rule": "true if the finding is correct and attributable to this company; dated claims must have the right date."
+  },
+  "judge_tag": {
+   "key": "materiality",
+   "spec": "\"materiality\": \"critical|useful|minor\"  (for an investment committee), \"red_flag\": true|false"
+  }
+ },
+ {
+  "id": "fin_kyc_screening",
+  "name": "KYC screening",
+  "vertical": "finance",
+  "tier": "high",
+  "use_case": "research",
+  "instructions": "You run a KYC screen on ONE company in the country given.\n\n1. registration: legal name, registry number, LEI, jurisdiction, incorporation date, registered address and status,\n   read from the national registry and GLEIF. If the operating name maps to several entities, pick the main operating\n   company and list the others in related_entities. A branch is not the entity.\n2. people: current directors/officers and persons with significant control or beneficial owners (e.g. Companies House\n   PSC register), with role, nationality if stated, and source.\n3. sanctions: check the entity and its owners against OFAC SDN, UK OFSI and EU consolidated lists. Report matches with\n   the list name and why it is (or is not) the same party.\n4. pep: flag owners or directors who are politically exposed persons, with evidence.\n5. adverse_media: enforcement actions, fines, fraud, money-laundering or corruption allegations, sanctions evasion,\n   lawsuits in the last 10 years, each with date, severity (high / medium / low), status and source.\n6. risk_rating: low / medium / high with a one-paragraph rationale citing the items above.\nDrop findings you cannot tie to this entity and count them in namesakes_excluded.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "input_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "registration": {
+     "type": "object",
+     "properties": {
+      "legal_name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "registry_number": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "lei": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "jurisdiction": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "incorporation_date": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "registered_address": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "status": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "source_url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    "related_entities": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "relation": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "registry_number": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "people": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "role": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "nationality": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "sanctions": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "party": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "list": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "match": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "pep": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "position": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "adverse_media": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "category": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "severity": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "status": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "namesakes_excluded": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "risk_rating": {
+     "type": "string",
+     "enum": [
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "risk_rationale": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  },
+  "exa_data_sources": [
+   "baselayer"
+  ],
+  "inputs": [
+   "Run a KYC screen on Revolut in the United Kingdom",
+   "Run a KYC screen on Wirecard in Germany",
+   "Run a KYC screen on Greensill Capital in the United Kingdom"
+  ],
+  "scoring_rule": "Unit = KYC fact, by group: registration 40% (7 fields), officers and owners 20% (capped at 5), screening findings 40%. A false sanctions or adverse-media hit weighs 3x in accuracy.",
+  "unit": {
+   "name": "KYC fact",
+   "definition": "One unit per registration field (legal name, registry number, LEI, jurisdiction, incorporation date, registered address, status), per officer/owner (name+role), and per sanctions, PEP or adverse-media finding.",
+   "verify_rule": "true if correct for this exact legal entity (not a parent, branch or namesake); findings must really concern this entity."
+  },
+  "judge_tag": {
+   "key": "group",
+   "spec": "\"group\": \"registration|people|screening\", \"field\": short field name"
+  }
+ },
+ {
+  "id": "fin_portfolio_monitoring",
+  "name": "Portfolio monitoring",
+  "vertical": "finance",
+  "tier": "medium",
+  "use_case": "research",
+  "instructions": "You check ONE company for material events since a given date (in the input as \"since YYYY-MM-DD\").\n\nMaterial events: CEO/CFO/board changes, M&A (as buyer or target), new litigation or regulatory action, credit rating\nactions, guidance changes, covenant breaches, defaults, restructuring, large layoffs, major customer wins or losses,\nplant closures, cyber incidents.\n\nFor each: date, type, headline, summary (one line on why it matters to an investor), source_url. Prefer filings (8-K,\nRNS), rating agency releases and reputable press. If nothing material happened, return an empty list. Do not pad with\nolder events.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "company": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "since": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "events": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "type": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "headline": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "checked_sources": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "exa_data_sources": [
+   "financial_datasets"
+  ],
+  "inputs": [
+   "Check Intel for material events since 2026-09-21",
+   "Check Peloton for material events since 2026-09-21",
+   "Check Boeing for material events since 2026-09-21"
+  ],
+  "scoring_rule": "Unit = event after the since-date. Only material events count; a non-material event counts against accuracy.",
+  "unit": {
+   "name": "material event",
+   "definition": "One unit per distinct dated material event the output reports. The same event reported twice is one unit.",
+   "verify_rule": "true only if the event really happened, is about this company, is dated AFTER the since-date, and is material as the instructions define it."
+  },
+  "judge_tag": {
+   "key": "material",
+   "spec": "\"material\": true|false  (material as the instructions define it; set in_scope false when not material)"
+  }
+ },
+ {
+  "id": "gtm_meeting_prep_research",
+  "name": "Account brief (meeting prep)",
+  "vertical": "gtm",
+  "tier": "medium",
+  "use_case": "research",
+  "instructions": "You prepare a seller for a meeting with ONE company. The seller wants to understand the company's\ncurrent priorities and challenges, so they can judge fit and steer the conversation.\n\nCover:\n- what_they_do: one sentence in the company's own terms.\n- priorities: 3-5 things the company is investing in now (from launches, hiring, exec statements, earnings calls,\n  blog posts), each with evidence and a date.\n- challenges: 2-4 problems the company is visibly dealing with (complaints, layoffs, competitive pressure, regulatory,\n  missed targets), each with evidence and a date. Do not invent pains.\n- recent_changes: events in the last 90 days (funding, leadership, launches, M&A, partnerships, layoffs).\n- key_people: up to 5 leaders relevant to the meeting, with title and one line on what they recently said or did.\n- talking_points: 3 short questions or angles tied to the evidence above.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "company": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "what_they_do": {
+     "type": "object",
+     "properties": {
+      "value": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "source_url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "as_of": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    "priorities": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "priority": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "evidence": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "challenges": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "challenge": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "evidence": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "recent_changes": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "type": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "headline": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "key_people": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "title": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "recent": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "talking_points": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    },
+    "missing_fields": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "description": "fields you could not verify from a page you opened"
+    }
+   }
+  },
+  "exa_data_sources": [
+   "fiber"
+  ],
+  "inputs": [
+   "Prepare me for a meeting with Attio (attio.com)",
+   "Prepare me for a meeting with Datadog (datadoghq.com)",
+   "Prepare me for a meeting with Gong (gong.io)"
+  ],
+  "scoring_rule": "Unit = distinct finding, weighted by usefulness to the seller: critical 3, useful 2, minor 1.",
+  "unit": {
+   "name": "distinct finding",
+   "definition": "One unit per distinct finding a seller would use: each priority, each challenge, each recent change/event, each key person with their role. Restatements of the same finding are one unit; generic company description is one unit at most.",
+   "verify_rule": "true if the finding is real, about this company, and current (events inside the last 90 days)."
+  },
+  "judge_tag": {
+   "key": "materiality",
+   "spec": "\"materiality\": \"critical|useful|minor\"  (for a seller preparing this meeting)"
+  }
+ },
+ {
+  "id": "gtm_signal_tracking",
+  "name": "Account signals",
+  "vertical": "gtm",
+  "tier": "medium",
+  "use_case": "research",
+  "instructions": "You check ONE company for changes since a given date (in the input as \"since YYYY-MM-DD\").\n\nReport only events dated after that date:\n- funding, acquisitions, leadership hires and departures, layoffs, new offices or markets,\n- product launches and major releases,\n- pricing page changes (new plans, removed free tier) if a dated source shows them,\n- big hiring pushes (many new roles in one function).\n\nFor each event: date, type, headline, one-line summary, source_url. If nothing changed, return an empty list. Do not\nrepeat older events to fill the list.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "company": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "since": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "events": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "type": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "headline": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "checked_sources": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "exa_data_sources": [
+   "fiber"
+  ],
+  "inputs": [
+   "Check Mercury (mercury.com) for changes since 2026-09-21",
+   "Check Clay (clay.com) for changes since 2026-09-21",
+   "Check Rippling (rippling.com) for changes since 2026-09-21"
+  ],
+  "scoring_rule": "Unit = event after the since-date. Buying signals (funding, leadership, expansion, hiring push, major launch, M&A, pricing) weigh 2; minor releases weigh 1.",
+  "unit": {
+   "name": "event",
+   "definition": "One unit per distinct dated event the output reports. The same event reported twice is one unit.",
+   "verify_rule": "true only if the event really happened, is about this company, and is dated AFTER the since-date in the task."
+  },
+  "judge_tag": {
+   "key": "signal",
+   "spec": "\"signal\": \"buying|minor\"  (buying = funding, leadership change, expansion, hiring push, major launch, M&A, pricing change; minor = routine feature or changelog entry)"
+  }
+ }
+]
