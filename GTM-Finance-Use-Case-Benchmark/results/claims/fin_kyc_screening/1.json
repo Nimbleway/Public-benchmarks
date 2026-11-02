@@ -1,0 +1,812 @@
+{
+ "sub_use_case": "fin_kyc_screening",
+ "input_n": 1,
+ "task": "Run a KYC screen on Wirecard in Germany",
+ "labels": {
+  "nimble": "A",
+  "exa": "B",
+  "firecrawl": "C"
+ },
+ "unit": "KYC fact",
+ "arms_judged": [
+  "nimble",
+  "exa",
+  "firecrawl"
+ ],
+ "claims": {
+  "nimble": [
+   {
+    "claim": "Wirecard AG legal name: Wirecard AG",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG registry number: HRB 169227 (Amtsgericht München, register authority RA000304)",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG LEI: 529900A8LX4KL0YUTH71 (entity status ACTIVE, LEI registration status LAPSED, last GLEIF update 2020-11-13)",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG jurisdiction: Germany (DE), registered with the German commercial register at Amtsgericht München",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG incorporation date: 1999-01-01 (founded 1 January 1999; became a public stock corporation in 2005 via reverse merger with InfoGenie AG)",
+    "url": "https://en.wikipedia.org/wiki/Wirecard"
+   },
+   {
+    "claim": "Wirecard AG registered address: Einsteinring 35, 85609 Aschheim, Germany",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG status: insolvent/defunct; filed for insolvency 25 June 2020 after €1.9bn was found missing; dismantled from 1 July 2020 and core business sold to Santander in November 2020",
+    "url": "https://en.wikipedia.org/wiki/Wirecard"
+   },
+   {
+    "claim": "Markus Braun (Austrian) was CEO and CTO of Wirecard AG from January 2002 until resignation 19 June 2020 and dismissal on 30 June 2020; largest single shareholder (more than 7%)",
+    "url": "https://en.wikipedia.org/wiki/Markus_Braun"
+   },
+   {
+    "claim": "Jan Marsalek (Austrian) was Chief Operating Officer and Management Board member of Wirecard 2010–2020, responsible for Asia business; dismissed 18 June 2020",
+    "url": "https://en.wikipedia.org/wiki/Jan_Marsalek"
+   },
+   {
+    "claim": "Alexander von Knoop (von Koop) was Chief Financial Officer and Management Board member of Wirecard AG",
+    "url": "https://mondaq.com/directors-and-officers/961974/wirecard-pre-and-post-scandal-a-board-effectiveness-analysis"
+   },
+   {
+    "claim": "James Freis was Interim CEO of Wirecard AG from 19 June 2020; former Director of FinCEN and former Group CCO of Deutsche Börse AG",
+    "url": "https://mondaq.com/directors-and-officers/961974/wirecard-pre-and-post-scandal-a-board-effectiveness-analysis"
+   },
+   {
+    "claim": "Thomas Eichelmann was independent Supervisory Board member and Chairman of Wirecard AG since January 2020",
+    "url": "https://mondaq.com/directors-and-officers/961974/wirecard-pre-and-post-scandal-a-board-effectiveness-analysis"
+   },
+   {
+    "claim": "Oliver Bellenhaus was a former Wirecard executive in Dubai, co-defendant in the Munich criminal trial and prosecution's key witness",
+    "url": "https://boersen-zeitung.de/english-wirecard-trial-enters-its-third-year"
+   },
+   {
+    "claim": "Stephan von Erffa was Wirecard's former chief accountant and co-defendant in the Munich criminal trial",
+    "url": "https://boersen-zeitung.de/english-wirecard-trial-enters-its-third-year"
+   },
+   {
+    "claim": "Michael Jaffé is the court-appointed insolvency administrator of Wirecard AG",
+    "url": "https://en.wikipedia.org/wiki/Markus_Braun"
+   },
+   {
+    "claim": "PEP-adjacent flag: Markus Braun (former Wirecard CEO) was from 2017 listed as a member of the Staff Unit for Strategy, Analysis and Planning of Austrian Chancellor Sebastian Kurz; a Chancellery spokesperson later stated he had not worked in the unit",
+    "url": "https://en.wikipedia.org/wiki/Markus_Braun"
+   },
+   {
+    "claim": "Sanctions: Jan Marsalek (former Wirecard COO) is subject to an INTERPOL red notice for fraud and listed among Germany BKA wanted fugitives (law-enforcement lists, not sanctions designations)",
+    "url": "https://www.opensanctions.org/search/?q=Marsalek"
+   },
+   {
+    "claim": "Adverse media: From April 2015 to 2019 FT Alphaville and FT investigations raised accounting-fraud allegations about Wirecard, which the company denied; later confirmed after the 2020 collapse",
+    "url": "https://en.wikipedia.org/wiki/Wirecard"
+   },
+   {
+    "claim": "Adverse media: KPMG's special audit (2019–2020) of Wirecard could not verify the majority of 2016–2018 profits; EY failed to verify cash reserves in apparently fraudulent bank statements; BaFin referred misleading investor statements to prosecutors",
+    "url": "https://en.wikipedia.org/wiki/Wirecard_scandal"
+   },
+   {
+    "claim": "Adverse media: Wirecard AG admitted €1.9bn in cash was missing (June 2020), shares fell almost 90%, EY refused to sign off accounts, and the company filed for insolvency on 25 June 2020",
+    "url": "https://en.wikipedia.org/wiki/Wirecard"
+   },
+   {
+    "claim": "Adverse media: Markus Braun was detained 22 June 2020 on suspicion of accounting fraud and market manipulation, released on €5m bail, and re-arrested 22 July 2020; other former board members were also arrested",
+    "url": "https://en.wikipedia.org/wiki/Markus_Braun"
+   },
+   {
+    "claim": "Adverse media: Jan Marsalek, former Wirecard COO, fled Germany, is subject to an Interpol red notice for fraud, is reportedly in Russia, and British authorities describe him as a Russian spy with links to GRU (Met Police, March 2025)",
+    "url": "https://reuters.com/world/europe/wirecard-fugitive-jan-marsalek-financial-fraudster-russian-spymaster-2025-03-07"
+   },
+   {
+    "claim": "Adverse media: BaFin supervisory failure over Wirecard; the Bundestag announced an inquiry on 1 September 2020 and BaFin president Felix Hufeld and deputy Elisabeth Roegele left on 29 January 2021",
+    "url": "https://en.wikipedia.org/wiki/Wirecard_scandal"
+   },
+   {
+    "claim": "Adverse media: Insolvency administrator Michael Jaffé dismantled Wirecard from 1 July 2020; the main business unit was sold to Santander for €100m in November 2020 and ~730 employees were laid off",
+    "url": "https://en.wikipedia.org/wiki/Wirecard"
+   },
+   {
+    "claim": "Adverse media: In March 2022 Munich prosecutors charged Markus Braun with fraud, breach of trust and accounting manipulation (up to 15 years); Braun denies wrongdoing",
+    "url": "https://en.wikipedia.org/wiki/Wirecard"
+   },
+   {
+    "claim": "Adverse media: Trial opened 8 December 2022 in Munich; Markus Braun, Oliver Bellenhaus and Stephan von Erffa face commercial gang fraud charges for falsifying Wirecard's financial statements since 2015, causing €3.1bn loss to banks; verdict expected 2026 or 2027",
+    "url": "https://boersen-zeitung.de/english-wirecard-trial-enters-its-third-year"
+   },
+   {
+    "claim": "Adverse media: On 5 September 2024 Munich Regional Court I ordered former Wirecard board members including Markus Braun and the former CFO to pay EUR 140m plus interest for breaches of duty; Jan Marsalek was already under a partial default judgment for EUR 140m",
+    "url": "https://globallitigationnews.bakermckenzie.com/2025/01/03/germany-wirecard-board-members-liable-for-eur-140-million"
+   }
+  ],
+  "exa": [
+   {
+    "claim": "Wirecard AG legal name is Wirecard AG.",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "Wirecard AG registry number is HRB 169227, Amtsgericht München.",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "Wirecard AG LEI is 529900A8LX4KL0YUTH71 (registration status LAPSED, entity status ACTIVE, last updated 2020-11-13 per Bloomberg LEI record).",
+    "url": "https://lei.bloomberg.com/leis/view/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG jurisdiction is Germany.",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "Wirecard AG registered address is Humboldtstraße 8, 85609 Aschheim, Germany (register change dated 2022-06-27).",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "Wirecard AG status: dissolved following opening of insolvency proceedings; the administrator reports proceedings ongoing.",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "Dr. Michael Jaffé is the insolvency administrator of Wirecard AG, appointed 2025-08-25 per order dated 2020-08-25; the administrator's page describes the proceeding as ongoing.",
+    "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag/"
+   },
+   {
+    "claim": "James H. Freis Jr. (American) is a board member of Wirecard AG in the latest located register-derived entries (as of 2022-06-27); current appointment not verified.",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "Alexander von Knoop is a board member of Wirecard AG in the latest located register-derived entries (as of 2022-06-27); current appointment not verified.",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "Susanne Steidl is a board member of Wirecard AG in the latest located register-derived entries (as of 2022-06-27); current appointment not verified.",
+    "url": "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   },
+   {
+    "claim": "PEP flag: James H. Freis Jr., associated with Wirecard AG, is a former senior public official (Director of the US Treasury FinCEN, 2007–2012); flagged for former-PEP review, current statutory PEP classification not established.",
+    "url": "https://home.treasury.gov/news/press-releases/hp292"
+   },
+   {
+    "claim": "Adverse media: on 2020-06-25 Wirecard AG filed an application to open insolvency proceedings at Munich Local Court.",
+    "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag/"
+   },
+   {
+    "claim": "Adverse media: on 2020-07-22 Munich prosecutors announced arrests of former Wirecard AG executives and alleged fabricated third-party-acquirer business and assets to obtain financing, citing approx. EUR 3.2 billion financing and EUR 1.9 billion allegedly nonexistent assets; allegations against individuals, not a corporate conviction.",
+    "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/staatsanwaltschaft/muenchen-1/presse/2020/5.php"
+   },
+   {
+    "claim": "Adverse media: on 2020-08-25 Munich Local Court opened insolvency proceedings over Wirecard AG for illiquidity and over-indebtedness and appointed Michael Jaffé.",
+    "url": "https://wirecard.com/wp-content/uploads/2020/10/Eroeffnungsbeschluss-WDAG.pdf"
+   },
+   {
+    "claim": "Adverse media: on 2023-12-14 prosecutors announced the indictment of Wirecard AG's former CFO for alleged false reporting, market manipulation, commercial gang fraud, embezzlement and related assistance; allegations remain to be proved in court.",
+    "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/staatsanwaltschaft/muenchen-1/presse/2023/9.php"
+   },
+   {
+    "claim": "Adverse media: on 2025-11-13 the Federal Court of Justice ruled that Wirecard AG shareholders' capital-markets damages claims are not ordinary insolvency claims; approx. EUR 15.4 billion total claims filed and approx. EUR 650 million insolvency assets available.",
+    "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/EN/2025/2025211.html"
+   },
+   {
+    "claim": "Adverse media: on 2026-10-08 the Munich court rejected a defence request to suspend and restart the Wirecard fraud trial of former CEO Markus Braun and co-defendants; closing arguments targeted for November; Braun denies the accusations; no final verdict established.",
+    "url": "https://www.handelsblatt.com/politik/deutschland/milliardenbetrug-wirecard-verteidigung-blitzt-mit-aussetzung-ab/100260791.html"
+   }
+  ],
+  "firecrawl": [
+   {
+    "claim": "Wirecard AG's legal name is Wirecard AG (input name: Wirecard).",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG's registry number is HRB 169227 (District Court of Munich).",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG's LEI is 529900A8LX4KL0YUTH71.",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG's jurisdiction is Germany (DE).",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG's incorporation date is 2000-06-20 (registry registration event).",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG's registered address is Einsteinring 35, 85609 Aschheim, Germany.",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard AG's status is in insolvency/liquidation; GLEIF entity status is ACTIVE but the LEI registration status is LAPSED.",
+    "url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   },
+   {
+    "claim": "Wirecard Acceptance Technologies GmbH (HRB 238107) is a subsidiary/related entity in the Wirecard AG network.",
+    "url": ""
+   },
+   {
+    "claim": "Wirecard Global Sales GmbH (HRB 223366) is a subsidiary/related entity in the Wirecard AG network and is in liquidation.",
+    "url": ""
+   },
+   {
+    "claim": "Wirecard Issuing Technologies GmbH (HRB 235570) is a subsidiary/related entity in the Wirecard AG network and is in liquidation.",
+    "url": ""
+   },
+   {
+    "claim": "Wirecard Retail Services GmbH (HRB 143760) is a subsidiary/related entity in the Wirecard AG network and is in liquidation.",
+    "url": ""
+   },
+   {
+    "claim": "Wirecard Technologies GmbH (HRB 200352) is a subsidiary/related entity in the Wirecard AG network and is in liquidation.",
+    "url": ""
+   },
+   {
+    "claim": "Wirecard Communication Services GmbH (HRB 24925) is a subsidiary/related entity in the Wirecard AG network.",
+    "url": ""
+   },
+   {
+    "claim": "Michael Jaffé is the insolvency administrator of Wirecard AG, appointed by the Munich Insolvency Court.",
+    "url": "https://wirecard.com/page/2/?p=company"
+   },
+   {
+    "claim": "Markus Braun is the former CEO and management board member of Wirecard AG; he resigned 2020-06-19 and his employment contract was terminated 2020-06-30.",
+    "url": "https://wirecard.com/page/2/?p=company"
+   },
+   {
+    "claim": "Alexander von Knoop is the former CFO and management board member of Wirecard AG.",
+    "url": "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
+   },
+   {
+    "claim": "Susanne Steidl is the former Chief Product Officer and management board member of Wirecard AG.",
+    "url": "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
+   },
+   {
+    "claim": "Jan Marsalek is the former Chief Operating Officer and management board member of Wirecard AG.",
+    "url": "https://wirecard.com/wp-content/uploads/2020/12/Annual-Report-2018.pdf"
+   },
+   {
+    "claim": "Adverse media (high severity, 2020-08-25, insolvency/accounting scandal): the Munich Local Court opened insolvency proceedings over Wirecard AG's assets and appointed Michael Jaffé as insolvency administrator; the company's notice described the financial situation as extremely difficult and referred to scandalous circumstances. Administration is ongoing.",
+    "url": "https://wirecard.com/page/2/?p=company"
+   },
+   {
+    "claim": "Adverse media (high severity, 2024-08-06, embezzlement/fraud-related criminal proceedings): Reuters reported Munich prosecutors charged former Wirecard CFO Alexander von Knoop and former CPO Susanne Steidl with several counts of embezzlement; von Knoop was also charged with aiding and abetting embezzlement. Prosecutors alleged losses of several hundred million euros; the decision on trial was pending.",
+    "url": "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
+   },
+   {
+    "claim": "Adverse media (high severity, 2024-09-05, director liability/fiduciary breach): the Munich Regional Court ordered former Wirecard board members to pay EUR 140 million plus interest over an unsecured EUR 100 million loan and bond subscription exceeding EUR 100 million; three former management-board members were found liable for negligent breaches of duty, while the supervisory-board claim failed for lack of causality.",
+    "url": "https://globallitigationnews.bakermckenzie.com/2025/01/03/germany-wirecard-board-members-liable-for-eur-140-million/"
+   },
+   {
+    "claim": "Adverse media (medium severity, 2025-11-13, insolvency litigation/shareholder claims): Germany's Federal Court of Justice held that Wirecard AG shareholders' capital-market damage claims are not ordinary insolvency claims and rank behind ordinary insolvency creditors; the court described allegations that Wirecard feigned a business model and misrepresented its assets, finances and profits.",
+    "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025_en/2025211.html"
+   }
+  ]
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Legal name: Wirecard AG",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71",
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Registry number: HRB 169227, Amtsgericht München",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71",
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "LEI: 529900A8LX4KL0YUTH71 (entity status ACTIVE, LEI registration status LAPSED, last updated 2020-11-13)",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71",
+    "https://lei.bloomberg.com/leis/view/529900A8LX4KL0YUTH71"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Jurisdiction: Germany (DE)",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71",
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Incorporation date: 1999-01-01 (founded 1 January 1999; public stock corporation in 2005 via reverse merger with InfoGenie AG)",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard"
+   ],
+   "conflicts_with": [
+    "c6"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Incorporation date: 2000-06-20 (registry registration event)",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [
+    "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   ],
+   "conflicts_with": [
+    "c5"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Registered address: Einsteinring 35, 85609 Aschheim, Germany",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "urls": [
+    "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   ],
+   "conflicts_with": [
+    "c8"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Registered address: Humboldtstraße 8, 85609 Aschheim, Germany (register change dated 2022-06-27)",
+   "asserted_by": [
+    "B"
+   ],
+   "urls": [
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   ],
+   "conflicts_with": [
+    "c7"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Status: insolvent/dissolved, in insolvency proceedings and liquidation; insolvency filed 25 June 2020, core business sold to Santander November 2020; administration ongoing",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard",
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG",
+    "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Related entity: Wirecard Acceptance Technologies GmbH (HRB 238107), subsidiary in the Wirecard AG network",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Related entity: Wirecard Global Sales GmbH (HRB 223366), subsidiary, in liquidation",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Related entity: Wirecard Issuing Technologies GmbH (HRB 235570), subsidiary, in liquidation",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Related entity: Wirecard Retail Services GmbH (HRB 143760), subsidiary, in liquidation",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Related entity: Wirecard Technologies GmbH (HRB 200352), subsidiary, in liquidation",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Related entity: Wirecard Communication Services GmbH (HRB 24925), subsidiary in the Wirecard AG network",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Michael Jaffé is the court-appointed insolvency administrator of Wirecard AG (appointed by Munich court order of 2020-08-25)",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Markus_Braun",
+    "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag/",
+    "https://wirecard.com/page/2/?p=company"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Markus Braun (Austrian) was CEO/CTO and management board member of Wirecard AG from January 2002; resigned 19 June 2020, dismissed/contract terminated 30 June 2020",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Markus_Braun",
+    "https://wirecard.com/page/2/?p=company"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Markus Braun was the largest single shareholder of Wirecard (more than 7%)",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Markus_Braun"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Jan Marsalek (Austrian) was Chief Operating Officer and management board member of Wirecard (2010–2020), responsible for Asia business; dismissed 18 June 2020",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Jan_Marsalek",
+    "https://wirecard.com/wp-content/uploads/2020/12/Annual-Report-2018.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Alexander von Knoop was Chief Financial Officer and management board member of Wirecard AG (listed as board member in register-derived entries as of 2022-06-27; current appointment not verified)",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://mondaq.com/directors-and-officers/961974/wirecard-pre-and-post-scandal-a-board-effectiveness-analysis",
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG",
+    "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "James H. Freis Jr. (American) was Interim CEO of Wirecard AG from 19 June 2020 and board member (register entries as of 2022-06-27; current appointment not verified); former FinCEN Director and former Group CCO of Deutsche Börse",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "urls": [
+    "https://mondaq.com/directors-and-officers/961974/wirecard-pre-and-post-scandal-a-board-effectiveness-analysis",
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Susanne Steidl was Chief Product Officer and management board member of Wirecard AG (register entries as of 2022-06-27)",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://www.online-handelsregister.de/handelsregisterauszug/by/Muenchen/HRB/169227/Wirecard-AG",
+    "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Thomas Eichelmann was independent Supervisory Board member and Chairman of Wirecard AG since January 2020",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://mondaq.com/directors-and-officers/961974/wirecard-pre-and-post-scandal-a-board-effectiveness-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Oliver Bellenhaus was a former Wirecard executive in Dubai, co-defendant in the Munich criminal trial and key prosecution witness",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://boersen-zeitung.de/english-wirecard-trial-enters-its-third-year"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Stephan von Erffa was Wirecard's former chief accountant and co-defendant in the Munich criminal trial",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://boersen-zeitung.de/english-wirecard-trial-enters-its-third-year"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "PEP-adjacent flag: Markus Braun was listed from 2017 as member of the Staff Unit for Strategy, Analysis and Planning of Austrian Chancellor Sebastian Kurz; Chancellery spokesperson later said he had not worked in the unit",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Markus_Braun"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "PEP flag: James H. Freis Jr. is a former senior public official (Director of US Treasury FinCEN, 2007–2012); former-PEP review flagged, current statutory PEP status not established",
+   "asserted_by": [
+    "B"
+   ],
+   "urls": [
+    "https://home.treasury.gov/news/press-releases/hp292"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Law-enforcement listing (not a sanctions designation): Jan Marsalek is subject to an INTERPOL red notice for fraud and listed among Germany BKA wanted fugitives",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Marsalek"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Adverse media: From April 2015 to 2019 FT Alphaville/FT investigations raised accounting-fraud allegations about Wirecard, which the company denied; later confirmed after the 2020 collapse",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Adverse media: KPMG special audit could not verify majority of 2016–2018 profits; EY failed to verify cash reserves in apparently fraudulent bank statements; BaFin referred misleading investor statements to prosecutors",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard_scandal"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Adverse media: June 2020 Wirecard admitted €1.9bn in cash missing, shares fell almost 90%, EY refused to sign off accounts; on 2020-06-25 Wirecard AG applied for insolvency proceedings at Munich Local Court",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard",
+    "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Adverse media: Markus Braun detained 22 June 2020 on suspicion of accounting fraud and market manipulation, released on €5m bail",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Markus_Braun"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Adverse media: 2020-07-22 Munich prosecutors announced arrests of former Wirecard executives (Braun re-arrested) alleging fabricated third-party-acquirer business and assets to obtain approx. EUR 3.2bn financing, EUR 1.9bn allegedly nonexistent assets; allegations against individuals, not a corporate conviction",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "urls": [
+    "https://www.justiz.bayern.de/gerichte-und-behoerden/staatsanwaltschaft/muenchen-1/presse/2020/5.php",
+    "https://en.wikipedia.org/wiki/Markus_Braun"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Adverse media: Jan Marsalek fled Germany, reportedly in Russia; British authorities (Met Police, March 2025) describe him as a Russian spy with GRU links",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://reuters.com/world/europe/wirecard-fugitive-jan-marsalek-financial-fraudster-russian-spymaster-2025-03-07"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Adverse media: BaFin supervisory failure over Wirecard; Bundestag inquiry announced 1 Sept 2020; BaFin president Felix Hufeld and deputy Elisabeth Roegele left 29 Jan 2021",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard_scandal"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "Adverse media: Administrator Jaffé dismantled Wirecard from 1 July 2020; main business sold to Santander for €100m in November 2020; ~730 employees laid off",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Adverse media: 2020-08-25 Munich Local Court opened insolvency proceedings over Wirecard AG (illiquidity and over-indebtedness) and appointed Michael Jaffé; scandalous circumstances referenced; administration ongoing",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://wirecard.com/wp-content/uploads/2020/10/Eroeffnungsbeschluss-WDAG.pdf",
+    "https://wirecard.com/page/2/?p=company"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Adverse media: March 2022 Munich prosecutors charged Markus Braun with fraud, breach of trust and accounting manipulation (up to 15 years); Braun denies wrongdoing",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://en.wikipedia.org/wiki/Wirecard"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Adverse media: Trial opened 8 December 2022 in Munich; Braun, Bellenhaus and von Erffa face commercial gang fraud charges for falsifying financial statements since 2015, causing €3.1bn loss to banks; verdict expected 2026 or 2027",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://boersen-zeitung.de/english-wirecard-trial-enters-its-third-year"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Adverse media: 2023-12-14 prosecutors announced indictment of former CFO for alleged false reporting, market manipulation, commercial gang fraud, embezzlement and related assistance; allegations remain to be proved",
+   "asserted_by": [
+    "B"
+   ],
+   "urls": [
+    "https://www.justiz.bayern.de/gerichte-und-behoerden/staatsanwaltschaft/muenchen-1/presse/2023/9.php"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Adverse media: 2024-08-06 Munich prosecutors charged former CFO Alexander von Knoop and former CPO Susanne Steidl with several counts of embezzlement (von Knoop also with aiding embezzlement); alleged losses of several hundred million euros; decision on trial pending",
+   "asserted_by": [
+    "C"
+   ],
+   "urls": [
+    "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Adverse media: 5 Sept 2024 Munich Regional Court I ordered former Wirecard management board members incl. Braun and former CFO to pay EUR 140m plus interest for breaches of duty (Marsalek already under partial default judgment for EUR 140m); supervisory-board claim failed for lack of causality",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "urls": [
+    "https://globallitigationnews.bakermckenzie.com/2025/01/03/germany-wirecard-board-members-liable-for-eur-140-million"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Adverse media: 2025-11-13 Federal Court of Justice ruled Wirecard AG shareholders' capital-markets damages claims are not ordinary insolvency claims and rank behind ordinary creditors; approx. EUR 15.4bn claims filed vs approx. EUR 650m assets; court described allegations that Wirecard feigned its business model",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "urls": [
+    "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/EN/2025/2025211.html",
+    "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025_en/2025211.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "Adverse media: 2026-10-08 Munich court rejected defence request to suspend and restart the Wirecard fraud trial of Braun and co-defendants; closing arguments targeted for November; Braun denies accusations; no final verdict",
+   "asserted_by": [
+    "B"
+   ],
+   "urls": [
+    "https://www.handelsblatt.com/politik/deutschland/milliardenbetrug-wirecard-verteidigung-blitzt-mit-aussetzung-ab/100260791.html"
+   ],
+   "conflicts_with": []
+  }
+ ]
+}

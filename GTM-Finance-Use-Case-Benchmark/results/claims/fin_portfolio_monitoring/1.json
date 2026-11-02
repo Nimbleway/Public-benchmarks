@@ -1,0 +1,89 @@
+{
+ "sub_use_case": "fin_portfolio_monitoring",
+ "input_n": 1,
+ "task": "Check Peloton for material events since 2026-09-21",
+ "labels": {
+  "parallel": "A",
+  "exa": "B",
+  "nimble": "C",
+  "firecrawl": "D"
+ },
+ "unit": "material event",
+ "arms_judged": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl"
+ ],
+ "claims": {
+  "nimble": [
+   {
+    "claim": "Peloton Interactive, Inc. Chief Accounting Officer Saqib Baig notified the company on October 8, 2026 that he will step down to pursue an external opportunity, serving until November 27, 2026, with no severance and no disagreement over financial disclosures or accounting matters; a successor search is underway.",
+    "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000042/pton-20261008.htm"
+   }
+  ],
+  "exa": [
+   {
+    "claim": "On 2026-10-08, Peloton Interactive, Inc. disclosed that Chief Accounting Officer and principal accounting officer Saqib Baig will step down to leave for an external opportunity on November 27, 2026; the company is searching for a replacement and said the departure is unrelated to financial-disclosure or accounting disagreements.",
+    "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000042/pton-20261008.htm"
+   }
+  ],
+  "parallel": [
+   {
+    "claim": "Peloton Interactive, Inc. disclosed on 2026-10-13 that Chief Accounting Officer Saqib Baig notified the company on October 8, 2026 that he will leave on November 27, 2026 for an external opportunity; a successor search is underway and Peloton reported no accounting-related disagreements.",
+    "url": "https://investor.onepeloton.com/node/13841/html"
+   }
+  ],
+  "firecrawl": [
+   {
+    "claim": "Peloton Interactive, Inc. disclosed on 2026-10-08 that Chief Accounting Officer Saqib Baig will step down effective November 27, 2026, to take an external opportunity; the company said the departure was not related to disagreements or to financial-disclosure or accounting issues, and it has begun a search for a successor.",
+    "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000042/pton-20261008.htm"
+   },
+   {
+    "claim": "On 2026-09-23, Bloomberg News (as reported by Benzinga) reported that Peloton Interactive was in talks about a potential $800 million debut bond offering; this was reported as discussions, not a completed transaction.",
+    "url": "https://www.benzinga.com/news/26/09/61957963/peloton-holds-talks-potential-800-million-debut-bond-deal"
+   }
+  ]
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Peloton Interactive, Inc. disclosed on 2026-10-08 that Chief Accounting Officer Saqib Baig (notified the company on October 8, 2026) will step down effective November 27, 2026 for an external opportunity. The company said there was no disagreement over financial disclosure or accounting matters, and a successor search is underway.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D"
+   ],
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000042/pton-20261008.htm"
+   ],
+   "conflicts_with": [
+    "c2"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Peloton Interactive, Inc. disclosed on 2026-10-13 that Chief Accounting Officer Saqib Baig, who notified the company on October 8, 2026, will leave on November 27, 2026 for an external opportunity. A successor search is underway, and Peloton reported no accounting-related disagreements.",
+   "asserted_by": [
+    "A"
+   ],
+   "urls": [
+    "https://investor.onepeloton.com/node/13841/html"
+   ],
+   "conflicts_with": [
+    "c1"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "On 2026-09-23, Bloomberg News (as reported by Benzinga) reported that Peloton Interactive was in talks about a potential $800 million debut bond offering. This was reported as discussions, not a completed transaction.",
+   "asserted_by": [
+    "D"
+   ],
+   "urls": [
+    "https://www.benzinga.com/news/26/09/61957963/peloton-holds-talks-potential-800-million-debut-bond-deal"
+   ],
+   "conflicts_with": []
+  }
+ ]
+}

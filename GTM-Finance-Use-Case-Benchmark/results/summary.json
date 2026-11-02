@@ -1,0 +1,1254 @@
+{
+ "views": {
+  "finance_3way": {
+   "n_tasks": 12,
+   "tasks": [
+    "fin_credit_risk#0",
+    "fin_credit_risk#1",
+    "fin_credit_risk#2",
+    "fin_due_diligence#0",
+    "fin_due_diligence#1",
+    "fin_due_diligence#2",
+    "fin_kyc_screening#0",
+    "fin_kyc_screening#1",
+    "fin_kyc_screening#2",
+    "fin_portfolio_monitoring#0",
+    "fin_portfolio_monitoring#1",
+    "fin_portfolio_monitoring#2"
+   ],
+   "arms": {
+    "nimble": {
+     "n": 12,
+     "combined": 0.674,
+     "accuracy": 0.916,
+     "coverage": 0.645,
+     "wins": 12,
+     "avg_cost_usd": 0.4,
+     "median_seconds": 275.5,
+     "unverifiable_rate": 0.062
+    },
+    "exa": {
+     "n": 12,
+     "combined": 0.523,
+     "accuracy": 0.856,
+     "coverage": 0.48,
+     "wins": 0,
+     "avg_cost_usd": 0.467,
+     "median_seconds": 171.0,
+     "unverifiable_rate": 0.077
+    },
+    "firecrawl": {
+     "n": 12,
+     "combined": 0.512,
+     "accuracy": 0.898,
+     "coverage": 0.473,
+     "wins": 0,
+     "avg_cost_usd": 0.334,
+     "median_seconds": 206.0,
+     "unverifiable_rate": 0.123
+    }
+   }
+  },
+  "gtm_3way": {
+   "n_tasks": 6,
+   "tasks": [
+    "gtm_meeting_prep_research#0",
+    "gtm_meeting_prep_research#1",
+    "gtm_meeting_prep_research#2",
+    "gtm_signal_tracking#0",
+    "gtm_signal_tracking#1",
+    "gtm_signal_tracking#2"
+   ],
+   "arms": {
+    "nimble": {
+     "n": 6,
+     "combined": 0.774,
+     "accuracy": 0.948,
+     "coverage": 0.744,
+     "wins": 3,
+     "avg_cost_usd": 0.1,
+     "median_seconds": 175.5,
+     "unverifiable_rate": 0.136
+    },
+    "exa": {
+     "n": 6,
+     "combined": 0.753,
+     "accuracy": 0.9,
+     "coverage": 0.727,
+     "wins": 3,
+     "avg_cost_usd": 0.1,
+     "median_seconds": 62.5,
+     "unverifiable_rate": 0.042
+    },
+    "firecrawl": {
+     "n": 6,
+     "combined": 0.601,
+     "accuracy": 0.927,
+     "coverage": 0.559,
+     "wins": 0,
+     "avg_cost_usd": 0.096,
+     "median_seconds": 74.5,
+     "unverifiable_rate": 0.047
+    }
+   }
+  },
+  "all_3way": {
+   "n_tasks": 18,
+   "tasks": [
+    "fin_credit_risk#0",
+    "fin_credit_risk#1",
+    "fin_credit_risk#2",
+    "fin_due_diligence#0",
+    "fin_due_diligence#1",
+    "fin_due_diligence#2",
+    "fin_kyc_screening#0",
+    "fin_kyc_screening#1",
+    "fin_kyc_screening#2",
+    "fin_portfolio_monitoring#0",
+    "fin_portfolio_monitoring#1",
+    "fin_portfolio_monitoring#2",
+    "gtm_meeting_prep_research#0",
+    "gtm_meeting_prep_research#1",
+    "gtm_meeting_prep_research#2",
+    "gtm_signal_tracking#0",
+    "gtm_signal_tracking#1",
+    "gtm_signal_tracking#2"
+   ],
+   "arms": {
+    "nimble": {
+     "n": 18,
+     "combined": 0.707,
+     "accuracy": 0.927,
+     "coverage": 0.678,
+     "wins": 15,
+     "avg_cost_usd": 0.3,
+     "median_seconds": 207.5,
+     "unverifiable_rate": 0.075
+    },
+    "exa": {
+     "n": 18,
+     "combined": 0.6,
+     "accuracy": 0.871,
+     "coverage": 0.562,
+     "wins": 3,
+     "avg_cost_usd": 0.344,
+     "median_seconds": 119.5,
+     "unverifiable_rate": 0.069
+    },
+    "firecrawl": {
+     "n": 18,
+     "combined": 0.542,
+     "accuracy": 0.909,
+     "coverage": 0.502,
+     "wins": 0,
+     "avg_cost_usd": 0.255,
+     "median_seconds": 122.5,
+     "unverifiable_rate": 0.108
+    }
+   }
+  },
+  "parallel_4way": {
+   "n_tasks": 10,
+   "tasks": [
+    "fin_credit_risk#0",
+    "fin_portfolio_monitoring#0",
+    "fin_portfolio_monitoring#1",
+    "fin_portfolio_monitoring#2",
+    "gtm_meeting_prep_research#0",
+    "gtm_meeting_prep_research#1",
+    "gtm_meeting_prep_research#2",
+    "gtm_signal_tracking#0",
+    "gtm_signal_tracking#1",
+    "gtm_signal_tracking#2"
+   ],
+   "arms": {
+    "nimble": {
+     "n": 10,
+     "combined": 0.648,
+     "accuracy": 0.93,
+     "coverage": 0.617,
+     "wins": 4,
+     "avg_cost_usd": 0.14,
+     "median_seconds": 183.5,
+     "unverifiable_rate": 0.121
+    },
+    "exa": {
+     "n": 10,
+     "combined": 0.59,
+     "accuracy": 0.812,
+     "coverage": 0.56,
+     "wins": 3,
+     "avg_cost_usd": 0.14,
+     "median_seconds": 57.0,
+     "unverifiable_rate": 0.042
+    },
+    "parallel": {
+     "n": 10,
+     "combined": 0.611,
+     "accuracy": 0.97,
+     "coverage": 0.574,
+     "wins": 3,
+     "avg_cost_usd": 0.15,
+     "median_seconds": 191.5,
+     "unverifiable_rate": 0.081
+    },
+    "firecrawl": {
+     "n": 10,
+     "combined": 0.518,
+     "accuracy": 0.88,
+     "coverage": 0.483,
+     "wins": 0,
+     "avg_cost_usd": 0.119,
+     "median_seconds": 74.5,
+     "unverifiable_rate": 0.101
+    }
+   }
+  }
+ },
+ "by_use_case": {
+  "fin_credit_risk": {
+   "name": "Credit risk",
+   "vertical": "finance",
+   "tier": "high",
+   "combined": {
+    "nimble": 0.701,
+    "exa": 0.474,
+    "firecrawl": 0.42
+   }
+  },
+  "fin_due_diligence": {
+   "name": "Due diligence",
+   "vertical": "finance",
+   "tier": "high",
+   "combined": {
+    "nimble": 0.744,
+    "exa": 0.561,
+    "firecrawl": 0.561
+   }
+  },
+  "fin_kyc_screening": {
+   "name": "KYC screening",
+   "vertical": "finance",
+   "tier": "high",
+   "combined": {
+    "nimble": 0.852,
+    "exa": 0.694,
+    "firecrawl": 0.688
+   }
+  },
+  "fin_portfolio_monitoring": {
+   "name": "Portfolio monitoring",
+   "vertical": "finance",
+   "tier": "medium",
+   "combined": {
+    "nimble": 0.398,
+    "exa": 0.363,
+    "firecrawl": 0.379
+   }
+  },
+  "gtm_meeting_prep_research": {
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "combined": {
+    "nimble": 0.78,
+    "exa": 0.626,
+    "firecrawl": 0.652
+   }
+  },
+  "gtm_signal_tracking": {
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "combined": {
+    "nimble": 0.767,
+    "exa": 0.881,
+    "firecrawl": 0.55
+   }
+  }
+ },
+ "per_task": [
+  {
+   "id": "fin_credit_risk",
+   "name": "Credit risk",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 0,
+   "input": "Assess the credit and counterparty risk of Spirit Airlines",
+   "arms": {
+    "nimble": {
+     "units": 43,
+     "unverifiable": 5,
+     "true": 31,
+     "wrong": 7,
+     "truth": 53,
+     "coverage": 0.607,
+     "accuracy": 0.828,
+     "combined": 0.642,
+     "cost": 0.5,
+     "seconds": 320
+    },
+    "exa": {
+     "units": 14,
+     "unverifiable": 1,
+     "true": 13,
+     "wrong": 0,
+     "truth": 53,
+     "coverage": 0.244,
+     "accuracy": 1.0,
+     "combined": 0.288,
+     "cost": 0.5,
+     "seconds": 166
+    },
+    "parallel": {
+     "units": 11,
+     "unverifiable": 3,
+     "true": 8,
+     "wrong": 0,
+     "truth": 53,
+     "coverage": 0.148,
+     "accuracy": 1.0,
+     "combined": 0.179,
+     "cost": 0.6,
+     "seconds": 566
+    },
+    "firecrawl": {
+     "units": 26,
+     "unverifiable": 7,
+     "true": 19,
+     "wrong": 0,
+     "truth": 53,
+     "coverage": 0.378,
+     "accuracy": 1.0,
+     "combined": 0.431,
+     "cost": 0.2623,
+     "seconds": 296
+    }
+   },
+   "judge_cost_usd": 3.175
+  },
+  {
+   "id": "fin_credit_risk",
+   "name": "Credit risk",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 1,
+   "input": "Assess the credit and counterparty risk of Carvana",
+   "arms": {
+    "nimble": {
+     "units": 32,
+     "unverifiable": 2,
+     "true": 29,
+     "wrong": 1,
+     "truth": 47,
+     "coverage": 0.654,
+     "accuracy": 0.986,
+     "combined": 0.701,
+     "cost": 0.5,
+     "seconds": 245
+    },
+    "exa": {
+     "units": 31,
+     "unverifiable": 3,
+     "true": 28,
+     "wrong": 0,
+     "truth": 47,
+     "coverage": 0.579,
+     "accuracy": 1.0,
+     "combined": 0.633,
+     "cost": 0.5,
+     "seconds": 156
+    },
+    "firecrawl": {
+     "units": 23,
+     "unverifiable": 6,
+     "true": 17,
+     "wrong": 0,
+     "truth": 47,
+     "coverage": 0.393,
+     "accuracy": 1.0,
+     "combined": 0.447,
+     "cost": 0.4227,
+     "seconds": 317
+    }
+   },
+   "judge_cost_usd": 1.542
+  },
+  {
+   "id": "fin_credit_risk",
+   "name": "Credit risk",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 2,
+   "input": "Assess the credit and counterparty risk of Beyond Meat",
+   "arms": {
+    "nimble": {
+     "units": 41,
+     "unverifiable": 2,
+     "true": 38,
+     "wrong": 1,
+     "truth": 54,
+     "coverage": 0.72,
+     "accuracy": 0.969,
+     "combined": 0.759,
+     "cost": 0.5,
+     "seconds": 306
+    },
+    "exa": {
+     "units": 27,
+     "unverifiable": 3,
+     "true": 23,
+     "wrong": 1,
+     "truth": 54,
+     "coverage": 0.447,
+     "accuracy": 0.952,
+     "combined": 0.5,
+     "cost": 0.5,
+     "seconds": 166
+    },
+    "firecrawl": {
+     "units": 23,
+     "unverifiable": 5,
+     "true": 17,
+     "wrong": 1,
+     "truth": 54,
+     "coverage": 0.333,
+     "accuracy": 0.936,
+     "combined": 0.383,
+     "cost": 0.3089,
+     "seconds": 159
+    }
+   },
+   "judge_cost_usd": 1.768
+  },
+  {
+   "id": "fin_due_diligence",
+   "name": "Due diligence",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 0,
+   "input": "Write a due diligence memo on Rippling",
+   "arms": {
+    "nimble": {
+     "units": 51,
+     "unverifiable": 5,
+     "true": 41,
+     "wrong": 5,
+     "truth": 78,
+     "coverage": 0.612,
+     "accuracy": 0.898,
+     "combined": 0.654,
+     "red_flag_recall": 0.8571428571428571,
+     "cost": 0.5,
+     "seconds": 202
+    },
+    "exa": {
+     "units": 45,
+     "unverifiable": 4,
+     "true": 38,
+     "wrong": 3,
+     "truth": 78,
+     "coverage": 0.504,
+     "accuracy": 0.929,
+     "combined": 0.555,
+     "red_flag_recall": 0.5714285714285714,
+     "cost": 0.5,
+     "seconds": 187
+    },
+    "firecrawl": {
+     "units": 50,
+     "unverifiable": 3,
+     "true": 43,
+     "wrong": 4,
+     "truth": 78,
+     "coverage": 0.581,
+     "accuracy": 0.904,
+     "combined": 0.626,
+     "red_flag_recall": 0.5714285714285714,
+     "cost": 0.3693,
+     "seconds": 236
+    }
+   },
+   "judge_cost_usd": 1.583
+  },
+  {
+   "id": "fin_due_diligence",
+   "name": "Due diligence",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 1,
+   "input": "Write a due diligence memo on Canva",
+   "arms": {
+    "nimble": {
+     "units": 49,
+     "unverifiable": 3,
+     "true": 44,
+     "wrong": 2,
+     "truth": 60,
+     "coverage": 0.78,
+     "accuracy": 0.977,
+     "combined": 0.813,
+     "red_flag_recall": 0.8571428571428571,
+     "cost": 0.5,
+     "seconds": 171
+    },
+    "exa": {
+     "units": 31,
+     "unverifiable": 3,
+     "true": 28,
+     "wrong": 0,
+     "truth": 60,
+     "coverage": 0.523,
+     "accuracy": 1.0,
+     "combined": 0.578,
+     "red_flag_recall": 0.7142857142857143,
+     "cost": 0.5,
+     "seconds": 176
+    },
+    "firecrawl": {
+     "units": 39,
+     "unverifiable": 4,
+     "true": 32,
+     "wrong": 3,
+     "truth": 60,
+     "coverage": 0.56,
+     "accuracy": 0.91,
+     "combined": 0.606,
+     "red_flag_recall": 0.5714285714285714,
+     "cost": 0.892,
+     "seconds": 254
+    }
+   },
+   "judge_cost_usd": 1.906
+  },
+  {
+   "id": "fin_due_diligence",
+   "name": "Due diligence",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 2,
+   "input": "Write a due diligence memo on Deel",
+   "arms": {
+    "nimble": {
+     "units": 65,
+     "unverifiable": 2,
+     "true": 52,
+     "wrong": 11,
+     "truth": 70,
+     "coverage": 0.754,
+     "accuracy": 0.821,
+     "combined": 0.766,
+     "red_flag_recall": 0.8333333333333334,
+     "cost": 0.5,
+     "seconds": 449
+    },
+    "exa": {
+     "units": 41,
+     "unverifiable": 3,
+     "true": 35,
+     "wrong": 3,
+     "truth": 70,
+     "coverage": 0.5,
+     "accuracy": 0.905,
+     "combined": 0.549,
+     "red_flag_recall": 0.3333333333333333,
+     "cost": 0.5,
+     "seconds": 186
+    },
+    "firecrawl": {
+     "units": 34,
+     "unverifiable": 3,
+     "true": 28,
+     "wrong": 3,
+     "truth": 70,
+     "coverage": 0.403,
+     "accuracy": 0.885,
+     "combined": 0.452,
+     "red_flag_recall": 0.4166666666666667,
+     "cost": 0.195,
+     "seconds": 180
+    }
+   },
+   "judge_cost_usd": 2.024
+  },
+  {
+   "id": "fin_kyc_screening",
+   "name": "KYC screening",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 0,
+   "input": "Run a KYC screen on Revolut in the United Kingdom",
+   "arms": {
+    "nimble": {
+     "units": 33,
+     "unverifiable": 1,
+     "true": 31,
+     "wrong": 3.0,
+     "truth": 37,
+     "coverage": 0.846,
+     "accuracy": 0.912,
+     "combined": 0.859,
+     "cost": 0.5,
+     "seconds": 397
+    },
+    "exa": {
+     "units": 26,
+     "unverifiable": 2,
+     "true": 23,
+     "wrong": 3.0,
+     "truth": 37,
+     "coverage": 0.666,
+     "accuracy": 0.885,
+     "combined": 0.701,
+     "cost": 0.5,
+     "seconds": 217
+    },
+    "firecrawl": {
+     "units": 23,
+     "unverifiable": 0,
+     "true": 23,
+     "wrong": 0.0,
+     "truth": 37,
+     "coverage": 0.662,
+     "accuracy": 1.0,
+     "combined": 0.71,
+     "cost": 0.298,
+     "seconds": 190
+    }
+   },
+   "judge_cost_usd": 0.817
+  },
+  {
+   "id": "fin_kyc_screening",
+   "name": "KYC screening",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 1,
+   "input": "Run a KYC screen on Wirecard in Germany",
+   "arms": {
+    "nimble": {
+     "units": 29,
+     "unverifiable": 1,
+     "true": 27,
+     "wrong": 1.0,
+     "truth": 37,
+     "coverage": 0.759,
+     "accuracy": 0.964,
+     "combined": 0.793,
+     "cost": 0.5,
+     "seconds": 475
+    },
+    "exa": {
+     "units": 17,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 1.0,
+     "truth": 37,
+     "coverage": 0.593,
+     "accuracy": 0.941,
+     "combined": 0.64,
+     "cost": 1.3,
+     "seconds": 197
+    },
+    "firecrawl": {
+     "units": 22,
+     "unverifiable": 4,
+     "true": 16,
+     "wrong": 2.0,
+     "truth": 37,
+     "coverage": 0.684,
+     "accuracy": 0.889,
+     "combined": 0.717,
+     "cost": 0.6168,
+     "seconds": 264
+    }
+   },
+   "judge_cost_usd": 0.917
+  },
+  {
+   "id": "fin_kyc_screening",
+   "name": "KYC screening",
+   "vertical": "finance",
+   "tier": "high",
+   "i": 2,
+   "input": "Run a KYC screen on Greensill Capital in the United Kingdom",
+   "arms": {
+    "nimble": {
+     "units": 37,
+     "unverifiable": 3,
+     "true": 31,
+     "wrong": 5.0,
+     "truth": 35,
+     "coverage": 0.914,
+     "accuracy": 0.861,
+     "combined": 0.903,
+     "cost": 0.5,
+     "seconds": 1119
+    },
+    "exa": {
+     "units": 19,
+     "unverifiable": 1,
+     "true": 17,
+     "wrong": 1.0,
+     "truth": 35,
+     "coverage": 0.703,
+     "accuracy": 0.944,
+     "combined": 0.741,
+     "cost": 0.5,
+     "seconds": 187
+    },
+    "firecrawl": {
+     "units": 19,
+     "unverifiable": 1,
+     "true": 18,
+     "wrong": 0.0,
+     "truth": 35,
+     "coverage": 0.583,
+     "accuracy": 1.0,
+     "combined": 0.636,
+     "cost": 0.2891,
+     "seconds": 222
+    }
+   },
+   "judge_cost_usd": 0.866
+  },
+  {
+   "id": "fin_portfolio_monitoring",
+   "name": "Portfolio monitoring",
+   "vertical": "finance",
+   "tier": "medium",
+   "i": 0,
+   "input": "Check Intel for material events since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 0,
+     "unverifiable": 0,
+     "true": 0,
+     "wrong": 0,
+     "truth": 1,
+     "coverage": 0.0,
+     "accuracy": null,
+     "combined": 0.0,
+     "cost": 0.1,
+     "seconds": 122
+    },
+    "exa": {
+     "units": 2,
+     "unverifiable": 0,
+     "true": 0,
+     "wrong": 2,
+     "truth": 1,
+     "coverage": 0.0,
+     "accuracy": 0.0,
+     "combined": 0.0,
+     "cost": 0.1,
+     "seconds": 42
+    },
+    "parallel": {
+     "units": 1,
+     "unverifiable": 0,
+     "true": 1,
+     "wrong": 0,
+     "truth": 1,
+     "coverage": 1.0,
+     "accuracy": 1.0,
+     "combined": 1.0,
+     "cost": 0.1,
+     "seconds": 199
+    },
+    "firecrawl": {
+     "units": 0,
+     "unverifiable": 0,
+     "true": 0,
+     "wrong": 0,
+     "truth": 1,
+     "coverage": 0.0,
+     "accuracy": null,
+     "combined": 0.0,
+     "cost": 0.1346,
+     "seconds": 53
+    }
+   },
+   "judge_cost_usd": 0.217
+  },
+  {
+   "id": "fin_portfolio_monitoring",
+   "name": "Portfolio monitoring",
+   "vertical": "finance",
+   "tier": "medium",
+   "i": 1,
+   "input": "Check Peloton for material events since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 1,
+     "unverifiable": 0,
+     "true": 1,
+     "wrong": 0,
+     "truth": 2,
+     "coverage": 0.5,
+     "accuracy": 1.0,
+     "combined": 0.556,
+     "cost": 0.1,
+     "seconds": 184
+    },
+    "exa": {
+     "units": 1,
+     "unverifiable": 0,
+     "true": 1,
+     "wrong": 0,
+     "truth": 2,
+     "coverage": 0.5,
+     "accuracy": 1.0,
+     "combined": 0.556,
+     "cost": 0.1,
+     "seconds": 42
+    },
+    "parallel": {
+     "units": 1,
+     "unverifiable": 0,
+     "true": 1,
+     "wrong": 0,
+     "truth": 2,
+     "coverage": 0.5,
+     "accuracy": 1.0,
+     "combined": 0.556,
+     "cost": 0.1,
+     "seconds": 138
+    },
+    "firecrawl": {
+     "units": 2,
+     "unverifiable": 0,
+     "true": 1,
+     "wrong": 1,
+     "truth": 2,
+     "coverage": 0.5,
+     "accuracy": 0.5,
+     "combined": 0.5,
+     "cost": 0.1218,
+     "seconds": 64
+    }
+   },
+   "judge_cost_usd": 0.047
+  },
+  {
+   "id": "fin_portfolio_monitoring",
+   "name": "Portfolio monitoring",
+   "vertical": "finance",
+   "tier": "medium",
+   "i": 2,
+   "input": "Check Boeing for material events since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 1,
+     "truth": 10,
+     "coverage": 0.6,
+     "accuracy": 0.857,
+     "combined": 0.638,
+     "cost": 0.1,
+     "seconds": 183
+    },
+    "exa": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 5,
+     "wrong": 2,
+     "truth": 10,
+     "coverage": 0.5,
+     "accuracy": 0.714,
+     "combined": 0.532,
+     "cost": 0.1,
+     "seconds": 62
+    },
+    "parallel": {
+     "units": 8,
+     "unverifiable": 0,
+     "true": 7,
+     "wrong": 1,
+     "truth": 10,
+     "coverage": 0.7,
+     "accuracy": 0.875,
+     "combined": 0.729,
+     "cost": 0.1,
+     "seconds": 184
+    },
+    "firecrawl": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 1,
+     "truth": 10,
+     "coverage": 0.6,
+     "accuracy": 0.857,
+     "combined": 0.638,
+     "cost": 0.099,
+     "seconds": 86
+    }
+   },
+   "judge_cost_usd": 0.213
+  },
+  {
+   "id": "gtm_meeting_prep_research",
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 0,
+   "input": "Prepare me for a meeting with Attio (attio.com)",
+   "arms": {
+    "nimble": {
+     "units": 24,
+     "unverifiable": 5,
+     "true": 17,
+     "wrong": 2,
+     "truth": 25,
+     "coverage": 0.776,
+     "accuracy": 0.95,
+     "combined": 0.805,
+     "cost": 0.1,
+     "seconds": 199
+    },
+    "exa": {
+     "units": 17,
+     "unverifiable": 1,
+     "true": 11,
+     "wrong": 5,
+     "truth": 25,
+     "coverage": 0.469,
+     "accuracy": 0.793,
+     "combined": 0.511,
+     "cost": 0.1,
+     "seconds": 83
+    },
+    "parallel": {
+     "units": 12,
+     "unverifiable": 0,
+     "true": 12,
+     "wrong": 0,
+     "truth": 25,
+     "coverage": 0.51,
+     "accuracy": 1.0,
+     "combined": 0.566,
+     "cost": 0.1,
+     "seconds": 184
+    },
+    "firecrawl": {
+     "units": 20,
+     "unverifiable": 0,
+     "true": 15,
+     "wrong": 5,
+     "truth": 25,
+     "coverage": 0.673,
+     "accuracy": 0.846,
+     "combined": 0.702,
+     "cost": 0.1535,
+     "seconds": 85
+    }
+   },
+   "judge_cost_usd": 0.536
+  },
+  {
+   "id": "gtm_meeting_prep_research",
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 1,
+   "input": "Prepare me for a meeting with Datadog (datadoghq.com)",
+   "arms": {
+    "nimble": {
+     "units": 19,
+     "unverifiable": 4,
+     "true": 13,
+     "wrong": 2,
+     "truth": 20,
+     "coverage": 0.725,
+     "accuracy": 0.935,
+     "combined": 0.759,
+     "cost": 0.1,
+     "seconds": 152
+    },
+    "exa": {
+     "units": 16,
+     "unverifiable": 2,
+     "true": 13,
+     "wrong": 1,
+     "truth": 20,
+     "coverage": 0.75,
+     "accuracy": 0.968,
+     "combined": 0.785,
+     "cost": 0.1,
+     "seconds": 73
+    },
+    "parallel": {
+     "units": 8,
+     "unverifiable": 3,
+     "true": 5,
+     "wrong": 0,
+     "truth": 20,
+     "coverage": 0.325,
+     "accuracy": 1.0,
+     "combined": 0.376,
+     "cost": 0.1,
+     "seconds": 199
+    },
+    "firecrawl": {
+     "units": 15,
+     "unverifiable": 3,
+     "true": 11,
+     "wrong": 1,
+     "truth": 20,
+     "coverage": 0.525,
+     "accuracy": 0.955,
+     "combined": 0.577,
+     "cost": 0.098,
+     "seconds": 64
+    }
+   },
+   "judge_cost_usd": 1.146
+  },
+  {
+   "id": "gtm_meeting_prep_research",
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 2,
+   "input": "Prepare me for a meeting with Gong (gong.io)",
+   "arms": {
+    "nimble": {
+     "units": 20,
+     "unverifiable": 2,
+     "true": 15,
+     "wrong": 3,
+     "truth": 21,
+     "coverage": 0.75,
+     "accuracy": 0.892,
+     "combined": 0.775,
+     "cost": 0.1,
+     "seconds": 139
+    },
+    "exa": {
+     "units": 19,
+     "unverifiable": 0,
+     "true": 10,
+     "wrong": 9,
+     "truth": 21,
+     "coverage": 0.568,
+     "accuracy": 0.641,
+     "combined": 0.581,
+     "cost": 0.1,
+     "seconds": 73
+    },
+    "parallel": {
+     "units": 19,
+     "unverifiable": 0,
+     "true": 15,
+     "wrong": 4,
+     "truth": 21,
+     "coverage": 0.773,
+     "accuracy": 0.829,
+     "combined": 0.783,
+     "cost": 0.1,
+     "seconds": 230
+    },
+    "firecrawl": {
+     "units": 19,
+     "unverifiable": 0,
+     "true": 12,
+     "wrong": 7,
+     "truth": 21,
+     "coverage": 0.659,
+     "accuracy": 0.763,
+     "combined": 0.678,
+     "cost": 0.095,
+     "seconds": 85
+    }
+   },
+   "judge_cost_usd": 0.447
+  },
+  {
+   "id": "gtm_signal_tracking",
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 0,
+   "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 6,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 1.0,
+     "accuracy": 1.0,
+     "combined": 1.0,
+     "cost": 0.1,
+     "seconds": 122
+    },
+    "exa": {
+     "units": 6,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 1.0,
+     "accuracy": 1.0,
+     "combined": 1.0,
+     "cost": 0.1,
+     "seconds": 42
+    },
+    "parallel": {
+     "units": 5,
+     "unverifiable": 0,
+     "true": 5,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 0.857,
+     "accuracy": 1.0,
+     "combined": 0.882,
+     "cost": 0.1,
+     "seconds": 107
+    },
+    "firecrawl": {
+     "units": 1,
+     "unverifiable": 0,
+     "true": 1,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 0.286,
+     "accuracy": 1.0,
+     "combined": 0.333,
+     "cost": 0.0703,
+     "seconds": 53
+    }
+   },
+   "judge_cost_usd": 0.061
+  },
+  {
+   "id": "gtm_signal_tracking",
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 1,
+   "input": "Check Clay (clay.com) for changes since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 8,
+     "unverifiable": 0,
+     "true": 7,
+     "wrong": 1,
+     "truth": 9,
+     "coverage": 0.714,
+     "accuracy": 0.909,
+     "combined": 0.746,
+     "cost": 0.1,
+     "seconds": 213
+    },
+    "exa": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 7,
+     "wrong": 0,
+     "truth": 9,
+     "coverage": 0.786,
+     "accuracy": 1.0,
+     "combined": 0.821,
+     "cost": 0.1,
+     "seconds": 52
+    },
+    "parallel": {
+     "units": 5,
+     "unverifiable": 0,
+     "true": 5,
+     "wrong": 0,
+     "truth": 9,
+     "coverage": 0.429,
+     "accuracy": 1.0,
+     "combined": 0.484,
+     "cost": 0.1,
+     "seconds": 153
+    },
+    "firecrawl": {
+     "units": 5,
+     "unverifiable": 0,
+     "true": 5,
+     "wrong": 0,
+     "truth": 9,
+     "coverage": 0.643,
+     "accuracy": 1.0,
+     "combined": 0.692,
+     "cost": 0.0495,
+     "seconds": 53
+    }
+   },
+   "judge_cost_usd": 0.066
+  },
+  {
+   "id": "gtm_signal_tracking",
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 2,
+   "input": "Check Rippling (rippling.com) for changes since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 4,
+     "unverifiable": 0,
+     "true": 4,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.5,
+     "accuracy": 1.0,
+     "combined": 0.556,
+     "cost": 0.1,
+     "seconds": 215
+    },
+    "exa": {
+     "units": 6,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.786,
+     "accuracy": 1.0,
+     "combined": 0.821,
+     "cost": 0.1,
+     "seconds": 52
+    },
+    "parallel": {
+     "units": 4,
+     "unverifiable": 0,
+     "true": 4,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.5,
+     "accuracy": 1.0,
+     "combined": 0.556,
+     "cost": 0.1,
+     "seconds": 322
+    },
+    "firecrawl": {
+     "units": 4,
+     "unverifiable": 0,
+     "true": 4,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.571,
+     "accuracy": 1.0,
+     "combined": 0.625,
+     "cost": 0.1079,
+     "seconds": 85
+    }
+   },
+   "judge_cost_usd": 0.1
+  }
+ ],
+ "judge_audit": {
+  "units": 83,
+  "agree": 78,
+  "rate": 0.94
+ },
+ "judge_cost_usd": 17.43,
+ "rescore_mismatches": 0
+}

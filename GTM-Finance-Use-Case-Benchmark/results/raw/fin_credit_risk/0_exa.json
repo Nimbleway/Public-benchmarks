@@ -1,0 +1,154 @@
+{
+ "arm": "exa",
+ "tier": "high",
+ "status": "completed",
+ "seconds": 166,
+ "run_id": "agent_run_ad70ccb3af21417b85128a4e07e22c3e",
+ "output": {
+  "company": "Spirit Airlines, LLC (formerly Spirit Airlines, Inc.); operating airline, not parent Spirit Aviation Holdings, Inc. Assessment as of 2026-10-21.",
+  "ownership": {
+   "as_of": "2026-05-02",
+   "value": "Wholly owned operating subsidiary of Spirit Aviation Holdings, Inc. The March 2025 reorganization installed the new holding company as parent and converted former Spirit Airlines, Inc. into an LLC; the May 2026 wind-down announcement still identifies this parent/subsidiary relationship. This is not an independently listed airline operating company.",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000119312525161253/d614592d424b3.htm"
+  },
+  "risk_call": "high",
+  "financials": [
+   {
+    "value": 231834781,
+    "metric": "Cash held at Spirit Airlines, LLC; bankruptcy-report cash, not verified unrestricted liquidity",
+    "period": "As of 2026-08-31; reported 2026-09-25",
+    "currency": "USD",
+    "stated_by": "Spirit Did Not Pay Me, citing the airline’s August monthly operating report filed 2026-09-22, docket 1632; secondary-source transcription, not independently reconciled to the court report",
+    "source_url": "https://spiritdidnotpayme.com/blog/the-unpaid-employee-013/"
+   },
+   {
+    "value": null,
+    "metric": "Latest revenue for the exact operating-airline entity",
+    "period": null,
+    "currency": null,
+    "stated_by": null,
+    "source_url": null
+   },
+   {
+    "value": null,
+    "metric": "Latest operating income or EBITDA for the exact operating-airline entity",
+    "period": null,
+    "currency": null,
+    "stated_by": null,
+    "source_url": null
+   },
+   {
+    "value": null,
+    "metric": "Latest total debt for the exact operating-airline entity",
+    "period": null,
+    "currency": null,
+    "stated_by": null,
+    "source_url": null
+   },
+   {
+    "value": null,
+    "metric": "Current available revolver or quantified cash runway",
+    "period": null,
+    "currency": null,
+    "stated_by": null,
+    "source_url": null
+   }
+  ],
+  "debt_events": [
+   {
+    "date": "2025-08-29",
+    "summary": "Spirit Airlines, LLC is the borrower named in the second Chapter 11 proceeding’s interim DIP order, with Spirit Aviation Holdings and affiliates as guarantors. Proceedings are jointly administered under case 25-11897 in the Southern District of New York; joint administration does not make the parent and airline one legal obligor.",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4520590&projectCode=SPJ"
+   },
+   {
+    "date": "2025-12-15",
+    "summary": "The parent’s debt disclosure reports a $100 million additional new-money DIP draw, following $200 million on 2025-10-14 and $50 million on 2025-11-07. These are financing events under the airline-borrower DIP structure, not a standalone airline total-debt balance or evidence of currently available liquidity.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm"
+   },
+   {
+    "date": "2026-05-02",
+    "summary": "The company announced immediate wind-down and cancellation of all Spirit flights. It stated that no additional funding was available; CEO Dave Davis said continuing required hundreds of millions of dollars of liquidity that Spirit did not have and could not procure. The proposed March bondholder restructuring therefore did not preserve an operating airline.",
+    "source_url": "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf"
+   },
+   {
+    "date": "2026-10-14",
+    "summary": "Liquidation remained ongoing. A bankruptcy case update reported a simulator sale and continued aircraft-sale disputes; the proposed data sale hearing was adjourned to 2026-11-06. Asset realization and claims administration should not be mistaken for resumed airline operations or successful emergence.",
+    "source_url": "https://chapter11cases.com/blogs/news/spirit-airlines-case-update-the-data-sale-slips-to-november-as-spirit-moves-to-unwind-the-hfs-aircraft-deal"
+   }
+  ],
+  "credit_ratings": [
+   {
+    "date": "2026-05-06",
+    "summary": "Fitch affirmed Spirit Airlines, LLC at D and then withdrew its long-term issuer default rating (WD) the same day. The prior downgrade to D was 2025-09-04; the change within the last 12 months is withdrawal, not credit recovery. The opened issuer page shows WD as its latest status and no active outlook as of the assessment cutoff.",
+    "source_url": "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290"
+   }
+  ],
+  "missing_fields": [
+   "financials.latest_operating_airline_revenue",
+   "financials.latest_operating_airline_operating_income_or_EBITDA",
+   "financials.latest_operating_airline_total_debt",
+   "financials.current_unrestricted_cash_and_liquidity",
+   "financials.current_revolver_availability_or_cash_runway",
+   "financials.primary_court_verification_of_August_cash_and_more_recent_operating_airline_financials",
+   "financials.latest_standalone_operating_airline_10K_10Q_or_annual_report (opened 2025 annual report is parent consolidated; not substituted)",
+   "credit_ratings.current_Moodys_rating_and_outlook",
+   "credit_ratings.full_dated_SP_rating_action_text (opened pages exposed titles only)",
+   "payment_behaviour.verified_supplier_late_payment_reports_liens_or_judgments",
+   "ownership.current_ultimate_beneficial_owners_and_percentages",
+   "distress_signals.current_operating_airline_auditor_changes_or_standalone_auditor_going_concern_opinion"
+  ],
+  "risk_rationale": "As of 2026-10-21, this is realized default and liquidation risk, not merely a weak going concern: Spirit cancelled all flights on May 2 after reporting that it could not obtain the liquidity needed to continue ([company announcement](https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf)). Fitch subsequently affirmed D and withdrew its rating, while employee wage/benefit claims and continuing asset-sale proceedings demonstrate unresolved obligations ([Fitch](https://www.fitchratings.com/entity/spirit-airlines-inc-93771290), [NBC](https://www.nbcnews.com/news/us-news/former-spirit-workers-claim-are-still-owed-pay-benefits-lawsuit-says-rcna345088), [case update](https://chapter11cases.com/blogs/news/spirit-airlines-case-update-the-data-sale-slips-to-november-as-spirit-moves-to-unwind-the-hfs-aircraft-deal)). Do not extend ordinary unsecured trade credit or rely on future flight performance; any wind-down transaction requires estate-specific authority, payment protection and review of claim priority rather than reliance on the reported cash balance.",
+  "distress_signals": [
+   {
+    "date": "2026-05-02",
+    "summary": "Realized operating failure: all flights cancelled and immediate wind-down after the company could not obtain sufficient additional liquidity. The company attributed the failed turnaround to materially higher oil prices and other business pressures.",
+    "source_url": "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf"
+   },
+   {
+    "date": "2026-05-04",
+    "summary": "CNBC reported approximately 17,000 direct and indirect workers lost jobs; CEO Dave Davis remained to oversee closure with about 130 other employees. This is a shutdown workforce figure, not the operating airline’s audited headcount.",
+    "source_url": "https://www.cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html"
+   },
+   {
+    "date": "2026-03-16",
+    "summary": "The parent’s 2025 Form 10-K stated substantial doubt about continuing as a going concern and warned liquidation could be required. This is group-level disclosure relevant to the airline’s funding environment; its consolidated financial figures are not substituted for the requested operating entity’s figures.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   }
+  ],
+  "payment_behaviour": [
+   {
+    "date": "2026-05-14",
+    "summary": "NBC reported a proposed employee class action in the bankruptcy court alleging layoffs without required WARN notice and seeking unpaid wages and benefits. Some former employees reported missing final paychecks. These are allegations and employee reports, not an adjudicated damages award or verified supplier judgment.",
+    "source_url": "https://www.nbcnews.com/news/us-news/former-spirit-workers-claim-are-still-owed-pay-benefits-lawsuit-says-rcna345088"
+   },
+   {
+    "date": "2026-05-02",
+    "summary": "The company said flights purchased directly by credit/debit card would be automatically refunded, but compensation for vouchers, credits and Free Spirit points would be determined later through bankruptcy. This is a stated refund policy, not confirmation that all refunds or other customer claims have been paid.",
+    "source_url": "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf"
+   }
+  ]
+ },
+ "cost_usd": 0.5,
+ "cost_basis": "billed",
+ "error": null,
+ "data_sources": [
+  "financial_datasets",
+  "baselayer"
+ ],
+ "cost_breakdown": {
+  "total": 0.5,
+  "agentCompute": 0.2,
+  "search": 0.3,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "usage": {
+  "agentComputeUnits": 2,
+  "searches": 60,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "sub_use_case": "fin_credit_risk",
+ "input": "Assess the credit and counterparty risk of Spirit Airlines",
+ "input_n": 0
+}
