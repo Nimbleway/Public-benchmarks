@@ -1,12 +1,15 @@
-# usecase-bench: GTM and finance
+# usecase-bench: finance
 
-This benchmark measures how well web research agents do real GTM and finance
-research jobs: write a due diligence memo, assess credit risk, run a KYC screen,
-watch a company for material events, brief a seller before a meeting, and track
-account signals. Every provider gets the same instructions and the same output
-schema. Every fact a provider returns is checked against the live web, and each
-provider is scored on how many of the verified facts it found (coverage) and
-how many of its own facts were right (accuracy).
+This benchmark measures how well web research agents do real finance research
+jobs: write a due diligence memo, assess credit risk, run a KYC screen, and
+watch a company for material events. Every provider gets the same instructions
+and the same output schema. Every fact a provider returns is checked against
+the live web, and each provider is scored on how many of the verified facts it
+found (coverage) and how many of its own facts were right (accuracy).
+
+It is the finance half of a GTM and finance suite; the GTM half is in
+[`GTM-Use-Case-Benchmark/`](../GTM-Use-Case-Benchmark). Both were run together
+with the same harness, judge and method.
 
 Run on 2026-10-21. Judge: Claude (sonnet) through the Claude Code CLI, with a
 second model (opus) re-checking a 10% sample.
@@ -17,14 +20,6 @@ Three providers ran every task: Nimble, Exa and Firecrawl. Higher is better for
 combined, accuracy and coverage. Wins = tasks where the provider had the highest
 combined score (ties broken by coverage).
 
-### All 18 tasks
-
-| Provider | Combined | Accuracy | Coverage | Wins | Avg cost / run | Median seconds |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Nimble | 0.707 | 0.927 | 0.678 | 15/18 | $0.30 | 208 |
-| Exa | 0.600 | 0.871 | 0.562 | 3/18 | $0.34 | 120 |
-| Firecrawl | 0.542 | 0.909 | 0.502 | 0/18 | $0.26 | 122 |
-
 ### Finance (12 tasks)
 
 | Provider | Combined | Accuracy | Coverage | Wins | Avg cost / run | Median seconds |
@@ -33,24 +28,14 @@ combined score (ties broken by coverage).
 | Exa | 0.523 | 0.856 | 0.480 | 0/12 | $0.47 | 171 |
 | Firecrawl | 0.512 | 0.898 | 0.473 | 0/12 | $0.33 | 206 |
 
-### GTM (6 tasks)
-
-| Provider | Combined | Accuracy | Coverage | Wins | Avg cost / run | Median seconds |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Nimble | 0.774 | 0.948 | 0.744 | 3/6 | $0.10 | 176 |
-| Exa | 0.753 | 0.900 | 0.727 | 3/6 | $0.10 | 62 |
-| Firecrawl | 0.601 | 0.927 | 0.559 | 0/6 | $0.10 | 74 |
-
 ### Combined score by use case (mean of 3 tasks)
 
-| Use case | Vertical | Tier | Nimble | Exa | Firecrawl |
-| :--- | :--- | :--- | :---: | :---: | :---: |
-| Credit risk | finance | high | 0.701 | 0.474 | 0.420 |
-| Due diligence | finance | high | 0.744 | 0.561 | 0.561 |
-| KYC screening | finance | high | 0.852 | 0.694 | 0.688 |
-| Portfolio monitoring | finance | medium | 0.398 | 0.363 | 0.379 |
-| Account brief (meeting prep) | gtm | medium | 0.780 | 0.626 | 0.652 |
-| Account signals | gtm | medium | 0.767 | 0.881 | 0.550 |
+| Use case | Tier | Nimble | Exa | Firecrawl |
+| :--- | :--- | :---: | :---: | :---: |
+| Credit risk | high | 0.701 | 0.474 | 0.420 |
+| Due diligence | high | 0.744 | 0.561 | 0.561 |
+| KYC screening | high | 0.852 | 0.694 | 0.688 |
+| Portfolio monitoring | medium | 0.398 | 0.363 | 0.379 |
 
 Cost is the list price per run for Nimble and Parallel, Exa's billed cost
 (one KYC run billed $1.30 with its data partners), and for Firecrawl the run
@@ -59,14 +44,18 @@ credits plus paid provider credits times the Standard plan rate ($0.99 per
 time.
 
 Judge agreement: on the 10% audit sample, the second model agreed with the
-verdict on 78 of 83 units (94%).
+verdict on 66 of 70 units (94%) in this suite, and on 78 of 83 units (94%)
+across the GTM and finance suites together.
 
 ### Parallel (partial)
 
-Parallel was run on all 18 tasks, but the account ran out of credit and 8 of
-the 18 requests were rejected (credit risk on Carvana and Beyond Meat, all three due
-diligence tasks and all three KYC tasks). Its partial results are listed separately and are not in the
-headline. The table covers the 10 tasks where all four providers were scored.
+Parallel was run on all 12 finance tasks, but the account ran out of credit and
+8 of the 12 requests were rejected (credit risk on Carvana and Beyond Meat, all
+three due diligence tasks and all three KYC tasks). Its partial results are
+listed separately and are not in the headline. The table below is from the
+combined GTM and finance run and covers the 10 tasks across both suites where
+all four providers were scored (credit risk on Spirit Airlines, the three
+portfolio monitoring tasks, and the six GTM tasks).
 
 | Provider | Combined | Accuracy | Coverage | Wins | Avg cost / run | Median seconds |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -75,18 +64,26 @@ headline. The table covers the 10 tasks where all four providers were scored.
 | Exa | 0.590 | 0.812 | 0.560 | 3/10 | $0.14 | 57 |
 | Firecrawl | 0.518 | 0.880 | 0.483 | 0/10 | $0.12 | 74 |
 
+### GTM and finance together (18 tasks)
+
+For reference, the headline across this suite and the GTM suite:
+
+| Provider | Combined | Accuracy | Coverage | Wins | Avg cost / run | Median seconds |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Nimble | 0.707 | 0.927 | 0.678 | 15/18 | $0.30 | 208 |
+| Exa | 0.600 | 0.871 | 0.562 | 3/18 | $0.34 | 120 |
+| Firecrawl | 0.542 | 0.909 | 0.502 | 0/18 | $0.26 | 122 |
+
 ## Scope
 
-This suite covers 6 of the 10 GTM and finance use cases we tested. The other
-four (account discovery, account enrichment, decision-maker identification,
-deal sourcing) are not included.
+This suite and the GTM suite together cover 6 of the 10 GTM and finance use
+cases we tested. The other four (account discovery, account enrichment,
+decision-maker identification, deal sourcing) are not included.
 
 ## Use cases and tasks
 
-Six use cases, three tasks each. The full instructions and output schema for
+Four use cases, three tasks each. The full instructions and output schema for
 each use case are in [`usecase_bench/tasks.json`](usecase_bench/tasks.json).
-
-**Finance**
 
 | Use case | Tier | Tasks |
 | :--- | :--- | :--- |
@@ -94,13 +91,6 @@ each use case are in [`usecase_bench/tasks.json`](usecase_bench/tasks.json).
 | Due diligence | high | Write a due diligence memo on Rippling · Write a due diligence memo on Canva · Write a due diligence memo on Deel |
 | KYC screening | high | Run a KYC screen on Revolut in the United Kingdom · Run a KYC screen on Wirecard in Germany · Run a KYC screen on Greensill Capital in the United Kingdom |
 | Portfolio monitoring | medium | Check Intel for material events since 2026-09-21 · Check Peloton for material events since 2026-09-21 · Check Boeing for material events since 2026-09-21 |
-
-**GTM**
-
-| Use case | Tier | Tasks |
-| :--- | :--- | :--- |
-| Account brief (meeting prep) | medium | Prepare me for a meeting with Attio (attio.com) · Prepare me for a meeting with Datadog (datadoghq.com) · Prepare me for a meeting with Gong (gong.io) |
-| Account signals | medium | Check Mercury (mercury.com) for changes since 2026-09-21 · Check Clay (clay.com) for changes since 2026-09-21 · Check Rippling (rippling.com) for changes since 2026-09-21 |
 
 ## Providers and price-matched tiers
 
@@ -135,8 +125,8 @@ Exa Connect data partners listed per use case in `tasks.json`
    judge (Claude, via the Claude Code CLI, with WebSearch and WebFetch). It
    opens the cited URL first, then searches. Each unit gets true / false /
    unverifiable, whether it is in scope, and a tag that sets its weight
-   (materiality, signal type, KYC group). Units are checked in batches of 5,
-   with the same rules for every provider.
+   (materiality, KYC group). Units are checked in batches of 5, with the same
+   rules for every provider.
 5. **Score.** The truth set for a task is the pool of units verified true and
    in scope, from any provider.
    - **Coverage** = the share of the pooled verified-true, in-scope units that
@@ -157,8 +147,6 @@ Scoring unit per use case:
 | Due diligence | Unit = material finding, weighted for an investment committee: critical 3, useful 2, minor 1. Red-flag recall reported separately. |
 | KYC screening | Unit = KYC fact, by group: registration 40% (7 fields), officers and owners 20% (capped at 5), screening findings 40%. A false sanctions or adverse-media hit weighs 3x in accuracy. |
 | Portfolio monitoring | Unit = event after the since-date. Only material events count; a non-material event counts against accuracy. |
-| Account brief (meeting prep) | Unit = distinct finding, weighted by usefulness to the seller: critical 3, useful 2, minor 1. |
-| Account signals | Unit = event after the since-date. Buying signals (funding, leadership, expansion, hiring push, major launch, M&A, pricing) weigh 2; minor releases weigh 1. |
 
 A second model (Claude opus) independently re-checks about 10% of units. Its
 verdicts are stored as `audit` and only used to report judge agreement; they
@@ -194,7 +182,7 @@ Requires Python 3.11+ and the [Claude Code CLI](https://docs.claude.com/en/docs/
 (`claude`, logged in) for the judge.
 
 ```bash
-cd GTM-Finance-Use-Case-Benchmark
+cd Finance-Use-Case-Benchmark
 uv sync            # or: pip install -e .
 cp .env.example .env   # add your keys
 ```
@@ -223,18 +211,20 @@ python -m usecase_bench.score
 
 Each step takes optional use case ids (for example `fin_kyc_screening`) to run
 a subset. `score.py` also re-computes every task's scores from the stored
-verdicts and reports any mismatch.
+verdicts and reports any mismatch. The 18-task and 10-task tables above span
+both suites, so they are not produced by this folder's `score.py`; they are
+the means over the per-task scores in both suites' `summary.json`.
 
-Approximate cost for all 18 tasks:
+Approximate cost for all 12 tasks:
 
 | Item | Cost |
 | :--- | :--- |
-| Nimble | $5.40 (list) |
-| Exa | about $6.20 (billed) |
-| Firecrawl | about $4.60 (credits at the Standard plan rate) |
-| Parallel | about $6.30 (list) |
-| Judge, extract + merge | under $10 |
-| Judge, verify + audit | about $17 |
+| Nimble | $4.80 (list) |
+| Exa | about $5.60 (billed) |
+| Firecrawl | about $4.00 (credits at the Standard plan rate) |
+| Parallel | about $5.70 (list) |
+| Judge, extract + merge | under $10 (for the GTM and finance suites together) |
+| Judge, verify + audit | about $15 |
 
 `run.py` stops submitting to a provider once its spend passes a cap
 (`CAP_USD`: $20 each, $60 for Firecrawl).
