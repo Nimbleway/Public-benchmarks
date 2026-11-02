@@ -1,0 +1,305 @@
+[
+ {
+  "id": "gtm_meeting_prep_research",
+  "name": "Account brief (meeting prep)",
+  "vertical": "gtm",
+  "tier": "medium",
+  "use_case": "research",
+  "instructions": "You prepare a seller for a meeting with ONE company. The seller wants to understand the company's\ncurrent priorities and challenges, so they can judge fit and steer the conversation.\n\nCover:\n- what_they_do: one sentence in the company's own terms.\n- priorities: 3-5 things the company is investing in now (from launches, hiring, exec statements, earnings calls,\n  blog posts), each with evidence and a date.\n- challenges: 2-4 problems the company is visibly dealing with (complaints, layoffs, competitive pressure, regulatory,\n  missed targets), each with evidence and a date. Do not invent pains.\n- recent_changes: events in the last 90 days (funding, leadership, launches, M&A, partnerships, layoffs).\n- key_people: up to 5 leaders relevant to the meeting, with title and one line on what they recently said or did.\n- talking_points: 3 short questions or angles tied to the evidence above.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "company": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "what_they_do": {
+     "type": "object",
+     "properties": {
+      "value": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "source_url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "as_of": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    "priorities": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "priority": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "evidence": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "challenges": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "challenge": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "evidence": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "recent_changes": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "type": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "headline": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "key_people": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "title": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "recent": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "talking_points": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    },
+    "missing_fields": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "description": "fields you could not verify from a page you opened"
+    }
+   }
+  },
+  "exa_data_sources": [
+   "fiber"
+  ],
+  "inputs": [
+   "Prepare me for a meeting with Attio (attio.com)",
+   "Prepare me for a meeting with Datadog (datadoghq.com)",
+   "Prepare me for a meeting with Gong (gong.io)"
+  ],
+  "scoring_rule": "Unit = distinct finding, weighted by usefulness to the seller: critical 3, useful 2, minor 1.",
+  "unit": {
+   "name": "distinct finding",
+   "definition": "One unit per distinct finding a seller would use: each priority, each challenge, each recent change/event, each key person with their role. Restatements of the same finding are one unit; generic company description is one unit at most.",
+   "verify_rule": "true if the finding is real, about this company, and current (events inside the last 90 days)."
+  },
+  "judge_tag": {
+   "key": "materiality",
+   "spec": "\"materiality\": \"critical|useful|minor\"  (for a seller preparing this meeting)"
+  }
+ },
+ {
+  "id": "gtm_signal_tracking",
+  "name": "Account signals",
+  "vertical": "gtm",
+  "tier": "medium",
+  "use_case": "research",
+  "instructions": "You check ONE company for changes since a given date (in the input as \"since YYYY-MM-DD\").\n\nReport only events dated after that date:\n- funding, acquisitions, leadership hires and departures, layoffs, new offices or markets,\n- product launches and major releases,\n- pricing page changes (new plans, removed free tier) if a dated source shows them,\n- big hiring pushes (many new roles in one function).\n\nFor each event: date, type, headline, one-line summary, source_url. If nothing changed, return an empty list. Do not\nrepeat older events to fill the list.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "company": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "since": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "events": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "type": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "headline": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "summary": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "checked_sources": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "exa_data_sources": [
+   "fiber"
+  ],
+  "inputs": [
+   "Check Mercury (mercury.com) for changes since 2026-09-21",
+   "Check Clay (clay.com) for changes since 2026-09-21",
+   "Check Rippling (rippling.com) for changes since 2026-09-21"
+  ],
+  "scoring_rule": "Unit = event after the since-date. Buying signals (funding, leadership, expansion, hiring push, major launch, M&A, pricing) weigh 2; minor releases weigh 1.",
+  "unit": {
+   "name": "event",
+   "definition": "One unit per distinct dated event the output reports. The same event reported twice is one unit.",
+   "verify_rule": "true only if the event really happened, is about this company, and is dated AFTER the since-date in the task."
+  },
+  "judge_tag": {
+   "key": "signal",
+   "spec": "\"signal\": \"buying|minor\"  (buying = funding, leadership change, expansion, hiring push, major launch, M&A, pricing change; minor = routine feature or changelog entry)"
+  }
+ }
+]

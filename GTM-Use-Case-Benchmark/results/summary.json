@@ -1,0 +1,485 @@
+{
+ "views": {
+  "all_3way": {
+   "n_tasks": 6,
+   "tasks": [
+    "gtm_meeting_prep_research#0",
+    "gtm_meeting_prep_research#1",
+    "gtm_meeting_prep_research#2",
+    "gtm_signal_tracking#0",
+    "gtm_signal_tracking#1",
+    "gtm_signal_tracking#2"
+   ],
+   "arms": {
+    "nimble": {
+     "n": 6,
+     "combined": 0.774,
+     "accuracy": 0.948,
+     "coverage": 0.744,
+     "wins": 3,
+     "avg_cost_usd": 0.1,
+     "median_seconds": 175.5,
+     "unverifiable_rate": 0.136
+    },
+    "exa": {
+     "n": 6,
+     "combined": 0.753,
+     "accuracy": 0.9,
+     "coverage": 0.727,
+     "wins": 3,
+     "avg_cost_usd": 0.1,
+     "median_seconds": 62.5,
+     "unverifiable_rate": 0.042
+    },
+    "firecrawl": {
+     "n": 6,
+     "combined": 0.601,
+     "accuracy": 0.927,
+     "coverage": 0.559,
+     "wins": 0,
+     "avg_cost_usd": 0.096,
+     "median_seconds": 74.5,
+     "unverifiable_rate": 0.047
+    }
+   }
+  },
+  "parallel_4way": {
+   "n_tasks": 6,
+   "tasks": [
+    "gtm_meeting_prep_research#0",
+    "gtm_meeting_prep_research#1",
+    "gtm_meeting_prep_research#2",
+    "gtm_signal_tracking#0",
+    "gtm_signal_tracking#1",
+    "gtm_signal_tracking#2"
+   ],
+   "arms": {
+    "nimble": {
+     "n": 6,
+     "combined": 0.774,
+     "accuracy": 0.948,
+     "coverage": 0.744,
+     "wins": 2,
+     "avg_cost_usd": 0.1,
+     "median_seconds": 175.5,
+     "unverifiable_rate": 0.136
+    },
+    "exa": {
+     "n": 6,
+     "combined": 0.753,
+     "accuracy": 0.9,
+     "coverage": 0.727,
+     "wins": 3,
+     "avg_cost_usd": 0.1,
+     "median_seconds": 62.5,
+     "unverifiable_rate": 0.042
+    },
+    "parallel": {
+     "n": 6,
+     "combined": 0.608,
+     "accuracy": 0.972,
+     "coverage": 0.566,
+     "wins": 1,
+     "avg_cost_usd": 0.1,
+     "median_seconds": 191.5,
+     "unverifiable_rate": 0.057
+    },
+    "firecrawl": {
+     "n": 6,
+     "combined": 0.601,
+     "accuracy": 0.927,
+     "coverage": 0.559,
+     "wins": 0,
+     "avg_cost_usd": 0.096,
+     "median_seconds": 74.5,
+     "unverifiable_rate": 0.047
+    }
+   }
+  }
+ },
+ "by_use_case": {
+  "gtm_meeting_prep_research": {
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "combined": {
+    "nimble": 0.78,
+    "exa": 0.626,
+    "firecrawl": 0.652
+   }
+  },
+  "gtm_signal_tracking": {
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "combined": {
+    "nimble": 0.767,
+    "exa": 0.881,
+    "firecrawl": 0.55
+   }
+  }
+ },
+ "per_task": [
+  {
+   "id": "gtm_meeting_prep_research",
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 0,
+   "input": "Prepare me for a meeting with Attio (attio.com)",
+   "arms": {
+    "nimble": {
+     "units": 24,
+     "unverifiable": 5,
+     "true": 17,
+     "wrong": 2,
+     "truth": 25,
+     "coverage": 0.776,
+     "accuracy": 0.95,
+     "combined": 0.805,
+     "cost": 0.1,
+     "seconds": 199
+    },
+    "exa": {
+     "units": 17,
+     "unverifiable": 1,
+     "true": 11,
+     "wrong": 5,
+     "truth": 25,
+     "coverage": 0.469,
+     "accuracy": 0.793,
+     "combined": 0.511,
+     "cost": 0.1,
+     "seconds": 83
+    },
+    "parallel": {
+     "units": 12,
+     "unverifiable": 0,
+     "true": 12,
+     "wrong": 0,
+     "truth": 25,
+     "coverage": 0.51,
+     "accuracy": 1.0,
+     "combined": 0.566,
+     "cost": 0.1,
+     "seconds": 184
+    },
+    "firecrawl": {
+     "units": 20,
+     "unverifiable": 0,
+     "true": 15,
+     "wrong": 5,
+     "truth": 25,
+     "coverage": 0.673,
+     "accuracy": 0.846,
+     "combined": 0.702,
+     "cost": 0.1535,
+     "seconds": 85
+    }
+   },
+   "judge_cost_usd": 0.536
+  },
+  {
+   "id": "gtm_meeting_prep_research",
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 1,
+   "input": "Prepare me for a meeting with Datadog (datadoghq.com)",
+   "arms": {
+    "nimble": {
+     "units": 19,
+     "unverifiable": 4,
+     "true": 13,
+     "wrong": 2,
+     "truth": 20,
+     "coverage": 0.725,
+     "accuracy": 0.935,
+     "combined": 0.759,
+     "cost": 0.1,
+     "seconds": 152
+    },
+    "exa": {
+     "units": 16,
+     "unverifiable": 2,
+     "true": 13,
+     "wrong": 1,
+     "truth": 20,
+     "coverage": 0.75,
+     "accuracy": 0.968,
+     "combined": 0.785,
+     "cost": 0.1,
+     "seconds": 73
+    },
+    "parallel": {
+     "units": 8,
+     "unverifiable": 3,
+     "true": 5,
+     "wrong": 0,
+     "truth": 20,
+     "coverage": 0.325,
+     "accuracy": 1.0,
+     "combined": 0.376,
+     "cost": 0.1,
+     "seconds": 199
+    },
+    "firecrawl": {
+     "units": 15,
+     "unverifiable": 3,
+     "true": 11,
+     "wrong": 1,
+     "truth": 20,
+     "coverage": 0.525,
+     "accuracy": 0.955,
+     "combined": 0.577,
+     "cost": 0.098,
+     "seconds": 64
+    }
+   },
+   "judge_cost_usd": 1.146
+  },
+  {
+   "id": "gtm_meeting_prep_research",
+   "name": "Account brief (meeting prep)",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 2,
+   "input": "Prepare me for a meeting with Gong (gong.io)",
+   "arms": {
+    "nimble": {
+     "units": 20,
+     "unverifiable": 2,
+     "true": 15,
+     "wrong": 3,
+     "truth": 21,
+     "coverage": 0.75,
+     "accuracy": 0.892,
+     "combined": 0.775,
+     "cost": 0.1,
+     "seconds": 139
+    },
+    "exa": {
+     "units": 19,
+     "unverifiable": 0,
+     "true": 10,
+     "wrong": 9,
+     "truth": 21,
+     "coverage": 0.568,
+     "accuracy": 0.641,
+     "combined": 0.581,
+     "cost": 0.1,
+     "seconds": 73
+    },
+    "parallel": {
+     "units": 19,
+     "unverifiable": 0,
+     "true": 15,
+     "wrong": 4,
+     "truth": 21,
+     "coverage": 0.773,
+     "accuracy": 0.829,
+     "combined": 0.783,
+     "cost": 0.1,
+     "seconds": 230
+    },
+    "firecrawl": {
+     "units": 19,
+     "unverifiable": 0,
+     "true": 12,
+     "wrong": 7,
+     "truth": 21,
+     "coverage": 0.659,
+     "accuracy": 0.763,
+     "combined": 0.678,
+     "cost": 0.095,
+     "seconds": 85
+    }
+   },
+   "judge_cost_usd": 0.447
+  },
+  {
+   "id": "gtm_signal_tracking",
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 0,
+   "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 6,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 1.0,
+     "accuracy": 1.0,
+     "combined": 1.0,
+     "cost": 0.1,
+     "seconds": 122
+    },
+    "exa": {
+     "units": 6,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 1.0,
+     "accuracy": 1.0,
+     "combined": 1.0,
+     "cost": 0.1,
+     "seconds": 42
+    },
+    "parallel": {
+     "units": 5,
+     "unverifiable": 0,
+     "true": 5,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 0.857,
+     "accuracy": 1.0,
+     "combined": 0.882,
+     "cost": 0.1,
+     "seconds": 107
+    },
+    "firecrawl": {
+     "units": 1,
+     "unverifiable": 0,
+     "true": 1,
+     "wrong": 0,
+     "truth": 6,
+     "coverage": 0.286,
+     "accuracy": 1.0,
+     "combined": 0.333,
+     "cost": 0.0703,
+     "seconds": 53
+    }
+   },
+   "judge_cost_usd": 0.061
+  },
+  {
+   "id": "gtm_signal_tracking",
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 1,
+   "input": "Check Clay (clay.com) for changes since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 8,
+     "unverifiable": 0,
+     "true": 7,
+     "wrong": 1,
+     "truth": 9,
+     "coverage": 0.714,
+     "accuracy": 0.909,
+     "combined": 0.746,
+     "cost": 0.1,
+     "seconds": 213
+    },
+    "exa": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 7,
+     "wrong": 0,
+     "truth": 9,
+     "coverage": 0.786,
+     "accuracy": 1.0,
+     "combined": 0.821,
+     "cost": 0.1,
+     "seconds": 52
+    },
+    "parallel": {
+     "units": 5,
+     "unverifiable": 0,
+     "true": 5,
+     "wrong": 0,
+     "truth": 9,
+     "coverage": 0.429,
+     "accuracy": 1.0,
+     "combined": 0.484,
+     "cost": 0.1,
+     "seconds": 153
+    },
+    "firecrawl": {
+     "units": 5,
+     "unverifiable": 0,
+     "true": 5,
+     "wrong": 0,
+     "truth": 9,
+     "coverage": 0.643,
+     "accuracy": 1.0,
+     "combined": 0.692,
+     "cost": 0.0495,
+     "seconds": 53
+    }
+   },
+   "judge_cost_usd": 0.066
+  },
+  {
+   "id": "gtm_signal_tracking",
+   "name": "Account signals",
+   "vertical": "gtm",
+   "tier": "medium",
+   "i": 2,
+   "input": "Check Rippling (rippling.com) for changes since 2026-09-21",
+   "arms": {
+    "nimble": {
+     "units": 4,
+     "unverifiable": 0,
+     "true": 4,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.5,
+     "accuracy": 1.0,
+     "combined": 0.556,
+     "cost": 0.1,
+     "seconds": 215
+    },
+    "exa": {
+     "units": 6,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.786,
+     "accuracy": 1.0,
+     "combined": 0.821,
+     "cost": 0.1,
+     "seconds": 52
+    },
+    "parallel": {
+     "units": 4,
+     "unverifiable": 0,
+     "true": 4,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.5,
+     "accuracy": 1.0,
+     "combined": 0.556,
+     "cost": 0.1,
+     "seconds": 322
+    },
+    "firecrawl": {
+     "units": 4,
+     "unverifiable": 0,
+     "true": 4,
+     "wrong": 0,
+     "truth": 8,
+     "coverage": 0.571,
+     "accuracy": 1.0,
+     "combined": 0.625,
+     "cost": 0.1079,
+     "seconds": 85
+    }
+   },
+   "judge_cost_usd": 0.1
+  }
+ ],
+ "judge_audit": {
+  "units": 13,
+  "agree": 12,
+  "rate": 0.923
+ },
+ "judge_cost_usd": 2.36,
+ "rescore_mismatches": 0
+}

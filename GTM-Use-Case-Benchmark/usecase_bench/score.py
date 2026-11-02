@@ -86,8 +86,6 @@ def summarize(rs, arms):
 
 
 views = {
-    "finance_3way": summarize([t for t in rows if t["vertical"] == "finance"], THREE),
-    "gtm_3way": summarize([t for t in rows if t["vertical"] == "gtm"], THREE),
     "all_3way": summarize(rows, THREE),
     "parallel_4way": summarize(rows, ARMS),
 }
@@ -115,15 +113,13 @@ def table(view, title):
 
 
 if __name__ == "__main__":
-    table("all_3way", "All use cases")
-    table("finance_3way", "Finance")
-    table("gtm_3way", "GTM")
+    table("all_3way", "GTM")
     table("parallel_4way", "Partial: tasks where all four providers were scored")
     print("\n### Combined score by use case\n")
-    print("| Use case | Vertical | Tier | Nimble | Exa | Firecrawl |")
-    print("| :--- | :--- | :--- | :---: | :---: | :---: |")
+    print("| Use case | Tier | Nimble | Exa | Firecrawl |")
+    print("| :--- | :--- | :---: | :---: | :---: |")
     for b in by_use_case.values():
         c = b["combined"]
-        print(f"| {b['name']} | {b['vertical']} | {b['tier']} | {c.get('nimble', 0):.3f} | {c.get('exa', 0):.3f} | {c.get('firecrawl', 0):.3f} |")
+        print(f"| {b['name']} | {b['tier']} | {c.get('nimble', 0):.3f} | {c.get('exa', 0):.3f} | {c.get('firecrawl', 0):.3f} |")
     print(f"\nJudge audit agreement (second model on ~10% of units): {audit['agree']}/{audit['units']} = {audit['rate']}")
     print(f"Judge cost (verify step): ${summary['judge_cost_usd']}   rescore mismatches: {mismatches}")

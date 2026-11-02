@@ -1,4 +1,4 @@
-"""GTM and finance use-case benchmark for web research agents.
+"""GTM use-case benchmark for web research agents.
 
 Paths: tasks.json lives next to this file; all outputs go to <repo>/results/ (override with BENCH_RESULTS).
 """
