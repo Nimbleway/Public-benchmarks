@@ -1,0 +1,157 @@
+{
+ "arm": "opus",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Attio (attio.com)",
+ "input_n": 0,
+ "tier": "medium",
+ "status": "completed",
+ "seconds": 104,
+ "run_id": "c11a0697-2ab7-4227-98d8-06782df252dd",
+ "output": {
+  "company": "Attio (attio.com)",
+  "what_they_do": {
+   "value": "Attio calls itself \"The CRM for agentic revenue\": \"the platform that builds pipeline, advances deals, and grows accounts around the clock.\"",
+   "source_url": "https://attio.com/",
+   "as_of": "2026-11-10"
+  },
+  "priorities": [
+   {
+    "priority": "Rebuilding its CRM so AI agents can use it like a database ('architecture for agentic revenue')",
+    "evidence": "In a launch post, CEO Nicolas Sharp announced four things: a SQL Engine, Data Connectors (a live, read-only endpoint that BI tools can query like a Postgres database), Agent Scale (hundreds of millions of records and thousands of agents running at once) and Activities (in beta). SQL questions in Ask Attio come with every plan. SQL through the API, MCP or Workflows, and Data Connectors, are Enterprise-only. Sharp: \"It is the first hybrid architecture engineered for people and agents in equal measure.\"",
+    "date": "2026-10 (a third-party post dates it 2026-10-14)",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+   },
+   {
+    "priority": "Scaling infrastructure for agent and MCP traffic",
+    "evidence": "Sharp said Attio handles 1.6B API calls a month and that MCP use grows about 50% month over month, with about 37M MCP calls projected for the month (as of Oct 2026). He said Attio is raising storage limits by another order of magnitude, and he confirmed an eight-figure compute deal.",
+    "date": "2026-10-16",
+    "source_url": "https://dealroom.co/news/talk-pqa5OQ7fkN4-attio-goes-agent-native-sql-access-event-data-and-1-6-billion-api-calls/"
+   },
+   {
+    "priority": "Pulling in third-party event and interaction data to build a single customer view",
+    "evidence": "Activities (beta) stores support conversations, social DMs and product events, each with its own custom fields. Sharp described taking in event data such as website visits, and using a vector store to link calls, emails and tickets to the right records.",
+    "date": "2026-10",
+    "source_url": "https://dealroom.co/news/talk-pqa5OQ7fkN4-attio-goes-agent-native-sql-access-event-data-and-1-6-billion-api-calls/"
+   },
+   {
+    "priority": "Expanding Workflows automation and agent visibility",
+    "evidence": "Aug 25: new Workflows apps and blocks. Sep 23: workflow history and an agent log, new blocks that turn conversations into actions, Resend and ClickUp integrations. Oct 29: more Workflows updates, a new inbox and redesigned record pages.",
+    "date": "2026-08-25 to 2026-10-29",
+    "source_url": "https://attio.com/changelog/2026"
+   },
+   {
+    "priority": "Building AI and agent talent through acqui-hires",
+    "evidence": "Inconvo (YC S23), which builds tools for data agents, joined Attio. Its founders, Eoghan and Liam Mulcahy, moved into Attio's Engineering team 'to expand its agents and integrations ecosystem'.",
+    "date": "2026-07",
+    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
+   }
+  ],
+  "challenges": [
+   {
+    "challenge": "Rising AI inference and compute costs",
+    "evidence": "Sharp acknowledged that AI inference costs are rising. He said fast revenue and customer growth offset them, and confirmed an eight-figure compute deal.",
+    "date": "2026-10-16",
+    "source_url": "https://dealroom.co/news/talk-pqa5OQ7fkN4-attio-goes-agent-native-sql-access-event-data-and-1-6-billion-api-calls/"
+   },
+   {
+    "challenge": "Price increase and credit-based billing making costs less predictable for customers",
+    "evidence": "Per a third-party pricing breakdown: in July 2026, Plus went from $29 to $35 per seat per month and Pro from $69 to $79 (billed annually). Enrichment and Ask Attio now use monthly credits. A separate review says several 2026 reviewers flag that 'credit usage needs watching' and that heavy AI or enrichment users can go over the sticker price.",
+    "date": "2026-07 (page updated 2026-09-30)",
+    "source_url": "https://marketbetter.ai/blog/attio-crm-pricing-breakdown-2026/"
+   },
+   {
+    "challenge": "User complaints about reporting, integrations and support at lower tiers",
+    "evidence": "Third-party G2 summary: built-in reporting is 'overly generic' and users export to Google Sheets. The native integration library is thin, so people fall back on Zapier. Standard support answers by email in 12–24 hours, and there is no SLA below Enterprise.",
+    "date": "2026-08-29",
+    "source_url": "https://marketbetter.ai/blog/attio-crm-review-2026/"
+   },
+   {
+    "challenge": "Competition from incumbents adding agents to their own CRMs, and pressure on standalone tools",
+    "evidence": "Sharp said software tools on their own are hard to defend as they become commodities. A third-party analysis of the launch points to Salesforce putting its CRM inside Claude, Agentforce charging about $0.10 per action, and vendors such as Gong, Clari, Outreach and Apollo adding agents.",
+    "date": "2026-10",
+    "source_url": "https://marketbetter.ai/blog/attio-agent-native-crm-architecture/"
+   }
+  ],
+  "recent_changes": [
+   {
+    "date": "2026-10-29",
+    "type": "launch",
+    "headline": "Activities, new inbox, redesigned record pages, Workflows updates, developer changelog",
+    "summary": "A large product release that includes Activities for logging events that move a deal, plus a separate developer changelog.",
+    "source_url": "https://attio.com/changelog/2026"
+   },
+   {
+    "date": "2026-10-16",
+    "type": "exec statement",
+    "headline": "CEO: 1.6B API calls a month, MCP up about 50% month over month, eight-figure compute deal",
+    "summary": "Dealroom 'Scaling Europe' interview about Attio becoming infrastructure that agents can use directly.",
+    "source_url": "https://dealroom.co/news/talk-pqa5OQ7fkN4-attio-goes-agent-native-sql-access-event-data-and-1-6-billion-api-calls/"
+   },
+   {
+    "date": "2026-10 (third-party date: 2026-10-14)",
+    "type": "launch",
+    "headline": "Architecture for agentic revenue",
+    "summary": "Launch of the SQL Engine, Data Connectors, Agent Scale and Activities (beta). API and BI access is limited to Enterprise.",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+   },
+   {
+    "date": "2026-09-23",
+    "type": "launch",
+    "headline": "Workflow history and agent log; a more intuitive Ask Attio",
+    "summary": "Every workflow and agent run can now be inspected. Also new workflow blocks and Resend and ClickUp integrations.",
+    "source_url": "https://attio.com/changelog/2026"
+   },
+   {
+    "date": "2026-08-25",
+    "type": "launch",
+    "headline": "New Workflows apps and blocks, rename system objects, developer platform updates",
+    "summary": "More ways to extend the platform, plus dictation for Ask Attio.",
+    "source_url": "https://attio.com/changelog/2026"
+   }
+  ],
+  "key_people": [
+   {
+    "name": "Nicolas Sharp",
+    "title": "CEO & Co-founder",
+    "recent": "Wrote the Oct 2026 'architecture for agentic revenue' launch post. Told Dealroom that Attio handles 1.6B API calls a month and that systems of record are where the lasting value sits.",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+   },
+   {
+    "name": "Alexander Christie",
+    "title": "CTO",
+    "recent": "Philip Beevers, the VP of Engineering hired in Sep 2025, reports to him. I found no recent statements from him.",
+    "source_url": "https://www.faradaypartners.com/insights/faraday-supports-attio-in-the-appointment-of-philip-beevers-as-vp-of-engineering"
+   },
+   {
+    "name": "Philip Beevers",
+    "title": "VP of Engineering",
+    "recent": "Joined in Sep 2025 from Snyk, where he was SVP of Engineering. He spent nine years at Google and was VP leading Cloud Monitoring, Logging and SRE. He is likely to own the scale and infrastructure work.",
+    "source_url": "https://www.faradaypartners.com/insights/faraday-supports-attio-in-the-appointment-of-philip-beevers-as-vp-of-engineering"
+   },
+   {
+    "name": "Eoghan Mulcahy",
+    "title": "Engineering (Inconvo co-founder, joined via acquisition)",
+    "recent": "Joined in July 2026 to expand Attio's agents and integrations ecosystem.",
+    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
+   }
+  ],
+  "talking_points": [
+   "You're taking in third-party events like website visits, product events and support tickets through Activities. What external data do your customers most want in Attio that's hard to get or keep fresh today?",
+   "MCP calls are growing about 50% a month and you signed an eight-figure compute deal. How are you balancing data and inference costs against credit pricing customers can predict, after the July repricing?",
+   "Reviewers say integrations are thin and people fall back on Zapier. Is the Workflows apps roadmap built in-house, or are you open to partners supplying data and connectors for agents?"
+  ],
+  "missing_fields": [
+   "funding after the Aug 2025 $52M Series B (one aggregator claims a Sep 2026 $115M Series D at a $7.1B valuation, which I could not verify)",
+   "VP of Sales or other 2026 leadership hires (one search snippet named a 'Maya White', but the Attio homepage I opened did not show it)",
+   "headcount (secondary sources disagree: 170–204; I did not open them)",
+   "revenue or ARR figures",
+   "exact day of the agentic revenue architecture launch on Attio's own page",
+   "layoffs (none found)"
+  ]
+ },
+ "raw_text": null,
+ "cost_usd": 0.3294229,
+ "cost_basis": "Claude Code reported, API-equivalent",
+ "num_turns": 16,
+ "completed_on": "2026-11-10"
+}

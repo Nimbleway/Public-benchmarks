@@ -1,49 +1,46 @@
 {
  "arm": "exa",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Attio (attio.com)",
+ "input_n": 0,
  "tier": "medium",
  "status": "completed",
- "seconds": 83,
- "run_id": "agent_run_3b7e80aa2b4d48548eb18d68fb88ba93",
+ "seconds": 104,
+ "run_id": "agent_run_4e8a2fb1849d456e81e3a267df367cfa",
  "output": {
   "company": "Attio",
   "challenges": [
    {
-    "date": "2026-04-20",
-    "evidence": "A customer review said Attio was capable but difficult to justify at roughly €1,000 per seat annually for a focused workflow, with more functionality than needed; the reviewer ultimately built the needed functionality with Claude Code.",
-    "challenge": "Proving price-to-value for simpler CRM use cases.",
-    "source_url": "https://www.trustpilot.com/review/attio.com"
+    "date": "2026-03-10",
+    "evidence": "A customer review reported two weeks of difficulty connecting exhibition leads, inability to enroll more than 10 people at a time in sequences, slow support, and system bugs.",
+    "challenge": "Workflow and outreach scalability can create customer friction.",
+    "source_url": "https://www.capterra.com/p/259360/Attio/"
    },
    {
-    "date": "2025-12-08",
-    "evidence": "A Trustpilot review reported an outage caused by a system bug, lost leads, and dissatisfaction with support; the page identifies the review as dated December 8, 2025.",
-    "challenge": "Reliability and support experience remain visible customer concerns.",
-    "source_url": "https://www.trustpilot.com/review/attio.com"
+    "date": "2026-03-10",
+    "evidence": "A customer review said workflow credit consumption becomes expensive for complex automations and cited a 100-record limit for a “find records” workflow block, making some bulk use cases difficult.",
+    "challenge": "Automation economics and bulk-processing limits may constrain complex or large-scale workflows.",
+    "source_url": "https://www.capterra.com/p/259360/Attio/"
    },
    {
-    "date": "2026-01-26",
-    "evidence": "A customer review reported being unable to upload contacts, broken mapping, and unhelpful errors.",
-    "challenge": "Contact-data import and onboarding friction.",
-    "source_url": "https://www.trustpilot.com/review/attio.com"
-   },
-   {
-    "date": "2026-10-15",
-    "evidence": "The CTO said advanced customers demand both incredible scale and reliability, while Attio is evolving CRM into a hybrid application/infrastructure platform; the launch materials also keep Activities in beta.",
-    "challenge": "Attio must translate ambitious agentic-platform capabilities into dependable customer outcomes at scale.",
-    "source_url": "https://attio.com/engineering/blog/A-new-type-of-user-requires-a-new-type-of-architecture"
+    "date": "2026-02-04",
+    "evidence": "Its engineering thesis describes schema as context and generative application logic as core problems in building the AI future of CRM, rather than simply layering prompts onto a conventional CRM.",
+    "challenge": "Attio is tackling the technical complexity of making CRM data useful to both humans and agents.",
+    "source_url": "https://attio.com/engineering/blog/introducing-universal-context"
    }
   ],
   "key_people": [
    {
     "name": "Nicolas Sharp",
     "title": "CEO & Co-founder",
-    "recent": "Authored the October 2026 agentic-revenue launch and positioned the four beta capabilities as the foundation for scaling revenue motions.",
+    "recent": "Authored the October launch of Attio’s architecture for Agentic Revenue and framed the company’s next phase around a hybrid architecture for people and agents.",
     "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
    },
    {
     "name": "Alexander Christie",
     "title": "CTO & Co-founder",
-    "recent": "Authored the October 2026 architecture post explaining Project Centaur, SQL, Data Connectors, Interfaces, and the infrastructure demands of agents.",
-    "source_url": "https://attio.com/engineering/blog/A-new-type-of-user-requires-a-new-type-of-architecture"
+    "recent": "Outlined Attio’s Universal Context approach, describing schema-as-context and generative application logic as foundations for AI-native CRM.",
+    "source_url": "https://attio.com/engineering/blog/introducing-universal-context"
    },
    {
     "name": "Shriya Anand",
@@ -52,95 +49,93 @@
     "source_url": "https://attio.com/blog/why-attio-hires-graduates"
    },
    {
-    "name": "Eoghan Mulcahy",
-    "title": "Inconvo co-founder; joined Attio Engineering",
-    "recent": "Joined Attio in July 2026 and said he was excited to help shape how AI becomes part of the CRM experience.",
-    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
-   },
-   {
-    "name": "Liam Mulcahy",
-    "title": "Inconvo co-founder; joined Attio Engineering",
-    "recent": "Joined Attio in July 2026 and highlighted Attio’s technical depth and care for users as reasons for joining.",
-    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
+    "name": "Kate Donnellan",
+    "title": "Campaigns Lead",
+    "recent": "Described Attio’s brand campaign positioning: AI changes the work leading to a win, while the human celebration of winning remains constant.",
+    "source_url": "https://attio.com/blog/behind-attios-latest-brand-campaign"
    }
   ],
   "priorities": [
    {
     "date": "2026-10-14",
-    "evidence": "Attio launched SQL Engine, Data Connectors, Agent Scale, and Activities in beta, describing them as the foundation for scaling any revenue motion.",
-    "priority": "Build the hybrid architecture for agentic revenue—software designed for people and agents together.",
+    "evidence": "Attio launched a hybrid architecture for people and agents, positioning it as the foundation for scaling revenue operations.",
+    "priority": "Build the architecture for agentic revenue: a CRM designed for people and AI agents to work together.",
     "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
-   },
-   {
-    "date": "2026-10-15",
-    "evidence": "The CTO described Project Centaur: PostgreSQL-compatible SQL over Universal Context, live Data Connectors, API/MCP access, and BI tools querying CRM data without ETL or a warehouse.",
-    "priority": "Make Attio a high-scale, directly queryable data platform for agents and enterprise analytics.",
-    "source_url": "https://attio.com/engineering/blog/A-new-type-of-user-requires-a-new-type-of-architecture"
-   },
-   {
-    "date": "2025-08-26",
-    "evidence": "In the Series B announcement, Attio said it was scaling engineering, expanding globally, and accelerating AI-primitives development; it identified engineering and go-to-market as its two unrelenting focus areas.",
-    "priority": "Invest heavily in engineering, AI primitives, and global go-to-market expansion.",
-    "source_url": "https://attio.com/blog/attio-raises-52m-series-b"
-   },
-   {
-    "date": "2026-08-05",
-    "evidence": "Attio opened applications for its fourth Graduate Associate cohort and listed hiring across GTM Engineering, Customer Success & Support, Partnerships, Growth, Campaigns, Lifecycle, and operations.",
-    "priority": "Build the talent pipeline and broaden hiring across GTM, marketing, and operations.",
-    "source_url": "https://attio.com/blog/why-attio-hires-graduates"
-   },
-   {
-    "date": "2026-07-28",
-    "evidence": "Formula Attributes adds calculations, historical-value functions, reactive updates, reporting, workflow triggers, and sequence personalization; the post emphasizes exact answers for forecasting and agentic work.",
-    "priority": "Give revenue teams deterministic, reusable analytics and automation from their CRM data.",
-    "source_url": "https://attio.com/blog/formula-attributes"
-   }
-  ],
-  "what_they_do": {
-   "as_of": "2026-10-21",
-   "value": "Attio is the agentic CRM that meets you where you work, compounds every customer signal into context, then acts on it across your pipeline to let you move at unmatched speed and scale.",
-   "source_url": "https://attio.com/brand"
-  },
-  "missing_fields": [],
-  "recent_changes": [
-   {
-    "date": "2026-10-15",
-    "type": "Product/architecture launch",
-    "summary": "Attio unveiled Project Centaur, PostgreSQL-compatible SQL, live Data Connectors, and new Interfaces including Activities and Interactions.",
-    "headline": "A new type of user requires a new type of architecture",
-    "source_url": "https://attio.com/engineering/blog/A-new-type-of-user-requires-a-new-type-of-architecture"
    },
    {
     "date": "2026-10-14",
-    "type": "Product launch",
-    "summary": "Attio launched SQL Engine, Data Connectors, Agent Scale, and Activities in beta as a hybrid architecture for people and agents.",
-    "headline": "Introducing the architecture for agentic revenue",
+    "evidence": "The launch introduced a SQL engine, a live Postgres-compatible Data Connectors endpoint, and support for agents working across hundreds of millions of records.",
+    "priority": "Expand agent-scale data access and analytics through SQL and live data connectivity.",
     "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
    },
    {
-    "date": "2026-07-09",
-    "type": "Acqui-hire/team expansion",
-    "summary": "Inconvo co-founders Eoghan and Liam Mulcahy joined Attio’s Engineering team to expand its ecosystem of agents and integrations.",
-    "headline": "Inconvo is joining Attio",
-    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
+    "date": "2026-10-14",
+    "evidence": "Activities launched in beta to capture support conversations, social DMs, product events, and other interactions as structured first-class data.",
+    "priority": "Broaden the CRM data model beyond email and meetings so agents can act on more customer signals.",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
    },
    {
     "date": "2026-08-05",
-    "type": "Hiring",
-    "summary": "Attio opened applications for a six-month cohort with potential full-time roles, spanning GTM, marketing, and operations.",
+    "evidence": "Attio says it is scaling engineering, expanding globally, and accelerating AI primitives; its graduate program is being opened for a fourth cohort, with graduates moving into full-time roles across the company.",
+    "priority": "Scale engineering, global operations, and the talent pipeline around AI-native CRM.",
+    "source_url": "https://attio.com/blog/why-attio-hires-graduates"
+   }
+  ],
+  "what_they_do": {
+   "as_of": "2026-11-09",
+   "value": "Attio is the agentic CRM that meets you where you work, compounds every customer signal into context, then acts on it across your pipeline to let you move at unmatched speed and scale.",
+   "source_url": "https://attio.com/brand"
+  },
+  "missing_fields": [
+   "recent_changes.funding",
+   "recent_changes.leadership_change",
+   "recent_changes.layoffs",
+   "key_people.Drew Peterson recent statement or action"
+  ],
+  "recent_changes": [
+   {
+    "date": "2026-10-14",
+    "type": "Product launch",
+    "summary": "Attio launched SQL Engine, Data Connectors, Agent Scale, and Activities in beta, with SQL-powered questions available in Ask Attio on all plans and enterprise availability for API/MCP/Workflow SQL and Data Connectors.",
+    "headline": "Introducing the architecture for Agentic Revenue",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+   },
+   {
+    "date": "2026-10-29",
+    "type": "Product updates",
+    "summary": "Attio shipped a cluster of product updates focused on capturing deal activity, putting more process on autopilot, and improving record navigation.",
+    "headline": "Activities, workflow updates, and redesigned record pages",
+    "source_url": "https://attio.com/changelog/2026/activities"
+   },
+   {
+    "date": "2026-11-06",
+    "type": "Developer-platform update",
+    "summary": "Attio added workflow defer reasons and expanded domain validation in its App SDK.",
+    "headline": "App SDK v1.1.9",
+    "source_url": "https://docs.attio.com/changelog/app-sdk"
+   },
+   {
+    "date": "2026-08-05",
+    "type": "Hiring / talent program",
+    "summary": "Attio opened applications for its fourth six-month Graduate Associate cohort, continuing a stated strategy of hiring and developing early-career builders.",
     "headline": "Fourth Graduate Associate cohort opened",
     "source_url": "https://attio.com/blog/why-attio-hires-graduates"
    }
   ],
   "talking_points": [
-   "With SQL Engine, Data Connectors, Agent Scale, and Activities now in beta, which customer workflows are the highest priority to make reliable and production-ready first?",
-   "How is Attio balancing the push toward a warehouse-like agent platform with the need to prove simple, focused CRM users get clear value for the price?",
-   "What would make an integration or data partner most useful as Attio expands agent access, live analytics, and the Inconvo capabilities across its ecosystem?"
+   "How are you deciding which revenue motions should be agent-owned versus human-reviewed as SQL, Data Connectors, Agent Scale, and Activities move from launch into adoption?",
+   "What needs to improve most for customers running high-volume workflows—sequence limits, bulk processing, credit economics, or support reliability?",
+   "As Attio expands engineering, global operations, and its graduate pipeline, where is the biggest execution bottleneck in turning the agentic-CRM vision into repeatable enterprise adoption?"
   ]
  },
  "cost_usd": 0.1,
  "cost_basis": "billed",
- "error": null,
+ "usage": {
+  "agentComputeUnits": 0.4,
+  "searches": 12,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
  "data_sources": [
   "fiber"
  ],
@@ -151,13 +146,6 @@
   "emails": 0,
   "phoneNumbers": 0
  },
- "usage": {
-  "agentComputeUnits": 0.4,
-  "searches": 12,
-  "emails": 0,
-  "phoneNumbers": 0
- },
- "sub_use_case": "gtm_meeting_prep_research",
- "input": "Prepare me for a meeting with Attio (attio.com)",
- "input_n": 0
+ "error": null,
+ "completed_on": "2026-11-09"
 }

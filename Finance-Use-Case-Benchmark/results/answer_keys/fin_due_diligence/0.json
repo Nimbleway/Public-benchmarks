@@ -1,0 +1,129 @@
+{
+ "sub": "fin_due_diligence",
+ "i": 0,
+ "task": "Write a due diligence memo on Rippling",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is the correct legal entity and what is the last confirmed primary funding round and valuation?",
+   "answer": "The operating company is Rippling People Center, Inc. (Rippling), a Delaware corporation headquartered in San Francisco. Its last confirmed primary round is the $450M Series G in May 2025 at a $16.8B valuation, reported by Reuters. The earlier valuations were $11.25B (Greenoaks, 2023) and $13.5B (Coatue). Aggregators report secondary-market valuations near $20.8B (Dec 2025). They also list unverified 2026 rounds (e.g. a '$500M Series I, Jul 2026'), and I found no primary report for any of those. Verify against Delaware and SEC Form D filings before relying on a valuation. I did not check the registry number.",
+   "importance": "critical",
+   "source": "https://www-web.itiger.com/news/2534536144"
+  },
+  {
+   "id": "k2",
+   "question": "What is the status of the Rippling v. Deel litigation (corporate espionage, RICO), and what is Rippling's exposure on the Deel countersuit?",
+   "answer": "Rippling sued Deel in N.D. Cal. in March 2025, alleging an employee spied on it. The June 2025 amended complaint added RICO and Defend Trade Secrets Act claims against Deel, CEO Alex Bouaziz, Philippe Bouaziz and COO Daniel Westgarth. Deel denies the allegations. Deel countersued for defamation and unfair trade practices, and moved to dismiss or transfer to Ireland. My searches returned nothing after mid-2025, so I could not find the outcome of the September 2025 hearing or any ruling or settlement since. The PACER docket needs to be pulled. Rippling is mainly the plaintiff here, so it is not a defendant-risk item. The risks are cost and distraction, plus the chance that the countersuit succeeds.",
+   "importance": "critical",
+   "source": "https://techcrunch.com/2025/06/05/rippling-calls-deel-a-criminal-syndicate-and-claims-4-other-competitors-were-spied-on-too/"
+  },
+  {
+   "id": "k3",
+   "question": "What is the revenue and ARR scale and growth rate, and who estimated it?",
+   "answer": "Third-party and aggregator estimates (arr.club, Latka, Wikipedia) put ARR at about $850M at end of 2025 and crossing roughly $1B around March–July 2026, with about 78% YoY growth. All of these are estimates, not audited, and one aggregator (techstackipo) gives an inconsistent $600M+, which should be disregarded. Rippling is private and publishes no financials. The figures need to be requested directly or checked against the company's own statements.",
+   "importance": "critical",
+   "source": "https://www.arr.club/rippling/rippling-surpasses-1b-arr-with-78-yoy-growth"
+  },
+  {
+   "id": "k4",
+   "question": "Who leads the company and have there been notable executive departures or layoffs?",
+   "answer": "Parker Conrad (co-founder, CEO) leads the company. He previously founded Zenefits, where he was ousted in 2016 amid a compliance scandal. Co-founder Prasanna Sankar is reported to have left his role earlier, according to a single directory source. CRO Matt Plank is a named executive. My searches found no 2026 layoffs and no reported CEO change. A check of recent C-suite departures on LinkedIn and in press is still needed. This is 'none found' from one search, not exhaustive.",
+   "importance": "critical",
+   "source": "https://en.wikipedia.org/wiki/Rippling_(company)"
+  },
+  {
+   "id": "k5",
+   "question": "Is there a prior record of compliance problems with the founder or the company, and any data breach, regulatory action or sanctions exposure?",
+   "answer": "Conrad's prior company Zenefits had a state insurance-licensing scandal and an SEC settlement in 2017, which is a governance-history flag. I found no regulatory action, breach or sanctions hit against Rippling itself in my searches. Those searches were general web searches; I did not query regulator or court sites or OFAC directly. A proper check of OFAC/SDN, state AG and DOL actions, and breach databases is still outstanding. Rippling handles payroll, PII and EOR across many countries, so the exposure is structural.",
+   "importance": "critical",
+   "source": "https://en.wikipedia.org/wiki/Rippling_(company)"
+  },
+  {
+   "id": "k6",
+   "question": "What does Rippling sell, to whom, and who are the main competitors?",
+   "answer": "Rippling sells a unified workforce platform covering HRIS, payroll, benefits, IT/device management, spend management and EOR/global payroll. It is sold SaaS per employee per month with modular add-ons, mainly to SMB and mid-market customers, with an expanding enterprise segment. It operates in the US and internationally. Competitors include Deel, Gusto, ADP, Paycom, Workday and Justworks.",
+   "importance": "useful",
+   "source": "https://en.wikipedia.org/wiki/Rippling_(company)"
+  },
+  {
+   "id": "k7",
+   "question": "Is an IPO or liquidity event planned?",
+   "answer": "In 2025 the company said it had no IPO plans while raising the Series G. Secondary sales have taken place, and trackers list IPO speculation only. I found no S-1 or confidential filing report. The investment team should confirm whether any liquidity path is planned.",
+   "importance": "useful",
+   "source": "https://www-web.itiger.com/news/2534536144"
+  }
+ ],
+ "labels": {
+  "parallel": "C",
+  "firecrawl": "D",
+  "opus": "E",
+  "gpt": "F",
+  "exa": "H",
+  "nimble": "I"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.277
+}

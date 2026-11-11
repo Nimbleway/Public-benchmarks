@@ -1,0 +1,129 @@
+{
+ "sub": "fin_adverse_media",
+ "i": 1,
+ "task": "Find bribery and market-manipulation enforcement actions involving Glencore since 2018",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which Glencore legal entities are the correct subjects, and who is the ultimate parent?",
+   "answer": "The parent is Glencore plc. It is incorporated in Jersey (company no. 107710) and its operating HQ is in Baar, Switzerland. The entities named in the enforcement actions are Glencore International AG (Switzerland), Glencore Ltd (US) and Glencore Energy UK Ltd (UK). Namesakes such as Glencore Canada Corp or small shell companies, and Glencore Xstrata-era pre-2013 entities, need separate screening. Registry numbers for the subsidiaries should be checked against Companies House and the Swiss commercial register. I have not verified them here.",
+   "importance": "critical",
+   "source": "https://www.glencore.com"
+  },
+  {
+   "id": "k2",
+   "question": "What was the 2022 US resolution (DOJ/CFTC) for bribery and price manipulation, and what was its status?",
+   "answer": "On 24 May 2022, Glencore International AG and Glencore Ltd pleaded guilty in SDNY. The charges were conspiracy to violate the FCPA, covering bribery in Nigeria, Cameroon, Ivory Coast, Equatorial Guinea, Brazil, Venezuela and the DRC. They also pleaded guilty to commodity price manipulation conspiracy, covering fuel-oil benchmarks at US Gulf Coast and in New York Harbor. Sentencing followed in Nov 2022. Total US penalties were about $1.1bn from DOJ, plus a CFTC order of about $1.19bn, with credits between agencies. The reported combined figure was roughly $1.5bn or more. An independent compliance monitor was imposed for about 3 years. The status is convicted and settled.",
+   "importance": "critical",
+   "source": "https://www.justice.gov/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes"
+  },
+  {
+   "id": "k3",
+   "question": "What is the UK SFO outcome for Glencore Energy UK, and are individuals still being prosecuted?",
+   "answer": "The SFO opened its investigation in 2019. Glencore Energy UK Ltd pleaded guilty to 7 counts of bribery (West Africa oil dealings). It was sentenced on 3 Nov 2023 at Southwark Crown Court to about £281m in total, including a fine, confiscation and costs. Separately, the SFO charged several former Glencore traders and executives in 2024, including ex-head of oil Alex Beard. They deny the charges and a trial is listed for about 2027. These individual cases remain open. Verify the current dates.",
+   "importance": "critical",
+   "source": "https://www.sfo.gov.uk/2023/11/03/glencore-energy-uk-ltd-sentenced/"
+  },
+  {
+   "id": "k4",
+   "question": "What happened in Switzerland, the Netherlands and Brazil?",
+   "answer": "Switzerland: in Aug 2024 the Office of the Attorney General fined Glencore International AG about CHF 150m, comprising a fine and compensation, for failing to prevent bribery in the DRC. The Swiss action was a summary penalty order, i.e. settled. The Dutch authorities (OM) and Brazil's MPF also investigated. Brazil's Petrobras-related bribery was partly resolved through DOJ credit. The Dutch investigation was still being reported as open in later filings. The current status of the Dutch matter should be checked.",
+   "importance": "critical",
+   "source": "https://www.glencore.com/media-and-insights/news"
+  },
+  {
+   "id": "k5",
+   "question": "What exposure remains open: civil litigation, monitorship, and other country probes?",
+   "answer": "Open items are shareholder and investor claims (UK s90A FSMA group litigation and Australian class actions) over disclosure of the bribery and manipulation. There are also claims from counterparties and states, such as Nigeria and DRC-related claims. The DOJ-imposed compliance monitorship runs to about 2025–26, so confirm whether it has ended. Probes in other jurisdictions, such as Dutch, Brazilian and Nigerian matters, are also still listed. Current Glencore annual and half-year reports list these items.",
+   "importance": "critical",
+   "source": "https://www.glencore.com/investors/reports-results"
+  },
+  {
+   "id": "k6",
+   "question": "Is Glencore or its management on a sanctions or PEP list?",
+   "answer": "I found no evidence that Glencore plc or its subsidiaries are on OFAC, EU or UK sanctions lists. Dan Gertler, a former Glencore partner in the DRC, was sanctioned by OFAC, which is a separate person and not a Glencore entity. Re-run the screening against live lists before relying on this. I did not run a live screen.",
+   "importance": "useful",
+   "source": "https://sanctionssearch.ofac.treas.gov"
+  },
+  {
+   "id": "k7",
+   "question": "What is the overall risk view, and which events after 2023 change the position?",
+   "answer": "Glencore has been convicted or has settled in the US, UK and Switzerland, with penalties of over $1.5bn in total. These resolutions all date from 2022–2024. Residual risk is concentrated in the UK individual trials (about 2027), Dutch and Brazilian probes, shareholder litigation and the monitorship. Strategy and leadership may have changed, for example the early-2026 merger talks with Rio Tinto, so check recent news. Treat the company as elevated-risk with remediation in progress.",
+   "importance": "critical",
+   "source": "https://www.sfo.gov.uk/cases/glencore/"
+  }
+ ],
+ "labels": {
+  "opus": "A",
+  "nimble": "B",
+  "firecrawl": "C",
+  "parallel": "D",
+  "exa": "E",
+  "gpt": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.173
+}

@@ -1,0 +1,1067 @@
+{
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input_n": 3,
+ "task": "Find founder-owned US specialty chemical distributors with 50-250 employees and no private equity owner",
+ "labels": {
+  "exa": "A",
+  "firecrawl": "B",
+  "parallel": "C",
+  "gpt": "D",
+  "opus": "E",
+  "nimble": "F"
+ },
+ "unit": "company",
+ "evidence_pages": 64,
+ "evidence_fetched": 62,
+ "retried_to_verdict": 3,
+ "unverifiable_first_pass": 8,
+ "decided_from_passages": 0,
+ "judge": "v4b",
+ "judge_cost_usd": 1.417,
+ "corrections_v2": {
+  "ownership_changes": [
+   {
+    "cid": "c1",
+    "criterion": "no PE owner",
+    "from": "unknown",
+    "to": "pass",
+    "why": "The owner-operator founder is named as owner, and no PE or institutional owner was found. That satisfies the ownership rule."
+   },
+   {
+    "cid": "c4",
+    "criterion": "founder-owned",
+    "from": "fail",
+    "to": "pass",
+    "why": "The Hilleary family has owned the company since 1981, and CEO Brad Hilleary is listed as owner. Family-owned and owner-operated satisfy the criterion. The headcount gap is a separate criterion."
+   },
+   {
+    "cid": "c4",
+    "criterion": "no PE owner",
+    "from": "unknown",
+    "to": "pass",
+    "why": "The company is family-owned and owner-operated, and no institutional owner is shown."
+   },
+   {
+    "cid": "c5",
+    "criterion": "founder-owned",
+    "from": "fail",
+    "to": "pass",
+    "why": "Hubbard-Hall is sixth-generation family-owned, which satisfies the family-owned criterion under the rule."
+   },
+   {
+    "cid": "c6",
+    "criterion": "no PE owner",
+    "from": "unknown",
+    "to": "pass",
+    "why": "Family ownership is stated, and no PE or other institutional owner was found."
+   },
+   {
+    "cid": "c23",
+    "criterion": "Founder/family-owned, no PE",
+    "from": "unknown",
+    "to": "pass",
+    "why": "A press release calls it family-owned, and nothing shows an institutional owner. The source is dated (2013), so confidence is lower."
+   }
+  ],
+  "cost": 0.04
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Aal Chem (aalchem.com) fits the thesis: founder-owned (Kaz Darehshori, 2002) US chemical distributor in Grand Rapids, MI with 80+ employees, $164M annual sales and no PE owner",
+   "asserted_by": [
+    "F",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "Aal Chem LLC (aalchem.com) fits the thesis: a Grand Rapids, Michigan-based specialty chemical distributor founded in 2002 by Kaz Darehshori, who is Owner & President, with 51–200 employees (company reports 80+) and no identified private equity owner.",
+    "C": "Aalchem (aalchem.com) fits the thesis: a founder-owned specialty chemical distributor headquartered in Grand Rapids, Michigan, founded in 2002, with Kaz Darehshori identified as Owner & President, about 53 employees as of 2026-08 per LeadIQ (company reports 80+ employees), and no PE owner identified in reviewed public sources.",
+    "F": "Aal Chem (aalchem.com) fits the thesis: founder-owned (Kaz Darehshori, 2002) US chemical distributor in Grand Rapids, MI with 80+ employees, $164M annual sales and no PE owner mentioned"
+   },
+   "urls": [
+    "da19e2f4",
+    "https://www.aalchem.com/en/about",
+    "https://aalchem.com/about"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Webb Chemical Service Corporation (webbchemical.com) fits the thesis: family-owned (Hilleary family since 1981; Brad Hilleary sole owner since 2014) chemical distributor in Muskegon Heights, MI with 120+ employees, $100M+ sales and no PE owner",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Webb Chemical Service Corporation (webbchemical.com) fits the thesis: family-owned (Hilleary family since 1981; Brad Hilleary sole owner since 2014) chemical distributor in Muskegon Heights, MI with 120+ employees, $100M+ sales and no PE owner"
+   },
+   "urls": [
+    "78566846"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Hubbard-Hall Inc. (hubbardhall.com) fits the thesis: 6th-generation family-owned specialty chemical distributor in Waterbury, CT with 111 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Hubbard-Hall Inc. (hubbardhall.com) fits the thesis: 6th-generation family-owned specialty chemical distributor in Waterbury, CT with 111 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "ca5a5af3"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Spectrum Chemical Mfg. Corp. (spectrumchemical.com) fits the thesis: founder-family-owned fine-chemical distributor in New Brunswick, NJ with 225-236 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Spectrum Chemical Mfg. Corp. (spectrumchemical.com) fits the thesis: founder-family-owned (Paul Burg, 1971; CEO Randy Burg) fine-chemical distributor in New Brunswick, NJ with 225-236 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "c95d0078"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Brainerd Chemical Co., Inc. (brainerdchemical.com) fits the thesis: family-owned chemical distributor in Tulsa, OK with 82 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Brainerd Chemical Co., Inc. (brainerdchemical.com) fits the thesis: family-owned (founded 1959 by Harold Brainerd Jr.) chemical distributor in Tulsa, OK with 82 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "d3c76a06"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Viking Chemical Company (vikingchemical.com) fits the thesis: third-generation Whitcher family-owned chemical distributor in Rockford, IL with 51 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Viking Chemical Company (vikingchemical.com) fits the thesis: third-generation Whitcher family-owned chemical distributor in Rockford, IL with 51 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "2331f22a"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "The Whitaker Company (whitaker.company) fits the thesis: fourth-generation family chemical and composite materials distributor in Atlanta, GA with 106 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "B": "The Whitaker Company (whitaker.company) fits the thesis: a fourth-generation family-owned chemical and composite-material distributor headquartered in Atlanta, Georgia, founded in 1928, with about 60 employees and no private equity owner identified.",
+    "F": "The Whitaker Company (whitaker.company) fits the thesis: fourth-generation family-operated chemical and composite materials distributor in Atlanta, GA with 106 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "4519b8db",
+    "https://www.chemicalsdistribution.org/members/"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Wego Chemical Group (wegoglobal.com) fits the thesis: family-owned (Bert Eshaghpour, principal owner) specialty chemical distributor in Great Neck, NY with 100+ to 207 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F",
+    "A"
+   ],
+   "variants": {
+    "A": "Wego Chemical Group (wegoglobal.com) fits the thesis: a founder-owned US specialty chemical distributor headquartered in Great Neck, New York, founded in 1978, with 217 employees in its 2025 reporting year and no private equity owner identified. It is owned and operated by the Eshaghpour family and led by Founder/CEO Bert Eshaghpour.",
+    "F": "Wego Chemical Group (wegoglobal.com) fits the thesis: family-owned (Bert Eshaghpour, principal owner) specialty chemical distributor in Great Neck, NY with 100+ to 207 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "ce5d298d",
+    "https://wegoglobal.com/wp-content/uploads/2026/06/Global-Sustainability-Report-2025.pdf"
+   ],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Astro Chemicals Inc. (astrochemicals.com) fits the thesis: third-generation family-owned (founded 1970 by Leo Diamond and William Cunningham Sr.) chemical distributor in Springfield, MA with 55 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "B": "Astro Chemicals, Inc. (astrochemicals.com) fits the thesis: a third-generation family-owned specialty chemical distributor headquartered in Springfield, Massachusetts, founded in 1970, with 160 employees in 2020 (ICIS) and a current LinkedIn size of 51–200, and no private equity owner identified.",
+    "F": "Astro Chemicals Inc. (astrochemicals.com) fits the thesis: third-generation family-owned (founded 1970 by Leo Diamond and William Cunningham Sr.) chemical distributor in Springfield, MA with 55 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "52846a67",
+    "https://astrochemicals.com/"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Parchem – fine & specialty chemicals (parchem.com) fits the thesis: founder-owned (Ephraim Rabin, 1999) specialty chemical distributor in New Rochelle, NY with 54 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Parchem – fine & specialty chemicals (parchem.com) fits the thesis: founder-owned (Ephraim Rabin, 1999) specialty chemical distributor in New Rochelle, NY with 54 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "e769e139"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Armchem International Corp. (armchem.com) fits the thesis: founder-owned (Andrew Brahms, Founder & CEO), privately held specialty chemical importer/distributor in Fort Lauderdale, FL with 51-200 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Armchem International Corp. (armchem.com) fits the thesis: founder-owned (Andrew Brahms, Founder & CEO), privately held specialty chemical importer/distributor in Fort Lauderdale, FL with 51-200 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "ebf2322e"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "SolvChem, Inc. (solvchem.com) fits the thesis: family-owned (founded by Gabriel Baizan, second-generation management), privately held chemical distributor in Pearland, TX with 51-200 employees and no PE owner mentioned",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "B": "SolvChem, Inc. (solvchem.com) fits the thesis: a second-generation family-owned independent chemical distributor headquartered in Pearland, Texas, founded in 1971, with about 53 employees and no private equity owner identified (disclosed financing was senior bank debt from Amegy Bank).",
+    "F": "SolvChem, Inc. (solvchem.com) fits the thesis: family-owned (founded by Gabriel Baizan, second-generation management), privately held chemical distributor in Pearland, TX with 51-200 employees and no PE owner mentioned"
+   },
+   "urls": [
+    "8c457390",
+    "https://solvchem.com/about-us/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Lintech International LLC (lintechinternational.com) fits the thesis: privately held, woman-owned specialty chemical and minerals distributor in Macon, GA with 51-200 employees and no PE owner named (founder-owned status not verified)",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Lintech International LLC (lintechinternational.com) fits the thesis: privately held, woman-owned specialty chemical and minerals distributor in Macon, GA with 51-200 employees and no PE owner named (founder-owned status not verified)"
+   },
+   "urls": [
+    "751d4ab9"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Lintech International LLC (lintech.us) fits the thesis: family-owned specialty chemical distributor in Macon, GA, founded 1983, with about 80 employees and no PE owner identified",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Lintech International LLC (lintech.us) fits the thesis: a family-owned specialty chemical distributor headquartered in Macon, Georgia, founded in 1983, with about 80 employees and no private equity owner identified."
+   },
+   "urls": [
+    "https://lintech.us/about-us/why-lintech/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Chemical Solvents Inc. (chemicalsolvents.com) fits the thesis: independent chemical distributor in Cleveland, OH founded by Ed Pavlish in 1970 with over 100 employees and no PE owner found",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chemical Solvents Inc. (chemicalsolvents.com) fits the thesis: independent chemical distributor in Cleveland, OH founded by Ed Pavlish in 1970 with over 100 employees and no PE owner found"
+   },
+   "urls": [
+    "8619dc0f"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "ChemGroup (chemgroup.com) fits the thesis: privately held, family-operated top-25 North American chemical distributor in Louisville, KY with ~95 employees and no PE owner named",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "ChemGroup (chemgroup.com) fits the thesis: privately held, family-operated top-25 North American chemical distributor in Louisville, KY with ~95 employees and no PE owner named"
+   },
+   "urls": [
+    "4519b8db"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Seeler Industries Inc. (seeler.com) fits the thesis: family-run specialty chemical distributor in Joliet, IL with 52-60+ employees and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Seeler Industries Inc. (seeler.com) fits the thesis: family-run specialty chemical distributor in Joliet, IL with 52-60+ employees and no PE owner mentioned"
+   },
+   "urls": [
+    "dcc01ef1"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Colonial Chemical Solutions, Inc. (colonialchemicals.com) fits the thesis: independent chemical distributor in Savannah, GA with 73 employees, owned by family-owned parent Colonial Group, Inc., and no PE owner mentioned",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Colonial Chemical Solutions, Inc. (colonialchemicals.com) fits the thesis: independent chemical distributor in Savannah, GA with 73 employees, owned by family-owned parent Colonial Group, Inc., and no PE owner mentioned"
+   },
+   "urls": [
+    "09a7bdbe"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "GreenChem Industries LLC (greenchemindustries.com) fits the thesis: founder-owned specialty chemical distributor in West Palm Beach, FL, founded 2007 by John Lagae (CEO/Owner per The Org), about 92 employees per LeadIQ, PitchBook 'Privately Held (no backing)'",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "GreenChem Industries, LLC (greenchemindustries.com) fits the thesis: a West Palm Beach, Florida-based industrial and specialty chemical distributor founded in 2007 by John Lagae (CEO/Owner), with a 51–200 employee band, described as family-owned with organic growth, and no identified private equity owner.",
+    "C": "GreenChem Industries LLC (greenchemindustries.com) fits the thesis: a founder-owned specialty chemical distributor headquartered in West Palm Beach, Florida, founded in 2007 by John Lagae (identified by The Org as CEO/Owner), about 92 employees as of 2026-10 per LeadIQ, and classified by PitchBook as 'Privately Held (no backing)'."
+   },
+   "urls": [
+    "https://www.greenchemindustries.com/about-greenchem-industries"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Miles Chemical Company Inc. (mileschemical.com) fits the thesis: Arleta, CA chemical distributor founded 1996, privately owned by founder Anthony Miles and wife Gina, 51–200 employees (100+ reported), no identified PE owner",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Miles Chemical Company Inc. (mileschemical.com) fits the thesis: an Arleta, California-based chemical distributor founded in 1996, privately owned by founder Anthony Miles and his wife Gina, with 51–200 employees (100+ reported) and no identified private equity owner."
+   },
+   "urls": [
+    "https://finishingandcoating.com/index.php/new-technology/2712-miles-chemical-celebrates-30th-anniversary"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Seacole (Seacole-CRC, LLC) (seacole.com) fits the thesis: Plymouth, MN specialty chemical distributor and formulator founded 2002 by Gregg Elliott (Founder, Owner & CEO), roughly 56 employees (Glassdoor band 51–200), no identified PE owner",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Seacole (Seacole-CRC, LLC) (seacole.com) fits the thesis: a Plymouth, Minnesota-based specialty chemical distributor and formulator founded in 2002 by Gregg Elliott (Founder, Owner & CEO), with roughly 56 employees (Glassdoor band 51–200) and no identified private equity owner."
+   },
+   "urls": [
+    "https://seacole.com/about-seacole/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Gantrade Corporation (gantrade.com) fits the thesis: US-based (Park Ridge, NJ) specialty chemical distributor of monomers, intermediates and polymers, founded 1975 by Mahendra Parekh (still President), about 62 employees, no PE owner found",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Gantrade Corporation (gantrade.com) fits the thesis: a US-based (Park Ridge, NJ) specialty chemical distributor of monomers, intermediates and polymers, founded in 1975 by Mahendra Parekh who is still listed as President, with about 62 employees and no private equity owner found."
+   },
+   "urls": [
+    "https://www.gantrade.com/blog/gantrade-corporation-celebrates-50-years-of-excellence-innovation-and-global-growth"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "founder-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "no PE owner",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.aalchem.com/en/about",
+   "confidence": "medium",
+   "note": "The company's about page names Kaz Darehshori as Owner & President, says he founded it in 2002, and reports 80+ employees and $164M in sales. I found no PE owner, but no source states independence outright. The variant that cites 53 employees per LeadIQ is also within 50-250.",
+   "via": "agent"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "founder-owned",
+     "result": "pass",
+     "result_original": "fail"
+    },
+    {
+     "criterion": "no PE owner",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://marketscreener.com/insider/BRAD-E-HILLEARY-A0LIXS",
+   "confidence": "medium",
+   "note": "Brad Hilleary is listed as CEO and owner, but the claim itself says the Hilleary family has owned it since 1981, so it is not founder-owned. Third-party headcounts are 51-100 (58-67 in most sources), well below the claimed 120+.",
+   "via": "agent"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "founder-owned",
+     "result": "pass",
+     "result_original": "fail"
+    },
+    {
+     "criterion": "no PE owner",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.hubbardhall.com/?p=30474",
+   "confidence": "medium",
+   "note": "Hubbard-Hall dates to 1849 and is sixth-generation family-owned under CEO Molly Kellogg, so it is not founder-owned. Headcount estimates are 67-111.",
+   "via": "agent"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty/fine chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "founder-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "no PE owner",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.businesswire.com/news/home/20210608005502/en",
+   "confidence": "medium",
+   "note": "Spectrum was founded in 1971 and is still described as family-owned, and founder Paul Burg is Co-Chairman. A 2021 press release gives 225 employees. It also manufactures, so it is only partly a distributor. I found no PE owner but no source states independence outright.",
+   "via": "agent"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical distributor (sector)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no PE owner",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "Web search results: Brainerd's own profile (family-run, founded 1959 by Harold W. Brainerd Jr., describes itself as independent); theorg.com lists Mathew A. Brainerd as chairman and owner; Top Workplaces 2025 Oklahoma. Headcount aggregators: 82, 51-200, 51-100, 102.",
+   "note": "I did not open the saved pages and relied on search-result snippets. Ownership is family-held and independent, with a named family owner and no PE. Headcount estimates vary (50-102) but mostly sit inside 50-250. It is a Tulsa distributor and manufacturer of chemicals, with Mallinckrodt distributi...",
+   "retried": true
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical distributor (sector)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no PE owner",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "Web search results: First Midwest Group article quoting president Marc Whitcher (founded 1957 by David Whitcher, now run by the third generation); LeadIQ shows about 53 employees as of April 2026; OSHA injury data shows an average of 55.",
+   "note": "Family-owned (Whitcher family), with no PE owner found. Headcount is about 53-55, close to the 50 floor and some databases say 21-50 or 50-100. The OSHA figure and LeadIQ favour a pass. The sector is a Rockford chemical distributor. Confidence is moderate because of the headcount margin.",
+   "retried": true
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "US HQ (Atlanta, GA)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned/operated, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "evidence_cache/1f7182d6965b5b08a3e49b8c43d4d93fa2269fab.md",
+   "note": "LinkedIn page shows 106 employees, founded 1928, and calls it a fourth-generation family-operated business. It is not a pure specialty distributor, and no PE owner appears; variant B's 'about 60' headcount is not supported, since the page says 106.",
+   "via": "agent"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "US HQ (Great Neck, NY)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family/founder-owned, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "evidence_cache/08a534ff45f8c9c7b59909ac31e1f969f98e3252.md",
+   "note": "Wego's about page calls it an independent, family-built business. Headcount comes from the 2025 sustainability report; I did not confirm the exact 207 or 217 figure, and the Bert Eshaghpour ownership detail was not seen in my grep.",
+   "via": "agent"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "US HQ (Springfield, MA)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "evidence_cache/52846a67bd8d43dff083567de058112969ea75b5.md",
+   "note": "The company site says it was founded in 1970 and is now a third-generation family business. LinkedIn shows 55 employees and the 51-200 size band, and no PE owner appears.",
+   "via": "agent"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "US HQ (New Rochelle, NY)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder-owned, no PE",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://parchem.com/about-us",
+   "note": "Rabin founded Parchem in 1999 and is its chairman, but no source I saw states who owns it. The only headcount figure is Owler's 25-100 range, which does not confirm 54.",
+   "via": "agent"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical importer/distributor (sector)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no PE owner",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "Web search results: Thomasnet lists Andrew Brahms as Owner; Built In shows 76 employees; LeadIQ about 70; Prospeo 51-100; Cleanlink and FMLink coverage of the Handi-Clean acquisition.",
+   "note": "Brahms is named as owner and CEO and no PE owner appears. Headcount is about 70-76 on most sources, though Thomasnet says 10-49. The sector fit is the weak point. Armchem is a Fort Lauderdale importer/distributor of janitorial and sanitation chemicals and supplies, so it is borderline for special...",
+   "retried": true
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty/independent chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://solvchem.com/about-us/",
+   "note": "Founded by Gabriel Baizan; Jean-Pierre Baizan is President. It is described as the largest independent chemical distributor in Texas, and its only disclosed financing is Amegy senior bank debt (Westlake release). LinkedIn gives 98 employees. 'Family-owned' is inferred from the Baizan management a...",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://lintech.us/about-us/why-lintech/",
+   "note": "Lintech's own site says it is a family-owned specialty chemical distributor with 80 employees, founded 1983 in Macon, GA, and 'financially independent'. The 'woman-owned' label and the lintechinternational.com domain were not checked; the company is the same as c20.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family/founder-owned, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://lintech.us/about-us/why-lintech/",
+   "note": "The page states a family-owned specialty chemical distributor, founded 1983 in Macon, GA, with 80 employees and financial independence. No PE owner appears.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder-owned, no PE",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.zippia.com/chemical-solvents-careers-461921",
+   "note": "Ed Pavlish is credited with founding it in 1970. Employee estimates conflict (21-50, 26, 40, about 100) and no source names the current owner. No saved page covers this company.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor, US",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder/family-owned, no PE",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://craft.co/chemgroup",
+   "note": "Search shows a private Louisville distributor founded 1980. Headcount estimates conflict (65, 51-100 and 95). No source states family or founder ownership. Owners listed in databases are unverified.",
+   "via": "agent"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor, US",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder/family-owned, no PE",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://naicslist.com/company-profile/seeler-industries-inc-joliet-il-60435",
+   "note": "A 2013 press release calls it family-owned, but that is dated. Headcount estimates range from 11-50 to 69, so 50+ is unconfirmed. No current source on ownership.",
+   "via": "agent"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor, US",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "fail"
+    },
+    {
+     "criterion": "Independent founder-owned, no PE",
+     "result": "fail"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://colonialgroupinc.com/?p=1701",
+   "note": "It is a wholly-owned subsidiary of Colonial Group, a 1921-founded family company with about 2,000 employees. It is not a standalone founder-owned firm, and the group-level size is outside the 50-250 band.",
+   "via": "agent"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Specialty chemical distributor, US HQ",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://pitchbook.com/profiles/company/223327-63",
+   "note": "West Palm Beach distributor founded 2007 by John Lagae (CEO/Owner per The Org). PitchBook lists it as Privately Held (no backing). LinkedIn gives 90 employees and LeadIQ about 92. The 'family-owned' wording in variant D was not found in the saved pages.",
+   "via": "agent"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Chemical distributor, US",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://finishingandcoating.com/index.php/new-technology/2712-miles-chemical-celebrates-30th-anniversary",
+   "note": "Described as a privately owned corporation in Arleta, CA, established in 1996 by Anthony Miles, who is still involved with his family. LinkedIn lists the 51-200 band, though its own count is 45. The wife Gina and the '100+' headcount were not found in the saved pages. No PE owner was found.",
+   "via": "agent"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical distributor/formulator",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no PE owner",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "confidence": "medium",
+   "source": "https://seacole.com/about-seacole/",
+   "note": "Seacole's About page lists Gregg Elliott as Founder, Owner & CEO. The history page says he founded Seacole in 2002. LeadIQ gives about 56 employees as of October 2026, and Glassdoor gives 51-200. I did not check separately whether it distributes chemicals as well as formulating them, and I saw no...",
+   "via": "agent"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "US specialty chemical distributor",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-250 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no PE owner",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "confidence": "medium",
+   "source": "https://www.gantrade.com/blog/gantrade-corporation-celebrates-50-years-of-excellence-innovation-and-global-growth",
+   "note": "Gantrade was founded in 1975 by Mahendra Parekh, who MarketScreener lists as President. It is based in Park Ridge, NJ, and LeadIQ puts it at 51-200 employees. No saved page states who owns it, so ownership is unknown.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "Great Neck, NY family company founded in 1978. Founder Bert Eshaghpour is still CEO and principal owner. About 207–217 employees per its 2025 sustainability report. Searches found no PE owner or investment."
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "false",
+   "note": "A third-generation family business: the 1970 founders (Diamond and Cunningham Sr.) no longer run it, so it is not founder-owned. Not PE-owned and inside the size range (sources give 55–160 employees), but the founder-owned test fails."
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "false",
+   "note": "armchem.com shows a janitorial and sanitation supply distributor (paper products, dispensers, hand care, cleaning chemicals), not a specialty chemical distributor. Founded in 1982; I found nothing confirming Andrew Brahms founded it, as the claim says. No PE found."
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "note": "Founded in 2007 by John Lagae, listed by The Org as CEO/Owner. About 92 employees per LeadIQ (51–200 band). PitchBook says 'Privately Held (no backing)'. The 2009 Agrofert deal on PitchBook is a different company named GreenChem."
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "note": "The company's history page says Gregg Elliott founded Seacole in 2002 and is still founder and CEO. It makes and distributes specialty chemicals, with about 56 employees (51–200 band). Privately held; no PE or ownership change found since its 2021 deals."
+  }
+ },
+ "scores": {
+  "exa": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 1,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 14.5,
+   "coverage": 0.069,
+   "accuracy": 1.0,
+   "combined": 0.085,
+   "metric": "F2"
+  },
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 14.5,
+   "coverage": 0.276,
+   "accuracy": 1.0,
+   "combined": 0.323,
+   "metric": "F2"
+  },
+  "parallel": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 14.5,
+   "coverage": 0.138,
+   "accuracy": 1.0,
+   "combined": 0.167,
+   "metric": "F2"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 14.5,
+   "coverage": 0.276,
+   "accuracy": 1.0,
+   "combined": 0.323,
+   "metric": "F2"
+  },
+  "opus": {
+   "units": 1,
+   "unverifiable": 1,
+   "true": 0,
+   "partial": 1,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 14.5,
+   "coverage": 0.034,
+   "accuracy": 0.5,
+   "combined": 0.042,
+   "metric": "F2"
+  },
+  "nimble": {
+   "units": 17,
+   "unverifiable": 4,
+   "true": 10,
+   "partial": 0,
+   "wrong": 3,
+   "unconfirmed": 4,
+   "truth": 14.5,
+   "coverage": 0.69,
+   "accuracy": 0.667,
+   "combined": 0.685,
+   "metric": "F2"
+  }
+ }
+}

@@ -1,0 +1,1991 @@
+{
+ "sub_use_case": "fin_thesis_test",
+ "input_n": 3,
+ "task": "Test the thesis: Chipotle's same-store sales slowdown is cyclical, not structural",
+ "labels": {
+  "gpt": "A",
+  "nimble": "B",
+  "firecrawl": "C",
+  "parallel": "D",
+  "exa": "E",
+  "opus": "F"
+ },
+ "unit": "thesis evidence",
+ "evidence_pages": 25,
+ "evidence_fetched": 25,
+ "retried_to_verdict": 6,
+ "unverifiable_first_pass": 8,
+ "decided_from_passages": 69,
+ "judge": "v4b",
+ "judge_cost_usd": 3.273,
+ "corrections_v2": {
+  "units_before": 90,
+  "units_after": 60,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7"
+    ]
+   },
+   {
+    "kept": "c10",
+    "merged": [
+     "c11",
+     "c12",
+     "c13"
+    ]
+   },
+   {
+    "kept": "c14",
+    "merged": [
+     "c15"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19"
+    ]
+   },
+   {
+    "kept": "c24",
+    "merged": [
+     "c25",
+     "c26",
+     "c27"
+    ]
+   },
+   {
+    "kept": "c28",
+    "merged": [
+     "c29"
+    ]
+   },
+   {
+    "kept": "c32",
+    "merged": [
+     "c33"
+    ]
+   },
+   {
+    "kept": "c35",
+    "merged": [
+     "c36"
+    ]
+   },
+   {
+    "kept": "c37",
+    "merged": [
+     "c38",
+     "c39",
+     "c40"
+    ]
+   },
+   {
+    "kept": "c43",
+    "merged": [
+     "c44",
+     "c45",
+     "c46"
+    ]
+   },
+   {
+    "kept": "c48",
+    "merged": [
+     "c49"
+    ]
+   },
+   {
+    "kept": "c57",
+    "merged": [
+     "c58"
+    ]
+   },
+   {
+    "kept": "c66",
+    "merged": [
+     "c67",
+     "c68"
+    ]
+   },
+   {
+    "kept": "c71",
+    "merged": [
+     "c72",
+     "c73"
+    ]
+   },
+   {
+    "kept": "c61",
+    "merged": [
+     "c62"
+    ]
+   },
+   {
+    "kept": "c63",
+    "merged": [
+     "c64"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c23"
+    ]
+   }
+  ],
+  "cost": 0.042
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Chipotle Q3 2026 comparable sales rose 2.1% (transactions +0.8%, average check +1.3%).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Chipotle Q3 2026 comparable sales increased 2.1% year over year, with transactions up 0.8% and average check up 1.3% (October 28, 2026 release).",
+    "D": "Chipotle's comparable restaurant sales rose 2.1% in the quarter ended September 30, 2026, comprising 0.8% transaction growth and 1.3% average-check growth."
+   },
+   "urls": [
+    "85e80d20",
+    "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "Chipotle had positive comparable transactions in each of the first three quarters of 2026 (third straight positive quarter; Q2 +1.0%, Q3 +0.8%).",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Chipotle reported positive comparable transactions in each of the first three quarters of 2026.",
+    "F": "Chipotle transactions rose 1.0% in Q2 2026 and 0.8% in Q3 2026, the third straight quarter of positive transactions."
+   },
+   "urls": [
+    "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+    "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Chipotle Q2 2026 comps +2.2% with transactions +1.0%; full-year 2026 comp guidance raised to low-single-digit growth (July 29, 2026).",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Chipotle Q2 2026 comparable sales rose 2.2% with transactions up 1.0%; management raised full-year 2026 comparable-sales guidance to low-single-digit growth (July 29, 2026)."
+   },
+   "urls": [
+    "https://ir.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Q1 2026 comps +0.5%, transactions +0.6%, average check -0.1%.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "A": "Chipotle Mexican Grill's comparable restaurant sales increased 0.5% in the quarter ended 2026-03-31, driven by transaction growth of 0.6%, with average check declining 0.1%.",
+    "F": "Chipotle Q1 2026 transactions rose 0.6% while average check fell 0.1%."
+   },
+   "urls": [
+    "85e80d20",
+    "https://ir.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS",
+    "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Full-year 2026 comp guidance moved from 'about flat' (Feb 3 / Apr 2026) to 'low single digit' after strong Q2 and was maintained at Q3.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Chipotle raised full-year 2026 comparable restaurant sales guidance from 'about flat' (set Feb 3, 2026) to 'growth in the low single digit range' after strong Q2 momentum, and maintained it at Q3 2026.",
+    "F": "Chipotle's full-year 2026 comp guidance was 'about flat' in Feb and Apr 2026, raised to 'low single digit' in Jul 2026, and the higher guidance was reaffirmed on Oct 28, 2026."
+   },
+   "urls": [
+    "f0a5de59",
+    "https://newsroom.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Chipotle FY2025 comps -1.7% with transactions -2.9%; Q4 2025 comps -2.5% with transactions -3.2%.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Chipotle full-year 2025 comparable sales fell 1.7% with transactions down 2.9%; Q4 2025 comparable sales fell 2.5% with transactions down 3.2%.",
+    "C": "Chipotle's Q4 2025 comparable sales fell 2.5% and transactions fell 3.2%; for full-year 2025, comparable sales fell 1.7% and transactions fell 2.9%."
+   },
+   "urls": [
+    "dede4299",
+    "https://ir.chipotle.com/2026-02-03-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+    "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c10",
+    "c11",
+    "c12",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Chipotle Q2 2025 comps were -4.0%.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Chipotle Q2 2025 comparable restaurant sales were -4.0%."
+   },
+   "urls": [
+    "dede4299"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c14",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "Chipotle comps by quarter: Q1 2025 -0.4%, Q2 -4.0%, Q3 +0.3%, Q4 -2.5%, then Q1 2026 +0.5%, Q2 +2.2%, Q3 +2.1%.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle comparable sales were -0.4% in Q1 2025, -4.0% in Q2 2025, +0.3% in Q3 2025 and -2.5% in Q4 2025, then +0.5% in Q1 2026, +2.2% in Q2 2026 and +2.1% in Q3 2026."
+   },
+   "urls": [
+    "https://newsroom.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Two-year comp stack is small: Q1 2026 +0.5% on -0.4%, Q2 +2.2% on -4.0%, Q3 +2.1% on +0.3%; Q2 2026 still about -1.8% over two years.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle's two-year comp stack is small: Q1 2026 +0.5% on -0.4%, Q2 +2.2% on -4.0%, Q3 +2.1% on +0.3%; Q2 2026 is still about -1.8% over two years."
+   },
+   "urls": [
+    "https://newsroom.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Q3 2025 comps +0.3% with transactions -0.8%, a weak comparison base for Q3 2026.",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "In the quarter ended September 30, 2025, Chipotle's comparable transactions declined 0.8% while comparable sales increased 0.3%, giving a weak comparison base for Q3 2026."
+   },
+   "urls": [
+    "https://ir.chipotle.com/2025-10-29-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2025-RESULTS"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Q3 2026 comparable transactions +0.8% against -0.8% in Q3 2025.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Chipotle's comparable transactions rose 0.8% in the quarter ended 2026-09-30 against a decline of 0.8% in the quarter ended 2025-09-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Chipotle Q4 2024 comps +5.4% on 4.0% transaction growth.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Chipotle's Q4 2024 comparable sales rose 5.4% on 4.0% transaction growth."
+   },
+   "urls": [
+    "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Chipotle FY2024 comps +7.4% on 5.3% transaction growth.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Chipotle's full-year 2024 comparable sales rose 7.4% on 5.3% transaction growth."
+   },
+   "urls": [
+    "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Chipotle's Q3 2026 restaurant-level operating margin was 23.3% versus 24.5% a year earlier.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Chipotle's restaurant-level operating margin was 23.3% in the quarter ended September 30, 2026, versus 24.5% in Q3 2025.",
+    "C": "Chipotle's Q3 2026 restaurant-level operating margin fell to 23.3% from 24.5% a year earlier.",
+    "A": "Chipotle's restaurant-level operating margin was 23.3% in the quarter ended 2026-09-30, versus 24.5% in the quarter ended 2025-09-30."
+   },
+   "urls": [
+    "85e80d20",
+    "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+    "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c24",
+    "c25",
+    "c26",
+    "c27"
+   ]
+  },
+  {
+   "cid": "c28",
+   "claim": "Q3 2026 labor costs rose to 25.7% of revenue from 25.2%, citing lower sales volumes, wage inflation and added labor for execution and promotions.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "C": "Chipotle's Q3 2026 labor costs rose to 25.7% of revenue from 25.2%, with the company citing lower sales volumes, wage inflation, and added labor for execution and promotions."
+   },
+   "urls": [
+    "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c28",
+    "c29"
+   ]
+  },
+  {
+   "cid": "c30",
+   "claim": "Chipotle guides Q4 2026 restaurant margin just under 22% (about -150 bp).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle guides Q4 2026 restaurant margin just under 22% (about -150 bp)."
+   },
+   "urls": [
+    "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "CFO said a nominal comp of about 4% is needed to hold margins with ~3% inflation, above the current ~2% run rate.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle's CFO said a nominal comp of about 4% is needed to hold margins with about 3% inflation, above the current run rate of about 2%."
+   },
+   "urls": [
+    "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Placer.ai observed year-over-year growth in Chipotle same-store visits in Q2–Q3 2026, strengthening in September.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Placer.ai reported year-on-year growth in Chipotle same-store visits in Q2–Q3 2026, strengthening in September.",
+    "A": "Placer.ai observed year-over-year growth in Chipotle same-store visits in the quarters ended 2026-06-30 and 2026-09-30, strengthening in September."
+   },
+   "urls": [
+    "https://www.placer.ai/anchor/articles/chipotles-bet-on-younger-diners-is-paying-off"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c32",
+    "c33"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Placer.ai reported Chipotle Q3 2026 total-chain visit growth of 6.0% versus 1.9% for fast casual, including expansion.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Placer.ai reported Chipotle Q3 2026 total-chain visit growth of 6.0%, versus 1.9% for fast casual, including expansion."
+   },
+   "urls": [
+    "https://www.placer.ai/anchor/articles/chipotles-bet-on-younger-diners-is-paying-off"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "NRA September 2026 survey: 44% of operators reported declining traffic vs 42% reporting increases; net traffic decline in 19 of the preceding 20 months.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "In September 2026, 44% of surveyed restaurant operators reported declining year-over-year traffic versus 42% reporting increases, and net industry traffic declined in 19 of the preceding 20 months (National Restaurant Association).",
+    "E": "In the National Restaurant Association's September 2026 survey (published Oct 30, 2026), 42% of operators reported year-over-year traffic growth and 44% reported declines; September was the 19th month out of the preceding 20 with a net traffic decline."
+   },
+   "urls": [
+    "https://restaurant.org/research-and-media/research/restaurant-economic-insights/economic-indicators/same-store-sales-and-customer-traffic/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c35",
+    "c36"
+   ]
+  },
+  {
+   "cid": "c37",
+   "claim": "Management reported stable or improving wallet share in Q3 2026 and stronger lower-income than higher-income cohort performance, greatest in September when promotions were lowest.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Chipotle management reported stable or improving wallet share across Q3 2026 and stronger performance from lower-income than higher-income cohorts, with the greatest strength in September when promotional activity was lowest."
+   },
+   "urls": [
+    "http://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026",
+    "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c37",
+    "c38",
+    "c39",
+    "c40"
+   ]
+  },
+  {
+   "cid": "c41",
+   "claim": "William Blair mid-June 2026 survey placed Chipotle among brands with largest sequential improvements in perceived value.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "A William Blair survey conducted in mid-June 2026 placed Chipotle among the brands with the largest sequential improvements in perceived value."
+   },
+   "urls": [
+    "https://www.qsrmagazine.com/growth/fast-casual/chipotle-is-gaining-some-of-its-value-mojo-back"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "April 2025 Technomic survey placed Chipotle below fast-casual peers on affordability, portion size for price and value through high-quality food, and last on value through quick high-quality service.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "An older (April 2025) Technomic consumer-survey readout placed Chipotle below fast-casual peers on affordability, portion sizes for the price and value through high-quality food, and last among peers on value through quick, high-quality service."
+   },
+   "urls": [
+    "https://www.restaurantbusinessonline.com/operations/chipotle-sales-downturn-its-not-us-its-them"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Q3 2026 menu pricing ~2.7% but mix -1.4%, attributed to lower group size from increased Rewards engagement including free-entree redemptions.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "For Q3 2026, Chipotle management reported approximately 2.7% menu pricing but negative 1.4% mix, attributing the mix drag to lower group size associated with increased Rewards engagement, including free-entree redemptions."
+   },
+   "urls": [
+    "http://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+    "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c43",
+    "c44",
+    "c45",
+    "c46"
+   ]
+  },
+  {
+   "cid": "c47",
+   "claim": "Protein limited-time offers typically generate a few hundred bp of transaction lift during the promotion, with some retained afterward.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On the Q3 2026 call, Chipotle management said protein limited-time offers typically generate a few hundred basis points of transaction lift during the promotion, with some retained afterward."
+   },
+   "urls": [
+    "http://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Q3 2026 marketing costs in mid-3% range of sales, ~40 bp above prior year, after promotions to reengage guests.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "Chipotle Q3 2026 marketing costs were in the mid-3% range of sales, approximately 40 basis points above the prior year, after promotions to reengage guests."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+    "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c48",
+    "c49"
+   ]
+  },
+  {
+   "cid": "c50",
+   "claim": "Q4 2026 marketing expected in the high-3% range of sales to support the Brisket launch.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Chipotle management expected Q4 2026 marketing in the high-3% range of sales to support the Brisket launch."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Management expected Q4 2026 comps ~+2%, roughly flat transactions, ~-1% mix and ~3% menu pricing.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Chipotle management expected Q4 2026 comparable-sales growth of approximately 2%, roughly flat transactions, approximately negative 1% mix, and about 3% menu pricing."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c52",
+   "claim": "Chipotle expects menu price increases of about 3% in Q4 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle expects menu price increases of about 3% in Q4 2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c53",
+   "claim": "October 2026 trends softened; Q4 2026 comps ~+2% with ~flat transactions and a year-end comp exit rate of 3%–4%.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "As of 2026-10-28, Chipotle said October trends had softened and expected Q4 2026 comparable sales around positive 2%, approximately flat transactions, and a year-end comparable-sales exit rate of 3%-4%."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/"
+   ],
+   "conflicts_with": [
+    "c54"
+   ]
+  },
+  {
+   "cid": "c54",
+   "claim": "Management said traffic returned to growth after an industry slowdown in early October; CFO expected ~2% Q4 2026 SSS growth.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Chipotle management said traffic returned to growth after an industry slowdown in early October, and the CFO expected approximately 2% Q4 2026 same-store-sales growth."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html"
+   ],
+   "conflicts_with": [
+    "c53",
+    "c55"
+   ]
+  },
+  {
+   "cid": "c55",
+   "claim": "Momentum faded again in October 2026, 'consistent with the broader industry'; Q4 comps guided ~+2%; no 2027 comp guidance.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle's momentum faded again in October 2026, 'consistent with the broader industry'; Q4 comps are guided to about +2% and management gave no 2027 comp guidance."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [
+    "c54"
+   ]
+  },
+  {
+   "cid": "c56",
+   "claim": "Management expects a year-end exit rate of 3%–4% comp growth and a ~1% transaction growth hurdle to offset new-opening margin impact.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Chipotle management expects a year-end exit rate of 3%–4% comparable-sales growth and a transaction growth hurdle of approximately 1% to offset the impact of new openings on margins (management framework as of Oct 28, 2026)."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "Chipotle attributed July 2026 comp headwinds to food-safety concerns and geopolitical developments; trends returned to predisruption levels by late August.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Chipotle attributed July 2026 comparable-sales headwinds to food-safety concerns and geopolitical developments, and said trends returned to predisruption levels by late August."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000104/cmg-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c57",
+    "c58"
+   ]
+  },
+  {
+   "cid": "c59",
+   "claim": "Chipotle's September 2026 comps were +3.8% with very little/light promotional activity.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Chipotle management reported September 2026 comparable-sales growth of 3.8% with very little promotional activity.",
+    "F": "Chipotle's September 2026 comps were +3.8% with light promotion."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/",
+    "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000104/cmg-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "Reuters: Chipotle's Q3 2026 recovery occurred amid pressured consumer spending and recovery from a multistate cyclospora outbreak that dented dining-out confidence; Chipotle not tied to the outbreak.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Reuters reported that Chipotle's Q3 2026 recovery occurred amid pressured consumer spending and recovery from a multistate cyclospora outbreak that dented confidence in dining out; Chipotle itself was not tied to the outbreak."
+   },
+   "urls": [
+    "https://www.reuters.com/business/retail-consumer/chipotle-reports-quarterly-comparable-sales-rise-2026-10-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c61",
+   "claim": "Cava said the summer cyclosporiasis outbreak cut its Q3 2026 comps by ~150 bp; comps slowed to +3.1% from above 9% in H1.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Cava said the summer cyclosporiasis outbreak cut its Q3 2026 comps by about 150 bp, and its comps slowed to +3.1% from above 9% in the first half."
+   },
+   "urls": [
+    "https://www.restaurantdive.com/news/cava-q3-2026-comps-growth-moderates-price-mix-traffic/873779/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c61",
+    "c62"
+   ]
+  },
+  {
+   "cid": "c63",
+   "claim": "Sweetgreen Q3 2026 comps fell 6.4% (traffic -4.9%), blamed on cyclospora; October comps turned positive.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Sweetgreen's Q3 2026 comps fell 6.4% (traffic -4.9%), which it blamed on cyclospora, and its October comps turned positive."
+   },
+   "urls": [
+    "https://www.fastcasual.com/news/sweetgreen-sales-slip-again-in-q3-october-comps-turn-positive/",
+    "https://www.restaurantdive.com/news/cava-q3-2026-comps-growth-moderates-price-mix-traffic/873779/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c63",
+    "c64"
+   ]
+  },
+  {
+   "cid": "c65",
+   "claim": "A Nov 4, 2026 market-update report states 'Chipotle cut its forecast' alongside persistent Sweetgreen SSS declines, conflicting with the Oct 28 release maintaining guidance.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "A November 4, 2026 market-update report states 'Chipotle cut its forecast' alongside persistent Sweetgreen same-store sales declines, though it conflicts with the Oct 28, 2026 release maintaining low-single-digit comp guidance and gives no figures."
+   },
+   "urls": [
+    "8d2c864b"
+   ],
+   "conflicts_with": [
+    "c2",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c66",
+   "claim": "High-Efficiency Equipment Package restaurants delivered hundreds of bp of comp uplift, better guest satisfaction and 2+ additional entrees in the peak 15 minutes.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "Chipotle management said restaurants with its High-Efficiency Equipment Package delivered hundreds of basis points of comparable-sales uplift, better guest-satisfaction scores and more than two additional entrees during the peak 15-minute period."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c66",
+    "c67",
+    "c68"
+   ]
+  },
+  {
+   "cid": "c69",
+   "claim": "Consistent execution of all four throughput pillars occurred in fewer than half of restaurants.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "As of 2026-10-28, Chipotle management said consistent execution of all four throughput pillars occurred in fewer than half of restaurants."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c70",
+   "claim": "CEO admitted execution gaps such as throughput ('I know we can be better') and said much of Recipe for Growth is still early.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle's CEO admitted execution gaps such as throughput ('I know we can be better') and said much of the Recipe for Growth strategy is still early."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c71",
+   "claim": "Trailing-year average restaurant sales were $3.106M at Sep 30, 2026 vs $3.132M a year earlier (-0.8%).",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "A": "Chipotle's average restaurant sales for the trailing year ended 2026-09-30 were $3.106 million versus $3.132 million a year earlier, a reported decline of 0.8%."
+   },
+   "urls": [
+    "85e80d20",
+    "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000104/cmg-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c71",
+    "c72",
+    "c73"
+   ]
+  },
+  {
+   "cid": "c74",
+   "claim": "Chipotle had 4,267 company-owned restaurants at Sep 30, 2026, up 9% from 3,916, with 340–360 openings planned for 2027.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Chipotle had 4,267 company-owned restaurants at Sep 30, 2026, up from 3,916 (+9%), with 340–360 openings planned for 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000104/cmg-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c75",
+   "claim": "Chipotle opens roughly 350-370 new units a year; cannibalization impact on comps not quantified.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Chipotle opens roughly 350-370 new units a year, with cannibalization impact on comps not quantified by the company."
+   },
+   "urls": [
+    "85e80d20"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c76",
+   "claim": "Q1 2025 comps -0.4%, transactions -2.3%; internal study found saving money due to economic worries was top reason customers cut visits.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In Q1 2025 Chipotle comps were -0.4% and transactions -2.3%; management's internal study found saving money due to economic worries was the top reason customers cut visits."
+   },
+   "urls": [
+    "https://fortune.com/article/chipotle-earnings-consumer-spending-slowdown-ceo-scott-boatwright"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c77",
+   "claim": "CEO Boatwright attributed weakness to macro factors: 'persistent macroeconomic pressures' (Oct 2025), 'dynamic consumer backdrop' (Feb 2026), 'remain cautious... dynamic consumer environment' (Apr 2026).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Chipotle CEO Scott Boatwright attributed weakness to macro factors, citing 'persistent macroeconomic pressures' (Oct 2025), a 'dynamic consumer backdrop' (Feb 2026), and wanting to 'remain cautious on our outlook given the dynamic consumer environment' (Apr 2026)."
+   },
+   "urls": [
+    "3423cd65"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c78",
+   "claim": "Feb 6, 2026 report: management acknowledged significant opportunity to strengthen value perception; earlier acknowledged inconsistent portions and retraining.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "In a February 6, 2026 report, Chipotle management acknowledged a significant opportunity to strengthen value perception, and the report described the company's earlier acknowledgement of inconsistent portions and subsequent retraining."
+   },
+   "urls": [
+    "https://www.nrn.com/fast-casual/how-chipotle-plans-to-win-back-value-seeking-consumers"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c79",
+   "claim": "Fast-casual mean SSS -1.1% in Q4 2025, 53% of concepts positive, traffic negative in 10 of 11 months (Technomic), May 2026 real eating-and-drinking sales -0.9% YoY with 45% of operators reporting lower traffic.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Fast-casual segment mean same-store sales were -1.1% in Q4 2025, only 53% of tracked concepts posted positive comps, restaurant traffic was negative in 10 of 11 recent months (Technomic), and May 2026 real eating-and-drinking-place sales were -0.9% YoY with 45% of operators reporting lower traffic."
+   },
+   "urls": [
+    "09379049"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c80",
+   "claim": "UMich sentiment fell to 51.0 in Nov 2025; 63% expected unemployment to rise vs 40% a year earlier; McDonald's said low-income QSR traffic fell nearly double digits for nearly two years.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "University of Michigan consumer sentiment fell to 51.0 in November 2025 (lowest since 2022), 63% of consumers expected unemployment to rise in December 2025 vs 40% a year earlier, and McDonald's said low-income QSR traffic had fallen nearly double digits for nearly two years."
+   },
+   "urls": [
+    "09379049"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c81",
+   "claim": "Chipotle said Jul–Sep 2025 traffic pressure was concentrated among customers with household income under $100K.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Chipotle said traffic pressure in July-September 2025 was concentrated among customers with household income under $100K."
+   },
+   "urls": [
+    "8d4ed445"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c82",
+   "claim": "Boatwright said Chipotle prices 20–30% below fast-casual peers; protein cup add-ons in one-fourth of transactions, plus chicken al pastor, high-protein LTOs and relaunched rewards.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Chipotle CEO Boatwright said Chipotle prices meals at a 20% to 30% discount to fast-casual peers and its value proposition remains industry-leading; protein cup add-ons appear in one-fourth of transactions, alongside chicken al pastor and high-protein LTOs and relaunched rewards."
+   },
+   "urls": [
+    "e79e7f19"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c83",
+   "claim": "Q1 2026 Taco Bell US SSS +8%, Starbucks +7.1% (transactions +4.3%), McDonald's US +3.9% (after +6.8% in Q4 2025), Shake Shack +4.9%, vs Chipotle +0.5%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In Q1 2026 Taco Bell posted +8% US same-store sales, Starbucks +7.1% (transactions +4.3%), McDonald's US +3.9% (after +6.8% in Q4 2025), and Shake Shack +4.9%, while Chipotle posted +0.5%."
+   },
+   "urls": [
+    "52506f9f"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c84",
+   "claim": "Cava comps +2.1%, +1.9%, +0.5% in Q2–Q4 2025 (15th straight positive quarter) vs Chipotle -4.0%/-2.5%; Cava then +9.0% with traffic +5.3% in Q2 2026 and +3.1% in Q3 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Cava comps were +2.1%, +1.9% and +0.5% in Q2-Q4 2025 (15th straight positive quarter) while Chipotle ran -4.0%/-2.5%; Cava then posted +9.0% with traffic +5.3% in Q2 2026 and +3.1% in Q3 2026."
+   },
+   "urls": [
+    "cbd0240f"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c85",
+   "claim": "Technomic: fast casual brands incl. Chipotle, Sweetgreen, Panera ceded occasions to QSR and casual dining; fast-casual satisfaction/value scores stagnated; price gap with casual dining (~$16 vs ~$20) narrowed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Technomic data show fast casual brands including Chipotle, Sweetgreen and Panera ceded occasions to quick-service and casual dining, fast-casual satisfaction and value scores stagnated while QSR and casual dining improved, and the price gap between fast casual (~$16 bowl) and casual dining (~$20 meal) narrowed."
+   },
+   "urls": [
+    "25fab048"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c86",
+   "claim": "~12% of US adults on GLP-1 drugs as of late 2025 (~23% of households); limited-service spending falls ~8% within six months of starting.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "About 12% of US adults were on GLP-1 drugs as of late 2025 (~23% of households include a user), and limited-service spending falls ~8% within six months of starting."
+   },
+   "urls": [
+    "52506f9f"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "Gen Z limited-service spending growth slowed 19 points over ~2 years (McKinsey); 61% of Gen Z say dining out is for special occasions.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Gen Z limited-service spending growth slowed 19 percentage points over ~2 years (McKinsey), and 61% of Gen Z say dining out is for special occasions."
+   },
+   "urls": [
+    "52506f9f"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c88",
+   "claim": "~10% of prior restaurant traffic migrated to grocery over two years (Mizuho estimate).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "About 10% of prior restaurant traffic migrated to grocery over two years (Mizuho estimate)."
+   },
+   "urls": [
+    "52506f9f"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c89",
+   "claim": "Placer.ai saw a major behavior shift in fast-casual trade areas with $100K–$125K household incomes through much of 2H 2025; CEO noted visits lost to alternative value channels.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Placer.ai observed a major behavior shift in fast-casual trade areas with household incomes of $100K-$125K through much of 2H 2025, and Chipotle's CEO noted visits lost to alternative value channels (grocers, convenience stores, warehouse clubs, dollar stores)."
+   },
+   "urls": [
+    "8d4ed445"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c90",
+   "claim": "Q3 2026 transaction growth (+0.8%) was driven by value deals, LTOs and loyalty initiatives, with heavy margin concessions and labor costs up partly on promotional activity.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Chipotle Q3 2026 transaction growth (+0.8%) was driven by value deals, limited-time offers and loyalty initiatives, with heavy margin concessions and labor costs up partly on promotional activity."
+   },
+   "urls": [
+    "85e80d20"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "The Q3 release states comps +2.1%, check +1.3%, transactions +0.8%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "A": "true",
+    "C": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "Transactions were +0.6% in Q1, +1.0% in Q2 and +0.8% in Q3 2026.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM",
+   "note": "Q2 comps +2.2% and transactions +1.0% are confirmed, and the release title says guidance was raised. The 'low single digit' wording is not directly shown.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS",
+   "note": "Q1 comps +0.5%, transactions +0.6%, check -0.1%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://newsroom.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM",
+   "note": "The raise in July is confirmed by the release title. The earlier 'about flat' and the Q3 reaffirmation are consistent with my recollection but not shown in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2026-02-03-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+   "note": "FY25 comps -1.7%, transactions -2.9%. Q4 comps -2.5%, transactions -3.2%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true",
+    "A": "true",
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM",
+   "note": "Q2 2025 comps were -4.0%; this is not shown in the passages but matches my recollection of the reported figure.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "The 2026 quarters are confirmed by company releases; the 2025 quarters match reported figures and the FY2025 -1.7% comp is consistent with Q4 at about -2.5%.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "The arithmetic holds: Q1 +0.1%, Q2 -1.8% and Q3 +2.4% on a two-year basis, using confirmed comps.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2025-10-29-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2025-RESULTS",
+   "note": "Q3 2025 comps were +0.3% with transactions -0.8%, so the comparison base was weak.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "Q3 2026 transactions were +0.8% against -0.8% in Q3 2025.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS",
+   "note": "Q4 2024 comps were +5.4% on 4.0% transaction growth, per the release.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS",
+   "note": "FY2024 comps were +7.4% on 5.3% transaction growth, per the release.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://newsroom.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "Restaurant-level margin was 23.3% against 24.5%, per the release.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "A": "true",
+    "E": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "Labor costs were 25.7% against 25.2%, with the cited drivers as stated.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "A": "true"
+   }
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "The CFO said Q4 margins would be just under 22%, roughly 150 bp lower than last year.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.placer.ai/anchor/articles/chipotles-bet-on-younger-diners-is-paying-off",
+   "note": "Placer.ai says same-store visits rose YoY throughout Q2-Q3 2026, with gains strengthening in September.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true",
+    "E": "true"
+   }
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.placer.ai/anchor/articles/chipotles-bet-on-younger-diners-is-paying-off",
+   "note": "Overall visits grew 6.0% in Q3 vs 1.9% for the category, including expansion.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://restaurant.org/research-and-media/research/restaurant-economic-insights/economic-indicators/same-store-sales-and-customer-traffic/",
+   "note": "NRA: 42% up, 44% down, and September was the 19th net decline in 20 months.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "D": "true"
+   }
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.qsrmagazine.com/growth/fast-casual/chipotle-is-gaining-some-of-its-value-mojo-back",
+   "note": "The William Blair survey was conducted in mid-June, and Chipotle was among the brands with the largest sequential value-perception gains (Black Rock, Chipotle, El Pollo Loco).",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.restaurantbusinessonline.com/operations/chipotle-sales-downturn-its-not-us-its-them",
+   "note": "The Technomic survey data is cited as ranking Chipotle well below fast-casual peers on value metrics; it is dated 2025 and is old.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "http://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026",
+   "note": "CFO: pricing ~2.7%, mix ~-1.4%, driven by lower group size from Rewards engagement and free-entree redemptions.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "http://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026",
+   "note": "Provider excerpt quotes the Q3 call saying protein LTOs typically generate a few hundred bp of transaction lift.",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "Consistent with call discussion of promotions and marketing investment; the exact mid-3% and 40bp figures are not shown in the passages.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "Brisket launch on Nov 5 is confirmed; the high-3% marketing guidance is consistent with the call but the figure itself is not shown.",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "Q4 pricing of ~3% is confirmed; ~2% comp, flat transactions and ~-1% mix are consistent with it and other systems' reports.",
+   "via": "passages"
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "CFO said pricing impact would increase to about 3% in Q4.",
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/",
+   "note": "October softening is confirmed; Q4 ~2% comp and 3-4% exit rate are consistent with the call and the CEO's confidence in the balance of the quarter.",
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/",
+   "note": "CEO said positive transactions were regained after the early-October industry pullback; ~2% Q4 comp is consistent.",
+   "via": "passages"
+  },
+  "c55": {
+   "cid": "c55",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "October softening 'consistent with the broader industry' is quoted; the release gives no 2027 comp guidance, only openings.",
+   "via": "passages"
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "Consistent with the CFO's commentary on the exit rate and the transaction hurdle, though the figures are not shown in the passages.",
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm",
+   "note": "10-Q cites food safety concerns and geopolitical developments, with trends back to prior levels by end of August.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/",
+   "note": "CEO: finished September up 3.8% with very little promo activity.",
+   "via": "passages"
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.reuters.com/business/retail-consumer/chipotle-reports-quarterly-comparable-sales-rise-2026-10-28/",
+   "note": "The Reuters article on Q3 results exists and the 10-Q cites food safety concerns; the cyclospora detail is not shown in the passages but is plausible.",
+   "via": "passages"
+  },
+  "c63": {
+   "cid": "c63",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fastcasual.com/news/sweetgreen-sales-slip-again-in-q3-october-comps-turn-positive/",
+   "note": "Q3 comps -6.4%, traffic -4.9%, cyclosporiasis outbreak cited, and October comps turned positive.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true"
+   }
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "The call cites over two extra entrees in the peak 15 minutes and improved taste scores, and discusses a comp lift. The 'hundreds of bp' figure is not seen but is plausible.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c70": {
+   "cid": "c70",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "The CEO called the company 'in the early days' of Recipe for Growth. The throughput quote is not seen but is plausible.",
+   "via": "passages"
+  },
+  "c71": {
+   "cid": "c71",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "Average restaurant sales were $3,106K at Q3 2026 vs $3,132K at Q3 2025, a 0.8% decline.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "4,267 vs 3,916 restaurants is +9.0%, and 2027 guidance is 340–360 company-owned openings.",
+   "via": "passages"
+  },
+  "c75": {
+   "cid": "c75",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "2026 guidance is 350–370 openings. No cannibalization quantification appears in any passage.",
+   "via": "passages"
+  },
+  "c76": {
+   "cid": "c76",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://fortune.com/article/chipotle-earnings-consumer-spending-slowdown-ceo-scott-boatwright",
+   "note": "Q1 2025 comps -0.4% and transactions -2.3% confirmed; CEO said survey cited saving money and economic uncertainty.",
+   "via": "passages"
+  },
+  "c78": {
+   "cid": "c78",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.nrn.com/fast-casual/how-chipotle-plans-to-win-back-value-seeking-consumers",
+   "note": "NRN Feb 6, 2026 says Boatwright cited significant opportunity to strengthen value perception; portions retraining was known from 2025.",
+   "via": "passages"
+  },
+  "c82": {
+   "cid": "c82",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.restaurantbusinessonline.com/operations/chipotle-sales-downturn-its-not-us-its-them",
+   "note": "The 20-30% below fast-casual peers is confirmed; the other details (protein cup, al pastor) are plausible but not directly confirmed.",
+   "via": "passages"
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "Transactions +0.8% is confirmed, but the filing shows food costs fell and a favorable LTO mix helped; attribution to heavy margin concessions is not supported, and the CFO credits Rewards engagement and the protein campaign.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "The CFO agreed with the analyst's framing of 3% inflation needing a 4% nominal comp. Q3 comp was 2.1%, consistent with the ~2% run rate. The cited newsroom release doesn't contain this, but the call transcript does.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/29/chipotle-cmg-q3-2026-earnings-call-transcript/",
+   "note": "The transcript says wallet share was stable or improving, lower-income cohorts outperformed higher-income, and strength was greatest in September when promotions were lowest.",
+   "confidence": "high",
+   "via": "agent",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "C": "true",
+    "F": "true"
+   }
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.restaurantdive.com/news/cava-q3-2026-comps-growth-moderates-price-mix-traffic/873779/",
+   "note": "Restaurant Dive reports Q3 comps of +3.1%, H1 comps above 9% in two quarters, and a ~150 bp cyclosporiasis headwind per the CFO.",
+   "confidence": "high",
+   "via": "agent",
+   "label_verdicts": {
+    "F": "true"
+   }
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://ir.chipotle.com/2026-10-28-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2026-RESULTS",
+   "note": "The Oct 28, 2026 Q3 release says management 'continues to anticipate' full-year comps growth in the low single digits. That is a maintained outlook, not a cut. Guidance was raised on Jul 29, 2026, from about flat. The cuts came in 2025. I could not find the Nov 4 report, and no source shows a 202...",
+   "label_verdicts": {
+    "B": "false"
+   },
+   "retried": true
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/cmg/transcripts/718645-q3-2026/",
+   "note": "Management said consistent execution across all four pillars, including Mise en Place and Aces in their Places, is happening in fewer than half of restaurants today.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c77": {
+   "cid": "c77",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://ir.chipotle.com/2025-10-29-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2025-RESULTS",
+   "note": "The Oct 2025 'persistent macroeconomic pressures' quote and the Feb 2026 'dynamic consumer backdrop' quote are both in the saved releases. I could not find the Apr 2026 'remain cautious' wording in the saved page. The characterization is a reasonable paraphrase, but it is a CEO framing rather tha...",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c79": {
+   "cid": "c79",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://restaurant.org/research-and-media/research/restaurant-economic-insights/economic-indicators/same-store-sales-and-customer-traffic/",
+   "note": "No saved page contained the Technomic figures (-1.1%, 53% positive, 10 of 11 months) or the May 2026 -0.9% and 45% operator figures. The source cited for this unit was not saved. I did not run a live search for them.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://isr.umich.edu/?p=26302; https://www.convenience.org/Media/Daily/2025/November/6/3-McDonalds-Dip-in-Low-Income-Customers_Finance",
+   "note": "UMich's final November 2025 sentiment was 51.0, and McDonald's CEO said low-income QSR traffic fell nearly double digits, a trend lasting nearly two years. I could not confirm the 63% vs 40% unemployment-expectation figures. The November release shows 69% vs 32%, so the 63% may come from the Dece...",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "retried": true
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.fool.com/earnings/call-transcripts/2025/10/29/chipotle-cmg-q3-2025-earnings-call-transcript",
+   "note": "On the Q3 2025 call, Boatwright said guests with household income under $100K are about 40% of sales and are dining out less often. Chipotle's Q3 2025 comps were +0.3% with transactions down 0.8%. The claim is correct for the period stated, but it is a year old.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "retried": true
+  },
+  "c83": {
+   "cid": "c83",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.marketbeat.com/earnings/reports/2026-5-7-shake-shack-inc-stock/; https://ir.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS",
+   "note": "Chipotle's Q1 2026 comp of +0.5%, Taco Bell's +8% and McDonald's US +3.9% check out. Starbucks' 7.1% is its fiscal Q2, which matches the Q1 calendar period. Shake Shack's Q1 2026 same-Shack sales were +4.6%, not +4.9%. I did not check Starbucks' 4.3% transactions figure or McDonald's +6.8% in Q4 ...",
+   "label_verdicts": {
+    "B": "false"
+   },
+   "retried": true
+  },
+  "c84": {
+   "cid": "c84",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.restaurantdive.com/news/cava-q3-2026-comps-growth-moderates-price-mix-traffic/873779/",
+   "note": "Cava Q3 2026 SRS +3.1%, Q2 2026 +9.0% with traffic +5.3%, and Q4 2025 +0.5% were all confirmed. The '15th straight positive quarter' and the Chipotle comparison figures were not directly checked.",
+   "via": "agent"
+  },
+  "c85": {
+   "cid": "c85",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.restaurantbusinessonline.com/operations/fast-casual-restaurant-sales-growth-cooled-2025",
+   "note": "Searches support the general fast-casual squeeze and a narrowing gap with casual dining. I found no Technomic source for the 'ceded occasions' wording or the ~$16 vs ~$20 figures.",
+   "via": "agent"
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.mmcginvest.com/post/how-glp-1-drugs-change-the-feasibility-case-for-restaurants-franchises-food-manufacturers-and-gyms",
+   "note": "The Cornell study's 8.0% drop in limited-service spending within six months is confirmed. A 2026 poll puts adult usage at 11%, so the ~12% late-2025 figure is plausible. The 23% household figure was not confirmed.",
+   "via": "agent"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.mckinsey.com/industries/retail/our-insights/what-us-consumers-want-from-restaurants-in-2026",
+   "note": "The McKinsey page (January 2026) confirms that Gen Z's limited-service spending growth slowed 19 percentage points over two years, against 11 to 12 points for older groups. The 61% figure is not on the McKinsey page. A YouGov survey reports 61% agree dining out is a treat for special occasions, b...",
+   "retried": true
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.mizuhogroup.com/americas-insights/a-more-rational-consumer-is-rewriting-the-restaurant-playbook",
+   "note": "Search results for Mizuho's 'a more rational consumer' piece say about 10% of prior restaurant traffic moved back to grocery over two years. I could not load the page itself, so this rests on the search summary, and the publication date is unknown. The piece links the shift to the widening restau...",
+   "retried": true
+  },
+  "c89": {
+   "cid": "c89",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.placer.ai/anchor/articles/the-2026-fight-for-value-precision-and-the-middle-income-consumer",
+   "note": "A web search of the Placer.ai article confirms its data showed a major shift in fast-casual behavior in $100-125K trade areas for much of 2H 2025, and that Chipotle's CEO has cited food-at-home and grocery as the destination of lost visits. The saved pages did not contain the passage. The claim t...",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "note": "Chipotle's Q4/FY2025 release: Q4 comps -2.5% with transactions -3.2%; full-year comps -1.7% with transactions -2.9%."
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "note": "Q3 2026 release: restaurant-level margin 23.3% vs 24.5%. It says labor rose on lower sales volumes, higher pay and extra restaurant labor, including for promotions."
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "note": "Q3 2026 10-Q table shows menu price increase +2.7% and check mix -1.4%."
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "note": "Q3 2026 call (CFO Adam Rymer): 'In support of the Brisket campaign in Q4, we expect marketing costs to land in the high 3% range.'"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "note": "Q3 2026 10-Q: July headwinds were linked to U.S. food-safety concerns and geopolitical developments. By the end of August, comp trends were back to pre-disruption levels."
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "note": "Q3 2026 call: 'HEEP is now installed in over 1,700 restaurants,' targeting about 2,000 by year-end."
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "note": "Mizuho note dated Jan 5, 2026: 'roughly 10% of prior restaurant traffic has moved back to grocery over the past two years.'"
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "false",
+   "note": "The labor-from-promotions part is accurate. But Chipotle credits transaction growth to its Recipe for Growth strategy (menu/digital innovation, new equipment), not to value deals or loyalty programs. Promotions were a reaction to the July slowdown, and September was up 3.8% with very little promo. F"
+  }
+ },
+ "scores": {
+  "gpt": {
+   "units": 17,
+   "unverifiable": 0,
+   "true": 17,
+   "wrong": 0,
+   "truth": 55,
+   "truth_weight": 245.0,
+   "coverage": 0.416,
+   "accuracy": 1.0,
+   "combined": 0.588,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 22,
+   "unverifiable": 2,
+   "true": 17,
+   "wrong": 3,
+   "truth": 55,
+   "truth_weight": 245.0,
+   "coverage": 0.249,
+   "accuracy": 0.792,
+   "combined": 0.379,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 55,
+   "truth_weight": 245.0,
+   "coverage": 0.233,
+   "accuracy": 1.0,
+   "combined": 0.377,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 55,
+   "truth_weight": 245.0,
+   "coverage": 0.233,
+   "accuracy": 1.0,
+   "combined": 0.377,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 55,
+   "truth_weight": 245.0,
+   "coverage": 0.294,
+   "accuracy": 1.0,
+   "combined": 0.454,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 21,
+   "unverifiable": 0,
+   "true": 21,
+   "wrong": 0,
+   "truth": 55,
+   "truth_weight": 245.0,
+   "coverage": 0.514,
+   "accuracy": 1.0,
+   "combined": 0.679,
+   "metric": "F1"
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "arm": "opus",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find founder-owned US commercial HVAC service companies in Texas with 50-300 employees and no institutional investors",
+ "input_n": 0,
+ "tier": "high",
+ "status": "completed",
+ "seconds": 510,
+ "run_id": "3b346bd9-482b-4008-8bc4-9576113ad885",
+ "output": {
+  "companies": [
+   {
+    "name": "Interior Climate Solutions (ICS)",
+    "domain": "interiorcs.com",
+    "hq": "Dallas, TX (8908 Ambassador Row, Dallas, TX 75247 per Prospeo; the company site says only 'based in Dallas, Texas')",
+    "founded_year": 2020,
+    "employees": "160+ field technicians as of Nov 2026 (https://interiorcs.com/). The site gives no total headcount. Third-party bands disagree and are undated: 21-50 (https://prospeo.io/c/interior-climate-solutions) and 51-200 (https://revenuebase.ai/companies/hvac-contracting-companies/united-states/dallas). Total headcount within 50-300 is likely but not confirmed.",
+    "ownership": "founder-owned (probable). The company site says it is 'privately owned' and 'run by the people who built it', with no investors mentioned. Prospeo lists Tommy Barnes as President/Owner. No page I opened explicitly calls Barnes the founder.",
+    "criteria_evidence": [
+     {
+      "criterion": "Commercial HVAC service",
+      "evidence": "The site says commercial heating, cooling and refrigeration 'is all we do'. It serves businesses that run stores, service centers and multi-tenant properties across many locations.",
+      "source_url": "https://interiorcs.com/about"
+     },
+     {
+      "criterion": "Headquartered in Texas",
+      "evidence": "Described as 'based in Dallas, Texas' and 'Built in Dallas'. Prospeo gives the address as 8908 Ambassador Row, Dallas, TX 75247.",
+      "source_url": "https://interiorcs.com/about"
+     },
+     {
+      "criterion": "Founder-owned / no institutional investors",
+      "evidence": "The site says 'privately owned' and 'run by the people who built it', and mentions no investors. Prospeo lists Tommy Barnes as President/Owner and gives a 2020 founding year. Searches found no PE or VC deal. Barnes is not explicitly confirmed as the founder.",
+      "source_url": "https://interiorcs.com/"
+     },
+     {
+      "criterion": "50-300 employees",
+      "evidence": "160+ field technicians as of Nov 2026, so headcount is at least about 160. No total is published, so the upper bound of 300 cannot be confirmed. Third-party bands (21-50 on Prospeo, 51-200 on RevenueBase) look out of date.",
+      "source_url": "https://interiorcs.com/"
+     }
+    ],
+    "headcount_growth": "Prospeo, undated (as_of unknown): 21-50 employees (https://prospeo.io/c/interior-climate-solutions). Company site, as_of Nov 2026: 160+ field technicians (https://interiorcs.com/). The two figures suggest strong growth, but the earlier one has no date and comes from a different source, so I can't calculate a growth rate.",
+    "last_round": "None found. The company describes itself as privately owned, and no funding or PE transaction turned up in searches (as_of 2026-11-10).",
+    "traction": "As of Nov 2026: 160+ technicians self-perform work in 30 states across five regions, and service partners cover the other 18 contiguous states (https://interiorcs.com/about). Job postings describe it as 'one of the largest independent commercial HVAC/R and facility service providers in the country' (company's own claim).",
+    "rank": 1,
+    "rank_reason": "This is the only company I could verify against every criterion: commercial-only HVAC service, Dallas headquarters, owner-operated and privately owned with no institutional capital found, and 160+ technicians, which puts it well inside the 50-300 range. Two points remain open: whether Barnes is explicitly the founder, and the exact total headcount. Missing fields: confirmed founder name; total employee count."
+   }
+  ],
+  "search_notes": "Only one company passed every criterion. Texas commercial HVAC has been heavily consolidated, and most mid-size candidates I found were already owned by institutions or larger companies. I did not relax the criteria to add more.\n\nEXCLUDED because already owned by institutions or larger companies:\n- Dallas Mechanical Group: bought by EMCOR, Apr 2021 (https://www.contractormag.com/management/article/21160363/emcor-group-inc-acquires-dallas-mechanical-group-llc)\n- Texas Chiller Systems, San Antonio: Orion Group, backed by Alpine Investors, Feb 2021 (https://www.businesswire.com/news/home/20210203005344/en/)\n- FirstCall Mechanical Group, Austin: SkyKnight Capital, 2023 (https://www.businesswire.com/news/home/20230209005278/en)\n- Weldon Contractors, Arlington: joined Upchurch in 2024 (https://upchurchus.com/about-us/weldon)\n- Custom Air Products & Services, Houston: an AirX Climate Solutions company\n- Air Performance Service of Central Texas (dba TEAM Services): acquired by Air Conditioning Innovative Solutions (https://www.cbinsights.com/company/team-services)\n- Chapa Service Company, Garland: its job postings list Propeller Building Services as 'parent company to a family of HVAC and Plumbing specialists' (https://propeller-building-services.careerplug.com/jobs/3382958)\n\nEXCLUDED because not founder-owned or outside 50-300 employees:\n- Gillette Air Conditioning, San Antonio: family-owned and ACCA 2023 Commercial Contractor of the Year, but founder Vince Gillette Sr. died in 2019 and it is now run by the 2nd/3rd generation (https://www.contractingbusiness.com/commercial-hvac/vince-gillette-sr-stalwart-acca-texas-hvac-contracting-dies-88). Closest near-miss if the thesis allows founding-family owners.\n- Kahn Mechanical, Dallas: family-owned, but Fred and Ann Kahn bought the company in 1974 rather than founding it, and third-party sources put it at about 11-50 employees (https://achrnews.com/articles/122147-dallas-contractor-breathes-life-into-dying-business)\n- Lochridge-Priest, Waco: owned by the Akins family since 2007 and over 400 employees\n- Letsos Company, Houston: founded 1953, about 239-388 employees\n- Beyer Mechanical, Selma: run by the Beyer family, but founder status is unclear\n- Cook Mechanical, Houston: Nicholas Cook is listed as founder, but Prospeo shows 11-20 employees (https://prospeo.io/c/cook-mechanical-revenue)\n\nUNVERIFIED leads, left out of the list:\n- New Generation Mechanical, Dallas (newgenm.com): formed in 2001 by Terry Mason and Frank Matthews (https://www.newgenm.com/about-us). 80 US employees and a 2026 Top Workplaces DFW award (https://topworkplaces.com/company/new-generation-mechanical/dallas/). Commercial HVAC/plumbing with a service division. The current leadership page doesn't list the founders, so I couldn't confirm they still own it. Best candidate to check next via Texas SOS filings.\n- Comflow Mechanical Services, Houston: founded 2005, commercial HVAC, 51-200 employees; founder/owner not identified.\n- Gray Mechanical Contractors, Houston: founded 2008, 51-200 employees; owner not identified.\n- Raven Mechanical, Houston: founded 1979, 'family owned', construction-heavy; founder not named.\n- Apogee Mechanical (Austin–San Antonio): commercial-only, owned by Eric Brophy, but founder status and size unknown.\n- Texas Air Mechanical (Keller/DFW): founded 2003, mainly commercial; size unknown.\n- APS Building Services: founded 1983 in Dallas, 100-500 employees; owner unknown.\n\nSources used for discovery: RevenueBase city lists (Dallas, Houston, San Antonio, Austin), company websites, trade press (ACHR News, Contracting Business, Contractor Mag), Business Wire deal releases and Top Workplaces. Downtobid and projecta.ai directories blocked access (429/403). No MSCA or MCA Texas member directory was reachable."
+ },
+ "raw_text": null,
+ "cost_usd": 2.7039022999999993,
+ "cost_basis": "Claude Code reported, API-equivalent",
+ "num_turns": 90,
+ "completed_on": "2026-11-10"
+}

@@ -1,0 +1,1252 @@
+{
+ "sub_use_case": "fin_grounded_answer",
+ "input_n": 1,
+ "task": "What guidance did Nike give for the current quarter on its most recent earnings call, and how did the stock react?",
+ "labels": {
+  "firecrawl": "A",
+  "nimble": "B",
+  "gpt": "C",
+  "parallel": "D",
+  "exa": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 18,
+ "evidence_fetched": 18,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 51,
+ "judge": "v4b",
+ "judge_cost_usd": 1.354,
+ "corrections_v2": {
+  "units_before": 51,
+  "units_after": 39,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2"
+    ]
+   },
+   {
+    "kept": "c6",
+    "merged": [
+     "c7",
+     "c9",
+     "c10",
+     "c11"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16",
+     "c17"
+    ]
+   },
+   {
+    "kept": "c21",
+    "merged": [
+     "c22",
+     "c23"
+    ]
+   },
+   {
+    "kept": "c26",
+    "merged": [
+     "c27"
+    ]
+   },
+   {
+    "kept": "c39",
+    "merged": [
+     "c40"
+    ]
+   },
+   {
+    "kept": "c46",
+    "merged": [
+     "c47"
+    ]
+   }
+  ],
+  "cost": 0.022
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Nike's most recent earnings call was its fiscal 2027 first-quarter results call, held October 1, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "C": "Nike's most recent earnings call was its fiscal 2027 first-quarter results call, held October 1, 2026."
+   },
+   "urls": [
+    "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Lapping EMEA Cyber Week promotions and a higher North America sell-in comparison together are a headwind of approximately 400 basis points to Q2 FY2027 revenues.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "management said Q2 revenue growth would face a headwind of approximately 400 basis points from difficult EMEA Cyber Week and North America sell-in comparisons.",
+    "C": "Nike said prior-year EMEA promotions and North American wholesale shipment comparisons together represent a headwind of approximately 400 basis points to second-quarter revenues.",
+    "D": "two items (lapping EMEA Cyber Week promotions and a higher North America sell-in comparison) would represent a headwind of approximately 400 basis points to second-quarter revenues.",
+    "E": "lapping EMEA Cyber Week promotions and higher North America sell-in would together be a headwind of approximately 400 basis points to revenues in fiscal Q2 2027.",
+    "F": "lapping heavy Cyber Week promotions in EMEA and a higher North America sell-in in the prior year together represent a headwind of approximately 400 basis points to Q2 revenues."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+    "https://investors.nike.com/_assets/_d80c0c7184a5cfee727eb24592b06677/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+    "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The ~400 bps headwind was Nike's only quarter-specific guidance for fiscal Q2 2027.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike's only quarter-specific guidance for fiscal Q2 2027 was a headwind of approximately 400 basis points to revenue from lapping EMEA Cyber Week promotional activity and a higher North America sell-in comparison."
+   },
+   "urls": [
+    "https://investors.nike.com/investors/news-events/investor-news/financial-information-financial-results-transcript-9591-q1-2027-nike-inc-q1-2027-earnings-call"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Nike said these comparisons would pressure Q2 revenue growth relative to Q1.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Nike management said these comparisons would pressure second-quarter revenue growth relative to the first quarter."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Nike did not give a complete standalone Q2 forecast on the call.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Nike did not give a complete standalone forecast for its fiscal second quarter on the October 1, 2026 call."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+    "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c7",
+    "c9",
+    "c10",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Nike said on the call it was not providing specific gross-margin guidance.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Nike stated on the call that it was not providing specific gross-margin guidance."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Nike said Q2 FY27 growth and gross margin would be under pressure.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Nike said Q2 FY27 growth and gross margin would be under pressure."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Nike expected Q2 EBIT to decline by a greater percentage than revenue, with SG&A down year over year.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Nike expected Q2 EBIT to decline by a greater percentage than revenue, with SG&A remaining down year over year."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Nike expects fiscal 2027 revenue to decline in the high-single-digit range.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Nike's FY2027 outlook called for a high-single-digit revenue decline.",
+    "B": "Nike guided fiscal 2027 revenues to decline in the high-single-digit range.",
+    "C": "fiscal 2027 guidance issued October 1, 2026 calls for revenue to decline by high single digits.",
+    "D": "Nike said it currently expects fiscal 2027 revenues to decline in the high single-digit range.",
+    "E": "Nike expects fiscal 2027 revenues to decline in the high-single-digit range.",
+    "F": "Nike expects FY27 revenue to decline in the high single-digit percentage range."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+    "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Nike expects fiscal 2027 EBIT to decline by a greater percentage than revenue.",
+   "asserted_by": [
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Nike expects fiscal 2027 EBIT to decline by a greater percentage than revenue."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+    "https://investors.nike.com/investors/news-events/investor-news/financial-information-financial-results-transcript-9591-q1-2027-nike-inc-q1-2027-earnings-call",
+    "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c15",
+    "c16",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "Nike expects FY2027 adjusted diluted EPS of $1.15 to $1.35, excluding approximately $0.15 of Pace-related restructuring expenses.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Nike expects FY2027 adjusted EPS of $1.15 to $1.35, excluding approximately $0.15 of impact from the PACE program.",
+    "B": "Nike guided fiscal 2027 adjusted diluted EPS to $1.15 to $1.35, excluding approximately $0.15 of Pace-related restructuring expenses.",
+    "C": "fiscal 2027 guidance calls for adjusted earnings per share of $1.15–$1.35; the range excludes approximately $0.15 per share of restructuring expenses.",
+    "E": "Nike expects fiscal 2027 adjusted diluted EPS in the range of $1.15 to $1.35, which excludes approximately $0.15 of restructuring expenses related to Pace.",
+    "F": "Nike expects FY27 adjusted EPS of $1.15 to $1.35, excluding about $0.15 of impact from the new 'Pace' restructuring program."
+   },
+   "urls": [
+    "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Nike expects a fiscal 2027 effective tax rate in the mid-20 percent range, above Q1's 22.7%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike expects a fiscal 2027 effective tax rate in the mid-20 percent range, above the first quarter's 22.7%."
+   },
+   "urls": [
+    "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Implied GAAP EPS from FY2027 guidance is roughly $1.00 to $1.20.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "GAAP EPS implied by Nike's fiscal 2027 guidance is roughly $1.00 to $1.20."
+   },
+   "urls": [
+    "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "CFO Dave Denton said Nike intends to provide a view of full-year expectations and update it as the year progresses.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Nike CFO Dave Denton said Nike intends to provide a view of its expectations for the full fiscal year and update that perspective as the year progresses."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+    "https://investors.nike.com/investors/news-events/investor-news/financial-information-financial-results-transcript-9591-q1-2027-nike-inc-q1-2027-earnings-call"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c21",
+    "c22",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "Nike's FY27 outlook assumes China gets worse for the rest of the year.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Nike's FY27 outlook assumes China gets worse for the rest of the year."
+   },
+   "urls": [
+    "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Supply reduction actions in Nike Sportswear, Jordan Brand and Greater China will pressure reported revenues for the rest of FY2027 and into FY2028.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike said supply reduction actions in Nike Sportswear, Jordan Brand and Greater China will pressure reported revenues for the rest of fiscal 2027 and into fiscal 2028."
+   },
+   "urls": [
+    "https://investors.nike.com/investors/news-events/investor-news/financial-information-financial-results-transcript-9591-q1-2027-nike-inc-q1-2027-earnings-call"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Guidance was well below pre-report consensus of $1.61 EPS.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Nike's guidance sat well below pre-report consensus of $1.61 EPS."
+   },
+   "urls": [
+    "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c26",
+    "c27"
+   ]
+  },
+  {
+   "cid": "c28",
+   "claim": "Nike shares closed at $35.10 on Oct 1, 2026, down 0.85%, lowest close since the Nov 2021 peak.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike shares closed at $35.10 on October 1, 2026, down 0.85% on the day and the lowest close since the November 2021 peak."
+   },
+   "urls": [
+    "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend"
+   ],
+   "conflicts_with": [
+    "c36"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "After hours Oct 1, stock fell to $32.78 at 4:20 p.m. (-6.6%), then recovered to $33.85 at 4:57 p.m. (-3.6%) before the call.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In after-hours trading on October 1, 2026, Nike stock fell to $32.78 at 4:20 p.m. (-6.6%), then recovered to $33.85 at 4:57 p.m. (-3.6%) just before the call."
+   },
+   "urls": [
+    "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Nike shares fell roughly 3% in extended trading on Oct 1, 2026 (CNBC).",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "CNBC reported Nike shares fell roughly 3% in extended trading on October 1, 2026.",
+    "F": "Nike shares fell about 3% in extended/after-hours trading on October 1, 2026 following the Q1 FY27 report."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html"
+   ],
+   "conflicts_with": [
+    "c32",
+    "c33"
+   ]
+  },
+  {
+   "cid": "c31",
+   "claim": "Nike shares fell as much as 6.6% in extended trading after the report, with investors focused on the weak outlook and sales miss despite an EPS beat.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Nike shares fell as much as 6.6% in extended trading after the Q1 FY2027 report, with investors focused on the weak outlook and a sales miss, despite a quarterly EPS beat."
+   },
+   "urls": [
+    "https://finance.yahoo.com/markets/stocks/articles/nike-stock-holders-first-quarter-140135267.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Investing.com: shares fell 6.24% after-hours to $32.96 on Oct 1, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Investing.com reported Nike shares fell 6.24% after-hours to $32.96 on October 1, 2026."
+   },
+   "urls": [
+    "https://www.investing.com/equities/nike-earnings"
+   ],
+   "conflicts_with": [
+    "c30"
+   ]
+  },
+  {
+   "cid": "c33",
+   "claim": "Reuters: Nike shares fell 8.5% in extended trading after the Q1 FY2027 results.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Reuters reported that Nike shares fell 8.5% in extended trading after the Q1 FY2027 results."
+   },
+   "urls": [
+    "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01"
+   ],
+   "conflicts_with": [
+    "c30"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Tiger Brokers: Nike fell 8.19% overnight to $32.10 per share.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Tiger Brokers reported Nike fell 8.19% overnight to $32.10 per share."
+   },
+   "urls": [
+    "https://www.itiger.com/news/1101157703"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Nike shares dropped again on Friday, Oct 2, 2026, a second straight day of declines.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike shares dropped again on Friday, October 2, 2026, a second straight day of declines."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "On Oct 2, 2026 NKE traded down 5.28% ($1.86) at $33.29 intraday, from a prior close of $35.15.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On Friday, October 2, 2026, NKE traded down 5.28% (down $1.86) at $33.29 intraday, from a prior close of $35.15."
+   },
+   "urls": [
+    "https://www.vermoegenszentrum.ch/en/stock-exchange-and-markets/news/nike-stock-falls-5-after-q1-profit-and-revenue-decline"
+   ],
+   "conflicts_with": [
+    "c28"
+   ]
+  },
+  {
+   "cid": "c37",
+   "claim": "On Oct 2, 2026 NKE's intraday range was $31.97 to $33.37 on about 57.6M shares.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On October 2, 2026, NKE's intraday range was $31.97 to $33.37 on about 57.6M shares traded."
+   },
+   "urls": [
+    "https://www.vermoegenszentrum.ch/en/stock-exchange-and-markets/news/nike-stock-falls-5-after-q1-profit-and-revenue-decline"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Nike shares were down about 6% in morning trading on Oct 2, 2026 after the weak outlook and restructuring/layoff plans.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Nike shares were down about 6% in morning trading on Oct. 2, 2026, after the weak outlook and restructuring/layoff plans."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Nike shares fell 3.6% on Oct 2, 2026, the first session after the report, while the S&P 500 rose 0.7%.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Nike shares fell 3.6% on October 2, 2026, the first trading session after the Q1 FY2027 report, while the S&P 500 rose 0.7%."
+   },
+   "urls": [
+    "https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31",
+    "https://finance.yahoo.com/markets/stocks/articles/nike-stock-holders-first-quarter-140135267.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c39",
+    "c40"
+   ]
+  },
+  {
+   "cid": "c41",
+   "claim": "Q1 FY2027 revenue was $11.2B (down 4% reported, down 5% currency-neutral), missing estimates by about $140M.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike's Q1 FY2027 revenue was $11.2 billion (down 4% reported, down 5% currency-neutral), which missed estimates by about $140 million."
+   },
+   "urls": [
+    "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results"
+   ],
+   "conflicts_with": [
+    "c42"
+   ]
+  },
+  {
+   "cid": "c42",
+   "claim": "Q1 FY27 revenue was $11.21B, down 4%, versus $11.32B expected (a miss).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Nike's Q1 FY27 revenue was $11.21B, down 4%, versus the $11.32B expected (a miss)."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html"
+   ],
+   "conflicts_with": [
+    "c41"
+   ]
+  },
+  {
+   "cid": "c43",
+   "claim": "Q1 FY2027 diluted EPS was $0.48, beating estimates by $0.04; net income $0.7B, down 2%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike's Q1 FY2027 diluted EPS was $0.48, beating estimates by $0.04; net income was $0.7 billion, down 2%."
+   },
+   "urls": [
+    "https://www.investing.com/equities/nike-earnings"
+   ],
+   "conflicts_with": [
+    "c44"
+   ]
+  },
+  {
+   "cid": "c44",
+   "claim": "Q1 FY27 EPS was $0.48 versus the $0.43 estimate.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Nike's Q1 FY27 EPS was $0.48 versus the $0.43 estimate."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html"
+   ],
+   "conflicts_with": [
+    "c43"
+   ]
+  },
+  {
+   "cid": "c45",
+   "claim": "Q1 FY2027 gross margin rose 60 bps to 42.8%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike's Q1 FY2027 gross margin rose 60 bps to 42.8%."
+   },
+   "urls": [
+    "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "Greater China revenue fell 26% in Q1 FY27.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Nike's Greater China revenue fell 26% in Q1 FY27."
+   },
+   "urls": [
+    "https://investors.nike.com/investors/news-events/investor-news/financial-information-financial-results-transcript-9591-q1-2027-nike-inc-q1-2027-earnings-call",
+    "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c46",
+    "c47"
+   ]
+  },
+  {
+   "cid": "c48",
+   "claim": "Q1 FY2027: Sportswear fell low-double digits, Jordan mid-teens, Performance grew high-single digits; Dunk revenue cut nearly half (~$200M Sportswear headwind).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In Q1 FY2027, Nike Sportswear fell low-double digits and Jordan Brand fell mid-teens, while Nike Performance grew high-single digits; Dunk revenue was cut by nearly half, a roughly $200 million Sportswear headwind."
+   },
+   "urls": [
+    "https://investors.nike.com/investors/news-events/investor-news/financial-information-financial-results-transcript-9591-q1-2027-nike-inc-q1-2027-earnings-call"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Nike announced the Pace transformation targeting ~$2.5B cumulative savings through FY2031, ~$0.3B charges in FY2027, layoffs beginning 2027.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike announced the Pace operating-model transformation targeting approximately $2.5 billion in cumulative savings through fiscal 2031, with about $0.3 billion of charges to be recognized in fiscal 2027 and layoffs beginning in 2027."
+   },
+   "urls": [
+    "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Nike will hold an Investor Day on Nov 16-17, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nike will hold an Investor Day on November 16-17, 2026, to share the next phase of its growth strategy."
+   },
+   "urls": [
+    "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Over the last six earnings reports, next-session moves ranged from a 15.5% fall (April 2026) to a 15.2% gain (June 2025).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Over the last six earnings reports, Nike's next-session stock moves ranged from a 15.5% fall (April 2026) to a 15.2% gain (June 2025)."
+   },
+   "urls": [
+    "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Release states conference call at 2pm PT on Oct 1, 2026 for FQ1 FY27; no later call before Nov 10.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "Transcript: the two items represent a headwind of approximately 400 bps to Q2 revenues.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "The 400 bps headwind was the only Q2-specific item; CFO declined further Q2 revenue/gross margin specifics.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "CFO said growth rates would be pressured in Q2 sequentially due to tough comparisons.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "Release outlook covers only full-year FY27; no standalone Q2 forecast given.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "A": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "Denton: 'we're probably not going to provide guidance specifically for gross margin.'",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "CFO said Q2 growth rates pressured by comps; gross margin has puts and takes with discounting pressure.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "EBIT-greater-than-revenue decline and SG&A down were full-year outlook, not Q2-specific.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Release: 'Revenues are expected to decline high-single digits in fiscal 2027.'",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "CFO: 'We currently expect EBIT to decline by a greater percentage than revenue.'",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Press release states adjusted diluted EPS $1.15-$1.35 excluding ~$0.15 Pace restructuring.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Release says tax rate mid-20 percent range; Q1 22.7% per Stocktitan.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "Derived arithmetic ($1.15-0.15 to $1.35-0.15) matches Stocktitan's roughly $1.00-$1.20.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "Consistent with Nike starting full-year outlook on this call; Denton's framing matches, though exact quote not in passages.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true",
+    "A": "true"
+   }
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/nike-stock-holders-first-quarter-140135267.html",
+   "note": "Management said China actions will weigh more than in Q1 and pain through balance of year.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "Denton: pain through balance of year and bleeding into fiscal '28 for Sportswear, Jordan, China.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "Midpoint 22% below $1.61 consensus; top of range below every estimate.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "Stocktitan states close $35.10, down 0.85%, lowest since Nov 2021 peak.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "Exact after-hours figures stated via Nasdaq quotes.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html",
+   "note": "CNBC: shares fell roughly 3% in extended trading Thursday.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "StockTitan says shares fell as much as 6.6% after hours; sales miss and EPS beat confirmed.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.investing.com/equities/nike-earnings",
+   "note": "Investing.com summary states 6.24% after-hours drop to $32.96.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01",
+   "note": "Reuters says shares fell 8.5% in extended trading; this differs from other after-hours figures, which reflect different times.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.itiger.com/news/1101157703",
+   "note": "Tiger reports an 8.19% overnight drop to $32.10, which is overnight trading and differs from the regular-session close.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html",
+   "note": "Oct 1 closed down 0.85% and Oct 2 fell further, so two straight declines.",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.vermoegenszentrum.ch/en/stock-exchange-and-markets/news/nike-stock-falls-5-after-q1-profit-and-revenue-decline",
+   "note": "RTTNews intraday figures match exactly; prior close of $35.15 differs slightly from the $35.10 in other sources.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.vermoegenszentrum.ch/en/stock-exchange-and-markets/news/nike-stock-falls-5-after-q1-profit-and-revenue-decline",
+   "note": "The intraday range and the 57.6M volume match the passage; it was a snapshot, not the full session.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html",
+   "note": "CNBC reports shares tumbling on Oct 2 after the weak outlook and layoffs; the ~6% is plausible for the morning, though the passage does not show the exact figure.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/nike-stock-holders-first-quarter-140135267.html",
+   "note": "Yahoo/Trefis states a 3.6% fall on Oct 2 versus S&P 500 +0.7%.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Nike's release confirms $11.2B, down 4% reported and 5% currency-neutral; the miss was about $107–140M depending on source.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "Revenue of $11.21B, down 4%, versus the $11.32B LSEG estimate.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Release confirms EPS of $0.48 and net income of $0.7B, down 2%; the beat was $0.04–0.05 depending on source.",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "LSEG consensus of $0.43 versus actual $0.48; other sources cite $0.44.",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Release states gross margin expanded 60 bps to 42.8%.",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "Transcript states Greater China declined 26% (currency-neutral) in Q1 FY27; reported was -22%.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+   "note": "Transcript confirms Sportswear down low double digits, Dunk cut nearly 50%, ~$200M headwind, Performance up high single digits; Jordan mid-teens is not shown in passages but is plausible.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results",
+   "note": "Release states ~$2.5B savings through FY2031 and ~$0.3B charges in FY2027; layoffs from 2027 per CNBC.",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "Hill said on the June call that Investor Day will be Nov 16-17 to share the next phase of growth strategy; upcoming as of today.",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/nike-q1-fy2027-earnings-outlook-dividend",
+   "note": "Stock Titan states six-report next-session moves ranged from -15.5% (April 2026) to +15.2% (June 2025), based on Nasdaq closes.",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "StockTitan says the Q1 FY27 release had no Q2 forecast. On the call Nike only gave a ~400bp Q2 revenue headwind, and an analyst noted there was no full Q2 guidance."
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "false",
+   "note": "Misattributed. In the transcript, the outlook for EBIT to fall by a greater percentage than revenue, with SG&A down YoY, covers full fiscal 2027, not Q2. The only Q2-specific guidance was the ~400bp revenue headwind."
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "note": "Denton: 'beginning today, we intend to provide a view of our expectations for the full fiscal year and update that perspective as the year progresses.' He didn't say 'rather than quarter-by-quarter' outright, but it's implied."
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "note": "The Tiger Brokers article does say Nike fell 8.19% overnight to $32.10 on Oct 2. Other outlets reported smaller moves (e.g. -6.6% after hours), and $32.10 doesn't quite match an 8.19% drop from StockTitan's $35.10 pre-release close. The claim is only that Tiger reported it, which is accurate."
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "note": "StockTitan and the Q1 call (Investor Day 'in November') support Nov 16-17, 2026, and it's still upcoming as of Nov 10. I found no official Nike press release confirming the dates and no report of a postponement."
+  }
+ },
+ "scores": {
+  "firecrawl": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 1,
+   "truth": 38,
+   "truth_weight": 144.5,
+   "coverage": 0.325,
+   "accuracy": 0.94,
+   "combined": 0.483,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 24,
+   "unverifiable": 0,
+   "true": 24,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 144.5,
+   "coverage": 0.734,
+   "accuracy": 1.0,
+   "combined": 0.846,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 144.5,
+   "coverage": 0.374,
+   "accuracy": 1.0,
+   "combined": 0.544,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 144.5,
+   "coverage": 0.221,
+   "accuracy": 1.0,
+   "combined": 0.363,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 144.5,
+   "coverage": 0.221,
+   "accuracy": 1.0,
+   "combined": 0.363,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 144.5,
+   "coverage": 0.474,
+   "accuracy": 1.0,
+   "combined": 0.643,
+   "metric": "F1"
+  }
+ }
+}

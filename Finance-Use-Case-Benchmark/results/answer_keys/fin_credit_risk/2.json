@@ -1,0 +1,142 @@
+{
+ "sub": "fin_credit_risk",
+ "i": 2,
+ "task": "Assess the credit and counterparty risk of Beyond Meat",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What are the latest reported financials (Q3 2026, quarter ended 26 Sep 2026): revenue, margin, cash, total debt, cash burn?",
+   "answer": "Reported 4 Nov 2026. Revenue was $64.5M, down 8.1% year over year. Gross margin was 19.3%, a five-year high. Cash including restricted cash was $169.3M. Total debt, net of discount, had a carrying value of $313.9M, so debt exceeds cash. Operating cash use for the first nine months of 2026 was $37.3M, against $101.2M a year earlier. The quarter included a $57.1M non-cash impairment and $20.8M of non-cash charges tied to the El Segundo campus. Revenue is still shrinking and the company is not profitable.",
+   "importance": "critical",
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
+  },
+  {
+   "id": "k2",
+   "question": "What is the debt structure and what matures next?",
+   "answer": "The Oct 2025 exchange swapped about 97.4% of the $1.15B 0% convertible notes due 2027 for about $209.7M of new 7% PIK secured second-lien convertible notes due 2030, plus about 317.8M shares. About $14.5M of 2027 notes remain, due March 2027, after a further $15M was exchanged for about 1.55M shares. That is small against $169M of cash. The 2030 PIK notes accrete, so principal grows. Refinancing and equitization risk remains. Verify the exact secured ABL or other senior facility, and its covenants, in the 10-Q.",
+   "importance": "critical",
+   "source": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-reports-third-quarter-004100481.html"
+  },
+  {
+   "id": "k3",
+   "question": "Does Beyond Meat have a current credit rating from S&P, Moody's or Fitch, and has it changed in the last 12 months?",
+   "answer": "None found. Searching for S&P/Moody's/Fitch actions on Beyond Meat in 2025-26 returned no rating-agency releases, only coverage of the 2025 exchange. Treat the company as unrated or not publicly rated. Credit judgement must rest on filings and the equity and bond market. Confirm on the agency sites.",
+   "importance": "critical",
+   "source": "https://www.esmmagazine.com/a-brands/beyond-meat-launches-convertible-debt-exchange-offer-297027"
+  },
+  {
+   "id": "k4",
+   "question": "Was there a recent restructuring, distressed exchange or default?",
+   "answer": "Yes. The Oct 2025 exchange of 2027 converts into 2030 PIK notes plus shares is a distressed-style exchange. It cut face debt by roughly $900M and diluted shares by about 413%. A second small exchange of 2027 notes for shares followed in 2026. No missed payments were found. The stock hit all-time lows around Oct 2025. EPS of $(4.32) for Q3 2026 suggests a later reverse split or heavy impairment effect, which should be verified.",
+   "importance": "critical",
+   "source": "https://www.tipranks.com/news/company-announcements/beyond-meat-completes-strategic-financial-restructuring"
+  },
+  {
+   "id": "k5",
+   "question": "Is there going-concern language or an auditor change?",
+   "answer": "None found in the Q3 2026 release or coverage. Commentary calls solvency risk elevated, but that is not a formal finding. I did not read the 10-Q going-concern note directly. A check of the 10-Q and the FY2025 10-K auditor opinion is needed before relying on this.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/bynd-20261104.htm"
+  },
+  {
+   "id": "k6",
+   "question": "What are the operating distress signals: layoffs, closures, impairments, executive turnover, customer losses?",
+   "answer": "Revenue is falling, down 8.1% in Q3. There were large impairments, including El Segundo campus charges. The company cut headcount and costs in 2025. Cash burn has fallen sharply. Current CFO and CEO status, and any 2026 departures, were not confirmed. Check the 8-Ks.",
+   "importance": "useful",
+   "source": "https://fool.com/earnings/call-transcripts/2026/11/05/beyond-meat-bynd-q3-2026-earnings-call-transcript"
+  },
+  {
+   "id": "k7",
+   "question": "Who owns Beyond Meat and are there payment-behaviour red flags (liens, suits, supplier complaints)?",
+   "answer": "Beyond Meat, Inc. is a public company (Nasdaq: BYND, CIK 1655210), with no sponsor and no change of control. The 2025 exchange left holders of the old converts as large equity holders after heavy dilution. No supplier complaints, liens or collection suits were found in this pass. A UCC and litigation search was not run, so none-found is unconfirmed.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/bynd-20261104.htm"
+  },
+  {
+   "id": "k8",
+   "question": "What is the risk call?",
+   "answer": "Elevated. Cash of $169M covers the $14.5M 2027 stub and the near-term burn, and burn is improving. But revenue is still declining, debt of $314M exceeds cash, the 2030 PIK notes are secured and senior to unsecured creditors, and the company is unrated. It has already completed a distressed exchange. Unsecured trade exposure should be short-term or secured. Recheck the 10-Q for covenants and the going-concern note.",
+   "importance": "critical",
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
+  }
+ ],
+ "labels": {
+  "exa": "B",
+  "gpt": "C",
+  "firecrawl": "G",
+  "opus": "H",
+  "parallel": "I",
+  "nimble": "J"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  }
+ },
+ "cost_usd": 0.22
+}

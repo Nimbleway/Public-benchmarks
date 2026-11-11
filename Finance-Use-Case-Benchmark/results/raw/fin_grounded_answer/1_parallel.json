@@ -1,0 +1,302 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "fin_grounded_answer",
+ "input": "What guidance did Nike give for the current quarter on its most recent earnings call, and how did the stock react?",
+ "input_n": 1,
+ "tier": "pro",
+ "status": "completed",
+ "seconds": 153,
+ "run_id": "trun_c265ce5863964b6980b71f1754a2fec7",
+ "output": {
+  "question": "What guidance did Nike give for the current quarter on its most recent earnings call, and how did the stock react?",
+  "passages": [
+   {
+    "quote": "These 2 items will represent a headwind of approximately 400 basis points to revenues in the second quarter.",
+    "publisher": "NIKE, Inc.",
+    "published_date": "2026-10-01",
+    "source_url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf"
+   },
+   {
+    "quote": "For fiscal '27, we currently expect revenues to decline in the high single-digit range.",
+    "publisher": "NIKE, Inc.",
+    "published_date": "2026-10-01",
+    "source_url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf"
+   },
+   {
+    "quote": "Its shares fell 8.5% in extended trading.",
+    "publisher": "Thomson Reuters",
+    "published_date": "2026-10-01 (updated 2026-10-02)",
+    "source_url": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01"
+   }
+  ],
+  "answer": "On its October 1 call, Nike said lapping EMEA Cyber Week promotions and a higher North America sell-in comparison would create an approximately 400-basis-point headwind to second-quarter revenue. It did not give a standalone Q2 revenue-growth or decline target; its high-single-digit revenue-decline forecast was for fiscal 2027, not the quarter. Reuters reported that Nike shares fell 8.5% in extended trading.",
+  "caveats": [
+   "The approximately 400-basis-point figure is a revenue headwind from comparison factors, not a standalone forecast for Q2 total revenue growth or decline.",
+   "Nike's high-single-digit revenue-decline outlook was for fiscal 2027. The call also stated that Nike was not providing specific gross-margin guidance."
+  ],
+  "missing_fields": [
+   "A standalone Q2 FY2027 total revenue growth or decline rate was not stated in the opened call transcript.",
+   "A Q2 FY2027 EPS target was not stated in the opened call transcript."
+  ],
+  "as_of": "2026-11-10",
+  "key_facts": [
+   {
+    "date": "2026-10-01",
+    "source_url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+    "fact": "On its Q1 FY2027 call, Nike identified an approximately 400-basis-point headwind to Q2 revenue from two prior-year comparison factors."
+   },
+   {
+    "date": "2026-10-01",
+    "source_url": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01",
+    "fact": "Reuters reported that Nike shares fell 8.5% in extended trading."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "**_October 1, 2026_**",
+      "Good afternoon, everyone. Welcome to NIKE, Inc.'s First Quarter Fiscal 2027 conference"
+     ]
+    }
+   ],
+   "reasoning": "The official transcript dates the call October 1, 2026 and identifies it as NIKE's First Quarter Fiscal 2027 conference call.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "athlete trains. We're seeing success across the portfolio. Nike Mind has quickly become",
+      "Training is one of NIKE's largest untapped performance opportunities because every"
+     ]
+    },
+    {
+     "title": "Nike plans more job cuts to boost sputtering turnaround, forecasts steep revenue drop | Reuters",
+     "url": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01",
+     "excerpts": [
+      "Its shares fell 8.5% in extended trading."
+     ]
+    }
+   ],
+   "reasoning": "The transcript supports the Q2 headwind and FY2027 outlook quotations; Reuters supports the extended-trading stock-reaction quotation.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "athlete trains. We're seeing success across the portfolio. Nike Mind has quickly become",
+      "Training is one of NIKE's largest untapped performance opportunities because every"
+     ]
+    },
+    {
+     "title": "Nike plans more job cuts to boost sputtering turnaround, forecasts steep revenue drop | Reuters",
+     "url": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01",
+     "excerpts": [
+      "Its shares fell 8.5% in extended trading."
+     ]
+    }
+   ],
+   "reasoning": "The call transcript states the Q2 revenue headwind and separately identifies the high-single-digit decline as FY2027 guidance. Reuters reports the shares' 8.5% fall in extended trading.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "Training is one of NIKE's largest untapped performance opportunities because every",
+      "World Cup. Additionally, if you were to exclude the reset in Greater China, NIKE"
+     ]
+    }
+   ],
+   "reasoning": "The transcript labels the revenue decline outlook as fiscal-year guidance and says NIKE was not providing specific gross-margin guidance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "athlete trains. We're seeing success across the portfolio. Nike Mind has quickly become",
+      "partially offset by a 2% growth in North America."
+     ]
+    }
+   ],
+   "reasoning": "The opened transcript discusses Q2 comparison headwinds and the Q&A about Q2, but the reviewed material does not state a standalone Q2 total-revenue rate or EPS target.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The as-of date is the date specified for the research task.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "athlete trains. We're seeing success across the portfolio. Nike Mind has quickly become"
+     ]
+    },
+    {
+     "title": "Nike plans more job cuts to boost sputtering turnaround, forecasts steep revenue drop | Reuters",
+     "url": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01",
+     "excerpts": [
+      "Its shares fell 8.5% in extended trading."
+     ]
+    }
+   ],
+   "reasoning": "The official call transcript supports the Q2 guidance fact, while Reuters supports the stock reaction.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "athlete trains. We're seeing success across the portfolio. Nike Mind has quickly become"
+     ]
+    }
+   ],
+   "reasoning": "This transcript segment directly supports the quoted Q2 revenue headwind.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "Training is one of NIKE's largest untapped performance opportunities because every"
+     ]
+    }
+   ],
+   "reasoning": "This segment directly supports the quoted full-year revenue outlook.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "Nike plans more job cuts to boost sputtering turnaround, forecasts steep revenue drop | Reuters",
+     "url": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01",
+     "excerpts": [
+      "Its shares fell 8.5% in extended trading."
+     ]
+    }
+   ],
+   "reasoning": "This Reuters segment directly supports the stock-reaction quotation.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "athlete trains. We're seeing success across the portfolio. Nike Mind has quickly become"
+     ]
+    }
+   ],
+   "reasoning": "The transcript supports the stated Q2 revenue headwind fact.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Nike plans more job cuts to boost sputtering turnaround, forecasts steep revenue drop | Reuters",
+     "url": "https://www.reuters.com/business/retail-consumer/nike-quarterly-sales-miss-estimates-china-weakness-competition-weigh-2026-10-01",
+     "excerpts": [
+      "Its shares fell 8.5% in extended trading."
+     ]
+    }
+   ],
+   "reasoning": "Reuters directly supports the stated extended-trading stock reaction.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "Training is one of NIKE's largest untapped performance opportunities because every"
+     ]
+    }
+   ],
+   "reasoning": "The transcript specifies that the high-single-digit revenue decline applies to fiscal 2027, supporting the distinction in the caveat.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.1",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "World Cup. Additionally, if you were to exclude the reset in Greater China, NIKE"
+     ]
+    }
+   ],
+   "reasoning": "The transcript supports the caveat that NIKE did not provide specific gross-margin guidance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "athlete trains. We're seeing success across the portfolio. Nike Mind has quickly become"
+     ]
+    }
+   ],
+   "reasoning": "The transcript provides Q2 headwind guidance but no standalone total-revenue growth or decline rate.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [
+    {
+     "title": "FY27 Q1 Earnings Release Conference Call Transcript ",
+     "url": "https://investors.nike.com/_assets/_d4c8d3244f0be73c7f2e05002eb51c6b/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+     "excerpts": [
+      "partially offset by a 2% growth in North America."
+     ]
+    }
+   ],
+   "reasoning": "The transcript's Q2 guidance discussion does not state a Q2 EPS target.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "completed_on": "2026-11-10"
+}

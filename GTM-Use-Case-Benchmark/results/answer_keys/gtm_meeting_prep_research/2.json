@@ -1,0 +1,116 @@
+{
+ "sub": "gtm_meeting_prep_research",
+ "i": 2,
+ "task": "Prepare me for a meeting with Gong (gong.io)",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What does Gong do, and how large and fast-growing is it now?",
+   "answer": "Gong sells a Revenue AI platform, formerly called revenue intelligence. It captures and analyzes customer interactions (calls, email, meetings) and CRM data, and it adds AI agents that guide forecasting, deal execution and account management. Gong's May 12, 2026 press release said growth accelerated past 55% YoY in the latest quarter, the tenth straight quarter of accelerating growth, and that ARR topped $500M. A secondary source (ARR.Club, Oct 2026) cites $550M+ from a single attendee report, so treat that as unconfirmed. The latest private valuation I found was $7.3B, from the 2021 Series E. I did not find a newer round.",
+   "importance": "critical",
+   "source": "https://www.gong.io/press/gong-growth-accelerates-past-55-yoy-arr-tops-500m"
+  },
+  {
+   "id": "k2",
+   "question": "What are Gong's current product priorities, with dates?",
+   "answer": "Gong ships in themed 'Missions'. Feb 25, 2026: Mission Andromeda extended the Revenue AI OS to enablement and account management. Jun 24, 2026: Mission Big Dipper introduced a 'Revenue Harness'. Sep 30, 2026, at Celebrate '26: Mission Callisto, anchored by Gong Enrich (third-party account and contact data added to the Revenue Graph), plus event-driven agents, auto-enrichment, Deep Mode and expanded dashboards. The priorities are agentic AI, enriching the data layer, and expanding beyond sales calls into enablement and account management.",
+   "importance": "critical",
+   "source": "https://siliconangle.com/2026/09/30/gong-adds-auto-enrichment-and-event-driven-agents-to-its-revenue-intelligence-platform/"
+  },
+  {
+   "id": "k3",
+   "question": "What events in the last 90 days (since about Aug 2026) change the picture?",
+   "answer": "The main event is the Sep 30, 2026 Celebrate '26 launch of Mission Callisto and Gong Enrich. Gong also announced a Microsoft partnership on Jul 1, 2026 (workflow automation), which is just outside 90 days but still recent. Gong was named a Leader in the 2026 Gartner Magic Quadrant for Revenue Action Orchestration, for the second year running. It was also named to Fast Company's Most Innovative Companies 2026 (Applied AI). Joe FitzGerald was appointed Chief Legal Officer in March 2026. My searches found no layoffs, M&A or IPO announcement. That is a 'none found' result from news searches, not a registry or filing check.",
+   "importance": "critical",
+   "source": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26"
+  },
+  {
+   "id": "k4",
+   "question": "Who are the key leaders to engage?",
+   "answer": "Amit Bendov is co-founder and CEO (formerly CEO of Sisense). Joe FitzGerald is Chief Legal Officer, appointed Mar 2026. I did not verify the current CRO, CPO or CMO names. Confirm them on gong.io/about or LinkedIn before the meeting.",
+   "importance": "useful",
+   "source": "https://ca.marketscreener.com/insider/AMIT-BENDOV-A00XE6/"
+  },
+  {
+   "id": "k5",
+   "question": "What challenges or competitive pressures is Gong visibly facing?",
+   "answer": "I found no layoffs or missed targets. The visible pressures are competitive. Clari (merged with Salesloft), Salesforce Agentforce, Microsoft Copilot, HubSpot and Outreach all sell AI agents in the same market. Gong's own Microsoft partnership and its push into third-party data enrichment (competing with ZoomInfo-type vendors) respond to that. This is an inference from market structure. I found no cited evidence of Gong-specific complaints, so don't present it as a confirmed pain.",
+   "importance": "critical",
+   "source": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26"
+  },
+  {
+   "id": "k6",
+   "question": "What talking points fit the evidence?",
+   "answer": "1) Gong Enrich and Mission Callisto: how are customers handling data quality and sourcing, and where do partners fit? 2) Event-driven agents and the Microsoft partnership: what integrations or data feeds does Gong want from partners? 3) Growth above 55% with enterprise adoption: what is the bottleneck, such as implementation, enablement or international expansion? Verify any ARR figure above $500M before quoting it.",
+   "importance": "useful",
+   "source": "https://www.gong.io/press/gong-growth-accelerates-past-55-yoy-arr-tops-500m"
+  }
+ ],
+ "labels": {
+  "firecrawl": "A",
+  "parallel": "B",
+  "exa": "C",
+  "gpt": "D",
+  "opus": "E",
+  "nimble": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "firecrawl": {
+   "k1": "missing",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct"
+  },
+  "parallel": {
+   "k1": "missing",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct"
+  },
+  "exa": {
+   "k1": "missing",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "gpt": {
+   "k1": "missing",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  }
+ },
+ "cost_usd": 0.101
+}

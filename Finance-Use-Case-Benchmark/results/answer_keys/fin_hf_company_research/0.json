@@ -1,0 +1,142 @@
+{
+ "sub": "fin_hf_company_research",
+ "i": 0,
+ "task": "Research NVIDIA (nvidia.com) for a hedge fund",
+ "key": [
+  {
+   "id": "k1",
+   "question": "When is NVIDIA's next earnings report (Q3 FY2027), and what is the expected setup?",
+   "answer": "NVIDIA confirmed Q3 FY2027 results (quarter ended Oct 25, 2026) for Tuesday Nov 17, 2026, with the call at 5pm ET. This is the main catalyst in the next week. Company guidance for Q3 is about $108B revenue ±2%. Consensus was about $104B at the time of the August report, and consensus has likely moved higher since. Two secondary sources gave the date. I did not open NVIDIA's own press release.",
+   "importance": "critical",
+   "source": "https://www.insiderfinance.io/news/nvidia-earnings-set-for-nov-17-amid-sell-signals"
+  },
+  {
+   "id": "k2",
+   "question": "How did the latest reported quarter (Q2 FY2027, reported Aug 26, 2026) compare with guidance and consensus?",
+   "answer": "Revenue was about $96.2B, up about 106% year over year. That beat the roughly $91B implied by guidance and consensus of about $92.1-92.3B. Non-GAAP EPS was $2.22, ahead of consensus. Data Center revenue was about $89.0B. Non-GAAP gross margin was 75.0%. The stock rose about 4-5% after hours. Commentary says the margin and the guide mattered more than the beat. Figures come from secondary press coverage, so verify against the 8-K and the CFO commentary.",
+   "importance": "critical",
+   "source": "https://www.iphoneincanada.ca/2026/08/27/nvidia-blows-past-expectations-with-96-2-billion-revenue-in-q2-2027/"
+  },
+  {
+   "id": "k3",
+   "question": "What is the current guidance, and what does it assume about China?",
+   "answer": "Q3 FY2027 guidance is revenue of $108B ±2% and non-GAAP gross margin of 74.0% ±50bp. It assumes no data center compute revenue from China. The CFO gave a preliminary FY2028 revenue growth expectation of about 70% year over year and called it a supply-constrained outlook. The guide is a lower gross margin than Q2, which is a margin-pressure signal, with memory costs cited as a factor. Any China export licence or H20/H200 change is upside not in the guide.",
+   "importance": "critical",
+   "source": "https://fourweekmba.com/ai-nvidia-q2-fy2027-guide-margin-memory-tax/"
+  },
+  {
+   "id": "k4",
+   "question": "What are the key risks to the thesis: supply constraints, gross-margin compression and memory costs, export controls and China, and customer concentration or AI capex sustainability?",
+   "answer": "Supply is the constraint (CoWoS, HBM and memory), and the Q3 gross-margin guide of 74% is below Q2's 75%. China data center revenue is assumed to be zero, so export-control and geopolitical news can move the stock either way. Hyperscaler capex, customer concentration and the circular financing of customers (for example the OpenAI investment) are the main demand risks. Custom-ASIC competition from Google TPU, Broadcom and AMD is a further risk. Check the 10-Q for customer concentration percentages and purchase commitments. This answer comes from the Q2 coverage; I did not run separate searches on each risk.",
+   "importance": "critical",
+   "source": "https://fourweekmba.com/ai-nvidia-q2-fy2027-guide-margin-memory-tax/"
+  },
+  {
+   "id": "k5",
+   "question": "What is NVIDIA's credit and liquidity position (ratings, debt maturities, covenants)?",
+   "answer": "Not verified in this pass. The last figures I know of are an AA-/Aa-range rating with net cash, a large cash and securities balance, and a modest debt stack of roughly $8.5B in senior notes with maturities starting 2026-2028. Pull the Q2 FY27 10-Q for current cash, debt and the buyback authorization, and check for any new bond issuance since August. Credit is not a thesis risk. The question is whether cash is being deployed into strategic investments in customers and partners.",
+   "importance": "useful",
+   "source": "https://investor.nvidia.com/financial-info/sec-filings/default.aspx"
+  },
+  {
+   "id": "k6",
+   "question": "What is the event-driven picture: buybacks, strategic investments or M&A, and antitrust or regulatory probes?",
+   "answer": "Not verified in this pass. Check the following: (1) the remaining buyback authorization and the pace of repurchases in the 10-Q; (2) large strategic investments in customers and partners (OpenAI, Intel, Anthropic and others) and any related disclosure; (3) the status of the China SAMR antitrust probe over Mellanox, the DOJ/EU inquiries, and chip export rules and licences. Any of these can change the position.",
+   "importance": "critical",
+   "source": "https://investor.nvidia.com/news/default.aspx"
+  },
+  {
+   "id": "k7",
+   "question": "What are insiders doing (Form 4 selling, 10b5-1 plans) and what is the ownership picture?",
+   "answer": "Not verified in this pass. Jensen Huang has historically sold under a 10b5-1 plan, so recurring Form 4 sales are routine and not a signal. There is no meaningful insider buying. Check the Form 4 filings from the past 90 days, and check the 13F changes for Q3 2026 (due about Nov 14) for big-fund moves. Ownership is mostly institutional (Vanguard, BlackRock).",
+   "importance": "useful",
+   "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045810&type=4"
+  },
+  {
+   "id": "k8",
+   "question": "What upcoming product and event catalysts fall in the next 6 months?",
+   "answer": "Not fully verified. Expected items are the Nov 17 earnings, the Vera Rubin ramp and any supply or delay news, and CES in January 2027 plus GTC in March 2027. The Q4 FY27 earnings would be in about late February 2027. Also watch US-China trade and export-licence decisions. Confirm the dates on NVIDIA's investor calendar.",
+   "importance": "useful",
+   "source": "https://investor.nvidia.com/events-and-presentations/default.aspx"
+  }
+ ],
+ "labels": {
+  "parallel": "A",
+  "exa": "B",
+  "opus": "C",
+  "nimble": "D",
+  "gpt": "E",
+  "firecrawl": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "missing"
+  }
+ },
+ "cost_usd": 0.025
+}

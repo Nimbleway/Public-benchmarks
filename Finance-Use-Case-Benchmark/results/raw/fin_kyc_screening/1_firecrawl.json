@@ -1,137 +1,107 @@
 {
  "arm": "firecrawl",
+ "sub_use_case": "fin_kyc_screening",
+ "input": "Run a KYC screen on Wirecard in Germany",
+ "input_n": 1,
  "tier": "spark-2/high",
  "status": "completed",
- "seconds": 264,
- "run_id": "01a15e07-3d31-76fa-b076-9b0359a934e7",
+ "seconds": 255,
+ "run_id": "01a1c190-1e2a-7079-9a59-5110c95013a2",
  "output": {
   "input_name": "Wirecard",
   "registration": {
    "legal_name": "Wirecard AG",
-   "registry_number": "HRB 169227 (District Court of Munich)",
+   "registry_number": "HRB 169227",
    "lei": "529900A8LX4KL0YUTH71",
-   "jurisdiction": "Germany (DE)",
-   "incorporation_date": "2000-06-20 (registry registration event)",
+   "jurisdiction": "DE",
+   "incorporation_date": null,
    "registered_address": "Einsteinring 35, 85609 Aschheim, Germany",
-   "status": "In insolvency / liquidation; GLEIF entity status is ACTIVE but the LEI registration status is LAPSED",
-   "source_url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71"
+   "status": "ACTIVE in the GLEIF entity record; insolvency proceedings opened on 2020-08-25",
+   "source_url": "https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71 | https://www.justiz.bayern.de/gerichte-und-behoerden/amtsgerichte/muenchen/presse/2020/38.php"
   },
-  "related_entities": [
-   {
-    "name": "Wirecard Acceptance Technologies GmbH",
-    "relation": "Wirecard AG network subsidiary/related entity",
-    "registry_number": "HRB 238107"
-   },
-   {
-    "name": "Wirecard Global Sales GmbH",
-    "relation": "Wirecard AG network subsidiary/related entity; in liquidation",
-    "registry_number": "HRB 223366"
-   },
-   {
-    "name": "Wirecard Issuing Technologies GmbH",
-    "relation": "Wirecard AG network subsidiary/related entity; in liquidation",
-    "registry_number": "HRB 235570"
-   },
-   {
-    "name": "Wirecard Retail Services GmbH",
-    "relation": "Wirecard AG network subsidiary/related entity; in liquidation",
-    "registry_number": "HRB 143760"
-   },
-   {
-    "name": "Wirecard Technologies GmbH",
-    "relation": "Wirecard AG network subsidiary/related entity; in liquidation",
-    "registry_number": "HRB 200352"
-   },
-   {
-    "name": "Wirecard Communication Services GmbH",
-    "relation": "Wirecard AG network subsidiary/related entity",
-    "registry_number": "HRB 24925"
-   }
-  ],
+  "related_entities": [],
   "people": [
    {
-    "name": "Michael Jaffé",
-    "role": "Insolvency administrator of Wirecard AG, appointed by the Munich Insolvency Court",
-    "nationality": null,
-    "source_url": "https://wirecard.com/page/2/?p=company"
+    "name": "James H. Freis, Jr.",
+    "role": "Management Board member appointed 2020-06-18; interim CEO appointed 2020-06-19 (historical; current status not established)",
+    "nationality": "American",
+    "source_url": "https://wirecard.com/page/3/?p=company"
    },
    {
     "name": "Markus Braun",
-    "role": "Former CEO and member of the management board; resigned 2020-06-19 and employment contract terminated 2020-06-30",
+    "role": "Former CEO and Management Board member; resigned effective 2020-06-19",
     "nationality": null,
-    "source_url": "https://wirecard.com/page/2/?p=company"
-   },
-   {
-    "name": "Alexander von Knoop",
-    "role": "Former CFO and member of the management board",
-    "nationality": null,
-    "source_url": "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
-   },
-   {
-    "name": "Susanne Steidl",
-    "role": "Former Chief Product Officer and member of the management board",
-    "nationality": null,
-    "source_url": "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
+    "source_url": "https://wirecard.com/page/3/?p=company"
    },
    {
     "name": "Jan Marsalek",
-    "role": "Former Chief Operating Officer and member of the management board",
+    "role": "Former COO and Management Board member; suspended 2020-06-18 and dismissed 2020-06-22",
     "nationality": null,
-    "source_url": "https://wirecard.com/wp-content/uploads/2020/12/Annual-Report-2018.pdf"
+    "source_url": "https://wirecard.com/page/3/?p=company"
+   },
+   {
+    "name": "Alexander von Knoop",
+    "role": "CFO and Management Board member as of 2019-06-30",
+    "nationality": null,
+    "source_url": "https://wirecard.com/wp-content/uploads/2020/12/Half-yearly-financial-report-2019.pdf"
+   },
+   {
+    "name": "Susanne Steidl",
+    "role": "CPO and Management Board member as of 2019-06-30",
+    "nationality": null,
+    "source_url": "https://wirecard.com/wp-content/uploads/2020/12/Half-yearly-financial-report-2019.pdf"
    }
   ],
   "sanctions": [],
   "pep": [],
   "adverse_media": [
    {
+    "date": "2020-06-18",
+    "category": "Accounting irregularity / suspected falsified confirmations",
+    "summary": "Wirecard reported that its auditor had not obtained sufficient evidence for EUR 1.9 billion in trust-account cash and that there were indications of spurious balance confirmations intended to deceive the auditor and create a false impression that the cash existed.",
+    "severity": "high",
+    "status": "Reported by the company; clarification and investigation were ongoing at the source date",
+    "source_url": "https://wirecard.com/page/3/?p=company"
+   },
+   {
+    "date": "2020-06-25",
+    "category": "Insolvency / over-indebtedness",
+    "summary": "Wirecard AG announced that its management board had filed for opening of insolvency proceedings because of impending insolvency and over-indebtedness.",
+    "severity": "high",
+    "status": "Insolvency application filed; proceedings subsequently opened",
+    "source_url": "https://wirecard.com/page/3/?p=company"
+   },
+   {
     "date": "2020-08-25",
-    "category": "Insolvency / accounting scandal",
-    "summary": "The Munich Local Court opened insolvency proceedings over Wirecard AG's assets and appointed Michael Jaffé as insolvency administrator; the company's official notice described the financial situation as extremely difficult and referred to the scandalous circumstances.",
+    "category": "Insolvency proceeding",
+    "summary": "Munich Local Court opened insolvency proceedings over Wirecard AG, case 1542 IN 1308/20, and appointed Dr. Michael Jaffé as insolvency administrator.",
     "severity": "high",
-    "status": "Insolvency proceedings opened and administration ongoing",
-    "source_url": "https://wirecard.com/page/2/?p=company"
-   },
-   {
-    "date": "2024-08-06",
-    "category": "Embezzlement / fraud-related criminal proceedings",
-    "summary": "Reuters reported that Munich prosecutors charged former CFO Alexander von Knoop and former CPO Susanne Steidl with several counts of embezzlement; von Knoop was also charged with aiding and abetting embezzlement. Prosecutors alleged that Wirecard suffered losses of several hundred million euros, while a decision on whether the two would stand trial was pending.",
-    "severity": "high",
-    "status": "Charges filed; trial decision pending as reported",
-    "source_url": "https://www.reuters.com/technology/two-more-wirecard-executives-charged-over-accounting-scandal-2024-08-06/"
-   },
-   {
-    "date": "2024-09-05",
-    "category": "Director liability / fiduciary breach",
-    "summary": "The Munich Regional Court ordered former Wirecard board members to pay EUR 140 million plus interest. The case concerned an unsecured EUR 100 million loan and subscription to bonds exceeding EUR 100 million; the court found three former management-board members liable for negligent breaches of duty, while the supervisory-board claim was unsuccessful for lack of causality.",
-    "severity": "high",
-    "status": "Civil judgment reported; criminal proceedings remained pending for some former board members",
-    "source_url": "https://globallitigationnews.bakermckenzie.com/2025/01/03/germany-wirecard-board-members-liable-for-eur-140-million/"
+    "status": "Proceedings opened and administered by the court-appointed insolvency administrator",
+    "source_url": "https://www.justiz.bayern.de/gerichte-und-behoerden/amtsgerichte/muenchen/presse/2020/38.php"
    },
    {
     "date": "2025-11-13",
-    "category": "Insolvency litigation / shareholder claims",
-    "summary": "Germany's Federal Court of Justice held that claims by Wirecard AG shareholders for capital-market damages are not ordinary insolvency claims and rank behind ordinary insolvency creditors. The court described allegations that Wirecard had feigned a business model and misrepresented its assets, finances and profits in the underlying litigation.",
-    "severity": "medium",
-    "status": "Final BGH judgment; shareholder claims subordinated in the insolvency",
-    "source_url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025_en/2025211.html"
+    "category": "Shareholder litigation / capital-market deception allegations",
+    "summary": "The Federal Court of Justice held that shareholder capital-market damages claims connected to the acquisition of Wirecard shares are not ordinary insolvency claims; its factual summary states that Wirecard had feigned a business model that did not exist and had been deceptive about assets, finances and profits.",
+    "severity": "high",
+    "status": "Judgment issued; appeal largely successful for the insolvency administrator",
+    "source_url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/EN/2025/2025211.html"
    }
   ],
   "namesakes_excluded": 0,
   "risk_rating": "high",
-  "risk_rationale": "As of 2026-10-21, the exact entity is Wirecard AG, HRB 169227, LEI 529900A8LX4KL0YUTH71. The company is in insolvency/liquidation, its GLEIF LEI registration is LAPSED, and its former senior management is linked in the opened sources to criminal charges, major civil liability findings and insolvency litigation. OFAC SDN searches returned no exact matches for Wirecard AG or the named former officers; OpenSanctions searches returned no matches for the entity or named officers in the EU Financial Sanctions Files (eu_fsf), UK FCDO sanctions dataset (gb_fcdo_sanctions), or PEP topic search, and the OFSI search returned no Wirecard result. No current beneficial owner or PSC was identified in the sources opened, so no unsupported owner finding is reported. The insolvency and accounting-fraud history, continuing legal exposure and lapsed LEI warrant a HIGH rating despite no identified sanctions or PEP matches. Sources: https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71; https://sanctionssearch.ofac.treas.gov/; https://www.opensanctions.org/search/?q=Wirecard+AG&datasets=eu_fsf; https://www.opensanctions.org/search/?q=Wirecard+AG&datasets=gb_fcdo_sanctions; https://sanctionssearchapp.ofsi.hmtreasury.gov/"
+  "risk_rationale": "High risk is driven by the official opening of insolvency proceedings over Wirecard AG on 2020-08-25, the company's own report of missing audit evidence for EUR 1.9 billion and indications of spurious balance confirmations, and the 2025 Federal Court of Justice decision concerning shareholder claims arising from alleged deception about the company's business model, assets, finances and profits. GLEIF identifies the exact entity as Wirecard AG, HRB 169227, LEI 529900A8LX4KL0YUTH71, with a lapsed LEI registration; no confirmed sanctions or PEP match was returned for Wirecard AG and the four queried officers in the OpenSanctions results, but the Jan Marsalek query failed with a provider error and therefore does not constitute clearance for him. Sources: https://api.gleif.org/api/v1/lei-records/529900A8LX4KL0YUTH71; https://www.justiz.bayern.de/gerichte-und-behoerden/amtsgerichte/muenchen/presse/2020/38.php; https://wirecard.com/page/3/?p=company; https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/EN/2025/2025211.html; https://www.opensanctions.org/search/?q=Wirecard+AG&schema=Company"
  },
- "cost_usd": 0.4831,
+ "cost_usd": 0.5118,
  "cost_basis": "credits x Standard rate",
- "error": null,
- "credits": 488,
+ "credits": 517,
  "exchange": {
   "enabled": true,
   "requireApproval": false,
   "onTermsRequired": "skip",
-  "paidCalls": 9,
-  "creditsUsed": 135
+  "paidCalls": 4,
+  "creditsUsed": 40
  },
- "sub_use_case": "fin_kyc_screening",
- "input": "Run a KYC screen on Wirecard in Germany",
- "input_n": 1
+ "error": null,
+ "completed_on": "2026-11-09"
 }

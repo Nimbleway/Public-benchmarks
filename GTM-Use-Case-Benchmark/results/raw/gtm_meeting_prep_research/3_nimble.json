@@ -1,0 +1,162 @@
+{
+ "arm": "nimble",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Vercel (vercel.com)",
+ "input_n": 3,
+ "tier": "medium",
+ "status": "completed",
+ "seconds": 110,
+ "run_id": "task_run_b4039ac41aed4146b3fa57e0eafd317b",
+ "output": {
+  "company": "Vercel",
+  "challenges": [
+   {
+    "date": "2026-04-16",
+    "evidence": "Teardown (16 Apr 2026): developer Riley Walz's Vercel invoice showed $46,485.99 in on-demand charges (Feb 2026) and CEO Guillermo Rauch offered to pay the bill himself; 'Cloudflare charges nothing for egress... Vercel charges $0.15 a gigabyte'; Netlify dropped per-seat pricing in April 2026, competing directly on Vercel's model.",
+    "challenge": "Pricing predictability and bill shock: usage bills are unbounded, Spend Management is off by default and not a true ceiling, and high-profile runaway bills keep surfacing.",
+    "source_url": "https://abovetheapi.co/teardowns/vercel-pricing"
+   },
+   {
+    "date": "2026-04-16",
+    "evidence": "'Vercel keeps the premium and leans on Next.js to hold customers, which works today but rests the whole premium on lock-in, just as Cloudflare's Next.js support and projects like OpenNext work to dissolve it' (16 Apr 2026).",
+    "challenge": "Competitive pressure from Cloudflare (free egress, Workers) and Netlify, plus OpenNext and Cloudflare's Next.js support eroding the Next.js lock-in that underpins Vercel's premium.",
+    "source_url": "https://abovetheapi.co/teardowns/vercel-pricing"
+   },
+   {
+    "date": "2026-08-13",
+    "evidence": "During a ticketing launch (~3M requests in the first hour), 'Vercel was dead' for roughly five minutes while the Railway backend stayed up; static Next.js exports still route through Edge Functions with limits; Vercel billed ~$200 for unintended Edge Function invocations; the team moved frontend CDN to Cloudflare (13 Aug 2026).",
+    "challenge": "Reliability under burst/traffic-spike workloads: a client launch outage pushed a long-time agency customer to migrate frontend infrastructure to Cloudflare.",
+    "source_url": "https://www.strum.us/blog/2026-08-13-the-ticketing-launch-that-broke-vercel-and-sent-us-to-cloudflare"
+   },
+   {
+    "date": "2026-04-01",
+    "evidence": "In early 2025 Vercel's 'lead agent' replaced nine of ten SDRs; Glassdoor as of Apr 2026 shows 4.1/5 overall but 3.6/5 work-life balance and 3.6/5 senior management, with reviews saying 'People are overworked, and the AI-first narrative from the top sometimes feels like cover for understaffing' (Apr 2026).",
+    "challenge": "Internal culture strain from AI-first workforce restructuring: no mass layoff, but an AI agent replaced most of a 10-person SDR team and employee reviews cite reorgs, overwork and uncertainty.",
+    "source_url": "https://jobsbyculture.com/blog/vercel-layoffs-2026"
+   }
+  ],
+  "key_people": [
+   {
+    "name": "Guillermo Rauch",
+    "title": "Founder & CEO",
+    "recent": "Opened Ship 2026 (15 Oct 2026) with the agentic-infrastructure vision and data showing agent-triggered deployments up 28x in 12 months; told The Stack that ~60% of activity on Vercel is now driven by coding agents and that 'the next chapter of Vercel... is going to be a lot more long-running' (15 Oct 2026); signaled IPO readiness in April 2026.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Malte Ubl",
+    "title": "CTO",
+    "recent": "At Ship 2026 showed frontends, APIs, backend services, containers, MCP servers and background workers all running on Vercel; announced Python GA and Vercel Daemons in public beta (15 Oct 2026).",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Tomo Occhino",
+    "title": "CPO",
+    "recent": "Walked through the Agent Stack at Ship 2026 and announced Vercel Drives (persistent agent workspaces, now GA), eve open-source agent framework, Vercel Connect GA with 1,000+ connectors, and Token Pass (15 Oct 2026).",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Jeanne Grosser",
+    "title": "COO",
+    "recent": "Focused Ship 2026 on enterprise governance — 'Company building is now agent building' — announcing Bring Your Own Cloud on AWS GA and Enterprise-Managed Authorization for Vercel Connect (15 Oct 2026); joined in 2025 as COO from Stripe.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Nick Bogaty",
+    "title": "Chief Revenue Officer",
+    "recent": "Joined 13 Jan 2026 from Adobe (ex-CRO AppDynamics, $100M to $700M through Cisco acquisition); says 'Vercel is ready to own its place as the primary platform for the web and AI agents at the world's largest companies' and is building an AI-forward GTM organization.",
+    "source_url": "https://vercel.com/blog/nick-bogaty-joins-vercel-as-chief-revenue-officer"
+   }
+  ],
+  "priorities": [
+   {
+    "date": "2026-10-15",
+    "evidence": "Ship 2026 (15 Oct 2026): 'The companies that win the next decade will build on infrastructure designed for agents from the start.' In the last 12 months the number of developers on Vercel grew 3x and agent-triggered deployments increased 28x.",
+    "priority": "Pivot to 'agentic infrastructure': positioning the platform for AI coding agents that build and deploy software, not just human developers.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "date": "2026-10-15",
+    "evidence": "CTO Malte Ubl announced Python is now GA on Vercel (FastAPI/Flask/Django) and introduced Vercel Daemons in public beta (15 Oct 2026). CEO Guillermo Rauch: 'The next chapter of Vercel, the workload shape is going to be a backend... It's going to be a lot more long-running.'",
+    "priority": "Expanding beyond frontend into backends and long-running workloads (Python GA, Vercel Daemons for background workers, containers, MCP servers).",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "date": "2026-10-15",
+    "evidence": "COO Jeanne Grosser announced Bring Your Own Cloud on AWS is now generally available (app functions run in the customer's own AWS account) and Enterprise-Managed Authorization for Vercel Connect in public beta (15 Oct 2026).",
+    "priority": "Enterprise controls and deployment flexibility: Vercel for Enterprise, Bring Your Own Cloud on AWS GA, Vercel Passport, Enterprise-Managed Authorization.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "date": "2026-10-15",
+    "evidence": "Vercel Token Pass in early access for Pro teams: $30/month for $80 monthly credit for DeepSeek V4.1 Flash, GLM 5.3 and Kimi K3, running through AI Gateway with ZDR enabled by default (15 Oct 2026).",
+    "priority": "Monetizing agent/AI token usage via the AI Gateway stack: Token Pass subscription, per-key budgets, Zero Data Retention, US-only inference.",
+    "source_url": "https://vercel.com/changelog/introducing-token-pass"
+   },
+   {
+    "date": "2026-01-13",
+    "evidence": "Nick Bogaty joined as Chief Revenue Officer (13 Jan 2026) from Adobe, where he scaled Adobe Express enterprise GTM; the blog states 'We're rethinking how Sales operates, and we're building the most AI-forward go-to-market organization in the industry.'",
+    "priority": "Scaling enterprise go-to-market: rebuilding Sales as 'the most AI-forward go-to-market organization in the industry' under a new CRO, with heavy sales-hiring on the careers page.",
+    "source_url": "https://vercel.com/blog/nick-bogaty-joins-vercel-as-chief-revenue-officer"
+   }
+  ],
+  "what_they_do": {
+   "as_of": "2026-11-09",
+   "value": "Vercel is agentic infrastructure for every app and agent — the platform where humans and AI agents build, ship, and scale software together (maker of v0, Next.js, and the AI Cloud).",
+   "source_url": "https://vercel.com/about"
+  },
+  "missing_fields": [],
+  "recent_changes": [
+   {
+    "date": "2026-11-03",
+    "type": "Product launch",
+    "summary": "Vercel launched Security Review in public beta, an automated security review capability on the platform.",
+    "headline": "Vercel Security Review enters public beta",
+    "source_url": "https://vercel.com/changelog/vercel-security-review-public-beta"
+   },
+   {
+    "date": "2026-11-06",
+    "type": "Product GA",
+    "summary": "Vercel Tracing moved to general availability, part of the observability story for apps and agents in production.",
+    "headline": "Vercel Tracing is now generally available",
+    "source_url": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available"
+   },
+   {
+    "date": "2026-10-28",
+    "type": "Product launch",
+    "summary": "Vercel CI in Beta runs only the tasks affected by a code change; Vercel reports git push to CI-passed is 2-6x faster internally, aimed at CI load from coding agents opening more PRs.",
+    "headline": "Vercel announces Vercel CI in Beta",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   },
+   {
+    "date": "2026-10-16",
+    "type": "Partnership / launch",
+    "summary": "Vercel Shop, the open-source Next.js storefront template for Shopify, went GA with machine-readable product pages and Universal Commerce Protocol support; follows the Vercel-Shopify rebuild of the Hydrogen SDK (16 Oct 2026), days after Tobi Lütke joined Rauch on stage at Ship SF.",
+    "headline": "Vercel Shop GA with Shopify makes agents first-class shoppers",
+    "source_url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers"
+   },
+   {
+    "date": "2026-10-15",
+    "type": "Product launches",
+    "summary": "At Ship SF (15 Oct 2026, 2,700+ attendees) Vercel launched its agentic infrastructure slate: Vercel Daemons (public beta), Vercel Drives (GA), eve agent framework, Vercel Connect GA with 1,000+ connectors, MCP Events beta, Token Pass early access, and Bring Your Own Cloud on AWS GA.",
+    "headline": "Ship 2026: agentic infrastructure slate — Daemons beta, Drives GA, eve, Connect GA, Token Pass, BYOC on AWS GA, Python GA",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "date": "2026-08-06",
+    "type": "Board appointment",
+    "summary": "Just outside the 90-day window (5 Aug 2026): Vercel appointed Amit Agarwal (ex-Datadog President, CEO of Standard Template Labs) to its board; the announcement followed disclosure that Vercel had crossed $500M in annualized run-rate revenue in July 2026, en route to a reported ~$600M by October 2026 (unconfirmed by Vercel).",
+    "headline": "Amit Agarwal, former Datadog President, appointed to Vercel's board of directors",
+    "source_url": "https://www.businesswire.com/news/home/20260806738617/en/"
+   }
+  ],
+  "talking_points": [
+   "Agents as the new primary customer: with Vercel reporting agent-triggered deployments up 28x and ~60% of platform activity driven by coding agents, ask which enterprise buyers are leaning into agentic infrastructure first — and what tooling or services they need around it.",
+   "Pricing predictability as an opener: with runaway-bill stories (a $46,485.99 invoice in Feb 2026) and competitors pricing against usage anxiety (Cloudflare free egress, Netlify flat pricing), ask how Token Pass, AI Gateway budgets and Spend Management are landing with cost-conscious teams.",
+   "Enterprise expansion mechanics: BYOC on AWS just went GA — ask how prospects are responding to running Vercel workloads inside their own AWS boundaries, and where security reviews (SSO, compliance) still slow deals down.",
+   "Beyond the frontend: Python GA and Vercel Daemons put Vercel against hyperscalers and Railway/Cloudflare for long-running backends — ask which backend workloads Vercel sees converting first and what's still missing for those teams."
+  ]
+ },
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "completed_on": "2026-11-09"
+}

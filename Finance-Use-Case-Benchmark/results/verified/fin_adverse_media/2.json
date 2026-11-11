@@ -1,0 +1,1406 @@
+{
+ "sub_use_case": "fin_adverse_media",
+ "input_n": 2,
+ "task": "Find fraud and bribery allegations involving Adani Green Energy, including the US indictment",
+ "labels": {
+  "firecrawl": "A",
+  "parallel": "B",
+  "nimble": "C",
+  "opus": "D",
+  "gpt": "E",
+  "exa": "F"
+ },
+ "unit": "adverse event",
+ "evidence_pages": 46,
+ "evidence_fetched": 46,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 52,
+ "judge": "v4b",
+ "judge_cost_usd": 1.984,
+ "corrections_v2": {
+  "units_before": 53,
+  "units_after": 42,
+  "dedup_groups": [
+   {
+    "kept": "c2",
+    "merged": [
+     "c4"
+    ]
+   },
+   {
+    "kept": "c19",
+    "merged": [
+     "c21"
+    ]
+   },
+   {
+    "kept": "c25",
+    "merged": [
+     "c26"
+    ]
+   },
+   {
+    "kept": "c27",
+    "merged": [
+     "c28",
+     "c29",
+     "c30"
+    ]
+   },
+   {
+    "kept": "c37",
+    "merged": [
+     "c38"
+    ]
+   },
+   {
+    "kept": "c40",
+    "merged": [
+     "c41",
+     "c42"
+    ]
+   },
+   {
+    "kept": "c43",
+    "merged": [
+     "c44",
+     "c45"
+    ]
+   }
+  ],
+  "cost": 0.038
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Hindenburg report of 2023-01-24 alleged group-wide accounting irregularities, stock manipulation and offshore shell entities; Adani Green shares fell about 43%; SEBI dismissed the allegations against Adani companies in September 2025.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Hindenburg Research report of January 24, 2023 alleged accounting irregularities, stock manipulation and use of offshore shell entities; Adani Green shares fell about 43% and the group lost over $100 billion in market value; SEBI investigated and in September 2025 dismissed the allegations against Adani companies, finding no violations, while 22 other SEBI cases reportedly remained pending."
+   },
+   "urls": [
+    "https://bbc.com/news/articles/c0m4l14vdplo"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Hindenburg alleged on 2023-01-24 that offshore shareholders including New Leaina Investments (over USD 420 million of AGEL shares) helped manipulate AGEL ownership and float disclosures; unadjudicated.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "F": "Hindenburg Research alleged on 2023-01-24 that opaque offshore shareholders connected to the Adani Group, including New Leaina Investments (holding over USD 420 million of Adani Green Energy Limited shares in June–September 2021), helped manipulate AGEL ownership/public-float disclosures and concealed beneficial ownership; these were short-seller allegations, not adjudicated findings."
+   },
+   "urls": [
+    "https://hindenburgresearch.com/adani/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c2",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Hindenburg alleged in January 2023 that Mauritius-based stock-parking investors participated in AGEL offers for sale and helped avoid delisting; not a regulatory finding.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In January 2023, Hindenburg Research alleged that suspected Mauritius-based stock-parking investors participated in Adani Green Energy Limited (AGEL) offers for sale and helped the company avoid delisting; this was an allegation, not a regulatory finding, and its subsequent AGEL-specific disposition was not verified."
+   },
+   "urls": [
+    "https://hindenburgresearch.com/adani-response"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Hindenburg (with short positions) alleged on 2023-01-24 that Adani Green's share offerings (about INR 7.8 billion) used offshore stock-parking entities to appear to meet minimum public-shareholding rules; no disposition verified.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Adani Green Energy Limited: On 2023-01-24 Hindenburg Research, which disclosed short positions, alleged that Adani Green's share offerings (about INR 7.8 billion) used suspected offshore stock-parking entities to create the appearance of compliance with minimum public-shareholding requirements; status alleged, no authoritative disposition verified."
+   },
+   "urls": [
+    "https://hindenburgresearch.com/adani/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Hindenburg on 2023-01-24 accused the Adani Group (seven listed companies; Adani Green not named in the opened source) of stock manipulation and accounting fraud through offshore shells, about $3 billion of offshore fund allocation; the group called it baseless.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Hindenburg Research, on 2023-01-24, accused the Adani Group (the seven listed companies; Adani Green is not named in the opened source) of a 'brazen stock manipulation and accounting fraud scheme' run through offshore shell companies, involving about $3 billion of offshore fund allocation. The group called the report malicious and baseless. Status: alleged, India."
+   },
+   "urls": [
+    "https://fortune.com/2023/01/25/hindenburg-research-accused-gautam-adani-of-multibillion-dollar-fraud/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "US DOJ five-count indictment (No. 24-CR-433, EDNY) filed under seal 2024-10-24, unsealed 2024-11-20: FCPA conspiracy, securities fraud, wire fraud, obstruction conspiracy; about $265 million in bribes, 2020-2024; Gautam Adani, Sagar Adani and Vneet Jaain charged, company not a defendant; DOJ moved to dismiss 2026-05-18; dismissed with prejudice 2026-08-10 against the three, judgment reserved on Counts One and Five against non-appearing co-defendants.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Adani Green Energy: US DOJ five-count criminal indictment (US v. Gautam S. Adani et al., No. 24-CR-433, E.D.N.Y.), filed under seal October 24, 2024 and unsealed November 20, 2024, alleging FCPA conspiracy, securities fraud, wire fraud and obstruction conspiracy over a 2020-2024 scheme to pay approximately $265 million in bribes to Indian state officials for solar supply contracts and to mislead US investors and financial institutions about anti-bribery practices to raise billions in financing; Gautam Adani, Sagar Adani and Vneet Jaain (Adani Green executives) were charged, the company was not a defendant; DOJ moved to dismiss May 18, 2026 and the court dismissed with prejudice against the three Adani Green directors on August 10, 2026, with judgment reserved on Counts One and Five against non-appearing co-defendants."
+   },
+   "urls": [
+    "https://justice.gov/usao-edny/media/1378001/dl?inline="
+   ],
+   "conflicts_with": [
+    "c8",
+    "c10",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "2024-11-20 EDNY indictment of Gautam Adani, Sagar Adani, Vneet Jaain for securities and wire fraud tied to bribery scheme (over USD 250 million bribes; over USD 2 billion loans, over USD 1 billion bonds); AGEL not a defendant; securities/wire-fraud counts dismissed with prejudice 2026-08-10, no acquittal.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2024-11-20 the US DOJ (Eastern District of New York) indicted Gautam Adani, Sagar Adani and Vneet Jaain (AGEL executives) for securities and wire fraud tied to an alleged solar-contract bribery scheme (over USD 250 million in alleged bribes; over USD 2 billion in loans and over USD 1 billion in bonds) concealed from investors and lenders; AGEL itself was not a defendant. The court dismissed the securities/wire-fraud counts against the three with prejudice on 2026-08-10, without a trial acquittal."
+   },
+   "urls": [
+    "https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_24-cr-00433/pdf/USCOURTS-nyed-1_24-cr-00433-2.pdf"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c9",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Indictment unsealed 2024-11-20 (EDNY) alleged Gautam Adani, Sagar Adani and Vneet Jaain concealed a solar bribery scheme (approx. US$265 million) from investors and lenders, charging securities and wire fraud; AGEL not a defendant; dismissed with prejudice 2026-08-10 at DOJ's request, no merits determination.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In the US (EDNY), an indictment unsealed 2024-11-20 alleged that Gautam Adani, Sagar Adani and Vneet Jaain (AGEL-linked executives) concealed a solar-contract bribery scheme (approx. US$265 million in alleged bribes in India) from investors and lenders, charging securities and wire fraud; AGEL was not a defendant. The counts were dismissed with prejudice on 2026-08-10 at the DOJ's request, without a merits determination."
+   },
+   "urls": [
+    "https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_24-cr-00433/pdf/USCOURTS-nyed-1_24-cr-00433-2.pdf"
+   ],
+   "conflicts_with": [
+    "c8",
+    "c10",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "2024-11-20 DOJ (EDNY) announced five-count indictment of Gautam Adani, Sagar Adani and Vneet Jaain: concealed bribery (more than US$250 million) for solar contracts projected to yield over US$2 billion after-tax profit; false statements to raise over US$2 billion in loans and over US$1 billion in bonds; Counts Two, Three and Four dismissed with prejudice 2026-08-10 without adjudicating the allegations.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2024-11-20 the US DOJ (Eastern District of New York) announced a five-count indictment of Gautam Adani, Sagar Adani and Vneet Jaain of Adani Green Energy. It alleged concealing a bribery scheme (more than US$250 million in alleged bribes) to win Indian solar contracts projected to yield over US$2 billion in after-tax profit. It also alleged false statements to raise more than US$2 billion in loans and more than US$1 billion in bonds from US and international investors. The court dismissed Counts Two, Three and Four against the three with prejudice on 2026-08-10, without adjudicating the allegations."
+   },
+   "urls": [
+    "https://www.justice.gov/usao-edny/pr/billionaire-chairman-conglomerate-and-seven-other-senior-business-executives-indicted"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c9",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Indictment unsealed 2024-11-20 (EDNY) charged Gautam Adani, Sagar Adani and Vneet Jaain with securities fraud, securities-fraud conspiracy and wire-fraud conspiracy over concealing solar bribery (about USD 265 million); company not a defendant; fraud counts dismissed with prejudice 2026-08-10 without opining on merits.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Adani Green Energy Limited (associated executives): US criminal indictment unsealed 2024-11-20 in the Eastern District of New York charging Gautam Adani, Sagar Adani and Vneet Jaain with securities fraud, securities-fraud conspiracy and wire-fraud conspiracy over concealing alleged Indian solar-contract bribery (about USD 265 million in alleged bribes) from investors and lenders; the company was not a criminal defendant; on 2026-08-10 the court dismissed the fraud counts against these three with prejudice without opining on the merits."
+   },
+   "urls": [
+    "https://www.nacdl.org/getattachment/ef21bd70-4b84-4936-adbb-6ad01c587cdc/m-gov-uscourts-nyed-522756-49-0.pdf"
+   ],
+   "conflicts_with": [
+    "c8",
+    "c10",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "2024-11-20 unsealed five-count indictment (E.D.N.Y., No. 24-cr-433) against Gautam Adani, Sagar Adani and Vneet Jaain (former Adani Green CEO): more than $250 million in bribes promised to Indian officials, hidden while over $1 billion in bonds and over $2 billion in loans raised; Adani Green not charged.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2024-11-20, US prosecutors (E.D.N.Y., No. 24-cr-433) unsealed a five-count indictment against Gautam Adani, Sagar Adani and Vneet Jaain (former Adani Green CEO) for securities fraud conspiracy, wire fraud conspiracy and securities fraud. It alleged more than $250 million in bribes promised to Indian officials to win solar supply contracts, hidden from US investors and lenders while more than $1 billion in bonds and more than $2 billion in loans were raised. Adani Green itself was not charged."
+   },
+   "urls": [
+    "https://gulfnews.com/world/americas/indian-billionaire-gautam-adani-in-the-dock-full-text-of-us-department-release-accusing-him-of-bribery-and-scheme-to-conceal-it-from-us-investors-1.1732165203481"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c9",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "On 2026-08-10 Judge Garaufis granted DOJ's Rule 48(a) motion, dismissing Counts Two to Four with prejudice against Gautam Adani, Sagar Adani and Vneet Jaain; prosecutorial discretion, not a merits ruling; said anti-bribery statements were 'puffery'; criticised DOJ process irregularities.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2026-08-10, Judge Nicholas Garaufis (E.D.N.Y., No. 24-cr-433) granted the DOJ's Rule 48(a) motion and dismissed with prejudice Counts Two to Four of the bribery-linked securities and wire fraud case against Gautam Adani, Sagar Adani and former Adani Green CEO Vneet Jaain. He called it prosecutorial discretion, not a merits ruling, accepted only that Adani Green's anti-bribery statements were 'puffery', and criticised irregularities in DOJ's decision process."
+   },
+   "urls": [
+    "https://www.dtnext.in/news/business/us-court-permanently-dismisses-criminal-case-against-gautam-adani"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "SEC civil action (No. 1:24-cv-08080) filed 2024-11-20 against Gautam and Sagar Adani over false anti-bribery statements in Adani Green's September 2021 $750 million bond offering; settled by consent on 2026-05-14 with proposed penalties $6M and $12M, subject to court approval.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Adani Green Energy: SEC civil action (SEC v. Gautam Adani and Sagar Adani, No. 1:24-cv-08080, E.D.N.Y.) filed November 20, 2024 alleging securities fraud (Securities Act 17(a), Exchange Act 10(b)/Rule 10b-5) via false statements about anti-bribery compliance in Adani Green's September 2021 $750 million bond offering (over $175 million from US investors); settled by consent on May 14, 2026 without admit/deny, with proposed penalties of $6 million (Gautam Adani) and $12 million (Sagar Adani), subject to court approval."
+   },
+   "urls": [
+    "https://sec.gov/enforcement-litigation/litigation-releases/lr-26554"
+   ],
+   "conflicts_with": [
+    "c15",
+    "c16",
+    "c17",
+    "c19",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "SEC sued Gautam and Sagar Adani on 2024-11-20 over misleading anti-bribery representations in AGEL's USD 750 million bond offering; consent judgments entered 2026-08-10 with USD 6M and USD 12M penalties and permanent injunctions; AGEL not a party.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2024-11-20 the US SEC sued Gautam Adani and Sagar Adani for civil securities fraud over misleading anti-bribery representations in AGEL's USD 750 million September 2021 bond offering (about USD 175 million from US investors); AGEL was not a party. Consent final judgments entered 2026-08-10 imposed civil penalties of USD 6 million (Gautam) and USD 12 million (Sagar) and permanent injunctions, without admission of the allegations."
+   },
+   "urls": [
+    "https://www.adanigreenenergy.com/-/media/project/greenenergy/corporate-announcement/others/agelcivil.pdf"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "SEC civil complaint 2024-11-20 (EDNY) alleged Gautam and Sagar Adani misled investors about AGEL's anti-bribery compliance during a bond offering while a bribery scheme was under way; 2026-08-10 consent judgments with $6M and $12M penalties and injunctions; AGEL not a defendant.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The US SEC filed a civil complaint on 2024-11-20 (EDNY) alleging Gautam Adani and Sagar Adani misled investors about AGEL's anti-bribery compliance during a bond offering while a bribery scheme was under way; on 2026-08-10 consent judgments were entered without admission or denial, with permanent injunctions and civil penalties of US$6,000,000 (Gautam Adani) and US$12,000,000 (Sagar Adani). AGEL was not a defendant."
+   },
+   "urls": [
+    "https://nsearchives.nseindia.com/corporate/ADANIGREEN_11082026072202_AGELCivil.pdf"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "SEC civil action 2024-11-20 alleged Gautam and Sagar Adani orchestrated payments or promises of payments to Indian officials to benefit Adani Green and Azure Power, and that the 2021 US$750 million bond materials misdescribed anti-bribery compliance; 2026-08-10 consent judgments with $6M and $12M penalties.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2024-11-20 the US SEC filed a civil action (Eastern District of New York) alleging that Gautam and Sagar Adani orchestrated payments or promises of payments to Indian officials to benefit Adani Green Energy and Azure Power. It also alleged that Adani Green's 2021 US$750 million bond offering materials (over US$175 million raised from US investors) misdescribed its anti-bribery compliance. On 2026-08-10 Gautam Adani consented to a final judgment with a US$6 million civil penalty and Sagar Adani with a US$12 million civil penalty, both without admitting or denying the allegations."
+   },
+   "urls": [
+    "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26177"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "SEC filed civil securities-fraud complaint 2024-11-20 (EDNY) against Gautam and Sagar Adani for participating in paying or promising bribes while misleading investors about Adani Green's anti-bribery compliance in its USD 750 million bond offering; Adani Green not a named defendant.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Adani Green Energy Limited (bond offering): On 2024-11-20 the SEC filed a civil securities-fraud complaint in the Eastern District of New York against Gautam Adani and Sagar Adani, alleging they participated in paying or promising bribes while misleading investors about Adani Green's anti-bribery compliance in its USD 750 million bond offering (over USD 175 million sold to US investors); Adani Green was not a named defendant."
+   },
+   "urls": [
+    "https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-181.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "2026-08-10 EDNY consent judgments resolved SEC case without admissions: USD 6M penalty on Gautam Adani, USD 12M on Sagar Adani personally, permanent injunctions; Adani Green not a party.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Adani Green Energy Limited (bond offering): On 2026-08-10 the Eastern District of New York entered consent judgments resolving the SEC securities-fraud case without admissions, imposing USD 6 million civil penalty on Gautam Adani and USD 12 million on Sagar Adani personally, plus permanent injunctions; Adani Green was not a party."
+   },
+   "urls": [
+    "https://insights.dsij.in/appmindshare/us-court-dismisses-criminal-charges-against-gautam-adani-sagar-adani-and-former-adani-green-ceo-vneet-jaain-heres-what-it-means-for-adani-green-energy-58914",
+    "https://www.adanigreenenergy.com/-/media/project/greenenergy/corporate-announcement/others/agelcivil.pdf"
+   ],
+   "conflicts_with": [
+    "c14"
+   ],
+   "merged_from": [
+    "c19",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "SEC civil securities fraud action (No. 1:24-cv-08080) filed 2024-11-20 against Gautam and Sagar Adani alleging bribes arranged for above-market energy purchase commitments from Adani Green and false anti-bribery statements in the September 2021 $750 million bond materials; Adani Green was issuer, not defendant.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2024-11-20, the US SEC filed a civil securities fraud action (E.D.N.Y., No. 1:24-cv-08080) against Gautam Adani and Sagar Adani. It alleged they arranged bribes to Indian officials for above-market energy purchase commitments from Adani Green, and that Adani Green's September 2021 $750 million bond offering materials contained false or misleading anti-bribery statements. Adani Green was the bond issuer, not a defendant."
+   },
+   "urls": [
+    "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26554"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "SEC civil FCPA action against Cyril Cabanes, former Azure Power board member (No. 1:24-cv-08081, EDNY), filed 2024-11-20, for allegedly facilitating authorization of bribes in the same scheme.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Cyril Cabanes, former Azure Power board member: SEC civil FCPA action (SEC v. Cabanes, No. 1:24-cv-08081, E.D.N.Y.) filed November 20, 2024 for allegedly facilitating authorization of bribes in the same scheme to secure above-market energy purchase commitments benefiting Adani Green and Azure Power; seeks injunction, civil penalty and officer-and-director bar."
+   },
+   "urls": [
+    "https://sec.gov/newsroom/press-releases/2024-181"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "SEBI insider trading case (show cause 2023-11-10; order December 2025) alleging Vinod Bahety communicated UPSI about AGEL's SB Energy acquisition to Tarun Jain, Rajtaru Enterprises and MC Jain Infosystems (about INR 3.51 crore); adjudication ongoing, settlement applications withdrawn.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Adani Green Energy Limited: SEBI insider trading case (show cause notice November 10, 2023; order December 2025) alleging Vinod Bahety, Adani Group Head of M&A, communicated unpublished price sensitive information about AGEL's May 19, 2021 SB Energy acquisition, and Tarun Jain, Rajtaru Enterprises and MC Jain Infosystems traded on it for alleged unlawful profit of about INR 3.51 crore; adjudication ongoing, settlement applications withdrawn."
+   },
+   "urls": [
+    "https://sebi.gov.in/sebi_data/attachdocs/dec-2025/b.Order_in_the_matter_Adani_Green_Energy.pdf"
+   ],
+   "conflicts_with": [
+    "c24"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "SEBI show-cause 2023-11-10 alleging Vinod Bahety communicated information on AGEL's SB Energy acquisition to Tarun Jain, Rajtaru Enterprises and MC Jain Infoservices (profits INR 3,51,37,030.80); on 2025-12-12 SEBI rejected the charges and disposed of the notice without directions or penalty; AGEL not a noticee.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SEBI (India) issued a show-cause notice on 2023-11-10 alleging Vinod Bahety communicated information about AGEL's SB Energy acquisition to Tarun Jain, Rajtaru Enterprises and MC Jain Infoservices (alleged profits INR 3,51,37,030.80); on 2025-12-12 SEBI rejected the charges and disposed of the notice without directions or penalty. AGEL was the issuer, not a noticee."
+   },
+   "urls": [
+    "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/b.Order_in_the_matter_Adani_Green_Energy.pdf"
+   ],
+   "conflicts_with": [
+    "c23"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "SEBI show-cause 2023-11-10 alleging Pranav Adani passed AGEL acquisition information to Kunal and Nrupal Shah for trading (alleged gains INR 50,92,500 and INR 40,45,268.45); rejected and disposed of 2025-12-12 without directions; AGEL not a noticee.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "SEBI (India) issued a show-cause notice on 2023-11-10 alleging Pranav Adani passed AGEL acquisition information to Kunal and Nrupal Shah for trading in AGEL shares (alleged gains INR 50,92,500 and INR 40,45,268.45); on 2025-12-12 SEBI rejected the allegations and disposed of the notice without directions, disgorgement or penalty. AGEL was the issuer, not a noticee."
+   },
+   "urls": [
+    "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/a.Order_in_the_matter_Adani_Green_Energy.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c25",
+    "c26"
+   ]
+  },
+  {
+   "cid": "c27",
+   "claim": "AGEL settled with SEBI (order 2026-09-22), paying INR 45,50,000 without admitting/denying, over FY2019 audit and quarterly reviews signed by an auditor lacking a valid peer-review certificate; not a bribery conviction.",
+   "asserted_by": [
+    "A",
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Adani Green Energy Limited settled with SEBI (order dated 2026-09-22), paying INR 45,50,000 without admitting or denying findings, over allegations that its FY2019 audit and specified quarterly reviews were signed by an auditor lacking a valid peer-review certificate; this was not a bribery conviction."
+   },
+   "urls": [
+    "https://www.sebi.gov.in/enforcement/orders/sep-2026/settlement-order-in-the-matter-of-adani-group-companies_104647.html",
+    "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790075703744_1.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c27",
+    "c28",
+    "c29",
+    "c30"
+   ]
+  },
+  {
+   "cid": "c31",
+   "claim": "Senators Warren and Blumenthal's 2026-06-11 letter to Acting AG Todd Blanche questioned DOJ's 2026-05-18 motion to dismiss the Adani Green-related indictment, citing a reported $10 billion US investment offer in April 2026 after Adani hired Robert Giuffra Jr., alleging possible quid pro quo.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "US Senators Elizabeth Warren and Richard Blumenthal, in a June 11, 2026 letter to Acting AG Todd Blanche, questioned the DOJ's May 18, 2026 motion to dismiss the Adani Green-related indictment with prejudice, citing a reported $10 billion US investment offer made in April 2026 after Adani hired Trump's lawyer Robert Giuffra Jr., and alleging a possible quid pro quo."
+   },
+   "urls": [
+    "https://warren.senate.gov/wp-content/uploads/media/doc/letter_to_doj_re_adani.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "On 2024-05-16 the Wildlife and Nature Protection Society petitioned Sri Lanka's Supreme Court challenging AGEL's Mannar/Pooneryn wind project (G2G characterization, environmental assessment, pricing); not a bribery finding.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2024-05-16 a fundamental-rights petition by the Wildlife and Nature Protection Society in Sri Lanka's Supreme Court challenged Adani Green Energy's Mannar/Pooneryn wind project, questioning its government-to-government characterization, environmental assessment and power-pricing formula; this is not a finding of bribery."
+   },
+   "urls": [
+    "https://www.thehindu.com/news/international/adani-wind-energy-project-challenged-in-sri-lankas-supreme-court/article68187253.ece"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "On 2024-06-27 Sri Lankan opposition politician Ajith P. Perera alleged that awarding the Mannar and Pooneryn wind project to Adani Green without tenders and at an excessive price was financial fraud (over USD 1 billion projected losses); not judicially established.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Adani Green Energy Limited: On 2024-06-27 Sri Lankan opposition politician Ajith P. Perera alleged that awarding the Mannar and Pooneryn wind-power project to Adani Green without competitive tenders and at an allegedly excessive price constituted financial fraud by the Sri Lankan government (over USD 1 billion in projected losses alleged); status alleged, not judicially established."
+   },
+   "urls": [
+    "https://www.newswire.lk/2024/06/27/adani-power-project-in-sl-sjb-accuses-of-financial-fraud/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "On 2024-11-26 ML Ravi petitioned the Madras High Court seeking an SIT or ED/CBI probe into Gautam Adani and solar contracts after the US indictment; only the filing is reported.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2024-11-26 ML Ravi petitioned the Madras High Court (v. Secretary, Ministry of Home Affairs) seeking an SIT or ED/CBI investigation into Gautam Adani and solar-energy contracts following the US indictment; the report establishes only the filing, not that an investigation was ordered."
+   },
+   "urls": [
+    "https://www.livelaw.in/high-court/madras-high-court/madras-high-court-plea-adani-indictment-corruption-case-probe-276276"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Bombay High Court dismissed on 2026-03-27 Jitendra Maru's petition for a CBI probe into alleged solar bribery (about INR 2,029 crore) involving AGEL and Azure; Supreme Court challenge reported awaiting listing 2026-07-11; not a finding that bribery occurred.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The Bombay High Court dismissed on 2026-03-27 Jitendra Punamchand Maru's petition seeking a CBI investigation into alleged solar-contract bribery (approximately INR 2,029 crore) involving AGEL and Azure; a Supreme Court challenge was reported registry-verified on 2026-07-11 and awaiting listing. The request was not a finding that bribery occurred."
+   },
+   "urls": [
+    "https://www.hindustantimes.com/india-news/plea-moved-in-sc-over-hc-refusal-to-probe-adani-green-contracts-101784574823038.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "On 2026-03-10 the Delhi High Court dismissed Ravi Sharma's PIL challenging SECI's reallocation of 2.333 GW of Azure Power capacity to Adani Green and seeking an investigation; no public loss shown, only a bidder could raise it; similar petition reportedly pending in Andhra Pradesh HC (unverified).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2026-03-10, the Delhi High Court (W.P.(C) 812/2026) dismissed a public interest petition by Ravi Sharma challenging SECI's reallocation of 2.333 GW of Azure Power solar capacity to Adani Green (Adani Green Energy Four Ltd. was a respondent) and seeking an investigation. It found no shown public loss and held only a bidder could raise the grievance. A similar petition is reportedly pending in the Andhra Pradesh High Court (unverified)."
+   },
+   "urls": [
+    "https://delhihighcourt.nic.in/app/showFileJudgment/75310032026CW8122026_195617.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "On 2026-09-03 the EDNY court denied without prejudice DOJ's request to dismiss remaining FCPA-conspiracy and obstruction counts against co-defendants Gupta, Cabanes, S. Agarwal, Malhotra and R. Agarwal.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "In the US EDNY case arising from the same AGEL solar-contract scheme, the court on 2026-09-03 denied without prejudice DOJ's request to dismiss remaining FCPA-conspiracy and obstruction counts against non-AGEL co-defendants Ranjit Gupta, Cyril Cabanes, Saurabh Agarwal, Deepak Malhotra and Rupesh Agarwal, leaving that case continuing."
+   },
+   "urls": [
+    "https://blog.volkovlaw.com/2026/10/when-the-government-wants-out-and-the-judge-wants-answers-doj-takes-the-adani-dismissal-fight-to-the-second-circuit/",
+    "https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_24-cr-00433/pdf/USCOURTS-nyed-1_24-cr-00433-3.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c37",
+    "c38"
+   ]
+  },
+  {
+   "cid": "c39",
+   "claim": "On 2024-11-23 the Economic Times reported SEBI began a preliminary inquiry into Adani Green's exchange disclosures about the US investigation and would consider a formal probe; disposition not verified.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Adani Green Energy Limited: On 2024-11-23 the Economic Times reported that SEBI began a preliminary inquiry into Adani Green's exchange disclosures concerning the US investigation and would consider a formal probe; subsequent disposition not verified."
+   },
+   "urls": [
+    "https://economictimes.indiatimes.com/markets/stocks/news/sebi-begins-inquiry-into-alleged-false-statements-by-adani-group/articleshow/115584818.cms"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Excluded namesake: Azure Power Global Limited (Mauritius, formerly NYSE-listed) and its former executives charged in the same scheme; distinct from Adani Green.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Azure Power Global Limited (Mauritius-incorporated, formerly NYSE-listed) and its former executives (Ranjit Gupta, Cyril Cabanes, Saurabh Agarwal, Deepak Malhotra, Rupesh Agarwal) were charged in the same bribery scheme but it is a distinct company from Adani Green Energy."
+   },
+   "urls": [
+    "https://adanigreenenergy.com/-/media/project/greenenergy/corporate-announcement/others/agelcriminal.pdf",
+    "https://m.thewire.in/article/law/us-judge-gautam-adani-bribery-charges-co-defendants-india-claim",
+    "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26177"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c40",
+    "c41",
+    "c42"
+   ]
+  },
+  {
+   "cid": "c43",
+   "claim": "Excluded namesake: Adani Enterprises, entity in the reported 2026-05-18 US Treasury/OFAC settlement (about $275 million per Reuters) over Iran-origin LPG shipments; not attributable to Adani Green.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Adani Enterprises Limited, a separate Adani group company, was the entity in the reported May 18, 2026 US Treasury/OFAC settlement (about $275 million per Reuters) over alleged Iran-origin LPG shipments; not attributable to Adani Green Energy."
+   },
+   "urls": [
+    "https://ofac.treasury.gov/recent-actions/20260518",
+    "https://warren.senate.gov/wp-content/uploads/media/doc/letter_to_doj_re_adani.pdf",
+    "https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_24-cr-00433/pdf/USCOURTS-nyed-1_24-cr-00433-2.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c43",
+    "c44",
+    "c45"
+   ]
+  },
+  {
+   "cid": "c46",
+   "claim": "Excluded namesake: Adani Enterprises, Adani Power, Adani Ports and SEZ, Adani Transmission/Adani Energy Solutions named in SEBI's September 2026 order on minimum public shareholding and PFUTP violations (about INR 1,983.97 crore via FPIs controlled by Vinod Adani); AGEL not named.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Adani Enterprises, Adani Power, Adani Ports and SEZ, and Adani Transmission/Adani Energy Solutions, named in SEBI's September 2026 order on minimum public shareholding violations and PFUTP Regulations (alleged wrongful gain of about INR 1,983.97 crore via FPI investments controlled by Vinod Adani); Adani Green Energy Limited is not named."
+   },
+   "urls": [
+    "https://sebi.gov.in/sebi_data/attachdocs/sep-2026/ORDER_1790584774.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "Excluded namesake: Adani Power Limited, named in SEBI's Milestone/Rehvar related-party proceeding; not treated as findings about AGEL.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Excluded namesake: Adani Power Limited is a separate company named in SEBI's Milestone/Rehvar related-party transaction proceeding; those findings were not treated as findings concerning AGEL."
+   },
+   "urls": [
+    "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2025/order_matter_milestone_rehvar.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Excluded namesake: Adani Enterprises and other Adani Group parent/sister companies are separate legal entities from AGEL, counted only where a source ties conduct to AGEL or its executives.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Excluded namesake: Adani Enterprises Limited and other Adani Group parent, sister or group companies are separate legal entities from Adani Green Energy Limited. They are counted only where a source expressly ties the conduct to AGEL or its executives."
+   },
+   "urls": [
+    "https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-181.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Excluded namesake: Adani Power, Adani Ports and SEZ and Adani Total Gas, other listed Adani companies named in Hindenburg or SEBI materials; not AGEL.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Excluded namesake: Adani Power Limited, Adani Ports and Special Economic Zone Limited and Adani Total Gas Limited are other listed Adani companies named in broader Hindenburg or SEBI materials. They are not the target entity, Adani Green Energy Limited."
+   },
+   "urls": [
+    "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790075703744_1.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Excluded namesake: Adani Energy Solutions, counterparty to the Kenyan electricity-transmission agreement and its controversy; not an Adani Green event.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Excluded namesake: Adani Energy Solutions, a separate Adani company that was counterparty to the Kenyan electricity-transmission agreement and its related controversy; not treated as an Adani Green event."
+   },
+   "urls": [
+    "https://theprint.in/economy/kenyan-energy-minister-says-no-corruption-involved-in-adani-energy-deal/2367257/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Excluded namesake: Adani Green Energy (Sri Lanka) Ltd, a separately named project company in Transparency International Sri Lanka's information requests; not enforcement against the Indian entity.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Excluded namesake: Adani Green Energy (Sri Lanka) Ltd, a separately named project company in Transparency International Sri Lanka's information requests; its project approvals were not represented as enforcement against the Indian entity Adani Green Energy Limited."
+   },
+   "urls": [
+    "https://www.tisrilanka.org/tisl-demands-transparency-in-adani-wind-power-project-files-right-to-information-applications/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c52",
+   "claim": "Excluded namesake: Adani Ports & SEZ, Adani Power, Adani Enterprises and Adicorp Enterprises, named in SEBI's September 2025 orders dismissing Hindenburg related-party allegations; Adani Green not named.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Excluded namesake: Adani Ports & SEZ, Adani Power, Adani Enterprises and Adicorp Enterprises are sister group companies named in SEBI's September 2025 orders dismissing the Hindenburg related-party allegations. Adani Green is not named in the orders found, so they are not counted as Adani Green events."
+   },
+   "urls": [
+    "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2025/order_matter_adicorp.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c53",
+   "claim": "Excluded namesake: CDPQ (Caisse de dépôt et placement du Québec), Canadian pension fund whose former staff are co-defendants; no connection to Adani Green's corporate structure.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Excluded namesake: CDPQ (Caisse de dépôt et placement du Québec) is a Canadian pension fund whose former staff are co-defendants in the US case; it has no connection to Adani Green's corporate structure."
+   },
+   "urls": [
+    "https://m.thewire.in/article/law/us-judge-gautam-adani-bribery-charges-co-defendants-india-claim"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://bbc.com/news/articles/c0m4l14vdplo",
+   "note": "BBC confirms the 2023-01-24 Hindenburg report and SEBI's September 2025 dismissal of the allegations; the 43% AGEL fall and the 22 pending cases are plausible but not shown in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://hindenburgresearch.com/adani/",
+   "note": "The report says New Leaina held over $420M of AGEL shares (about 95% of its portfolio) as of June to September 2021, and this is an unadjudicated allegation.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://hindenburgresearch.com/adani-response",
+   "note": "Hindenburg's 29 January 2023 reply states that Mauritius shareholders bailed out AGEL through two OFS deals and helped it avoid delisting; this is an allegation only.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://hindenburgresearch.com/adani/",
+   "note": "The only $7.8M figure in the report relates to Globe Textiles, so the INR 7.8 billion Adani Green offering amount appears conflated and is unsupported.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "false"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://fortune.com/2023/01/25/hindenburg-research-accused-gautam-adani-of-multibillion-dollar-fraud/",
+   "note": "The group-level accusation of a stock manipulation and accounting fraud scheme and Adani's rejection are confirmed; the $3B figure is not directly shown in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.courtlistener.com/docket/69394937/united-states-v-adani/?order_by=desc#entry-49",
+   "note": "The docket and press confirm the indictment dates, the $265M alleged bribes and the 2026-08-10 dismissal of Counts Two to Four with prejudice, with judgment reserved on Counts One and Five for the non-appearing defendants.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.justice.gov/usao-edny/pr/billionaire-chairman-conglomerate-and-seven-other-senior-business-executives-indicted",
+   "note": "The DOJ release and court order support the indictment of the three executives and the dismissal with prejudice, which was not a trial acquittal; AGEL was not a defendant.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.courtlistener.com/docket/69394937/united-states-v-adani/?order_by=desc#entry-49",
+   "note": "The court granted DOJ's Rule 48(a) motion on 2026-08-10 and the order does not rule on the merits.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.justice.gov/usao-edny/pr/billionaire-chairman-conglomerate-and-seven-other-senior-business-executives-indicted",
+   "note": "The DOJ release matches the five-count indictment and the more than $250M bribery allegation, and the court dismissed Counts Two, Three and Four on 2026-08-10.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.dtnext.in/news/business/us-court-permanently-dismisses-criminal-case-against-gautam-adani",
+   "note": "The charges, the company's non-party status and the dismissal of the fraud counts with prejudice are all confirmed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.justice.gov/usao-edny/pr/billionaire-chairman-conglomerate-and-seven-other-senior-business-executives-indicted",
+   "note": "The unsealing date, the case number, the more than $250M alleged bribes and the charged defendants are confirmed; Adani Green was not a defendant.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.dtnext.in/news/business/us-court-permanently-dismisses-criminal-case-against-gautam-adani",
+   "note": "The 47-page order of 2026-08-10 dismissing Counts Two to Four with prejudice is confirmed; the 'puffery' attribution to the judge is not verified and may reflect DOJ's argument.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26554",
+   "note": "SEC Litigation Release 26554 of 14 May 2026 confirms the consent judgments filed without admitting or denying; the $6M and $12M penalties are not shown in the excerpt but are plausible.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/enforcement-litigation/whistleblower-program/notice-covered-actions/award-claim-2026-071",
+   "note": "The SEC notice lists 2026-08-10 as the qualifying judgment date and DSIJ reports the SEC matter was resolved by final judgment; the penalty amounts are not directly shown.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26554",
+   "note": "The SEC complaint (24-cv-08080, filed 2024-11-20) and the 2026-08-10 consent judgments ($6M and $12M) are confirmed. Adani Green was not a defendant.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26177",
+   "note": "The SEC release matches the bribery allegations, the $750M bond with more than $175M from US investors, and the 2026 penalties.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26554",
+   "note": "The complaint named only Gautam and Sagar Adani as defendants and concerned the 2021 Adani Green bond offering.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://insights.dsij.in/appmindshare/us-court-dismisses-criminal-charges-against-gautam-adani-sagar-adani-and-former-adani-green-ceo-vneet-jaain-heres-what-it-means-for-adani-green-energy-58914",
+   "note": "The final judgment on consent was entered 2026-08-10 without admission or denial, with $6M and $12M penalties and permanent injunctions. This is the case's current state.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26177",
+   "note": "Case number, filing date, allegations and the bond-issuer role are all consistent with the SEC release.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26177",
+   "note": "SEC v. Cabanes, No. 1:24-cv-08081, was filed 2024-11-20 on FCPA charges tied to the same scheme. He was a former Azure Power director, so the event is related to the group rather than Adani Green itself.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://sebi.gov.in/sebi_data/attachdocs/dec-2025/b.Order_in_the_matter_Adani_Green_Energy.pdf",
+   "note": "The status is wrong. SEBI disposed of the show-cause notice in December 2025 without directions or penalty, so adjudication is not ongoing. The 'settlement applications withdrawn' wording is unsupported.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "false"
+   },
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/b.Order_in_the_matter_Adani_Green_Energy.pdf",
+   "note": "The SEBI show-cause notice of 2023-11-10 was disposed of without directions, disgorgement or penalty in the December 2025 order.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/b.Order_in_the_matter_Adani_Green_Energy.pdf",
+   "note": "SEBI found the allegations against Pranav Adani and the Shahs unsustainable and disposed of the notice without directions.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sebi.gov.in/enforcement/orders/sep-2026/settlement-order-in-the-matter-of-adani-group-companies_104647.html",
+   "note": "The SEBI settlement order of 2026-09-22 over the auditor peer-review certificate issue is confirmed. It is a regulatory settlement, not a bribery finding.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true",
+    "A": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://warren.senate.gov/wp-content/uploads/media/doc/letter_to_doj_re_adani.pdf",
+   "note": "The Warren letter is dated 2026-06-11. The Volkov blog confirms the 2026-05-18 Rule 48(a) motion and the reported $10B investment idea, and says Adani denies any quid pro quo. The April timing and the Giuffra link are not shown in the passages.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.thehindu.com/news/international/adani-wind-energy-project-challenged-in-sri-lankas-supreme-court/article68187253.ece",
+   "note": "The WNPS fundamental-rights petition was filed on 2024-05-16. It is an environmental and transparency challenge, not a bribery finding.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.newswire.lk/2024/06/27/adani-power-project-in-sl-sjb-accuses-of-financial-fraud/",
+   "note": "Newswire on 2024-06-27 reports Ajith Perera alleging large-scale fraud and a loss of over a billion USD. This is a political allegation only.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.livelaw.in/high-court/madras-high-court/madras-high-court-plea-adani-indictment-corruption-case-probe-276276",
+   "note": "LiveLaw on 2024-11-26 reports ML Ravi's Madras HC plea for an SIT/ED/CBI probe. Only the filing is established.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.hindustantimes.com/india-news/plea-moved-in-sc-over-hc-refusal-to-probe-adani-green-contracts-101784574823038.html",
+   "note": "HT reports the Bombay HC order of 27 March dismissing Maru's plea, and the Supreme Court registry verifying the appeal on 11 July. The dismissal did not examine the bribery allegations, per The Wire.",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://delhihighcourt.nic.in/app/showFileJudgment/75310032026CW8122026_195617.txt",
+   "note": "The Delhi HC order of 10.03.2026 in W.P.(C) 812/2026 (Ravi Sharma) concerns reallocation of 2.333 GW from Azure to Adani Green Energy Four. The Andhra Pradesh petition is flagged unverified.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://m.thewire.in/article/law/us-judge-gautam-adani-bribery-charges-co-defendants-india-claim",
+   "note": "The Wire confirms Garaufis's 3 September order denying dismissal without prejudice for the five co-defendants, covering the FCPA conspiracy count and the obstruction count against four of them.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true"
+   }
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-begins-inquiry-into-alleged-false-statements-by-adani-group/articleshow/115584818.cms",
+   "note": "The Economic Times article, headlined 'SEBI begins inquiry into alleged false statements by Adani Group', matches the claim. Its date and the later disposition are not verified in the passage.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://sec.gov/newsroom/press-releases/2024-181",
+   "note": "Azure Power Global is a distinct company from Adani Green. However, only Gupta and Rupesh Agarwal were Azure executives; Cabanes, S. Agarwal and Malhotra were CDPQ staff, so the claim's wording is imprecise.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "A": "true",
+    "D": "true"
+   }
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://ofac.treasury.gov/recent-actions/20260518",
+   "note": "OFAC announced a $275M settlement with Adani Enterprises Limited on 2026-05-18 over Iran-origin LPG. It is a separate group company, not Adani Green.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "B": "true",
+    "E": "true"
+   }
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://hindenburgresearch.com/adani/",
+   "note": "Adani Power is a separate listed company. The Milestone/Rehvar related-party allegations were made against group entities, and SEBI's excerpt lists Adani Power among the named parties. Excluding it as a namesake is correct.",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-181.pdf",
+   "note": "Adani Enterprises is AGEL's parent and a separate legal entity. Counting only conduct tied to AGEL or its executives is a sound exclusion rule.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://hindenburgresearch.com/adani/",
+   "note": "Adani Power, Adani Ports and SEZ, and Adani Total Gas are separate listed Adani companies discussed in the Hindenburg materials. They are not AGEL.",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://theprint.in/economy/kenyan-energy-minister-says-no-corruption-involved-in-adani-energy-deal/2367257/",
+   "note": "The $736M Kenyan transmission deal was signed by Adani Energy Solutions, not Adani Green.",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.tisrilanka.org/tisl-demands-transparency-in-adani-wind-power-project-files-right-to-information-applications/",
+   "note": "TISL's RTI requests name Adani Green Energy (Sri Lanka) Ltd for the Mannar and Pooneryn wind projects. They are transparency requests, not enforcement against the Indian entity.",
+   "via": "passages"
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2025/order_matter_adicorp.pdf",
+   "note": "SEBI's September 2025 orders on the Hindenburg related-party allegations concerned Adani Ports, Adani Power, Adani Enterprises and Adicorp. Adani Green is not shown as named.",
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://m.thewire.in/article/law/us-judge-gautam-adani-bribery-charges-co-defendants-india-claim",
+   "note": "CDPQ is a Canadian pension fund that was a major Azure Power investor. Its former employees Cabanes, Saurabh Agarwal and Malhotra are co-defendants in the US case. It has no tie to Adani Green's corporate structure.",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sebi.gov.in/sebi_data/attachdocs/sep-2026/ORDER_1790584774.pdf",
+   "note": "The saved SEBI page is only a navigation shell, so I relied on press reports of the order. They show two SEBI orders dated 28 Sep 2026 in the minimum public shareholding case against four Adani companies: Adani Enterprises, Adani Power, Adani Ports and Adani Transmission/Energy Solutions. The all...",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "note": "The Hindenburg report of 2023-01-24 names New Leaina as a 'stock parking' entity. It says New Leaina held a USD 420M (1.01%) stake in AGEL as of June 2021. These are short-seller allegations that no court or regulator has ruled on."
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "note": "The SEC complaint was filed 2024-11-20 in EDNY over the $750M bond, which raised over $175M from US investors. The consent judgments were proposed on 2026-05-14. Judge Garaufis entered them on 2026-08-10 with $6M and $12M penalties, without the Adanis admitting or denying the allegations."
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "false",
+   "note": "The status is wrong. SEBI's order of 2025-12-12 dropped the insider-trading case against Bahety, Tarun Jain, Rajtaru and MC Jain with no disgorgement or penalty, so adjudication is not ongoing."
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "note": "SEBI's order of 2025-12-12 cleared Pranav Adani and Kunal and Nrupal Shah. It disposed of the 2023-11-10 show-cause notice without any directions or penalty."
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "note": "The Delhi HC judgment in W.P.(C) 812/2026, dated 10.03.2026, dismissed Ravi Sharma's petition. It found no public loss shown and said only a bidder could raise the grievance. The Andhra Pradesh HC petition is flagged as unverified in the claim itself."
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "note": "Several outlets reported in late November 2024 that SEBI was doing preliminary fact-finding on Adani Green's disclosures about the US probe, with a formal investigation possible later. I found no later outcome."
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "note": "OFAC announced on 2026-05-18 a $275M settlement with Adani Enterprises over Iranian-origin LPG. That is a different group company, so excluding it from Adani Green is correct."
+  }
+ },
+ "scores": {
+  "firecrawl": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 1,
+   "truth": 38,
+   "truth_weight": 159.0,
+   "coverage": 0.132,
+   "accuracy": 0.913,
+   "combined": 0.231,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 159.0,
+   "coverage": 0.176,
+   "accuracy": 1.0,
+   "combined": 0.299,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 3,
+   "truth": 38,
+   "truth_weight": 159.0,
+   "coverage": 0.189,
+   "accuracy": 0.811,
+   "combined": 0.306,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 1,
+   "truth": 38,
+   "truth_weight": 159.0,
+   "coverage": 0.286,
+   "accuracy": 0.958,
+   "combined": 0.441,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 1,
+   "truth": 38,
+   "truth_weight": 159.0,
+   "coverage": 0.204,
+   "accuracy": 0.985,
+   "combined": 0.339,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 159.0,
+   "coverage": 0.223,
+   "accuracy": 1.0,
+   "combined": 0.365,
+   "metric": "F1"
+  }
+ }
+}

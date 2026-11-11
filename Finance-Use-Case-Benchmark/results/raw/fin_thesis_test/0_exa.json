@@ -1,0 +1,146 @@
+{
+ "arm": "exa",
+ "sub_use_case": "fin_thesis_test",
+ "input": "Test the thesis: data-center power demand supports Vistra's growth over the next 3 years",
+ "input_n": 0,
+ "tier": "high",
+ "status": "completed",
+ "seconds": 135,
+ "run_id": "agent_run_1e47d671d1914e74a3d59c51de0f2b14",
+ "output": {
+  "thesis": "Data-center power demand supports Vistra Corp.'s growth over the next three years, assessed as of 2026-11-10 through 2029-11-10.",
+  "verdict": "Partly supported. As of 2026-11-10, signed Meta, AWS and Odessa agreements establish a credible route from data-center demand to Vistra growth, with the first Meta operating phase already included in forward guidance. However, hedging limits incremental merchant upside, Texas project realization remains uncertain, and major announced ramps extend beyond the next three years; the evidence does not yet quantify data centers’ standalone contribution to cash-flow growth.",
+  "evidence_for": [
+   {
+    "date": "2026-01-09",
+    "claim": "F1 — Contracted demand, not just a queue: as of 2026-01-09, Vistra signed 20-year Meta PPAs covering 2,176 MW of existing Perry/Davis-Besse generation and 433 MW of uprates. Purchases were scheduled to begin in late 2026. These contracts support monetization of existing nuclear assets within the investment horizon.",
+    "strength": "strong",
+    "source_url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid"
+   },
+   {
+    "date": "2026-11-06",
+    "claim": "F2 — Earnings visibility: as of 2026-11-06, ongoing-operations adjusted EBITDA guidance was $7.1–7.5 billion for 2026 and $7.7–8.5 billion for 2027. The presentation explicitly includes the recent Cogentrix closing and first-phase Meta operating PPA in 2027 guidance. This supports growth, but does not isolate the data-center contribution.",
+    "strength": "strong",
+    "source_url": "https://filecache.investorroom.com/mr5ir_vistracorp_ir/349/Q3_2026_Results_Presentation_vFINAL.pdf"
+   },
+   {
+    "date": "2026-05-07",
+    "claim": "F3 — Another contracted growth channel: in its quarter-ended 2026-03-31 filing, Vistra disclosed a 20-year AWS PPA for 1,200 MW from Comanche Peak, with delivery expected to start in the fourth quarter of 2027 and reach full capacity in 2032.",
+    "strength": "strong",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000014/vistra-20260331.htm"
+   },
+   {
+    "date": "2026-09-21",
+    "claim": "F4 — Gas generation also benefits: as of 2026-09-21, New Era disclosed a 20-year PPA for at least 200 MW and up to 207 MW from Vistra’s Odessa facility for its Texas Critical Data Center project, with power expected to be available in the third quarter of 2027.",
+    "strength": "strong",
+    "source_url": "https://investors.newerainfra.ai/news/news-details/2026/New-Era-Energy--Digital-Secures-20-Year-207-MW-PPA-with-Vistra/default.aspx"
+   },
+   {
+    "date": "2026-11-06",
+    "claim": "F5 — Broader market support: as of the 2026-11-06 earnings call, management retained load-growth expectations of 4%–6% in ERCOT and 2%–3% in PJM through 2030 and reported higher PJM forward prices. Management identified data centers alongside industrial activity, population growth and electrification, so this is not a data-center-only forecast.",
+    "strength": "moderate",
+    "source_url": "https://www.fool.com/earnings/call-transcripts/2026/11/06/vistra-vst-q3-2026-earnings-call-transcript/"
+   },
+   {
+    "date": "2025-12-17",
+    "claim": "F6 — Capacity scarcity is already monetized in the market: PJM’s report dated 2025-12-17 shows its 2027/2028 capacity auction cleared at $333.44/MW-day UCAP, the price cap. This supports the market backdrop for Vistra’s PJM fleet, but is not a disclosed Vistra-specific incremental earnings figure or proof that data centers alone caused scarcity.",
+    "strength": "moderate",
+    "source_url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2027-2028/2027-2028-bra-report.pdf"
+   }
+  ],
+  "missing_fields": [
+   "Meta/AWS/Odessa contract prices: null",
+   "Annual contract delivery ramps within the investment horizon: null",
+   "Standalone incremental data-center EBITDA and free cash flow: null",
+   "Vistra 2028 and 2029 company-wide EBITDA/free-cash-flow guidance: null",
+   "Verified realized data-center load through 2029: null"
+  ],
+  "counterarguments": [
+   "Timing is the strongest objection: F1 and F3 establish real counterparties, but A2 puts nuclear uprates and full AWS utilization outside the horizon. The near-term thesis must stand on operating-asset PPAs and partial ramps, not all announced capacity.",
+   "Scarcity does not mean uncapped earnings upside: F6 supports strong capacity pricing, but that auction already hit its regulatory cap, while A1 limits exposure to further energy-price increases. Additional demand need not produce proportionate incremental Vistra earnings.",
+   "Texas is a realization risk, not simply an enormous addressable market: A3–A6 show weak forward pricing, immature projects and contractual conditions. These could delay F3/F4 contributions even if long-run computing demand remains strong.",
+   "The causal claim is weaker than the company-growth claim: F2 combines acquisition and Meta benefits, and A7 identifies non-data-center earnings drivers. A8 also means higher EBITDA can coexist with less cash available after growth investment."
+  ],
+  "evidence_against": [
+   {
+    "date": "2026-11-06",
+    "claim": "A1 — Limited immediate merchant-price upside: as of 2026-10-30, approximately 98% of expected 2027 generation and 78% of expected 2028 generation were hedged. These hedges support visibility but limit incremental exposure to further wholesale price increases; contracted benefits already in guidance should not be counted again.",
+    "strength": "strong",
+    "source_url": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
+   },
+   {
+    "date": "2026-11-06",
+    "claim": "A2 — The headline capacity overstates the near-term ramp: as of 2026-11-06, Vistra expected Meta/PJM nuclear uprates to begin contributing in 2031 and AWS/Comanche Peak to reach full ramp in 2032. Neither full benefit belongs in the next-three-year case.",
+    "strength": "strong",
+    "source_url": "https://filecache.investorroom.com/mr5ir_vistracorp_ir/349/Q3_2026_Results_Presentation_vFINAL.pdf"
+   },
+   {
+    "date": "2026-11-06",
+    "claim": "A3 — Texas demand is not translating cleanly into pricing: on 2026-11-06, management said ERCOT forward prices were trending lower, citing crypto facilities going offline for data-center conversion and the data-center audit/permitting pause. It also acknowledged overstated interconnection queues and said its ERCOT position for 2028 was less hedged than the company-wide figure.",
+    "strength": "strong",
+    "source_url": "https://www.fool.com/earnings/call-transcripts/2026/11/06/vistra-vst-q3-2026-earnings-call-transcript/"
+   },
+   {
+    "date": "2026-01-14",
+    "claim": "A4 — Independent demand forecasts have already been reduced: PJM’s load forecast published 2026-01-14 was lower than its prior forecast through 2032 because of updated economics, electric-vehicle assumptions and large-load adjustments. Near-term projects require firm commitments; non-firm longer-term projects are derated.",
+    "strength": "moderate",
+    "source_url": "https://www.pjm.com/-/media/DotCom/library/reports-notices/load-forecast/2026-load-report.pdf"
+   },
+   {
+    "date": "2026-11-05",
+    "claim": "A5 — Requested capacity is not energized demand: ERCOT’s preliminary assessment as of 2026-11-05 found later projects, including those planned for 2028 onward, had more unanswered or not-applicable responses, consistent with lower maturity. Its final analysis was still pending.",
+    "strength": "moderate",
+    "source_url": "https://www.ercot.com/files/docs/2026/11/05/Community-Impact-RFI-PUC-Update.pdf"
+   },
+   {
+    "date": "2026-09-21",
+    "claim": "A6 — Odessa remains conditional: New Era’s filing dated 2026-09-21 states that supply obligations depend on conditions precedent being satisfied by 2027-12-31, including a substation/equipment purchase agreement. Credit support, termination rights and force-majeure provisions exist; a signed PPA is not equivalent to unconditional operating revenue.",
+    "strength": "strong",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/2028336/000121390026101642/ea0305716-8k_newera.htm"
+   },
+   {
+    "date": "2026-11-06",
+    "claim": "A7 — Growth attribution is mixed: Vistra’s 2026-11-06 release attributed third-quarter adjusted EBITDA improvement primarily to higher realized energy/capacity prices, acquired Lotus plants and Martin Lake Unit 1 returning to service. This is evidence of company growth, not a clean demonstration that data-center demand caused the reported improvement.",
+    "strength": "strong",
+    "source_url": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
+   },
+   {
+    "date": "2026-11-06",
+    "claim": "A8 — EBITDA is not cash after growth investment: capital estimates prepared as of 2026-11-02 project approximately $3.15 billion of total 2027 capital expenditure, including approximately $500 million for Helix and $750 million of other growth investment. Adjusted free cash flow before growth therefore should not be mistaken for cash remaining after these growth commitments.",
+    "strength": "moderate",
+    "source_url": "https://filecache.investorroom.com/mr5ir_vistracorp_ir/349/Q3_2026_Results_Presentation_vFINAL.pdf"
+   }
+  ],
+  "key_uncertainties": [
+   "Incremental data-center economics remain unquantified: obtain contract prices, annual delivery ramps, incremental operating costs and a standalone EBITDA/free-cash-flow bridge for Meta, AWS and Odessa. Those values are null in this assessment because they were not verified on the opened pages.",
+   "Which Texas projects will actually energize? Resolve with final audit findings, permits, interconnection approvals, executed service agreements and metered load rather than requested capacity. ERCOT’s preliminary report as of 2026-11-05 targeted publication of its final report on 2026-12-10.",
+   "How much growth reaches cash after investment? Obtain a through-horizon reconciliation separating existing-fleet earnings, acquisitions, data-center contracts, maintenance capital, growth capital and financing. The opened guidance does not provide that complete attribution."
+  ],
+  "what_would_change_the_view": [
+   "Strengthen: reported commencement and sustained paid deliveries under the Meta operating PPAs, followed by AWS and Odessa deliveries on their published schedules, accompanied by separately disclosed incremental margins.",
+   "Strengthen: actual energized data-center load and firm service commitments validate regional forecasts, and Vistra secures additional creditworthy PPAs on existing plants without materially increasing growth capital.",
+   "Weaken: contract cancellation, missed delivery milestones, unsatisfied Odessa conditions, or a sustained permitting restriction delays contracted cash flows beyond the investment horizon.",
+   "Weaken: continued ERCOT forward-price deterioration as open generation is hedged, further firm-load forecast reductions, or growth-capital escalation offsets incremental contracted earnings."
+  ]
+ },
+ "cost_usd": 0.5,
+ "cost_basis": "billed",
+ "usage": {
+  "agentComputeUnits": 2,
+  "searches": 60,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "data_sources": [
+  "financial_datasets"
+ ],
+ "cost_breakdown": {
+  "total": 0.5,
+  "agentCompute": 0.2,
+  "search": 0.3,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "error": null,
+ "completed_on": "2026-11-10"
+}

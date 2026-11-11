@@ -1,0 +1,1459 @@
+{
+ "sub_use_case": "fin_grounded_answer",
+ "input_n": 4,
+ "task": "What has Salesforce changed in Agentforce pricing in 2026?",
+ "labels": {
+  "firecrawl": "A",
+  "opus": "B",
+  "gpt": "C",
+  "exa": "D",
+  "parallel": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 18,
+ "evidence_fetched": 18,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 48,
+ "judge": "v4b",
+ "judge_cost_usd": 1.17,
+ "corrections_v2": {
+  "units_before": 50,
+  "units_after": 45,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c41"
+    ]
+   },
+   {
+    "kept": "c42",
+    "merged": [
+     "c43"
+    ]
+   },
+   {
+    "kept": "c49",
+    "merged": [
+     "c50"
+    ]
+   },
+   {
+    "kept": "c20",
+    "merged": [
+     "c17"
+    ]
+   }
+  ],
+  "cost": 0.015
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "On September 3, 2026 Salesforce launched Core, Advanced and Max editions for Agentforce Sales, Service and Industries, bundling AI, Slack, analytics, security and support.",
+   "asserted_by": [
+    "A",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "On September 3, 2026 Salesforce introduced new Core, Advanced and Max editions for Agentforce Sales, Service and Industries, replacing its main cloud editions and bundling AI, Slack, Tableau Next agentic analytics, security and Premier Success Plans.",
+    "A": "On September 3, 2026, Salesforce launched new Core, Advanced, and Max editions for Agentforce Sales, Service, and Industries, consolidating AI, Slack, analytics, security, and support into the editions."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "The new editions replace the Enterprise, Unlimited and Agentforce 1 editions.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On September 3, 2026 Salesforce launched Core, Advanced and Max editions for Agentforce Sales, Service and Industries, replacing the Enterprise, Unlimited and Agentforce 1 editions."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Core edition is priced at $195 per user per month.",
+   "asserted_by": [
+    "F",
+    "A",
+    "D",
+    "E",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Salesforce's new Agentforce Core Edition costs $195 per user/month",
+    "A": "Salesforce's new Agentforce Core edition is priced at $195 per user/month.",
+    "D": "Salesforce introduced Core edition priced at $195 per user per month, replacing prior enterprise tiers.",
+    "E": "Salesforce announced Core Editions at $195 per user/month (Sept 3, 2026).",
+    "C": "Core, Advanced and Max editions priced at $195, $395 and $550 per user per month respectively.",
+    "B": "Core $195, Advanced $395 and Max $550 per user per month."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Core edition offers 70% more value than the legacy Enterprise Edition.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "offering 70% more value than legacy Enterprise Edition."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Advanced edition is priced at $395 per user per month.",
+   "asserted_by": [
+    "F",
+    "A",
+    "D",
+    "E",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Salesforce's new Agentforce Advanced Edition costs $395 per user/month.",
+    "A": "Salesforce's new Agentforce Advanced edition is priced at $395 per user/month.",
+    "D": "Salesforce introduced Advanced edition priced at $395 per user per month.",
+    "E": "Salesforce announced Advanced Editions at $395 per user/month (Sept 3, 2026).",
+    "C": "priced at $195, $395 and $550",
+    "B": "Advanced $395"
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Max edition is priced at $550 per user per month, the same as Agentforce 1 (zero pricing change).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Salesforce's new Agentforce Max Edition costs $550 per user/month, with zero pricing change from Agentforce 1 Edition",
+    "A": "priced at $550 per user/month, maintaining the Agentforce 1 price (zero pricing change)",
+    "D": "Max edition priced at $550 per user per month, with no price change from the former Agentforce 1 price.",
+    "E": "Salesforce Max Editions remain $550 per user/month, with zero pricing change.",
+    "C": "Max $550; Max edition retained Agentforce 1's price",
+    "B": "Salesforce Max edition costs the same as the Agentforce 1 Edition ($550 per user per month)."
+   },
+   "urls": [
+    "https://pricingsaas.com/companies/salesforce.agentforce/diffs/2026W41",
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c41"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Max edition offers nearly 60% more value than Agentforce 1 Edition.",
+   "asserted_by": [
+    "F",
+    "A"
+   ],
+   "variants": {
+    "F": "nearly 60% more value.",
+    "A": "with nearly 60% more value than Agentforce 1 Edition."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Core edition includes 500,000 Flex Credits (per org per year).",
+   "asserted_by": [
+    "F",
+    "A",
+    "D",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Salesforce Core Editions include 500,000 Flex Credits per year for the org.",
+    "A": "Core edition includes 500,000 Flex Credits per organization per year.",
+    "D": "Salesforce Core editions include 500,000 Flex Credits.",
+    "C": "Core, Advanced and Max editions include 500,000, 1 million and 2.75 million Flex Credits respectively.",
+    "B": "Core 500,000, Advanced 1 million, Max 2.75 million."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Advanced edition includes 1 million Flex Credits (per org per year).",
+   "asserted_by": [
+    "F",
+    "A",
+    "D",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Salesforce Advanced Editions include 1 million Flex Credits per year for the org.",
+    "A": "Advanced edition includes 1 million Flex Credits per organization per year.",
+    "D": "Salesforce Advanced editions include 1 million Flex Credits.",
+    "C": "1 million",
+    "B": "Advanced 1 million"
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Max edition includes 2.75 million Flex Credits (per org per year).",
+   "asserted_by": [
+    "F",
+    "A",
+    "D",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Salesforce Max Editions include 2.75 million Flex Credits per year for the org.",
+    "A": "Max edition includes 2.75 million Flex Credits per organization per year.",
+    "D": "Salesforce Max editions include 2.75 million Flex Credits.",
+    "C": "2.75 million",
+    "B": "Max 2.75 million"
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Existing Agentforce 1 customers can upgrade to Max at no extra cost.",
+   "asserted_by": [
+    "F",
+    "D"
+   ],
+   "variants": {
+    "F": "Existing Agentforce 1 Edition customers upgrade to Max Edition at no extra cost.",
+    "D": "Existing Salesforce Agentforce 1 customers can upgrade to the new Max edition at no extra cost."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "The no-cost Agentforce 1 to Max upgrade comes with up to $500 in added value.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Existing Agentforce 1 Edition customers can upgrade to Max at no extra cost, with up to $500 in added value.",
+    "B": "Agentforce 1 customers can upgrade to the Max edition at no extra cost, which Salesforce values at up to $500 in added value."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Pricing for existing customers on legacy editions is unchanged.",
+   "asserted_by": [
+    "F",
+    "E",
+    "A",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Pricing for existing customers on Salesforce legacy editions is unchanged.",
+    "E": "Salesforce says existing customer pricing on legacy editions remains unchanged.",
+    "A": "September 2026 announcement says existing customer pricing on legacy editions remains unchanged.",
+    "C": "The September 2026 announcement states that existing customer pricing on legacy editions remains unchanged.",
+    "B": "Salesforce says existing customer pricing on legacy editions remains unchanged."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "New Agentforce Industry Edition pricing takes effect later in fall 2026 (no exact date given).",
+   "asserted_by": [
+    "F",
+    "D",
+    "E",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "New Agentforce Industry Edition pricing takes effect later in fall 2026.",
+    "D": "New Industry Edition pricing would take effect later in fall 2026.",
+    "E": "specific prices and exact effective date were not given in the reviewed announcement.",
+    "C": "Salesforce scheduled Industry Edition pricing changes for later in fall 2026 rather than a single universal effective date.",
+    "B": "takes effect 'later this fall', with no exact date given."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Agentforce Help Agent with outcome-based pricing is included in Advanced and Max Editions.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Agentforce Help Agent with outcome-based pricing is included in Salesforce Advanced and Max Editions."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Help Agent has no charge if the customer asks for a human or walks away unhappy.",
+   "asserted_by": [
+    "F",
+    "D",
+    "A",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Salesforce does not charge for a Help Agent interaction if the customer asks for a human or walks away unhappy.",
+    "D": "no charge when the customer escalates to a human or is dissatisfied/unsuccessful.",
+    "A": "no charge if the customer asks for a human or walks away unhappy.",
+    "C": "no charge for negative feedback or human escalation",
+    "B": "no charge if the customer asks for a human or leaves unhappy."
+   },
+   "urls": [
+    "https://www.salesforceben.com/huge-agentforce-pricing-shift-salesforce-introduces-pay-per-resolution",
+    "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Data 360 and Agentforce are unmetered during a Help Agent resolution interaction.",
+   "asserted_by": [
+    "F",
+    "C"
+   ],
+   "variants": {
+    "F": "Data 360 and Agentforce are unmetered during a Help Agent resolution interaction.",
+    "C": "Agentforce and Data 360 are unmetered during the interaction."
+   },
+   "urls": [
+    "https://www.salesforceben.com/huge-agentforce-pricing-shift-salesforce-introduces-pay-per-resolution",
+    "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Help Agent pay-per-resolution pricing became available in July 2026.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "generally available in July 2026.",
+    "D": "available July 2026",
+    "E": "became available in July 2026.",
+    "C": "available in July 2026",
+    "B": "became generally available in July 2026."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+    "https://www.salesforceben.com/huge-agentforce-pricing-shift-salesforce-introduces-pay-per-resolution"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c20",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "Help Agent resolutions cost $2 each.",
+   "asserted_by": [
+    "F",
+    "D",
+    "A",
+    "E",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "Agentforce Help Agent resolutions cost $2 per autonomously resolved case.",
+    "D": "pricing page lists Help Agent resolutions at $2 each.",
+    "A": "pricing page lists Help Agent resolutions at $2 each.",
+    "E": "Service add-ons page lists Help Agent Resolutions at $2 per resolution.",
+    "C": "As of November 10, 2026, pricing page lists Help Agent Resolutions at $2 per resolution.",
+    "B": "costs $2 per successful resolution, per CIO."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing/",
+    "https://www.salesforce.com/service/pricing/add-ons?bc=DB",
+    "https://www.cio.com/article/4189183/salesforce-unveils-ai-help-agent-with-pay-per-resolution-pricing.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Customers can pre-purchase packs of Help Agent resolutions, minimum 1,000.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Customers can pre-purchase packs of Agentforce Help Agent resolutions, with a minimum of 1,000."
+   },
+   "urls": [
+    "https://www.cio.com/article/4189183/salesforce-unveils-ai-help-agent-with-pay-per-resolution-pricing.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Flex Credits cost $500 per 100,000 credits.",
+   "asserted_by": [
+    "F",
+    "D",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "F": "Salesforce Flex Credits cost $500 per 100,000 credits.",
+    "D": "current pricing page lists Flex Credits at $500 per 100,000 credits.",
+    "A": "Salesforce lists Agentforce Flex Credits at $500 per 100,000 credits.",
+    "C": "As of November 10, 2026, pricing page lists Flex Credits at $500 per 100,000 credits."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Agentforce Conversations are priced at $2 per conversation.",
+   "asserted_by": [
+    "F",
+    "D",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "F": "Agentforce Conversations are priced at $2 per conversation.",
+    "D": "pricing page lists Conversations at $2 per conversation.",
+    "A": "Salesforce lists Agentforce conversations at $2 per conversation.",
+    "C": "pricing page lists Agentforce Conversations at $2 per conversation."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "The $500-per-100,000 Flex Credit price and $2-per-conversation model were already documented on May 15, 2025, so not 2026 changes.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The $500-per-100,000 Flex Credit price and $2-per-conversation model were already documented by Salesforce on May 15, 2025, so they were not 2026 changes."
+   },
+   "urls": [
+    "https://www.salesforce.com/in/news/press-releases/2025/05/15/agentforce-flexible-pricing-news/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Agentforce standard actions consume 20 Flex Credits ($0.10) each, introduced in May 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Agentforce standard actions consume 20 Flex Credits ($0.10) each, introduced in May 2025."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/press-releases/2025/05/15/agentforce-flexible-pricing-news"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Agentforce Voice actions consume 30 Flex Credits ($0.15) each.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Agentforce Voice actions consume 30 Flex Credits ($0.15) each."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Flex Credits Rate Card was updated April 21, 2026 with rates unchanged from May 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Salesforce's Flex Credits Rate Card was updated April 21, 2026 with rates unchanged from the May 2025 introduction."
+   },
+   "urls": [
+    "https://aquiva.com/blog/agentforce-pricing-gets-a-long-overdue-fix-flex-credits-are-now-live"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Pricing page lists the Agentforce User License at $5 per user/month requiring Flex Credits.",
+   "asserted_by": [
+    "F",
+    "A"
+   ],
+   "variants": {
+    "F": "$5 user license requiring Flex Credits",
+    "A": "Salesforce lists the Agentforce User License at $5 per user/month plus Flex Credits."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Pricing page lists unmetered Agentforce add-ons at $125 per user/month.",
+   "asserted_by": [
+    "F",
+    "A"
+   ],
+   "variants": {
+    "F": "$125 unmetered add-ons",
+    "A": "Salesforce lists Agentforce add-ons at $125 per user/month."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Pricing page lists Industries add-ons at $150 and Agentforce 1 Editions from $550.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "$150 Industries add-ons, and Agentforce 1 Editions from $550."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Agentforce pricing page still lists consumption-based pricing via Flex Credits or Conversations, as well as per-user licensing.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Salesforce's Agentforce pricing page still lists consumption-based pricing via Flex Credits or Conversations, as well as per-user licensing."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Agentforce Coworker standalone SKU priced at $50 per user per month, available in November 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Salesforce introduced Agentforce Coworker as a standalone license priced at $50 per user per month, available in November 2026."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users/"
+   ],
+   "conflicts_with": [
+    "c34"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Agentforce Coworker standalone SKU at $50 per user per month announced November 4, 2026, with the per-user SKU available now.",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "Salesforce announced a standalone Agentforce Coworker SKU priced at $50 per user per month, and listed the per-user, per-month SKU as available now (as of Nov 4, 2026).",
+    "C": "On November 4, 2026, Salesforce announced a new standalone Agentforce Coworker option priced at $50 per user per month, with the per-user SKU available immediately."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users"
+   ],
+   "conflicts_with": [
+    "c33"
+   ]
+  },
+  {
+   "cid": "c35",
+   "claim": "Agentforce Coworker announcement listed Google Workspace and Microsoft 365 connectivity, Conversation History, and Skills as available now.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Salesforce's Agentforce Coworker announcement listed Google Workspace and Microsoft 365 connectivity, Conversation History, and Skills as available now."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "Per Concret.io, Core replaces Enterprise (previously $175), about 11.4% higher.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "According to Concret.io, Core edition replaces Enterprise (previously $175), making Core about 11.4% higher."
+   },
+   "urls": [
+    "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Per Concret.io, Advanced replaces Unlimited (previously $350), about 12.9% higher.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "According to Concret.io, Advanced edition replaces Unlimited (previously $350), making Advanced about 12.9% higher."
+   },
+   "urls": [
+    "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Starter and Pro Suite editions are unchanged.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Salesforce's Starter and Pro Suite editions are unchanged."
+   },
+   "urls": [
+    "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Between Sept 28 and Oct 5, 2026 the pricing page renamed 'Agentforce 1 Editions' to 'Agentforce Max Editions'.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Between September 28 and October 5, 2026, Salesforce's pricing page renamed 'Agentforce 1 Editions' to 'Agentforce Max Editions'."
+   },
+   "urls": [
+    "https://pricingsaas.com/companies/salesforce.agentforce/diffs/2026W41"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "In the same period the pricing page raised the Flex Credits limit from 2.5M to 2.75M per org per year.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "raised the Flex Credits limit from 2.5M to 2.75M per org per year, per PricingSaaS."
+   },
+   "urls": [
+    "https://pricingsaas.com/companies/salesforce.agentforce/diffs/2026W41"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Sources disagree on Agentforce 1's pre-change included Flex Credits: Concret.io says 1M, PricingSaaS says 2.5M.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Concret.io says 1M per org per year, while the PricingSaaS tracker says 2.5M."
+   },
+   "urls": [
+    "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c42",
+    "c43"
+   ]
+  },
+  {
+   "cid": "c44",
+   "claim": "Agentforce ARR was $1.2 billion in Q1 FY27 (reported May 27, 2026), up 205% YoY.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Agentforce ARR was $1.2 billion in Q1 FY27 (reported May 27, 2026), up 205% year over year."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Agentforce ARR passed $1.5 billion in Q2 FY27 (reported Aug 26, 2026), up over 240% YoY.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Agentforce ARR passed $1.5 billion in Q2 FY27 (reported Aug 26, 2026), up over 240% year over year."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "From Q2 FY27 the reported Agentforce ARR also counts Slackbot and Headless 360.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "From Q2 FY27, Salesforce's reported Agentforce ARR figure also counts Slackbot and Headless 360, so it is not a pure Agentforce number."
+   },
+   "urls": [
+    "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "The 2026 changes (Coworker, editions, Help Agent) are additional product-specific options, not a single pricing change or replacement of existing consumption models.",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "The new Agentforce Coworker, edition and Help Agent pricing are additional product-specific options rather than a single pricing change across all of Agentforce.",
+    "C": "The 2026 changes add purchasing options rather than replacing Salesforce's existing Agentforce consumption pricing models."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Salesforce has shifted Agentforce toward bundled, outcome- and consumption-based pricing rather than only the earlier per-conversation model.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Salesforce has shifted Agentforce toward bundled, outcome- and consumption-based pricing rather than only the earlier per-conversation model."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Salesforce says pricing and packaging are subject to change, availability varies by region, and customer agreements govern final pricing.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Agentforce pricing and packaging are subject to change, availability can vary by region, and customer agreements govern final pricing.",
+    "A": "pricing and packaging are subject to change, availability may vary by region, and customer agreements govern actual pricing.",
+    "C": "pricing and packaging are subject to change and that availability is governed by region and customer agreements."
+   },
+   "urls": [
+    "https://www.salesforce.com/agentforce/pricing"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c49",
+    "c50"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Salesforce's Sept 3, 2026 release announces Core, Advanced and Max editions bundling Slack, Tableau Next, Premier Success Plan and security. Industry pricing was said to follow later, but the editions were introduced as stated.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update",
+   "note": "The new editions replace Enterprise, Unlimited and Agentforce 1, per Salesforce's comparisons to those legacy editions and the secondary source. Legacy customers keep their existing pricing.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Core Editions are $195 per user/month per Salesforce.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Salesforce says Core offers 70% more value than the legacy Enterprise Edition. This is a vendor marketing claim.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Advanced Editions are $395 per user/month per Salesforce.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Max is $550 per user/month with zero pricing change from Agentforce 1; the pricing page also shows 'from $550'.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true",
+    "D": "true",
+    "E": "true",
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "The release says Max offers nearly 60% more value than Agentforce 1 (the subhead rounds to 60%). This is a vendor claim.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Core includes 500,000 Flex Credits; the secondary source states per org per year.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Advanced includes 1 million Flex Credits; the per-year basis is from the secondary source.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.salesforce.com/agentforce/pricing/",
+   "note": "Max includes 2.75M Flex Credits per org per year per the pricing page, which raised it from 2.5M in early October.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Existing Agentforce 1 customers can upgrade to Max at no extra cost.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "The no-cost upgrade comes with up to $500 in added value.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "The release states existing customer pricing on legacy editions remains unchanged.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Industry Edition pricing goes into effect 'later this fall' with no exact date. Status as of Nov 10 is unconfirmed and may already have changed.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Salesforce editions announcement says Help Agent with outcome-based pricing is included in Advanced and Max Editions.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforceben.com/huge-agentforce-pricing-shift-salesforce-introduces-pay-per-resolution",
+   "note": "Negative feedback or a request for human escalation means no charge, per Salesforce's announcement as quoted.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+   "note": "Announcement states Data 360 and Agentforce are unmetered during the agent interaction.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+   "note": "Announcement states pay-per-resolution pricing is available July '26; later pages show it in the add-ons price list.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "E": "true",
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.salesforce.com/service/pricing/add-ons?bc=DB",
+   "note": "Salesforce's Service add-ons page lists Help Agent Resolutions at $2 per resolution.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.salesforce.com/agentforce/pricing/",
+   "note": "Flex Credits are $500 per 100k on the pricing page and in the May 2025 release; the price is current but not a 2026 change.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.salesforce.com/agentforce/pricing/",
+   "note": "The pricing FAQ still lists Conversation pricing, and Aquiva confirms $2 per conversation as an option; this is a legacy model, not new in 2026.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/press-releases/2025/05/15/agentforce-flexible-pricing-news",
+   "note": "The May 15, 2025 release documents $500 per 100k Flex Credits; the $2 per conversation model predates it, as Aquiva notes.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/press-releases/2025/05/15/agentforce-flexible-pricing-news",
+   "note": "The May 2025 release states one action consumes 20 Flex Credits ($0.10).",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.salesforce.com/agentforce/pricing/",
+   "note": "The pricing page example shows Voice actions at 30 credits and $0.15 each; Aquiva confirms.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://aquiva.com/blog/agentforce-pricing-gets-a-long-overdue-fix-flex-credits-are-now-live",
+   "note": "Aquiva cites a rate card updated April 21, 2026 with rates consistent with 2025; this is a minor detail that does not answer what changed.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.salesforce.com/agentforce/pricing/",
+   "note": "The pricing page lists the Agentforce User License at $5 per user/month, requiring Flex Credits; this was introduced in 2025.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.salesforce.com/service/pricing/add-ons?bc=DB",
+   "note": "Agentforce for Service is listed at $125/user/month on the add-ons page, a price that has been in place since 2025.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/agentforce/pricing/",
+   "note": "Max from $550 is confirmed, but the $150 Industries add-on and the 'Agentforce 1 Editions' name come from an older Aquiva guide; the current page calls it Max, so the combined claim is outdated.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.salesforce.com/agentforce/pricing",
+   "note": "The page text says to choose consumption-based pricing (Flex Credits or Conversations) or per-user licensing, and the FAQ confirms both models.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.salesforce.com/agentforce/pricing/",
+   "note": "The pricing page lists an Agentforce Coworker User License at $50/user/month as a standalone SKU; the per-user SKU is listed as available now and other Coworker features reach GA in November 2026.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users",
+   "note": "The Salesforce announcement gives $50 per user per month and lists the per-user SKU as available now; the Nov 4 date is not shown in the passage but is consistent with the November 2026 story.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users",
+   "note": "The Availability section lists Google Workspace and Microsoft 365 connectivity, Conversation History, and Skills as available now.",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update",
+   "note": "Concret.io shows Enterprise at $175 replaced by Core at $195, about 11.4% higher; the Salesforce release confirms the $195 price.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update",
+   "note": "Concret.io shows Unlimited at $350 replaced by Advanced at $395, about 12.9% higher; the Salesforce release confirms the $395 price.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update",
+   "note": "Concret.io says Starter and Pro Suite are unchanged in price and features; this is a single third-party source.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://pricingsaas.com/companies/salesforce.agentforce/diffs/2026W41",
+   "note": "PricingSaaS recorded the rename of Agentforce 1 Editions to Agentforce Max Editions between the Sep 28 and Oct 5 captures.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://pricingsaas.com/companies/salesforce.agentforce/diffs/2026W41",
+   "note": "PricingSaaS recorded the Flex Credits limit going from 2.5M to 2.75M per org per year, and the live pricing page shows 2.75M.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://pricingsaas.com/companies/salesforce.agentforce/diffs/2026W41",
+   "note": "Concret.io gives 1M credits before the change while PricingSaaS gives 2.5M, so the discrepancy exists; Aquiva also says 1M Flex Credits plus 2.5M Data Cloud credits, suggesting the 2.5M may be a mislabel.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+   "note": "The Q2 FY27 release says Agentforce ARR exceeded $1.5B, up over 240% Y/Y, but this is a financial metric rather than a pricing change.",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+   "note": "Press release states 'Effective Q2 FY27, Agentforce ARR includes our AI offerings, Slackbot and Headless 360'.",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users/",
+   "note": "Coworker per-user SKU, new editions and Help Agent are product-specific additions; pricing page still lists Flex Credits and Conversations alongside per-user.",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+   "note": "Editions bundle Agentforce with Flex Credits, and consumption/per-user options are offered beyond per-conversation; no direct passage, but consistent with other sources.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users/",
+   "note": "Disclaimer quoted: pricing and packaging subject to change, availability may vary by region and governed by customer agreements.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.cio.com/article/4189183/salesforce-unveils-ai-help-agent-with-pay-per-resolution-pricing.html",
+   "note": "CIO article says customers can pre-purchase a packet of resolutions, with a minimum of 1,000. This matches both wordings of the claim.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "agent"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://salesforce.com/news/press-releases/2026/05/27/fy27-q1-earnings",
+   "note": "Search results for the Q1 FY27 release, including a May 27 Salesforce press release URL, show Agentforce ARR of $1.2B, up 205% year over year. The cited Q2 page only gives the newer figure, over $1.5B up over 240%, so Q1 is superseded. This is an earnings metric, not a pricing change.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "note": "Salesforce's editions announcement says Core includes 500,000 Flex Credits, Advanced 1 million and Max 2.75 million. The pricing page states 'per org per year' only for Max, so that wording for Core is inferred from the same allowance format."
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "note": "The pricing page lists the Agentforce User License at $5 per user per month and says it requires Flex Credits."
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "note": "The November 4, 2026 Salesforce news post gives Coworker a $50 per user per month price and lists the per-user, per-month SKU under 'Available now'."
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "note": "PricingSaaS recorded the change between Sep 28 and Oct 5, 2026: the Max (formerly Agentforce 1) Flex Credits allowance went from 2.5M to 2.75M per org per year."
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "note": "PricingSaaS logged an Oct 19, 2026 change: 'renames Max Editions card to Max Edition, keeps $550 price'. The live pricing page still shows Max from $550 per user per month."
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "note": "The pricing page still offers Flex Credits, Conversations and per-user licensing. Coworker's $50 per-user SKU, the new editions and Help Agent's $2 per resolution are separate product options added next to those models."
+  }
+ },
+ "scores": {
+  "firecrawl": {
+   "units": 18,
+   "unverifiable": 0,
+   "true": 18,
+   "wrong": 0,
+   "truth": 41,
+   "truth_weight": 150.0,
+   "coverage": 0.508,
+   "accuracy": 1.0,
+   "combined": 0.674,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 20,
+   "unverifiable": 0,
+   "true": 20,
+   "wrong": 0,
+   "truth": 41,
+   "truth_weight": 150.0,
+   "coverage": 0.517,
+   "accuracy": 1.0,
+   "combined": 0.681,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 19,
+   "unverifiable": 0,
+   "true": 19,
+   "wrong": 0,
+   "truth": 41,
+   "truth_weight": 150.0,
+   "coverage": 0.585,
+   "accuracy": 1.0,
+   "combined": 0.738,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 41,
+   "truth_weight": 150.0,
+   "coverage": 0.458,
+   "accuracy": 1.0,
+   "combined": 0.629,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 41,
+   "truth_weight": 150.0,
+   "coverage": 0.4,
+   "accuracy": 1.0,
+   "combined": 0.571,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 29,
+   "unverifiable": 0,
+   "true": 25,
+   "wrong": 4,
+   "truth": 41,
+   "truth_weight": 150.0,
+   "coverage": 0.528,
+   "accuracy": 0.955,
+   "combined": 0.68,
+   "metric": "F1"
+  }
+ }
+}

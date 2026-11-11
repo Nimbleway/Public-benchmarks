@@ -1,0 +1,1118 @@
+{
+ "sub_use_case": "fin_adverse_media",
+ "input_n": 3,
+ "task": "Find bribery and corruption cases involving Trafigura",
+ "labels": {
+  "firecrawl": "A",
+  "opus": "B",
+  "gpt": "C",
+  "parallel": "D",
+  "nimble": "E",
+  "exa": "F"
+ },
+ "unit": "adverse event",
+ "evidence_pages": 46,
+ "evidence_fetched": 46,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 41,
+ "judge": "v4b",
+ "judge_cost_usd": 1.286,
+ "corrections_v2": {
+  "units_before": 42,
+  "units_after": 33,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3",
+     "c4"
+    ]
+   },
+   {
+    "kept": "c17",
+    "merged": [
+     "c18"
+    ]
+   },
+   {
+    "kept": "c20",
+    "merged": [
+     "c21",
+     "c22"
+    ]
+   },
+   {
+    "kept": "c25",
+    "merged": [
+     "c28"
+    ]
+   },
+   {
+    "kept": "c32",
+    "merged": [
+     "c33"
+    ]
+   },
+   {
+    "kept": "c34",
+    "merged": [
+     "c35"
+    ]
+   }
+  ],
+  "cost": 0.031
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "US DOJ (S.D. Florida): on 2024-03-28 Trafigura Beheer B.V. pleaded guilty to conspiracy to violate the FCPA anti-bribery provisions over bribes to Petrobras officials in Brazil.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "On 2024-03-28 Trafigura Beheer B.V. pleaded guilty to conspiracy to violate the FCPA anti-bribery provisions over payments to Petrobras officials (Brazil) during about 2003-2014. It faced a USD 80,488,040 criminal fine and USD 46,510,257 forfeiture, with credit of up to USD 26,829,346 against the fine for related Brazilian payments.",
+    "C": "On 2024-03-28 Trafigura Beheer B.V. pleaded guilty to conspiracy to violate the FCPA anti-bribery provisions by paying Brazilian officials to obtain and retain Petrobras business. It paid a USD 80,488,040 criminal fine and USD 46,510,257 forfeiture, with up to USD 26,829,346 of the fine creditable against the Brazilian resolution.",
+    "F": "Trafigura Beheer B.V. pleaded guilty in the United States (DOJ) to conspiring to violate the FCPA in the Petrobras bribery scheme (underlying conduct in Brazil); the case is recorded as resolved (2024-03-28)."
+   },
+   "urls": [
+    "https://fcpa.stanford.edu/enforcement-action.html?id=917",
+    "https://maritime-executive.com/article/trafigura-pleads-guilty-and-will-pay-126m-to-settle-brazilian-bribery-case",
+    "https://www.justice.gov/archives/opa/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme",
+    "https://www.justice.gov/criminal/case/united-states-v-trafigura-beheer-bv",
+    "https://www.justice.gov/usao-sdfl/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Brazil: Trafigura Beheer B.V. signed a leniency agreement with CGU and AGU on 2025-03-28 over improper payments via intermediaries to public officials to obtain privileged Petrobras information, paying BRL 435,410,672.26.",
+   "asserted_by": [
+    "F",
+    "C"
+   ],
+   "variants": {
+    "F": "Trafigura Beheer B.V. signed a Brazilian leniency agreement with AGU and CGU (2025-03-28) over improper intermediary payments in 2003–2014 to obtain privileged Petrobras trading information, paying BRL 435,410,672.26 in fines and reimbursement, with a parallel MPF agreement subject to ratification.",
+    "C": "Brazil (Petrobras bribery): on 2025-03-28 Trafigura Beheer B.V. signed a leniency agreement with the CGU and AGU. It paid BRL 435,410,672.26 in fines and compensation to the Brazilian government and Petrobras. The agreement resolved improper payments through intermediaries to public officials to obtain privileged information on Petrobras transactions."
+   },
+   "urls": [
+    "https://www.gov.br/agu/pt-br/comunicacao/noticias/agu-e-cgu-assinam-acordo-de-leniencia-com-a-empresa-trafigura-beheer-b-v",
+    "https://www.gov.br/cgu/pt-br/assuntos/noticias/2025/03/cgu-e-agu-assinam-acordo-de-leniencia-com-a-empresa-trafigura-beheer-b-v"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Brazil: MPF homologated Trafigura Beheer's leniency agreement on 2025-07-16 over corrupt Petrobras oil transactions 2003-2014; BRL 435 million.",
+   "asserted_by": [
+    "D",
+    "A"
+   ],
+   "variants": {
+    "D": "The Federal Public Prosecutor's Office (MPF) reported on 2025-07-16 that it had homologated Trafigura Beheer's leniency agreement covering corrupt Petrobras fuel-oil transactions in 2003-2014. The settlement carries BRL 435 million in fines and restitution to the Brazilian Union and Petrobras.",
+    "A": "Brazil's Federal Prosecution Service (with CGU and AGU) homologated a leniency agreement with Trafigura Beheer B.V. on 2025-07-16 over corrupt payments connected to Petrobras oil trading between 2003 and 2014. The settlement was BRL 435 million. Trafigura admitted responsibility and agreed to keep improving governance and compliance controls."
+   },
+   "urls": [
+    "https://www.mpf.mp.br/o-mpf/unidades/pr-pr/noticias/mpf-homologa-acordo-de-leniencia-com-multinacional-de-commodities-trafigura"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Brazil: Trafigura Beheer B.V. settled civil and administrative cases with CGU, AGU and MPF (announced 31 Mar 2025), paying an additional USD 49m (about BRL 282m), about USD 76m in total.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Trafigura Beheer B.V. settled civil and administrative cases with Brazilian authorities (CGU, AGU and MPF) over the Petrobras bribery scheme, announced 31 Mar 2025. It paid an additional USD 49 million (about BRL 282 million), reported as about USD 76 million in total, with up to USD 26.8 million credited under the 2024 DOJ agreement."
+   },
+   "urls": [
+    "https://www.trafigura.com/news-and-insights/press-releases/2025/statement-regarding-brazil"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Brazil CGU administrative proceeding (Law 12.846/2013, instituted 31 Dec 2020) against Trafigura entities found USD 1,292,400 in bribes to Petrobras manager Marcus Alcoforado across 31 spot fuel-oil contracts; recommended fines; resolved by 2025 settlements.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Brazil's Comptroller General (CGU) ran an administrative liability proceeding under Law 12.846/2013, instituted 31 Dec 2020, against Trafigura Pte. Ltd., Trafigura Beheer B.V. and Trafigura do Brasil entities. It found bribes of USD 1,292,400 to Petrobras manager Marcus Alcoforado across 31 spot fuel-oil contracts (2012–2013), with the money laundered via doleiros. The final report recommended fines of R$ 47.36 billion against Trafigura Pte. Ltd. and R$ 518,417 against Trafigura do Brasil Consultoria. The matter was ultimately resolved by the 2025 settlements."
+   },
+   "urls": [
+    "https://repositorio.cgu.gov.br/bitstream/1/94724/3/Relatorio_Final_Trafigura.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Brazil criminal case (Curitiba 13th Federal Court): former Trafigura executives Mariano Marcondes Ferraz and Marcio Pinto de Magalhães charged with Alcoforado and Carlos Herz with corruption and money laundering; reported as ongoing.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Brazilian federal prosecutors in Curitiba (13th Federal Court, case 5058533-34.2018.404.7000) charged former Trafigura executives Mariano Marcondes Ferraz and Marcio Pinto de Magalhães, with Petrobras manager Marcus Alcoforado and financial operator Carlos Herz, with active and passive corruption and money laundering over the Petrobras bribe scheme. Herz's case was split into a separate action. The prosecution is reported as ongoing."
+   },
+   "urls": [
+    "https://repositorio.cgu.gov.br/bitstream/1/94724/3/Relatorio_Final_Trafigura.pdf"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Brazil (MPF Paraná, Lava Jato): 2018 charges against two former Trafigura executives, a financial operator and a former Petrobras manager over about USD 1.5m in bribes across 31 fuel-oil trades; reported stalled as of 2024-04-02.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In Brazil (MPF Paraná, Lava Jato), federal prosecutors charged in 2018 two former Trafigura executives, a financial operator and a former Petrobras fuel-oil trade manager with corruption and money laundering. The charges allege about USD 1.5m in bribes across 31 fuel-oil trades, paid through offshore accounts and cash in Brazil. As of 2024-04-02 the case was reported stalled after Lava Jato was dismantled, and the defendants were seeking to have the evidence thrown out."
+   },
+   "urls": [
+    "https://www.gazetadopovo.com.br/vida-e-cidadania/multinacional-suica-admite-propina-a-petrobras-e-divulga-acordo-milionario-com-justica-dos-eua/"
+   ],
+   "conflicts_with": [
+    "c9"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Switzerland: Trafigura Beheer B.V. convicted 2025-01-31 of failing to prevent bribery tied to Angolan oil contracts; CHF 3,000,000 fine and USD 145,634,268 compensatory claim; Trafigura appealed, outcome unverified.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The Swiss Federal Criminal Court convicted Trafigura Beheer B.V. on 2025-01-31 of failing to prevent foreign bribery tied to Angolan oil contracts (CHF 3,000,000 fine; USD 145,634,268 compensatory claim); Trafigura appealed and no appeal outcome was verified."
+   },
+   "urls": [
+    "https://www.bstger.ch/en/media/comunicati-stampa/2025/2025-01-31/1454.html"
+   ],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Switzerland: 2025-01-31 first-instance conviction of Trafigura Beheer B.V. for organisational deficiencies enabling bribery of an Angolan official 2009-2011; Mike Wainwright involved; CHF 3,000,000 fine and USD 145,000,000 compensatory claim; not final, appealed.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2025-01-31 the Trafigura corporate defendant (Trafigura Beheer B.V.) was convicted at first instance of organisational deficiencies that enabled bribery of an Angolan public official in 2009-2011. Former senior executive Mike Wainwright was also involved. The penalty was a CHF 3,000,000 fine and a USD 145,000,000 compensatory claim. The judgment was not final, and Trafigura appealed (reported December 2025); no appeal outcome is verified."
+   },
+   "urls": [
+    "https://bstger.ch/de/media/comunicati-stampa/2025/2025-01-31/1454.html"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Switzerland: OAG indictment of Trafigura Beheer B.V. on 5 Dec 2023 over bribery of a Sonangol Distribuidora official (EUR 4.35m plus USD 604,000, 2009-2011); convicted 31 Jan 2025; CHF 3m fine, about USD 145m set aside for compensation; Wainwright 32 months (12 to serve); intend to appeal.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Switzerland's Office of the Attorney General indicted Trafigura Beheer B.V. on 5 Dec 2023 for failing to prevent bribery of a Sonangol Distribuidora official in Angola (EUR 4.35 million plus USD 604,000 in cash, 2009–2011), and the Federal Criminal Court in Bellinzona convicted the company on 31 Jan 2025. Trafigura was fined CHF 3 million, with about USD 145 million set aside for compensation claims. Former COO Mike Wainwright received a 32-month sentence, 12 months of it to be served. Trafigura and Wainwright intend to appeal."
+   },
+   "urls": [
+    "https://www.bbc.com/news/articles/c2d3z87yn51o"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Switzerland: OAG indicted Trafigura Beheer B.V. and three individuals on 2023-12-05 over bribes to a SONANGOL Distribuidora official (EUR 4,346,176.60 and USD 604,000; alleged profits USD 143.7m); 2025-01-31 conviction of Trafigura and Wainwright; CHF 3m fine plus USD 145.6m compensation; Wainwright 32 months (12 to serve); appeals intended.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "In Switzerland, the Office of the Attorney General indicted Trafigura Beheer B.V. and three individuals on 2023-12-05 over alleged bribes to an Angolan public official linked to SONANGOL Distribuidora between April 2009 and October 2011, to win ship-chartering and bunkering contracts. The alleged bribes were EUR 4,346,176.60 and USD 604,000, with alleged Trafigura Group profits of USD 143.7 million. The company was charged with failing to take reasonable organisational measures to prevent bribery. On 2025-01-31 the Federal Criminal Court in Bellinzona convicted Trafigura and former COO Mike Wainwright. Trafigura received a CHF 3 million fine plus USD 145.6 million compensation, and Wainwright received 32 months' imprisonment (12 to serve). Both intended to appeal, with the prison sentence held pending appeal."
+   },
+   "urls": [
+    "https://www.reuters.com/world/europe/swiss-court-finds-trafigura-former-executive-guilty-corruption-2025-01-31/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Switzerland: 2025-01-31 conviction of Trafigura Beheer B.V. (organisational safeguards; official Paulo Gouveia Junior); CHF 3,000,000 fine, about USD 145.6m compensation claim; Wainwright and intermediary Thierry Plojoux also convicted; on 2026-03-16 Appeals Chamber confirmed corporate conviction remained non-final (SK.2023.49).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Switzerland, Federal Criminal Court (Angola bribery): on 2025-01-31 Trafigura Beheer B.V. was convicted at first instance of inadequate organisational safeguards against bribery. The scheme involved payments to Sonangol official Paulo Gouveia Junior for oil contracts. The fine was CHF 3,000,000, with a compensation claim of about USD 145.6 million. Former COO Mike Wainwright, the official and intermediary Thierry Plojoux were also convicted. On 2026-03-16 the Appeals Chamber confirmed the corporate conviction remained non-final (case SK.2023.49), while the intermediary's unappealed conviction became final."
+   },
+   "urls": [
+    "https://www.swissinfo.ch/eng/archive-multinational-companies/trafigura-trial-company-fined-defendants-jailed/88808833"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Switzerland: 2025-01-31 conviction of Trafigura Beheer BV; more than USD 5m in bribes and gifts to Angolan official Paulo Gouveia Júnior for oil contracts earning about USD 151m; CHF 3m fine, USD 145.6m compensation claim; Wainwright convicted (32 months, 20 suspended) with Thierry Plojoux; not final.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On 2025-01-31 Switzerland's Federal Criminal Court (Bellinzona) convicted Trafigura Beheer BV at first instance of corporate failure to prevent bribery of a foreign public official (Angola/Sonangol). More than USD 5m in bribes and gifts went to Angolan official Paulo Gouveia Júnior in exchange for oil contracts that earned Trafigura about USD 151m. The company was fined CHF 3m and hit with a USD 145.6m compensation claim. Former COO Mike Wainwright was convicted of bribery (32 months, 20 suspended), alongside intermediary Thierry Plojoux. The judgment is not final and appeals were announced."
+   },
+   "urls": [
+    "https://www.swissinfo.ch/eng/archive-multinational-companies/trafigura-trial-company-fined-defendants-jailed/88808833"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Ecuador/US: Nilsen Arias testified in a New York trial (reported 2024-01-11) that Trafigura Group bribed him; an allegation, not a charge or conviction of Trafigura.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Former Petroecuador international-trade manager Nilsen Arias testified in a New York trial (reported 2024-01-11) that Trafigura Group had bribed him; this is an allegation in Ecuador-related conduct, not a charge or conviction of Trafigura."
+   },
+   "urls": [
+    "https://www.bloomberg.com/news/articles/2024-01-11/trafigura-paid-me-bribes-former-top-ecuador-oil-official-says",
+    "https://www.bloomberglinea.com/latinoamerica/ecuador/exejecutivo-petrolero-de-ecuador-dice-que-trafigura-le-pago-sobornos/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Ecuador: on 2023-02-16 a judge linked Mario Alejandro B., Trafigura's former legal representative in Ecuador, to the criminal case over bribes paid to Petroecuador officials by trading firms (2010-2023) and barred him from selling assets.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In Ecuador (Fiscalía General del Estado), on 2023-02-16 a judge linked Mario Alejandro B., Trafigura's former legal representative in Ecuador, to the criminal case over bribes (cohecho) paid to Petroecuador officials by trading firms between 2010 and 2023, and barred him from selling his assets."
+   },
+   "urls": [
+    "https://primicias.ec/noticias/en-exclusiva/fiscalia-nilsen-arias-corrupcion-petroecuador"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Netherlands/Jamaica: Trafigura Beheer B.V. investigated for suspected bribery over EUR 466,000 linked to PNP via CCOC Association; anonymised 2026-04-14 Rotterdam judgment dismissed a matching prosecution on delay and fair-trial grounds but does not name the company.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Trafigura Beheer B.V. was investigated in the Netherlands for suspected bribery over payments (EUR 466,000 recorded) linked to Jamaica's governing PNP via CCOC Association, with related Jamaican evidence proceedings (from 2006); an anonymised 2026-04-14 Rotterdam judgment dismissed a matching CCOC/Jamaica prosecution on delay and fair-trial grounds, but the judgment does not name the company."
+   },
+   "urls": [
+    "https://jcpc.uk/uploads/jcpc_2019_0028_judgment_09937e60dd.pdf",
+    "https://supremecourt.gov.jm/sites/default/files/judgments/Simpson-Miller%2C%20The%20Hon.%20Mrs.%20%3B%20Pickersgill%2C%20Robert%20et%20al%20v%20The%20Attorney%20General%20and%20the%20Director%20of%20Public%20Prosecutions.pdf"
+   ],
+   "conflicts_with": [
+    "c23"
+   ],
+   "merged_from": [
+    "c20",
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Netherlands: Trafigura Beheer BV on trial (hearing 2024-03-06; no verdict found) for bribery over a 2006 payment of about EUR 390,000 (J$31m in Jamaica) to a PNP-linked fundraising company on a Jamaican minister's instruction; trial began 2021.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In the Netherlands, Trafigura Beheer BV is on trial (hearing 2024-03-06; no verdict found) for bribery of public officials over a 2006 payment of about EUR 390,000 (reported in Jamaica as J$31m) to a fundraising company linked to Jamaica's then-ruling PNP, made on the instruction of a Jamaican minister. The trial began in 2021 and has had long gaps."
+   },
+   "urls": [
+    "https://www.nporadio1.nl/nieuws/buitenland/5519deb0-c49f-4dde-bbb2-3b3859eb874c/grondstoffenbedrijf-trafigura-voor-de-rechter-slecht-voor-reputatie"
+   ],
+   "conflicts_with": [
+    "c20",
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "Jamaica (August 2010): Contractor General investigated Trafigura Beheer's JMD 31,000,000 payment to PNP-linked CCOC Association tied to Petrojam oil-lifting contracts; found procurement deficiencies, could neither establish nor rule out corruption; recommended action against Colin Campbell for obstruction.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Jamaica (August 2010): the Contractor General investigated Trafigura Beheer's JMD 31,000,000 payment to CCOC Association (People's National Party-linked) in connection with Petroleum Corporation of Jamaica oil-lifting contracts. It found procurement deficiencies but could neither establish nor rule out corruption. It recommended action against Colin Campbell for obstructing the investigation."
+   },
+   "urls": [
+    "https://integrity.gov.jm/sites/default/files/OCG_Investigation_Trafigura.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Malta (Enemalta): Trafigura alleged to have been invoiced a USD 19,402 kickback/consultancy fee dated 2004-03-25 involving Frank Sammut and George Farrugia; July 2026 report of acquittals of five Farrugia brothers; no conviction of Trafigura.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "In Malta, Trafigura was alleged to have been invoiced a USD 19,402 kickback/consultancy fee (dated 2004-03-25) in the Enemalta fuel procurement scandal involving Frank Sammut and George Farrugia; a July 2026 report records acquittals of five Farrugia brothers and ongoing proceedings against individuals, with no conviction of Trafigura."
+   },
+   "urls": [
+    "https://timesofmalta.com/article/The-oil-saga-as-it-happened.454610",
+    "https://www.maltatoday.com.mt/news/national/24072/revealed-kickbacks-paid-for-enemalta-oil-purchases-to-procurement-official-20130120"
+   ],
+   "conflicts_with": [
+    "c26"
+   ],
+   "merged_from": [
+    "c25",
+    "c28"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "Malta (Enemalta): MaltaToday (Dec 2013) reported Trafigura paid a purported consultancy fee of USD 19,042 into a Swiss account benefiting Frank Sammut in 2004, allegedly a bribe; no corporate charge or conviction; July 2026 acquittal of George Farrugia's brothers.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "MaltaToday reported in December 2013 that Trafigura paid a purported consultancy fee of USD 19,042 into a Swiss account benefiting Enemalta consultant Frank Sammut in 2004, allegedly a bribe tied to oil supplies. No corporate charge or conviction of Trafigura is established. In July 2026 a Maltese court acquitted local agent George Farrugia's brothers as victims rather than accomplices, and the principal prosecutions remained pending."
+   },
+   "urls": [
+    "https://www.maltatoday.com.mt/news/national/32588/whistleblower-passed-on-trafigura-oil-bribe-invoice-20131222"
+   ],
+   "conflicts_with": [
+    "c25",
+    "c28"
+   ]
+  },
+  {
+   "cid": "c27",
+   "claim": "Malta Enemalta oil scandal (2026-07-07): court acquitted five Farrugia brothers of complicity; George Farrugia was local agent for Trafigura and Total; prosecutions of Tabone, Sammut, Portelli and Cassar pending; no finding for or against Trafigura Beheer B.V.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Malta, Enemalta oil scandal (2026-07-07): a court acquitted five Farrugia brothers (Raymond, Antonio, Salvu, Emanuel and Gaetano) of complicity. The scandal involved George Farrugia, local agent for Trafigura and Total. Prosecutions of Tancred Tabone, Frank Sammut, Francis Portelli and Anthony Cassar were reported as pending. These were individual proceedings, not a finding for or against Trafigura Beheer B.V."
+   },
+   "urls": [
+    "https://www.maltatoday.com.mt/news/court_and_police/143028/brothers_of_pardoned_oil_scandal_mastermind_cleared_after_court_finds_they_were_victims_of_hidden_corruption_scheme"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Zimbabwe: OCCRP (2021-10-13) reported Trafigura's partnership with Kudakwashe Tagwirei involved opaque payments (at least USD 100m in fees through early 2018) and preferential fuel-market access; Trafigura disputed it.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "OCCRP reported (2021-10-13) that Trafigura Group Pte Ltd and Trafigura Zimbabwe's partnership with Kudakwashe Tagwirei involved opaque payments (at least USD 100 million in fees through early 2018) and preferential fuel-market access in Zimbabwe; Trafigura disputed the reporting and said it exited before sanctions, which targeted Tagwirei, not Trafigura."
+   },
+   "urls": [
+    "https://www.occrp.org/en/investigation/how-a-zimbabwe-tycoon-made-a-fortune-from-a-trafigura-partnership-and-spiralling-national-debt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Mexico: Pemex's PMI temporarily banned new business with Trafigura in July 2021 over corruption allegations; ban said to last at least until end of 2024; Trafigura denies corruption.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In Mexico, Pemex's trading arm PMI temporarily banned new business with Trafigura in July 2021 over corruption allegations. Mexico's energy minister said the ban on Trafigura and Vitol would last at least until the end of 2024. Trafigura 'strongly refutes any allegation or suggestion of corruption'."
+   },
+   "urls": [
+    "https://worldoil.com/news/2021/8/20/mexico-bans-vitol-trafigura-from-new-oil-trades-on-corruption-allegations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Indonesia: in July 2025 Trafigura employee 'MH' named a suspect in the Pertamina oil import graft case; no amount attributed to Trafigura; Trafigura providing legal representation.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In Indonesia (Attorney General's Office), in July 2025 an employee identified as 'MH', a business development/sales manager at Trafigura's Indonesian operating company, was named a suspect (and reportedly detained) in the Pertamina oil import and trading graft case. The overall scheme is alleged to have cost the state at least USD 12bn over five years, with no amount attributed to Trafigura. Trafigura said it was providing him with legal representation."
+   },
+   "urls": [
+    "https://maritime-executive.com/article/trafigura-employee-named-in-pertamina-oil-graft-investigation"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "US CFTC settled with Trafigura Trading LLC (2024-06-17) for a USD 55m civil penalty over trading on misappropriated information, manipulation of a Gulf Coast fuel-oil benchmark and restrictive communications terms, without admitting or denying.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Trafigura Trading LLC settled with the US CFTC (2024-06-17) for a USD 55 million civil penalty over trading on misappropriated information, manipulation of a US Gulf Coast fuel-oil benchmark and contractual restrictions on communications with the regulator, without admitting or denying."
+   },
+   "urls": [
+    "https://cftc.gov/PressRoom/PressReleases/8921-24",
+    "https://www.cftc.gov/PressRoom/PressReleases/8921-24"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c32",
+    "c33"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Amsterdam Court of Appeal (2011-12-23) upheld a EUR 1,000,000 fine on Trafigura Beheer B.V. for unlawful waste export (Probo Koala); environmental conviction, not bribery.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "The Amsterdam Court of Appeal (2011-12-23) upheld a EUR 1,000,000 fine on Trafigura Beheer B.V. for unlawful waste export and delivery of harmful substances (Probo Koala, shipment to Côte d'Ivoire); an environmental criminal conviction, not bribery."
+   },
+   "urls": [
+    "https://www.lexboost.com/rechtspraak/ECLI:NL:GHAMS:2011:BU9237"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c34",
+    "c35"
+   ]
+  },
+  {
+   "cid": "c36",
+   "claim": "Excluded namesake: Jeffrey Tesler's DOJ cases concern the KBR/TSKJ Nigeria LNG scheme, with no Trafigura involvement.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Excluded namesake: Jeffrey Tesler's US DOJ oil-services bribery cases concern the KBR/TSKJ Nigeria LNG scheme and show no Trafigura involvement."
+   },
+   "urls": [
+    "https://www.justice.gov/criminal/criminal-fraud/case/united-states-v-jeffrey-tesler-and-company"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Excluded namesake: Dutch OM prosecution (March 2026) over about EUR 200m funnelled for Odebrecht concerns Odebrecht and two Dutchmen, not Trafigura.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Excluded namesake: the Dutch OM prosecution (March 2026) over about EUR 200 million funnelled for Odebrecht via Dutch companies concerns Odebrecht and two Dutchmen, not Trafigura."
+   },
+   "urls": [
+    "https://www.om.nl/actueel/nieuws/2026/03/10/200-miljoen-uit-brazilie-via-nederland-doorgesluisd-om-eist-5-jaar"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Excluded namesake: Trafigura Trading LLC, a separate Houston-based entity in the CFTC proceeding, not Trafigura Beheer B.V.; outside bribery scope.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Trafigura Trading LLC, a separate Houston-based entity named in the CFTC market-abuse proceeding. It is not Trafigura Beheer B.V., and that proceeding is outside bribery and corruption scope."
+   },
+   "urls": [
+    "https://www.cftc.gov/PressRoom/PressReleases/8921-24"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Excluded namesake: Trafigura AG, a distinct legal entity whose earlier false-statements customs guilty plea is mentioned by DOJ; not a separate bribery conviction of Trafigura Beheer B.V.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Trafigura AG, a distinct legal entity whose earlier false-statements customs guilty plea is mentioned by the DOJ. It is not attributed to Trafigura Beheer B.V. as a separate bribery conviction."
+   },
+   "urls": [
+    "https://www.justice.gov/archives/opa/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Excluded namesake: Trafigura Pte. Ltd., a separately identified Singapore-based entity, not the Dutch defendant Trafigura Beheer B.V.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Trafigura Pte. Ltd., a separately identified Singapore-based subsidiary or affiliate, not the Dutch corporate defendant Trafigura Beheer B.V. Its separate proceedings are not attributed to the target."
+   },
+   "urls": [
+    "https://fcpa.stanford.edu/enforcement-action.html?id=917"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Excluded namesake: Vitol (including trader Javier Aguilar); its DOJ settlement and the Aguilar trial are Vitol matters, not Trafigura's.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Excluded namesake: Vitol (including former trader Javier Aguilar), a rival trader often reported alongside Trafigura. Its DOJ settlement over Brazil, Mexico and Ecuador bribes and the Aguilar trial are Vitol matters, not Trafigura matters."
+   },
+   "urls": [
+    "https://worldoil.com/news/2021/8/20/mexico-bans-vitol-trafigura-from-new-oil-trades-on-corruption-allegations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Excluded namesake: Gunvor, a separate trader named in the same Petroecuador and Brazil coverage; its settlements are not attributable to Trafigura.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Excluded namesake: Gunvor, a separate trader named in the same Petroecuador and Brazil coverage. Its settlements and provisions are not attributable to Trafigura."
+   },
+   "urls": [
+    "https://www.bloomberglinea.com/latinoamerica/ecuador/exejecutivo-petrolero-de-ecuador-dice-que-trafigura-le-pago-sobornos/"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.justice.gov/usao-sdfl/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme",
+   "note": "DOJ release confirms the 28 Mar 2024 guilty plea to FCPA conspiracy, the $80,488,040 fine, the $46,510,257 forfeiture and the $26.8m credit. All variants match.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "F": "true",
+    "E": "true",
+    "A": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2025/03/cgu-e-agu-assinam-acordo-de-leniencia-com-a-empresa-trafigura-beheer-b-v",
+   "note": "CGU and AGU signed the leniency agreement on 28 Mar 2025 for BRL 435,410,672.26; the MPF homologated it later.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.mpf.mp.br/o-mpf/unidades/pr-pr/noticias/mpf-homologa-acordo-de-leniencia-com-multinacional-de-commodities-trafigura",
+   "note": "MPF release dated 16 Jul 2025 reports homologation of the BRL 435m leniency agreement; the company admitted responsibility.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.trafigura.com/news-and-insights/press-releases/2025/statement-regarding-brazil",
+   "note": "Trafigura's 31 Mar 2025 statement confirms the additional USD 49m (about BRL 282m) and the USD 26.8m DOJ credit; the roughly USD 76m total is a consistent sum.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.gazetadopovo.com.br/vida-e-cidadania/multinacional-suica-admite-propina-a-petrobras-e-divulga-acordo-milionario-com-justica-dos-eua/",
+   "note": "Executives were charged in 2018 over the Petrobras bribes. The case number and names are not directly confirmed in the passages, and the case is reported stalled, not concluded.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.gazetadopovo.com.br/vida-e-cidadania/multinacional-suica-admite-propina-a-petrobras-e-divulga-acordo-milionario-com-justica-dos-eua/",
+   "note": "Gazeta do Povo confirms the 2018 MPF charges against two ex-executives, an operator and an ex-Petrobras manager, the 31 trades, and the stalled case.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.bstger.ch/en/media/comunicati-stampa/2025/2025-01-31/1454.html",
+   "note": "Federal Criminal Court judgment of 31 Jan 2025: CHF 3m fine, about USD 145.6m compensation claim, not final. Bloomberg reports the appeal.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.bstger.ch/en/media/comunicati-stampa/2025/2025-01-31/1454.html",
+   "note": "First-instance conviction for organisational deficiencies, covering 2009-2011 bribery of an Angolan official; not final and appealed per Bloomberg.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.swissinfo.ch/eng/archive-multinational-companies/trafigura-trial-company-fined-defendants-jailed/88808833",
+   "note": "Dec 2023 indictment, Jan 2025 conviction, CHF 3m fine and Wainwright's 32 months (20 suspended, so 12 to serve) are all confirmed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.admin.ch/en/nsb?id=99242",
+   "note": "OAG indictment on 5 Dec 2023 and the 31 Jan 2025 conviction with its sanctions are confirmed. The exact EUR and profit figures are plausible but not directly shown in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.bstger.ch/en/media/comunicati-stampa/2025/2025-01-31/1454.html",
+   "note": "The 31 Jan 2025 conviction, fine and compensation claim are confirmed and the judgment is non-final. The 16 Mar 2026 Appeals Chamber detail and the final status of Plojoux's conviction are not supported by any passage.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.bstger.ch/en/media/comunicati-stampa/2025/2025-01-31/1454.html",
+   "note": "Federal Criminal Court convicted Trafigura Beheer BV on 2025-01-31 (CHF 3m fine, USD 145m compensation claim), not final; Wainwright 32 months.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.bloomberg.com/news/articles/2024-01-11/trafigura-paid-me-bribes-former-top-ecuador-oil-official-says",
+   "note": "Arias testified on 2024-01-11 that Trafigura paid him bribes; allegation only.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://primicias.ec/noticias/en-exclusiva/fiscalia-nilsen-arias-corrupcion-petroecuador",
+   "note": "Pichincha judge linked 10 people on 2023-02-16 to the Petroecuador bribery case and barred asset sales; the Trafigura legal representative is plausibly among them but is not named in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://integrity.gov.jm/sites/default/files/OCG_Investigation_Trafigura.pdf",
+   "note": "Dutch KLPD inquiry into Trafigura Beheer's EUR 466,000 payment to CCOC, linked to the PNP, is documented. The 2026-04-14 Rotterdam judgment is not in the passages and is unverified.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.nporadio1.nl/nieuws/buitenland/5519deb0-c49f-4dde-bbb2-3b3859eb874c/grondstoffenbedrijf-trafigura-voor-de-rechter-slecht-voor-reputatie",
+   "note": "NOS reported the 2024-03-06 Dutch hearing in a Jamaica bribery case of about EUR 390,000 to a party fundraising company; no verdict found.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://integrity.gov.jm/sites/default/files/OCG_Investigation_Trafigura.pdf",
+   "note": "August 2010 Contractor General report on the Trafigura/CCOC payment is documented; the findings and the Campbell recommendation are not quoted in the passages but are consistent with the report.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://timesofmalta.com/article/The-oil-saga-as-it-happened.454610",
+   "note": "USD 19,402 invoice dated 2004-03-25 alleged; July 2026 acquittal of five brothers confirmed; no Trafigura conviction.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.maltatoday.com.mt/news/national/32588/whistleblower-passed-on-trafigura-oil-bribe-invoice-20131222",
+   "note": "The December 2013 MaltaToday article exists; the USD 19,042 figure is a typo in the source for 19,402, which is immaterial. The July 2026 acquittal is confirmed and no Trafigura charge is shown.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.maltatoday.com.mt/news/court_and_police/143028/brothers_of_pardoned_oil_scandal_mastermind_cleared_after_court_finds_they_were_victims_of_hidden_corruption_scheme",
+   "note": "On 2026-07-07 five Farrugia brothers were acquitted; the main prosecutions of Tabone, Sammut, Portelli and Cassar remain pending; George Farrugia acted as agent for Trafigura and Total.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.occrp.org/en/investigation/how-a-zimbabwe-tycoon-made-a-fortune-from-a-trafigura-partnership-and-spiralling-national-debt",
+   "note": "OCCRP on 2021-10-13 reported fees of at least USD 100m to Tagwirei and a captive fuel market; Trafigura did not recognise some figures. This is investigative reporting, not an enforcement action.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://worldoil.com/news/2021/8/20/mexico-bans-vitol-trafigura-from-new-oil-trades-on-corruption-allegations/",
+   "note": "Bloomberg reported PMI temporarily banned new work with Trafigura in July 2021, with the ban lasting at least to end-2024; Trafigura's denial is not quoted in the passages.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://maritime-executive.com/article/trafigura-employee-named-in-pertamina-oil-graft-investigation",
+   "note": "Maritime Executive (14 Jul 2025) confirms a Trafigura sales manager was detained and named a suspect in the Pertamina case (at least USD 12bn scheme); the passages do not mention the legal representation, but the main facts match. Status: suspect, not charged against the company.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.cftc.gov/PressRoom/PressReleases/8921-24",
+   "note": "CFTC order of 17 Jun 2024 against Trafigura Trading LLC for a USD 55m penalty is confirmed, but it is market abuse rather than bribery.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.lexboost.com/rechtspraak/ECLI:NL:GHAMS:2011:BU9237",
+   "note": "Amsterdam Court of Appeal ruling of 23 Dec 2011 upheld the EUR 1m fine on Trafigura Beheer B.V. for illegal waste export; environmental, not bribery.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.justice.gov/criminal/criminal-fraud/case/united-states-v-jeffrey-tesler-and-company",
+   "note": "Tesler's case concerns the KBR/TSKJ Nigeria scheme; no passage links it to Trafigura, so exclusion is reasonable.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.om.nl/actueel/nieuws/2026/03/10/200-miljoen-uit-brazilie-via-nederland-doorgesluisd-om-eist-5-jaar",
+   "note": "The Dutch OM release of 10 Mar 2026 concerns two Dutchmen and Odebrecht money flows; it does not mention Trafigura.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.cftc.gov/PressRoom/PressReleases/8921-24",
+   "note": "Trafigura Trading LLC is a Houston entity in the CFTC order; it is a group affiliate rather than an unrelated namesake, and the matter is outside bribery scope.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.justice.gov/archives/opa/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme",
+   "note": "The DOJ release mentions a 2006 guilty plea by Trafigura AG for false-statements customs entry, which is not bribery.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://fcpa.stanford.edu/enforcement-action.html?id=917",
+   "note": "Stanford FCPA Clearinghouse identifies Trafigura Pte. Ltd. as a Singapore subsidiary of Trafigura Beheer B.V.; it is a group entity, though the DOJ defendant was Beheer.",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://worldoil.com/news/2021/8/20/mexico-bans-vitol-trafigura-from-new-oil-trades-on-corruption-allegations/",
+   "note": "Vitol's USD 160m settlement and the Aguilar trial are Vitol matters, not Trafigura's.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.bloomberglinea.com/latinoamerica/ecuador/exejecutivo-petrolero-de-ecuador-dice-que-trafigura-le-pago-sobornos/",
+   "note": "Gunvor is a separate rival that disclosed its own US probe and a USD 650m provision; this is not attributable to Trafigura.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2025/03/cgu-e-agu-assinam-acordo-de-leniencia-com-a-empresa-trafigura-beheer-b-v",
+   "confidence": "medium",
+   "note": "Search results confirm the CGU administrative proceeding against the Trafigura entities and Petrobras manager Marcus Alcoforado, with receipts of USD 1,292,400. The CGU/AGU leniency agreement of 28 March 2025 (R$435.4m) also confirms the 2025 resolution. I could not read the final report text, so...",
+   "via": "agent"
+  }
+ },
+ "audit": {},
+ "scores": {
+  "firecrawl": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 24,
+   "truth_weight": 119.5,
+   "coverage": 0.176,
+   "accuracy": 1.0,
+   "combined": 0.299,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 4,
+   "truth": 24,
+   "truth_weight": 119.5,
+   "coverage": 0.293,
+   "accuracy": 0.909,
+   "combined": 0.443,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 3,
+   "truth": 24,
+   "truth_weight": 119.5,
+   "coverage": 0.23,
+   "accuracy": 0.948,
+   "combined": 0.37,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 24,
+   "truth_weight": 119.5,
+   "coverage": 0.209,
+   "accuracy": 1.0,
+   "combined": 0.346,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 2,
+   "truth": 24,
+   "truth_weight": 119.5,
+   "coverage": 0.268,
+   "accuracy": 0.97,
+   "combined": 0.42,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 2,
+   "truth": 24,
+   "truth_weight": 119.5,
+   "coverage": 0.243,
+   "accuracy": 0.921,
+   "combined": 0.384,
+   "metric": "F1"
+  }
+ }
+}

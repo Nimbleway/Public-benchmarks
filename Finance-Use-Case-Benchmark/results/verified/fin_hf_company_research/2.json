@@ -1,0 +1,3529 @@
+{
+ "sub_use_case": "fin_hf_company_research",
+ "input_n": 2,
+ "task": "Research Boeing (boeing.com) for a hedge fund",
+ "labels": {
+  "gpt": "A",
+  "opus": "B",
+  "parallel": "C",
+  "nimble": "D",
+  "exa": "E",
+  "firecrawl": "F"
+ },
+ "unit": "research finding",
+ "evidence_pages": 88,
+ "evidence_fetched": 86,
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 135,
+ "judge": "v4b",
+ "judge_cost_usd": 4.977,
+ "corrections_v2": {
+  "units_before": 142,
+  "units_after": 110,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c7"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13",
+     "c14"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c16",
+     "c17"
+    ]
+   },
+   {
+    "kept": "c20",
+    "merged": [
+     "c21",
+     "c22"
+    ]
+   },
+   {
+    "kept": "c28",
+    "merged": [
+     "c29"
+    ]
+   },
+   {
+    "kept": "c30",
+    "merged": [
+     "c31",
+     "c32"
+    ]
+   },
+   {
+    "kept": "c43",
+    "merged": [
+     "c42",
+     "c44"
+    ]
+   },
+   {
+    "kept": "c45",
+    "merged": [
+     "c46",
+     "c47"
+    ]
+   },
+   {
+    "kept": "c59",
+    "merged": [
+     "c60"
+    ]
+   },
+   {
+    "kept": "c69",
+    "merged": [
+     "c70",
+     "c71"
+    ]
+   },
+   {
+    "kept": "c78",
+    "merged": [
+     "c79"
+    ]
+   },
+   {
+    "kept": "c81",
+    "merged": [
+     "c82",
+     "c83"
+    ]
+   },
+   {
+    "kept": "c84",
+    "merged": [
+     "c85"
+    ]
+   },
+   {
+    "kept": "c87",
+    "merged": [
+     "c89",
+     "c91"
+    ]
+   },
+   {
+    "kept": "c93",
+    "merged": [
+     "c94"
+    ]
+   },
+   {
+    "kept": "c95",
+    "merged": [
+     "c96"
+    ]
+   },
+   {
+    "kept": "c98",
+    "merged": [
+     "c97",
+     "c99"
+    ]
+   },
+   {
+    "kept": "c111",
+    "merged": [
+     "c112"
+    ]
+   },
+   {
+    "kept": "c115",
+    "merged": [
+     "c116"
+    ]
+   },
+   {
+    "kept": "c121",
+    "merged": [
+     "c120"
+    ]
+   },
+   {
+    "kept": "c141",
+    "merged": [
+     "c142"
+    ]
+   }
+  ],
+  "cost": 0.056
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Boeing Q3 2026 results: revenue $24.188B, GAAP loss per share $0.26, core loss per share $0.34, operating cash flow $1.496B, free cash flow $464M",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing Q3 2026 (quarter ended 2026-09-30, reported 2026-10-27): revenue $24.188 billion, GAAP loss/share $0.26, core loss/share $0.34, operating cash flow $1.496 billion, free cash flow $464 million.",
+    "C": "Boeing Q3 2026 (ended 2026-09-30): revenue $24.188 billion, up 4% year over year; GAAP loss per share $0.26, core loss per share $0.34, free cash flow positive $464 million.",
+    "D": "Boeing Q3 2026 results: revenue $24,188M (+4% YoY), GAAP loss per share ($0.26), core loss per share ($0.34), operating cash flow $1,496M, free cash flow $464M",
+    "E": "Boeing Q3 2026 (ended 2026-09-30): revenue $24.188bn, GAAP net loss $116m, diluted loss $0.26/share, non-GAAP core loss $0.34/share, operating cash flow $1.496bn.",
+    "F": "Boeing Q3 2026 revenue was $24.188 billion, GAAP diluted loss per share $0.26, core loss per share $0.34, operating cash flow $1.496 billion, free cash flow $464 million; nine-month free cash flow was negative $359 million."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Approximately $0.7B of DOJ settlement payments weighed on Boeing's Q3 2026 operating cash flow; Q3 FCF of $464M came despite them",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "DOJ settlement payments of approximately $0.7B weighed on Boeing's Q3 2026 operating cash flow / Boeing's Q3 2026 free cash flow of $464M came despite ~$0.7B of DOJ settlement payments weighing on operating cash flow"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Pre-quarter benchmark issued 2026-07-28: positive Q3 FCF in the low hundreds of millions after an approx. $700M DOJ payment; FY2026 FCF guidance then $1B-$3B",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Boeing's pre-quarter benchmark (issued 2026-07-28) was positive Q3 free cash flow in the low hundreds of millions after an approximately $700 million DOJ payment; full-year 2026 free cash flow guidance was $1 billion–$3 billion."
+   },
+   "urls": [
+    "https://s2.q4cdn.com/661678649/files/doc_financials/2026/q2/Transcript.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Boeing Q3 2026 core loss of $0.34/share missed the $0.21 loss expected in LSEG consensus (Reuters)",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Boeing Q3 2026 core loss/share of $0.34 missed the $0.21 loss expected in LSEG consensus cited by Reuters.",
+    "C": "Boeing's Q3 2026 core loss of $0.34 per share was worse than the $0.21 loss expected by LSEG consensus."
+   },
+   "urls": [
+    "https://www.reuters.com/business/aerospace-defense/boeing-jetliner-production-challenges-weigh-third-quarter-results-2026-10-27",
+    "https://ca.marketscreener.com/news/boeing-jetliner-production-challenges-weigh-on-third-quarter-results-ce785cddda8bf324"
+   ],
+   "conflicts_with": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Boeing Q3 2026 vs LSEG consensus: adjusted loss $0.34/share vs $0.21 expected (miss); revenue $24.19B vs $23.84B expected (beat)",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Boeing Q3 2026 vs LSEG consensus: adjusted loss $0.34/share versus $0.21 expected (miss); revenue $24.19bn versus $23.84bn expected (beat)."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Per Yahoo Finance, Q3 2026 adjusted EPS was -$0.34 vs consensus -$0.20099, a $0.139 per-share miss",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Boeing Q3 2026 adjusted EPS was negative $0.34 versus consensus negative $0.20099, a $0.139 per-share miss (per Yahoo Finance)."
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/BA/analysis/"
+   ],
+   "conflicts_with": [
+    "c5",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Newsquawk: Q3 core EPS -$0.34 missed -$0.25 estimate, revenue $24.2B beat $23.9B, adjusted FCF $464M beat $325.1M estimate; TIKR cited different figures (-$0.20 EPS, $24.37B revenue estimate)",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Versus consensus, Boeing Q3 core EPS of -$0.34 missed the -$0.25 estimate, revenue of $24.2B beat the $23.9B estimate, and adjusted FCF of $464M beat the $325.1M estimate (Newsquawk); TIKR cited different figures (-$0.20 EPS, $24.37B revenue estimate)."
+   },
+   "urls": [
+    "https://www.newsquawk.com/headlines/boeing-company-ba-q3-2026-usd-adj-eps--034-exp--025-revenue-242bln-exp-239bln"
+   ],
+   "conflicts_with": [
+    "c5",
+    "c8",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Boeing Q3 2026 revenue of $24.19B missed Investing.com's quoted $24.39B estimate",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Boeing Q3 2026 revenue of $24.19 billion missed Investing.com's quoted $24.39 billion estimate."
+   },
+   "urls": [
+    "https://ca.investing.com/news/stock-market-news/boeing-earnings-analysis-questions-answered-and-next-catalysts-93CH-4906724"
+   ],
+   "conflicts_with": [
+    "c6",
+    "c7",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Boeing stock fell about 10-11% on the Q3 print to roughly $168 (52-week high $254, down 27% over six months); Jefferies called the FCF targets 'disappointing', saying each year's goal had slipped by about a year",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Boeing stock fell about 10-11% on the Q3 print to roughly $168 (52-week high $254, down 27% over six months); Jefferies called the FCF targets 'disappointing', saying each year's goal had slipped by about a year."
+   },
+   "urls": [
+    "https://247wallst.com/cards/ba-xpost-01m5yq9xrjjf0v286tmygxqcvx",
+    "https://www.tikr.com/de/blog/boeing-ba-stock-q3-2026-wider-loss-revenue-beat"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Management's updated FCF outlook: ~$2B in 2026, $3B in 2027, $6B in 2028 and $10B in 2029 (later targets assume 777X certification by mid-2027)",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing management outlook as of 2026-10-27: free cash flow of approximately $2 billion in 2026, $3 billion in 2027, $6 billion in 2028 and $10 billion in 2029.",
+    "E": "Boeing management outlook as of 2026-10-27: FCF of ~$2bn in 2026, $3bn in 2027, $6bn in 2028 and $10bn in 2029; 2026 assumes KC-46A lot 13 order/advance and seasonal working capital; later targets assume 777X certification by mid-2027.",
+    "F": "Boeing management's updated outlook is approximately $2 billion free cash flow in 2026, $3 billion in 2027, $6 billion in 2028 and $10 billion in 2029, assuming 777X certification by mid-2027."
+   },
+   "urls": [
+    "https://fortune.com/company/boeing/earnings/q3-2026/",
+    "https://s2.q4cdn.com/661678649/files/doc_events/2026/Oct/27/Transcript.pdf",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+    "https://youtube.com/watch?v=zXmTsb3He6U"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Reuters: Boeing's expected 2027 FCF of $3B vs $5.5B consensus (Jefferies); $10B milestone a year later than investor consensus",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Reuters reported Boeing's $3 billion 2027 free-cash-flow outlook versus $5.5 billion consensus; management's $10 billion milestone is a year later than investor consensus.",
+    "C": "Reuters, citing Jefferies, reported Boeing's expected 2027 free cash flow of $3 billion versus $5.5 billion consensus; Boeing's $10 billion annual free-cash-flow target was placed in 2029, one year later than investor consensus."
+   },
+   "urls": [
+    "https://www.reuters.com/business/aerospace-defense/boeing-jetliner-production-challenges-weigh-third-quarter-results-2026-10-27",
+    "https://ca.marketscreener.com/news/boeing-jetliner-production-challenges-weigh-on-third-quarter-results-ce785cddda8bf324"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "2026 737 deliveries to fall short of the 500 target; 787 deliveries 90-100, near the low end",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing management expects to miss its 2026 target of 500 737 deliveries; 787 deliveries remain guided to 90–100, nearer the lower end (as of 2026-10-27).",
+    "E": "Boeing said on 2026-10-27 that 2026 737 deliveries will fall short of the 500-aircraft target and 787 deliveries should be near the low end of the unchanged 90–100 range; targeting 52 monthly 737s in 2H 2027 delays the cash-conversion ramp.",
+    "F": "Boeing management said delayed 737 rate-47 stability would leave 2026 737 deliveries below the 500 target, while 787 deliveries should be 90-100 but closer to the low end because of the delayed move to rate 10."
+   },
+   "urls": [
+    "https://fortune.com/company/boeing/earnings/q3-2026/",
+    "https://s2.q4cdn.com/661678649/files/doc_events/2026/Oct/27/Transcript.pdf",
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+    "https://www.reuters.com/business/aerospace-defense/boeing-jetliner-production-challenges-weigh-third-quarter-results-2026-10-27"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c16",
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Delivery guidance cut (737 below 500, 787 at low end of 90-100); Commercial Airplanes breakeven targeted for early 2028; abnormal costs from 777F/767 supplier disruption to weigh on margins into 1H 2027",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing cut delivery guidance: 2026 737 deliveries will fall short of 500 and 787 deliveries will land at the low end of 90-100; Commercial Airplanes breakeven is targeted for early 2028; abnormal costs from the 777F/767 supplier disruption will weigh on margins into 1H 2027."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Boeing targets stabilization at 47 737s/month in early 2027, versus earlier expectation of summer 2026; key operating milestone, while cutting commercial staffing",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Risk: Boeing now expects stable 737 output of 47/month only in early 2027, versus an earlier summer-2026 expectation, while cutting commercial staffing (as of 2026-11-09).",
+    "C": "Catalyst: Boeing targets stabilization at 47 737s per month in early 2027, versus earlier expectations of reaching that pace in summer 2026; the key operating milestone."
+   },
+   "urls": [
+    "https://fortune.com/company/boeing/earnings/q3-2026/",
+    "https://leehamnews.com/2026/11/09/boeing-plans-to-cut-5-of-commercial-workforce/",
+    "https://www.reuters.com/business/aerospace-defense/boeing-jetliner-production-challenges-weigh-third-quarter-results-2026-10-27",
+    "https://www.streetinsider.com/Reuters/Boeing%2Bto%2Bcut%2B5%25%2Bof%2Bcommercial%2Bjet%2Bworkforce%C2%A0amid%2Bproduction%2Bstruggles/27313782.html",
+    "https://youtube.com/watch?v=zXmTsb3He6U"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c20",
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Next 787 production increase (beyond 8/month, to 10) planned to begin December 2026",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Boeing plans its next 787 production increase beyond eight aircraft/month to begin in December 2026 (as of 2026-10-27).",
+    "D": "Boeing 737 production stabilization at 47/month moved into early 2027 with step-up to 52/month in back half of 2027; next 787 rate increase planned from Dec 2026"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Q3 call identified wing output, North Line certification and Wichita fuselage stability as prerequisites for higher 737 rates; large order book does not remove factory bottlenecks",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Boeing production/cash-conversion risk: the 2026-10-27 Q3 call identified wing output, North Line certification and Wichita fuselage stability as prerequisites for higher 737 rates; a large order book does not remove factory bottlenecks."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "737 ramp keeps slipping; rate 52 depends on wing and fuselage stability; Wichita fuselage inventory running down faster than planned",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Risk: Boeing's 737 ramp keeps slipping; stabilizing at 47 per month moved into 2027 with wings the bottleneck, rate 52 depends on wing and fuselage stability, and Wichita fuselage inventory is running down faster than planned."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "KUOW: Boeing's Renton wing shop could not keep pace with the move from 42 to 47/month on the 737; IAM and SPEEA unions seek details on job cuts",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "KUOW reports Boeing's Renton wing shop could not keep pace with the move from 42 to 47 per month on the 737; the IAM machinists and SPEEA unions are seeking details on the job cuts."
+   },
+   "urls": [
+    "https://kuow.org/topics/business/2026-11-09/boeing-announces-pending-layoffs-why-now-and-whats-next"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Channel checks: 737 wings are the current production constraint, engines gate 787 output, and a key supplier parts shortage disrupting 777 freighter output is expected to last through 1H 2027",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing channel checks: 737 wings are the current production constraint, engines gate 787 output, and a key supplier parts shortage disrupting 777 freighter output is expected to last through 1H 2027"
+   },
+   "urls": [
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Supplier shortages disrupted factory operations in Q3 2026, hurting KC-46A and 777 Freighter production, with disruption expected into 2027 and abnormal production costs",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "F": "Boeing reported supplier shortages disrupting factory operations in Q3 2026, adversely affecting KC-46A and 777 Freighter production, with disruption expected to continue into 2027 and create abnormal production costs."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c28",
+    "c29"
+   ]
+  },
+  {
+   "cid": "c30",
+   "claim": "Leeham: Vaero's wing-component supply interruption stalled Everett wing production for several weeks; shipments resumed but CFO said production gap and abnormal expenses will flow through subsequent quarters",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "C": "Leeham reported Vaero's wing-component supply interruption stalled Boeing's Everett wing production for several weeks; shipments resumed, but Boeing's CFO said the production gap and abnormal expenses would flow through subsequent quarters."
+   },
+   "urls": [
+    "https://leehamnews.com/2026/10/27/boeings-flap-with-777-767-wing-supplier-creates-ongoing-production-gap",
+    "https://leehamnews.com/2026/10/27/boeings-flap-with-777-767-wing-supplier-creates-ongoing-production-gap/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c30",
+    "c31",
+    "c32"
+   ]
+  },
+  {
+   "cid": "c33",
+   "claim": "Q3 filing says delays in future production-rate increases are already adversely affecting Boeing's financial position, operating results and cash flow",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Risk: Boeing's Q3 filing says delays in future production-rate increases are already adversely affecting its financial position, operating results and cash flow."
+   },
+   "urls": [
+    "https://s2.q4cdn.com/661678649/files/doc_financials/2026/q3/2026-09-Sep-30-10-Q-and-Exhibits.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Boeing said supplier shortages, inflation, labor instability and supplier financial difficulties have reduced productivity and harmed financial results; Q3 supplier disruption expected to continue into 2027",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Boeing said supplier shortages, inflation, labor instability and supplier financial difficulties have reduced productivity and harmed its financial position, results and cash flows; it expects Q3 supplier disruption to continue into 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Boeing warned access to capital could be impaired by downgrades, weaker performance, delayed ramps or weaker demand; U.S. government departments funded only through Dec 11, 2026 as of 10-Q date",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Boeing warned its access to capital could be impaired by ratings downgrades, weaker performance, delayed production and delivery ramps or weaker demand; U.S. government departments were funded only through December 11, 2026 as of the 10-Q date."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "10-Q warns backlog can be reduced by cancellations tied to delivery delays or delayed 777X/737-7/737-10 entry into service; $3.164B of order cancellations in first nine months of 2026, mainly 737 and 787",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Boeing's 10-Q warns backlog can be reduced by cancellations tied to delivery delays, production disruptions and delayed entry into service of the 777X, 737-7 or 737-10; Boeing reported $3.164 billion of aircraft order cancellations in the first nine months of 2026, primarily 737 and 787."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "VC-25B reach-forward loss increased $312M in first nine months of 2026; KC-46A supplier shortages caused significant Q3 factory disruption and abnormal costs, with possible additional losses on both programs",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Risk: Boeing increased the VC-25B reach-forward loss by $312 million in the first nine months of 2026; KC-46A supplier shortages caused significant Q3 factory disruption and abnormal costs, with possible additional losses on both programs."
+   },
+   "urls": [
+    "https://s2.q4cdn.com/661678649/files/doc_financials/2026/q3/2026-09-Sep-30-10-Q-and-Exhibits.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Fixed-price defense charge cycle continues: T-7A reach-forward loss $1.77B (2024), KC-46A losses $0.6B (Q4 2025), VC-25B losses $280M (Q2 2026); potential new charges on VC-25B, T-7A, MQ-25 and Starliner",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing fixed-price defense charge cycle continues: T-7A reach-forward loss $1.77B (2024), KC-46A losses $0.6B (Q4 2025), VC-25B losses $280M (Q2 2026); potential new charges remain on VC-25B, T-7A, MQ-25 and Starliner"
+   },
+   "urls": [
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Boeing Commercial Airplanes posted a negative 6.5% operating margin in Q3 2026",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Risk: Boeing Commercial Airplanes lost $697 million in Q3 2026 with a negative 6.5% margin, reflecting delivery mix, production-rate adjustments and higher estimated supplier costs.",
+    "D": "Boeing Commercial Airplanes lost $697M in Q3 2026 (margin -6.5%) on delayed 737/787 rate increases and higher supply chain cost estimates; TTM operating margin ex-gain is only 0.2% and shareholders' equity is just $6.5B",
+    "E": "Boeing margin risk: Commercial Airplanes posted a negative 6.5% operating margin in Q3 2026, reflecting unfavorable delivery mix and higher projected production-adjustment and supply-chain costs."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis",
+    "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Q3 2026 segments: Commercial Airplanes revenue $10,720M, margin (6.5)% on 161 deliveries; BDS revenue $7,935M (+15%), 6.2% margin incl. $252M HRL gain; Global Services margin 18.3%; record backlog $745B",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing Q3 2026 segments: Commercial Airplanes revenue $10,720M, margin (6.5)% on 161 deliveries; BDS revenue $7,935M (+15%), 6.2% margin including $252M HRL Laboratories sale gain; Global Services margin 18.3%; record backlog $745B"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Q3 2026 segments: BCA revenue $10.72B (-3%) at -6.5%; BDS $7.94B (+15%) at 6.2% incl. $252M HRL gain; Global Services $5.57B at 18.3%; 161 deliveries (737: 124; 787: 22); net cumulative catch-up adjustments cut Q3 operating earnings by $105M",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing Q3 2026 segments: Commercial Airplanes revenue $10.72B (-3%) at -6.5% margin; Defense, Space & Security $7.94B (+15%) at 6.2%, including a $252M gain on the HRL Laboratories sale; Global Services $5.57B at 18.3% margin. Q3 deliveries were 161 (737: 124; 787: 22); net cumulative catch-up adjustments cut Q3 operating earnings by $105M."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Boeing recognized a $252M gain from selling its HRL Laboratories investment in Q3 2026",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing recognized a $252 million gain from selling its HRL Laboratories investment in Q3 2026."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c43",
+    "c42",
+    "c44"
+   ]
+  },
+  {
+   "cid": "c45",
+   "claim": "Boeing completed the Spirit AeroSystems acquisition on 2025-12-08, bringing fuselage/major structures in-house; integration is the remaining issue",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Boeing completed the Spirit AeroSystems acquisition on 2025-12-08, bringing Boeing-related fuselages and major structures in-house; a completed integration story, not a pending merger-arb catalyst.",
+    "E": "Boeing closed its acquisition of Spirit AeroSystems on 2025-12-08, bringing its principal fuselage/structures supplier in-house; Spirit Defense retains independent governance; integration is the remaining execution issue."
+   },
+   "urls": [
+    "https://boeing.mediaroom.com/2025-12-08-Boeing-Completes-Acquisition-of-Spirit-AeroSystems",
+    "https://finance.yahoo.com/news/boeing-completes-spirit-aerosystems-acquisition-190000075.html",
+    "https://investors.boeing.com/investors/news/press-release-details/2025/Boeing-Completes-Acquisition-of-Spirit-AeroSystems/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c45",
+    "c46",
+    "c47"
+   ]
+  },
+  {
+   "cid": "c48",
+   "claim": "Spirit purchase price allocation is preliminary and must be finalized within one year of close; provisional goodwill $10.6B, all assigned to Commercial Airplanes",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing's purchase price allocation for Spirit AeroSystems (closed Dec 8, 2025) is preliminary and must be finalized within one year of close; provisional goodwill is $10.6B, all assigned to Commercial Airplanes."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Inherited Spirit customer deals now estimated at $1.52B (+$455M, ~43% above initial estimate); assessment preliminary with customers/programs unidentified",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing Spirit integration costs still growing: inherited Spirit customer deals now estimated at $1.52B (+$455M, ~43% above initial estimate), assessment preliminary with customers/programs unidentified"
+   },
+   "urls": [
+    "https://aerotime.aero/articles/boeing-spirit-aerosystems-takeover-costs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Boeing sold Digital Aviation Solutions (Jeppesen, ForeFlight) to Thoma Bravo for $10.55B on Oct 31, 2025, generating a $9.57B gain in Q4 2025 and funding deleveraging",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing sold Digital Aviation Solutions (Jeppesen, ForeFlight) to Thoma Bravo for $10.55B on Oct 31, 2025, generating a $9.57B gain in Q4 2025 and funding deleveraging"
+   },
+   "urls": [
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": [
+    "c51"
+   ]
+  },
+  {
+   "cid": "c51",
+   "claim": "Jeppesen ForeFlight completed separation and sale to Thoma Bravo on 2025-11-03 in an all-cash $10.55B transaction",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Jeppesen ForeFlight completed its separation from Boeing and sale to Thoma Bravo on 2025-11-03 in an all-cash transaction valued at $10.55bn; completed portfolio monetization."
+   },
+   "urls": [
+    "https://www.thomabravo.com/press-releases/jeppesen-foreflight-launches-as-a-standalone-company-to-redefine-the-future-of-aviation-software"
+   ],
+   "conflicts_with": [
+    "c50"
+   ]
+  },
+  {
+   "cid": "c52",
+   "claim": "Aug 9 agreement to sell Insitu, Wisk Aero and SkyGrid to Archer; consideration incl. Archer shares equal to 19.75% of pre-closing Class A shares and two warrants for up to $200M additional stock; closing conditional, expected later in 2026 (not verified)",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Boeing disclosed an August 9 agreement to sell Insitu, Wisk Aero and SkyGrid to Archer; consideration includes Archer shares equal to 19.75% of its pre-closing Class A shares and two warrants for up to $200 million of additional stock; closing conditional and expected later in 2026. / Catalyst: Boeing's potential completion of the Archer asset sale is expected later in 2026, subject to regulatory approval and customary conditions; closing not verified."
+   },
+   "urls": [
+    "https://s2.q4cdn.com/661678649/files/doc_financials/2026/q3/2026-09-Sep-30-10-Q-and-Exhibits.pdf"
+   ],
+   "conflicts_with": [
+    "c54"
+   ]
+  },
+  {
+   "cid": "c53",
+   "claim": "Sale of Insitu, Wisk and SkyGrid to Archer (~19.75% Archer Class A stock plus warrants for up to $200M) expected to close later in 2026 subject to regulatory approval; held-for-sale assets $688M at 9/30/26",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing's sale of Insitu, Wisk Aero and SkyGrid to Archer Aviation (paid in about 19.75% of Archer Class A stock plus warrants for up to $200M further shares) is expected to close later in 2026 subject to regulatory approval; held-for-sale assets were $688M at 9/30/26."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c54",
+   "claim": "Boeing agreed (Aug 10, 2026) to sell Insitu, Wisk and SkyGrid to Archer for stock and warrants (stake nearly 20%); will invest up to $55M in an upcoming Archer round and keep Wisk autonomy access via cross-licensing",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing agreed (Aug 10, 2026) to sell Insitu, Wisk Aero and SkyGrid to Archer Aviation for Archer stock and warrants giving Boeing a stake of nearly 20%; Boeing will also invest up to $55M in an upcoming Archer funding round and retain access to Wisk autonomy technology via cross-licensing."
+   },
+   "urls": [
+    "https://flightplan.forecastinternational.com/2026/08/10/archer-aviation-to-acquire-boeing-subsidiaries-wisk-aero-insitu-and-skygrid/"
+   ],
+   "conflicts_with": [
+    "c52"
+   ]
+  },
+  {
+   "cid": "c55",
+   "claim": "No open-market common-stock repurchases in Q3 2026; 25,949 shares received from employees were tax withholding on restricted-stock vesting",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Boeing made no open-market program repurchases in Q3 2026; 25,949 employee shares received were tax-withholding transfers, not discretionary buybacks.",
+    "C": "Boeing made no open-market common-stock repurchases in Q3 2026; the 25,949 shares received from employees were for tax withholding on restricted-stock vesting."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+    "https://s2.q4cdn.com/661678649/files/doc_financials/2026/q3/2026-09-Sep-30-10-Q-and-Exhibits.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c56",
+   "claim": "No common dividend since 2020 and no buybacks; capital returns limited to the 6.00% mandatory convertible preferred issued Oct 2024",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing has paid no common dividend since 2020 and has no buybacks; capital returns limited to the 6.00% mandatory convertible preferred issued Oct 2024"
+   },
+   "urls": [
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "No share buybacks in nine months to 9/30/26; CFO prioritizes debt reduction, then investment, with shareholder returns 'at the right time'",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing made no share buybacks in the nine months to 9/30/26; the CFO prioritizes debt reduction, then investment, with shareholder returns considered 'at the right time'."
+   },
+   "urls": [
+    "https://leehamnews.com/2025/12/03/boeing-cfo-jay-malave-priorities-are-debt-investments-then-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "6.00% Series A mandatory convertible preferred ($5.75B liquidation preference) converts into common stock on Oct 15, 2027",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing's 6.00% Series A mandatory convertible preferred ($5.75B liquidation preference) converts into common stock on Oct 15, 2027, a known equity-supply event"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/12927/000162828026050038/ba-20260630.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "Liquidity at 2026-09-30: $20.7B cash and marketable securities, $10.0B undrawn credit facilities, against $45.9B consolidated debt",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing had cash and marketable securities of $20.7 billion as of 2026-09-30, with another $10 billion of revolving facilities undrawn. / Boeing total debt was $45.9 billion as of 2026-09-30, including $4.6 billion classified as short-term.",
+    "C": "Boeing quarter-end liquidity (2026-09-30): $20.7 billion cash and marketable investments plus $10.0 billion undrawn credit facilities, against $45.9 billion consolidated debt.",
+    "E": "Boeing had cash and marketable investments of $20.7bn and consolidated debt of $45.9bn as of 2026-09-30, with $10bn of revolving credit facilities undrawn.",
+    "F": "At September 30, 2026, Boeing had $9.5 billion cash, $11.2 billion short-term investments, $45.9 billion total debt and $10.0 billion unused revolving credit capacity, and was in compliance with all covenants."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c59",
+    "c60"
+   ]
+  },
+  {
+   "cid": "c61",
+   "claim": "Consolidated debt $45.9B at Sep 30, 2026, down $8.2B from $54.1B at FY2025 (net debt $25.2B); cash $20.7B; debt repayments of $8,415M in first nine months of 2026",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing cash and marketable securities were $20.7B and consolidated debt $45.9B at Sep 30, 2026 (down $8.2B from $54.1B at FY2025; net debt $25.2B); debt repayments of $8,415M in first nine months of 2026"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c62",
+   "claim": "Short-term debt and current portion of long-term debt $4,569M (~$4.6B) at Sep 30, 2026; $10.0B credit facilities fully undrawn",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing has $10.0B of credit facilities fully undrawn; short-term debt and current portion of long-term debt $4,569M at Sep 30, 2026"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c63",
+   "claim": "Boeing repaid $8.415B of debt in nine months to 9/30/26; short-term debt fell to $4.569B from $8.461B, long-term debt to $41.351B from $45.637B; Spirit-acquired debt $329M short-term and $3.279B long-term",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing repaid $8.415B of debt in the nine months to 9/30/26; short-term debt fell to $4.569B from $8.461B and long-term debt to $41.351B from $45.637B; Spirit-acquired debt was $329M short-term and $3.279B long-term."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c64",
+   "claim": "As of Dec 2025, CFO outlined ~$8B debt repayment in 2026 and ~$4B in 2027, plus ~$3B Spirit debt to retire, with a $10B minimum cash benchmark",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "As of Dec 2025, Boeing's CFO outlined about $8B of debt repayment in 2026 and about $4B in 2027, plus roughly $3B of Spirit debt to retire, with a $10B minimum cash benchmark."
+   },
+   "urls": [
+    "https://leehamnews.com/2025/12/03/boeing-cfo-jay-malave-priorities-are-debt-investments-then-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c65",
+   "claim": "Maturity schedule as of 2025-12-31: debt/other-note principal payments of $4.403B in 2027 and $2.739B in 2028 (historical, not refreshed)",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Boeing's maturity schedule as of 2025-12-31 showed debt/other-note principal payments of $4.403 billion in 2027 and $2.739 billion in 2028 (historical scheduled amounts, not a refreshed forecast)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/ba-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c66",
+   "claim": "$3B 364-day revolver (August 2026) expiring August 2027; renewed 2026-08-24, with $3B and $4B facilities extended to Aug 2029 and May 2030",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "On 2026-08-24, Boeing renewed its $3 billion revolver through August 23, 2027 and extended the $3 billion and $4 billion facilities through August 24, 2029 and May 15, 2030, respectively.",
+    "C": "Boeing's Q3 filing disclosed a $3 billion, 364-day revolving credit agreement entered into in August 2026 and expiring in August 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026059427/ba-20260824.htm",
+    "https://s2.q4cdn.com/661678649/files/doc_financials/2026/q3/2026-09-Sep-30-10-Q-and-Exhibits.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c67",
+   "claim": "August 2026 revolvers mature Aug 2027 (364-day, term-out option to Aug 2028), Aug 2029 and May 2030",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Boeing's August 2026 refinancing replaced the expiring $3bn revolver with a $3bn 364-day facility expiring August 2027 (term-out option to August 2028); amended $3bn and $4bn facilities expire August 2029 and May 2030; covenants in compliance as of 2026-09-30.",
+    "F": "Boeing's August 2026 revolvers mature in August 2027, August 2029 and May 2030, with the 364-day facility having a one-year term-out option to August 2028; Boeing also assumed Spirit's $700 million 4.600% notes due 2028 after Spirit's $300 million 2026 notes matured in Q2 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c68",
+   "claim": "Credit agreement dated 2026-08-24 requires minimum liquidity of $5B and caps consolidated debt at 60% of contract-defined total capital",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Boeing's credit agreement dated 2026-08-24 requires minimum liquidity of $5 billion and caps consolidated debt at 60% of contract-defined total capital (not a simple GAAP ratio)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026059427/a202608aug248kex101.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c69",
+   "claim": "Credit ratings per Q3 filing: Fitch BBB-/Positive (outlook revised June 2026), S&P BBB-/Stable, Moody's Baa3/Stable; covenants in compliance",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing credit ratings as reported 2026-10-27: Fitch BBB-/positive (outlook improved in June), S&P BBB-/stable, Moody's Baa3/stable; Boeing reported compliance with debt and credit-facility covenants.",
+    "C": "Boeing's Q3 filing reported compliance with all debt and credit-facility covenants and investment-grade ratings: Fitch BBB-/Positive, S&P BBB-/Stable, Moody's Baa3/Stable.",
+    "E": "Boeing credit ratings per the Q3 filing: Fitch BBB-/positive (outlook upgraded June 2026), S&P BBB-/stable, Moody's Baa3/stable.",
+    "F": "Boeing's credit ratings are investment grade: Fitch BBB- with positive outlook after a June 2026 revision, S&P BBB- stable, Moody's Baa3 stable."
+   },
+   "urls": [
+    "https://fitchratings.com/entity/the-boeing-company-80090948",
+    "https://s2.q4cdn.com/661678649/files/doc_financials/2026/q3/2026-09-Sep-30-10-Q-and-Exhibits.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c69",
+    "c70",
+    "c71"
+   ]
+  },
+  {
+   "cid": "c72",
+   "claim": "Ratings BBB- (Fitch) / Baa3 (Moody's); Moody's downgraded to Baa3 with negative outlook in April 2024 and flagged $8.0B of 2026 maturities, since refinanced/deleveraged",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing ratings stand at BBB- (Fitch) / Baa3 (Moody's); Moody's downgraded to Baa3 with negative outlook in April 2024 and flagged $8.0B of 2026 maturities, since refinanced/deleveraged"
+   },
+   "urls": [
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": [
+    "c69"
+   ]
+  },
+  {
+   "cid": "c73",
+   "claim": "Risk: ratings headroom is thin at BBB-/Baa3 against $45.9B of debt; a ramp or FCF slip could stall the upgrade path implied by Fitch's positive outlook",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Risk: Boeing's ratings headroom is thin at BBB-/Baa3 against $45.9B of debt; a ramp or FCF slip could stall the upgrade path implied by Fitch's positive outlook."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c74",
+   "claim": "2.8% senior notes mature Mar 1, 2027 ($300M, CUSIP 097023BU8) — nearest identified bond maturity / refinancing checkpoint",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Boeing's nearest identified bond maturity is $300M of 2.8% notes due Mar 1, 2027 (CUSIP 097023BU8)",
+    "E": "Boeing's 2.80% senior unsecured notes mature 2027-03-01, a refinancing/cash-use checkpoint; issue principal not verified."
+   },
+   "urls": [
+    "https://fitchratings.com/entity/the-boeing-company-80090948",
+    "https://atlantisdatasolutions.com/bond/097023BU8"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c75",
+   "claim": "Boeing's 2.70% senior notes ($1.0B issued, CUSIP 097023CM5) mature February 1, 2027",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing's 2.70% senior notes ($1.0B issued, CUSIP 097023CM5) mature February 1, 2027."
+   },
+   "urls": [
+    "https://therighttrader.com/bonds/boeing/2-7-2027"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c76",
+   "claim": "ULA (50% Boeing-owned) targets Nov 13, 2026 for Vulcan return to flight after nine-month grounding (Vulcan Leo 1, 40 Amazon Leo satellites, redesigned Northrop Grumman booster nozzle)",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "ULA (50% owned by Boeing) is targeting November 13, 2026 for the Vulcan rocket's return to flight after a nine-month grounding, on mission Vulcan Leo 1 carrying 40 Amazon Leo satellites with a redesigned Northrop Grumman booster nozzle."
+   },
+   "urls": [
+    "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c77",
+   "claim": "Q3 10-Q: Boeing expects to give ULA additional financial support in Q4 2026 and could take losses if Vulcan launches do not resume on assumed timeline; ULA equity investment $572M",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing's Q3 10-Q says it expects to give ULA additional financial support in Q4 2026 and could take losses if Vulcan launches do not resume on the assumed timeline; Boeing's ULA equity investment was $572M."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c78",
+   "claim": "Boeing and Lockheed Martin each guarantee $750M of ULA credit facilities maturing Aug 28, 2029, a contingent exposure while Vulcan is grounded",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Boeing and Lockheed Martin each guarantee $750M of ULA credit facilities maturing Aug 28, 2029, a contingent exposure while Vulcan is grounded."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c78",
+    "c79"
+   ]
+  },
+  {
+   "cid": "c80",
+   "claim": "Risk: ULA/Vulcan investigation into two nozzle failures still open; Space Force has not confirmed when national security payloads can return; failed return would raise Boeing's ULA support needs and loss risk",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Risk: ULA/Vulcan investigation into two nozzle failures is still open and the Space Force has not confirmed when national security payloads can return to Vulcan; a failed return to flight would raise Boeing's ULA support needs and loss risk."
+   },
+   "urls": [
+    "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c81",
+   "claim": "FAA issued 737 MAX-10 certification (amended type certificate and updated Production Limitation Record) on 2026-10-20, authorizing production and delivery",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "The FAA certified the Boeing 737 MAX-10 on 2026-10-20 and approved production, removing a regulatory prerequisite to deliveries.",
+    "E": "The FAA issued the Boeing 737 MAX-10 amended type certificate and updated Production Limitation Record on 2026-10-20, authorizing production and delivery; delivery execution is the remaining catalyst."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/U-S--FAA-certifies-Boeing-737-10-largest-member-of-737-MAX-family/default.aspx",
+    "https://www.faa.gov/newsroom/federal-aviation-administration-issues-certification-boeing-737-max-10",
+    "https://www.reuters.com/business/aerospace-defense/faa-certifies-boeings-737-max-10-clearing-way-deliveries-2026-10-20/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c81",
+    "c82",
+    "c83"
+   ]
+  },
+  {
+   "cid": "c84",
+   "claim": "Previously built 737-7 and 737-10 aircraft expected to begin delivering in early 2027, a test of inventory monetization/cash release",
+   "asserted_by": [
+    "A",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "A": "Boeing expects prebuilt 737-7 and 737-10 aircraft to start delivering in early 2027, a test of inventory monetization after certification (as of 2026-10-27).",
+    "E": "Boeing expects in early 2027 (exact date unannounced) to begin deliveries of previously built 737-7 and 737-10 aircraft, potentially releasing inventory cash."
+   },
+   "urls": [
+    "https://s2.q4cdn.com/661678649/files/doc_events/2026/Oct/27/Transcript.pdf",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c84",
+    "c85"
+   ]
+  },
+  {
+   "cid": "c86",
+   "claim": "FAA lifted 737 production cap from 38/month to 42 (Oct 2025) then 47 (May 2026); new Everett North Line rolled out first 737 MAX 10 in Oct 2026 but still needs FAA line certification",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "FAA lifted the 737 production cap from 38/month to 42 (Oct 2025) then 47 (May 2026); Boeing's new Everett North Line rolled out its first 737 MAX 10 in October 2026 but still needs FAA line certification"
+   },
+   "urls": [
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "777X first delivery remains on track for 2027, with financial plan assuming certification by mid-2027",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Boeing 777-9 (777X) first delivery on track for 2027, with certification flight testing progressing",
+    "E": "Boeing 777X schedule risk: management's multi-year cash targets assume certification by mid-2027 and first delivery remains a 2027 target; another delay would challenge the cash-recovery path.",
+    "F": "Boeing remains on track for first 777X delivery in 2027, with its financial plan assuming certification by mid-2027."
+   },
+   "urls": [
+    "https://fortune.com/company/boeing/earnings/q3-2026/",
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c87",
+    "c89",
+    "c91"
+   ]
+  },
+  {
+   "cid": "c88",
+   "claim": "777X certification slipped at least into 2027; GE Aerospace still resolving a GE9X mid-seal durability issue needed for ETOPS, creating repeat-delay risk",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing 777X certification slipped at least into 2027, with GE Aerospace still resolving a GE9X mid-seal durability issue needed for ETOPS authorization, creating repeat-delay risk"
+   },
+   "urls": [
+    "https://leehamnews.com/2026/10/19/boeing-hoping-to-secure-737-max-10-certification-ahead-of-earnings"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c90",
+   "claim": "Boeing expects authorization for final phases of 777X certification flight testing by year-end 2026 (not final aircraft certification)",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Boeing expects authorization for the final phases of 777X certification flight testing by year-end 2026 (not final aircraft certification)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c92",
+   "claim": "Bloomberg (Cirium data, Jefferies): ~32 Boeing 737 MAX deliveries in Oct 2026 vs 43 in September (estimate; fewest in nearly a year)",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "C": "Bloomberg, citing Cirium data and Jefferies, estimated about 32 Boeing 737 MAX deliveries in October 2026 versus 43 in September (estimate, not official).",
+    "D": "October 2026 MAX deliveries of ~32 were the fewest in nearly a year"
+   },
+   "urls": [
+    "https://www.bloomberg.com/news/articles/2026-11-06/boeing-737-deliveries-drop-in-october-to-lowest-in-almost-a-year",
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c93",
+   "claim": "Deliveries: 161 in Q3 2026 (737: 124, 787: 22, 767: 10, 777: 5), 475 in first nine months (+8.0% YoY)",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Boeing deliveries: 161 in Q3 2026 (737: 124, 787: 22, 767: 10, 777: 5), 475 in first nine months (+8.0% YoY); October 2026 MAX deliveries of ~32 were the fewest in nearly a year"
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Announces-Third-Quarter-Deliveries/default.aspx",
+    "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c93",
+    "c94"
+   ]
+  },
+  {
+   "cid": "c95",
+   "claim": "300 net orders in Q3 2026 (Turkish Airlines, Ethiopian, Lufthansa); Avolon 140 737-10 order Nov 4; record $745B backlog with over 6,300 airplanes",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Boeing orders: 300 net orders in Q3 2026 (Turkish Airlines, Ethiopian, Lufthansa); Avolon finalized an order for 140 737-10s on Nov 4, 2026; record $745B backlog with over 6,300 airplanes"
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+    "https://stocktitan.net/news/BA/boeing-completes-acquisition-of-spirit-aero-9a2sk4v49n91.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c95",
+    "c96"
+   ]
+  },
+  {
+   "cid": "c98",
+   "claim": "Avolon finalized an order for 140 737-10s on 2026-11-04; Boeing said lessors placed more than 230 firm 737-10 orders in 2026",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "A": "On 2026-11-04, Avolon finalized an order for 140 Boeing 737-10s; Boeing reported lessor firm orders exceeding 230 aircraft for this variant during 2026.",
+    "E": "Avolon finalized an order for 140 Boeing 737-10s on 2026-11-04, raising its unfilled Boeing orders above 240; Boeing said lessors placed more than 230 firm 737-10 orders in 2026; pricing undisclosed."
+   },
+   "urls": [
+    "https://boeing.mediaroom.com/2026-11-04-Avolon-Finalizes-Order-for-140-Boeing-737-10-Jets",
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Avolon-Finalizes-Order-for-140-Boeing-737-10-Jets/default.aspx"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c97",
+    "c98",
+    "c99"
+   ]
+  },
+  {
+   "cid": "c100",
+   "claim": "Aviation Week (2026-11-04): Avolon's announcement selected the 737-10 variant for its October commitment rather than being fully incremental; EASA validation still underway",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Aviation Week reported on 2026-11-04 that Avolon's announcement selected the 737-10 variant for its October commitment rather than being fully incremental; EASA validation was still underway."
+   },
+   "urls": [
+    "https://aviationweek.com/air-transport/airlines-lessors/avolon-selects-737-10-140-aircraft-max-commitment"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c101",
+   "claim": "Commercial Airplanes plans to cut about 5% of workforce via attrition and layoffs, notices beginning in December, because slower production ramps left the division overstaffed (announced/reported 2026-11-09)",
+   "asserted_by": [
+    "A",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing Commercial Airplanes plans a 5% workforce reduction through attrition and involuntary layoffs, with notices beginning in December at the earliest; management attributed overstaffing to slower production ramps (as of 2026-11-09).",
+    "C": "Boeing announced plans (2026-11-09) to cut its commercial-airplane workforce by about 5% through layoffs and attrition, with notifications beginning in December, attributed to overstaffing from slower production growth.",
+    "F": "Boeing Commercial Airplanes plans to cut about 5% of its workforce through attrition and involuntary layoffs, with notices beginning in December, because slower production ramps left the division overstaffed."
+   },
+   "urls": [
+    "https://www.reuters.com/business/aerospace-defense/boeing-cut-5-planemaking-divisions-workforce-seattle-times-reports-2026-11-09/",
+    "https://www.theguardian.com/business/2026/nov/09/boeing-to-cut-commercial-plane-workforce",
+    "https://www.streetinsider.com/Reuters/Boeing%2Bto%2Bcut%2B5%25%2Bof%2Bcommercial%2Bjet%2Bworkforce%C2%A0amid%2Bproduction%2Bstruggles/27313782.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c102",
+   "claim": "Boeing announced Nov 9, 2026 a ~5% cut of commercial airplane workforce via layoffs and attrition (division ~50,500 of ~182,000 total), notifications in December 2026",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing announced Nov 9, 2026 a ~5% cut of its commercial airplane workforce via layoffs and attrition (division employs ~50,500 of ~182,000 total), with notifications in December 2026"
+   },
+   "urls": [
+    "https://seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c103",
+   "claim": "5% commercial workforce cut risks production friction during ramp, on top of 2024 ~17,000 reduction",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing's 5% commercial workforce cut (notified December 2026) risks production friction during the ramp, on top of the 2024 ~17,000 reduction; SPEEA meets management the week of Nov 9"
+   },
+   "urls": [
+    "https://seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce"
+   ],
+   "conflicts_with": [
+    "c108"
+   ]
+  },
+  {
+   "cid": "c104",
+   "claim": "Seattle Times (2026-11-09): employee memo targets ~5% fewer Commercial Airplanes employees via layoffs and attrition and a slower production ramp; layoff count not disclosed",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Seattle Times reported on 2026-11-09 an employee memo targeting ~5% fewer Boeing Commercial Airplanes employees through layoffs and attrition and a slower production ramp; layoff count not disclosed."
+   },
+   "urls": [
+    "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/"
+   ],
+   "conflicts_with": [
+    "c106",
+    "c107"
+   ]
+  },
+  {
+   "cid": "c105",
+   "claim": "Boeing plans in December 2026 to notify affected employees of ~5% Commercial Airplanes workforce reductions; execution and restructuring costs are near-term watchpoints",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Boeing plans in December 2026 to notify affected employees of Commercial Airplanes workforce reductions of approximately 5% via layoffs and attrition; execution and restructuring costs are near-term watchpoints."
+   },
+   "urls": [
+    "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c106",
+   "claim": "BCA job cut notices (~5%, roughly 2,500 roles, via attrition plus layoffs) start in December 2026; Boeing also expects to start moving 787 production from 8 to 10/month around December 2026",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing Commercial Airplanes job cut notices (about 5%, roughly 2,500 roles, via attrition plus layoffs) start going out in December 2026; Boeing also expects to start moving 787 production from 8 to 10 per month around December 2026."
+   },
+   "urls": [
+    "https://en.sedaily.com/world/2026/11/10/boeing-to-cut-5-percent-of-commercial-airplane-jobs-or-2500"
+   ],
+   "conflicts_with": [
+    "c104"
+   ]
+  },
+  {
+   "cid": "c107",
+   "claim": "BCA cut of ~5% (about 2,500 of 50,494 employees) is first job reduction in nearly two years; BCA CEO Stephanie Pope said Boeing is 'in an overstaffed position' after slowing production schedules",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing Commercial Airplanes will cut about 5% of its workforce (about 2,500 of 50,494 employees) via attrition and layoffs, its first job reduction in nearly two years; BCA CEO Stephanie Pope said Boeing is 'in an overstaffed position' after slowing production schedules."
+   },
+   "urls": [
+    "https://en.sedaily.com/world/2026/11/10/boeing-to-cut-5-percent-of-commercial-airplane-jobs-or-2500"
+   ],
+   "conflicts_with": [
+    "c104"
+   ]
+  },
+  {
+   "cid": "c108",
+   "claim": "SPEEA scheduled a Nov 19, 2026 meeting with Boeing leadership on commercial-airplane layoffs",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Boeing: SPEEA has scheduled a November 19, 2026 meeting with Boeing leadership about the commercial-airplane layoffs (as of 2026-11-09); details could clarify execution risks and restructuring scope."
+   },
+   "urls": [
+    "https://speea.org/boeing-commercial-layoff-announcement/"
+   ],
+   "conflicts_with": [
+    "c103"
+   ]
+  },
+  {
+   "cid": "c109",
+   "claim": "Boeing reached new contract agreements with SPEEA engineers and technicians in October 2026, avoiding a strike by the ~17,000-member union",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing reached new contract agreements with SPEEA engineers and technicians in October 2026, avoiding a strike by the ~17,000-member union"
+   },
+   "urls": [
+    "https://seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce"
+   ],
+   "conflicts_with": [
+    "c110"
+   ]
+  },
+  {
+   "cid": "c110",
+   "claim": "Boeing signed a new four-year contract with SPEEA earlier in 2026, avoiding a strike",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing signed a new four-year contract with SPEEA (engineers and technicians, Pacific Northwest) earlier in 2026, avoiding a strike."
+   },
+   "urls": [
+    "https://leehamnews.com/2026/11/09/boeing-plans-to-cut-5-of-commercial-workforce/"
+   ],
+   "conflicts_with": [
+    "c109"
+   ]
+  },
+  {
+   "cid": "c111",
+   "claim": "U.S. Navy selected Boeing for the F/A-XX next-generation fighter; award not yet in backlog pending source selection review",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "U.S. Navy selected Boeing for the F/A-XX next-generation fighter; award not yet in backlog pending source selection review",
+    "F": "Boeing was selected by the U.S. Navy to design, build and deliver the F/A-XX next-generation fighter; the order was not yet in backlog pending completion of source-selection and evaluation review."
+   },
+   "urls": [
+    "https://boeing.mediaroom.com/2026-09-29-U-S-Navy-Selects-Boeing-for-F-A-XX-Program",
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c111",
+    "c112"
+   ]
+  },
+  {
+   "cid": "c113",
+   "claim": "F/A-XX full-scale development contract worth more than $20B, contract type undisclosed; Boeing excludes it from backlog until source selection is complete",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing won the Navy's F/A-XX sixth-generation fighter; the full-scale development contract is worth more than $20B, contract type undisclosed, and Boeing excludes the award from backlog until source selection is complete."
+   },
+   "urls": [
+    "https://news.clearancejobs.com/2026/09/30/boeing-lands-long-awaited-navy-f-a-xx-award-worth-more-than-20-billion/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c114",
+   "claim": "Seven-year contract award to expand PAC-3 Seeker production; Boeing Global Services won an Army award to maintain the AH-64 Apache fleet",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Boeing received a seven-year contract award to expand PAC-3 Seeker production, and Boeing Global Services won an Army award to maintain the AH-64 Apache fleet."
+   },
+   "urls": [
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c115",
+   "claim": "Boeing received a seven-year contract framework (2026-10-05) to triple PAC-3 MSE seeker production",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "C": "Boeing received a seven-year contract framework (2026-10-05) to triple PAC-3 MSE seeker production."
+   },
+   "urls": [
+    "https://boeing.mediaroom.com/2026-10-05-Boeing-receives-seven-year-contract-to-accelerate-PAC-3-MSE-seeker-output",
+    "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-receives-seven-year-contract-to-accelerate-PAC-3-MSE-seeker-output/default.aspx"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c115",
+    "c116"
+   ]
+  },
+  {
+   "cid": "c117",
+   "claim": "Defense wins: F/A-XX selection, seven-year PAC-3 Seeker expansion, Army AH-64 Apache fleet-maintenance award; BDS backlog a record $101B",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing defense wins: F/A-XX selection, seven-year PAC-3 Seeker production expansion, and U.S. Army AH-64 Apache fleet-maintenance award; BDS backlog a record $101B"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c118",
+   "claim": "Q3 contract wins: seven-year PAC-3 seeker contract (triple production), 22 more F-15EX (120 under contract), $359M additional NASA funding for Starliner, KC-46A Lot 13 order",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing Q3 2026 contract wins: seven-year PAC-3 seeker contract (to triple production), 22 more F-15EX (120 now under contract), $359M additional NASA funding for Starliner, and a KC-46A Lot 13 order; Commercial booked 300 net orders in Q3."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c119",
+   "claim": "Director Steven M. Mollenkopf bought 2,950 shares in the open market on 2026-10-30 at ~$173.03 weighted average (direct holding 6,717 shares); Form 4 filed Nov 3",
+   "asserted_by": [
+    "A",
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing director Steven M. Mollenkopf bought 2,950 shares on 2026-10-30 at a weighted-average $173.026, leaving 6,717 directly owned shares; Form 4 filed November 3.",
+    "B": "Boeing director Steven M. Mollenkopf bought 2,950 shares on the open market at a $173.03 weighted average on Oct 30, 2026, raising his direct holding to 6,717 shares (Form 4, code P).",
+    "E": "Boeing director Steven Mollenkopf bought 2,950 shares on 2026-10-30 at a weighted-average $173.026 (open-market purchase, code P), bringing direct ownership to 6,717 shares; Form 4 filed 2026-11-03.",
+    "F": "Boeing director Steven M. Mollenkopf bought 2,950 shares in the open market on October 30, 2026 at $173.026 per share; Form 4 filed November 3."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/0001225208-26-008641.txt",
+    "https://www.sec.gov/Archives/edgar/data/12927/000122520826008641/xslF345X06/doc4.xml"
+   ],
+   "conflicts_with": [
+    "c120"
+   ]
+  },
+  {
+   "cid": "c121",
+   "claim": "Director Mortimer J. Buckley bought 5,820 shares in the open market at $171.55 on 2026-10-30 (direct holdings 10,250 shares after); Form 4 filed Nov 3",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Boeing director Mortimer J. Buckley bought 5,820 shares at $171.55 on 2026-10-30, leaving 10,250 directly owned shares; Form 4 filed November 3.",
+    "B": "Boeing director Mortimer J. Buckley bought 5,820 shares on the open market at $171.55 on Oct 30, 2026, raising his direct holding to 10,250 shares (Form 4, code P).",
+    "C": "Boeing director Mortimer J. Buckley bought 5,820 shares at $171.55 on October 30, 2026 (Form 4 signed Nov 3); direct holdings after the transaction were 10,250 shares.",
+    "F": "Boeing director Mortimer J. Buckley bought 5,820 shares in the open market on October 30, 2026 at $171.55 per share; Form 4 filed November 3."
+   },
+   "urls": [
+    "https://247wallst.com/cards/ba-xpost-01m5yq9xrjjf0v286tmygxqcvx",
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000122520826008642/doc4.xml",
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000122520826008642/xslF345X06/doc4.xml",
+    "https://www.sec.gov/Archives/edgar/data/12927/000122520826008642/xslF345X06/doc4.xml"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c121",
+    "c120"
+   ]
+  },
+  {
+   "cid": "c122",
+   "claim": "CEO Robert Ortberg's Form 4 (filed Feb 23, 2026) shows disposal of 5,016.643 shares at $236.71 via tax withholding on RSU vesting (not open-market sale); 135,927.865 shares owned after",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing CEO Robert Ortberg's Form 4 (filed Feb 23, 2026) shows disposal of 5,016.643 shares at $236.71 via tax withholding on RSU vesting (not an open-market sale); 135,927.865 shares owned after"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/12927/000122520826002428/xslF345X05/doc4.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c123",
+   "claim": "Officer open-market sales in Feb 2026: Howard McKenzie $2.46M (Feb 5 @ $233.99), Ann Schmidt $1.53M (Feb 17 @ $243.37), Uma Amuluru $351K (Feb 24 @ $233.78)",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing officer open-market sales in February 2026: Howard McKenzie $2.46M (Feb 5 @ $233.99), Ann Schmidt $1.53M (Feb 17 @ $243.37), Uma Amuluru $351K (Feb 24 @ $233.78)"
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/BA/insider-transactions"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c124",
+   "claim": "Institutional holders net sold 69.3M shares in latest reported quarter (-11.38% change in institutional shares held)",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing institutional holders net sold 69.3M shares in the latest reported quarter (-11.38% change in institutional shares held)"
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/BA/insider-transactions"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c125",
+   "claim": "A Form 144 notice of proposed sale was filed Nov 9, 2026, alongside two Form 4s on Nov 3, 2026, suggesting possible follow-through insider sales",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "A Form 144 notice of proposed sale for Boeing was filed Nov 9, 2026, alongside two Form 4s on Nov 3, 2026, suggesting possible follow-through insider sales"
+   },
+   "urls": [
+    "https://stocktitan.net/news/BA/boeing-completes-acquisition-of-spirit-aero-9a2sk4v49n91.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c126",
+   "claim": "Vanguard Capital Management Schedule 13G (signed 2026-04-29): 58,558,920 Boeing shares (7.45%) as of 2026-03-31",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Vanguard Capital Management's Schedule 13G (signed 2026-04-29) reported 58,558,920 Boeing shares, or 7.45%, as of March 31; ordinary-course, non-control ownership.",
+    "E": "Vanguard Capital Management reported 58,558,920 Boeing shares (7.45%) as of 2026-03-31 in a Schedule 13G signed 2026-04-29; sole voting power 7,553,263 shares; sole dispositive power 58,558,920."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000210011926000249/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "https://www.stocktitan.net/sec-filings/BA/schedule-13g-boeing-co-passive-investment-disclosure-5-9e4b44f1a5a3.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c127",
+   "claim": "Capital World Investors Schedule 13G: 41,497,786 Boeing shares (5.2%) as of 2026-03-31, including preferred stock equal to 15,370,300 common shares",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "Capital World Investors reported (May 14 filing) 41,497,786 beneficially owned Boeing shares, or 5.2%, as of 2026-03-31, including 15,370,300 common-share equivalents from convertible preferred securities.",
+    "E": "Capital World Investors disclosed 41,497,786 Boeing shares (5.2%) as of 2026-03-31 in a Schedule 13G, including preferred stock representing 15,370,300 common shares; passive intent; historical snapshot."
+   },
+   "urls": [
+    "https://www.secform4.com/13dg/1422849/0001422849-26-000086.html",
+    "https://www.sec.gov/Archives/edgar/data/12927/000142284926000086/xslSCHEDULE_13G_X02/primary_doc.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c128",
+   "claim": "Appaloosa's 13F reported 800,000 Boeing common shares valued at $173,176,000 as of 2026-06-30 (historical position)",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Appaloosa's 13F reported 800,000 Boeing common shares valued at $173,176,000 as of 2026-06-30 (historical position, not current holding or cost)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1656456/000165645626000003/xslForm13F_X02/Form13FInfoTable.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c129",
+   "claim": "MarketBeat: Allen Investment Management cut its Boeing holding by 9.5% in Q3 2026, selling 89,306 shares and ending with 847,130",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "MarketBeat reported Allen Investment Management cut its Boeing holding by 9.5% in Q3 2026, selling 89,306 shares and ending with 847,130 (lagged quarterly report)."
+   },
+   "urls": [
+    "https://www.marketbeat.com/instant-alerts/filing-the-boeing-company-ba-stock-allen-investment-management-llc-cuts-holdings-2026-11-08/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c130",
+   "claim": "Boeing reports Q4/FY2026 results on Jan 27, 2027; consensus EPS -$0.708 on revenue of $25.62B",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing reports Q4/FY2026 results on Jan 27, 2027; consensus EPS -$0.708 on revenue of $25.62B"
+   },
+   "urls": [
+    "https://investing.com/equities/boeing-co-earnings"
+   ],
+   "conflicts_with": [
+    "c131"
+   ]
+  },
+  {
+   "cid": "c131",
+   "claim": "Yahoo Finance estimates Boeing's next earnings report for January 26, 2027 (estimated date)",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Yahoo Finance estimates Boeing's next earnings report for January 26, 2027 (estimated date)."
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/BA/analysis/"
+   ],
+   "conflicts_with": [
+    "c130"
+   ]
+  },
+  {
+   "cid": "c132",
+   "claim": "Catalyst: on 2026-12-14 a new FAA airworthiness directive for certain Boeing 787-8/-9/-10 takes effect, requiring radio-altimeter coaxial-cable replacement with a five-year compliance period",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Catalyst: On 2026-12-14 a new FAA airworthiness directive for certain Boeing 787-8/-9/-10 aircraft takes effect, requiring radio-altimeter coaxial-cable replacement, with a five-year compliance period."
+   },
+   "urls": [
+    "https://www.federalregister.gov/documents/2026/11/09/2026-22817/airworthiness-directives-the-boeing-company-airplanes"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c133",
+   "claim": "Risk: FAA 787 directive addresses unreliable radio-altimeter outputs that could compromise safe flight and landing, covering ~169 U.S.-registered aircraft; costs fall on operators, not a confirmed Boeing charge",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Risk: FAA's new 787 directive addresses unreliable radio-altimeter outputs that could compromise safe flight and landing, covering an estimated 169 U.S.-registered aircraft; cost estimates concern operators, not a confirmed Boeing charge."
+   },
+   "urls": [
+    "https://www.federalregister.gov/documents/2026/11/09/2026-22817/airworthiness-directives-the-boeing-company-airplanes"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c134",
+   "claim": "Litigation tail: May 2026 jury ordered Boeing to pay $49.5M to family of an Ethiopian Airlines Flight 302 victim; FAA MAX 10 certification still requires each aircraft be shown built to approved design",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boeing litigation tail: in May 2026 a jury ordered Boeing to pay $49.5M to the family of an Ethiopian Airlines Flight 302 737 MAX crash victim; FAA MAX 10 certification still requires each aircraft be shown built to approved design"
+   },
+   "urls": [
+    "https://npr.org/2026/10/21/g-s1-149032/faa-boeing-737-max-10"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c135",
+   "claim": "Risk: March 16, 2026 district-court order certified an investor class in the 737 MAX securities litigation, a civil exposure separate from the criminal settlement",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Risk: A March 16, 2026 district-court order certified an investor class in the Boeing 737 MAX securities litigation, a civil exposure separate from the criminal settlement."
+   },
+   "urls": [
+    "https://law.justia.com/cases/federal/district-courts/illinois/ilndce/1:2019cv02394/363476/486/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c136",
+   "claim": "China: on May 14, 2026 Trump said China agreed to buy 200 Boeing jets vs ~500 expected by some analysts; not confirmed as firm orders; BA closed down 4.73% that day",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "China: on May 14, 2026 Trump said China agreed to buy 200 Boeing jets versus roughly 500 expected by some analysts; not confirmed as firm orders, and BA closed down 4.73% that day."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/14/china-boeing-order-airplanes-737-max-trump-says.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c137",
+   "claim": "Cash quality: customer advances and progress billings rose $3.44B in Q3 and $8.1B YTD to $67.5B; excluding that build, nine-month operating cash flow would be about -$5.4B (author's calculation)",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Boeing cash quality: customer advances and progress billings rose $3.44B in Q3 and $8.1B YTD to $67.5B; excluding that build, nine-month operating cash flow would be about -$5.4B (author's calculation, not a Boeing figure)."
+   },
+   "urls": [
+    "https://businessmodelanalyst.com/boeing-q3-2026-customer-advances-cash-flow/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c138",
+   "claim": "Risk: 777X work-in-process inventory rose to $7.6B from $4.3B; 777X/767 reach-forward losses were $5.14B in the nine months to 9/30/25",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Risk: Boeing 777X work-in-process inventory rose to $7.6B from $4.3B, and 777X/767 reach-forward losses were $5.14B in the nine months to 9/30/25."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c139",
+   "claim": "Risk: $14.0B of 737 deferred production costs and $14.4B of 787 deferred production costs, of which $1.874B depends on future orders not yet firm",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Risk: Boeing carries $14.0B of 737 deferred production costs and $14.4B of 787 deferred production costs, of which $1.874B depends on future orders not yet firm."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c140",
+   "claim": "Risk: 2027 cash bridge depends on deposits; management flagged a 'few billion dollar' headwind from lower customer deposits and ~$1B higher capex in 2027",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Risk: Boeing's 2027 cash bridge depends on deposits; management flagged a 'few billion dollar' headwind from lower customer deposits and about $1B of higher capex in 2027."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c141",
+   "claim": "Cash-flow timing risk: ~$2B 2026 FCF depends on KC-46A tanker-order advance timing and seasonal working capital; 2027 outlook includes ~$1B more capex and less favorable order deposits",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "Boeing cash-flow timing risk: the ~$2bn 2026 FCF forecast depends on KC-46A tanker-order advance timing and seasonal working capital; the 2027 outlook includes about $1bn more capex and less favorable order deposits (disclosed 2026-10-27)."
+   },
+   "urls": [
+    "https://s2.q4cdn.com/661678649/files/doc_events/2026/Oct/27/Transcript.pdf",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c141",
+    "c142"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+   "note": "The press release confirms revenue of $24,188M, GAAP loss/share of $0.26, core loss/share of $0.34, FCF of $464M (operating cash flow $1,496M = FCF + $1,032M capex), net loss of $116M and nine-month FCF of -$359M.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+   "note": "The release says operating cash flow was partially offset by DOJ settlement payments of about $0.7B.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+   "note": "The ~$700M DOJ payment and the prior $1-3B FY26 FCF range are consistent with other sources, but no passage directly shows the 7/28 benchmark wording.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html",
+   "note": "CNBC reports a 34 cent adjusted loss against a 21 cent loss expected, and the Reuters excerpt gives the same comparison.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html",
+   "note": "CNBC gives revenue of $24.19B against $23.84B expected and the 34 cent loss against 21 cents expected.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/quote/BA/analysis/",
+   "note": "A consensus near -$0.20 is consistent with sources and the $0.139 gap is arithmetically right, though the Yahoo figure itself is not shown.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.marketbeat.com/instant-alerts/filing-the-boeing-company-ba-stock-allen-investment-management-llc-cuts-holdings-2026-11-08/",
+   "note": "Consensus estimates vary by provider: -$0.25 and $23.95B at MarketBeat, -$0.20 and $24.37B at 24/7 Wall St.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://investing.com/equities/boeing-co-earnings",
+   "note": "Investing.com quotes revenue of $24.19B against a $24.39B forecast.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tikr.com/de/blog/boeing-ba-stock-q3-2026-wider-loss-revenue-beat",
+   "note": "TIKR gives $168, a $254 high and -27% over six months, and Reuters reports a ~10% fall; the Jefferies quote is not directly verified.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+   "note": "The call confirms ~$2B for 2026 including the KC-46A Lot 13 assumption, $3B in 2027, $6B in 2028 and $10B in 2029, assuming 777X certification by mid-2027.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "F": "true",
+    "D": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.reuters.com/business/aerospace-defense/boeing-jetliner-production-challenges-weigh-third-quarter-results-2026-10-27",
+   "note": "Reuters reports $3B for 2027 against $5.5B consensus and the $10B target in 2029, a year later than investors expected.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+   "note": "Call: 737 deliveries short of 500; 787 near the low end of 90-100. Variant F's cause (rate-10 delay) differs slightly from the stated seat and engine constraints.",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "A": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.streetinsider.com/Reuters/Boeing%2Bto%2Bcut%2B5%25%2Bof%2Bcommercial%2Bjet%2Bworkforce%C2%A0amid%2Bproduction%2Bstruggles/27313782.html",
+   "note": "Rate 47 now expected in early 2027 versus summer 2026 earlier; Boeing is cutting 5% of the commercial workforce.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis",
+   "note": "787 stays at 8 per month with the next increase from Dec 2026; 737 timing is as described.",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://aerospaceglobalnews.com/news/boeing-commercial-aircraft-job-cuts-737-production",
+   "note": "Ortberg said the increase depends on North Line certification, sustained wing output and Wichita fuselage stability.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.reuters.com/business/aerospace-defense/boeing-jetliner-production-challenges-weigh-third-quarter-results-2026-10-27",
+   "note": "Wing constraint and Wichita fuselage inventory drawdown are confirmed; 'faster than planned' is an inference.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/",
+   "note": "Renton wing factory delayed its rate increase, and SPEEA and IAM are meeting about the cuts; the KUOW framing is plausible.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "Wings constrain 737, engines and seats constrain 787, and the supplier disruption continues into 2027; the exact '1H 2027' end is not confirmed.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "10-Q: supplier shortages hit KC-46A and 777F, disruption continues into 2027, and abnormal costs are expensed as incurred.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true"
+   }
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://leehamnews.com/2026/10/27/boeings-flap-with-777-767-wing-supplier-creates-ongoing-production-gap",
+   "note": "Leeham: Vaero wing stalled for several weeks, shipments resumed, and the CFO said the gap flows through over the next few quarters.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q says supply chain problems adversely affect results, and Boeing delayed 737 and 787 rate increases in Q3; the exact risk-factor wording is not in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q says supplier issues reduced productivity and hurt results, and that Q3 supplier shortages disrupt KC-46A and 777F with the disruption expected to continue into 2027.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q says government departments are funded through Dec 11, 2026; the access-to-capital warning is standard 10-Q risk language.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q states $3,164M of cancellations in the nine months, mainly 737 and 787, and the backlog-reduction warning.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q confirms a $312M VC-25B reach-forward loss increase in the nine months and KC-46A supplier-shortage disruption, with risk of more losses.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The T-7A $1.77B loss is confirmed and the 10-Q flags continuing risk; the KC-46A Q4 2025 and VC-25B Q2 2026 figures are plausible but not directly shown.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q shows a BCA Q3 loss of $697M and a (6.5)% margin. Variant D's TTM margin and equity figures are not confirmed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "D": "unverifiable",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+   "note": "The press release and secondary sources confirm BCA revenue, the (6.5)% margin, 161 deliveries, BDS revenue and 6.2% margin with the $252M gain, GS 18.3% and $745B backlog.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://businessmodelanalyst.com/boeing-q3-2026-customer-advances-cash-flow/",
+   "note": "The segment figures and deliveries all match; the $105M catch-up adjustment is not shown but is minor.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q records a $252M gain on selling an equity-method investment in Q3, which Reuters and the press release identify as HRL Laboratories.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://boeing.mediaroom.com/2025-12-08-Boeing-Completes-Acquisition-of-Spirit-AeroSystems",
+   "note": "Boeing's release confirms the Dec 8, 2025 close and that Spirit Defense runs as a separate subsidiary; this is background, not a live catalyst.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "D": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sec-api.io/insights/boeing-ba-q3-2026-earnings-sec-filing-analysis",
+   "note": "Provisional goodwill of $10.60bn in Commercial Airplanes, and the 10-Q says allocation finalizes within one year.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://aerotime.aero/articles/boeing-spirit-aerosystems-takeover-costs",
+   "note": "$455M increase to $1.52B, ~43% above the Dec 2025 estimate, per Boeing filing and WSJ.",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/ba-20251231.htm",
+   "note": "10-K confirms Oct 31, 2025 completion at $10.55B all-cash; $9.57B gain confirmed by sec-api.",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.thomabravo.com/press-releases/jeppesen-foreflight-launches-as-a-standalone-company-to-redefine-the-future-of-aviation-software",
+   "note": "Thoma Bravo release dated Nov 3, 2025 for $10.55B; Boeing's 10-K says the divestiture was completed Oct 31, so the Nov 3 date is the launch announcement.",
+   "via": "passages"
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "10-Q Note 3 confirms the Aug 9, 2026 agreement, 19.75% stake and two warrants for $200M.",
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "Deal terms confirmed; the later-2026 close and $688M held-for-sale figure are consistent with the 10-Q but not shown directly.",
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://flightplan.forecastinternational.com/2026/08/10/archer-aviation-to-acquire-boeing-subsidiaries-wisk-aero-insitu-and-skygrid/",
+   "note": "Deal announced Aug 10, 2026 with stock and warrants; the $55M investment and cross-license details are not shown in the passages.",
+   "via": "passages"
+  },
+  "c55": {
+   "cid": "c55",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "Consistent with no buyback activity (treasury shares fell via issuance); the 25,949 withholding detail is plausible but not shown.",
+   "via": "passages"
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "6.00% mandatory convertible preferred issued Oct 31, 2024 confirmed; no common dividend or buyback is consistent with filings.",
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://leehamnews.com/2025/12/03/boeing-cfo-jay-malave-priorities-are-debt-investments-then-shareholders/",
+   "note": "CFO priorities of debt, then investment, then shareholders match the headline; no buybacks in 9M 2026 is consistent.",
+   "via": "passages"
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/ba-20251231.htm",
+   "note": "Mandatory conversion date Oct 15, 2027 and $5.75B liquidation preference confirmed.",
+   "via": "passages"
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+   "note": "$20.7B cash and securities, $45.9B debt and $10.0B undrawn facilities confirmed; the $9.5B/$11.2B split and $4.6B short-term debt are plausible but not shown.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://ca.investing.com/news/stock-market-news/boeing-earnings-analysis-questions-answered-and-next-catalysts-93CH-4906724",
+   "note": "Cash $20.7B (9,498+11,216) and debt $45.9B confirmed; the $8.2B decline and net debt $25.2B are consistent with these figures.",
+   "via": "passages"
+  },
+  "c62": {
+   "cid": "c62",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm",
+   "note": "The $10B revolver is undrawn per the earnings analysis; $4,569M short-term debt is consistent with the balance sheet and with the debt decline.",
+   "via": "passages"
+  },
+  "c63": {
+   "cid": "c63",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "Components sum to about $45.9B (4.569+41.351) and match the 10-Q's lower debt balances; Spirit debt figures are plausible.",
+   "via": "passages"
+  },
+  "c64": {
+   "cid": "c64",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://leehamnews.com/2025/12/03/boeing-cfo-jay-malave-priorities-are-debt-investments-then-shareholders/",
+   "note": "Leeham confirms $8B in 2026, $4B in 2027 and ~$3B of Spirit debt; the $10B minimum cash benchmark is plausible but not shown.",
+   "via": "passages"
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/ba-20251231.htm",
+   "note": "Taken from the FY2025 10-K maturity table; labeled historical and consistent with the $4B 2027 repayment.",
+   "via": "passages"
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026059427/ba-20260824.htm",
+   "note": "The 8-K dated 2026-08-24 shows the 364-day facility replaced and the facilities extended to Aug 24, 2029 and May 15, 2030.",
+   "via": "passages"
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q confirms the Aug 2027 364-day facility with term-out to Aug 2028, the 2029 and 2030 facilities, and the Spirit 2026 and 2028 notes.",
+   "via": "passages"
+  },
+  "c68": {
+   "cid": "c68",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026059427/a202608aug248kex101.htm",
+   "note": "The credit agreement exhibit is dated Aug 2026; the $5B minimum liquidity and 60% debt-to-capital terms match Boeing's standard covenants.",
+   "via": "passages"
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://fitchratings.com/entity/the-boeing-company-80090948",
+   "note": "Fitch moved the outlook to positive on Jun 26, 2026; S&P and Moody's are BBB-/Baa3 stable, and the filing reports covenant compliance.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "B": "true",
+    "D": "true"
+   }
+  },
+  "c72": {
+   "cid": "c72",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://fitchratings.com/entity/the-boeing-company-80090948",
+   "note": "Current BBB-/Baa3 ratings are confirmed; Moody's April 2024 downgrade to Baa3 with a negative outlook is known history.",
+   "via": "passages"
+  },
+  "c73": {
+   "cid": "c73",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://ca.investing.com/news/stock-market-news/boeing-earnings-analysis-questions-answered-and-next-catalysts-93CH-4906724",
+   "note": "BBB-/Baa3 ratings, Fitch's positive outlook and $45.9B of debt against modest FCF are supported; this is a risk judgment grounded in those facts.",
+   "via": "passages"
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://fitchratings.com/entity/the-boeing-company-80090948",
+   "note": "Fitch lists $300M of 2.8% notes due 01-Mar-2027, CUSIP 097023BU8. It is not the nearest maturity, since the 2.7% notes are due Feb 1, 2027.",
+   "via": "passages"
+  },
+  "c75": {
+   "cid": "c75",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://therighttrader.com/bonds/boeing/2-7-2027",
+   "note": "The 2.70% notes of $1.0B, CUSIP 097023CM5, mature Feb 1, 2027.",
+   "via": "passages"
+  },
+  "c76": {
+   "cid": "c76",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/",
+   "note": "Spaceflight Now confirms Nov 13 return to flight, 40 Amazon Leo satellites, nine-month grounding and improved Northrop nozzle; Boeing owns 50% of ULA.",
+   "via": "passages"
+  },
+  "c77": {
+   "cid": "c77",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm",
+   "note": "10-Q says additional support expected in Q4 2026 and possible losses if Vulcan does not resume as assumed; the $572M equity figure is not shown in the passages but the rest matches.",
+   "via": "passages"
+  },
+  "c78": {
+   "cid": "c78",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm",
+   "note": "10-Q: Boeing and Lockheed each guarantee $750M of ULA credit facilities maturing Aug 28, 2029.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/",
+   "note": "Two nozzle failures, testing continuing in parallel, and Space Force not yet answering what remains before national security payloads fly; the 10-Q supports the loss risk.",
+   "via": "passages"
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.faa.gov/newsroom/federal-aviation-administration-issues-certification-boeing-737-max-10",
+   "note": "FAA announced on Oct 20, 2026 the amended type certificate and updated Production Limitation Record, with production approved and delivery allowed.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c84": {
+   "cid": "c84",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://aerospaceglobalnews.com/news/boeing-commercial-aircraft-job-cuts-737-production",
+   "note": "The CFO said deliveries of MAX 7 and MAX 10 aircraft built before certification should begin in early 2027.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "B": "true"
+   }
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce",
+   "note": "Seattle Times confirms the first North Line MAX 10 rolled out in Oct and the line still needs FAA certification; the 10-K confirms the 42 and 47 rate steps.",
+   "via": "passages"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm",
+   "note": "Q3 release says the 777-9 remains on track for first delivery in 2027; the FCF plan assumes certification by mid-2027.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://leehamnews.com/2026/10/19/boeing-hoping-to-secure-737-max-10-certification-ahead-of-earnings",
+   "note": "Leeham states 777X certification slipped at least into 2027 and a GE9X mid-seal durability issue is needed for ETOPS.",
+   "via": "passages"
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.bloomberg.com/news/articles/2026-11-06/boeing-737-deliveries-drop-in-october-to-lowest-in-almost-a-year",
+   "note": "Bloomberg, citing Cirium data and Jefferies, estimated about 32 in October vs 43 in September, the fewest since Nov 2025.",
+   "via": "passages"
+  },
+  "c93": {
+   "cid": "c93",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Announces-Third-Quarter-Deliveries/default.aspx",
+   "note": "Q3 deliveries of 161 (737 124, 787 22, 767 10, 777 5) and 475 YTD match; 440 to 475 is +8.0%. The October MAX variant also matches Bloomberg.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c95": {
+   "cid": "c95",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm",
+   "note": "300 net orders, customers, $745B total backlog and 6,300+ airplanes confirmed; Avolon 140 737-10 order on Nov 4 confirmed.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://boeing.mediaroom.com/2026-11-04-Avolon-Finalizes-Order-for-140-Boeing-737-10-Jets",
+   "note": "Confirms 140 aircraft, backlog above 240, and lessors' firm 737-10 orders above 230 in 2026. Variant E's 'pricing undisclosed' is consistent with the release.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "A": "true",
+    "E": "true",
+    "B": "true"
+   }
+  },
+  "c100": {
+   "cid": "c100",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://aviationweek.com/air-transport/airlines-lessors/avolon-selects-737-10-140-aircraft-max-commitment",
+   "note": "Aviation Week says Avolon selected the 737-10 to fulfill its October 140-aircraft commitment and that EASA validation is underway.",
+   "via": "passages"
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.streetinsider.com/Reuters/Boeing%2Bto%2Bcut%2B5%25%2Bof%2Bcommercial%2Bjet%2Bworkforce%C2%A0amid%2Bproduction%2Bstruggles/27313782.html",
+   "note": "Reuters: Pope memo of Nov 9 announced a 5% cut via attrition and layoffs, notices in December at the earliest, due to overstaffing from slower ramps.",
+   "via": "passages"
+  },
+  "c102": {
+   "cid": "c102",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/",
+   "note": "Seattle Times confirms the 5% cut, December notifications, ~182,000 total headcount and ~50,500 in commercial.",
+   "via": "passages"
+  },
+  "c103": {
+   "cid": "c103",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce",
+   "note": "The 2024 cut of ~17,000 (~10%) is confirmed. The production-friction risk is an analyst inference, and the SPEEA meeting detail isn't shown in the passages.",
+   "via": "passages"
+  },
+  "c104": {
+   "cid": "c104",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/",
+   "note": "Seattle Times Nov 9: ~5% cut via layoffs and attrition with a slower output ramp; 'it's not clear how many employees will be laid off.'",
+   "via": "passages"
+  },
+  "c105": {
+   "cid": "c105",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/",
+   "note": "Affected employees will be notified in December. The watchpoint framing about execution and restructuring costs is analyst commentary.",
+   "via": "passages"
+  },
+  "c106": {
+   "cid": "c106",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://en.sedaily.com/world/2026/11/10/boeing-to-cut-5-percent-of-commercial-airplane-jobs-or-2500",
+   "note": "About 2,500 jobs (5%) are being cut, with layoff notices starting next month. The Q3 call put the 787 move to 10 per month at the end of 2026.",
+   "via": "passages"
+  },
+  "c107": {
+   "cid": "c107",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://en.sedaily.com/world/2026/11/10/boeing-to-cut-5-percent-of-commercial-airplane-jobs-or-2500",
+   "note": "The 5% cut, the 50,494 BCA headcount and Pope's overstaffing memo are all confirmed. The 'first in nearly two years' framing fits the October 2024 cuts.",
+   "via": "passages"
+  },
+  "c108": {
+   "cid": "c108",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://speea.org/boeing-commercial-layoff-announcement/",
+   "note": "SPEEA's November 9 post says a meeting with Boeing leadership is scheduled for November 19.",
+   "via": "passages"
+  },
+  "c109": {
+   "cid": "c109",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce",
+   "note": "SPEEA approved a contract that avoided a strike, and SPEEA represents about 17,000. The October timing is inferred from the Q3 call, so medium confidence.",
+   "via": "passages"
+  },
+  "c110": {
+   "cid": "c110",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://leehamnews.com/2026/11/09/boeing-plans-to-cut-5-of-commercial-workforce/",
+   "note": "Leeham confirms a new four-year SPEEA contract reached earlier this year, avoiding a strike.",
+   "via": "passages"
+  },
+  "c111": {
+   "cid": "c111",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+   "note": "The Q3 release says the Navy selected Boeing for F/A-XX and the order is not in backlog pending source-selection review.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c113": {
+   "cid": "c113",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://news.clearancejobs.com/2026/09/30/boeing-lands-long-awaited-navy-f-a-xx-award-worth-more-than-20-billion/",
+   "note": "ClearanceJobs puts the full-scale development contract at more than $20B, and Boeing excludes it from backlog. The 'contract type undisclosed' wording is not directly checked.",
+   "via": "passages"
+  },
+  "c114": {
+   "cid": "c114",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx",
+   "note": "The Q3 release lists the seven-year PAC-3 Seeker award and the Army AH-64 Apache maintenance award.",
+   "via": "passages"
+  },
+  "c115": {
+   "cid": "c115",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-receives-seven-year-contract-to-accelerate-PAC-3-MSE-seeker-output/default.aspx",
+   "note": "The October 5 release ties the award to a seven-year framework to triple PAC-3 MSE seeker production.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "A": "true"
+   }
+  },
+  "c117": {
+   "cid": "c117",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm",
+   "note": "The Q3 release confirms the F/A-XX selection, PAC-3 expansion, Apache award and a record $101B BDS backlog.",
+   "via": "passages"
+  },
+  "c118": {
+   "cid": "c118",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+   "note": "The Q3 call confirms PAC-3, 22 more F-15EX (120 total), $359M for Starliner and 300 net commercial orders. The KC-46A Lot 13 order is only implied.",
+   "via": "passages"
+  },
+  "c119": {
+   "cid": "c119",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000122520826008641/xslF345X06/doc4.xml",
+   "note": "The Form 4 shows a code P purchase of 2,950 shares at $173.026 on 10/30/2026, leaving 6,717 held directly. The November 3 filing date is consistent with the news coverage.",
+   "via": "passages"
+  },
+  "c121": {
+   "cid": "c121",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000122520826008642/xslF345X06/doc4.xml",
+   "note": "Form 4 shows P code, 5,820 shares at $171.55 on 10/30/2026, 10,250 held after, signed 11/03/2026.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "F": "true",
+    "D": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c122": {
+   "cid": "c122",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/12927/000122520826002428/xslForm345X05/doc4.xml",
+   "note": "Form 4 shows code F disposal of 5,016.643 shares at $236.71 on 02/19/2026, 135,927.865 held after; tax withholding fits code F. Filing date of Feb 23 is not directly shown but is plausible.",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c124": {
+   "cid": "c124",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/quote/BA/insider-transactions",
+   "note": "Yahoo shows net institutional shares sold of 69,310,300 and a -11.38% change.",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c125": {
+   "cid": "c125",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stocktitan.net/news/BA/boeing-completes-acquisition-of-spirit-aero-9a2sk4v49n91.html",
+   "note": "The filings list shows a Form 144 on Nov 9, 2026 and two Form 4s on Nov 3. The inference of follow-through sales is speculative, since the Form 4s were purchases.",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c126": {
+   "cid": "c126",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000210011926000249/xslSCHEDULE_13G_X02/primary_doc.xml",
+   "note": "Schedule 13G shows 58,558,920 shares (7.45%) as of 3/31/2026, with sole voting power 7,553,263 and sole dispositive power 58,558,920. It was signed 4/29/2026.",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c127": {
+   "cid": "c127",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000142284926000086/xslSCHEDULE_13G_X02/primary_doc.xml",
+   "note": "Schedule 13G shows 41,497,786 shares (5.2%) as of 3/31/2026, including preferred equal to 15,370,300 common shares. It was signed 5/13/2026, consistent with the May 14 filing.",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c128": {
+   "cid": "c128",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1656456/000165645626000003/xslForm13F_X02/Form13FInfoTable.xml",
+   "note": "The 13F table shows 800,000 BA shares valued at $173,176,000. The 6/30/2026 date is plausible for that filing, and the position is historical.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c129": {
+   "cid": "c129",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.marketbeat.com/instant-alerts/filing-the-boeing-company-ba-stock-allen-investment-management-llc-cuts-holdings-2026-11-08/",
+   "note": "MarketBeat reports a 9.5% cut, 89,306 shares sold and 847,130 shares held after.",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c130": {
+   "cid": "c130",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investing.com/equities/boeing-co-earnings",
+   "note": "Investing.com lists Jan 27, 2027 for the 12/2026 period with EPS forecast -0.708 and revenue forecast $25.62B. This is an estimated date, and other sources cite different consensus.",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c132": {
+   "cid": "c132",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.federalregister.gov/documents/2026/11/09/2026-22817/airworthiness-directives-the-boeing-company-airplanes",
+   "note": "AD 2026-22-09 is effective Dec 14, 2026 and applies to 787-8/-9/-10, requiring LRRA coaxial cable replacement. The five-year compliance period is not shown in the passage but is plausible. It is a regulatory effective date rather than a stock catalyst.",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c133": {
+   "cid": "c133",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.federalregister.gov/documents/2026/11/09/2026-22817/airworthiness-directives-the-boeing-company-airplanes",
+   "note": "The FAA estimates 169 U.S.-registered airplanes affected with costs of $3.0M borne by operators, and describes the unsafe condition as potential loss of continued safe flight and landing.",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c134": {
+   "cid": "c134",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://npr.org/2026/10/21/g-s1-149032/faa-boeing-737-max-10",
+   "note": "NPR links a May 14, 2026 story on a $49.5M jury award to a family of a 737 MAX crash victim. The 10-Q confirms fewer than five civil suits are still pending. The MAX 10 'built to approved design' requirement is not shown in the passages.",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c135": {
+   "cid": "c135",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://law.justia.com/cases/federal/district-courts/illinois/ilndce/1:2019cv02394/363476/486/",
+   "note": "Judge Valderrama's 3/16/2026 order in In re Boeing Aircraft Securities Litigation (19-cv-02394) appoints class representatives. The 10-Q confirms a partial grant of class certification on March 16, 2026, under appeal.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c136": {
+   "cid": "c136",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.cnbc.com/2026/05/14/china-boeing-order-airplanes-737-max-trump-says.html",
+   "note": "CNBC confirms Trump said 200 jets, Jefferies estimated up to 500, shares closed 4.73% lower; no firm order confirmed.",
+   "via": "passages"
+  },
+  "c140": {
+   "cid": "c140",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+   "note": "CFO said lower 2027 customer deposits are a few billion dollars of impact and capex will be $5B, about $1B higher.",
+   "via": "passages"
+  },
+  "c141": {
+   "cid": "c141",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+   "note": "Call summary says ~$2B 2026 FCF is supported by KC-46A order timing and seasonal working capital; 2027 has $1B more capex and lower deposits.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/",
+   "note": "The Q3 call transcript confirms 737 deliveries will fall short of 500, 787 deliveries will land at the low end of 90-100, and BCA breakeven is targeted for early 2028. The transcript says supplier-related margin pressure will abate in 2H 2027, which is consistent with the claim's 'into 1H 2027'.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026050038/ba-20260630.htm",
+   "note": "The Q2 10-Q says Boeing expects approval on the final phases of 777X flight testing in 2H 2026. On the Q3 call management said full flight-test authorization is not yet in hand. I could not find the exact 'by year-end' wording in the saved Q3 text, so the claim fits the sources but is not directl...",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c123": {
+   "cid": "c123",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://finance.yahoo.com/quote/BA/insider-transactions",
+   "note": "Yahoo lists McKenzie at $233.99 on Feb 5 for 2,456,150, Schmidt at $243.37 on Feb 17 for 1,528,613 and Amuluru at $233.78 on Feb 24 for 351,484. All match the claim. The sales are about 9 months old.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c131": {
+   "cid": "c131",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/quote/BA/",
+   "note": "The Yahoo Finance BA quote page, fetched live, shows 'Earnings Date (est.) Jan 26, 2027'. The cached analysis page did not show it. This is an estimate, not a company announcement. Other trackers project Jan 27, 2027 (Investing.com, MarketScreener). Boeing reported Q4 2025 on Jan 27, 2026. Boeing...",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "retried": true
+  },
+  "c137": {
+   "cid": "c137",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://businessmodelanalyst.com/boeing-q3-2026-customer-advances-cash-flow/",
+   "note": "The article gives $67.5B of advances, up $3.44B in Q3 and $8.1B since December, and about -$5.4B of nine-month operating cash flow once that rise is removed. The article presents the -$5.4B as its own calculation, which matches the claim's caveat.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c138": {
+   "cid": "c138",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm",
+   "note": "The Q3 2026 10-Q shows 777X work in process of $7,608M against $4,313M at year-end 2025. The cash-flow statement shows 777X and 767 reach-forward losses of $5,140M in the nine months of 2025. That is the prior-year column, so it is dated history.",
+   "via": "agent"
+  },
+  "c139": {
+   "cid": "c139",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm",
+   "note": "The 10-Q shows 737 deferred production costs of $14,036M and 787 deferred production costs of $14,444M. It also shows $1,874M of 787 deferred production costs and tooling expected to be recovered from future, not yet firm, orders. The filing's $1,874M covers deferred production costs plus tooling...",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "note": "Reuters: adjusted loss of 34c vs. an expected 21c loss, per LSEG data. Boeing's press release confirms the ($0.34) core loss per share."
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "note": "Investing.com: revenue $24.19B vs. $24.39B estimate. Press release shows Q3 revenue of $24,188M."
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "note": "Q3 call: stabilizing at 47/month will take until next year (2027), wings are the cause of instability, and the plan targets rate 52 in the back half of 2027. Leeham's Nov 9 article says the same."
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "Leeham Oct 27: Everett wing production stalled for several weeks over Vaero. CFO Malave said shipments resumed but a production gap and abnormal costs will run over the next few quarters."
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "note": "Leeham confirms the Vaero trailing-edge rib kits for the 777F and 767, the weeks-long stall, the gap, and the abnormal costs. I couldn't confirm the 'sole-source' wording, a minor detail."
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "note": "T-7A loss of $1,770M in 2024 (10-Q). KC-46A loss of $0.6B in Q4 2025 (Q4 press release). VC-25B charge of $280M in Q2 2026 (Military Times, Breaking Defense). These remain the fixed-price risk programs."
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "false",
+   "note": "Wrong date: the sale closed Nov 3, 2025, not Oct 31 (Thoma Bravo and Boeing releases). Price of $10.55B and the ~$9.6B Q4 2025 gain are correct."
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "note": "10-Q: the mandatory convertible preferred converts automatically on Oct 15, 2027, into 5.8280–6.9940 shares each. The $5.75B size matches the 2024 issuance."
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "note": "Q3 press release: $20.7B cash and marketable securities, $10.0B credit facilities undrawn, $45.9B consolidated debt."
+  },
+  "c73": {
+   "cid": "c73",
+   "verdict": "true",
+   "note": "S&P BBB- and Moody's Baa3, both stable. Fitch BBB- with outlook moved to positive in June 2026. Debt is $45.9B. The risk framing is an opinion, but its facts are correct."
+  },
+  "c75": {
+   "cid": "c75",
+   "verdict": "true",
+   "note": "CUSIP 097023CM5: 2.70% notes, $1.0B issued July 2019, due Feb 1, 2027 (SEC free-writing prospectus, TradingView)."
+  },
+  "c79": {
+   "cid": "c79",
+   "verdict": "true",
+   "note": "10-Q: Boeing and Lockheed each guarantee $750M of ULA facilities maturing Aug 28, 2029, and expect more support in Q4 2026. Vulcan launches paused after the anomaly."
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "note": "FAA issued the amended type certificate and production approval for the 737-10 on Oct 20, 2026. Many outlets report it."
+  },
+  "c89": {
+   "cid": "c89",
+   "verdict": "false",
+   "note": "Misreads the call. The CFO's '10 to 15' refers to roughly expected 2027 777X deliveries, of which a late-2027 slip might 'come down a little bit', not a cut of 10-15. First delivery in 2027, ETOPS testing pending, and absorbable within the ~$3B FCF guide are correct."
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "note": "Guardian and Reuters Nov 9, 2026: ~5% cut through layoffs and attrition, notifications beginning in December. Pope said slower output put the unit in an 'overstaffed position'."
+  },
+  "c126": {
+   "cid": "c126",
+   "verdict": "true",
+   "note": "SEC 13G: 58,558,920 shares (7.45%), event date 3/31/2026, sole voting power 7,553,263. Filing dated Apr 29, 2026."
+  },
+  "c135": {
+   "cid": "c135",
+   "verdict": "true",
+   "note": "N.D. Ill. case 19-cv-02394, Mar 16, 2026 order certified an investor class in the 737 MAX securities suit (Law360, Bloomberg Government). It is civil, separate from the DOJ matter."
+  },
+  "c140": {
+   "cid": "c140",
+   "verdict": "true",
+   "note": "Q3 call: CFO sized lower BCA customer deposits at 'a few billion dollars' of impact in 2027 and cited ~$1B higher capex ($5B)."
+  }
+ },
+ "scores": {
+  "gpt": {
+   "units": 33,
+   "unverifiable": 0,
+   "true": 33,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 468.25,
+   "coverage": 0.345,
+   "accuracy": 1.0,
+   "combined": 0.513,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 40,
+   "unverifiable": 0,
+   "true": 40,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 468.25,
+   "coverage": 0.444,
+   "accuracy": 1.0,
+   "combined": 0.615,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 23,
+   "unverifiable": 0,
+   "true": 23,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 468.25,
+   "coverage": 0.225,
+   "accuracy": 1.0,
+   "combined": 0.368,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 40,
+   "unverifiable": 1,
+   "true": 39,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 468.25,
+   "coverage": 0.41,
+   "accuracy": 0.977,
+   "combined": 0.578,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 22,
+   "unverifiable": 0,
+   "true": 22,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 468.25,
+   "coverage": 0.248,
+   "accuracy": 1.0,
+   "combined": 0.397,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 24,
+   "unverifiable": 0,
+   "true": 24,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 468.25,
+   "coverage": 0.29,
+   "accuracy": 1.0,
+   "combined": 0.45,
+   "metric": "F1"
+  }
+ }
+}

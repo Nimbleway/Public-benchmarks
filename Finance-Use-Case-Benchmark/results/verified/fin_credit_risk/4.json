@@ -1,0 +1,3514 @@
+{
+ "sub_use_case": "fin_credit_risk",
+ "input_n": 4,
+ "task": "Assess the credit and counterparty risk of AMC Entertainment",
+ "labels": {
+  "parallel": "A",
+  "opus": "B",
+  "firecrawl": "C",
+  "gpt": "D",
+  "exa": "E",
+  "nimble": "F"
+ },
+ "unit": "credit fact",
+ "evidence_pages": 41,
+ "evidence_fetched": 41,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 4,
+ "decided_from_passages": 109,
+ "judge": "v4b",
+ "judge_cost_usd": 3.616,
+ "corrections_v2": {
+  "units_before": 125,
+  "units_after": 114,
+  "dedup_groups": [
+   {
+    "kept": "c21",
+    "merged": [
+     "c22"
+    ]
+   },
+   {
+    "kept": "c31",
+    "merged": [
+     "c32"
+    ]
+   },
+   {
+    "kept": "c51",
+    "merged": [
+     "c52"
+    ]
+   },
+   {
+    "kept": "c53",
+    "merged": [
+     "c54",
+     "c55"
+    ]
+   },
+   {
+    "kept": "c76",
+    "merged": [
+     "c75"
+    ]
+   },
+   {
+    "kept": "c93",
+    "merged": [
+     "c94"
+    ]
+   },
+   {
+    "kept": "c104",
+    "merged": [
+     "c105"
+    ]
+   },
+   {
+    "kept": "c106",
+    "merged": [
+     "c107"
+    ]
+   },
+   {
+    "kept": "c108",
+    "merged": [
+     "c109"
+    ]
+   },
+   {
+    "kept": "c66",
+    "merged": [
+     "c67"
+    ]
+   }
+  ],
+  "cost": 0.052
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "AMC Entertainment Holdings, Inc. Class A common stock is publicly traded on the NYSE under ticker AMC.",
+   "asserted_by": [
+    "E",
+    "D"
+   ],
+   "variants": {
+    "E": "AMC Entertainment Holdings, Inc. is publicly traded; Class A common stock is listed on the NYSE as AMC (as of 2026-07-23).",
+    "D": "AMC Entertainment Holdings, Inc. is publicly traded, with Class A common stock listed on the New York Stock Exchange as AMC (as of 2026-11-04)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "AMC is a widely held public company with 892,604,638 Class A shares outstanding as of Nov 3, 2026 and no controlling shareholder or PE sponsor.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC Entertainment Holdings, Inc. (NYSE: AMC) is a widely held public company with 892,604,638 Class A shares outstanding as of Nov 3, 2026, and no controlling shareholder or PE sponsor."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "AMC is publicly listed and widely held with no controlling sponsor; no change of control found as of 2026-09-30.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC Entertainment Holdings is publicly listed (NYSE: AMC) and widely held with no controlling sponsor; no change of control was found as of 2026-09-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "AMC is a public company listed on NYSE; no recent change of control or sponsor was verified (as of 2026-06-30).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "AMC Entertainment Holdings, Inc. is a public company listed on the NYSE under ticker AMC; no recent change of control or sponsor was verified (as of 2026-06-30)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Latest proxy (as of 2026-07-31) identifies institutional beneficial holders including Pentwater Capital Management LP and Discovery Capital Management LLC.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "AMC Entertainment Holdings, Inc. (NYSE: AMC) is a public company; the latest proxy (as of 2026-07-31) identifies institutional beneficial holders including Pentwater Capital Management LP and Discovery Capital Management LLC."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-093412/tm264130-4_def14a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": ">5% beneficial owners as of Oct 13, 2025: Vanguard 5.95%, Discovery Capital 5.78%, BlackRock 5.05%; directors/NEOs as a group well under 1% (CEO Adam Aron 975,310 shares).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC Entertainment's >5% beneficial owners as of Oct 13, 2025 were Vanguard (5.95%), Discovery Capital Management (5.78%) and BlackRock (5.05%); directors/NEOs as a group hold well under 1% (CEO Adam Aron 975,310 shares)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Former parent Wanda (acquired AMC in 2012) sold most of its remaining AMC shares via open-market sales in May 2021.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Former parent Wanda, which acquired AMC Entertainment in 2012, sold most of its remaining AMC shares via open-market sales in May 2021."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "AMC's debt reduction has relied heavily on dilutive equity, with 892.6M Class A shares outstanding at 2026-07-22.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC Entertainment's debt reduction has relied heavily on dilutive equity, with 892.6M Class A shares outstanding at 2026-07-22."
+   },
+   "urls": [
+    "https://finance.yahoo.com/markets/stocks/articles/amc-credit-upgrade-comes-catch-023300341.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Total revenues were $1,711.1M in Q3 2026 (quarter ended 2026-09-30), up 31.6% YoY.",
+   "asserted_by": [
+    "F",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "AMC Entertainment total revenues were $1,711.1M in Q3 2026, up 31.6% YoY.",
+    "D": "AMC reported revenue of $1,711.1 million for the three months ended 2026-09-30.",
+    "B": "AMC reported total revenues of $1,711.1M for Q3 2026, up 31.6% from $1,300.2M in Q3 2025."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Total revenues were $4,353.2M for 9M 2026 vs $3,560.6M in 9M 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC Entertainment total revenues were $4,353.2M for the nine months ended Sep 30, 2026, vs $3,560.6M in 9M 2025."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Operating income was $248.7M in Q3 2026.",
+   "asserted_by": [
+    "F",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "AMC Entertainment operating income was $248.7M in Q3 2026.",
+    "D": "AMC reported operating income of $248.7 million for the three months ended 2026-09-30.",
+    "B": "AMC reported operating income of $248.7M for Q3 2026, versus $35.8M in Q3 2025."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Operating income was $441.1M for 9M 2026 vs $(17.5)M in 9M 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC Entertainment operating income was $441.1M for 9M 2026, vs $(17.5)M in 9M 2025."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Adjusted EBITDA was a record $347.5M in Q3 2026, up 183.7% YoY (vs $122.5M in Q3 2025).",
+   "asserted_by": [
+    "F",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "AMC Entertainment Adjusted EBITDA was a record $347.5M in Q3 2026, up 183.7% YoY.",
+    "D": "AMC reported non-GAAP adjusted EBITDA of $347.5 million for the three months ended 2026-09-30.",
+    "B": "AMC reported Adjusted EBITDA (company non-GAAP) of $347.5M for Q3 2026 (20.3% margin), versus $122.5M in Q3 2025."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/amc/transcripts/710468-q3-2026",
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Adjusted EBITDA was $707.2M for 9M 2026, up 178.1% YoY.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC Entertainment Adjusted EBITDA was $707.2M for 9M 2026, up 178.1% YoY."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/amc/transcripts/710468-q3-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Net earnings were $109.3M in Q3 2026 vs a net loss of $298.2M in Q3 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC reported net earnings of $109.3M for Q3 2026, versus a net loss of $298.2M in Q3 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Cash and cash equivalents were $751.9M at Sep 30, 2026 (excluding $39.6M restricted cash).",
+   "asserted_by": [
+    "F",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "AMC held $751.9M cash and cash equivalents (plus $39.6M restricted cash) as of Sep 30, 2026, up 105.5% YoY.",
+    "D": "AMC held $751.9 million of cash and cash equivalents (excluding restricted cash) as of 2026-09-30.",
+    "B": "AMC had cash and cash equivalents of $751.9M (excluding $39.6M restricted cash) as of 2026-09-30, versus $428.5M at 2025-12-31."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Total corporate borrowings at carrying value were $3,747.4M at Sep 30, 2026 ($3,723.4M long-term + $24.0M current), before the Oct 5, 2026 refinancing.",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "F": "Total corporate borrowings were $3,747.4M as of Sep 30, 2026 ($3,723.4M long-term plus $24.0M current), before the Oct 5, 2026 refinancing.",
+    "B": "Total corporate borrowings at carrying value of $3,747.4M ($24.0M current plus $3,723.4M long-term) as of 2026-09-30, before the 2026-10-05 refinancing."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Corporate borrowings principal (excluding leases) was $3,782.6M at Sep 30, 2026, before the October refinancing.",
+   "asserted_by": [
+    "D",
+    "B"
+   ],
+   "variants": {
+    "D": "Corporate borrowings principal (excluding leases) of $3,782.6 million as of 2026-09-30, before the October refinancing.",
+    "B": "Total corporate borrowings principal of $3,782.6M as of 2026-09-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Pro forma corporate borrowings principal (excluding leases) after the refinancing was $4,086.1M as of 2026-10-05.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Pro forma corporate borrowings principal (excluding leases) of $4,086.1 million after the refinancing, as of 2026-10-05."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Moody's puts pro forma gross debt after the Oct 2026 refinancing at $4,139M.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Moody's puts AMC Entertainment's pro forma gross debt after the Oct 2026 refinancing at $4,139M."
+   },
+   "urls": [
+    "https://investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529"
+   ],
+   "conflicts_with": [
+    "c19"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "CEO Adam Aron stated remaining debt was approximately $4 billion after the Oct 5, 2026 refinancing.",
+   "asserted_by": [
+    "A",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "CEO Adam Aron cited approximately $4 billion of remaining debt.",
+    "E": "CEO Adam Aron stated remaining debt load was approximately $4 billion as of 2026-10-05 following the refinancing."
+   },
+   "urls": [
+    "https://investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+    "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Finance lease liabilities were $50.7M at 2026-09-30.",
+   "asserted_by": [
+    "D",
+    "B"
+   ],
+   "variants": {
+    "D": "Finance lease liabilities of $50.7 million as of 2026-09-30.",
+    "B": "Finance lease liabilities of $50.7M as of 2026-09-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Total finance lease liabilities were $52.6M at 2026-06-30.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Total finance lease liabilities of $52.6 million as of 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Operating lease liabilities were $3,761.9M at 2026-09-30 (debt-like rent obligations).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Operating lease liabilities of $3,761.9M (debt-like rent obligations) as of 2026-09-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Stockholders' deficit was $(1,343.1)M at Sep 30, 2026, improved from $(1,894.8)M at Dec 31, 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC stockholders' deficit was $(1,343.1)M at Sep 30, 2026, improved from $(1,894.8)M at Dec 31, 2025."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Net cash provided by operating activities was $283.5M in 9M 2026.",
+   "asserted_by": [
+    "F",
+    "D"
+   ],
+   "variants": {
+    "F": "AMC net cash provided by operating activities was $283.5M in 9M 2026.",
+    "D": "Net cash provided by operating activities of $283.5 million for the nine months ended 2026-09-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf",
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": [
+    "c28"
+   ]
+  },
+  {
+   "cid": "c28",
+   "claim": "9M 2026 operating cash flow of $283.5M vs -$246.5M in 9M 2025, with the earnings-call transcript saying $284.5M.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Net cash from operating activities of $283.5M for the nine months ended 2026-09-30, versus -$246.5M in the same period of 2025 (the earnings-call transcript says $284.5M)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": [
+    "c27"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "Net cash from operating activities was $176.6M in Q3 2026 vs -$14.9M in Q3 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Net cash from operating activities of $176.6M for Q3 2026, versus -$14.9M in Q3 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Free cash flow (non-GAAP) was $109.3M in Q3 2026 vs -$81.1M in Q3 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Free cash flow (non-GAAP) of $109.3M for Q3 2026, versus -$81.1M in Q3 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Non-GAAP free cash flow was $124.7M for 9M 2026.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "D": "Non-GAAP free cash flow of $124.7 million for the nine months ended 2026-09-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm",
+    "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c31",
+    "c32"
+   ]
+  },
+  {
+   "cid": "c33",
+   "claim": "Interest expense on corporate borrowings was $346.1M in 9M 2026, including $46.7M PIK; cash interest paid was $270.9M.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Interest expense on corporate borrowings was $346.1M in 9M 2026, including $46.7M PIK interest; cash paid for interest was $270.9M."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Net proceeds from equity issuances were $333.6M in 9M 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC raised $333.6M net proceeds from equity issuances in 9M 2026."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Net proceeds from equity issuances were $334.6M in the six months ended 2026-06-30.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Net proceeds from equity issuances of $334.6 million in the six months ended 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "Q2 2026 (three months ended 2026-06-30) revenue was $1,596.7M.",
+   "asserted_by": [
+    "E",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "E": "Revenue of $1,596.7 million for the three months ended 2026-06-30.",
+    "A": "Total revenue of $1,596.7 million for the three months ended 2026-06-30.",
+    "C": "Revenue of $1,596.7m for Q2 2026."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Q2 2026 operating income was $238.1M.",
+   "asserted_by": [
+    "E",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "E": "Operating income of $238.1 million for the three months ended 2026-06-30.",
+    "A": "GAAP operating income of $238.1 million for the three months ended 2026-06-30.",
+    "C": "Operating income of $238.1m for Q2 2026."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Q2 2026 Adjusted EBITDA (non-GAAP) was $321.4M.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Adjusted EBITDA (non-GAAP) of $321.4 million for the three months ended 2026-06-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Net loss of $11.4M for Q2 2026 despite record revenue.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC reported a net loss of $11.4M for Q2 2026 despite record revenue."
+   },
+   "urls": [
+    "https://finance.yahoo.com/markets/stocks/articles/amc-credit-upgrade-comes-catch-023300341.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Cash and cash equivalents (excluding restricted) were $778.4M at 2026-06-30.",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "Cash and cash equivalents (excluding restricted cash) of $778.4 million as of 2026-06-30.",
+    "C": "Cash and cash equivalents of $778.4m as of 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Total corporate borrowings principal (excluding leases) was $3,914.2M at 2026-06-30.",
+   "asserted_by": [
+    "E",
+    "A"
+   ],
+   "variants": {
+    "E": "Total corporate borrowings principal of $3,914.2 million (excluding lease liabilities) as of 2026-06-30.",
+    "A": "$3,914.2 million total principal amount of corporate borrowings (excluding lease liabilities) as of 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Total corporate borrowings were $3,851.6M at 2026-06-30 ($148.9M current + $3,702.7M long-term).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Total corporate borrowings of $3,851.6m as of 2026-06-30 ($148.9m current maturities plus $3,702.7m long-term corporate borrowings)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Operating cash flow was $106.9M in the six months ended 2026-06-30.",
+   "asserted_by": [
+    "E",
+    "A"
+   ],
+   "variants": {
+    "E": "Operating cash flow of $106.9 million in the six months ended 2026-06-30.",
+    "A": "Net cash provided by operating activities of $106.9 million for the six months ended 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "Capital expenditures were $91.5M in the six months ended 2026-06-30.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Capital expenditures of $91.5 million in the six months ended 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Net loss was $128.5M for the six months ended 2026-06-30.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Net loss of $128.5 million for the six months ended 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "Accounts payable were $396.7M at 2026-06-30.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Accounts payable were $396.7 million as of 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "Preliminary unaudited revenue was $1,334.8M for the two months ended 2026-08-31.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Preliminary, unaudited consolidated revenue of $1,334.8 million for the two months ended 2026-08-31 (disclosed 2026-09-21)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Preliminary unaudited cash and equivalents (excluding restricted) were $832.5M at 2026-08-31, before the October refinancing.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Preliminary, unaudited cash and cash equivalents (excluding restricted cash) of $832.5 million as of 2026-08-31, predating the October refinancing."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Working-capital deficit of $792.8M at 2026-09-30; management warned historical cash burn was unsustainable and liquidity beyond twelve months not assured.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Reported a $792.8 million working-capital deficit at 2026-09-30, and management warned historical cash burn was unsustainable and additional liquidity beyond twelve months was not assured."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Q2 2026 10-Q: management believes existing cash plus operating cash generation is sufficient for the next 12 months.",
+   "asserted_by": [
+    "E",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "E": "Stated in its Q2 2026 Form 10-Q (issued 2026-07-23) that cash plus operating cash flow is sufficient for a 12-month horizon.",
+    "A": "Q2 2026 Form 10-Q (filed 2026-07-23) states management believes existing cash plus expected operating cash generation covers operations and obligations for the next 12 months.",
+    "C": "Management stated that existing cash and cash generated from operations should be sufficient to fund operations and satisfy obligations through the next twelve months (as of 2026-06-30)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Q2 2026 10-Q management warning: historical cash burn not sustainable long-term and liquidity beyond twelve months not assured (not an auditor going-concern opinion).",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Management stated in the 2026-07-23 10-Q that historical cash burn was unsustainable long-term and that additional liquidity beyond 12 months could not be assured (not an auditor going-concern opinion).",
+    "A": "Q2 2026 Form 10-Q warned that historical cash-burn rates were not sustainable long-term and that additional liquidity beyond twelve months was not assured (management warning, not an auditor going-concern opinion)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c51",
+    "c52"
+   ]
+  },
+  {
+   "cid": "c53",
+   "claim": "Q3 2026 10-Q (as of 2026-11-04): cash plus operating cash flow expected to cover liquidity needs for 12 months (not a cash-only runway).",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Management stated, as of 2026-11-04, that cash plus operating cash flow is expected to cover liquidity needs for 12 months (not a cash-only runway)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c53",
+    "c54",
+    "c55"
+   ]
+  },
+  {
+   "cid": "c56",
+   "claim": "Q3 2026 10-Q risk factors: without sustainable net positive operating cash flow and additional liquidity AMC likely would seek an in-court or out-of-court restructuring, with equity holders likely suffering total loss in liquidation.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Q3 2026 10-Q risk factors state that without sustainable net positive operating cash flows and additional liquidity it 'likely would seek an in-court or out-of-court restructuring of our liabilities', with equity holders likely suffering a total loss in liquidation."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "As of 2026-06-30 AMC believed it was in full compliance with all debt agreements including financial covenants.",
+   "asserted_by": [
+    "E",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "E": "Management stated it believed the company was in full compliance with all agreements, including financial covenants, at 2026-06-30.",
+    "A": "AMC stated it believed it was in full compliance with outstanding debt agreements and covenants as of 2026-06-30, and its Form 10-Q reported no defaults upon senior securities.",
+    "C": "AMC stated it was in full compliance with all agreements, including covenants, governing its outstanding debt as of 2026-06-30."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "Q2 2026 10-Q reported no defaults upon senior securities (Item 3: None).",
+   "asserted_by": [
+    "E",
+    "A"
+   ],
+   "variants": {
+    "E": "Form 10-Q for the quarter ended 2026-06-30 reported no defaults upon senior securities (Item 3: None).",
+    "A": "...its Form 10-Q reported no defaults upon senior securities."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "Management reported full debt-covenant compliance as of 2026-09-30.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "AMC management reported full debt-covenant compliance as of 2026-09-30, and the 10-Q reported no defaults upon senior securities."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "Q3 2026 10-Q reported no defaults upon senior securities.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "...the 10-Q reported no defaults upon senior securities.",
+    "F": "Q3 2026 10-Q shows no going-concern qualification and no default under Item 3 'Defaults Upon Senior Securities'; CFO Sean Goodman remained in office through the Q3 2026 earnings call."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c61",
+   "claim": "AMC paid scheduled interest and redeemed notes in cash on due dates (e.g., $125.5M subordinated notes Jul 24, 2026; $355.5M tender Oct 5, 2026); no supplier liens, suits, judgments or missed payments found in last 12 months.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC paid scheduled interest and redeemed notes in cash on due dates (e.g., $125.5M subordinated notes redeemed Jul 24, 2026; $355.5M tender paid Oct 5, 2026); no supplier liens, collection suits, judgments or missed payments found in the last 12 months."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c62",
+   "claim": "On Oct 5, 2026 AMC completed a ~$3.97B refinancing.",
+   "asserted_by": [
+    "F",
+    "E",
+    "A",
+    "C",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "On Oct 5, 2026 AMC closed a $3.97B refinancing covering ~97% of its debt, issuing $2,000.0M 8.875% First Lien Notes due 2031, $850.0M new first-lien term loans due 2031 and $1,120.0M 11.25% second-lien term loans due 2033.",
+    "E": "On 2026-10-05 completed a $3.97 billion refinancing: $2 billion 8.875% first-lien notes due 2031, $850 million first-lien term loan due 2031, and $1.12 billion 11.25% second-lien term loan due 2033, with term loans issued at 1.5% and 1% OID respectively; this is refinancing, not incremental liquidity.",
+    "A": "On 2026-10-05 AMC completed $3.97 billion of refinancing, including $2.0 billion of 8.875% first-lien notes due 2031.",
+    "C": "On 2026-10-05 completed a $3.97bn refinancing: $2.0bn first-lien notes due 2031, an $850m first-lien term loan, and a $1.12bn second-lien term loan due 2033.",
+    "D": "Completed a $3.97 billion refinancing on 2026-10-05, comprising $2 billion first-lien notes due 2031, an $850 million first-lien term facility and a $1.12 billion second-lien term facility, extending major maturities to 2031 and 2033.",
+    "B": "Completed a refinancing of about $3.97B (roughly 97% of its debt) on 2026-10-05, a market refinancing rather than a distressed exchange, removing the 2029 maturity wall."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c63",
+   "claim": "The refinancing included $2.0B of 8.875% first-lien notes due 2031.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F",
+    "E"
+   ],
+   "variants": {
+    "A": "...$2.0 billion of 8.875% first-lien notes due 2031.",
+    "B": "New debt includes $2.0B of 8.875% first-lien notes due October 2031.",
+    "F": "issuing $2,000.0M 8.875% First Lien Notes due 2031",
+    "E": "$2 billion 8.875% first-lien notes due 2031"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c64",
+   "claim": "The refinancing included an $850M first-lien term loan due October 2031.",
+   "asserted_by": [
+    "A",
+    "F",
+    "E"
+   ],
+   "variants": {
+    "A": "AMC entered an $850 million first-lien term loan due 2031-10-05.",
+    "F": "$850.0M new first-lien term loans due 2031",
+    "E": "$850 million first-lien term loan due 2031"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c65",
+   "claim": "The $850M first-lien term loan is priced at SOFR+450bp.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "An $850M first-lien term loan at SOFR+450bp due October 2031."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c66",
+   "claim": "The refinancing included a $1.12B 11.25% second-lien term loan due 2033.",
+   "asserted_by": [
+    "A",
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "A $1.12 billion second-lien term loan at 11.25% due 2033-10-05.",
+    "F": "$1,120.0M 11.25% second-lien term loans due 2033",
+    "E": "$1.12 billion 11.25% second-lien term loan due 2033"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c66",
+    "c67"
+   ]
+  },
+  {
+   "cid": "c68",
+   "claim": "The refinancing covered ~97% of debt, extending maturities to 2031/2033.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "According to AMC management, approximately 97% of debt maturities were extended to 2031/2033 through the October 2026 refinancing.",
+    "F": "closed a $3.97B refinancing covering ~97% of its debt"
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c69",
+   "claim": "Term loans in the refinancing were issued with OID of 1.5% (first lien) and 1% (second lien).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "term loans issued at 1.5% and 1% OID respectively"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c70",
+   "claim": "The refinancing repaid the existing AMC and Odeon term loans in full.",
+   "asserted_by": [
+    "F",
+    "E",
+    "A",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "repaid in full its existing AMC term loan facility (July 2024 credit agreement) and the Odeon Term Loan Facility.",
+    "E": "repaid the existing AMC and Odeon term loans.",
+    "A": "repaid existing AMC and Odeon term loans, settled the tender offer, and redeemed all $903.4 million of Muvico 1.5L notes.",
+    "C": "used refinancing proceeds and cash to ... repay AMC and Odeon term loans.",
+    "B": "used the refinancing proceeds to ... repay the AMC and Odeon Finco term loans."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c71",
+   "claim": "Tender for 7.500% Senior Secured Notes due 2029 settled Oct 5, 2026: $355.515M tendered (~98.8% of $359.9645M outstanding); remainder redeemable ~Feb 15, 2027 at 100%.",
+   "asserted_by": [
+    "F",
+    "E",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "$355,515,000 tendered (~98.8% of $359,964,500 outstanding); remainder redeemable on/about Feb 15, 2027 at 100%.",
+    "E": "Tender offer settled for $355.515 million of 7.5% notes due 2029, with remaining notes defeased for redemption around February 15, 2027.",
+    "C": "Approximately 98.8% of secured notes were tendered; used proceeds to tender for existing 7.5% secured notes and redeem remaining notes in February 2027.",
+    "B": "Used proceeds to pay off the 7.500% senior secured notes due 2029."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c72",
+   "claim": "Muvico's $903.4M senior secured notes due 2029 were redeemed in the October 2026 refinancing.",
+   "asserted_by": [
+    "F",
+    "E",
+    "A",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "F": "redeemed in full Muvico's $903.4M Senior Secured Notes due 2029 at 100%",
+    "E": "redeemed subsidiary Muvico's $903.4 million notes at par ... and accrued interest",
+    "A": "redeemed all $903.4 million of Muvico 1.5L notes",
+    "C": "redeem Muvico's $903.4m notes due 2029",
+    "B": "redeem Muvico's 2029 senior secured notes"
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c73",
+   "claim": "Muvico notes redemption included a $144.3M make-whole premium.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "plus a $144.3M make-whole premium",
+    "E": "at par plus a $144.3 million make-whole premium and accrued interest"
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c74",
+   "claim": "Per Moody's (Sep 21, 2026), the refinancing repays ~$3.7B of debt (excluding ~$116M Muvico second-lien exchangeable notes due 2030), raises gross debt by over $170M, extends weighted average maturity from ~3 to ~6 years and cuts weighted average borrowing cost from ~11% toward ~9%.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Per Moody's (Sep 21, 2026), AMC Entertainment's refinancing repays ~$3.7B of existing debt (excluding ~$116M Muvico second-lien exchangeable notes due 2030), raises gross debt by over $170M, extends weighted average maturity from ~3 to ~6 years and cuts weighted average borrowing cost from ~11% toward ~9%."
+   },
+   "urls": [
+    "https://investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c76",
+   "claim": "AMC fully redeemed its $125.5M 6.125% Senior Subordinated Notes due 2027 on 2026-07-24.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Redeemed all $125.5 million of its senior subordinated notes due 2027 on 2026-07-24.",
+    "B": "Fully redeemed $125.5M of its 6.125% Senior Subordinated Notes due 2027 on 2026-07-24."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1411579/000110465926077513/tm2618471d2_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c75",
+    "c76"
+   ]
+  },
+  {
+   "cid": "c77",
+   "claim": "In June 2026 about $156M of exchangeable noteholders voluntarily converted into common stock; AMC anticipated no material debt principal repayments before 2029.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In June 2026 about $156M of AMC Entertainment's exchangeable noteholders voluntarily converted into common stock; AMC anticipated no material debt principal repayments before 2029."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1411579/000110465926077513/tm2618471d2_ex99-1.htm"
+   ],
+   "conflicts_with": [
+    "c78"
+   ]
+  },
+  {
+   "cid": "c78",
+   "claim": "On 2026-05-11 holders exchanged all $155.845562M of Muvico New Exchangeable Notes for 142,102,295 AMC shares plus accrued interest; AMC recorded a $33.0M loss on extinguishment.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "On 2026-05-11 holders exchanged all $155.845562m of Muvico New Exchangeable Notes for 142,102,295 AMC common shares plus accrued interest; AMC recorded a $33.0m loss on extinguishment."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": [
+    "c77"
+   ]
+  },
+  {
+   "cid": "c79",
+   "claim": "On 2026-04-17 Odeon Finco borrowed $425M of new term loans maturing 2031 and used proceeds plus ~$38.2M cash to redeem Odeon notes due 2027 and related costs (~$23.5M interest).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "On 2026-04-17 Odeon Finco (AMC) borrowed $425m of new term loans maturing 2031 and used proceeds plus about $38.2m of cash to redeem Odeon notes due 2027 and related costs, including about $23.5m of interest."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c80",
+   "claim": "On 2026-01-29 AMC entered a lender letter agreement for indenture amendments to facilitate refinancing of AMC and Odeon debt, targeted by 2026-02-23, with consent fee payable in common stock; not described as a default or covenant-breach cure.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2026-01-29 AMC Entertainment entered a lender letter agreement providing for indenture amendments to facilitate refinancing of existing AMC and Odeon debt, targeted for implementation by 2026-02-23, with a consent fee payable in common stock; not described as a default or covenant-breach cure."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000110465926007682/tm264399d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c81",
+   "claim": "Reuters (2026-01-29): AMC reached a deal with some creditors, including Odeon creditors, to clear the path for refinancing to cut interest and extend maturities.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Reuters reported on 2026-01-29 that AMC Entertainment reached a deal with some creditors, including Odeon creditors, to clear the path for debt refinancing intended to cut interest payments and extend maturities."
+   },
+   "urls": [
+    "https://www.reuters.com/business/media-telecom/theater-company-amc-expects-another-loss-strikes-deal-with-creditors-2026-01-29/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c82",
+   "claim": "Reuters (2026-01-29): AMC forecast a $127.4M Q4 loss, its ninth consecutive quarterly loss.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Reuters reported on 2026-01-29 that AMC Entertainment forecast a $127.4m fourth-quarter loss, which would be its ninth consecutive quarterly loss, amid pandemic-era debt and uneven box-office recovery."
+   },
+   "urls": [
+    "https://www.reuters.com/business/media-telecom/theater-company-amc-expects-another-loss-strikes-deal-with-creditors-2026-01-29/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c83",
+   "claim": "On Jul 25, 2025 AMC closed a second liability-management transaction in a year ('LME 2.0'), incl. ~$244.4M new-money financing from consenting 7.5% noteholders, supported by ~90% of term loan lenders.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On Jul 25, 2025 AMC Entertainment closed a second liability-management transaction in a year ('LME 2.0'), including ~$244.4M new-money financing from consenting 7.5% noteholders, supported by ~90% of term loan lenders."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/393/amc-entertainment-holdings-inc-announces-successful-closing-of-comprehensive-refinancing-transactions-that-strengthen-the-balance-sheet-and-position-the-company-to-prosper-from-robust-box-office-recovery"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c84",
+   "claim": "In LME 2.0 AMC exchanged $590.0M of 7.5% Senior Secured Notes due 2029 into $857.0M new Senior Secured Notes due Feb 19, 2029 (cash+PIK).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In LME 2.0 (Jul 2025) AMC exchanged $590.0M of 7.5% Senior Secured Notes due 2029 into $857.0M new Senior Secured Notes due Feb 19, 2029 (cash+PIK)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/393/amc-entertainment-holdings-inc-announces-successful-closing-of-comprehensive-refinancing-transactions-that-strengthen-the-balance-sheet-and-position-the-company-to-prosper-from-robust-box-office-recovery"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c85",
+   "claim": "In LME 2.0 at least $143.0M of 6.00%/8.00% Cash/PIK Toggle Senior Secured Exchangeable Notes due 2030 were equitized into 79.8M shares.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In LME 2.0 (Jul 2025) at least $143.0M of AMC Entertainment's 6.00%/8.00% Cash/PIK Toggle Senior Secured Exchangeable Notes due 2030 were equitized into 79.8M shares."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/393/amc-entertainment-holdings-inc-announces-successful-closing-of-comprehensive-refinancing-transactions-that-strengthen-the-balance-sheet-and-position-the-company-to-prosper-from-robust-box-office-recovery"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c86",
+   "claim": "In LME 2.0 AMC redeemed its 2026 maturities (5.875% senior subordinated notes and 10%/12% Second Lien notes, ~$173.1M).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In LME 2.0 (Jul 2025) AMC Entertainment redeemed its 2026 maturities (5.875% senior subordinated notes and 10%/12% Second Lien notes, ~$173.1M)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/news-events/press-releases/detail/393/amc-entertainment-holdings-inc-announces-successful-closing-of-comprehensive-refinancing-transactions-that-strengthen-the-balance-sheet-and-position-the-company-to-prosper-from-robust-box-office-recovery"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "On Jul 24, 2025 AMC settled and dismissed with prejudice the intercreditor litigation A Holdings - B LLC v. GLAS Trust Company and AMC (Case No. 654878/2024) by legacy 7.5% 2029 noteholders, with mutual releases.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On Jul 24, 2025 AMC Entertainment settled and dismissed with prejudice the intercreditor litigation A Holdings - B LLC, et al. v. GLAS Trust Company LLC and AMC Entertainment Holdings, Inc. (Case No. 654878/2024, NY Sup. Ct.) brought by legacy 7.5% 2029 noteholders over the 2024 transactions, with mutual releases."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1411579/000110465925070547/tm2521633d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c88",
+   "claim": "New exchangeable notes carried penalty-rate coupons (up to 9.50% cash + 3.50% PIK) if shareholder approval was not obtained by Dec 10, 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC Entertainment's new exchangeable notes carried penalty-rate coupons (up to 9.50% cash + 3.50% PIK) if shareholder approval for the underlying shares was not obtained by Dec 10, 2025."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1411579/000110465925070547/tm2521633d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c89",
+   "claim": "On Jul 23, 2024 S&P lowered AMC to 'SD' (selective default) on announcement of the July 2024 distressed-exchange transaction.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On Jul 23, 2024 S&P lowered AMC Entertainment to 'SD' (selective default) on announcement of the July 2024 distressed-exchange transaction."
+   },
+   "urls": [
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c90",
+   "claim": "On Sep 3, 2025 S&P kept AMC at 'CCC+' / negative outlook, assigning 'B-' (recovery '2', ~85%) to the $857M senior secured notes due 2029; viewed capital structure as unsustainable with ~$3.2B 2029 maturity wall.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On Sep 3, 2025 S&P kept AMC Entertainment at issuer credit rating 'CCC+' with negative outlook, assigning a 'B-' issue rating (recovery '2', ~85%) to the $857M senior secured notes due 2029; it viewed the capital structure as unsustainable with a ~$3.2B 2029 maturity wall."
+   },
+   "urls": [
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434791"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c91",
+   "claim": "On Jul 28, 2026 S&P upgraded AMC's issuer credit rating to 'B-' from 'CCC+' with Stable outlook (from Negative).",
+   "asserted_by": [
+    "F",
+    "E",
+    "A",
+    "C",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "On Jul 28, 2026 S&P upgraded AMC Entertainment Holdings' issuer credit rating to 'B-' from 'CCC+', outlook stable.",
+    "E": "On 2026-07-28 S&P upgraded AMC's issuer rating to B- from CCC+ and changed the outlook to Stable from Negative.",
+    "A": "S&P upgraded AMC's issuer credit rating to B-/Stable from CCC+/Negative (2026-07-28) on improved operating performance and expected credit-metric improvement.",
+    "C": "On 2026-07-28 S&P upgraded AMC's issuer credit rating to B- from CCC+ with a Stable outlook, citing improved operating performance and an expected path to sustained positive reported free cash flow.",
+    "D": "S&P upgraded AMC's issuer credit rating to B- from CCC+ with a Stable outlook (reported 2026-07-30), citing improved operating performance, debt reduction and a pathway to sustainable positive free cash flow.",
+    "B": "S&P raised AMC's issuer credit rating to B- from CCC+ with a stable outlook (article published 2026-07-30), citing better operating performance, lower debt (largely via equity issuance and debt-to-equity conversions) and a path to sustained positive free cash flow."
+   },
+   "urls": [
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3601652",
+    "https://www.thestreet.com/entertainment/amc-credit-upgrade-comes-with-a-catch",
+    "https://finance.yahoo.com/markets/stocks/articles/amc-credit-upgrade-comes-catch-023300341.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c92",
+   "claim": "S&P's Jul 2026 issue-rating upgrades: first-lien term loan 'B+', Muvico and 7.5% AMC secured notes 'B-', Odeon first-lien term loan 'B', exchangeable notes 'CCC'.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "S&P's Jul 2026 issue-rating upgrades for AMC: first-lien term loan to 'B+', Muvico and 7.5% AMC secured notes to 'B-', Odeon first-lien term loan to 'B', exchangeable notes to 'CCC'."
+   },
+   "urls": [
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c93",
+   "claim": "S&P assesses liquidity as adequate (sources exceed uses by >3.5x over 12 months; nearest maturity 2029) but a highly leveraged profile: ~$3.8B debt, >$450M annual interest, $850M rent.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "S&P assesses AMC Entertainment's liquidity as adequate (sources exceed uses by >3.5x over next 12 months; nearest maturity 2029) but a highly leveraged financial risk profile: ~$3.8B debt, >$450M annual interest expense, $850M rent."
+   },
+   "urls": [
+    "https://finance.yahoo.com/markets/stocks/articles/amc-credit-upgrade-comes-catch-023300341.html",
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c93",
+    "c94"
+   ]
+  },
+  {
+   "cid": "c95",
+   "claim": "On 2026-07-28 S&P expected a modest free-cash-flow deficit in 2026 and positive reported FCF in 2027 (pre-refinancing estimates, >$450M interest, $850M rent).",
+   "asserted_by": [
+    "E",
+    "B"
+   ],
+   "variants": {
+    "E": "S&P expected AMC to post a modest free-cash-flow deficit in 2026 and positive reported free cash flow in 2027, citing over $450 million of annual interest and $850 million of rent (pre-refinancing estimates).",
+    "B": "...a modest free-cash-flow deficit in 2026 and about $75M positive in 2027."
+   },
+   "urls": [
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3601652",
+    "https://finance.yahoo.com/markets/stocks/articles/amc-credit-upgrade-comes-catch-023300341.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c96",
+   "claim": "On 2026-09-21 S&P affirmed AMC's B- issuer rating with Stable outlook.",
+   "asserted_by": [
+    "E",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "E": "On 2026-09-21 S&P affirmed AMC's issuer credit rating at B- with Stable outlook.",
+    "C": "On 2026-09-21 S&P said AMC's B- issuer rating and Stable outlook were unchanged.",
+    "D": "S&P affirmed AMC's issuer credit rating at B- with a Stable outlook (2026-09-21, per Cbonds); latest verified S&P action."
+   },
+   "urls": [
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3630718",
+    "https://cbonds.com/news/4100115/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c97",
+   "claim": "On 2026-09-21 S&P rated proposed first-lien term loan and first-lien notes B+ (recovery 1) and the proposed second-lien term loan CCC (recovery 6).",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "new first-lien term loan and notes rated B+ and new second-lien term loan rated CCC.",
+    "C": "On 2026-09-21 S&P assigned B+ / recovery 1 to the proposed $850m first-lien term loan and $2bn first-lien notes due 2031, and CCC / recovery 6 to the proposed $1.12bn second-lien term loan due 2033."
+   },
+   "urls": [
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3630718"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c98",
+   "claim": "On 2026-09-21 S&P upgraded AMC's $116M second-lien exchangeable notes due 2030 to B- from CCC.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "On 2026-09-21 S&P upgraded AMC Entertainment's $116m second-lien exchangeable notes due 2030 to B- from CCC."
+   },
+   "urls": [
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3630718"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c99",
+   "claim": "On Sep 8, 2026 Fitch assigned AMC a first-time Long-Term IDR of 'B-' with Positive Outlook.",
+   "asserted_by": [
+    "F",
+    "E",
+    "C",
+    "A"
+   ],
+   "variants": {
+    "F": "On Sep 8, 2026 Fitch assigned AMC Entertainment Holdings, Muvico LLC and Odeon Finco PLC first-time Long-Term IDRs of 'B-' with Positive Outlook.",
+    "E": "On 2026-09-08 Fitch (per secondary source FrankNez, lower confidence) assigned AMC a first-time long-term issuer default rating of B- with Positive outlook.",
+    "C": "On 2026-09-08 Fitch assigned AMC a first-time Long-Term Issuer Default Rating of B- with a Positive Outlook.",
+    "A": "Fitch's issuer history records a new B- rating on 2026-09-08."
+   },
+   "urls": [
+    "https://fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+    "https://franknez.com/amc-now-gets-massive-upgrade-by-fitch-ratings/",
+    "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c100",
+   "claim": "Fitch's Sep 2026 instrument ratings: first-lien senior notes B-/RR4, senior secured term loan B/RR3, Muvico exchangeable notes CCC/RR6.",
+   "asserted_by": [
+    "F",
+    "C"
+   ],
+   "variants": {
+    "F": "Fitch's Sep 2026 AMC instrument ratings: first-lien senior notes 'B-'/'RR4', senior secured term loan 'B'/'RR3', Muvico exchangeable notes 'CCC'/'RR6'.",
+    "C": "first-lien senior notes B-/RR4, senior secured term loan B RR3, Muvico exchangeable notes CCC/RR6."
+   },
+   "urls": [
+    "https://fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+    "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c101",
+   "claim": "Fitch affirmed AMC's long-term IDR at B- with Positive outlook on 2026-09-21.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Fitch long-term issuer default rating affirmed at B- with Positive outlook (2026-09-21).",
+    "D": "Fitch affirmed AMC's long-term foreign-currency rating at B- with a Positive outlook (2026-09-21, per Cbonds); latest verified Fitch action."
+   },
+   "urls": [
+    "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026",
+    "https://cbonds.com/news/4100181/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c102",
+   "claim": "Fitch rated AMC's new first-lien debt B/RR3 (2026-09-21).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Fitch rated AMC Entertainment's new first-lien debt B/RR3 (2026-09-21)."
+   },
+   "urls": [
+    "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c103",
+   "claim": "Fitch rated AMC's second-lien debt CCC/RR6 (2026-09-21).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Fitch rated AMC Entertainment's second-lien debt CCC/RR6 (2026-09-21)."
+   },
+   "urls": [
+    "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c104",
+   "claim": "Fitch calculates leverage at 6.5x EBITDA / 4.7x EBITDAR at 2Q26, down from 10.9x / 5.8x in Dec 2025.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Fitch calculates AMC Entertainment leverage at 6.5x EBITDA / 4.7x EBITDAR at 2Q26, down from 10.9x / 5.8x in Dec 2025."
+   },
+   "urls": [
+    "https://fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+    "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c104",
+    "c105"
+   ]
+  },
+  {
+   "cid": "c106",
+   "claim": "Fitch flags negative FCF over the last four years, high debt with weak interest coverage, seasonal liquidity sensitivity, and a complex multi-tiered capital structure requiring creditor consents.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Fitch flags AMC Entertainment's negative free cash flow over the last four years, high debt with weak interest coverage, seasonal liquidity sensitivity, and a complex multi-tiered capital structure requiring creditor consents."
+   },
+   "urls": [
+    "https://fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+    "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c106",
+    "c107"
+   ]
+  },
+  {
+   "cid": "c108",
+   "claim": "Fitch notes ~86% of AMC's debt matured in 2029/2030 (exchangeable notes 2030, Odeon term loan 2031), a maturity wall management intends to address within 12-18 months.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Fitch notes ~86% of AMC Entertainment's debt matured in 2029/2030 (exchangeable notes 2030, Odeon term loan 2031), a maturity wall management intends to address within 12-18 months."
+   },
+   "urls": [
+    "https://fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+    "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c108",
+    "c109"
+   ]
+  },
+  {
+   "cid": "c110",
+   "claim": "Fitch noted AMC closed underperforming theatres as part of portfolio optimization.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Fitch noted AMC Entertainment had closed underperforming theatres as part of portfolio optimization."
+   },
+   "urls": [
+    "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c111",
+   "claim": "On Sep 21, 2026 Moody's upgraded AMC's Corporate Family Rating to B3 from Caa2, outlook to Positive from Stable.",
+   "asserted_by": [
+    "F",
+    "E",
+    "A",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "On Sep 21, 2026 Moody's upgraded AMC Entertainment's Corporate Family Rating to B3 from Caa2 and changed outlook to positive from stable.",
+    "E": "On 2026-09-21 Moody's (as reported by Investing.com) upgraded AMC's CFR to B3 from Caa2, outlook Positive from Stable, and SGL rating to SGL-3 from SGL-4.",
+    "A": "Moody's upgraded AMC's corporate family rating to B3 from Caa2, with outlook changed to Positive from Stable (reported 2026-09-21 via secondary source Investing.com).",
+    "D": "Moody's upgraded AMC's Corporate Family Rating to B3 from Caa2 on 2026-09-21, with outlook changed to Positive from Stable.",
+    "B": "Moody's raised AMC's Corporate Family Rating to B3 from Caa2 on 2026-09-21, tied to the refinancing plan, and changed the outlook to positive from stable."
+   },
+   "urls": [
+    "https://investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+    "https://ca.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4846840"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c112",
+   "claim": "On Sep 21, 2026 Moody's upgraded AMC's Speculative Grade Liquidity rating to SGL-3 from SGL-4.",
+   "asserted_by": [
+    "F",
+    "E",
+    "A",
+    "D",
+    "B"
+   ],
+   "variants": {
+    "F": "Moody's upgraded AMC Entertainment's Speculative Grade Liquidity rating to SGL-3 from SGL-4 on Sep 21, 2026.",
+    "E": "...and speculative-grade liquidity rating to SGL-3 from SGL-4.",
+    "A": "Moody's improved AMC's speculative-grade liquidity rating to SGL-3 from SGL-4 (reported 2026-09-21 via secondary source).",
+    "D": "Moody's upgraded AMC's liquidity rating to SGL-3 from SGL-4 on 2026-09-21.",
+    "B": "Moody's raised AMC's speculative-grade liquidity rating to SGL-3 from SGL-4 on 2026-09-21."
+   },
+   "urls": [
+    "https://investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+    "https://ca.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4846840"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c113",
+   "claim": "Moody's assigned B1 ratings to AMC's new first-lien term loan(s) and first-lien notes due 2031 (2026-09-21).",
+   "asserted_by": [
+    "D",
+    "B"
+   ],
+   "variants": {
+    "D": "Moody's assigned B1 ratings to AMC Entertainment's new first-lien term loans and notes due 2031 (2026-09-21).",
+    "B": "Moody's rated AMC's new first-lien term loan B and first-lien notes due 2031 at B1 (2026-09-21)."
+   },
+   "urls": [
+    "https://ca.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4846840",
+    "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c114",
+   "claim": "Moody's expects leverage to decline toward the mid-to-low 4x range over 12-18 months and positive annual FCF in 2026 'for the first time in many years.'",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Moody's expects AMC Entertainment leverage to decline toward the mid-to-low 4x range over 12-18 months and positive annual free cash flow in 2026 'for the first time in many years.'"
+   },
+   "urls": [
+    "https://investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c115",
+   "claim": "CEO stated in Q3 2026 release (2026-11-04) that major rating agencies had 'meaningfully upgraded our credit rating.'",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC's CEO stated in the Q3 2026 release (2026-11-04) that the major credit rating agencies had 'meaningfully upgraded our credit rating.'"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c116",
+   "claim": "AMC closed three theaters in Q3 2026; 228 locations closed vs 66 opened since 2020 (net reduction of 159 theaters since 2020 per S&P).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AMC Entertainment closed three theaters in Q3 2026; 228 locations closed versus 66 opened since 2020 under a multiyear optimization program (net reduction of 159 theaters since 2020 per S&P)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/amc/transcripts/710468-q3-2026"
+   ],
+   "conflicts_with": [
+    "c117"
+   ]
+  },
+  {
+   "cid": "c117",
+   "claim": "AMC closed 3 theatres in Q3 2026; since 2020, 228 closed and 66 opened, a net reduction of about 162 (~16% of the circuit).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC Entertainment closed 3 theatres in Q3 2026; since 2020, 228 locations have closed and 66 opened, a net reduction of about 162 (around 16% of the circuit)."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [
+    "c116"
+   ]
+  },
+  {
+   "cid": "c118",
+   "claim": "Net closures of 25 screens in Q3 2026 and 43 year-to-date; theatre count fell to 840 from 856 a year earlier.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "AMC reported net closures of 25 screens in the quarter ended 2026-09-30 and 43 year-to-date; theatre count declined to 840 from 856 a year earlier."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c119",
+   "claim": "FY2025 non-cash long-lived-asset impairments of $43.5M affecting 47 U.S. and 20 international theatres.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "AMC recorded FY2025 non-cash long-lived-asset impairments of $43.5 million, affecting 47 U.S. theatres and 20 international theatres."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000016/amc-20251231x10k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c120",
+   "claim": "2025 annual report disclosed $3.6M of merger, acquisition and other costs attributable to U.S. severance.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "AMC's 2025 annual report disclosed $3.6 million of merger, acquisition and other costs attributable to U.S. severance (historical restructuring)."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000016/amc-20251231x10k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c121",
+   "claim": "Ernst & Young issued an unqualified audit opinion on AMC's 2025 financial statements and has been auditor since 2020.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Ernst & Young issued an unqualified audit opinion on AMC Entertainment's 2025 financial statements and has served as auditor since 2020."
+   },
+   "urls": [
+    "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000016/amc-20251231x10k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c122",
+   "claim": "Management says ~$2B of debt and deferred theatre rent has been repaid since 2020 and it will keep paying down debt.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC management says about $2B of debt and deferred theatre rent has been repaid since 2020 and that it will keep paying down debt."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c123",
+   "claim": "Management said it will keep using equity financings 'when it makes sense,' so further dilution is possible.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC Entertainment management said it will keep using equity financings 'when it makes sense,' so further shareholder dilution is possible."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c124",
+   "claim": "About 85 leases come up for renewal each year; underperforming sites may close if the lease cannot be renegotiated.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "About 85 AMC Entertainment leases come up for renewal each year, and underperforming sites may close if the lease cannot be renegotiated."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c125",
+   "claim": "AMC is cutting European overhead, with more than $10M of potential savings.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "AMC Entertainment is cutting European overhead, with more than $10M of potential savings."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000016/amc-20251231x10k.htm",
+   "note": "The 10-K and 8-K press releases show Class A common stock trading on the NYSE as AMC.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The 10-Q cover shows 892,604,638 shares at Nov 3, 2026. The largest holders are about 6-7.5%, so there is no controlling holder.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "NYSE-listed, widely held, with no sponsor or change of control in the filings.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "A public NYSE company; the Q2 10-Q shows no change of control.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-093412/tm264130-4_def14a.htm",
+   "note": "The 2026 proxy lists Pentwater (7.13%) and Discovery (6.22%) as beneficial holders.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000075/0001411579-26-000075.pdf",
+   "note": "No passage addresses it; this matches my recollection that Wanda acquired AMC in 2012 and sold down its stake in 2021. It is old history.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/amc-credit-upgrade-comes-catch-023300341.html",
+   "note": "The article gives 892.6M shares at July 22, citing ATM sales, direct offerings and debt conversions as the dilution.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Q3 revenue of $1,711.1M versus $1,300.2M, up 31.6%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "9M revenue of $4,353.2M versus $3,560.6M, shown in the earnings release table.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "The operating income figure is not shown in the excerpts, but it is plausible against Q3 revenue of $1,711.1M and Adjusted EBITDA of $347.5M.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "The figures are not shown in the excerpts but are consistent with 9M Adjusted EBITDA of $707.2M versus $254.3M.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm",
+   "note": "Q3 Adjusted EBITDA of $347.5M versus $122.5M, up 183.7%, a record.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm",
+   "note": "9M Adjusted EBITDA of $707.2M versus $254.3M, up 178.1%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Q3 net earnings of $109.3M versus a net loss of $298.2M.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Q3 release states cash of $751.9M excluding $39.6M restricted, up 105.5%; the $428.5M Dec 2025 comparison also matches the release.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Corporate borrowings of $3,747.4M match the release; the 10-Q shows $24.0M current and $3,701.7M plus the $21.7M derivative, which equals $3,723.4M long-term.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Principal amount of $3,782.6M is shown in the balance sheet data.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "New debt of $2,000M + $850M + $1,120M = $3,970M, plus about $116M of remaining exchangeable notes, gives about $4,086M. No passage states the figure directly.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+   "note": "Moody's cites pro forma gross debt of approximately $4.139B.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+   "note": "The $3.97B refinancing covered about 97% of debt, which implies roughly $4B total; Aron's exact wording is not shown in the passages.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Finance lease liabilities of $50.7M appear in the balance sheet data.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The 10-Q balance sheet shows a deficit of $(1,343.1)M against $(1,894.8)M at Dec 31, 2025.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Operating cash flow of $283.5M versus $(246.5)M is stated in the release.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "The filed $283.5M versus $(246.5)M is confirmed; the transcript's $284.5M is not shown in the passages and is probably a transcription slip.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Q3 operating cash flow of $176.6M versus $(14.9)M is stated in the release.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/amc/transcripts/710468-q3-2026",
+   "note": "Q3 free cash flow of $109.3M is stated; the $(81.1)M prior-year figure is consistent with the stated improvement of more than $190M.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "Q3 release states year-to-date free cash flow of $124.7M.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true"
+   }
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.thestreet.com/entertainment/amc-credit-upgrade-comes-with-a-catch",
+   "note": "No passage shows the 9M $346.1M, PIK or cash-interest figures; plausible given H1 interest expense of $275.9M plus roughly $70M in Q3.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "Equity issuances raised liquidity in H1; the $334.6M figure is plausible but not directly shown in the passages.",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.thestreet.com/entertainment/amc-credit-upgrade-comes-with-a-catch",
+   "note": "Q2 revenue of $1.60B, up 14.2%, is consistent with $1,596.7M.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+   "note": "Derived from Q2 pre-tax loss of $8.0M plus other expense of $246.1M, which gives $238.1M.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "10-Q shows Q2 Adjusted EBITDA of $321.4M.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.thestreet.com/entertainment/amc-credit-upgrade-comes-with-a-catch",
+   "note": "Q2 net loss of $11.4M is confirmed by the 10-Q and press.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "10-Q states cash and cash equivalents of $778.4M at 6/30/2026.",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+   "note": "A provider excerpt shows total principal of corporate borrowings of $3,914.2M; it predates the October refinancing.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "Carrying value is plausible below principal of $3,914.2M after discounts; not directly shown in the passages.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "10-Q cash flow table shows operating activities of $106.9M for the six months.",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "10-Q states a net loss of $128.5M for the six months ended 6/30/2026.",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+   "note": "The 8-K exhibit dated 2026-09-21 shows consolidated revenue of $1,334.8M for the two months ended 2026-08-31, up 42.2%.",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+   "note": "Cash of $832.5M excluding $40.9M restricted at 2026-08-31 is confirmed, and the refinancing closed 2026-10-05.",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+   "note": "This is AMC's standard 10-Q liquidity statement and three systems assert it; the passages do not quote it directly.",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+   "note": "The provider excerpt quotes 'Our historical cash burn rates are not sustainable long-term' from the Q2 10-Q; this is a management warning, not an auditor opinion.",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "AMC's standard 12-month liquidity statement is expected in the Q3 10-Q filed 2026-11-04; the passages do not quote it directly.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The restructuring and total-loss risk-factor language is standard in AMC filings; its presence in the Q3 10-Q is not directly shown.",
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "Full covenant compliance is AMC's standard statement and three systems assert it; no default is evident in the passages.",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "No default is evident in the Q2 10-Q, whose Item 3 appears in the table of contents; the 'None' text is not quoted.",
+   "via": "passages"
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "No default or covenant breach is evident at 2026-09-30 after the October refinancing; the compliance statement is not quoted.",
+   "via": "passages"
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "Item 3 appears in the Q3 10-Q and no default is evident; the CFO tenure in variant F is plausible but not shown.",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The July 24 redemption of $125.5M and the Oct 5 tender of $355.5M are both filed. The 'no liens, suits or judgments' part rests on absence of evidence.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c62": {
+   "cid": "c62",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+   "note": "The press release and 8-K confirm the $3.97B refinancing closed Oct 5, 2026, with the stated tranches, OIDs and ~97% coverage.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c63": {
+   "cid": "c63",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+   "note": "The 8-K confirms $2.0B of 8.875% first-lien notes maturing Oct 15, 2031.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c64": {
+   "cid": "c64",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+   "note": "The $850.0M first-lien term loan matures Oct 5, 2031.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/",
+   "note": "The CFO on the Q3 call said the first-lien term facility is priced at SOFR plus 450bp.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+   "note": "The $1,120.0M second-lien term loan is fixed at 11.25% and matures Oct 5, 2033.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true",
+    "E": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c68": {
+   "cid": "c68",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm",
+   "note": "AMC says it refinanced about 97% of its debt, extending maturities to 2031 and 2033.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The 10-Q states OID of 1.50% on the first-lien term loans and 1.00% on the second-lien term loans.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c70": {
+   "cid": "c70",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+   "note": "The 8-K confirms the existing term loan and the Odeon term loan were repaid in full at closing.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c71": {
+   "cid": "c71",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/news-events/press-releases/detail/443/amc-entertainment-holdings-inc-announces-results-of-tender-offer-the-closing-of-first-lien-notes-offering-and-new-term-loan-facilities-totaling-a-3-97-billion-refinancing-of-existing-debt",
+   "note": "$355,515,000 (~98.8% of $359,964,500) was tendered. The remainder is discharged and will be redeemed around Feb 15, 2027 at 100%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c72": {
+   "cid": "c72",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+   "note": "The $903.4M Muvico notes due 2029 were redeemed in full at closing.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c73": {
+   "cid": "c73",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+   "note": "The 8-K states redemption at 100% plus a $144.3M make-whole premium plus accrued interest.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+   "note": "The Moody's summary (Sep 21, 2026) matches on every figure: ~$3.7B repaid, gross debt up over $170M, maturity ~3 to 6 years, cost ~11% to ~9%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c76": {
+   "cid": "c76",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The Q3 10-Q confirms the full $125.5M redemption on 2026-07-24 at 100%.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "B": "true"
+   }
+  },
+  "c77": {
+   "cid": "c77",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "The exchange was delivered on May 4 and May 11, 2026, not in June. The June 25 release only supports the no-repayments-before-2029 part.",
+   "via": "passages"
+  },
+  "c78": {
+   "cid": "c78",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "The 10-Q matches the $155,845,562 principal, 142,102,295 shares and $33.0M loss. Notices were dated May 4 and May 11.",
+   "via": "passages"
+  },
+  "c79": {
+   "cid": "c79",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "The $425M Odeon term loan, ~$38.2M cash and ~$23.5M interest match the 10-Q. The loan was repaid on 2026-10-05.",
+   "via": "passages"
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926007682/tm264399d1_8k.htm",
+   "note": "The 8-K describes a Jan 29, 2026 letter agreement with a Feb 23 deadline and a consent fee paid in shares. It is not framed as a default cure.",
+   "via": "passages"
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.reuters.com/business/media-telecom/theater-company-amc-expects-another-loss-strikes-deal-with-creditors-2026-01-29/",
+   "note": "Reuters reports a deal with some creditors, including Odeon creditors, to clear the path for refinancing.",
+   "via": "passages"
+  },
+  "c83": {
+   "cid": "c83",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/news-events/press-releases/detail/393/amc-entertainment-holdings-inc-announces-successful-closing-of-comprehensive-refinancing-transactions-that-strengthen-the-balance-sheet-and-position-the-company-to-prosper-from-robust-box-office-recovery",
+   "note": "The release confirms ~$244M new money and ~90% term loan lender support. The closing was July 24 and the release is dated July 25.",
+   "via": "passages"
+  },
+  "c84": {
+   "cid": "c84",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/news-events/press-releases/detail/393/amc-entertainment-holdings-inc-announces-successful-closing-of-comprehensive-refinancing-transactions-that-strengthen-the-balance-sheet-and-position-the-company-to-prosper-from-robust-box-office-recovery",
+   "note": "$590M of 7.5% notes were exchanged for $857M of new notes due Feb 19, 2029.",
+   "via": "passages"
+  },
+  "c85": {
+   "cid": "c85",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/news-events/press-releases/detail/393/amc-entertainment-holdings-inc-announces-successful-closing-of-comprehensive-refinancing-transactions-that-strengthen-the-balance-sheet-and-position-the-company-to-prosper-from-robust-box-office-recovery",
+   "note": "$143M of exchangeable notes were equitized on July 1, 2025. The 79.8M share count is not shown in the passages.",
+   "via": "passages"
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "Both 2026 notes were redeemed in full. The ~$173.1M total is not shown in the passages.",
+   "via": "passages"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1411579/000110465925070547/tm2521633d1_8k.htm",
+   "note": "The 8-K records a settlement and mutual release, with the Intercreditor Litigation (Case No. 654878/2024) to be dismissed with prejudice.",
+   "via": "passages"
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1411579/000110465925070547/tm2521633d1_8k.htm",
+   "note": "The step-up to 9.50% cash plus 3.50% PIK applied if shareholder approval was not obtained by Dec 10, 2025. The approval was later obtained.",
+   "via": "passages"
+  },
+  "c89": {
+   "cid": "c89",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+   "note": "No passage addresses this directly. It matches S&P's July 2024 downgrade to SD after the distressed exchange.",
+   "via": "passages"
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434791",
+   "note": "S&P's Sept 3, 2025 release matches: B- issue rating, recovery 2 (~85%), CCC+ with negative outlook, ~$3.2B 2029 wall. The rating has since been superseded.",
+   "via": "passages"
+  },
+  "c91": {
+   "cid": "c91",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+   "note": "S&P July 28, 2026 upgrade to B- from CCC+, outlook stable (from negative per ratings list); all variants consistent.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+   "note": "Issue-level upgrades match the S&P release; much of this debt was refinanced Oct 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c93": {
+   "cid": "c93",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+   "note": "S&P liquidity adequate, sources/uses over 3.5x, with the ~$3.8B debt, $450M+ interest and $850M rent figures.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c95": {
+   "cid": "c95",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+   "note": "S&P expected a modest 2026 FCF deficit and positive FCF in 2027 (~$75M per TheStreet).",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c96": {
+   "cid": "c96",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3630718",
+   "note": "S&P Sept 21, 2026 said B- and stable outlook unchanged; Cbonds records it as affirmed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c97": {
+   "cid": "c97",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3630718",
+   "note": "B+/1 on first-lien loan and notes, CCC/6 on second-lien term loan.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3630718",
+   "note": "S&P upgraded the $116M exchangeable notes to B- from CCC, recovery 4 from 6.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c99": {
+   "cid": "c99",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fitchratings.com/entity/amc-entertainment-holdings-inc-82727879",
+   "note": "Fitch's page lists Sep 8, 2026 first-time B- IDR with Positive outlook.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "C": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://cbonds.com/news/4100181/",
+   "note": "Cbonds records Fitch Sept 21, 2026 B- affirmed with Positive outlook.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c102": {
+   "cid": "c102",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026",
+   "note": "Fitch headline: new first lien debt rated B/RR3, Sept 21, 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c103": {
+   "cid": "c103",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fitchratings.com/entity/amc-entertainment-holdings-inc-82727879",
+   "note": "Fitch listed the 2L term loan at CCC/RR6 0% on 21-Sep-2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c106": {
+   "cid": "c106",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+   "note": "The saved Fitch page text is only navigation boilerplate, so this rests on the Fitch first-time B- IDR rating action and the filings, which point the same way (cash burn, high debt, complex structure).",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c108": {
+   "cid": "c108",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+   "note": "The June 30 10-Q puts about 85% of debt in 2029/2030, close to Fitch's ~86%. The Oct 5 refinancing has since extended maturities, so this is largely superseded.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c110": {
+   "cid": "c110",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+   "note": "The closures are documented in the filings and S&P; the Fitch page text itself was not captured. Background context only.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c111": {
+   "cid": "c111",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+   "note": "Investing.com reports the Moody's CFR upgrade to B3 from Caa2 with the outlook changed to positive from stable on Sep 21, 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c112": {
+   "cid": "c112",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+   "note": "The same article states the SGL rating was upgraded to SGL-3 from SGL-4.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c113": {
+   "cid": "c113",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+   "note": "Moody's assigned B1 to the new five-year first-lien Term Loan B and the first-lien notes due 2031.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c114": {
+   "cid": "c114",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+   "note": "The article states both the mid-to-low 4x leverage expectation over 12-18 months and positive 2026 FCF for the first time in many years.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c115": {
+   "cid": "c115",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm",
+   "note": "The Q3 release carries the CEO's remarks and the call cites credit rating agency upgrades; the exact quoted wording was not seen in the passages.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c116": {
+   "cid": "c116",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/amc/transcripts/710468-q3-2026",
+   "note": "The call confirms 3 closures in Q3 and 228 closed vs 66 opened. S&P's own figure was a net 159 (an earlier tally); the company now says 162.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c117": {
+   "cid": "c117",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/",
+   "note": "The transcript matches exactly: 3 closed in Q3, 228 closed vs 66 opened, net 162, about 16%.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c118": {
+   "cid": "c118",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000073/amc-ex99d1.htm",
+   "note": "The release shows net screen changes of (25) for the quarter and (43) year-to-date, and 840 theatres vs 856.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c119": {
+   "cid": "c119",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000016/amc-20251231x10k.htm",
+   "note": "The 10-K states $43.5M of impairments covering 47 U.S. and 20 international theatres in 2025.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c120": {
+   "cid": "c120",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000016/amc-20251231x10k.htm",
+   "note": "The 10-K states merger, acquisition and other costs of $3.6M in 2025, relating to U.S. severance.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "evidence_cache/c9bff2fa46ccb292bbfb524cff5816567fb7aec2.md",
+   "note": "The cited 10-Q has no ownership table. The 2026 proxy shows different, later figures (Discovery 6.22%, Aron 2,437,020 shares), so the Oct 2025 figures are stale and I could not confirm them.",
+   "via": "agent"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+   "note": "The Q2 10-Q balance sheet lists finance lease liabilities of $52.6M at 6/30/2026.",
+   "via": "agent"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The Q3 10-Q lease table shows operating lease liabilities of $3,761.9M against finance leases of $50.7M.",
+   "via": "agent"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "The Q3 10-Q 9M cash flow statement shows net proceeds from equity issuances of $333.6M, against $169.6M a year earlier.",
+   "via": "agent"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+   "note": "The Q2 10-Q cash flow statement shows capital expenditures of $91.5M for the six months ended 6/30/2026.",
+   "via": "agent"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001411579-26-000059/amc-20260630x10q.htm",
+   "note": "The 10-Q balance sheet shows accounts payable of $396.7M in the June 30, 2026 column ($382.9M at Dec 31, 2025).",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "agent"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000075/amc-20260930x10q.htm",
+   "note": "Current assets of $1,021.3M against current liabilities of $1,774.5M give a deficit of about $753.2M, not $792.8M. The 'cash burn not sustainable' and 'liquidity beyond twelve months not assured' language is in the filing, but the deficit figure is wrong.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "false"
+   },
+   "via": "agent"
+  },
+  "c82": {
+   "cid": "c82",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.reuters.com/business/media-telecom/theater-company-amc-expects-another-loss-strikes-deal-with-creditors-2026-01-29/",
+   "note": "The saved Reuters page confirms the Jan 29 date and the Q4 loss forecast. Search results quote Reuters for the $127.4M figure and 'ninth straight quarterly loss', but I did not see those two details in the saved page's text.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "agent"
+  },
+  "c100": {
+   "cid": "c100",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+   "note": "The saved Fitch pages are empty shells and the live page is blocked. A search summary suggested Muvico was upgraded to B-/RR4 and first-lien debt rated B/RR3, which would contradict the claim, but that summary came from a secondary source I could not open.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "unverifiable",
+    "C": "unverifiable"
+   },
+   "via": "agent"
+  },
+  "c104": {
+   "cid": "c104",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fitchratings.com/research/corporate-finance/fitch-assigns-amc-entertainment-first-time-b-idr-outlook-positive-08-09-2026",
+   "note": "I could not read the Fitch release and found no other source for the 6.5x EBITDA and 4.7x EBITDAR leverage figures.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "unverifiable",
+    "C": "unverifiable"
+   },
+   "via": "agent"
+  },
+  "c121": {
+   "cid": "c121",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-093412/tm264130-4_def14a.htm",
+   "note": "The proxy says EY has been auditor since 2020. The 10-K text had no going-concern or qualification language I could find, so I take the opinion to be unqualified, but I did not read the audit report itself.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c122": {
+   "cid": "c122",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/",
+   "note": "The transcript says about $2 billion of debt and deferred theater rent has been repaid since 2020. It also has management saying it will continue to reduce leverage.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c123": {
+   "cid": "c123",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/",
+   "note": "The transcript quotes 'we will continue to wisely utilize equity financings when it makes sense going forward'. That fits the claim that dilution remains possible, even though management dismisses fears of endless dilution.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c124": {
+   "cid": "c124",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/",
+   "note": "Sean Goodman says about 10% of leases, around 85 a year, come up for renewal. Loss-making theaters that cannot be renegotiated may close.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c125": {
+   "cid": "c125",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/05/amc-entertainment-amc-q3-2026-earnings-call-transcript/",
+   "note": "On the Q3 2026 call (Nov 5, 2026), Adam Aron said AMC has an exercise underway in Europe to reduce overhead above the theater portfolio, with potential to save more than $10 million of operating costs. Variant B has the same substance as the main claim.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "note": "DEF 14A filed 2026-08-10 (record date 2026-07-31) lists Pentwater at 63,643,277 shares (7.13%) and Discovery Capital at 55,511,739 shares (6.22%) as holders."
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "note": "Matches the 2025 DEF 14A (as of Oct 13, 2025): Vanguard 5.95%, Discovery 5.78%, BlackRock 5.05%, Aron 975,310 shares, directors/officers as a group (19 people) under 1%. The cited Q3 2026 10-Q does not contain this table."
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "note": "Q3 2026 10-Q and earnings release show $283.5M operating cash flow for 9M 2026, vs $(246.5)M in 9M 2025."
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "note": "Q2 2026 10-Q shows a six-month net loss of $128.5M, vs $206.8M a year earlier."
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "note": "The Sept 2026 8-K exhibit gives preliminary unaudited consolidated revenue of $1,334.8M for the two months ended Aug 31, 2026."
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "false",
+   "note": "The Q2 2026 10-Q does say cash burn rates are not sustainable long-term, but its liquidity section has no in-court/out-of-court restructuring warning. That language appears in the FY2025 10-K. Low-moderate confidence: neither check read the whole 10-Q (risk factors included)."
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "note": "The Oct 2026 8-K confirms the $1,120M 2L term loan at a fixed 11.25%, maturing Oct 5, 2033. 'Keeps cost of debt high' is an interpretation."
+  },
+  "c89": {
+   "cid": "c89",
+   "verdict": "true",
+   "note": "S&P cut AMC to 'SD' from 'CCC+' on 2024-07-23 when the transaction was announced. It raised the rating back to CCC+ on 2024-08-06."
+  },
+  "c108": {
+   "cid": "c108",
+   "verdict": "unverifiable",
+   "note": "The Fitch page would not load and no other source gives the 86% figure. Fitch's rating was 'B-', not 'B'. The claim is also inconsistent: it lists an Odeon loan due 2031 under 2029/2030 maturities."
+  },
+  "c118": {
+   "cid": "c118",
+   "verdict": "true",
+   "note": "Q3 2026 release shows net screen closures of (25) for Q3 and (43) YTD, and theatres at 840 vs 856 a year earlier."
+  }
+ },
+ "scores": {
+  "parallel": {
+   "units": 28,
+   "unverifiable": 0,
+   "true": 28,
+   "wrong": 0,
+   "truth": 109,
+   "truth_weight": 319.0,
+   "coverage": 0.299,
+   "accuracy": 1.0,
+   "combined": 0.461,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 37,
+   "unverifiable": 0,
+   "true": 37,
+   "wrong": 0,
+   "truth": 109,
+   "truth_weight": 319.0,
+   "coverage": 0.448,
+   "accuracy": 1.0,
+   "combined": 0.619,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 26,
+   "unverifiable": 2,
+   "true": 24,
+   "wrong": 0,
+   "truth": 109,
+   "truth_weight": 319.0,
+   "coverage": 0.248,
+   "accuracy": 0.898,
+   "combined": 0.388,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 25,
+   "unverifiable": 0,
+   "true": 24,
+   "wrong": 1,
+   "truth": 109,
+   "truth_weight": 319.0,
+   "coverage": 0.376,
+   "accuracy": 0.93,
+   "combined": 0.536,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 33,
+   "unverifiable": 0,
+   "true": 33,
+   "wrong": 0,
+   "truth": 109,
+   "truth_weight": 319.0,
+   "coverage": 0.353,
+   "accuracy": 1.0,
+   "combined": 0.521,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 53,
+   "unverifiable": 3,
+   "true": 49,
+   "wrong": 1,
+   "truth": 109,
+   "truth_weight": 319.0,
+   "coverage": 0.538,
+   "accuracy": 0.939,
+   "combined": 0.684,
+   "metric": "F1"
+  }
+ }
+}

@@ -1,0 +1,433 @@
+{
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input_n": 2,
+ "task": "Find bootstrapped European vertical SaaS companies for logistics or freight with 50-200 employees",
+ "labels": {
+  "parallel": "A",
+  "gpt": "B",
+  "firecrawl": "C",
+  "exa": "D",
+  "opus": "E",
+  "nimble": "F"
+ },
+ "unit": "company",
+ "evidence_pages": 53,
+ "evidence_fetched": 52,
+ "retried_to_verdict": 2,
+ "unverifiable_first_pass": 2,
+ "decided_from_passages": 0,
+ "judge": "v4b",
+ "judge_cost_usd": 0.434,
+ "corrections_v2": {
+  "ownership_changes": [
+   {
+    "cid": "c10",
+    "criterion": "Independent, no PE or VC, profitable (€19.5M revenue, €1.19M net profit)",
+    "from": "pass",
+    "to": "fail",
+    "why": "It is controlled by the H2P holding, which was set up with backing from corporates GEODIS and STEF. That is a corporate-parent and corporate-investor structure, not founder or family ownership. No PE or VC is named, so confidence is medium."
+   }
+  ],
+  "cost": 0.021
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Riege Software International GmbH (riege.com) fits the thesis: Meerbusch, Germany-based, family-owned (founded 1985) SaaS transport management system (Scope) for air/ocean freight and customs, with 120+ employees (LinkedIn band 51-200), 900+ customers in 60 countries, and no VC/PE funding found.",
+   "asserted_by": [
+    "F",
+    "D",
+    "A",
+    "C",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "E": "Riege Software (riege.com) fits the thesis: family-owned, privately held cloud software for air/ocean freight and customs in Meerbusch, Germany, with about 131 employees (June 2025), growth funded internally, 900+ customers in 60 countries.",
+    "B": "Riege Software International GmbH (riege.com) fits the thesis: a family-owned, internally financed (bootstrapped) European vertical SaaS company for freight/logistics, headquartered in Meerbusch, Germany, with ~97 average employees in FY2024 (LinkedIn range 51–200); its Scope cloud TMS serves air freight, sea freight and customs, used by 900+ companies in 60 countries.",
+    "C": "Riege Software (riege.com) fits the thesis: a family-owned, unfunded, Meerbusch, Germany-based vertical SaaS company for freight forwarding and logistics (Scope cloud software for air freight, sea freight and customs), with 51–200 employees, founded 1985, and more than 900 customer companies in 60 countries.",
+    "A": "Riege Software (riege.com) fits the thesis: a family-owned, self-financed (bootstrapped) freight-forwarding SaaS company (Scope TMS for air freight, sea freight and customs) headquartered in Meerbusch, Germany, founded 1985, with approximately 101 LinkedIn-listed employees (estimate, as of 2026-11-09) and more than 900 companies using Scope in 60 countries.",
+    "D": "Riege Software (riege.com) fits the thesis: Meerbusch, Germany-based, family-owned (founded 1985) SaaS for freight forwarding and supply-chain management, with roughly 86-101 employees, no reported funding rounds, and 900+ companies in 60 countries as customers.",
+    "F": "Riege Software International GmbH (riege.com) fits the thesis: Meerbusch, Germany-based, family-owned (founded 1985) SaaS transport management system (Scope) for air/ocean freight and customs, with 120+ employees (LinkedIn band 51-200), 900+ customers in 60 countries, and no VC/PE funding found."
+   },
+   "urls": [
+    "https://www.riege.com/",
+    "https://www.riege.com/company/press/press-releases/riege-software-names-christian-riege-as-new-ceo",
+    "https://www.riege.com/company/press/press-releases/40-years-of-riege-software-from-early-start-up-to-pacemaker-of-digital-logistics"
+   ],
+   "conflicts_with": [
+    "c2",
+    "c3",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Translogica GmbH (translogica.net) fits the thesis: Innsbruck, Austria-based (founded 2004 as a University of Innsbruck spin-off) provider of a transport and document management system for freight forwarders, with ~170 employees per its own site (LinkedIn shows 73, band 51-200), privately held with no VC/PE funding found.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Translogica GmbH (translogica.net) fits the thesis: Innsbruck, Austria-based (founded 2004 as a University of Innsbruck spin-off) provider of a transport and document management system for freight forwarders, with ~170 employees per its own site (LinkedIn shows 73, band 51-200), privately held with no VC/PE funding found."
+   },
+   "urls": [
+    "https://translogica.net/ueber-uns"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Setlog GmbH (setlog.com) fits the thesis: Bochum, Germany-based, founder-owned (founded 2001) provider of OSCA cloud supply chain/logistics software used by 150+ brands, with ~50 employees (LinkedIn band 51-200, borderline at the lower edge) and no VC/PE funding found.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Setlog GmbH (setlog.com) fits the thesis: Bochum, Germany-based, founder-owned (founded 2001) provider of OSCA cloud supply chain/logistics software used by 150+ brands, with ~50 employees (LinkedIn band 51-200, borderline at the lower edge) and no VC/PE funding found."
+   },
+   "urls": [
+    "https://setlog.com/en/company"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Boltrics (boltrics.com) fits the thesis: Ede, Netherlands-based, founder/management-owned (founded 2007) provider of Microsoft-based ERP, WMS and TMS with a SaaS option for logistics service providers, with roughly 50-68 employees, no reported funding rounds, and 300+ implementations.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Boltrics (boltrics.com) fits the thesis: Ede, Netherlands-based, founder/management-owned (founded 2007) provider of Microsoft-based ERP, WMS and TMS with a SaaS option for logistics service providers, with roughly 50-68 employees, no reported funding rounds, and 300+ implementations."
+   },
+   "urls": [
+    "https://www.boltrics.com/en/our-approach/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "B2PWeb (b2pweb.com) fits the thesis: Cavaillon, France subscription freight exchange for road carriers and shippers, owned by a holding of 360 transport companies with no VC/PE, 147 employees (2025), revenue €19.5M with €1.19M net profit for FY ended 2025-06-30.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "B2PWeb (b2pweb.com) fits the thesis: Cavaillon, France subscription freight exchange for road carriers and shippers, owned by a holding of 360 transport companies with no VC/PE, 147 employees (2025), revenue €19.5M with €1.19M net profit for FY ended 2025-06-30."
+   },
+   "urls": [
+    "https://blogistics.fr/annuaire/b2pweb/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Transport Exchange Group Ltd (courierexchange.co.uk) fits the thesis: UK road-freight exchange platform (Courier Exchange, Haulage Exchange, Integra), founder Lyall Cresswell holds 75%+ per Companies House, no funding round found, about 113 employees.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Transport Exchange Group Ltd (courierexchange.co.uk) fits the thesis: UK road-freight exchange platform (Courier Exchange, Haulage Exchange, Integra), founder Lyall Cresswell holds 75%+ per Companies House, no funding round found, about 113 employees."
+   },
+   "urls": [
+    "https://find-and-update.company-information.service.gov.uk/company/03464353/persons-with-significant-control"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "SPEDION GmbH (spedion.de) fits the thesis: Krombach, Germany telematics and fleet software provider for freight carriers, founder-managers Günter Englert and Wolfram Grohse hold 40% each, no VC/PE found, 50-100 employees.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "SPEDION GmbH (spedion.de) fits the thesis: Krombach, Germany telematics and fleet software provider for freight carriers, founder-managers Günter Englert and Wolfram Grohse hold 40% each, no VC/PE found, 50-100 employees."
+   },
+   "urls": [
+    "https://handelsregister.ai/de/organizations/krombach/speditionen/spedion-gmbh-ca6fbc11b6a4b05ee9abdb6779610dff"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Vertical SaaS for logistics/freight (Scope TMS for air/sea freight and customs)",
+     "result": "pass"
+    },
+    {
+     "criterion": "European HQ (Meerbusch, Germany)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-200 employees (86-131 across sources)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Bootstrapped / family-owned, no PE or VC",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.riege.com/company/press/press-releases/riege-software-names-christian-riege-as-new-ceo",
+   "note": "Riege's own press release says it stays in family hands, run by five second-generation siblings, and founded in 1985. LinkedIn (101) and Latka (86) give headcounts inside the range. All variants A-F rest on the same facts.",
+   "via": "agent"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Vertical SaaS / software for logistics or freight",
+     "result": "pass"
+    },
+    {
+     "criterion": "European HQ",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-200 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Bootstrapped / independent, founder-owned, no VC/PE",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "translogica.net/ueber-uns (saved page); Austrian Firmenbuch entry FN 256364g on evi.gv.at; karriere.at job posting",
+   "note": "Sector: the translogica.net menu and text describe TDMS translogica (a transport management system) and the dotiga DMS, for freight forwarders and hauliers. Founded 2004 as a University of Innsbruck spin-off, HQ Innsbruck. Size: the company's own page says about 170 employees at six locations. A ...",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "retried": true
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Vertical SaaS / software for logistics or freight",
+     "result": "pass"
+    },
+    {
+     "criterion": "European HQ",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-200 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Bootstrapped / independent, founder-owned, no VC/PE",
+     "result": "fail"
+    }
+   ],
+   "core_pass": true,
+   "source": "forkliftaction.com article of 2 Nov 2023 'Rhenus acquires software outfit Setlog'; setlog.com/en/company and the 2021 Setlog press release (saved pages); search results for a 2025 press release",
+   "note": "Sector: OSCA is cloud supply chain and global logistics software (Bochum), which fits. Size: about 60 employees in 2021 and 2025, which is in range. Ownership: Rhenus Group, a large logistics operator, acquired Setlog in 2023 (terms undisclosed, per Forkliftaction). The 'founded and founder-led' ...",
+   "retried": true
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Vertical software/SaaS for logistics (ERP, WMS and TMS for logistics service providers, with a SaaS option)",
+     "result": "pass"
+    },
+    {
+     "criterion": "European HQ (Ede, Netherlands)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-200 employees (68 per Tracxn, Sep 2026)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Bootstrapped / founder-owned",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://tracxn.com/d/companies/boltrics/__1kwny02Bou0c1QVFYdu2aFJ-_ORarK62yg8xC1hvKww",
+   "note": "Tracxn says it is unfunded and founded in 2007 by Jan Bolks. Boltrics' 2025 HQ news calls Jan-Cornell van Ekris co-owner, with Bolks as managing director. Confidence is medium because ownership is inferred from this plus the unfunded status.",
+   "via": "agent"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Vertical SaaS for logistics/freight (subscription road freight exchange and platform)",
+     "result": "pass"
+    },
+    {
+     "criterion": "European HQ (Cavaillon, France)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-200 employees (147 in 2025)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Independent, no PE or VC, profitable (€19.5M revenue, €1.19M net profit)",
+     "result": "fail",
+     "result_original": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://blogistics.fr/annuaire/b2pweb/",
+   "note": "The company is controlled by H2P, a holding owned by 360 transport companies, with no PE or VC named. That is customer-owned rather than founder-owned, and the holding was set up with backing from corporates such as GEODIS and STEF. It is a freight exchange rather than pure SaaS, so confidence is...",
+   "via": "agent"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Vertical SaaS/software for logistics or freight",
+     "result": "pass"
+    },
+    {
+     "criterion": "European HQ (London, UK)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-200 employees (113)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Bootstrapped/founder-owned (Lyall Cresswell holds 75% or more of shares and votes; no funding found)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://find-and-update.company-information.service.gov.uk/company/03464353/persons-with-significant-control",
+   "note": "Companies House lists Lyall Cresswell as the only PSC with 75% or more of shares and votes. Built In London gives 113 employees. The company's own about page says it has run freight exchanges since 2000. One caveat: the platform is a freight exchange marketplace, which is close to SaaS but not st...",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "agent"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Vertical software/telematics for freight carriers",
+     "result": "pass"
+    },
+    {
+     "criterion": "European HQ (Krombach, Germany)",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-200 employees (50-100 range)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Bootstrapped/founder-owned (the two founder-managers hold 40% each; no VC/PE found)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://handelsregister.ai/de/organizations/krombach/speditionen/spedion-gmbh-ca6fbc11b6a4b05ee9abdb6779610dff",
+   "note": "The register page shows Englert and Grohse as managing directors since 2003, each with 40%. The remaining 20% holder is not visible. The company was founded in 2003 per Trendkraft. Vaia gives 50-100 employees. The ownership of the other 20% is unverified, so confidence is medium.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "agent"
+  }
+ },
+ "audit": {},
+ "scores": {
+  "parallel": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 1,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.2,
+   "accuracy": 1.0,
+   "combined": 0.238,
+   "metric": "F2"
+  },
+  "gpt": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 1,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.2,
+   "accuracy": 1.0,
+   "combined": 0.238,
+   "metric": "F2"
+  },
+  "firecrawl": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 1,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.2,
+   "accuracy": 1.0,
+   "combined": 0.238,
+   "metric": "F2"
+  },
+  "exa": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.4,
+   "accuracy": 1.0,
+   "combined": 0.455,
+   "metric": "F2"
+  },
+  "opus": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 3,
+   "partial": 0,
+   "wrong": 1,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.6,
+   "accuracy": 0.75,
+   "combined": 0.625,
+   "metric": "F2"
+  },
+  "nimble": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 2,
+   "partial": 0,
+   "wrong": 1,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.4,
+   "accuracy": 0.667,
+   "combined": 0.435,
+   "metric": "F2"
+  }
+ }
+}

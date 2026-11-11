@@ -1,0 +1,3797 @@
+{
+ "sub_use_case": "fin_hf_company_research",
+ "input_n": 1,
+ "task": "Research Tesla (tesla.com) for a hedge fund",
+ "labels": {
+  "exa": "A",
+  "parallel": "B",
+  "opus": "C",
+  "firecrawl": "D",
+  "nimble": "E",
+  "gpt": "F"
+ },
+ "unit": "research finding",
+ "evidence_pages": 72,
+ "evidence_fetched": 72,
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 2,
+ "decided_from_passages": 176,
+ "judge": "v4b",
+ "judge_cost_usd": 4.676,
+ "corrections_v2": {
+  "units_before": 184,
+  "units_after": 115,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3",
+     "c4"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c7"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c12",
+     "c13",
+     "c14"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16",
+     "c17",
+     "c18"
+    ]
+   },
+   {
+    "kept": "c20",
+    "merged": [
+     "c21"
+    ]
+   },
+   {
+    "kept": "c43",
+    "merged": [
+     "c44",
+     "c45",
+     "c46"
+    ]
+   },
+   {
+    "kept": "c56",
+    "merged": [
+     "c58"
+    ]
+   },
+   {
+    "kept": "c62",
+    "merged": [
+     "c63",
+     "c64"
+    ]
+   },
+   {
+    "kept": "c67",
+    "merged": [
+     "c66",
+     "c68"
+    ]
+   },
+   {
+    "kept": "c71",
+    "merged": [
+     "c72",
+     "c73",
+     "c75",
+     "c76"
+    ]
+   },
+   {
+    "kept": "c74",
+    "merged": [
+     "c77"
+    ]
+   },
+   {
+    "kept": "c78",
+    "merged": [
+     "c80"
+    ]
+   },
+   {
+    "kept": "c79",
+    "merged": [
+     "c81",
+     "c83"
+    ]
+   },
+   {
+    "kept": "c84",
+    "merged": [
+     "c85",
+     "c89",
+     "c90"
+    ]
+   },
+   {
+    "kept": "c86",
+    "merged": [
+     "c87"
+    ]
+   },
+   {
+    "kept": "c36",
+    "merged": [
+     "c37"
+    ]
+   },
+   {
+    "kept": "c38",
+    "merged": [
+     "c39"
+    ]
+   },
+   {
+    "kept": "c94",
+    "merged": [
+     "c97",
+     "c100"
+    ]
+   },
+   {
+    "kept": "c101",
+    "merged": [
+     "c102"
+    ]
+   },
+   {
+    "kept": "c103",
+    "merged": [
+     "c104",
+     "c105",
+     "c107"
+    ]
+   },
+   {
+    "kept": "c114",
+    "merged": [
+     "c115",
+     "c116"
+    ]
+   },
+   {
+    "kept": "c117",
+    "merged": [
+     "c118"
+    ]
+   },
+   {
+    "kept": "c120",
+    "merged": [
+     "c121"
+    ]
+   },
+   {
+    "kept": "c138",
+    "merged": [
+     "c139",
+     "c140",
+     "c141"
+    ]
+   },
+   {
+    "kept": "c142",
+    "merged": [
+     "c143"
+    ]
+   },
+   {
+    "kept": "c144",
+    "merged": [
+     "c145",
+     "c146",
+     "c147"
+    ]
+   },
+   {
+    "kept": "c152",
+    "merged": [
+     "c153",
+     "c154",
+     "c155"
+    ]
+   },
+   {
+    "kept": "c156",
+    "merged": [
+     "c157"
+    ]
+   },
+   {
+    "kept": "c134",
+    "merged": [
+     "c158",
+     "c159"
+    ]
+   },
+   {
+    "kept": "c163",
+    "merged": [
+     "c164",
+     "c165"
+    ]
+   },
+   {
+    "kept": "c166",
+    "merged": [
+     "c167",
+     "c168"
+    ]
+   },
+   {
+    "kept": "c169",
+    "merged": [
+     "c170"
+    ]
+   },
+   {
+    "kept": "c178",
+    "merged": [
+     "c179",
+     "c180"
+    ]
+   },
+   {
+    "kept": "c181",
+    "merged": [
+     "c182",
+     "c183"
+    ]
+   },
+   {
+    "kept": "c34",
+    "merged": [
+     "c35"
+    ]
+   },
+   {
+    "kept": "c32",
+    "merged": [
+     "c33"
+    ]
+   },
+   {
+    "kept": "c53",
+    "merged": [
+     "c91"
+    ]
+   }
+  ],
+  "cost": 0.089
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Tesla annual meeting confirmed for Dec 3, 2026 at 3 p.m. Central; director elections and advisory executive-compensation vote.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Tesla annual shareholder meeting on 2026-12-03, 3 p.m. Central: director elections and advisory executive-compensation vote, confirmed in the proxy.",
+    "B": "Tesla's annual shareholder meeting is confirmed for Dec 3, 2026 at 3:00 p.m., a governance catalyst."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000110465926116700/tm267596-1_def14a-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000110465926116700/tm267596-1_def14a.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+    "https://www.stocktitan.net/sec-filings/TSLA/def-14a-tesla-inc-definitive-proxy-statement-1e26307c623e.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Next Tesla earnings (Q4/FY2026) estimated Jan 27, 2027 after market close; third-party calendar, unconfirmed by Tesla.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Tesla next earnings expected 2027-01-27 after market close per a third-party calendar (not Tesla-confirmed); timing provisional.",
+    "B": "Tesla Q4 FY2026 earnings are estimated for Jan 27, 2027 after market close; the calendar labels the date UNCONFIRMED, not company-announced.",
+    "F": "Wall Street Horizon forecasts Tesla's next quarterly earnings after market close on January 27, 2027; unconfirmed by Tesla (as of 2026-11-10)."
+   },
+   "urls": [
+    "https://ir.tesla.com/sec-filings",
+    "https://www.phoenix.trade/markets/TSLA/earnings",
+    "https://www.wallstreethorizon.com/tesla-earnings-calendar"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Tesla Q4 2026 earnings expected late January 2027 (not confirmed); Tesla usually reports in second half of Jan/Apr/Jul/Oct.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla Q4 2026 earnings expected in late January 2027 (not confirmed); Tesla usually reports in the second half of January, April, July and October."
+   },
+   "urls": [
+    "https://www.cmelitegroup.com/knowledge-hub/tesla-earnings-date"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Fiscal.ai estimates Tesla's Q4 2026 trading update (deliveries) for 2027-01-02; estimated date.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Fiscal.ai estimates Tesla's Q4 2026 trading update for 2027-01-02; the date is estimated and can move."
+   },
+   "urls": [
+    "https://ir.tesla.com/sec-filings"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Fiscal.ai estimates Q1 2027 trading update 2027-04-02 and Q1 2027 earnings 2027-04-21 after close; estimated.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Fiscal.ai estimates Tesla's Q1 2027 trading update for 2027-04-02 and Q1 2027 earnings release/call for 2027-04-21 after close; dates are estimated."
+   },
+   "urls": [
+    "https://ir.tesla.com/sec-filings",
+    "https://www.wallstreethorizon.com/tesla-earnings-calendar"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "SpaceX share sales restrictions tied to SpaceX IPO expire Dec 2026, potentially enabling monetization (moved to Level 1 fair value in Q3 2026).",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Sales restrictions on Tesla's SpaceX shares tied to the SpaceX IPO expire in December 2026, potentially enabling monetization of the stake (moved to Level 1 fair value in Q3 2026)."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "NHTSA audit (Sept 2026) into Cybercab self-certification, 21 questions due, deadline extended to Oct 30, 2026; robotaxi outlook depends on regulatory approvals.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "NHTSA opened an audit in September 2026 into whether Tesla properly self-certified the steering-wheel-less Cybercab under federal safety standards, with 21 questions due (deadline extended to Oct 30, 2026); robotaxi outlook depends on regulatory approvals."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/10/22/tesla-is-prepping-a-cybercab-onslaught/",
+    "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-9-2026",
+    "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c15",
+    "c16",
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "NHTSA preliminary review opened Oct 9, 2026 of petition alleging Tesla robotaxis (~1,000 vehicles) sped in school zones.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "NHTSA opened a preliminary review on Oct 9, 2026 of a petition alleging Tesla robotaxis (about 1,000 2026 Model Y/Cybercab vehicles) sped in school zones."
+   },
+   "urls": [
+    "https://electrek.co/2026/10/12/nhtsa-tesla-robotaxi-school-zone-speeding-petition/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Tesla stock fell Nov 5, 2026 on regulatory concerns after Democrats took Congress; EV stocks rebounded Nov 6.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla stock fell on Nov 5, 2026 on regulatory concerns after Democrats took control of Congress in the midterms; EV stocks rebounded Nov 6."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html",
+    "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-9-2026"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c20",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Risk: Democrats control Congress and Texas governorship; Texas governor-elect called for moratorium on new data-center approvals, could delay Terafab in Grimes County; probes into Musk companies expected.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Risk, political/regulatory: Democrats now control Congress and the Texas governorship; the Texas governor-elect has called for a moratorium on new data-center approvals, which could delay the Tesla/SpaceX 'Terafab' in Grimes County. Investors also expect probes into Musk's companies."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Q3 2026 FCF beat partly non-recurring working-capital ($3.991B payables/accrued, $1.255B deferred revenue); Q4 FCF could be ~negative if capex ~$7B; capex cut to ~$20B raises AI/robotics execution questions.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla's Q3 2026 FCF beat was partly non-recurring working-capital movements ($3.991B payables/accrued, $1.255B deferred revenue); Q4 2026 FCF could be ~negative if capex hits ~$7B, and the FY capex cut to ~$20B raises AI/robotics execution questions."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Risk: Q3 working-capital changes contributed $2.59B against $1.53B FCF; unpaid purchases and accrued liabilities raise cash-quality concerns.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Risk: Tesla's Q3 2026 working-capital changes contributed $2.59B against $1.53B free cash flow; analysis highlights unpaid purchases and accrued liabilities, raising cash-quality concerns."
+   },
+   "urls": [
+    "https://electrek.co/2026/10/22/tesla-cuts-2026-capex-guidance-q3-cash-flow/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "BYD outsold Tesla annually for first time in 2025; Tesla FY2025 deliveries 1.64M vs 1.79M (Q4 -15.6% after US $7,500 credit ended Sept 2025); European share shrank.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "BYD outsold Tesla on an annual basis for the first time in 2025 (BYD record 1M vehicles outside China, targeting up to 1.6M in 2026); Tesla FY2025 deliveries fell to 1.64M from 1.79M (Q4 2025 -15.6% YoY after the $7,500 US EV credit ended Sept 2025); European share shrank."
+   },
+   "urls": [
+    "https://www.investing.com/news/stock-market-news/teslas-quarterly-deliveries-fall-more-than-expected-on-lower-ev-demand-4427809"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Talent risk: senior Autopilot/FSD, Optimus, Dojo engineers exiting to Waymo, Wayve, Figure, Apptronik, NVIDIA, Tenstorrent.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla talent risk: senior Autopilot/FSD, Optimus and Dojo engineers continue exiting to Waymo, Wayve, Figure, Apptronik, NVIDIA and Tenstorrent, eroding the autonomy/AI talent moat."
+   },
+   "urls": [
+    "https://kore1.com/tesla-layoffs-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Headcount ~120,000 vs ~140,000 peak late 2023; no mass layoff 2026 YTD; senior IC4/IC5 equity share of offers ~35-45% vs 50-60%.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla headcount is ~120,000 vs ~140,000 peak in late 2023, with no mass layoff in 2026 YTD but drip exits of senior Autopilot, Optimus and Powertrain engineers; equity share of senior IC4/IC5 offers compressed to ~35-45% from 50-60%."
+   },
+   "urls": [
+    "https://kore1.com/tesla-layoffs-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Electrek (Nov 9, 2026): seven of fourteen executives from March 2023 Investor Day have left, plus multiple Cybercab leadership departures in 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Electrek (Nov 9, 2026) reported seven of fourteen executives presented at Tesla's March 2023 Investor Day have left, plus multiple Cybercab leadership departures in 2026, signaling execution/talent pressure."
+   },
+   "urls": [
+    "https://electrek.co/2026/11/09/tesla-deep-bench-gone-musk-admits-talent-shortage/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Cybercab general-assembly manager Jody Kerns left for Rivian in October; Musk acknowledged limited engineering resources explaining Cybertruck reprioritization.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Cybercab general-assembly manager Jody Kerns left Tesla for Rivian in October; Musk acknowledged limited engineering resources when explaining Cybertruck reprioritization (reported 2026-11-09)."
+   },
+   "urls": [
+    "https://electrek.co/2026/11/09/tesla-deep-bench-gone-musk-admits-talent-shortage/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Vehicle resale value guarantee exposure $4.42B at Sept 30, 2026 (vs $3.45B at Dec 31, 2025); inventory $14.09B (9M write-downs $230M); energy revenue -16% YoY partly on tariff refunds.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla's maximum exposure on vehicle resale value guarantees rose to $4.42B at Sept 30, 2026 from $3.45B at Dec 31, 2025; inventory rose to $14.09B (nine-month write-downs $230M); energy revenue fell 16% YoY partly on tariff-related customer refunds."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Valuation risk: ~195x annualized Q3 adjusted EPS (stock ~$374 pre-earnings); shares -3.3% after hours Oct 21; TSLA -16% YTD vs S&P +10.3%.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla valuation risk: ~195x annualized Q3 2026 adjusted EPS (stock ~$374 pre-earnings); shares fell ~3.3% after hours Oct 21 on capex-cut implications; TSLA down ~16% YTD 2026 vs S&P 500 +10.3%."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Ninth Circuit reversed and vacated class certification in FSD driver-assistance class action Oct 16, 2026, returning case to district court (favorable); consumer-autonomy litigation continues.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "In Tesla's FSD driver-assistance class action, the Ninth Circuit reversed and vacated class certification on Oct 16, 2026, returning the case to district court (favorable), though consumer-autonomy litigation continues."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c32",
+    "c33"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Autopilot litigation: $200M punitive plus Tesla's 33% share of $129M compensatory; post-trial relief denied, appeal pending.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Risk: Tesla Autopilot litigation includes $200M punitive damages plus Tesla's 33% share of $129M compensatory damages; post-trial relief denied and appeal pending (as of 2026-09-30)."
+   },
+   "urls": [
+    "https://www.carscoops.com/2026/02/tesla-asked-for-a-reset-on-243m-verdict-a-federal-judge-said-no/",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c34",
+    "c35"
+   ]
+  },
+  {
+   "cid": "c36",
+   "claim": "Tesla expands Cybercab/Robotaxi to Dallas in November 2026 per Q3 call.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla plans Cybercab/Robotaxi expansion into Dallas in November 2026, per the Q3 2026 earnings call."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+    "https://techcrunch.com/2026/10/22/tesla-is-prepping-a-cybercab-onslaught/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c36",
+    "c37"
+   ]
+  },
+  {
+   "cid": "c38",
+   "claim": "Musk hopes for wider FSD approval in Europe by Q1 2027 (FSD approved in nine EU countries with >100,000 customers).",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "E": "Musk hopes for wider FSD approval in Europe by Q1 2027 (FSD already approved in nine EU countries with >100,000 customers)."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c38",
+    "c39"
+   ]
+  },
+  {
+   "cid": "c40",
+   "claim": "Dutch RDW (Nov 3, 2026) approved changes to Tesla's supervised driver-assistance system incl. name Tesla Assisted Driving; EU-wide approval still under discussion in the European Technical Committee on Motor Vehicles.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Autonomy regulatory risk: Dutch regulator RDW (Nov 3, 2026) approved changes to Tesla's supervised driver-assistance system, including the name Tesla Assisted Driving, while retaining driver responsibility; EU-wide approval is still under discussion in the European Technical Committee on Motor Vehicles."
+   },
+   "urls": [
+    "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Some customer-owned vehicles to join Robotaxi fleet around Q2 2027 (Elluswamy); unsupervised FSD outside Robotaxi zones pushed to Q2 2027.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla expects some customer-owned vehicles to join the Robotaxi fleet around Q2 2027 (Ashok Elluswamy); unsupervised FSD outside Robotaxi zones pushed to Q2 2027."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Musk: AI5 chip upgrade expected around April 2027.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Musk said Tesla's AI5 chip upgrade is expected around April 2027."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Special committees exploring Tesla-SpaceX merger; no substantive update on Q3 call; no definitive transaction.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Special committees are exploring a potential Tesla-SpaceX merger; Musk gave no substantive update on the Q3 call and no definitive transaction exists."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c43",
+    "c44",
+    "c45",
+    "c46"
+   ]
+  },
+  {
+   "cid": "c47",
+   "claim": "On SpaceX's Oct 20 call Musk said special committees at both companies study a deal, no terms; Polymarket (Oct 29) priced announcement 19% by Dec 31, 2026 and 59% by Jun 30, 2027.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Possible Tesla–SpaceX merger: on SpaceX's Oct 20 call Musk said special committees of independent directors at both companies are studying a deal, with no terms agreed. Polymarket (cited Oct 29) priced an announcement at 19% by Dec 31, 2026 and 59% by Jun 30, 2027."
+   },
+   "urls": [
+    "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Barclays: Tesla–SpaceX merger announcement could come before AGM (late Oct/early Nov window); nothing announced as of Nov 4; expects announcement in 6–12 months.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Barclays said a Tesla–SpaceX merger announcement could come before the AGM, flagging late Oct or early Nov 2026 as a likely window; as of Nov 4 nothing had been announced or filed. Barclays expects an announcement within 6–12 months."
+   },
+   "urls": [
+    "https://tech-insider.org/tesla-spacex-merger-december-6-agm-barclays-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Merger needs 50% of Tesla shares outstanding (~1.98B of 3,952,757,946 votes), Musk calls it 'quite a high hurdle'; J.P. Morgan expects SpaceX-led all-stock deal at 30–35% premium.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla–SpaceX combination: Musk says a deal needs 50% of all Tesla shares outstanding, about 1.98B votes of 3,952,757,946 shares, calling it 'quite a high hurdle'. J.P. Morgan expects a SpaceX-led all-stock deal at a 30–35% premium."
+   },
+   "urls": [
+    "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "SEC cleared retail auto-vote program Sep 29, 2026; retail voted 28% of shares in 2025 vs 76.6% institutions.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The SEC cleared a retail auto-vote program on Sep 29, 2026. Per Tesla's SEC letter, retail holders voted only 28% of shares in 2025 versus 76.6% for institutions, which matters for any Tesla merger vote."
+   },
+   "urls": [
+    "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Governance risk: Tesla–SpaceX merger would be related-party deal with Musk on both sides; he says he is conflicted and stays out of committee talks.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Risk, governance/dilution: a Tesla–SpaceX merger would be a related-party deal with Musk on both sides; he has said he is conflicted and stays out of the special committees' talks."
+   },
+   "urls": [
+    "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c52",
+   "claim": "Risk: proxy accelerates vesting of Musk's restricted shares from exercised option award on qualifying change of control, creating incentive scrutiny around any SpaceX deal.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Risk: Tesla proxy terms accelerate vesting of Musk's restricted shares from his exercised option award upon a qualifying change of control, creating incentive scrutiny around any SpaceX transaction."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000110465926116700/tm267596-1_def14a-gen.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c53",
+   "claim": "Credit agreement requires ≥$5B consolidated liquidity; merger/change-of-control provisions depend on investment-grade ratings from at least two agencies.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla's credit agreement (2026-09-29) requires at least $5B consolidated liquidity; certain merger/change-of-control provisions depend on investment-grade ratings from at least two agencies, so transaction structure and ratings matter."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-2026x09x30x10qxex101.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c53",
+    "c91"
+   ]
+  },
+  {
+   "cid": "c54",
+   "claim": "Terafab chip project with SpaceX: capital equipment needs in tens of billions through early 2028, potential long-term cost >$100B; cost split unresolved.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Terafab chip project with SpaceX: capital equipment needs in the tens of billions through early 2028, potential long-term cost above $100B; Tesla/SpaceX cost split unresolved."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c55",
+   "claim": "Shareholders approved Musk's ~$1T pay package Nov 6, 2025 with >75% support (6x market cap, 20M EVs, 1M robots; stake could near 30%); Calpers/Norway opposed; ISS and Glass Lewis against.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Shareholders approved Musk's ~$1T Tesla performance pay package on Nov 6, 2025 with >75% support (targets: ~6x market cap, 20M EVs, 1M robots; could lift Musk's stake to nearly 30%); Calpers and Norway's sovereign fund opposed, ISS and Glass Lewis recommended against."
+   },
+   "urls": [
+    "https://abc7ny.com/post/debate-elon-musks-tesla-pay-package-rages-could-make-worlds-1st-trillonaire/18121388"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c56",
+   "claim": "Tornetta Decision Event Apr 21, 2026 triggered forfeiture of Musk's 96,000,000-share 2025 CEO Interim Award; 423,743,904 Performance Award shares under voting agreement with irrevocable proxy to Tesla's secretary.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "A Tornetta Decision Event on April 21, 2026 triggered forfeiture of Musk's 96,000,000-share 2025 CEO Interim Award; the 423,743,904 2025 CEO Performance Award shares are subject to a voting agreement giving an irrevocable proxy to Tesla's secretary."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1494730/000110465926047678/xslF345X06/tm2612285-1_4seq1.xml",
+    "https://stocktitan.net/sec-filings/TSLA/schedule-13g-a-tesla-inc-amended-passive-investment-disclosure-631d7da19861.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c56",
+    "c58"
+   ]
+  },
+  {
+   "cid": "c57",
+   "claim": "Musk Schedule 13G/A (Amend. 16, accepted Apr 23, 2026): 717,112,739 shares = 20.3% (3,755,723,871 outstanding Apr 16, 2026), incl. 413,152,109 trust shares and options on 303,960,630 restricted shares; excludes forfeited 96M and 423,743,904 proxy shares.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Musk Schedule 13G/A (Amendment 16, accepted Apr 23, 2026): beneficial ownership of 717,112,739 shares = 20.3% of the class (3,755,723,871 outstanding as of Apr 16, 2026), including 413,152,109 trust shares and options on 303,960,630 restricted shares; excludes forfeited 96M interim award and 423,743,904 performance-award shares under voting proxy."
+   },
+   "urls": [
+    "https://stocktitan.net/sec-filings/TSLA/schedule-13g-a-tesla-inc-amended-passive-investment-disclosure-631d7da19861.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "Musk exercised 303,960,630 Tesla options on June 16, 2026; 17,531,857 shares withheld for net settlement; compensation exercise, not open-market buying.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Elon Musk exercised 303,960,630 Tesla options on June 16, 2026; 17,531,857 shares were withheld for net settlement. Compensation exercise, not open-market buying."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000110465926116700/tm267596-1_def14a-gen.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "Musk's 2025 CEO Performance Award: 12 tranches on market-cap/operating milestones, none earned/vested; proxy lists ~$158.4B of 2025 stock awards; interim award forfeited in 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Musk's 2025 CEO Performance Award at Tesla has 12 tranches tied to market-cap and operating milestones, none earned or vested as of the proxy. The 2026 proxy lists about $158.4B of 2025 stock awards for Musk, and the 2025 interim award was forfeited in 2026."
+   },
+   "urls": [
+    "https://www.stocktitan.net/sec-filings/TSLA/def-14a-tesla-inc-definitive-proxy-statement-1e26307c623e.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c61",
+   "claim": "Musk holds ~20% of Tesla (per Khaleej Times) and >80% of SpaceX voting power.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Musk holds about 20% of Tesla (per Khaleej Times) and more than 80% of SpaceX voting power."
+   },
+   "urls": [
+    "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c62",
+   "claim": "Tesla spent $2.002B buying SpaceX equity in first nine months of 2026, $863M unrealized gain; regulatory restrictions on shares expired in Q3 2026.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla spent $2.002B buying SpaceX equity in the first nine months of 2026 and recognized an $863M unrealized gain; regulatory restrictions on the shares expired in Q3 2026."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c62",
+    "c63",
+    "c64"
+   ]
+  },
+  {
+   "cid": "c65",
+   "claim": "Related-party concentration: $729m receivable from SpaceX and $648m deferred revenue for Megapack obligations at 2026-09-30; SpaceX-related Megapack revenue $221m in Q3, $626m nine months.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla related-party concentration risk: as of 2026-09-30 it had a $729m receivable from SpaceX and $648m deferred revenue for unsatisfied Megapack obligations; SpaceX-related Megapack revenue was $221m in Q3 and $626m over nine months."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c67",
+   "claim": "Tesla acquired a Super Intelligence/AI-hardware company in Q2 2026 for $1.95B in stock and equity awards, $1.73B subject to service/performance conditions.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Tesla acquired a Super Intelligence hardware company in Q2 2026 for $1.95B in Tesla stock and equity awards, of which $1.73B is subject to service conditions and/or performance milestones.",
+    "F": "Tesla disclosed an AI-hardware asset acquisition for $1.95B in stock/equity awards, of which $1.73B is subject to service or performance conditions (as of 2026-09-30)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c66",
+    "c67",
+    "c68"
+   ]
+  },
+  {
+   "cid": "c69",
+   "claim": "~202M shares issued in 9M 2026 for equity awards and acquisitions; shares outstanding 3,751M (Dec 31, 2025) to 3,952,757,946 (Oct 15, 2026).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla issued ~202M shares in the first nine months of 2026 for equity incentive awards and acquisitions; shares outstanding rose from 3,751M (Dec 31, 2025) to 3,952,757,946 as of Oct 15, 2026."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c70",
+   "claim": "No announced M&A, spin-off, buyback or tender offer; pending corporate events are Dec 3 annual-meeting items and exploratory Tesla-SpaceX work.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla has no announced M&A, spin-off, buyback or tender offer; pending corporate events are the Dec 3, 2026 annual-meeting governance items and exploratory Tesla-SpaceX combination work."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000110465926116700/tm267596-1_def14a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c71",
+   "claim": "Cash and ST investments $45.447B at Sept 30, 2026 (+$1.9B QoQ); debt and finance leases $9,523M, $9,265M non-recourse, $2M recourse.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla had $45,447M cash and short-term investments at Sept 30, 2026 (+$1.9B QoQ); total debt and finance leases $9,523M, of which $9,265M non-recourse and only $2M recourse to Tesla's general assets."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c71",
+    "c72",
+    "c73",
+    "c75",
+    "c76"
+   ]
+  },
+  {
+   "cid": "c74",
+   "claim": "$45.447B cash and ST investments at 9/30/2026, $30B undrawn unsecured facilities, material compliance with debt covenants.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla held $45.447B of cash and short-term investments as of 2026-09-30, with $30B undrawn on unsecured facilities and reported material compliance with debt covenants."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c74",
+    "c77"
+   ]
+  },
+  {
+   "cid": "c78",
+   "claim": "Aggregate debt $9.284B incl. $1.311B current; $30.0B unused committed facilities; material covenant compliance.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "As of 2026-09-30 Tesla had $9.284B aggregate debt (including $1.311B current) and $30.0B of unused committed amounts under senior unsecured credit facilities; it reported material compliance with financial debt covenants."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c78",
+    "c80"
+   ]
+  },
+  {
+   "cid": "c79",
+   "claim": "Debt principal $9.284bn at 9/30/2026, ~$1.32bn current; $5.966bn China working-capital facility maturing Oct 2026–Sep 2027.",
+   "asserted_by": [
+    "A",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "Tesla debt principal was $9.284bn as of 2026-09-30, about $1.32bn current; the $5.966bn China working-capital facility has contractual maturities from October 2026 to September 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c79",
+    "c81",
+    "c83"
+   ]
+  },
+  {
+   "cid": "c82",
+   "claim": "Non-recourse China Working Capital Facility $4,288M principal at 2.01-2.11%, maturities Mar–Dec 2026; 9M 2026 debt issuances $5,834M vs repayments $4,954M.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla's non-recourse China Working Capital Facility carried $4,288M principal at $2.01-2.11% with maturities March-December 2026; nine-month 2026 debt issuances were $5,834M vs repayments of $4,954M."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf"
+   ],
+   "conflicts_with": [
+    "c81",
+    "c79",
+    "c83"
+   ]
+  },
+  {
+   "cid": "c84",
+   "claim": "Sept 2026: $20.00B senior unsecured delayed-draw term loan maturing Sept 2029 (18-month availability, ten-draw limit; undrawn steps down to $10B at 12m, $5B at 15m, zero at 18m).",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "In September 2026 Tesla entered a $20.00B senior unsecured delayed-draw term loan maturing September 2029 (18-month availability, ten-draw limit; undrawn commitments step down to $10B at 12 months, $5B at 15 months, zero at 18 months)."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c84",
+    "c85",
+    "c89",
+    "c90"
+   ]
+  },
+  {
+   "cid": "c86",
+   "claim": "Two senior unsecured revolvers totaling $10.00B ($8.00B due Sept 2031; $2.00B 364-day due Sept 2027), upsizable by $4.00B, replacing $5.00B revolver due Jan 2028.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "In September 2026 Tesla signed two senior unsecured revolvers totaling $10.00B ($8.00B maturing Sept 2031; $2.00B 364-day maturing Sept 2027), increasable by up to $4.00B, replacing the prior $5.00B revolver due Jan 2028."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c86",
+    "c87"
+   ]
+  },
+  {
+   "cid": "c88",
+   "claim": "Sept 2026 financing: undrawn $20bn DDTL due Sept 2029 and $10bn revolvers ($8bn Sept 2031, $2bn Sept 2027); material covenant compliance at 9/30.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla September 2026 financing added an undrawn $20bn delayed-draw unsecured term facility maturing September 2029 and $10bn of revolvers ($8bn maturing September 2031, $2bn September 2027); material compliance with debt covenants reported as of 2026-09-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c92",
+   "claim": "Fitch assigned Tesla first-time BBB IDR, Stable outlook, Sept 22, 2026 (corporate rating, not ABS).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Fitch assigned Tesla a first-time BBB long-term issuer default rating with Stable outlook on Sept 22, 2026 (corporate rating, not ABS)."
+   },
+   "urls": [
+    "https://www.marketscreener.com/news/fitch-assigns-tesla-first-time-bbb-idr-outlook-stable-ce785ad8da89f423"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c93",
+   "claim": "Moody's affirmed Tesla Baa3 stable and gave SpaceX first-time Baa1; Musk posted 'Tesla's credit rating is ridiculously low.'",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Moody's affirmed Tesla at Baa3, stable, and gave SpaceX a first-time Baa1, two notches higher; Musk posted that 'Tesla's credit rating is ridiculously low.'"
+   },
+   "urls": [
+    "https://www.teslarati.com/elon-musk-challenges-tesla-credit-rating-moodys-after-spacex-gets-higher-one/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c94",
+   "claim": "Q3 2026 operating income -56% YoY to $718M (margin 2.6% vs 5.8%); opex +39% to $4.78B (R&D +69% to $2.76B, SBC $1.17B incl. 2025 CEO pay package), absorbing gross-profit beat.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla Q3 2026 operating income fell 56% YoY to $718M (operating margin 2.6% vs 5.8%) as opex rose 39% YoY to $4.78B (R&D +69% to $2.76B, SBC $1.17B incl. 2025 CEO pay package), absorbing the gross-profit beat."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+    "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c94",
+    "c97",
+    "c100"
+   ]
+  },
+  {
+   "cid": "c95",
+   "claim": "Operating leverage risk: Q3 revenue $28.046bn vs $28.095bn a year earlier, operating income $718m vs $1.624bn.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla operating leverage risk: Q3 2026 revenue was $28.046bn vs $28.095bn a year earlier, while operating income fell to $718m from $1.624bn, so volume recovery alone does not show earnings recovery."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c96",
+   "claim": "Profit-conversion risk: Q3 operating income -56%, GAAP net income -43%, FCF -62%, so adjusted-EPS beat doesn't show improving underlying profitability.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's Q3 2026 operating income fell 56% YoY to $718M, GAAP net income fell 43% and FCF fell 62%, so the adjusted-EPS beat does not show improving underlying profitability (profit-conversion risk)."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c98",
+   "claim": "Q3 revenue flat YoY, GAAP net income to common -43% to $787M, operating margin 2.6% vs 5.8%; valuation dependent on autonomy, robotics, energy execution.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla Q3 revenue was essentially flat YoY, GAAP net income attributable to common fell 43% to $787M, and operating margin was 2.6% versus 5.8% a year earlier, leaving valuation dependent on autonomy, robotics and energy execution."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c99",
+   "claim": "Earnings quality risk: Q3 operating margin 2.6%; gross margin beat helped by $447M net tariff refund that may not recur; R&D +69%; management guided opex higher.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Risk, earnings quality: Tesla's Q3 operating margin was only 2.6%; the gross margin beat was helped by a $447M net tariff refund that may not recur, R&D rose 69% y/y and management guided opex higher."
+   },
+   "urls": [
+    "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c101",
+   "claim": "Regulatory credits $113M in Q3 vs $417M (-73%; 9M $639M vs $1,451M); $475M reversal of recognized credit revenue for contractual return as governmental actions restricted credit programs.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla automotive regulatory credits fell to $113M in Q3 2026 from $417M a year earlier (-73%; nine-month $639M vs $1,451M), and Tesla reversed $475M of previously recognized regulatory-credit revenue for contractual return of delivered credits as governmental actions restricted credit programs."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c101",
+    "c102"
+   ]
+  },
+  {
+   "cid": "c103",
+   "claim": "Q3 2026 revenue $28.046B vs company-compiled consensus $28.341B (miss); adjusted EPS $0.48 vs $0.45 (beat); GAAP EPS $0.22 vs $0.23 (miss).",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Tesla Q3 2026 vs company-compiled consensus (2026-10-19): revenue $28.046bn vs $28.341bn (miss); GAAP EPS $0.22 vs $0.23 (miss); adjusted EPS $0.48 vs $0.45 (beat).",
+    "F": "Tesla Q3 2026: revenue of $28.05B missed consensus of $28.34B; adjusted EPS $0.48 beat $0.45; GAAP EPS $0.22 missed $0.23."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+    "https://ir.tesla.com/press-release/earnings-consensus-third-quarter-2026",
+    "https://www.stocktitan.net/articles/tesla-q3-2026-earnings-results"
+   ],
+   "conflicts_with": [
+    "c108"
+   ],
+   "merged_from": [
+    "c103",
+    "c104",
+    "c105",
+    "c107"
+   ]
+  },
+  {
+   "cid": "c106",
+   "claim": "Q3 GAAP diluted EPS $0.22 vs consensus $0.23 avg/$0.21 median; non-GAAP EPS $0.48 vs $0.45 avg and median.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla Q3 2026 GAAP diluted EPS was $0.22 versus consensus $0.23 average/$0.21 median; non-GAAP diluted EPS was $0.48 versus $0.45 average and median consensus."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c108",
+   "claim": "Q3 revenue $28.05B flat y/y and in line with ~$28.06B consensus; non-GAAP EPS $0.48 beat $0.45 but down from $0.50; GAAP NI $787M ($0.22/share), -43%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla Q3 2026 (reported Oct 21): revenue $28.05B, flat y/y and in line with ~$28.06B consensus; non-GAAP EPS $0.48 beat $0.45 consensus but was down from $0.50; GAAP net income $787M ($0.22/share), down 43%."
+   },
+   "urls": [
+    "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+   ],
+   "conflicts_with": [
+    "c103",
+    "c104",
+    "c105",
+    "c107",
+    "c110"
+   ]
+  },
+  {
+   "cid": "c109",
+   "claim": "Second source: Q3 consensus revenue $28.441B (1.39% miss) and EPS $0.4358 (10% beat).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "A second source puts Tesla Q3 2026 consensus higher: revenue $28.441B (a 1.39% miss) and EPS $0.4358 (a 10% beat)."
+   },
+   "urls": [
+    "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis"
+   ],
+   "conflicts_with": [
+    "c110"
+   ]
+  },
+  {
+   "cid": "c110",
+   "claim": "Q3 revenue $28.05B beat Zacks consensus $27.78B by 0.96%; EPS $0.48 beat $0.45 by 6.67%.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla Q3 2026 ... revenue $28.05B beat Zacks consensus $27.78B by 0.96% and EPS $0.48 beat $0.45 by 6.67%."
+   },
+   "urls": [
+    "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-reports-q3-earnings-210001951.html"
+   ],
+   "conflicts_with": [
+    "c103",
+    "c109"
+   ]
+  },
+  {
+   "cid": "c111",
+   "claim": "Q3 2026 deliveries 486,532 beat 472,269 analyst average; storage deployed 13.7 GWh missed ~15.1 GWh.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla Q3 2026 deliveries of 486,532 beat the 472,269 analyst average; storage deployed 13.7 GWh missed ~15.1 GWh estimate."
+   },
+   "urls": [
+    "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-reports-q3-earnings-210001951.html"
+   ],
+   "conflicts_with": [
+    "c112",
+    "c113"
+   ]
+  },
+  {
+   "cid": "c112",
+   "claim": "Q3 deliveries 486,532 vs company-compiled consensus 461,974 (~5% beat); production 464,391.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla Q3 2026 deliveries were 486,532 versus company-compiled consensus of 461,974 (about 5% beat); production was 464,391."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026064366/exhibit991111111.htm"
+   ],
+   "conflicts_with": [
+    "c111"
+   ]
+  },
+  {
+   "cid": "c113",
+   "claim": "Q3 energy deployments 13.7 GWh missed ~15.9 GWh consensus; battery availability limited auto volumes.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla Q3 2026 energy deployments of 13.7 GWh missed the ~15.9 GWh consensus; management said battery availability was the limit on auto volumes."
+   },
+   "urls": [
+    "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+   ],
+   "conflicts_with": [
+    "c111"
+   ]
+  },
+  {
+   "cid": "c114",
+   "claim": "Q3 FCF $1.531B vs consensus -$4.506B; OCF $6.263B; capex $4.732B (+110% YoY); auto gross margin ex-credits 18.1% (16.3% Q2, 15.4% year ago).",
+   "asserted_by": [
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Tesla Q3 2026 FCF $1.531B vs company-compiled consensus of -$4.506B; operating cash flow $6.263B; capex $4.732B (+110% YoY); automotive gross margin ex-credits 18.1% (16.3% in Q2 2026, 15.4% a year ago)."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+    "https://ir.tesla.com/press-release/earnings-consensus-third-quarter-2026"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c114",
+    "c115",
+    "c116"
+   ]
+  },
+  {
+   "cid": "c117",
+   "claim": "Q3 2026 OCF $6.263B, capex $4.732B, FCF $1.531B.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla Q3 2026 (quarter ended 2026-09-30): operating cash flow $6.263B, capex $4.732B, free cash flow $1.531B."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c117",
+    "c118"
+   ]
+  },
+  {
+   "cid": "c119",
+   "claim": "Q3 2026: revenue $28.046B, non-GAAP EPS $0.48; GAAP NI $787M (-43%); FCF $1.531B (-62%).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla Q3 2026 (ended Sept 30): revenue $28.046B, diluted non-GAAP EPS $0.48; GAAP net income $787M, down 43% YoY; free cash flow $1.531B, down 62%."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c120",
+   "claim": "Q3 2026 auto gross margin ex-credits 18.1% vs 16.3% prior quarter.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla Q3 2026 automotive gross margin excluding regulatory credits was 18.1%, versus 16.3% in the preceding quarter."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c120",
+    "c121"
+   ]
+  },
+  {
+   "cid": "c122",
+   "claim": "No numeric quarterly guidance; FY2026 capex forecast cut to ~$20B from >$25B (implied Q4 capex ~$6.99B), funded mainly from operating cash flow per CFO Taneja.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla gives no numeric quarterly guidance; with Q3 results it cut FY2026 capex forecast to ~$20B from >$25B (implied Q4 capex ~$6.99B), funded primarily from operating cash flow per CFO Vaibhav Taneja."
+   },
+   "urls": [
+    "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla"
+   ],
+   "conflicts_with": [
+    "c123"
+   ]
+  },
+  {
+   "cid": "c123",
+   "claim": "FY2026 capex guidance above $20bn in Q3 filing, down from above $25bn in Q2 filing; 9M capex $13.014bn.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Tesla FY2026 capex guidance in the Q3 filing is above $20bn, down from above $25bn in the Q2 filing; nine-month actual capex was $13.014bn.",
+    "F": "Tesla's current guidance (as of 2026-10-21) calls for annual capex above $20 billion, a cut from the prior $25B+."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [
+    "c130"
+   ]
+  },
+  {
+   "cid": "c124",
+   "claim": "Prior guidance (as of 2026-07-22): annual capex above $25 billion.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla's prior guidance (as of 2026-07-22) called for annual capex above $25 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c125",
+   "claim": "FY2026 capex guided to exceed $20B; $13.01B spent in nine months to Sept 30, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla guides FY2026 capital expenditures to exceed $20B; it spent $13.01B in the nine months ended Sept 30, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c126",
+   "claim": "Capital-intensity risk: FY2026 capex guidance above $20bn; 9M capex $13.014bn can absorb operating cash generation.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla capital-intensity risk: FY2026 capex guidance remains above $20bn; nine-month capex was $13.014bn as of 2026-09-30, which can absorb operating cash generation."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c127",
+   "claim": "Investment-cycle risk: 9M capex $13.01B vs $6.13B a year earlier; FY guidance >$20B; overruns or weaker OCF could raise funding needs.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Investment-cycle risk: Tesla's capex was $13.01B in nine months ended Sept 30, 2026 vs $6.13B a year earlier, with FY2026 guidance above $20B; overruns or weaker operating cash flow could raise funding needs."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c128",
+   "claim": "Only explicit numeric 2026 outlook is capex >$20B, driven by Super Intelligence compute/data centers, manufacturing and R&D facilities, SI-enabled assets, retail/service/charging infrastructure.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla's explicit numeric 2026 outlook is capital expenditures in excess of $20B, driven by Super Intelligence compute/data centers, manufacturing and R&D facilities, company-operated SI-enabled assets, and retail/service/charging infrastructure."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c129",
+   "claim": "Capex >$20B plus rising material, supply-chain, labor costs may require funding beyond operating cash flow, possibly more debt.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla's 2026 capex above $20B, together with rising material prices and supply-chain/labor costs, may require funding beyond operating cash flow and could lead to additional debt or financing."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c130",
+   "claim": "Capex guidance unclear: Electrek says Q3 letter left capex at >$25B (needing ~$12B in Q4), Money365 says 10-Q says >$20B and CFO said ~$20B; 9M capex $13.01B; no formal revenue/EPS/volume guidance; opex to keep rising sequentially.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla gives no formal revenue, EPS or volume guidance. Capex guidance is unclear: Electrek says the Q3 letter left 2026 capex at 'more than $25B' (needing ~$12B in Q4), while Money365 says the 10-Q says 'more than $20B' and the CFO said about $20B on the call. 9M capex was $13.01B. Management said opex will keep rising sequentially."
+   },
+   "urls": [
+    "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis"
+   ],
+   "conflicts_with": [
+    "c123",
+    "c122"
+   ]
+  },
+  {
+   "cid": "c131",
+   "claim": "Capex guidance swung from >$20B to >$25B and back to ~$20B; Q3 FCF -62% to $1.53B; TTM FCF $3.30B vs AI/robotics valuation.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Risk, execution and capex: Tesla's 2026 capex guidance has moved from >$20B to >$25B and back to about $20B; Q3 FCF fell 62% y/y to $1.53B and TTM FCF is only $3.30B against a valuation built on AI and robotics."
+   },
+   "urls": [
+    "https://www.geminiq.com/blog/tesla-earnings-q3-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c132",
+   "claim": "Cash burn: 9M 2026 capex $13.01B vs $6.13B; construction in progress incl. $10.96B AI infrastructure; TTM FCF $3.30B.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla cash burn has risen: 9M 2026 capex was $13.01B versus $6.13B a year earlier; construction in progress includes $10.96B of AI infrastructure; trailing-twelve-month FCF is $3.30B."
+   },
+   "urls": [
+    "https://www.geminiq.com/blog/tesla-earnings-q3-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c133",
+   "claim": "Q2 2026 update gave no numerical Q3 revenue/EPS/delivery guidance; qualitative volume outlook, so beat/miss vs guidance can't be established.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's Q2 2026 update gave no numerical Q3 revenue, EPS or delivery guidance; volume outlook was qualitative (maximize factory utilization; demand, supply-chain and allocation constraints), so a beat/miss vs company guidance can't be established."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c134",
+   "claim": "Q3 update keeps qualitative volume outlook; production started for Semi in Nevada and Optimus in Fremont.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Tesla's Q3 2026 update kept a qualitative volume outlook (maximize factory utilization; deliveries and deployments depend on demand, supply-chain readiness and allocation) and reported production started for Tesla Semi in Nevada and Optimus in Fremont."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c134",
+    "c158",
+    "c159"
+   ]
+  },
+  {
+   "cid": "c135",
+   "claim": "Volume outlook (as of 2026-10-21) emphasizes utilization, demand, supply-chain readiness, fleet allocation; no numerical revenue/EPS/delivery target.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla's volume outlook (as of 2026-10-21) emphasizes factory utilization, demand, supply-chain readiness and fleet allocation, with no numerical revenue, EPS or delivery target."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c136",
+   "claim": "Q2 2026 (reported July 22): EPS $0.33 missed ~$0.49-0.54 despite revenue beat ($28.2B vs ~$26.4B); stock fell ~14.5% next day to $319.69 on July 23.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla Q2 2026 (reported July 22, 2026): EPS $0.33 missed estimates of ~$0.49-0.54 despite revenue beat ($28.2B vs ~$26.4B); stock fell ~14.5% next day to close at $319.69 on July 23, 2026."
+   },
+   "urls": [
+    "https://us.plus500.com/forecasts/earnings-expectations-tesla-earnings-expectations"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c137",
+   "claim": "Effective April 4, 2026 Model 3 RWD lease cut from $399 to $299/month (~25%); $399/month Model Y LR RWD lease and 0% APR for 72 months on Model Y Standard to clear inventory.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Effective April 4, 2026 Tesla cut the Model 3 RWD lease from $399 to $299/month (~25%), launched a $399/month 36-month Model Y Long Range RWD lease and 0% APR for 72 months on Model Y Standard, using lease subvention to clear inventory."
+   },
+   "urls": [
+    "https://evchargeright.com/blog/tesla-low-lease-prices-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c138",
+   "claim": "Largest passenger-vehicle backlog in four years, ~11 days of supply, record deliveries in Canada/Australia/Japan/Taiwan, record Giga Berlin production; battery availability limited volume growth.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla ended Q3 2026 with its largest passenger-vehicle backlog in four years, ~11 days of supply, record deliveries in Canada, Australia, Japan and Taiwan, and record Gigafactory Berlin production; battery availability limited volume growth."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c138",
+    "c139",
+    "c140",
+    "c141"
+   ]
+  },
+  {
+   "cid": "c142",
+   "claim": "Risk: battery availability limits vehicle production despite strong backlog, so demand may not convert promptly to deliveries.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Risk: Tesla identifies battery availability as limiting vehicle production despite strong backlog (as of 2026-10-21), so demand may not translate promptly into deliveries."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c142",
+    "c143"
+   ]
+  },
+  {
+   "cid": "c144",
+   "claim": "FSD attach rate >75% of new North America deliveries (~20pp sequential rise); active FSD subscriptions 1.74M (+67% YoY); FSD approved in nine EU countries with >100,000 customers.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Tesla FSD attach rate exceeded 75% of new North America deliveries (~20pp sequential increase); active FSD subscriptions 1.74M (+67% YoY); FSD approved in nine EU countries with >100,000 customers."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c144",
+    "c145",
+    "c146",
+    "c147"
+   ]
+  },
+  {
+   "cid": "c148",
+   "claim": "Supervised FSD in US listed at $99/month (as of 2026-11-10); verifies price, not a change.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla lists supervised FSD in the US at $99 per month (as of 2026-11-10); verifies current price, not a recent change."
+   },
+   "urls": [
+    "https://www.tesla.com/support/full-self-driving-subscriptions"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c149",
+   "claim": "Robotaxi check: paid Cybercab rides began in Austin Sept 2026; >300 Cybercabs in Austin as of Oct 10; ~570 of >1,200 Texas robotaxis are Cybercabs per DMV; ~2M cumulative unsupervised miles, up eightfold QoQ.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla robotaxi check: paid Cybercab rides began in Austin in Sept 2026; >300 Cybercabs in Austin as of Oct 10, 2026; ~570 of >1,200 Tesla robotaxis in Texas are Cybercabs per state DMV; cumulative unsupervised robotaxi miles ~2M, up eightfold QoQ."
+   },
+   "urls": [
+    "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-9-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c150",
+   "claim": "Tesla Robotaxi page (2026-11-10) lists service in Austin, Dallas, Fort Worth, Houston, Miami, Orlando, San Antonio, Tampa; availability doesn't establish unit economics.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla Robotaxi page as of 2026-11-10 lists autonomous service in Austin, Dallas, Fort Worth, Houston, Miami, Orlando, San Antonio and Tampa; availability does not establish unit economics."
+   },
+   "urls": [
+    "https://www.tesla.com/robotaxi"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c151",
+   "claim": "Small Model Y robotaxi fleets in Dallas, Houston, Miami, Orlando, Tampa; Waymo >4,000 vehicles in >12 cities; Tesla switched metric from 'paid' to 'unsupervised' miles after Q2 paid miles fell 36% q/q.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla runs small Model Y robotaxi fleets in Dallas, Houston, Miami, Orlando and Tampa; Waymo has over 4,000 vehicles in over a dozen cities. Tesla changed its disclosed metric from 'paid' to 'unsupervised' robotaxi miles after Q2 paid miles fell 36% q/q."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/10/22/tesla-is-prepping-a-cybercab-onslaught/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c152",
+   "claim": "Musk on X (Nov 6, 2026): wind down Cybertruck production at Giga Texas ~mid-2027 for Cybercab; US Cybertruck sales -48% to 20,237 in 2025 from 38,965; no press release.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Musk said on X (Nov 6, 2026) Tesla will wind down Cybertruck production at Gigafactory Texas around mid-2027 to make room for Cybercab; US Cybertruck sales fell 48% to 20,237 in 2025 from 38,965 in 2024; no press release issued."
+   },
+   "urls": [
+    "https://markets.financialcontent.com/stocks/article/stockstory-2026-11-9-tesla-tsla-shares-skyrocket-what-you-need-to-know",
+    "https://www.cbtnews.com/cybertruck-production-ends-2027/",
+    "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-9-2026",
+    "https://www.reuters.com/business/autos-transportation/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-2026-11-06"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c152",
+    "c153",
+    "c154",
+    "c155"
+   ]
+  },
+  {
+   "cid": "c156",
+   "claim": "Energy: record storage order rate/backlog; Megafactory Texas began production (planned 50 GWh); first Megapacks with own LFP cells shipped from Nevada; 2027 Megapack availability almost fully committed; Q3 storage 13.7 GWh.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Tesla energy: record storage order rate and backlog; Megafactory Texas began production (planned 50 GWh); first Megapacks with Tesla's own LFP cells shipped from Nevada; 2027 Megapack availability almost fully committed; Q3 storage deployed 13.7 GWh."
+   },
+   "urls": [
+    "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
+    "https://www.energy-storage.news/tesla-q3-2026-energy-storage-revenues-fall-despite-second-highest-quarterly-deployments/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c156",
+    "c157"
+   ]
+  },
+  {
+   "cid": "c160",
+   "claim": "Musk goal of ~5M vehicles/yr by ~2030 (goal, not forecast); Optimus early ramp 'shallow slope', 'somewhat bumpy'; Semi volume production in Nevada.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Musk described a goal of about 5M Tesla vehicles a year by around 2030, calling it a goal, not a forecast. Optimus production started on high-volume Fremont lines with a 'shallow slope', 'somewhat bumpy' early ramp; Semi volume production started in Nevada."
+   },
+   "urls": [
+    "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c161",
+   "claim": "Management targets 400 MW of AI training compute by year-end 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla management targets 400 MW of AI training compute by year-end 2026."
+   },
+   "urls": [
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c162",
+   "claim": "Optimus Hardware Robotics TPM internship advertised in Palo Alto for winter/spring 2027; opening, not evidence of net headcount growth.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla advertises an Optimus Hardware Robotics Technical Program Manager internship in Palo Alto for winter/spring 2027 (as of 2026-11-10); an opening, not evidence of net headcount growth."
+   },
+   "urls": [
+    "https://www.tesla.com/careers/search/job/internship-robotics-technical-program-manager-optimus-hardware-winter-spring-2027-284822"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c163",
+   "claim": "China financing/discount offers for eligible orders reportedly expire 2026-11-30; test of order conversion (not a confirmed company event).",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Tesla China financing and discount offers for eligible orders reportedly expire 2026-11-30, a near-term test of order conversion and incentive persistence (not a confirmed company event)."
+   },
+   "urls": [
+    "https://carnewschina.com/2026/11/09/teslas-china-sales-fall-to-8800-in-october-the-lowest-since-july-2022-as-exports-surge/",
+    "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c163",
+    "c164",
+    "c165"
+   ]
+  },
+  {
+   "cid": "c166",
+   "claim": "China Oct 2026 (CPCA): domestic sales 8,817 (-66.1% YoY); Shanghai exports 59,012 (+66.3%); wholesale 67,829 (+10.3%).",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Tesla China October 2026 (CPCA via CarNewsChina): domestic sales 8,817, down 66.1% YoY; Shanghai exports 59,012, up 66.3%; wholesale 67,829, up 10.3%."
+   },
+   "urls": [
+    "https://carnewschina.com/2026/11/09/teslas-china-sales-fall-to-8800-in-october-the-lowest-since-july-2022-as-exports-surge/",
+    "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c166",
+    "c167",
+    "c168"
+   ]
+  },
+  {
+   "cid": "c169",
+   "claim": "Oct 2026 registrations: Sweden +248%, Norway +131%, Denmark +34% YoY; Reuters cautions easier comparisons and incentives.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla October 2026 registrations rose 248% in Sweden, 131% in Norway and 34% in Denmark year over year; Reuters cautions easier comparisons and incentives contributed."
+   },
+   "urls": [
+    "https://driveteslacanada.ca/news/tesla-europe-registrations-october-2026-surge/",
+    "https://www.marketscreener.com/news/tesla-registrations-surge-across-northern-europe-in-october-ce785fd8df81f723"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c169",
+    "c170"
+   ]
+  },
+  {
+   "cid": "c171",
+   "claim": "Risk: Danish market share 0.73% despite October growth, below several Chinese competitors; regional recovery not uniform.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Risk: despite October 2026 registration growth, Tesla's Danish market share was 0.73%, below several Chinese competitors; regional recovery is not uniform."
+   },
+   "urls": [
+    "https://www.marketscreener.com/news/tesla-registrations-surge-across-northern-europe-in-october-ce785fd8df81f723"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c172",
+   "claim": "Oct 2026: Tesla offered almost $3,000 off Model Y inventory in Australia, latest price cut there.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "In October 2026 Tesla offered almost $3,000 off Model Y inventory in Australia, its latest price cut there."
+   },
+   "urls": [
+    "https://thedriven.io/2026/10/05/tesla-offers-almost-3000-off-model-y-inventory-in-yet-another-price-cut-to-attract-new-sales/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c173",
+   "claim": "Barclays upgraded Tesla to Overweight, $450 target (from $370), Oct 26; Tesla traded $402.60 on Oct 29.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Barclays upgraded Tesla to Overweight with a $450 target (from $370) on Oct 26; Tesla traded at $402.60 on Oct 29."
+   },
+   "urls": [
+    "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c174",
+   "claim": "Disclosed ongoing requests/investigations by NHTSA, NTSB, SEC, DOJ and others on vehicle functionality, driver assistance, Robotaxi, compliance, finance, data privacy, related parties; enforcement could harm business.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla disclosed ongoing requests and investigations by NHTSA, NTSB, SEC, DOJ and others on vehicle functionality, driver assistance, Robotaxi, compliance, finance, data privacy and related parties; an enforcement action could materially harm business, cash flows, financial position or brand."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c175",
+   "claim": "Q3 2026 10-Q: no director or officer adopted, modified or terminated a Rule 10b5-1 or non-Rule 10b5-1 trading arrangement in the quarter.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla's Q3 2026 10-Q states no director or officer adopted, modified or terminated a Rule 10b5-1 or non-Rule 10b5-1 trading arrangement during the quarter ended 2026-09-30."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c176",
+   "claim": "SEC filings 2026-09-01 to 2026-11-10 show one Form 4 and no 13D/13G filings.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla SEC filings from 2026-09-01 through 2026-11-10 show one Form 4 and no 13D/13G filings."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000110465926106432/0001104659-26-106432-index.htm"
+   ],
+   "conflicts_with": [
+    "c183",
+    "c179"
+   ]
+  },
+  {
+   "cid": "c177",
+   "claim": "CFO Taneja filed Form 4s 09/09, 06/09, 05/15/2026 each paired with Form 144 (09/08, 06/08, 05/13), indicating repeated insider selling; Kathleen Wilson-Thompson Form 4 on 05/04/2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla CFO Vaibhav Taneja filed Form 4s on 09/09/2026, 06/09/2026 and 05/15/2026, each paired with a Form 144 proposed-sale notice (09/08, 06/08, 05/13), indicating repeated insider selling; Kathleen Wilson-Thompson filed a Form 4 on 05/04/2026."
+   },
+   "urls": [
+    "https://www.marketbeat.com/stocks/NASDAQ/TSLA/sec-filings/"
+   ],
+   "conflicts_with": [
+    "c178"
+   ]
+  },
+  {
+   "cid": "c178",
+   "claim": "CFO Taneja Form 4: 6,539 RSU shares vested Sept 5, 2026; 2,605.75 shares sold/withheld Sept 8 at $360.134 for taxes (automatic, not discretionary).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Tesla CFO Vaibhav Taneja Form 4 filed 2026-09-09: 6,539 shares issued on RSU vesting 2026-09-05; 2,605.75 shares withheld and sold 2026-09-08 at $360.134 for taxes (tax-related, not discretionary bearish signal).",
+    "B": "Tesla CFO Vaibhav Taneja's Form 4 reported a Sept 8, 2026 sale of 2,605.75 shares at $360.134 after Sept 5 vesting of 6,539 RSUs; footnote says it was an automatic tax-obligation sale, not discretionary.",
+    "D": "Tesla CFO Vaibhav Taneja's Form 4 reports 6,539 shares acquired 2026-09-05 via RSU vesting and 2,605.75 shares disposed 2026-09-08 at $360.134, identified as tax-related withholding rather than an open-market sale."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000110465926106432/xslF345X06/tm2625055d1_4seq1.xml",
+    "https://www.secform4.com/filings/1318605/0001104659-26-106432.htm",
+    "https://www.stocktitan.net/sec-filings/TSLA/form-4-tesla-inc-insider-trading-activity-67686d1b95c9.html"
+   ],
+   "conflicts_with": [
+    "c177"
+   ],
+   "merged_from": [
+    "c178",
+    "c179",
+    "c180"
+   ]
+  },
+  {
+   "cid": "c181",
+   "claim": "BlackRock Schedule 13G/A filed 2026-10-27: 196,348,742 Tesla shares (4.96%) as of 2026-09-30, sole voting power over 180,605,472.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "A": "BlackRock Schedule 13G/A filed 2026-10-27 reports 196,348,742 Tesla shares (4.96%) as of 2026-09-30, with sole voting power over 180,605,472 shares."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/xslSCHEDULE_13G_X01/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/xslSCHEDULE_13G_X02/primary_doc.xml"
+   ],
+   "conflicts_with": [
+    "c176"
+   ],
+   "merged_from": [
+    "c181",
+    "c182",
+    "c183"
+   ]
+  },
+  {
+   "cid": "c184",
+   "claim": "Filings per MarketBeat: BlackRock 13G/A 10/27/2026; Vanguard 13G 04/30/2026; Musk 13G/A and Form 4 on 06/17/2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "BlackRock filed a Schedule 13G/A on Tesla on 10/27/2026; Vanguard filed a Schedule 13G on 04/30/2026; Musk filed a Schedule 13G/A and Form 4 on 06/17/2026."
+   },
+   "urls": [
+    "https://www.marketbeat.com/stocks/NASDAQ/TSLA/sec-filings/"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+   "note": "Proxy confirms Dec 3, 2026 3pm CT meeting with director elections, say-on-pay (and PwC); both variants accurate.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "F": "true",
+    "E": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.wallstreethorizon.com/tesla-earnings-calendar",
+   "note": "WSH lists 01/27/2027 after market as UNCONFIRMED.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "F": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.cmelitegroup.com/knowledge-hub/tesla-earnings-date",
+   "note": "CME says Q4 2026 expected late January 2027, unconfirmed; usual schedule stated.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q: sales restrictions expire Dec 2026 and the investment moved to Level 1 in Q3.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+   "note": "NHTSA opened Audit Query Sept 4, 2026 on Cybercab FMVSS self-certification; the 21 questions and Oct 30 extension aren't shown in the passages.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/12/nhtsa-tesla-robotaxi-school-zone-speeding-petition/",
+   "note": "File DP26010 opened Oct 9, 2026 on a petition covering ~1,000 Model Y/Cybercab robotaxis; decision due ~Jan 21, 2027.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-9-2026",
+   "note": "Tesla fell Nov 5 on regulatory concerns after Democrats took Congress; EV stocks rebounded Nov 6.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true"
+   }
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html",
+   "note": "Hinojosa's moratorium call, the Grimes County Terafab and the probe concerns are all in the CNBC article.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/22/tesla-cuts-2026-capex-guidance-q3-cash-flow/",
+   "note": "Working capital +$2.59B, Q3 FCF $1.53B and capex cut to $20B are confirmed; the payables ($3.99B) figure is in StockTitan.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/22/tesla-cuts-2026-capex-guidance-q3-cash-flow/",
+   "note": "$2.59B working-capital contribution against $1.53B FCF; without it FCF would be about -$1.06B.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.investing.com/news/stock-market-news/teslas-quarterly-deliveries-fall-more-than-expected-on-lower-ev-demand-4427809",
+   "note": "FY2025 1.64M vs 1.79M, Q4 -15.6%, BYD 1M overseas and the tax credit end are supported; BYD outselling Tesla annually is consistent with reporting but not quoted in the passage. This is historical context.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://kore1.com/tesla-layoffs-2026",
+   "note": "A recruiter blog lists these destinations; it is a weak source, but the claim is consistent with it.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://kore1.com/tesla-layoffs-2026",
+   "note": "Matches the recruiter blog's headcount, 2026 YTD attrition and equity-share figures; the source is soft.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/11/09/tesla-deep-bench-gone-musk-admits-talent-shortage/",
+   "note": "Electrek on Nov 9 says 7 of 14 Investor Day presenters have left, plus several Cybercab leaders.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/11/09/tesla-deep-bench-gone-musk-admits-talent-shortage/",
+   "note": "Kerns left in October for Rivian's R2 general assembly; Musk cited limited people when explaining the Cybertruck wind-down.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+   "note": "$373.62 after-hours, down 3.3% from $386.47, 195x on $1.92 annualized all match; YTD -16% consistent with marketscreener -16.21%; S&P +10.3% not directly checked.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q states Ninth Circuit reversed and vacated class certification on Oct 16, 2026 and returned case to district court.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true"
+   }
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Benavides: $129M compensatory (33% Tesla), $200M punitive, post-trial motions denied Feb 19, 2026, Eleventh Circuit appeal pending.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript",
+   "note": "Transcript says Robotaxi expands to Dallas next month (November 2026); this is a management target.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true"
+   }
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+   "note": "Musk hoped for wider European approval by Q1 2027; the nine-countries/100k-customers parenthetical is not directly verified, though RDW lists nine member states.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "B": "true"
+   }
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system",
+   "note": "RDW on Nov 3, 2026 approved the changes and the name Tesla Assisted Driving; the EU process is still ongoing in the TCMV.",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+   "note": "Customer vehicles joining the fleet around Q2 2027 and unsupervised FSD pushed to Q2 2027 inside Robotaxi zones are supported by Indmoney and Electrek.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript",
+   "note": "AI5 integration into Optimus around April 2027 is stated on the call; it is a development target.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+   "note": "No substantive update on the call, special committees exploring a combination, and no definitive transaction.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "B": "true",
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/",
+   "note": "The Polymarket prices (19% by Dec 31, 2026 and 59% by Jun 30, 2027) match, and the special committees were confirmed on SpaceX's Oct 20 call with no terms.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://tech-insider.org/tesla-spacex-merger-december-6-agm-barclays-2026/",
+   "note": "Barclays flagged a late Oct/early Nov window and a 6-12 month expectation, and nothing was announced as of Nov 4; the source is secondary.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/",
+   "note": "The 3,952,757,946 shares, the 50% of all shares quote, 'quite a high hurdle' and the J.P. Morgan 30-35% premium all-stock expectation are confirmed.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/",
+   "note": "The 28% retail vs 76.6% institutional turnout and the Sept 29 letter to the SEC are confirmed; the 'cleared' wording is not directly shown and may conflate the letter date with a clearance.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/sec-filings/TSLA/def-14a-tesla-inc-definitive-proxy-statement-1e26307c623e.html",
+   "note": "Musk is a significant shareholder and officer of SpaceX and a Tesla director, so a deal is a related-party transaction handled by disinterested directors; his stated conflict is plausible but not directly quoted.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript",
+   "note": "On the Q3 call Musk said capital equipment would be in the tens of billions through early 2028 and north of $100B long term, with the Tesla/SpaceX split undecided.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c55": {
+   "cid": "c55",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://abc7ny.com/post/debate-elon-musks-tesla-pay-package-rages-could-make-worlds-1st-trillonaire/18121388",
+   "note": "The vote was Nov 6, 2025 with Calpers, Norway, ISS and Glass Lewis opposed; this is a year-old event, since superseded by 2026 developments.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stocktitan.net/sec-filings/TSLA/schedule-13g-a-tesla-inc-amended-passive-investment-disclosure-631d7da19861.html",
+   "note": "The 96M interim award shares were forfeited Apr 21, 2026 after a Tornetta Decision Event, and the 423,743,904 performance award shares are under a voting agreement with an irrevocable proxy to Tesla's secretary.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true"
+   }
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/TSLA/schedule-13g-a-tesla-inc-amended-passive-investment-disclosure-631d7da19861.html",
+   "note": "The figures match: 717,112,739 shares, 20.3%, 3,755,723,871 outstanding, 413,152,109 trust shares and 303,960,630 option shares.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001318605/000110465926116700/tm267596-1_def14a.htm",
+   "note": "On June 16, 2026 Musk exercised all 303,960,630 options and net-settled, with 17,531,857 shares withheld; this is a compensation exercise, not open-market buying.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/sec-filings/TSLA/def-14a-tesla-inc-definitive-proxy-statement-1e26307c623e.html",
+   "note": "The proxy reports 2025 total compensation of $158,359,009,867, driven by the 2025 CEO Performance Award, and the interim award was forfeited in April 2026; the 12-tranche structure matches the proxy description.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/",
+   "note": "Article attributes to Khaleej Times ~20% Tesla and >80% SpaceX voting power; 13G/A shows 20.3%.",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c62": {
+   "cid": "c62",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
+   "note": "$2.00B investment and $863M TTM unrealized gain (1,005 Q2 gain less 142 Q3 loss) confirmed; $2.002B and restriction expiry plausible but not directly shown.",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "D": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q figures $221M/$626M revenue, $729M receivable, $648M deferred revenue match.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Note 3 confirms $1.95B and $1.73B conditional.",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "F": "true",
+    "C": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/",
+   "note": "Oct 15 count 3,952,757,946 confirmed; 3,751M to 3,953M is ~202M consistent.",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c70": {
+   "cid": "c70",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://ir.tesla.com/_flysystem/s3/sec/000110465926116700/tm267596-1_def14a-gen.pdf",
+   "note": "Annual meeting Dec 3, 2026 confirmed; special committees exploring SpaceX combination, no definitive deal.",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c71": {
+   "cid": "c71",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Cash $45.447B, +$1.9B QoQ; recourse $2M, non-recourse ~$9.28B; total $9,523M with leases plausible (1,387+8,136).",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Cash and $30B undrawn confirmed; covenant compliance is standard 10-Q language.",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c78": {
+   "cid": "c78",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Total debt $9,284M, current $1,311M, $30,000M unused committed, covenant compliance all match the 10-Q.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c79": {
+   "cid": "c79",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q: $9.28B principal, $1.32B current; China facility $5,966M, Oct 2026-Sep 2027.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c82": {
+   "cid": "c82",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "The $4,288M, Mar-Dec 2026 figures are the Dec 31, 2025 comparative; the 9/30/2026 facility is $5,966M, Oct 2026-Sep 2027, so the claim is stale.",
+   "via": "passages"
+  },
+  "c84": {
+   "cid": "c84",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q Term Loan Facility text matches exactly: $20B, Sept 2029, 18-month availability, ten draws, step-downs.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q confirms $8B due Sept 2031, $2B 364-day due Sept 2027, $4B increase option, replacing the $5B Jan 2028 revolver.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true"
+   }
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q shows undrawn $20B term loan (Sept 2029), $10B revolvers, and covenant compliance at 9/30.",
+   "via": "passages"
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.marketscreener.com/news/fitch-assigns-tesla-first-time-bbb-idr-outlook-stable-ce785ad8da89f423",
+   "note": "Fitch first-time BBB IDR, Stable, published 9/22/2026.",
+   "via": "passages"
+  },
+  "c93": {
+   "cid": "c93",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.teslarati.com/elon-musk-challenges-tesla-credit-rating-moodys-after-spacex-gets-higher-one/",
+   "note": "Teslarati confirms Baa3, SpaceX Baa1 stable, and Musk quote; 'two notches' vs a later 'one-notch' remark is minor.",
+   "via": "passages"
+  },
+  "c94": {
+   "cid": "c94",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+   "note": "All figures match Electrek and Tesla's update.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c95": {
+   "cid": "c95",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+   "note": "Revenue $28.046B vs $28.095B and operating income $718M vs $1.624B confirmed.",
+   "via": "passages"
+  },
+  "c96": {
+   "cid": "c96",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "Operating income -56%, GAAP NI -43%, FCF -62% confirmed.",
+   "via": "passages"
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "Flat revenue, GAAP NI $787M -43%, op margin 2.6% vs 5.8% confirmed.",
+   "via": "passages"
+  },
+  "c99": {
+   "cid": "c99",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis",
+   "note": "Net $447M tariff refund in gross profit, R&D +69%, 2.6% margin confirmed; the opex-guided-higher claim is plausible but not directly seen.",
+   "via": "passages"
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Credits $113M vs $417M (-73%) and 9M -$812M (-56%) are consistent; $639M vs $1,451M follows; the $475M reversal is not directly seen but plausible.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true"
+   }
+  },
+  "c103": {
+   "cid": "c103",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/tesla-q3-2026-earnings-results",
+   "note": "Company-compiled consensus Oct 19: revenue $28.34B miss, adj EPS $0.45 beat, GAAP EPS $0.23 miss.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true",
+    "B": "true",
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c106": {
+   "cid": "c106",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/tesla-q3-2026-earnings-results",
+   "note": "GAAP EPS $0.22 vs $0.23 avg and non-GAAP $0.48 vs $0.45 confirmed; the $0.21 median is not shown in the passages but is plausible.",
+   "via": "passages"
+  },
+  "c108": {
+   "cid": "c108",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+   "note": "Electrek states revenue in line with ~$28.06B, EPS $0.48 vs $0.45, GAAP NI $787M, $0.22.",
+   "via": "passages"
+  },
+  "c109": {
+   "cid": "c109",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis",
+   "note": "Money365 states $28.441B revenue consensus (1.39% miss) and $0.4358 EPS (10.14% beat).",
+   "via": "passages"
+  },
+  "c110": {
+   "cid": "c110",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-reports-q3-earnings-210001951.html",
+   "note": "Zacks consensus $27.78B revenue (+0.96%) and EPS $0.45 (+6.67%) confirmed.",
+   "via": "passages"
+  },
+  "c111": {
+   "cid": "c111",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+   "note": "Deliveries and storage actuals are right, but the cited consensus figures (472,269 and ~15.1 GWh) conflict with sources showing 461,974 and ~15.9 GWh.",
+   "via": "passages"
+  },
+  "c112": {
+   "cid": "c112",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+   "note": "Deliveries of 486,532 vs 461,974 consensus (~5% beat) and production of 464,391 confirmed.",
+   "via": "passages"
+  },
+  "c113": {
+   "cid": "c113",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+   "note": "13.7 GWh vs ~15.9 GWh expected; the Q3 update cites battery availability as the vehicle volume constraint.",
+   "via": "passages"
+  },
+  "c114": {
+   "cid": "c114",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "FCF $1,531M, OCF $6,263M, capex $4,732M (+110%), and auto GM ex-credits 18.1%/16.3%/15.4% all match; the -$4.506B consensus is per the Tesla-compiled consensus.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c117": {
+   "cid": "c117",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "OCF 6,263, capex 4,732 and FCF 1,531 match the update.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true"
+   }
+  },
+  "c119": {
+   "cid": "c119",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "Revenue $28,046M, non-GAAP EPS $0.48, NI $787M (-43%) and FCF $1,531M (-62%) all match.",
+   "via": "passages"
+  },
+  "c120": {
+   "cid": "c120",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "Auto GM ex-credits is 18.1% vs 16.3% in Q2.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c122": {
+   "cid": "c122",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://indmoney.com/blog/us-stocks/tesla-stock-q3-earnings-analysis-tsla",
+   "note": "CFO said ~$20B capex funded mainly by operating cash flow; implied Q4 ~$6.99B.",
+   "via": "passages"
+  },
+  "c123": {
+   "cid": "c123",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.stocktitan.net/articles/tesla-q3-2026-earnings-results",
+   "note": "Q3 10-Q says in excess of $20B vs >$25B in Q2 10-Q; 9M capex $13.01B.",
+   "via": "passages"
+  },
+  "c124": {
+   "cid": "c124",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+   "note": "Q2 10-Q filed July said capex in excess of $25B.",
+   "via": "passages"
+  },
+  "c125": {
+   "cid": "c125",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Capex >$20B guided, $13.01B spent in nine months.",
+   "via": "passages"
+  },
+  "c126": {
+   "cid": "c126",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "Guidance and 9M capex confirmed; the risk framing is an analytical judgment.",
+   "via": "passages"
+  },
+  "c127": {
+   "cid": "c127",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q: capex $13.01B vs $6.13B; guidance >$20B.",
+   "via": "passages"
+  },
+  "c128": {
+   "cid": "c128",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q lists these capex drivers; the SI expansion is Super Intelligence per StockTitan.",
+   "via": "passages"
+  },
+  "c129": {
+   "cid": "c129",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q risk language and new credit facilities and delayed draw term loan support the possible funding need.",
+   "via": "passages"
+  },
+  "c130": {
+   "cid": "c130",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://electrek.co/2026/10/22/tesla-cuts-2026-capex-guidance-q3-cash-flow/",
+   "note": "Capex guidance is not unclear: the 10-Q cut it to >$20B, and Electrek itself later reported the cut, so the claim that the letter left >$25B is misleading.",
+   "via": "passages"
+  },
+  "c131": {
+   "cid": "c131",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.geminiq.com/blog/tesla-earnings-q3-2026",
+   "note": "FCF down ~62% to $1.53B and TTM FCF $3.30B confirmed; guidance swing consistent with filings.",
+   "via": "passages"
+  },
+  "c132": {
+   "cid": "c132",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm",
+   "note": "Capex $13.01B vs $6.13B and TTM FCF $3.30B confirmed; the $10.96B AI CIP figure is not shown but is plausible.",
+   "via": "passages"
+  },
+  "c133": {
+   "cid": "c133",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+   "note": "Tesla gives only qualitative volume outlook and no numeric guidance.",
+   "via": "passages"
+  },
+  "c134": {
+   "cid": "c134",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "Update states production has begun for Semi in Nevada and Optimus in Fremont.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "D": "true"
+   }
+  },
+  "c135": {
+   "cid": "c135",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "No numeric revenue, EPS or delivery guidance; qualitative volume outlook.",
+   "via": "passages"
+  },
+  "c136": {
+   "cid": "c136",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://us.plus500.com/forecasts/earnings-expectations-tesla-earnings-expectations",
+   "note": "Q2 EPS $0.33, revenue $28.24B, stock -14.52% to $319.69 on July 23 confirmed; but superseded by Q3 results.",
+   "via": "passages"
+  },
+  "c138": {
+   "cid": "c138",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "Q3 update confirms record deliveries in Canada/Australia/Japan/Taiwan, record Berlin production, 11 days supply, largest backlog in four years, battery limiting.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c142": {
+   "cid": "c142",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "Tesla states battery availability remains limiting factor on vehicle production ramp.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true"
+   }
+  },
+  "c144": {
+   "cid": "c144",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "FSD attach >75%, 1.74M +67%, nine EU countries, >100,000 customers all confirmed.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c148": {
+   "cid": "c148",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.tesla.com/support/full-self-driving-subscriptions",
+   "note": "Tesla support page shows $99 monthly FSD Supervised price.",
+   "via": "passages"
+  },
+  "c149": {
+   "cid": "c149",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.reuters.com/business/autos-transportation/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-2026-11-06",
+   "note": "570 of 1,200+ Texas robotaxis are Cybercabs per DMV; paid rides began September; ~2M miles per Q3 report; the >300 Oct 10 figure is not directly shown.",
+   "via": "passages"
+  },
+  "c150": {
+   "cid": "c150",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tesla.com/robotaxi",
+   "note": "Tesla page lists exactly those eight cities.",
+   "via": "passages"
+  },
+  "c151": {
+   "cid": "c151",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://techcrunch.com/2026/10/22/tesla-is-prepping-a-cybercab-onslaught/",
+   "note": "TechCrunch confirms the five-city fleets, Waymo's 4,000+ vehicles in 12+ cities, and the switch from paid to unsupervised miles after the 36% Q2 decline.",
+   "via": "passages"
+  },
+  "c152": {
+   "cid": "c152",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.reuters.com/business/autos-transportation/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-2026-11-06",
+   "note": "Reuters confirms the Nov 6 X post, the mid-2027 wind-down, and the 20,237 vs 38,965 sales figures; the announcement came via X, not a release.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "B": "true",
+    "C": "true"
+   }
+  },
+  "c156": {
+   "cid": "c156",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+   "note": "The Q3 update and Energy-Storage.News confirm the record storage backlog, Megafactory Texas at 50 GWh, own-LFP Megapacks, 2027 nearly sold out, and 13.7 GWh deployed.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c160": {
+   "cid": "c160",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis",
+   "note": "The Update frames about 5M vehicles a year by around 2030 as an aim not a forecast, and Musk called the Optimus ramp 'shallow slope' and 'somewhat bumpy'.",
+   "via": "passages"
+  },
+  "c161": {
+   "cid": "c161",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.money365.market/articles/tesla-q3-2026-earnings-analysis",
+   "note": "The Q3 update summary says SI training compute is to reach 400 MW by year end.",
+   "via": "passages"
+  },
+  "c162": {
+   "cid": "c162",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.tesla.com/careers/search/job/internship-robotics-technical-program-manager-optimus-hardware-winter-spring-2027-284822",
+   "note": "The Tesla careers posting is live for a Palo Alto intern role starting around January 2027.",
+   "via": "passages"
+  },
+  "c163": {
+   "cid": "c163",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://carnewschina.com/2026/11/09/teslas-china-sales-fall-to-8800-in-october-the-lowest-since-july-2022-as-exports-surge/",
+   "note": "China offers cover eligible orders placed through Nov 30; this is a promotion deadline, not a confirmed company event.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c166": {
+   "cid": "c166",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026/",
+   "note": "CPCA figures for domestic 8,817 (-66.1%), exports 59,012 (+66.3%), wholesale 67,829 (+10.3%) confirmed.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c169": {
+   "cid": "c169",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.marketscreener.com/news/tesla-registrations-surge-across-northern-europe-in-october-ce785fd8df81f723",
+   "note": "Reuters figures match and it notes easier comparisons and incentives.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c171": {
+   "cid": "c171",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.marketscreener.com/news/tesla-registrations-surge-across-northern-europe-in-october-ce785fd8df81f723",
+   "note": "Denmark share 0.73%, behind BYD, Leapmotor, Xpeng and SAIC's MG.",
+   "via": "passages"
+  },
+  "c172": {
+   "cid": "c172",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://thedriven.io/2026/10/05/tesla-offers-almost-3000-off-model-y-inventory-in-yet-another-price-cut-to-attract-new-sales/",
+   "note": "$2,950 off in-stock Model Y in Australia, reported Oct 5, 2026.",
+   "via": "passages"
+  },
+  "c173": {
+   "cid": "c173",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://247wallst.com/investing/2026/10/29/musk-says-a-tesla-spacex-merger-is-a-good-idea-but-admits-it-would-require-1-98-billion-yes-votes-he-calls-it-quite-a-high-hurdle/",
+   "note": "Upgrade to $450 from $370 and the $402.60 price on Oct 29 are confirmed; the Oct 26 date is plausible given the Oct 26 close.",
+   "via": "passages"
+  },
+  "c174": {
+   "cid": "c174",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "The Q3 10-Q discloses NHTSA, NTSB, SEC and DOJ requests and the possibility of material adverse impact.",
+   "via": "passages"
+  },
+  "c175": {
+   "cid": "c175",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "10-Q Item 5 states no 10b5-1 or non-10b5-1 arrangements were adopted, modified or terminated.",
+   "via": "passages"
+  },
+  "c177": {
+   "cid": "c177",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.marketbeat.com/stocks/NASDAQ/TSLA/sec-filings/",
+   "note": "Form 4/144 pairs on 05/13-05/15 and the Wilson-Thompson Form 4 on 05/04 are confirmed; the 06/09 pair is plausible. The 'repeated insider selling' framing overstates it, since the Sept sale was tax withholding.",
+   "via": "passages"
+  },
+  "c178": {
+   "cid": "c178",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926106432/xslF345X06/tm2625055d1_4seq1.xml",
+   "note": "Form 4 figures match, and footnote 2 says the shares were automatically withheld and sold for tax.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "D": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c181": {
+   "cid": "c181",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/xslSCHEDULE_13G_X02/primary_doc.xml",
+   "note": "BlackRock 13G/A signed 10/27/2026 shows 196,348,742 shares, sole voting 180,605,472, event date 9/30/2026; secform4 shows 4.96%.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c184": {
+   "cid": "c184",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.marketbeat.com/stocks/NASDAQ/TSLA/sec-filings/",
+   "note": "The BlackRock 13G/A on 10/27/2026 is confirmed and Musk filings around 6/17/2026 are in secform4; the Vanguard 4/30 date is not directly seen but is plausible.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://ir.tesla.com/sec-filings",
+   "note": "The cited IR page has no Q4 2026 delivery date, and I found no Fiscal.ai estimate of Jan 2, 2027. Tesla usually reports deliveries around the 2nd, but the date is unconfirmed.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.wallstreethorizon.com/tesla-earnings-calendar",
+   "note": "Wall Street Horizon independently lists Q1 2027 earnings as 04/21/2027, after market, Wednesday, marked INFERRED. That matches the claimed earnings date and timing. I could not open Fiscal.ai to confirm the attribution, and I found no independent source for the 2027-04-02 trading update. 2027-04-...",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   },
+   "retried": true
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+   "note": "The Q3 10-Q shows resale guarantee exposure of $4.42B vs $3.45B, inventory of $14,092M, inventory write-downs of $230M, and a 16% energy revenue decline. The 10-Q attributes the decline to tariff refunds for Megapack customers, among other causes. I did not confirm that the $230M write-down figur...",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://ir.tesla.com/_flysystem/s3/sec/000110465926116700/tm267596-1_def14a-gen.pdf",
+   "note": "The proxy says Musk's restricted shares vest on an accelerated basis if he is serving as CEO or as an executive officer responsible for product development or operations upon a change in control. The SpaceX-merger scrutiny framing is the claim's own inference.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+   "note": "The 8-K says Tesla must keep at least $5.0B of consolidated liquidity. The credit agreement's Ratings Requirement needs investment-grade ratings from at least two of Moody's, S&P and Fitch for a Specified Merger or Transaction.",
+   "confidence": "high",
+   "via": "agent",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c137": {
+   "cid": "c137",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://evchargeright.com/blog/tesla-low-lease-prices-2026",
+   "note": "The live page confirms all the figures: Model 3 RWD lease cut from $399 to $299 effective April 4, 2026, Model Y LR RWD lease at $399, and 0% APR for 72 months on Model Y Standard. The saved copy was empty, and the page is a single secondary source. The offers are about 7 months old and Tesla cha...",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c176": {
+   "cid": "c176",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/xslSCHEDULE_13G_X02/primary_doc.xml",
+   "note": "The one Form 4 is correct (CFO Taneja, filed 2026-09-09). But BlackRock filed Schedule 13G Amendment No. 4 on 2026-10-27 (event date 9/30/2026), so 'no 13D/13G filings' is wrong.",
+   "confidence": "high",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "note": "I found no confirmed date. Wall Street Horizon infers Jan 27, 2027 and marks it unconfirmed. CMElite says Tesla usually reports in the second half of Jan/Apr/Jul/Oct. Q3 was reported Oct 21, 2026."
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "The 10-Q says the SpaceX stake moved from Level 2 to Level 1 in Q3 2026 (fair value $2.865B). It is still under customary sales restrictions tied to the SpaceX IPO, which expire Dec 2026."
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "false",
+   "note": "NHTSA opened AQ26002 on Sept 3, 2026, the day Cybercab started in Austin, and announced it Sept 4. So the claimed opening date is off by one day. Scope, standards staying in force, and no stated deadline all match."
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "note": "TSLA fell 10.8% on Nov 5 after Democrats won both chambers. Reported causes include regulatory fears and talk of subpoenas. EV stocks rebounded Nov 6, with TSLA up 4.2% to $358.22."
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "note": "The 10-Q matches: $129M compensatory with Tesla 33% at fault, $200M punitive. Post-trial motions were denied Feb 19, 2026, and the 11th Circuit appeal is pending (Tesla's reply was due Nov 6)."
+  },
+  "c72": {
+   "cid": "c72",
+   "verdict": "true",
+   "note": "The 10-Q shows $45.447B in cash, equivalents and short-term investments, and $30.00B unused under senior unsecured credit facilities."
+  },
+  "c73": {
+   "cid": "c73",
+   "verdict": "true",
+   "note": "$45.447B cash and $30B unused facilities match the 10-Q. The $9.284B debt principal matches the debt table: $2M recourse plus $9.282B non-recourse."
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "note": "The 10-Q shows the China working capital facility at $5.966B, maturing Oct 2026–Sep 2027 and classified long-term. The fetched copy cut off the footnote explaining the refinancing basis, so that part is unconfirmed."
+  },
+  "c83": {
+   "cid": "c83",
+   "verdict": "true",
+   "note": "The 10-Q shows non-recourse debt of $1,311M current and $7,954M long-term, the China facility at $5,966M, automotive ABS maturing to June 2035, and energy ABS maturing June 2050–May 2052."
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "note": "Fitch gave a first-time 'BBB' long-term IDR with Stable outlook, published 09/22/2026."
+  },
+  "c96": {
+   "cid": "c96",
+   "verdict": "true",
+   "note": "Operating income fell 56% ($718M vs $1,624M). GAAP net income to common fell about 43% ($787M vs $1,373M). FCF fell about 62% ($1.531B vs $3.99B). Non-GAAP EPS was $0.48 vs $0.45 consensus."
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "note": "Revenue was $28.046B vs $28.095B a year earlier. GAAP net income to common was $787M, down 43%. Operating margin was 2.6% vs 5.8%."
+  },
+  "c100": {
+   "cid": "c100",
+   "verdict": "true",
+   "note": "Gross margin was 19.6% (16.8% in Q2, 18.0% a year earlier). Net tariff refund benefit to gross profit was +$447M. Opex was $4.776B (+39%), R&D $2.761B (+69%), operating income $718M (-56%)."
+  },
+  "c118": {
+   "cid": "c118",
+   "verdict": "true",
+   "note": "Revenue $28.046B, operating income $718M, GAAP EPS $0.22, non-GAAP EPS $0.48, FCF $1.531B. Operating cash flow of about $6.26B is inferred from capex $4.73B plus FCF, not read directly."
+  },
+  "c125": {
+   "cid": "c125",
+   "verdict": "true",
+   "note": "The 10-Q says capex is expected to exceed $20B in 2026, and nine-month capex was $13.01B."
+  },
+  "c139": {
+   "cid": "c139",
+   "verdict": "true",
+   "note": "The Q3 update says the passenger-vehicle backlog is the largest in four years and battery availability limited volume. Megafactory Texas began production, with 50 GWh planned capacity per secondary coverage of the update."
+  },
+  "c159": {
+   "cid": "c159",
+   "verdict": "true",
+   "note": "Per secondary coverage of the Q3 update: Semi volume production began (25k/yr Nevada capacity), Megafactory Texas began production (50 GWh planned), and Optimus production began on high-volume Fremont lines."
+  },
+  "c163": {
+   "cid": "c163",
+   "verdict": "true",
+   "note": "CarNewsChina reports 0% financing, a lower down payment and discounts for China orders placed through Nov 30. This is a media report, not a company event."
+  }
+ },
+ "scores": {
+  "exa": {
+   "units": 20,
+   "unverifiable": 0,
+   "true": 20,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 466.0,
+   "coverage": 0.248,
+   "accuracy": 1.0,
+   "combined": 0.397,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 20,
+   "unverifiable": 0,
+   "true": 20,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 466.0,
+   "coverage": 0.242,
+   "accuracy": 1.0,
+   "combined": 0.39,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 41,
+   "unverifiable": 0,
+   "true": 40,
+   "wrong": 1,
+   "truth": 110,
+   "truth_weight": 466.0,
+   "coverage": 0.423,
+   "accuracy": 0.985,
+   "combined": 0.592,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 27,
+   "unverifiable": 1,
+   "true": 25,
+   "wrong": 1,
+   "truth": 110,
+   "truth_weight": 466.0,
+   "coverage": 0.267,
+   "accuracy": 0.965,
+   "combined": 0.418,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 46,
+   "unverifiable": 0,
+   "true": 44,
+   "wrong": 2,
+   "truth": 110,
+   "truth_weight": 466.0,
+   "coverage": 0.395,
+   "accuracy": 0.981,
+   "combined": 0.564,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 34,
+   "unverifiable": 0,
+   "true": 34,
+   "wrong": 0,
+   "truth": 110,
+   "truth_weight": 466.0,
+   "coverage": 0.354,
+   "accuracy": 1.0,
+   "combined": 0.523,
+   "metric": "F1"
+  }
+ }
+}

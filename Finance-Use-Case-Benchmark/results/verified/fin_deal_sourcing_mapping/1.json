@@ -1,0 +1,995 @@
+{
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input_n": 1,
+ "task": "Find founder- or family-owned US veterinary clinic groups with 5-30 locations",
+ "labels": {
+  "firecrawl": "A",
+  "gpt": "B",
+  "parallel": "C",
+  "exa": "D",
+  "nimble": "E",
+  "opus": "F"
+ },
+ "unit": "company",
+ "evidence_pages": 149,
+ "evidence_fetched": 146,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 0,
+ "judge": "v4b",
+ "judge_cost_usd": 1.125,
+ "corrections_v2": {
+  "ownership_changes": [],
+  "cost": 0.039
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "R Veterinary (r.vet) fits the thesis: founder/family-owned (Rericha family) Missouri veterinary group with ten clinics, founded 2016, that declined outside investment/private equity.",
+   "asserted_by": [
+    "E",
+    "D",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "E": "R Veterinary (r.vet) fits the thesis: founder- and family-owned (Dr. Katie Rericha and James Rericha), founded 2016, independent with outside money declined, operating 10 clinics across Missouri.",
+    "D": "R Veterinary (r.vet) fits the thesis: a 100% family-owned (Rericha family, founders Dr. Katie and James Rericha) Missouri veterinary group with ten clinics, grown from one clinic in 2016, expressly rejecting private equity.",
+    "C": "R Veterinary (r.vet) fits the thesis: family-owned (100% owned by the founding veterinarian's family, explicitly not private-equity owned) US veterinary group based in Linn Creek, Missouri, founded 2016, with ten clinics across Missouri.",
+    "B": "R Veterinary (r.vet) fits the thesis: family-owned (founding Rericha family, declined outside investment) veterinary group headquartered in Linn Creek, Missouri, with ten clinics across Missouri."
+   },
+   "urls": [
+    "https://www.r.vet/",
+    "https://www.r.vet/about"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Symbios Animal Health (symbios.vet) fits the thesis: 100% independently and family-owned group of six New Jersey animal hospitals with no corporate parent or outside investors, owned by Drs. Nick and Elizabeth Pope and Dr. Jan Cailles.",
+   "asserted_by": [
+    "E",
+    "D",
+    "C",
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "E": "Symbios Animal Health (symbios.vet) fits the thesis: '100% independently and family owned' with no corporate parent or outside investors, owned by Drs. Nick and Elizabeth Pope and Dr. Jan Cailles, operating six New Jersey animal hospitals.",
+    "D": "Symbios Animal Health (symbios.vet) fits the thesis: a family-owned group of six New Jersey animal hospitals owned by working veterinarians (Drs. Nick and Elizabeth Pope and Dr. Jan Cailles), with no corporate parent or outside investors.",
+    "C": "Symbios Animal Health (symbios.vet) fits the thesis: Chatham, New Jersey-based group of six family-owned animal hospitals with no corporate parent and no outside investors.",
+    "A": "Symbios Animal Health (symbios.vet) fits the thesis: a family of six independently owned New Jersey animal hospitals (HQ Chatham, NJ), 100% independently and family owned, with no corporate parent and no outside investors.",
+    "B": "Symbios Animal Health (symbios.vet) fits the thesis: independently and family-owned (Drs. Nick and Elizabeth Pope and Dr. Jan Cailles) with no corporate parent or outside investors, operating six New Jersey hospitals.",
+    "F": "Symbios Animal Health (symbios.vet) fits the thesis: describes itself as '100% independently and family owned' with no corporate parent and no outside investors, co-owned by Drs. Nick Pope, Elizabeth Pope and Jan Cailles, with six New Jersey hospitals."
+   },
+   "urls": [
+    "https://www.symbios.vet/meet-the-owners/",
+    "https://www.symbios.vet/meet-the-owners",
+    "https://www.symbios.vet/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Callanan Veterinary Group (callananveterinarygroup.com) fits the thesis: four-generation family-owned group (founded 1926, HQ Watertown, MA) with five hospitals in Massachusetts and Rhode Island.",
+   "asserted_by": [
+    "D",
+    "B",
+    "F",
+    "E",
+    "C"
+   ],
+   "variants": {
+    "C": "Callanan Veterinary Group (callananveterinarygroup.com) fits the thesis: family-owned private veterinary hospital group based in Watertown, Massachusetts, founded 1926, with five hospitals listed on its site (employer profile reports six, including one in Rhode Island).",
+    "E": "Callanan Veterinary Group (callananveterinarygroup.com) fits the thesis: family-owned since 1926 across four generations, led by Dr. Jon Callanan, with five hospitals in Massachusetts and Rhode Island (HQ Watertown, MA) and ~150 employees.",
+    "D": "Callanan Veterinary Group (callananveterinarygroup.com) fits the thesis: a four-generation family-owned group (founded 1926 by P.J. Callanan, HQ Watertown, MA) with five hospitals across Massachusetts and Rhode Island.",
+    "B": "Callanan Veterinary Group (callananveterinarygroup.com) fits the thesis: four-generation Callanan family-owned group headquartered in Watertown, Massachusetts, founded 1926, with five full-service hospitals.",
+    "F": "Callanan Veterinary Group (callananveterinarygroup.com) fits the thesis: 'Family-owned and operated since 1926' by the Callanan family, with five full-service hospitals in MA and RI and no PE deal found."
+   },
+   "urls": [
+    "https://callananveterinarygroup.com/",
+    "https://callananveterinarygroup.com/about/",
+    "https://www.callananveterinarygroup.com/",
+    "https://jobs.avma.org/profile/callanan-veterinary-group-cvg/1989662"
+   ],
+   "conflicts_with": [
+    "c4"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Healthy Pets of Ohio (healthypetsofohio.com) fits the thesis: family-owned (Taylor family, founded 1952), independent Central Ohio group based in Powell, Ohio, with eight animal hospitals.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "A": "Healthy Pets of Ohio (healthypetsofohio.com) fits the thesis: family-owned, independent veterinary group based in Powell, Ohio, founded in 1952 by Dr. Hal Taylor Sr. with three generations of Taylor family leadership, operating eight animal hospitals.",
+    "B": "Healthy Pets of Ohio (healthypetsofohio.com) fits the thesis: multigenerational family-owned (Taylor family, since 1952), independent group headquartered in Powell, Ohio, operating eight animal hospitals in Central Ohio.",
+    "D": "Healthy Pets of Ohio (healthypetsofohio.com) fits the thesis: a family-owned (Taylor family, founded 1952) Central Ohio veterinary practice with eight full-service hospitals, describing itself as the region's largest independent veterinary practice."
+   },
+   "urls": [
+    "https://www.healthypetsofohio.com/locations/",
+    "https://www.healthypetsofohio.com/",
+    "https://www.healthypetsofohio.com/our-history/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Veterinary United (veterinaryunited.com) fits the thesis: family business founded 1999 by Dr. Thomas Bankstahl and wife Julie, HQ Clinton Township, MI, with 22+ practices and 400+ employees.",
+   "asserted_by": [
+    "E",
+    "C",
+    "B"
+   ],
+   "variants": {
+    "B": "Veterinary United (veterinaryunited.com) fits the thesis: family-owned by Thomas and Julie Bankstahl, founded 1999, headquartered in Clinton Township, Michigan, with about 26 practices in Michigan and Florida.",
+    "C": "Veterinary United (veterinaryunited.com) fits the thesis: independent, family-owned group based in Clinton Township, Michigan, founded 1999, with about 22-27 clinical practices listed.",
+    "E": "Veterinary United (veterinaryunited.com) fits the thesis: founded in 1999 as a family business by Dr. Thomas Bankstahl and his wife Julie, HQ Clinton Township, MI, with 22+ practices plus boarding/grooming centers in southeastern Michigan and 400+ employees."
+   },
+   "urls": [
+    "https://veterinaryunited.com/staff/thomas-bankstahl/",
+    "https://jobs.avma.org/profile/veterinary-united/1996196",
+    "https://veterinaryunited.com/team/"
+   ],
+   "conflicts_with": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Cara Veterinary (caraveterinary.com) fits the thesis: founded 2018 by Dr. Peter Brown with family-investment (Haughey family) backing rather than a PE fund, with 11 hospitals in Washington State.",
+   "asserted_by": [
+    "E",
+    "B"
+   ],
+   "variants": {
+    "B": "Cara Veterinary (caraveterinary.com) fits the thesis: family-investment-owned (including the Haughey family) network founded 2018 by Peter Brown, headquartered in Seattle, Washington, with about ten hospitals.",
+    "E": "Cara Veterinary (caraveterinary.com) fits the thesis: founded in 2018 by veterinarian Dr. Peter Brown with family-investment backing (Haughey family) rather than a PE fund, with 11 hospitals in Washington State including Redmond opening Nov 17, 2026."
+   },
+   "urls": [
+    "https://caraveterinary.com/our-story/",
+    "https://www.privateequityvet.com/vet-list/?region=US"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Emergency Veterinary Care Centers (EVCC) (evcc.com) fits the thesis: founded 2003 by 36 local veterinarians, 'Still Independent' with no PE backing, six 24/7 emergency hospitals in Indiana and Michigan.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Emergency Veterinary Care Centers (EVCC) (evcc.com) fits the thesis: founded 2003 by 36 local veterinarians (18 still involved), 'Still Independent' with no PE backing, operating six 24/7 emergency hospitals in Indiana and Michigan (HQ Westville, IN)."
+   },
+   "urls": [
+    "https://evcc.com/about/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "PetWellClinic (petwellclinic.com) fits the thesis (borderline on ownership): founder-owned franchisor by Dr. Sam Meisler and wife Julie, HQ Knoxville, TN, ~14-21 franchised clinics; 2020 round funded by Westside Franchise Brands.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "PetWellClinic (petwellclinic.com) fits the thesis (borderline on ownership): founder-owned franchisor created by Dr. Sam Meisler and wife Julie, HQ Knoxville, TN, with ~14-21 franchised walk-in clinics; a 2020 round was funded by Westside Franchise Brands."
+   },
+   "urls": [
+    "https://petwellfranchise.com/transforming-pet-care-the-petwellclinic-story/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Pet Cure Inc. (joinpetcure.com) fits the thesis (with caveat): privately owned, owner-led by David Fahmy, founded 2018, seven Southern California hospitals, no PE backer; founder/family status not documented.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Pet Cure Inc. (joinpetcure.com) fits the thesis (with caveat): privately owned, owner-led by David Fahmy (CEO/CFO/Director), founded 2018, with seven hospitals in Southern California and an 8th coming soon, no PE backer; founder/family status not explicitly documented."
+   },
+   "urls": [
+    "https://vetpulse.ai/owners/pet-cure-inc"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "BoosterPet (boosterpet.com) fits the thesis (weakest ownership fit): vet-founded 2020, privately held, 6-7 Washington State locations, with a $2.3M Rule 506(b) placement in 2021.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "BoosterPet (boosterpet.com) fits the thesis (weakest ownership fit): vet-founded (2020) and privately held with 6-7 Washington State locations, though it disclosed a $2.3M Rule 506(b) placement in 2021 including Myriad Asset Management US LP."
+   },
+   "urls": [
+    "https://www.boosterpet.com/about"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "BLVD Vet (blvd.vet) fits the thesis: founder-owned Chicago group (Dr. Dylan Frederickson), 100% veterinarian owned and operated, five locations including BLVD Cat.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "BLVD Vet (blvd.vet) fits the thesis: a founder-owned Chicago veterinary group (Dr. Dylan Frederickson, Founder & Owner, '100% Veterinarian Owned & Operated') with five locations including BLVD Cat."
+   },
+   "urls": [
+    "https://www.blvd.vet/dr-dylan-frederickson"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Rocklin Park Veterinary Hospital, Inc. (rocklinparkvet.com) fits the thesis: family-owned California group led by Dr. Bikram Basra since 2004, roughly 10-11 practices (ownership evidence partly from LinkedIn).",
+   "asserted_by": [
+    "D",
+    "B"
+   ],
+   "variants": {
+    "B": "Rocklin Park Veterinary Hospital, Inc. (rocklinparkvet.com) fits the thesis: founder-owned by Dr. Bikram Basra (opened 2004), based in Rocklin, California, with about ten California practices and a mission of preserving privately owned veterinary hospitals.",
+    "D": "Rocklin Park Veterinary Hospital, Inc. (rocklinparkvet.com) fits the thesis: a family-owned California veterinary group led by Dr. Bikram Basra since 2004, with roughly 10-11 practices (ownership evidence relies partly on its LinkedIn profile)."
+   },
+   "urls": [
+    "https://linkedin.com/company/rocklin-park-veterinary-hospital-inc",
+    "https://www.rocklinparkvet.com/about-us/our-practices.html"
+   ],
+   "conflicts_with": [
+    "c18"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Fetch Specialty & Emergency Veterinary Centers (fetchvets.com) fits the thesis: family-owned specialty/emergency operator HQ Bonita Springs, FL, founded 2016, five hospitals in Florida and South Carolina.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Fetch Specialty & Emergency Veterinary Centers (fetchvets.com) fits the thesis: family-owned specialty and emergency veterinary operator headquartered in Bonita Springs, Florida, founded 2016, with five operating hospitals in Florida and South Carolina."
+   },
+   "urls": [
+    "https://fetchvetscareers.com/our-locations"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Buffalo Veterinary Group (buffaloveterinarygroup.com) fits the thesis: privately, family-owned and operated group in Tonawanda, NY, est. 1954, ten hospitals in suburban Buffalo.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Buffalo Veterinary Group (buffaloveterinarygroup.com) fits the thesis: privately owned, family-owned and operated group based in Tonawanda, New York, established 1954, with ten hospitals in suburban Buffalo."
+   },
+   "urls": [
+    "https://buffaloveterinarygroup.com/work-with-us"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Vet Partners Pet Hospital (myvetpartners.com) fits the thesis: founder-owned (Angela Henninger and Luther Groth, 2015), Plymouth, MN, five Twin Cities hospitals.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Vet Partners Pet Hospital (myvetpartners.com) fits the thesis: founded in 2015 by Dr. Angela Henninger and Dr. Luther Groth with a goal of maintaining local ownership, operating five Twin Cities, MN locations (current ownership not explicitly confirmed).",
+    "C": "Vet Partners Pet Hospital (myvetpartners.com) fits the thesis: founder-owned (Angela Henninger and Luther Groth, 2015) group based in Plymouth, Minnesota, with five Twin Cities hospitals."
+   },
+   "urls": [
+    "https://myvetpartners.com/"
+   ],
+   "conflicts_with": [
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "O'Brien Veterinary Group (obrienveterinarygroup.com) fits the thesis: family-owned group in Oak Brook, IL, partnering with practices since 2005, reported 18 clinics in six states.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "O'Brien Veterinary Group (obrienveterinarygroup.com) fits the thesis: family-owned group based in Oak Brook, Illinois, partnering with practices since 2005, reported to have 18 clinics in six states."
+   },
+   "urls": [
+    "https://obrienveterinarygroup.com/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Noah's Ark Animal Clinics (noahsarkanimalclinics.com) fits the thesis: independent, family-owned and operated network in Fort Wright, KY, led by the Lies family (Dr. Mike Lies), five Greater Cincinnati clinics.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Noah's Ark Animal Clinics (noahsarkanimalclinics.com) fits the thesis: independent, family-owned and family-operated veterinary network based in Fort Wright, Kentucky, led by the Lies family (Dr. Mike Lies is owner/president), with five clinics in the Greater Cincinnati area."
+   },
+   "urls": [
+    "https://noahsarkanimalclinics.com/about-us/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Community Veterinary Clinic (mycommunityveterinaryclinic.com) fits the thesis: locally and family-owned West-Central Ohio network founded 1992 by Dr. Current, five locations (Sidney, Troy, Piqua, Dublin, Plain City).",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Community Veterinary Clinic (mycommunityveterinaryclinic.com) fits the thesis: locally and family-owned network of five locations in West-Central Ohio (Sidney, Troy, Piqua, Dublin, Plain City), founded in 1992 by owner Dr. Current, not bound by corporate policies.",
+    "B": "Community Veterinary Clinic (mycommunityveterinaryclinic.com) fits the thesis: founder/owner Dr. Current's locally and family-owned Ohio network founded 1992 with five locations (Sidney, Troy, Piqua, Dublin, Plain City)."
+   },
+   "urls": [
+    "https://mycommunityveterinaryclinic.com/history/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Neighborhood Veterinary Centers (gonvc.com) fits the thesis: entirely family-owned and operated, no investors or outside board members, founded by Brady Hanson, HQ Nederland, TX, about 13 clinics in Texas and Louisiana.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Neighborhood Veterinary Centers (gonvc.com) fits the thesis: entirely family-owned and operated with no investors or outside board members, founded by Brady Hanson, HQ Nederland, Texas, with about 13 clinics in Texas and Louisiana."
+   },
+   "urls": [
+    "https://gonvc.com/locations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Noah's Animal Hospitals (noahshospitals.com) fits the thesis: family-owned, locally operated, privately held group founded 1982 by Dr. Michael Thomas, Indianapolis, with eight to ten Central Indiana locations.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Noah's Animal Hospitals (noahshospitals.com) fits the thesis: founder-owned by Dr. R. Michael Thomas (President & Owner, family-operated), operating 10 Indiana locations since 1982, with no PE or consolidator deal found.",
+    "B": "Noah's Animal Hospitals (noahshospitals.com) fits the thesis: family-owned, locally operated, privately held group founded 1982 by Dr. Michael Thomas, headquartered in Indianapolis, with eight to ten locations in Central Indiana."
+   },
+   "urls": [
+    "https://www.linkedin.com/company/noah's-animal-hospitals",
+    "https://www.noahshospitals.com/"
+   ],
+   "conflicts_with": [
+    "c28"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "The Nave Veterinary Group (navegrouplv.com) fits the thesis: founder-owned by Dr. James Nave, established 1974, Las Vegas, NV, about 21 hospitals in Southern Nevada.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The Nave Veterinary Group (navegrouplv.com) fits the thesis: founder-owned by Dr. James Nave, established 1974, based in Las Vegas, Nevada, with about 21 veterinary hospitals in Southern Nevada."
+   },
+   "urls": [
+    "https://navegrouplv.com/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Value Vet (valuevet.net) fits the thesis: family-owned group HQ Nashville, TN, five locations across Tennessee, Georgia and Virginia.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Value Vet (valuevet.net) fits the thesis: family-owned veterinary group headquartered in Nashville, Tennessee, with five locations across Tennessee, Georgia and Virginia."
+   },
+   "urls": [
+    "https://valuevet.net/locations/"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group with 5-30 locations (ten clinics in Missouri)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, not PE (100% family-owned, started by a veterinarian and her family, declined outside money)",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based (Missouri; HQ Linn Creek per claim)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.r.vet/about",
+   "note": "The company's own About page states 100% family-owned, ten clinics, founded 2016, and no PE. The names Rericha and Linn Creek were not seen in the pages I read, so those details are unconfirmed, but they do not affect the thesis criteria.",
+   "via": "agent"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary group with 5-30 locations (six NJ hospitals)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family/founder-owned with no PE or outside investors",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based (Chatham, NJ)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.symbios.vet/meet-the-owners",
+   "note": "The owners page states '100% independently and family owned', no corporate parent, no outside investors, six hospitals. Datanyze lists the Chatham, NJ HQ and 33 employees.",
+   "via": "agent"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary group with 5-30 locations (five hospitals on the site, six per the AVMA profile)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (self-described oldest family-owned private veterinary hospital group in America, founded 1926)",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based (Watertown, MA)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://jobs.avma.org/profile/callanan-veterinary-group-cvg/1989662",
+   "note": "The AVMA employer profile states family-owned, founded 1926, five hospitals in Greater Boston plus one in Warwick, RI. The site's location list shows five.",
+   "via": "agent"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary group with 5-30 locations (8 clinics)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned, not PE (Taylor family since 1952, described as central Ohio's largest independent practice)",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based (central Ohio)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.healthypetsofohio.com/our-history/",
+   "note": "The history page shows three generations of the Taylor family and 8 clinics, and the homepage calls it the largest independent practice. Ownership is described as 'family-operated' and 'independent', not stated as 'owned', so the ownership pass rests on that wording.",
+   "via": "agent"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary group with 5-30 locations (22 practices, about 27 listed)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Independent, family-owned, founder-led (Dr. Bankstahl is owner and CEO, started ownership in 1999)",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based (Clinton Township, MI)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://jobs.avma.org/profile/veterinary-united/1996196",
+   "note": "The AVMA profile says 'independent and family-owned group of 22 clinics'. The Bankstahl page lists him as owner and CEO. The Calder Capital page is an M&A advisor tombstone, not an investor, so it does not indicate PE ownership.",
+   "via": "agent"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group, 5-30 locations (10 hospitals, an 11th, Redmond, opening Nov 17 2026)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder- or family-owned, no PE fund (Haughey and other family investment groups; Dr. Peter Brown founded it in 2018)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.privateequityvet.com/vet-list/?region=US",
+   "note": "The PE vet list names family investment groups, including the Haughey family, as backers (10 hospitals). Today's Veterinary Business calls Cara a network of family-owned hospitals with Brown as co-founder. The 11th hospital opens Nov 17 2026, so 10 operate today. Variants B and E also hold on tha...",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary group, 5-30 locations (6 emergency hospitals in Indiana and Michigan)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Independent, locally owned, founded by 36 local veterinarians, no PE backer stated",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://evcc.com/about/",
+   "note": "The company's own page says it was founded in 2003 by 36 local vets, has Saginaw as its sixth hospital, and is 'Still Independent'. The page does not use the words founder-owned, so the ownership pass is medium confidence.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "false",
+   "in_scope": false,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group with 5-30 locations",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder- or family-owned",
+     "result": "fail"
+    }
+   ],
+   "core_pass": false,
+   "source": "https://petwellfranchise.com/transforming-pet-care-the-petwellclinic-story/",
+   "note": "PetWellClinic is a franchisor whose clinics are franchisee-owned, and the claim itself says an outside investor, Westside Franchise Brands, funded a 2020 round. The saved page shows only founder Dr. Meisler and about 3 affiliates in 2019. That is not a founder- or family-owned clinic group.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary group, 5-30 locations (7 hospitals in Southern California)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder- or family-owned",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://joinpetcure.com/",
+   "note": "The company's own page says it is a privately owned network of 7 hospitals. No saved source states a founder or family owner, so the ownership criterion is unknown.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary group, 5-30 locations (6-7 in Washington State)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder- or family-owned",
+     "result": "fail"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.boosterpet.com/about",
+   "note": "BoosterPet is vet-founded in 2020 and privately held. The claim cites a 2021 $2.3M Rule 506(b) raise including Myriad Asset Management, which is outside investor money. The saved pages do not state founder or family ownership.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Founder-owned independent vet group",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.blvd.vet/",
+   "note": "The site says '100% Veterinarian Owned & Operated' and 'Founder & Owner' Dr. Frederickson founded it in 2014. It lists four clinics plus the BLVD Cat clinic, which makes five. No PE owner was found in the saved pages.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Family/founder-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://linkedin.com/company/rocklin-park-veterinary-hospital-inc",
+   "note": "Its LinkedIn profile says 'family-owned group... led by Dr. Bikram Basra since 2004', with type 'Self-owned' and a stated mission to keep medicine privately owned. It lists 10 hospitals around Sacramento. Variant D's claim of about 10-11 practices fits; variant B's 'founder-owned' is a reasonable...",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://linkedin.com/company/cancer-veterinary-centers",
+   "note": "The LinkedIn page describes Fetch as 'a family-owned practice' in Florida and South Carolina. The careers page shows Bonita Springs (2017), Brandon (2019) and Greenville (2021). I did not see all five hospitals or the 2016 founding year stated in the saved pages.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Family-owned/privately owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://buffaloveterinarygroup.com/work-with-us",
+   "note": "The page says 10 privately-owned hospitals, 'established in 1954 and is privately owned and operated'. 'Family' is not stated on this page; it appears in the claim and was not confirmed here, but private ownership is clear.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Founder-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    },
+    {
+     "criterion": "US-based",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://myvetpartners.com/about/angela-henninger",
+   "note": "Dr. Henninger is listed as 'Owner and Chief of Staff', and Dr. Groth is 'Owner' of the Edina hospital. The company was founded in 2015 to 'maintain local ownership' and has five Twin Cities hospitals. This supports founder ownership for both variants, including F.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned (not PE-backed)",
+     "result": "fail"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://cambriagroup.com/portfolio/obrien-veterinary-management",
+   "note": "The company's own site says family-owned, but The Cambria Group (a PE firm) lists O'Brien Veterinary Management, Oakbrook IL, as a portfolio company, so it is PE-backed. The 18-clinic count was not verified.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (independent)",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://noahsarkanimalclinics.com/about-us/",
+   "note": "The About page says 'independent, family-owned and family-operated', names Dr. Mike Lies as Owner and President, and lists 5 locations. The Fort Wright, KY location appears in the contact list.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://mycommunityveterinaryclinic.com/history/",
+   "note": "The History page says it was founded in 1992 by owner and founder Dr. Current. It describes a locally and family-owned network of five locations: Sidney, Troy, Piqua, Dublin and Plain City.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family/founder-owned, no investors",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.linkedin.com/jobs/view/veterinary-practice-manager-at-neighborhood-veterinary-centers-nvc-4379073343",
+   "note": "NVC's job posting says '100% family-owned and operated, with no investors, no board members'. A Houston Chronicle article names Brady Hanson as founder and owner and counts about 10 clinics in Texas and Louisiana. The exact figure of 13 clinics was not confirmed.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.petpalstv.com/post/noah-s-animal-hospitals-creates-fund-to-aid-with-pet-emergencies",
+   "note": "Dr. R. Michael Thomas is named president and owner, and dvm360 says he founded the first Noah's in 1982, so it is founder-owned. The noahshospitals.com site lists at least 7 Indianapolis-area sites, and a 2014 article counts 8. Family-owned wording was not found and no PE deal was found.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations (about 21 hospitals)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned (Dr. James Nave opened the first hospital in 1974 and is listed as owner)",
+     "result": "pass"
+    },
+    {
+     "criterion": "US HQ, Las Vegas NV",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://cvm.missouri.edu/wp-content/uploads/2025/05/CVM-May-2025-commencement-program-1.pdf",
+   "note": "The Mizzou program lists Nave as owner. Search results say he opened Tropicana Animal Hospital in 1974 and that the group has about 21 Southern Nevada hospitals. The group's site says 'Established in 1974' and lists 14 general practice, 2 emergency, 1 specialty and 1 critical care hospitals, whic...",
+   "via": "agent"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Veterinary clinic group",
+     "result": "pass"
+    },
+    {
+     "criterion": "5-30 locations (5 listed)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "US HQ, Nashville TN",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://valuevet.net/locations/",
+   "note": "The company site says 'Value Vet is a family owned business'. It lists 5 locations: 2 in Nashville TN, 1 in Lawrenceville GA, and 2 in McLean and Falls Church VA. A Nashville HQ is plausible, since the TN clinics are in Nashville, but I did not see it stated.",
+   "via": "agent"
+  }
+ },
+ "audit": {},
+ "scores": {
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 17.5,
+   "coverage": 0.229,
+   "accuracy": 1.0,
+   "combined": 0.27,
+   "metric": "F2"
+  },
+  "gpt": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 11,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 1,
+   "truth": 17.5,
+   "coverage": 0.629,
+   "accuracy": 0.957,
+   "combined": 0.675,
+   "metric": "F2"
+  },
+  "parallel": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 7,
+   "partial": 0,
+   "wrong": 1,
+   "unconfirmed": 0,
+   "truth": 17.5,
+   "coverage": 0.4,
+   "accuracy": 0.875,
+   "combined": 0.449,
+   "metric": "F2"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 17.5,
+   "coverage": 0.343,
+   "accuracy": 1.0,
+   "combined": 0.395,
+   "metric": "F2"
+  },
+  "nimble": {
+   "units": 9,
+   "unverifiable": 1,
+   "true": 6,
+   "partial": 1,
+   "wrong": 2,
+   "unconfirmed": 0,
+   "truth": 17.5,
+   "coverage": 0.371,
+   "accuracy": 0.722,
+   "combined": 0.411,
+   "metric": "F2"
+  },
+  "opus": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 17.5,
+   "coverage": 0.229,
+   "accuracy": 1.0,
+   "combined": 0.27,
+   "metric": "F2"
+  }
+ }
+}

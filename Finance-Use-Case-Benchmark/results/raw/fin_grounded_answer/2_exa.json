@@ -1,0 +1,96 @@
+{
+ "arm": "exa",
+ "sub_use_case": "fin_grounded_answer",
+ "input": "What is the latest on TSMC's Arizona fab timeline: which fabs are producing, and what has been delayed or pulled forward?",
+ "input_n": 2,
+ "tier": "medium",
+ "status": "completed",
+ "seconds": 83,
+ "run_id": "agent_run_36f8337c90044dd5b466291157e32ba2",
+ "output": {
+  "as_of": "2026-11-10",
+  "answer": "As of November 10, 2026, only Arizona Fab 1 is producing—N4 high-volume production began in Q4 2024; Fab 2 is built but still in tool move-in/installation and is scheduled to start N3 volume production in Q3 2027. Fab 3 is under construction for N2/A16 with volume production targeted by the end of the decade, while initial construction has begun on Fab 4 and the first advanced-packaging fab, neither of which has a published production date. The clear schedule change is an acceleration: Fab 2 was originally slated for 2028, then pulled into 2H 2027 and most recently into Q3 2027; no Arizona fab delay is identified in the latest company update.",
+  "caveats": [
+   "TSMC does not give a more precise production date for Fab 3 than “by the end of the decade,” and it gives no production dates for Fab 4 or the advanced-packaging fab on the Arizona project page.",
+   "The Q3 2026 earnings-call dates are forward-looking targets and could change with permitting, equipment installation, labor, or customer demand; the company did not identify a delayed Arizona fab in that update."
+  ],
+  "passages": [
+   {
+    "quote": "First Fab: High-volume production on N4 process technology started in Q4 2024.",
+    "publisher": "Taiwan Semiconductor Manufacturing Company Limited",
+    "source_url": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+    "published_date": null
+   },
+   {
+    "quote": "In Arizona, we have completed the construction of our second fab and are in the process of tool move-in and installation. Volume production will begin in third quarter '27, slightly ahead of our previous schedule.",
+    "publisher": "Taiwan Semiconductor Manufacturing Company Limited",
+    "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+    "published_date": "2026-10-15"
+   },
+   {
+    "quote": "Third Fab: In April 2025, TSMC broke ground on the site of the third fab, slated for N2 and A16 process technologies. Targeting volume production by the end of the decade.",
+    "publisher": "Taiwan Semiconductor Manufacturing Company Limited",
+    "source_url": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+    "published_date": null
+   },
+   {
+    "quote": "Fourth Fab and First Advanced Packaging Fab: In early 2026, the company started initial stages of construction.",
+    "publisher": "Taiwan Semiconductor Manufacturing Company Limited",
+    "source_url": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+    "published_date": null
+   }
+  ],
+  "question": "What is the latest on TSMC's Arizona fab timeline: which fabs are producing, and what has been delayed or pulled forward?",
+  "key_facts": [
+   {
+    "date": "2026-11-10",
+    "fact": "Fab 1 is in high-volume production using N4, which started in Q4 2024.",
+    "source_url": "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   },
+   {
+    "date": "2026-10-15",
+    "fact": "Fab 2 construction is complete; tool move-in and installation are underway, with N3 volume production scheduled to begin in Q3 2027.",
+    "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf"
+   },
+   {
+    "date": "2026-11-10",
+    "fact": "Fab 3 is slated for N2 and A16 and is targeted for volume production by the end of the decade.",
+    "source_url": "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   },
+   {
+    "date": "2026-11-10",
+    "fact": "Initial construction stages began in early 2026 for Fab 4 and the first advanced-packaging fab; no production start date is published for them on TSMC's Arizona project page.",
+    "source_url": "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   },
+   {
+    "date": "2026-10-15",
+    "fact": "Fab 2's schedule has been pulled forward from the earlier 2028 plan to 2H 2027 and then to Q3 2027, slightly ahead of the previous schedule.",
+    "source_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf"
+   }
+  ],
+  "missing_fields": [
+   "published_date for the TSMC Arizona project page",
+   "precise production dates for Fab 3, Fab 4, and the first advanced-packaging fab"
+  ]
+ },
+ "cost_usd": 0.1,
+ "cost_basis": "billed",
+ "usage": {
+  "agentComputeUnits": 0.4,
+  "searches": 12,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "data_sources": [
+  "financial_datasets"
+ ],
+ "cost_breakdown": {
+  "total": 0.1,
+  "agentCompute": 0.04,
+  "search": 0.06,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "error": null,
+ "completed_on": "2026-11-10"
+}

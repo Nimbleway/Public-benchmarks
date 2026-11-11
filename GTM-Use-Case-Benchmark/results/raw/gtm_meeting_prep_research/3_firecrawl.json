@@ -1,0 +1,163 @@
+{
+ "arm": "firecrawl",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Vercel (vercel.com)",
+ "input_n": 3,
+ "tier": "spark-2/medium",
+ "status": "completed",
+ "seconds": 539,
+ "run_id": "01a1a0d0-de07-7567-b024-2b3a56b24156",
+ "output": {
+  "company": "Vercel",
+  "what_they_do": {
+   "value": "Vercel is where you build and deploy your own apps and agents, with tools to build and run them in production securely and at scale.",
+   "source_url": "https://vercel.com/blog/vercel-ship-2026-recap",
+   "as_of": "2026-10-15"
+  },
+  "priorities": [
+   {
+    "priority": "Make Vercel the platform for agentic infrastructure and agent-driven software delivery.",
+    "evidence": "Vercel says its agentic-infrastructure strategy has three parts: building and deploying apps and agents, enabling coding agents to deploy software, and automating Vercel itself with agents that use production context to investigate issues and surface pull requests. It also reports that agent-triggered deployments increased 28x in the prior 12 months.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "priority": "Expand beyond frontend hosting into full backend workloads and compute.",
+    "evidence": "Vercel announced Python generally available, container support in Functions for custom runtimes and system libraries, and Daemons in public beta for continuously running background workers; it says 150,000 teams already run Python backends on Vercel and 5,000 teams have shipped 150,000 container deployments.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/blog/backends-on-vercel-python-containers-and-daemons"
+   },
+   {
+    "priority": "Build AI Gateway into a centrally governed, multi-model production control layer.",
+    "evidence": "Virtual Models let teams change models, configure fallbacks and priority, enforce Zero Data Retention, and govern settings centrally without code changes or redeploys. Vercel says 125 new models from more than 10 labs became available on AI Gateway in the prior 90 days.",
+    "date": "2026-10-28",
+    "source_url": "https://vercel.com/blog/ai-gateway-virtual-models"
+   },
+   {
+    "priority": "Win enterprise adoption by combining self-service building with governance, security, and deployment control.",
+    "evidence": "Vercel for Enterprise is positioned as a central control plane for builders, apps, agents, tokens, and dollars, with controls for access, providers, models, data retention, token budgets, integrations, and policies. The October launch added generally available Bring Your Own Cloud on AWS and public-beta Enterprise-Managed Authorization through Vercel Connect.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/blog/vercel-for-enterprise"
+   },
+   {
+    "priority": "Reduce the latency and cost of software delivery for coding-agent-generated changes.",
+    "evidence": "Vercel CI beta runs only tasks affected by a code change and sizes compute to those checks; Vercel reports its internal time from git push to CI passed is 2–6x faster, after nearly 8 million tasks across its repositories and private beta.",
+    "date": "2026-10-28",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   }
+  ],
+  "challenges": [
+   {
+    "challenge": "Enterprise customers need to let more employees build with AI without losing security, access, data, and spending control.",
+    "evidence": "Vercel says building has become easier while control and governance have become harder, and warns that unapproved AI use or an incorrectly built login page can expose private data to the public internet.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/blog/vercel-for-enterprise"
+   },
+   {
+    "challenge": "Long-lived static credentials and fragmented machine-to-machine authentication create security and operational risk.",
+    "evidence": "Vercel says static credentials can leak through repositories, chat, compromised services or prompt injection; it reports spending thousands of engineering hours on multiple painful key rotations and found only 8.4% of more than 1,000 surveyed SaaS vendors supported secure authentication methods.",
+    "date": "2026-10-22",
+    "source_url": "https://vercel.com/blog/death-to-long-lived-static-credentials"
+   },
+   {
+    "challenge": "Sandbox isolation and shared-infrastructure security require continuous pressure-testing and remediation.",
+    "evidence": "Vercel's two-week Sandbox challenge generated 1,285 reports, including one Linux kernel zero-day that could leak host memory, crash a host, or execute code on a host; Vercel says it paid $242,000 in bounties and implemented structural recommendations after internal and third-party reviews.",
+    "date": "2026-10-14",
+    "source_url": "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge"
+   },
+   {
+    "challenge": "The rise in coding-agent pull requests puts pressure on conventional CI systems and developer feedback cycles.",
+    "evidence": "Vercel says coding agents are opening more pull requests than ever, while most CI systems rerun the entire workflow on every push, leaving developers waiting; it launched Vercel CI in beta to address the issue.",
+    "date": "2026-10-28",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   }
+  ],
+  "recent_changes": [
+   {
+    "date": "2026-10-28",
+    "type": "product launch",
+    "headline": "Vercel launches Virtual Models on AI Gateway",
+    "summary": "Teams can use a stable virtual model ID while centrally changing the underlying model, fallbacks, configuration, and Zero Data Retention settings without code changes or redeploys.",
+    "source_url": "https://vercel.com/blog/ai-gateway-virtual-models"
+   },
+   {
+    "date": "2026-10-28",
+    "type": "product launch",
+    "headline": "Vercel CI enters beta",
+    "summary": "The new CI product selects only affected tasks and right-sizes compute; Vercel reports 2–6x faster internal time from push to passing CI.",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   },
+   {
+    "date": "2026-10-16",
+    "type": "partnership/product launch",
+    "headline": "Vercel and Shopify make agents first-class shoppers",
+    "summary": "Vercel Shop, an open-source Next.js storefront template for Shopify with machine-readable product information and agent shopping tools, became generally available.",
+    "source_url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers"
+   },
+   {
+    "date": "2026-10-15",
+    "type": "product expansion",
+    "headline": "Vercel expands backend support with Python, containers, and Daemons",
+    "summary": "Python became generally available, container support enabled custom runtimes and system libraries, and Vercel Daemons entered public beta for continuously running background workers.",
+    "source_url": "https://vercel.com/blog/backends-on-vercel-python-containers-and-daemons"
+   },
+   {
+    "date": "2026-10-15",
+    "type": "enterprise product launch",
+    "headline": "Vercel expands Vercel for Enterprise",
+    "summary": "Bring Your Own Cloud on AWS became generally available and Enterprise-Managed Authorization through Vercel Connect entered public beta, adding deployment-boundary and identity-governance options.",
+    "source_url": "https://vercel.com/blog/vercel-for-enterprise"
+   }
+  ],
+  "key_people": [
+   {
+    "name": "Guillermo Rauch",
+    "title": "Founder & CEO",
+    "recent": "Opened Vercel Ship 2026 with a vision of interfaces generated for tasks, agents that reproduce and fix bugs autonomously, and software that continuously improves using production context.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Malte Ubl",
+    "title": "CTO",
+    "recent": "Announced Python general availability, container support, and Vercel Daemons for background workers at Ship 2026; he also published Vercel's push to replace long-lived static credentials with OIDC and short-lived tokens.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Tomo Occhino",
+    "title": "CPO",
+    "recent": "Presented the Agent Stack updates at Ship 2026, including Vercel Drives for persistent agent workspaces, eve improvements, Vercel Connect, and AI Gateway budgets and data-region controls.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Jeanne Grosser",
+    "title": "COO",
+    "recent": "Presented Vercel for Enterprise at Ship 2026, including generally available Bring Your Own Cloud on AWS and enterprise-managed authorization for Vercel Connect.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Tom Dale",
+    "title": "Vercel engineering/product leader (title not stated on the opened page)",
+    "recent": "Published Vercel's design for production-safe agents that investigate first, propose a permission-scoped plan, and request approval before taking higher-risk actions.",
+    "source_url": "https://vercel.com/blog/how-vercel-agent-accesses-production-safely"
+   }
+  ],
+  "talking_points": [
+   "As Vercel moves from frontend hosting toward agentic infrastructure and full backends, which workloads or customer segments are the highest-priority adoption targets for Python, containers, and Daemons?",
+   "How are enterprise buyers balancing rapid citizen-developer and agent adoption with the governance concerns Vercel identifies around data exposure, model budgets, identity, and BYOC boundaries?",
+   "With coding agents increasing pull-request volume and Vercel CI reaching 2–6x faster internal feedback, what remaining bottlenecks—observability, test selection, security review, or approval workflows—are most important to solve next?"
+  ],
+  "missing_fields": []
+ },
+ "cost_usd": 0.1059,
+ "cost_basis": "credits x Standard rate",
+ "credits": 107,
+ "exchange": {
+  "enabled": true,
+  "requireApproval": false,
+  "onTermsRequired": "skip",
+  "paidCalls": 2,
+  "creditsUsed": 50
+ },
+ "error": null,
+ "completed_on": "2026-11-03"
+}

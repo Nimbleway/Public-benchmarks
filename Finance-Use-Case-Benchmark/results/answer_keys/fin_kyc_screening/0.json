@@ -1,0 +1,147 @@
+{
+ "sub": "fin_kyc_screening",
+ "i": 0,
+ "task": "Run a KYC screen on Revolut in the United Kingdom",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which legal entity is the main operating company, and what are its registry number, LEI, incorporation date, registered address and status?",
+   "answer": "The main UK operating entity is Revolut Ltd, Companies House no. 08804411, incorporated 6 Dec 2013 in England & Wales. Registered office: 30 South Colonnade, London E14 5HX (formerly 7 Westferry Circus, Canary Wharf). Status: active. The LEI must be confirmed on GLEIF; I did not verify it here. Related entities: Revolut Group Holdings Ltd (parent, no. 12296931), Revolut Bank UK Ltd (no. 12871051, UK bank, incorporated 10 Sep 2020, formerly Revolut Newco UK Ltd until 12 Mar 2026, separate licence, same registered address; it can also be treated as the main UK customer-facing operating entity for current accounts), Revolut Bank UAB (Lithuania, EU bank), Revolut Securities Europe UAB, and Revolut Payments UAB. Revolut Technologies Inc. (US) is a different entity. Branches are not the entity. Confirm all numbers on the Companies House and GLEIF pages before filing.",
+   "importance": "critical",
+   "source": "https://find-and-update.company-information.service.gov.uk/company/08804411",
+   "key_original": {
+    "answer": "The main UK operating entity is Revolut Ltd, Companies House no. 08804411, incorporated 6 Dec 2013 in England & Wales. Registered office: 7 Westferry Circus, Canary Wharf, London E14 4HD. Status: active. The LEI must be confirmed on GLEIF; I did not verify it here. Related entities: Revolut Group Holdings Ltd (parent, no. 12296931), Revolut Bank UK Ltd (UK bank, separate licence), Revolut Bank UAB (Lithuania, EU bank), Revolut Securities Europe UAB, and Revolut Payments UAB. Revolut Technologies Inc. (US) is a different entity. Branches are not the entity. Confirm all numbers on the Companies House and GLEIF pages before filing.",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/08804411"
+   },
+   "audit": {
+    "verdict": "key_wrong",
+    "why": "Companies House now shows Revolut Ltd (08804411) as Active, incorporated 6 Dec 2013, with its registered office at 30 South Colonnade, London E14 5HX. The key's 7 Westferry Circus address is out of date. Companies House also shows Revolut Bank UK Ltd (12871051) as Active, incorporated 10 Sep 2020, at the same address. It was formerly Revolut Newco UK Ltd until 12 Mar 2026, and its SIC code is 64191 (Banks). Answer A picks the bank as the main UK current-account operating company. I did not open the group framework terms page that Answer A cites for this, so I could not check that claim. Revolut Ltd (SIC 62090) is still defensible as the main operating or app company. The key should therefore name both entities and use the corrected address. I did not verify the LEI.",
+    "disputed_point": "The registered office of Revolut Ltd, and the choice of Revolut Ltd as the only 'main' UK operating entity"
+   }
+  },
+  {
+   "id": "k2",
+   "question": "Who are the current directors and officers, and who are the PSCs or beneficial owners?",
+   "answer": "Key people: Nikolay (Nik) Storonsky, founder and CEO, and Vlad Yatsenko, co-founder and director of the group, are both current directors of Revolut Ltd (08804411). Martin Gilbert is also a director and chair of Revolut Group Holdings. Other current directors are Caroline Britton, Siddhartha Jajodia, Michael Sherwood, John Sievwright, Dan Teodosiu and Ian Wilson. The secretary is Heather Fleming (since June 2025). The only active PSC of Revolut Ltd is its parent, Revolut Group Holdings Ltd (75% or more of shares and voting rights, since 29 April 2022). Storonsky was an individual PSC (more than 25% to 50% of shares) until 29 April 2022, when the PSC entry ceased. Yatsenko is not listed as a PSC. Storonsky is the largest individual shareholder, at roughly 20-25% by press reports. He holds British nationality on Companies House and was Russian-born. Note: if the intended entity is Revolut Bank UK Ltd (12871051), its directors differ (Alcaix, Carlesi, Estlin, Fry, Holmes, Kapoor, Wilson) and its active PSC is also Revolut Group Holdings Ltd.",
+   "importance": "critical",
+   "source": "https://find-and-update.company-information.service.gov.uk/company/08804411/persons-with-significant-control",
+   "key_original": {
+    "answer": "Key people: Nikolay (Nik) Storonsky, founder and CEO, and Vlad Yatsenko, co-founder and director of the group. Martin Gilbert is chair of Revolut Group Holdings. Other directors and the secretary must be read from the Companies House officers page. Storonsky is the largest shareholder at roughly 20-25%. Because Revolut Ltd is a subsidiary, the PSC is normally Revolut Group Holdings Ltd, with Storonsky and Yatsenko possibly listed as individual PSCs. Check the PSC page for the exact nature-of-control bands, and for nationalities (Storonsky is Russian-born with UK citizenship).",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/08804411/persons-with-significant-control"
+   },
+   "audit": {
+    "verdict": "both_ok",
+    "why": "Answer A screened a different company, Revolut Bank UK Ltd (12871051, formerly Revolut Newco UK Ltd). Its officers are different, and its sole PSC is Revolut Group Holdings Ltd. That does not contradict the key, which is about Revolut Ltd (08804411). On the Revolut Ltd pages I opened, the only active PSC is Revolut Group Holdings Ltd (75% or more of shares and voting rights, notified 29 April 2022). Storonsky was a PSC (more than 25% to 50% of shares) from 2016 but ceased on 29 April 2022. Yatsenko is not listed as a PSC. The key's hedged wording ('possibly listed') is therefore only partly right: Storonsky is a ceased PSC, not a current one. Current officers of Revolut Ltd include Storonskiy (director since 2013), Yatsenko (director since 2017) and Martin Gilbert (director since 2020). Others are Britton, Jajodia, Sherwood, Sievwright, Teodosiu and Wilson, and the secretary is Heather Fleming. Gilbert's role as chair of Revolut Group Holdings is not shown on these pages, and I did not check it. Answer A's separate finding that Storonskiy is a PSC of Group Holdings (more than 25% to 50%) matches the key's 'roughly 20-25% shareholder' only loosely, and I did not open that page. The key's core content holds, with that PSC nuance.",
+    "disputed_point": "Which entity's directors and PSCs are meant (Revolut Ltd 08804411 in the key, Revolut Bank UK Ltd 12871051 in Answer A), and whether Storonsky and Yatsenko are individual PSCs."
+   }
+  },
+  {
+   "id": "k3",
+   "question": "Is the entity or any owner or director on OFAC SDN, UK OFSI or EU consolidated sanctions lists?",
+   "answer": "I found no match, but the checks were not run live. The checks to run are Revolut Ltd, the group and its two founders against OFAC Search, the OFSI consolidated list and the EU Financial Sanctions Files. Storonsky is Russian-born, so name-similarity hits are possible. Any hit would need to be excluded on date of birth, nationality and identifiers. He has not been reported as designated. Revolut itself is an operator that screens customers; it is not a sanctioned party.",
+   "importance": "critical",
+   "source": "https://sanctionssearch.ofac.treas.gov/"
+  },
+  {
+   "id": "k4",
+   "question": "Are any owners or directors politically exposed persons?",
+   "answer": "No PEP found among the founders or the board. Storonsky and Yatsenko are private entrepreneurs and I found no government role. Check the other directors and the investors with board seats for PEP status. Russian-origin founders carry some elevated-risk perception, but that is not a PEP finding.",
+   "importance": "useful",
+   "source": "https://www.revolut.com/about-us/"
+  },
+  {
+   "id": "k5",
+   "question": "What enforcement actions, fines or regulatory findings against Revolut exist in the last 10 years?",
+   "answer": "Key items: (1) The Bank of Lithuania fined Revolut Bank UAB about €3.5m in April 2025 for AML/CTF control failings. This is high-medium severity and concluded. (2) The 2021 accounts for Revolut Ltd carried a qualified audit opinion on revenue. This is medium severity, and later accounts were clean. (3) FCA/PRA: the UK bank licence was granted with restrictions in July 2024, and the mobilisation period ran well beyond the usual 12 months. Report the current status of that licence. (4) Reports of FCA concern over financial crime controls and customer-fund safeguarding, and Revolut's own admissions in 2021-22 of fraud-prevention gaps. Confirm these against the FCA register and notices. (5) Customer complaints and APP-fraud reimbursement disputes before the Financial Ombudsman. These are low severity. Check the 2025-26 FCA and PRA news for anything newer.",
+   "importance": "critical",
+   "source": "https://www.lb.lt/en/news"
+  },
+  {
+   "id": "k6",
+   "question": "What is the entity's current regulatory status in the UK, and what recent events change the position?",
+   "answer": "Revolut Ltd is authorised by the FCA as an e-money institution. Revolut Bank UK Ltd holds the UK banking licence, issued with restrictions in July 2024. The exit from mobilisation and full UK bank launch should be confirmed on the FCA/PRA register. Recent developments: a secondary share sale at about a $75bn valuation (late 2025), Storonsky's move of residence to the UAE, and expansion of the bank licences. Verify each against 2026 news, because my information may be out of date.",
+   "importance": "critical",
+   "source": "https://register.fca.org.uk/"
+  },
+  {
+   "id": "k7",
+   "question": "What is the overall KYC risk rating?",
+   "answer": "Medium. Reasons: the entity is a regulated, audited, well-known firm; no sanctions or PEP hits were found; ownership is transparent. The rating is held at medium and not low because of the AML fine in Lithuania (2025), past audit qualification, the long UK bank mobilisation, and the founders' Russian origin, which needs screening to rule out false matches. Move to high if any live screen shows a sanctions or PEP match or new enforcement. Count namesakes excluded: Revolut Technologies Inc. (US), the many other 'Revolut'-named group entities, and unrelated people sharing the founders' names.",
+   "importance": "critical",
+   "source": "https://find-and-update.company-information.service.gov.uk/company/08804411"
+  }
+ ],
+ "labels": {
+  "nimble": "A",
+  "exa": "B",
+  "parallel": "C",
+  "gpt": "D",
+  "opus": "F",
+  "firecrawl": "I"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.212
+}

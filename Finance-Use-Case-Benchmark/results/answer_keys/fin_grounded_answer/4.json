@@ -1,0 +1,129 @@
+{
+ "sub": "fin_grounded_answer",
+ "i": 4,
+ "task": "What has Salesforce changed in Agentforce pricing in 2026?",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is the biggest structural change to Agentforce pricing in 2026, and when did it take effect?",
+   "answer": "Salesforce retired the Enterprise, Unlimited and Agentforce 1 editions for Agentforce Sales and Service. They were replaced by Core, Advanced and Max, effective Sept 3, 2026. Agentforce AI, Slack, Tableau Next and security are now bundled by default. Sourced from a third-party blog, not Salesforce. Verify against Salesforce's own pricing page.",
+   "importance": "critical",
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+  },
+  {
+   "id": "k2",
+   "question": "What are the new per-user list prices, and how do they compare with the editions they replace?",
+   "answer": "Core is $195 per user per month (was Enterprise at $175, about +11%). Advanced is $395 (was Unlimited at $350, about +13%). Max is $550 (same as Agentforce 1, unchanged). These are list prices, billed annually, according to a third-party blog. Starter and Pro Suite are unchanged.",
+   "importance": "critical",
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+  },
+  {
+   "id": "k3",
+   "question": "How many Flex Credits are now included in each edition?",
+   "answer": "Core includes 500,000 Flex Credits and Advanced includes 1,000,000. Neither included any before. Max includes 2.75M per org per year, up from 1M. The baseline Flex Credit rate is $500 per 100,000 credits, or $0.10 per 20-credit action, set in May 2025. Overage rates for the new editions have not been published.",
+   "importance": "critical",
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+  },
+  {
+   "id": "k4",
+   "question": "Has Salesforce introduced outcome-based (pay-per-resolution) pricing, and what are the terms?",
+   "answer": "Yes. Announced around June 25-26, 2026 for the new Agentforce Help Agent, with pricing and GA from July 2026. Customers pay only when the agent autonomously resolves an issue. There is no charge if the customer asks for a human. Data 360 and Agentforce are unmetered during the interaction. The SalesforceBen article does not give the per-resolution price. Some third-party guides cite about $2 (400 credits), unconfirmed.",
+   "importance": "critical",
+   "source": "https://www.salesforceben.com/huge-agentforce-pricing-shift-salesforce-introduces-pay-per-resolution/"
+  },
+  {
+   "id": "k5",
+   "question": "What happens to existing customers, especially Agentforce 1 and legacy-edition customers?",
+   "answer": "Existing Agentforce 1 customers get a free move to Max with up to $500 in added value. Legacy-edition customers reportedly keep current pricing until renewal. Whether the upgrade applies immediately or at renewal should be confirmed with the Salesforce account rep.",
+   "importance": "critical",
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+  },
+  {
+   "id": "k6",
+   "question": "How do large enterprise deals (AELA / seat-based licensing) fit in, and did that start in 2026?",
+   "answer": "The Agentic Enterprise License Agreement (AELA) is a negotiated, fixed-fee or seat-anchored commitment for unlimited or pooled Agentforce and Data Cloud use. It dates from late 2025 (The Register, Dec 2025), so it predates 2026. It reflects customer demand for predictable pricing over pure consumption. Terms are negotiated per deal. Credit burn and rollover terms vary, and I found no confirmed 2026 change to AELA terms.",
+   "importance": "useful",
+   "source": "https://www.theregister.com/2025/12/12/ai_agents_salesforce_pricing/"
+  },
+  {
+   "id": "k7",
+   "question": "What is still unsettled or pending?",
+   "answer": "Agentforce Industry Edition pricing is due 'later this fall' 2026 with no date given. Max will later add Headless 360 capacity. Overage rates are unpublished. Some reports say partners and ISVs object to a new meter and Salesforce is discussing more predictable agent pricing. I could not verify this from a primary source. Most figures come from third-party blogs with conflicting dates, so check Salesforce's official pricing page and press releases before acting.",
+   "importance": "useful",
+   "source": "https://www.concret.io/blog/salesforce-agentforce-credits-2026-update"
+  }
+ ],
+ "labels": {
+  "exa": "A",
+  "opus": "B",
+  "gpt": "C",
+  "firecrawl": "D",
+  "parallel": "E",
+  "nimble": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.155
+}

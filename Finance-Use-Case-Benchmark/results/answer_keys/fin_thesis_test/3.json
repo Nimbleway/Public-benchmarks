@@ -1,0 +1,116 @@
+{
+ "sub": "fin_thesis_test",
+ "i": 3,
+ "task": "Test the thesis: Chipotle's same-store sales slowdown is cyclical, not structural",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What do the latest results (Q3 2026, reported 28 Oct 2026) show about whether comps have turned? Include comp growth, traffic versus price, and full-year guidance.",
+   "answer": "Q3 2026 comparable restaurant sales rose 2.1%. Average check contributed +1.3% and transactions +0.8%. This is the third straight quarter of positive transaction growth, after 2025 comps of about -1.7% with traffic down roughly 3%. Revenue grew 9.6% to $3.3B, mostly from new units. Full-year 2026 guidance is unchanged at low-single-digit comp growth and 350-370 openings. This supports a trough-and-recovery reading. But a +2% comp is far below the high-single and double-digit comps of 2022-24, and part of it is price.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000103/cmg-20261028xex991.htm"
+  },
+  {
+   "id": "k2",
+   "question": "How much of the 2025 decline and the current recovery comes from the macro cycle (low-income and young consumer weakness, fast-food value wars) versus Chipotle-specific or structural factors (price elasticity, portion and quality perception, competition, saturation)?",
+   "answer": "The answer must separate these causes. Cyclical evidence includes consumer pressure on lower-income and 25-34 year-old guests, and industry-wide traffic weakness in 2025. Structural or company-specific risks include a premium pricing position after repeated menu price increases, portion-size complaints, and value competitors. Q3 traffic of +0.8% is positive but modest, and it came with heavy promotion and operational labor spend. Check the traffic split by income cohort in the Q3 call transcript and compare against peers' traffic (Sweetgreen, Cava, McDonald's, Taco Bell). I did not fully verify the cohort data.",
+   "importance": "critical",
+   "source": "https://www.roic.ai/quote/CMG/transcripts/2026-year/3-quarter"
+  },
+  {
+   "id": "k3",
+   "question": "Is the margin trend consistent with a cyclical dip? Cover restaurant-level margin, labor and food costs, and the effect of sales deleverage.",
+   "answer": "Q3 restaurant-level margin was 23.3%, down from 24.5%. Operating margin was 13.7%, down from 15.9%. EPS was $0.27, down 6.9% from $0.29. Food costs improved to 29.5% of revenue from 30.0%, helped by price increases and tariff relief. Labor rose to 25.7% from 25.2% on lower volumes, wage inflation, bonuses, insurance and promotional staffing. G&A rose to $185M from $147M. If the weakness were purely cyclical, margins should recover with leverage as comps improve. Instead, costs are rising faster than sales (beef, wages, G&A). That points to a structurally higher cost base, and it is the key counterargument.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000103/cmg-20261028xex991.htm"
+  },
+  {
+   "id": "k4",
+   "question": "What is the unit-growth and new-restaurant productivity picture? Could cannibalization or saturation mean a structurally lower comp?",
+   "answer": "Chipotle opened 84 company-owned restaurants in Q3 (53 with a Chipotlane) plus 5 international partner-operated ones. It targets 350-370 openings in 2026 and has long-term ambitions of 7,000 North American units. Chipotlanes are cited as lifting new-unit sales and returns. Revenue growth of 9.6% against a 2.1% comp shows growth is coming from units. Watch new-unit productivity and cannibalization. Check the 10-K and call for new-unit volumes and any comment on cannibalization.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000103/cmg-20261028xex991.htm"
+  },
+  {
+   "id": "k5",
+   "question": "What company-driven levers (Recipe for Growth, menu and digital innovation, high-efficiency equipment, marketing, loyalty) are in place, and is there proof that they drive traffic rather than just reflecting the cycle?",
+   "answer": "CEO Scott Boatwright says the Recipe for Growth strategy is working: menu and digital innovation, rollout of high-efficiency equipment, and entry into three new international markets in Q3. Digital was 38.8% of sales versus 36.7% a year earlier. Management has so far resisted broad discounting, which supports pricing power. Proof requires traffic gains that persist without heavy limited-time offers.",
+   "importance": "useful",
+   "source": "https://www.ocbj.com/food/restaurants/chipotle-resists-discounting-amid-customer-slowdown/"
+  },
+  {
+   "id": "k6",
+   "question": "What are the forward comps and valuation implications, and what observable events would change the view?",
+   "answer": "Watch Q4 2026 and Q1 2027 comps against easy 2025 comparisons. If traffic growth stays positive or accelerates to the 3%+ range with margin recovery toward 25%+, the cyclical view is confirmed. If traffic turns negative again once the easy comparisons end, if comps depend on price, or if restaurant-level margin keeps falling, the structural view gains weight. Also watch the 2027 guide, beef inflation, and peers' traffic. Valuation was not checked and should be added.",
+   "importance": "critical",
+   "source": "https://www.benzinga.com/node/62674183"
+  }
+ ],
+ "labels": {
+  "exa": "A",
+  "opus": "B",
+  "firecrawl": "C",
+  "gpt": "D",
+  "nimble": "E",
+  "parallel": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "missing",
+   "k6": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "missing",
+   "k6": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  }
+ },
+ "cost_usd": 0.183
+}

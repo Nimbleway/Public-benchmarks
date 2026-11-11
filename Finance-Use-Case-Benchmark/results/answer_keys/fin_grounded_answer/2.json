@@ -1,0 +1,129 @@
+{
+ "sub": "fin_grounded_answer",
+ "i": 2,
+ "task": "What is the latest on TSMC's Arizona fab timeline: which fabs are producing, and what has been delayed or pulled forward?",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which TSMC Arizona fab is in volume production today, and on what node?",
+   "answer": "Fab 1 (Fab 21 Phase 1) has been producing in Arizona since late 2024. It runs N4-class (4nm) FinFET, with Apple, Nvidia and AMD among the customers. I did not re-verify its current output or yields in this search, so check TSMC's latest materials.",
+   "importance": "critical",
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+  },
+  {
+   "id": "k2",
+   "question": "What is the status and timing of the second Arizona fab (3nm)?",
+   "answer": "On the Q3 2026 call (15 Oct 2026), TSMC said construction of Fab 2 is complete and tool move-in and installation are under way. Volume production on 3nm is reported for 2027, with one report giving Q3 2027. That is ahead of the original 2028 plan. Earlier reports said Q4 2027, so the exact quarter is not settled.",
+   "importance": "critical",
+   "source": "https://www.yourvalley.net/stories/second-arizona-fab-construction-complete-tsmc-says-during-third-quarter-revenue-report,728878"
+  },
+  {
+   "id": "k3",
+   "question": "What has been pulled forward, and what has been delayed?",
+   "answer": "Fab 2 was pulled forward from 2028 to 2027. Fab 1's start had earlier slipped from 2024 to late 2024/early 2025, and Fab 2's original 2026 date had slipped to 2028 before being accelerated. TSMC has also said it is accelerating the later fabs and the expansion of its Arizona land holdings. I did not confirm whether any new delay has been announced since the Q3 call.",
+   "importance": "critical",
+   "source": "https://www.trendforce.com/news/2025/08/07/news-tsmc-reportedly-fast-tracks-2nd-arizona-fab-in-u-s-push-tool-move-in-by-oct-2026-targets-4q27-production"
+  },
+  {
+   "id": "k4",
+   "question": "What is the status of the third fab and its node?",
+   "answer": "Construction began in April 2025. The planned nodes are N2 and A16, and TSMC's public plan is production by the end of the decade. TSMC has said the schedule may shift with demand, market conditions, supply chain and funding. An analyst asked on the Q3 2026 call about pulling in the third fab, but I could not retrieve TSMC's answer, so any pull-in is unconfirmed.",
+   "importance": "critical",
+   "source": "https://www.aterio.io/blog/tsmc-phoenix-gigafab-satellite-construction-arizona"
+  },
+  {
+   "id": "k5",
+   "question": "What is the total Arizona investment and the plan for the remaining fabs, packaging and R&D?",
+   "answer": "The commitment is $165B (6 fabs, 2 advanced packaging plants, 1 R&D center). Some secondary sources cite higher figures such as $265B, which I did not verify. A packaging plant is reported to start construction around 2028, linked to the third fab. TSMC is also reportedly evaluating expansion beyond Arizona, including Texas.",
+   "importance": "useful",
+   "source": "https://www.blackridgeresearch.com/project-profiles/tsmc-arizona-fab-united-states-us-details-cost-expansion-latest-update"
+  },
+  {
+   "id": "k6",
+   "question": "What is the demand and financial backdrop that drives the pace?",
+   "answer": "Q3 2026 revenue was about $46.7B, up 16.2% quarter on quarter. Q4 guidance implies about 58% year-on-year growth, driven by AI demand that outpaces supply. That supports the push to accelerate Arizona capacity.",
+   "importance": "useful",
+   "source": "https://finance.biggo.com/news/US_TSM_2026-10-15"
+  },
+  {
+   "id": "k7",
+   "question": "Where do sources disagree, and what should be checked against primary documents?",
+   "answer": "The Fab 2 volume-production date varies by source: Q3 2027, Q4 2027, 'second half of 2027', or 2028 in a minority blog. Most coverage is secondary or based on unnamed sources. Check the official Q3 2026 transcript and TSMC's investor materials. Tariff and subsidy terms (CHIPS Act, US-Taiwan trade deal) could change the timeline.",
+   "importance": "critical",
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+  }
+ ],
+ "labels": {
+  "parallel": "A",
+  "gpt": "B",
+  "exa": "C",
+  "nimble": "D",
+  "firecrawl": "E",
+  "opus": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.163
+}

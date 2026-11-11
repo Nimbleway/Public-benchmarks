@@ -1,0 +1,167 @@
+{
+ "arm": "firecrawl",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find founder- or family-owned US veterinary clinic groups with 5-30 locations",
+ "input_n": 1,
+ "tier": "spark-2/high",
+ "status": "completed",
+ "seconds": 435,
+ "run_id": "01a1c192-e368-710d-9a69-0abc6c1021e4",
+ "output": {
+  "companies": [
+   {
+    "name": "Healthy Pets of Ohio",
+    "domain": "healthypetsofohio.com",
+    "hq": "Powell, Ohio",
+    "founded_year": 1952,
+    "employees": "201–500 employee range; matched current headcount 11 (FullEnrich company match; as_of 2026-11-09; the two measures conflict, so treat as a broad estimate)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "US veterinary clinic group with 5–30 locations",
+      "evidence": "The company describes itself as Central Ohio's largest independent veterinary practice and lists eight animal hospitals; the locations page states the group grew from 1 to 8 locations. as_of 2026-11-09.",
+      "source_url": "https://www.healthypetsofohio.com/locations/"
+     },
+     {
+      "criterion": "Founder-/family-owned",
+      "evidence": "The company says it is proudly family-owned and locally operated since 1952; its history identifies Dr. Hal Taylor Sr. as founder and describes three generations of Taylor family leadership.",
+      "source_url": "https://www.healthypetsofohio.com/our-history/"
+     },
+     {
+      "criterion": "Not PE-owned / independent",
+      "evidence": "The company says every decision is guided by patients, not corporate ownership, and calls itself independent.",
+      "source_url": "https://www.healthypetsofohio.com/"
+     },
+     {
+      "criterion": "Employee estimate",
+      "evidence": "FullEnrich's exact LinkedIn-company match returns company type Privately Held, headcount 11 and headcount range 201–500; because those fields conflict, the range is reported as the broad estimate.",
+      "source_url": "/workspace/exchange/fullenrich_vet_groups.json"
+     }
+    ],
+    "headcount_growth": null,
+    "last_round": null,
+    "traction": "Eight thriving clinics; the most recent clinic, Healthy Pets of Houk Road, opened in 2024. source_url: https://www.healthypetsofohio.com/our-history/; as_of 2026-11-09.",
+    "rank": 1,
+    "rank_reason": "Best fit: exact 8-location scale, explicit family ownership, three-generation founder-family continuity, and explicit independence from corporate ownership; employee data is the main diligence gap."
+   },
+   {
+    "name": "Noah's Ark Animal Clinics",
+    "domain": "noahsarkanimalclinics.com",
+    "hq": "Fort Wright, Kentucky",
+    "founded_year": 1914,
+    "employees": "57 matched company employees; 51–200 range (FullEnrich exact LinkedIn-company match; as_of 2026-11-09)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "US veterinary clinic group with 5–30 locations",
+      "evidence": "The company's locations page lists five clinics: Springdale, Colerain, West Chester, Ft. Wright, and Florence, all in the Greater Cincinnati area. as_of 2026-11-09.",
+      "source_url": "https://noahsarkanimalclinics.com/locations/"
+     },
+     {
+      "criterion": "Founder-/family-owned",
+      "evidence": "The company describes itself as an independent, family-owned and family-operated pet healthcare network; its history traces the Lies family legacy from Dr. George Lies through Dr. John Lies and owner/president Dr. Mike Lies.",
+      "source_url": "https://noahsarkanimalclinics.com/about-us/"
+     },
+     {
+      "criterion": "Not PE-owned / independent",
+      "evidence": "The company expressly describes the network as independent and family-owned/family-operated; no PE sponsor is identified on the opened company pages.",
+      "source_url": "https://noahsarkanimalclinics.com/about-us/"
+     },
+     {
+      "criterion": "Employee estimate",
+      "evidence": "FullEnrich's exact LinkedIn-company match returns 57 employees and a 51–200 range; as_of 2026-11-09.",
+      "source_url": "/workspace/exchange/fullenrich_vet_groups.json"
+     }
+    ],
+    "headcount_growth": null,
+    "last_round": null,
+    "traction": "The group states it has five locations and has served the Cincinnati area for over 60 years; its history also describes a veterinary legacy beginning in 1914. source_url: https://noahsarkanimalclinics.com/about-us/; as_of 2026-11-09.",
+    "rank": 2,
+    "rank_reason": "Strong fit: five-location network, unusually clear family ownership and multi-generation continuity, plus the strongest available group-level employee estimate; current dated headcount history and funding disclosure remain gaps."
+   },
+   {
+    "name": "Symbios Animal Health",
+    "domain": "symbios.vet",
+    "hq": "Chatham, New Jersey",
+    "founded_year": null,
+    "employees": "1 Datalegion corporate-profile employee estimate; LinkedIn estimate 2 (observed 2025-08; exact-domain match; not a clinic-staff census)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "US veterinary clinic group with 5–30 locations",
+      "evidence": "The company states that it is a family of six independently owned New Jersey animal hospitals and lists six hospitals in the Symbios family. as_of 2026-11-09.",
+      "source_url": "https://www.symbios.vet/"
+     },
+     {
+      "criterion": "Founder-/family-owned",
+      "evidence": "The company says every hospital is 100% independently and family owned; it also describes the hospitals as owned by working veterinarians and identifies multiple owners, including Nick and Elizabeth Pope and Jan Cailles.",
+      "source_url": "https://www.symbios.vet/"
+     },
+     {
+      "criterion": "Not PE-owned / independent",
+      "evidence": "The company explicitly says it has no corporate parent and no outside investors.",
+      "source_url": "https://www.symbios.vet/"
+     },
+     {
+      "criterion": "Employee estimate",
+      "evidence": "Datalegion matched the exact symbios.vet domain and returned 1 current corporate-profile employee, LinkedIn estimate 2, with the latest monthly observation 2025-08.",
+      "source_url": "/workspace/exchange/datalegion_candidates.json"
+     }
+    ],
+    "headcount_growth": "1 (2022-07) to 1 (2025-08), 0% net growth in Datalegion's corporate-profile history; this is not a census of all six hospital teams.",
+    "last_round": null,
+    "traction": "Six independently owned New Jersey animal hospitals operating as one family. source_url: https://www.symbios.vet/; as_of 2026-11-09.",
+    "rank": 3,
+    "rank_reason": "Clearest no-PE/family-ownership evidence and in-range six-hospital footprint, but weaker fit confidence because the available headcount data appears to cover only the corporate profile and no founding year or funding history was disclosed."
+   },
+   {
+    "name": "Community Veterinary Clinic",
+    "domain": "mycommunityveterinaryclinic.com",
+    "hq": "Sidney, Ohio",
+    "founded_year": 1992,
+    "employees": "1 Datalegion exact-domain employee estimate; LinkedIn estimate 2 (observed 2025-08; matched record is labeled Community Veterinary Clinic: Dublin and likely undercounts the five-location group)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "US veterinary clinic group with 5–30 locations",
+      "evidence": "The history page says the practice grew into a locally and family-owned network of five locations—Sidney, Troy, Piqua, Dublin, and Plain City—in West-Central Ohio. as_of 2026-11-09.",
+      "source_url": "https://mycommunityveterinaryclinic.com/history/"
+     },
+     {
+      "criterion": "Founder-/family-owned",
+      "evidence": "The company says the story began in 1992 when Dr. Current opened the first clinic, identifies him as owner and founder, and calls the network locally and family-owned.",
+      "source_url": "https://mycommunityveterinaryclinic.com/history/"
+     },
+     {
+      "criterion": "Not PE-owned / independent",
+      "evidence": "The company says it remains proudly family-owned and is not bound by corporate policies.",
+      "source_url": "https://mycommunityveterinaryclinic.com/history/"
+     },
+     {
+      "criterion": "Employee estimate",
+      "evidence": "Datalegion matched the exact domain but labeled the record Community Veterinary Clinic: Dublin and returned 1 current corporate-profile employee and LinkedIn estimate 2; this is reported as a likely undercount rather than a group census.",
+      "source_url": "/workspace/exchange/datalegion_candidates.json"
+     }
+    ],
+    "headcount_growth": "1 (2023-05) to 1 (2025-08), no net growth in Datalegion's exact-domain history; the matched single-location label makes this unreliable for the five-location group.",
+    "last_round": null,
+    "traction": "Five-location network with more than 30 years of service; the history page also includes customer testimonials. source_url: https://mycommunityveterinaryclinic.com/history/; as_of 2026-11-09.",
+    "rank": 4,
+    "rank_reason": "Qualifies cleanly on five locations, 1992 founder continuity, and explicit family ownership, but ranks fourth because group-level headcount and financing data are not reliably available."
+   }
+  ],
+  "search_notes": "Screened company sites, location pages, ownership/history pages, LinkedIn-company results, and funding/news pages. Excluded Pieper Veterinary because its April 18, 2023 announcement says it partnered with Chicago Pacific Founders, a private-equity firm; excluded VetRoots because the opened page supports veterinarian-owned rather than founder-/family-owned; excluded Neighborhood Vet Hospitals because the opened site lists four locations (below the five-location minimum). The Pet Vet was not included: FullEnrich returned an older veterinary-group LinkedIn record, but the current thepetvet.com page opened in this run is an ESA-letter business, creating an exact-entity conflict. Missing or weak fields across qualifying companies: current dated headcount series for Healthy Pets and Noah's Ark, reliable group-level headcount for Symbios and Community, and disclosed funding rounds. No qualifying company page opened in this run disclosed a last funding round. All numeric claims should be read with their as_of notes; current website facts are as_of 2026-11-09 unless an earlier observation is explicitly stated."
+ },
+ "cost_usd": null,
+ "cost_basis": "credits x Standard rate",
+ "credits": null,
+ "exchange": {
+  "enabled": true,
+  "requireApproval": false,
+  "onTermsRequired": "skip",
+  "paidCalls": 2,
+  "creditsUsed": 135
+ },
+ "error": null,
+ "completed_on": "2026-11-09"
+}

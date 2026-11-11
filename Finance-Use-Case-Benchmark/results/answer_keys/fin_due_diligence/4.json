@@ -1,0 +1,129 @@
+{
+ "sub": "fin_due_diligence",
+ "i": 4,
+ "task": "Write a due diligence memo on Revolut",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is Revolut's latest valuation and who set it? Was it a primary raise or a secondary sale?",
+   "answer": "Revolut closed a secondary share sale at a $115bn valuation, confirmed on 4 Nov 2026. Reported price was about $2,017 per share. Investors reported as leading include Glade Brook, Coatue, Durable, T. Rowe Price and Baillie Gifford. Reports say the offering was at least $750m and no new capital went to the company. The previous marks were $75bn in Nov 2025 and $45bn in 2024. Headlines of $121bn or more are not confirmed. The company is reported to be aiming for a listing around 2028 at a $200bn target. Because this was a secondary, the valuation is a transaction between holders and not a primary raise.",
+   "importance": "critical",
+   "source": "https://tech.eu/2026/11/04/revolut-confirms-115bn-valuation-after-completing-secondary-sale/"
+  },
+  {
+   "id": "k2",
+   "question": "What do the latest audited financials show (revenue, profit, customers)?",
+   "answer": "The FY2025 annual report was published on 24 Mar 2026. Revenue was $6.0bn (£4.5bn), up 46% from $4.0bn. Profit before tax was about $2.3bn, up 57%, a margin of 38%. Net profit was about $1.7bn. Retail customers reached 68.3m, up 30%, and business customers reached 767k, up 33%. Revolut Business is 16% of income. The company's target is 100m customers by mid-2027. The $115bn valuation is about 19x revenue and about 50x PBT. Quarterly entity reports for Q2 2026 are also published on assets.revolut.com.",
+   "importance": "critical",
+   "source": "https://www.revolut.com/en-AT/news/revolut_reports_record_profit_of_2_3bn_for_2025_as_revenue_surges_to_6bn/"
+  },
+  {
+   "id": "k3",
+   "question": "What is the UK licence status of Revolut? Which legal entity holds it, and has the migration finished?",
+   "answer": "On 11 Mar 2026 the PRA lifted the restrictions and ended mobilisation, after a restricted licence granted in Jul 2024. Revolut Bank UK Ltd is now a full UK bank, which enables FSCS-protected deposits and lending. UK customers are being migrated over several months from Revolut Ltd (the EMI). I found no source confirming that migration is complete. The UK entity's registry number should be checked at Companies House and the PRA/FCA register before relying on it.",
+   "importance": "critical",
+   "source": "https://www.revolut.com/en-BG/news/revolut_launches_uk_bank/"
+  },
+  {
+   "id": "k4",
+   "question": "What enforcement actions and fines has Revolut faced? Is any action open?",
+   "answer": "On 2 Apr 2026 the Italian AGCM fined Revolut Bank UAB and Revolut Securities Europe UAB a total of €11.5m (€5m + €5m + €1.5m). The three issues were undisclosed costs of commission-free trading, opaque account suspensions, and unclear information on Italian IBAN requirements. Revolut says it will appeal. In Apr 2025 the Bank of Lithuania fined Revolut Bank UAB €3.5m for AML failures. This is the lead regulator for the EU entity. I did not run a check of court dockets, OFAC or sanctions lists. The search found no 2026 data breach or sanctions action, but one should still search those sources directly.",
+   "importance": "critical",
+   "source": "https://magazine.fintechweekly.com/news/revolut-italy-agcm-fine-consumer-protection-2026"
+  },
+  {
+   "id": "k5",
+   "question": "What is the status of the US expansion and the US bank charter?",
+   "answer": "In Mar 2026 Revolut applied to the OCC and FDIC for a national bank charter, Revolut Bank US, N.A., backed by a $500m commitment. It replaced its earlier merger route. Reports say the OCC gave conditional approval around Sep 2026 (this date needs checking). FDIC and Federal Reserve discussions are continuing, and final OCC approval is still needed. The target launch is 2027. One trade group, FFW, opposed the application in May 2026. The US CEO is now Cetin Duransoy (formerly Visa, Capital One and Raisin). Sid Jajodia moved to global chief banking officer.",
+   "importance": "critical",
+   "source": "https://financemagnates.com/fintech/revolut-secures-conditional-approval-for-us-bank-charter"
+  },
+  {
+   "id": "k6",
+   "question": "Who leads the company and what has changed in management in the last 2 years?",
+   "answer": "Nikolay Storonsky is founder and CEO, and Vlad Yatsenko is co-founder and CTO. The leadership change I found is the March 2026 US CEO change: Duransoy replaced Jajodia, who was elevated to global chief banking officer. This is a reassignment, not an exit. My searches found no other senior departures, but I did not run name-by-name checks of the CFO, COO or the UK board, so that is not confirmed.",
+   "importance": "useful",
+   "source": "https://www.thestar.com.my/tech/tech-news/2026/03/05/revolut-files-for-us-bank-charter-names-duransoy-as-us-ceo"
+  },
+  {
+   "id": "k7",
+   "question": "What are the main risks to flag for investors?",
+   "answer": "(1) Concentration of value in one secondary-sale price at roughly 50x PBT, with no new capital raised. (2) A pattern of compliance and consumer-protection weaknesses in the EU entity (Lithuania AML €3.5m, Italy €11.5m), and the Bank of Lithuania is the lead regulator for the EU operations. (3) Execution risk on the UK migration and the US charter, with final approvals pending. (4) Aggressive growth targets: 100m customers by mid-2027 and an IPO targeted around 2028. I did not check employee reviews or complaint patterns (Trustpilot, FCA complaints data), so I cannot comment on them.",
+   "importance": "useful",
+   "source": "https://www.irishtimes.com/business/2025/04/08/revolut-fined-35m-by-over-money-laundering-control-failures"
+  }
+ ],
+ "labels": {
+  "gpt": "A",
+  "nimble": "B",
+  "exa": "C",
+  "parallel": "D",
+  "opus": "F",
+  "firecrawl": "I"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.295
+}

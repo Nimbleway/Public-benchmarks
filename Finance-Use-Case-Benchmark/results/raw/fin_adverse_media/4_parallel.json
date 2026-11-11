@@ -1,0 +1,386 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "fin_adverse_media",
+ "input": "Find bribery and corruption enforcement involving Ericsson, including its deferred prosecution agreement",
+ "input_n": 4,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 398,
+ "run_id": "trun_72215a694148439a8047cbee0c060c30",
+ "output": {
+  "assessment": "Ericsson presents substantial established anti-corruption risk: its 2019 U.S. settlements were followed by a 2023 criminal conviction after failures to meet its deferred prosecution agreement disclosure obligations. Its monitorship and plea-agreement term concluded on June 2, 2024, and SEC staff subsequently closed the Iraq inquiry without recommending enforcement. However, Ericsson’s October 2026 quarterly disclosure continued to describe an unresolved DOJ investigation concerning historical Iraq/Syria conduct, leaving that exposure open in the latest reviewed disclosure.",
+  "events": [
+   {
+    "type": "Foreign bribery enforcement — deferred prosecution agreement",
+    "date": "2019-12-06",
+    "source_url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+    "summary": "Ericsson entered a DOJ deferred prosecution agreement resolving charges of conspiring to violate the FCPA’s anti-bribery, books-and-records and internal-controls provisions through overseas bribery and slush-fund schemes.",
+    "parties": "Telefonaktiebolaget LM Ericsson; U.S. Department of Justice",
+    "status": "settled through a deferred prosecution agreement, subsequently breached",
+    "jurisdiction": "United States — Southern District of New York",
+    "amount": "USD 520,650,432 criminal penalty (as_of: 2019-12-06)."
+   },
+   {
+    "type": "Civil FCPA enforcement",
+    "date": "2019-12-06",
+    "source_url": "https://www.sec.gov/newsroom/press-releases/2019-254",
+    "summary": "The SEC charged Ericsson with FCPA anti-bribery, books-and-records and internal-controls violations arising from overseas corruption schemes, which Ericsson settled through disgorgement and prejudgment interest.",
+    "parties": "Telefonaktiebolaget LM Ericsson; U.S. Securities and Exchange Commission",
+    "status": "settled",
+    "jurisdiction": "United States — SEC; Southern District of New York",
+    "amount": "More than USD 539 million in disgorgement and prejudgment interest, separate from the DOJ criminal penalty (as_of: 2019-12-06)."
+   },
+   {
+    "type": "Iraq-related FCPA investigation",
+    "date": "2022-06 (notification of investigation); 2024-09-26 (closure notification)",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/717826/000119312524237284/d840682d6k.htm",
+    "summary": "Ericsson reported that the SEC investigated matters described in its internal Iraq investigation report and subsequently notified the company that the inquiry had concluded without an intention to recommend enforcement action.",
+    "parties": "Telefonaktiebolaget LM Ericsson; U.S. Securities and Exchange Commission",
+    "status": "investigated; closed without recommended enforcement action",
+    "jurisdiction": "United States — SEC; conduct concerning Iraq",
+    "amount": null
+   },
+   {
+    "type": "Criminal conviction following DPA breaches",
+    "date": "2023-03-21 (judgment imposed)",
+    "source_url": "https://www.courtlistener.com/docket/16573128/35/united-states-v-ericsson",
+    "summary": "Following DOJ breach notices dated October 21, 2021 and March 1, 2022 over disclosure failures concerning overseas misconduct, Ericsson was sentenced on its guilty plea to the original FCPA anti-bribery and accounting conspiracy charges.",
+    "parties": "Telefonaktiebolaget LM Ericsson; U.S. Department of Justice",
+    "status": "convicted",
+    "jurisdiction": "United States — Southern District of New York",
+    "amount": "USD 206,728,848 additional criminal fine after crediting the earlier USD 520,650,432 payment against the USD 727,379,280 total fine; USD 800 special assessment also imposed (as_of: 2023-03-21)."
+   },
+   {
+    "type": "Ongoing investigation into historical Iraq/Syria conduct",
+    "date": null,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+    "summary": "Ericsson’s October 2026 quarterly disclosure states that it continues cooperating with DOJ’s investigation of matters discussed in its internal Iraq report and related historical Iraq/Syria conduct, with no conclusive outcome and uncertain scope and duration.",
+    "parties": "Telefonaktiebolaget LM Ericsson; U.S. Department of Justice",
+    "status": "investigated; ongoing in the latest reviewed disclosure",
+    "jurisdiction": "United States — DOJ; historical conduct including Iraq and Syria",
+    "amount": null
+   }
+  ],
+  "entity": {
+   "group": "Ericsson group — parent company",
+   "hq_country": "Sweden",
+   "legal_name": "Telefonaktiebolaget LM Ericsson (publ)"
+  },
+  "excluded_namesakes": [
+   {
+    "source_url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+    "reason": "A related subsidiary rather than an unrelated namesake; its separate 2019 guilty plea is excluded as a standalone event and is not attributed to the Swedish parent.",
+    "name": "Ericsson Egypt Ltd"
+   }
+  ],
+  "missing_fields": [
+   "events[2].amount — no monetary resolution stated for the SEC Iraq inquiry, which closed without recommended enforcement action.",
+   "events[4].date — the DOJ Iraq/Syria investigation’s opening date was not verified.",
+   "events[4].amount — monetary exposure was not quantified in the latest reviewed disclosure."
+  ]
+ },
+ "basis": [
+  {
+   "field": "assessment",
+   "citations": [
+    {
+     "title": " Office of Public Affairs |  Ericsson Agrees to Pay Over $1 Billion to Resolve FCPA Case | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+     "excerpts": [
+      "Ericsson entered into a deferred prosecution agreement with the department in connection with a criminal information filed today in the Southern District of New York charging the Company with conspiracies to violate the anti-bribery, books and records, and internal controls provisions of the FCPA."
+     ]
+    },
+    {
+     "title": "United States v. Telefonaktiebolaget LM Ericsson, No. 1:19-cr-00884-LTS — Judgment in a Criminal Case",
+     "url": "https://www.courtlistener.com/docket/16573128/35/united-states-v-ericsson",
+     "excerpts": [
+      "THE DEFENDANT ORGANIZATION: X\\_ pleaded guilty to count(s) One (1) and Two (2)."
+     ]
+    },
+    {
+     "title": "Ericsson announces conclusion of Monitorship",
+     "url": "https://www.ericsson.com/en/press-releases/2024/6/ericsson-announces-conclusion-of-monitorship",
+     "excerpts": [
+      "Ericsson's Monitorship and Plea Agreement concluded on June 2"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000119312524237284/d840682d6k.htm",
+     "excerpts": [
+      "On September 26, 2024, the SEC Staff informed Ericsson"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+     "excerpts": [
+      "|Selling and administrative expenses |\\-7.4 |\\-7.9 |\\-6 % |\\-7.7 |\\-4 % |\\-23.3 |\\-24.7 |\\-6 % | |Impairment losses on trade receivables |0\\.1 |0\\.0 |52 % |0\\.0 |\\- |\\-0.1 |0\\.1 |\\- | |Other operating income and expenses |0\\.1 |7\\.7 |\\-99 % |0\\.1 |4 % |0\\.2 |7\\.8 |\\-97 % | |Share of earnings/losses of associated companies |0\\.0 |0\\.0 |\\- |\\-0.1 |\\- |\\-0.2 |0\\.1 |\\- | |EBIT |8\\.9 |15\\.2 |\\-41 % |5\\.9 |50 % |16\\.2 |27\\.5 |\\-41 % | |EBIT margin¹⁾ |14\\.9 % |26\\.9 % |\\- |11\\.2 % |\\- |10\\.0 % |16\\.4 % |\\- | |EBITA¹⁾ |9\\.2 |15\\.5 |\\-41 % |6\\.3 |47 % |17\\.3 |28\\.9 |\\-40 % | |EBITA margin¹⁾ |15\\.5 % |27\\.6 % |\\- |11\\.9 % |\\- |10\\.7 % |17\\.3 % |\\- | |Financial income and expenses, net |\\-0.9 |\\-0.2 |\\- |\\-0.2 |\\- |\\-1.3 |\\-0.3 |\\- | |Income tax |\\-2.2 |\\-3.6 |\\-41 % |\\-1.7 |30 % |\\-4.2 |\\-7.1 |\\-41 % | |Net income |5\\.8 |11\\.3 |\\-49 % |4\\.1 |42 % |10\\.8 |20\\.1 |\\-47 % | |Restructuring charges |\\-0.9 |\\-0.3 |195 % |\\-0.6 |49 % |\\-5.3 |\\-1.2 |\\- | | | | | | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "The DOJ resolution and court judgment establish historical enforcement and the parent’s guilty plea. Ericsson’s monitor announcement establishes completion of the monitorship and plea-agreement term, while its SEC-filed disclosures distinguish the closed SEC Iraq inquiry from the continuing DOJ investigation. The overall risk characterization is an analytical assessment rather than a regulator’s rating.",
+   "confidence": "medium"
+  },
+  {
+   "field": "events",
+   "citations": [
+    {
+     "title": " Office of Public Affairs |  Ericsson Agrees to Pay Over $1 Billion to Resolve FCPA Case | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+     "excerpts": [
+      "Ericsson entered into a deferred prosecution agreement with the department in connection with a criminal information filed today in the Southern District of New York charging the Company with conspiracies to violate the anti-bribery, books and records, and internal controls provisions of the FCPA.",
+      "Pursuant to its agreement with the department, Ericsson has committed to pay a total criminal penalty of $520,650,432"
+     ]
+    },
+    {
+     "title": "SEC.gov | SEC Charges Multinational Telecommunications Company With FCPA Violations ",
+     "url": "https://www.sec.gov/newsroom/press-releases/2019-254",
+     "excerpts": [
+      "Ericsson agreed to pay more than $539 million in disgorgement and prejudgment interest to settle the SEC’s charges."
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000119312524237284/d840682d6k.htm",
+     "excerpts": [
+      "On September 26, 2024, the SEC Staff informed Ericsson"
+     ]
+    },
+    {
+     "title": "United States v. Telefonaktiebolaget LM Ericsson, No. 1:19-cr-00884-LTS — Judgment in a Criminal Case",
+     "url": "https://www.courtlistener.com/docket/16573128/35/united-states-v-ericsson",
+     "excerpts": [
+      "Defendant is to pay a special assessment of $800.00 to be paid immediately. Prior fine payment of $520,650,432.00, receipt of which has been acknowledged by the Government, shall be credited to satisfy total fine liability of $727,379,280.00"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+     "excerpts": [
+      "|Selling and administrative expenses |\\-7.4 |\\-7.9 |\\-6 % |\\-7.7 |\\-4 % |\\-23.3 |\\-24.7 |\\-6 % | |Impairment losses on trade receivables |0\\.1 |0\\.0 |52 % |0\\.0 |\\- |\\-0.1 |0\\.1 |\\- | |Other operating income and expenses |0\\.1 |7\\.7 |\\-99 % |0\\.1 |4 % |0\\.2 |7\\.8 |\\-97 % | |Share of earnings/losses of associated companies |0\\.0 |0\\.0 |\\- |\\-0.1 |\\- |\\-0.2 |0\\.1 |\\- | |EBIT |8\\.9 |15\\.2 |\\-41 % |5\\.9 |50 % |16\\.2 |27\\.5 |\\-41 % | |EBIT margin¹⁾ |14\\.9 % |26\\.9 % |\\- |11\\.2 % |\\- |10\\.0 % |16\\.4 % |\\- | |EBITA¹⁾ |9\\.2 |15\\.5 |\\-41 % |6\\.3 |47 % |17\\.3 |28\\.9 |\\-40 % | |EBITA margin¹⁾ |15\\.5 % |27\\.6 % |\\- |11\\.9 % |\\- |10\\.7 % |17\\.3 % |\\- | |Financial income and expenses, net |\\-0.9 |\\-0.2 |\\- |\\-0.2 |\\- |\\-1.3 |\\-0.3 |\\- | |Income tax |\\-2.2 |\\-3.6 |\\-41 % |\\-1.7 |30 % |\\-4.2 |\\-7.1 |\\-41 % | |Net income |5\\.8 |11\\.3 |\\-49 % |4\\.1 |42 % |10\\.8 |20\\.1 |\\-47 % | |Restructuring charges |\\-0.9 |\\-0.3 |195 % |\\-0.6 |49 % |\\-5.3 |\\-1.2 |\\- | | | | | | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "These sources support the separate DOJ and SEC resolutions, the later criminal judgment, and the different outcomes of the Iraq-related investigations. DPA breach notices are incorporated into the resulting criminal proceeding rather than counted as additional monetary resolutions. Current investigation status is limited to the latest reviewed corporate disclosure.",
+   "confidence": "medium"
+  },
+  {
+   "field": "entity",
+   "citations": [
+    {
+     "title": "Company facts",
+     "url": "https://www.ericsson.com/en/about-us/company-facts",
+     "excerpts": [
+      "Number of employees worldwide South East Asia, Oceania and India: 25,050 North East Asia: 9,042 Americas: 14,136 Europe, Middle East and Africa: 38,308* **Total 86,536** of which Sweden: 13,013 (numbers from the latest interim report 2026) Number of employees worldwide Patent facts Related links Ericsson Annual Report 2025 [pdf](https://www.ericsson.com/492f5d/assets/local/investors/documents/2025/annual-report-2025-en.pdf) Ericsson Management [](https://www.facebook.com/Ericsson \"Facebook\") [](https://x.com/Ericsson \"X\") [](https://www.linkedin.com/company/ericsson \"LinkedIn\") Part of Ericsson group (last verified: 2026-07-07) Find out more about our company. # Company facts (last verified: 2026-07-15) We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity. **Founded:** 1876 **Parent company:** Telefonaktiebolaget LM Ericsson (publ) **Company registration number:** 556016-0680 **Global headquarters** : Stockholm, Sweden"
+     ]
+    },
+    {
+     "title": " Office of Public Affairs |  Ericsson Agrees to Pay Over $1 Billion to Resolve FCPA Case | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+     "excerpts": [
+      "Telefonaktiebolaget LM Ericsson (Ericsson or the Company), a multinational telecommunications company headquartered in Stockholm, Sweden"
+     ]
+    }
+   ],
+   "reasoning": "Ericsson’s company-facts page identifies Telefonaktiebolaget LM Ericsson (publ) as the parent company and Stockholm, Sweden as global headquarters. The DOJ release independently identifies the same Swedish parent as its enforcement counterparty.",
+   "confidence": "high"
+  },
+  {
+   "field": "excluded_namesakes",
+   "citations": [
+    {
+     "title": " Office of Public Affairs |  Ericsson Agrees to Pay Over $1 Billion to Resolve FCPA Case | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+     "excerpts": [
+      "The Ericsson subsidiary, Ericsson Egypt Ltd, pleaded guilty today in the Southern District of New York to a one-count criminal information charging it with conspiracy to violate the anti-bribery provisions of the FCPA."
+     ]
+    }
+   ],
+   "reasoning": "The DOJ expressly identifies Ericsson Egypt Ltd as a subsidiary with its own guilty plea, supporting its exclusion as a separate defendant rather than conflation with the parent.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000119312524237284/d840682d6k.htm",
+     "excerpts": [
+      "On September 26, 2024, the SEC Staff informed Ericsson"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+     "excerpts": [
+      "As additional information continues to be identified and evaluated in continued cooperation with the DOJ during its ongoing investigation, it is expected that there will not be any conclusive determinations on the outcome until the investigation is completed. The scope and duration of the investigation remain uncertain"
+     ]
+    }
+   ],
+   "reasoning": "The SEC closure disclosure does not provide a monetary resolution. The continuing DOJ investigation disclosure describes an unresolved outcome and uncertain scope and duration, but the reviewed pages did not establish its opening date or a quantified liability.",
+   "confidence": "medium"
+  },
+  {
+   "field": "events.0",
+   "citations": [
+    {
+     "title": " Office of Public Affairs |  Ericsson Agrees to Pay Over $1 Billion to Resolve FCPA Case | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+     "excerpts": [
+      "Friday, December 6, 2019",
+      "Ericsson entered into a deferred prosecution agreement with the department in connection with a criminal information filed today in the Southern District of New York charging the Company with conspiracies to violate the anti-bribery, books and records, and internal controls provisions of the FCPA.",
+      "Pursuant to its agreement with the department, Ericsson has committed to pay a total criminal penalty of $520,650,432"
+     ]
+    },
+    {
+     "title": " Criminal Division |  United States v. Telefonaktiebolaget LM Ericsson | United States Department of Justice",
+     "url": "https://www.justice.gov/criminal-fraud/fcpa/cases/united-states-v-telefonaktiebolaget-lm-ericsson",
+     "excerpts": [
+      "In 2019, the defendant (Ericsson) entered into a deferred prosecution agreement (DPA) for using third-party agents and consultants to make bribe payments to government officials and to manage off-the-books slush funds in Djibouti, China, Vietnam, Indonesia, and Kuwait, in violation of the Foreign Corrupt Practices Act (FCPA)."
+     ]
+    },
+    {
+     "title": " Office of Public Affairs |  Ericsson to Plead Guilty and Pay Over $206M Following Breach of 2019 FCPA Deferred Prosecution Agreement | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-plead-guilty-and-pay-over-206m-following-breach-2019-fcpa-deferred-prosecution",
+     "excerpts": [
+      "Following the 2019 resolution, Ericsson breached the DPA by failing to truthfully disclose all factual information and evidence related to the Djibouti scheme, the China scheme, and other potential violations of the FCPA"
+     ]
+    }
+   ],
+   "reasoning": "The contemporaneous DOJ release establishes the announcement date, parent defendant, Southern District of New York proceeding, deferred charges and exact criminal penalty. The DOJ case description supplies the bribery/slush-fund context, and the later release establishes the subsequent breach.",
+   "confidence": "high"
+  },
+  {
+   "field": "events.1",
+   "citations": [
+    {
+     "title": "SEC.gov | SEC Charges Multinational Telecommunications Company With FCPA Violations ",
+     "url": "https://www.sec.gov/newsroom/press-releases/2019-254",
+     "excerpts": [
+      "Washington D.C., Dec. 6, 2019 —",
+      "The Securities and Exchange Commission today announced that Sweden-based Telefonaktiebolaget LM Ericsson",
+      "The SEC's complaint alleges that Ericsson violated the anti-bribery, books and records, and internal controls provisions of the federal securities laws. Ericsson agreed to pay more than $539 million in disgorgement and prejudgment interest to settle the SEC’s charges."
+     ]
+    },
+    {
+     "title": "SEC Complaint: Telefonaktiebolaget LM Ericsson",
+     "url": "https://www.sec.gov/files/litigation/complaints/2019/comp-pr2019-254.pdf",
+     "excerpts": [
+      "UNITED STATES DISTRICT COURT SOUTHERN DISTRICT OF NEW YORK SECURITIES AND EXCHANGE COMMISSION, Case No. vs. Plaintiff **COMPLAINT"
+     ]
+    }
+   ],
+   "reasoning": "The SEC release identifies the date, parent, alleged FCPA violations and settlement exceeding USD 539 million in disgorgement and interest. The complaint identifies the Southern District of New York, and the separate DOJ amount is not combined with this civil payment.",
+   "confidence": "high"
+  },
+  {
+   "field": "events.2",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000119312524237284/d840682d6k.htm",
+     "excerpts": [
+      "In June 2022, the US Securities and Exchange Commission (“SEC”) informed Ericsson that it opened an investigation",
+      "On September 26, 2024, the SEC Staff informed Ericsson"
+     ]
+    }
+   ],
+   "reasoning": "Ericsson’s SEC-filed report states when it was informed of the Iraq-related SEC investigation and when SEC staff notified it of closure without intending to recommend enforcement. This is a corporate disclosure of the staff decision, not an acquittal or a dismissal of filed charges.",
+   "confidence": "medium"
+  },
+  {
+   "field": "events.3",
+   "citations": [
+    {
+     "title": "United States v. Telefonaktiebolaget LM Ericsson, No. 1:19-cr-00884-LTS — Judgment in a Criminal Case",
+     "url": "https://www.courtlistener.com/docket/16573128/35/united-states-v-ericsson",
+     "excerpts": [
+      "THE DEFENDANT ORGANIZATION: X\\_ pleaded guilty to count(s) One (1) and Two (2).",
+      "Title & Section Nature of Offense Offense Ended Count 18 USC 371 Conspiracy to violate the anti-bribery provisions 2014 One (1) of the FCPA.",
+      "No.: 98- 0107940 March 21, 2023 Date of Imposition of Judgment Defendant Organization’s Principal Business Address:",
+      "Defendant is to pay a special assessment of $800.00 to be paid immediately. Prior fine payment of $520,650,432.00, receipt of which has been acknowledged by the Government, shall be credited to satisfy total fine liability of $727,379,280.00",
+      "Accordingly, after considering (a) through (f) above, and pursuant to Paragraph 17 of the DPA, the Fraud Section and the Office believe that the appropriate resolution of the Defendant’s breach of the DPA is for the Defendant to plead guilty to Counts One and Two of the Information; to extend the Monitor for the duration of the term of this Agreement; and to pay an overall criminal monetary fine of $727,379,280, which reflects a fine at the midpoint between the low end and the high end (which in this case is the statutory maximum fine) of the applicable Sentencing Guidelines fine range. The Fraud Section and the Office will credit $520,650,432 previously paid by the Defendant pursuant to the DPA, resulting in a remaining criminal penalty of $206,728,848",
+      "“DPA Breach Notices” means notices from the DOJ on 21 October 2021 and on 1 March 2022"
+     ]
+    },
+    {
+     "title": " Office of Public Affairs |  Ericsson to Plead Guilty and Pay Over $206M Following Breach of 2019 FCPA Deferred Prosecution Agreement | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-plead-guilty-and-pay-over-206m-following-breach-2019-fcpa-deferred-prosecution",
+     "excerpts": [
+      "Following the 2019 resolution, Ericsson breached the DPA by failing to truthfully disclose all factual information and evidence related to the Djibouti scheme, the China scheme, and other potential violations of the FCPA"
+     ]
+    }
+   ],
+   "reasoning": "The criminal judgment records the guilty plea, offenses, March 21 judgment, total fine, prior-payment credit and special assessment. The incorporated plea agreement supplies the remaining USD 206,728,848 penalty and the two breach-notice dates. The DOJ release explains the underlying disclosure failures; the original penalty is credited rather than double-counted.",
+   "confidence": "high"
+  },
+  {
+   "field": "events.4",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+     "excerpts": [
+      "EX-99.1 2 a2026q3forfiling.htm EX-99.1 2026 Q3 For Filing | | | | |Ericsson  | Third quarter report 2026 . October 15, 2026",
+      "The Company continues to fully cooperate with the US Department of Justice (DOJ) in its investigation into matters discussed in the 2019 internal Iraq investigation report and related topics concerning historical conduct in jurisdictions including Iraq and Syria and continues to be in discussion with the government on these matters.",
+      "As additional information continues to be identified and evaluated in continued cooperation with the DOJ during its ongoing investigation, it is expected that there will not be any conclusive determinations on the outcome until the investigation is completed. The scope and duration of the investigation remain uncertain"
+     ]
+    }
+   ],
+   "reasoning": "The quarterly disclosure identifies the continuing DOJ investigation into the internal Iraq report and related historical conduct including Iraq and Syria, and states that a conclusive outcome is unavailable while scope and duration remain uncertain. The opening date and a quantified amount are not supplied, so neither is inferred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "excluded_namesakes.0",
+   "citations": [
+    {
+     "title": " Office of Public Affairs |  Ericsson Agrees to Pay Over $1 Billion to Resolve FCPA Case | United States Department of Justice",
+     "url": "https://www.justice.gov/archives/opa/pr/ericsson-agrees-pay-over-1-billion-resolve-fcpa-case",
+     "excerpts": [
+      "The Ericsson subsidiary, Ericsson Egypt Ltd, pleaded guilty today in the Southern District of New York to a one-count criminal information charging it with conspiracy to violate the anti-bribery provisions of the FCPA."
+     ]
+    }
+   ],
+   "reasoning": "The prosecutor explicitly distinguishes the subsidiary’s guilty plea from the parent’s DPA, supporting the stated exclusion.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000119312524237284/d840682d6k.htm",
+     "excerpts": [
+      "On September 26, 2024, the SEC Staff informed Ericsson"
+     ]
+    }
+   ],
+   "reasoning": "The disclosure reports closure without recommended enforcement but does not state a monetary resolution.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The reviewed disclosures confirm a continuing DOJ investigation but do not verify its opening date; a date is therefore left null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+     "excerpts": [
+      "As additional information continues to be identified and evaluated in continued cooperation with the DOJ during its ongoing investigation, it is expected that there will not be any conclusive determinations on the outcome until the investigation is completed. The scope and duration of the investigation remain uncertain"
+     ]
+    }
+   ],
+   "reasoning": "The investigation outcome remains uncertain and no quantified monetary exposure was verified in the latest reviewed disclosure.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list",
+ "completed_on": "2026-11-10"
+}

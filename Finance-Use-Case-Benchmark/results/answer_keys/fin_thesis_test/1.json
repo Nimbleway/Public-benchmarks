@@ -1,0 +1,129 @@
+{
+ "sub": "fin_thesis_test",
+ "i": 1,
+ "task": "Test the thesis: AI spending supports Micron's HBM revenue growth through 2027",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What do Micron's latest results (FQ4 2026, reported ~Oct 1, 2026) and FQ1 2027 guidance show about HBM and total growth?",
+   "answer": "FQ4 2026 revenue was about $54.2B, with consolidated gross margin of about 87%. FQ1 2027 guidance is $60-63B. Management said HBM revenue grew faster than total company revenue and that HBM shipments are ramping across a growing number of customers. Micron did not report an HBM dollar figure. Outside estimates of about $14B for the quarter are analyst guesses, not company figures. I did not verify the figures against the filings, so check them before relying on them.",
+   "importance": "critical",
+   "source": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf"
+  },
+  {
+   "id": "k2",
+   "question": "How much of 2027 HBM supply is contractually committed, and at what pricing?",
+   "answer": "The prepared remarks say Micron has completed agreements for the 'vast majority' of its calendar 2027 HBM bit supply, with significant year-over-year price increases. The call transcript uses looser wording ('a large part… sold out'). A third-party summary says about 75% is committed. Use the official wording. 'Fully booked' language comes from pre-earnings press, not from Micron. Also check whether the contracts are volume-and-price firm or can be renegotiated.",
+   "importance": "critical",
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/01/micron-mu-q4-2026-earnings-call-transcript/"
+  },
+  {
+   "id": "k3",
+   "question": "Is Micron's HBM product roadmap on track (HBM4 and HBM4E), and does it have key customer qualifications, notably Nvidia Rubin?",
+   "answer": "The 10-K says HBM4 36GB 12-high entered volume production in 2026. HBM4E on the 1-gamma node is expected to ramp in calendar 2027. Management says it is executing well on the HBM4 ramp. The open question is share at Nvidia Rubin versus SK Hynix and Samsung. Micron does not disclose share. Any HBM4 qualification slip or speed-bin issue would hit the thesis directly.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm"
+  },
+  {
+   "id": "k4",
+   "question": "What is the AI demand driver: hyperscaler capex and AI accelerator volumes through 2027? Is there a financing or digestion risk?",
+   "answer": "Micron attributes its guidance to AI infrastructure demand. The analyst needs current 2027 capex guidance from the hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) and Nvidia's Rubin shipment outlook. They also need to check circularity and financing concerns around OpenAI-related and neocloud spending. I did not verify these figures. They are the main exogenous variable. A capex cut or digestion would show up first in HBM volume and pricing for 2027 contracts.",
+   "importance": "critical",
+   "source": "https://www.nextplatform.com/store/2026/10/02/microns-numbers-show-why-hbm4-memory-is-worth-15x-its-weight-in-gold/5300701"
+  },
+  {
+   "id": "k5",
+   "question": "What is the competitive and supply picture: SK Hynix, Samsung, capacity additions and pricing risk for HBM in 2027?",
+   "answer": "SK Hynix is the HBM leader. Samsung is ramping HBM4. Micron is closing the share gap. The risk is that 2027 supply expands as new fabs and HBM capacity come online, which would compress HBM pricing and premiums. Micron says 2027 pricing is already agreed higher. The risk is therefore mainly to 2028 renewals and to the HBM4E mix. Check the DRAM and HBM capacity of all three vendors and their 2027 HBM share estimates (TrendForce, Counterpoint).",
+   "importance": "critical",
+   "source": "https://finance.yahoo.com/markets/stocks/articles/microns-hbm4-ramp-higher-pricing-123300062.html"
+  },
+  {
+   "id": "k6",
+   "question": "Can Micron supply the growth? What are capex, wafer trade-offs against conventional DRAM, and the margin picture?",
+   "answer": "HBM consumes about 3x the wafer capacity per bit of standard DRAM, so HBM growth competes with high-margin conventional DRAM, which is itself in a price upcycle. Consolidated gross margin is about 87%, so HBM is not obviously margin-dilutive now. Check FY27 capex guidance, new fab timelines (Idaho, New York, Japan, Singapore HBM packaging) and cleanroom constraints in the 10-K. These bound how much HBM revenue growth is possible in 2027.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm"
+  },
+  {
+   "id": "k7",
+   "question": "What are the key valuation and cycle risks, and what would change the view?",
+   "answer": "Memory is cyclical, and record margins of 87% imply peak-cycle risk. Triggers to watch: FQ1 2027 results (December 2026) showing HBM growth stalling or a guide below $60B; HBM4 qualification delays; any customer pushing out or re-pricing 2027 contracts; hyperscaler capex cuts; Samsung price aggression. The upside signals are HBM4E customer wins and 2028 contracts signed at higher prices. Micron stopped giving a precise HBM dollar figure, which makes it harder to check the thesis directly. Ask for an HBM revenue disclosure or a run-rate.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+  }
+ ],
+ "labels": {
+  "opus": "A",
+  "exa": "B",
+  "nimble": "C",
+  "gpt": "D",
+  "parallel": "E",
+  "firecrawl": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.183
+}

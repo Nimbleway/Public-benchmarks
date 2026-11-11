@@ -1,0 +1,112 @@
+{
+ "arm": "nimble",
+ "sub_use_case": "fin_grounded_answer",
+ "input": "What is the latest on TSMC's Arizona fab timeline: which fabs are producing, and what has been delayed or pulled forward?",
+ "input_n": 2,
+ "tier": "medium",
+ "status": "completed",
+ "seconds": 138,
+ "run_id": "task_run_d7bd3fafc4634a7bb45b86b01f3efbe5",
+ "output": {
+  "as_of": "2026-11-10",
+  "answer": "As of November 2026, only TSMC Arizona's first fab (Fab 21 Phase 1) is in high-volume production: it started N4 (4nm) output in Q4 2024 and has been making Apple, AMD and — since October 2025 — Nvidia Blackwell GPUs. The second fab's construction is complete and it is in tool move-in/installation, with N3 (3nm) volume production pulled forward to the second half of 2027 — it was originally scheduled for 2026 in TSMC's 2022 announcement, slipped to 2028, and has now been brought in by several quarters on strong AI demand. The third fab (N2/A16) broke ground in April 2025 with volume production targeted around 2029 (\"by the end of the decade\"), a timeline TSMC is also evaluating accelerating, and the fourth fab plus the first advanced-packaging fab entered initial construction in early 2026. Nothing on the Arizona build is currently delayed: instead, in July 2026 TSMC added another $100 billion, lifting the total pledge to $265 billion for six logic fabs, two advanced-packaging plants and an R&D center, with C.C. Wei saying in October 2026 that TSMC will upgrade Arizona to N2 and beyond faster than planned; TSMC is separately weighing (but has not confirmed) a second US mega-site in Texas.",
+  "caveats": [
+   "The second fab's exact process was reported inconsistently: TSMC's own Arizona page and its 2022 release say N3/3nm, while a December 2025 FinSMEs piece said the second fab would make 2nm chips with production in 2028 — the official TSMC page (2H 2027, N3) is treated as current.",
+   "A third-fab start-of-production date of 2029 comes from Wikipedia's phase table; TSMC's official language is only 'by the end of the decade,' and TSMC has said it is evaluating whether to accelerate that timeline, so the date could move again.",
+   "The October 2026 Yahoo Finance article carrying the C.C. Wei earnings-call quote does not display an exact publication date; it is dated to October 2026 by its reference to the most recent (October) earnings call.",
+   "The reported Texas expansion is unconfirmed — a Bloomberg report citing anonymous sources, with nothing finalized as of October 2026.",
+   "TSMC's 3Q26 earnings transcript PDF could not be retrieved, so the October 2026 call details rest on press coverage quoting the call rather than the primary transcript."
+  ],
+  "passages": [
+   {
+    "quote": "Key Milestones:\n\n*   First Fab: High-volume production on N4 process technology started in Q4 2024.\n*   Second Fab: Construction was completed on the fab structure in 2025. Volume production on N3 process technology targeted for the second-half of 2027.\n*   Third Fab: In April 2025, TSMC broke ground on the site of the third fab, slated for N2 and A16 process technologies. Targeting volume production by the end of the decade.\n*   Fourth Fab and First Advanced Packaging Fab: In early 2026, the company started initial stages of construction.",
+    "publisher": "TSMC (official)",
+    "source_url": "https://tsmc.com/static/abouttsmcaz/index.htm",
+    "published_date": "2026-11-10"
+   },
+   {
+    "quote": "In 2020, TSMC chose Phoenix, Arizona, for its first advanced U.S. semiconductor manufacturing site — a milestone investment that has expanded from $12 billion to $265 billion – representing the largest foreign direct investment in a greenfield project in American history. Current plans underway in Arizona include six semiconductor logic wafer fabs, two advanced packaging facilities and an R&D center. In July 2026, the company announced intent to build several more semiconductor logic wafer fabs for 2-nanometer and below technologies, as well as advanced packaging fabs, to support strong US customer demand. This total investment will strengthen America’s leadership in critical technologies like AI, high-performance computing, and advanced mobile applications.",
+    "publisher": "TSMC (official)",
+    "source_url": "https://tsmc.com/static/abouttsmcaz/index.htm",
+    "published_date": "2026-11-10"
+   },
+   {
+    "quote": "Construction of TSMC's second fab in Arizona is complete and tool moving and installation is planned for later in 2026. Due to strong customer demand, Wei said the company is also advancing the second fab's production schedule and expects to begin \"high-volume\" manufacturing in the second half of 2027.",
+    "publisher": "Yahoo Finance",
+    "source_url": "https://finance.yahoo.com/news/tsmc-ramps-arizona-production-ai-100500045.html",
+    "published_date": "2026-01-16"
+   },
+   {
+    "quote": "\"With the strong collaboration and support from our leading U.S. customers and the U.S. federal, state, and city government, we continue to speed up our capacity expansion in Arizona,\" C.C. Wei, chief executive of TSMC, said at the most recent earnings call in October. \"We are making tangible progress and executing well to our plan. In addition, we are preparing to upgrade our technologies faster to N2 and more advanced process technologies in Arizona, given the strong AI-related demand from our customers.\"",
+    "publisher": "Yahoo Finance (Tom's Hardware syndication)",
+    "source_url": "https://finance.yahoo.com/news/tsmc-brings-most-advanced-chipmaking-155600546.html",
+    "published_date": "2026-10"
+   },
+   {
+    "quote": "As of 2025, construction on the second fab (3 nm process) has been completed. TSMC originally targeted production for 2028,[\\[21\\]](https://en.wikipedia.org/wiki/TSMC_Arizona#cite_note-trendforce-20250203-21)[\\[24\\]](https://en.wikipedia.org/wiki/TSMC_Arizona#cite_note-24) but announced in January 2026 that volume production of 3 nm chips at the second fab would start in the second half of 2027, earlier than previously projected.[\\[25\\]](https://en.wikipedia.org/wiki/TSMC_Arizona#cite_note-25)",
+    "publisher": "Wikipedia",
+    "source_url": "https://en.wikipedia.org/wiki/TSMC_Arizona",
+    "published_date": "2026-11-10"
+   },
+   {
+    "quote": "TSMC will invest an additional $100 billion in the U.S. to build at least four more chipmaking plants and advanced packaging facilities in Arizona, CEO C.C. Wei announced at the company's second-quarter earnings conference in Taipei on Thursday. The new fabs will produce chips at the 2nm node and below, and the commitment lifts TSMC's total announced U.S. investment to $265 billion, confirming plans that appeared as [a market rumor in February](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-considers-an-additional-usd100-billion-investment-into-arizona-fabs-to-bolster-american-chipmaking-efforts-move-would-help-tsmcs-chips-avoid-tariffs-due-to-local-production). TSMC didn’t attach a timeline, saying the pace of construction will be set by market demand.",
+    "publisher": "Tom's Hardware",
+    "source_url": "https://tomshardware.com/tech-industry/tsmc-commits-another-100-billion-to-arizona-for-at-least-four-more-2nm-fabs",
+    "published_date": "2026-07"
+   },
+   {
+    "quote": "Taiwan Semiconductor Manufacturing Co. is weighing a new multibillion-dollar chip campus in Texas, according to a Bloomberg report published October 1, 2026, that cited people familiar with the matter. The move would mark TSMC’s second major US manufacturing region, stacked on top of an Arizona build-out that has already grown from a $12 billion pledge in 2020 to a stated $265 billion commitment as of July 2026. Nothing about Texas is finalized. But the fact that the world’s largest contract chipmaker is even studying a second American mega-site shows how tight AI chip capacity has become, and how much leverage Nvidia and Apple now hold over where their silicon gets made.",
+    "publisher": "Shattered.io (citing Bloomberg, Oct 1, 2026)",
+    "source_url": "https://shattered.io/tsmc-texas-fab-265-billion-arizona-2026",
+    "published_date": "2026-10-03"
+   }
+  ],
+  "question": "What is the latest on TSMC's Arizona fab timeline: which fabs are producing, and what has been delayed or pulled forward?",
+  "key_facts": [
+   {
+    "date": "Q4 2024",
+    "fact": "TSMC Arizona's first fab began high-volume production on N4 (4nm) process technology in Q4 2024; per Wikipedia it was producing at ~10,000 wafers/month by early 2025 with a plan to scale to 30,000.",
+    "source_url": "https://tsmc.com/static/abouttsmcaz/index.htm"
+   },
+   {
+    "date": "2025-10",
+    "fact": "TSMC Arizona's first fab began producing Nvidia Blackwell GPUs in October 2025, alongside Apple and AMD products.",
+    "source_url": "https://en.wikipedia.org/wiki/TSMC_Arizona"
+   },
+   {
+    "date": "2026-01-16",
+    "fact": "The second Arizona fab's construction is complete and tool move-in/installation was planned for later 2026; TSMC advanced the second fab's schedule and expects high-volume N3 manufacturing in the second half of 2027.",
+    "source_url": "https://finance.yahoo.com/news/tsmc-ramps-arizona-production-ai-100500045.html"
+   },
+   {
+    "date": "2026-01",
+    "fact": "The second fab's production was originally targeted for 2026 in TSMC's December 2022 announcement, slipped to 2028, and in January 2026 TSMC announced 3nm volume production would start in 2H 2027, earlier than previously projected — a pull-forward of several quarters.",
+    "source_url": "https://en.wikipedia.org/wiki/TSMC_Arizona"
+   },
+   {
+    "date": "2025-04",
+    "fact": "TSMC broke ground on the third Arizona fab in April 2025 (N2 and A16 process technologies), targeting volume production by the end of the decade — Wikipedia's phase table puts the start of production at 2029; the fourth fab and first advanced-packaging fab began initial construction in early 2026.",
+    "source_url": "https://tsmc.com/static/abouttsmcaz/index.htm"
+   },
+   {
+    "date": "2026-07",
+    "fact": "In July 2026 TSMC announced an additional $100 billion for at least four more 2nm-and-below fabs plus advanced packaging in Arizona, lifting the total pledged US investment to $265 billion, with the construction pace to be set by market demand.",
+    "source_url": "https://tomshardware.com/tech-industry/tsmc-commits-another-100-billion-to-arizona-for-at-least-four-more-2nm-fabs"
+   },
+   {
+    "date": "2026-10",
+    "fact": "At the October 2026 earnings call, CEO C.C. Wei said TSMC continues to speed up Arizona capacity expansion and is preparing to upgrade to N2 and more advanced process technologies in Arizona faster, given strong AI-related demand.",
+    "source_url": "https://finance.yahoo.com/news/tsmc-brings-most-advanced-chipmaking-155600546.html"
+   },
+   {
+    "date": "2026-10-01",
+    "fact": "Bloomberg reported on October 1, 2026 that TSMC is weighing a new multibillion-dollar chip campus in Texas, its second US manufacturing region, on top of the $265 billion Arizona commitment — nothing is finalized.",
+    "source_url": "https://shattered.io/tsmc-texas-fab-265-billion-arizona-2026"
+   }
+  ],
+  "missing_fields": []
+ },
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "completed_on": "2026-11-10"
+}

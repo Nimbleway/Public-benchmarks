@@ -1,0 +1,72 @@
+{
+ "arm": "firecrawl",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find founder-owned US commercial HVAC service companies in Texas with 50-300 employees and no institutional investors",
+ "input_n": 0,
+ "tier": "spark-2/high",
+ "status": "completed",
+ "seconds": 351,
+ "run_id": "01a1c192-91cd-757c-af62-febd7c8f6afc",
+ "output": {
+  "companies": [
+   {
+    "name": "AirCo Air Conditioning, Heating, and Plumbing",
+    "domain": "airco.com",
+    "hq": "Fort Worth, Texas, USA",
+    "founded_year": 1990,
+    "employees": "51-200 employees (as_of: 2026-11-09; source: https://www.inven.ai/company-lists/top-25-hvac-companies-in-texas)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "Texas headquarters",
+      "evidence": "The Texas HVAC company list identifies AirCo's headquarters as Fort Worth, Texas, USA.",
+      "source_url": "https://www.inven.ai/company-lists/top-25-hvac-companies-in-texas"
+     },
+     {
+      "criterion": "Commercial HVAC service company",
+      "evidence": "BBB categorizes AirCo as a Commercial Air Conditioning Contractor and lists Commercial AC and Commercial Heating among its products and services; AirCo's own site includes Commercial HVAC as a service option.",
+      "source_url": "https://www.bbb.org/us/tx/fort-worth/profile/commercial-air-conditioning-contractors/airco-air-conditioning-heating-and-plumbing-0825-92070006"
+     },
+     {
+      "criterion": "50-300 employees",
+      "evidence": "The Texas HVAC company list reports a 51-200 employee range, which is within the requested 50-300 range.",
+      "source_url": "https://www.inven.ai/company-lists/top-25-hvac-companies-in-texas"
+     },
+     {
+      "criterion": "Founder/family-owned",
+      "evidence": "Inven labels AirCo Family Owned; AirCo's own site says Family-owned & Operated for over 35 years; BBB identifies Rick Thornton as owner and the entity as private. The opened sources verify family ownership and a current owner, but do not explicitly state that Rick Thornton was the original founder.",
+      "source_url": "https://www.airco.com/"
+     },
+     {
+      "criterion": "No institutional investors identified",
+      "evidence": "The reviewed company and BBB pages describe AirCo as family-owned/private and identify an individual owner; no institutional or PE owner is disclosed on those pages. This is a source-screening result, not proof that no undisclosed investor exists.",
+      "source_url": "https://www.bbb.org/us/tx/fort-worth/profile/commercial-air-conditioning-contractors/airco-air-conditioning-heating-and-plumbing-0825-92070006"
+     },
+     {
+      "criterion": "Founded in 1990",
+      "evidence": "The Texas HVAC company list reports founded year 1990, and AirCo's own site says it has served the Dallas-Fort Worth community since 1990.",
+      "source_url": "https://www.airco.com/"
+     }
+    ],
+    "headcount_growth": null,
+    "last_round": null,
+    "traction": "AirCo's site reports 42,000+ HVAC systems installed, Trane Comfort Specialist status, and Trane Top 10 Dealer Award recognition for 14 consecutive years; it also displays a 2021 Angi Super Service Award.",
+    "rank": 1,
+    "rank_reason": "Only verified survivor of the reviewed Texas commercial-HVAC screen: it has the requested 50-300 employee range, Texas headquarters, explicit commercial HVAC evidence, and family/private ownership with no institutional owner disclosed. It ranks first despite the caveat that the opened sources do not explicitly identify the current owner as the original founder; dated headcount growth and a last funding round were not verifiable."
+   }
+  ],
+  "search_notes": "As_of: 2026-11-09. I screened the Inven Texas HVAC list, official company pages, BBB profiles, and opened M&A/PE sources. AirCo is the only company I could retain as a verified family-owned/private commercial HVAC fit in the 50-300 range. Prodigy Commercial HVAC was excluded because PitchBook identifies it as private-equity-backed by Audax; Rescue Air was excluded because PitchBook identifies it as acquired/merged and PE-backed; Frymire was found within the Granite Comfort organization. Exact structured employee counts also removed several otherwise plausible family/private names that fell below 50, while Houk's sources indicated a size conflict with the requested ceiling. Two dated headcount observations and a last funding round were not found for AirCo, so those fields are null. The no-institutional-investor conclusion is limited to the reviewed public pages and is not a guarantee against undisclosed ownership. Sources: https://www.inven.ai/company-lists/top-25-hvac-companies-in-texas; https://pitchbook.com/profiles/company/626877-28; https://pitchbook.com/profiles/company/451654-12; https://granitecomfort.com/granite-comfort-expands-footprint-in-dallas-ft-worth-metroplex-with-acquisition-strittmatter"
+ },
+ "cost_usd": 0.493,
+ "cost_basis": "credits x Standard rate",
+ "credits": 498,
+ "exchange": {
+  "enabled": true,
+  "requireApproval": false,
+  "onTermsRequired": "skip",
+  "paidCalls": 1,
+  "creditsUsed": 30
+ },
+ "error": null,
+ "completed_on": "2026-11-09"
+}
