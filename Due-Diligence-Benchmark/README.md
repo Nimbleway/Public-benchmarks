@@ -1,30 +1,30 @@
 # Due diligence question set
 
-79 questions that people actually search for and ask online when they research a company or a fund before investing:
-who owns it, how its finances look, who supplies it, how its stock is shorted, how a hedge fund has performed. It is
-built for comparing web search and research APIs on that kind of lookup.
+292 questions that people search for on Google when they research a company or a fund before investing: when it
+reports earnings, how heavily its stock is shorted, what it is worth, who owns it, what lawsuits it faces. It is built
+for comparing web search and research APIs on that kind of lookup.
 
-Every question traces back to a public signal of real demand: a question Google shows under "People also ask", a
-related search Google suggests, a search phrase with measured monthly volume in Google Ads Keyword Planner, or a post
-on Reddit or Quora. We did not write the questions ourselves; we collected them, filtered them and cleaned up their
-wording.
+Every question is a real Google search, searched **at least 100 times a month in the US** according to Google Ads
+Keyword Planner, rewritten as a clean question. We chose the topics; Google's search data chose the companies, funds
+and people. No company name was typed by us at any point.
 
-The set is **unlabeled**: there are no reference answers. Many answers change over time (a short interest figure, a
-credit rating, the latest annual report), so a fixed answer key would go stale. Score answers with an LLM judge that
-rates each one on its own, for example on accuracy, relevance, depth and sourcing, rather than against a gold answer.
+The set is **unlabeled**: there are no reference answers. Many answers change over time (a short interest figure, the
+next earnings date, a valuation), so a fixed answer key would go stale. Score answers with an LLM judge that rates each
+one on its own, for example on accuracy, relevance, depth and sourcing, rather than against a gold answer.
 
 Results will be published here once providers are run against it.
 
 ## Why demand-based questions
 
-A question set written by the benchmark's authors measures what the authors think matters, and it is easy, even without
-meaning to, to write questions a particular tool handles well. We wanted the opposite: questions chosen by the people
-who do this research, before any provider was run.
+A question set written by the benchmark's authors measures what the authors think matters, and it is easy, even
+without meaning to, to pick companies or questions a particular tool handles well. We wanted the opposite.
 
-- **Real use.** Each question is something people type into Google or ask in an investing community, so a provider's
-  score reflects lookups that actually happen, in the words people use.
-- **Auditable.** Each source is public: anyone can run the same Google searches, open the same Keyword Planner ideas
-  or read the same subreddits and Quora topics, and check that the questions came from there.
+- **Real use, weighted by demand.** Each question is a search people actually make, at measured volume. The set leans
+  towards what is searched most (earnings dates, short interest, valuations), because that is what people look up.
+- **No hand-picked companies.** We started from generic topic searches that name no company ("short interest",
+  "valuation", "who owns"). Every company, fund and person in the set came from Google's list of related searches.
+- **Auditable.** Anyone with a Google Ads account can open Keyword Planner, enter the same seed searches and see the
+  same ideas and volumes (they shift a little month to month).
 - **Not tuned to any provider.** The questions were collected and frozen before any search or research API was run on
   them, and no answer quality was looked at when choosing them.
 
@@ -33,88 +33,73 @@ who do this research, before any provider was run.
 | | |
 | --- | --- |
 | File | [`data/questions.csv`](data/questions.csv) |
-| Questions | 79 |
-| Collected | November 2026, United States, English |
+| Questions | 292, about 220 different companies, funds and people |
+| Search volume | 100 to 368,000 a month per question (median 720) |
+| Collected | November 2026, United States, English (volumes for October 2025 – September 2026) |
 | Answers | none (unlabeled) |
 
 | Category | Questions | Covers |
 | :--- | ---: | :--- |
-| `ownership_and_shareholders` | 7 | Who owns or holds shares, now or at a past date, including stakes bought by named investors |
-| `company_profile` | 4 | What kind of company or fund this is, and who founded it |
-| `competitive_landscape` | 5 | Who the competitors are and how the company compares |
-| `supply_chain_and_customers` | 11 | Who it buys from, ships through or sells to; its distribution and supply-chain situation |
-| `financial_results_and_reports` | 8 | Reported revenue, earnings and income, and the statements or annual reports that publish them |
-| `funding_valuation_and_ipo` | 9 | Funding rounds, valuation and its history, IPO plans, filings, status, date and price |
-| `financial_health_and_credit` | 9 | Whether it is financially sound: debt, credit ratings, distress, layoffs |
-| `stock_and_short_interest` | 13 | Share-price moves, splits, insider buying and selling, short sellers, short interest and borrow |
-| `funds_and_managers` | 7 | A hedge fund or manager: returns, whether it has shut down, its pitches to investors, where its manager invests, its risks |
-| `legal_esg_and_governance` | 4 | Lawsuits and settlements, ESG controversies, and governance policies such as insider trading rules |
-| `strategy_and_operations` | 2 | Strategic moves, such as winding down a business line or entering a new market, and why |
+| `stock_and_short_interest` | 59 | Short interest, stock splits, insider trading |
+| `funding_valuation_and_ipo` | 59 | Valuation, IPO plans and dates, funding rounds |
+| `financial_results_and_reports` | 53 | Earnings dates and results, annual reports and 10-K filings |
+| `legal_esg_and_governance` | 29 | Lawsuits, class actions and settlements |
+| `competitive_landscape` | 24 | Who the competitors are |
+| `strategy_and_operations` | 23 | Acquisitions the company has made or is making |
+| `ownership_and_shareholders` | 23 | Who owns the company, and who its shareholders are |
+| `funds_and_managers` | 10 | A hedge fund's returns and its 13F holdings |
+| `supply_chain_and_customers` | 6 | Who the company buys from, and its supply chain |
+| `company_profile` | 6 | What the company is |
 
 ## Columns
 
 | Column | Meaning |
 | :--- | :--- |
 | `question` | The question, as a clean, self-contained sentence |
-| `category` | The topic, from the table above |
+| `category` | The topic, from the table above (the topic of the seed search it came from) |
 
 ## How it was built
 
-1. **Twelve company searches.** We picked twelve searches that pair a named company or fund with a diligence topic,
-   spread across topics and sectors. Google Ads Keyword Planner shows how often people in the US search each one:
+1. **Generic seed searches.** We wrote 31 searches that name no company, two to four per topic of interest to an
+   investment analyst: for example "shareholders", "who owns", "competitors", "earnings report", "10-k", "valuation",
+   "ipo date", "credit rating", "short interest", "insider trading", "stock split", "13f holdings", "lawsuit" and
+   "acquisition".
 
-   | Search | Avg. monthly searches |
-   | :--- | ---: |
-   | Datadog competitors | 880 |
-   | Boeing lawsuits | 390 |
-   | Apple suppliers | 210 |
-   | GameStop short interest | 110 |
-   | Tesla insider trading | 50 |
-   | Carvana credit rating | 40 |
-   | Citadel hedge fund performance | 30 |
-   | Rippling revenue 2025 | 30 |
-   | Peloton debt | 20 |
-   | Revolut financial statements | 20 |
-   | Klarna shareholders | 10 |
-   | Nestle ESG controversies | too few to show |
+2. **What people search.** For each seed, Google Ads Keyword Planner (United States, English, last 12 months) lists
+   related searches with their average monthly volume. We took the 100 most searched ideas per seed, 2,724 in all.
+   Many of them name a company: "nvda earning date", "gme short interest", "who owns comcast".
 
-2. **What people search next.** For each of the twelve we collected:
-   - the questions Google shows under **"People also ask"** and the **related searches** at the bottom of the results
-     page (US, English);
-   - the **Keyword Planner ideas** that name the same company, with their monthly search volume (for example "tesla
-     insider buying", "apple chip supplier", "gamestop short interest january 2021").
+3. **Filter.** An LLM read every idea and kept only those that name a specific company, fund or person and ask
+   something an analyst would look up, rewriting the keyword into one clean question with the same intent and entity
+   ("nvda earning date" → "When is NVIDIA's next earnings date?"). It dropped searches with no named entity
+   ("credit score"), consumer searches (debt relief, card settlements), and stock-price chatter ("tesla stock").
 
-3. **What investors ask in communities.** The newest posts in r/SecurityAnalysis, r/ValueInvesting, r/hedgefund and
-   r/investing, and the questions on Quora's Investing, Hedge Funds and Apple topic pages. Most of these are opinions,
-   news or personal advice, so few survived the filter, but the ones that did are real questions about named companies
-   and funds.
+4. **Rules, no hand-picking.**
+   - The search must be searched at least 100 times a month.
+   - It must contain its seed's topic word or a close variant ("amazon earnings" for "earnings report"), so a bare
+     company or person name is not counted as a question about that topic.
+   - Per company, only the most searched question per topic and at most three questions in all, the most searched
+     first, so a few famous companies do not fill the set.
 
-4. **Filter.** Duplicates, single words and very long texts were dropped by rule. An LLM then read every remaining item
-   and either kept it, rewrote it, or dropped it:
-   - **kept** a clean question about a named company, fund or person that public web sources can answer;
-   - **rewrote** a keyword phrase or a post title into one clean question with the same intent and entity, adding no
-     facts ("carvana credit rating" → "What is Carvana's credit rating?");
-   - **dropped** questions with no named entity, consumer questions (car financing, card statements), stock-price
-     chatter ("Will Peloton stock go up?"), opinions and news.
+5. **Read-through.** We read the final list and fixed what the rules missed, each change listed with its reason in
+   the build script: the same company under two names (Facebook and Meta, Google and Alphabet, AMC and AMC
+   Entertainment) counts as one company, two ambiguous names were made clear ("Who owns Sky, the UK broadcaster?"),
+   two famous consumer cases (the McDonald's hot coffee and Red Bull "gives you wings" lawsuits) were dropped as
+   trivia rather than research on a company, and ETFs (TQQQ, VOO, SLV, USO, XRT) were dropped as products rather
+   than companies or funds an analyst researches. No question was added by hand.
 
-5. **Trim.** At most three questions per company and topic, so no single company dominates (for example, nine Revolut
-   annual-report questions became three).
+**What people do not search.** Some topics an analyst cares about barely appear in search with a company named:
+Keyword Planner returned no ideas for "bankruptcy", and the ideas for "credit rating", "debt", "esg rating",
+"restructuring", "insider buying" and "largest shareholders" were consumer or generic searches, or under 100 a month
+once a company was named. Those topics are left out rather than filled by hand; the set reflects what is searched.
 
-6. **Categories.** The categories were drawn from the questions themselves, and each question was assigned to one by
-   an LLM and checked by hand.
+Questions per seed: valuation 40, short interest 37, earnings report 27, competitors 24, acquisition 23, stock split 21,
+annual report 21, ipo date 18, who owns 18, class action lawsuit 16, lawsuit 13, company profile 6, 10-k 5, hedge fund
+returns 5, shareholders 5, 13f holdings 4, suppliers 4, supply chain 2, funding round 1, hedge fund performance 1,
+insider trading 1.
 
-Questions by source:
-
-| Source | Questions |
-| :--- | ---: |
-| Google related searches | 34 |
-| Google "People also ask" | 20 |
-| Google Ads Keyword Planner | 17 |
-| Reddit | 5 |
-| Quora | 3 |
-
-The data was collected with Nimble's web data APIs. Questions are as of November 2026; many name a year or ask for the
-latest figure, so their answers will move.
+The data was collected with Google Ads Keyword Planner and the filter run with an LLM, by Nimble. Questions are as of
+November 2026; many ask for the latest figure, so their answers will move.
 
 ## License
 
