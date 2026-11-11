@@ -1,12 +1,17 @@
 # Lead enrichment question set
 
-234 questions that people search for on Google about a company: who runs it, whether it is laying people off, how many
-employees it has, what it earns, what it owns and who owns it. It is built for comparing web search and research APIs
-on the account research sales, RevOps and marketing teams do.
+235 questions that people search for or ask online about a company: who runs it, whether it is laying people off,
+how many employees it has, what it earns, what it owns and who owns it. It is built for comparing web search and
+research APIs on the account research sales, RevOps and marketing teams do.
 
-Every question is a real Google search, searched **at least 100 times a month in the US** according to Google Ads
-Keyword Planner, rewritten as a clean question. We chose the topics; Google's search data chose the companies and
-people. No company name was typed by us at any point.
+Every question comes from public demand, from one of two sources:
+
+- **234 Google searches**, each searched **at least 100 times a month in the US** according to Google Ads Keyword
+  Planner, rewritten as a clean question. We chose the topics; Google's search data chose the companies and people.
+- **1 question people asked in a sales community** on Quora. An agent chose which subreddits and Quora topics to read;
+  the people posting there chose the questions. Someone asking it in public, and others discussing it, is the demand.
+
+No company name was typed by us at any point.
 
 The set is **unlabeled**: there are no reference answers. Many answers change over time (a headcount, an executive,
 the latest layoffs), so a fixed answer key would go stale. Score answers with an LLM judge that rates each one on its
@@ -19,12 +24,13 @@ Results will be published here once providers are run against it.
 A question set written by the benchmark's authors measures what the authors think matters, and it is easy, even
 without meaning to, to pick companies or questions a particular tool handles well. We wanted the opposite.
 
-- **Real use, weighted by demand.** Each question is a search people actually make, at measured volume. The set leans
+- **Real use, weighted by demand.** Each question is something people actually search for or ask. The set leans
   towards what is searched most (layoffs, executives, revenue, parent companies), because that is what people look up.
 - **No hand-picked companies.** We started from generic topic searches that name no company ("ceo", "layoffs",
-  "number of employees"). Every company and person in the set came from Google's list of related searches.
+  "number of employees"), and from sales communities rather than from companies. Every company and person in the set
+  came from Google's list of related searches or from someone's post.
 - **Auditable.** Anyone with a Google Ads account can open Keyword Planner, enter the same seed searches and see the
-  same ideas and volumes (they shift a little month to month).
+  same ideas and volumes (they shift a little month to month), and anyone can read the same subreddits and Quora topics.
 - **Not tuned to any provider.** The questions were collected and frozen before any search or research API was run on
   them, and no answer quality was looked at when choosing them.
 
@@ -33,8 +39,8 @@ without meaning to, to pick companies or questions a particular tool handles wel
 | | |
 | --- | --- |
 | File | [`data/questions.csv`](data/questions.csv) |
-| Questions | 234, about 160 different companies and people |
-| Search volume | 100 to 450,000 a month per question (median 320) |
+| Questions | 235, about 160 different companies and people |
+| Search volume | 100 to 450,000 a month per searched question (median 320) |
 | Collected | November 2026, United States, English (volumes for October 2025 – September 2026) |
 | Answers | none (unlabeled) |
 
@@ -43,7 +49,7 @@ without meaning to, to pick companies or questions a particular tool handles wel
 | `scale_and_headcount` | 77 | Layoffs and employee counts |
 | `subsidiaries_and_corporate_structure` | 54 | Subsidiaries, and who the parent company is |
 | `leadership_and_ownership` | 50 | Who the CEO, CTO or founder is |
-| `revenue_and_earnings` | 40 | Annual revenue |
+| `revenue_and_earnings` | 41 | Annual revenue and quarterly results |
 | `ipo_and_public_status` | 10 | Whether the company is publicly traded |
 | `company_overview` | 2 | What the company does |
 | `locations_and_registration` | 1 | Company registration numbers |
@@ -53,9 +59,11 @@ without meaning to, to pick companies or questions a particular tool handles wel
 | Column | Meaning |
 | :--- | :--- |
 | `question` | The question, as a clean, self-contained sentence |
-| `category` | The topic, from the table above (the topic of the seed search it came from) |
+| `category` | The topic, from the table above (for a search, the topic of the seed search it came from) |
 
 ## How it was built
+
+### Google searches (234 questions)
 
 1. **Generic seed searches.** We wrote 26 searches that name no company, two or three per topic a seller looks up
    about an account: for example "ceo", "cto", "founder", "funding", "investors", "annual revenue", "ipo",
@@ -95,7 +103,31 @@ searched.
 Questions per seed: layoffs 54, annual revenue 40, subsidiaries 30, cto 26, number of employees 24, parent company 24,
 ceo 20, publicly traded 10, founder 4, company overview 2.
 
-The data was collected with Google Ads Keyword Planner and the filter run with an LLM, by Nimble. Questions are as of
+### Community questions (1 question)
+
+1. **Sources.** An agent chose the sales communities to read: the newest posts in r/sales, r/salesforce and r/RevOps,
+   and the questions on Quora's Sales, Lead Generation, Salesforce and HubSpot topic pages (about 160 posts and
+   questions).
+2. **Filter.** The same LLM filter kept only requests for information about a named company or person, rewriting a
+   post into one clean question. These communities talk about careers, tools and sales technique rather than about
+   specific companies, so one question survived.
+3. **Category.** It was assigned to the category above that fits it.
+
+| Source | Questions | Example |
+| :--- | ---: | :--- |
+| Quora, HubSpot topic | 1 | "Why did HubSpot beat expectations in its second-quarter 2020 results?" |
+| Reddit, r/sales, r/salesforce and r/RevOps; Quora, Sales, Lead Generation and Salesforce topics | 0 | |
+
+## Questions by source
+
+| Source | Questions |
+| :--- | ---: |
+| Google Ads Keyword Planner | 234 |
+| Quora | 1 |
+| Reddit | 0 |
+
+The searches were collected with Google Ads Keyword Planner, the posts with Nimble's web data APIs, and the filter run
+with an LLM, by Nimble. Questions are as of
 November 2026; many ask for the latest figure, so their answers will move.
 
 ## License

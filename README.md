@@ -9,12 +9,13 @@ Public, reproducible benchmark suites published by Nimble.
   [DRACO benchmark](https://arxiv.org/abs/2602.11685). Scores agents across
   100 cross-domain tasks against expert-curated rubrics on factual accuracy,
   breadth/depth of analysis, presentation quality, and citation quality.
-- [`Due-Diligence-Benchmark/`](./Due-Diligence-Benchmark) — 292 questions
-  people search for on Google when researching a company or fund to invest in
-  (earnings, short interest, valuation, ownership, lawsuits and more). Each is a
-  real search with at least 100 monthly US searches in Google Ads Keyword
-  Planner, grown from generic topic searches, so the companies were chosen by
-  search demand, not by us. Unlabeled: score answers with an LLM judge.
+- [`Due-Diligence-Benchmark/`](./Due-Diligence-Benchmark) — 300 questions
+  people search for or ask online when researching a company or fund to invest
+  in (earnings, short interest, valuation, ownership, lawsuits and more): Google
+  searches with at least 100 monthly US searches in Google Ads Keyword Planner,
+  grown from generic topic searches, plus questions asked on Reddit and Quora,
+  so the companies were chosen by public demand, not by us. Unlabeled: score
+  answers with an LLM judge.
 - [`Finance-Use-Case-Benchmark/`](./Finance-Use-Case-Benchmark) — real-world
   finance research jobs (credit risk, due diligence, KYC screening, portfolio
   monitoring). Same instructions and output schema for every provider; every
@@ -24,8 +25,8 @@ Public, reproducible benchmark suites published by Nimble.
   research jobs (account briefs, account signals), run and scored the same way
   as the finance benchmark. Includes all raw outputs, judge verdicts and the
   harness to rerun it.
-- [`Lead-Enrichment-Benchmark/`](./Lead-Enrichment-Benchmark) — 234 questions
-  people search for on Google about a company (layoffs, headcount, executives,
+- [`Lead-Enrichment-Benchmark/`](./Lead-Enrichment-Benchmark) — 235 questions
+  people search for or ask online about a company (layoffs, headcount, executives,
   revenue, subsidiaries and more), collected the same way as the due diligence
   set. Unlabeled.
 - [`SimpleQA-Benchmark/`](./SimpleQA-Benchmark) — provider-neutral benchmark

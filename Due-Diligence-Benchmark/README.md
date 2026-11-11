@@ -1,12 +1,19 @@
 # Due diligence question set
 
-292 questions that people search for on Google when they research a company or a fund before investing: when it
-reports earnings, how heavily its stock is shorted, what it is worth, who owns it, what lawsuits it faces. It is built
-for comparing web search and research APIs on that kind of lookup.
+300 questions that people search for or ask online when they research a company or a fund before investing: when it
+reports earnings, how heavily its stock is shorted, what it is worth, who owns it, what lawsuits it faces, whether a
+hedge fund has shut down. It is built for comparing web search and research APIs on that kind of lookup.
 
-Every question is a real Google search, searched **at least 100 times a month in the US** according to Google Ads
-Keyword Planner, rewritten as a clean question. We chose the topics; Google's search data chose the companies, funds
-and people. No company name was typed by us at any point.
+Every question comes from public demand, from one of two sources:
+
+- **292 Google searches**, each searched **at least 100 times a month in the US** according to Google Ads Keyword
+  Planner, rewritten as a clean question. We chose the topics; Google's search data chose the companies, funds and
+  people.
+- **8 questions people asked in investing communities** on Reddit and Quora. An agent chose which subreddits and Quora
+  topics to read; the people posting there chose the questions. Someone asking it in public, and others discussing it,
+  is the demand.
+
+No company name was typed by us at any point.
 
 The set is **unlabeled**: there are no reference answers. Many answers change over time (a short interest figure, the
 next earnings date, a valuation), so a fixed answer key would go stale. Score answers with an LLM judge that rates each
@@ -19,12 +26,14 @@ Results will be published here once providers are run against it.
 A question set written by the benchmark's authors measures what the authors think matters, and it is easy, even
 without meaning to, to pick companies or questions a particular tool handles well. We wanted the opposite.
 
-- **Real use, weighted by demand.** Each question is a search people actually make, at measured volume. The set leans
-  towards what is searched most (earnings dates, short interest, valuations), because that is what people look up.
+- **Real use, weighted by demand.** Each question is something people actually search for or ask. The set leans
+  towards what is searched most (earnings dates, short interest, valuations), because that is what people look up, and
+  the community questions add the specific, harder lookups investors raise in discussion.
 - **No hand-picked companies.** We started from generic topic searches that name no company ("short interest",
-  "valuation", "who owns"). Every company, fund and person in the set came from Google's list of related searches.
+  "valuation", "who owns"), and from investing communities rather than from companies. Every company, fund and person
+  in the set came from Google's list of related searches or from someone's post.
 - **Auditable.** Anyone with a Google Ads account can open Keyword Planner, enter the same seed searches and see the
-  same ideas and volumes (they shift a little month to month).
+  same ideas and volumes (they shift a little month to month), and anyone can read the same subreddits and Quora topics.
 - **Not tuned to any provider.** The questions were collected and frozen before any search or research API was run on
   them, and no answer quality was looked at when choosing them.
 
@@ -33,32 +42,34 @@ without meaning to, to pick companies or questions a particular tool handles wel
 | | |
 | --- | --- |
 | File | [`data/questions.csv`](data/questions.csv) |
-| Questions | 292, about 220 different companies, funds and people |
-| Search volume | 100 to 368,000 a month per question (median 720) |
+| Questions | 300, about 225 different companies, funds and people |
+| Search volume | 100 to 368,000 a month per searched question (median 720) |
 | Collected | November 2026, United States, English (volumes for October 2025 – September 2026) |
 | Answers | none (unlabeled) |
 
 | Category | Questions | Covers |
 | :--- | ---: | :--- |
+| `funding_valuation_and_ipo` | 60 | Valuation, IPO plans and dates, funding rounds, IPO filings |
 | `stock_and_short_interest` | 59 | Short interest, stock splits, insider trading |
-| `funding_valuation_and_ipo` | 59 | Valuation, IPO plans and dates, funding rounds |
 | `financial_results_and_reports` | 53 | Earnings dates and results, annual reports and 10-K filings |
 | `legal_esg_and_governance` | 29 | Lawsuits, class actions and settlements |
+| `strategy_and_operations` | 25 | Acquisitions, and strategic moves such as winding down a product or entering a market |
 | `competitive_landscape` | 24 | Who the competitors are |
-| `strategy_and_operations` | 23 | Acquisitions the company has made or is making |
 | `ownership_and_shareholders` | 23 | Who owns the company, and who its shareholders are |
-| `funds_and_managers` | 10 | A hedge fund's returns and its 13F holdings |
+| `funds_and_managers` | 14 | A hedge fund or manager: returns, 13F holdings, whether it shut down, its pitches, where it invests |
+| `company_profile` | 7 | What the company or fund is |
 | `supply_chain_and_customers` | 6 | Who the company buys from, and its supply chain |
-| `company_profile` | 6 | What the company is |
 
 ## Columns
 
 | Column | Meaning |
 | :--- | :--- |
 | `question` | The question, as a clean, self-contained sentence |
-| `category` | The topic, from the table above (the topic of the seed search it came from) |
+| `category` | The topic, from the table above (for a search, the topic of the seed search it came from) |
 
 ## How it was built
+
+### Google searches (292 questions)
 
 1. **Generic seed searches.** We wrote 31 searches that name no company, two to four per topic of interest to an
    investment analyst: for example "shareholders", "who owns", "competitors", "earnings report", "10-k", "valuation",
@@ -98,8 +109,34 @@ annual report 21, ipo date 18, who owns 18, class action lawsuit 16, lawsuit 13,
 returns 5, shareholders 5, 13f holdings 4, suppliers 4, supply chain 2, funding round 1, hedge fund performance 1,
 insider trading 1.
 
-The data was collected with Google Ads Keyword Planner and the filter run with an LLM, by Nimble. Questions are as of
-November 2026; many ask for the latest figure, so their answers will move.
+### Community questions (8 questions)
+
+1. **Sources.** An agent chose the investing communities to read: the newest posts in r/SecurityAnalysis,
+   r/ValueInvesting, r/hedgefund and r/investing, and the questions on Quora's Investing, Hedge Funds and Apple topic
+   pages (about 170 posts and questions).
+2. **Filter.** The same LLM filter kept only requests for information about a named company, fund or person, rewriting
+   a post title into one clean question ("Freestone Grove shuttered?" → "Has the hedge fund Freestone Grove shut
+   down?"). Most posts were opinions, news, theses or personal advice and were dropped.
+3. **Category.** Each was assigned to the category above that fits it.
+
+| Source | Questions | Example |
+| :--- | ---: | :--- |
+| Quora, Hedge Funds topic | 3 | "Why has hedge fund billionaire David Tepper been investing heavily in China?" |
+| Reddit, r/SecurityAnalysis | 2 | "What are the key takeaways from Anthropic's S-1 filing?" |
+| Reddit, r/investing | 2 | "Why is SpaceX interested in becoming a telecom carrier?" |
+| Reddit, r/hedgefund | 1 | "Has the hedge fund Freestone Grove shut down?" |
+| Reddit, r/ValueInvesting; Quora, Investing and Apple topics | 0 | |
+
+## Questions by source
+
+| Source | Questions |
+| :--- | ---: |
+| Google Ads Keyword Planner | 292 |
+| Quora | 3 |
+| Reddit | 5 |
+
+The searches were collected with Google Ads Keyword Planner, the posts with Nimble's web data APIs, and the filter run
+with an LLM, by Nimble. Questions are as of November 2026; many ask for the latest figure, so their answers will move.
 
 ## License
 
