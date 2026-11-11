@@ -1,0 +1,1900 @@
+{
+ "sub_use_case": "gtm_signal_tracking",
+ "input_n": 3,
+ "task": "Check Anthropic (anthropic.com) for changes since 2026-09-21",
+ "labels": {
+  "parallel": "A",
+  "exa": "B",
+  "opus": "C",
+  "nimble": "D",
+  "firecrawl": "E",
+  "gpt": "F"
+ },
+ "unit": "event",
+ "evidence_pages": 62,
+ "evidence_fetched": 61,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 101,
+ "judge": "v4b",
+ "judge_cost_usd": 2.012,
+ "corrections_v2": {
+  "units_before": 101,
+  "units_after": 51,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c4",
+     "c5"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c10",
+     "c11"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16",
+     "c17",
+     "c18",
+     "c19"
+    ]
+   },
+   {
+    "kept": "c20",
+    "merged": [
+     "c21",
+     "c22",
+     "c23",
+     "c24"
+    ]
+   },
+   {
+    "kept": "c25",
+    "merged": [
+     "c28",
+     "c29"
+    ]
+   },
+   {
+    "kept": "c26",
+    "merged": [
+     "c27"
+    ]
+   },
+   {
+    "kept": "c32",
+    "merged": [
+     "c33",
+     "c34",
+     "c35",
+     "c36"
+    ]
+   },
+   {
+    "kept": "c38",
+    "merged": [
+     "c39"
+    ]
+   },
+   {
+    "kept": "c41",
+    "merged": [
+     "c42",
+     "c43",
+     "c44",
+     "c45",
+     "c46"
+    ]
+   },
+   {
+    "kept": "c49",
+    "merged": [
+     "c50",
+     "c51"
+    ]
+   },
+   {
+    "kept": "c53",
+    "merged": [
+     "c52"
+    ]
+   },
+   {
+    "kept": "c54",
+    "merged": [
+     "c55"
+    ]
+   },
+   {
+    "kept": "c58",
+    "merged": [
+     "c59"
+    ]
+   },
+   {
+    "kept": "c60",
+    "merged": [
+     "c61"
+    ]
+   },
+   {
+    "kept": "c62",
+    "merged": [
+     "c63"
+    ]
+   },
+   {
+    "kept": "c64",
+    "merged": [
+     "c65",
+     "c66",
+     "c67",
+     "c68",
+     "c69"
+    ]
+   },
+   {
+    "kept": "c72",
+    "merged": [
+     "c73"
+    ]
+   },
+   {
+    "kept": "c74",
+    "merged": [
+     "c75",
+     "c76",
+     "c77"
+    ]
+   },
+   {
+    "kept": "c78",
+    "merged": [
+     "c79"
+    ]
+   },
+   {
+    "kept": "c80",
+    "merged": [
+     "c81",
+     "c82"
+    ]
+   },
+   {
+    "kept": "c83",
+    "merged": [
+     "c84"
+    ]
+   },
+   {
+    "kept": "c90",
+    "merged": [
+     "c91"
+    ]
+   },
+   {
+    "kept": "c92",
+    "merged": [
+     "c93"
+    ]
+   },
+   {
+    "kept": "c98",
+    "merged": [
+     "c99"
+    ]
+   },
+   {
+    "kept": "c100",
+    "merged": [
+     "c101"
+    ]
+   }
+  ],
+  "cost": 0.048
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Anthropic released its flagship Claude Opus 5.5 model on 2026-09-22.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic announced its Claude Opus 5.5 flagship model on Sep 22, 2026.",
+    "C": "Anthropic released Claude Opus 5.5, its flagship model (2026-09-22)."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-opus-5-5"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c4",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Claude Opus 5.5, launched 2026-09-22 as the first model in the Claude 5.5 family, costs 40% less on typical workloads than Opus 5.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Anthropic launched Claude Opus 5.5 on 2026-09-22, the first model in the Claude 5.5 family, described as costing 40% less on typical workloads than Opus 5."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-opus-5-5"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Claude Opus 5.5, launched 2026-09-22 as the first Claude 5.5 model, is priced at $4/$20 per million input/output tokens, with cache reads at $0.20 per million.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Anthropic launched Claude Opus 5.5 on 2026-09-22, the first model in the Claude 5.5 family, priced at $4 per million input tokens and $20 per million output tokens, with cache reads at $0.20 per million tokens."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-opus-5-5"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Anthropic opened a developer portal on 2026-09-25 for submitting plugins to the Claude directory, tracking review status and viewing usage analytics.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic opened a developer portal on 2026-09-25 for submitting plugins to the Claude directory, tracking reviews, and accessing usage analytics.",
+    "F": "Anthropic opened a Claude plugin developer portal on 2026-09-25 for submitting plugins to Claude's directory, tracking review status and viewing usage analytics."
+   },
+   "urls": [
+    "https://support.claude.com/en/articles/12138966-release-notes"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Anthropic released Claude Sonnet 5.5 on 2026-09-28.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic announced its Claude Sonnet 5.5 model on Sep 28, 2026.",
+    "C": "Anthropic released Claude Sonnet 5.5 (2026-09-28)."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-sonnet-5-5"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c10",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Claude Sonnet 5.5 (2026-09-28) runs 30%+ faster and costs up to 30% less per task than Sonnet 5; token pricing stayed $2/$10 per million.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "Anthropic launched Claude Sonnet 5.5 on 2026-09-28, saying it runs 30%+ faster and costs up to 30% less per task than Sonnet 5; token pricing remained $2/$10 per million input/output tokens."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-sonnet-5-5"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Claude for Government, a FedRAMP High-authorized service, became generally available to federal and state agencies on 2026-09-30, with Claude Code CLI and Microsoft 365 integration in early access.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Claude for Government, a FedRAMP High-authorized service, became generally available to federal and state agencies on 2026-09-30, with Claude Code CLI and Microsoft 365 integration in early access."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/claude-for-government-is-now-generally-available"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "On 2026-10-01 Anthropic expanded its GSA partnership, giving government partners a 40% discount on Claude Enterprise, Claude for Government and the Claude API, including direct purchases and planned cloud-provider availability.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-10-01 Anthropic expanded its GSA partnership, giving government partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API across product surfaces, including direct purchases and planned cloud-provider availability."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/expanding-partnership-gsa"
+   ],
+   "conflicts_with": [
+    "c74",
+    "c75",
+    "c76",
+    "c77"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Per IPO filing disclosures reported 2026-10-01, Broadcom agreed to lend Anthropic up to $42 billion for infrastructure, which could finance about one-third of Anthropic's $125.2 billion five-year TPU lease commitment and could convert into equity.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Per IPO filing disclosures reported Oct 1, 2026, Broadcom agreed to lend Anthropic up to $42 billion for infrastructure, which could finance about one-third of Anthropic's $125.2 billion five-year TPU lease commitment and could convert into Anthropic equity."
+   },
+   "urls": [
+    "https://reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Anthropic announced a $100 million commitment (Claude Frontier Academy) to train 10,000 engineers on 2026-10-02.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic announced a $100 million commitment (Claude Frontier Academy) to train 10,000 engineers on Oct 2, 2026."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/claude-frontier-academy"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Anthropic expanded its Cyber Verification Program on 2026-10-06.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Anthropic expanded its Cyber Verification Program (2026-10-06)."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/cyber-verification-program"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "Anthropic released the Claude Haiku 5.5 model on 2026-10-07.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic announced the Claude Haiku 5.5 model on Oct 7, 2026.",
+    "C": "Anthropic released Claude Haiku 5.5, its new small model (2026-10-07)."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-haiku-5-5"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c25",
+    "c28",
+    "c29"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "Claude Haiku 5.5 (2026-10-07) targets high-volume, cost-sensitive work and costs around 75% less to run than Haiku 4.5 on average.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "Anthropic launched Claude Haiku 5.5 on 2026-10-07 for high-volume, cost-sensitive work, saying it costs around 75% less to run than Haiku 4.5 on average."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-haiku-5-5"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c26",
+    "c27"
+   ]
+  },
+  {
+   "cid": "c30",
+   "claim": "As of 2026-10-07 Anthropic cut Sonnet 5.5 cache-read pricing from $0.20 to $0.10 per million tokens and announced monthly API credits for eligible subscribers.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "As of 2026-10-07, Anthropic cut Sonnet 5.5 cache-read pricing from $0.20 to $0.10 per million tokens and announced monthly API credits for eligible subscribers."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-haiku-5-5"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Anthropic added monthly API credits for Max and Team plan subscribers on 2026-10-07 to run their own apps and agents on the Claude Platform.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Anthropic added monthly API credits for Max and Team plan subscribers on 2026-10-07 to run their own apps and agents on the Claude Platform."
+   },
+   "urls": [
+    "https://support.claude.com/en/articles/12138966-release-notes"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Anthropic launched the Anthropic Cyber Mission, a new security program, on 2026-10-08.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic launched the Anthropic Cyber Mission, a new security program, on Oct 8, 2026."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/anthropic-cyber-mission"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36"
+   ]
+  },
+  {
+   "cid": "c37",
+   "claim": "Anthropic launched OSS Scanner, a free AI vulnerability scanner, on 2026-10-08.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Anthropic launched OSS Scanner, a free AI vulnerability scanner, on 2026-10-08."
+   },
+   "urls": [
+    "https://www.marktechpost.com/2026/10/25/anthropic-launches-oss-scanner-a-free-ai-vulnerability-scanner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Anthropic made a new commitment to the federal Genesis Mission to support American scientific discovery on 2026-10-08.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Anthropic made a new commitment to the federal Genesis Mission to support American scientific discovery (2026-10-08)."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/genesis-mission-commitment"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c38",
+    "c39"
+   ]
+  },
+  {
+   "cid": "c40",
+   "claim": "Anthropic launched Claude Dashboards and Motion in beta on 2026-10-08 and made Docs, Slides and Design generally available across all plans including Free.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Anthropic launched Claude Dashboards and Motion in beta on 2026-10-08, with live dashboards and animated explainers, and made Docs, Slides and Design generally available across all plans including Free."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/dashboards-and-motion?trk=article-ssr-frontend-pulse_little-text-block"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Anthropic opened a Singapore office and signed an MOU with the Government of Singapore (published 2026-10-14), described as expansion into Southeast Asia.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic opened a Singapore office (its expansion into Southeast Asia) and signed an MOU with the Government of Singapore, published Oct 14, 2026."
+   },
+   "urls": [
+    "https://sea.peoplemattersglobal.com/news/ai-and-emerging-tech/anthropic-opens-singapore-office-signs-ai-safety-agreement-with-government-52826",
+    "https://www.anthropic.com/news/singapore-office-opening"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c41",
+    "c42",
+    "c43",
+    "c44",
+    "c45",
+    "c46"
+   ]
+  },
+  {
+   "cid": "c47",
+   "claim": "Opus 5.5 fast mode exited research preview on 2026-10-15, available without requesting access or a beta header, and expanded to Microsoft Foundry deployments on Azure.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Anthropic's Opus 5.5 fast mode exited research preview on 2026-10-15, available without requesting access or a beta header, and expanded to Microsoft Foundry deployments on Azure."
+   },
+   "urls": [
+    "https://platform.claude.com/docs/en/release-notes/overview"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Anthropic expanded its Seattle office footprint with additional space at Dexter Yard North in South Lake Union, per a report dated 2026-10-16.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Anthropic expanded its Seattle office footprint with additional space at Dexter Yard North in South Lake Union, per a report dated 2026-10-16."
+   },
+   "urls": [
+    "https://www.bizjournals.com/seattle/news/2026/10/16/anthropic-expands-footprint-in-south-lake-union.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "On 2026-10-18 Anthropic announced it is committing a portion of its shares to a new Anthropic Public Benefit Fund, with the fund's stake structured to grow as the company grows.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "B": "Anthropic announced on 2026-10-18 that it is committing a portion of its shares to a new Anthropic Public Benefit Fund, with the fund's stake structured to increase as the company grows."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/public-benefit-fund"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c49",
+    "c50",
+    "c51"
+   ]
+  },
+  {
+   "cid": "c53",
+   "claim": "Christopher Stubbs, an experimental physicist and former Harvard Dean of Science, joined Anthropic's Long-Term Benefit Trust on 2026-10-21.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Christopher Stubbs, an experimental physicist and former Harvard Dean of Science, joined Anthropic's Long-Term Benefit Trust on 2026-10-21.",
+    "A": "Christopher Stubbs, an experimental physicist and former Harvard Dean of Science, joined Anthropic's Long-Term Benefit Trust on 2026-10-21.",
+    "E": "On 2026-10-21 experimental physicist and former Harvard Dean of Science Christopher Stubbs joined Anthropic's Long-Term Benefit Trust.",
+    "F": "Christopher Stubbs, experimental physicist and former Harvard Dean of Science, joined Anthropic's Long-Term Benefit Trust on 2026-10-21."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c52",
+    "c53"
+   ]
+  },
+  {
+   "cid": "c54",
+   "claim": "Anthropic opened a waitlisted research preview of Claude Duet on 2026-10-21, a new app in which Claude works as a proactive agent.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic opened a waitlisted research preview of Claude Duet on 2026-10-21, a new app in which Claude works as a proactive agent."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/claude-duet"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c54",
+    "c55"
+   ]
+  },
+  {
+   "cid": "c56",
+   "claim": "Claude Security released an Enterprise public beta on 2026-10-21 adding continuous repository scanning, fix tracking, retained project context, and API and MCP integration.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Claude Security released an Enterprise public beta on 2026-10-21 adding continuous repository scanning, fix tracking, retained project context, and API and MCP integration."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "Anthropic released a new API version and major SDK and CLI updates on 2026-10-21, with updated clients switching to Apache licensing.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Anthropic released a new API version and major SDK and command-line updates on 2026-10-21, with updated clients switching to Apache licensing."
+   },
+   "urls": [
+    "https://platform.claude.com/docs/en/release-notes/overview"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "Anthropic-managed Claude Platform became generally available on Google Cloud on 2026-10-22, with Google Cloud authentication, billing and commitment retirement.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic-managed Claude Platform became generally available on Google Cloud on 2026-10-22, giving customers the full feature set with Google Cloud authentication, billing, and commitment retirement."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+    "https://platform.claude.com/docs/en/release-notes/overview"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c58",
+    "c59"
+   ]
+  },
+  {
+   "cid": "c60",
+   "claim": "Anthropic donated its Agent Skills technology to the Agentic AI Foundation on 2026-10-22.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "Anthropic announced on Oct 22, 2026 that it is donating its Agent Skills technology to the Agentic AI Foundation.",
+    "C": "Anthropic donated its Agent Skills to the Agentic AI Foundation (2026-10-22)."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c60",
+    "c61"
+   ]
+  },
+  {
+   "cid": "c62",
+   "claim": "Unified Claude chat and Cowork became generally available for Enterprise across web, desktop and mobile on 2026-10-23.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic made the unified Claude chat and Cowork experience generally available for Enterprise customers across web, desktop, and mobile on 2026-10-23."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/unified-claude-enterprise"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c62",
+    "c63"
+   ]
+  },
+  {
+   "cid": "c64",
+   "claim": "Anthropic formally filed its Form S-1 with the SEC on 2026-10-26 for a proposed IPO that press reports say could value it at up to $2 trillion.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic formally filed its Form S-1 with the SEC on Oct 26, 2026 for a proposed IPO that press reports say could value it at up to $2 trillion."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/s1-sec"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c64",
+    "c65",
+    "c66",
+    "c67",
+    "c68",
+    "c69"
+   ]
+  },
+  {
+   "cid": "c70",
+   "claim": "On 2026-10-26 Bank of America, Blackstone, Citi and Morgan Stanley announced a $63 billion financing structure for a vehicle buying Broadcom equipment to lease to Anthropic, with deliveries expected from 2027.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2026-10-26, financial partners (Bank of America, Blackstone, Citi, Morgan Stanley) announced a $63 billion financing structure for a vehicle purchasing Broadcom equipment to lease to Anthropic, with deliveries expected to begin in 2027."
+   },
+   "urls": [
+    "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c71",
+   "claim": "A 2026-10-26 report disclosed that Google, Amazon and Broadcom offered Anthropic $77 billion in additional financing arrangements, subject to provider-specific requirements and not an unconditional cash receipt.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "A 2026-10-26 report disclosed that Google, Amazon, and Broadcom offered Anthropic $77 billion in additional financing arrangements, subject to provider-specific requirements and not an unconditional cash receipt."
+   },
+   "urls": [
+    "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/google-amazon-broadcom-offer-anthropic-77-billion-in-financing-76f40AQ4RVRfwstLv0Xr"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c72",
+   "claim": "Anthropic launched the Claude for Nonprofits plugin on 2026-10-26, auto-installed at no extra cost for nonprofits on Team and Enterprise plans.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic launched the Claude for Nonprofits plugin on 2026-10-26, with nonprofit-focused skills and connectors automatically installed for nonprofits on Team and Enterprise plans at no additional cost."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/expanding-claude-for-nonprofits"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c72",
+    "c73"
+   ]
+  },
+  {
+   "cid": "c74",
+   "claim": "Anthropic expanded its partnership with the US GSA to bring Claude to all levels of government on 2026-10-27.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Anthropic announced an expanded partnership with the US General Services Administration to bring Claude to all levels of government on Oct 27, 2026.",
+    "C": "Anthropic expanded its partnership with the US General Services Administration (GSA) to bring Claude to all levels of government (2026-10-27)."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/expanding-partnership-gsa"
+   ],
+   "conflicts_with": [
+    "c13"
+   ],
+   "merged_from": [
+    "c74",
+    "c75",
+    "c76",
+    "c77"
+   ]
+  },
+  {
+   "cid": "c78",
+   "claim": "Anthropic launched Claude for Financial Advisors on 2026-10-27, an advisor plugin combining financial-platform connectors with advisory-workflow skills.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic launched Claude for Financial Advisors on 2026-10-27, an advisor plugin combining financial-platform connectors with skills tailored to financial-advisory workflows."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/claude-for-financial-advisors"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c78",
+    "c79"
+   ]
+  },
+  {
+   "cid": "c80",
+   "claim": "Anthropic expanded its AI for Science program to 20 scientific foundations, institutions and research organizations on 2026-10-28.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "Anthropic expanded its AI for Science program to 20 scientific foundations, institutions, and research organizations on Oct 28, 2026."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c80",
+    "c81",
+    "c82"
+   ]
+  },
+  {
+   "cid": "c83",
+   "claim": "Claude for Legal added ready-to-use artifacts on 2026-10-28: interactive tools for contract review, regulatory tracking and legal intake.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Claude for Legal added ready-to-use artifacts on 2026-10-28, including interactive tools for contract review, regulatory tracking, and legal intake."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/introducing-artifacts-for-legal-work"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c83",
+    "c84"
+   ]
+  },
+  {
+   "cid": "c85",
+   "claim": "Smart reports, in-app surveys and pooled/shared team budgets became generally available to Claude Enterprise on 2026-10-28.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic made smart reports, in-app surveys, and pooled group budgets generally available to Claude Enterprise customers on 2026-10-28.",
+    "F": "Claude Enterprise made smart reports, in-app surveys and shared team budgets generally available on 2026-10-28."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c86",
+   "claim": "Anthropic launched the Usage and Cost Analytics API in beta on 2026-10-29, with unified usage and cost endpoints for Claude Console and Claude Enterprise organizations.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Anthropic launched the Usage and Cost Analytics API in beta on 2026-10-29, with unified usage and cost analytics endpoints for Claude Console and Claude Enterprise organizations."
+   },
+   "urls": [
+    "https://platform.claude.com/docs/en/release-notes/overview"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "On 2026-10-30 Anthropic renamed its subscription plans: Max 5x became 'Max' and Max 20x became 'Ultra', with prices unchanged at $100 and $200 per month.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On Oct 30, 2026 Anthropic renamed its Claude subscription plans: Max 5x became 'Max' and Max 20x became 'Ultra', with prices unchanged at $100/month for Max and $200/month for Ultra."
+   },
+   "urls": [
+    "https://www.theverge.com/ai-artificial-intelligence/1023576/max-ultra-claude"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c88",
+   "claim": "Cat Wu, head of product for Claude Code, left Anthropic on 2026-11-01 (reported 2026-11-03), announcing her departure on X ahead of the IPO.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Cat Wu, head of product for Claude Code, left Anthropic on Nov 1, 2026 (reported Nov 3, 2026), announcing her departure on X ahead of the company's IPO."
+   },
+   "urls": [
+    "https://www.businessinsider.com/claude-code-leader-cat-wu-exits-anthropic-before-big-ipo-2026-11"
+   ],
+   "conflicts_with": [
+    "c89"
+   ]
+  },
+  {
+   "cid": "c89",
+   "claim": "Claude Code product lead Cat Wu left Anthropic with last day 2026-10-30; Anthropic confirmed and she later announced a move to OpenAI.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Claude Code product lead Cat Wu left Anthropic, with her last day on 2026-10-30; Anthropic confirmed the departure and she later announced a move to OpenAI."
+   },
+   "urls": [
+    "https://thenextweb.com/news/cat-wu-claude-code-anthropic-openai-core-products"
+   ],
+   "conflicts_with": [
+    "c88"
+   ]
+  },
+  {
+   "cid": "c90",
+   "claim": "Anthropic filed an amended S-1 with Q3 2026 financials on 2026-11-02, reporting $17 billion Q3 revenue and $895.4 billion in purchase commitments.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "D": "Anthropic filed an amended S-1 with Q3 2026 financials on Nov 2, 2026, reporting $17 billion in Q3 revenue and $895.4 billion in purchase commitments."
+   },
+   "urls": [
+    "https://cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+    "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c90",
+    "c91"
+   ]
+  },
+  {
+   "cid": "c92",
+   "claim": "Message threads entered public beta on 2026-11-02, letting agents send only new conversation content instead of the full history, reducing latency in long sessions.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Anthropic launched message threads in public beta on 2026-11-02, letting agents send only new conversation content instead of resending the entire history, reducing latency in long-running sessions."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/message-threads"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c92",
+    "c93"
+   ]
+  },
+  {
+   "cid": "c94",
+   "claim": "Anthropic announced text watermarking for specified Claude models on supported platforms in platform release notes on 2026-11-03.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Anthropic announced text watermarking for specified Claude models on supported platforms in its platform release notes on 2026-11-03."
+   },
+   "urls": [
+    "https://platform.claude.com/docs/en/release-notes/overview"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c95",
+   "claim": "Anthropic expanded the Claude Marketplace partner-product catalog on 2026-11-04 with agents and products across security, developer infrastructure, creative work and productivity.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Anthropic expanded the Claude Marketplace partner-product catalog on 2026-11-04 with agents and products spanning security, developer infrastructure, creative work and productivity."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c96",
+   "claim": "Anthropic began rolling out Personal Finance in Claude beta on 2026-11-05, with read-only bank connections and analysis for US Pro, Max and Ultra subscribers.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Anthropic began rolling out Personal Finance in Claude beta on 2026-11-05, with read-only bank-account connections and personal-finance analysis for US Pro, Max and Ultra subscribers."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c97",
+   "claim": "Claude Enterprise added security and administration controls on 2026-11-05, including a security center, inference hooks, centralized management, IP allowlists and sign-out controls.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Claude Enterprise added security and administration controls on 2026-11-05, including a security center, inference hooks, centralized management, IP allowlists and controls for signing members out."
+   },
+   "urls": [
+    "https://claude.com/resources/articles/claude-enterprise-security-updates"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c98",
+   "claim": "Anthropic released two new models, Claude Fable 5.2 and Claude Mythos 5.2, on 2026-11-09.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "Anthropic released two new models, Claude Fable 5.2 and Claude Mythos 5.2 (2026-11-09)."
+   },
+   "urls": [
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c98",
+    "c99"
+   ]
+  },
+  {
+   "cid": "c100",
+   "claim": "Anthropic launched the roadshow on 2026-11-10 for an IPO of 825,000,000 Class A shares (801,351,354 by Anthropic, 23,648,646 by existing stockholders) at an expected $70–$78 per share, with a 30-day option for up to 123,750,000 more shares, applying to list on Nasdaq Global Select as ANT.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "Anthropic launched a roadshow for its proposed IPO of 825,000,000 Class A shares (801,351,354 sold by Anthropic, 23,648,646 by existing stockholders), expected price range $70–$78 per share, with a 30-day underwriter option for up to 123,750,000 more shares, applying to list on Nasdaq Global Select Market as ANT (2026-11-10)."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/roadshow-launch"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c100",
+    "c101"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/claude-opus-5-5",
+   "note": "Opus 5.5 page dated Sept 22, 2026; news listing confirms; after the since-date.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "A": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/claude-opus-5-5",
+   "note": "First Claude 5.5 model, 40% less than Opus 5, dated Sept 22.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/claude-opus-5-5",
+   "note": "Pricing $4/$20 and cache reads $0.20 confirmed on the launch page.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://support.claude.com/en/articles/12138966-release-notes",
+   "note": "Release note dated Sept 25, 2026 describes the plugin developer portal; after the since-date.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/claude-sonnet-5-5",
+   "note": "Sonnet 5.5 page dated Sept 28, 2026.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "A": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/claude-sonnet-5-5",
+   "note": "30%+ faster, up to 30% cheaper per task; the $2/$10 token price is shown on the page.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://claude.com/resources/articles/claude-for-government-is-now-generally-available",
+   "note": "Article dated Sept 30, 2026: Claude for Government GA, FedRAMP High, with Claude Code CLI and Microsoft 365 in early access.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "note": "GSA 40% discount confirmed, but the news listing places the article after Oct 27, so the Oct 1 date is doubtful; it is still after the since-date.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01",
+   "note": "Reuters Oct 1, 2026 reports Broadcom lending up to $42B, about a third of the $125.2B TPU lease, with possible equity conversion.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/claude-frontier-academy",
+   "note": "Published Oct 2, 2026: $100M commitment to train 10,000 engineers.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "B": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/cyber-verification-program",
+   "note": "Page published Oct 6, 2026 announces expanded Cyber Verification Program.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "A": "true",
+    "B": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/claude-haiku-5-5",
+   "note": "Claude Haiku 5.5 announced Oct 7, 2026 per the Anthropic page and release notes.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/claude-haiku-5-5",
+   "note": "Page states Haiku 5.5 costs around 75% less to run than Haiku 4.5 on average.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true"
+   }
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://platform.claude.com/docs/en/release-notes/overview",
+   "note": "Oct 7 release notes confirm the cache-read cut from $0.20 to $0.10; monthly API credits for Max, Ultra and Team subscribers were announced the same day.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://support.claude.com/en/articles/12138966-release-notes",
+   "note": "Oct 7, 2026 release notes confirm monthly API credits for Max and Team plans.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/anthropic-cyber-mission",
+   "note": "Cyber Mission page published Oct 8, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "B": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.marktechpost.com/2026/10/25/anthropic-launches-oss-scanner-a-free-ai-vulnerability-scanner",
+   "note": "Marktechpost refers to the October 8 launch of the free OSS Scanner.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/genesis-mission-commitment",
+   "note": "Genesis Mission commitment published Oct 8, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://claude.com/resources/articles/dashboards-and-motion?trk=article-ssr-frontend-pulse_little-text-block",
+   "note": "Oct 8, 2026: Dashboards and Motion in beta; Docs, Slides and Design out of beta on every plan including Free.",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/singapore-office-opening",
+   "note": "Singapore office and MOU published Oct 14, 2026, part of Asia-Pacific expansion.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true",
+    "E": "true",
+    "C": "true",
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://platform.claude.com/docs/en/release-notes/overview",
+   "note": "The release notes show Opus 5.5 fast mode available on Microsoft Foundry on Azure, but the passage does not show the exact date or the research-preview exit. Both are plausible, as the Oct 30 note points to Opus 5.5 fast mode as the migration target.",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.bizjournals.com/seattle/news/2026/10/16/anthropic-expands-footprint-in-south-lake-union.html",
+   "note": "Bizjournals article dated Oct 16, 2026 reports a 50,000 sq ft expansion at Dexter Yard North, bringing the total to 163,000 sq ft.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/public-benefit-fund",
+   "note": "Post dated Oct 18, 2026 commits shares to the Anthropic Public Benefit Fund, whose stake grows as the company grows.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "C": "true"
+   }
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+   "note": "The post is published Oct 21, 2026 and describes Stubbs as an experimental physicist and former Harvard Dean of Science.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "B": "true",
+    "A": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://claude.com/resources/articles/claude-duet",
+   "note": "The article is dated Oct 21, 2026 and describes a waitlisted research preview of Claude Duet, a proactive agent app.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+   "note": "The article is dated Oct 21, 2026 and describes a public beta for Enterprise with continuous scanning, fix tracking, project context, and API and MCP.",
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://platform.claude.com/docs/en/release-notes/overview",
+   "note": "Release notes for Oct 21, 2026 show API version 2026-10-21 and new SDK and CLI versions, with the SDKs and CLI licensed under Apache 2.0 instead of MIT.",
+   "via": "passages"
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+   "note": "The article is dated Oct 22, 2026 and says the Anthropic-managed offering on Google Cloud is generally available, with Google Cloud IAM credentials, billing and commitment retirement.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "note": "Post published Oct 22, 2026 announces the donation of Agent Skills to the Agentic AI Foundation.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c62": {
+   "cid": "c62",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/unified-claude-enterprise",
+   "note": "Article dated Oct 23, 2026 says unified chat and Cowork is now generally available for Enterprise on web, desktop, mobile.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c64": {
+   "cid": "c64",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.cnn.com/2026/10/26/tech/anthropic-files-ipo",
+   "note": "S-1 filed Oct 26, 2026; CNN notes the IPO could reportedly value the company at up to $2 trillion.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true",
+    "A": "true",
+    "E": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c70": {
+   "cid": "c70",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce",
+   "note": "Oct 26, 2026 press release announces a $63B SPV financing for Broadcom hardware leased to Anthropic, deliveries from 2027.",
+   "via": "passages"
+  },
+  "c71": {
+   "cid": "c71",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/google-amazon-broadcom-offer-anthropic-77-billion-in-financing-76f40AQ4RVRfwstLv0Xr",
+   "note": "WSJ Oct 26 reports $77B in conditional financing from Google, Amazon and Broadcom.",
+   "via": "passages"
+  },
+  "c72": {
+   "cid": "c72",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
+   "note": "Article dated Oct 26, 2026 announces the plugin; Team/Enterprise auto-install at no cost is consistent with the 'no additional cost' text.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "note": "Post dated Oct 27, 2026 titled 'Expanding our partnership with GSA to bring Claude to all levels of government'.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "B": "true",
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c78": {
+   "cid": "c78",
+   "verdict": "false",
+   "in_scope": false,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/claude-for-financial-advisors",
+   "note": "The article was originally published Sept 14, 2026, before the since-date, and only updated later with more connectors.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "false",
+    "F": "false"
+   }
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+   "note": "Published Oct 28, 2026; the post highlights 20 foundations, institutions and research groups in an expansion of AI for Science.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true",
+    "C": "true"
+   }
+  },
+  "c83": {
+   "cid": "c83",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+   "note": "Legal artifacts were introduced Oct 28, 2026; the passages do not list the specific tools, so those details are not checked.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c85": {
+   "cid": "c85",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
+   "note": "The article is dated Oct 28, 2026 and says all three features are generally available for Claude Enterprise.",
+   "via": "passages"
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://platform.claude.com/docs/en/release-notes/overview",
+   "note": "The Oct 29, 2026 release note says the Usage and Cost Analytics API launched in beta for Console and Enterprise organizations.",
+   "via": "passages"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.theverge.com/ai-artificial-intelligence/1023576/max-ultra-claude",
+   "note": "The Verge (Oct 30, 2026) reports Max 5x became Max and Max 20x became Ultra, at $100 and $200 per month.",
+   "via": "passages"
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.businessinsider.com/claude-code-leader-cat-wu-exits-anthropic-before-big-ipo-2026-11",
+   "note": "Business Insider (Nov 3) says she left on Friday and announced on Tuesday on X, which makes the last day Oct 30 rather than Nov 1; the departure is real and after the since-date.",
+   "via": "passages"
+  },
+  "c89": {
+   "cid": "c89",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://thenextweb.com/news/cat-wu-claude-code-anthropic-openai-core-products",
+   "note": "She left Anthropic and then announced a move to OpenAI; the Friday departure matches Oct 30, but the passages do not show Anthropic confirming it.",
+   "via": "passages"
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+   "note": "CNBC (Nov 2, 2026) reports $17B Q3 revenue and $895.4B in purchase commitments in the amended S-1.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/message-threads",
+   "note": "Article dated Nov 2, 2026 says message threads is in public beta and agents no longer resend the full history.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c94": {
+   "cid": "c94",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://platform.claude.com/docs/en/release-notes/overview",
+   "note": "Release notes entry dated Nov 3, 2026 says text from named models carries Anthropic's watermark.",
+   "via": "passages"
+  },
+  "c95": {
+   "cid": "c95",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
+   "note": "Article dated Nov 4, 2026 adds agents and products for security, developer infrastructure, creative and productivity.",
+   "via": "passages"
+  },
+  "c96": {
+   "cid": "c96",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+   "note": "Nov 5, 2026 article: read-only bank connections, US Pro/Max/Ultra, beta per Releasebot.",
+   "via": "passages"
+  },
+  "c97": {
+   "cid": "c97",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+   "note": "Nov 5, 2026 article covers security center, inference hooks, centralized management and access controls; IP allowlist is in the Nov 5 release notes.",
+   "via": "passages"
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news",
+   "note": "Anthropic news page and The Verge list the Claude Fable 5.2 and Mythos 5.2 launch on Nov 9, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "F": "true"
+   }
+  },
+  "c100": {
+   "cid": "c100",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.anthropic.com/news/roadshow-launch",
+   "note": "Anthropic's Nov 10, 2026 post matches the share counts, price range, option and Nasdaq ANT listing.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "F": "true"
+   }
+  }
+ },
+ "audit": {
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "note": "The Claude release notes entry for Sep 25, 2026 says plugins can now be submitted to the Claude directory through a new developer portal, tracked through review, and given usage analytics."
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "The Haiku 5.5 post (Oct 7, 2026) cuts Sonnet 5.5 cache reads by 50%, from $0.20 to $0.10 per million tokens. It also announces monthly API credits for Max, Ultra and Team subscribers."
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "note": "The release notes (Oct 7, 2026) and the Haiku 5.5 post confirm monthly API credits for Max and Team plans: Max gets $100, Ultra $200, and Team up to $500, for use on the Claude Platform."
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "note": "The anthropic.com post 'Introducing the Anthropic Cyber Mission' is dated Oct 8, 2026. It launched the Critical Infrastructure Defense Program and OSS Scanner."
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "note": "The anthropic.com post dated Oct 14, 2026 announces a Singapore office (the fifth in APAC) and an MOU with MDDI covering AI safety, security, model evaluation and adoption."
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "note": "The anthropic.com post dated Oct 26, 2026 says Anthropic filed an S-1 for an IPO of Class A shares on Nasdaq under the symbol ANT. It says the share count and price range have not yet been determined."
+  },
+  "c75": {
+   "cid": "c75",
+   "verdict": "true",
+   "note": "The anthropic.com post dated Oct 27, 2026 announces an expanded GSA agreement with a 40% discount, estimated to save the government $1 billion."
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "note": "The anthropic.com post dated Oct 28, 2026 highlights 20 scientific foundations, institutions and research groups added in the AI for Science expansion."
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "note": "The same Oct 28, 2026 post covers 20 partners and says the AI for Science program gives free Claude credits for high-impact scientific projects."
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "false",
+   "note": "The departure is real and Business Insider reported it, but her last day was Friday Oct 30, 2026, not Nov 1. She announced it on Tuesday Nov 3."
+  },
+  "c89": {
+   "cid": "c89",
+   "verdict": "true",
+   "note": "TNW (Nov 5) and Business Insider say her last day was Friday Oct 30 and that Anthropic confirmed the departure to Business Insider. She announced on Nov 4 that she is joining OpenAI."
+  },
+  "c94": {
+   "cid": "c94",
+   "verdict": "true",
+   "note": "The platform release notes entry for Nov 3, 2026 says text from Mythos 5, Opus 4.7 and Sonnet 4.6 carries Anthropic's text watermark on the supported platforms."
+  }
+ },
+ "scores": {
+  "parallel": {
+   "units": 25,
+   "unverifiable": 0,
+   "true": 24,
+   "wrong": 1,
+   "truth": 50,
+   "truth_weight": 115.0,
+   "coverage": 0.452,
+   "accuracy": 0.99,
+   "combined": 0.507,
+   "metric": "F2"
+  },
+  "exa": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 0,
+   "truth": 50,
+   "truth_weight": 115.0,
+   "coverage": 0.317,
+   "accuracy": 1.0,
+   "combined": 0.368,
+   "metric": "F2"
+  },
+  "opus": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 0,
+   "truth": 50,
+   "truth_weight": 115.0,
+   "coverage": 0.396,
+   "accuracy": 1.0,
+   "combined": 0.45,
+   "metric": "F2"
+  },
+  "nimble": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 50,
+   "truth_weight": 115.0,
+   "coverage": 0.37,
+   "accuracy": 1.0,
+   "combined": 0.423,
+   "metric": "F2"
+  },
+  "firecrawl": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 50,
+   "truth_weight": 115.0,
+   "coverage": 0.313,
+   "accuracy": 1.0,
+   "combined": 0.363,
+   "metric": "F2"
+  },
+  "gpt": {
+   "units": 31,
+   "unverifiable": 0,
+   "true": 30,
+   "wrong": 1,
+   "truth": 50,
+   "truth_weight": 115.0,
+   "coverage": 0.543,
+   "accuracy": 0.992,
+   "combined": 0.598,
+   "metric": "F2"
+  }
+ }
+}

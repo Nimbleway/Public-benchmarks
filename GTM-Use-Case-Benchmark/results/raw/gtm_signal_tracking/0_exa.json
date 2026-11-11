@@ -1,66 +1,104 @@
 {
  "arm": "exa",
+ "sub_use_case": "gtm_signal_tracking",
+ "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
+ "input_n": 0,
  "tier": "medium",
  "status": "completed",
- "seconds": 42,
- "run_id": "agent_run_fd4c0bb0ab8f4795911a9304462804be",
+ "seconds": 63,
+ "run_id": "agent_run_3a8e4dfce8154ea5ab131bff062742bc",
  "output": {
   "since": "2026-09-21",
   "events": [
    {
     "date": "2026-09-28",
+    "type": "leadership hire",
+    "summary": "Taylor Murphy announced joining Mercury to lead its data engineering and platform team.",
+    "headline": "Taylor Murphy joins Mercury as Head of Data Engineering & Platform",
+    "source_url": "https://www.linkedin.com/posts/tayloramurphy_excited-to-share-ive-joined-mercury-to-lead-activity-7510416435333095424-bttQ"
+   },
+   {
+    "date": "2026-09-28",
     "type": "product release",
-    "summary": "Mercury added wire drawdowns that let payroll providers such as Sequoia and Gusto withdraw funds directly from eligible Mercury accounts.",
-    "headline": "Authorize wire drawdowns for payroll",
+    "summary": "Mercury added wire drawdowns so payroll providers such as Sequoia and Gusto can withdraw funds directly from eligible Mercury accounts.",
+    "headline": "Payroll-provider wire drawdowns",
     "source_url": "https://mercury.com/releases"
    },
    {
     "date": "2026-09-29",
     "type": "product release",
-    "summary": "The Mercury API added real-time payments via the realTimePayment payment method, with funds arriving in seconds around the clock for eligible Business and Personal accounts.",
-    "headline": "Send real-time payments with the Mercury API",
+    "summary": "Business and Personal accounts provided through Column can send real-time payments through the API, including nights, weekends, and holidays.",
+    "headline": "Real-time payments via the Mercury API",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-10-14",
+    "type": "pricing/plan change",
+    "summary": "Plus and Pro customers began receiving faster priority support while 24/7 support remained available to all customers.",
+    "headline": "Priority Support added to Plus and Pro",
     "source_url": "https://mercury.com/releases"
    },
    {
     "date": "2026-10-14",
     "type": "product release",
-    "summary": "Customers can connect multiple Mercury accounts, move money between eligible accounts, create auto-transfer rules, and schedule recurring external transfers.",
-    "headline": "All your accounts, connected",
-    "source_url": "https://mercury.com/releases"
-   },
-   {
-    "date": "2026-10-14",
-    "type": "pricing and service change",
-    "summary": "Mercury made faster priority support available to Plus and Pro customers while retaining 24/7 support for all customers.",
-    "headline": "Priority Support added to Plus and Pro",
+    "summary": "Customers can connect multiple Mercury accounts for direct transfers and schedule recurring transfers to external bank accounts.",
+    "headline": "Connected Mercury accounts and recurring external transfers",
     "source_url": "https://mercury.com/releases"
    },
    {
     "date": "2026-10-15",
     "type": "product release",
-    "summary": "Customers can ask ChatGPT or Claude to move money, pay recipients, or categorize transactions, with approval required before actions execute.",
-    "headline": "Mercury account actions from ChatGPT and Claude",
+    "summary": "Users can ask ChatGPT or Claude to move money, pay recipients, or categorize transactions, with approval required before money moves.",
+    "headline": "Mercury actions in ChatGPT and Claude",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-10-19",
+    "type": "product release",
+    "summary": "Applicants can use a completed Form SS-4 while their EIN is pending, then provide the EIN within 90 days of approval.",
+    "headline": "Applications opened with a pending EIN",
     "source_url": "https://mercury.com/releases"
    },
    {
     "date": "2026-10-20",
-    "type": "product launch",
-    "summary": "Mercury launched payroll for W-2 employees and 1099 contractors, with benefits, 401(k) options, tax and compliance handling, and coverage in all 50 states.",
-    "headline": "Mercury Payroll launches",
+    "type": "product launch / pricing change",
+    "summary": "Mercury launched W-2 and 1099 payroll, benefits, and compliance support in all 50 states; it is free for eligible customers through 2026 and then priced at $100 per month plus $50 per person paid.",
+    "headline": "Mercury Payroll launched",
     "source_url": "https://mercury.com/blog/introducing-mercury-payroll"
+   },
+   {
+    "date": "2026-11-04",
+    "type": "major product release",
+    "summary": "Mercury introduced a Treasury experience built around monthly business outflows, including personalized portfolios and U.S. Treasury bond ladders; eligibility requires at least $250,000 across Mercury accounts.",
+    "headline": "Mercury Treasury, reinvented",
+    "source_url": "https://mercury.com/blog/how-we-reinvented-mercury-treasury"
+   },
+   {
+    "date": "2026-11-05",
+    "type": "major product release",
+    "summary": "Mercury launched controls for connected AI agents, including permissions, approvals, spending limits, activity tracking, and the ability to disconnect agents.",
+    "headline": "Mercury Agent Controls",
+    "source_url": "https://mercury.com/blog/introducing-mercury-agent-controls"
    }
   ],
   "company": "Mercury",
   "checked_sources": [
    "https://mercury.com/releases",
    "https://mercury.com/blog/introducing-mercury-payroll",
-   "https://mercury.com/pricing",
-   "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll"
+   "https://mercury.com/blog/how-we-reinvented-mercury-treasury",
+   "https://mercury.com/blog/introducing-mercury-agent-controls",
+   "https://www.linkedin.com/posts/tayloramurphy_excited-to-share-ive-joined-mercury-to-lead-activity-7510416435333095424-bttQ",
+   "https://mercury.com/pricing"
   ]
  },
  "cost_usd": 0.1,
  "cost_basis": "billed",
- "error": null,
+ "usage": {
+  "agentComputeUnits": 0.4,
+  "searches": 12,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
  "data_sources": [
   "fiber"
  ],
@@ -71,13 +109,5 @@
   "emails": 0,
   "phoneNumbers": 0
  },
- "usage": {
-  "agentComputeUnits": 0.4,
-  "searches": 12,
-  "emails": 0,
-  "phoneNumbers": 0
- },
- "sub_use_case": "gtm_signal_tracking",
- "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
- "input_n": 0
+ "error": null
 }

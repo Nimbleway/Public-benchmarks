@@ -1,9 +1,774 @@
 {
  "arm": "parallel",
- "tier": "ultra2x",
- "status": "rejected",
- "error": "{\"type\":\"error\",\"error\":{\"message\":\"Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.\",\"detail\":null}}",
  "sub_use_case": "fin_credit_risk",
  "input": "Assess the credit and counterparty risk of Carvana",
- "input_n": 1
+ "input_n": 1,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 384,
+ "run_id": "trun_ee10de0fcb3b4296bd14e2cd33728999",
+ "output": {
+  "risk_rationale": "As of 2026-11-09, risk is elevated: the latest verified Moody’s B1/positive and S&P BB-/positive ratings remain speculative-grade, and Carvana reported approximately $5.2 billion of principal indebtedness at 2026-09-30. Near-term liquidity is supported by $3.049 billion of cash, $5.120 billion of committed liquidity, $800 million of Q3 adjusted EBITDA and reported covenant compliance, as detailed in financials and debt_events. Historical delayed seller payments and loan payoffs, unresolved legal matters and disputed accounting allegations warrant counterparty caution, but do not by themselves establish a current payment default.",
+  "ownership": {
+   "value": "Publicly listed Carvana Co. (NYSE: CVNA), controlled by the Garcia Parties.",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+   "as_of": "2026-09-30"
+  },
+  "company": "Carvana Co.",
+  "distress_signals": [
+   {
+    "date": "2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "summary": "The company disclosed ongoing legal and regulatory disputes involving, among other matters, securities laws, consumer protection, employment, and vehicle titling and registration. Its accrual for unresolved legal matters was $11 million. These are contingent-liability exposures, not a disclosed insolvency finding."
+   },
+   {
+    "date": null,
+    "source_url": "https://www.cfodive.com/news/no-ambiguity-carvana-accounting-practices-cfo-shortseller/812751",
+    "summary": "CFO Dive reported short-seller allegations concerning related-party transactions and earnings. CFO Mark Jenkins rejected the reports as inaccurate and said related-party transactions were disclosed; concerns about a possible auditor resignation were a short seller’s prediction, not a reported resignation."
+   }
+  ],
+  "missing_fields": [
+   "Current supplier-payment aging, trade-payment delinquency metrics, and verified current liens, judgments or collection suits.",
+   "Confirmed recent layoffs, hiring freezes, site closures, CFO departures, auditor changes or large-customer losses.",
+   "Publication date of the CFO Dive accounting-allegations article.",
+   "Any recent completed change of control beyond the ownership position disclosed in the September 2026 filing."
+  ],
+  "credit_ratings": [
+   {
+    "date": "2026-10-08",
+    "source_url": "https://ratings.moodys.com/ratings-news/474696",
+    "summary": "Moody’s assigned B1 to the $1.66 billion senior secured term loan. Other ratings were unchanged: B1 corporate family rating, B1-PD probability of default, B1 senior secured notes, B3 senior unsecured notes and SGL-1 liquidity. Outlook: positive."
+   },
+   {
+    "date": "2026-08-05",
+    "source_url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697385",
+    "summary": "S&P’s BB- issuer credit rating and positive outlook were unchanged. It assigned BB and recovery rating 2 to the then-proposed $1 billion senior secured term loan B due 2033; this proposed amount should not be confused with the subsequently disclosed $1.66 billion financing."
+   },
+   {
+    "date": "2026-06-24",
+    "source_url": "https://cbonds.com/news/3983761/",
+    "summary": "Cbonds reported that Moody’s upgraded Carvana’s long-term foreign-currency credit rating from B2 to B1, with a positive outlook. This upgrade falls within the last 12 months."
+   },
+   {
+    "date": "2026-03-03",
+    "source_url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3525089",
+    "summary": "S&P affirmed the BB- issuer credit rating with a positive outlook and upgraded the senior secured rating to BB, with recovery rating 2. S&P noted that including the tax receivable agreement increased its adjusted debt by $2.3 billion, while stronger cash and free cash flow supported the affirmation."
+   }
+  ],
+  "financials": [
+   {
+    "stated_by": "Carvana Co., September 2026 Form 10-Q",
+    "value": 8040000000.0,
+    "period": "Three months ended 2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "currency": "USD",
+    "metric": "Revenue"
+   },
+   {
+    "stated_by": "Carvana Co., Q3 2026 results announcement",
+    "value": 714000000.0,
+    "period": "Three months ended 2026-09-30",
+    "source_url": "https://press.carvana.com/carvana-announces-record-third-quarter-2026-results",
+    "currency": "USD",
+    "metric": "GAAP operating income"
+   },
+   {
+    "stated_by": "Carvana Co., Q3 2026 results announcement",
+    "value": 800000000.0,
+    "period": "Three months ended 2026-09-30",
+    "source_url": "https://press.carvana.com/carvana-announces-record-third-quarter-2026-results",
+    "currency": "USD",
+    "metric": "Adjusted EBITDA (non-GAAP)"
+   },
+   {
+    "stated_by": "Carvana Co., September 2026 Form 10-Q",
+    "value": 3049000000.0,
+    "period": "As of 2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "currency": "USD",
+    "metric": "Cash and cash equivalents"
+   },
+   {
+    "stated_by": "Carvana Co., September 2026 Form 10-Q",
+    "value": 5200000000.0,
+    "period": "As of 2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "currency": "USD",
+    "metric": "Outstanding principal indebtedness, approximately; company-reported debt measure"
+   },
+   {
+    "stated_by": "Carvana Co., September 2026 Form 10-Q",
+    "value": 5120000000.0,
+    "period": "As of 2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "currency": "USD",
+    "metric": "Committed liquidity resources available, including cash and available short-term revolving facilities"
+   },
+   {
+    "stated_by": "Carvana Co., September 2026 Form 10-Q",
+    "value": 2071000000.0,
+    "period": "As of 2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "currency": "USD",
+    "metric": "Availability under short-term revolving facilities; included in committed liquidity, not additional to it"
+   },
+   {
+    "stated_by": "Carvana Co., September 2026 Form 10-Q",
+    "value": 900000000.0,
+    "period": "Nine months ended 2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "currency": "USD",
+    "metric": "Net cash provided by operating activities"
+   }
+  ],
+  "risk_call": "elevated",
+  "payment_behaviour": [
+   {
+    "date": "2025-01-14",
+    "source_url": "https://portal.ct.gov/ag/press-releases/2025-press-releases/attorney-general-tong-announces-settlement-with-carvana-following-hundreds-of-consumer-complaints",
+    "summary": "Connecticut’s Attorney General announced a $1.5 million settlement following consumer complaints that included delayed payments to vehicle sellers and delayed loan payoffs on purchased or traded vehicles, sometimes requiring consumers to keep paying loans on vehicles they no longer possessed. The settlement established a $1 million restitution fund and a $500,000 state penalty, of which $250,000 was conditionally suspended. This is historical seller-payment evidence, not a current supplier-aging report."
+   }
+  ],
+  "debt_events": [
+   {
+    "date": "2023-09-01",
+    "source_url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/12843723",
+    "summary": "Historical distressed exchange: Carvana completed a debt exchange, and S&P lowered its issuer credit rating from CC to D upon completion. This historical default classification is distinct from the subsequently improved ratings reported above."
+   },
+   {
+    "date": "2026-03",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "summary": "Amended a finance-receivable revolving facility to increase its credit line to $600 million and extend maturity to June 30, 2027."
+   },
+   {
+    "date": "2026-05",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "summary": "Entered into a new $500 million revolving facility to finance receivables, through November 8, 2027."
+   },
+   {
+    "date": "2026-07",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "summary": "Amended another finance-receivable revolving facility to extend maturity to August 6, 2027."
+   },
+   {
+    "date": "2026-08-14",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "summary": "Entered into a $1.66 billion senior secured term loan B facility. During August, loan proceeds and cash on hand redeemed all $1.660 billion principal of the 2030 senior secured notes for $1.711 billion, including a $50 million premium and $1 million accrued interest."
+   },
+   {
+    "date": "2026-09-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "summary": "Reported compliance with all debt covenants. Management stated that working capital, operating cash flows and expected continued or new financing arrangements should fund operations for at least one year from financial-statement issuance; this assessment includes expected financing, rather than being a cash-only runway."
+   },
+   {
+    "date": "2026-10",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+    "summary": "A subsequent-event amendment extended a finance-receivable revolving facility’s maturity to October 15, 2027."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "Ratings.Moodys.com/ratings-news/474696",
+     "url": "https://ratings.moodys.com/ratings-news/474696",
+     "excerpts": [
+      "New York, October 08, 2026 -- Moody's Ratings (Moody's) today assigned a B1 rating to Carvana Co.'s (\"Carvana\") $1.66 billion senior secured term loan. All other ratings are unchanged including Carvana's B1 corporate family rating (CFR), B1-PD probability of default rating (PDR), B1 senior secured global notes ratings, B3 senior unsecured global notes ratings and SGL-1 speculative grade liquidity rating (SGL). The outlook remains positive."
+     ]
+    },
+    {
+     "title": "Carvana Co.'s Proposed $1 Billion Senior Secured | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697385",
+     "excerpts": [
+      "Our 'BB-' issuer credit rating and positive outlook on the company are unchanged."
+     ]
+    },
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "As of September 30, 2026 and December 31, 2025, our outstanding principal amount of indebtedness was $5.2 billion and $5.0 billion, respectively.",
+      "We had the following total liquidity resources available as of September 30, 2026 and December 31, 2025: | |September 30, 2026 / (in millions) |September 30, 2026 / (in millions) |December 31, 2025 / (in millions) | |Cash and cash equivalents |$3,049 | |$2,327 | |Availability under short-term revolving facilities |2,071 | |2,052 | |Committed liquidity resources available",
+      "As of September 30, 2026, the Company was in compliance with all debt covenants.",
+      "For example, the Company is currently a party to legal and regulatory disputes, including intellectual property disputes and putative class action lawsuits, alleging, among other things, patent infringement, the violation of federal securities laws and state laws regarding consumer protection, stockholders' rights, labor and employment, and the titling and registration"
+     ]
+    },
+    {
+     "title": "Carvana Announces Record Third Quarter 2026 Results - Carvana Newsroom",
+     "url": "https://press.carvana.com/carvana-announces-record-third-quarter-2026-results",
+     "excerpts": [
+      "Record Adjusted EBITDA of $800 million"
+     ]
+    },
+    {
+     "title": "Attorney General Tong Announces Settlement with Carvana Following Hundreds of Consumer Complaints",
+     "url": "https://portal.ct.gov/ag/press-releases/2025-press-releases/attorney-general-tong-announces-settlement-with-carvana-following-hundreds-of-consumer-complaints",
+     "excerpts": [
+      "Other consumers complained about delays in receiving payments or loan payoffs for vehicles Carvana purchased or took in trade, forcing consumers to continue making payments on vehicles they no longer possessed."
+     ]
+    },
+    {
+     "title": "There’s ‘no ambiguity’ in Carvana accounting practices, CFO says | CFO Dive",
+     "url": "https://www.cfodive.com/news/no-ambiguity-carvana-accounting-practices-cfo-shortseller/812751",
+     "excerpts": [
+      "Jenkins’ remarks on Wednesday came on the same day short seller Gotham City Research published a report [alleging Carvana’s dependence](https://www.gothamcityresearch.com/post/carvana-new-information-reveals-that-bridgecrest-is-the-lienholder-cvna-must-explain-how-and-how) on related-party transactions is “greater than disclosed.",
+      "We disclose our related party transactions, and there's no ambiguity about that."
+     ]
+    }
+   ],
+   "reasoning": "The ratings and debt balance establish speculative-grade credit exposure. Reported liquidity, earnings and covenant compliance mitigate immediate payment risk. Historical payment complaints and legal/accounting disputes support caution, while the accounting allegations are explicitly distinguished from management’s response and from a current default finding.",
+   "confidence": "medium"
+  },
+  {
+   "field": "ownership",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "|Class A Common Stock, Par Value $0.001 Per Share | | |CVNA | | |New York Stock Exchange",
+      "the Garcia Parties' control over us and their interests, which may conflict with our or our stockholders' interests;"
+     ]
+    }
+   ],
+   "reasoning": "The filing identifies the NYSE listing and expressly describes the Garcia Parties’ control. No ownership percentage or recent control transaction is inferred.",
+   "confidence": "high"
+  },
+  {
+   "field": "company",
+   "citations": [
+    {
+     "title": "Ratings.Moodys.com/ratings-news/474696",
+     "url": "https://ratings.moodys.com/ratings-news/474696",
+     "excerpts": [
+      "New York, October 08, 2026 -- Moody's Ratings (Moody's) today assigned a B1 rating to Carvana Co.'s"
+     ]
+    }
+   ],
+   "reasoning": "The agency release explicitly names Carvana Co., the assessed issuer.",
+   "confidence": "high"
+  },
+  {
+   "field": "distress_signals",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "For example, the Company is currently a party to legal and regulatory disputes, including intellectual property disputes and putative class action lawsuits, alleging, among other things, patent infringement, the violation of federal securities laws and state laws regarding consumer protection, stockholders' rights, labor and employment, and the titling and registration",
+      "As of September 30, 2026 and December 31, 2025, the Company had an accrual for unresolved legal matters, including, if applicable, those discussed above, of $ 11 million"
+     ]
+    },
+    {
+     "title": "There’s ‘no ambiguity’ in Carvana accounting practices, CFO says | CFO Dive",
+     "url": "https://www.cfodive.com/news/no-ambiguity-carvana-accounting-practices-cfo-shortseller/812751",
+     "excerpts": [
+      "Jenkins’ remarks on Wednesday came on the same day short seller Gotham City Research published a report [alleging Carvana’s dependence](https://www.gothamcityresearch.com/post/carvana-new-information-reveals-that-bridgecrest-is-the-lienholder-cvna-must-explain-how-and-how) on related-party transactions is “greater than disclosed.",
+      "We disclose our related party transactions, and there's no ambiguity about that.",
+      "18 report, Gotham City expressed concerns that the company’s auditors, presently Grant Thornton, will resign"
+     ]
+    }
+   ],
+   "reasoning": "The filing directly supports legal exposures and their accrual. The news article supports an accounting dispute and management’s denial, but not an actual auditor resignation; its publication date was not reliably verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "These are limits of verification, not findings that the events or obligations do not exist.",
+   "confidence": "low"
+  },
+  {
+   "field": "credit_ratings",
+   "citations": [
+    {
+     "title": "Ratings.Moodys.com/ratings-news/474696",
+     "url": "https://ratings.moodys.com/ratings-news/474696",
+     "excerpts": [
+      "New York, October 08, 2026 -- Moody's Ratings (Moody's) today assigned a B1 rating to Carvana Co.'s (\"Carvana\") $1.66 billion senior secured term loan. All other ratings are unchanged including Carvana's B1 corporate family rating (CFR), B1-PD probability of default rating (PDR), B1 senior secured global notes ratings, B3 senior unsecured global notes ratings and SGL-1 speculative grade liquidity rating (SGL). The outlook remains positive."
+     ]
+    },
+    {
+     "title": "Carvana Co.'s Proposed $1 Billion Senior Secured | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697385",
+     "excerpts": [
+      "Our 'BB-' issuer credit rating and positive outlook on the company are unchanged.",
+      "5, 2026--S&P Global Ratings today assigned its 'BB' issue-level rating and '2' recovery rating to Carvana Co.'s proposed $1 billion senior secured term loan B due 2033."
+     ]
+    },
+    {
+     "title": "On June 24, 2026, Moody's Investors Service upgraded LT- foreign currency credit rating of Carvana to \"B1\" from \"B2\"; outlook positive",
+     "url": "https://cbonds.com/news/3983761/",
+     "excerpts": [
+      "On June 24, 2026, Moody's Investors Service upgraded LT- foreign currency credit rating of Carvana to \"B1\" from \"B2\"; outlook positive"
+     ]
+    },
+    {
+     "title": "Carvana Co. ‘BB-‘ Rating Affirmed; Outlook Positi | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3525089",
+     "excerpts": [
+      "Carvana Co. ‘BB-‘ Rating Affirmed; Outlook Positive; Senior Secured Rating Upgraded To 'BB', Recovery Rating '2'"
+     ]
+    }
+   ],
+   "reasoning": "Primary agency releases establish the latest verified ratings and S&P actions. Cbonds supplies the June Moody’s upgrade history, making that historical action secondary-source evidence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "|Adjusted EBITDA |$800 | |$637 | |$2,241 | |$1,726 | |Total revenues |$8,040",
+      "As of September 30, 2026 and December 31, 2025, our outstanding principal amount of indebtedness was $5.2 billion and $5.0 billion, respectively.",
+      "We had the following total liquidity resources available as of September 30, 2026 and December 31, 2025: | |September 30, 2026 / (in millions) |September 30, 2026 / (in millions) |December 31, 2025 / (in millions) | |Cash and cash equivalents |$3,049 | |$2,327 | |Availability under short-term revolving facilities |2,071 | |2,052 | |Committed liquidity resources available",
+      "Cash provided by operating activities was $900 million and $606 million during the nine months ended September 30, 2026"
+     ]
+    },
+    {
+     "title": "Carvana Announces Record Third Quarter 2026 Results - Carvana Newsroom",
+     "url": "https://press.carvana.com/carvana-announces-record-third-quarter-2026-results",
+     "excerpts": [
+      "Record Adjusted EBITDA of $800 million and Adjusted EBITDA margin of 10.0% Record GAAP Operating Income of $714 million"
+     ]
+    }
+   ],
+   "reasoning": "The latest quarterly filing and company results provide the reported financials. Figures stated in millions are converted to dollars, quarterly earnings are distinguished from nine-month cash flow, and revolver availability is not double-counted.",
+   "confidence": "medium"
+  },
+  {
+   "field": "risk_call",
+   "citations": [
+    {
+     "title": "Ratings.Moodys.com/ratings-news/474696",
+     "url": "https://ratings.moodys.com/ratings-news/474696",
+     "excerpts": [
+      "New York, October 08, 2026 -- Moody's Ratings (Moody's) today assigned a B1 rating to Carvana Co.'s (\"Carvana\") $1.66 billion senior secured term loan. All other ratings are unchanged including Carvana's B1 corporate family rating (CFR), B1-PD probability of default rating (PDR), B1 senior secured global notes ratings, B3 senior unsecured global notes ratings and SGL-1 speculative grade liquidity rating (SGL). The outlook remains positive."
+     ]
+    },
+    {
+     "title": "Carvana Co.'s Proposed $1 Billion Senior Secured | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697385",
+     "excerpts": [
+      "Our 'BB-' issuer credit rating and positive outlook on the company are unchanged."
+     ]
+    },
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "We had the following total liquidity resources available as of September 30, 2026 and December 31, 2025: | |September 30, 2026 / (in millions) |September 30, 2026 / (in millions) |December 31, 2025 / (in millions) | |Cash and cash equivalents |$3,049 | |$2,327 | |Availability under short-term revolving facilities |2,071 | |2,052 | |Committed liquidity resources available"
+     ]
+    },
+    {
+     "title": "Attorney General Tong Announces Settlement with Carvana Following Hundreds of Consumer Complaints",
+     "url": "https://portal.ct.gov/ag/press-releases/2025-press-releases/attorney-general-tong-announces-settlement-with-carvana-following-hundreds-of-consumer-complaints",
+     "excerpts": [
+      "Other consumers complained about delays in receiving payments or loan payoffs for vehicles Carvana purchased or took in trade, forcing consumers to continue making payments on vehicles they no longer possessed."
+     ]
+    }
+   ],
+   "reasoning": "Elevated is an analytical judgment balancing speculative-grade ratings and documented historical payment issues against substantial reported liquidity, rather than an agency rating or a declaration of imminent default.",
+   "confidence": "medium"
+  },
+  {
+   "field": "payment_behaviour",
+   "citations": [
+    {
+     "title": "Attorney General Tong Announces Settlement with Carvana Following Hundreds of Consumer Complaints",
+     "url": "https://portal.ct.gov/ag/press-releases/2025-press-releases/attorney-general-tong-announces-settlement-with-carvana-following-hundreds-of-consumer-complaints",
+     "excerpts": [
+      "01/14/2025",
+      "(Hartford, CT) – Attorney General William Tong today announced a $1.5 million settlement with online used car dealer Carvana following hundreds of consumer complaints involving extended delays in title and registration documents, delayed payments to sellers",
+      "Other consumers complained about delays in receiving payments or loan payoffs for vehicles Carvana purchased or took in trade, forcing consumers to continue making payments on vehicles they no longer possessed.",
+      "Today’s settlement establishes a $1 million consumer restitution fund, in addition to a $500,000 penalty to be paid to the state, of which $250,000 will be suspended if Carvana complies with all terms of the settlement."
+     ]
+    }
+   ],
+   "reasoning": "The dated state enforcement release directly documents complaints about seller payments and loan payoffs and states the settlement structure. It does not establish current supplier-payment performance.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events",
+   "citations": [
+    {
+     "title": "Presale: Carvana Auto Receivables Trust 2023-N3 | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/12843723",
+     "excerpts": [
+      "Per our corporate analysis, we lowered our issuer credit rating on Carvana to 'D' from 'CC' as a result of the completion of the exchange (see \"Carvana Co."
+     ]
+    },
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "In January 2020, the Company entered into an agreement pursuant to which a lender agreed to provide a revolving credit facility to fund certain finance receivables originated by the Company. In March 2026, the Company amended its agreement to, among other things, increase the line of credit to $ 600 million and extend the maturity date to June 30, 2027",
+      "In May 2026, the Company entered into an agreement pursuant to which a seventh lender agreed to provide a $ 500 million revolving credit facility",
+      "In March 2022, the Company entered into an agreement pursuant to which a fourth lender agreed to provide a $ 500 million revolving credit facility to fund certain finance receivables originated by the Company. In August 2025, the Company amended its agreement to, among other things, increase the line of credit to $ 600 million, and in July 2026, the Company further amended its agreement to extend the maturity date to August 6, 2027",
+      "|Depreciation and amortization expense |202 |206 |",
+      "In August 2026, the Company used the net proceeds from the Term Loan B, together with cash on hand, to redeem in full its 2030 Senior Secured Notes with an aggregate principal of $ 1\\.660 billion for $ 1\\.711 billion, which included $ 50 million of premium and $ 1 million of accrued interest.",
+      "As of September 30, 2026, the Company was in compliance with all debt covenants.",
+      "Management believes that current working capital, cash flows from operations, and expected continued or new financing arrangements will be sufficient to fund operations for at least one year from the financial statement issuance date.",
+      "In April 2021, the Company entered into an agreement pursuant to which a third lender agreed to provide a $ 500 million revolving credit facility to fund certain finance receivables originated by the Company. In December 2021, the Company amended its agreement to, among other things, increase this line of credit to $ 600 million, and in October 2025 the maturity date was extended to October 9, 2026. In October 2026, the Company further amended its agreement to extend the maturity date to October 15, 2027"
+     ]
+    }
+   ],
+   "reasoning": "The agency’s historical discussion establishes the 2023 distressed exchange. The 2026 filing supplies current financing amendments, the term-loan refinancing, subsequent-event extension, covenant compliance and management’s funding assessment.",
+   "confidence": "medium"
+  },
+  {
+   "field": "distress_signals.0",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "For example, the Company is currently a party to legal and regulatory disputes, including intellectual property disputes and putative class action lawsuits, alleging, among other things, patent infringement, the violation of federal securities laws and state laws regarding consumer protection, stockholders' rights, labor and employment, and the titling and registration",
+      "As of September 30, 2026 and December 31, 2025, the Company had an accrual for unresolved legal matters, including, if applicable, those discussed above, of $ 11 million"
+     ]
+    }
+   ],
+   "reasoning": "The filing states the types of disputes and the September 2026 legal accrual; the distinction from insolvency is analytical qualification.",
+   "confidence": "medium"
+  },
+  {
+   "field": "distress_signals.1",
+   "citations": [
+    {
+     "title": "There’s ‘no ambiguity’ in Carvana accounting practices, CFO says | CFO Dive",
+     "url": "https://www.cfodive.com/news/no-ambiguity-carvana-accounting-practices-cfo-shortseller/812751",
+     "excerpts": [
+      "Jenkins’ remarks on Wednesday came on the same day short seller Gotham City Research published a report [alleging Carvana’s dependence](https://www.gothamcityresearch.com/post/carvana-new-information-reveals-that-bridgecrest-is-the-lienholder-cvna-must-explain-how-and-how) on related-party transactions is “greater than disclosed.",
+      "We have checked every single detail of those short reports",
+      "We disclose our related party transactions, and there's no ambiguity about that.",
+      "18 report, Gotham City expressed concerns that the company’s auditors, presently Grant Thornton, will resign"
+     ]
+    }
+   ],
+   "reasoning": "The article reports allegations, management’s denial and a prediction about the auditor, not an actual resignation. The publication date remains null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "Current quantitative trade-payment and enforcement data were not verified; this is not a clean-payment finding.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "No confirmed recent event in these operational-distress categories was established from the reviewed evidence.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [],
+   "reasoning": "The opened article did not yield a reliably supported publication date.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.3",
+   "citations": [],
+   "reasoning": "The ownership statement is dated to the filing; a later completed control transaction was not verified.",
+   "confidence": "low"
+  },
+  {
+   "field": "credit_ratings.0",
+   "citations": [
+    {
+     "title": "Ratings.Moodys.com/ratings-news/474696",
+     "url": "https://ratings.moodys.com/ratings-news/474696",
+     "excerpts": [
+      "New York, October 08, 2026 -- Moody's Ratings (Moody's) today assigned a B1 rating to Carvana Co.'s (\"Carvana\") $1.66 billion senior secured term loan. All other ratings are unchanged including Carvana's B1 corporate family rating (CFR), B1-PD probability of default rating (PDR), B1 senior secured global notes ratings, B3 senior unsecured global notes ratings and SGL-1 speculative grade liquidity rating (SGL). The outlook remains positive."
+     ]
+    }
+   ],
+   "reasoning": "Moody’s directly states the term-loan assignment, unchanged ratings, liquidity rating and outlook.",
+   "confidence": "high"
+  },
+  {
+   "field": "credit_ratings.1",
+   "citations": [
+    {
+     "title": "Carvana Co.'s Proposed $1 Billion Senior Secured | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697385",
+     "excerpts": [
+      "05-Aug-2026 | 09:08 EDT",
+      "Our 'BB-' issuer credit rating and positive outlook on the company are unchanged.",
+      "5, 2026--S&P Global Ratings today assigned its 'BB' issue-level rating and '2' recovery rating to Carvana Co.'s proposed $1 billion senior secured term loan B due 2033."
+     ]
+    }
+   ],
+   "reasoning": "The dated S&P release supports the unchanged issuer rating and the proposed loan rating; the proposed amount is explicitly preserved.",
+   "confidence": "high"
+  },
+  {
+   "field": "credit_ratings.2",
+   "citations": [
+    {
+     "title": "On June 24, 2026, Moody's Investors Service upgraded LT- foreign currency credit rating of Carvana to \"B1\" from \"B2\"; outlook positive",
+     "url": "https://cbonds.com/news/3983761/",
+     "excerpts": [
+      "On June 24, 2026, Moody's Investors Service upgraded LT- foreign currency credit rating of Carvana to \"B1\" from \"B2\"; outlook positive"
+     ]
+    }
+   ],
+   "reasoning": "Cbonds directly reports the date, B2-to-B1 action and positive outlook, but is a secondary source.",
+   "confidence": "medium"
+  },
+  {
+   "field": "credit_ratings.3",
+   "citations": [
+    {
+     "title": "Carvana Co. ‘BB-‘ Rating Affirmed; Outlook Positi | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3525089",
+     "excerpts": [
+      "03-Mar-2026 | 15:04 EST",
+      "Carvana Co. ‘BB-‘ Rating Affirmed; Outlook Positive; Senior Secured Rating Upgraded To 'BB', Recovery Rating '2'",
+      "We affirmed our ‘BB-‘ issuer credit rating on Carvana Co. following the inclusion of the tax receivable agreement (TRA) as a liability. While the TRA increases its S&P Global Ratings-adjusted debt by $2.3 billion, the company’s cash position and free cash flow generation in 2025 were significantly higher than expected."
+     ]
+    }
+   ],
+   "reasoning": "S&P directly describes the affirmation, secured upgrade, TRA adjustment and offsetting cash-flow strength.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.0",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "|Adjusted EBITDA |$800 | |$637 | |$2,241 | |$1,726 | |Total revenues |$8,040",
+      "FORM 10-Q ☒ QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the Quarterly Period Ended September 30, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The quarterly filing table provides Q3 revenue of $8,040 million, converted to dollars. The compact excerpt contains multiple periods, so period attribution warrants medium confidence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.1",
+   "citations": [
+    {
+     "title": "Carvana Announces Record Third Quarter 2026 Results - Carvana Newsroom",
+     "url": "https://press.carvana.com/carvana-announces-record-third-quarter-2026-results",
+     "excerpts": [
+      "Record Adjusted EBITDA of $800 million and Adjusted EBITDA margin of 10.0% Record GAAP Operating Income of $714 million"
+     ]
+    }
+   ],
+   "reasoning": "The company’s Q3 announcement directly reports $714 million of GAAP operating income.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.2",
+   "citations": [
+    {
+     "title": "Carvana Announces Record Third Quarter 2026 Results - Carvana Newsroom",
+     "url": "https://press.carvana.com/carvana-announces-record-third-quarter-2026-results",
+     "excerpts": [
+      "Record Adjusted EBITDA of $800 million"
+     ]
+    }
+   ],
+   "reasoning": "The company’s Q3 announcement directly reports $800 million of adjusted EBITDA, retained as a non-GAAP measure.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.3",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "We had the following total liquidity resources available as of September 30, 2026 and December 31, 2025: | |September 30, 2026 / (in millions) |September 30, 2026 / (in millions) |December 31, 2025 / (in millions) | |Cash and cash equivalents |$3,049"
+     ]
+    }
+   ],
+   "reasoning": "The dated liquidity table states cash of $3,049 million.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.4",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "As of September 30, 2026 and December 31, 2025, our outstanding principal amount of indebtedness was $5.2 billion and $5.0 billion, respectively."
+     ]
+    }
+   ],
+   "reasoning": "The filing directly reports $5.2 billion outstanding principal indebtedness at September 30; the answer preserves its approximate precision and company-defined scope.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.5",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "We had the following total liquidity resources available as of September 30, 2026 and December 31, 2025: | |September 30, 2026 / (in millions) |September 30, 2026 / (in millions) |December 31, 2025 / (in millions) | |Cash and cash equivalents |$3,049 | |$2,327 | |Availability under short-term revolving facilities |2,071 | |2,052 | |Committed liquidity resources available |$5,120"
+     ]
+    }
+   ],
+   "reasoning": "The filing’s dated table directly states $5,120 million of committed liquidity.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.6",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "We had the following total liquidity resources available as of September 30, 2026 and December 31, 2025: | |September 30, 2026 / (in millions) |September 30, 2026 / (in millions) |December 31, 2025 / (in millions) | |Cash and cash equivalents |$3,049 | |$2,327 | |Availability under short-term revolving facilities |2,071"
+     ]
+    }
+   ],
+   "reasoning": "The same table states $2,071 million of revolver availability as a component of total liquidity.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.7",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "Cash provided by operating activities was $900 million and $606 million during the nine months ended September 30, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The filing directly reports $900 million operating cash flow for the nine-month period, not the quarter.",
+   "confidence": "high"
+  },
+  {
+   "field": "payment_behaviour.0",
+   "citations": [
+    {
+     "title": "Attorney General Tong Announces Settlement with Carvana Following Hundreds of Consumer Complaints",
+     "url": "https://portal.ct.gov/ag/press-releases/2025-press-releases/attorney-general-tong-announces-settlement-with-carvana-following-hundreds-of-consumer-complaints",
+     "excerpts": [
+      "01/14/2025",
+      "(Hartford, CT) – Attorney General William Tong today announced a $1.5 million settlement with online used car dealer Carvana following hundreds of consumer complaints involving extended delays in title and registration documents, delayed payments to sellers",
+      "Other consumers complained about delays in receiving payments or loan payoffs for vehicles Carvana purchased or took in trade, forcing consumers to continue making payments on vehicles they no longer possessed.",
+      "Today’s settlement establishes a $1 million consumer restitution fund, in addition to a $500,000 penalty to be paid to the state, of which $250,000 will be suspended if Carvana complies with all terms of the settlement."
+     ]
+    }
+   ],
+   "reasoning": "The state release directly supports the date, complaint categories and restitution/penalty structure; the answer preserves the historical and complaint-based nature of the evidence.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.0",
+   "citations": [
+    {
+     "title": "Presale: Carvana Auto Receivables Trust 2023-N3 | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/12843723",
+     "excerpts": [
+      "1, 2023, Carvana closed the previously announced exchange offer with 96.41% of noteholders agreeing to exchange $5.520 billion of its senior unsecured notes due 2025 through 2030 for new senior secured notes due 2028 through 2031.",
+      "Per our corporate analysis, we lowered our issuer credit rating on Carvana to 'D' from 'CC' as a result of the completion of the exchange (see \"Carvana Co.",
+      "Downgraded To 'D' From 'CC' On Completion Of Distressed Exchange; Senior Notes Rating Lowered To 'D'\" published Sept."
+     ]
+    }
+   ],
+   "reasoning": "Although contained in an ABS presale, these sentences explicitly discuss Carvana’s corporate exchange and issuer rating, rather than assigning the trust’s rating to Carvana.",
+   "confidence": "medium"
+  },
+  {
+   "field": "debt_events.1",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "In January 2020, the Company entered into an agreement pursuant to which a lender agreed to provide a revolving credit facility to fund certain finance receivables originated by the Company. In March 2026, the Company amended its agreement to, among other things, increase the line of credit to $ 600 million and extend the maturity date to June 30, 2027"
+     ]
+    }
+   ],
+   "reasoning": "The facility history describes the March 2026 amendment, increased commitment and revised maturity.",
+   "confidence": "medium"
+  },
+  {
+   "field": "debt_events.2",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "In May 2026, the Company entered into an agreement pursuant to which a seventh lender agreed to provide a $ 500 million revolving credit facility"
+     ]
+    }
+   ],
+   "reasoning": "This paragraph identifies the new May 2026 seventh-lender facility, distinct from the separate May 2023 facility.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.3",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "In March 2022, the Company entered into an agreement pursuant to which a fourth lender agreed to provide a $ 500 million revolving credit facility to fund certain finance receivables originated by the Company. In August 2025, the Company amended its agreement to, among other things, increase the line of credit to $ 600 million, and in July 2026, the Company further amended its agreement to extend the maturity date to August 6, 2027"
+     ]
+    }
+   ],
+   "reasoning": "The facility history supplies the July 2026 maturity amendment.",
+   "confidence": "medium"
+  },
+  {
+   "field": "debt_events.4",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "|Depreciation and amortization expense |202 |206 |",
+      "In August 2026, the Company used the net proceeds from the Term Loan B, together with cash on hand, to redeem in full its 2030 Senior Secured Notes with an aggregate principal of $ 1\\.660 billion for $ 1\\.711 billion, which included $ 50 million of premium and $ 1 million of accrued interest."
+     ]
+    }
+   ],
+   "reasoning": "The filing directly gives the financing date and size and separately states the redemption principal, cash consideration, premium and accrued interest.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.5",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "As of September 30, 2026, the Company was in compliance with all debt covenants.",
+      "Management believes that current working capital, cash flows from operations, and expected continued or new financing arrangements will be sufficient to fund operations for at least one year from the financial statement issuance date."
+     ]
+    }
+   ],
+   "reasoning": "The filing directly states covenant compliance and management’s one-year funding assessment, including expected financing arrangements.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.6",
+   "citations": [
+    {
+     "title": "cvna-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm",
+     "excerpts": [
+      "In April 2021, the Company entered into an agreement pursuant to which a third lender agreed to provide a $ 500 million revolving credit facility to fund certain finance receivables originated by the Company. In December 2021, the Company amended its agreement to, among other things, increase this line of credit to $ 600 million, and in October 2025 the maturity date was extended to October 9, 2026. In October 2026, the Company further amended its agreement to extend the maturity date to October 15, 2027"
+     ]
+    }
+   ],
+   "reasoning": "The facility history includes the October 2026 subsequent-event extension.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
 }

@@ -1,0 +1,129 @@
+{
+ "sub": "fin_due_diligence",
+ "i": 3,
+ "task": "Write a due diligence memo on Databricks",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is the latest funding round, its date, lead investors and valuation, and how has the valuation moved over the past year?",
+   "answer": "Databricks' own press release says it closed a $5B strategic round in August 2026 at a $190B valuation. Coatue led, with Blackstone, MGX, T. Rowe Price and Sixth Street Growth. An earlier July 2026 term sheet was reported at $188B. The prior valuation was $134B at the Series L in December 2025. The Series K in September 2025 was above $100B. The press-release details come from a search summary. I did not open the release itself or check the amounts against a second primary source.",
+   "importance": "critical",
+   "source": "https://finance.yahoo.com/technology/ai/articles/databricks-raises-5-billion-190-172012701.html"
+  },
+  {
+   "id": "k2",
+   "question": "What are the company's revenue run-rate and growth rate, who reports them, and is it cash-flow positive?",
+   "answer": "Company claim: it passed a $7B revenue run-rate in its Q2 with growth above 80% year over year. Lakehouse (data warehousing) is above $1.5B run-rate and growing over 100%. The company also claims positive adjusted free cash flow over the last 12 months. These are unaudited company figures with no audited financials. The implied multiple is about 27x run-rate, per a PitchBook figure cited by a secondary source.",
+   "importance": "critical",
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+  },
+  {
+   "id": "k3",
+   "question": "Is an IPO planned or imminent, and what does that mean for liquidity and entry price?",
+   "answer": "No IPO date is set. Trade press reports that the latest round came with no IPO in sight. The $190B valuation implies a high entry price. Any secondary or tender purchase would need a liquidity timeline and a check of the rights attached to the shares.",
+   "importance": "critical",
+   "source": "https://www.trendingtopics.eu/databricks-new-funding-round-catapults-valuation-to-188-billion-no-ipo-in-sight/"
+  },
+  {
+   "id": "k4",
+   "question": "What does Databricks sell, to whom, and what is the growth driver?",
+   "answer": "Databricks sells a data and AI platform built on the lakehouse architecture. Products include Lakehouse/Databricks SQL, Unity Catalog, Lakebase, Genie and the Unity AI Gateway. It sells to enterprises on a consumption-based model, mainly through AWS, Azure and GCP. The company points to AI/agent products and data warehousing as the growth drivers. I did not research named customer counts or the competitive threat from Snowflake and the hyperscalers.",
+   "importance": "critical",
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+  },
+  {
+   "id": "k5",
+   "question": "Who leads the company, and have there been notable executive departures in the last two years?",
+   "answer": "Not verified in this pass. From prior knowledge, co-founder and CEO Ali Ghodsi leads the company, and the co-founders came out of UC Berkeley's AMPLab and the Apache Spark project. The executive roster and any departures need checking against the company's leadership page and press before relying on this.",
+   "importance": "useful",
+   "source": "https://www.databricks.com/company/leadership"
+  },
+  {
+   "id": "k6",
+   "question": "Are there lawsuits, regulatory actions, data breaches or sanctions exposure?",
+   "answer": "Not checked in this pass: I did not search court dockets, regulator sites or sanctions lists. Before the meeting, search PACER and state dockets, SEC and FTC actions, EU data-protection regulators, the OFAC SDN list and breach databases. Report 'none found' only after those checks. IP and employment suits, and AI training-data copyright claims over its MosaicML models, are the likeliest areas.",
+   "importance": "critical",
+   "source": "https://www.courtlistener.com/?q=Databricks"
+  },
+  {
+   "id": "k7",
+   "question": "Which legal entity is the investment counterparty, and where is it registered?",
+   "answer": "The operating parent is Databricks, Inc., a Delaware corporation headquartered in San Francisco. The Delaware file number was not retrieved. Confirm the entity and file number in the Delaware Division of Corporations registry before signing, including any subsidiaries or SPVs through which shares are offered.",
+   "importance": "useful",
+   "source": "https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx"
+  }
+ ],
+ "labels": {
+  "parallel": "B",
+  "nimble": "C",
+  "opus": "D",
+  "exa": "F",
+  "firecrawl": "G",
+  "gpt": "I"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  }
+ },
+ "cost_usd": 0.273
+}

@@ -1,0 +1,138 @@
+{
+ "sub": "fin_kyc_screening",
+ "i": 4,
+ "task": "Run a KYC screen on Adyen in the Netherlands",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which legal entity is the correct subject, and what are its registry number, LEI, jurisdiction, incorporation date, registered address and status?",
+   "answer": "The main operating and listed parent is Adyen N.V., a Dutch public limited company (naamloze vennootschap) in Amsterdam. Its KvK (Dutch Chamber of Commerce) number is 34259528. Its registered office is Simon Carmiggeltstraat 6-50, 1011 DJ Amsterdam. The business dates from 2006, and it converted from B.V. to N.V. before its June 2018 Euronext Amsterdam listing. Status is active. I did not verify the LEI, the exact incorporation date or the current KvK status online. These come from memory, so confirm them against the KvK extract and GLEIF before relying on them. Adyen N.V. holds a Dutch banking licence and is a licensed acquirer. Subsidiaries and branches, such as Adyen B.V., Adyen Payments Ltd (UK), Adyen Inc (US) and Adyen Singapore, belong under related_entities. A branch is not the screened entity.",
+   "importance": "critical",
+   "source": "https://www.kvk.nl/ and https://search.gleif.org/"
+  },
+  {
+   "id": "k2",
+   "question": "Who are the current directors, supervisory board members and ultimate beneficial owners or significant shareholders?",
+   "answer": "Adyen is listed, so the Dutch UBO register has no natural person above 25% control. Co-founders Pieter van der Does (co-CEO) and Ingo Uytdehaage (co-CEO until recently) hold only minority stakes. Other management board members include CFO Ethan Tandowsky and CTO/CRO-level officers. The supervisory board is chaired by Pamela Joseph. Substantial holders are institutional investors, disclosed to the AFM above 3%. The Netherlands has no UK-style PSC register, so use the AFM substantial-holdings register and the annual report. I did not verify the current board composition. Leadership changes were announced in 2025-26, so check the latest annual report or press releases.",
+   "importance": "critical",
+   "source": "https://www.adyen.com/investor-relations/governance"
+  },
+  {
+   "id": "k3",
+   "question": "Do Adyen or its owners and directors match OFAC SDN, UK OFSI or EU consolidated sanctions lists?",
+   "answer": "I expect no match for Adyen N.V., its directors or its disclosed holders, but I did not run the live list checks in this session. The check to run is a name search of Adyen, Adyen N.V., the directors and substantial holders against OFAC Sanctions List Search, the OFSI consolidated list and the EU Financial Sanctions Database. Any hit on the common name 'Adyen' should be treated as a namesake unless the address and KvK number match. Adyen is itself a sanctions-compliance-obligated institution. It exited Russian business after the 2022 invasion of Ukraine, and it restricts sanctioned-country merchants.",
+   "importance": "critical",
+   "source": "https://sanctionssearch.ofac.treas.gov/ ; https://www.sanctionsmap.eu/"
+  },
+  {
+   "id": "k4",
+   "question": "Are any owners or directors politically exposed persons (PEPs)?",
+   "answer": "I know of no PEP among the management board or supervisory board. Institutional shareholders are not PEPs in themselves. This was not verified against a PEP database. Screen each named individual, and sovereign-wealth or state-linked funds among the substantial holders, in a PEP database.",
+   "importance": "useful",
+   "source": "https://www.adyen.com/investor-relations/governance"
+  },
+  {
+   "id": "k5",
+   "question": "Are there enforcement actions, fines, AML failures or major litigation against Adyen in the last 10 years?",
+   "answer": "I recall no major AML fine or sanctions-evasion finding against Adyen N.V. from memory, and I did not search the regulators this session. Check the De Nederlandsche Bank (DNB) and AFM enforcement registers, the FCA register for the UK entity, and US state regulators. Check also for merchant-related disputes, such as claims tied to high-risk merchants or payment-fraud cases. Search Dutch court records (rechtspraak.nl) and news for 'Adyen boete', 'Adyen DNB maatregel' and 'Adyen lawsuit'. Adyen has also had operational incidents, such as DDoS outages in April 2025. Rate any finding by date, severity and status.",
+   "importance": "critical",
+   "source": "https://www.dnb.nl/ and https://www.afm.nl/"
+  },
+  {
+   "id": "k6",
+   "question": "Is Adyen regulated, and what is its supervisory standing?",
+   "answer": "Adyen N.V. is a licensed credit institution (banking licence from the DNB and ECB, held since 2017) and is subject to Dutch AML law (Wwft). It is also supervised in the UK, US and other jurisdictions through its local entities. Confirm the licence status and any DNB measures in the DNB register and the latest annual report.",
+   "importance": "useful",
+   "source": "https://www.dnb.nl/en/public-register/"
+  },
+  {
+   "id": "k7",
+   "question": "What is the overall risk rating and what should the compliance officer do next?",
+   "answer": "Provisional rating: low. This rests on a listed, bank-regulated Dutch company with no known PEP owners, no known sanctions match and no known major enforcement action. Because the sanctions, PEP and adverse-media checks and the registry/GLEIF details were not verified live, the rating is provisional. Before onboarding, pull the KvK extract and GLEIF record, run the live sanctions screens, and read the DNB and AFM registers and recent news. Raise the rating to medium if there are open regulatory measures or payment-fraud exposure to high-risk merchants. Note: a provisional medium rating is also acceptable. It reflects the same facts, with the unverified KvK, GLEIF, ownership and sanctions checks and the SEPA-fraud litigation weighted more heavily. Either way, the next step is to complete those verifications before approval.",
+   "importance": "critical",
+   "source": "https://www.dnb.nl/en/general-news/enforcement-measures-2026/",
+   "key_original": {
+    "answer": "Provisional rating: low. This rests on a listed, bank-regulated Dutch company with no known PEP owners, no known sanctions match and no known major enforcement action. Because the sanctions, PEP and adverse-media checks and the registry/GLEIF details were not verified live, the rating is provisional. Before onboarding, pull the KvK extract and GLEIF record, run the live sanctions screens, and read the DNB and AFM registers and recent news. Raise the rating to medium if there are open regulatory measures or payment-fraud exposure to high-risk merchants.",
+    "source": "https://www.adyen.com/investor-relations"
+   },
+   "audit": {
+    "verdict": "both_ok",
+    "why": "The two ratings rest on the same facts and differ only in how they weigh unverified checks. The key treats Adyen as low risk because it is a listed company supervised by DNB as a bank, with no known PEP owners, sanctions match or major enforcement action. It also says the rating is provisional and should rise to medium if open regulatory measures or high-risk-merchant fraud exposure turn up. The answers also say provisional. They use medium because the KvK, GLEIF, ownership and sanctions checks were incomplete and the SEPA-fraud litigation counts as fraud exposure. None of them found a sanctions match, an AML enforcement action or a confirmed PEP. Answer C flags former-PEP possibilities for two supervisory board members as historical connections, not confirmed status. My own search found no 2026 DNB or AFM enforcement action against Adyen. DNB's 2026 enforcement list names other firms: ABN AMRO, AFS E-Venues and Yoursafe. The search was limited to one query. A risk rating is a judgement call with no single correct value. The key's low rating and the answers' medium rating are both defensible, and the actions each recommends are the same: verify first, then finalise.",
+    "disputed_point": "The overall risk rating. The key says provisional low. All three answers say provisional medium."
+   }
+  }
+ ],
+ "labels": {
+  "exa": "B",
+  "gpt": "C",
+  "opus": "D",
+  "parallel": "E",
+  "firecrawl": "H",
+  "nimble": "I"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.199
+}

@@ -1,0 +1,162 @@
+{
+ "arm": "opus",
+ "sub_use_case": "fin_kyc_screening",
+ "input": "Run a KYC screen on Binance in France",
+ "input_n": 3,
+ "tier": "high",
+ "status": "completed",
+ "seconds": 152,
+ "run_id": "6ea038c8-9ca9-4b73-bf71-deafdd0a4b5c",
+ "output": {
+  "input_name": "Binance (France)",
+  "registration": {
+   "legal_name": "BINANCE FRANCE SAS",
+   "registry_number": "SIREN 905060109 (head office SIRET 90506010900022; EU VAT FR86905060109)",
+   "lei": "969500IHGTBN0TLO0129 (GLEIF registration status LAPSED, entity status ACTIVE; first registered 2023-04-14; as_of 2026-11-10)",
+   "jurisdiction": "France (société par actions simplifiée, legal form code 5710)",
+   "incorporation_date": "2021-11-03",
+   "registered_address": "1 Rue de Stockholm, 75008 Paris, France (head office since 2024-03-19; formerly 17 rue de la Vanne, Montrouge, RCS Nanterre)",
+   "status": "Active (INSEE administrative status 'A', as_of 2026-11-10). Regulatory: removed from the AMF PSAN register (no. E2022-037, registered 2022-05-04) on 2026-07-02 because the MiCA transitional period ended. No MiCA authorisation as of 2026-11-01.",
+   "source_url": "https://recherche-entreprises.api.gouv.fr/search?q=905060109"
+  },
+  "related_entities": [
+   {
+    "name": "INTERCORP HOLDCO SAS",
+    "relation": "Probable French holding company. Created 2024-02-20, same registered address (1 Rue de Stockholm, 75008 Paris) and same president (David Princay). A search snippet of a September 2024 shareholder decision names it as sole shareholder (associé unique), but I could not open that document, so this is not verified.",
+    "registry_number": "SIREN 984909093"
+   },
+   {
+    "name": "Binance Holdings Limited",
+    "relation": "Group entity (Cayman Islands). Named as co-defendant with Binance France in a French investor lawsuit (2022). Listed on OpenSanctions for regulator action (US CFTC/OFAC enforcement), not sanctions.",
+    "registry_number": null
+   }
+  ],
+  "people": [
+   {
+    "name": "David Princay (Prinçay)",
+    "role": "President of the SAS (Président); also President of Intercorp Holdco SAS",
+    "nationality": null,
+    "source_url": "https://recherche-entreprises.api.gouv.fr/search?q=905060109"
+   },
+   {
+    "name": "Christelle Tang",
+    "role": "Managing Director (Directeur Général)",
+    "nationality": null,
+    "source_url": "https://recherche-entreprises.api.gouv.fr/search?q=905060109"
+   },
+   {
+    "name": "RSM Paris (SIREN 792111783)",
+    "role": "Statutory auditor (Commissaire aux comptes titulaire), a company",
+    "nationality": "France",
+    "source_url": "https://recherche-entreprises.api.gouv.fr/search?q=905060109"
+   },
+   {
+    "name": "Lihua He",
+    "role": "Beneficial owner, reported 50% (as listed by Pappers per Cointelegraph, as_of 2024-05-28; not verified on the registry)",
+    "nationality": null,
+    "source_url": "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning"
+   },
+   {
+    "name": "Yulong Yan",
+    "role": "Beneficial owner, reported 50% (as listed by Pappers per Cointelegraph, as_of 2024-05-28; possibly Allan Yan, Binance's first product director, unconfirmed)",
+    "nationality": null,
+    "source_url": "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning"
+   }
+  ],
+  "sanctions": [
+   {
+    "party": "BINANCE FRANCE SAS",
+    "list": "OFAC SDN / UK OFSI / EU consolidated (screened via the OpenSanctions aggregator)",
+    "match": "No match. The search for 'Binance France' returned no entities.",
+    "source_url": "https://www.opensanctions.org/search/?q=Binance+France"
+   },
+   {
+    "party": "Binance (group-wide name search)",
+    "list": "OFAC SDN / UK OFSI / EU consolidated (via OpenSanctions)",
+    "match": "No sanctions designation. Binance Holdings Limited, Binance Holdings (IE) Ltd and Binance (Services) Holdings Ltd appear only under 'regulator action' (US CFTC / OFAC enforcement actions), not as designated parties. The other hits are scam clones or crypto wallets not tied to this entity.",
+    "source_url": "https://www.opensanctions.org/search/?q=Binance"
+   },
+   {
+    "party": "David Princay",
+    "list": "OFAC SDN / UK OFSI / EU consolidated (via OpenSanctions)",
+    "match": "No match",
+    "source_url": "https://www.opensanctions.org/search/?q=David+Princay"
+   },
+   {
+    "party": "Christelle Tang",
+    "list": "OFAC SDN / UK OFSI / EU consolidated (via OpenSanctions)",
+    "match": "No match",
+    "source_url": "https://www.opensanctions.org/search/?q=Christelle+Tang"
+   },
+   {
+    "party": "Lihua He",
+    "list": "OFAC SDN / UK OFSI / EU consolidated (via OpenSanctions)",
+    "match": "No match",
+    "source_url": "https://www.opensanctions.org/search/?q=Lihua+He"
+   },
+   {
+    "party": "Yulong Yan",
+    "list": "OFAC SDN / UK OFSI / EU consolidated (via OpenSanctions)",
+    "match": "No match",
+    "source_url": "https://www.opensanctions.org/search/?q=Yulong+Yan"
+   }
+  ],
+  "pep": [],
+  "adverse_media": [
+   {
+    "date": "2025-01-29",
+    "category": "Money laundering / unlicensed activity (criminal investigation)",
+    "summary": "The Paris prosecutor's JUNALCO unit opened a judicial investigation, led by an investigating judge, into Binance. It covers aggravated money laundering, laundering of tax-fraud and drug-trafficking proceeds, and illegal practice as a crypto-asset service provider (PSAN), for conduct in France and the EU from 2019 to 2024. The alleged failings are unlawful advertising (including through influencers) and AML/KYC failures. It follows a preliminary investigation opened in 2022 and widened in June 2023. Binance denies the allegations.",
+    "severity": "high",
+    "status": "Ongoing. I found no charges (mise en examen) as of 2026-11-01.",
+    "source_url": "https://next.ink/brief_article/binance-un-juge-dinstruction-enquete-pour-blanchiment-aggrave-entre-autres/"
+   },
+   {
+    "date": "2026-07-02",
+    "category": "Regulatory / licensing",
+    "summary": "The AMF removed Binance France SAS from the PSAN register (E2022-037) automatically when the MiCA transitional period ended, as it had no MiCA authorisation. Binance says it is working to obtain one. ESMA and national regulators (France, Germany, Greece) are reportedly reviewing Binance's use of the reverse-solicitation exemption.",
+    "severity": "high",
+    "status": "Ongoing (unlicensed in France as of 2026-11-01)",
+    "source_url": "https://minuitcrypto.com/guides/binance-france-legal-mica-agrement"
+   },
+   {
+    "date": "2025-10-17",
+    "category": "Regulatory supervision (AML/CFT)",
+    "summary": "The ACPR carried out on-site AML/CFT inspections of crypto firms including Binance from late 2024, and reportedly told Binance to strengthen its risk controls. Binance called the inspections routine.",
+    "severity": "medium",
+    "status": "Outcome not reported",
+    "source_url": "https://finance.yahoo.com/news/france-hits-binance-coinbase-aml-093751261.html"
+   },
+   {
+    "date": "2024-05-28",
+    "category": "Regulatory / ownership",
+    "summary": "The AMF had warned Binance France (December 2023) that it must act on beneficial-owner issues after Changpeng Zhao's US cases (DOJ, CFTC, FinCEN; guilty plea November 2023). Ownership then moved to two new 50/50 beneficial owners (Lihua He, Yulong Yan), about whom little is public.",
+    "severity": "medium",
+    "status": "Ownership change completed in 2024",
+    "source_url": "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning"
+   },
+   {
+    "date": "2022-12-25",
+    "category": "Civil litigation",
+    "summary": "French investors sued Binance France and Binance Holdings Limited over more than €2.4m in losses, alleging misleading commercial practices and fraudulent concealment.",
+    "severity": "medium",
+    "status": "Filed; outcome unknown",
+    "source_url": "https://digitalmoneybox.com/news/cryptocurrency/french-investors-sued-binance-for-over-24-million-euros-in-losses"
+   }
+  ],
+  "namesakes_excluded": 11,
+  "risk_rating": "high",
+  "risk_rationale": "Binance France SAS (SIREN 905060109) is an active French SAS at 1 Rue de Stockholm, Paris. It reported €53.1m revenue and €11.8m net profit for 2025 (INSEE/recherche-entreprises, as_of 2026-11-10). Its LEI has lapsed. Neither the entity nor its directors (David Princay, Christelle Tang) or reported beneficial owners (Lihua He, Yulong Yan) match any OFAC SDN, UK OFSI or EU consolidated sanctions entry, and none is identified as a PEP. The rating is still high for four reasons. First, since January 2025 a Paris investigating judge has been running a criminal investigation into Binance for aggravated money laundering (including drug and tax-fraud proceeds) and illegal PSAN activity from 2019 to 2024, and it is ongoing. Second, the company lost its AMF PSAN registration on 2 July 2026 and had no MiCA authorisation as of November 2026, so it currently has no licence to serve French clients. Third, the ACPR found AML/CFT control weaknesses in 2024–25. Fourth, the AMF required the 2023–24 ownership restructuring to remove Changpeng Zhao after his US guilty plea, and the new 50/50 beneficial owners are opaque and not verified on the official register. Group-level US enforcement against Binance Holdings and French investor litigation add to the risk.",
+  "missing_fields": [
+   "people[].nationality (not stated for any director or beneficial owner)",
+   "beneficial owners from the official RBE register (only a 2024 media report citing Pappers)",
+   "direct shareholder (Intercorp Holdco SAS as associé unique not verified on an opened page)",
+   "RCS court currently recorded (Nanterre before the move to Paris; current RCS Paris entry not opened)",
+   "direct OFAC/OFSI/EU list pages (screened via the OpenSanctions aggregator only)"
+  ]
+ },
+ "raw_text": null,
+ "cost_usd": 0.4573912999999999,
+ "cost_basis": "Claude Code reported, API-equivalent",
+ "num_turns": 28
+}

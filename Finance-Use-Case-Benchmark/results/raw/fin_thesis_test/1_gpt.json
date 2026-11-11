@@ -1,0 +1,138 @@
+{
+ "arm": "gpt",
+ "sub_use_case": "fin_thesis_test",
+ "input": "Test the thesis: AI spending supports Micron's HBM revenue growth through 2027",
+ "input_n": 1,
+ "tier": "high",
+ "model": "gpt-6.1-sol",
+ "status": "completed",
+ "seconds": 158,
+ "run_id": "resp_084f3d1789b0ef1f006af33727bde087d2877371090c24f107",
+ "output": {
+  "thesis": "AI spending supports Micron Technology, Inc. (Nasdaq: MU) HBM revenue growth through calendar 2027, assessed as of 2026-11-10.",
+  "evidence_for": [
+   {
+    "claim": "As of 2026-09-30, Micron had completed agreements covering the vast majority of its calendar 2027 HBM bit supply, with significant year-over-year price increases. This provides direct company-specific visibility into demand and pricing, although it is not recognized revenue.",
+    "source_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+    "date": "2026-09-30",
+    "strength": "strong"
+   },
+   {
+    "claim": "As reported on 2026-09-30, Micron's fiscal fourth-quarter HBM revenue grew faster than total company revenue, while HBM shipments expanded across a growing number of customers. This demonstrates realized momentum rather than solely an industry demand forecast.",
+    "source_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+    "date": "2026-09-30",
+    "strength": "strong"
+   },
+   {
+    "claim": "As of 2026-10-21, Micron reported HBM4 shipments and HBM4E samples to key customers. Its roadmap targeted HBM4E high-volume manufacturing in calendar 2027, while explicitly describing timing and performance targets as directional and subject to change.",
+    "source_url": "https://s25.q4cdn.com/621799436/files/doc_downloads/2026/10/MU-TP-Webinar.pdf",
+    "date": "2026-10-21",
+    "strength": "moderate"
+   },
+   {
+    "claim": "As of 2026-10-28, Microsoft reported quarterly capital expenditures of $45.2 billion, approximately three-quarters for short-lived assets, primarily CPUs and GPUs, including higher memory and storage costs. It expected spending to accelerate in the second half of fiscal 2027. This corroborates infrastructure demand, not a disclosed Micron purchase commitment.",
+    "source_url": "https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1",
+    "date": "2026-10-28",
+    "strength": "moderate"
+   },
+   {
+    "claim": "As of 2026-10-28, Alphabet maintained calendar 2026 capital-expenditure guidance of $195-$205 billion and expected capital expenditures to increase significantly in calendar 2027. This supports continued infrastructure investment, but does not identify the spending attributable to Micron HBM.",
+    "source_url": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx",
+    "date": "2026-10-28",
+    "strength": "moderate"
+   },
+   {
+    "claim": "As of 2026-09-30, cleanroom preparation at Micron's Singapore HBM advanced-packaging facility was ahead of plan, with initial output expected in early calendar 2027. This supplies a company-specific capacity expansion supporting the thesis.",
+    "source_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+    "date": "2026-09-30",
+    "strength": "moderate"
+   },
+   {
+    "claim": "As of 2026-09-30, Micron expected industry HBM bit shipments to grow faster than conventional DRAM through calendar 2028 and expected DRAM supply constraints in calendar 2027 and 2028. These are management forecasts, not independently established market outcomes.",
+    "source_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+    "date": "2026-09-30",
+    "strength": "moderate"
+   }
+  ],
+  "evidence_against": [
+   {
+    "claim": "As of 2026-09-30, Micron's server outlook incorporated a modestly lower rate of memory-content growth than previously expected because of tight memory supply. This constrains the assumption that infrastructure spending translates directly into proportionate memory-volume growth; the statement was not HBM-specific.",
+    "source_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+    "date": "2026-09-30",
+    "strength": "moderate"
+   },
+   {
+    "claim": "As of 2026-10-28, Microsoft disclosed delayed third-party capacity deliveries and shifted deliveries into the second half of its fiscal year. It also identified higher memory and storage costs within infrastructure spending, showing that spending growth can reflect timing and inflation rather than equivalent physical capacity growth.",
+    "source_url": "https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1",
+    "date": "2026-10-28",
+    "strength": "moderate"
+   },
+   {
+    "claim": "In its annual report signed 2026-10-09, Micron disclosed that customers have previously overstated demand to obtain supply. It also warned that sustained higher memory prices can reduce demand or encourage lower-memory designs and alternative technologies. These are disclosed risks, not evidence of a current HBM order reversal.",
+    "source_url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000723125/5dafce68-38e8-4cad-a8f3-ab56d04d73fd.pdf",
+    "date": "2026-10-09",
+    "strength": "weak"
+   },
+   {
+    "claim": "As of 2026-09-30, Micron expected initial wafer output from its first Idaho fab only in mid-calendar 2027 and cautioned that new fabrication facilities become meaningfully productive several quarters after initial output. New construction therefore cannot be treated as immediately available saleable HBM capacity.",
+    "source_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+    "date": "2026-09-30",
+    "strength": "moderate"
+   }
+  ],
+  "counterarguments": [
+   "Inference from evidence_for[3], evidence_for[4] and evidence_against[1]: hyperscaler capital expenditure is an imperfect proxy for Micron HBM revenue. Spending includes non-HBM assets and higher component prices, while deployment delays can shift procurement and revenue timing.",
+   "Inference from evidence_for[0] and evidence_against[2]: extensive supply agreements improve visibility but do not eliminate demand risk. Historically overstated requirements and unknown HBM-specific contract protections leave uncertainty around eventual shipments and collections.",
+   "Inference from evidence_for[2], evidence_for[5] and evidence_against[3]: demand may remain strong while Micron fails to convert it fully into revenue because qualification, manufacturing and packaging ramps determine deliverable supply.",
+   "Inference from evidence_against[0] and evidence_against[2]: customers can respond to scarcity and high prices by moderating memory content. That could weaken HBM volume growth even while infrastructure spending remains elevated."
+  ],
+  "key_uncertainties": [
+   "Standalone HBM revenue and its calendar-year growth rate remain unverified from the opened sources. Separate HBM revenue, bit-shipment and average-selling-price disclosures would establish the magnitude and composition of growth.",
+   "The exact contracted share of HBM supply, price escalation and cancellation protections remain unverified. HBM-specific contract disclosures would clarify how much revenue is economically protected rather than merely allocated.",
+   "HBM4E yields, customer qualification milestones and saleable packaging capacity remain unverified. Production updates and confirmed customer deployments would resolve execution risk.",
+   "Micron's share of incremental accelerator-memory purchases remains uncertain. Customer-specific supplier allocations and independently measured HBM market share would distinguish industry expansion from Micron-specific gains."
+  ],
+  "what_would_change_the_view": [
+   "Strengthen: subsequent Micron disclosures show continued standalone HBM revenue growth and realization of the higher prices described in evidence_for[0]. Weaken: material HBM order reductions, renegotiations or revenue declines.",
+   "Strengthen: HBM4E reaches targeted calendar 2027 high-volume manufacturing and Singapore packaging begins output on the schedule disclosed in evidence_for[2] and evidence_for[5]. Weaken: qualification failures or material ramp delays.",
+   "Weaken: Microsoft or Alphabet cuts infrastructure-spending plans, or deployment delays become sustained reductions in accelerator procurement rather than timing shifts.",
+   "Weaken: customer designs materially reduce HBM content or Micron loses important platform allocations. Strengthen: confirmed customer qualifications and allocations broaden."
+  ],
+  "verdict": "Supported as of 2026-11-10: Micron's HBM supply agreements and higher contracted pricing provide direct support for calendar 2027 growth, reinforced by continuing infrastructure investment and its product roadmap. The evidence supports the direction of revenue growth, not a precise growth rate; deployment timing, deliverable capacity and customer responses to high memory prices remain material qualifications.",
+  "missing_fields": [
+   "Micron standalone HBM revenue for the latest reported fiscal quarter",
+   "Micron calendar 2027 standalone HBM revenue and year-over-year growth guidance",
+   "Exact percentage of calendar 2027 HBM supply under agreement",
+   "Calendar 2027 HBM contracted price-increase percentage",
+   "HBM-specific cancellation, renegotiation and take-or-pay provisions",
+   "HBM4E production yields, qualified capacity and customer allocations"
+  ]
+ },
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "raw_text": null,
+ "cost_usd": 0.356,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "token_cost_usd": 0.256,
+ "usage": {
+  "input_tokens": 100649,
+  "input_tokens_details": {
+   "cache_write_tokens": 24,
+   "cached_tokens": 4976
+  },
+  "output_tokens": 6418,
+  "output_tokens_details": {
+   "reasoning_tokens": 4263
+  },
+  "total_tokens": 107067
+ },
+ "search_calls": 10,
+ "search_actions": {
+  "search": 4,
+  "open_page": 6
+ },
+ "error": null
+}

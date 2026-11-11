@@ -1,117 +1,110 @@
 {
  "arm": "parallel",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Attio (attio.com)",
+ "input_n": 0,
  "tier": "pro",
  "status": "completed",
- "seconds": 184,
- "run_id": "trun_75ae0d14b3f84a2aa73366bfb732bf28",
+ "seconds": 246,
+ "run_id": "trun_75ae0d14b3f84a2a8330a7a034021832",
  "output": {
   "company": "Attio",
   "talking_points": [
-   "With Project Centaur launching, where are agent workloads creating the hardest scale or reliability requirements?",
-   "After adding workflow agent logs and visibility into failed emails, which execution problems still require the most manual investigation?",
-   "With Resend, ClickUp and Aircall integrations expanding, which customer workflows are the next priority?"
+   "For the October agentic-revenue beta, which priority is most urgent: richer customer context, orchestration, or ecosystem connectivity? Source: https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
+   "After adding Google Sheets, Asana, and Hunter to Workflows, where are customers still asking for deeper integrations? Source: https://attio.com/changelog/2026/new-workflows-apps",
+   "Following October’s resolved processing delays, what reliability and data-freshness improvements matter most as agent usage grows? Source: https://status.attio.com/api/v2/incidents.json"
   ],
   "key_people": [
    {
     "title": "CEO & Co-founder",
-    "source_url": "https://attio.com/blog/attio-raises-52m-series-b",
-    "recent": null,
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
+    "recent": "In October 2026, announced the agentic-revenue architecture beta, emphasizing context, orchestration, and ecosystem connectivity.",
     "name": "Nicolas Sharp"
    },
    {
     "title": "CTO & Co-founder",
     "source_url": "https://attio.com/engineering/blog/building-attio-s-architecture",
-    "recent": "In October 2026, explained Attio's new hybrid architecture, including Project Centaur, PostgreSQL-compatible access and Data Connectors.",
+    "recent": "In October 2026, explained the architecture behind Attio’s PostgreSQL-compatible SQL engine, Data Connectors, and extensible Activities and Interactions.",
     "name": "Alexander Christie"
-   },
-   {
-    "title": "VP Marketing",
-    "source_url": "https://alexjvale.com/",
-    "recent": "His personal site, dated September 22, 2026, identifies him as currently VP Marketing at Attio.",
-    "name": "Alex Vale"
    }
   ],
-  "missing_fields": [
-   "key_people[0].recent — no recent statement or activity attributable to Nicolas Sharp was verified."
-  ],
+  "missing_fields": [],
   "challenges": [
    {
-    "evidence": "In its October architecture article, Attio says its most advanced customers demand exceptional scale, reliability and increasingly powerful data interfaces. It also describes the need for concurrent agents to share a transactional view and avoid conflicts. These are stated engineering requirements, not evidence of a service outage.",
-    "date": "2026-10",
-    "source_url": "https://attio.com/engineering/blog/building-attio-s-architecture",
-    "challenge": "Meeting the scale, reliability and concurrency demands of agentic customer workloads."
+    "evidence": "Attio’s status history records delays processing bulk record deletions beginning October 6, 2026, and resolution on October 12. This is a resolved incident, not evidence of an ongoing outage.",
+    "date": "2026-10-06 to 2026-10-12",
+    "source_url": "https://status.attio.com/api/v2/incidents.json",
+    "challenge": "Bulk-record processing reliability: a recent deletion-processing backlog."
    },
    {
-    "evidence": "The August 25 release introduced a Failed tab for manually written emails that failed after every retry, plus clearer feedback when a mailbox disconnects. Attio has improved visibility; the announcement does not establish the frequency or continuing severity of failures.",
-    "date": "2026-08-25",
-    "source_url": "https://attio.com/changelog/2026/changelog-august-25-2026",
-    "challenge": "Making failed email delivery and mailbox disconnections visible to users."
+    "evidence": "Attio reported delays processing formula attribute invalidations on October 6, 2026, warning that some formulas could show outdated values. It marked the issue resolved and the backlog fully processed on October 7.",
+    "date": "2026-10-06 to 2026-10-07",
+    "source_url": "https://status.attio.com/api/v2/incidents.json",
+    "challenge": "Data freshness: delayed formula updates during a now-resolved incident."
    }
   ],
   "what_they_do": {
-   "value": "Attio is an AI-native CRM platform for go-to-market teams.",
+   "value": "Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock.",
    "source_url": "https://attio.com/",
-   "as_of": "2026-10-20"
+   "as_of": "2026-10-15"
   },
   "recent_changes": [
    {
-    "type": "Product and infrastructure launch",
+    "type": "Product beta launch",
     "date": "2026-10",
-    "headline": "Project Centaur and Data Connectors introduce PostgreSQL-compatible access",
-    "source_url": "https://attio.com/engineering/blog/building-attio-s-architecture",
-    "summary": "Attio announced a horizontally scalable SQL query engine, a hosted PostgreSQL-compatible endpoint for connecting agents and tools, and Interfaces for sharing configuration across objects. The article gives only the publication month."
+    "headline": "Introduced the architecture for agentic revenue",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
+    "summary": "Announced SQL Engine, Data Connectors, Agent Scale, and Activities in beta, combining infrastructure-scale capabilities with CRM context and controls. The announcement provides month-level dating only."
+   },
+   {
+    "type": "Product update",
+    "date": "2026-10-29",
+    "headline": "Expanded workflow automation and Slack coordination",
+    "source_url": "https://attio.com/changelog/2026/workflows-updates",
+    "summary": "Workflows gained direct Slack messaging to individuals, searchable variables, and team-wide broadcast and celebration actions."
    },
    {
     "type": "Product launch",
     "date": "2026-09-23",
-    "headline": "Workflow history and agent log",
-    "source_url": "https://attio.com/changelog/2026",
-    "summary": "Attio announced visibility into workflow runs down to the agent level."
+    "headline": "Added workflow history and agent logs",
+    "source_url": "https://attio.com/changelog/2026/workflow-history-and-agent-log",
+    "summary": "Added visibility into workflow steps and results, plus agent tool calls, record changes, and credit usage."
    },
    {
     "type": "Integration launch",
-    "date": "2026-09-23",
-    "headline": "Resend and ClickUp apps expand workflow integrations",
-    "source_url": "https://attio.com/changelog/2026/app-updates",
-    "summary": "Resend supports transactional emails and newsletters from Attio; ClickUp supports creating projects and tasks from workflows. Aircall can now write AI call summaries into notes."
-   },
-   {
-    "type": "Product enhancement",
     "date": "2026-08-25",
-    "headline": "Native dictation added to Ask Attio",
-    "source_url": "https://attio.com/changelog/2026/changelog-august-25-2026",
-    "summary": "Users can speak requests to Ask Attio without an external transcription tool."
+    "headline": "Connected more applications to Workflows",
+    "source_url": "https://attio.com/changelog/2026/new-workflows-apps",
+    "summary": "Added Google Sheets, Asana, and Hunter capabilities, alongside app discovery and installation directly within the workflow builder."
    }
   ],
   "priorities": [
    {
-    "evidence": "The October architecture announcement introduces Project Centaur with PostgreSQL-compatible SQL support for every workspace, alongside Data Connectors that let agents and tools connect directly to Attio.",
+    "evidence": "The October announcement launched SQL Engine, Data Connectors, Agent Scale, and Activities in beta, describing a single architecture built for people and agents.",
     "date": "2026-10",
-    "source_url": "https://attio.com/engineering/blog/building-attio-s-architecture",
-    "priority": "Build scalable, directly accessible data infrastructure for AI agents."
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
+    "priority": "Build agent-native CRM infrastructure with shared customer context and scalable data access."
    },
    {
-    "evidence": "The September 23 release announced Workflow history and agent log, described as providing full visibility into every run, down to the agent.",
-    "date": "2026-09-23",
-    "source_url": "https://attio.com/changelog/2026",
-    "priority": "Improve workflow and agent observability."
+    "evidence": "The release’s stated aim was to put more processes on autopilot; it added direct Slack messaging, searchable workflow variables, and team-wide actions.",
+    "date": "2026-10-29",
+    "source_url": "https://attio.com/changelog/2026/workflows-updates",
+    "priority": "Automate more revenue processes through Workflows."
    },
    {
-    "evidence": "Attio added Resend and ClickUp workflow apps and enabled Aircall to write AI summaries directly into notes.",
-    "date": "2026-09-23",
-    "source_url": "https://attio.com/changelog/2026/app-updates",
-    "priority": "Expand the integration ecosystem and cross-tool automation."
-   },
-   {
-    "evidence": "The August 25 release made dictation native to Ask Attio, removing the need for an external transcription tool when speaking requests.",
+    "evidence": "Under “Connect more of your stack,” Attio added Google Sheets, Asana, and Hunter workflow capabilities and in-builder app installation.",
     "date": "2026-08-25",
-    "source_url": "https://attio.com/changelog/2026/changelog-august-25-2026",
-    "priority": "Reduce friction in everyday use of Ask Attio."
+    "source_url": "https://attio.com/changelog/2026/new-workflows-apps",
+    "priority": "Expand ecosystem connectivity and reduce friction when building cross-tool workflows."
+   },
+   {
+    "evidence": "Workspace admins gained self-service call-recorder disabling, visibility and control over automatically protected email domains, and consistent email blocklist rules.",
+    "date": "2026-10-29",
+    "source_url": "https://attio.com/changelog/2026/changelog-october-29-2026",
+    "priority": "Strengthen workspace administration and communication-data controls."
    }
   ]
  },
- "cost_usd": 0.1,
- "cost_basis": "list",
  "basis": [
   {
    "field": "company",
@@ -120,56 +113,53 @@
      "title": "Attio: The CRM for agentic revenue",
      "url": "https://attio.com/",
      "excerpts": [
-      "Attio is an AI-native CRM platform for go-to-market teams."
+      "Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock."
      ]
     }
    ],
-   "reasoning": "The company's own homepage identifies Attio and describes its business.",
+   "reasoning": "Attio’s official homepage identifies the exact company and its CRM offering.",
    "confidence": "high"
   },
   {
    "field": "talking_points",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
-      "The systems that our most advanced customers are building demand incredible scale and reliability whilst also needing increasingly powerful interfaces through which to access and consume data."
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta.",
+      "**Context.** Every customer signal is captured in a shared context layer that stays current and grows richer with each interaction. **Orchestration.** Agents and workflows use this context to act on every signal across your revenue operations. **Ecosystem.** Connect Attio to all the tools and agents that run your business, with consistent access to its data, logic, and actions."
      ]
     },
     {
-     "title": "2026 | Attio Changelog",
-     "url": "https://attio.com/changelog/2026",
+     "title": "New Workflows apps | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/new-workflows-apps",
      "excerpts": [
-      "[Sep 23 ## Workflow history and agent log Full visibility into every run, down to the agent."
+      "**Google Sheets.** Pull data in from a sheet to enrich or route a record, and push records back out to the spreadsheets finance and ops live in.",
+      "**Asana.** Spin up Asana projects and tasks from a workflow, from scratch, or from a template. For example, start a tech-review project the moment a deal reaches a new stage.",
+      "**Hunter.** Find and verify work emails from a name, LinkedIn URL, or domain, without leaving Attio."
      ]
     },
     {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
+     "title": "status.attio.com",
+     "url": "https://status.attio.com/api/v2/incidents.json",
      "excerpts": [
-      "Catch any emails that didn’t send. A new Failed tab in Emails surfaces manually written emails that failed after every retry, with clearer feedback when a mailbox disconnects."
-     ]
-    },
-    {
-     "title": "App updates | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/app-updates",
-     "excerpts": [
-      "Put more of your stack to work in workflows with new apps Resend and ClickUp. **Resend** : Fire transactional emails and newsletters straight from Attio. **ClickUp** : Create ClickUp projects and tasks from a workflow the moment something changes. Plus, get the highlights of every call: Aircall now writes AI summaries straight into your notes."
+      "{\"page\":{\"id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"name\":\"Attio\",\"url\":\"https://status.attio.com/\",\"updated_at\":\"2026-10-12T08:58:50Z\"},\"incidents\":[{\"id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"name\":\"Delays processing bulk record deletions\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T23:14:36Z\",\"updated_at\":\"2026-10-12T08:58:50Z\",\"resolved_at\":\"2026-10-12T08:58:50Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4QNC2X6FXQ5JHPZPG2P08W4\",\"body\":\"The issue has now been resolved.\\n\\nWe’re sorry for any inconvenience caused.\",\"created_at\":\"2026-10-12T08:58:50Z\",\"display_at\":\"2026-10-12T08:58:50Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"resolved\",\"updated_at\":\"2026-10-12T08:58:50Z\"},{\"id\":\"01M49QYQNV10SC7VY8PY01941E\",\"body\":\"An issue has been been identified. \\n\\nWe have identified the root cause and our team is working to resolve the issue as quickly as possible.\",\"created_at\":\"2026-10-06T23:14:36Z\",\"display_at\":\"2026-10-06T23:14:36Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"identified\",\"updated_at\":\"2026-10-06T23:14:36Z\"}]},{\"id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"name\":\"Delays processing formula attribute invalidations\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T16:32:21Z\",\"updated_at\":\"2026-10-07T09:50:08Z\",\"resolved_at\":\"2026-10-07T09:50:08Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4AWADXD12WKBKHJWX2X23HX\",\"body\":\"The issue causing delays to formula updates has now been resolved, and the backlog has been fully processed."
      ]
     }
    ],
-   "reasoning": "The questions are discussion prompts derived from stated workload demands, workflow visibility, email-failure handling and integration launches. They do not assert unverified remaining problems.",
+   "reasoning": "The questions are conversation prompts derived from the beta strategy, shipped integrations, and recorded processing incidents; they do not assert additional problems.",
    "confidence": "medium"
   },
   {
    "field": "key_people",
    "citations": [
     {
-     "title": "Attio raises $52m Series B | Attio",
-     "url": "https://attio.com/blog/attio-raises-52m-series-b",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
-      "Nicolas Sharp CEO & Co-founder"
+      "Nicolas Sharp CEO & Co-founder",
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta."
      ]
     },
     {
@@ -177,48 +167,34 @@
      "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
      "excerpts": [
       "Alexander Christie CTO & Co-founder",
-      "Known internally as **Project Centaur** , this update brings the unprecedented connectivity and scale that was previously reserved for infrastructure like Data Warehouses directly into the CRM. Centaur unlocks full PostgreSQL compatible SQL support for every Attio workspace with no extra steps."
-     ]
-    },
-    {
-     "title": "Alex Vale",
-     "url": "https://alexjvale.com/",
-     "excerpts": [
-      "[About](https://alexjvale.com/) [Notes](https://alexjvale.com/n) –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Alex Vale _Sep 22 2026, 09:28 GMT+1_ –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Currently VP Marketing"
+      "The result is Centaur - our Postgres compatible, horizontally scalable SQL query engine.",
+      "Finally, we have introduced Attio Data Connectors.",
+      "We’re also releasing two system Interfaces that take advantage of this new functionality from day one: Activities and Interactions."
      ]
     }
    ],
-   "reasoning": "Primary sources identify Sharp and Christie as co-founders with their respective titles. Christie authored the October architecture announcement. Vale's dated personal page identifies his marketing role. No recent activity is attributed to Sharp without evidence.",
-   "confidence": "medium"
+   "reasoning": "Recent official articles identify both founders’ titles and directly document the product and architectural announcements attributed to them.",
+   "confidence": "high"
   },
   {
    "field": "missing_fields",
    "citations": [],
-   "reasoning": "The reviewed evidence establishes Sharp's title but does not establish a recent statement or action attributable to him. This is a limitation of the verified material, not a claim that no such activity exists.",
+   "reasoning": "Every requested category is populated. The challenges explicitly disclose that the cited incidents were resolved; the brief does not claim that they remain active.",
    "confidence": "medium"
   },
   {
    "field": "challenges",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "status.attio.com",
+     "url": "https://status.attio.com/api/v2/incidents.json",
      "excerpts": [
-      "Published Oct '26",
-      "The systems that our most advanced customers are building demand incredible scale and reliability whilst also needing increasingly powerful interfaces through which to access and consume data.",
-      "We wanted to ensure that agents had a transactional view of the world, so that increasingly large numbers of concurrent running agents could avoid conflicts, whilst also allowing them to run queries and discover information from a broad corpus of data."
-     ]
-    },
-    {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
-     "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25 Changelog (August 25, 2026) Copy link to this entry",
-      "Catch any emails that didn’t send. A new Failed tab in Emails surfaces manually written emails that failed after every retry, with clearer feedback when a mailbox disconnects."
+      "{\"page\":{\"id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"name\":\"Attio\",\"url\":\"https://status.attio.com/\",\"updated_at\":\"2026-10-12T08:58:50Z\"},\"incidents\":[{\"id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"name\":\"Delays processing bulk record deletions\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T23:14:36Z\",\"updated_at\":\"2026-10-12T08:58:50Z\",\"resolved_at\":\"2026-10-12T08:58:50Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4QNC2X6FXQ5JHPZPG2P08W4\",\"body\":\"The issue has now been resolved.\\n\\nWe’re sorry for any inconvenience caused.\",\"created_at\":\"2026-10-12T08:58:50Z\",\"display_at\":\"2026-10-12T08:58:50Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"resolved\",\"updated_at\":\"2026-10-12T08:58:50Z\"},{\"id\":\"01M49QYQNV10SC7VY8PY01941E\",\"body\":\"An issue has been been identified. \\n\\nWe have identified the root cause and our team is working to resolve the issue as quickly as possible.\",\"created_at\":\"2026-10-06T23:14:36Z\",\"display_at\":\"2026-10-06T23:14:36Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"identified\",\"updated_at\":\"2026-10-06T23:14:36Z\"}]},{\"id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"name\":\"Delays processing formula attribute invalidations\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T16:32:21Z\",\"updated_at\":\"2026-10-07T09:50:08Z\",\"resolved_at\":\"2026-10-07T09:50:08Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4AWADXD12WKBKHJWX2X23HX\",\"body\":\"The issue causing delays to formula updates has now been resolved, and the backlog has been fully processed.",
+      "We're sorry for any inconvenience caused.\",\"created_at\":\"2026-10-07T09:50:08Z\",\"display_at\":\"2026-10-07T09:50:08Z\",\"incident_id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"status\":\"resolved\",\"updated_at\":\"2026-10-07T09:50:08Z\"},{\"id\":\"01M49MFA8NZ964KHWWR3J2R4PC\",\"body\":\"A fix has been applied and formula updates are processing normally again."
      ]
     }
    ],
-   "reasoning": "The architecture article explicitly states demanding scale, reliability and concurrency requirements. The August changelog explicitly addresses emails failing after retries and mailbox disconnections. Neither source establishes broad outages or the ongoing severity of these issues, so those claims are excluded.",
+   "reasoning": "Attio’s official incident history supplies the issue descriptions, dates, impact, and resolutions. These support recent operational challenges, but not a claim of continuing outages or systemic failure.",
    "confidence": "medium"
   },
   {
@@ -228,155 +204,150 @@
      "title": "Attio: The CRM for agentic revenue",
      "url": "https://attio.com/",
      "excerpts": [
-      "Attio is an AI-native CRM platform for go-to-market teams."
+      "Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock."
      ]
     }
    ],
-   "reasoning": "The sentence reproduces the company's own description from its homepage, verified on October 20, 2026.",
+   "reasoning": "The value reproduces Attio’s own homepage description; the as-of date is the supplied verification date for that page.",
    "confidence": "high"
   },
   {
    "field": "recent_changes",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
       "Published Oct '26",
-      "The result is Centaur - our Postgres compatible, horizontally scalable SQL query engine.",
-      "Finally, we have introduced Attio Data Connectors. This innovative new product offering exposes a hosted, global, PostgreSQL wire protocol compatible SQL endpoint at `data.attio.com` . Customers are now able to provision unique credentials for their workspace which allow them to connect agents and tools that already support PostgreSQL directly to Attio.",
-      "Alongside this exciting new form factor for data in Attio, we are also introducing a powerful upgrade to our data model in the form of Interfaces. Interfaces bring the familiar software engineering concept to Attio, allowing users to express a shared set of attributes and configuration between multiple different Objects in our data model."
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta."
      ]
     },
     {
-     "title": "2026 | Attio Changelog",
-     "url": "https://attio.com/changelog/2026",
+     "title": "Workflows updates | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/workflows-updates",
      "excerpts": [
-      "[Sep 23 ## Workflow history and agent log Full visibility into every run, down to the agent."
+      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / October 29",
+      "Message a person in Slack from a workflow. The Send message and Send actions blocks now reach a person or a channel, and you can use variables to reach the right person automatically."
      ]
     },
     {
-     "title": "App updates | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/app-updates",
+     "title": "Workflow history and agent log | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/workflow-history-and-agent-log",
      "excerpts": [
       "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / September 23",
-      "Put more of your stack to work in workflows with new apps Resend and ClickUp. **Resend** : Fire transactional emails and newsletters straight from Attio. **ClickUp** : Create ClickUp projects and tasks from a workflow the moment something changes. Plus, get the highlights of every call: Aircall now writes AI summaries straight into your notes."
+      "Workflow history shows every step of a run: what it changed and its result. And the new agent log does the same for the agents inside: the tools they called, the records they changed, and the credits they used."
      ]
     },
     {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
+     "title": "New Workflows apps | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/new-workflows-apps",
      "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25 Changelog (August 25, 2026) Copy link to this entry",
-      "Dictate to Ask Attio. Dictation is now native, so you can speak your requests to Ask Attio without reaching for an external transcription tool."
+      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25",
+      "And you can now find and install apps without leaving the builder: search the App Store and get smart suggestions filtered to the blocks you’re using."
      ]
     }
    ],
-   "reasoning": "All selected announcements fall within the requested recent period. The architecture article supplies only an October publication month, which is preserved rather than converted into an invented day. Older funding and the July 9 Inconvo announcement are excluded.",
+   "reasoning": "Official announcements place all listed changes within August 11–November 9, 2026. The October architecture announcement is accurately labeled beta and retains its month-only date.",
    "confidence": "high"
   },
   {
    "field": "priorities",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
-      "Published Oct '26",
-      "Known internally as **Project Centaur** , this update brings the unprecedented connectivity and scale that was previously reserved for infrastructure like Data Warehouses directly into the CRM. Centaur unlocks full PostgreSQL compatible SQL support for every Attio workspace with no extra steps.",
-      "Finally, we have introduced Attio Data Connectors. This innovative new product offering exposes a hosted, global, PostgreSQL wire protocol compatible SQL endpoint at `data.attio.com` . Customers are now able to provision unique credentials for their workspace which allow them to connect agents and tools that already support PostgreSQL directly to Attio."
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta.",
+      "Attio combines the speed and scale of infrastructure with the context and control of application software, in one architecture built for people and agents."
      ]
     },
     {
-     "title": "2026 | Attio Changelog",
-     "url": "https://attio.com/changelog/2026",
+     "title": "Workflows updates | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/workflows-updates",
      "excerpts": [
-      "[Sep 23 ## Workflow history and agent log Full visibility into every run, down to the agent."
+      "Put more of your process on autopilot."
      ]
     },
     {
-     "title": "App updates | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/app-updates",
+     "title": "New Workflows apps | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/new-workflows-apps",
      "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / September 23",
-      "Put more of your stack to work in workflows with new apps Resend and ClickUp. **Resend** : Fire transactional emails and newsletters straight from Attio. **ClickUp** : Create ClickUp projects and tasks from a workflow the moment something changes. Plus, get the highlights of every call: Aircall now writes AI summaries straight into your notes."
+      "Connect more of your stack."
      ]
     },
     {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
+     "title": "Changelog (October 29, 2026) | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/changelog-october-29-2026",
      "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25 Changelog (August 25, 2026) Copy link to this entry",
-      "Dictate to Ask Attio. Dictation is now native, so you can speak your requests to Ask Attio without reaching for an external transcription tool."
+      "Turn off call recording yourself. Workspace admins can disable the call recorder from settings. Email protection you can see and control. Admins can see which domains are auto-protected and opt out, and the same blocklist rules now apply everywhere emails appear."
      ]
     }
    ],
-   "reasoning": "The priorities summarize observable product investments rather than claiming a formally ranked corporate strategy: agent infrastructure, workflow visibility, integrations and assistant usability.",
+   "reasoning": "The priorities synthesize explicit strategic language and recent shipped capabilities. They indicate investment direction, not disclosed spending amounts or an exhaustive internal roadmap.",
    "confidence": "medium"
   },
   {
    "field": "talking_points.0",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
-      "The systems that our most advanced customers are building demand incredible scale and reliability whilst also needing increasingly powerful interfaces through which to access and consume data.",
-      "Known internally as **Project Centaur** , this update brings the unprecedented connectivity and scale that was previously reserved for infrastructure like Data Warehouses directly into the CRM. Centaur unlocks full PostgreSQL compatible SQL support for every Attio workspace with no extra steps."
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta.",
+      "**Context.** Every customer signal is captured in a shared context layer that stays current and grows richer with each interaction. **Orchestration.** Agents and workflows use this context to act on every signal across your revenue operations. **Ecosystem.** Connect Attio to all the tools and agents that run your business, with consistent access to its data, logic, and actions."
      ]
     }
    ],
-   "reasoning": "The question connects the announced infrastructure to the explicitly stated workload requirements.",
+   "reasoning": "The question uses the announcement’s stated strategic pillars and beta status without assuming which pillar is most urgent.",
    "confidence": "medium"
   },
   {
    "field": "talking_points.1",
    "citations": [
     {
-     "title": "2026 | Attio Changelog",
-     "url": "https://attio.com/changelog/2026",
+     "title": "New Workflows apps | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/new-workflows-apps",
      "excerpts": [
-      "[Sep 23 ## Workflow history and agent log Full visibility into every run, down to the agent."
-     ]
-    },
-    {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
-     "excerpts": [
-      "Catch any emails that didn’t send. A new Failed tab in Emails surfaces manually written emails that failed after every retry, with clearer feedback when a mailbox disconnects."
+      "**Google Sheets.** Pull data in from a sheet to enrich or route a record, and push records back out to the spreadsheets finance and ops live in.",
+      "**Asana.** Spin up Asana projects and tasks from a workflow, from scratch, or from a template. For example, start a tech-review project the moment a deal reaches a new stage.",
+      "**Hunter.** Find and verify work emails from a name, LinkedIn URL, or domain, without leaving Attio."
      ]
     }
    ],
-   "reasoning": "The question asks about remaining investigation work without assuming that the documented improvements leave an unresolved incident.",
+   "reasoning": "The named integrations are documented launches; the remaining customer demand is posed as a question, not asserted as fact.",
    "confidence": "medium"
   },
   {
    "field": "talking_points.2",
    "citations": [
     {
-     "title": "App updates | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/app-updates",
+     "title": "status.attio.com",
+     "url": "https://status.attio.com/api/v2/incidents.json",
      "excerpts": [
-      "Put more of your stack to work in workflows with new apps Resend and ClickUp. **Resend** : Fire transactional emails and newsletters straight from Attio. **ClickUp** : Create ClickUp projects and tasks from a workflow the moment something changes. Plus, get the highlights of every call: Aircall now writes AI summaries straight into your notes."
+      "{\"page\":{\"id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"name\":\"Attio\",\"url\":\"https://status.attio.com/\",\"updated_at\":\"2026-10-12T08:58:50Z\"},\"incidents\":[{\"id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"name\":\"Delays processing bulk record deletions\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T23:14:36Z\",\"updated_at\":\"2026-10-12T08:58:50Z\",\"resolved_at\":\"2026-10-12T08:58:50Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4QNC2X6FXQ5JHPZPG2P08W4\",\"body\":\"The issue has now been resolved.\\n\\nWe’re sorry for any inconvenience caused.\",\"created_at\":\"2026-10-12T08:58:50Z\",\"display_at\":\"2026-10-12T08:58:50Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"resolved\",\"updated_at\":\"2026-10-12T08:58:50Z\"},{\"id\":\"01M49QYQNV10SC7VY8PY01941E\",\"body\":\"An issue has been been identified. \\n\\nWe have identified the root cause and our team is working to resolve the issue as quickly as possible.\",\"created_at\":\"2026-10-06T23:14:36Z\",\"display_at\":\"2026-10-06T23:14:36Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"identified\",\"updated_at\":\"2026-10-06T23:14:36Z\"}]},{\"id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"name\":\"Delays processing formula attribute invalidations\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T16:32:21Z\",\"updated_at\":\"2026-10-07T09:50:08Z\",\"resolved_at\":\"2026-10-07T09:50:08Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4AWADXD12WKBKHJWX2X23HX\",\"body\":\"The issue causing delays to formula updates has now been resolved, and the backlog has been fully processed.",
+      "We're sorry for any inconvenience caused.\",\"created_at\":\"2026-10-07T09:50:08Z\",\"display_at\":\"2026-10-07T09:50:08Z\",\"incident_id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"status\":\"resolved\",\"updated_at\":\"2026-10-07T09:50:08Z\"},{\"id\":\"01M49MFA8NZ964KHWWR3J2R4PC\",\"body\":\"A fix has been applied and formula updates are processing normally again."
      ]
     }
    ],
-   "reasoning": "The integration-roadmap question is tied directly to the named September additions.",
+   "reasoning": "The question references actual resolved delays and invites discussion of future priorities without attributing their cause to agent growth.",
    "confidence": "medium"
   },
   {
    "field": "key_people.0",
    "citations": [
     {
-     "title": "Attio raises $52m Series B | Attio",
-     "url": "https://attio.com/blog/attio-raises-52m-series-b",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
-      "Nicolas Sharp CEO & Co-founder"
+      "Published Oct '26",
+      "Nicolas Sharp CEO & Co-founder",
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta.",
+      "**Context.** Every customer signal is captured in a shared context layer that stays current and grows richer with each interaction. **Orchestration.** Agents and workflows use this context to act on every signal across your revenue operations. **Ecosystem.** Connect Attio to all the tools and agents that run your business, with consistent access to its data, logic, and actions."
      ]
     }
    ],
-   "reasoning": "The official article identifies Sharp's title. His recent activity is left null rather than inferred from an unattributed announcement.",
-   "confidence": "medium"
+   "reasoning": "The October article identifies Sharp’s title and presents the beta announcement and strategic pillars.",
+   "confidence": "high"
   },
   {
    "field": "key_people.1",
@@ -387,188 +358,182 @@
      "excerpts": [
       "Published Oct '26",
       "Alexander Christie CTO & Co-founder",
-      "Known internally as **Project Centaur** , this update brings the unprecedented connectivity and scale that was previously reserved for infrastructure like Data Warehouses directly into the CRM. Centaur unlocks full PostgreSQL compatible SQL support for every Attio workspace with no extra steps.",
-      "Finally, we have introduced Attio Data Connectors. This innovative new product offering exposes a hosted, global, PostgreSQL wire protocol compatible SQL endpoint at `data.attio.com` . Customers are now able to provision unique credentials for their workspace which allow them to connect agents and tools that already support PostgreSQL directly to Attio."
+      "The result is Centaur - our Postgres compatible, horizontally scalable SQL query engine.",
+      "Finally, we have introduced Attio Data Connectors.",
+      "We’re also releasing two system Interfaces that take advantage of this new functionality from day one: Activities and Interactions.",
+      "Now we’re bringing them directly to users as Interfaces that can be extended and modified."
      ]
     }
    ],
-   "reasoning": "Christie is the named author and CTO/co-founder of the October article explaining these capabilities.",
+   "reasoning": "Christie’s October article identifies his role and explains each architectural capability summarized.",
    "confidence": "high"
-  },
-  {
-   "field": "key_people.2",
-   "citations": [
-    {
-     "title": "Alex Vale",
-     "url": "https://alexjvale.com/",
-     "excerpts": [
-      "[About](https://alexjvale.com/) [Notes](https://alexjvale.com/n) –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Alex Vale _Sep 22 2026, 09:28 GMT+1_ –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Currently VP Marketing"
-     ]
-    }
-   ],
-   "reasoning": "Vale's personal page contains his name, September 22 timestamp and current VP Marketing statement. The answer reports that statement, not an unverified appointment date.",
-   "confidence": "high"
-  },
-  {
-   "field": "missing_fields.0",
-   "citations": [],
-   "reasoning": "No recent attributed activity for Sharp was established in the reviewed material, so the corresponding field remains null.",
-   "confidence": "medium"
   },
   {
    "field": "challenges.0",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "status.attio.com",
+     "url": "https://status.attio.com/api/v2/incidents.json",
      "excerpts": [
-      "Published Oct '26",
-      "The systems that our most advanced customers are building demand incredible scale and reliability whilst also needing increasingly powerful interfaces through which to access and consume data.",
-      "We wanted to ensure that agents had a transactional view of the world, so that increasingly large numbers of concurrent running agents could avoid conflicts, whilst also allowing them to run queries and discover information from a broad corpus of data."
+      "{\"page\":{\"id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"name\":\"Attio\",\"url\":\"https://status.attio.com/\",\"updated_at\":\"2026-10-12T08:58:50Z\"},\"incidents\":[{\"id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"name\":\"Delays processing bulk record deletions\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T23:14:36Z\",\"updated_at\":\"2026-10-12T08:58:50Z\",\"resolved_at\":\"2026-10-12T08:58:50Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4QNC2X6FXQ5JHPZPG2P08W4\",\"body\":\"The issue has now been resolved.\\n\\nWe’re sorry for any inconvenience caused.\",\"created_at\":\"2026-10-12T08:58:50Z\",\"display_at\":\"2026-10-12T08:58:50Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"resolved\",\"updated_at\":\"2026-10-12T08:58:50Z\"},{\"id\":\"01M49QYQNV10SC7VY8PY01941E\",\"body\":\"An issue has been been identified. \\n\\nWe have identified the root cause and our team is working to resolve the issue as quickly as possible.\",\"created_at\":\"2026-10-06T23:14:36Z\",\"display_at\":\"2026-10-06T23:14:36Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"identified\",\"updated_at\":\"2026-10-06T23:14:36Z\"}]},{\"id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"name\":\"Delays processing formula attribute invalidations\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T16:32:21Z\",\"updated_at\":\"2026-10-07T09:50:08Z\",\"resolved_at\":\"2026-10-07T09:50:08Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4AWADXD12WKBKHJWX2X23HX\",\"body\":\"The issue causing delays to formula updates has now been resolved, and the backlog has been fully processed."
+     ]
+    },
+    {
+     "title": "Attio Delays processing bulk record deletions — Oct 2026 | IsDown",
+     "url": "https://isdown.app/status/attio/incidents/666211-delays-processing-bulk-record-deletions",
+     "excerpts": [
+      "Resolved Minor",
+      "October 06, 2026 - Started 30 days ago \\- Lasted 5 days"
      ]
     }
    ],
-   "reasoning": "These statements directly establish the engineering demands. Treating them as a challenge involves synthesis, and the answer explicitly avoids claiming an outage.",
-   "confidence": "medium"
+   "reasoning": "The official record supplies the October 6 start and October 12 resolution; the incident page also identifies the issue as resolved. It is not presented as an active outage.",
+   "confidence": "high"
   },
   {
    "field": "challenges.1",
    "citations": [
     {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
+     "title": "status.attio.com",
+     "url": "https://status.attio.com/api/v2/incidents.json",
      "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25 Changelog (August 25, 2026) Copy link to this entry",
-      "Catch any emails that didn’t send. A new Failed tab in Emails surfaces manually written emails that failed after every retry, with clearer feedback when a mailbox disconnects."
+      "{\"page\":{\"id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"name\":\"Attio\",\"url\":\"https://status.attio.com/\",\"updated_at\":\"2026-10-12T08:58:50Z\"},\"incidents\":[{\"id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"name\":\"Delays processing bulk record deletions\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T23:14:36Z\",\"updated_at\":\"2026-10-12T08:58:50Z\",\"resolved_at\":\"2026-10-12T08:58:50Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4QNC2X6FXQ5JHPZPG2P08W4\",\"body\":\"The issue has now been resolved.\\n\\nWe’re sorry for any inconvenience caused.\",\"created_at\":\"2026-10-12T08:58:50Z\",\"display_at\":\"2026-10-12T08:58:50Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"resolved\",\"updated_at\":\"2026-10-12T08:58:50Z\"},{\"id\":\"01M49QYQNV10SC7VY8PY01941E\",\"body\":\"An issue has been been identified. \\n\\nWe have identified the root cause and our team is working to resolve the issue as quickly as possible.\",\"created_at\":\"2026-10-06T23:14:36Z\",\"display_at\":\"2026-10-06T23:14:36Z\",\"incident_id\":\"01M49QYQNVQSC5NRWZMCWV1B0W\",\"status\":\"identified\",\"updated_at\":\"2026-10-06T23:14:36Z\"}]},{\"id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"name\":\"Delays processing formula attribute invalidations\",\"status\":\"resolved\",\"created_at\":\"2026-10-06T16:32:21Z\",\"updated_at\":\"2026-10-07T09:50:08Z\",\"resolved_at\":\"2026-10-07T09:50:08Z\",\"impact\":\"minor\",\"page_id\":\"01HHYYB6Q83W5764RVB4FXMHBF\",\"incident_updates\":[{\"id\":\"01M4AWADXD12WKBKHJWX2X23HX\",\"body\":\"The issue causing delays to formula updates has now been resolved, and the backlog has been fully processed.",
+      "We're sorry for any inconvenience caused.\",\"created_at\":\"2026-10-07T09:50:08Z\",\"display_at\":\"2026-10-07T09:50:08Z\",\"incident_id\":\"01M490Y60NW0V68FH5NJE4BKRN\",\"status\":\"resolved\",\"updated_at\":\"2026-10-07T09:50:08Z\"},{\"id\":\"01M49MFA8NZ964KHWWR3J2R4PC\",\"body\":\"A fix has been applied and formula updates are processing normally again."
      ]
     }
    ],
-   "reasoning": "The release explicitly describes failures after all retries and feedback for disconnected mailboxes. The answer preserves the mitigation and does not infer incident frequency.",
-   "confidence": "medium"
+   "reasoning": "The official incident history documents delayed formula updates, potentially outdated displayed values, and subsequent resolution with the backlog processed.",
+   "confidence": "high"
   },
   {
    "field": "recent_changes.0",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
       "Published Oct '26",
-      "The result is Centaur - our Postgres compatible, horizontally scalable SQL query engine.",
-      "Finally, we have introduced Attio Data Connectors. This innovative new product offering exposes a hosted, global, PostgreSQL wire protocol compatible SQL endpoint at `data.attio.com` . Customers are now able to provision unique credentials for their workspace which allow them to connect agents and tools that already support PostgreSQL directly to Attio.",
-      "Alongside this exciting new form factor for data in Attio, we are also introducing a powerful upgrade to our data model in the form of Interfaces. Interfaces bring the familiar software engineering concept to Attio, allowing users to express a shared set of attributes and configuration between multiple different Objects in our data model."
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta. Together, they build on Attio’s core platform and make the **architecture for agentic revenue** , giving frontier teams the power to scale any revenue motion.",
+      "Attio combines the speed and scale of infrastructure with the context and control of application software, in one architecture built for people and agents."
      ]
     }
    ],
-   "reasoning": "The October article directly announces the query engine, connectors and Interfaces. Month-only dating is preserved.",
+   "reasoning": "The source directly names the beta capabilities and architecture positioning, with only month-level publication precision.",
    "confidence": "high"
   },
   {
    "field": "recent_changes.1",
    "citations": [
     {
-     "title": "2026 | Attio Changelog",
-     "url": "https://attio.com/changelog/2026",
+     "title": "Workflows updates | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/workflows-updates",
      "excerpts": [
-      "[Sep 23 ## Workflow history and agent log Full visibility into every run, down to the agent."
+      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / October 29",
+      "Message a person in Slack from a workflow. The Send message and Send actions blocks now reach a person or a channel, and you can use variables to reach the right person automatically. Search the variable picker. When you add a variable to a block, type to find the one you need instead of scrolling the full list. Broadcast and celebrate to whole teams. The Broadcast message and Celebration blocks now work for teams as well as individuals."
      ]
     }
    ],
-   "reasoning": "The opened 2026 release index dates the workflow-history and agent-log announcement September 23 and states its scope.",
+   "reasoning": "The dated changelog lists direct Slack messaging, variable search, and team-wide actions.",
    "confidence": "high"
   },
   {
    "field": "recent_changes.2",
    "citations": [
     {
-     "title": "App updates | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/app-updates",
+     "title": "Workflow history and agent log | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/workflow-history-and-agent-log",
      "excerpts": [
       "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / September 23",
-      "Put more of your stack to work in workflows with new apps Resend and ClickUp. **Resend** : Fire transactional emails and newsletters straight from Attio. **ClickUp** : Create ClickUp projects and tasks from a workflow the moment something changes. Plus, get the highlights of every call: Aircall now writes AI summaries straight into your notes."
+      "Workflow history shows every step of a run: what it changed and its result. And the new agent log does the same for the agents inside: the tools they called, the records they changed, and the credits they used."
      ]
     }
    ],
-   "reasoning": "The September 23 app announcement explicitly names the integrations and their functions.",
+   "reasoning": "The dated release directly describes workflow history and agent-log visibility.",
    "confidence": "high"
   },
   {
    "field": "recent_changes.3",
    "citations": [
     {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
+     "title": "New Workflows apps | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/new-workflows-apps",
      "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25 Changelog (August 25, 2026) Copy link to this entry",
-      "Dictate to Ask Attio. Dictation is now native, so you can speak your requests to Ask Attio without reaching for an external transcription tool."
+      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25",
+      "**Google Sheets.** Pull data in from a sheet to enrich or route a record, and push records back out to the spreadsheets finance and ops live in.",
+      "**Asana.** Spin up Asana projects and tasks from a workflow, from scratch, or from a template. For example, start a tech-review project the moment a deal reaches a new stage.",
+      "**Hunter.** Find and verify work emails from a name, LinkedIn URL, or domain, without leaving Attio. And you can now find and install apps without leaving the builder: search the App Store and get smart suggestions filtered to the blocks you’re using."
      ]
     }
    ],
-   "reasoning": "The August 25 changelog explicitly announces native dictation and the removal of the external transcription dependency.",
+   "reasoning": "The August release names the integrations and the new in-builder app installation experience.",
    "confidence": "high"
   },
   {
    "field": "priorities.0",
    "citations": [
     {
-     "title": "A new type of user requires a new type of architecture",
-     "url": "https://attio.com/engineering/blog/building-attio-s-architecture",
+     "title": "Introducing the architecture for agentic revenue.",
+     "url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue",
      "excerpts": [
       "Published Oct '26",
-      "Known internally as **Project Centaur** , this update brings the unprecedented connectivity and scale that was previously reserved for infrastructure like Data Warehouses directly into the CRM. Centaur unlocks full PostgreSQL compatible SQL support for every Attio workspace with no extra steps.",
-      "Finally, we have introduced Attio Data Connectors. This innovative new product offering exposes a hosted, global, PostgreSQL wire protocol compatible SQL endpoint at `data.attio.com` . Customers are now able to provision unique credentials for their workspace which allow them to connect agents and tools that already support PostgreSQL directly to Attio."
+      "We’re launching four new capabilities: SQL Engine, Data Connectors, Agent Scale, and Activities, in beta.",
+      "Attio combines the speed and scale of infrastructure with the context and control of application software, in one architecture built for people and agents.",
+      "**Context.** Every customer signal is captured in a shared context layer that stays current and grows richer with each interaction."
      ]
     }
    ],
-   "reasoning": "The announced infrastructure investment supports this priority; the priority label is a synthesis rather than a quoted strategic ranking.",
+   "reasoning": "The infrastructure priority synthesizes the explicitly announced beta and shared-context strategy.",
    "confidence": "medium"
   },
   {
    "field": "priorities.1",
    "citations": [
     {
-     "title": "2026 | Attio Changelog",
-     "url": "https://attio.com/changelog/2026",
+     "title": "Workflows updates | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/workflows-updates",
      "excerpts": [
-      "[Sep 23 ## Workflow history and agent log Full visibility into every run, down to the agent."
+      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / October 29",
+      "Put more of your process on autopilot. Message a person in Slack from a workflow. The Send message and Send actions blocks now reach a person or a channel, and you can use variables to reach the right person automatically. Search the variable picker. When you add a variable to a block, type to find the one you need instead of scrolling the full list. Broadcast and celebrate to whole teams. The Broadcast message and Celebration blocks now work for teams as well as individuals."
      ]
     }
    ],
-   "reasoning": "Shipping run-level and agent-level visibility is direct evidence of investment in observability.",
+   "reasoning": "The release explicitly states the automation direction and supplies the concrete workflow improvements.",
    "confidence": "medium"
   },
   {
    "field": "priorities.2",
    "citations": [
     {
-     "title": "App updates | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/app-updates",
+     "title": "New Workflows apps | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/new-workflows-apps",
      "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / September 23",
-      "Put more of your stack to work in workflows with new apps Resend and ClickUp. **Resend** : Fire transactional emails and newsletters straight from Attio. **ClickUp** : Create ClickUp projects and tasks from a workflow the moment something changes. Plus, get the highlights of every call: Aircall now writes AI summaries straight into your notes."
+      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25",
+      "Connect more of your stack.",
+      "**Google Sheets.** Pull data in from a sheet to enrich or route a record, and push records back out to the spreadsheets finance and ops live in.",
+      "**Asana.** Spin up Asana projects and tasks from a workflow, from scratch, or from a template. For example, start a tech-review project the moment a deal reaches a new stage.",
+      "**Hunter.** Find and verify work emails from a name, LinkedIn URL, or domain, without leaving Attio. And you can now find and install apps without leaving the builder: search the App Store and get smart suggestions filtered to the blocks you’re using."
      ]
     }
    ],
-   "reasoning": "The new applications and Aircall capability demonstrate ongoing integration investment.",
+   "reasoning": "The integration launches and in-builder installation support an ecosystem-connectivity investment priority; reduced friction is a synthesis of those capabilities.",
    "confidence": "medium"
   },
   {
    "field": "priorities.3",
    "citations": [
     {
-     "title": "Changelog (August 25, 2026) | Attio Changelog",
-     "url": "https://attio.com/changelog/2026/changelog-august-25-2026",
+     "title": "Changelog (October 29, 2026) | Attio Changelog",
+     "url": "https://attio.com/changelog/2026/changelog-october-29-2026",
      "excerpts": [
-      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / August 25 Changelog (August 25, 2026) Copy link to this entry",
-      "Dictate to Ask Attio. Dictation is now native, so you can speak your requests to Ask Attio without reaching for an external transcription tool."
+      "[Changelog](https://attio.com/changelog) / [2026](https://attio.com/changelog/2026) / October 29 Changelog (October 29, 2026) Copy link to this entry",
+      "Turn off call recording yourself. Workspace admins can disable the call recorder from settings. Email protection you can see and control. Admins can see which domains are auto-protected and opt out, and the same blocklist rules now apply everywhere emails appear."
      ]
     }
    ],
-   "reasoning": "Native dictation is an observable usability investment. Describing it as reducing friction is a limited synthesis of the stated removal of an external tool requirement.",
+   "reasoning": "The dated release documents administrator controls over recording and protected email data, supporting the summarized governance priority.",
    "confidence": "medium"
   }
  ],
- "sub_use_case": "gtm_meeting_prep_research",
- "input": "Prepare me for a meeting with Attio (attio.com)",
- "input_n": 0
+ "cost_usd": 0.1,
+ "cost_basis": "list"
 }

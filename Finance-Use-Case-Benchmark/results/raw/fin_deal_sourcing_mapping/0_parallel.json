@@ -1,0 +1,67 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find founder-owned US commercial HVAC service companies in Texas with 50-300 employees and no institutional investors",
+ "input_n": 0,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 843,
+ "run_id": "trun_426151edc8bb4aa99a81aae5f8ffcf52",
+ "output": {
+  "search_notes": "As_of: 2026-11-09. No company could be verified against every required criterion. The empty list is an evidence-limited result—not a conclusion that no qualifying companies exist. Founder-led, family-owned and unfunded descriptions were not treated as proof of current founder ownership without institutional investors.\n\nKey screening outcomes:\n• CFI Mechanical: its current website identifies Chuck Fell as founder, but the explicit ownership statement located was published in 2015. Its funding profile reports no funding raised; that does not establish its current shareholders. Missing_fields preventing inclusion: current founder equity ownership; confirmed absence of institutional investors. Sources: https://cfimechanical.com/about-us/our-team ; https://builtworlds.com/news/bw-sessions-cfi-mechanical ; https://tracxn.com/d/companies/cfi-mechanical/__TOxugZMmqtEQLGE--TaEyxrgg-_SrpK1R8p9neelulA\n• Prodigy Commercial HVAC: excluded because its financing status is listed as Private Equity-Backed. Source: https://pitchbook.com/profiles/company/626877-28\n• Mako Industries: excluded because its own undated company page reports over 500 employees, exceeding the 300-employee ceiling; page accessed as_of 2026-11-09. Source: https://makoind.com/about-us-2\n• SI Mechanical: excluded following its acquisition by PremiStar. Source: https://premistar.com/blog/2024/06/11/premistar-acquires-si-mechanical-expanding-hvac-and-plumbing-services-footprint-in-austin-tx\n\nNo ranking or per-company enrichment records are returned because no company cleared the complete screen.",
+  "companies": []
+ },
+ "basis": [
+  {
+   "field": "search_notes",
+   "citations": [
+    {
+     "title": "Our Team for All Your Mechanical Needs | CFI Mechanical",
+     "url": "https://cfimechanical.com/about-us/our-team",
+     "excerpts": [
+      "As the founder of CFI Mechanical, Chuck recognizes the importance of surrounding himself with the right people."
+     ]
+    },
+    {
+     "title": "BW Sessions: CFI Mechanical - BuiltWorlds",
+     "url": "https://builtworlds.com/news/bw-sessions-cfi-mechanical",
+     "excerpts": [
+      "\\- Posted on November 2, 2015 November 2, 2015",
+      "_**David Kunkel (DK**_ _**)** :_ Our owner, **Chuck Fell** , was working for another mechanical firm."
+     ]
+    },
+    {
+     "title": "CFI Mechanical - 2026 Company Profile, Team & Competitors - Tracxn",
+     "url": "https://tracxn.com/d/companies/cfi-mechanical/__TOxugZMmqtEQLGE--TaEyxrgg-_SrpK1R8p9neelulA",
+     "excerpts": [
+      "CFI Mechanical has not raised any funding yet."
+     ]
+    },
+    {
+     "title": "Industrial and Commercial Service Provider Overview - Mako Industries",
+     "url": "https://makoind.com/about-us-2",
+     "excerpts": [
+      "Today, as Mako Industries, we’ve grown into an international leader in commercial and industrial services, boasting over 500 employees and a rock-solid reputation for honoring that original commitment."
+     ]
+    },
+    {
+     "title": "PremiStar Expands in Central Texas with SI Mechanical Acquisition - PremiStar",
+     "url": "https://premistar.com/blog/2024/06/11/premistar-acquires-si-mechanical-expanding-hvac-and-plumbing-services-footprint-in-austin-tx",
+     "excerpts": [
+      "PremiStar Acquires SI Mechanical, Expanding HVAC and Plumbing Services Footprint in Austin, TX"
+     ]
+    }
+   ],
+   "reasoning": "CFI's current website establishes founder identity, while the explicit owner statement is historical. Its reported lack of funding does not independently establish current equity ownership or exclude institutional shareholders. Prodigy's profile explicitly identifies private-equity backing. Mako's own page reports headcount above the permitted ceiling, although the statement is undated. PremiStar's announcement establishes SI Mechanical's acquisition. These findings support the stated exclusions and unresolved ownership fields, but not a universal claim that no qualifying companies exist.",
+   "confidence": "medium"
+  },
+  {
+   "field": "companies",
+   "citations": [],
+   "reasoning": "The list is intentionally empty because the research did not establish every hard criterion for any candidate. This is a conservative inclusion decision under the user's verification requirement, not an assertion of exhaustive market absence. No individual company records require enrichment or ranking.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
+}

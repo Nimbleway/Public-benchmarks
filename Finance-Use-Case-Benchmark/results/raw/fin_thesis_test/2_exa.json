@@ -1,0 +1,120 @@
+{
+ "arm": "exa",
+ "sub_use_case": "fin_thesis_test",
+ "input": "Test the thesis: GLP-1 drug adoption is a lasting volume headwind for Mondelez",
+ "input_n": 2,
+ "tier": "high",
+ "status": "completed",
+ "seconds": 177,
+ "run_id": "agent_run_462a3afc99a8464eaa9f9394662eba0b",
+ "output": {
+  "thesis": "GLP-1 drug adoption is a lasting volume headwind for Mondelez International.",
+  "verdict": "Partly supported as of November 10, 2026: actual purchase evidence shows lower snack demand and persistence during treatment, while rising adoption makes an ongoing headwind plausible. A lasting, material Mondelez-wide physical-volume drag is not established: discontinuation and spending recovery weaken permanence, latest volume/mix is growing, and management’s disclosed long-run scenario implies a modest cumulative effect rather than an annual decline.",
+  "evidence_for": [
+   {
+    "date": "2025-12-18",
+    "claim": "F1 — Actual purchases weaken in categories relevant to Mondelez: using U.S. transactions from July 2022–September 2024, the published study estimates that, within six months of GLP-1 adoption, household spending fell 6.5% on cookies, 8.8% on sweet bakery and 10.1% on chips/savory snacks. These are category spending changes, not measured Mondelez unit-volume declines.",
+    "strength": "strong",
+    "source_url": "https://doi.org/10.1177/00222437251412834"
+   },
+   {
+    "date": "2025-12-18",
+    "claim": "F2 — The mechanism is not merely trading down: in the same July 2022–September 2024 transaction study, grocery item counts followed a nearly identical pattern to spending, indicating lower quantities rather than substitution toward cheaper items. Grocery spending remained below baseline during months seven through twelve of use, although the effect attenuated; this supports persistence during treatment, not permanence after stopping.",
+    "strength": "strong",
+    "source_url": "https://doi.org/10.1177/00222437251412834"
+   },
+   {
+    "date": "2026-09-08",
+    "claim": "F3 — Adoption is expanding: Gallup reports 11% of U.S. adults currently using GLP-1 medications for weight loss as of its May 28–June 5, 2026 survey, versus 3% in 2024. The page was revised September 8, 2026; these are self-reported weight-loss-use estimates, not all-indication prescription counts or Mondelez-customer penetration.",
+    "strength": "moderate",
+    "source_url": "https://news.gallup.com/poll/712157/glp-usage-reaches-new-high.aspx"
+   },
+   {
+    "date": "2026-02-03",
+    "claim": "F4 — Management acknowledges a negative long-run volume effect: as of the February 3, 2026 earnings call, Mondelez modeled a 0.5%–1.5% effect on overall volumes over ten years under a 10%–20% U.S. adoption scenario. This supports the direction of a headwind, but is a management scenario, not an observed loss and not an annual decline.",
+    "strength": "moderate",
+    "source_url": "https://www.fool.com/earnings/call-transcripts/2026/02/03/mondelez-mdlz-q4-2025-earnings-call-transcript/"
+   }
+  ],
+  "missing_fields": [
+   "Observed GLP-1-attributable Mondelez physical-volume loss: null; no verified company-specific causal estimate in the opened sources.",
+   "Independently validated multi-year Mondelez volume impact: null; the cited purchase evidence does not establish it.",
+   "Complete assumptions and geographic/category bridge behind management’s long-run GLP-1 volume scenario: null; not supplied in the cited discussion."
+  ],
+  "counterarguments": [
+   "Against a material company-wide decline: A1–A3 show improving global volume/mix, non-U.S. growth and management’s small modeled cumulative effect. F1–F3 establish category pressure and adoption, not its size in Mondelez’s global sales base. Positive reported growth does not, however, disprove a smaller headwind relative to a no-GLP-1 counterfactual.",
+   "Against permanence: A4 and F2 distinguish sustained suppression while taking medication from permanent behavior change. High discontinuation and spending recovery weaken a permanent per-user consumption-loss assumption; an expanding continuously treated population could nevertheless sustain an aggregate headwind.",
+   "Against a mechanical translation from snack spending to Mondelez volume: A5 shows the causal and measurement gaps, while A6 identifies potential share and portfolio offsets. F1’s category spending declines must not be applied directly to Mondelez units or annualized."
+  ],
+  "evidence_against": [
+   {
+    "date": "2026-10-29",
+    "claim": "A1 — Latest aggregate performance does not show structural contraction: for Q3 2026, reported October 29, Mondelez delivered organic net revenue growth of 2.1% and volume/mix growth of 1.8%. Positive growth can coexist with a counterfactual GLP-1 drag, but the observed company-wide trend is inconsistent with treating GLP-1 as an already dominant volume problem; volume/mix is not pure physical volume.",
+    "strength": "strong",
+    "source_url": "https://www.mondelezinternational.com/news/2026_q3_earnings/"
+   },
+   {
+    "date": "2026-10-30",
+    "claim": "A2 — Geographic offsets and stabilization matter: in Q3 2026, North America volume/mix was flat, Europe grew 1.6 percentage points and AMEA grew 5.5 percentage points. North American organic revenue growth of 1.6% was pricing-led. As of the October 29 earnings call, management reaffirmed FY2026 organic revenue growth guidance of at least 2%; that is revenue guidance, not a volume forecast.",
+    "strength": "moderate",
+    "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/30/mondelez-mdlz-q3-2026-earnings-call-transcript/"
+   },
+   {
+    "date": "2026-02-03",
+    "claim": "A3 — Management disputes materiality: on February 3, 2026, management said it did not see a short-term business impact and considered its modeled 0.5%–1.5% overall-volume effect over ten years almost negligible. This is a direct company-specific rebuttal to a material secular-decline thesis, although its assumptions and independent validation were not provided in the cited discussion.",
+    "strength": "moderate",
+    "source_url": "https://www.fool.com/earnings/call-transcripts/2026/02/03/mondelez-mdlz-q4-2025-earnings-call-transcript/"
+   },
+   {
+    "date": "2025-01-31",
+    "claim": "A4 — Continuous treatment cannot be assumed: a U.S. cohort of GLP-1 initiators during 2018–2023, published January 31, 2025, found one-year discontinuation of 64.8% among patients without type 2 diabetes and 46.5% among those with diabetes. In the separate purchasing study using July 2022–September 2024 data, spending moved back toward baseline after discontinuation, with uncertainty about whether recovery was complete. Older treatment cohorts may not represent persistence with newer access and treatment options.",
+    "strength": "moderate",
+    "source_url": "https://doi.org/10.1001/jamanetworkopen.2024.57349"
+   },
+   {
+    "date": "2025-12-18",
+    "claim": "A5 — The category evidence does not establish a lasting Mondelez-specific loss: the purchase study, using July 2022–September 2024 data, could not separate drug effects from concurrent lifestyle changes or unobserved selection. Its category outcomes principally measure household spending, while its quantity robustness test covers total grocery item counts; neither directly measures Mondelez branded product weight or units.",
+    "strength": "strong",
+    "source_url": "https://doi.org/10.1177/00222437251412834"
+   },
+   {
+    "date": "2026-10-30",
+    "claim": "A6 — The business can adapt rather than passively lose demand: on the October 29, 2026 call, management attributed improving U.S. momentum to promotions, advertising and innovations including Oreo Zero, Ritz Minis and Clif High Protein, while emphasizing selective pricing to protect volume/mix. This is evidence of a commercial response, not proof these initiatives specifically offset GLP-1 consumption losses.",
+    "strength": "moderate",
+    "source_url": "https://www.fool.com/earnings/call-transcripts/2026/10/30/mondelez-mdlz-q3-2026-earnings-call-transcript/"
+   }
+  ],
+  "key_uncertainties": [
+   "Mondelez-specific causal physical-volume impact is unknown. Resolve with longitudinal brand/SKU-level unit and weight purchases linked to treatment initiation, dosage and discontinuation, matched to nonusers and controlling for prices, promotions, income, distribution and competing products.",
+   "Multi-year durability is unknown. Resolve with longer follow-up of continuously treated, discontinued and restarting users, including whether cookie and chocolate purchases recover after stopping; the cited purchasing study establishes attenuation and rebound rather than permanent loss.",
+   "The global exposure bridge is unknown: adoption among Mondelez customers, category-specific treatment effects and geographic adoption rates are not established by the U.S. household evidence. Resolve with comparable customer-linked panels across its major markets and a disclosed company sensitivity model.",
+   "The newer treatment environment may change persistence and penetration. Resolve with current longitudinal prescription/refill and coverage data; do not combine Gallup’s weight-loss-use measure with all-indication estimates as if the definitions were identical.",
+   "Commercial offsets are unquantified. Resolve with incremental physical volume and repeat purchases from smaller packs, protein products and reformulation, separated from promotional switching, market-share transfers and mix effects."
+  ],
+  "what_would_change_the_view": [
+   "Strengthen the thesis: matched Mondelez-brand purchasing data show sustained reductions in physical units or weight among continuing GLP-1 users beyond the first year, after controlling for pricing, promotions and other behavioral changes.",
+   "Strengthen the thesis: Mondelez discloses an independently supported GLP-1-specific volume drag or raises its previously stated long-run overall-volume sensitivity, alongside evidence of rising continuously treated customer penetration.",
+   "Weaken the thesis: longer-duration brand-level panels show little persistent reduction in Mondelez physical consumption, or show that post-discontinuation recovery and new-user growth broadly offset one another.",
+   "Weaken the investment significance: company disclosures demonstrate that product innovation, geographic expansion and share gains sustainably offset treatment-linked losses without relying on progressively deeper promotional spending. Aggregate volume/mix growth alone would not establish this."
+  ]
+ },
+ "cost_usd": 0.5,
+ "cost_basis": "billed",
+ "usage": {
+  "agentComputeUnits": 2,
+  "searches": 60,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "data_sources": [
+  "financial_datasets"
+ ],
+ "cost_breakdown": {
+  "total": 0.5,
+  "agentCompute": 0.2,
+  "search": 0.3,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "error": null
+}

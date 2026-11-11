@@ -1,0 +1,160 @@
+{
+ "arm": "gpt",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Attio (attio.com)",
+ "input_n": 0,
+ "tier": "medium",
+ "model": "gpt-6.1-sol",
+ "status": "completed",
+ "seconds": 54,
+ "run_id": "resp_020190fd7eb0829b006af3446c8c5887d2ac07ece729d186d8",
+ "output": {
+  "company": "Attio",
+  "what_they_do": {
+   "value": "Attio is the platform that builds pipeline, advances deals, and grows accounts around the clock.",
+   "source_url": "https://attio.com/",
+   "as_of": "2026-11-10"
+  },
+  "priorities": [
+   {
+    "priority": "Build infrastructure for revenue teams and autonomous agents.",
+    "evidence": "Launched SQL Engine, Data Connectors, Agent Scale, and Activities in beta. SQL supports analysis and workflow actions; a Postgres-compatible endpoint connects live CRM data to external analytics tools.",
+    "date": "2026-10",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+   },
+   {
+    "priority": "Expand workflow automation and make agent actions inspectable.",
+    "evidence": "Added workflow history and agent logs showing tool calls, record changes, and credit consumption in September, followed by direct Slack messaging and team-wide workflow notifications in October.",
+    "date": "2026-10-29",
+    "source_url": "https://attio.com/changelog/2026/workflows-updates"
+   },
+   {
+    "priority": "Grow the developer and integration ecosystem.",
+    "evidence": "Shipped a stable, versioned App SDK alongside API and MCP additions for call recordings, note updates, record merging, migration history, sequence unsubscribes, and list creation.",
+    "date": "2026-08-25",
+    "source_url": "https://attio.com/changelog/2026/updates-to-developer-platform"
+   },
+   {
+    "priority": "Scale signal-driven acquisition, onboarding, and customer expansion.",
+    "evidence": "Described an operating model that routes prospects using fit and intent, assigns onboarding based on contract and growth signals, and uses adoption data, churn alerts, and renewal timing to guide customer success.",
+    "date": "2026-10",
+    "source_url": "https://attio.com/blog/the-system-that-runs-our-gtm"
+   }
+  ],
+  "challenges": [
+   {
+    "challenge": "Maintaining permissions and data integrity as autonomous agents write to the CRM.",
+    "evidence": "Attio identifies agent write safety and concurrent edits as unresolved engineering problems; row-level permissions are a major roadmap item. This is an acknowledged development challenge, not evidence of a reported breach.",
+    "date": "2026-10",
+    "source_url": "https://attio.com/blog/five-unsolved-problems-worth-building-a-career-on"
+   },
+   {
+    "challenge": "Determining pricing when agent work does not track human seat counts.",
+    "evidence": "Attio says seat pricing alone no longer fits and discusses unresolved trade-offs among platform fees, seats, credits, outcome pricing, and spending controls.",
+    "date": "2026-10",
+    "source_url": "https://attio.com/blog/five-unsolved-problems-worth-building-a-career-on"
+   },
+   {
+    "challenge": "Demonstrating value before prospects have configured the product and supplied their data.",
+    "evidence": "Attio describes category education and technical demonstrations as GTM challenges; Solutions and Sales teams are building SDK apps live with customers.",
+    "date": "2026-10",
+    "source_url": "https://attio.com/blog/five-unsolved-problems-worth-building-a-career-on"
+   }
+  ],
+  "recent_changes": [
+   {
+    "date": "2026-10",
+    "type": "product_launch",
+    "headline": "Introduced its architecture for agentic revenue.",
+    "summary": "Announced SQL Engine, Data Connectors, Agent Scale, and Activities in beta. SQL-powered questions are available across plans; SQL through API, MCP, and Workflows, plus Data Connectors, are Enterprise capabilities.",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+   },
+   {
+    "date": "2026-10-29",
+    "type": "product_update",
+    "headline": "Expanded workflow messaging and team coordination.",
+    "summary": "Workflows can message individuals in Slack using variables, search the variable picker, and broadcast or celebrate with whole teams.",
+    "source_url": "https://attio.com/changelog/2026/workflows-updates"
+   },
+   {
+    "date": "2026-09-23",
+    "type": "product_launch",
+    "headline": "Released workflow history and agent logs.",
+    "summary": "Added visibility into workflow steps and results, plus agent tool calls, record changes, and credit usage.",
+    "source_url": "https://attio.com/changelog/2026/workflow-history-and-agent-log"
+   },
+   {
+    "date": "2026-08-25",
+    "type": "developer_platform_update",
+    "headline": "Released a stable App SDK and expanded API/MCP capabilities.",
+    "summary": "Added capabilities for importing calls, editing notes, merging records, preserving migration history, managing sequence unsubscribes, and creating lists through MCP.",
+    "source_url": "https://attio.com/changelog/2026/updates-to-developer-platform"
+   }
+  ],
+  "key_people": [
+   {
+    "name": "Nicolas Sharp",
+    "title": "CEO & Co-founder",
+    "recent": "In October 2026, introduced Attio's hybrid architecture for people and agents, emphasizing shared context, orchestration, and ecosystem connectivity.",
+    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+   },
+   {
+    "name": "Kyle Doherty",
+    "title": "Rev Ops Lead",
+    "recent": "Co-authored the October 2026 breakdown of Attio's own lead routing, customer lifecycle processes, and connected GTM stack.",
+    "source_url": "https://attio.com/blog/the-system-that-runs-our-gtm"
+   },
+   {
+    "name": "Zev Lebowitz",
+    "title": "Head of Solutions",
+    "recent": "Co-authored the October 2026 explanation of how Attio centralizes customer context and supports onboarding, adoption, and expansion.",
+    "source_url": "https://attio.com/blog/the-system-that-runs-our-gtm"
+   },
+   {
+    "name": "Don Fogarty",
+    "title": "Head of Talent",
+    "recent": "In October 2026, outlined unresolved engineering, pricing, GTM, design, and hiring problems as areas where Attio is recruiting builders.",
+    "source_url": "https://attio.com/blog/five-unsolved-problems-worth-building-a-career-on"
+   },
+   {
+    "name": "Jamie Davies",
+    "title": "Engineering Lead",
+    "recent": "In March 2026, explained Ask Attio's runtime permissions, automatic context, and multi-provider failover architecture.",
+    "source_url": "https://attio.com/engineering/blog/ask-attio-a-technical-look-at-our-new-agent"
+   }
+  ],
+  "talking_points": [
+   "Your October roadmap highlights row-level permissions and agent write safety. Where would outside help be useful without duplicating core platform work?",
+   "As agents take on more work, how are you evaluating credit controls and pricing predictability for customers?",
+   "Your team is building SDK apps live in sales calls. What most often slows the path from a compelling demo to an adopted customer workflow?"
+  ],
+  "missing_fields": []
+ },
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "raw_text": null,
+ "cost_usd": 0.1546,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "token_cost_usd": 0.1046,
+ "usage": {
+  "input_tokens": 45826,
+  "input_tokens_details": {
+   "cache_write_tokens": 19,
+   "cached_tokens": 5196
+  },
+  "output_tokens": 2284,
+  "output_tokens_details": {
+   "reasoning_tokens": 657
+  },
+  "total_tokens": 48110
+ },
+ "search_calls": 5,
+ "search_actions": {
+  "search": 1,
+  "open_page": 4
+ },
+ "error": null
+}

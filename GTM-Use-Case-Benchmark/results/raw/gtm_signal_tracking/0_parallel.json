@@ -1,62 +1,100 @@
 {
  "arm": "parallel",
+ "sub_use_case": "gtm_signal_tracking",
+ "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
+ "input_n": 0,
  "tier": "pro",
  "status": "completed",
- "seconds": 107,
- "run_id": "trun_2dc2ba2a5ac846169064ed0be63b2d94",
+ "seconds": 215,
+ "run_id": "trun_2dc2ba2a5ac8461689da132cfe0bc782",
  "output": {
   "events": [
    {
     "type": "product_launch",
+    "date": "2026-11-05",
+    "headline": "Mercury launches Agent Controls",
+    "source_url": "https://mercury.com/blog/introducing-mercury-agent-controls",
+    "summary": "Introduced permissions, approvals, spending limits and activity tracking for connected AI agents, with the ability to disconnect agents."
+   },
+   {
+    "type": "major_product_release",
+    "date": "2026-11-04",
+    "headline": "Mercury reinvents Treasury",
+    "source_url": "https://mercury.com/blog/how-we-reinvented-mercury-treasury",
+    "summary": "Redesigned Treasury around business spending, combining personalized investment recommendations with U.S. Treasury bond ladders and adapting portfolios."
+   },
+   {
+    "type": "product_launch",
     "date": "2026-10-20",
-    "headline": "Mercury launches AI-native Payroll",
-    "source_url": "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll",
-    "summary": "Launched payroll, benefits and tax-compliance tools for eligible U.S. customers; pricing announced on 2026-10-20 is $0 through 2026-12-31, then $100/month plus $50 per person paid that month from 2027-01-01."
+    "headline": "Introducing Mercury Payroll",
+    "source_url": "https://mercury.com/blog/introducing-mercury-payroll",
+    "summary": "Launched integrated employee and contractor payroll, benefits, retirement plans and payroll tax/compliance administration."
    },
    {
-    "type": "product_release",
+    "type": "major_product_release",
     "date": "2026-10-15",
-    "headline": "ChatGPT and Claude can take actions on Mercury accounts",
+    "headline": "Take action on your Mercury account from ChatGPT and Claude",
     "source_url": "https://mercury.com/releases",
-    "summary": "Customers can ask ChatGPT or Claude to move money, pay recipients and categorize transactions, with approval required before money moves."
-   },
-   {
-    "type": "product_update",
-    "date": "2026-10-14",
-    "headline": "Priority support added for Plus and Pro customers",
-    "source_url": "https://mercury.com/releases",
-    "summary": "Plus and Pro subscribers gain faster, priority support; all customers retain round-the-clock support."
+    "summary": "Enabled customers to initiate money movements, pay recipients and categorize transactions from ChatGPT or Claude, with approval required."
    },
    {
     "type": "product_release",
     "date": "2026-10-14",
-    "headline": "Linked Mercury accounts gain direct transfers and automation",
+    "headline": "All your accounts, connected",
     "source_url": "https://mercury.com/releases",
-    "summary": "Customers can connect multiple Mercury accounts, transfer directly between them, automate linked-account transfers and schedule recurring payments to external bank accounts."
+    "summary": "Enabled linking multiple Mercury accounts for direct transfers and scheduled auto-transfers."
    },
    {
     "type": "product_release",
     "date": "2026-09-29",
-    "headline": "Mercury API adds real-time payments",
+    "headline": "Send real-time payments with the Mercury API",
     "source_url": "https://mercury.com/releases",
-    "summary": "The API now supports payments arriving in seconds, including nights, weekends and holidays, for Mercury Business and Personal accounts provided through Column, N.A."
+    "summary": "Added API-based real-time payments, including nights, weekends and holidays, for eligible Business and Personal accounts provided through Column, N.A."
+   },
+   {
+    "type": "product_release",
+    "date": "2026-09-28",
+    "headline": "Authorize wire drawdowns for payroll",
+    "source_url": "https://mercury.com/releases",
+    "summary": "Enabled payroll-provider wire drawdowns from Mercury accounts provided through both Column, N.A. and Choice Financial Group."
    }
   ],
   "since": "2026-09-21",
   "company": "Mercury (mercury.com)",
   "checked_sources": [
    "https://mercury.com/releases",
+   "https://mercury.com/releases?page=1",
+   "https://mercury.com/blog/topics/company-news",
    "https://mercury.com/blog",
+   "https://mercury.com/blog/introducing-mercury-agent-controls",
+   "https://mercury.com/blog/how-we-reinvented-mercury-treasury",
    "https://mercury.com/blog/introducing-mercury-payroll",
-   "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll"
+   "https://mercury.com/blog/introducing-mercury-books",
+   "https://mercury.com/blog/introducing-mercury-command",
+   "https://mercury.com/blog/series-d-announcement",
+   "https://mercury.com/blog/mercury-acquires-centralhq",
+   "https://mercury.com/blog/introducing-new-cfo-cco",
+   "https://www.bankingdive.com/news/chartering-must-be-top-priority-fintechs-mercury-bank-jon-auxier-sofi/831810"
   ]
  },
- "cost_usd": 0.1,
- "cost_basis": "list",
  "basis": [
   {
    "field": "events",
    "citations": [
+    {
+     "title": "Agentic banking is here to stay. Here’s how Mercury keeps you in control.",
+     "url": "https://mercury.com/blog/introducing-mercury-agent-controls",
+     "excerpts": [
+      "November 5, 2026"
+     ]
+    },
+    {
+     "title": "How We Reinvented Mercury Treasury | Mercury",
+     "url": "https://mercury.com/blog/how-we-reinvented-mercury-treasury",
+     "excerpts": [
+      "November 4, 2026"
+     ]
+    },
     {
      "title": "Introducing Mercury Payroll",
      "url": "https://mercury.com/blog/introducing-mercury-payroll",
@@ -65,49 +103,37 @@
      ]
     },
     {
-     "title": "Mercury Launches AI-Native Payroll",
-     "url": "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll",
-     "excerpts": [
-      "Mercury Payroll lets founders pay employees and contractors and offer benefits from the same account they already use to manage their money, with AI-powered capabilities through Mercury Command\\*\\*\\* that help simplify payroll tasks and reduce administrative work.",
-      "Promotional pricing of $0 applies through December 31, 2026. Beginning January 1, 2027, standard pricing of $100 per month for the platform, plus $50 per month for each person paid that month, will apply."
-     ]
-    },
-    {
      "title": "Mercury Release Notes | Latest Features & Product Updates",
      "url": "https://mercury.com/releases",
      "excerpts": [
-      "Oct 15, 2026",
-      "Take action on your Mercury account from ChatGPT and Claude You can now ask ChatGPT or Claude to move money, pay a recipient, or categorize transactions on your Mercury account. Every answer is grounded in your account data and nothing moves until you approve it.",
-      "Oct 14, 2026",
-      "Priority Support now available for Plus and Pro customers Customers on our Plus and Pro subscription plans will now get faster, priority support. All Mercury customers will still have access to 24/7 support.",
-      "All your accounts, connected Multiple Mercury accounts can now be connected to move money between them directly. Transfers between accounts on the same partner bank land in seconds, and auto-transfer rules keep money moving between linked accounts on the schedule you set. Plus, you can now send money to bank accounts outside of Mercury on a recurring basis.",
-      "Sep 29, 2026",
-      "**Send real-time payments with the Mercury API** You can now send real-time payments through the Mercury API. Set _realTimePayment_ as the _paymentMethod_ when you send money, and the funds will arrive in seconds, 24/7/365, including nights, weekends, and holidays.",
-      "Available on Mercury Business and Personal accounts provided through Column, N.A."
+      "Oct 15, 2026 [Business](https://mercury.com/releases?product=business) [Personal](https://mercury.com/releases?product=personal) [API](https://mercury.com/releases?category=API) \\+3 more Business Take action on your Mercury account from ChatGPT and Claude You can now ask ChatGPT or Claude to move money, pay a recipient, or categorize transactions on your Mercury account. Every answer is grounded in your account data and nothing moves until you approve it. Connect Mercury to [ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a17ae803744819187a3079d37479dae?q=mercury) or [Claude](https://claude.ai/directory/mercury) . Already connected? Reconnect once to enable actions. [Learn more Opens in new tab](https://mercury.com/api)",
+      "Oct 14, 2026 [Business](https://mercury.com/releases?product=business) [Personal](https://mercury.com/releases?product=personal) [Automations](https://mercury.com/releases?category=Automations) \\+3 more Business All your accounts, connected Multiple Mercury accounts can now be connected to move money between them directly. Transfers between accounts on the same partner bank land in seconds, and auto-transfer rules keep money moving between linked accounts on the schedule you set. Plus, you can now send money to bank accounts outside of Mercury on a recurring basis. [Link your accounts Opens in new tab](https://app.mercury.com/accounts)",
+      "Sep 29, 2026 [Business](https://mercury.com/releases?product=business) [Personal](https://mercury.com/releases?product=personal) [Payments](https://mercury.com/releases?category=Payments) [API](https://mercury.com/releases?category=API) \\+4 more Business **Send real-time payments with the Mercury API** You can now send real-time payments through the Mercury API. Set _realTimePayment_ as the _paymentMethod_ when you send money, and the funds will arrive in seconds, 24/7/365, including nights, weekends, and holidays. Available on Mercury Business and Personal accounts provided through Column, N.A. [Learn more Opens in new tab](https://docs.mercury.com/reference/createtransaction)",
+      "Sep 28, 2026"
      ]
     }
    ],
-   "reasoning": "The opened Mercury release notes identify five product changes dated strictly after the requested cutoff. The opened payroll announcement supplies the launch date, while the company-issued press release supplies features, eligibility and dated pricing. Older launches and out-of-scope financial milestones are excluded. These sources support the reported events, but do not establish exhaustive coverage of every possible company change.",
+   "reasoning": "Official launch articles and release notes date these seven changes strictly after the requested cutoff and before the research date. Per-event evidence below supports their functionality. Earlier Books, Command, funding, acquisition and leadership announcements were excluded. Materiality involves judgment, particularly for the narrower payment and account-linking releases; the list does not assert that every possible company change was publicly discoverable.",
    "confidence": "medium"
   },
   {
    "field": "since",
    "citations": [],
-   "reasoning": "The cutoff is supplied explicitly in the user's input, not derived from a webpage.",
+   "reasoning": "The cutoff is supplied explicitly in the user's task, rather than derived from an external source.",
    "confidence": "high"
   },
   {
    "field": "company",
    "citations": [
     {
-     "title": "Introducing Mercury Payroll",
-     "url": "https://mercury.com/blog/introducing-mercury-payroll",
+     "title": "Company News | Topics | Mercury",
+     "url": "https://mercury.com/blog/topics/company-news",
      "excerpts": [
-      "Mercury is a fintech company, [not an FDIC-insured bank](https://mercury.com/how-mercury-works)"
+      "Company News Announcements and updates from Mercury."
      ]
     }
    ],
-   "reasoning": "The opened announcement on mercury.com identifies Mercury as the fintech company, matching the exact entity requested.",
+   "reasoning": "The user identifies Mercury at mercury.com; the opened company-news page on that domain identifies its announcements as Mercury's. Namesake manufacturing companies were excluded.",
    "confidence": "high"
   },
   {
@@ -117,85 +143,74 @@
      "title": "Mercury Release Notes | Latest Features & Product Updates",
      "url": "https://mercury.com/releases",
      "excerpts": [
-      "Oct 15, 2026"
+      "Release Notes The latest Mercury product releases and updates."
+     ]
+    },
+    {
+     "title": "Company News | Topics | Mercury",
+     "url": "https://mercury.com/blog/topics/company-news",
+     "excerpts": [
+      "Company News Announcements and updates from Mercury."
      ]
     },
     {
      "title": "Mercury Blog | Insights, Inside Mercury & Meridian ",
      "url": "https://mercury.com/blog",
      "excerpts": [
-      "[## Introducing Mercury Books](https://mercury.com/blog/introducing-mercury-books) Clean books, finally where they belong."
-     ]
-    },
-    {
-     "title": "Introducing Mercury Payroll",
-     "url": "https://mercury.com/blog/introducing-mercury-payroll",
-     "excerpts": [
-      "October 20, 2026"
-     ]
-    },
-    {
-     "title": "Mercury Launches AI-Native Payroll",
-     "url": "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll",
-     "excerpts": [
-      "Promotional pricing of $0 applies through December 31, 2026. Beginning January 1, 2027, standard pricing of $100 per month for the platform, plus $50 per month for each person paid that month, will apply."
+      "The latest Mercury product news."
      ]
     }
    ],
-   "reasoning": "All four listed URLs were opened and read: the release notes, blog index, payroll blog announcement and company-issued payroll press release.",
+   "reasoning": "The list records pages opened and reviewed, including official release notes, launch articles and older corporate announcements checked for eligibility. Per-source entries below identify the corresponding evidence documents.",
    "confidence": "high"
   },
   {
    "field": "events.0",
    "citations": [
     {
-     "title": "Introducing Mercury Payroll",
-     "url": "https://mercury.com/blog/introducing-mercury-payroll",
+     "title": "Agentic banking is here to stay. Here’s how Mercury keeps you in control.",
+     "url": "https://mercury.com/blog/introducing-mercury-agent-controls",
      "excerpts": [
-      "October 20, 2026"
-     ]
-    },
-    {
-     "title": "Mercury Launches AI-Native Payroll",
-     "url": "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll",
-     "excerpts": [
-      "Mercury Payroll lets founders pay employees and contractors and offer benefits from the same account they already use to manage their money, with AI-powered capabilities through Mercury Command\\*\\*\\* that help simplify payroll tasks and reduce administrative work. Mercury Payroll also handles tax and payroll compliance needs so that founders can focus their time on what matters most: building their business.",
-      "Human Interest is not affiliated with Mercury or Central except as a service provider. _ _\\*\\*\\*\\*\\*Mercury Payroll is currently available to eligible U.S.-based Mercury customers.",
-      "Promotional pricing of $0 applies through December 31, 2026. Beginning January 1, 2027, standard pricing of $100 per month for the platform, plus $50 per month for each person paid that month, will apply."
+      "November 5, 2026",
+      "Introducing Mercury Agent Controls: permissions, approvals, spending limits, and activity tracking that apply to agents just as they apply to people.",
+      "Plus, you have the ability to disconnect an agent in seconds."
      ]
     }
    ],
-   "reasoning": "The official blog dates the launch October 20. The company press release describes payroll, benefits and compliance, limits availability to eligible U.S.-based customers, and states the promotional and subsequent pricing with effective dates.",
+   "reasoning": "The dated official article introduces Agent Controls and explicitly lists permissions, approvals, spending limits, activity tracking and disconnection.",
    "confidence": "high"
   },
   {
    "field": "events.1",
    "citations": [
     {
-     "title": "Mercury Release Notes | Latest Features & Product Updates",
-     "url": "https://mercury.com/releases",
+     "title": "How We Reinvented Mercury Treasury | Mercury",
+     "url": "https://mercury.com/blog/how-we-reinvented-mercury-treasury",
      "excerpts": [
-      "Oct 15, 2026",
-      "Take action on your Mercury account from ChatGPT and Claude You can now ask ChatGPT or Claude to move money, pay a recipient, or categorize transactions on your Mercury account. Every answer is grounded in your account data and nothing moves until you approve it."
+      "November 4, 2026",
+      "Today we’re introducing a reinvented [Mercury Treasury](https://mercury.com/treasury) experience built around how your business actually spends.",
+      "It combines personalized investment recommendations with U.S. Treasury bond ladders to help you pursue more yield on cash you won’t need until later, while keeping funds accessible for nearer-term expenses.",
+      "And your portfolio adapts as your business spends, so you’re maximizing your yield with less work."
      ]
     }
    ],
-   "reasoning": "The October 15 release explicitly introduces account actions through ChatGPT and Claude and states that money does not move until approved.",
+   "reasoning": "The November 4 article announces the reinvented Treasury experience, its personalized recommendations and Treasury ladders, and portfolio adaptation as the business spends.",
    "confidence": "high"
   },
   {
    "field": "events.2",
    "citations": [
     {
-     "title": "Mercury Release Notes | Latest Features & Product Updates",
-     "url": "https://mercury.com/releases",
+     "title": "Introducing Mercury Payroll",
+     "url": "https://mercury.com/blog/introducing-mercury-payroll",
      "excerpts": [
-      "Oct 14, 2026",
-      "Priority Support now available for Plus and Pro customers Customers on our Plus and Pro subscription plans will now get faster, priority support. All Mercury customers will still have access to 24/7 support."
+      "Introducing Mercury Payroll",
+      "October 20, 2026",
+      "[Mercury Payroll](https://mercury.com/payroll) launches today: W-2 and 1099 contractor payroll, health benefits and 401(k), and the tax filings, registrations, and administrative compliance work behind them — run from the Mercury account you already use for banking, and in all 50 states."
      ]
     }
    ],
-   "reasoning": "The October 14 entry announces faster priority support for existing Plus and Pro subscribers and preserves round-the-clock support for all customers. It is classified as a product update, not a new plan or price increase.",
+   "reasoning": "The official article says Payroll launches that day and enumerates employee and contractor payroll, benefits, retirement and tax/compliance work.",
    "confidence": "high"
   },
   {
@@ -205,12 +220,11 @@
      "title": "Mercury Release Notes | Latest Features & Product Updates",
      "url": "https://mercury.com/releases",
      "excerpts": [
-      "Oct 14, 2026",
-      "All your accounts, connected Multiple Mercury accounts can now be connected to move money between them directly. Transfers between accounts on the same partner bank land in seconds, and auto-transfer rules keep money moving between linked accounts on the schedule you set. Plus, you can now send money to bank accounts outside of Mercury on a recurring basis."
+      "Oct 15, 2026 [Business](https://mercury.com/releases?product=business) [Personal](https://mercury.com/releases?product=personal) [API](https://mercury.com/releases?category=API) \\+3 more Business Take action on your Mercury account from ChatGPT and Claude You can now ask ChatGPT or Claude to move money, pay a recipient, or categorize transactions on your Mercury account. Every answer is grounded in your account data and nothing moves until you approve it. Connect Mercury to [ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a17ae803744819187a3079d37479dae?q=mercury) or [Claude](https://claude.ai/directory/mercury) . Already connected? Reconnect once to enable actions. [Learn more Opens in new tab](https://mercury.com/api)"
      ]
     }
    ],
-   "reasoning": "The dated release describes connecting multiple Mercury accounts, direct transfers, scheduled auto-transfers and recurring external payments.",
+   "reasoning": "The October 15 release entry announces action-enabled ChatGPT and Claude access, lists money movement, recipient payments and transaction categorization, and states the approval requirement.",
    "confidence": "high"
   },
   {
@@ -220,14 +234,46 @@
      "title": "Mercury Release Notes | Latest Features & Product Updates",
      "url": "https://mercury.com/releases",
      "excerpts": [
-      "Sep 29, 2026",
-      "**Send real-time payments with the Mercury API** You can now send real-time payments through the Mercury API. Set _realTimePayment_ as the _paymentMethod_ when you send money, and the funds will arrive in seconds, 24/7/365, including nights, weekends, and holidays.",
-      "Available on Mercury Business and Personal accounts provided through Column, N.A."
+      "Oct 14, 2026",
+      "All your accounts, connected",
+      "Multiple Mercury accounts can now be connected to move money between them directly.",
+      "Transfers between accounts on the same partner bank land in seconds, and auto-transfer rules keep money moving between linked accounts on the schedule you set."
      ]
     }
    ],
-   "reasoning": "The September 29 entry announces real-time API payments, describes continuous availability and identifies eligible Business and Personal accounts through Column, N.A.",
+   "reasoning": "The release entry directly supports the date, linked-account transfers and scheduled auto-transfer rules. Treating this account-management capability as a material release is a scope judgment.",
+   "confidence": "medium"
+  },
+  {
+   "field": "events.5",
+   "citations": [
+    {
+     "title": "Mercury Release Notes | Latest Features & Product Updates",
+     "url": "https://mercury.com/releases",
+     "excerpts": [
+      "Sep 29, 2026 [Business](https://mercury.com/releases?product=business) [Personal](https://mercury.com/releases?product=personal) [Payments](https://mercury.com/releases?category=Payments) [API](https://mercury.com/releases?category=API) \\+4 more Business **Send real-time payments with the Mercury API** You can now send real-time payments through the Mercury API. Set _realTimePayment_ as the _paymentMethod_ when you send money, and the funds will arrive in seconds, 24/7/365, including nights, weekends, and holidays. Available on Mercury Business and Personal accounts provided through Column, N.A. [Learn more Opens in new tab](https://docs.mercury.com/reference/createtransaction)"
+     ]
+    }
+   ],
+   "reasoning": "The September 29 entry announces real-time API payments, specifies availability outside normal banking hours and identifies eligible Business and Personal accounts provided through Column.",
    "confidence": "high"
+  },
+  {
+   "field": "events.6",
+   "citations": [
+    {
+     "title": "Mercury Release Notes | Latest Features & Product Updates",
+     "url": "https://mercury.com/releases",
+     "excerpts": [
+      "Sep 28, 2026",
+      "**Authorize wire drawdowns for payroll**",
+      "You can now set up wire drawdowns from Mercury accounts provided through both Column, N.A. and Choice Financial Group.",
+      "Authorize payroll providers like Sequoia and Gusto to withdraw funds from your account directly."
+     ]
+    }
+   ],
+   "reasoning": "The dated entry states that payroll providers can draw funds directly from accounts at both partner banks. Inclusion as a material payment-capability release is a scope judgment.",
+   "confidence": "medium"
   },
   {
    "field": "checked_sources.0",
@@ -236,57 +282,186 @@
      "title": "Mercury Release Notes | Latest Features & Product Updates",
      "url": "https://mercury.com/releases",
      "excerpts": [
-      "Oct 15, 2026"
+      "Release Notes The latest Mercury product releases and updates."
      ]
     }
    ],
-   "reasoning": "This dated entry was read on the opened Mercury release-notes page.",
+   "reasoning": "This is the opened official Mercury release-notes page.",
    "confidence": "high"
   },
   {
    "field": "checked_sources.1",
    "citations": [
     {
-     "title": "Mercury Blog | Insights, Inside Mercury & Meridian ",
-     "url": "https://mercury.com/blog",
+     "title": "Mercury Release Notes | Latest Features & Product Updates",
+     "url": "https://mercury.com/releases?page=1",
      "excerpts": [
-      "[## Introducing Mercury Books](https://mercury.com/blog/introducing-mercury-books) Clean books, finally where they belong."
+      "Sep 28, 2026"
      ]
     }
    ],
-   "reasoning": "The blog index was opened and reviewed; this pointer identifies content on that page without treating it as a qualifying new event.",
+   "reasoning": "The second opened release-notes page contains the September 28 entry and was used to cover the beginning of the requested window.",
    "confidence": "high"
   },
   {
    "field": "checked_sources.2",
    "citations": [
     {
-     "title": "Introducing Mercury Payroll",
-     "url": "https://mercury.com/blog/introducing-mercury-payroll",
+     "title": "Company News | Topics | Mercury",
+     "url": "https://mercury.com/blog/topics/company-news",
      "excerpts": [
-      "October 20, 2026"
+      "Company News Announcements and updates from Mercury."
      ]
     }
    ],
-   "reasoning": "The dated official payroll blog announcement was opened and read.",
+   "reasoning": "The official company-news index was opened to identify corporate announcements.",
    "confidence": "high"
   },
   {
    "field": "checked_sources.3",
    "citations": [
     {
-     "title": "Mercury Launches AI-Native Payroll",
-     "url": "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll",
+     "title": "Mercury Blog | Insights, Inside Mercury & Meridian ",
+     "url": "https://mercury.com/blog",
      "excerpts": [
-      "Promotional pricing of $0 applies through December 31, 2026. Beginning January 1, 2027, standard pricing of $100 per month for the platform, plus $50 per month for each person paid that month, will apply."
+      "The latest Mercury product news."
      ]
     }
    ],
-   "reasoning": "The company-issued Business Wire payroll announcement was opened and read, including its pricing terms.",
+   "reasoning": "The official blog index was opened to discover current product articles.",
    "confidence": "high"
+  },
+  {
+   "field": "checked_sources.4",
+   "citations": [
+    {
+     "title": "Agentic banking is here to stay. Here’s how Mercury keeps you in control.",
+     "url": "https://mercury.com/blog/introducing-mercury-agent-controls",
+     "excerpts": [
+      "Agentic banking is here to stay. Here’s how Mercury keeps you in control."
+     ]
+    }
+   ],
+   "reasoning": "The Agent Controls announcement was opened and used for the November 5 event.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.5",
+   "citations": [
+    {
+     "title": "How We Reinvented Mercury Treasury | Mercury",
+     "url": "https://mercury.com/blog/how-we-reinvented-mercury-treasury",
+     "excerpts": [
+      "How we reinvented Mercury Treasury"
+     ]
+    }
+   ],
+   "reasoning": "The Treasury redesign article was opened and used for the November 4 event.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.6",
+   "citations": [
+    {
+     "title": "Introducing Mercury Payroll",
+     "url": "https://mercury.com/blog/introducing-mercury-payroll",
+     "excerpts": [
+      "Introducing Mercury Payroll"
+     ]
+    }
+   ],
+   "reasoning": "The Payroll launch article was opened and used for the October 20 event.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.7",
+   "citations": [
+    {
+     "title": "Introducing Mercury Books: Accounting built into your banking",
+     "url": "https://mercury.com/blog/introducing-mercury-books",
+     "excerpts": [
+      "Introducing Mercury Books",
+      "September 16, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The Books article was opened; its September 16 launch date precedes the cutoff, so it was excluded.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.8",
+   "citations": [
+    {
+     "title": "Introducing Mercury Command",
+     "url": "https://mercury.com/blog/introducing-mercury-command",
+     "excerpts": [
+      "Introducing Mercury Command",
+      "June 16, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The Command article was opened; its June launch date precedes the cutoff.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.9",
+   "citations": [
+    {
+     "title": "Announcing Mercury’s Series D | Mercury",
+     "url": "https://mercury.com/blog/series-d-announcement",
+     "excerpts": [
+      "May 20, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The Series D announcement was opened and excluded because it was published before the cutoff.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.10",
+   "citations": [
+    {
+     "title": "Mercury enters payroll",
+     "url": "https://mercury.com/blog/mercury-acquires-centralhq",
+     "excerpts": [
+      "Mercury enters payroll",
+      "April 2, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The CentralHQ acquisition article was opened and excluded because its April announcement precedes the cutoff.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.11",
+   "citations": [
+    {
+     "title": "Introducing our new CFO and CCO | Mercury",
+     "url": "https://mercury.com/blog/introducing-new-cfo-cco",
+     "excerpts": [
+      "Introducing our new CFO and CCO",
+      "May 15, 2025"
+     ]
+    }
+   ],
+   "reasoning": "The leadership announcement was opened and excluded because its date precedes the requested period.",
+   "confidence": "high"
+  },
+  {
+   "field": "checked_sources.12",
+   "citations": [
+    {
+     "title": "Charter must be ‘top priority’ for fintechs pursuing it: Mercury exec | Banking Dive",
+     "url": "https://www.bankingdive.com/news/chartering-must-be-top-priority-fintechs-mercury-bank-jon-auxier-sofi/831810",
+     "excerpts": [
+      "A fintech’s charter pursuit will only be successful when it’s the company’s overriding objective, Mercury Bank CEO and President Jon Auxier said Friday at the Federal Reserve"
+     ]
+    }
+   ],
+   "reasoning": "The Banking Dive article was reviewed for new leadership or charter milestones; the reviewed material did not establish an additional qualifying event.",
+   "confidence": "medium"
   }
  ],
- "sub_use_case": "gtm_signal_tracking",
- "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
- "input_n": 0
+ "cost_usd": 0.1,
+ "cost_basis": "list"
 }

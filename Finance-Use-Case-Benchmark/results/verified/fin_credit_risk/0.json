@@ -3,181 +3,320 @@
  "input_n": 0,
  "task": "Assess the credit and counterparty risk of Spirit Airlines",
  "labels": {
-  "exa": "A",
-  "parallel": "B",
-  "firecrawl": "C",
-  "nimble": "D"
+  "parallel": "A",
+  "opus": "B",
+  "exa": "C",
+  "nimble": "D",
+  "gpt": "E",
+  "firecrawl": "F"
  },
  "unit": "credit fact",
+ "evidence_pages": 57,
+ "evidence_fetched": 57,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 6,
+ "decided_from_passages": 114,
+ "judge": "v4b",
+ "judge_cost_usd": 2.756,
+ "corrections_v2": {
+  "units_before": 124,
+  "units_after": 100,
+  "dedup_groups": [
+   {
+    "kept": "c5",
+    "merged": [
+     "c6"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c10",
+    "merged": [
+     "c11"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19"
+    ]
+   },
+   {
+    "kept": "c34",
+    "merged": [
+     "c35"
+    ]
+   },
+   {
+    "kept": "c60",
+    "merged": [
+     "c61",
+     "c62"
+    ]
+   },
+   {
+    "kept": "c64",
+    "merged": [
+     "c65",
+     "c66"
+    ]
+   },
+   {
+    "kept": "c70",
+    "merged": [
+     "c71",
+     "c72"
+    ]
+   },
+   {
+    "kept": "c77",
+    "merged": [
+     "c78",
+     "c79",
+     "c80",
+     "c84"
+    ]
+   },
+   {
+    "kept": "c88",
+    "merged": [
+     "c89"
+    ]
+   },
+   {
+    "kept": "c49",
+    "merged": [
+     "c50",
+     "c51",
+     "c52"
+    ]
+   },
+   {
+    "kept": "c47",
+    "merged": [
+     "c48"
+    ]
+   },
+   {
+    "kept": "c53",
+    "merged": [
+     "c54"
+    ]
+   },
+   {
+    "kept": "c116",
+    "merged": [
+     "c117"
+    ]
+   },
+   {
+    "kept": "c101",
+    "merged": [
+     "c102"
+    ]
+   },
+   {
+    "kept": "c98",
+    "merged": [
+     "c99"
+    ]
+   }
+  ],
+  "cost": 0.054
+ },
  "merged": [
   {
    "cid": "c1",
-   "claim": "Spirit Aviation Holdings (formerly NYSE: SAVE) is private; ownership passed to former creditors on emerging from first Chapter 11 on 2025-03-12 via exchange of ~$795M funded debt for equity plus a $296.1M equity rights offering (7,770,054 shares); no PE sponsor or founder owner.",
+   "claim": "Spirit Airlines, LLC is a wholly owned subsidiary of Spirit Aviation Holdings, Inc., following the 2025-03-12 emergence reorganization (converted from Inc. to LLC; new holding-company equity distributed to creditors).",
    "asserted_by": [
-    "D"
+    "A",
+    "C",
+    "E"
    ],
+   "variants": {
+    "A": "Spirit Airlines, LLC is a wholly owned corporate subsidiary of Spirit Aviation Holdings, Inc., the SEC-reporting holding company; Spirit Airlines, Inc. was converted from a Delaware corporation to Spirit Airlines, LLC in the emergence reorganization.",
+    "C": "Spirit Airlines, LLC (formerly Spirit Airlines, Inc.) is a wholly owned airline subsidiary of Spirit Aviation Holdings, Inc.; ownership/legal-entity change effective 2025-03-12 under the creditor restructuring, with former equity cancelled and new holding-company equity distributed.",
+    "E": "Spirit Airlines, LLC is a wholly owned subsidiary of Spirit Aviation Holdings, Inc.; the March 12, 2025 emergence placed the operating company beneath the new holding company, converted it from Inc. to LLC, cancelled old equity and distributed new holding-company equity to creditors (as of 2026-03-16)."
+   },
    "urls": [
-    "c0c27bf1"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000095010325003365/dp226079_8k15d5.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c2",
-   "claim": "Spirit Airlines, LLC is a wholly owned operating subsidiary of Spirit Aviation Holdings, Inc.; the March 2025 reorganization made the holding company the parent and converted Spirit Airlines, Inc. into an LLC, with new parent shares and warrants issued to certain creditors.",
+   "claim": "Parent Spirit Aviation Holdings trades OTC as FLYYQ after NYSE American delisting in Sept 2025; after first emergence on 2025-03-12 ownership passed to former lenders including PIMCO, UBS Asset Management and Citadel Advisors funds; since 2026-05-02 it has ceased operations in a liquidating Chapter 11 controlled by DIP lenders and creditors, equity in line for residual value only.",
    "asserted_by": [
-    "A",
-    "B"
+    "D"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings, Inc. (parent of Spirit Airlines, LLC) trades OTC as FLYYQ after NYSE American delisting in Sept 2025; after its first Chapter 11 emergence on 2025-03-12 ownership passed to former lenders including funds managed by PIMCO, UBS Asset Management and Citadel Advisors; since 2026-05-02 it has ceased operations and is in a liquidating Chapter 11 controlled by DIP lenders and creditors, with equity in line for residual value only."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000119312525161253/d614592d424b3.htm",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+    "https://reuters.com/business/aerospace-defense/spirit-airlines-gets-court-approval-795-million-debt-deal-2025-02-20"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c3",
-   "claim": "As of 2026-04-15, largest disclosed 5% holders of Spirit Aviation Holdings were PIMCO (9.5%), Arena Capital Advisors (9.1%), AllianceBernstein (8.4%), Cyrus Capital (7.6%), Ares Management (7.0%), M&G (6.5%) and Citadel (5.7%).",
+   "claim": "Prior equity was replaced by creditor-owned equity at the March 2025 exit; the company is now a Chapter 11 debtor in court-supervised wind-down, and the wind-down release names Citadel, Cyrus Capital and Ares Management as main financial stakeholders.",
    "asserted_by": [
-    "C"
+    "B"
    ],
+   "variants": {
+    "B": "Spirit Aviation Holdings' prior equity was replaced by creditor-owned equity at the March 2025 bankruptcy exit; it is now a Chapter 11 debtor in court-supervised wind-down, and the wind-down release names Citadel, Cyrus Capital and Ares Management as main financial stakeholders."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
+    "https://www.prnewswire.com/news-releases/spirit-airlines-begins-orderly-wind-down-of-operations-302760586.html"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c4",
-   "claim": "Spirit Airlines, Inc. changed its name to Spirit Aviation Holdings, Inc. on 2025-03-13.",
+   "claim": "2025 10-K described a proposed plan under which new equity would be issued primarily to roll-up DIP lenders; no completed change of control verified before wind-down.",
    "asserted_by": [
-    "C"
+    "F"
    ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc.'s 2025 10-K described a proposed plan under which new equity would be issued primarily to roll-up DIP lenders; no completed change of control was verified before the wind-down."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c5",
-   "claim": "After the 2026-05-02 wind-down, Spirit's remaining assets are controlled by the bankruptcy estate and court-supervised process, and common-stock holders were told to expect a complete loss.",
+   "claim": "Common stock delisted from NYSE (American) and trades on OTC Pink as FLYYQ.",
    "asserted_by": [
-    "C"
+    "B",
+    "F"
    ],
+   "variants": {
+    "B": "Spirit Aviation Holdings' stock was delisted from NYSE American and trades on OTC Pink as FLYYQ."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c6",
-   "claim": "Spirit Airlines total operating revenues were $958.5M in Q3 2025 (three months ended 2025-09-30, Successor).",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "8d7d4c83"
-   ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
   },
   {
    "cid": "c7",
-   "claim": "Spirit Airlines total operating expenses were $1,093.4M in Q3 2025, exceeding revenue by about $135M.",
+   "claim": "On 2025-09-11 NYSE American filed Form 25 to delist the stock, which moved to OTC as FLYYQ.",
    "asserted_by": [
     "D"
    ],
+   "variants": {
+    "D": "On 2025-09-11 NYSE American filed Form 25 to delist Spirit's stock, which moved to OTC as FLYYQ."
+   },
    "urls": [
-    "8d7d4c83"
+    "https://s204.q4cdn.com/112592003/files/doc_financials/2025/q3/SAVE-2025-9-30-10Q.pdf"
    ],
-   "conflicts_with": []
+   "conflicts_with": [
+    "c6"
+   ]
   },
   {
    "cid": "c8",
-   "claim": "Spirit Airlines had $646.6M of cash, cash equivalents and restricted cash as of 2025-09-30.",
+   "claim": "FY2025 (combined) total operating revenues were $3,796.7M, down 22.7%.",
    "asserted_by": [
-    "D"
+    "D",
+    "F"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings total operating revenues for FY2025 (combined Successor and Predecessor periods) were $3,796.7M, down 22.7%."
+   },
    "urls": [
-    "8d7d4c83"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c9",
-   "claim": "Spirit Airlines had $408M unrestricted cash as of 2025-06-30, with its $275M revolver fully drawn (per Moody's via Reuters).",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "9197b283"
-   ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
   },
   {
    "cid": "c10",
-   "claim": "Spirit Airlines had about $2.4B of long-term debt (most due 2030) at its second Chapter 11 filing in August 2025.",
+   "claim": "FY2025 (combined) operating loss was $(768.7)M versus $(1,105.4)M in 2024.",
    "asserted_by": [
-    "D"
+    "D",
+    "F"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings operating loss for FY2025 (combined) was $(768.7)M versus $(1,105.4)M in 2024."
+   },
    "urls": [
-    "f3b5452e",
-    "1accfd7f"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c11",
-   "claim": "Spirit Airlines had negative free cash flow of about $1B as of end of Q2 2025.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "f3b5452e",
-    "1accfd7f"
-   ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c10",
+    "c11"
+   ]
   },
   {
    "cid": "c12",
-   "claim": "Spirit Airlines combined FY2025 net loss was about $2.7B (predecessor plus successor, including $2.1B reorganization items).",
+   "claim": "FY2025 (combined) net loss was $(2,760.5)M, driven by a $(2,832.7)M Successor-period loss.",
    "asserted_by": [
     "D"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings net loss for FY2025 (combined) was $(2,760.5)M, driven by a $(2,832.7)M Successor-period loss."
+   },
    "urls": [
-    "aade1d91"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c13",
-   "claim": "Spirit combined FY2025 total revenue was about $3.7B.",
+   "claim": "Operating revenues of $3,041.4M for Mar 13 – Dec 31, 2025.",
    "asserted_by": [
-    "D"
+    "B"
    ],
-   "urls": [
-    "aade1d91"
-   ],
-   "conflicts_with": [
-    "c14"
-   ]
-  },
-  {
-   "cid": "c14",
-   "claim": "Spirit Aviation Holdings reported FY2025 operating revenue of $3,796,747,000 (combined predecessor and successor periods).",
-   "asserted_by": [
-    "C"
-   ],
+   "variants": {
+    "B": "Spirit Aviation Holdings (Spirit Airlines) reported operating revenues of $3,041.4 million for Mar 13 – Dec 31, 2025 (post first-bankruptcy exit)."
+   },
    "urls": [
     "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
-   "conflicts_with": [
-    "c13"
-   ]
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Operating loss of $481.5M for Mar 13 – Dec 31, 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Spirit Aviation Holdings reported an operating loss of $481.5 million for Mar 13 – Dec 31, 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
   },
   {
    "cid": "c15",
-   "claim": "Spirit Aviation Holdings reported a successor-period operating loss of $481,511,000 for 2025-03-13 to 2025-12-31.",
+   "claim": "Net loss of $2,832.7M for Mar 13 – Dec 31, 2025.",
    "asserted_by": [
-    "C"
+    "B"
    ],
+   "variants": {
+    "B": "Spirit Aviation Holdings reported a net loss of $2,832.7 million for Mar 13 – Dec 31, 2025."
+   },
    "urls": [
     "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
@@ -185,10 +324,13 @@
   },
   {
    "cid": "c16",
-   "claim": "Spirit Aviation Holdings reported a predecessor-period operating loss of $287,199,000 for 2025-01-01 to 2025-03-12.",
+   "claim": "Operating revenues of $755.4M for Jan 1 – Mar 12, 2025.",
    "asserted_by": [
-    "C"
+    "B"
    ],
+   "variants": {
+    "B": "Spirit Aviation Holdings reported operating revenues of $755.4 million for Jan 1 – Mar 12, 2025 (pre-exit period)."
+   },
    "urls": [
     "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
@@ -196,1778 +338,2680 @@
   },
   {
    "cid": "c17",
-   "claim": "Spirit had $864.3M of cash, cash equivalents and restricted cash as of 2025-12-31.",
+   "claim": "Operating loss of $287.2M for Jan 1 – Mar 12, 2025.",
    "asserted_by": [
-    "D"
+    "B"
    ],
+   "variants": {
+    "B": "Spirit Aviation Holdings reported an operating loss of $287.2 million for Jan 1 – Mar 12, 2025."
+   },
    "urls": [
-    "aade1d91"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
-   "conflicts_with": [
-    "c20"
-   ]
+   "conflicts_with": []
   },
   {
    "cid": "c18",
-   "claim": "Spirit Aviation Holdings had unrestricted cash and cash equivalents of $272,959,000 as of 2025-12-31.",
+   "claim": "Cash and cash equivalents of about $273.0M (exactly $272,959,000) as of 2025-12-31.",
    "asserted_by": [
-    "C"
+    "B",
+    "D",
+    "F"
    ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc. had cash and cash equivalents of $272,959,000 as of 2025-12-31 (stated liquidity about $273 million unrestricted cash).",
+    "B": "Spirit Aviation Holdings had cash and cash equivalents of $273.0 million as of Dec 31, 2025."
+   },
    "urls": [
+    "https://sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
     "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c19",
-   "claim": "Spirit January 2026 revenue was $250.3M, with operating loss of $42.0M (operating margin -17%); net loss was $125.1M, including $83.1M of other/reorganization expenses.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "cf8a6977"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c20",
-   "claim": "Spirit had adjusted cash and restricted cash of $822M at end of January 2026, versus $867M at end-December 2025.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "cf8a6977"
-   ],
-   "conflicts_with": [
-    "c17"
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19"
    ]
   },
   {
-   "cid": "c21",
-   "claim": "Spirit Aviation Holdings reported long-term debt before current maturities and unamortized discounts of $1,258.7M as of 2025-12-31.",
+   "cid": "c20",
+   "claim": "Restricted cash of $591.4M as of 2025-12-31.",
    "asserted_by": [
-    "C"
+    "D"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings had $591.4M of restricted cash as of 2025-12-31."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Q3 2025 total operating revenues (Successor) were $958.5M.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Spirit Aviation Holdings Q3 2025 total operating revenues (Successor) were $958.5M."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c22",
-   "claim": "Spirit Aviation Holdings had $1,609.4M of debt classified within liabilities subject to compromise as of 2025-12-31.",
+   "claim": "Q3 2025 net loss was $(317.5)M.",
    "asserted_by": [
-    "C"
+    "D"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings net loss for Q3 2025 was $(317.5)M."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c23",
-   "claim": "Spirit Aviation Holdings reported $124.4M of accounts payable within liabilities subject to compromise as of 2025-12-31 (pre-petition, subject to automatic stay).",
+   "claim": "$250.5M cash and equivalents plus $396.1M restricted cash as of 2025-09-30.",
    "asserted_by": [
-    "C"
+    "D"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings had $250.5M of cash and cash equivalents plus $396.1M of restricted cash as of 2025-09-30."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c24",
-   "claim": "From the 2025-08-29 petition date Spirit ceased making principal and interest payments and ceased accruing interest on long-term debt reclassified to liabilities subject to compromise.",
+   "claim": "$6,691.5M of liabilities subject to compromise as of 2025-09-30.",
    "asserted_by": [
-    "C"
+    "D"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings had $6,691.5M of liabilities subject to compromise as of 2025-09-30 (pre-petition debt including $275M drawn revolver, EETCs, PSP loans)."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c25",
-   "claim": "Spirit's 2025 Form 10-K reported a 17.4% reduction in the pilot and flight-attendant workforce from headcount rationalization and restructuring.",
+   "claim": "$869.4M of post-petition debt and finance leases outside LSTC as of 2025-09-30.",
    "asserted_by": [
-    "C"
+    "D"
    ],
+   "variants": {
+    "D": "Spirit Aviation Holdings had $869.4M of post-petition current and long-term debt and finance leases outside liabilities subject to compromise as of 2025-09-30."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+    "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c26",
-   "claim": "Spirit Airlines, LLC reported ending cash/restricted cash of $266,849,907 as of 2026-07-31 in its unaudited monthly operating report (pooled debtor accounts, excludes intercompany flows, not freely available liquidity).",
+   "claim": "$1,609.4M of long-term debt in liabilities subject to compromise as of 2025-12-31.",
    "asserted_by": [
-    "B"
+    "F"
    ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc. had $1,609.4 million of long-term debt included in liabilities subject to compromise as of 2025-12-31."
+   },
    "urls": [
-    "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c27",
-   "claim": "Spirit Airlines, LLC held cash of $231,834,781 as of 2026-08-31 per its August monthly operating report (filed 2026-09-22, docket 1632), as transcribed by a secondary source; not verified unrestricted liquidity.",
+   "claim": "$4,184.1M of lease liabilities in liabilities subject to compromise as of 2025-12-31.",
    "asserted_by": [
-    "A"
+    "F"
    ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc. had $4,184.1 million of lease liabilities included in liabilities subject to compromise as of 2025-12-31."
+   },
    "urls": [
-    "https://spiritdidnotpayme.com/blog/the-unpaid-employee-013/"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c28",
-   "claim": "Spirit Airlines, LLC's July 2026 monthly operating report showed 76 full-time employees as of 2026-08-01, versus 9,229 as of 2025-09-30.",
+   "claim": "Total liabilities subject to compromise of $5,983.5M as of 2025-12-31.",
    "asserted_by": [
-    "B"
+    "F"
    ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc. had total liabilities subject to compromise of $5,983.5 million as of 2025-12-31."
+   },
    "urls": [
-    "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c29",
-   "claim": "Spirit had $3.6B total outstanding debt at its November 2024 Chapter 11 petition, with 21,000 employees/contractors and a 213-aircraft A320 fleet (51 owned).",
+   "claim": "Unrestricted cash of $408M as of 2025-06-30, per Moody's.",
    "asserted_by": [
-    "D"
+    "D",
+    "B"
    ],
+   "variants": {
+    "D": "Spirit reported unrestricted cash of $408.0M to Moody's as of 2025-06-30.",
+    "B": "Spirit Airlines had unrestricted cash of $408 million as of June 30, 2025, per Moody's."
+   },
    "urls": [
-    "1f877706"
+    "https://ratings.moodys.com/ratings-news/449168",
+    "https://finance.yahoo.com/news/moodys-cuts-spirit-airlines-credit-150000804.html"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c30",
-   "claim": "Spirit filed its first Chapter 11 on 2024-11-18 in SDNY with $3.6B total debt, after the JetBlue merger was blocked and with $2.5B+ cumulative losses since 2020.",
+   "claim": "Spirit fully drew the entire $275M Exit Revolving Credit Facility (maturing 2028-03-12) on 2025-08-21.",
    "asserted_by": [
-    "D"
+    "D",
+    "F",
+    "B"
    ],
+   "variants": {
+    "D": "Spirit fully drew its $275M Exit Revolving Credit Facility (due 2028) on 2025-08-21, before its second filing.",
+    "F": "On 2025-08-21 Spirit Aviation Holdings, Inc. borrowed the entire available $275 million under its Exit Revolving Credit Facility, which matures March 12, 2028.",
+    "B": "Spirit Aviation Holdings fully drew its $275 million exit revolver on 2025-08-21; the revolver matures 2028-03-12."
+   },
    "urls": [
-    "76881a63"
+    "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c31",
-   "claim": "Spirit launched a $350M equity rights offering ($14.00/share) on 2024-12-30; it closed at emergence with $296,107,812 consideration (7,770,054 shares and 13,380,504 warrants).",
+   "claim": "The $275.0M exit revolver is counted among claims to be settled in bankruptcy as of 2025-12-31.",
    "asserted_by": [
-    "D"
+    "B"
    ],
+   "variants": {
+    "B": "Spirit Aviation Holdings' $275.0 million exit revolving credit facility, fully drawn on 2025-08-21, is counted among claims to be settled in bankruptcy as of Dec 31, 2025."
+   },
    "urls": [
-    "8d7d4c83"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c32",
-   "claim": "Spirit emerged from first Chapter 11 on 2025-03-12, equitizing about $795M of funded debt, with $350M equity investment, $840M exit secured notes due 2030 and a $275M exit revolver; repaid the $300M 2024 DIP and $300M revolver.",
+   "claim": "After the 2025-08-29 petition, Spirit ceased principal/interest payments and interest accrual on debt in LSTC; adequate-protection payments made under the revolver through 2025-12-31.",
    "asserted_by": [
-    "D",
-    "C"
+    "F"
    ],
+   "variants": {
+    "F": "After its 2025-08-29 second Chapter 11 petition, Spirit Aviation Holdings, Inc. ceased making principal and interest payments and ceased accruing interest on long-term debt reclassified as liabilities subject to compromise; it made adequate-protection payments under the revolver through December 31, 2025."
+   },
    "urls": [
-    "8d7d4c83",
-    "https://www.prnewswire.com/news-releases/spirit-airlines-emerges-from-financial-restructuring-better-positioned-to-advance-its-transformation-and-enhanced-guest-experience-302400320.html"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c33",
-   "claim": "The $275M exit revolver matures in 2026 and was reduced to $250M on 2026-09-30.",
+   "claim": "Spirit filed its first Chapter 11 (SDNY) on 2024-11-18.",
    "asserted_by": [
     "D"
    ],
+   "variants": {
+    "D": "Spirit filed its first Chapter 11 (SDNY) on 2024-11-18."
+   },
    "urls": [
-    "8d7d4c83"
-   ],
-   "conflicts_with": [
-    "c34"
-   ]
-  },
-  {
-   "cid": "c34",
-   "claim": "Spirit's revolver matures March 2028 (per Moody's).",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "9197b283"
-   ],
-   "conflicts_with": [
-    "c33"
-   ]
-  },
-  {
-   "cid": "c35",
-   "claim": "On 2025-08-15 Spirit transferred an additional $50M cash to a pledged account with its credit-card processor (USB) and agreed to holdbacks of up to $3M/day until fully collateralized, in exchange for extending the processing agreement to 2027-12-31.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "c6131ed7"
+    "https://sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c36",
-   "claim": "On 2025-08-21 Spirit fully drew its $275M exit revolver to fund operations and credit-card collateral requirements, and warned it might not survive a year without significantly more cash.",
+   "cid": "c34",
+   "claim": "Spirit emerged from first Chapter 11 on 2025-03-12 with about $795M funded debt equitized and $350M new equity; plan confirmed 2025-02-20.",
    "asserted_by": [
-    "D",
-    "C"
+    "B",
+    "D"
    ],
+   "variants": {
+    "D": "Spirit emerged from its first Chapter 11 on 2025-03-12 with about $795M of funded debt equitized and a $350M new equity investment; plan confirmed 2025-02-20."
+   },
    "urls": [
-    "76881a63",
+    "https://sec.gov/Archives/edgar/data/1498710/000095010325003365/dp226079_ex9901.htm",
     "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c34",
+    "c35"
+   ]
+  },
+  {
+   "cid": "c36",
+   "claim": "Fitch downgraded Spirit to 'D' on 2024-11-20 after the first Chapter 11 filing.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Fitch downgraded Spirit to 'D' on 2024-11-20 following the first Chapter 11 filing."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c37",
-   "claim": "Spirit disclosed 'substantial doubt' about going-concern ability with Q2 2025 results, repeated in its Q3 2025 Form 10-Q.",
+   "claim": "Spirit Airlines, LLC filed Chapter 11 in SDNY on 2025-08-29 (case 25-11896), jointly administered under holding-company lead case 25-11897.",
    "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "8d7d4c83"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c38",
-   "claim": "Spirit Aviation Holdings' 2025 Form 10-K (dated 2026-03-16) stated substantial doubt about continuing as a going concern within one year and warned liquidation could be required.",
-   "asserted_by": [
-    "A",
-    "C"
-   ],
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c39",
-   "claim": "Spirit Aviation Holdings and five affiliates filed voluntary Chapter 11 petitions in SDNY on 2025-08-29 (lead case 25-11897; Spirit Airlines, LLC case 25-11896, jointly administered), its second Chapter 11 in less than a year.",
-   "asserted_by": [
-    "D",
     "C",
-    "B"
+    "A"
    ],
+   "variants": {
+    "C": "Spirit Airlines, LLC filed Chapter 11 on 2025-08-29 (case 25-11896), jointly administered with the holding-company case 25-11897.",
+    "A": "Spirit Airlines, LLC and affiliated debtors filed Chapter 11 petitions in the Southern District of New York on 2025-08-29; the airline's case is 25-11896, jointly administered under Spirit Aviation Holdings' lead case 25-11897."
+   },
    "urls": [
-    "1accfd7f",
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4581217&projectCode=SPJ",
     "https://dm.epiq11.com/case/spirit/info"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c40",
-   "claim": "Spirit Airlines, LLC is the borrower under the interim DIP order dated 2025-08-29, with Spirit Aviation Holdings and affiliates as guarantors.",
+   "cid": "c38",
+   "claim": "Spirit Airlines, LLC's Chapter 11 case (25-11896, SDNY, filed 2025-08-29) remained open per the September 2026 operating report.",
    "asserted_by": [
-    "A"
+    "E"
    ],
+   "variants": {
+    "E": "Spirit Airlines, LLC filed Chapter 11 on 2025-08-29 in the Southern District of New York (case 25-11896, jointly administered under lead case 25-11897); the case remained open per the September 2026 operating report."
+   },
    "urls": [
-    "https://document.epiq11.com/document/getdocumentbycode?docId=4520590&projectCode=SPJ"
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c41",
-   "claim": "On 2025-10-14 Spirit Airlines, LLC entered a DIP credit agreement providing up to $475M of aggregate new-money term loans, with certain subsidiaries as guarantors.",
+   "cid": "c39",
+   "claim": "On 2025-08-29 Spirit Aviation Holdings and five affiliates filed voluntary second Chapter 11 petitions in SDNY (Case 25-11897).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2025-08-29 Spirit Aviation Holdings, Inc. and five affiliates filed voluntary petitions for a second Chapter 11 case in the U.S. Bankruptcy Court for the Southern District of New York (Case No. 25-11897)."
+   },
+   "urls": [
+    "https://dm.epiq11.com/case/spirit/info"
+   ],
+   "conflicts_with": [
+    "c40"
+   ]
+  },
+  {
+   "cid": "c40",
+   "claim": "Spirit Aviation Holdings filed second Chapter 11 on 2025-08-29 (No. 25-11897, SDNY) with six related companies as debtors.",
    "asserted_by": [
     "B"
    ],
+   "variants": {
+    "B": "Spirit Aviation Holdings filed a second Chapter 11 case on 2025-08-29 (No. 25-11897, SDNY Bankruptcy Court), with six related companies as debtors."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000095010325013149/dp235820_8k.htm"
+    "https://chapter11cases.com/blogs/news/from-reorganization-to-wind-down-spirit-airlines-moves-to-auction-its-remaining-assets"
+   ],
+   "conflicts_with": [
+    "c39"
+   ]
+  },
+  {
+   "cid": "c41",
+   "claim": "Second Chapter 11 (SDNY) filed 2025-08-29, 190 days after first plan approval, triggered by AerCap default/termination notices.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Spirit filed its second Chapter 11 (SDNY) on 2025-08-29, 190 days after first plan approval, triggered by AerCap default/termination notices."
+   },
+   "urls": [
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434014"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c42",
-   "claim": "On 2025-10-31 the Bankruptcy Court approved a multi-draw senior secured super-priority DIP facility of up to $1.2B, including up to $475M new-money loans and up to $750M roll-up of pre-petition secured notes.",
+   "claim": "On 2025-08-25 AerCap sent a Notice of Default, terminated the 36-aircraft A320neo/A321neo delivery deal and demanded $2.1M per aircraft (~$75.6M); reportedly declared default on 37 leased aircraft.",
    "asserted_by": [
-    "D",
-    "C"
+    "D"
    ],
+   "variants": {
+    "D": "On 2025-08-25 AerCap, Spirit's largest lessor, sent a Notice of Default, terminated the 36-aircraft A320neo/A321neo delivery deal and demanded $2.1M per aircraft (~$75.6M) in termination fees; it reportedly declared default on 37 leased aircraft."
+   },
    "urls": [
-    "8d7d4c83",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+    "https://aviation.direct/en/spirit-pleite-aercap-zieht-die-notbremse"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c43",
-   "claim": "Spirit drew a $200M new-money DIP loan on 2025-10-14.",
-   "asserted_by": [
-    "A",
-    "C"
-   ],
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c44",
-   "claim": "Spirit drew a $50M new-money DIP loan on 2025-11-07.",
-   "asserted_by": [
-    "A",
-    "C"
-   ],
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c45",
-   "claim": "On 2025-12-15 Spirit amended the DIP credit agreement and drew a $100M third new-money round; $50M (net of OID) was immediately usable and $50M stayed encumbered pending progress toward standalone reorganization, strategic transaction or exit financing.",
-   "asserted_by": [
-    "A",
-    "B",
-    "C"
-   ],
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1498710/000095010325016205/dp238730_ex9901.htm",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c46",
-   "claim": "Aircraft lessor AerCap terminated Spirit aircraft leases ahead of the second Chapter 11; Spirit later sought court approval to reject remaining aircraft leases.",
+   "claim": "August 2025 amendment to credit-card processor agreement required a $50M pledged account and daily holdbacks up to $3M until bank fully collateralized.",
    "asserted_by": [
     "D"
    ],
+   "variants": {
+    "D": "In August 2025 Spirit amended its credit-card processor agreement, requiring a $50M pledged account and daily holdbacks up to $3M until the bank is fully collateralized."
+   },
    "urls": [
-    "f3b5452e",
-    "1accfd7f"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c47",
-   "claim": "An Examiner was appointed in Spirit's Chapter 11 case (SDNY) in October 2025.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "577ba65e"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c48",
-   "claim": "Spirit's post-bankruptcy plan projected a 2026 net loss of $111M and a 2027 net profit of $55M on $2.6B revenue; overtaken by the May 2026 shutdown.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "aade1d91"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c49",
-   "claim": "On 2026-03-13 Spirit filed a plan of reorganization, disclosure statement and RSA with consenting DIP lenders; it later pivoted to wind-down, seeking to auction LaGuardia slots, campus, loyalty program and equipment, and to sell/abandon 28 owned aircraft and 18 spare engines.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "577ba65e"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c50",
-   "claim": "By 2026-04-15 Spirit was reported at risk of imminent liquidation amid a jet-fuel price surge; by April 18 it sought a federal bailout and the administration considered a controlling stake.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "1075e011"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c51",
-   "claim": "Spirit ceased all flights on 2026-05-02 and began an orderly wind-down/liquidation after being unable to obtain additional funding, stating it needed hundreds of millions of dollars of liquidity it could not procure; it attributed the failure to materially higher oil/fuel prices and other pressures, and the proposed March bondholder restructuring did not preserve an operating airline.",
-   "asserted_by": [
-    "D",
-    "A",
-    "B",
-    "C"
-   ],
-   "urls": [
-    "1075e011",
-    "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c52",
-   "claim": "Spirit's bailout talks (~$500M proposal with the Trump administration) collapsed before the 2026-05-02 shutdown.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "1075e011"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c53",
-   "claim": "Spirit CFO Fred Comer said there was no viable path to continued operations; Reuters reported on 2026-05-04 that Spirit planned to retain about 150 employees in wind-down and cut to about 40 after three months.",
-   "asserted_by": [
-    "C"
-   ],
-   "urls": [
-    "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04/"
-   ],
-   "conflicts_with": [
-    "c55"
-   ]
-  },
-  {
-   "cid": "c54",
-   "claim": "On 2026-05-05 Judge Sean H. Lane approved Spirit's wind-down procedures and granted aircraft lease rejection and sale motions; the U.S. Trustee's suggestion to convert to Chapter 7 was not pressed.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "aa2372d9"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c55",
-   "claim": "CNBC reported on 2026-05-04 that about 17,000 direct and indirect Spirit workers lost jobs; CEO Dave Davis remained with about 130 other employees to oversee closure.",
-   "asserted_by": [
-    "A"
-   ],
-   "urls": [
-    "https://www.cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html"
-   ],
-   "conflicts_with": [
-    "c53"
-   ]
-  },
-  {
-   "cid": "c56",
-   "claim": "Employee health insurance ended on 2026-05-02; Florida WARN notices showed more than 4,850 layoffs (2,529 FLL, 551 Dania Beach, 181 MIA, 796 MCO plus 796 MCO inflight/ops center).",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "3f425622"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c57",
-   "claim": "NBC reported on 2026-05-14 a proposed employee class action in Spirit's bankruptcy court alleging layoffs without required WARN notice and seeking unpaid wages and benefits; some former employees reported missing final paychecks (unadjudicated allegations).",
-   "asserted_by": [
-    "A"
-   ],
-   "urls": [
-    "https://www.nbcnews.com/news/us-news/former-spirit-workers-claim-are-still-owed-pay-benefits-lawsuit-says-rcna345088"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c58",
-   "claim": "On 2026-05-02 Spirit said flights bought directly by credit/debit card would be automatically refunded to the original payment method, while vouchers, credits and Free Spirit points would be addressed later through bankruptcy; customer service was no longer available.",
-   "asserted_by": [
-    "A",
-    "B",
-    "C"
-   ],
-   "urls": [
-    "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf",
-    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c59",
-   "claim": "Spirit told Reuters on 2026-05-03 that most customers who paid by card had been refunded by the evening of May 2, with a small percentage still processing.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://www.reuters.com/legal/litigation/spirit-nearly-done-processing-customer-refunds-after-shutdown-2026-05-03"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c60",
-   "claim": "Broward County (FLL operator) asserted liens on Spirit aircraft for postpetition administrative claims on 2026-05-05; trade counterparties, airports, lessors and insurers forced modifications to the wind-down order.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "aa2372d9"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c61",
-   "claim": "Claims bar dates: general proofs of claim due 2026-01-27, governmental units 2026-02-25, pre-wind-down administrative expense claims 2026-07-27.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "1accfd7f"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c62",
-   "claim": "As of 2026-10-14 Spirit's liquidation was ongoing, with a simulator sale, continued aircraft-sale disputes, and the proposed data sale hearing adjourned to 2026-11-06.",
-   "asserted_by": [
-    "A"
-   ],
-   "urls": [
-    "https://chapter11cases.com/blogs/news/spirit-airlines-case-update-the-data-sale-slips-to-november-as-spirit-moves-to-unwind-the-hfs-aircraft-deal"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c63",
-   "claim": "S&P downgraded Spirit to 'CCC' from 'CCC+' on 2024-06-05, outlook negative, citing 2025 maturities ($1.1B loyalty bonds due Sep 2025, $500M convertibles 2026), less than adequate liquidity and likely distressed exchange.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "a1e4ff8b"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c64",
-   "claim": "Fitch downgraded Spirit to 'CCC-' from 'CCC+' on 2025-08-18, citing operational losses, deteriorating liquidity and default risk.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "3ef81875"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c65",
-   "claim": "Fitch downgraded Spirit's loyalty-program debt to 'CCC-' from 'B-' on 2025-08-18, with recovery rating RR4 from RR3.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "3ef81875"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c66",
-   "claim": "Moody's downgraded Spirit's corporate family rating two notches to Caa3 from Caa1 on 2025-08-22 (PDR Caa3-PD, SGL-4 from SGL-3, outlook negative), citing higher than expected cash burn and forecasting over $500M cash burn in 2025.",
-   "asserted_by": [
-    "D",
-    "C"
-   ],
-   "urls": [
-    "9197b283",
     "https://ratings.moodys.com/ratings-news/449168"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c67",
-   "claim": "Spirit's Moody's rating fell from B2 (2023) to Caa3 (2025); S&P projected a $600M free cash flow deficit for 2025, with negative outlooks.",
+   "cid": "c44",
+   "claim": "Credit-card companies demanded extra collateral in August 2025 amid payment difficulties and creditor mistrust.",
    "asserted_by": [
     "D"
    ],
+   "variants": {
+    "D": "Credit-card companies demanded extra collateral from Spirit in August 2025 amid payment difficulties and growing creditor mistrust."
+   },
    "urls": [
-    "aa76c05c"
+    "https://aviation.direct/en/spirit-pleite-aercap-zieht-die-notbremse"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Court-approved DIP Credit Agreement (2025-10-14) makes up to $475M of new-money term loans available, subject to conditions and staged draws.",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "F": "On 2025-10-14 the bankruptcy court-approved DIP Credit Agreement made up to $475 million of new-money term loans available to Spirit Aviation Holdings, Inc., subject to conditions and staged draws.",
+    "B": "Spirit Aviation Holdings' Oct 14, 2025 bankruptcy (DIP) term loan agreement provides up to $475.0 million of new money."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "On 2025-10-14 Spirit signed a bankruptcy loan agreement for up to $475M new money; the 10-K describes an AerCap deal providing about $150M of cash.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On 2025-10-14 Spirit signed a bankruptcy loan agreement for up to $475 million of new money term loans, and the 10-K describes an AerCap deal providing about $150 million of cash."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "On 2025-10-31 court approved up to $1.2B of DIP financing including $475M new money; DIP draws of $200M (2025-10-14) and $50M (2025-11-07) followed.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "On 2025-10-31 the court approved up to $1.2B of DIP financing for Spirit including $475M new money; DIP draws of $200M (2025-10-14) and $50M (2025-11-07) followed."
+   },
+   "urls": [
+    "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c47",
+    "c48"
+   ]
+  },
+  {
+   "cid": "c49",
+   "claim": "On 2025-12-15 Spirit drew the full $100.0M Third Draw DIP term loans; $50M of proceeds held in encumbered accounts; daily cash reports to DIP lenders required.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "On 2025-12-15 Spirit drew the full $100.0M Third Draw New Money Term Loans under its DIP facility, with $50M of proceeds held in encumbered accounts and daily cash reports to DIP lenders required."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+    "https://www.otcmarkets.com/filing/html?guid=4wt-kn4eJqORBih&id=19000840",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c49",
+    "c50",
+    "c51",
+    "c52"
+   ]
+  },
+  {
+   "cid": "c53",
+   "claim": "On 2026-02-24 Spirit reached an agreement in principle with creditors to emerge with debt and lease obligations cut from $7.4B to $2.1B, with secured lenders releasing cash collateral; overtaken by fuel shock and wind-down.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "D": "On 2026-02-24 Spirit reached an agreement in principle with creditors to emerge with debt and lease obligations cut from $7.4B to $2.1B, with secured lenders releasing cash collateral; this was overtaken by the fuel-price shock and wind-down."
+   },
+   "urls": [
+    "https://cnbc.com/2026/02/24/spirit-airlines-bankruptcy-flights.html",
+    "https://www.cnbc.com/2026/02/24/spirit-airlines-bankruptcy-flights.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c53",
+    "c54"
+   ]
+  },
+  {
+   "cid": "c55",
+   "claim": "Talks with Castlelake and Frontier produced no transaction (as of 2026-02-24); plan relied on shrinking fleet and network.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Spirit Airlines' deal talks with Castlelake and Frontier produced no transaction (as of 2026-02-24); the plan relied on shrinking fleet and network."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/02/24/spirit-airlines-bankruptcy-flights.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c56",
+   "claim": "On 2026-03-13 Spirit debtors entered a restructuring support agreement with participating DIP lenders and secured noteholders (Spirit Airlines, LLC as DIP borrower); a proposed restructuring, not an emergence.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-03-13 the Spirit debtors entered a restructuring support agreement with participating DIP lenders and secured noteholders, with Spirit Airlines, LLC as DIP borrower; it was a proposed restructuring, not an emergence."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326003790/dp243147_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "On 2026-03-13 restructuring agreement: $150M pledged cash to repay part of the DIP loan, $100M payment at plan effectiveness, new equity mainly to DIP lenders.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On 2026-03-13 Spirit signed a restructuring agreement with creditors: $150 million pledged cash to repay part of the bankruptcy loan, $100 million payment at plan effectiveness, and new equity mainly to bankruptcy-loan lenders."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "S&P upgraded Spirit Airlines LLC to 'CCC+' from 'D' on 2025-03-20 on emergence, outlook stable.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2025-03-20 S&P upgraded Spirit Airlines LLC to 'CCC+' from 'D', outlook stable, on emergence from bankruptcy."
+   },
+   "urls": [
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3340434"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "Fitch downgraded Spirit to 'CCC-' on 2025-08-15 and affirmed EETC ratings.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2025-08-15 Fitch downgraded Spirit Airlines to 'CCC-' and affirmed its EETC ratings."
+   },
+   "urls": [
+    "https://fitchratings.com/entity/spirit-airlines-inc-93771290"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "Moody's 2025-08-22: CFR to Caa3 from Caa1, PDR Caa3-PD, SGL-4, negative outlook, >$500M 2025 cash burn forecast and possible breach of $450M minimum liquidity covenant by end-2025.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "On 2025-08-22 Moody's downgraded Spirit's CFR to Caa3 from Caa1, PDR to Caa3-PD, SGL to SGL-4, outlook negative, forecasting >$500M 2025 cash burn and a breach of the $450M minimum liquidity covenant as early as end-2025."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/moodys-cuts-spirit-airlines-credit-150000804.html",
+    "https://ratings.moodys.com/ratings-news/449168"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c60",
+    "c61",
+    "c62"
+   ]
+  },
+  {
+   "cid": "c63",
+   "claim": "S&P lowered Spirit Airlines LLC issuer credit rating to 'D' from 'CCC' on 2025-09-02 after the Aug 29 filing, and lowered EETC issue ratings one notch.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2025-09-02 S&P lowered Spirit Airlines LLC's issuer credit rating to 'D' from 'CCC' after the Aug 29, 2025 Chapter 11 filing, and lowered EETC issue ratings one notch."
+   },
+   "urls": [
+    "https://spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434014"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c64",
+   "claim": "Fitch downgraded Spirit's Long Term IDR to 'D' from 'CCC-' on 2025-09-04 after the second Chapter 11 filing.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "On 2025-09-04 Fitch downgraded Spirit Airlines' Long Term IDR to 'D' from 'CCC-'.",
+    "B": "On 2025-09-04 Fitch cut Spirit's long-term issuer rating to 'D' from 'CCC-' after the second Chapter 11 filing."
+   },
+   "urls": [
+    "https://fitchratings.com/entity/spirit-airlines-inc-93771290",
+    "https://ng.investing.com/news/stock-market-news/spirit-airlines-downgraded-to-d-by-fitch-after-second-bankruptcy-filing-93CH-2092544",
+    "https://www.fitchratings.com/research/corporate-finance/fitch-downgrades-spirit-airlines-to-d-04-09-2025",
+    "https://www.marketscreener.com/news/fitch-downgrades-spirit-airlines-to-d-ce7d59d9db8dfe26"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c64",
+    "c65",
+    "c66"
+   ]
+  },
+  {
+   "cid": "c67",
+   "claim": "Fitch cut Spirit IP Cayman and Spirit Loyalty Cayman secured debt to 'C' (RR4) and called liquidation risk 'elevated'.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Fitch cut Spirit IP Cayman and Spirit Loyalty Cayman secured debt to 'C' with expected average recovery (RR4) and called liquidation risk 'elevated'."
+   },
+   "urls": [
+    "https://ng.investing.com/news/stock-market-news/spirit-airlines-downgraded-to-d-by-fitch-after-second-bankruptcy-filing-93CH-2092544"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c68",
-   "claim": "S&P downgraded Spirit Airlines LLC to D from CCC on 2025-09-02 after the 2025 Chapter 11 filing.",
+   "claim": "2025 10-K states Fitch and S&P downgraded Spirit's corporate credit rating to D after the 2025 filing, and Moody's also downgraded to D and eventually withdrew.",
    "asserted_by": [
-    "C"
+    "F"
    ],
+   "variants": {
+    "F": "Spirit's 2025 Form 10-K states that Fitch and S&P Global downgraded Spirit's corporate credit rating to D after the 2025 bankruptcy filing, and Moody's also downgraded to D and eventually withdrew its rating."
+   },
    "urls": [
-    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434014"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c69",
-   "claim": "Fitch downgraded Spirit Airlines' Long-Term IDR to D from CCC- on 2025-09-04 after the second Chapter 11 filing, and downgraded senior secured debt to C/RR4.",
+   "claim": "Annual report states Moody's withdrew its ratings following the August 2025 bankruptcy; exact withdrawal date not verified.",
    "asserted_by": [
-    "A",
-    "C"
+    "E"
    ],
+   "variants": {
+    "E": "Spirit Airlines' annual report (disclosed 2026-03-16) states Moody's withdrew its ratings following the August 2025 bankruptcy; exact withdrawal date not verified."
+   },
    "urls": [
-    "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290",
-    "https://www.fitchratings.com/research/corporate-finance/fitch-downgrades-spirit-airlines-to-d-04-09-2025"
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c70",
-   "claim": "On 2026-05-06 Fitch affirmed Spirit Airlines, LLC's IDR at D and withdrew it the same day following the decision to cease operations and liquidate.",
+   "claim": "On 2026-05-06 Fitch affirmed and withdrew Spirit's ratings and placed EETCs on Rating Watch Negative.",
    "asserted_by": [
     "A",
-    "B"
+    "C",
+    "D",
+    "E",
+    "F"
    ],
+   "variants": {
+    "D": "On 2026-05-06 Fitch affirmed and withdrew Spirit Airlines' Long Term IDR and placed Spirit EETCs on Rating Watch Negative.",
+    "E": "Fitch affirmed and withdrew Spirit Airlines' ratings on 2026-05-06 (per Reuters), alongside a separate negative-watch action on aircraft-backed EETCs."
+   },
    "urls": [
+    "https://fitchratings.com/entity/spirit-airlines-inc-93771290",
     "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290",
-    "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026"
+    "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026",
+    "https://www.itiger.com/news/2633415694"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c71",
-   "claim": "On 2026-05-21 S&P withdrew all ratings on Spirit Airlines LLC, including EETC ratings, because of insufficient information.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c72",
-   "claim": "CEO Ted Christie exited on 2025-04-07 weeks after emergence and CCO Matt Klein stepped down; an office of the president ran the company until Dave Davis was named CEO.",
-   "asserted_by": [
-    "D"
-   ],
-   "urls": [
-    "1f877706"
-   ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c70",
+    "c71",
+    "c72"
+   ]
   },
   {
    "cid": "c73",
-   "claim": "Spirit discontinued service in 11 U.S. cities from October 2025, furloughed ~270 pilots from Nov 1, downgraded 140 captains, and confirmed 1,800 flight-attendant furloughs (nearly one-third of cabin crew) by Dec 1, 2025.",
+   "claim": "On 2026-05-07 S&P lowered Spirit's 2015-1 Class A EETC rating to CCC+ following the announced liquidation.",
    "asserted_by": [
-    "D"
+    "A"
    ],
+   "variants": {
+    "A": "On 2026-05-07 S&P lowered Spirit Airlines' 2015-1 Class A EETC rating to CCC+ following the announced liquidation."
+   },
    "urls": [
-    "f3b5452e"
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101684171"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c74",
-   "claim": "Spirit cut about 150 corporate/market jobs and exited several markets on 2025-11-05.",
+   "claim": "On 2026-05-07 S&P lowered Spirit's 2017-1 Class AA EETC rating to B.",
    "asserted_by": [
-    "D"
+    "A"
    ],
+   "variants": {
+    "A": "On 2026-05-07 S&P lowered Spirit Airlines' 2017-1 Class AA EETC rating to B."
+   },
    "urls": [
-    "a88a7d5a"
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101684171"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c75",
-   "claim": "Spirit's fleet shrank from 214 aircraft pre-bankruptcy toward a planned 76 by mid-August 2026, with international routes slashed.",
+   "claim": "On 2026-05-07 S&P lowered Spirit's 2017-1 Class A EETC rating to B-.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2026-05-07 S&P lowered Spirit Airlines' 2017-1 Class A EETC rating to B-."
+   },
+   "urls": [
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101684171"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c76",
+   "claim": "S&P withdrew all ratings on Spirit Airlines, LLC (including EETCs) on 2026-05-21 due to insufficient information.",
+   "asserted_by": [
+    "C",
+    "A",
+    "E"
+   ],
+   "variants": {
+    "C": "S&P withdrew all Spirit Airlines LLC ratings, including EETCs, on 2026-05-21 because sufficient information to maintain the ratings was unavailable.",
+    "A": "S&P Global Ratings withdrew all ratings on Spirit Airlines, LLC, including its enhanced equipment trust certificates, on 2026-05-21 because of insufficient information.",
+    "E": "S&P withdrew Spirit Airlines, LLC's ratings on 2026-05-21 because of insufficient information (per Reuters)."
+   },
+   "urls": [
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101686957",
+    "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216",
+    "https://www.itiger.com/news/2637930357"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c77",
+   "claim": "Spirit announced an immediate orderly wind-down and cancelled all flights on 2026-05-02, saying it lacked and could not procure the hundreds of millions of dollars of additional liquidity needed; no additional funding available.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "On 2026-05-02 Spirit Airlines announced an immediate orderly wind-down and cancellation of all flights, saying it could not procure the hundreds of millions of dollars of additional liquidity needed to sustain operations. / Spirit Airlines cancelled all flights on 2026-05-02 as wind-down began, stating no additional funding was available.",
+    "A": "On 2026-05-02 Spirit Airlines announced an immediate orderly wind-down and cancellation of all flights, stating no additional funding was available and that sustaining operations required hundreds of millions of dollars of liquidity it did not have and could not procure.",
+    "E": "On 2026-05-02 Spirit Airlines announced an immediate wind-down after failing to obtain additional funding; management said continued operation required hundreds of millions of dollars of additional liquidity it could not procure."
+   },
+   "urls": [
+    "https://reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
+    "https://www.aljazeera.com/news/2026/5/2/spirit-airlines-begins-wind-down-cancels-all-flights-over-fuel-crisis",
+    "https://www.prnewswire.com/news-releases/spirit-airlines-begins-orderly-wind-down-of-operations-302760586.html",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/0000950103-26-006723.txt",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c77",
+    "c78",
+    "c79",
+    "c80",
+    "c84"
+   ]
+  },
+  {
+   "cid": "c81",
+   "claim": "Jet fuel reached about $4.51/gal versus $2.24 assumed in Spirit's restructuring plan.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Jet fuel reached about $4.51/gal versus $2.24 assumed in Spirit Airlines' restructuring plan."
+   },
+   "urls": [
+    "https://www.aljazeera.com/news/2026/5/2/spirit-airlines-begins-wind-down-cancels-all-flights-over-fuel-crisis"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c82",
+   "claim": "On 2026-05-02 Spirit Aviation Holdings announced an orderly wind-down, ceased operations, and said it would stop filing periodic/current SEC reports unless required by law.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2026-05-02 Spirit Aviation Holdings, Inc. announced an orderly wind-down, ceased operations, and said it would stop filing periodic or current SEC reports unless required by law."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_8k.htm"
+   ],
+   "conflicts_with": [
+    "c83"
+   ]
+  },
+  {
+   "cid": "c83",
+   "claim": "On 2026-05-04 Spirit announced it would stop SEC periodic and current filings (unless legally required) following its wind-down decision.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "On 2026-05-04 Spirit announced it would stop SEC periodic and current filings (unless legally required) following its wind-down decision and suspension of reporting obligations."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/0000950103-26-006723.txt"
+   ],
+   "conflicts_with": [
+    "c82"
+   ]
+  },
+  {
+   "cid": "c85",
+   "claim": "September 2026 monthly operating report (filed 2026-10-21) confirms operations ceased 2026-05-02 and accounting moved from going-concern to liquidation basis; report is unaudited and limited in scope.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Spirit Airlines' September 2026 monthly operating report (filed 2026-10-21) confirms operations ceased on May 2, 2026 and the debtors transitioned from going-concern to liquidation-basis accounting; the report is unaudited and limited in scope."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c86",
+   "claim": "Reuters (2026-05-04): Spirit's CFO said no viable path to restructuring or continued operations remained.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Reuters reported on 2026-05-04 that Spirit's CFO said no viable path to restructuring or continued operations remained."
+   },
+   "urls": [
+    "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "On 2026-05-04 Spirit asked the court to approve orderly wind-down/liquidation, saying it had no alternative, sought $10.7M in retention bonuses; liquidation expected to take about 3 months.",
    "asserted_by": [
     "D"
    ],
+   "variants": {
+    "D": "On 2026-05-04 Spirit asked the bankruptcy court to approve an orderly wind-down/liquidation, saying it had no alternative, and sought $10.7M in retention bonuses for remaining staff; liquidation expected to complete in about 3 months."
+   },
    "urls": [
-    "aade1d91"
+    "https://reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c88",
+   "claim": "Plan to retain ~150 employees initially, dropping to ~40 after three months.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Spirit Airlines planned to retain approximately 150 employees initially, reducing to approximately 40 after three months (announced plan, per Reuters 2026-05-04)."
+   },
+   "urls": [
+    "https://reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
+    "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c88",
+    "c89"
+   ]
+  },
+  {
+   "cid": "c90",
+   "claim": "On 2026-05-08 SDNY court (Judge Sean Lane) approved wind-down procedures: leases rejected, owned aircraft to be sold; U.S. Trustee floated but did not press Chapter 7 conversion.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On 2026-05-08 the SDNY bankruptcy court (Judge Sean Lane) entered an order approving Spirit's wind-down procedures: remaining aircraft leases rejected, owned aircraft to be sold; the U.S. Trustee floated but did not press conversion to Chapter 7."
+   },
+   "urls": [
+    "https://octus.com/resources/articles/spirit-airlines-wind-down-approved"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c91",
+   "claim": "On 2026-05-08 court approved wind-down plan, budgeted cash collateral use, DIP Amendment No. 2 and final DIP order (Spirit Airlines, LLC as DIP borrower).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2026-05-08 the bankruptcy court approved Spirit's wind-down plan, authorized budgeted use of cash collateral, and approved Amendment No. 2 to the DIP credit agreement and the final DIP order, with Spirit Airlines, LLC as DIP borrower."
+   },
+   "urls": [
+    "http://bankrupt.com/misc/SpiritAviation_ADIPOrder.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c92",
+   "claim": "Court approved wind-down 2026-05-08; on 2026-05-27 Spirit filed sale procedures for LaGuardia slots, HQ campus, Free Spirit loyalty program, spare engines, simulators and equipment.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The bankruptcy court approved Spirit Airlines' wind-down on 2026-05-08; on 2026-05-27 Spirit filed sale procedures for LaGuardia slots, HQ campus, Free Spirit loyalty program, spare engines, simulators and equipment."
+   },
+   "urls": [
+    "https://chapter11cases.com/blogs/news/from-reorganization-to-wind-down-spirit-airlines-moves-to-auction-its-remaining-assets"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c93",
+   "claim": "As of 2026-11-06 the case reports an ongoing wind-down under the May 8 order, asset-sale procedures still pursued; no return to normal operations.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "As of 2026-11-06, the Spirit bankruptcy case reports an ongoing wind-down under the May 8 order, with asset-sale procedures still being pursued; no return to normal airline operations."
+   },
+   "urls": [
+    "https://elevenflo.com/cases/spirit-aviation-holdings-inc-2647"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c94",
+   "claim": "Broward County asserted a lien on Spirit aircraft at Fort Lauderdale airport to secure postpetition administrative claims (around 2026-05-05 hearing).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Broward County asserted a lien on Spirit aircraft at Fort Lauderdale airport to secure postpetition administrative claims (raised around the 2026-05-05 hearing)."
+   },
+   "urls": [
+    "https://octus.com/resources/articles/spirit-airlines-wind-down-approved"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c95",
+   "claim": "Broward County sought court relief (reported 2026-05-21) over ~$3M delinquent post-petition airport charges; creditor allegation, not final judgment.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Broward County sought bankruptcy-court relief (reported 2026-05-21) over approximately $3 million in delinquent post-petition gate fees, landing fees, rents and other airport charges owed by Spirit Airlines; this is a creditor allegation, not a final judgment."
+   },
+   "urls": [
+    "https://www.sun-sentinel.com/2026/05/21/broward-asks-court-to-order-spirit-to-pay-3m-in-past-due-airport-fees-clear-path-for-new-tenants/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c96",
+   "claim": "Spirit Airlines, LLC reported gross income/sales (revenue) of $0 for the month ended 2026-09-30 (unaudited MOR).",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "Spirit Airlines, LLC reported gross income/sales of $0 for the month ended 2026-09-30 (unaudited September 2026 monthly operating report).",
+    "E": "Spirit Airlines, LLC reported revenue of USD 0 in its unaudited bankruptcy monthly operating report for 2026-09-01 to 2026-09-30 (filed 2026-10-21)."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c97",
+   "claim": "Spirit Airlines, LLC reported a loss of $31,206,117 for the month ended 2026-09-30.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Spirit Airlines, LLC reported a profit/(loss) of -$31,206,117 for the month ended 2026-09-30 (unaudited monthly operating report)."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c98",
+   "claim": "Spirit Airlines, LLC reported ending cash of $202,765,268 as of 2026-09-30 (unaudited MOR).",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Spirit Airlines, LLC reported an ending cash balance of $202,765,268 as of 2026-09-30 (unaudited monthly operating report)."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "https://elevenflo.com/datasets/monthly-operating-reports"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c98",
+    "c99"
+   ]
+  },
+  {
+   "cid": "c100",
+   "claim": "Adjusted ending cash and restricted cash of $214,829,228 as of 2026-09-30; includes restricted and pooled cash, not verified as unrestricted liquidity.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "Spirit Airlines, LLC reported adjusted ending cash and restricted cash of $214,829,228 as of 2026-09-30; not verified as unrestricted liquidity.",
+    "E": "Spirit Airlines, LLC reported cash and restricted cash in LLC cash management accounts (adjusted) of USD 214,829,228 as of 2026-09-30 per its monthly operating report; includes restricted cash and pooled debtor cash-management activity, not unrestricted liquidity."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c101",
+   "claim": "Spirit reportedly had only 63 full-time employees as of 2026-10-01 versus 9,229 at the historical baseline (secondary reporting).",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Spirit Airlines reportedly had only 63 full-time employees as of 2026-10-01 versus 9,229 at the report's historical baseline (secondary reporting of the September monthly operating report)."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "https://spiritdidnotpayme.substack.com/p/the-unpaid-employee-017"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c101",
+    "c102"
+   ]
+  },
+  {
+   "cid": "c103",
+   "claim": "Vendor guidance (2026-11-09): outstanding claims must be addressed through Chapter 11; vendors retained for wind-down can expect payment for go-forward goods/services, not assurance historical claims paid in full.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Spirit Airlines vendor guidance as of 2026-11-09 says outstanding claims must be addressed through Chapter 11; vendors retained for wind-down work can expect payment for go-forward goods and services, which is not assurance that historical claims will be paid in full."
+   },
+   "urls": [
+    "https://www.spiritrestructuring.com/vendors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c104",
+   "claim": "On 2026-06-05 ALPA alleged in a court objection that accrued pilot vacation/sick-leave pay remained unpaid and secured lenders had not authorized release of earmarked funds (allegation).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-06-05 ALPA, representing Spirit Airlines, LLC's pilots, alleged in a court-filed objection that accrued vacation and sick-leave compensation remained unpaid after shutdown and that secured lenders had not authorized release of earmarked funds (allegation, not adjudicated)."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentbycode?docId=4582449&projectCode=SPJ&source=DM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c105",
+   "claim": "On 2026-05-15 supplier GSE America alleged renewed arrears and sought immediate administrative-expense payment or permission to enforce possessory liens on equipment held for repair.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-05-15 supplier GSE America alleged renewed arrears against the jointly administered Spirit debtors (including the LLC) and sought immediate administrative-expense payment or permission to enforce possessory statutory liens on equipment held for repair."
+   },
+   "urls": [
+    "https://document.epiq11.com/document/getdocumentsbydocket/?docketId=1225272&docketNumber=1075&projectCode=SPJ&source=DM"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c106",
+   "claim": "On 2026-10-08 FAA confirmed cessation of passenger operations and liquidation, and approved exemption allowing transfer of LaGuardia slots to JetBlue.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-10-08 the FAA confirmed Spirit's cessation of passenger operations and liquidation, and approved an exemption permitting transfer of its LaGuardia operating slots to JetBlue."
+   },
+   "urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-10-08/html/2026-20664.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c107",
+   "claim": "JetBlue won Spirit's 22 LaGuardia slots for $58.5M, subject to court and FAA approval (reported 2026-07-20).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "JetBlue won Spirit Airlines' 22 LaGuardia slots for $58.5 million, subject to court and FAA approval (reported 2026-07-20)."
+   },
+   "urls": [
+    "https://www.visaverge.com/travel/spirit-airlines-liquidation-begins-jetblue-buys-laguardia-slots-detroit-hangar-transfer-set/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c108",
+   "claim": "Wayne County Airport Authority agreed to pay $18M for Spirit's Detroit hangar lease.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Wayne County Airport Authority agreed to pay $18 million for Spirit Airlines' Detroit hangar lease."
+   },
+   "urls": [
+    "https://www.visaverge.com/travel/spirit-airlines-liquidation-begins-jetblue-buys-laguardia-slots-detroit-hangar-transfer-set/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c109",
+   "claim": "A $533.5M opening bid covered about 20 Spirit aircraft plus the loyalty program.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "A $533.5 million opening bid covered about 20 Spirit Airlines aircraft plus the loyalty program."
+   },
+   "urls": [
+    "https://www.visaverge.com/travel/spirit-airlines-liquidation-begins-jetblue-buys-laguardia-slots-detroit-hangar-transfer-set/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c110",
+   "claim": "On 2026-05-12 ~17,000 former employees filed a proposed class action alleging WARN Act violations (no 60 days' notice), seeking 60 days' wages and benefits.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On 2026-05-12 former Spirit employees (about 17,000 workers) filed a proposed class action alleging WARN Act violations for ending jobs without 60 days' notice, seeking 60 days of wages and benefits."
+   },
+   "urls": [
+    "https://airlinegeeks.com/2026/05/14/former-employees-propose-class-action-lawsuit-against-spirit/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c111",
+   "claim": "As of 2026-05-02 Spirit did not honour customer vouchers, credits and Free Spirit points; treatment left to bankruptcy process.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "As of 2026-05-02 Spirit Airlines did not honour customer vouchers, credits and Free Spirit points; their treatment was left to the bankruptcy process."
+   },
+   "urls": [
+    "https://www.prnewswire.com/news-releases/spirit-airlines-begins-orderly-wind-down-of-operations-302760586.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c112",
+   "claim": "Spirit shut down all operations in May 2026, ~17,000 direct and indirect workers lost jobs; CEO Dave Davis said airline 'ran out of runway'; leased planes returned, owned planes to be sold; not profitable since 2019.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Spirit Airlines shut down all operations in May 2026, with about 17,000 direct and indirect workers losing jobs; CEO Dave Davis said the airline 'ran out of runway'; leased planes returned, owned planes to be sold; the airline has not been profitable since 2019."
+   },
+   "urls": [
+    "https://cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c113",
+   "claim": "CEO said vendors stop working and fuelers stop fuelling once shutdown looms, indicating counterparties moved to prepayment/cash terms.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Spirit's CEO said vendors stop working and fuelers stop fuelling once a shutdown looms, indicating counterparties had moved to prepayment/cash terms."
+   },
+   "urls": [
+    "https://cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c114",
+   "claim": "Early Nov 2025: lost CHRO Linde Grindle and CIO Rocky Wiggins, eliminated ~150 salaried roles, exited 11 cities with further cuts announced 2025-11-04.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "In early November 2025 Spirit lost two senior executives (CHRO Linde Grindle, CIO Rocky Wiggins), eliminated ~150 salaried corporate/operations roles, and exited 11 cities with further cuts announced 2025-11-04."
+   },
+   "urls": [
+    "https://airlinegeeks.com/2025/11/05/two-senior-executives-leave-spirit"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c115",
+   "claim": "Q3 2025 10-Q states substantial doubt about going-concern ability; company operates as debtor-in-possession.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Spirit Aviation Holdings' Q3 2025 10-Q states management believes there is substantial doubt about the company's ability to continue as a going concern; it operates as debtor-in-possession."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c116",
+   "claim": "FY2025 10-K (filed 2026-03-16) auditor's report included a going-concern paragraph; management also stated substantial doubt.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc.'s independent auditor's report (2025 Form 10-K, filed 2026-03-16) included a going-concern explanatory paragraph, and management also stated substantial doubt about its ability to continue as a going concern."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c116",
+    "c117"
+   ]
+  },
+  {
+   "cid": "c118",
+   "claim": "August 2025: ~270 pilots furloughed and ~140 captains downgraded (effective Oct/Nov 2025); cited ~$2.4B long-term debt and ~$1B negative free cash flow alongside 'substantial doubt'.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "In August 2025 Spirit furloughed ~270 pilots and downgraded ~140 captains (effective Oct/Nov 2025), and cited ~$2.4B of long-term debt and ~$1B of negative free cash flow, alongside 'substantial doubt' about staying in business."
+   },
+   "urls": [
+    "https://www-s1.npr.org/2025/08/30/nx-s1-5522901/spirit-airlines-bankruptcy-filing"
+   ],
+   "conflicts_with": [
+    "c119"
+   ]
+  },
+  {
+   "cid": "c119",
+   "claim": "On 2025-07-01 Spirit announced ~270 pilot furloughs effective Nov 1, 2025 after downgrading ~140 captains to first officers.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2025-07-01 Spirit Airlines announced about 270 pilot furloughs effective November 1, 2025, after downgrading about 140 captains to first officers."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": [
+    "c118"
+   ]
+  },
+  {
+   "cid": "c120",
+   "claim": "On 2025-09-01 Spirit announced ~1,800 flight-attendant furloughs effective Nov 1, 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2025-09-01 Spirit Airlines announced about 1,800 flight-attendant furloughs effective November 1, 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c121",
+   "claim": "4,469 employee terminations during 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc. reported 4,469 employee terminations during 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c122",
+   "claim": "7,482 active employees at year-end 2025 versus 11,331 at year-end 2024.",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "F": "Spirit Aviation Holdings, Inc. had 7,482 active employees at year-end 2025 versus 11,331 at year-end 2024.",
+    "B": "Spirit Aviation Holdings' active employees fell to 7,482 from 11,331 a year earlier."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c123",
+   "claim": "Spirit Airlines CEO Ted Christie stepped down 2025-04-06; David Davis appointed President and CEO effective 2025-04-21.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2025-04-06 Spirit Airlines CEO Ted Christie stepped down; David Davis was appointed President and CEO effective April 21, 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c124",
+   "claim": "Solair Group v. Spirit Airlines (Miami-Dade Circuit Court, 2025-005862-CA-01, filed ~2025-04-02) is a creditor suit claiming interest on non-payment, restocking fees and finance charges.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Solair Group, Inc. v. Spirit Airlines, Inc. (Miami-Dade Circuit Court, case 2025-005862-CA-01, filed ~2025-04-02) is a creditor suit claiming interest on non-payment, restocking fees and finance charges."
+   },
+   "urls": [
+    "https://trellis.law/case/12086/2025-005862-ca-01/solair-group-inc-vs-spirit-airlines-inc"
    ],
    "conflicts_with": []
   }
  ],
- "claims": {
-  "nimble": [
-   {
-    "claim": "Spirit Airlines (Spirit Aviation Holdings) is private, formerly NYSE: SAVE; ownership passed to former creditors (bondholders) on emerging from first Chapter 11 on 2025-03-12 via exchange of ~$795M funded debt for equity plus a $296.1M equity rights offering (7,770,054 shares issued); no PE sponsor or founder owner.",
-    "url": "c0c27bf1"
-   },
-   {
-    "claim": "Spirit Airlines total operating revenues were $958.5M in Q3 2025 (three months ended 2025-09-30, Successor period).",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "Spirit Airlines total operating expenses were $1,093.4M in Q3 2025, exceeding revenue by about $135M.",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "Spirit Airlines had $646.6M of cash, cash equivalents and restricted cash as of 2025-09-30.",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "Spirit Airlines had $408M unrestricted cash as of 2025-06-30, with its $275M revolver fully drawn (per Moody's via Reuters).",
-    "url": "9197b283"
-   },
-   {
-    "claim": "Spirit Airlines had about $2.4B of long-term debt (most due 2030) at its second Chapter 11 filing in August 2025.",
-    "url": "f3b5452e"
-   },
-   {
-    "claim": "Spirit Airlines had negative free cash flow of about $1B as of end of Q2 2025.",
-    "url": "f3b5452e"
-   },
-   {
-    "claim": "Spirit Airlines combined FY2025 net loss was about $2.7B (predecessor plus successor, including $2.1B reorganization items).",
-    "url": "aade1d91"
-   },
-   {
-    "claim": "Spirit Airlines combined FY2025 total revenue was about $3.7B.",
-    "url": "aade1d91"
-   },
-   {
-    "claim": "Spirit Airlines had $864.3M of cash, cash equivalents and restricted cash as of 2025-12-31.",
-    "url": "aade1d91"
-   },
-   {
-    "claim": "Spirit Airlines January 2026 revenue was $250.3M, with operating loss of $42.0M (operating margin -17%).",
-    "url": "cf8a6977"
-   },
-   {
-    "claim": "Spirit Airlines January 2026 net loss was $125.1M, including $83.1M of other/reorganization expenses.",
-    "url": "cf8a6977"
-   },
-   {
-    "claim": "Spirit Airlines had adjusted cash and restricted cash of $822M at end of January 2026, versus $867M at end-December 2025.",
-    "url": "cf8a6977"
-   },
-   {
-    "claim": "Spirit Airlines had $3.6B total outstanding debt at its November 2024 Chapter 11 petition, with 21,000 employees/contractors and a 213-aircraft A320 fleet (51 owned).",
-    "url": "1f877706"
-   },
-   {
-    "claim": "Bankruptcy Court approved on 2025-10-31 a Spirit Airlines 2025 DIP Facility of up to $1.2B, including a roll-up of pre-petition secured notes up to $750M; the earlier $300M 2024 DIP was repaid at first emergence.",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "Spirit Airlines' post-bankruptcy plan (published 2026-03-15) projected a 2026 net loss of $111M and a 2027 net profit of $55M on $2.6B revenue; the plan was overtaken by the May 2026 shutdown.",
-    "url": "aade1d91"
-   },
-   {
-    "claim": "Spirit Airlines filed Chapter 11 on 2024-11-18 in SDNY with $3.6B total debt, after the JetBlue merger was blocked and with $2.5B+ cumulative losses since 2020.",
-    "url": "76881a63"
-   },
-   {
-    "claim": "Spirit Airlines launched a $350M equity rights offering ($14.00/share) on 2024-12-30; it closed at emergence with $296,107,812 consideration (7,770,054 shares and 13,380,504 warrants).",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "Spirit Airlines emerged from first Chapter 11 on 2025-03-12, equitizing about $795M of funded debt; repaid the $300M 2024 DIP and $300M revolver; entered a new $275M exit revolver maturing 2026, reduced to $250M on 2026-09-30.",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "On 2025-08-15 Spirit Airlines transferred an additional $50M cash to a pledged account with its credit-card processor (USB) and agreed to holdbacks of up to $3M/day until fully collateralized, in exchange for extending the processing agreement to 2027-12-31.",
-    "url": "c6131ed7"
-   },
-   {
-    "claim": "On 2025-08-21 Spirit Airlines warned it might not survive a year without significantly more cash and drew the entire $275M revolver, disclosing going-concern risk with Q2 2025 results.",
-    "url": "76881a63"
-   },
-   {
-    "claim": "Spirit Airlines filed its second Chapter 11 on 2025-08-29 (Case No. 25-11897, SDNY) with $2.4B long-term debt and $1B negative FCF at Q2 2025; lessor AerCap had terminated aircraft leases.",
-    "url": "1accfd7f"
-   },
-   {
-    "claim": "On 2025-10-31 the Bankruptcy Court approved a final order for Spirit Airlines' multi-draw senior secured super-priority priming DIP facility of up to $1.2B, including roll-up of pre-petition secured notes up to $750M.",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "On 2026-03-13 Spirit Airlines filed a plan of reorganization, disclosure statement and RSA with consenting DIP lenders; it later pivoted to wind-down, seeking to auction LaGuardia slots, corporate campus, loyalty program and equipment, and to sell/abandon 28 owned aircraft and 18 spare engines.",
-    "url": "577ba65e"
-   },
-   {
-    "claim": "Spirit Airlines ceased all flight operations on 2026-05-02 after bailout talks (~$500M proposal with the Trump administration) collapsed, blaming sharply higher fuel costs from the 2026 Iran war; began orderly wind-down and liquidation.",
-    "url": "1075e011"
-   },
-   {
-    "claim": "On 2026-05-05 Judge Sean H. Lane approved Spirit Airlines' wind-down procedures and granted aircraft lease rejection and sale motions; the U.S. Trustee's suggestion to convert to Chapter 7 was not pressed.",
-    "url": "aa2372d9"
-   },
-   {
-    "claim": "Spirit Airlines claims bar dates: general proofs of claim due 2026-01-27, governmental units 2026-02-25, pre-wind-down administrative expense claims 2026-07-27.",
-    "url": "1accfd7f"
-   },
-   {
-    "claim": "S&P downgraded Spirit Airlines to 'CCC' from 'CCC+' on 2024-06-05, outlook negative, citing 2025 maturities ($1.1B loyalty bonds due Sep 2025, $500M convertibles 2026), less than adequate liquidity, and likely distressed exchange within 12 months.",
-    "url": "a1e4ff8b"
-   },
-   {
-    "claim": "Fitch downgraded Spirit Airlines to 'CCC-' from 'CCC+' on 2025-08-18, citing operational losses, deteriorating liquidity and default risk.",
-    "url": "3ef81875"
-   },
-   {
-    "claim": "Fitch downgraded Spirit's loyalty-program debt to 'CCC-' from 'B-' on 2025-08-18, with recovery rating RR4 from RR3.",
-    "url": "3ef81875"
-   },
-   {
-    "claim": "Moody's downgraded Spirit Airlines two notches to Caa3 on 2025-08-22, citing higher than expected cash burn; forecast over $500M cash burn in 2025; revolver matures March 2028.",
-    "url": "9197b283"
-   },
-   {
-    "claim": "Spirit Airlines' Moody's rating fell from B2 (2023) to Caa3 (2025); S&P projected a $600M free cash flow deficit for 2025, with negative outlooks.",
-    "url": "aa76c05c"
-   },
-   {
-    "claim": "Spirit Airlines CEO Ted Christie exited on 2025-04-07 weeks after emergence from first bankruptcy, and CCO Matt Klein stepped down; an office of the president ran the company until Dave Davis was named CEO.",
-    "url": "1f877706"
-   },
-   {
-    "claim": "Spirit Airlines disclosed 'substantial doubt' about going-concern ability with Q2 2025 results, repeated in its Q3 2025 Form 10-Q.",
-    "url": "8d7d4c83"
-   },
-   {
-    "claim": "Spirit Airlines discontinued service in 11 U.S. cities from October 2025, furloughed ~270 pilots from Nov 1, downgraded 140 captains, and confirmed 1,800 flight-attendant furloughs (nearly one-third of cabin crew) by Dec 1, 2025.",
-    "url": "f3b5452e"
-   },
-   {
-    "claim": "Spirit Airlines cut about 150 corporate/market jobs and exited several markets on 2025-11-05.",
-    "url": "a88a7d5a"
-   },
-   {
-    "claim": "An Examiner was appointed in Spirit Airlines' Chapter 11 case (SDNY) in October 2025.",
-    "url": "577ba65e"
-   },
-   {
-    "claim": "By 2026-04-15 Spirit Airlines was reported at risk of imminent liquidation amid jet-fuel price surge; by April 18 it sought a federal bailout and the administration considered a controlling stake.",
-    "url": "1075e011"
-   },
-   {
-    "claim": "Spirit Airlines shut down on 2026-05-02; employee health insurance ended that day; Florida WARN notices showed more than 4,850 layoffs (2,529 FLL, 551 Dania Beach, 181 MIA, 796 MCO plus 796 MCO inflight/ops center).",
-    "url": "3f425622"
-   },
-   {
-    "claim": "Spirit Airlines' fleet shrank from 214 aircraft pre-bankruptcy toward a planned 76 by mid-August 2026, with international routes slashed.",
-    "url": "aade1d91"
-   },
-   {
-    "claim": "Aircraft lessor AerCap terminated Spirit Airlines aircraft leases ahead of the second Chapter 11, and Spirit later sought court approval to reject remaining aircraft leases.",
-    "url": "f3b5452e"
-   },
-   {
-    "claim": "Broward County (FLL operator) asserted liens on Spirit Airlines aircraft for postpetition administrative claims on 2026-05-05; trade counterparties, airports, lessors and insurers forced modifications to the wind-down order.",
-    "url": "aa2372d9"
-   }
-  ],
-  "exa": [
-   {
-    "claim": "Spirit Airlines, LLC is a wholly owned operating subsidiary of Spirit Aviation Holdings, Inc.; the March 2025 reorganization installed the holding company as parent and converted former Spirit Airlines, Inc. into an LLC (status as of 2026-05-02).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000119312525161253/d614592d424b3.htm"
-   },
-   {
-    "claim": "Spirit Airlines, LLC held cash of $231,834,781 as of 2026-08-31 per its August monthly operating report (filed 2026-09-22, docket 1632), as transcribed by a secondary source; bankruptcy-report cash, not verified unrestricted liquidity.",
-    "url": "https://spiritdidnotpayme.com/blog/the-unpaid-employee-013/"
-   },
-   {
-    "claim": "Spirit Airlines, LLC is the borrower under the interim DIP order dated 2025-08-29 in its second Chapter 11 proceeding (case 25-11897, SDNY, jointly administered), with Spirit Aviation Holdings and affiliates as guarantors.",
-    "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4520590&projectCode=SPJ"
-   },
-   {
-    "claim": "Spirit's DIP financing included a $200 million new-money draw on 2025-10-14.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm"
-   },
-   {
-    "claim": "Spirit's DIP financing included a $50 million new-money draw on 2025-11-07.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm"
-   },
-   {
-    "claim": "Spirit's DIP financing included a $100 million additional new-money draw on 2025-12-15.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm"
-   },
-   {
-    "claim": "On 2026-05-02 Spirit announced immediate wind-down and cancellation of all flights, stating no additional funding was available; CEO Dave Davis said continuing required hundreds of millions of dollars of liquidity Spirit could not procure, so the proposed March bondholder restructuring did not preserve an operating airline.",
-    "url": "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf"
-   },
-   {
-    "claim": "As of 2026-10-14 Spirit Airlines' liquidation was ongoing, with a simulator sale, continued aircraft-sale disputes, and the proposed data sale hearing adjourned to 2026-11-06.",
-    "url": "https://chapter11cases.com/blogs/news/spirit-airlines-case-update-the-data-sale-slips-to-november-as-spirit-moves-to-unwind-the-hfs-aircraft-deal"
-   },
-   {
-    "claim": "Fitch downgraded Spirit Airlines, LLC to D on 2025-09-04.",
-    "url": "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290"
-   },
-   {
-    "claim": "On 2026-05-06 Fitch affirmed Spirit Airlines, LLC at D and withdrew its long-term issuer default rating (WD) the same day; no active outlook.",
-    "url": "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290"
-   },
-   {
-    "claim": "Spirit Airlines cancelled all flights on 2026-05-02 and began immediate wind-down after being unable to obtain sufficient liquidity; the company attributed the failed turnaround to materially higher oil prices and other business pressures.",
-    "url": "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf"
-   },
-   {
-    "claim": "CNBC reported on 2026-05-04 that approximately 17,000 direct and indirect Spirit workers lost jobs; CEO Dave Davis remained with about 130 other employees to oversee closure.",
-    "url": "https://www.cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html"
-   },
-   {
-    "claim": "Spirit Aviation Holdings' (parent) 2025 Form 10-K, dated 2026-03-16, stated substantial doubt about continuing as a going concern and warned liquidation could be required.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "NBC reported on 2026-05-14 a proposed employee class action in Spirit Airlines' bankruptcy court alleging layoffs without required WARN notice and seeking unpaid wages and benefits; some former employees reported missing final paychecks (allegations, not adjudicated).",
-    "url": "https://www.nbcnews.com/news/us-news/former-spirit-workers-claim-are-still-owed-pay-benefits-lawsuit-says-rcna345088"
-   },
-   {
-    "claim": "Spirit Airlines said on 2026-05-02 that flights bought directly by credit/debit card would be automatically refunded, while compensation for vouchers, credits and Free Spirit points would be determined later through bankruptcy.",
-    "url": "https://www.spiritrestructuring.com/resources/Spirit-Airlines-Begins-Orderly-Wind-Down-of-Operations.pdf"
-   }
-  ],
-  "parallel": [
-   {
-    "claim": "Spirit Airlines, LLC is a Chapter 11 debtor; as of 2026-10-20 the credit risk call is high.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   },
-   {
-    "claim": "Spirit Airlines, LLC is a wholly owned subsidiary of Spirit Aviation Holdings, Inc., a public-reporting holding company; the March 12, 2025 reorganization made the airline an LLC beneath that parent, with new parent shares and warrants issued to certain creditors (as of 2025-12-31).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "On 2026-05-02 Spirit Airlines started an immediate orderly wind-down and cancelled all flights, stating additional funding was unavailable and the business required additional liquidity it could not procure.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   },
-   {
-    "claim": "Spirit Airlines, LLC's July 2026 monthly operating report showed 76 full-time employees as of August 1, 2026, versus 9,229 as of September 30, 2025.",
-    "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM"
-   },
-   {
-    "claim": "On 2026-05-06 Fitch affirmed Spirit Airlines, LLC's Long-Term Issuer Default Rating at D, then withdrew the issuer rating following the decision to cease operations and enter bankruptcy liquidation.",
-    "url": "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026"
-   },
-   {
-    "claim": "On 2026-05-21 S&P Global Ratings withdrew all ratings on Spirit Airlines LLC, including its EETC ratings, because of insufficient information.",
-    "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216"
-   },
-   {
-    "claim": "Spirit Airlines, LLC reported ending cash/restricted cash of $266,849,907 as of 2026-07-31 in its unaudited monthly operating report; this reflects pooled debtor bank accounts, excludes intercompany cash flows, and is not unrestricted or freely available liquidity.",
-    "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM"
-   },
-   {
-    "claim": "On 2026-05-02 Spirit Airlines announced automatic refunds for flights bought directly with credit or debit cards, while compensation for bookings paid with vouchers, credits or Free Spirit points would be determined later through the bankruptcy process.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   },
-   {
-    "claim": "Spirit Airlines told Reuters on 2026-05-03 that most customers who paid by credit or debit card had been refunded by the evening of May 2, with a small percentage still processing.",
-    "url": "https://www.reuters.com/legal/litigation/spirit-nearly-done-processing-customer-refunds-after-shutdown-2026-05-03"
-   },
-   {
-    "claim": "Spirit Airlines, LLC filed for Chapter 11 protection on 2025-08-29 in the Southern District of New York (case 25-11896), jointly administered with Spirit Aviation Holdings, Inc. and affiliates under lead case 25-11897.",
-    "url": "https://dm.epiq11.com/case/spirit/info"
-   },
-   {
-    "claim": "On 2025-10-14 Spirit Airlines, LLC, as borrower, entered a debtor-in-possession credit agreement providing for up to $475 million of aggregate term loans, with certain subsidiaries as guarantors, subject to funding conditions.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325013149/dp235820_8k.htm"
-   },
-   {
-    "claim": "On 2025-12-15 Spirit announced an amendment to its DIP credit agreement for a $100 million incremental funding round, of which $50 million (less original issue discount) was immediately usable and the remainder depended on progress toward a standalone reorganization or strategic transaction.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325016205/dp238730_ex9901.htm"
-   },
-   {
-    "claim": "On 2026-05-02 Spirit Airlines could not obtain additional financing and began winding down operations, saying sustaining the business required liquidity it did not have and could not procure.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   }
-  ],
-  "firecrawl": [
-   {
-    "claim": "Spirit Aviation Holdings, Inc. reported operating revenue of $3,796,747,000 for FY2025 (year ended 2025-12-31, combined predecessor and successor periods).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. reported a successor-period operating loss of $481,511,000 for 2025-03-13 to 2025-12-31.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. reported a predecessor-period operating loss of $287,199,000 for 2025-01-01 to 2025-03-12.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. had cash and cash equivalents (unrestricted) of $272,959,000 as of 2025-12-31.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. reported long-term debt before current maturities and unamortized discounts of $1,258.7 million as of 2025-12-31.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. had $1,609.4 million of debt classified within liabilities subject to compromise as of 2025-12-31.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. fully drew its $275 million exit revolving credit facility on 2025-08-21 to fund operations and credit-card collateral requirements.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "S&P Global Ratings downgraded Spirit Airlines LLC's issuer credit rating to D from CCC on 2025-09-02 after the 2025 Chapter 11 filing.",
-    "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434014"
-   },
-   {
-    "claim": "Fitch downgraded Spirit Airlines' Long-Term Issuer Default Rating to D from CCC- on 2025-09-04 after the second Chapter 11 filing, and downgraded related senior secured debt to C/RR4.",
-    "url": "https://www.fitchratings.com/research/corporate-finance/fitch-downgrades-spirit-airlines-to-d-04-09-2025"
-   },
-   {
-    "claim": "Moody's downgraded Spirit Airlines LLC's corporate family rating to Caa3 from Caa1 on 2025-08-22, with probability of default rating Caa3-PD from Caa1-PD, speculative-grade liquidity rating SGL-4 from SGL-3, and outlook negative from stable.",
-    "url": "https://ratings.moodys.com/ratings-news/449168"
-   },
-   {
-    "claim": "Spirit emerged from its first Chapter 11 case on 2025-03-12 after about $795 million of funded debt was equitized, with a $350 million equity investment, $840 million of exit secured notes due 2030 and a $275 million exit revolving facility.",
-    "url": "https://www.prnewswire.com/news-releases/spirit-airlines-emerges-from-financial-restructuring-better-positioned-to-advance-its-transformation-and-enhanced-guest-experience-302400320.html"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. and five affiliates filed voluntary Chapter 11 petitions in the Southern District of New York (Case No. 25-11897) on 2025-08-29, its second Chapter 11 filing in less than a year.",
-    "url": "https://dm.epiq11.com/case/spirit/info"
-   },
-   {
-    "claim": "From the 2025-08-29 petition date, Spirit Aviation Holdings, Inc. ceased making principal and interest payments and ceased accruing interest on long-term debt reclassified as liabilities subject to compromise.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "The Bankruptcy Court approved on 2025-10-31 a super-priority DIP facility for Spirit of up to $1.2 billion, including up to $475 million new-money loans and up to $750 million roll-up DIP loans.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit drew new-money DIP loans of $200 million on 2025-10-14, $50 million on 2025-11-07 and $100 million on 2025-12-15.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "On 2025-12-15 Spirit amended the DIP credit agreement and drew the full $100 million third new-money draw; $50 million net of OID was immediately available and $50 million had to remain encumbered pending restructuring or exit-financing progress.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "On 2026-05-02 Spirit began an orderly wind-down with all flights cancelled, stating no additional funding was available and that it could not procure the hundreds of millions of additional liquidity needed.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. reported $124.4 million of accounts payable within liabilities subject to compromise as of 2025-12-31, pre-petition obligations subject to the automatic stay.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "On 2026-05-02 Spirit said card-ticket refunds would be processed to the original payment method, while vouchers, credits and Free Spirit points would be addressed later through the bankruptcy process, and customer service was no longer available.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. management stated that substantial doubt existed about its ability to continue as a going concern within one year of filing the 2025 Form 10-K.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc.'s 2025 Form 10-K reported a 17.4% reduction in the pilot and flight-attendant workforce from headcount rationalization and restructuring.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm"
-   },
-   {
-    "claim": "Spirit attributed its 2026-05-02 shutdown to a material rise in oil prices, other business pressures and the absence of additional funding.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm"
-   },
-   {
-    "claim": "Reuters reported on 2026-05-04 that Spirit planned to retain about 150 employees during the wind-down and cut to about 40 after three months; CFO Fred Comer said there was no viable path to continued operations.",
-    "url": "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04/"
-   },
-   {
-    "claim": "As of 2026-04-15, Spirit Aviation Holdings, Inc.'s largest disclosed 5% holders were PIMCO (9.5%), Arena Capital Advisors (9.1%), AllianceBernstein (8.4%), Cyrus Capital (7.6%), Ares Management (7.0%), M&G (6.5%) and Citadel (5.7%).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
-   },
-   {
-    "claim": "Spirit Aviation Holdings, Inc. changed its name from Spirit Airlines, Inc. on 2025-03-13.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
-   },
-   {
-    "claim": "After the 2026-05-02 wind-down, Spirit's remaining assets are controlled by the bankruptcy estate and court-supervised process, and common-stock holders were told to expect a complete loss.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm"
-   }
-  ]
- },
  "verified": {
   "c1": {
    "cid": "c1",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "The FY2025 10-K confirms emergence on 2025-03-12 and the 7,770,054 shares for about $296.1M. Davis Polk confirms the $795M debt equitization. The unit's own URL (c0c27bf1) was not a valid link, so it was not opened. I did not separately confirm that no PE sponsor or founder owns the company."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325003365/dp226079_8k15d5.htm",
+   "note": "The 8-K says Former Spirit became a wholly owned subsidiary of Spirit Aviation Holdings and was converted to a Delaware LLC on 2025-03-12.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true"
+   },
+   "via": "passages"
   },
   "c2": {
    "cid": "c2",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "The 10-K says Former Spirit converted to a Delaware LLC, was renamed Spirit Airlines, LLC, and became a wholly owned subsidiary of Spirit Aviation Holdings. I did not check the warrant issuance to creditors."
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.aljazeera.com/news/2026/5/2/spirit-airlines-begins-wind-down-cancels-all-flights-over-fuel-crisis",
+   "note": "The FLYYQ listing, the lender ownership (Reuters) and the 2026-05-02 wind-down are all supported; DIP-lender control is consistent with the 8-K restructuring support agreement.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c3": {
    "cid": "c3",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm",
-   "note": "The 10-K/A holder table as of 2026-04-15 matches every holder and percentage. The PIMCO figure includes warrant shares."
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.prnewswire.com/news-releases/spirit-airlines-begins-orderly-wind-down-of-operations-302760586.html",
+   "note": "The wind-down release names Citadel, Cyrus Capital and Ares; the old equity was cancelled at emergence.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c4": {
    "cid": "c4",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "minor",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm",
-   "note": "The filings confirm the Spirit Aviation Holdings, Inc. name and the 2025-03-12 emergence as that entity. I found no primary source giving 2025-03-13 as the name-change date. The unit may also conflate the holding-company reorganization with a rename."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326003790/dp243147_8k.htm",
+   "note": "The March 2026 restructuring support agreement with DIP and roll-up lenders matches the described plan; no completed change of control is shown.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c5": {
    "cid": "c5",
-   "verdict": "unverifiable",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.insurancejournal.com/news/southeast/2026/05/06/868758.htm",
-   "note": "Press confirms Spirit ceased operations on 2026-05-02 and is being liquidated under court supervision. The cited 10-K/A, signed 2026-04-30, predates the wind-down and does not contain it. I found no evidence it says common-stock holders should expect a complete loss, so the attribution to that source fails."
-  },
-  "c6": {
-   "cid": "c6",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
-   "note": "The Q3 2025 10-Q shows total operating revenues of $958,524K for the three months ended 2025-09-30 (Successor)."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The 10-K confirms the NYSE American delisting and OTC Pink trading as FLYYQ.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c7": {
    "cid": "c7",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
-   "note": "The 10-Q shows operating expenses of $1,093,439K, which is an operating loss of about $135M."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "NYSE American filed the Form 25 on 2025-09-11, and the stock trades as FLYYQ.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c8": {
    "cid": "c8",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
-   "note": "Cash and cash equivalents of $250.5M plus restricted cash of $396.1M total $646.6M. Unrestricted cash is only $250.5M."
-  },
-  "c9": {
-   "cid": "c9",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://finance.yahoo.com/news/moodys-cuts-spirit-airlines-credit-150000804.html",
-   "note": "Reuters reports Moody's citing $408M of unrestricted cash at the end of Q2 and a fully drawn $275M revolver. I did not open the Yahoo page. The figures come from search-result text of the Reuters article."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The combined successor and predecessor revenue figure is consistent with the 10-K; the passages do not show the number directly.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c10": {
    "cid": "c10",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.financierworldwide.com/spirit-files-for-second-chapter-11-bankruptcy",
-   "note": "Financier Worldwide reports $2.4bn of long-term debt, most due 2030, at the Aug 29, 2025 filing. This is a search-snippet confirmation, and the 10-Q's debt lines at 9/30 are consistent, though they total roughly $2.7B."
-  },
-  "c11": {
-   "cid": "c11",
-   "verdict": "false",
-   "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000149871025000037/save-20250630.htm",
-   "note": "The Q2 2025 10-Q shows H1 operating cash flow of about -$473M and capex of about -$21M, so free cash flow was about -$0.5B. That is not about -$1B. Q2 liquidity fell only about $200M."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The combined operating loss is consistent with the 10-K, and the 2024 operating loss of about $1.1B matches.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c12": {
    "cid": "c12",
-   "verdict": "false",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R3.htm",
-   "note": "Net loss is -$2,832.7M successor plus $72.2M predecessor, or about -$2.76B, which rounds to $2.8B, not $2.7B. Reorganization expense is $2.19B successor, with a $421M predecessor gain, not $2.1B."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The combined net loss is consistent with the successor-period loss plus a predecessor reorganization gain.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c13": {
    "cid": "c13",
-   "verdict": "false",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R3.htm",
-   "note": "Combined revenue is $3,041.4M plus $755.4M, or $3.797B. That is about $3.8B, not $3.7B."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The successor-period revenue of $3,041.4M is consistent with the 10-K.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c14": {
    "cid": "c14",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R3.htm",
-   "note": "$3,041,393K plus $755,354K equals $3,796,747K, which matches the claim."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The successor-period operating loss of $481.5M is consistent with the 10-K.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c15": {
    "cid": "c15",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R3.htm",
-   "note": "The successor-period operating loss for the 10 months to Dec 31, 2025 is $(481,511)K, which matches the claim."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The successor-period net loss of $2,832.7M is consistent with the 10-K.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c16": {
    "cid": "c16",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "The 10-K shows a predecessor-period (Jan 1–Mar 12, 2025) operating loss of $(287,199) thousand."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The saved passages do not show the $755.4M figure. The Predecessor period Jan 1–Mar 12, 2025 is confirmed and the figure is plausible for roughly 71 days. This is stale pre-emergence history.",
+   "via": "passages"
   },
   "c17": {
    "cid": "c17",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326004780/dp244280_ex9901.htm",
-   "note": "Dec 31, 2025 balance-sheet cash of $272.96M plus restricted cash of $591.35M equals $864.3M. The adjusted MOR figure is $867.2M, a different basis."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The $287.2M operating loss is not shown in the passages. It is plausible for the Predecessor period but is stale history.",
+   "via": "passages"
   },
   "c18": {
    "cid": "c18",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326004780/dp244280_ex9901.htm",
-   "note": "The MOR shows Dec 2025 cash and equivalents of $272,959,259, and the 10-K says $273.0M."
-  },
-  "c19": {
-   "cid": "c19",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326004780/dp244280_ex9901.htm",
-   "note": "Revenue was $250.34M and operating loss $42.06M, about -16.8%. Net loss was $125.19M, which the claim truncates to $125.1M. The $83.1M of non-operating items is the difference between net loss and operating loss. I did not see it labelled as reorganization expense."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "Two independent systems agree on $272,959K cash at 2025-12-31, taken from the FY2025 10-K. The date is now older than 90 days.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true",
+    "D": "true"
+   }
   },
   "c20": {
    "cid": "c20",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326004780/dp244280_ex9901.htm",
-   "note": "The MOR's adjusted ending cash and restricted cash is $821.6M for January 2026 and $867.2M for December 2025."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The $591.4M restricted cash figure is not shown in the passages. It is plausible given the rise from $396.1M at Q3 and comes from the same 10-K.",
+   "via": "passages"
   },
   "c21": {
    "cid": "c21",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R108.htm",
-   "note": "The 10-K debt schedule shows long-term debt of $1,258.7M at 12/31/2025, before $474.8M of current maturities and $65.0M of discounts. The maturities schedule also totals $1,258.7M."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The Q3 2025 10-Q summary states operating revenue of $958.5M.",
+   "via": "passages"
   },
   "c22": {
    "cid": "c22",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R63.htm",
-   "note": "The liabilities subject to compromise schedule lists long-term debt of $1,609.4M at 12/31/2025, within the $5,983.5M total."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The Q3 2025 10-Q summary states a net loss of $317.5M.",
+   "via": "passages"
   },
   "c23": {
    "cid": "c23",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R63.htm",
-   "note": "The same schedule lists accounts payable of $124.4M within liabilities subject to compromise at 12/31/2025. Balance-sheet accounts payable outside the compromised pool is $44.1M."
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The 10-Q summary states cash of $250.5M and restricted cash of $396.1M.",
+   "via": "passages"
   },
   "c24": {
    "cid": "c24",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "The 10-K confirms the 8/29/2025 Chapter 11 filing and that $1,609.4M of debt sits in liabilities subject to compromise. I could not retrieve the note text saying payments and interest accrual stopped. That is standard Chapter 11 treatment, but I did not see it stated."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The 10-Q summary states liabilities subject to compromise of $6.69B, matching $6,691.5M.",
+   "via": "passages"
   },
   "c25": {
    "cid": "c25",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "minor",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "I found no 17.4% figure in the 10-K sections or XBRL pages I could read. They show furloughs of about 270 pilots and 1,800 flight attendants, and total employees falling from 11,331 to 7,482. The MD&A section that would contain the figure was not retrievable."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
+   "note": "The $869.4M figure is not shown in the passages. It is plausible for post-petition debt and finance leases outside LSTC, drawn from the same 10-Q.",
+   "via": "passages"
   },
   "c26": {
    "cid": "c26",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
-   "note": "The Epiq document returned empty content, and searches did not turn up the $266.8M July figure. ElevenFlo does show a similar report series, with August 2026 at $231.8M."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The $1,609.4M figure is not shown in the passages. It is consistent with the other LSTC components in the FY2025 10-K.",
+   "via": "passages"
   },
   "c27": {
    "cid": "c27",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://spiritdidnotpayme.com/blog/the-unpaid-employee-013/",
-   "note": "The page gives $231,834,781 ending cash for Spirit Airlines, LLC in Dkt. 1632, and the August reports were filed 2026-09-22. ElevenFlo independently shows $231.8M."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The $4,184.1M figure is not shown in the passages. Together with c26 it sums plausibly toward the $5,983.5M total.",
+   "via": "passages"
   },
   "c28": {
    "cid": "c28",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
-   "note": "The filing could not be read, and no secondary source gave the 76 versus 9,229 employee counts."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The $5,983.5M total is not shown in the passages. It is plausible against the $6.69B at Q3 and comes from the FY2025 10-K.",
+   "via": "passages"
   },
   "c29": {
    "cid": "c29",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.axios.com/2024/11/18/spirit-airlines-chapter-11-bankruptcy",
-   "note": "Axios confirms $3.6B debt and more than 21,000 employees and contractors. I could not find the 213-aircraft or 51-owned fleet figures, and the cited URL is only a hash, not a link."
+   "fresh": false,
+   "source": "https://ratings.moodys.com/ratings-news/449168",
+   "note": "Moody's states Spirit reported unrestricted cash of $408M at June 30, 2025.",
+   "via": "passages"
   },
   "c30": {
    "cid": "c30",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.axios.com/2024/11/18/spirit-airlines-chapter-11-bankruptcy",
-   "note": "Axios confirms the 2024-11-18 Chapter 11 filing, $3.6B debt, and the blocked JetBlue merger. The SDNY venue and the $2.5B+ losses since 2020 match my recollection of the reporting, but I did not confirm them in a source."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
+   "note": "The 10-Q and Moody's both state the full $275M draw on 2025-08-21 and the 2028-03-12 maturity.",
+   "via": "passages"
   },
   "c31": {
    "cid": "c31",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "The FY2025 10-K confirms the $350M offering at $14.00 launched 2024-12-30. It also confirms the close with 7,770,054 shares, 13,380,504 warrants and $296,107,812 of consideration."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The 10-Q states the full $275.0M Exit RCF was drawn on Aug 21 and the debt is treated as liabilities subject to compromise; the Dec 2025 date is consistent with the 10-K.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c32": {
    "cid": "c32",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.davispolk.com/experience/spirit-airlines-emerges-chapter-11",
-   "note": "Emergence on 2025-03-12, $795M equitized, $350M equity, $840M exit notes due 2030 and a $275M revolver are all confirmed. I did not separately check the $300M DIP and $300M revolver repayments, but they are consistent with the filings."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "This is standard ASC 852 treatment in the 10-K; the passages don't quote the adequate-protection detail, so it rests on the filing's general treatment.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c33": {
    "cid": "c33",
-   "verdict": "false",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.stocktitan.net/sec-filings/SAVE/8-k-a-spirit-airlines-inc-amends-material-event-report-456abe499e62.html",
-   "note": "An 8-K/A corrected the revolver maturity to March 12, 2028. The Sept 30, 2026 date was an inadvertent error in the original filing. I found no support for the reduction to $250M."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
+   "note": "The 10-Q says Spirit Airlines commenced its SDNY Chapter 11 case on Nov 18, 2024.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c34": {
    "cid": "c34",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.stocktitan.net/sec-filings/SAVE/8-k-a-spirit-airlines-inc-amends-material-event-report-456abe499e62.html",
-   "note": "The 8-K/A gives a March 12, 2028 maturity. Moody's August 2025 downgrade also cites March 2028."
-  },
-  "c35": {
-   "cid": "c35",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://news.bgov.com/bankruptcy-law/spirit-airlines-draws-entire-275m-revolver-extends-card-deal",
-   "note": "Bloomberg Law and Travel Weekly report the USB agreement extended to 2027-12-31, a $50M pledged transfer and holdbacks of up to $3M/day until fully collateralized. I could not open the 8-K itself."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000095010325003365/dp226079_ex9901.htm",
+   "note": "The emergence press release and 10-Q confirm the Mar 12, 2025 emergence, about $795M of debt equitized, the $350M equity investment, and plan confirmation on Feb 20, 2025.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c36": {
    "cid": "c36",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://airlinegeeks.com/2025/08/12/spirit-warns-of-substantial-doubt-over-continued-operations/",
-   "note": "Moody's reporting confirms the $275M revolver was fully drawn by Q2 2025. I found no source for the 2025-08-21 date or for a 'might not survive a year' statement tied to that draw."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://fitchratings.com/entity/spirit-airlines-inc-93771290",
+   "note": "The passages only show Fitch's Sept 2025 downgrade to D; the Nov 2024 downgrade to D after the first filing is consistent with Fitch's practice, but the Nov 20 date itself is not confirmed.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c37": {
    "cid": "c37",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://airlinegeeks.com/2025/08/12/spirit-warns-of-substantial-doubt-over-continued-operations/",
-   "note": "Q2 2025 10-Q going-concern language is confirmed. The Q3 repeat was not opened directly but is highly likely, since Spirit was in Chapter 11 by then."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_8k.htm",
+   "note": "The 8-K confirms the Aug 29, 2025 SDNY filing and joint administration under lead case 25-11897; the airline's own case number 25-11896 is not shown but is consistent.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
   },
   "c38": {
    "cid": "c38",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "The FY2025 10-K exists for Spirit Aviation Holdings and its filing was confirmed. I could not grep the going-concern text in the fetched copy, and the date, the going-concern language and the liquidation warning rest on the claim's wording plus the later wind-down."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_8k.htm",
+   "note": "The case is in wind-down after operations ceased on May 2, 2026, and a Sept 30, 2026 operating report shows the estate still holding about $215M in cash.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
   },
   "c39": {
    "cid": "c39",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.law360.com/cases/68b8757c2bb9356f7e7cc807/articles",
-   "note": "Case 25-11897 (Spirit Aviation Holdings) in SDNY filed 2025-08-29 is confirmed, and it was a second Chapter 11 within a year. The Spirit Airlines, LLC case number 25-11896 was not independently confirmed."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://chapter11cases.com/blogs/news/from-reorganization-to-wind-down-spirit-airlines-moves-to-auction-its-remaining-assets",
+   "note": "Holdings plus five affiliates (six debtors in total) filed on Aug 29, 2025, jointly administered under Case No. 25-11897.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c40": {
    "cid": "c40",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "The 10-K and a DIP terms summary both name Spirit Airlines, LLC as borrower and Spirit Aviation Holdings and affiliates as guarantors. I could not view the interim order text itself."
+   "fresh": false,
+   "source": "https://chapter11cases.com/blogs/news/from-reorganization-to-wind-down-spirit-airlines-moves-to-auction-its-remaining-assets",
+   "note": "The debtor table lists six entities including Holdings; 'six related companies' is loosely worded because Holdings plus five affiliates makes six in total.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c41": {
    "cid": "c41",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325013149/dp235820_8k.htm",
-   "note": "The 8-K confirms a DIP credit agreement dated 2025-10-14 with Spirit Airlines, LLC as borrower, up to $475M of new-money term loans, and certain subsidiaries as guarantors."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://aviation.direct/en/spirit-pleite-aercap-zieht-die-notbremse",
+   "note": "Feb 20 to Aug 29, 2025 is 190 days, and press reporting ties the second filing to AerCap's default notice.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c42": {
    "cid": "c42",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm",
-   "note": "The 10-K note says the court approved the final order on 2025-10-31 for a DIP of up to $1.2B, made up of up to $475M new money and up to $750M roll-up. I did not open the 'super-priority' wording; the amounts and approval date match. The unit's first URL, '8d7d4c83', is not a URL, so I did not check it."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://aviation.direct/en/spirit-pleite-aercap-zieht-die-notbremse",
+   "note": "The Aug 25 Notice of Default, 36 aircraft and $2.1M each (about $75.6M) are confirmed; the 37-lease default is a reported item that was not checked.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c43": {
    "cid": "c43",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm",
-   "note": "The 10-K note lists a $200.0M new-money draw on 2025-10-14."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
+   "note": "The 10-Q's credit card processor notes support a pledged-account and holdback arrangement; the exact $50M and $3M figures were not seen in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c44": {
    "cid": "c44",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/R24.htm",
-   "note": "The 10-K note lists a $50.0M draw on 2025-11-07, conditioned on minimum liquidity of $160M after the draw."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
+   "note": "The processor collateral demands are consistent with the credit card processor holdback arrangement in the 10-Q and with press reports from August 2025.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c45": {
    "cid": "c45",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325016205/dp238730_ex9901.htm",
-   "note": "The 2025-12-15 press release and 10-K note confirm the amendment and the $100M third round. About $50M net of OID was usable at once. The other $50M stays encumbered until there is progress on a standalone plan or a strategic transaction. The release does not mention exit financing, though the unit lists it."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
+   "note": "The DIP is dated Oct 14, 2025, totals up to $1.2B including $475.0M of new money, and is drawn in stages subject to conditions.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c46": {
    "cid": "c46",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "note": "AerCap's Aug 25, 2025 lease termination and default notices preceded the second Chapter 11 filing, and Spirit separately sought court approval to reject 87 aircraft leases."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The 10-Q confirms DIP financing with $475M of new money and a $150M AerCap liquidity payment. The airline has since wound down, so this is old context.",
+   "via": "passages"
   },
   "c47": {
    "cid": "c47",
    "verdict": "true",
    "in_scope": true,
    "materiality": "minor",
-   "source": "https://www.law360.com/bankruptcy-authority/articles/2404795/meet-the-examiner-probing-spirit-s-quick-return-to-ch-11",
-   "note": "SDNY appointed examiner Marc Heimowitz on about Oct 28-29, 2025, and his report was filed Dec 15, 2025."
-  },
-  "c48": {
-   "cid": "c48",
-   "verdict": "false",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.enginecowl.com/spirit-bankruptcy-plan/",
-   "note": "The $111M 2026 net loss and $55M 2027 net profit are correct (March 2026 plan), but 2027 revenue was about $2.7B, not $2.6B."
+   "fresh": false,
+   "source": "https://stocktitan.net/sec-filings/FLYY/10-q-spirit-aviation-holdings-inc-quarterly-earnings-report-bce4080f467b.html",
+   "note": "The final order on Oct 31, 2025 approved up to $1.2B including $475M new money, with draws of $200M and $50M.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true"
+   }
   },
   "c49": {
    "cid": "c49",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://chapter11cases.com/blogs/news/spirit-airlines-seeks-court-authorization-to-sell-or-abandon-remaining-owned-fleet-following-cessation-of-all-passenger-operations",
-   "note": "Plan and RSA with DIP lenders were announced Mar 13, 2026. The later wind-down motions seek to sell or abandon 28 owned aircraft and 18 spare engines and to auction slots and the campus. I did not separately confirm the loyalty program and equipment auctions."
-  },
-  "c50": {
-   "cid": "c50",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.azfamily.com/2026/04/17/spirit-airlines-may-be-forced-liquidate-within-days-reports-say/",
-   "note": "Liquidation-within-days reports driven by fuel prices appeared Apr 16-17. A federal rescue (about $500M for up to a 90% stake) followed. The exact Apr 15 and Apr 18 dates were not pinned down."
-  },
-  "c51": {
-   "cid": "c51",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
-   "note": "Spirit's own 8-K release confirms the 2 May 2026 wind-down, a fuel-price cause, no further funding, and a need for hundreds of millions in liquidity. Its March bondholder deal would have kept it operating but did not, and the claim's wording on that point is clumsy."
-  },
-  "c52": {
-   "cid": "c52",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://airlinegeeks.com/2026/05/06/court-clears-way-for-spirits-dismantling/",
-   "note": "The $500M federal rescue fell apart after creditors objected to terms giving the government up to a 90% stake, and the offer was withdrawn the Thursday before the shutdown."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.otcmarkets.com/filing/html?guid=4wt-kn4eJqORBih&id=19000840",
+   "note": "Amendment No. 1 on Dec 15, 2025 covered the $100M third draw and required $50M to stay in encumbered accounts. The daily cash reporting detail was not directly seen.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true",
+    "F": "true",
+    "E": "true"
+   }
   },
   "c53": {
    "cid": "c53",
-   "verdict": "unverifiable",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://airlinegeeks.com/2026/05/05/whats-next-for-spirit-inside-the-airlines-wind-down-plan/",
-   "note": "Reuters was blocked, and the fetch.py retry failed with a 500 error. Other reporting confirms about 150 retained staff, cut to about 40 after three months, and no viable path. I found no source naming CFO Fred Comer or tying the quote to the Reuters 4 May article."
-  },
-  "c54": {
-   "cid": "c54",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://airlinegeeks.com/2026/05/06/court-clears-way-for-spirits-dismantling/",
-   "note": "Judge Lane approved the wind-down plan on 5 May and granted the lease rejection and asset sale motions. The U.S. Trustee did not press its Chapter 7 conversion suggestion, per the Octus summary. Two items were deferred, and the wind-down order was entered 8 May."
+   "fresh": false,
+   "source": "https://cnbc.com/2026/02/24/spirit-airlines-bankruptcy-flights.html",
+   "note": "CNBC reports the agreement in principle, the cut from $7.4B to $2.1B, and cash collateral release. Fuel prices and the May 2026 wind-down overtook the plan.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true"
+   }
   },
   "c55": {
    "cid": "c55",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "minor",
-   "source": "https://finance.yahoo.com/sectors/energy/articles/spirit-airlines-shuts-down-rescue-114753686.html",
-   "note": "CNBC returned 403 and an empty body. Other outlets confirm about 17,000 jobs affected, including contractors. I found no source for Davis staying on with about 130 other employees."
+   "fresh": false,
+   "source": "https://www.cnbc.com/2026/02/24/spirit-airlines-bankruptcy-flights.html",
+   "note": "CNBC says talks with Frontier and Castlelake produced nothing as of that date.",
+   "via": "passages"
   },
   "c56": {
    "cid": "c56",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.local10.com/news/2026/05/05/spirit-airlines-reports-4800-job-cuts-in-florida/",
-   "note": "The total of over 4,850 Florida job cuts, the FLL 2,529, Dania Beach 551 and MIA 181 figures, and health coverage ending around May 2 are supported. I could not confirm the Orlando split of 796 plus 796. Another source gives 1,538 for Orlando."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326003790/dp243147_8k.htm",
+   "note": "The 8-K confirms the Mar 13, 2026 RSA with consenting DIP lenders for a proposed plan. It later collapsed.",
+   "via": "passages"
   },
   "c57": {
    "cid": "c57",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.nbcnews.com/news/us-news/former-spirit-workers-claim-are-still-owed-pay-benefits-lawsuit-says-rcna345088",
-   "note": "NBC, published May 14, reports a proposed WARN class action in SDNY bankruptcy court seeking 60 days of wages and benefits. It also reports some former workers missing final paychecks."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The 10-K describes $150M of encumbered cash used to prepay DIP loans, a $100M payment at the effective date, and equity mainly to roll-up DIP holders.",
+   "via": "passages"
   },
   "c58": {
    "cid": "c58",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
-   "note": "The 8-K exhibit confirms automatic card refunds, with vouchers, credits and points to be handled later in bankruptcy. It lists no customer service contact and only points to the restructuring website, which fits the claim only loosely."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://fitchratings.com/entity/spirit-airlines-inc-93771290",
+   "note": "No passage addresses the S&P upgrade; it matches my recollection of the post-emergence rating. It was superseded by the second bankruptcy filing.",
+   "via": "passages"
   },
   "c59": {
    "cid": "c59",
    "verdict": "true",
    "in_scope": true,
    "materiality": "minor",
-   "source": "https://www.marketscreener.com/news/spirit-nearly-done-processing-customer-refunds-after-shutdown-ce7f58dedb80f527",
-   "note": "The Reuters report, syndicated, says most card customers were refunded by Saturday evening, May 2, with a small percentage still processing."
+   "fresh": false,
+   "source": "https://fitchratings.com/entity/spirit-airlines-inc-93771290",
+   "note": "Fitch's list shows the Aug 15, 2025 downgrade to CCC- with EETC ratings affirmed. Fitch later cut to D and then withdrew.",
+   "via": "passages"
   },
   "c60": {
    "cid": "c60",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://octus.com/resources/articles/spirit-airlines-wind-down-approved/",
-   "note": "Hearing coverage says Broward County asserted a lien on aircraft for postpetition administrative claims. Octus says airports, lessors, insurers and trade counterparties agreed to modifications to the wind-down order. I did not verify the exact May 5 date, and no ruling on the county's motion was found."
-  },
-  "c61": {
-   "cid": "c61",
-   "verdict": "unverifiable",
-   "in_scope": true,
    "materiality": "minor",
-   "source": "https://afacwa.org/?p=10670",
-   "note": "Only secondary sites give the Jan 27 and Jul 27 2026 dates. I found no source for the Feb 25 governmental date and did not see the bar date order itself."
-  },
-  "c62": {
-   "cid": "c62",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://chapter11cases.com/blogs/news/spirit-airlines-case-update-the-data-sale-slips-to-november-as-spirit-moves-to-unwind-the-hfs-aircraft-deal",
-   "note": "The Oct 14 2026 report shows the $8.3M simulator sale, the HFS aircraft deal being unwound, and the Google data sale hearing adjourned to Nov 6. It doesn't use the word 'liquidation', but other sources say Spirit stopped flying May 2 2026 and is winding down."
-  },
-  "c63": {
-   "cid": "c63",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.bloomberg.com/news/articles/2024-06-05/s-p-cuts-spirit-airlines-debt-to-ccc-on-cash-crunch-concerns",
-   "note": "On Jun 5 2024 S&P cut Spirit to CCC from CCC+ with a negative outlook. It cited the loyalty bond and convertible maturities, inadequate liquidity and a likely distressed exchange. I checked press coverage, not S&P's own release."
+   "fresh": false,
+   "source": "https://ratings.moodys.com/ratings-news/449168",
+   "note": "Moody's Aug 22, 2025 action matches on CFR, PDR, SGL-4, negative outlook and the $450M covenant risk. The >$500M cash burn figure was not seen directly.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "B": "true"
+   }
   },
   "c64": {
    "cid": "c64",
-   "verdict": "false",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://kfgo.com/2025/08/15/fitch-cuts-spirit-airlines-rating-further-into-junk-territory/",
-   "note": "Fitch did cut Spirit to CCC- from CCC+, but the action was on Aug 15 2025, not Aug 18. The stated reasons match."
-  },
-  "c65": {
-   "cid": "c65",
-   "verdict": "false",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.marketscreener.com/news/fitch-downgrades-spirit-airlines-to-ccc-affirms-eetc-ratings-ce7c51dfd188f423",
-   "note": "The loyalty debt cut to CCC- from B- and the RR4 from RR3 are correct, but the action date was Aug 15 2025, not Aug 18. Fitch then cut it to C and Spirit to D after the Aug 28 2025 bankruptcy filing."
-  },
-  "c66": {
-   "cid": "c66",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://finance.yahoo.com/news/moodys-cuts-spirit-airlines-credit-150000804.html",
-   "note": "Press confirms a two-notch cut to Caa3 on 2025-08-22 and a forecast of more than $500M cash burn. I could not confirm SGL-4 or the negative outlook, and the Moody's page was only a title."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.marketscreener.com/news/fitch-downgrades-spirit-airlines-to-d-ce7d59d9db8dfe26",
+   "note": "Fitch cut the IDR to D from CCC- after the Chapter 11 filing, and the rating history shows 04-Sep-2025.",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true",
+    "F": "false",
+    "E": "true"
+   },
+   "via": "passages"
   },
   "c67": {
    "cid": "c67",
-   "verdict": "unverifiable",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.investing.com/news/stock-market-news/spirit-airlines-downgraded-to-ccc-by-sp-on-goingconcern-doubts-93CH-4194245",
-   "note": "S&P's 2025 free cash flow deficit above $600M is confirmed. I found no source for Moody's B2 in 2023, and the cited source id could not be opened."
-  },
-  "c68": {
-   "cid": "c68",
-   "verdict": "unverifiable",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434014",
-   "note": "The S&P page returned no content. S&P was at CCC after 2025-08-14, so a cut to D from CCC after the filing is plausible. I found no S&P action dated 2025-09-02 and only the November 2024 D action."
-  },
-  "c69": {
-   "cid": "c69",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.investing.com/news/stock-market-news/spirit-airlines-downgraded-to-d-by-fitch-after-second-bankruptcy-filing-93CH-4225189",
-   "note": "Investing.com article dated 2025-09-04: Fitch cut the IDR to D from CCC-, and senior secured debt to C with RR4 unchanged, after the second Chapter 11 filing."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://ng.investing.com/news/stock-market-news/spirit-airlines-downgraded-to-d-by-fitch-after-second-bankruptcy-filing-93CH-2092544",
+   "note": "Secured debt was cut to C/RR4 and Fitch called liquidation risk 'elevated'.",
+   "via": "passages"
   },
   "c70": {
    "cid": "c70",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026",
-   "note": "The Fitch URL slug (6 May 2026) says affirm and withdraw. News confirms Spirit ceased operations and began liquidating on 2026-05-02. I could not read the Fitch page body."
-  },
-  "c71": {
-   "cid": "c71",
-   "verdict": "unverifiable",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216",
-   "note": "The S&P page returned 403 and the fetch script returned no readable text, and searches found no withdrawal notice. A withdrawal after the 2 May 2026 shutdown is plausible, but the 21 May date and the reason are unconfirmed."
-  },
-  "c72": {
-   "cid": "c72",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.cfodive.com/news/spirit-airlines-cfo-coo-gc-ceo-exits-bankruptcy-chapter11/744652/",
-   "note": "Christie left in April 2025, CCO Klein stepped down, and an Office of the President (CFO, COO, GC) ran the company. November 2025 coverage names Dave Davis as CEO."
+   "fresh": false,
+   "source": "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290",
+   "note": "Fitch's page shows an affirmation and a withdrawal on 06-May-2026, and the Reuters headline adds the EETC Rating Watch Negative.",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true",
+    "F": "true",
+    "C": "true",
+    "A": "true"
+   },
+   "via": "passages"
   },
   "c73": {
    "cid": "c73",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.nbcnews.com/business/travel/spirit-airlines-furlough-1800-flight-attendants-second-bankruptcy-rcna233081",
-   "note": "The 11 cities, 1,800 flight-attendant furloughs, 270 pilots from 1 Nov and 140 captains downgraded are all confirmed (pilot figures via ch-aviation). I did not confirm the 'nearly one-third' share."
+   "fresh": false,
+   "source": "S&P Global Ratings, May 7, 2026 (excerpt provided)",
+   "note": "The S&P excerpt says the 2015-1 Class A was lowered four notches to CCC+.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
   },
   "c74": {
    "cid": "c74",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://skift.com/2025/11/05/spirit-airlines-cuts-150-jobs-exits-several-markets/",
-   "note": "Skift and Bloomberg Law report about 150 jobs cut and several markets exited on 5 Nov 2025."
+   "fresh": false,
+   "source": "S&P Global Ratings, May 7, 2026 (excerpt provided)",
+   "note": "The S&P excerpt says the 2017-1 Class AA was lowered to B.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c76": {
+   "cid": "c76",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.itiger.com/news/2637930357",
+   "note": "Reuters/S&P headline confirms S&P withdrew all Spirit Airlines LLC ratings on 2026-05-21 due to lack of sufficient information; EETC inclusion is consistent with 'all ratings'.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c77": {
+   "cid": "c77",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+   "note": "Press release states immediate orderly wind-down, all flights cancelled, no additional funding, hundreds of millions of liquidity needed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "A": "true",
+    "E": "true",
+    "B": "true",
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.aljazeera.com/news/2026/5/2/spirit-airlines-begins-wind-down-cancels-all-flights-over-fuel-crisis",
+   "note": "Al Jazeera: plan assumed ~$2.24/gal for 2026; prices ~ $4.51 by end of April.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c82": {
+   "cid": "c82",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_8k.htm",
+   "note": "8-K states wind-down and that company will cease filing periodic/current reports; the 8-K was filed May 4 with May 2 event date.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c83": {
+   "cid": "c83",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_8k.htm",
+   "note": "8-K filed 2026-05-04 says company will cease filing reports following wind-down and Section 15(d) suspension.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c85": {
+   "cid": "c85",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://spiritdidnotpayme.substack.com/p/the-unpaid-employee-017",
+   "note": "September MOR excerpt states ops ceased May 2 and switch to liquidation basis; unaudited/limited-scope is standard for MORs; filing date Oct 21 not directly verified.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
+   "note": "Reuters quotes CFO Fred Comer: no longer any viable paths to restructuring or continued operations.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
+   "note": "Reuters confirms the wind-down filing, no alternative, and ~3-month timeline; $10.7M retention figure not seen in passages but the article is about management bonuses.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
+   "note": "Reuters: retain ~150 employees, decreasing to ~40 after first three months.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://octus.com/resources/articles/spirit-airlines-wind-down-approved",
+   "note": "Judge Lane approved wind-down procedures with entry May 8; lease rejection/asset sales and UST Chapter 7 detail not directly seen but consistent.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c91": {
+   "cid": "c91",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://chapter11cases.com/blogs/news/from-reorganization-to-wind-down-spirit-airlines-moves-to-auction-its-remaining-assets",
+   "note": "The wind-down order was entered on May 8, 2026, and the provider excerpts quote the approval and the DIP Amendment No. 2 / final DIP order.",
+   "via": "passages"
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://chapter11cases.com/blogs/news/from-reorganization-to-wind-down-spirit-airlines-moves-to-auction-its-remaining-assets",
+   "note": "The timeline shows the May 8 wind-down order and the May 27 Bidding Procedures Motion, covering LaGuardia slots, the campus and other assets.",
+   "via": "passages"
+  },
+  "c93": {
+   "cid": "c93",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-08/html/2026-20664.htm",
+   "note": "Spirit is in a court-supervised wind-down and liquidation, and the September MOR shows 63 employees and ongoing asset sales. No source states the exact 2026-11-06 date.",
+   "via": "passages"
+  },
+  "c94": {
+   "cid": "c94",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://octus.com/resources/articles/spirit-airlines-wind-down-approved",
+   "note": "Octus reports Broward County asserted a lien on aircraft at the airport to secure postpetition administrative claims. The exact hearing date is slightly fuzzy.",
+   "via": "passages"
+  },
+  "c95": {
+   "cid": "c95",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sun-sentinel.com/2026/05/21/broward-asks-court-to-order-spirit-to-pay-3m-in-past-due-airport-fees-clear-path-for-new-tenants/",
+   "note": "Sun Sentinel on 2026-05-21 reports Broward asking the court over about $3M in past-due airport fees, which is a creditor allegation.",
+   "via": "passages"
+  },
+  "c96": {
+   "cid": "c96",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://spiritdidnotpayme.substack.com/p/the-unpaid-employee-017",
+   "note": "The airline ceased operations on May 2 and has 63 employees, so $0 revenue in the September MOR is consistent. The $0 figure itself is not shown directly.",
+   "via": "passages"
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://spiritdidnotpayme.substack.com/p/the-unpaid-employee-017",
+   "note": "The September MOR shows $202,765,268 of cash at the end of September, and the provider excerpt shows the same figure for the LLC column.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c100": {
+   "cid": "c100",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://spiritdidnotpayme.substack.com/p/the-unpaid-employee-017",
+   "note": "The provider MOR excerpt shows an adjusted ending balance of $214,829,228 in the LLC column, which includes restricted and pooled cash.",
+   "via": "passages"
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://spiritdidnotpayme.substack.com/p/the-unpaid-employee-017",
+   "note": "The September MOR is reported as showing 63 full-time employees as of October 1, 2026, versus 9,229 at the case start.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c106": {
+   "cid": "c106",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-08/html/2026-20664.htm",
+   "note": "FAA exemption for the 22 LGA slots to JetBlue effective Oct 8 is confirmed, but the FAA did not 'confirm cessation of operations and liquidation'; that came from the company on May 2.",
+   "via": "passages"
+  },
+  "c107": {
+   "cid": "c107",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.visaverge.com/travel/spirit-airlines-liquidation-begins-jetblue-buys-laguardia-slots-detroit-hangar-transfer-set/",
+   "note": "JetBlue's $58.5M winning bid for 22 LGA slots, subject to court and FAA approval, is supported; FAA approval later came on Oct 8.",
+   "via": "passages"
+  },
+  "c108": {
+   "cid": "c108",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.visaverge.com/travel/spirit-airlines-liquidation-begins-jetblue-buys-laguardia-slots-detroit-hangar-transfer-set/",
+   "note": "Wayne County Airport Authority would pay $18M for the Detroit hangar lease; the hearing was set for Aug 4.",
+   "via": "passages"
+  },
+  "c109": {
+   "cid": "c109",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.visaverge.com/travel/spirit-airlines-liquidation-begins-jetblue-buys-laguardia-slots-detroit-hangar-transfer-set/",
+   "note": "Stalking-horse bid of $533.5M covers about 20 aircraft plus Free Spirit.",
+   "via": "passages"
+  },
+  "c110": {
+   "cid": "c110",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://airlinegeeks.com/2026/05/14/former-employees-propose-class-action-lawsuit-against-spirit/",
+   "note": "The class action was filed in SDNY on a Tuesday (May 12) over about 17,000 layoffs under the WARN Act, seeking 60 days of wages and benefits.",
+   "via": "passages"
+  },
+  "c112": {
+   "cid": "c112",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html",
+   "note": "CNBC supports the shutdown, the 17,000 jobs lost, and the 'ran out of runway' quote; the other details are plausible from the same article.",
+   "via": "passages"
+  },
+  "c114": {
+   "cid": "c114",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://airlinegeeks.com/2025/11/05/two-senior-executives-leave-spirit",
+   "note": "CHRO and CIO departures and about 150 corporate roles cut that week are confirmed; the 11-city exit was reported separately in September.",
+   "via": "passages"
+  },
+  "c115": {
+   "cid": "c115",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000162828025051157/save-20250930.htm",
+   "note": "The Q3 2025 10-Q was filed during Chapter 11 as debtor-in-possession, and a going-concern statement is expected; the passage confirms the Chapter 11 status.",
+   "via": "passages"
+  },
+  "c116": {
+   "cid": "c116",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The FY2025 10-K was filed in March 2026 amid Chapter 11, and a going-concern paragraph and management doubt are consistent with that.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c118": {
+   "cid": "c118",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www-s1.npr.org/2025/08/30/nx-s1-5522901/spirit-airlines-bankruptcy-filing",
+   "note": "The furlough and downgrade numbers are confirmed; the debt and FCF figures are plausible and were cited alongside the substantial doubt language.",
+   "via": "passages"
+  },
+  "c119": {
+   "cid": "c119",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The 10-K confirms the July 2025 announcement of about 270 pilot furloughs effective Nov 1 and about 140 captain downgrades effective Oct 1.",
+   "via": "passages"
+  },
+  "c120": {
+   "cid": "c120",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "The 10-K confirms the September 2025 announcement of about 1,800 flight-attendant furloughs effective Nov 1, 2025.",
+   "via": "passages"
+  },
+  "c121": {
+   "cid": "c121",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "10-K states 4,469 employee terminations in 2025 (voluntary and involuntary), but it is historical turnover data with little bearing on current decisions.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c122": {
+   "cid": "c122",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "note": "10-K confirms 7,482 active employees at 12/31/2025 versus 11,331 at 12/31/2024; stale as the airline has since shut down.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c123": {
+   "cid": "c123",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm",
+   "note": "10-K/A confirms Christie stepped down April 6, 2025 and Davis became CEO effective April 21, 2025; old event superseded by later developments.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c124": {
+   "cid": "c124",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://trellis.law/case/12086/2025-005862-ca-01/solair-group-inc-vs-spirit-airlines-inc",
+   "note": "Trellis shows a general creditor case filed 2025-04-02 in Miami-Dade claiming interest on non-payment, restocking fees and finance charges; small supplier suit, now overshadowed by liquidation.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c63": {
+   "cid": "c63",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3434014",
+   "confidence": "medium",
+   "note": "The saved S&P page is empty and my searches only surfaced the Nov 2024 CCC-to-D action. The 2025 downgrade to D after the Aug 29 filing is corroborated by Fitch's D downgrade and the Moody's cut to Caa3 on Aug 22. The exact 'from CCC' and one-notch EETC wording are unconfirmed.",
+   "via": "agent"
+  },
+  "c68": {
+   "cid": "c68",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.fitchratings.com/research/corporate-finance/fitch-downgrades-spirit-airlines-to-d-04-09-2025",
+   "confidence": "medium",
+   "note": "Fitch's downgrade to D is confirmed. I found no 10-K text on ratings, and Moody's moved the CFR to Caa3 on Aug 22, 2025 (Moody's has no 'D' rating). I could not confirm the 10-K says what the claim attributes to it.",
+   "via": "agent"
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+   "confidence": "medium",
+   "note": "I found no passage in the saved 10-K about Moody's withdrawing its ratings, and I found no other source for the withdrawal.",
+   "via": "agent"
   },
   "c75": {
    "cid": "c75",
    "verdict": "unverifiable",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.ch-aviation.com/news/164901-uss-spirit-files-ch-11-plan-eyes-80-strong-fleet-by-3q26",
-   "note": "214 aircraft pre-bankruptcy and a 76–80 target by Q3 2026 are confirmed. I found nothing on 'mid-August' or the international cuts, and the plan was overtaken by the May 2026 liquidation."
-  }
- },
- "audit": {
-  "c6": {
-   "cid": "c6",
-   "verdict": "true",
-   "note": "The Q3 2025 10-Q (Successor period) shows total operating revenues of $958,524K for the three months ended 2025-09-30."
+   "fresh": false,
+   "source": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101684171",
+   "confidence": "medium",
+   "note": "The saved S&P page is empty. The only excerpt says 2015-1 Class A and 2017-1 Class AA were cut four notches to CCC+ and B. Neither the excerpt nor my search confirms the 2017-1 Class A at B-.",
+   "via": "agent"
   },
-  "c23": {
-   "cid": "c23",
-   "verdict": "true",
-   "note": "10-K XBRL page R63 lists accounts payable of $124,400K within liabilities subject to compromise at 2025-12-31 (total LSTC $5,983,485K)."
-  },
-  "c28": {
-   "cid": "c28",
+  "c97": {
+   "cid": "c97",
    "verdict": "unverifiable",
-   "note": "The July 2026 MOR PDF could not be read and no other source gives the 76 or 9,229 employee counts."
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+   "confidence": "medium",
+   "note": "The saved September 2026 operating report is real and shows wind-down accounting and ending cash of about $214.8M. I could not find the figure $31,206,117 in it.",
+   "via": "agent"
   },
-  "c42": {
-   "cid": "c42",
+  "c103": {
+   "cid": "c103",
    "verdict": "true",
-   "note": "10-K debt note: on 2025-10-31 the court entered the final DIP order for up to $1.2B, with up to $475M new money and a $750M roll-up of pre-petition secured notes."
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.spiritrestructuring.com/vendors",
+   "note": "Vendor FAQ says outstanding claims go through the bankruptcy process and retained wind-down vendors are paid for go-forward goods and services. It gives no assurance of full payment of historical claims. The page's 2026-11-09 date was not confirmed.",
+   "confidence": "high",
+   "via": "agent"
   },
-  "c44": {
-   "cid": "c44",
-   "verdict": "true",
-   "note": "10-K R24 lists a $50M new-money DIP draw on 2025-11-07, after $200M on 2025-10-14 and before $100M on 2025-12-15."
+  "c104": {
+   "cid": "c104",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://spa.alpa.org/Publications/From-the-Chair-12",
+   "note": "The cached court PDF is binary and could not be read. ALPA's own update shows it objected over unpaid accrued sick and vacation pay, but I found nothing on earmarked funds or secured lenders' authorization, or on a 2026-06-05 filing date.",
+   "confidence": "medium",
+   "via": "agent"
   },
-  "c54": {
-   "cid": "c54",
-   "verdict": "true",
-   "note": "Octus and news reports say Judge Lane approved the wind-down procedures and the lease rejection and aircraft sale motions on 2026-05-05. The U.S. Trustee did not press Chapter 7 conversion. The written order may be dated 2026-05-08."
+  "c105": {
+   "cid": "c105",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://document.epiq11.com/document/getdocumentsbydocket/?docketId=1225272&docketNumber=1075&projectCode=SPJ&source=DM",
+   "note": "The cached docket PDF is unreadable binary, and no cached page or search result mentions GSE America or possessory liens.",
+   "confidence": "medium",
+   "via": "agent"
   },
-  "c58": {
-   "cid": "c58",
+  "c111": {
+   "cid": "c111",
    "verdict": "true",
-   "note": "Press coverage confirms automatic card refunds, vouchers, credits and Free Spirit points left to the bankruptcy process, and customer service closed. The 8-K exhibit downloaded but couldn't be read without approval, so this rests on press coverage."
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.prnewswire.com/news-releases/spirit-airlines-begins-orderly-wind-down-of-operations-302760586.html",
+   "note": "Press release says compensation for vouchers, credits and Free Spirit points will be determined later through the bankruptcy process.",
+   "confidence": "high",
+   "via": "agent"
   },
-  "c65": {
-   "cid": "c65",
+  "c113": {
+   "cid": "c113",
    "verdict": "true",
-   "note": "Aviation News (dated 2025-08-18) confirms loyalty debt cut to CCC- from B- and recovery rating to RR4 from RR3. The action was probably taken Friday 2025-08-15, so 08-18 is likely the report date."
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html",
+   "note": "CEO Davis is quoted saying vendors stop working and fuelers stop fueling if a shutdown is announced in advance. The article does not say counterparties moved to prepayment or cash terms, so that part is the claim's inference.",
+   "confidence": "medium",
+   "via": "agent"
   }
  },
+ "audit": {},
  "scores": {
-  "exa": {
-   "units": 14,
-   "unverifiable": 1,
-   "true": 13,
-   "wrong": 0,
-   "truth": 53,
-   "coverage": 0.244,
-   "accuracy": 1.0,
-   "combined": 0.288
-  },
   "parallel": {
-   "units": 11,
-   "unverifiable": 3,
-   "true": 8,
+   "units": 18,
+   "unverifiable": 2,
+   "true": 16,
    "wrong": 0,
-   "truth": 53,
-   "coverage": 0.148,
-   "accuracy": 1.0,
-   "combined": 0.179
+   "truth": 93,
+   "truth_weight": 207.5,
+   "coverage": 0.255,
+   "accuracy": 0.955,
+   "combined": 0.403,
+   "metric": "F1"
   },
-  "firecrawl": {
-   "units": 26,
-   "unverifiable": 7,
-   "true": 19,
+  "opus": {
+   "units": 31,
+   "unverifiable": 0,
+   "true": 31,
    "wrong": 0,
-   "truth": 53,
-   "coverage": 0.378,
+   "truth": 93,
+   "truth_weight": 207.5,
+   "coverage": 0.299,
    "accuracy": 1.0,
-   "combined": 0.431
+   "combined": 0.46,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 93,
+   "truth_weight": 207.5,
+   "coverage": 0.212,
+   "accuracy": 1.0,
+   "combined": 0.35,
+   "metric": "F1"
   },
   "nimble": {
-   "units": 43,
-   "unverifiable": 5,
-   "true": 31,
-   "wrong": 7,
-   "truth": 53,
-   "coverage": 0.607,
-   "accuracy": 0.828,
-   "combined": 0.642
+   "units": 41,
+   "unverifiable": 0,
+   "true": 41,
+   "wrong": 0,
+   "truth": 93,
+   "truth_weight": 207.5,
+   "coverage": 0.378,
+   "accuracy": 1.0,
+   "combined": 0.549,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 16,
+   "unverifiable": 3,
+   "true": 12,
+   "wrong": 1,
+   "truth": 93,
+   "truth_weight": 207.5,
+   "coverage": 0.181,
+   "accuracy": 0.758,
+   "combined": 0.292,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 25,
+   "unverifiable": 1,
+   "true": 23,
+   "wrong": 1,
+   "truth": 93,
+   "truth_weight": 207.5,
+   "coverage": 0.202,
+   "accuracy": 0.966,
+   "combined": 0.335,
+   "metric": "F1"
   }
- },
- "judge_cost_usd": 3.175
+ }
 }

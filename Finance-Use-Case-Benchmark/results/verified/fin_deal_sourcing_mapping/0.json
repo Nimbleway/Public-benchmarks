@@ -1,0 +1,726 @@
+{
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input_n": 0,
+ "task": "Find founder-owned US commercial HVAC service companies in Texas with 50-300 employees and no institutional investors",
+ "labels": {
+  "firecrawl": "A",
+  "gpt": "B",
+  "opus": "C",
+  "exa": "D",
+  "parallel": "E",
+  "nimble": "F"
+ },
+ "unit": "company",
+ "evidence_pages": 35,
+ "evidence_fetched": 33,
+ "retried_to_verdict": 4,
+ "unverifiable_first_pass": 11,
+ "decided_from_passages": 0,
+ "judge": "v4b",
+ "judge_cost_usd": 1.019,
+ "corrections_v2": {
+  "ownership_changes": [
+   {
+    "cid": "c6",
+    "criterion": "Founder-owned, no institutional investors",
+    "from": "fail",
+    "to": "pass",
+    "why": "Multi-generational family-held Subchapter S corporation with a Letsos family partnership. Family ownership satisfies the criterion, and no PE, institutional investor, corporate parent or public listing appears."
+   },
+   {
+    "cid": "c9",
+    "criterion": "Founder-owned, no institutional investors",
+    "from": "unknown",
+    "to": "pass",
+    "why": "BuildZoom lists an individual owner, Ben Heilker, which indicates owner-operated. No institutional investor appears. Confidence is low."
+   },
+   {
+    "cid": "c11",
+    "criterion": "Founder/family-owned, no institutional investors",
+    "from": "unknown",
+    "to": "pass",
+    "why": "Directory profiles describe the company as family-owned, and no institutional investor appears. The size concern is outside this ownership criterion."
+   },
+   {
+    "cid": "c14",
+    "criterion": "Founder-owned, no institutional investors",
+    "from": "unknown",
+    "to": "pass",
+    "why": "The company states it is family-owned, and no institutional investor appears. Its residential focus is outside this ownership criterion."
+   },
+   {
+    "cid": "c15",
+    "criterion": "Founder-owned, no institutional investors",
+    "from": "unknown",
+    "to": "pass",
+    "why": "Self-described as privately owned, with Tommy Barnes listed as President/Owner, which indicates owner-operated. No investor news was found."
+   }
+  ],
+  "cost": 0.025
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Coopwood's Air Conditioning, Inc. (coopwood.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Coopwood's Air Conditioning, Inc. (coopwood.com) fits the thesis: Houston, TX commercial/industrial HVAC contractor with a Service & Maintenance division, ~90 employees, founded 1980 by Mike Coopwood and second-generation family-owned, no institutional investors mentioned."
+   },
+   "urls": [
+    "493558c7"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Comfort-Air Engineering, Inc. & Primo Plumbing, Inc. (comfort-air.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Comfort-Air Engineering, Inc. & Primo Plumbing, Inc. (comfort-air.com) fits the thesis: San Antonio, TX family-owned (Freund family, founded 1964) HVAC company with a commercial/industrial arm, over 200 employees (LinkedIn shows 58, band 51-200), no institutional investors mentioned."
+   },
+   "urls": [
+    "f1fac6c4"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "HCL Mechanical Services, LLC (hclmechanicalservices.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "HCL Mechanical Services, LLC (hclmechanicalservices.com) fits the thesis: Houston, TX commercial HVAC/plumbing service company founded 2005 by brothers James and Chris Humphrey (Humphrey family), ~80 employees, privately held, no institutional investors mentioned."
+   },
+   "urls": [
+    "72db78b5"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Longhorn Mechanical Group (longhornmech.net) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Longhorn Mechanical Group (longhornmech.net) fits the thesis: Van Alstyne, TX commercial HVAC service contractor serving DFW, self-owned (President Daniel Perez), ~110 benefit-plan participants, only outside funding a forgiven PPP loan, no PE/VC investors."
+   },
+   "urls": [
+    "45ae8849"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Raven Mechanical, LP (ravenmechanical.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Raven Mechanical, LP (ravenmechanical.com) fits the thesis: Houston, TX commercial plumbing/HVAC service contractor founded 1979, 84 employees on LinkedIn, privately held, no institutional investor found."
+   },
+   "urls": [
+    "6b4fe319"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Letsos Company (letsos.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Letsos Company (letsos.com) fits the thesis: Houston, TX mechanical contractor with HVAC service, founded 1953 by James N. Letsos Jr., led by the Letsos family, 244 employees on LinkedIn, privately held, no institutional investors mentioned."
+   },
+   "urls": [
+    "3608fcba"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Venture Mechanical, Inc. (venturemech.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Venture Mechanical, Inc. (venturemech.com) fits the thesis: Carrollton, TX commercial/industrial mechanical construction and service contractor founded 1975, 104 employees on LinkedIn, privately held with insider/management ownership, no institutional investors mentioned."
+   },
+   "urls": [
+    "236e00f9"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Texas Chiller Systems (texaschillersystems.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Texas Chiller Systems (texaschillersystems.com) fits the thesis: San Antonio, TX commercial HVAC/chiller company with 76 employees on LinkedIn, privately held partnership, expanding to a DFW branch, no institutional investor found (founder ownership not verified)."
+   },
+   "urls": [
+    "b5c9e3b4"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Victoria Air Conditioning, LTD (victoriaair.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Victoria Air Conditioning, LTD (victoriaair.com) fits the thesis: Victoria, TX family-owned (Heilker family), woman-owned mechanical/HVAC contractor since 1973 with commercial HVAC services, 90 employees on LinkedIn, privately held, no institutional investors mentioned."
+   },
+   "urls": [
+    "61417c83"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "United Mechanical, Inc. (United Chester Industries) (unitedmechanical.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "United Mechanical, Inc. (United Chester Industries) (unitedmechanical.com) fits the thesis: Dallas, TX family-led commercial mechanical contractor founded 1949 by Bill Chester with a 24/7 HVAC service department, 55 employees on LinkedIn (band 51-200), privately held, no institutional investors mentioned."
+   },
+   "urls": [
+    "170847bd"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Lochridge-Priest, Inc. (lochridgepriest.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Lochridge-Priest, Inc. (lochridgepriest.com) fits the thesis: Waco, TX commercial MEP/HVAC service contractor founded 1963, family-owned by the Akins family since 2007, self-owned, 200 employees on LinkedIn (conflicting chamber claim of 400+), no institutional investors mentioned."
+   },
+   "urls": [
+    "7e38c02a"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Beyer Mechanical, Ltd. (BMLTD.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Beyer Mechanical, Ltd. (BMLTD.com) fits the thesis: Selma, TX (San Antonio metro) family-owned since 1990 commercial air conditioning/HVAC service provider, LinkedIn band 51-200 (49 profiles), no institutional investor found."
+   },
+   "urls": [
+    "4a1a5047"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Malek Inc. (malekinc.com) fits the thesis",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Malek Inc. (malekinc.com) fits the thesis: Corpus Christi, TX family-owned (founded 1970) MEP contractor providing commercial HVAC, 56 LinkedIn profiles (declared band 201-500), no institutional investors mentioned."
+   },
+   "urls": [
+    "fdc005ce"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "AirCo Air Conditioning, Heating, and Plumbing (airco.com) fits the thesis",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "AirCo Air Conditioning, Heating, and Plumbing (airco.com) fits the thesis: a family-owned/private commercial HVAC service company headquartered in Fort Worth, Texas, founded in 1990, with 51-200 employees, an individual owner (Rick Thornton per BBB), and no institutional or PE owner disclosed in reviewed sources."
+   },
+   "urls": [
+    "https://www.airco.com/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Interior Climate Solutions (interiorcs.com) fits the thesis",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Interior Climate Solutions (interiorcs.com) fits the thesis: Dallas, TX-based commercial-only HVAC/R service company, privately owned and run by its builders with no investors found, 160+ field technicians (total headcount likely within 50-300 but unconfirmed), founded 2020; Tommy Barnes listed as President/Owner (not explicitly confirmed as founder)."
+   },
+   "urls": [
+    "https://interiorcs.com/about"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service company in Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no institutional investors",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://coopwood.com/about-us/",
+   "note": "The company's about page says it was founded in 1980 by Mike Coopwood, is second-generation family owned and operated, employs 90, and does commercial/industrial HVAC in Houston. No investor was found.",
+   "via": "agent"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service in Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no institutional investors",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://sanantonioreport.org/60-years-of-excellence-comfort-air-engineerings-inspiring-legacy-sponsored/",
+   "note": "Sponsored articles describe a family-owned San Antonio firm founded in 1964 by the Freund brothers, with 120+ employees in an older profile. The commercial share of its business and the exact headcount are only loosely supported.",
+   "via": "agent"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "unverifiable",
+   "in_scope": false,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service in Texas",
+     "result": "unknown"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": false,
+   "source": "https://leadiq.com/c/hcl-mechanical-services-llc/5a1d9a1b2300005900891948",
+   "note": "Search results describe HCL as a plumbing service arm formed in 2005 for Humphrey Company projects, with about 80 employees. HVAC focus and an ownership statement were not found.",
+   "via": "agent"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "unverifiable",
+   "in_scope": false,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service in Texas",
+     "result": "unknown"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": false,
+   "source": "https://naicslist.com/company-profile/longhorn-mechanical-inc-van-alstyne-tx-75495",
+   "note": "Search results show a Van Alstyne HVAC/plumbing contractor focused on new construction, headcount 51-100 per aggregator. No source confirms owner Daniel Perez or the absence of investors.",
+   "via": "agent"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service in Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://naicslist.com/company-profile/raven-mechanical-lp-houston-tx-77039",
+   "note": "Search results show a Houston mechanical contractor founded in 1979 with about 84 employees. No source states who owns it.",
+   "via": "agent"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Texas commercial HVAC service company",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "pass",
+     "result_original": "fail"
+    }
+   ],
+   "core_pass": true,
+   "source": "Village.ai, ZoomInfo, LeadIQ, Procore and NAICSlist listings (search results). The cited URL was not openable.",
+   "note": "Letsos Company was founded in 1953 by James N. Letsos Jr. It is a Subchapter S corporation, and a ZoomInfo related-search list includes 'Letsos Family Partnership Ltd'. After 70+ years it is multi-generational family-held, not founder-owned. Headcount estimates range from 92 to 388 (LeadIQ ~239)....",
+   "retried": true
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service, Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://leadiq.com/c/venture-mechanical-inc/5a1d8d3b5400005a0073e253",
+   "note": "Carrollton contractor founded 1975 with about 83-93 employees per directories. It is described only as private, and no source names the owners.",
+   "via": "agent"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service, Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "fail"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://orionservicesgroup.com/news/orion-group-partners-with-leading-commercial-hvac-service-provider-texas-chiller-systems",
+   "note": "Texas Chiller Systems partnered with Orion Group in 2021. Orion is backed by Alpine Investors, so the company has an institutional investor.",
+   "via": "agent"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service, Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": false,
+   "source": "https://www.owler.com/company/victoriaair",
+   "note": "Owler estimates under 10 employees, against the claimed 90. BuildZoom lists Ben Heilker as owner, but I found no source stating family ownership. The commercial focus is also unconfirmed.",
+   "via": "agent"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service, Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder/family-owned, no institutional investors",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://levelset.com/subcontractors/texas/dallas/hvac/united-chester-industries-inc-dba-united-mechanical",
+   "note": "Dallas HVAC contractor listed as United Chester Industries dba United Mechanical. I found no source on its headcount or ownership.",
+   "via": "agent"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service company in Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "fail"
+    },
+    {
+     "criterion": "Founder/family-owned, no institutional investors",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "Directory profiles; Form 5500 summary; Waco Chamber",
+   "note": "Directory profiles call the company family-owned, with offices in Waco, Temple, Corsicana and Fort Worth. Headcount figures conflict: 172, over 430, and 630 retirement-plan participants in 2024. That likely puts it above 300 employees. I found nothing tying the Akins family to the company. The si...",
+   "label_verdicts": {
+    "F": "false"
+   },
+   "retried": true
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service company in Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no institutional investors",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "Beyer Mechanical's own site; naicslist, village.ai and signalhire listings",
+   "note": "The company's site says it has been family-owned and operated since 1990, and the Beyer family members run it. Third-party headcount estimates range from about 51 to 200, and the company's site says 50+. No institutional investor appeared in any source. Confidence is moderate because the headcoun...",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "retried": true
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service company in Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder/family-owned, no institutional investors",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "Malek's own site description; Angi; LeadIQ, Village and Prospeo estimates",
+   "note": "The company describes itself as family-owned and says it has served the Coastal Bend since 1970 with commercial, industrial and residential work. Angi also lists it as family owned and operated. Headcount estimates are 50+, 51-100 and 51-200, and Prospeo estimates revenue near $15M. No institutio...",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "retried": true
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "false",
+   "in_scope": false,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service company in Texas",
+     "result": "fail"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "unknown"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": false,
+   "source": "https://www.airco.com/",
+   "note": "The airco.com site is residential-focused ('We bring comfort home', DFW homes), and BBB lists it as an HVAC and plumbing business. The family-owned claim is stated, but no headcount appears, and the company is not primarily commercial.",
+   "via": "agent"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Commercial HVAC service company in Texas",
+     "result": "pass"
+    },
+    {
+     "criterion": "50-300 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Founder-owned, no institutional investors",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://interiorcs.com/about",
+   "note": "Own site says Dallas commercial HVAC/R, 'privately owned', 160+ technicians; RevenueBase shows 51-200 employees. Prospeo lists Tommy Barnes as President/Owner and founded 2020, but no source says he is the founder, and no investor news turned up in one search.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c6": {
+   "cid": "c6",
+   "verdict": "false",
+   "note": "Fails the founder-owned test. Letsos is a family company founded in 1953 by James N. Letsos Jr. and now run by the next generation (James N. Letsos III as CEO, with Greg and Mark Letsos). Headcount also likely exceeds 300: it has 170+ service technicians alongside construction crews and ranks among "
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "note": "Dallas commercial-only HVAC/R company founded around 2020. Its site says it is 'privately owned' and 'run by the people who built it'. Tommy Barnes is listed as President/Owner. It has 160+ technicians, so total staff is plausibly 50-300. No investors or PE deals were found. Barnes is not explicitly"
+  }
+ },
+ "scores": {
+  "firecrawl": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 0,
+   "partial": 0,
+   "wrong": 1,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.0,
+   "accuracy": 0.0,
+   "combined": 0.0,
+   "metric": "F2"
+  },
+  "gpt": {
+   "units": 0,
+   "unverifiable": 0,
+   "true": 0,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.0,
+   "accuracy": null,
+   "combined": 0.0,
+   "metric": "F2"
+  },
+  "opus": {
+   "units": 1,
+   "unverifiable": 1,
+   "true": 0,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 1,
+   "truth": 5.0,
+   "coverage": 0.0,
+   "accuracy": 0.0,
+   "combined": 0.0,
+   "metric": "F2"
+  },
+  "exa": {
+   "units": 0,
+   "unverifiable": 0,
+   "true": 0,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.0,
+   "accuracy": null,
+   "combined": 0.0,
+   "metric": "F2"
+  },
+  "parallel": {
+   "units": 0,
+   "unverifiable": 0,
+   "true": 0,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 5.0,
+   "coverage": 0.0,
+   "accuracy": null,
+   "combined": 0.0,
+   "metric": "F2"
+  },
+  "nimble": {
+   "units": 13,
+   "unverifiable": 6,
+   "true": 4,
+   "partial": 2,
+   "wrong": 6,
+   "unconfirmed": 1,
+   "truth": 5.0,
+   "coverage": 1.0,
+   "accuracy": 0.4,
+   "combined": 0.769,
+   "metric": "F2"
+  }
+ }
+}

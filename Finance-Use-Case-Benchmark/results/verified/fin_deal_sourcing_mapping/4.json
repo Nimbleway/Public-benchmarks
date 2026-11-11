@@ -1,0 +1,1238 @@
+{
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input_n": 4,
+ "task": "Find family-owned German machine-tool manufacturers (Mittelstand) with 100-500 employees",
+ "labels": {
+  "gpt": "A",
+  "parallel": "B",
+  "nimble": "C",
+  "firecrawl": "D",
+  "opus": "E",
+  "exa": "F"
+ },
+ "unit": "company",
+ "evidence_pages": 155,
+ "evidence_fetched": 155,
+ "retried_to_verdict": 2,
+ "unverifiable_first_pass": 2,
+ "decided_from_passages": 0,
+ "judge": "v4b",
+ "judge_cost_usd": 1.995,
+ "corrections_v2": {
+  "ownership_changes": [
+   {
+    "cid": "c29",
+    "criterion": "Family-owned (Friedrich family)",
+    "from": "unknown",
+    "to": "pass",
+    "why": "The company name points to the Friedrich family as limited partners, and wer-zu-wem lists it as a family business with an individual owner (Michael Reich). No institutional owner is shown, so it passes under the one rule."
+   },
+   {
+    "cid": "c44",
+    "criterion": "Not PE-owned",
+    "from": "unknown",
+    "to": "pass",
+    "why": "The evidence shows a family-led company with an individual owner and no PE or other institutional owner."
+   }
+  ],
+  "cost": 0.048
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "HEDELIUS Maschinenfabrik GmbH (hedelius.de) fits the thesis: independent family-owned CNC machining-centre maker in Meppen, founded 1967, approx. 250 employees.",
+   "asserted_by": [
+    "A",
+    "F",
+    "C",
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "family-run (third generation) German CNC machining-centre builder in Meppen with about 250 employees, founded 1967.",
+    "D": "a family-owned German CNC machining-centre manufacturer in Meppen, Lower Saxony, founded 1967, with 247 employees per its EMO 2025 exhibitor profile.",
+    "B": "family-owned (Hempelmann family) CNC machining-centre manufacturer in Meppen, founded 1967, with 247 employees per EMO 2025 profile.",
+    "C": "Meppen-based CNC machining-centre builder, founded 1967, described as an independent family-owned company (Hempelmann family), ~250 employees.",
+    "A": "independent family-owned CNC machine-tool maker (vertical travelling-column machining centres) in Meppen, Germany, founded 1967, approx. 250 employees.",
+    "F": "independent family-run German CNC machining-centre manufacturer in Meppen with approximately 250 employees, founded 1967."
+   },
+   "urls": [
+    "https://www.hedelius.de/unternehmen",
+    "https://www.hedelius.de/en/company",
+    "https://visitors.emo-hannover.de/exhibitor/hedelius/068440"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "AXA Entwicklungs- und Maschinenbau GmbH (axa-maschinenbau.de) fits the thesis: family-owned machine-tool/machining-centre manufacturer in Schöppingen, founded 1965, 320 employees.",
+   "asserted_by": [
+    "F",
+    "B",
+    "A"
+   ],
+   "variants": {
+    "A": "family-owned German medium-sized machine-tool/machining-centre manufacturer in Schöppingen, founded 1975, approx. 320 employees.",
+    "F": "family-owned German machine-tool manufacturer in Schöppingen with 320 employees, founded 1965.",
+    "B": "family-owned machining-centre manufacturer in Schöppingen, founded 1965, with 320 employees."
+   },
+   "urls": [
+    "https://www.axa-maschinenbau.de/das-unternehmen",
+    "https://www.axa-maschinenbau.de/en/company"
+   ],
+   "conflicts_with": [
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "ELHA-MASCHINENBAU Liemke (elha.de) fits the thesis: family-run German metal-cutting machine-tool manufacturer in Hövelhof, approx. 240 employees.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "third-generation family-owned machining centre and special machine builder in Hövelhof, Germany, with 240 employees and €40–50M revenue.",
+    "A": "medium-sized family company in Hövelhof (origins c. 1930) making machining centres, turning-milling centres and transfer machines, with 240 employees (Jan 2026).",
+    "C": "Hövelhof machine-tool and turnkey-solution builder, third-generation Liemke family company, 240 employees.",
+    "F": "family-run German manufacturer of metal-cutting machine tools in Hövelhof with approximately 240 employees."
+   },
+   "urls": [
+    "https://www.elha.de/karriere/",
+    "https://elha.de/wp-content/uploads/FS-DE-01-2026.pdf",
+    "https://www.elha.de/wp-content/uploads/FS-DE-01-2026.pdf",
+    "https://www.wirtschaftsforum.de/interviews/elha-maschinenbau-liemke-kg/den-ideen-gestalt-geben"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "F. Zimmermann GmbH (f-zimmermann.com) fits the thesis: family-owned/run CNC portal/gantry milling machine maker in Neuhausen auf den Fildern area, founded 1933, 190 employees worldwide.",
+   "asserted_by": [
+    "F",
+    "A",
+    "D",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "E": "family-run (Gänzle family, owners since 1994) builder of gantry milling machines in Neuhausen auf den Fildern, Germany, with 190 employees worldwide.",
+    "B": "family-owned (Gänzle family) CNC gantry-milling machine manufacturer in Neuhausen a.d.F., founded 1933, with 190 employees worldwide.",
+    "F": "family-owned German manufacturer of CNC portal milling machines in Neuhausen auf den Fildern, founded 1933, with 190 employees worldwide.",
+    "A": "family-run maker of CNC portal milling machines in Neuhausen auf den Fildern, founded 1933, approx. 190 employees worldwide.",
+    "D": "a family-run German manufacturer of large 5- and 6-axis gantry and horizontal milling machines in the Stuttgart region, founded 1933, with 190 employees worldwide."
+   },
+   "urls": [
+    "https://www.f-zimmermann.com/karriere/",
+    "https://www.f-zimmermann.com/unternehmen/",
+    "https://www.zimmermann-inc.com/career/",
+    "https://www.f-zimmermann.com/en/company"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "FOOKE GmbH (fooke-machines.com) fits the thesis: multigenerational family-owned milling machine manufacturer in Borken, founded 1904, approx. 200 employees.",
+   "asserted_by": [
+    "F",
+    "A",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "C": "Borken-based gantry milling machine builder, 4th/5th-generation family company (Johannes and Hendrik Fooke), ~200 employees.",
+    "F": "multigenerational family-owned German milling machine manufacturer in Borken, founded 1904, with approximately 200 employees at its Borken headquarters.",
+    "A": "multigenerational Fooke-family-owned maker of five-axis portal milling machines in Borken, founded 1904, approx. 200 employees.",
+    "B": "family-owned (Fooke family) manufacturer of large CNC gantry milling machines in Borken, founded 1904, with around 200 employees."
+   },
+   "urls": [
+    "https://www.fooke-machines.com/en/company/",
+    "https://www.fooke-machines.com/ueber-fooke",
+    "https://linkedin.com/company/fooke-gmbh",
+    "https://www.fooke-machines.com/karriere/vorteile-bei-fooke"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "KUNZMANN Maschinenbau GmbH (kunzmann-fraesmaschinen.de) fits the thesis: family-owned milling machine/machining centre manufacturer in Remchingen-Nöttingen, founded 1907, 110 employees.",
+   "asserted_by": [
+    "F",
+    "B",
+    "D",
+    "A"
+   ],
+   "variants": {
+    "A": "Eisler-family-group-owned, independent milling machine maker in Remchingen, founded 1907, 110 employees (July 2026).",
+    "D": "a family-owned German universal milling machine and machining centre manufacturer in Remchingen-Nöttingen, founded 1907, with approximately 110 employees (taken over by the Eisler family group around WEILER in 2016).",
+    "B": "family-owned (Eisler family group) milling-machine manufacturer in Remchingen, founded 1907, with approximately 110 employees.",
+    "F": "family-owned German manufacturer of universal milling machines and machining centres in Remchingen-Nöttingen, founded 1907, with 110 employees."
+   },
+   "urls": [
+    "https://www.kunzmann-fraesmaschinen.de/en/company/history/",
+    "https://www.kunzmann-fraesmaschinen.de/unternehmen/geschichte/",
+    "https://www.firmenpresse.de/pressinfo2263652-drehen-und-fraesen-in-hoechster-praezision-weiler-und-kunzmann-zeigen-auf-der-amb-26-maschinen.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "DREISTERN GmbH & Co. KG (dreistern.com) fits the thesis: family-owned (Krückels family) roll-forming machine manufacturer in Schopfheim, founded 1949, approx. 165 employees.",
+   "asserted_by": [
+    "B",
+    "A"
+   ],
+   "variants": {
+    "A": "Krückels-family-owned roll-forming machine manufacturer in Schopfheim, founded 1949, approx. 185 employees.",
+    "B": "family-owned (Krückels family) roll-forming machine manufacturer (metal forming) in Schopfheim, founded 1949, with approximately 165 employees."
+   },
+   "urls": [
+    "https://www.dreistern.com/de/unternehmen/ueber-uns",
+    "https://www.dreistern.com/en/company/about-us"
+   ],
+   "conflicts_with": [
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Gebr. SAACKE GmbH & Co. KG (saacke-pforzheim.de) fits the thesis: family-owned (Saacke family) CNC tool-grinding machine manufacturer in Pforzheim, founded 1892, approx. 200 employees.",
+   "asserted_by": [
+    "B",
+    "A"
+   ],
+   "variants": {
+    "A": "family-owned Pforzheim company founded 1892 making CNC tool-grinding machines, approx. 200 employees (2022).",
+    "B": "family-owned (Saacke family) CNC tool-grinding machine manufacturer in Pforzheim, founded 1892, with approximately 200 employees."
+   },
+   "urls": [
+    "https://saacke-pforzheim.de/historie.php",
+    "https://saacke-pforzheim.de/historie"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Supfina Grieshaber GmbH & Co. KG (supfina.com) fits the thesis: family-owned (Grieshaber group) superfinishing/fine-grinding machine manufacturer in Wolfach, 200 employees.",
+   "asserted_by": [
+    "B",
+    "A"
+   ],
+   "variants": {
+    "A": "family-run Wolfach manufacturer of superfinishing and grinding machines, formed 1995, approx. 200 employees.",
+    "B": "family-owned (Grieshaber group) superfinishing and fine-grinding machine manufacturer in Wolfach, with 200 employees."
+   },
+   "urls": [
+    "https://www.supfina.com/en/home-en/about-us-en.html",
+    "https://www.supfina.com/us/home-us/about-us-us.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Röders GmbH (roeders.de) fits the thesis: Soltau HSC milling machine maker, family-owned since 1789 (sixth generation, Röders family), ~375-395 employees.",
+   "asserted_by": [
+    "C",
+    "B"
+   ],
+   "variants": {
+    "B": "family-owned (Röders family) high-precision milling and grinding machine manufacturer in Soltau, with an estimated 375 employees in Germany.",
+    "C": "Soltau-based HSC milling machine maker, family-owned since 1789 (sixth generation, Röders family), ~375-395 employees."
+   },
+   "urls": [
+    "https://wer-zu-wem.de/firma/roeders-soltau.html",
+    "https://www.wer-zu-wem.de/firma/roeders-soltau.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "ALZMETALL GmbH & Co. KG (alzmetall.com) fits the thesis: Altenmarkt a.d. Alz machine-tool maker, founded 1945, Friedrich family among limited partners, 284 average employees in FY2021.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Altenmarkt a.d. Alz machine-tool maker (drilling machines, machining centres, foundry), founded 1945, Friedrich family among limited partners, 284 average employees in FY2021."
+   },
+   "urls": [
+    "https://de.wikipedia.org/wiki/Alzmetall"
+   ],
+   "conflicts_with": [
+    "c30"
+   ]
+  },
+  {
+   "cid": "c30",
+   "claim": "ALZMETALL GmbH & Co. KG (alzmetall.de) fits the thesis: family-owned drilling machine and machining-centre manufacturer in Altenmarkt an der Alz, founded 1945, estimated 297 employees in Germany.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "family-owned drilling machine and machining-centre manufacturer in Altenmarkt an der Alz, founded 1945, with an estimated 297 employees in Germany."
+   },
+   "urls": [
+    "https://www.wer-zu-wem.de/firma/alzmetall.html"
+   ],
+   "conflicts_with": [
+    "c29"
+   ]
+  },
+  {
+   "cid": "c31",
+   "claim": "Weiler Werkzeugmaschinen GmbH (weiler.de) fits the thesis: Emskirchen precision lathe manufacturer, Eisler family-owned, ~300 employees in Germany (~500 group-wide).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Emskirchen precision lathe manufacturer, Eisler family-owned (managing partners Michael and Alexander Eisler), ~300 employees in Germany (~500 group-wide incl. Czech subsidiary)."
+   },
+   "urls": [
+    "https://weiler.de/unternehmen/geschaeftsfuehrung"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "RATTUNDE AG (rattunde.one) fits the thesis: Ludwigslust tube/rod end-machining machine-tool maker, owned equally by Proksch and Rattunde families, 270 employees, revenue €55.8M.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Ludwigslust tube/rod end-machining machine-tool maker, owned equally by the Proksch and Rattunde families, 270 employees, revenue €55.8M."
+   },
+   "urls": [
+    "https://www.rattunde.one/ueber-uns/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "LASCO Umformtechnik GmbH (lasco.com) fits the thesis: Coburg forming machine-tool/press manufacturer founded 1863, majority owned by Langenstein family, ~400 employees.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Coburg forming machine-tool/press manufacturer founded 1863, majority owned by the founding Langenstein family, ~400 employees."
+   },
+   "urls": [
+    "https://de.wikipedia.org/wiki/LASCO_Umformtechnik"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Priess, Horstmann & Co. Maschinenbau GmbH & Co. KG (priess-horstmann.com) fits the thesis: Hille-based drilling/assembly machine maker for furniture production, second-generation Prieß family company, ~150 employees.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Hille-based maker of drilling/assembly machines for furniture production, second-generation Prieß family company, ~150 employees."
+   },
+   "urls": [
+    "https://priess-horstmann.com/unternehmen/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Hans Schröder Maschinenbau GmbH (schroedergroup.eu) fits the thesis: family-owned (Hibler/Schröder family) sheet-metal folding and cutting machine manufacturer in Wessobrunn-Forst, founded 1949, 240 employees at the plant.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "family-owned (Hibler/Schröder family) sheet-metal folding and cutting machine manufacturer in Wessobrunn-Forst, founded 1949, with 240 employees at the plant."
+   },
+   "urls": [
+    "https://www.schroedergroup.eu/wp-content/uploads/pdf/Prospekte_EN/Schroeder-Group_Unternehmenspraesentation_2024EN_Mail.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "RAS Reinhardt Maschinenbau GmbH (ras-online.de) fits the thesis: family-owned (Stahl family) sheet-metal folding and forming machine manufacturer in Sindelfingen, founded 1939, roughly 235-238 employees.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "family-owned (Stahl family) sheet-metal folding and forming machine manufacturer in Sindelfingen, founded 1939, with roughly 235-238 employees."
+   },
+   "urls": [
+    "https://www.wer-zu-wem.de/firma/ras-reinhardt.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "WaldrichSiegen Werkzeugmaschinen GmbH (waldrichsiegen.de) fits the thesis: family-owned (Thoma family via HerkulesGroup) large machine-tool manufacturer in Siegen, founded 1840, 320-450 employees.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "family-owned (Thoma family via HerkulesGroup) large machine-tool manufacturer in Siegen, founded 1840, with 320-450 employees."
+   },
+   "urls": [
+    "https://www.karriere-suedwestfalen.de/waldrich"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "SPINNER Werkzeugmaschinenfabrik GmbH (spinner.eu.com) fits the thesis: owner-managed family machine-tool manufacturer in Sauerlach, founded 1949, ~300 employees at German HQ (group ~600-670, scope needs diligence).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "an owner-managed family machine-tool manufacturer in Sauerlach, Bavaria, founded 1949, with approximately 300 employees at the German headquarters (the worldwide group is around 600-670, so scope needs diligence confirmation)."
+   },
+   "urls": [
+    "https://www.spinner.eu.com/en/about-spinner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Adelbert Haas GmbH (ahaas.com) fits the thesis: family-owned Multigrind precision grinding machine manufacturer in Trossingen, founded 1934, 216 employees (2025).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "family-owned Multigrind precision grinding machine manufacturer in Trossingen, founded 1934, 216 employees (2025)."
+   },
+   "urls": [
+    "https://www.weltmarktfuehrerindex.de/profil/-8180"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Heinz Berger Maschinenfabrik GmbH & Co. KG (bergergruppe.de) fits the thesis: third-generation family company in Wuppertal, founded 1957, CNC and robotic grinding/polishing machines, 162 employees (end 2023).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "third-generation family company in Wuppertal, founded 1957, making CNC and robotic grinding/polishing machines, 162 employees (end 2023)."
+   },
+   "urls": [
+    "https://www.bergergruppe.de/karriere/berger-gruppe-als-arbeitgeber/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Wilhelm Bahmüller Maschinenbau Präzisionswerkzeuge GmbH (bahmueller.de) fits the thesis: family enterprise in Plüderhausen, founded 1945, precision grinding machines, approx. 385-400 employees (2023).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "family enterprise in Plüderhausen, founded 1945, making precision grinding machines, approx. 385-400 employees (2023)."
+   },
+   "urls": [
+    "https://www.bahmueller.de/de/unternehmen/profil"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "ARKU Maschinenbau GmbH (arku.com) fits the thesis: family-owned Baden-Baden maker of sheet-metal levelling and deburring machines, founded 1928, approx. 200 employees worldwide.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "family-owned Baden-Baden maker of sheet-metal levelling and deburring machines, founded 1928, approx. 200 employees worldwide."
+   },
+   "urls": [
+    "https://www.arku.com/en/company"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "TBT Tiefbohrtechnik GmbH + Co (tbt.de) fits the thesis: family business within the Nagel Group in Dettingen an der Erms, founded 1966, deep-hole-drilling machines, 201-500 employees band.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "family business within the Nagel Group in Dettingen an der Erms, founded 1966, making deep-hole-drilling machines, 201-500 employees band."
+   },
+   "urls": [
+    "https://www.tbt.de/en/tbt-in-profile/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "HEGENSCHEIDT-MFD GmbH (hegenscheidt.com) fits the thesis: medium-sized family-run machine-tool company within the NSH Group in Erkelenz (merged 1995), approx. 480 employees.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "medium-sized family-run machine-tool company within the NSH Group in Erkelenz (merged 1995), approx. 480 employees."
+   },
+   "urls": [
+    "https://www.hegenscheidt.com/unternehmen/ueber-hegenscheidt-mfd/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Maschinenfabrik Herkules Meuselwitz GmbH (herkules-machinetools.de) fits the thesis: owner-managed family company within HerkulesGroup in Meuselwitz, founded 1992, approx. 300 employees.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "owner-managed family company within HerkulesGroup in Meuselwitz, founded 1992, approx. 300 employees."
+   },
+   "urls": [
+    "https://www.herkulesgroup.de/karriere/jobs-dienstleistung-verwaltung/Industriemechaniker-Schlosser-alle-Geschlechter-de-j69.html"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (CNC machining centres)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (independent)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.hedelius.de/en/company",
+   "note": "The company page says 'independent family-run business', three generations, family business since 1967. The EMO profile gives 247 employees. Managing director is Dennis Hempelmann.",
+   "via": "agent"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (machining centres)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.axa-maschinenbau.de/das-unternehmen",
+   "note": "AXA calls itself a Familienunternehmen on the market since 1965, and its English company page lists 320 employees. The 60-years page says the AXA Entwicklungs- und Maschinenbau split came in 1975, so the 1965 or 1975 founding year depends on which entity is meant.",
+   "via": "agent"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (machining centres, special machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.elha.de/karriere/",
+   "note": "ELHA describes itself as a traditional Familienunternehmen with about 240 employees. The Wirtschaftsforum interview shows the Liemke family in the management.",
+   "via": "agent"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (CNC portal milling machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned or family-run",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.f-zimmermann.com/karriere/",
+   "note": "The careers page states founding in 1933 and 190 employees worldwide. The company page says 'family-run company' and that Rudolf Gänzle took over 100% of the shares. The Gänzle family as current owners is not confirmed on the pages I read.",
+   "via": "agent"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (gantry milling machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.fooke-machines.com/ueber-fooke",
+   "note": "The company's own page describes a family business founded in 1904, with Johannes and Hendrik Fooke in the 4th and 5th generation. LinkedIn gives around 200 employees.",
+   "via": "agent"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (milling machines and machining centres)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (Eisler family group)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees (about 110)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.kunzmann-fraesmaschinen.de/unternehmen/geschichte/",
+   "note": "The history page gives about 110 employees, 1907 founding and the 2016 Eisler family takeover. The firmenpresse release calls it a family business, legally independent, with 110 employees. Sources differ on the takeover year (2015 vs 2016), which does not affect the verdict.",
+   "via": "agent"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (roll-forming machines, metal forming)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (Krückels family, third generation)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees (165 on the company site, about 185 in May 2024)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.dreistern.com/de/unternehmen/ueber-uns",
+   "note": "The company site says it was founded in 1949, is a family business run by the third generation, and has 165 employees. The 185 figure from the May 2024 press release is also in range. Roll-forming machines count as forming machine tools, which is a slightly looser fit for the sector.",
+   "via": "agent"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (CNC tool-grinding machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees (about 200)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://saacke-pforzheim.de/historie.php",
+   "note": "The history page says the shares are still family-owned, the firm was founded in 1892 and has about 200 employees in Pforzheim (2022). saacke-group.de repeats the 200 figure and describes CNC tool-grinding machines.",
+   "via": "agent"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (superfinishing and grinding machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (Grieshaber group)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees (200)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.supfina.com/en/home-en/about-us-en.html",
+   "note": "The about-us page gives 200 employees and a 1995 merger. wer-zu-wem.de lists it as a family business with the Grieshaber group as owner. The 2019 Supfina US anniversary news page calls it a family-run company. Wolfach is the only German production site.",
+   "via": "agent"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (high-precision milling and grinding machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (Röders family, sixth generation)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees (375 in Germany per wer-zu-wem, about 400 in Soltau)",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.wer-zu-wem.de/firma/roeders-soltau.html",
+   "note": "wer-zu-wem.de gives 375 employees in Germany, the Röders family as owner and a founding year of 1789. The company site says it has been family-run for six generations. Its group total is about 600 including over 200 abroad, so the headcount fits only on a Germany or Soltau basis.",
+   "via": "agent"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (Friedrich family)",
+     "result": "pass",
+     "result_original": "unknown"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://de.wikipedia.org/wiki/Alzmetall",
+   "note": "Wikipedia gives founding 1945 and 323 employees in 2021. The Friedrich family as limited partners is shown only by the company name and the filing on fusionbase. The wer-zu-wem listing calls it a family business owned by Michael Reich. The 284 average employees in FY2021 was not confirmed; the so...",
+   "via": "agent"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.wer-zu-wem.de/firma/alzmetall.html",
+   "note": "wer-zu-wem lists it as a family business (shareholder Michael Reich) with 297 employees in Germany. The company site confirms the 1945 founding and the Altenmarkt address.",
+   "via": "agent"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (Eisler family)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://weiler.de/unternehmen/geschaeftsfuehrung",
+   "note": "The Eisler family runs the firm: Michael and Alexander Eisler are managing partners, and the North Data register entry has a Friedrich K. Eisler address. The ~300 Germany and ~500 group headcounts were not found in the pages I searched. Weiler is a long-established lathe maker, so the claim is pl...",
+   "via": "agent"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "unknown"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://firmendata.com/de/unternehmen/schwerin/HRB13106/RATTUNDE-AG",
+   "note": "firmendata.com lists 270 employees and revenue of €55.8M (2024), and the company site says it was founded as a family firm. The register shows Proksch and Rattunde as board members, but the equal-ownership split by the two families was not found in a source.",
+   "via": "agent"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (majority, founding family)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://de.wikipedia.org/wiki/LASCO_Umformtechnik",
+   "note": "Wikipedia says it was founded in 1863 and is still mostly owned by the Langenstein founding family. Two family branches and a former managing director hold the shares through Langenstein & Schemann GmbH. Wikipedia gives 342 employees in 2012, and die-deutsche-wirtschaft.de gives 400.",
+   "via": "agent"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Machine-tool maker (drilling/assembly machines for furniture)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://priess-horstmann.com/unternehmen/",
+   "note": "The company page says the Prieß brothers run it in the second generation as managing partners, and that 150 employees work there (2020). The machines are woodworking/furniture machine tools, so the sector fit is slightly borderline.",
+   "via": "agent"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Machine-tool maker (sheet-metal folding and cutting)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.schroedergroup.eu/en/press-report/schroder-group-continues-its-third-generation-of-leadership/",
+   "note": "The Schröder press report says the group passed to the Hibler family and stays family-run. The 2024 presentation lists 240 employees at the Wessobrunn plant, and the press release says the group has more than 300 employees. The company was founded in 1949.",
+   "via": "agent"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Machine-tool maker (bending and forming machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family/owner-managed",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.wer-zu-wem.de/firma/ras-reinhardt.html",
+   "note": "The page says the firm was founded in 1939 and is led by its owner and managing director Willy Stahl. It lists 238 employees, and RAS's own page says more than 235. The owner-managed status is stated, but the wording \"Stahl family\" is only inferred.",
+   "via": "agent"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "Machine-tool maker (large machine tools)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.wer-zu-wem.de/firma/waldrich-siegen.html",
+   "note": "The wer-zu-wem page lists the Herkules Group as owner and describes a family business. The WaldrichSiegen customer magazine (2022) says Herkules is in its 4th generation under Thoma. Headcount is 320 (career page) to 450 (wer-zu-wem). I did not open a source for the 1840 founding year.",
+   "via": "agent"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned (Mittelstand)",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.spinner.eu.com/en/about-spinner; https://www.spinner.eu.com/impressum; job postings found via search",
+   "note": "The about page confirms the founding in 1949 and the Sauerlach plant. It also confirms CNC lathes and machining centers and about 600 employees across the group. The Impressum lists three Spinners (Nicolaus, Ulrich and Axel) among five managing directors. Job postings describe it as an owner-mana...",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "retried": true
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool maker (grinding machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.weltmarktfuehrerindex.de/profil/-8180",
+   "note": "The WMF profile lists 216 employees (2025), founded 1934, in Trossingen, and describes a family business now led by a second family. That means it is not led by the founding family, but it is still family-owned.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool maker (grinding/polishing machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.bergergruppe.de/karriere/berger-gruppe-als-arbeitgeber/",
+   "note": "The company's own pages say it is a family business in its third generation, based in Wuppertal and founded 1957. I could not see the 162-employee figure in the saved text because those lines were truncated, but the size is plausible for the band.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "false",
+   "in_scope": false,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer",
+     "result": "fail"
+    },
+    {
+     "criterion": "Family-owned (Mittelstand)",
+     "result": "unknown"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    }
+   ],
+   "core_pass": false,
+   "source": "https://www.bahmueller.de/de/unternehmen/profil; https://www.bahmueller.de/de/unternehmen/historie",
+   "note": "Bahmüller has three divisions. Corrugated-board processing (folder-gluers) is the largest and is not machine tools. The other two are precision grinding machines for automotive and toolholders. The mix means the company is not a pure machine-tool maker. The profile says about 400 employees and 93...",
+   "retried": true
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "false",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool maker (levelling machines)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "fail"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.arku.com/en-us/news/arku-becomes-part-of-gesco-se",
+   "note": "On 1 Oct 2026 the listed group GESCO SE signed an agreement to acquire all shares in ARKU, and GESCO's portfolio page shows 100% held. The older 'family-owned' wording on ARKU's company page is outdated.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool maker (deep-hole drilling)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "source": "https://www.tbt.de/en/tbt-in-profile/",
+   "note": "TBT's profile page says it was founded in Dettingen/Erms in 1966 and is a 'pure family business' owned by Nagel Holding. The TBT employee figure is blank in the saved text. The 2,500 employees on that page cover the whole Nagel group, not TBT. The 201-500 band therefore rests on the system's clai...",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (Erkelenz, NRW)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Family-owned/family-run Mittelstand",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Not PE-owned",
+     "result": "pass",
+     "result_original": "unknown"
+    }
+   ],
+   "core_pass": true,
+   "confidence": "medium",
+   "source": "https://www.hegenscheidt.com/unternehmen/ueber-hegenscheidt-mfd/",
+   "note": "Company's own page calls it 'mittelständisch und familiengeführt' machine-tool maker with about 480 employees and €100m 2023 revenue. The 1995 merger is on the history page. A search suggests the NSH group is owned by Hans J. Naumann, but I found no current ownership source and no PE owner, so ow...",
+   "via": "agent"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "criteria": [
+    {
+     "criterion": "German machine-tool manufacturer (Meuselwitz, Thuringia)",
+     "result": "pass"
+    },
+    {
+     "criterion": "Owner-managed family company",
+     "result": "pass"
+    },
+    {
+     "criterion": "100-500 employees",
+     "result": "pass"
+    },
+    {
+     "criterion": "Not PE-owned",
+     "result": "pass"
+    }
+   ],
+   "core_pass": true,
+   "confidence": "high",
+   "source": "https://www.herkulesgroup.de/karriere/jobs-dienstleistung-verwaltung/Industriemechaniker-Schlosser-alle-Geschlechter-de-j69.html",
+   "note": "Page says 'inhabergeführtes Familienunternehmen', 300 employees at Meuselwitz, independent company within HerkulesGroup since 1992. The register entry shows 10 March 1992. The group chronicle also calls it the owner-managed HerkulesGroup. 1992 is the date it became independent, not when the Herku...",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "note": "Company sources: founded 1933, ~190 employees worldwide, CNC portal milling machines, moved headquarters to Neuhausen. Family-run: Rudolf Gänzle bought 100% of the shares (1994) and Frieder Gänzle has been CEO since 2017."
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "note": "Company history page: since 2018 the AG's shares are held in equal parts by the Proksch and Rattunde families. It builds ACS saw/end-machining systems in Ludwigslust. LinkedIn (201-500) and job-norden (200-299) put headcount in range. The 270 employees and €55.8M revenue figures were not confirmed ("
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "note": "Profile page: ~400 employees and ~€93M revenue (2022), three divisions including precision grinding machines, founded 1945. Christoph Bahmüller represents the shareholders (2018 municipal bulletin), so it is family-held. Weak point: grinding is only one of three divisions."
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "false",
+   "note": "The Meuselwitz site does have ~300 employees and is owned by the Thoma family. But it is a subsidiary of the HerkulesGroup (~1,350 employees), not a standalone company. Meuselwitz was acquired in 1992, not founded then (roots go back to 1876). The 100-500 size test fails at company level."
+  }
+ },
+ "scores": {
+  "gpt": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 13,
+   "partial": 0,
+   "wrong": 2,
+   "unconfirmed": 1,
+   "truth": 22.5,
+   "coverage": 0.578,
+   "accuracy": 0.839,
+   "combined": 0.616,
+   "metric": "F2"
+  },
+  "parallel": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 22.5,
+   "coverage": 0.578,
+   "accuracy": 1.0,
+   "combined": 0.631,
+   "metric": "F2"
+  },
+  "nimble": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 7,
+   "partial": 1,
+   "wrong": 0,
+   "unconfirmed": 1,
+   "truth": 22.5,
+   "coverage": 0.333,
+   "accuracy": 0.882,
+   "combined": 0.381,
+   "metric": "F2"
+  },
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 22.5,
+   "coverage": 0.178,
+   "accuracy": 1.0,
+   "combined": 0.213,
+   "metric": "F2"
+  },
+  "opus": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 22.5,
+   "coverage": 0.133,
+   "accuracy": 1.0,
+   "combined": 0.161,
+   "metric": "F2"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "partial": 0,
+   "wrong": 0,
+   "unconfirmed": 0,
+   "truth": 22.5,
+   "coverage": 0.267,
+   "accuracy": 1.0,
+   "combined": 0.312,
+   "metric": "F2"
+  }
+ }
+}

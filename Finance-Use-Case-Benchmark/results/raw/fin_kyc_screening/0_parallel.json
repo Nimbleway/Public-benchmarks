@@ -1,9 +1,962 @@
 {
  "arm": "parallel",
- "tier": "ultra2x",
- "status": "rejected",
- "error": "{\"type\":\"error\",\"error\":{\"message\":\"Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.\",\"detail\":null}}",
  "sub_use_case": "fin_kyc_screening",
  "input": "Run a KYC screen on Revolut in the United Kingdom",
- "input_n": 0
+ "input_n": 0,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 876,
+ "run_id": "trun_63550df7c67c4a5b972549815263187f",
+ "output": {
+  "risk_rationale": "Assessment as of 2026-11-09; historical events retain their stated dates. Medium risk, with enhanced due diligence required rather than an unconditional sanctions clearance. The selected entity is the active UK operating company REVOLUT LTD, not its parent, banking affiliates or overseas entities. Its registration and controlling ownership are identifiable. Relevant concerns include historical sanctions-screening and AML-control allegations, customer-fraud allegations and civil litigation; these must be distinguished from proven misconduct, and several proceedings were dismissed or settled. No fine against this exact UK company was established by the reviewed sources. The OFAC searches and limited UK exact-name checks produced no confirmed match, but comprehensive alias/ownership screening and the EU screening result remain incomplete. The founder's reported family connection to a Russian state-controlled enterprise executive warrants clarification, not classification as a confirmed personal PEP. Four reviewed off-entity findings were excluded: Lithuanian group-company enforcement in 2022, the Lithuanian-licensed operation's 2025 AML fine, Italian group-company enforcement in 2026, and the Ukrainian designation of the founder's father. Missing or unresolved information comprises Heather Fleming's nationality; registry numbers for the three Lithuanian related entities listed below; a completed EU sanctions result; current PEP-family status; and the later outcome of the Terna litigation. All current identifiers, ownership percentages and the exclusion count are reported as of the assessment date. The LEI source is https://www.gleif.org/lei/213800MQORWPL582SW82.",
+  "pep": [
+   {
+    "position": "Director and indirect controlling owner. Potential historical foreign-PEP-family connection: his father, Nikolay Storonsky Sr, was reported in October 2022 to be director-general of Gazprom Promgaz, part of Kremlin-controlled Gazprom. This does not establish that the founder is personally a PEP. Whether his father met the applicable PEP definition, remains in that position, or creates current family-member treatment was not established as of 2026-11-09.",
+    "source_url": "https://www.telegraph.co.uk/business/2022/10/29/revolut-boss-renounces-russian-citizenship-father-sanctioned",
+    "name": "Nikolay Storonskiy (Nik Storonsky)"
+   }
+  ],
+  "sanctions": [
+   {
+    "party": "REVOLUT LTD; Revolut Group Holdings Ltd; Nikolay Storonskiy / Nikolay Storonsky",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/",
+    "list": "OFAC Specially Designated Nationals and Blocked Persons List",
+    "match": "No results were returned for the tested terms Revolut, Revolut Group Holdings Ltd, Nikolay Storonskiy and Nikolay Storonsky. No confirmed SDN match was identified in these searches. This is a limited name-search result, not comprehensive alias, fuzzy-name or ownership/control clearance. Checked as of 2026-11-09; the displayed SDN update was 2026-11-06."
+   },
+   {
+    "party": "REVOLUT LTD; Revolut Group Holdings Ltd; Nikolay Storonskiy / Nikolay Storonsky",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.txt",
+    "list": "UK Sanctions List, the current successor source to the former OFSI consolidated list",
+    "match": "No exact company-name token or Storonsk name stem was found in the reviewed list text dated 2026-11-03; the official Storonsky search also returned no results. No confirmed match was identified by these limited checks as of 2026-11-09. Broader alias and ownership/control clearance was not established. The former OFSI consolidated list ceased updating on 2026-01-28."
+   },
+   {
+    "party": "REVOLUT LTD; Revolut Group Holdings Ltd; Nikolay Storonskiy / Nikolay Storonsky",
+    "source_url": "https://data.europa.eu/apps/eusanctionstracker/entities",
+    "list": "EU consolidated financial sanctions list",
+    "match": null
+   }
+  ],
+  "namesakes_excluded": 4.0,
+  "input_name": "Revolut",
+  "people": [
+   {
+    "role": "Current director",
+    "name": "Caroline Louise Britton",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "British"
+   },
+   {
+    "role": "Current director",
+    "name": "Martin James Gilbert",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "British"
+   },
+   {
+    "role": "Current director",
+    "name": "Siddhartha Jajodia",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "American"
+   },
+   {
+    "role": "Current director",
+    "name": "Michael Sidney Sherwood",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "British"
+   },
+   {
+    "role": "Current director",
+    "name": "John Phimister Sievwright",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "British"
+   },
+   {
+    "role": "Current director",
+    "name": "Nikolay Storonskiy",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "British"
+   },
+   {
+    "role": "Current director",
+    "name": "Dan Teodosiu",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "Austrian"
+   },
+   {
+    "role": "Current director",
+    "name": "Ian Douglas Wilson",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "British"
+   },
+   {
+    "role": "Current director",
+    "name": "Vladyslav Yatsenko",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": "British"
+   },
+   {
+    "role": "Current company secretary",
+    "name": "Heather Fleming",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+    "nationality": null
+   },
+   {
+    "role": "Indirect controlling owner through Revolut Group Holdings Ltd: active PSC of that parent, holding more than 25% but not more than 50% of its shares and having the right to appoint or remove directors. This is not a current direct personal PSC registration for REVOLUT LTD.",
+    "name": "Nikolay Storonskiy",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/12743269/persons-with-significant-control",
+    "nationality": "British"
+   }
+  ],
+  "related_entities": [
+   {
+    "relation": "Direct and ultimate parent; current corporate PSC of REVOLUT LTD, with at least 75% of shares and voting rights. Sources: https://find-and-update.company-information.service.gov.uk/company/08804411/persons-with-significant-control and https://www.gleif.org/lei/213800MQORWPL582SW82",
+    "registry_number": "12743269",
+    "name": "REVOLUT GROUP HOLDINGS LTD"
+   },
+   {
+    "relation": "Separate UK banking company associated with the Revolut service; not the company screened here. Source: https://www.revolut.com/legal/fscs-information-sheet",
+    "registry_number": "12871051",
+    "name": "Revolut Bank UK Ltd"
+   },
+   {
+    "relation": "Separate UK investment-services company; not the company screened here. Source: https://www.revolut.com/legal/fscs-information-sheet",
+    "registry_number": "11567840",
+    "name": "Revolut Trading Ltd"
+   },
+   {
+    "relation": "Separate Lithuanian group bank named in overseas regulatory enforcement; its findings are not attributed to REVOLUT LTD. Source: https://www.lb.lt/en/news/sanctions-on-revolut-group-companies",
+    "registry_number": null,
+    "name": "Revolut Bank UAB"
+   },
+   {
+    "relation": "Separate Lithuanian group electronic-money institution named in overseas regulatory enforcement; its findings are not attributed to REVOLUT LTD. Source: https://www.lb.lt/en/news/sanctions-on-revolut-group-companies",
+    "registry_number": null,
+    "name": "Revolut Payments UAB"
+   },
+   {
+    "relation": "Separate group investment-services entity named in Italian regulatory enforcement; its findings are not attributed to REVOLUT LTD. Source: https://en.agcm.it/en/media/press-releases/2026/4/PS12974",
+    "registry_number": null,
+    "name": "Revolut Securities Europe UAB"
+   }
+  ],
+  "risk_rating": "medium",
+  "registration": {
+   "registered_address": "30 South Colonnade, London, United Kingdom, E14 5HX",
+   "incorporation_date": "2013-12-06",
+   "legal_name": "REVOLUT LTD",
+   "registry_number": "08804411",
+   "source_url": "https://find-and-update.company-information.service.gov.uk/company/08804411",
+   "lei": "213800MQORWPL582SW82",
+   "status": "Active",
+   "jurisdiction": "England and Wales, United Kingdom"
+  },
+  "adverse_media": [
+   {
+    "date": "2019-02-28",
+    "status": "Historical allegations; the relevant mechanism was reactivated in September 2018. Revolut disputed any failure to meet legal or regulatory sanctions requirements. No confirmed sanctions evasion or resulting fine against REVOLUT LTD was established by this report.",
+    "severity": "medium",
+    "source_url": "https://www.telegraph.co.uk/technology/2019/02/28/revolut-failed-block-suspicious-transactions",
+    "summary": "Reporting alleged that an automated transaction-halting mechanism associated with enhanced sanctions screening was disabled during July–September 2018. This should not be described as a cessation of all sanctions screening or all AML checks.",
+    "category": "Sanctions-screening controls allegations"
+   },
+   {
+    "date": "2019-04-02",
+    "status": "The FCA confirmed enquiries and required specific actions. The reporting did not establish a fine or a finding that REVOLUT LTD had laundered money.",
+    "severity": "medium",
+    "source_url": "https://www.bbc.co.uk/news/technology-47751945",
+    "summary": "A whistleblower alleged that money-laundering checks were not properly applied to selected customers. The BBC reported FCA enquiries and required remedial actions. The date is the publication date of the report, not the date of every underlying allegation.",
+    "category": "AML-controls allegations and regulatory enquiries"
+   },
+   {
+    "date": "2024-01-25",
+    "status": "Claim struck out as an abuse of process; Revolut's acknowledgement of triable factual issues was not an admission of breach.",
+    "severity": "low",
+    "source_url": "https://www.judiciary.uk/wp-content/uploads/2024/01/Uzbekov-v-Revolut-Judgment.pdf",
+    "summary": "In Uzbekov v Revolut Ltd, the claimant challenged account blocking and closure as a contractual breach. The court struck out the claim rather than finding REVOLUT LTD liable.",
+    "category": "Civil litigation — account closure"
+   },
+   {
+    "date": "2024-06-12",
+    "status": "Revolut's application for strike-out or reverse summary judgment was dismissed; this was not a final finding of liability. A later final outcome was not established as of 2026-11-09.",
+    "severity": "medium",
+    "source_url": "https://caselaw.nationalarchives.gov.uk/ewhc/comm/2024/1419",
+    "summary": "Terna Energy Trading doo brought a restitution/unjust-enrichment claim against REVOLUT LTD following an authorised push-payment fraud. The court held that the claim had a real prospect of success and should not be disposed of summarily.",
+    "category": "Civil litigation — recovery of fraud proceeds"
+   },
+   {
+    "date": "2024-10-14",
+    "status": "Customer allegations reported by BBC Panorama; Revolut said it took fraud seriously and had robust controls. The report was not a court or regulatory finding that REVOLUT LTD perpetrated fraud.",
+    "severity": "medium",
+    "source_url": "https://www.bbc.com/news/articles/cj6epzxdd77o",
+    "summary": "BBC reporting described customer losses and alleged weaknesses in identity verification, fraud prevention and customer support in Revolut's UK service. The company's response and the distinction between customer victimisation and company misconduct are material.",
+    "category": "Customer-fraud and security-controls allegations"
+   },
+   {
+    "date": "2025-01",
+    "status": "Confidential settlement reported for January 2025; liability or settlement terms were not publicly established. Earlier contractual and tort claims were struck out, an opportunity to amend the dishonest-assistance claim was allowed, and permission to appeal was subsequently refused.",
+    "severity": "medium",
+    "source_url": "https://www.hsfkramer.com/notes/bankinglitigation/2024-posts/High-Court-strikes-out-APP-fraud-claims-against-receiving-payment-service-provider-",
+    "summary": "Larsson v Revolut Ltd concerned attempted recovery following authorised push-payment fraud, including a dishonest-assistance allegation. The date supplied is the reported settlement month, not a precise settlement day.",
+    "category": "Civil litigation — APP fraud and dishonest-assistance allegation"
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "REVOLUT LTD overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411",
+     "excerpts": [
+      "Registered office address 30 South Colonnade, London, United Kingdom, E14 5HX Company status Active"
+     ]
+    },
+    {
+     "title": "REVOLUT LTD persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/persons-with-significant-control",
+     "excerpts": [
+      "Revolut Group Holdings Ltd** Active Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Notified on 29 April 2022 Governing law England Legal form Private Limited Company Place registered England Registration number 12743269 Incorporated in United Kingdom Nature of control Ownership of shares – 75% or more"
+     ]
+    },
+    {
+     "title": "Revolut whistleblower had concerns over CEO conduct and compliance - BBC News",
+     "url": "https://www.bbc.co.uk/news/technology-47751945",
+     "excerpts": [
+      "The FCA confirmed to the BBC that it required Revolut to take specific actions following the enquiries it made after obtaining information on the company."
+     ]
+    },
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Your search has not returned any results."
+     ]
+    },
+    {
+     "title": "Revolut boss renounces Russian citizenship as his father is sanctioned by Ukraine",
+     "url": "https://www.telegraph.co.uk/business/2022/10/29/revolut-boss-renounces-russian-citizenship-father-sanctioned",
+     "excerpts": [
+      "It comes as his father, Nikolay Storonsky Snr, was sanctioned earlier this month by the Ukrainian government over his role as director general of Gazprom Promgaz, the engineering and research arm of the Kremlin-controlled energy company."
+     ]
+    },
+    {
+     "title": "REVOLUT LTD - LEI 213800MQORWPL582SW82",
+     "url": "https://www.gleif.org/lei/213800MQORWPL582SW82",
+     "excerpts": [
+      "REVOLUT LTD REVOLUT LTD is a legal entity under the jurisdiction of United Kingdom of Great Britain and Northern Ireland (the) (GB) with Legal Entity Identifier (LEI) 213800MQORWPL582SW82. Its LEI registration is ISSUED and its entity status is ACTIVE. Its direct parent is REVOLUT GROUP HOLDINGS LTD (LEI 213800UIKMYZWWQS5E02). Its ultimate parent is REVOLUT GROUP HOLDINGS LTD (LEI 213800UIKMYZWWQS5E02). Entity details LEI Code: 213800MQORWPL582SW82 (Primary) Legal Name: REVOLUT LTD (en) Registered At: Companies Register, Companies House (RA000585) Registered As: 08804411 Jurisdiction Of Formation: United Kingdom of Great Britain and Northern Ireland (the) (GB) General Category: GENERAL Entity Legal Form: Private Limited Company / cyfyngedig (H0PO) Entity Status: ACTIVE Entity created at: 2013-12-06"
+     ]
+    }
+   ],
+   "reasoning": "The registry and GLEIF identify the UK company and parent. The FCA reporting supports historical control concerns, while the sanctions-search observation supports only a limited negative result. The family relationship is historical evidence, not proof of current PEP status. The rating, exclusions and missing-information statements synthesize the detailed findings below; they do not constitute an authoritative clearance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep",
+   "citations": [
+    {
+     "title": "Revolut boss renounces Russian citizenship as his father is sanctioned by Ukraine",
+     "url": "https://www.telegraph.co.uk/business/2022/10/29/revolut-boss-renounces-russian-citizenship-father-sanctioned",
+     "excerpts": [
+      "It comes as his father, Nikolay Storonsky Snr, was sanctioned earlier this month by the Ukrainian government over his role as director general of Gazprom Promgaz, the engineering and research arm of the Kremlin-controlled energy company."
+     ]
+    },
+    {
+     "title": "FG25/3: The treatment of politically exposed persons for anti-money laundering purposes",
+     "url": "http://www.fca.org.uk/publication/finalised-guidance/fg25-3.pdf",
+     "excerpts": [
+      "A family member of a PEP is not a PEP themselves purely as_ _a consequence of being associated with a PEP."
+     ]
+    }
+   ],
+   "reasoning": "The report establishes the father–son relationship and the father's reported executive role in 2022. FCA guidance distinguishes a PEP's family member from a person who is themselves a PEP. Current qualification and continued officeholding were not established, so the entry is explicitly an unresolved family-exposure flag.",
+   "confidence": "low"
+  },
+  {
+   "field": "sanctions",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 0 Found Name Address Type Program(s) List Score Your search has not returned any results."
+     ]
+    },
+    {
+     "title": "FCDO - UK Sanctions List Search - GOV.UK",
+     "url": "https://search-uk-sanctions-list.service.gov.uk/?searchValue=Storonsky",
+     "excerpts": [
+      "No results found."
+     ]
+    },
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.txt",
+     "excerpts": [
+      "Report Date: 03-Nov-2026 Last Updated"
+     ]
+    },
+    {
+     "title": "The UK Sanctions List - GOV.UK",
+     "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+     "excerpts": [
+      "The UK Sanctions List is now the only source for all UK sanctions designations. The OFSI Consolidated List of Asset Freeze Targets closed on Wednesday 28 January 2026 and is no longer being updated."
+     ]
+    }
+   ],
+   "reasoning": "Observed OFAC and UK search results and the reviewed UK list support the limited checks described. The list header dates the UK snapshot; it does not independently prove comprehensive absence. The EU result was not established and is null. None of these observations justifies complete sanctions or ownership/control clearance.",
+   "confidence": "low"
+  },
+  {
+   "field": "namesakes_excluded",
+   "citations": [
+    {
+     "title": "Sanctions on Revolut group companies | Bank of Lithuania",
+     "url": "https://www.lb.lt/en/news/sanctions-on-revolut-group-companies",
+     "excerpts": [
+      "For these breaches of the law, the Bank of Lithuania imposed a penalty of €50 thousand to Revolut Bank UAB and €150 thousand to Revolut Payments UAB"
+     ]
+    },
+    {
+     "title": "Lithuania fines Revolut 3.5 million euros for money-laundering prevention failures | Reuters",
+     "url": "https://www.reuters.com/technology/lithuania-fines-revolut-35-million-euros-money-laundering-prevention-failures-2025-04-08",
+     "excerpts": [
+      "Lithuania's central bank has fined Britain's most valuable start-up Revolut 3.5 million euros ($3.83 million) for failures in money-laundering prevention, the bank said on Monday. The British fintech company, which is headquartered in London, is operating in the European Union under a Lithuanian"
+     ]
+    },
+    {
+     "title": "AGCM - The Italian Competition Authority fines Revolut over €11 million for unfair commercial practices",
+     "url": "https://en.agcm.it/en/media/press-releases/2026/4/PS12974",
+     "excerpts": [
+      "The Italian Competition Authority has fined Revolut Securities Europe UAB"
+     ]
+    },
+    {
+     "title": "Revolut boss renounces Russian citizenship as his father is sanctioned by Ukraine",
+     "url": "https://www.telegraph.co.uk/business/2022/10/29/revolut-boss-renounces-russian-citizenship-father-sanctioned",
+     "excerpts": [
+      "It comes as his father, Nikolay Storonsky Snr, was sanctioned earlier this month by the Ukrainian government over his role as director general of Gazprom Promgaz, the engineering and research arm of the Kremlin-controlled energy company."
+     ]
+    }
+   ],
+   "reasoning": "Four distinct reviewed findings were excluded because they concerned overseas group-company enforcement or the founder's father rather than REVOLUT LTD. This is a research tally of excluded findings, not a registry statistic or a count of every irrelevant search result.",
+   "confidence": "medium"
+  },
+  {
+   "field": "input_name",
+   "citations": [
+    {
+     "title": "Website Terms | Revolut United Kingdom",
+     "url": "https://www.revolut.com/legal/website-terms-and-conditions",
+     "excerpts": [
+      "Our site is operated by Revolut Ltd (we or us). We are registered in England and Wales under company number 08804411 and have our registered office at 30 South Colonnade, London, E14 5HX."
+     ]
+    }
+   ],
+   "reasoning": "The input name reproduces the user's supplied operating name. Revolut's website terms identify REVOLUT LTD as the site operator and give the matching UK company number.",
+   "confidence": "high"
+  },
+  {
+   "field": "people",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "Current officers Officers: 15 officers / 5 resignations [FLEMING, Heather](https://find-and-update.company-information.service.gov.uk/officers/aM9MrF4W2CkcqOzYlFwR06B6vMQ/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Secretary Appointed on 19 June 2025",
+      "BRITTON, Caroline Louise](https://find-and-update.company-information.service.gov.uk/officers/0QoGcgeKhfZSTikRwECdTJuTMOc/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth February 1965 Appointed on 8 March 2019 Nationality British"
+     ]
+    },
+    {
+     "title": "REVOLUT GROUP HOLDINGS LTD persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/12743269/persons-with-significant-control",
+     "excerpts": [
+      "Mr Nikolay Storonskiy** Active Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Notified on 15 July 2020 Date of birth July 1984 Nationality British Place of residence England Identity verification status Verified Verification requirements complete Identity verified by an Authorised Corporate Service Provider (ACSP) LAGGAN & ASSOCIATES LIMITED ACSP has confirmed that they have verified the identity of NIKOLAY STORONSKIY to the standard set by Companies House and is satisfied that the required personal information is true. The verification checks were completed on 19 December 2025. LAGGAN & ASSOCIATES LIMITED ACSP is supervised by: HMRC. Nature of control Ownership of shares – More than 25% but not more than 50% Right to appoint or remove directors"
+     ]
+    }
+   ],
+   "reasoning": "The company-specific officers page supplies the active directors, secretary and stated nationalities. The parent's PSC register supplies the separately labelled indirect controlling-owner role. Secretary nationality was not stated and remains null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities",
+   "citations": [
+    {
+     "title": "REVOLUT LTD persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/persons-with-significant-control",
+     "excerpts": [
+      "Revolut Group Holdings Ltd** Active Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Notified on 29 April 2022 Governing law England Legal form Private Limited Company Place registered England Registration number 12743269 Incorporated in United Kingdom Nature of control Ownership of shares – 75% or more"
+     ]
+    },
+    {
+     "title": "REVOLUT LTD - LEI 213800MQORWPL582SW82",
+     "url": "https://www.gleif.org/lei/213800MQORWPL582SW82",
+     "excerpts": [
+      "Its direct parent is REVOLUT GROUP HOLDINGS LTD (LEI 213800UIKMYZWWQS5E02)."
+     ]
+    },
+    {
+     "title": "FSCS Information Sheet and Exclusions List | Revolut United Kingdom",
+     "url": "https://www.revolut.com/legal/fscs-information-sheet",
+     "excerpts": [
+      "Revolut Bank UK Ltd is registered in England and Wales (Registered No. 12871051). Registered address: 30 South Colonnade, London, E14 5HX. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority (Financial Services Register No. 981170). Revolut Ltd (No. 08804411) is authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011 (Firm Reference 900562). Registered address: 30 South Colonnade, London E14 5HX, United Kingdom. Investment services are provided by Revolut Trading Ltd (No. 11567840), which is authorised and regulated by the Financial Conduct Authority (FRN: 933846)."
+     ]
+    },
+    {
+     "title": "Sanctions on Revolut group companies | Bank of Lithuania",
+     "url": "https://www.lb.lt/en/news/sanctions-on-revolut-group-companies",
+     "excerpts": [
+      "For these breaches of the law, the Bank of Lithuania imposed a penalty of €50 thousand to Revolut Bank UAB and €150 thousand to Revolut Payments UAB"
+     ]
+    },
+    {
+     "title": "AGCM - The Italian Competition Authority fines Revolut over €11 million for unfair commercial practices",
+     "url": "https://en.agcm.it/en/media/press-releases/2026/4/PS12974",
+     "excerpts": [
+      "The Italian Competition Authority has fined Revolut Securities Europe UAB"
+     ]
+    }
+   ],
+   "reasoning": "The sources distinguish the parent, separate UK service companies and overseas group entities. The overseas registry numbers were not established; their null values avoid inventing identifiers or transferring their enforcement findings to the target.",
+   "confidence": "medium"
+  },
+  {
+   "field": "risk_rating",
+   "citations": [
+    {
+     "title": "REVOLUT LTD overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411",
+     "excerpts": [
+      "Registered office address 30 South Colonnade, London, United Kingdom, E14 5HX Company status Active"
+     ]
+    },
+    {
+     "title": "Revolut whistleblower had concerns over CEO conduct and compliance - BBC News",
+     "url": "https://www.bbc.co.uk/news/technology-47751945",
+     "excerpts": [
+      "The FCA confirmed to the BBC that it required Revolut to take specific actions following the enquiries it made after obtaining information on the company."
+     ]
+    },
+    {
+     "title": "High Court strikes out “de-banking” claim against Revolut | Brick Court Chambers",
+     "url": "https://www.brickcourt.co.uk/news/detail/high-court-strikes-out-de-banking-claim-against-revolut",
+     "excerpts": [
+      "The High Court today handed down judgment striking out a “de-banking” claim as an abuse of process in _Uzbekov v Revolut_ [2024] EWHC 98 (KB)."
+     ]
+    }
+   ],
+   "reasoning": "Medium is an analytical assessment, balancing identifiable registration and ownership against historical control concerns, litigation and unresolved screening. Dismissal of a claim is not treated as proven misconduct, and overseas fines are excluded. Incomplete EU and current PEP-family checks prevent an unconditional low-risk clearance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "registration",
+   "citations": [
+    {
+     "title": "REVOLUT LTD overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411",
+     "excerpts": [
+      "Registered office address 30 South Colonnade, London, United Kingdom, E14 5HX Company status Active Company type Private limited Company Incorporated on 6 December 2013"
+     ]
+    },
+    {
+     "title": "Website Terms | Revolut United Kingdom",
+     "url": "https://www.revolut.com/legal/website-terms-and-conditions",
+     "excerpts": [
+      "Our site is operated by Revolut Ltd (we or us). We are registered in England and Wales under company number 08804411 and have our registered office at 30 South Colonnade, London, E14 5HX."
+     ]
+    },
+    {
+     "title": "REVOLUT LTD - LEI 213800MQORWPL582SW82",
+     "url": "https://www.gleif.org/lei/213800MQORWPL582SW82",
+     "excerpts": [
+      "REVOLUT LTD REVOLUT LTD is a legal entity under the jurisdiction of United Kingdom of Great Britain and Northern Ireland (the) (GB) with Legal Entity Identifier (LEI) 213800MQORWPL582SW82. Its LEI registration is ISSUED and its entity status is ACTIVE. Its direct parent is REVOLUT GROUP HOLDINGS LTD (LEI 213800UIKMYZWWQS5E02). Its ultimate parent is REVOLUT GROUP HOLDINGS LTD (LEI 213800UIKMYZWWQS5E02). Entity details LEI Code: 213800MQORWPL582SW82 (Primary) Legal Name: REVOLUT LTD (en) Registered At: Companies Register, Companies House (RA000585) Registered As: 08804411 Jurisdiction Of Formation: United Kingdom of Great Britain and Northern Ireland (the) (GB) General Category: GENERAL Entity Legal Form: Private Limited Company / cyfyngedig (H0PO) Entity Status: ACTIVE Entity created at: 2013-12-06"
+     ]
+    }
+   ],
+   "reasoning": "Companies House supplies the registered address, active status and incorporation date. The website terms corroborate England-and-Wales registration and company number. GLEIF directly identifies the same legal entity, registry number and LEI.",
+   "confidence": "high"
+  },
+  {
+   "field": "adverse_media",
+   "citations": [
+    {
+     "title": "Digital bank Revolut's sanctions screening issue revealed",
+     "url": "https://www.telegraph.co.uk/technology/2019/02/28/revolut-failed-block-suspicious-transactions",
+     "excerpts": [
+      "One of Britain's most promising technology start-ups failed to block thousands of potentially suspicious transactions on its platform. Documents seen by The Telegraph show that for three months last year Revolut switched off an automated system designed to stop money transfers that had been flagged for sanctions checks. As a result, thousands of transactions passed through the London-based startup's digital banking system between July and September of 2018 without having been fully checked for sanctions compliance. Revolut launched an internal investigation in late 2018 after a whistleblower contacted Revolut's board over serious issues with its sanctions screening system. In a draft letter to the FCA in September 2018 (which was never in fact sent), Revolut's head of legal Tom Hambrett"
+     ]
+    },
+    {
+     "title": "Revolut whistleblower had concerns over CEO conduct and compliance - BBC News",
+     "url": "https://www.bbc.co.uk/news/technology-47751945",
+     "excerpts": [
+      "The FCA confirmed to the BBC that it required Revolut to take specific actions following the enquiries it made after obtaining information on the company."
+     ]
+    },
+    {
+     "title": "High Court Judgment Template",
+     "url": "https://www.judiciary.uk/wp-content/uploads/2024/01/Uzbekov-v-Revolut-Judgment.pdf",
+     "excerpts": [
+      "REVOLUT LIMITED Defendant"
+     ]
+    },
+    {
+     "title": "\nTerna Energy Trading doo v Revolut Ltd -  Find Case Law\n      - The National Archives\n    ",
+     "url": "https://caselaw.nationalarchives.gov.uk/ewhc/comm/2024/1419",
+     "excerpts": [
+      "In each case the court asked if the connection was ‘sufficient’ but laid down no principle to explain when the ‘sufficiency’ criterion was satisfied."
+     ]
+    },
+    {
+     "title": "High Court strikes out APP fraud claims against receiving payment service provider  | Herbert Smith Freehills Kramer | Global law firm",
+     "url": "https://www.hsfkramer.com/notes/bankinglitigation/2024-posts/High-Court-strikes-out-APP-fraud-claims-against-receiving-payment-service-provider-",
+     "excerpts": [
+      "**Note: In October 2024, the claimant applied to the Court of Appeal for permission to appeal.** **In December 2024, the Court of Appeal refused the claimant's application for permission to appeal.** **In January 2025, the parties agreed a confidential settlement in the case.**"
+     ]
+    },
+    {
+     "title": "Revolut customers say e-money firm failed them after being scammed",
+     "url": "https://www.bbc.com/news/articles/cj6epzxdd77o",
+     "excerpts": [
+      "The e-money firm - which has not yet been granted full status as a bank - says it takes fraud incredibly seriously and that it has “robust controls"
+     ]
+    }
+   ],
+   "reasoning": "The selected items concern the UK operation or proceedings naming Revolut Ltd. Allegations, procedural decisions, dismissals and settlement are distinguished from liability findings. Severity is an analytical classification. Dates are publication or decision dates except the explicitly month-only settlement date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep.0",
+   "citations": [
+    {
+     "title": "Revolut boss renounces Russian citizenship as his father is sanctioned by Ukraine",
+     "url": "https://www.telegraph.co.uk/business/2022/10/29/revolut-boss-renounces-russian-citizenship-father-sanctioned",
+     "excerpts": [
+      "It comes as his father, Nikolay Storonsky Snr, was sanctioned earlier this month by the Ukrainian government over his role as director general of Gazprom Promgaz, the engineering and research arm of the Kremlin-controlled energy company."
+     ]
+    },
+    {
+     "title": "FG25/3: The treatment of politically exposed persons for anti-money laundering purposes",
+     "url": "http://www.fca.org.uk/publication/finalised-guidance/fg25-3.pdf",
+     "excerpts": [
+      "A family member of a PEP is not a PEP themselves purely as_ _a consequence of being associated with a PEP."
+     ]
+    }
+   ],
+   "reasoning": "The historical family relationship and reported executive role justify a qualified follow-up flag, not confirmed current or personal PEP status.",
+   "confidence": "low"
+  },
+  {
+   "field": "sanctions.0",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 0 Found Name Address Type Program(s) List Score Your search has not returned any results.",
+      "Your search has not returned any results.",
+      "SDN List last updated on: 11/6/2026 2:33:11 PM Non-SDN List last updated on: 11/4/2026 12:33:06 PM"
+     ]
+    }
+   ],
+   "reasoning": "The official application returned no results during the recorded name searches and displayed the stated list update. The conclusion is restricted to those searches, without claiming exhaustive alias or ownership screening.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.1",
+   "citations": [
+    {
+     "title": "FCDO - UK Sanctions List Search - GOV.UK",
+     "url": "https://search-uk-sanctions-list.service.gov.uk/?searchValue=Storonsky",
+     "excerpts": [
+      "No results found."
+     ]
+    },
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.txt",
+     "excerpts": [
+      "Report Date: 03-Nov-2026 Last Updated"
+     ]
+    },
+    {
+     "title": "The UK Sanctions List - GOV.UK",
+     "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+     "excerpts": [
+      "The UK Sanctions List is now the only source for all UK sanctions designations. The OFSI Consolidated List of Asset Freeze Targets closed on Wednesday 28 January 2026 and is no longer being updated."
+     ]
+    }
+   ],
+   "reasoning": "The official owner-name search returned no results. Literal checks of the opened UK list found no specified company tokens or owner-name stem. The header dates the snapshot; the official notice explains why the current UK list replaces the discontinued OFSI list. These are limited checks, not comprehensive clearance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.2",
+   "citations": [],
+   "reasoning": "The EU tracker was opened, but a completed entity-and-owner consolidated-list result was not established. The match is therefore null rather than a negative clearance.",
+   "confidence": "low"
+  },
+  {
+   "field": "people.0",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "BRITTON, Caroline Louise](https://find-and-update.company-information.service.gov.uk/officers/0QoGcgeKhfZSTikRwECdTJuTMOc/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth February 1965 Appointed on 8 March 2019 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "Companies House lists this person as an active director and states British nationality.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.1",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "GILBERT, Martin James](https://find-and-update.company-information.service.gov.uk/officers/c5A9CTUZ-lV5awY1Kyq-jVy0oyY/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth July 1955 Appointed on 1 January 2020 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "Companies House directly supplies the name, active directorship and nationality.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.2",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "JAJODIA, Siddhartha](https://find-and-update.company-information.service.gov.uk/officers/-mZ2OI7dkZNvDEMaeQ-1ysy0MDk/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth December 1974 Appointed on 9 July 2026 Nationality American"
+     ]
+    }
+   ],
+   "reasoning": "The active officer record states the name and American nationality.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.3",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "SHERWOOD, Michael Sidney](https://find-and-update.company-information.service.gov.uk/officers/kGel7pTT511kpMhNXG1DYoAOj3w/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth July 1965 Appointed on 21 February 2020 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "The company-specific active officer record supplies all stated values.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.4",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "SIEVWRIGHT, John Phimister](https://find-and-update.company-information.service.gov.uk/officers/CMpPA5QAQqxdmV4j_Ccraj7pJvY/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth February 1955 Appointed on 1 August 2021 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "The registry identifies an active director and states British nationality.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.5",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "STORONSKIY, Nikolay](https://find-and-update.company-information.service.gov.uk/officers/-qKMUFMuLwa1S7_WtIgTfCGJtKg/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth July 1984 Appointed on 6 December 2013 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "The registry supplies this spelling, active director status and British nationality.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.6",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "TEODOSIU, Dan](https://find-and-update.company-information.service.gov.uk/officers/0cZ6qp-cBRME83bBMw586d7W9Xw/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth September 1966 Appointed on 27 November 2023 Nationality Austrian"
+     ]
+    }
+   ],
+   "reasoning": "The active director record explicitly states Austrian nationality.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.7",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "WILSON, Ian Douglas](https://find-and-update.company-information.service.gov.uk/officers/hEdOBCzZiBAwoEJuq40sEM1NuiE/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth April 1964 Appointed on 21 February 2020 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "Companies House directly supplies the current role and nationality.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.8",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "YATSENKO, Vladyslav](https://find-and-update.company-information.service.gov.uk/officers/sS1D3jwDe4X0zvSh3nNU0OT4Dq0/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Director Date of birth August 1983 Appointed on 11 August 2017 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "The registry states British nationality; no nationality is inferred from birthplace or background.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.9",
+   "citations": [
+    {
+     "title": "REVOLUT LTD people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/officers",
+     "excerpts": [
+      "Current officers Officers: 15 officers / 5 resignations [FLEMING, Heather](https://find-and-update.company-information.service.gov.uk/officers/aM9MrF4W2CkcqOzYlFwR06B6vMQ/appointments) Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Role Active Secretary Appointed on 19 June 2025"
+     ]
+    }
+   ],
+   "reasoning": "The current officers section identifies Heather Fleming as active secretary. It does not state nationality, which is null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.10",
+   "citations": [
+    {
+     "title": "REVOLUT GROUP HOLDINGS LTD persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/12743269/persons-with-significant-control",
+     "excerpts": [
+      "Mr Nikolay Storonskiy** Active Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Notified on 15 July 2020 Date of birth July 1984 Nationality British Place of residence England Identity verification status Verified Verification requirements complete Identity verified by an Authorised Corporate Service Provider (ACSP) LAGGAN & ASSOCIATES LIMITED ACSP has confirmed that they have verified the identity of NIKOLAY STORONSKIY to the standard set by Companies House and is satisfied that the required personal information is true. The verification checks were completed on 19 December 2025. LAGGAN & ASSOCIATES LIMITED ACSP is supervised by: HMRC. Nature of control Ownership of shares – More than 25% but not more than 50% Right to appoint or remove directors"
+     ]
+    },
+    {
+     "title": "REVOLUT LTD persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/persons-with-significant-control",
+     "excerpts": [
+      "Revolut Group Holdings Ltd** Active Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Notified on 29 April 2022 Governing law England Legal form Private Limited Company Place registered England Registration number 12743269 Incorporated in United Kingdom Nature of control Ownership of shares – 75% or more"
+     ]
+    }
+   ],
+   "reasoning": "The parent's PSC register states the individual ownership band, appointment rights and British nationality. The target's PSC record connects that parent to REVOLUT LTD. The role is therefore explicitly indirect, not a current direct personal PSC entry for the target.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.0",
+   "citations": [
+    {
+     "title": "REVOLUT LTD persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08804411/persons-with-significant-control",
+     "excerpts": [
+      "Revolut Group Holdings Ltd** Active Correspondence address 30 South Colonnade, London, United Kingdom, E14 5HX Notified on 29 April 2022 Governing law England Legal form Private Limited Company Place registered England Registration number 12743269 Incorporated in United Kingdom Nature of control Ownership of shares – 75% or more"
+     ]
+    },
+    {
+     "title": "REVOLUT LTD - LEI 213800MQORWPL582SW82",
+     "url": "https://www.gleif.org/lei/213800MQORWPL582SW82",
+     "excerpts": [
+      "Its direct parent is REVOLUT GROUP HOLDINGS LTD (LEI 213800UIKMYZWWQS5E02)."
+     ]
+    }
+   ],
+   "reasoning": "Companies House identifies the corporate PSC, registration number and ownership/voting bands; GLEIF identifies it as both direct and ultimate parent.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.1",
+   "citations": [
+    {
+     "title": "FSCS Information Sheet and Exclusions List | Revolut United Kingdom",
+     "url": "https://www.revolut.com/legal/fscs-information-sheet",
+     "excerpts": [
+      "Revolut Bank UK Ltd is registered in England and Wales (Registered No. 12871051). Registered address: 30 South Colonnade, London, E14 5HX. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority (Financial Services Register No. 981170)."
+     ]
+    }
+   ],
+   "reasoning": "Revolut's legal information identifies the separate UK banking company and its company number.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.2",
+   "citations": [
+    {
+     "title": "FSCS Information Sheet and Exclusions List | Revolut United Kingdom",
+     "url": "https://www.revolut.com/legal/fscs-information-sheet",
+     "excerpts": [
+      "Investment services are provided by Revolut Trading Ltd (No. 11567840), which is authorised and regulated by the Financial Conduct Authority (FRN: 933846)."
+     ]
+    }
+   ],
+   "reasoning": "The legal information names the investment-services entity and its registration number.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.3",
+   "citations": [
+    {
+     "title": "Sanctions on Revolut group companies | Bank of Lithuania",
+     "url": "https://www.lb.lt/en/news/sanctions-on-revolut-group-companies",
+     "excerpts": [
+      "For these breaches of the law, the Bank of Lithuania imposed a penalty of €50 thousand to Revolut Bank UAB and €150 thousand to Revolut Payments UAB"
+     ]
+    }
+   ],
+   "reasoning": "The Lithuanian regulator names Revolut Bank UAB separately from the UK target. Its registry number was not established in the reviewed material.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.4",
+   "citations": [
+    {
+     "title": "Sanctions on Revolut group companies | Bank of Lithuania",
+     "url": "https://www.lb.lt/en/news/sanctions-on-revolut-group-companies",
+     "excerpts": [
+      "For these breaches of the law, the Bank of Lithuania imposed a penalty of €50 thousand to Revolut Bank UAB and €150 thousand to Revolut Payments UAB"
+     ]
+    }
+   ],
+   "reasoning": "The regulator identifies Revolut Payments UAB as a distinct enforcement subject. No unsupported registry number is supplied.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.5",
+   "citations": [
+    {
+     "title": "AGCM - The Italian Competition Authority fines Revolut over €11 million for unfair commercial practices",
+     "url": "https://en.agcm.it/en/media/press-releases/2026/4/PS12974",
+     "excerpts": [
+      "The Italian Competition Authority has fined Revolut Securities Europe UAB"
+     ]
+    }
+   ],
+   "reasoning": "The Italian authority names this separate group entity. The reviewed source does not establish its registry number for this answer.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.0",
+   "citations": [
+    {
+     "title": "Digital bank Revolut's sanctions screening issue revealed",
+     "url": "https://www.telegraph.co.uk/technology/2019/02/28/revolut-failed-block-suspicious-transactions",
+     "excerpts": [
+      "Published 28 February 2019 2:14pm GMT",
+      "One of Britain's most promising technology start-ups failed to block thousands of potentially suspicious transactions on its platform. Documents seen by The Telegraph show that for three months last year Revolut switched off an automated system designed to stop money transfers that had been flagged for sanctions checks. As a result, thousands of transactions passed through the London-based startup's digital banking system between July and September of 2018 without having been fully checked for sanctions compliance. Revolut launched an internal investigation in late 2018 after a whistleblower contacted Revolut's board over serious issues with its sanctions screening system. In a draft letter to the FCA in September 2018 (which was never in fact sent), Revolut's head of legal Tom Hambrett",
+      "The company re-activated its sanctions screening system on September 14, Revolut wrote in a draft letter to the FCA.",
+      "At no point during this time do we believe that we failed to meet our legal or regulatory sanctions requirements"
+     ]
+    }
+   ],
+   "reasoning": "The report supplies the publication date, allegations, reactivation and company response. The answer narrows the allegation to the relevant screening mechanism and avoids treating it as proven sanctions evasion. Severity is analytical.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.1",
+   "citations": [
+    {
+     "title": "Revolut whistleblower had concerns over CEO conduct and compliance - BBC News",
+     "url": "https://www.bbc.co.uk/news/technology-47751945",
+     "excerpts": [
+      "Published 2 April 2019",
+      "They told the BBC that among other allegations made to the FCA, they believed money-laundering checks were not being properly applied for select customers.",
+      "The FCA confirmed to the BBC that it required Revolut to take specific actions following the enquiries it made after obtaining information on the company."
+     ]
+    }
+   ],
+   "reasoning": "BBC reporting describes the whistleblower's allegations and attributes confirmation of enquiries and required actions to the FCA. It does not prove laundering or a fine. The date is expressly a reporting date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.2",
+   "citations": [
+    {
+     "title": "High Court Judgment Template",
+     "url": "https://www.judiciary.uk/wp-content/uploads/2024/01/Uzbekov-v-Revolut-Judgment.pdf",
+     "excerpts": [
+      "Date: 25/01/2024",
+      "REVOLUT LIMITED Defendant",
+      "5 Revolut accepts that the breach of contract claim raises triable factual issues"
+     ]
+    },
+    {
+     "title": "High Court strikes out “de-banking” claim against Revolut | Brick Court Chambers",
+     "url": "https://www.brickcourt.co.uk/news/detail/high-court-strikes-out-de-banking-claim-against-revolut",
+     "excerpts": [
+      "The High Court today handed down judgment striking out a “de-banking” claim as an abuse of process in _Uzbekov v Revolut_ [2024] EWHC 98 (KB)."
+     ]
+    }
+   ],
+   "reasoning": "The judgment identifies the defendant, date and procedural position; the accompanying case report directly states that the claim was struck out as an abuse of process. No admission or adverse merits judgment is inferred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.3",
+   "citations": [
+    {
+     "title": "\nTerna Energy Trading doo v Revolut Ltd -  Find Case Law\n      - The National Archives\n    ",
+     "url": "https://caselaw.nationalarchives.gov.uk/ewhc/comm/2024/1419",
+     "excerpts": [
+      "Terna Energy Trading doo v Revolut Ltd Terna Energy Trading doo v Revolut Ltd Neutral Citation Number [2024] EWHC 1419 (Comm)",
+      "Neutral Citation Number: [2024] EWHC 1419 (Comm) Case No: LM-2023-000309 IN THE HIGH COURT OF JUSTICE **BUSINESS AND PROPERTY COURTS OF ENGLAND AND WALES** **LONDON CIRCUIT COMMERCIAL COURT (KBD)** Royal Courts of Justice Rolls Building, Fetter Lane, London, EC4A 1NL Date: 12 June 2024",
+      "In each case the court asked if the connection was ‘sufficient’ but laid down no principle to explain when the ‘sufficiency’ criterion was satisfied."
+     ]
+    }
+   ],
+   "reasoning": "The official judgment identifies the case and decision date and explains why the claim could proceed. A refusal of summary disposal is not a liability judgment; no later outcome is asserted.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.4",
+   "citations": [
+    {
+     "title": "Revolut customers say e-money firm failed them after being scammed",
+     "url": "https://www.bbc.com/news/articles/cj6epzxdd77o",
+     "excerpts": [
+      "I lost £165k to fraud in an hour’ - customers say they were let down by Revolut 14 October 2024",
+      "The e-money firm - which has not yet been granted full status as a bank - says it takes fraud incredibly seriously and that it has “robust controls"
+     ]
+    },
+    {
+     "title": "Website Terms | Revolut United Kingdom",
+     "url": "https://www.revolut.com/legal/website-terms-and-conditions",
+     "excerpts": [
+      "Our site is operated by Revolut Ltd (we or us). We are registered in England and Wales under company number 08804411 and have our registered office at 30 South Colonnade, London, E14 5HX."
+     ]
+    }
+   ],
+   "reasoning": "The BBC investigation reports customer-fraud and security concerns and carries Revolut's response. The website terms identify the UK operating entity. These are allegations concerning service controls, not findings that the company committed the customer fraud.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.5",
+   "citations": [
+    {
+     "title": "High Court strikes out APP fraud claims against receiving payment service provider  | Herbert Smith Freehills Kramer | Global law firm",
+     "url": "https://www.hsfkramer.com/notes/bankinglitigation/2024-posts/High-Court-strikes-out-APP-fraud-claims-against-receiving-payment-service-provider-",
+     "excerpts": [
+      "The High Court has allowed the partial strike out of claims brought against the electronic money institution Revolut Limited",
+      "Accordingly, it held that it was not prepared on a summary basis to conclude that there was \"no sufficiently arguable case that a constructive trust arose on the funds transferred to the Destination Accounts\". In the court's view, fuller argument would be required to resolve the question, particularly where the answer could have much wider implications. The court agreed that the claim in dishonest assistance was insufficiently pleaded, but granted the claimant permission to amend the particulars of claim, to remedy the pleading defects identified. **Note: In October 2024, the claimant applied to the Court of Appeal for permission to appeal.** **In December 2024, the Court of Appeal refused the claimant's application for permission to appeal.** **In January 2025, the parties agreed a confidential settlement in the case.**"
+     ]
+    }
+   ],
+   "reasoning": "The legal case analysis describes the partial strike-out, amendment position, appeal refusal and January 2025 confidential settlement. The answer preserves month-only precision and does not infer an admission of liability.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
 }

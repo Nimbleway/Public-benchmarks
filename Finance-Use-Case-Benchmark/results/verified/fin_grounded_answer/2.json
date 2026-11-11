@@ -1,0 +1,1107 @@
+{
+ "sub_use_case": "fin_grounded_answer",
+ "input_n": 2,
+ "task": "What is the latest on TSMC's Arizona fab timeline: which fabs are producing, and what has been delayed or pulled forward?",
+ "labels": {
+  "gpt": "A",
+  "parallel": "B",
+  "opus": "C",
+  "nimble": "D",
+  "exa": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 22,
+ "evidence_fetched": 22,
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 37,
+ "judge": "v4b",
+ "judge_cost_usd": 1.29,
+ "corrections_v2": {
+  "units_before": 41,
+  "units_after": 30,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13",
+     "c14",
+     "c15"
+    ]
+   },
+   {
+    "kept": "c17",
+    "merged": [
+     "c18",
+     "c19"
+    ]
+   },
+   {
+    "kept": "c26",
+    "merged": [
+     "c27"
+    ]
+   },
+   {
+    "kept": "c31",
+    "merged": [
+     "c32"
+    ]
+   },
+   {
+    "kept": "c35",
+    "merged": [
+     "c36"
+    ]
+   },
+   {
+    "kept": "c38",
+    "merged": [
+     "c39"
+    ]
+   }
+  ],
+  "cost": 0.015
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "TSMC Arizona Fab 1 began high-volume production on N4 (4nm) in Q4 2024.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "TSMC Arizona's first fab (Fab 21 Phase 1) began high-volume production on N4 (4nm) process technology in Q4 2024.",
+    "E": "TSMC Arizona Fab 1 began high-volume production on the N4 process technology in Q4 2024.",
+    "B": "TSMC states that high-volume production on N4 process technology at its first Arizona fab (Fab 1) started in Q4 2024.",
+    "F": "TSMC Arizona Fab 1 entered high-volume production on the N4 process technology in Q4 2024 and is the only Arizona fab identified as producing.",
+    "A": "As of November 10, 2026, only TSMC Arizona Fab 1 is confirmed in high-volume production; it has produced N4 chips since Q4 2024."
+   },
+   "urls": [
+    "https://azbigmedia.com/business/tsmc-arizona-accelerates-production-timeline-as-earnings-soar/",
+    "https://tsmc.com/static/abouttsmcaz/index.htm",
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Fab 1 is the only TSMC Arizona fab in (volume) production.",
+   "asserted_by": [
+    "E",
+    "F",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "E": "As of November 10, 2026, Fab 1 is the only TSMC Arizona fab in production.",
+    "F": "Fab 1 ... is the only Arizona fab identified as producing.",
+    "A": "As of November 10, 2026, only TSMC Arizona Fab 1 is confirmed in high-volume production.",
+    "C": "TSMC's first Arizona fab (Fab 1) is the only Arizona fab in volume production."
+   },
+   "urls": [
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+    "https://azbigmedia.com/business/tsmc-arizona-accelerates-production-timeline-as-earnings-soar/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Fab 1 was producing roughly 10,000 wafers per month by early 2025, with a plan to scale to 30,000 (per Wikipedia).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "TSMC Arizona's first fab was producing roughly 10,000 wafers per month by early 2025, with a plan to scale to 30,000 (per Wikipedia)."
+   },
+   "urls": [
+    "https://tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "In October 2025 Fab 1 began producing Nvidia Blackwell GPUs, alongside Apple and AMD products.",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "TSMC Arizona's first fab began producing Nvidia Blackwell GPUs in October 2025, alongside Apple and AMD products."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/TSMC_Arizona",
+    "https://www.manufacturingdive.com/news/tsmc-q4-full-year-2025-earnings-ai-taiwan/809775/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Fab 1 actually began production in Q4 2024, ahead of the revised first-half-2025 schedule.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "TSMC Arizona Fab 1 actually began production in late 2024 (Q4 2024), ahead of the revised first-half-2025 schedule."
+   },
+   "urls": [
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "As of the Q3 2026 earnings call (Oct 15, 2026), Fab 2 construction is complete and tool move-in/installation is underway.",
+   "asserted_by": [
+    "E",
+    "B",
+    "F",
+    "C",
+    "A"
+   ],
+   "variants": {
+    "E": "TSMC has completed construction of Arizona Fab 2 and is in the process of tool move-in and installation (as of the Q3 2026 earnings call, October 15, 2026).",
+    "B": "On TSMC's Q3 2026 earnings call (2026-10-15), TSMC said it has completed construction of its second Arizona fab and is in the process of tool move-in and installation.",
+    "F": "TSMC Arizona Fab 2 construction is complete and tool move-in and installation is underway.",
+    "C": "On TSMC's Q3 2026 earnings call (October 15, 2026), TSMC said construction of its second Arizona fab (Fab 2) is complete and tools are being moved in and installed.",
+    "A": "As of October 15, 2026, TSMC Arizona Fab 2 construction was complete and tool installation was underway."
+   },
+   "urls": [
+    "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+    "https://investor.tsmc.com/chinese/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [
+    "c9"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Fab 2 construction was completed in 2025, with tool move-in and installation planned for later in 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Construction of TSMC Arizona's second fab was completed in 2025, and tool move-in and installation was planned for later in 2026."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/tsmc-ramps-arizona-production-ai-100500045.html"
+   ],
+   "conflicts_with": [
+    "c8"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Fab 2 volume production is set for Q3 2027, slightly ahead of the previous schedule (stated on the Q3 2026 call).",
+   "asserted_by": [
+    "E",
+    "B",
+    "F",
+    "C",
+    "A"
+   ],
+   "variants": {
+    "E": "TSMC Arizona Fab 2 is scheduled to begin volume production in Q3 2027, slightly ahead of the previous schedule.",
+    "B": "TSMC says volume production at its second Arizona fab will begin in Q3 2027, slightly ahead of its previous schedule.",
+    "F": "TSMC's latest stated target (Q3 2026 earnings call, 2026-10-15) is for Arizona Fab 2 volume production (N3) to begin in Q3 2027, slightly ahead of its previous schedule.",
+    "C": "TSMC Arizona Fab 2 (3nm) volume production is set for 3Q 2027, which C.C. Wei called 'slightly ahead of our previous schedule.'",
+    "A": "TSMC stated on October 15, 2026 that Arizona Fab 2 volume production will begin in Q3 2027, slightly ahead of its previous schedule."
+   },
+   "urls": [
+    "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+    "https://investor.tsmc.com/chinese/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [
+    "c12",
+    "c13",
+    "c14",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Fab 2 will use the N3 (3nm) process.",
+   "asserted_by": [
+    "E",
+    "A"
+   ],
+   "variants": {
+    "E": "TSMC Arizona Fab 2 will use the N3 process technology.",
+    "A": "TSMC Arizona Fab 2 is intended for 3nm (N3) production."
+   },
+   "urls": [
+    "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": [
+    "c16"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Fab 2 is targeted for N3 high-volume production in 2H 2027, advanced due to strong customer demand.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "TSMC Arizona's second fab is targeted for N3 (3nm) high-volume production in the second half of 2027, advanced due to strong customer demand."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/tsmc-ramps-arizona-production-ai-100500045.html",
+    "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf",
+    "https://www.trendforce.com/news/2025/12/18/news-tsmc-reportedly-accelerates-arizona-2nd-fab-eyes-3q26-tool-install-2027-3nm-production/",
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": [
+    "c10"
+   ],
+   "merged_from": [
+    "c12",
+    "c13",
+    "c14",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "A December 2025 FinSMEs piece said Fab 2 would make 2nm chips with production in 2028, inconsistent with TSMC's official N3 / 2H 2027 timeline.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "A December 2025 FinSMEs piece reported the second Arizona fab would make 2nm chips with production in 2028, inconsistent with TSMC's official N3, 2H 2027 timeline."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c11",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Fab 2 was originally targeted for 2026 (Dec 2022 announcement), slipped to 2028, then was pulled forward to 2H 2027 in January 2026.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "TSMC Arizona's second fab was originally targeted for production in 2026 in TSMC's December 2022 announcement, then slipped to 2028, before the January 2026 announcement pulled it forward to 2H 2027, earlier than previously projected."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/TSMC_Arizona",
+    "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+    "https://www.trendforce.com/news/2025/12/18/news-tsmc-reportedly-accelerates-arizona-2nd-fab-eyes-3q26-tool-install-2027-3nm-production/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c17",
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "On Dec 6, 2022 TSMC targeted Fab 1 N4 production for 2024 and Fab 2 3nm production for 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On December 6, 2022, TSMC targeted Arizona Fab 1 N4 production for 2024 and Fab 2 3nm production for 2026."
+   },
+   "urls": [
+    "https://pr.tsmc.com/system/files/newspdf/attachment/5bf77b670debc2dc86f66f43867d98b257429874/TSMC%20Arizona%20Announcements%20Press%20Release%20%28with%20event%20and%20quotes%29_%28E%29_final_wmn.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "By April 8, 2024, TSMC had pushed Fab 1 production to 1H 2025 and Fab 2 production to 2028.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "By April 8, 2024, TSMC had pushed Arizona Fab 1 production to the first half of 2025 and Fab 2 production to 2028."
+   },
+   "urls": [
+    "https://pr.tsmc.com/system/files/newspdf/attachment/a958e2086bacfd8039de42d95da6055f175d18a6/240408%20AZ%20%28E%29_final_wmna.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Fab 2's Q3 2027 start is guidance, not an achieved milestone; earlier than the revised 2028 plan but later than the original 2026 target.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Arizona Fab 2's Q3 2027 start is guidance rather than an achieved milestone; it is earlier than the revised 2028 plan but later than the original 2026 target."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Data Center Dynamics (2026-09-25) reported that production at the second Arizona fab would not start in 2026 as originally proposed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Data Center Dynamics reported (2026-09-25) that production at TSMC's second, more advanced Arizona fab would not start in 2026 as originally proposed."
+   },
+   "urls": [
+    "https://www.datacenterdynamics.com/en/news/tsmc-updates-arizona-fab-production-timeline-signs-semiconductor-talent-agreement-with-kyushu-university"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "A December 2025 report (Nikkei/TrendForce) said Fab 2 tool install would come in 3Q26 and 3nm production in 2027.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "A December 2025 report (via Nikkei/TrendForce) said TSMC Arizona Fab 2 tool install would come in 3Q26 and 3nm production in 2027."
+   },
+   "urls": [
+    "https://www.trendforce.com/news/2025/12/18/news-tsmc-reportedly-accelerates-arizona-2nd-fab-eyes-3q26-tool-install-2027-3nm-production/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "TSMC broke ground on Arizona Fab 3 in April 2025; it is slated for N2 and A16.",
+   "asserted_by": [
+    "D",
+    "E",
+    "B",
+    "F",
+    "A"
+   ],
+   "variants": {
+    "D": "TSMC broke ground on the third Arizona fab in April 2025, slated for N2 and A16 process technologies...",
+    "E": "TSMC broke ground on the site of Arizona Fab 3 in April 2025; the fab is slated for N2 and A16 process technologies.",
+    "B": "TSMC broke ground on its third Arizona fab in April 2025; the fab is slated for N2 and A16 process technologies.",
+    "F": "TSMC Arizona Fab 3 broke ground in April 2025 and is slated for N2 and A16 process technologies.",
+    "A": "TSMC Arizona Fab 3 broke ground in April 2025, is slated for N2 and A16 technologies..."
+   },
+   "urls": [
+    "https://tsmc.com/static/abouttsmcaz/index.htm",
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "TSMC targets volume production at Fab 3 by the end of the decade (not yet producing).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "...targeting volume production by the end of the decade.",
+    "E": "TSMC is targeting volume production at Arizona Fab 3 by the end of the decade.",
+    "B": "TSMC targets volume production at its third Arizona fab by the end of the decade.",
+    "F": "TSMC Arizona Fab 3 targets volume production by the end of the decade; it is not yet producing.",
+    "A": "...and targets volume production by the end of the decade."
+   },
+   "urls": [
+    "https://metrophoenix.com/2026/10/tsmc-accelerates-az-production-amid-soaring-earnings/",
+    "https://tsmc.com/static/abouttsmcaz/index.htm",
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": [
+    "c28"
+   ],
+   "merged_from": [
+    "c26",
+    "c27"
+   ]
+  },
+  {
+   "cid": "c28",
+   "claim": "Wikipedia's phase table puts Fab 3 production start at 2029, and TSMC is evaluating accelerating it.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Wikipedia's phase table puts the start of production for TSMC Arizona's third fab at 2029, and TSMC is evaluating accelerating that timeline."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/TSMC_Arizona"
+   ],
+   "conflicts_with": [
+    "c29"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "A September 2025 press report (Economic Daily News via TrendForce) said Fab 3 could be pulled into 2027; TSMC has not confirmed it.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "A September 2025 press report (Economic Daily News via TrendForce) said Arizona Fab 3 could be pulled into 2027; TSMC has not confirmed it."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c26",
+    "c28"
+   ]
+  },
+  {
+   "cid": "c30",
+   "claim": "Initial construction of Fab 4 and the first Arizona advanced-packaging fab began in early 2026.",
+   "asserted_by": [
+    "D",
+    "E",
+    "B",
+    "F",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "D": "TSMC Arizona's fourth fab and first advanced-packaging fab started initial stages of construction in early 2026.",
+    "E": "TSMC started initial stages of construction on Arizona Fab 4 and the first Arizona advanced packaging fab in early 2026.",
+    "B": "TSMC started initial stages of construction on its fourth Arizona fab and its first Arizona advanced packaging fab in early 2026.",
+    "F": "TSMC Arizona Fab 4 and the first Arizona advanced-packaging fab started initial stages of construction in early 2026; neither is producing.",
+    "A": "TSMC stated that initial construction of Arizona Fab 4 and its first Arizona advanced-packaging fab began in early 2026.",
+    "C": "Early construction has begun on a fourth TSMC Arizona fab and TSMC Arizona's first advanced packaging facility."
+   },
+   "urls": [
+    "https://tsmc.com/static/abouttsmcaz/index.htm",
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+    "https://azbigmedia.com/business/tsmc-arizona-accelerates-production-timeline-as-earnings-soar/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "No published production start date for Fab 4 or the first advanced packaging fab.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "TSMC's Arizona project page gives no published production start date for Fab 4 or the first advanced packaging fab.",
+    "C": "There are no public dates for TSMC Arizona Fab 4 or the Arizona advanced packaging plant."
+   },
+   "urls": [
+    "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c31",
+    "c32"
+   ]
+  },
+  {
+   "cid": "c33",
+   "claim": "TSMC's latest company update (Q3 2026 call) identifies no delayed Arizona fab.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "TSMC's latest company update (Q3 2026 earnings call) identifies no delayed Arizona fab."
+   },
+   "urls": [
+    "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "In July 2026 TSMC announced an additional $100B US investment for at least four more 2nm-and-below fabs plus advanced packaging in Arizona, bringing the US total to $265B, with no timeline and pace set by demand.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "In July 2026 TSMC announced an additional $100 billion US investment for at least four more 2nm-and-below fabs plus advanced packaging in Arizona, lifting its total US commitment to $265 billion, with no timeline and construction pace set by market demand."
+   },
+   "urls": [
+    "https://tomshardware.com/tech-industry/tsmc-commits-another-100-billion-to-arizona-for-at-least-four-more-2nm-fabs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Arizona plans comprise six logic fabs, two advanced packaging facilities and an R&D center; investment grew from $12B in 2020 to $265B, the largest greenfield FDI in US history.",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "TSMC's Arizona plans comprise six logic wafer fabs, two advanced packaging facilities and an R&D center; the investment has grown from $12 billion in 2020 to $265 billion, the largest foreign direct investment in a greenfield project in US history."
+   },
+   "urls": [
+    "https://metrophoenix.com/2026/10/tsmc-accelerates-az-production-amid-soaring-earnings/",
+    "https://tsmc.com/static/abouttsmcaz/index.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c35",
+    "c36"
+   ]
+  },
+  {
+   "cid": "c37",
+   "claim": "At the October 2026 earnings call, CEO C.C. Wei said TSMC continues to speed up Arizona capacity expansion and prepare faster N2-and-beyond upgrades there, given strong AI demand.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "At the October 2026 earnings call, CEO C.C. Wei said TSMC continues to speed up Arizona capacity expansion and is preparing to upgrade to N2 and more advanced process technologies in Arizona faster, given strong AI-related demand."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/tsmc-brings-most-advanced-chipmaking-155600546.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Bloomberg reported on Oct 1, 2026 that TSMC is weighing a new multibillion-dollar chip campus in Texas; nothing finalized.",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "Bloomberg reported on October 1, 2026 that TSMC is weighing a new multibillion-dollar chip campus in Texas as a second major US manufacturing region; nothing is finalized."
+   },
+   "urls": [
+    "https://shattered.io/tsmc-texas-fab-265-billion-arizona-2026",
+    "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c38",
+    "c39"
+   ]
+  },
+  {
+   "cid": "c40",
+   "claim": "TSMC is in talks with a customer about using its Terafab capacity; any such fab would have to be run by TSMC.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "TSMC is in talks with a customer about using its Terafab capacity; any such fab would have to be run by TSMC, and talks are ongoing."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Reports of up to 12 Arizona fabs come from unconfirmed insider sources (Digitimes, January 2026).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Reports of up to 12 Arizona fabs come from unconfirmed insider sources (Digitimes, January 2026)."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c35"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC's Arizona page states high-volume N4 production started in Q4 2024; Fab 1 is the only fab producing.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true",
+    "B": "true",
+    "F": "true",
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "Only the first fab is listed as in production; Fab 2 is targeted for 2027 and Fabs 3 and 4 are under construction.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://en.wikipedia.org/wiki/TSMC_Arizona",
+   "note": "Wikipedia states about 10,000 wafers per month with a plan to scale to 30,000, but this is early-2025 background.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://en.wikipedia.org/wiki/TSMC_Arizona",
+   "note": "Wikipedia and TrendForce both report Blackwell production at the fab starting in October 2025.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC says production started in Q4 2024, earlier than the 2025 schedule it had revised to.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+   "note": "The Q3 2026 call says the second fab is built and tool move-in and installation is underway.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://finance.yahoo.com/news/tsmc-ramps-arizona-production-ai-100500045.html",
+   "note": "The Q4 2025 call coverage says construction is complete and tool installation is planned for later in 2026.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+   "note": "Wei said volume production will begin in Q3 2027, slightly ahead of the previous schedule; this is the most current statement.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC's page says the second fab is for N3 volume production.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://finance.yahoo.com/news/tsmc-ramps-arizona-production-ai-100500045.html",
+   "note": "2H 2027 for N3 was advanced due to demand, but Q3 2027 on the Oct 2026 call is more current and slightly more precise.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "C": "true",
+    "A": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://pr.tsmc.com/system/files/newspdf/attachment/5bf77b670debc2dc86f66f43867d98b257429874/TSMC%20Arizona%20Announcements%20Press%20Release%20%28with%20event%20and%20quotes%29_%28E%29_final_wmn.pdf",
+   "note": "Dec 2022 release said 2026; April 2024 release said 2028; January 2026 pulled it to 2H 2027.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true",
+    "C": "true"
+   }
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://pr.tsmc.com/system/files/newspdf/attachment/5bf77b670debc2dc86f66f43867d98b257429874/TSMC%20Arizona%20Announcements%20Press%20Release%20%28with%20event%20and%20quotes%29_%28E%29_final_wmn.pdf",
+   "note": "The Dec 6, 2022 release says N4 in 2024 and 3nm in 2026.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://pr.tsmc.com/system/files/newspdf/attachment/a958e2086bacfd8039de42d95da6055f175d18a6/240408%20AZ%20%28E%29_final_wmna.pdf",
+   "note": "The April 8, 2024 release says Fab 1 in 1H 2025 and Fab 2 in 2028.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+   "note": "Tools are still being installed, so Q3 2027 is guidance. It sits between the original 2026 target and the 2028 revision.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "false",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.datacenterdynamics.com/en/news/tsmc-updates-arizona-fab-production-timeline-signs-semiconductor-talent-agreement-with-kyushu-university",
+   "note": "The DCD article is from 2024 (it refers to an April 18 press conference), not 2026-09-25, so the date is wrong.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.trendforce.com/news/2025/12/18/news-tsmc-reportedly-accelerates-arizona-2nd-fab-eyes-3q26-tool-install-2027-3nm-production/",
+   "note": "The TrendForce Dec 18, 2025 article, citing Nikkei, reports Jul-Sep 2026 tool install and 2027 3nm production.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC says it broke ground in April 2025 on the third fab, slated for N2 and A16.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC says the third fab targets volume production by the end of the decade.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true",
+    "B": "true",
+    "F": "true",
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC says initial construction of the fourth fab and first advanced packaging fab started in early 2026.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC's page says only that Fab 4 and the first packaging fab started initial construction in early 2026, with no production date given.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/",
+   "note": "Wei said Fab 2 volume production starts 3Q27, slightly ahead of schedule, and no Arizona delay was flagged.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://en.wikipedia.org/wiki/TSMC_Arizona",
+   "note": "Tom's Hardware and Wikipedia confirm the July 2026 $100B addition for at least four more 2nm-and-below fabs plus packaging, total $265B; the no-timeline detail is not directly shown but TSMC's page says only 'intent to build'.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+   "note": "TSMC's page states six logic fabs, two packaging facilities, an R&D center, and growth from $12B to $265B as the largest greenfield FDI.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/news/tsmc-brings-most-advanced-chipmaking-155600546.html",
+   "note": "The Yahoo article quotes Wei from the October call on speeding up Arizona expansion and upgrading faster to N2 and beyond.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://shattered.io/tsmc-texas-fab-265-billion-arizona-2026",
+   "note": "Bloomberg's Oct 1, 2026 report described the Texas campus as under consideration and unconfirmed; TSMC's own call corroborates that Texas is being evaluated.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+   "note": "Wei said talks with the Terafab customer are ongoing and that any such fab 'got to be run by TSMC'.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.finsmes.com/2025/12/tsmc-arizona-expansion-accelerates-as-chairman-wei-commits-to-u-s-manufacturing-scale.html",
+   "note": "The FinSMEs article (5 Dec 2025) says Fab 2 finished construction ahead of schedule, will make 2nm chips, and starts production in 2028. TSMC's own Arizona page says Fab 2 will use N3, with volume production targeted for 2H 2027. TrendForce (18 Dec 2025) says tool install starts around 3Q26 and 3...",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "retried": true
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://en.wikipedia.org/wiki/TSMC_Arizona",
+   "note": "The Wikipedia table lists Fab 3 (2nm/1.6nm) as under construction with production 2029. The acceleration clause is not in the cached page, but TSMC has said it is looking to speed up the Arizona build-out.",
+   "via": "agent"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.trendforce.com/news/tag/arizona/page/3/",
+   "note": "TrendForce ran a Sept 30, 2025 item saying TSMC pulled Arizona's third fab to 2027, citing Economic Daily News. The cached TSMC transcript and AZ Big Media show no confirmation, only that Fab 3 is under construction.",
+   "via": "agent"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.digitimes.com/news/a20260106PD217.html",
+   "note": "Digitimes reported on Jan 6, 2026, citing unnamed sources, that TSMC would build up to 12 Arizona fabs. TSMC had separately confirmed an extra $100B and a larger planned footprint, but not the exact fab count or dates.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c4": {
+   "cid": "c4",
+   "verdict": "unverifiable",
+   "note": "The cached Wikipedia page has no 10,000 or 30,000 wafers/month figures, and TSMC's Arizona page only says 'tens of thousands' of wafers per month. Fab 1 N4 HVM did start in Q4 2024."
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "note": "The Q3 2026 transcript says Fab 2 construction is complete and tool move-in/installation is underway, with volume production in Q3 2027."
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "note": "TSMC's Arizona page says Fab 2 N3 volume production is targeted for the second half of 2027."
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "note": "The original 2026 target in the Dec 2022 announcement was later pushed to 2027/2028. Wikipedia says it was pulled in to 2H 2027 in Jan 2026, and the Q3 2026 call says 'slightly ahead' of the previous schedule."
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "note": "TSMC's Arizona page says the third fab broke ground in April 2025 and is slated for N2 and A16, with volume production by the end of the decade."
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "note": "The Wikipedia table lists Fab 3 at 2029. On acceleration, TSMC said it is speeding up its Arizona plans, and an analyst asked on the Q3 2026 call about pulling in the third fab."
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "false",
+   "note": "The quote is in a Dec 18, 2025 article, so it is from the October 2025 call, not October 2026. The Q3 2026 transcript does not contain this wording."
+  }
+ },
+ "scores": {
+  "gpt": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 117.5,
+   "coverage": 0.54,
+   "accuracy": 1.0,
+   "combined": 0.702,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 1,
+   "truth": 29,
+   "truth_weight": 117.5,
+   "coverage": 0.332,
+   "accuracy": 0.987,
+   "combined": 0.497,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 117.5,
+   "coverage": 0.562,
+   "accuracy": 1.0,
+   "combined": 0.719,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 117.5,
+   "coverage": 0.451,
+   "accuracy": 1.0,
+   "combined": 0.622,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 117.5,
+   "coverage": 0.528,
+   "accuracy": 1.0,
+   "combined": 0.691,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 117.5,
+   "coverage": 0.4,
+   "accuracy": 1.0,
+   "combined": 0.571,
+   "metric": "F1"
+  }
+ }
+}

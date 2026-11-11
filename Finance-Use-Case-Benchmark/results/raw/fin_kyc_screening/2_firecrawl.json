@@ -1,9 +1,12 @@
 {
  "arm": "firecrawl",
+ "sub_use_case": "fin_kyc_screening",
+ "input": "Run a KYC screen on Greensill Capital in the United Kingdom",
+ "input_n": 2,
  "tier": "spark-2/high",
  "status": "completed",
- "seconds": 222,
- "run_id": "01a15e08-8ded-773b-999e-107fea37e9c5",
+ "seconds": 351,
+ "run_id": "01a1c192-1549-761e-b2f5-a87541eca5a6",
  "output": {
   "input_name": "Greensill Capital",
   "registration": {
@@ -11,138 +14,78 @@
    "registry_number": "08126173",
    "lei": "2138004D9J9DZUANAI93",
    "jurisdiction": "GB",
-   "incorporation_date": "2 July 2012",
+   "incorporation_date": "2012-07-02",
    "registered_address": "C/O Grant Thornton Uk Advisory & Tax Llp, 11th Floor Landmark St Peters Square, 1 Oxford Street, Manchester, M1 4PB",
-   "status": "In Administration; GLEIF LEI registration Lapsed",
+   "status": "In Administration",
    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173"
   },
   "related_entities": [
    {
-    "name": "GREENSILL LIMITED",
-    "relation": "UK group company; in liquidation",
+    "name": "Greensill Limited",
+    "relation": "Related UK Greensill group company",
     "registry_number": "11344883"
    },
    {
-    "name": "GREENSILL CAPITAL MANAGEMENT COMPANY (UK) LIMITED",
-    "relation": "UK group company; in administration",
-    "registry_number": "08037769"
-   },
-   {
-    "name": "GREENSILL CAPITAL SECURITIES LIMITED",
-    "relation": "UK group company; dissolved",
-    "registry_number": "09595415"
-   },
-   {
     "name": "Greensill Capital Pty Limited",
-    "relation": "Australian parent company of the Greensill group",
+    "relation": "Australian parent company",
     "registry_number": null
    }
   ],
   "people": [
    {
     "name": "Mr Alexander David Greensill",
-    "role": "Person with significant control (PSC); has significant influence or control over the trustees of a trust",
+    "role": "Person with significant control — has significant influence or control over the trustees of a trust",
     "nationality": "British",
     "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/persons-with-significant-control"
    }
   ],
-  "sanctions": [
+  "sanctions": [],
+  "pep": [
    {
-    "party": "GREENSILL CAPITAL (UK) LIMITED",
-    "list": "OFAC SDN List",
-    "match": "No matching record returned for the exact legal name and Companies House number 08126173; no same-party match identified.",
-    "source_url": "https://sanctionssearch.ofac.treas.gov/"
-   },
-   {
-    "party": "Mr Alexander David Greensill",
-    "list": "OFAC SDN List",
-    "match": "No matching record returned for the exact name; no same-party match identified.",
-    "source_url": "https://sanctionssearch.ofac.treas.gov/"
-   },
-   {
-    "party": "GREENSILL CAPITAL (UK) LIMITED",
-    "list": "UK OFSI / FCDO Sanctions List",
-    "match": "No matching record returned in the UK FCDO sanctions dataset; no same-party match identified.",
-    "source_url": "https://www.opensanctions.org/search/?q=GREENSILL+CAPITAL+%28UK%29+LIMITED&schema=Company&datasets=gb_fcdo_sanctions&datasets=eu_fsf"
-   },
-   {
-    "party": "Mr Alexander David Greensill",
-    "list": "UK OFSI / FCDO Sanctions List",
-    "match": "No matching record returned in the UK FCDO sanctions dataset; no same-party match identified.",
-    "source_url": "https://www.opensanctions.org/search/?q=Alexander+David+Greensill&schema=Person&datasets=gb_fcdo_sanctions&datasets=eu_fsf"
-   },
-   {
-    "party": "GREENSILL CAPITAL (UK) LIMITED",
-    "list": "EU Consolidated Financial Sanctions Files (EU FSF)",
-    "match": "No matching record returned in the EU FSF dataset; no same-party match identified.",
-    "source_url": "https://www.opensanctions.org/search/?q=GREENSILL+CAPITAL+%28UK%29+LIMITED&schema=Company&datasets=gb_fcdo_sanctions&datasets=eu_fsf"
-   },
-   {
-    "party": "Mr Alexander David Greensill",
-    "list": "EU Consolidated Financial Sanctions Files (EU FSF)",
-    "match": "No matching record returned in the EU FSF dataset; no same-party match identified.",
-    "source_url": "https://www.opensanctions.org/search/?q=Alexander+David+Greensill&schema=Person&datasets=gb_fcdo_sanctions&datasets=eu_fsf"
+    "name": "Bill Crothers",
+    "position": "Potential PEP: former Government Chief Commercial Officer, Cabinet Office; former director of Greensill Capital",
+    "source_url": "https://publications.parliament.uk/pa/cm5803/cmselect/cmpubadm/888/report.html"
    }
   ],
-  "pep": [],
   "adverse_media": [
    {
-    "date": "2021-03-08",
-    "category": "Insolvency / corporate collapse",
-    "summary": "Companies House records administration beginning on 8 March 2021; the company remains recorded as in administration.",
+    "date": "2026-06-04",
+    "category": "Director disqualification / corporate misconduct",
+    "summary": "The UK Insolvency Service said Lex Greensill accepted a nine-year disqualification undertaking after conduct involving Greensill Capital (UK) Limited breached his Companies Act 2006 duty to exercise reasonable care, skill and diligence; the undertaking concerned transactions involving Katerra and a $440 million loss to a Credit Suisse fund.",
     "severity": "high",
-    "status": "In administration as of 2026-10-21",
-    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/insolvency"
+    "status": "Disqualification undertaking accepted; ban effective 2026-06-23 and running until June 2035",
+    "source_url": "https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years"
    },
    {
     "date": "2021-05-14",
-    "category": "Suspected fraud, fraudulent trading and money laundering investigation",
-    "summary": "The Serious Fraud Office opened an investigation into GFG Alliance financing and conduct, expressly including financing arrangements with Greensill Capital UK Ltd.",
+    "category": "Suspected fraud, fraudulent trading and money-laundering investigation",
+    "summary": "The Serious Fraud Office announced an investigation into suspected fraud, fraudulent trading and money laundering concerning GFG Alliance financing and conduct, including financing arrangements with Greensill Capital UK Ltd.",
     "severity": "high",
-    "status": "Open / live investigation on the official case page",
+    "status": "Open investigation",
     "source_url": "https://www.gov.uk/sfo-cases/gupta-family-group-gfg-alliance"
    },
    {
-    "date": "2021-06-28",
-    "category": "Regulatory / audit investigation",
-    "summary": "The Financial Reporting Council records a current Audit Enforcement Procedure investigation into Saffery Champness for its audit of Greensill Capital (UK) Ltd.",
-    "severity": "medium",
-    "status": "Current",
-    "source_url": "https://www.frc.org.uk/library/enforcement/enforcement-cases/"
-   },
-   {
     "date": "2024-02-02",
-    "category": "Civil fraud allegations / litigation",
-    "summary": "Reuters reported Zurich's London counterclaim alleging a fraudulent scheme involving Lex Greensill and Greensill Capital UK, including alleged non-genuine receivables and a sham Receivables Purchase Agreement; the allegations were denied.",
+    "category": "Civil litigation / alleged fraud",
+    "summary": "Reuters reported that Zurich's London counterclaim alleged a fraudulent scheme involving Lex Greensill, Greensill Capital UK, Sanjeev Gupta and Liberty businesses, including alleged misrepresentations and non-genuine receivables; Lex Greensill and GFG disputed the allegations.",
     "severity": "high",
-    "status": "Civil litigation / allegations contested",
+    "status": "Civil counterclaim/litigation; allegations disputed",
     "source_url": "https://www.reuters.com/business/finance/zurich-draws-lex-greensill-sanjeev-gupta-into-london-court-battle-2024-02-02/"
-   },
-   {
-    "date": "2026-06-04",
-    "category": "Director enforcement / breach of duty",
-    "summary": "The Insolvency Service said Lex Greensill agreed to a nine-year UK director disqualification after an investigation found conduct involving Greensill Capital (UK) Limited, including use of $440 million for purposes other than redeeming notes and breach of the Companies Act duty of care, skill and diligence.",
-    "severity": "high",
-    "status": "Completed; undertaking accepted 2 June 2026 and ban effective 23 June 2026",
-    "source_url": "https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years"
    }
   ],
-  "namesakes_excluded": 0,
+  "namesakes_excluded": 47,
   "risk_rating": "high",
-  "risk_rationale": "High risk as of 2026-10-21. The exact UK legal entity is in administration, with Companies House recording administration from 8 March 2021. An official SFO case remains open for suspected fraud, fraudulent trading and money laundering in GFG financing arrangements expressly including Greensill Capital UK Ltd; the FRC also records a current audit-enforcement investigation. A 2026 Insolvency Service action resulted in a nine-year director disqualification undertaking concerning conduct at this company, and a 2024 Reuters report described contested civil fraud allegations involving the company. The entity and identified PSC returned no matches in the OFAC SDN, UK FCDO/OFSI or EU FSF screens, and no PEP match was returned; those negative screens do not offset the insolvency, open investigation and enforcement indicators."
+  "risk_rationale": "High risk. The exact UK entity is in administration and the Companies House record identifies an active PSC, while GLEIF identifies LEI 2138004D9J9DZUANAI93 but shows the LEI registration as lapsed even though the entity record is active [1](#cite-1) [2](#cite-2) [4](#cite-4). Lex Greensill, a former director of the entity, accepted a nine-year UK director disqualification after the official finding of a Companies Act duty breach [UK Insolvency Service](https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years); the SFO also lists an open investigation into suspected fraud, fraudulent trading and money laundering involving financing arrangements with Greensill Capital UK Ltd [Serious Fraud Office](https://www.gov.uk/sfo-cases/gupta-family-group-gfg-alliance), and Reuters reported a civil counterclaim alleging fraud, with the allegations disputed [Reuters](https://www.reuters.com/business/finance/zurich-draws-lex-greensill-sanjeev-gupta-into-london-court-battle-2024-02-02/). Bill Crothers is a potential PEP because Parliament identifies him as a former Cabinet Office Government Chief Commercial Officer and former Greensill director [UK Parliament](https://publications.parliament.uk/pa/cm5803/cmselect/cmpubadm/888/report.html). OFSI returned zero matches for the entity and screened names, and OFAC returned no exact matches; the 47 OFAC fuzzy results were unrelated namesakes or other unmatched records [5](#cite-5) [6](#cite-6). No Greensill term appeared in the four 500-record EU consolidated-list pages examined, but the EU capability's full result is paginated and its previews were truncated, so that absence is not treated as a definitive full-list clearance [7](#cite-7) [8](#cite-8) [9](#cite-9) [10](#cite-10)."
  },
- "cost_usd": 0.2297,
+ "cost_usd": 0.5069,
  "cost_basis": "credits x Standard rate",
- "error": null,
- "credits": 232,
+ "credits": 512,
  "exchange": {
   "enabled": true,
   "requireApproval": false,
   "onTermsRequired": "skip",
-  "paidCalls": 8,
-  "creditsUsed": 60
+  "paidCalls": 10,
+  "creditsUsed": 80
  },
- "sub_use_case": "fin_kyc_screening",
- "input": "Run a KYC screen on Greensill Capital in the United Kingdom",
- "input_n": 2
+ "error": null
 }

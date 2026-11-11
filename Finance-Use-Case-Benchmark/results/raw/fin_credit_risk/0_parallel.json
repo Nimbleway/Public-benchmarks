@@ -1,166 +1,180 @@
 {
  "arm": "parallel",
+ "sub_use_case": "fin_credit_risk",
+ "input": "Assess the credit and counterparty risk of Spirit Airlines",
+ "input_n": 0,
  "tier": "ultra2x",
  "status": "completed",
- "seconds": 566,
- "run_id": "trun_ee10de0fcb3b4296b75ce74db45a1057",
+ "seconds": 583,
+ "run_id": "trun_ee10de0fcb3b429697540eea0fea6d3e",
  "output": {
-  "risk_rationale": "As of 2026-10-20, risk is high: Spirit Airlines, LLC is a Chapter 11 debtor, and all flights were cancelled on May 2, 2026 after additional funding could not be obtained (https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm). Fitch subsequently affirmed its issuer rating at D and withdrew it following the decision to cease operations and enter liquidation (https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026). Counterparties should assess bankruptcy recovery rather than normal operating performance; the historical cash-management balance below includes restricted and pooled debtor cash and does not establish currently available liquidity.",
+  "risk_rationale": "As of 2026-11-09, Spirit is a high-risk liquidation counterparty: it stopped flying on May 2 after reporting that no additional funding was available, and its September operating report confirms liquidation-basis accounting (see distress_signals). It reported zero September sales and $214,829,228 of cash and restricted cash at September 30—not verified unrestricted liquidity—while Broward County alleged approximately $3 million in overdue post-petition airport charges (see financials and payment_behaviour). Together with the May rating withdrawals, these facts indicate that payment capacity and creditor recoveries depend on liquidation proceeds and bankruptcy priorities rather than normal airline cash generation.",
   "ownership": {
-   "value": "Wholly owned subsidiary of Spirit Aviation Holdings, Inc., a public-reporting holding company. The March 12, 2025 reorganization made the airline a limited liability company beneath that parent; new parent shares and warrants were issued to certain creditors.",
+   "value": "Wholly owned corporate subsidiary of Spirit Aviation Holdings, Inc., the SEC-reporting holding company. The bankruptcy-emergence corporate reorganization placed the operating airline under that parent and converted Spirit Airlines, Inc. from a Delaware corporation to Spirit Airlines, LLC. No subsequent change of control was verified.",
    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
-   "as_of": "2025-12-31"
+   "as_of": "2026-03-16"
   },
-  "company": "Spirit Airlines, LLC (Spirit Airlines)",
+  "company": "Spirit Airlines, LLC (formerly Spirit Airlines, Inc.)",
   "distress_signals": [
+   {
+    "date": "2026-09-30",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "summary": "The September monthly operating report, filed October 21, confirms that operations ceased on May 2, 2026 and that the debtors transitioned from going-concern to liquidation-basis accounting. The report is unaudited and limited in scope."
+   },
+   {
+    "date": "2026-05-04",
+    "source_url": "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
+    "summary": "Reuters reported that Spirit's CFO said no viable path to restructuring or continued operations remained. Spirit planned to retain approximately 150 employees initially, reducing to approximately 40 after three months; these were announced plans, not verified subsequent headcounts."
+   },
    {
     "date": "2026-05-02",
     "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
-    "summary": "Started an immediate orderly wind-down and cancelled all flights. The announcement said additional funding was unavailable and that the business required additional liquidity it could not procure."
-   },
-   {
-    "date": "2026-08-01",
-    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
-    "summary": "The July monthly operating report for Spirit Airlines, LLC reported 76 full-time employees as of August 1, 2026, compared with 9,229 as of September 30, 2025."
+    "summary": "Spirit announced an immediate orderly wind-down and cancellation of all flights. It stated that no additional funding was available and that sustaining operations required hundreds of millions of dollars of liquidity it did not have and could not procure."
    }
   ],
   "missing_fields": [
-   "financials.latest_standalone_revenue: not verified separately from parent/group income-statement presentations.",
-   "financials.latest_standalone_operating_income_or_EBITDA: not verified separately from parent/group results.",
-   "financials.total_standalone_interest_bearing_debt: consolidated liabilities and bankruptcy claims were not substituted for airline-only debt.",
-   "financials.current_unrestricted_cash_available_revolver_and_cash_runway.",
-   "financials.latest_reporting_period: a more recent entity-specific cash balance than July 31, 2026 was not verified.",
-   "credit_ratings.current_Moodys_issuer_rating_and_outlook.",
-   "payment_behaviour.entity_specific_supplier_complaints_liens_judgments_collection_suits_or_trade_payment_statistics.",
-   "ownership.ultimate_beneficial_owners_and_changes_after_the_reviewed_2025_year_end_disclosure."
+   "financials.operating_income_or_EBITDA: No separately identified current Spirit Airlines, LLC figure was verified; the parent company's operating loss was not substituted.",
+   "financials.total_interest_bearing_debt: The latest airline operating report does not separately identify this total; its total-liabilities figure is not equivalent to interest-bearing debt.",
+   "financials.available_unrestricted_liquidity_or_cash_runway: Not verified. Reported cash and restricted cash must not be treated as freely available liquidity.",
+   "credit_ratings.Moodys_current_rating_and_outlook: Not verified. The opened Moody's release was dated August 22, 2025 and was not treated as a current rating.",
+   "ownership.ultimate_controlling_shareholder_or_sponsor_and_subsequent_control_changes: Not verified beyond the disclosed holding-company ownership."
   ],
   "credit_ratings": [
    {
-    "date": "2026-05-06",
-    "source_url": "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026",
-    "summary": "Fitch affirmed Spirit Airlines, LLC's Long-Term Issuer Default Rating at D, then withdrew the issuer rating following the decision to cease operations and enter bankruptcy liquidation. D should therefore not be presented as an active Fitch issuer rating; no current issuer outlook was established by this release."
-   },
-   {
     "date": "2026-05-21",
     "source_url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216",
-    "summary": "S&P Global Ratings withdrew all ratings on Spirit Airlines LLC, including its EETC ratings, because of insufficient information. This is the latest S&P action verified; it does not provide an active issuer rating or outlook."
+    "summary": "S&P Global Ratings withdrew all ratings on Spirit Airlines, LLC, including its enhanced equipment trust certificates, because of insufficient information to maintain them. These are withdrawn ratings, not an active rating with an outlook."
+   },
+   {
+    "date": "2026-05-07",
+    "source_url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101684171",
+    "summary": "Following the announced liquidation, S&P lowered the 2015-1 Class A EETC rating to CCC+, the 2017-1 Class AA rating to B, and the 2017-1 Class A rating to B-. These were instrument-level actions, not issuer ratings; S&P subsequently withdrew all ratings on May 21."
+   },
+   {
+    "date": "2026-05-06",
+    "source_url": "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290",
+    "summary": "Fitch's entity record lists Spirit Airlines, LLC's Long-Term Issuer Default Rating as WD (withdrawn), dated May 6, 2026. No active issuer outlook is shown."
    }
   ],
   "financials": [
    {
-    "stated_by": null,
-    "value": null,
-    "period": null,
-    "source_url": null,
-    "currency": null,
-    "metric": "Latest standalone revenue"
-   },
-   {
-    "stated_by": null,
-    "value": null,
-    "period": null,
-    "source_url": null,
-    "currency": null,
-    "metric": "Latest standalone operating income or EBITDA"
-   },
-   {
-    "stated_by": "Spirit Airlines, LLC — unaudited bankruptcy Monthly Operating Report",
-    "value": 266849907.0,
-    "period": "2026-07-31; latest entity-attributed cash figure verified, not confirmed as the latest available filing",
-    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+    "stated_by": "Spirit Airlines, LLC — unaudited September 2026 monthly operating report, Part 4",
+    "value": 0.0,
+    "period": "Month ended 2026-09-30; filed 2026-10-21",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
     "currency": "USD",
-    "metric": "Ending cash/restricted cash in the Spirit Airlines, LLC column. Reflects pooled debtor bank accounts and excludes intercompany cash flows; not unrestricted or freely available liquidity."
+    "metric": "Reported gross income/sales, net of returns and allowances"
    },
    {
-    "stated_by": null,
+    "stated_by": "Spirit Airlines, LLC — September 2026 monthly operating report",
     "value": null,
-    "period": null,
-    "source_url": null,
-    "currency": null,
-    "metric": "Total standalone interest-bearing debt"
+    "period": "Month ended 2026-09-30; filed 2026-10-21",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "currency": "USD",
+    "metric": "Operating income or EBITDA — not separately verified for the airline"
    },
    {
-    "stated_by": null,
+    "stated_by": "Spirit Airlines, LLC — unaudited September 2026 monthly operating report, Part 4",
+    "value": -31206117.0,
+    "period": "Month ended 2026-09-30; filed 2026-10-21",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "currency": "USD",
+    "metric": "Reported profit/(loss); not operating income or EBITDA"
+   },
+   {
+    "stated_by": "Spirit Airlines, LLC — unaudited September 2026 monthly operating report, Part 1",
+    "value": 202765268.0,
+    "period": "As of 2026-09-30; filed 2026-10-21",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "currency": "USD",
+    "metric": "Reported ending cash balance; overlaps with, and must not be added to, the cash/restricted-cash measure below"
+   },
+   {
+    "stated_by": "Spirit Airlines, LLC column in the September 2026 monthly operating report's cash schedule",
+    "value": 214829228.0,
+    "period": "As of 2026-09-30; filed 2026-10-21",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "currency": "USD",
+    "metric": "Adjusted ending cash and restricted cash; not verified unrestricted liquidity"
+   },
+   {
+    "stated_by": "Spirit Airlines, LLC — September 2026 monthly operating report",
     "value": null,
-    "period": null,
-    "source_url": null,
-    "currency": null,
-    "metric": "Current available liquidity, undrawn revolver or cash runway"
+    "period": "As of 2026-09-30; filed 2026-10-21",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "currency": "USD",
+    "metric": "Total interest-bearing debt — not separately verified"
+   },
+   {
+    "stated_by": "Spirit Airlines, LLC — September 2026 monthly operating report",
+    "value": null,
+    "period": "As of 2026-09-30; filed 2026-10-21",
+    "source_url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+    "currency": "USD",
+    "metric": "Available unrestricted liquidity, undrawn financing availability or cash runway — not verified"
    }
   ],
   "risk_call": "high",
   "payment_behaviour": [
    {
-    "date": "2026-05-02",
-    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
-    "summary": "Spirit announced automatic refunds for flights purchased directly with credit or debit cards. Compensation for bookings paid with vouchers, credits or Free Spirit points would instead be determined later through the bankruptcy process."
-   },
-   {
-    "date": "2026-05-03",
-    "source_url": "https://www.reuters.com/legal/litigation/spirit-nearly-done-processing-customer-refunds-after-shutdown-2026-05-03",
-    "summary": "Spirit told Reuters that most customers who paid by credit or debit card had been refunded by the evening of May 2, with a small percentage still processing. The company cautioned that refunds could take time to appear in customers' accounts; this was company-reported refund performance, not evidence of normal supplier-payment performance."
+    "date": "2026-05-21",
+    "source_url": "https://www.sun-sentinel.com/2026/05/21/broward-asks-court-to-order-spirit-to-pay-3m-in-past-due-airport-fees-clear-path-for-new-tenants/",
+    "summary": "The Sun Sentinel reported that Broward County sought bankruptcy-court relief over approximately $3 million in delinquent post-petition gate fees, landing fees, rents and other airport charges. This was a creditor allegation and request for payment, not a verified final judgment."
    }
   ],
   "debt_events": [
    {
-    "date": "2025-08-29",
-    "source_url": "https://dm.epiq11.com/case/spirit/info",
-    "summary": "Spirit Airlines, LLC filed for Chapter 11 protection in the Southern District of New York, case 25-11896. Its case is jointly administered with Spirit Aviation Holdings, Inc. and other affiliates under lead case 25-11897."
-   },
-   {
-    "date": "2025-10-14",
-    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325013149/dp235820_8k.htm",
-    "summary": "Entered a debtor-in-possession credit agreement naming Spirit Airlines, LLC as borrower and certain subsidiaries as guarantors. The facility provided for up to $475 million of aggregate term loans, subject to its terms and funding conditions; this is a historical facility commitment, not a verified current debt or cash balance."
+    "date": "2026-05-08",
+    "source_url": "http://bankrupt.com/misc/SpiritAviation_ADIPOrder.pdf",
+    "summary": "The bankruptcy court approved the wind-down plan, authorized budgeted use of cash collateral, and approved Amendment No. 2 to the DIP credit agreement and final DIP order. Spirit Airlines, LLC is identified as the DIP borrower. These authorizations do not establish that additional cash was funded or remained available."
    },
    {
     "date": "2025-12-15",
-    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325016205/dp238730_ex9901.htm",
-    "summary": "Announced an amendment to the DIP credit agreement providing for a previously agreed $100 million incremental funding round. The announcement said $50 million, less original issue discount, was immediately usable; use of the remainder depended on progress toward a standalone reorganization or strategic transaction."
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+    "summary": "The annual filing identifies Spirit Airlines, LLC as the DIP borrower and states that a $100 million additional draw occurred on December 15. Amendment No. 1 removed specified conditions to that third draw; the historical borrowing is not evidence of current undrawn liquidity."
    },
    {
-    "date": "2026-05-02",
-    "source_url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
-    "summary": "Additional financing could not be obtained, and Spirit began winding down operations. The company said sustaining the business required additional liquidity it did not have and could not procure."
+    "date": "2025-08-29",
+    "source_url": "https://dm.epiq11.com/case/spirit/info",
+    "summary": "Spirit Airlines, LLC and affiliated debtors filed Chapter 11 petitions in the Southern District of New York. The airline's case is 25-11896, jointly administered under Spirit Aviation Holdings' lead case 25-11897."
    }
   ]
  },
- "cost_usd": 0.6,
- "cost_basis": "list",
  "basis": [
   {
    "field": "risk_rationale",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc., et al. Overview Case: 25-11897 | Epiq",
-     "url": "https://dm.epiq11.com/case/spirit/info",
-     "excerpts": [
-      "On August 29, 2025, Spirit Aviation Holdings, Inc., and five (5) of its affiliates (collectively, the “Debtors”) filed petitions"
-     ]
-    },
-    {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
+     "title": "sec.gov",
      "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
      "excerpts": [
-      "All Spirit flights have been cancelled, and Spirit Guests should not go to the airport.",
       "With no additional funding available to the Company, Spirit had no choice but to begin this wind-down."
      ]
     },
     {
-     "title": "Fitch Affirms and Withdraws Ratings on Spirit Airlines; Places EETCs on RWN",
-     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "Fitch has withdrawn its ratings on Spirit Airlines, LLC"
+      "Accounting Methodology** : On May 2, 2026 at 3:00 AM ET, the Debtors ceased operations and entered into an orderly wind-down process. As a result, and in accordance with FASB ASC 205-30, the Debtors have transitioned from the going-concern basis of accounting to the liquidation",
+      "Beginning Cash / Restricted Cash Balance (09/01/26) $ 243,897,134 $ 231,842,075 $ - $ - $ - $ - $ 12,055,058** Receipts from Third Parties 30,027,487 29,993,005 - - - - 34,482 Disbursements to Third Parties (59,069,812) (59,069,812) - - - - - **Ending Cash / Restricted Cash $ 214,854,808 $ 202,765,268 $ - $ - $ - $ - $ 12,089,540** **Intercompany Activities** Intercompany Receipts (Disbursements) - 12,081,746 - - - - (12,081,746) **Ending Cash / Restricted Cash Bank Balance (09/30/26) $ 214,854,808 $ 214,847,014 $ - $ - $ - $ - $ 7,795** Currency Translation and Funds in Transit (17,786) (17,786) - - - - - **Ending Cash / Restricted Cash Balance Adjusted (09/30/26) $ 214,837,023 $ 214,829,228"
      ]
     },
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "Broward asks court to order Spirit to pay $3M in past-due airport fees, clear path for new tenants – Sun Sentinel",
+     "url": "https://www.sun-sentinel.com/2026/05/21/broward-asks-court-to-order-spirit-to-pay-3m-in-past-due-airport-fees-clear-path-for-new-tenants/",
      "excerpts": [
-      "The Debtors bank accounts under the Spirit Airlines, LLC"
+      "The defunct carrier is now delinquent on rents and other fees to the tune of $3 million, according to a court filing by the Broward County Attorney's"
+     ]
+    },
+    {
+     "title": "Spirit Airlines LLC Ratings Withdrawn Due To Lack | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216",
+     "excerpts": [
+      "SAN FRANCISCO (S&P Global Ratings) May 21, 2026-- S&P Global Ratings today withdrew all of its ratings on Spirit Airlines LLC"
      ]
     }
    ],
-   "reasoning": "The bankruptcy filing, cessation of flights and inability to obtain financing establish realized financial distress. Fitch expressly links withdrawal to cessation and liquidation. The cash-management notes prevent interpreting the historical cash figure as unrestricted standalone liquidity. The counterparty-risk conclusion is an assessment drawn from these facts, not a formal agency rating.",
+   "reasoning": "The company announcement establishes exhausted additional funding and wind-down. The latest located airline report establishes liquidation accounting and the reported cash/restricted-cash balance. The airport creditor allegation and rating withdrawal reinforce counterparty concerns. The conclusion about payment capacity and recoveries is an assessment, not a stated recovery forecast.",
    "confidence": "medium"
   },
   {
@@ -170,485 +184,502 @@
      "title": "flyy-20251231",
      "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
      "excerpts": [
-      "On March 12, 2025 (the “Emergence Date” or \"Effective Date\"), we emerged from the 2024 Chapter 11 Cases in accordance with the Plan (as defined below) and became Spirit Aviation Holdings, Inc.",
-      "Spirit completed a corporate reorganization (the “Corporate Reorganization”) pursuant to which Spirit became the new parent company",
-      "Spirit became the successor issuer to Spirit Airlines for SEC reporting purposes",
-      "Spirit issued 16,067,305 shares of a single class of common stock (the “Common Stock”) and 24,255,256 warrants to purchase shares of Common Stock (the “Warrants”) to certain creditors",
-      "On September 3, 2025, our common stock, par value $0.0001 (“Common Stock”) began trading on the OTC Pink Limited Market under the symbol “FLYYQ"
+      "The Company completed a corporate reorganization (the “Corporate Reorganization”) pursuant to which Spirit became the new parent company"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+     "excerpts": [
+      "DANIA BEACH, Fla., May 2, 2026 – Spirit Aviation Holdings, Inc., parent company of Spirit Airlines, LLC"
+     ]
+    },
+    {
+     "title": "10-K/A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm",
+     "excerpts": [
+      "amends our Annual Report on Form 10-K for the fiscal year ended December 31, 2025, that was filed with the Securities and Exchange Commission (the “SEC”) on March 16, 2026"
      ]
     }
    ],
-   "reasoning": "The annual report identifies the March 2025 reorganization, the wholly owned airline subsidiary, the parent's successor-issuer status, creditor equity issuance and public share trading. Ownership is dated to the reviewed annual-report period rather than asserted as freshly verified in October 2026.",
+   "reasoning": "The annual filing describes the wholly owned airline subsidiary and conversion to an LLC. The May announcement independently continues to identify the same parent. The ownership disclosure is dated rather than presented as proof that no later control change occurred.",
    "confidence": "medium"
   },
   {
    "field": "company",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "DANIA BEACH, Fla., May 2, 2026 – Spirit Aviation Holdings, Inc., parent company of Spirit Airlines, LLC"
+      "Spirit Airlines, LLC"
+     ]
+    },
+    {
+     "title": "10-K/A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000119312526197767/d64539d10ka.htm",
+     "excerpts": [
+      "As previously disclosed, on November 18, 2024, Spirit Airlines, LLC (formerly known as Spirit Airlines, Inc."
      ]
     }
    ],
-   "reasoning": "The official announcement expressly identifies Spirit Airlines, LLC as the operating airline beneath Spirit Aviation Holdings, Inc.",
+   "reasoning": "The airline's own operating report names Spirit Airlines, LLC; the SEC amendment identifies its former corporate name. This excludes Spirit AeroSystems and the holding company as the assessed entity.",
    "confidence": "high"
   },
   {
    "field": "distress_signals",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "All Spirit flights have been cancelled, and Spirit Guests should not go to the airport.",
-      "Sustaining the business required hundreds of millions of additional dollars of liquidity that Spirit simply does not have and could not procure."
+      "Accounting Methodology** : On May 2, 2026 at 3:00 AM ET, the Debtors ceased operations and entered into an orderly wind-down process. As a result, and in accordance with FASB ASC 205-30, the Debtors have transitioned from the going-concern basis of accounting to the liquidation"
      ]
     },
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "Spirit Airlines seeks approval to make retention payments as it ends operations | Reuters",
+     "url": "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
      "excerpts": [
-      "Reporting Period Ended: 07/31/2026 Petition Date: 08/29/2025 Months Pending: 11 Industry Classification: 4 8 1 1 Reporting Method: Accrual Basis Cash Basis Debtor's Full-Time Employees (current): 76 Debtor's Full-Time Employees (as of date of order for relief): 9,229",
-      "The Debtors’ current full-time employee count is reported as of 08/01/2026, while the order for relief figure reflects the count as of 9/30/2025."
+      "The airline said it will retain about 150 employees before decreasing its headcount to about 40"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+     "excerpts": [
+      "With no additional funding available to the Company, Spirit had no choice but to begin this wind-down."
      ]
     }
    ],
-   "reasoning": "The official wind-down announcement supports the operating shutdown and financing shortfall. The monthly report provides the employee counts, while its notes establish the actual comparison dates.",
+   "reasoning": "The sources establish liquidation accounting, planned drastic workforce reduction, and the funding failure behind cessation. Staffing numbers remain explicitly characterized as plans.",
    "confidence": "medium"
   },
   {
    "field": "missing_fields",
-   "citations": [
-    {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
-     "excerpts": [
-      "Exhibit 3 - Part 4: Income Statement (Statement of Operations) _($ in USD)_ **Spirit Aviation Holdings, Inc.** **Month Ended 07/31/2026",
-      "**Spirit Aviation Holdings, Inc.** **Total for Period Ended 07/31/2026",
-      "For ease of reference, Part 2 balances have been consolidated on the MOR for Spirit Airlines, LLC"
-     ]
-    }
-   ],
-   "reasoning": "The reviewed income statement and balance sheet are parent/group presentations, and the notes describe consolidated reporting. Other missing items are bounded statements of non-verification from the reviewed material, not claims that no such information exists.",
-   "confidence": "medium"
+   "citations": [],
+   "reasoning": "These are research limitations, not assertions that the information does not exist. Parent consolidated operating results were excluded, total liabilities were not relabeled interest-bearing debt, restricted cash was not assumed available, and an August 2025 Moody's release was not promoted to a current rating.",
+   "confidence": "low"
   },
   {
    "field": "credit_ratings",
    "citations": [
     {
-     "title": "Fitch Affirms and Withdraws Ratings on Spirit Airlines; Places EETCs on RWN",
-     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026",
-     "excerpts": [
-      "Fitch Ratings - Toronto - 06 May 2026: Fitch Ratings has affirmed Spirit Airlines, LLC's (Spirit) Long-Term Issuer Default Rating (IDR) at 'D'.",
-      "Following these rating actions, Fitch has withdrawn its ratings on Spirit Airlines, LLC"
-     ]
-    },
-    {
      "title": "Spirit Airlines LLC Ratings Withdrawn Due To Lack | S&P Global Ratings",
      "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216",
      "excerpts": [
-      "SAN FRANCISCO (S&P Global Ratings) May 21, 2026"
+      "SAN FRANCISCO (S&P Global Ratings) May 21, 2026-- S&P Global Ratings today withdrew all of its ratings on Spirit Airlines LLC"
+     ]
+    },
+    {
+     "title": "Spirit Airlines LLC Enhanced Equipment Trust Cert | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101684171",
+     "excerpts": [
+      "We lowered our issue-level ratings on the company's 2015-1 Class A and 2017-1 Class AA EETCs by four notches to 'CCC+' and 'B'"
+     ]
+    },
+    {
+     "title": "Spirit Airlines Inc 93771290",
+     "url": "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290",
+     "excerpts": [
+      "Rating |Action |Date |Type | |WD |Withdrawn |06-May-2026 |Long Term Issuer Default Rating"
      ]
     }
    ],
-   "reasoning": "The agency releases directly establish the May 2026 withdrawals. They are presented as the latest verified actions, without treating withdrawn ratings or an older Moody's action as active current ratings.",
+   "reasoning": "S&P supplies the May instrument downgrades and subsequent withdrawal; Fitch's entity table supplies the withdrawn issuer status and date. Historical EETC levels are distinguished from current issuer ratings, and current Moody's coverage remains unverified.",
    "confidence": "medium"
   },
   {
    "field": "financials",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "**Entity Combined Debtor Entities Spirit Airlines, LLC",
-      "**Ending Cash / Restricted Cash $ 278,878,554 $ 266,849,907",
-      "Reporting Period Ended: 07/31/2026",
-      "The Debtors bank accounts under the Spirit Airlines, LLC",
-      "Intercompany receipts and disbursements are excluded from Parts 1(b) and 1(c), respectively. As such, the ending cash balances in Part 1 will not comport with the ending cash balances in the Debtors’ bank statements or the Debtors’ books and records."
+      "Part 4: Income Statement (Statement of Operations) Current Month Cumulative** (Not generally applicable to Individual Debtors. See Instructions.) a. Gross income/sales (net of returns and allowances) $0 b. Cost of goods sold (inclusive of depreciation, if applicable) $7,454,000 c. Gross profit (a-b) $-7,454,000 d. Selling expenses $-901 e. General and administrative expenses $2,220,659 f. Other expenses $23,212,019 g. Depreciation and/or amortization (not included in 4b) $-6,113 h. Interest $7,705,073 i. Taxes (local, state, and federal) $0 j. Reorganization items $-9,378,621 k. Profit (loss) $-31,206,117",
+      "Part 1: Cash Receipts and Disbursements Current Month Cumulative** a. Cash balance beginning of month $231,842,075 b. Total receipts (net of transfers between accounts) $29,993,005 $3,353,480,392 c. Total disbursements (net of transfers between accounts) $59,069,812 $3,938,188,352 d. Cash balance end of month (a+b-c) $202,765,268",
+      "Beginning Cash / Restricted Cash Balance (09/01/26) $ 243,897,134 $ 231,842,075 $ - $ - $ - $ - $ 12,055,058** Receipts from Third Parties 30,027,487 29,993,005 - - - - 34,482 Disbursements to Third Parties (59,069,812) (59,069,812) - - - - - **Ending Cash / Restricted Cash $ 214,854,808 $ 202,765,268 $ - $ - $ - $ - $ 12,089,540** **Intercompany Activities** Intercompany Receipts (Disbursements) - 12,081,746 - - - - (12,081,746) **Ending Cash / Restricted Cash Bank Balance (09/30/26) $ 214,854,808 $ 214,847,014 $ - $ - $ - $ - $ 7,795** Currency Translation and Funds in Transit (17,786) (17,786) - - - - - **Ending Cash / Restricted Cash Balance Adjusted (09/30/26) $ 214,837,023 $ 214,829,228",
+      "Reporting Period Ended: 09/30/2026",
+      "25-11897-shl Doc 1748 Filed 10/21/26"
      ]
     }
    ],
-   "reasoning": "The report distinguishes the LLC cash column from combined debtor cash and supplies the reporting date. Its cash-pooling and intercompany-exclusion notes materially limit interpretation. Other requested financial metrics remain null because standalone current values were not established.",
+   "reasoning": "The latest located report is the airline's September report filed October 21. Its form supplies sales, reported loss and cash; the entity-specific schedule supplies airline cash/restricted cash rather than the parent total. Missing operating income, interest-bearing debt and available liquidity are left null. The report is unaudited and has bankruptcy-reporting limitations.",
    "confidence": "medium"
   },
   {
    "field": "risk_call",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
+     "title": "sec.gov",
      "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
      "excerpts": [
       "With no additional funding available to the Company, Spirit had no choice but to begin this wind-down."
      ]
     },
     {
-     "title": "Fitch Affirms and Withdraws Ratings on Spirit Airlines; Places EETCs on RWN",
-     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "Fitch Ratings - Toronto - 06 May 2026: Fitch Ratings has affirmed Spirit Airlines, LLC's (Spirit) Long-Term Issuer Default Rating (IDR) at 'D'.",
-      "Fitch has withdrawn its ratings on Spirit Airlines, LLC"
+      "Accounting Methodology** : On May 2, 2026 at 3:00 AM ET, the Debtors ceased operations and entered into an orderly wind-down process. As a result, and in accordance with FASB ASC 205-30, the Debtors have transitioned from the going-concern basis of accounting to the liquidation"
+     ]
+    },
+    {
+     "title": "Broward asks court to order Spirit to pay $3M in past-due airport fees, clear path for new tenants – Sun Sentinel",
+     "url": "https://www.sun-sentinel.com/2026/05/21/broward-asks-court-to-order-spirit-to-pay-3m-in-past-due-airport-fees-clear-path-for-new-tenants/",
+     "excerpts": [
+      "County lawyers assert Spirit “has failed to pay post-petition gate fees"
      ]
     }
    ],
-   "reasoning": "Failed financing, cessation and liquidation following an issuer-default rating justify the highest category in the requested four-category assessment. This classification is analytical rather than an agency-issued opinion.",
+   "reasoning": "Actual cessation, liquidation accounting and alleged overdue post-petition obligations support a high counterparty-risk assessment. The category is analytical judgment rather than an agency rating.",
    "confidence": "medium"
   },
   {
    "field": "payment_behaviour",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+     "title": "Broward asks court to order Spirit to pay $3M in past-due airport fees, clear path for new tenants – Sun Sentinel",
+     "url": "https://www.sun-sentinel.com/2026/05/21/broward-asks-court-to-order-spirit-to-pay-3m-in-past-due-airport-fees-clear-path-for-new-tenants/",
      "excerpts": [
-      "Spirit will automatically process refunds for any flights purchased through Spirit with a credit or debit card to the original form of payment.",
-      "Compensation for Guests who booked flights using any other methods, including a voucher, credit or Free Spirit points, will be determined at a later date through the bankruptcy process."
-     ]
-    },
-    {
-     "title": "Spirit says most customers refunded after abrupt shutdown | Reuters",
-     "url": "https://www.reuters.com/legal/litigation/spirit-nearly-done-processing-customer-refunds-after-shutdown-2026-05-03",
-     "excerpts": [
-      "Most customers who booked with ⁠credit or debit cards were refunded by Saturday evening, with a small percentage still being processed, the company",
-      "In response to a request for comment on Stanton's case, Spirit said refunds may take time to show in guests' ​accounts."
+      "The defunct carrier is now delinquent on rents and other fees to the tune of $3 million, according to a court filing by the Broward County Attorney's",
+      "County lawyers assert Spirit “has failed to pay post-petition gate fees"
      ]
     }
    ],
-   "reasoning": "The official notice distinguishes automatic card refunds from non-card claims handled through bankruptcy. Reuters subsequently reports the company's account of refund processing; this is explicitly not generalized to supplier payments.",
+   "reasoning": "The newspaper reports the county's court allegation of approximately $3 million of overdue airport obligations. It does not establish an adjudicated judgment, so the answer preserves the allegation status.",
    "confidence": "medium"
   },
   {
    "field": "debt_events",
    "citations": [
     {
+     "title": "25-11897-shl Doc 1048 Filed 05/08/26 Entered 05/08/26 19:09:15 Main Document Pg 1 of 311 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "http://bankrupt.com/misc/SpiritAviation_ADIPOrder.pdf",
+     "excerpts": [
+      "The Wind-Down Plan is approved to the extent set forth herein, pursuant to sections 105(a) and 363(b) of the Bankruptcy Code, and may be implemented.",
+      "Final DIP Order Amendment No. 2 and Amendment No. 2 to DIP Credit Agreement"
+     ]
+    },
+    {
+     "title": "flyy-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
+     "excerpts": [
+      "On October 14, 2025, we drew $200.0 million, followed by additional draws on November 7, 2025 for $50.0 million and on December 15, 2025 for $100.0"
+     ]
+    },
+    {
      "title": "Spirit Aviation Holdings, Inc., et al. Overview Case: 25-11897 | Epiq",
      "url": "https://dm.epiq11.com/case/spirit/info",
      "excerpts": [
-      "On August 29, 2025, Spirit Aviation Holdings, Inc., and five (5) of its affiliates (collectively, the “Debtors”) filed petitions",
-      "25-11896 Spirit Airlines, LLC"
-     ]
-    },
-    {
-     "title": "sec.gov",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325013149/dp235820_8k.htm",
-     "excerpts": [
-      "In connection with the Chapter 11 Cases, on October 10, 2025, the Bankruptcy Court entered an interim order (the “ Interim DIP Order ”) approving Spirit Airlines, LLC, as borrower (the “ DIP Borrower ”), and certain subsidiaries of the Company from time to time party thereto as guarantors, entering into that certain Superpriority Priming Debtor-in-Possession Credit Agreement (the “ DIP Credit Agreement"
-     ]
-    },
-    {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed December 16, 2025",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325016205/dp238730_ex9901.htm",
-     "excerpts": [
-      "**DANIA BEACH, Fla., Dec. 15, 2025** – Spirit Aviation Holdings, Inc., parent company of Spirit Airlines, LLC (“Spirit” or the “Company”), today announced it has reached an agreement with its senior secured noteholders to amend its debtor-in-possession (“DIP”) credit agreement. The amendment provides for the previously agreed third funding round of an incremental $100 million to be fulfilled today. $50 million (minus OID) is useable by Spirit immediately, and the use of the remaining amount is subject to previously agreed conditions that relate to further progress on a standalone plan of reorganization or a strategic transaction."
-     ]
-    },
-    {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
-     "excerpts": [
-      "With no additional funding available to the Company, Spirit had no choice but to begin this wind-down."
+      "On August 29, 2025, Spirit Aviation Holdings, Inc., and five (5) of its affiliates (collectively, the “Debtors”) filed petitions in the United States Bankruptcy Court for the Southern District of New York seeking relief under chapter 11"
      ]
     }
    ],
-   "reasoning": "Court information identifies the airline's own bankruptcy case. The October filing expressly names the LLC as DIP borrower, and the December announcement documents the amendment and conditional funding. The May announcement establishes the later failure to obtain additional financing.",
+   "reasoning": "The court order establishes the wind-down and DIP amendments; the annual filing establishes a historical funded draw; the case administrator establishes the Chapter 11 filing. Authorizations and historical draw amounts are not portrayed as current available financing.",
    "confidence": "high"
   },
   {
    "field": "distress_signals.0",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "All Spirit flights have been cancelled, and Spirit Guests should not go to the airport.",
-      "With no additional funding available to the Company, Spirit had no choice but to begin this wind-down.",
-      "Sustaining the business required hundreds of millions of additional dollars of liquidity that Spirit simply does not have and could not procure."
+      "Accounting Methodology** : On May 2, 2026 at 3:00 AM ET, the Debtors ceased operations and entered into an orderly wind-down process. As a result, and in accordance with FASB ASC 205-30, the Debtors have transitioned from the going-concern basis of accounting to the liquidation",
+      "This MOR is unaudited, limited in scope",
+      "25-11897-shl Doc 1748 Filed 10/21/26"
      ]
     }
    ],
-   "reasoning": "The dated official announcement directly states cancellation of flights and the unavailable financing that necessitated wind-down.",
+   "reasoning": "The report confirms cessation and liquidation accounting and identifies its own limitations and filing date.",
    "confidence": "high"
   },
   {
    "field": "distress_signals.1",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "Spirit Airlines seeks approval to make retention payments as it ends operations | Reuters",
+     "url": "https://www.reuters.com/legal/litigation/spirit-airlines-says-it-has-no-choice-liquidate-operations-2026-05-04",
      "excerpts": [
-      "Reporting Period Ended: 07/31/2026 Petition Date: 08/29/2025 Months Pending: 11 Industry Classification: 4 8 1 1 Reporting Method: Accrual Basis Cash Basis Debtor's Full-Time Employees (current): 76 Debtor's Full-Time Employees (as of date of order for relief): 9,229",
-      "The Debtors’ current full-time employee count is reported as of 08/01/2026, while the order for relief figure reflects the count as of 9/30/2025."
+      "There are no longer any viable paths to ​a restructuring or continued operations.",
+      "The airline said it will retain about 150 employees before decreasing its headcount to about 40",
+      "May 4, 2026 2:46 PM UTC Updated May 4, 2026"
      ]
     }
    ],
-   "reasoning": "The form supplies 76 and 9,229 employees; the notes clarify that these counts refer to August 1, 2026 and September 30, 2025 respectively, rather than the form's nominal petition date.",
+   "reasoning": "Reuters supplies the CFO statement and planned retained headcounts. The forecast is not presented as a verified later outcome.",
    "confidence": "medium"
   },
   {
-   "field": "missing_fields.0",
+   "field": "distress_signals.2",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
      "excerpts": [
-      "Exhibit 3 - Part 4: Income Statement (Statement of Operations) _($ in USD)_ **Spirit Aviation Holdings, Inc.** **Month Ended 07/31/2026"
+      "DANIA BEACH, Fla., May 2, 2026",
+      "All Spirit flights have been cancelled, and Spirit Guests should not go to the airport.",
+      "With no additional funding available to the Company, Spirit had no choice but to begin this wind-down.",
+      "Sustaining the business required hundreds of millions of additional dollars of liquidity that Spirit simply does not have and could not procure."
      ]
     }
    ],
-   "reasoning": "The detailed income statement is presented under the parent's name; a latest standalone airline revenue figure was not established.",
-   "confidence": "medium"
+   "reasoning": "The company's SEC-filed announcement directly states cancellation, wind-down and the inability to secure needed funding.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "No current airline-specific operating income or EBITDA was verified; the parent figure was deliberately excluded.",
+   "confidence": "low"
   },
   {
    "field": "missing_fields.1",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "Exhibit 3 - Part 4: Income Statement (Statement of Operations) _($ in USD)_ **Spirit Aviation Holdings, Inc.** **Month Ended 07/31/2026"
+      "Prepetition secured debt $1,502,575,949 l. Prepetition priority debt $0 m. Prepetition unsecured debt $4,891,087,864 n. Total liabilities"
      ]
     }
    ],
-   "reasoning": "The parent/group statement cannot supply an unqualified standalone airline operating-income or EBITDA value.",
+   "reasoning": "The available form provides debt/liability categories, not a separately verified total of interest-bearing borrowings. The absence claim is limited to the reviewed disclosure.",
    "confidence": "medium"
   },
   {
    "field": "missing_fields.2",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "For ease of reference, Part 2 balances have been consolidated on the MOR for Spirit Airlines, LLC"
+      "Beginning Cash / Restricted Cash Balance (09/01/26) $ 243,897,134 $ 231,842,075 $ - $ - $ - $ - $ 12,055,058** Receipts from Third Parties 30,027,487 29,993,005 - - - - 34,482 Disbursements to Third Parties (59,069,812) (59,069,812) - - - - - **Ending Cash / Restricted Cash $ 214,854,808 $ 202,765,268 $ - $ - $ - $ - $ 12,089,540** **Intercompany Activities** Intercompany Receipts (Disbursements) - 12,081,746 - - - - (12,081,746) **Ending Cash / Restricted Cash Bank Balance (09/30/26) $ 214,854,808 $ 214,847,014 $ - $ - $ - $ - $ 7,795** Currency Translation and Funds in Transit (17,786) (17,786) - - - - - **Ending Cash / Restricted Cash Balance Adjusted (09/30/26) $ 214,837,023 $ 214,829,228"
      ]
     }
    ],
-   "reasoning": "The report explicitly consolidates bankruptcy balance-sheet information, preventing an airline-only debt attribution.",
+   "reasoning": "The disclosed cash measure includes restricted cash and therefore does not establish freely available liquidity or runway.",
    "confidence": "medium"
   },
   {
    "field": "missing_fields.3",
-   "citations": [],
-   "reasoning": "Current unrestricted cash, revolver availability and runway were not verified. The historical cash-management figure does not answer these questions.",
-   "confidence": "low"
+   "citations": [
+    {
+     "title": "Ratings.Moodys.com/ratings-news/449168",
+     "url": "https://ratings.moodys.com/ratings-news/449168",
+     "excerpts": [
+      "New York, August 22, 2025 -- Moody's Ratings (Moody's) downgraded the ratings of Spirit Airlines, LLC"
+     ]
+    }
+   ],
+   "reasoning": "The opened Moody's action is historical and cannot establish its current rating or outlook in November 2026.",
+   "confidence": "medium"
   },
   {
    "field": "missing_fields.4",
    "citations": [],
-   "reasoning": "July is the most recent entity-attributed cash report verified here, not a proven latest filing across all available records.",
-   "confidence": "low"
-  },
-  {
-   "field": "missing_fields.5",
-   "citations": [],
-   "reasoning": "An older Moody's action was found, but a current issuer rating and outlook were not established and therefore were not supplied.",
-   "confidence": "low"
-  },
-  {
-   "field": "missing_fields.6",
-   "citations": [],
-   "reasoning": "The reviewed evidence supports customer-refund information, not verified airline-specific supplier complaints, judgments, liens, collections or trade-payment statistics.",
-   "confidence": "low"
-  },
-  {
-   "field": "missing_fields.7",
-   "citations": [],
-   "reasoning": "The annual report establishes the disclosed parent relationship and reorganization, but not a current ultimate-beneficial-owner register or all subsequent ownership changes.",
+   "reasoning": "Direct corporate ownership was verified, but ultimate control and later transfers were not established.",
    "confidence": "low"
   },
   {
    "field": "credit_ratings.0",
    "citations": [
     {
-     "title": "Fitch Affirms and Withdraws Ratings on Spirit Airlines; Places EETCs on RWN",
-     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-affirms-withdraws-ratings-on-spirit-airlines-places-eetcs-on-rwn-06-05-2026",
+     "title": "Spirit Airlines LLC Ratings Withdrawn Due To Lack | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216",
      "excerpts": [
-      "Fitch Ratings - Toronto - 06 May 2026: Fitch Ratings has affirmed Spirit Airlines, LLC's (Spirit) Long-Term Issuer Default Rating (IDR) at 'D'.",
-      "Following these rating actions, Fitch has withdrawn its ratings on Spirit Airlines, LLC",
-      "Fitch has withdrawn its ratings on Spirit Airlines, LLC"
+      "SAN FRANCISCO (S&P Global Ratings) May 21, 2026-- S&P Global Ratings today withdrew all of its ratings on Spirit Airlines LLC"
      ]
     }
    ],
-   "reasoning": "Fitch directly states the D affirmation followed by withdrawal and explains the cessation/liquidation reason.",
+   "reasoning": "S&P directly states the date, scope and insufficient-information reason for withdrawing all ratings.",
    "confidence": "high"
   },
   {
    "field": "credit_ratings.1",
    "citations": [
     {
+     "title": "Spirit Airlines LLC Enhanced Equipment Trust Cert | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101684171",
+     "excerpts": [
+      "SAN FRANCISCO (S&P Global Ratings) May 7, 2026",
+      "We lowered our issue-level ratings on the company's 2015-1 Class A and 2017-1 Class AA EETCs by four notches to 'CCC+' and 'B'"
+     ]
+    },
+    {
      "title": "Spirit Airlines LLC Ratings Withdrawn Due To Lack | S&P Global Ratings",
      "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3567216",
      "excerpts": [
-      "SAN FRANCISCO (S&P Global Ratings) May 21, 2026"
+      "SAN FRANCISCO (S&P Global Ratings) May 21, 2026-- S&P Global Ratings today withdrew all of its ratings on Spirit Airlines LLC"
      ]
     }
    ],
-   "reasoning": "S&P directly states the date, withdrawal of all ratings including EETCs, and insufficient-information rationale. Later actions were not established.",
-   "confidence": "medium"
+   "reasoning": "The May 7 agency release supplies the three historical EETC downgrades; the May 21 release establishes their subsequent withdrawal.",
+   "confidence": "high"
+  },
+  {
+   "field": "credit_ratings.2",
+   "citations": [
+    {
+     "title": "Spirit Airlines Inc 93771290",
+     "url": "https://www.fitchratings.com/entity/spirit-airlines-inc-93771290",
+     "excerpts": [
+      "Rating |Action |Date |Type | |WD |Withdrawn |06-May-2026 |Long Term Issuer Default Rating"
+     ]
+    }
+   ],
+   "reasoning": "Fitch's issuer table directly displays WD, withdrawn, and May 6, 2026; no active issuer outlook is supplied.",
+   "confidence": "high"
   },
   {
    "field": "financials.0",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "Exhibit 3 - Part 4: Income Statement (Statement of Operations) _($ in USD)_ **Spirit Aviation Holdings, Inc.** **Month Ended 07/31/2026"
+      "Part 4: Income Statement (Statement of Operations) Current Month Cumulative** (Not generally applicable to Individual Debtors. See Instructions.) a. Gross income/sales (net of returns and allowances) $0 b. Cost of goods sold (inclusive of depreciation, if applicable) $7,454,000 c. Gross profit (a-b) $-7,454,000 d. Selling expenses $-901 e. General and administrative expenses $2,220,659 f. Other expenses $23,212,019 g. Depreciation and/or amortization (not included in 4b) $-6,113 h. Interest $7,705,073 i. Taxes (local, state, and federal) $0 j. Reorganization items $-9,378,621 k. Profit (loss) $-31,206,117",
+      "Reporting Period Ended: 09/30/2026"
      ]
     }
    ],
-   "reasoning": "No latest independently attributable standalone revenue value was established from the reviewed income-statement presentation.",
+   "reasoning": "The airline's Part 4 reports zero current-month gross income/sales for September. It is an unaudited bankruptcy operating-report measure.",
    "confidence": "medium"
   },
   {
    "field": "financials.1",
-   "citations": [
-    {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
-     "excerpts": [
-      "Exhibit 3 - Part 4: Income Statement (Statement of Operations) _($ in USD)_ **Spirit Aviation Holdings, Inc.** **Month Ended 07/31/2026"
-     ]
-    }
-   ],
-   "reasoning": "The reviewed statement is presented for the parent/group, so its operating loss was not substituted for the airline's standalone operating result.",
-   "confidence": "medium"
+   "citations": [],
+   "reasoning": "No separate airline operating-income or EBITDA value was verified. Null avoids substituting the parent's operating loss.",
+   "confidence": "low"
   },
   {
    "field": "financials.2",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "**Entity Combined Debtor Entities Spirit Airlines, LLC",
-      "**Ending Cash / Restricted Cash $ 278,878,554 $ 266,849,907",
-      "Reporting Period Ended: 07/31/2026",
-      "The Debtors bank accounts under the Spirit Airlines, LLC",
-      "Intercompany receipts and disbursements are excluded from Parts 1(b) and 1(c), respectively. As such, the ending cash balances in Part 1 will not comport with the ending cash balances in the Debtors’ bank statements or the Debtors’ books and records.",
-      "This MOR is unaudited, limited in scope"
+      "Part 4: Income Statement (Statement of Operations) Current Month Cumulative** (Not generally applicable to Individual Debtors. See Instructions.) a. Gross income/sales (net of returns and allowances) $0 b. Cost of goods sold (inclusive of depreciation, if applicable) $7,454,000 c. Gross profit (a-b) $-7,454,000 d. Selling expenses $-901 e. General and administrative expenses $2,220,659 f. Other expenses $23,212,019 g. Depreciation and/or amortization (not included in 4b) $-6,113 h. Interest $7,705,073 i. Taxes (local, state, and federal) $0 j. Reorganization items $-9,378,621 k. Profit (loss) $-31,206,117"
      ]
     }
    ],
-   "reasoning": "The LLC column reports $266,849,907 for July 31. The notes explain pooling, intercompany exclusions and unaudited limitations, which are retained in the answer rather than presenting this as available unrestricted cash.",
+   "reasoning": "The airline form reports a loss of $31,206,117. It is labeled profit/loss and is not relabeled operating income or EBITDA.",
    "confidence": "medium"
   },
   {
    "field": "financials.3",
    "citations": [
     {
-     "title": "25-11897-shl Doc 1522 Filed 08/25/26 Entered 08/25/26 16:43:51 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
-     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4608638&projectCode=SPJ&source=DM",
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
      "excerpts": [
-      "For ease of reference, Part 2 balances have been consolidated on the MOR for Spirit Airlines, LLC"
+      "Part 1: Cash Receipts and Disbursements Current Month Cumulative** a. Cash balance beginning of month $231,842,075 b. Total receipts (net of transfers between accounts) $29,993,005 $3,353,480,392 c. Total disbursements (net of transfers between accounts) $59,069,812 $3,938,188,352 d. Cash balance end of month (a+b-c) $202,765,268"
      ]
     }
    ],
-   "reasoning": "Consolidated bankruptcy balances and total liabilities do not establish the requested standalone interest-bearing-debt amount.",
+   "reasoning": "Part 1 directly reports the airline's ending cash balance. No assertion is made that all of it is unrestricted.",
    "confidence": "medium"
   },
   {
    "field": "financials.4",
+   "citations": [
+    {
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+     "excerpts": [
+      "Beginning Cash / Restricted Cash Balance (09/01/26) $ 243,897,134 $ 231,842,075 $ - $ - $ - $ - $ 12,055,058** Receipts from Third Parties 30,027,487 29,993,005 - - - - 34,482 Disbursements to Third Parties (59,069,812) (59,069,812) - - - - - **Ending Cash / Restricted Cash $ 214,854,808 $ 202,765,268 $ - $ - $ - $ - $ 12,089,540** **Intercompany Activities** Intercompany Receipts (Disbursements) - 12,081,746 - - - - (12,081,746) **Ending Cash / Restricted Cash Bank Balance (09/30/26) $ 214,854,808 $ 214,847,014 $ - $ - $ - $ - $ 7,795** Currency Translation and Funds in Transit (17,786) (17,786) - - - - - **Ending Cash / Restricted Cash Balance Adjusted (09/30/26) $ 214,837,023 $ 214,829,228"
+     ]
+    }
+   ],
+   "reasoning": "The cash schedule distinguishes the Spirit Airlines, LLC column from combined debtor entities and gives its adjusted cash/restricted-cash balance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.5",
+   "citations": [
+    {
+     "title": "25-11897-shl Doc 1748 Filed 10/21/26 Entered 10/21/26 20:06:11 Main Document Pg 1 of 20 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4624199&projectCode=SPJ&source=DM",
+     "excerpts": [
+      "Prepetition secured debt $1,502,575,949 l. Prepetition priority debt $0 m. Prepetition unsecured debt $4,891,087,864 n. Total liabilities"
+     ]
+    }
+   ],
+   "reasoning": "The disclosed categories do not isolate a verified total of interest-bearing borrowings. Total liabilities are deliberately not used as total debt.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.6",
    "citations": [],
-   "reasoning": "No verified current availability or runway value supports a numeric entry.",
+   "reasoning": "No current verified unrestricted-liquidity, undrawn-availability or runway figure was obtained. Authorized DIP limits and restricted cash are not substitutes.",
    "confidence": "low"
   },
   {
    "field": "payment_behaviour.0",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
+     "title": "Broward asks court to order Spirit to pay $3M in past-due airport fees, clear path for new tenants – Sun Sentinel",
+     "url": "https://www.sun-sentinel.com/2026/05/21/broward-asks-court-to-order-spirit-to-pay-3m-in-past-due-airport-fees-clear-path-for-new-tenants/",
      "excerpts": [
-      "Spirit will automatically process refunds for any flights purchased through Spirit with a credit or debit card to the original form of payment.",
-      "Compensation for Guests who booked flights using any other methods, including a voucher, credit or Free Spirit points, will be determined at a later date through the bankruptcy process."
+      "The defunct carrier is now delinquent on rents and other fees to the tune of $3 million, according to a court filing by the Broward County Attorney's",
+      "County lawyers assert Spirit “has failed to pay post-petition gate fees"
      ]
     }
    ],
-   "reasoning": "The official announcement directly distinguishes card refunds from other payment methods handled later through bankruptcy.",
-   "confidence": "high"
-  },
-  {
-   "field": "payment_behaviour.1",
-   "citations": [
-    {
-     "title": "Spirit says most customers refunded after abrupt shutdown | Reuters",
-     "url": "https://www.reuters.com/legal/litigation/spirit-nearly-done-processing-customer-refunds-after-shutdown-2026-05-03",
-     "excerpts": [
-      "May 3, 2026 7:45 PM UTC",
-      "Most customers who booked with ⁠credit or debit cards were refunded by Saturday evening, with a small percentage still being processed, the company",
-      "In response to a request for comment on Stanton's case, Spirit said refunds may take time to show in guests' ​accounts."
-     ]
-    }
-   ],
-   "reasoning": "Reuters dates and attributes the refund-processing information to Spirit. The answer preserves that attribution and does not generalize it to trade creditors.",
+   "reasoning": "The report describes the county's allegation and approximately $3 million delinquency, not a final judgment.",
    "confidence": "medium"
   },
   {
    "field": "debt_events.0",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc., et al. Overview Case: 25-11897 | Epiq",
-     "url": "https://dm.epiq11.com/case/spirit/info",
+     "title": "25-11897-shl Doc 1048 Filed 05/08/26 Entered 05/08/26 19:09:15 Main Document Pg 1 of 311 UNITED STATES BANKRUPTCY COURT SOUTHERN DISTRICT",
+     "url": "http://bankrupt.com/misc/SpiritAviation_ADIPOrder.pdf",
      "excerpts": [
-      "On August 29, 2025, Spirit Aviation Holdings, Inc., and five (5) of its affiliates (collectively, the “Debtors”) filed petitions",
-      "The Debtors cases are jointly administered for procedural purposes, meaning that all pleadings are maintained on the case docket for Spirit Aviation Holdings, Inc., Case No.",
-      "25-11896 Spirit Airlines, LLC"
+      "The Wind-Down Plan is approved to the extent set forth herein, pursuant to sections 105(a) and 363(b) of the Bankruptcy Code, and may be implemented.",
+      "Final DIP Order Amendment No. 2 and Amendment No. 2 to DIP Credit Agreement",
+      "Wind-Down Budget** 7\\. The Debtors are authorized to operate in accordance with the Initial Wind-Down Budget attached as **Exhibit 3** hereto (the “ **Initial Wind-Down Budget** ”), subject to any permitted variances with respect thereto. The Debtors are authorized to utilize Cash Collateral",
+      "Dated: May 8, 2026 White Plains, New York **_/s/ Sean H. Lane_** THE HONORABLE SEAN H. LANE UNITED STATES BANKRUPTCY JUDGE",
+      "authorization for Debtor Spirit Airlines, LLC, as borrower"
      ]
     }
    ],
-   "reasoning": "The case administrator establishes the filing date, joint administration and the operating airline's separate case number.",
+   "reasoning": "The entered order establishes its date, wind-down approval, budgeted cash-collateral use and DIP amendments. The borrower designation connects the financing to the exact airline entity.",
    "confidence": "high"
   },
   {
    "field": "debt_events.1",
    "citations": [
     {
-     "title": "sec.gov",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325013149/dp235820_8k.htm",
+     "title": "flyy-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000162828026018265/flyy-20251231.htm",
      "excerpts": [
-      "In connection with the Chapter 11 Cases, on October 10, 2025, the Bankruptcy Court entered an interim order (the “ Interim DIP Order ”) approving Spirit Airlines, LLC, as borrower (the “ DIP Borrower ”), and certain subsidiaries of the Company from time to time party thereto as guarantors, entering into that certain Superpriority Priming Debtor-in-Possession Credit Agreement (the “ DIP Credit Agreement",
-      "Pursuant to the DIP Credit Agreement, the DIP Lenders have agreed, upon the terms and conditions set forth therein, to make available to the Company up to $475,000,000"
+      "On October 31, 2025, the Bankruptcy Court approved a final order which authorized the Debtors to obtain post-petition financing with a multi-draw senior secured non-amortizing super-priority priming debtor-in-possession facility (the “DIP Facility”) fronted initially by Barclays Bank PLC and anchored by the holders of the senior secured notes. Spirit Airlines",
+      "On October 14, 2025, we drew $200.0 million, followed by additional draws on November 7, 2025 for $50.0 million and on December 15, 2025 for $100.0",
+      "Amendment to 2025 DIP Credit Agreement On December 15, 2025, Spirit, the Required DIP Lenders"
      ]
     }
    ],
-   "reasoning": "The SEC filing expressly names Spirit Airlines, LLC as borrower and describes the conditional $475 million aggregate facility. The answer does not equate this commitment with current outstanding debt or available cash.",
+   "reasoning": "The annual filing identifies the airline borrower, the $100 million December draw and the conditions amendment. This is a financing event, not use of parent consolidated financial results.",
    "confidence": "high"
   },
   {
    "field": "debt_events.2",
    "citations": [
     {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed December 16, 2025",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010325016205/dp238730_ex9901.htm",
+     "title": "Spirit Aviation Holdings, Inc., et al. Overview Case: 25-11897 | Epiq",
+     "url": "https://dm.epiq11.com/case/spirit/info",
      "excerpts": [
-      "**DANIA BEACH, Fla., Dec. 15, 2025** – Spirit Aviation Holdings, Inc., parent company of Spirit Airlines, LLC (“Spirit” or the “Company”), today announced it has reached an agreement with its senior secured noteholders to amend its debtor-in-possession (“DIP”) credit agreement.",
-      "The amendment provides for the previously agreed third funding round of an incremental $100 million to be fulfilled today. $50 million (minus OID) is useable by Spirit immediately, and the use of the remaining amount is subject to previously agreed conditions that relate to further progress on a standalone plan of reorganization or a strategic transaction."
+      "On August 29, 2025, Spirit Aviation Holdings, Inc., and five (5) of its affiliates (collectively, the “Debtors”) filed petitions in the United States Bankruptcy Court for the Southern District of New York seeking relief under chapter 11",
+      "25-11896 Spirit Airlines, LLC",
+      "Lead Debtor 25-11897 Spirit Aviation Holdings, Inc."
      ]
     }
    ],
-   "reasoning": "The dated announcement states the amendment, $100 million round, immediately usable $50 million less discount and conditions on the remainder.",
-   "confidence": "high"
-  },
-  {
-   "field": "debt_events.3",
-   "citations": [
-    {
-     "title": "Spirit Aviation Holdings, Inc. 8-K exhibit 99.1, filed May 4, 2026",
-     "url": "https://www.sec.gov/Archives/edgar/data/1498710/000095010326006723/dp246246_ex9901.htm",
-     "excerpts": [
-      "With no additional funding available to the Company, Spirit had no choice but to begin this wind-down.",
-      "Sustaining the business required hundreds of millions of additional dollars of liquidity that Spirit simply does not have and could not procure."
-     ]
-    }
-   ],
-   "reasoning": "The May announcement directly attributes wind-down to the inability to obtain necessary additional liquidity.",
+   "reasoning": "The case administrator supplies the petition date, airline case number and lead debtor, preserving the distinction between the airline and its parent.",
    "confidence": "high"
   }
  ],
- "sub_use_case": "fin_credit_risk",
- "input": "Assess the credit and counterparty risk of Spirit Airlines",
- "input_n": 0
+ "cost_usd": 0.6,
+ "cost_basis": "list"
 }

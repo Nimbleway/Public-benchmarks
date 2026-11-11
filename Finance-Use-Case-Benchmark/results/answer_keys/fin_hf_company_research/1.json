@@ -1,0 +1,147 @@
+{
+ "sub": "fin_hf_company_research",
+ "i": 1,
+ "task": "Research Tesla (tesla.com) for a hedge fund",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What did Tesla report for Q3 2026 (reported Oct 21, 2026) against consensus, and what is the current guidance?",
+   "answer": "Deliveries were 486,532 against company-compiled consensus of about 462k, a beat. Production was 464,391, so inventory fell about 22k. Revenue was about $28.05B, flat year on year and roughly in line with some consensus figures (about $28.06B), though it was slightly below Tesla's company-compiled consensus of $28.34B. Non-GAAP EPS was $0.48 against $0.45 expected. GAAP net income was $787M (-43%), or $0.22 per share. Operating income was $718M (-56%), a 2.6% operating margin. Gross margin was 19.6%. Energy storage deployments were 13.7 GWh against 15.9 GWh consensus, a miss. Regulatory credits fell to $113M. Tesla gives no delivery or revenue guidance. The only hard guide is 2026 capex. The Q3 shareholder letter did not change it, but the Q3 10-Q (filed Oct 21, 2026) lowered it to 'in excess of $20 billion' from 'more than $25 billion'. Nine-month capex was $13.01B.",
+   "importance": "critical",
+   "source": "https://electrek.co/2026/10/22/tesla-cuts-2026-capex-guidance-q3-cash-flow/",
+   "key_original": {
+    "answer": "Deliveries were 486,532 against company-compiled consensus of about 462k, a beat. Production was 464,391, so inventory fell about 22k. Revenue was about $28.05B, flat year on year and in line. Non-GAAP EPS was $0.48 against $0.45 expected. GAAP net income was $787M (-43%), or $0.22 per share. Operating income was $718M (-56%), a 2.6% operating margin. Gross margin was 19.6%. Energy storage deployments were 13.7 GWh against 15.9 GWh consensus, a miss. Regulatory credits fell to $113M. Tesla gives no delivery or revenue guidance. The only hard guide is 2026 capex above $25B, unchanged in the Q3 letter.",
+    "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+   },
+   "audit": {
+    "verdict": "key_wrong",
+    "why": "Electrek's follow-up article of Oct 22, 2026 says the Q3 10-Q, filed Oct 21, changed the wording. It now reads 'to be in excess of $20 billion in 2026', down from 'more than $25 billion' guided since April. The shareholder letter did not contain the change, so the key's 'unchanged in the letter' is true only of the letter. The current guide is still >$20B, not >$25B. A second source, letsdatascience, also reports the cut to about $20B from more than $25B. I could not open the 10-Q's MD&A text to read the sentence directly. On the revenue point, Answers B, C and E cite Tesla's company-compiled consensus of $28.341B against $28.046B reported. I could not open that Tesla page (HTTP 403), so I did not verify it. Other sources put consensus near $28.06B, so 'in line' is defensible, and I'd call the revenue point a 'slight miss or in line' depending on the consensus used. The other key figures (486,532 deliveries, $0.48 vs $0.45 non-GAAP EPS, $787M GAAP net income, $718M operating income) are not contested by the answers, and I did not re-check them.",
+    "disputed_point": "Guidance: the key says 2026 capex is above $25B and 'unchanged in the Q3 letter'. Tesla's Q3 10-Q lowered it to 'in excess of $20 billion'. The key also calls revenue 'in line', but Tesla's own compiled consensus was higher."
+   }
+  },
+  {
+   "id": "k2",
+   "question": "Is the capex guide of more than $25B for 2026 affordable? What are the liquidity and credit position and the free cash flow trend?",
+   "answer": "Cash and investments were $45.4B at the end of Q3. Q3 free cash flow was $1.53B, against -$1.09B in Q2 and $3.99B a year earlier. Q3 capex was $4.73B, and year-to-date capex is $13.01B. The Q3 10-Q cut the 2026 capex guide from more than $25B to more than $20B. Hitting the new floor needs about $7B of capex in Q4, which is above any prior quarter ($2.49B in Q1, $5.79B in Q2, $4.73B in Q3). The old $25B target would have needed about $12B. Expect free cash flow to turn negative in Q4 and cash to fall, though less sharply than under the old guide. I did not verify the debt maturity schedule or rating actions. Check the 10-Q for those. Liquidity is not a near-term stress point.",
+   "importance": "critical",
+   "source": "https://electrek.co/2026/10/22/tesla-cuts-2026-capex-guidance-q3-cash-flow/",
+   "key_original": {
+    "answer": "Cash and investments were $45.4B at the end of Q3. Q3 free cash flow was $1.53B, against -$1.09B in Q2 and $3.99B a year earlier. Q3 capex was $4.73B, and year-to-date capex is $13.01B. Hitting the guide needs about $12B of capex in Q4, more than double any prior quarter. Expect free cash flow to turn sharply negative in Q4 and cash to fall. I did not verify the debt maturity schedule or rating actions. Check the 10-Q for those. Liquidity is not a near-term stress point.",
+    "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+   },
+   "audit": {
+    "verdict": "key_wrong",
+    "why": "Electrek's follow-up article of Oct 22 says the Q3 10-Q now guides to capex \"in excess of $20 billion in 2026\", down from \"more than $25 billion\". The earlier Electrek article the key cites (Oct 21) only reflected the old $25B figure, because it was written before the 10-Q was filed. Answers A, B, C, D and E all cite the above-$20B guide from the 10-Q. The key's financial figures check out against Electrek: Q3 capex $4.73B, year-to-date $13.01B, Q3 FCF $1.53B and cash and investments $45.4B. The implied Q4 capex is about $7B to reach the new $20B floor, not $12B. Reaching the old $25B target would have needed roughly $12B. Q4 FCF is therefore still likely negative, but far less dramatically. I opened only the Electrek pages, not the 10-Q itself.",
+    "disputed_point": "The 2026 capex guide. The key treats it as still above $25B and says Q4 needs about $12B of capex. Tesla's Q3 10-Q cut the guide to above $20B."
+   }
+  },
+  {
+   "id": "k3",
+   "question": "What is the state of the autonomy, Robotaxi, Cybercab and Optimus story that drives the valuation, and what are the dated milestones?",
+   "answer": "The Robotaxi service had nearly 2M cumulative unsupervised miles by the end of Q3. Cybercab joined the Austin fleet about a month before quarter-end. Unsupervised FSD, limited to Robotaxi zones, was pushed to Q2 2027. R&D rose 69% to $2.76B, tied to Optimus, Cybercab and AI. Musk said at the Nov 2025 meeting that Optimus, Semi and Cybercab would start production in 2026. Semi and 'other models' deliveries fell 48%. The core auto business is stagnant, with deliveries down 2% year on year and a 2.6% operating margin. The valuation therefore rests on autonomy and robotics timelines that keep slipping.",
+   "importance": "critical",
+   "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+  },
+  {
+   "id": "k4",
+   "question": "What are the upcoming dated catalysts in the next 6 months?",
+   "answer": "Q4 and full-year 2026 deliveries are due in early January 2027. Q4 earnings are expected in late January 2027. Q1 2027 deliveries are due in early April 2027, and Q1 earnings in about late April 2027. Other items to watch are the Q4 capex ramp, Cybercab and Optimus production milestones, and the Q2 2027 unsupervised FSD target. These dates are based on Tesla's usual cadence and are not yet confirmed. Check ir.tesla.com for confirmation.",
+   "importance": "critical",
+   "source": "https://ir.tesla.com"
+  },
+  {
+   "id": "k5",
+   "question": "What is the governance and event-driven situation: Musk's pay package, xAI and SpaceX ties, and any M&A or buyback?",
+   "answer": "Shareholders approved Musk's roughly $1T, 10-year pay package on Nov 6, 2025, with about 75% support. Milestones include 20M vehicles, 1M robotaxis and an $8.5T market cap. Norway's wealth fund, ISS and Glass Lewis opposed it. An advisory proposal to invest in xAI split shareholders. Tesla now holds an equity investment in SpaceX, which produced a $142M unrealized loss in Q3 2026. No buyback or activist campaign was found. Key-person and related-party risk (Musk, xAI, SpaceX) is the main event-driven theme. I did not verify the details of any Tesla–xAI or SpaceX transaction.",
+   "importance": "critical",
+   "source": "https://news.bloomberglaw.com/esg/tesla-shareholders-approve-1-trillion-pay-package-for-elon-musk"
+  },
+  {
+   "id": "k6",
+   "question": "What are the main fundamental risks to the thesis?",
+   "answer": "Regulatory credit revenue is collapsing, down 73% year on year, and is unlikely to return because federal fuel-economy penalties are gone. Vehicle deliveries are down 2% year on year. The operating margin is 2.6%. R&D is up 69%. Energy storage missed consensus. Delivery beats were helped by an inventory draw. Autonomy timelines are slipping. Q4 capex could exceed $12B.",
+   "importance": "critical",
+   "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+  },
+  {
+   "id": "k7",
+   "question": "What insider and ownership activity exists (Form 4, 13D/13G)?",
+   "answer": "Not verified in this research. Check SEC EDGAR for Tesla (CIK 1318605): Form 4 filings for Musk, Kimbal Musk, Robyn Denholm and other directors, and Q3 2026 13F position changes by large holders such as Vanguard, BlackRock and Norges. I did not run this check.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1318605&type=4"
+  }
+ ],
+ "labels": {
+  "parallel": "A",
+  "gpt": "B",
+  "exa": "C",
+  "opus": "D",
+  "nimble": "E",
+  "firecrawl": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.182
+}

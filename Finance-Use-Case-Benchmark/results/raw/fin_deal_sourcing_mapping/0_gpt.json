@@ -1,0 +1,42 @@
+{
+ "arm": "gpt",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find founder-owned US commercial HVAC service companies in Texas with 50-300 employees and no institutional investors",
+ "input_n": 0,
+ "tier": "high",
+ "model": "gpt-6.1-sol",
+ "status": "completed",
+ "seconds": 811,
+ "run_id": "resp_0549232c42b73ee5006af346ede93887d2b556cae5ce2c473c",
+ "output": {
+  "companies": [],
+  "search_notes": "as_of: 2026-11-10. No company was verified against every mandatory criterion. This is a verification-limited result, not a conclusion that no qualifying companies exist. Founder-led management, family-owned marketing, and an absence of funding announcements were not treated as proof of no institutional investors.\n\nImportant exclusions:\n- NTD Mechanical: older sources identified its founder as sole owner, but its sale was announced on December 17, 2025. Kelso Industries currently lists NTD among its locations, and Peterson Partners lists Kelso in its investment portfolio. source_url: https://www.northstar-mergers.com/post/northstar-mergers-acquisitions-announces-sale-of-ntd-mechanical ; https://kelso-industries.com/locations/ ; https://www.petersonpartners.com/portfolio/\n- Efficient AC, Electric & Plumbing: its website explicitly states that the current owners purchased the business from its founders in 2008. It therefore fails the founder-owned requirement despite its stated independence from outside investors. source_url: https://efficienttexas.com/about/\n- Texas Chiller Systems: Orion's investment announcement establishes institutional backing through Alpine Investors; Alpine's current portfolio page continues to list Orion. source_url: https://orionservicesgroup.com/news/orion-group-partners-with-leading-commercial-hvac-service-provider-texas-chiller-systems ; https://alpineinvestors.com/our-companies/orion-group/\n\nUnresolved prospects withheld rather than presented as qualifying: Coopwood's Air Conditioning and Interior Climate Solutions. The opened company pages did not establish both current founder equity ownership and the absence of institutional investors. missing_fields: current founder ownership verification; institutional-investor status verification. source_url: https://coopwood.com/about-us/ ; https://interiorcs.com/about/\n\nDiscovery included the MCA of Dallas contractor member directory, company websites, trade reporting, acquisition announcements, and sponsor portfolio pages. source_url: https://mcadallas.org/membership/"
+ },
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "raw_text": null,
+ "cost_usd": 1.3765,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "token_cost_usd": 0.9165,
+ "usage": {
+  "input_tokens": 386688,
+  "input_tokens_details": {
+   "cache_write_tokens": 5022,
+   "cached_tokens": 0
+  },
+  "output_tokens": 14313,
+  "output_tokens_details": {
+   "reasoning_tokens": 13884
+  },
+  "total_tokens": 401001
+ },
+ "search_calls": 46,
+ "search_actions": {
+  "search": 42,
+  "open_page": 4
+ },
+ "error": null
+}

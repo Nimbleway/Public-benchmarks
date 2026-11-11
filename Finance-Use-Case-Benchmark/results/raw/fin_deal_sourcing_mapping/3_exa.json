@@ -1,0 +1,74 @@
+{
+ "arm": "exa",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find founder-owned US specialty chemical distributors with 50-250 employees and no private equity owner",
+ "input_n": 3,
+ "tier": "high",
+ "status": "completed",
+ "seconds": 322,
+ "run_id": "agent_run_202ab4aec1554c73bd53bf66706a87cf",
+ "output": {
+  "companies": [
+   {
+    "hq": "Great Neck, New York, United States",
+    "name": "Wego Chemical Group",
+    "rank": 1,
+    "domain": "wegoglobal.com",
+    "traction": "More than 1,000 US customers reported in founder testimony in 2019. Source: https://downloads.regulations.gov/USTR-2019-0004-2735/attachment_1.pdf",
+    "employees": "217 employees; reporting year ended 2025-12-31. Source: https://wegoglobal.com/wp-content/uploads/2026/06/Global-Sustainability-Report-2025.pdf",
+    "ownership": "founder-owned",
+    "last_round": null,
+    "rank_reason": "Strongest verified match: explicit founder-family ownership description, primary-source specialty distribution and US headquarters evidence, and company-reported workforce inside the requested range. Ownership percentages and a current financing history remain undisclosed.",
+    "founded_year": 1978,
+    "headcount_growth": "100+ employees in 2019 founder testimony (https://downloads.regulations.gov/USTR-2019-0004-2735/attachment_1.pdf); 217 in the company’s 2025 reporting year (https://wegoglobal.com/wp-content/uploads/2026/06/Global-Sustainability-Report-2025.pdf). Different dates and potentially different reporting scopes; a precise growth percentage is not warranted.",
+    "criteria_evidence": [
+     {
+      "evidence": "Global headquarters in Great Neck, New York; company reports relocation there in 2025.",
+      "criterion": "US headquarters",
+      "source_url": "https://wegoglobal.com/about/"
+     },
+     {
+      "evidence": "Founder testimony describes importing and distributing specialty chemicals; current sustainability report describes a non-manufacturing chemical distribution business.",
+      "criterion": "Specialty chemical distributor",
+      "source_url": "https://downloads.regulations.gov/USTR-2019-0004-2735/attachment_1.pdf"
+     },
+     {
+      "evidence": "Company-reported workforce of 217 for reporting year 2025, within the required range.",
+      "criterion": "50–250 employees",
+      "source_url": "https://wegoglobal.com/wp-content/uploads/2026/06/Global-Sustainability-Report-2025.pdf"
+     },
+     {
+      "evidence": "Current recruiting description states owned and operated by the Eshaghpour family, led by Founder/CEO Bert Eshaghpour. His 2019 federal testimony identifies him as president and principal owner. Individual current shareholder percentages are not disclosed.",
+      "criterion": "Founder-owned",
+      "source_url": "https://talents.vaia.com/companies/wego-chemical-group-lp/great-neck/global-head-of-it-digital-ai-120183527/"
+     },
+     {
+      "evidence": "Current ownership description identifies the founding family, rather than a financial sponsor. No PE acquisition or sponsor was identified in the reviewed material; this does not rule out undisclosed transactions.",
+      "criterion": "No private equity owner",
+      "source_url": "https://talents.vaia.com/companies/wego-chemical-group-lp/great-neck/global-head-of-it-digital-ai-120183527/"
+     }
+    ]
+   }
+  ],
+  "search_notes": "Assessment date: 2026-11-03. One company verified across the core filters; this is not a claim of exhaustive market coverage. Founder-owned was interpreted strictly: family ownership alone, a founder serving as CEO, or private-company status was insufficient without ownership evidence. Reviewed company websites, trade and business profiles, acquisition announcements and investor material. No PE sponsor was identified for Wego, so there was no identified sponsor portfolio to cross-check. Excluded or withheld: Parchem (current founder ownership unverified and conflicting size data); Miles Chemical (recent employee estimate below 50 conflicts with older larger counts); Palmer Holland (employee-owned); Lintech (family-owned but founder ownership not established); Viachem, Charkit, LBB and other acquired platforms (ownership fails); numerous smaller distributors (below 50). Missing_fields for Wego: last_round; no verified latest financing round was established. Headcount history is disclosed with source/scope caveats; source publication dates are not assumed to be observation dates."
+ },
+ "cost_usd": 0.5,
+ "cost_basis": "billed",
+ "usage": {
+  "agentComputeUnits": 2,
+  "searches": 60,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "data_sources": [
+  "fiber"
+ ],
+ "cost_breakdown": {
+  "total": 0.5,
+  "agentCompute": 0.2,
+  "search": 0.3,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "error": null
+}

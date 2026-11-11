@@ -1,7 +1,7 @@
 [project]
 name = "usecase-bench-gtm"
-version = "0.1.0"
-description = "Reproducible benchmark of web research agents on GTM use cases, judged against pooled web-verified truth"
+version = "2.0.0"
+description = "Reproducible benchmark of web research agents on GTM use cases, judged against pooled, page-verified truth and fixed answer keys"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Apache-2.0" }
@@ -24,7 +24,9 @@ build-backend = "hatchling.build"
 packages = ["usecase_bench"]
 
 [tool.ruff]
-line-length = 120
+line-length = 140
 
 [tool.ruff.lint]
-select = ["E", "F", "UP", "B", "SIM", "I"]
+select = ["E", "F", "B", "SIM", "I"]
+# ported research code: long prompt lines, inline lambdas, and lambdas called inside their loop
+ignore = ["E501", "E731", "B008", "B023", "SIM108", "SIM115", "SIM905"]

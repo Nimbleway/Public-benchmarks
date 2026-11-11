@@ -1,9 +1,849 @@
 {
  "arm": "parallel",
- "tier": "ultra2x",
- "status": "rejected",
- "error": "{\"type\":\"error\",\"error\":{\"message\":\"Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.\",\"detail\":null}}",
  "sub_use_case": "fin_kyc_screening",
  "input": "Run a KYC screen on Greensill Capital in the United Kingdom",
- "input_n": 2
+ "input_n": 2,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 705,
+ "run_id": "trun_63550df7c67c4a5b9c8b6b6819f9e212",
+ "output": {
+  "risk_rationale": "High risk as of 2026-11-09. The screened entity is GREENSILL CAPITAL (UK) LIMITED, the group's main UK operating company, not its Australian parent or German bank. It remains in administration, and its registered PSC and former director, Alexander David Greensill, accepted a nine-year director-disqualification undertaking following misconduct involving the UK company and a $440 million loss to a Credit Suisse fund (adverse_media[0–1]). Historical fraud allegations, continuing civil proceedings and political connections add risk, although allegations, disclosure obligations and settlements are not findings of criminal liability. No exact-name OFAC SDN match or UK/EU Greensill-name listing was established; broader OFAC fuzzy candidates remain unresolved, and the underlying trust ownership has not been fully identified, so this is not sanctions clearance. Companies House lists no current directors or secretaries; the administrators control the company. GLEIF records LEI 2138004D9J9DZUANAI93 as LAPSED: https://www.gleif.org/lei/2138004D9J9DZUANAI93. One entity-mismatched finding was excluded: the FCA investigation into Mirabella's oversight of Greensill Capital Securities, not this company. Missing fields: registry numbers for the Australian parent and German bank; nationalities of the administrators. Underlying trust beneficiaries/trustees, definitive PEP classification and developments after the dated litigation updates were not established. All screening counts and current-status assessments are as of 2026-11-09; historical amounts and events retain their stated dates.",
+  "pep": [
+   {
+    "position": "Potential political-exposure flag, not a confirmed formal PEP designation: current registered PSC; former adviser to David Cameron's government during 2012–2015 and Crown Representative during 2013–2016. His UK-company directorship ended on 2026-06-17.",
+    "source_url": "https://committees.parliament.uk/writtenevidence/35591/pdf",
+    "name": "Alexander David Greensill (Lex Greensill)"
+   },
+   {
+    "position": "Historical senior-public-office exposure: former government Chief Procurement Officer and Chief Commercial Officer, and former chair of the Crown Commercial Service. Former director of the screened company, not a current director; Companies House records resignation on 2021-02-04. Current formal PEP classification was not established.",
+    "source_url": "https://publications.parliament.uk/pa/cm5802/cmselect/cmpubadm/59/5907.htm",
+    "name": "William Crothers (Bill Crothers)"
+   }
+  ],
+  "sanctions": [
+   {
+    "party": "GREENSILL CAPITAL (UK) LIMITED and Alexander David Greensill",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/",
+    "list": "OFAC Specially Designated Nationals and Blocked Persons List",
+    "match": "As of 2026-11-09, a Greensill name search restricted to SDN at the exact matching threshold returned 0 results; the displayed SDN update was 2026-11-06. A broader fuzzy search returned 31 candidates, including GREEN and similarly named entities. None was established as the screened company or its PSC, but those candidates were not fully resolved. No confirmed match; not definitive clearance."
+   },
+   {
+    "party": "GREENSILL CAPITAL (UK) LIMITED and Alexander David Greensill",
+    "source_url": "https://search-uk-sanctions-list.service.gov.uk/?searchValue=Greensill",
+    "list": "UK Sanctions List — UK financial sanctions",
+    "match": "As of 2026-11-09, the submitted Greensill search displayed 'No results found.' This is a name-screen result, not confirmation that unidentified trust beneficiaries or other ownership/control interests are clear."
+   },
+   {
+    "party": "GREENSILL CAPITAL (UK) LIMITED and Alexander David Greensill",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/pdfFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+    "list": "EU Consolidated Financial Sanctions List",
+    "match": "As of 2026-11-09, no occurrence of Greensill was found in the complete published list, updated 2026-10-23 at 17:05. No name match was established for the entity or registered PSC. This does not clear unidentified ownership interests or changes after that list update."
+   }
+  ],
+  "namesakes_excluded": 1.0,
+  "input_name": "Greensill Capital",
+  "people": [
+   {
+    "role": "Sole active registered person with significant control as of 2026-11-09: significant influence or control over the trustees of a trust. Former director; resigned on 2026-06-17. No ownership percentage is stated in the PSC entry.",
+    "name": "Alexander David Greensill",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/persons-with-significant-control",
+    "nationality": "British"
+   },
+   {
+    "role": "Joint administrator, identified in the administrators' report signed 2026-09-29; insolvency officeholder rather than company director.",
+    "name": "Chris M Laverty",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+    "nationality": null
+   },
+   {
+    "role": "Joint administrator, identified in the administrators' report signed 2026-09-29; insolvency officeholder rather than company director.",
+    "name": "Will G Stagg",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+    "nationality": null
+   },
+   {
+    "role": "Joint administrator, identified in the administrators' report signed 2026-09-29; insolvency officeholder rather than company director.",
+    "name": "Russell Simpson",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+    "nationality": null
+   }
+  ],
+  "related_entities": [
+   {
+    "relation": "Australian group holding company, distinct from the screened UK operating company. Foreign registry number not established. Source: https://committees.parliament.uk/publications/6800/documents/72205/default/",
+    "registry_number": null,
+    "name": "Greensill Capital Pty Limited"
+   },
+   {
+    "relation": "German bank owned by the Greensill group, not the screened UK company. Foreign registry number not established. Source: https://committees.parliament.uk/publications/6800/documents/72205/default/",
+    "registry_number": null,
+    "name": "Greensill Bank AG"
+   },
+   {
+    "relation": "Separate UK company administered alongside the screened operating company; in administration as of 2026-11-09. Source: https://find-and-update.company-information.service.gov.uk/company/08037769",
+    "registry_number": "08037769",
+    "name": "GREENSILL CAPITAL MANAGEMENT COMPANY (UK) LIMITED"
+   },
+   {
+    "relation": "Separate Greensill securities entity and former appointed representative of Mirabella; dissolved as of 2026-11-09. Its regulatory findings are not automatically attributable to the screened company. Source: https://find-and-update.company-information.service.gov.uk/company/09595415",
+    "registry_number": "09595415",
+    "name": "GREENSILL CAPITAL SECURITIES LIMITED"
+   },
+   {
+    "relation": "Separate UK registry entity sharing the Greensill Capital name; dissolved as of 2026-11-09. Ownership relationship to the screened company was not established. Source: https://find-and-update.company-information.service.gov.uk/company/10489840",
+    "registry_number": "10489840",
+    "name": "GREENSILL CAPITAL INVESTMENTS LIMITED"
+   }
+  ],
+  "risk_rating": "high",
+  "registration": {
+   "registered_address": "C/O Grant Thornton UK Advisory & Tax LLP, 11th Floor Landmark St Peters Square, 1 Oxford Street, Manchester, M1 4PB",
+   "incorporation_date": "2012-07-02",
+   "legal_name": "GREENSILL CAPITAL (UK) LIMITED",
+   "registry_number": "08126173",
+   "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173",
+   "lei": "2138004D9J9DZUANAI93",
+   "status": "In Administration as of 2026-11-09. GLEIF separately records the entity as ACTIVE and the LEI registration as LAPSED; legal existence is not the same as trading or solvency status.",
+   "jurisdiction": "England and Wales, United Kingdom"
+  },
+  "adverse_media": [
+   {
+    "date": "2026-06-04",
+    "status": "Final disqualification undertaking accepted on 2026-06-02; nine-year ban effective from 2026-06-23, running until June 2035. Court action ended through the undertaking rather than a completed trial.",
+    "severity": "high",
+    "source_url": "https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years",
+    "summary": "The Insolvency Service reported that Lex Greensill caused Greensill companies to enter Katerra transactions removing protections for a Credit Suisse fund. He also caused or allowed the screened UK company to use $440 million received in November 2020 for purposes other than redeeming the relevant notes, resulting in a $440 million loss to the fund. The conduct breached his director's duty of reasonable care, skill and diligence.",
+    "category": "Director misconduct and disqualification"
+   },
+   {
+    "date": "2021-03-08",
+    "status": "Administration remains recorded as of 2026-11-09. The administrators' report states that the administration was extended to 2028-09-07.",
+    "severity": "high",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/insolvency",
+    "summary": "The screened UK company entered administration on 2021-03-08. It is an insolvent entity under insolvency-officeholder control, not an ordinary operating counterparty.",
+    "category": "Insolvency"
+   },
+   {
+    "date": "2021-03-15",
+    "status": "Settled litigation; notice of voluntary dismissal with prejudice filed on 2022-08-02. The reviewed record does not establish an adjudicated fraud finding.",
+    "severity": "high",
+    "source_url": "https://www.courtlistener.com/docket/59734365/bluestone-resources-inc-v-greensill-capital-uk-limited/",
+    "summary": "Bluestone Resources and associated plaintiffs sued the UK company, Lex Greensill and Roland Hartley-Urquhart. The complaint alleged contractual breaches, fraud and material misrepresentations concerning financing and repayment arrangements. These were plaintiffs' allegations, not proven facts.",
+    "category": "Civil fraud and contractual litigation"
+   },
+   {
+    "date": "2021-05-14",
+    "status": "The official SFO case page is labelled Open; its latest listed investigative activity is dated 2022-04-27. No charge or criminal finding against the screened company was established from the reviewed source.",
+    "severity": "medium",
+    "source_url": "https://www.gov.uk/sfo-cases/gupta-family-group-gfg-alliance",
+    "summary": "The SFO investigation concerns suspected fraud, fraudulent trading and money laundering involving GFG Alliance companies, including their financing arrangements with Greensill Capital UK Ltd. The investigation's stated targets are GFG businesses; this is not a finding that the screened company committed those offences.",
+    "category": "Criminal investigation connected to financing arrangements"
+   },
+   {
+    "date": "2025-09-22",
+    "status": "According to the report covering the period to 2026-09-07, the English proceedings were stayed after a jurisdiction judgment in GCUK's favour on 2026-02-04. Related Australian security proceedings were deferred to November 2026; later developments were not established.",
+    "severity": "medium",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+    "summary": "GFG commenced English proceedings against GCUK, Greensill Bank and UBS concerning a financing/security dispute. The administrators also pursued Australian proceedings to determine the validity of GCUK's security over relevant Liberty entities. These are civil recovery and security disputes, not criminal findings.",
+    "category": "Civil financing and security litigation"
+   },
+   {
+    "date": "2026-09-07",
+    "status": "Status date in the administrators' report: GCUK was an inactive party in Australian insurance proceedings and joined to English investor–insurer proceedings. The English claim was stayed against GCUK except for discovery. Later developments were not established.",
+    "severity": "medium",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+    "summary": "The screened company remains involved in post-collapse insurance litigation and document disclosure. Its participation is directly established, but the report does not establish a liability judgment against it.",
+    "category": "Civil insurance litigation"
+   },
+   {
+    "date": "2026-09-07",
+    "status": "As at the administrators' reporting date, GCUK was joined as a defendant and providing discovery. No merits determination against GCUK was established; later developments were not verified.",
+    "severity": "medium",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+    "summary": "Greensill Bank brought proceedings against the Secretary of State for Business and Trade concerning CBILS/CLBILS investments and underlying guarantees. GCUK was joined because it was the accredited lender and was required to provide disclosure.",
+    "category": "Civil government-guarantee litigation"
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "Lessons from Greensill Capital: Sixth Report of Session 2021–22 — Treasury Committee",
+     "url": "https://committees.parliament.uk/publications/6800/documents/72205/default/",
+     "excerpts": [
+      "The Greensill group sat outside the Bank’s regulatory perimeter and as such was not subject to prudential regulation by the PRA. The holding company, Greensill Capital Pty Limited, was registered in Australia, although its main operating entity, Greensill Capital (UK) Limited was incorporated in England and Wales. This operating entity did not carry out any activities regulated by the Bank under the Financial Services and Markets Act 2000 (FSMA). The group also owned a bank, Greensill Bank AG, which was domiciled and regulated in Germany and was not authorised to perform any regulated activities in the UK.87"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173",
+     "excerpts": [
+      "Company status In Administration"
+     ]
+    },
+    {
+     "title": "Lex Greensill to be disqualified from acting as a company director in the UK for nine years - GOV.UK",
+     "url": "https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years",
+     "excerpts": [
+      "Lex Greensill also caused or allowed Greensill Capital (UK) Limited to use $440 million received in November 2020 for purposes other than redeeming the notes owed to the Credit Suisse fund. The notes all defaulted when they fell due, resulting in a loss of $440 million to the Credit Suisse fund. His conduct breached his legal duty under the Companies Act 2006 to exercise reasonable care, skill and diligence as a company director.",
+      "Lex Greensill will be banned as a company director in the UK for nine years after agreeing to be disqualified following an investigation by the Insolvency Service."
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/officers",
+     "excerpts": [
+      "Officers: 20 officers / 20 resignations"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED - LEI 2138004D9J9DZUANAI93",
+     "url": "https://www.gleif.org/lei/2138004D9J9DZUANAI93",
+     "excerpts": [
+      "Its LEI registration is LAPSED and its entity status is ACTIVE."
+     ]
+    }
+   ],
+   "reasoning": "The parliamentary report identifies the main UK operating entity and separates it from its parent and bank. Companies House establishes administration and the absence of current registered officers. The Insolvency Service establishes serious director misconduct and the disqualification outcome. GLEIF distinguishes legal entity existence from a lapsed LEI. The high-risk conclusion is an assessment, not a regulatory rating; the rationale expressly retains sanctions, ownership and PEP uncertainties.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep",
+   "citations": [
+    {
+     "title": "Written evidence from The Transparency International UK (PGG14) The Public Administration and Constitutional Affairs Committee Propriety of governance in light",
+     "url": "https://committees.parliament.uk/writtenevidence/35591/pdf",
+     "excerpts": [
+      "39\\. Lex Greensill, the founder of Lex Capital, also held roles in Government. From 2012 to 2015 he was an adviser to David Cameron’s Government. Although there was apparently no contract and he was unpaid, he was given a security pass for both the Cabinet Office and Downing Street, as well as a business card stating that he was an adviser with direct contact details for Number 10 Downing Street, which would certainly give the impression of having a formal role within Government. In October 2012, Prime Minister David Cameron announced that the government supports Greensill’s initiative to encourage large companies to use supply chain finance (SCF) to enable their suppliers to access low-cost credit. ²⁰ In 2013 Lex Greensill was also appointed as a Crown Representative and remained in post until he left Government in 2016. Neither of these roles would be regulated by ACoBA."
+     ]
+    },
+    {
+     "title": "Propriety of Governance in Light of Greensill: An Interim Report - Public Administration and Constitutional Affairs Committee - House of Commons",
+     "url": "https://publications.parliament.uk/pa/cm5802/cmselect/cmpubadm/59/5907.htm",
+     "excerpts": [
+      "In 2012, following an overhaul of Government procurement activity, his role changed to be Chief Commercial Officer and, between 2011 and 2014, he was chair of the Crown Commercial Service, the Cabinet Office agency established to manage Government procurement."
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/officers",
+     "excerpts": [
+      "[CROTHERS, William](https://find-and-update.company-information.service.gov.uk/officers/CN6dPQXrVwGUR9IB0We_WwaDkwY/appointments) Correspondence address One, Southampton Street, Covent Garden, London, WC2R 0LR Role Resigned Director Date of birth November 1960 Appointed on 1 August 2016 Resigned on 4 February 2021 Nationality British Place of residence England"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/persons-with-significant-control",
+     "excerpts": [
+      "**Mr Alexander David Greensill** Active"
+     ]
+    }
+   ],
+   "reasoning": "The sources establish political/government roles and connections to the screened company. They do not provide a formal present-day PEP determination. The answer therefore distinguishes potential exposure for the current PSC from historical exposure of a former director.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 0 Found Name Address Type Program(s) List Score Your search has not returned any results.",
+      "Lookup Results: 31 Found Name Address Type Program(s) List Score GREEN Individual CYBER2 SDN 93 GREEN BIRDS Alihaa; 7020 Entity SDGT SDN 89 GREEN INDUSTRIES, LTD 2/F, Green 18, Phase 2; Hong Kong Science Park; Pak Shek Kok, NT Entity IFSR; NPWMD SDN 87 GREENLAND OIL & GAS TRADING FZE Leased Office Bldg Office No. lF-31; Hamriyah Free Zone Entity IRAN-EO13846 SDN 87 GREENLAND OIL AND GAS TRADING FZE Leased Office Bldg Office No. lF-31; Hamriyah Free Zone Entity IRAN-EO13846 SDN 87 GREEN CHIP LIMITED LIABILITY COMPANY ul."
+     ]
+    },
+    {
+     "title": "FCDO - UK Sanctions List Search - GOV.UK",
+     "url": "https://search-uk-sanctions-list.service.gov.uk/?searchValue=Greensill",
+     "excerpts": [
+      "No results found."
+     ]
+    },
+    {
+     "title": "European Union Consolidated Financial Sanctions List",
+     "url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/pdfFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+     "excerpts": [
+      "EUROPEAN COMMISSION Financial Stability, Financial Services and Capital Markets Union (DG FISMA) **European Union** **Consolidated Financial Sanctions List** **This list has been updated on 23/10/2026 17:05**"
+     ]
+    }
+   ],
+   "reasoning": "The OFAC exact-threshold search returned no results, while the broader search produced candidates that were not fully resolved. The submitted UK search returned no results. The complete EU list was checked for the Greensill name, with no occurrences; its citation identifies the official list and update date rather than a sentence asserting a negative. These are limited name-screen observations, not complete ownership/control clearance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "namesakes_excluded",
+   "citations": [
+    {
+     "title": "Closure of investigation into Mirabella Advisors LLP | FCA",
+     "url": "https://www.fca.org.uk/news/statements/closure-investigation-mirabella-advisors-llp",
+     "excerpts": [
+      "On 4 May 2021, we announced that we had opened an investigation into the oversight of Greensill Capital Securities Limited, an appointed representative, by its principal, Mirabella Advisors LLP. Our investigation reviewed the nature, conduct and scope of Mirabella’s business. We did not identify breaches by Mirabella that require further action. The investigation has therefore now closed."
+     ]
+    }
+   ],
+   "reasoning": "One substantive adverse-media finding was excluded because the FCA investigation concerned Mirabella's oversight of Greensill Capital Securities, not the screened company. Unresolved fuzzy sanctions candidates are disclosed as a limitation and are not counted as conclusively excluded namesakes.",
+   "confidence": "medium"
+  },
+  {
+   "field": "input_name",
+   "citations": [],
+   "reasoning": "The input name is reproduced from the user's task rather than derived from external evidence.",
+   "confidence": "high"
+  },
+  {
+   "field": "people",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/persons-with-significant-control",
+     "excerpts": [
+      "Persons with significant control: 1 active",
+      "Nature of control Has significant influence or control over the trustees of a trust"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/officers",
+     "excerpts": [
+      "Officers: 20 officers / 20 resignations"
+     ]
+    },
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "The affairs, business and property of GCUK and GCMC are being managed by Chris M Laverty, Will G Stagg and Russell Simpson appointed as Joint Administrators on 8 March 2021."
+     ]
+    }
+   ],
+   "reasoning": "The PSC register identifies the active controller and trust-based control. The officers register lists all officers as resigned. The later administrators' report identifies the insolvency officeholders managing the company. Administrator nationalities were not stated and remain null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities",
+   "citations": [
+    {
+     "title": "Lessons from Greensill Capital: Sixth Report of Session 2021–22 — Treasury Committee",
+     "url": "https://committees.parliament.uk/publications/6800/documents/72205/default/",
+     "excerpts": [
+      "The Greensill group sat outside the Bank’s regulatory perimeter and as such was not subject to prudential regulation by the PRA. The holding company, Greensill Capital Pty Limited, was registered in Australia, although its main operating entity, Greensill Capital (UK) Limited was incorporated in England and Wales. This operating entity did not carry out any activities regulated by the Bank under the Financial Services and Markets Act 2000 (FSMA). The group also owned a bank, Greensill Bank AG, which was domiciled and regulated in Germany and was not authorised to perform any regulated activities in the UK.87"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL MANAGEMENT COMPANY (UK) LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08037769",
+     "excerpts": [
+      "GREENSILL CAPITAL MANAGEMENT COMPANY (UK) LIMITED Company number **08037769**"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL SECURITIES LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/09595415",
+     "excerpts": [
+      "GREENSILL CAPITAL SECURITIES LIMITED Company number **09595415**"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL INVESTMENTS LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/10489840",
+     "excerpts": [
+      "GREENSILL CAPITAL INVESTMENTS LIMITED Company number **10489840**"
+     ]
+    }
+   ],
+   "reasoning": "Parliament identifies the Australian holding company and German bank. Separate Companies House records identify the UK entities. No foreign registry identifiers or ownership relationship for Investments were established, so those gaps are explicit.",
+   "confidence": "medium"
+  },
+  {
+   "field": "risk_rating",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173",
+     "excerpts": [
+      "Company status In Administration"
+     ]
+    },
+    {
+     "title": "Lex Greensill to be disqualified from acting as a company director in the UK for nine years - GOV.UK",
+     "url": "https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years",
+     "excerpts": [
+      "Lex Greensill will be banned as a company director in the UK for nine years after agreeing to be disqualified following an investigation by the Insolvency Service.",
+      "Lex Greensill also caused or allowed Greensill Capital (UK) Limited to use $440 million received in November 2020 for purposes other than redeeming the notes owed to the Credit Suisse fund. The notes all defaulted when they fell due, resulting in a loss of $440 million to the Credit Suisse fund. His conduct breached his legal duty under the Companies Act 2006 to exercise reasonable care, skill and diligence as a company director."
+     ]
+    }
+   ],
+   "reasoning": "Administration and established director misconduct involving a substantial loss support a high-risk assessment independently of unproven allegations. The rating is an analytical judgment, not a classification stated by a source.",
+   "confidence": "medium"
+  },
+  {
+   "field": "registration",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173",
+     "excerpts": [
+      "GREENSILL CAPITAL (UK) LIMITED Company number **08126173**",
+      "Registered office address C/O Grant Thornton Uk Advisory & Tax Llp, 11th Floor Landmark St Peters Square, 1 Oxford Street, Manchester, M1 4PB Company status In Administration",
+      "Incorporated on 2 July 2012"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED - LEI 2138004D9J9DZUANAI93",
+     "url": "https://www.gleif.org/lei/2138004D9J9DZUANAI93",
+     "excerpts": [
+      "LEI Code: 2138004D9J9DZUANAI93",
+      "Its LEI registration is LAPSED and its entity status is ACTIVE."
+     ]
+    },
+    {
+     "title": "Lessons from Greensill Capital: Sixth Report of Session 2021–22 — Treasury Committee",
+     "url": "https://committees.parliament.uk/publications/6800/documents/72205/default/",
+     "excerpts": [
+      "The Greensill group sat outside the Bank’s regulatory perimeter and as such was not subject to prudential regulation by the PRA. The holding company, Greensill Capital Pty Limited, was registered in Australia, although its main operating entity, Greensill Capital (UK) Limited was incorporated in England and Wales. This operating entity did not carry out any activities regulated by the Bank under the Financial Services and Markets Act 2000 (FSMA). The group also owned a bank, Greensill Bank AG, which was domiciled and regulated in Germany and was not authorised to perform any regulated activities in the UK.87"
+     ]
+    }
+   ],
+   "reasoning": "Companies House supplies the legal name, number, incorporation date, registered address and administration status. GLEIF supplies the matching LEI and its lapsed registration status. Parliament explicitly identifies incorporation in England and Wales. GLEIF ACTIVE describes legal existence and is not substituted for the registry's insolvency status.",
+   "confidence": "high"
+  },
+  {
+   "field": "adverse_media",
+   "citations": [
+    {
+     "title": "Lex Greensill to be disqualified from acting as a company director in the UK for nine years - GOV.UK",
+     "url": "https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years",
+     "excerpts": [
+      "Lex Greensill also caused or allowed Greensill Capital (UK) Limited to use $440 million received in November 2020 for purposes other than redeeming the notes owed to the Credit Suisse fund. The notes all defaulted when they fell due, resulting in a loss of $440 million to the Credit Suisse fund. His conduct breached his legal duty under the Companies Act 2006 to exercise reasonable care, skill and diligence as a company director."
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED insolvency - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/insolvency",
+     "excerpts": [
+      "Administration started 8 March 2021"
+     ]
+    },
+    {
+     "title": "Microsoft Word - Bluestone - Greensill Complaint 4842-1228-1057 v.8",
+     "url": "https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r7vSvhS8befA/v0",
+     "excerpts": [
+      "things, breach of contract, breach of the covenant of good faith and fair dealing, fraud, breach of fiduciary duties, aiding and abetting breaches of fiduciary duties and civil conspiracy all in"
+     ]
+    },
+    {
+     "title": "Bluestone Resources Inc. v. Greensill Capital (UK) Limited, 1:21-cv-02253 – CourtListener.com",
+     "url": "https://www.courtlistener.com/docket/59734365/bluestone-resources-inc-v-greensill-capital-uk-limited/",
+     "excerpts": [
+      "55 Aug 2, 2022 NOTICE OF VOLUNTARY DISMISSAL WITH PREJUDICE. Plaintiffs hereby voluntarily dismiss the instant case and all claims against all defendants with prejudice. No defendant has filed either an answer to the complaint filed in this action or a motion for summary judgment as to the claims asserted in the complaint and therefore dismissal under Rule 41(a)(1)(A)(i) is appropriate. SO ORDERED. (Signed by Judge Jesse M. Furman on 8/2/22) (yv) (Entered: 08/02/2022)"
+     ]
+    },
+    {
+     "title": "Gupta Family Group (GFG) Alliance - GOV.UK",
+     "url": "https://www.gov.uk/sfo-cases/gupta-family-group-gfg-alliance",
+     "excerpts": [
+      "The SFO is investigating suspected fraud, fraudulent trading and money laundering in relation to the financing and conduct of the business of companies within the Gupta Family Group (GFG) Alliance, including its financing arrangements with Greensill Capital UK Ltd."
+     ]
+    },
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "As updated in the Prior Period, immediately prior to the commencement of GCUK’s IB Proceedings, GFG commenced a Part 7 application against GCUK, GBAG and UBS in the Commercial Court in England on 22 September 2025; in breach of GCUK’s statutory moratorium which was not permitted to be lifted. Accordingly, the Joint Administrators defended the proceedings and following an interlocutory hearing to determine jurisdiction, judgment was delivered in GCUK’s favour on 4 February 2026 ruling that the dispute should be determined in the Australian courts. As such, the English proceedings commenced by GFG are stayed until the outcome of the IB Proceedings.",
+      "English insurance proceedings GCUK remains joined to two English insurance court proceedings between investors and insurers. The claim is currently stayed against GCUK for all purposes other than discovery, and the Joint Administrators have agreed the receipt of cost contributions towards its discovery per court orders dated 22 November 2024. During the Period, GCUK has continued to work with its legal advisors regarding documents available for discovery, as instructed by the Court, and commence the discovery process. As with the Australian proceedings, we continue to update the Committee on the progress of the proceedings. We expect the majority of this discovery work to complete in the Following Period.",
+      "CBILS/CLBILS GBAG has issued legal proceedings against the Secretary of State for Business and Trade in respect of its CBILs and CLBILs investments and underlying guarantees. GCUK (as the accredited lender of the CBILs and CLBILs) has been joined as a defendant to those proceedings and we are required to provide discovery. The disclosure process has continued in the Period, and we anticipate the majority of this discovery work will be completed in the Following Period. We continue to ensure that, to the extent possible, GCUK’s reasonable costs of providing disclosure are paid for by GBAG."
+     ]
+    }
+   ],
+   "reasoning": "The sources establish the disqualification, insolvency, complaint and dismissal, financing-related investigation and specific civil proceedings involving the UK company. The answer separates admissions and outcomes from allegations and dates the civil-status information to the administrators' reporting period.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.0",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/persons-with-significant-control",
+     "excerpts": [
+      "**Mr Alexander David Greensill** Active",
+      "Date of birth December 1976 Nationality British Place of residence United Kingdom",
+      "Nature of control Has significant influence or control over the trustees of a trust"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/officers",
+     "excerpts": [
+      "Resigned on 17 June 2026 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "The PSC register names Greensill as active and British and describes influence or control over trust trustees. The officers register separately records his resignation date.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.1",
+   "citations": [
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "The affairs, business and property of GCUK and GCMC are being managed by Chris M Laverty, Will G Stagg and Russell Simpson appointed as Joint Administrators on 8 March 2021.",
+      "Chris M Laverty Joint Administrator 29 September 2026"
+     ]
+    }
+   ],
+   "reasoning": "The report names Chris M Laverty as a joint administrator and gives the signing date. Nationality is not stated.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.2",
+   "citations": [
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "The affairs, business and property of GCUK and GCMC are being managed by Chris M Laverty, Will G Stagg and Russell Simpson appointed as Joint Administrators on 8 March 2021."
+     ]
+    }
+   ],
+   "reasoning": "The administrators' report names Will G Stagg among the managing joint administrators. Nationality is not stated.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.3",
+   "citations": [
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "The affairs, business and property of GCUK and GCMC are being managed by Chris M Laverty, Will G Stagg and Russell Simpson appointed as Joint Administrators on 8 March 2021."
+     ]
+    }
+   ],
+   "reasoning": "The administrators' report names Russell Simpson among the managing joint administrators. Nationality is not stated.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep.0",
+   "citations": [
+    {
+     "title": "Written evidence from The Transparency International UK (PGG14) The Public Administration and Constitutional Affairs Committee Propriety of governance in light",
+     "url": "https://committees.parliament.uk/writtenevidence/35591/pdf",
+     "excerpts": [
+      "39\\. Lex Greensill, the founder of Lex Capital, also held roles in Government. From 2012 to 2015 he was an adviser to David Cameron’s Government. Although there was apparently no contract and he was unpaid, he was given a security pass for both the Cabinet Office and Downing Street, as well as a business card stating that he was an adviser with direct contact details for Number 10 Downing Street, which would certainly give the impression of having a formal role within Government. In October 2012, Prime Minister David Cameron announced that the government supports Greensill’s initiative to encourage large companies to use supply chain finance (SCF) to enable their suppliers to access low-cost credit. ²⁰ In 2013 Lex Greensill was also appointed as a Crown Representative and remained in post until he left Government in 2016. Neither of these roles would be regulated by ACoBA."
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED persons with significant control - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/persons-with-significant-control",
+     "excerpts": [
+      "**Mr Alexander David Greensill** Active"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/officers",
+     "excerpts": [
+      "Resigned on 17 June 2026 Nationality British"
+     ]
+    }
+   ],
+   "reasoning": "Transparency International's parliamentary evidence describes the governmental adviser and Crown Representative roles. Companies House establishes the current PSC and former directorship. Formal PEP classification remains unconfirmed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep.1",
+   "citations": [
+    {
+     "title": "Propriety of Governance in Light of Greensill: An Interim Report - Public Administration and Constitutional Affairs Committee - House of Commons",
+     "url": "https://publications.parliament.uk/pa/cm5802/cmselect/cmpubadm/59/5907.htm",
+     "excerpts": [
+      "In 2012, following an overhaul of Government procurement activity, his role changed to be Chief Commercial Officer and, between 2011 and 2014, he was chair of the Crown Commercial Service, the Cabinet Office agency established to manage Government procurement.",
+      "Between September and late November 2015, whilst still a serving civil servant, Mr Crothers held a part time advisory role with Greensill Capital. At the end of November 2015, he left the Civil Service, becoming a consultant and continuing his advisory work with Greensill Capital. In late 2016, he became a director with Greensill Capital. He did not apply to the Advisory Committee on Business Appointments (ACOBA) before commencing his work with Greensill Capital in 2015 nor when his role for them changed even though, under the Business Appointment Rules (BARs), he should have consulted ACOBA regarding commercial appointments for two years after leaving the Civil Service."
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED people - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/officers",
+     "excerpts": [
+      "[CROTHERS, William](https://find-and-update.company-information.service.gov.uk/officers/CN6dPQXrVwGUR9IB0We_WwaDkwY/appointments) Correspondence address One, Southampton Street, Covent Garden, London, WC2R 0LR Role Resigned Director Date of birth November 1960 Appointed on 1 August 2016 Resigned on 4 February 2021 Nationality British Place of residence England"
+     ]
+    }
+   ],
+   "reasoning": "Parliament describes Crothers' senior government posts and transition to Greensill. The company officers record establishes his former directorship. The answer does not treat him as a current director or assert a current formal PEP determination.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.0",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 0 Found Name Address Type Program(s) List Score Your search has not returned any results.",
+      "SDN List last updated on: 11/6/2026 2:33:11 PM Non-SDN List last",
+      "Lookup Results: 31 Found Name Address Type Program(s) List Score GREEN Individual CYBER2 SDN 93 GREEN BIRDS Alihaa; 7020 Entity SDGT SDN 89 GREEN INDUSTRIES, LTD 2/F, Green 18, Phase 2; Hong Kong Science Park; Pak Shek Kok, NT Entity IFSR; NPWMD SDN 87 GREENLAND OIL & GAS TRADING FZE Leased Office Bldg Office No. lF-31; Hamriyah Free Zone Entity IRAN-EO13846 SDN 87 GREENLAND OIL AND GAS TRADING FZE Leased Office Bldg Office No. lF-31; Hamriyah Free Zone Entity IRAN-EO13846 SDN 87 GREEN CHIP LIMITED LIABILITY COMPANY ul. Butyrskii Val d. 68, pomeshch. 1/4 Entity RUSSIA-EO14024 SDN 86 GREEN LEAF TRADING LLC P.O. Box 56351 Entity SDNTK SDN 86 GREEN DISTRICT B.V. Huygensstraat 42; JM Entity ILLICIT-DRUGS-EO14059 SDN 85 GREEN WAVE 8, 12, 9, Menara Mutiara, Bangsar; Jalan Liku, Off Jalan Bangsar Entity IFSR; NPWMD SDN 85 GREEN LEAF GENERAL TRADING LLC P.O. Box 56351 Entity SDNTK SDN 84 GREENWAVE TELECOM 8, 12, 9, Menara Mutiara, Bangsar; Jalan Liku, Off Jalan Bangsar Entity IFSR; NPWMD SDN 84 GREEN ALPINE TRADING, LLC Entity NPWMD SDN 83 GREEN ENERGY CHEMICALS KOZAN Industrial Area, Guneri Mahallesi OSB 8 Sokak No: 7 Kozan Entity IRAN-EO13902 SDN 83 GREEN ENERGY CHEMICALS ENERJI KIMYASALLARI SANAYI TICARET ANONIM SIRKETI KOZAN Industrial Area, Guneri Mahallesi OSB 8 Sokak No: 7 Kozan Entity IRAN-EO13902 SDN 83 GREEN GARDEN TRADING LTD 2nd Floor, Allied Building Annex, Francis Rachel Street Entity IRAN-EO13902 SDN 83 GREEN LIGHT COMPUTER CO Deira Al Khabeesi Entity IFSR; SDGT SDN 83 GREEN WAVE TECHNOLOGIES 8, 12, 9, Menara Mutiara, Bangsar; Jalan Liku, Off Jalan Bangsar Entity IFSR; NPWMD SDN 83 GREEN WITHOUT BORDERS Property No. 335, Section No. 13, Ground Floor Entity SDGT SDN 83 GREEND INTERNATIONAL TRADING LIMITED Rm 1406B; 14/F; The Belgian Bank Building Entity IRAN-EO13902 SDN 83 GREEN AGROPACIFIC S.P.R. DE R.L. DE C.V. Entity ILLICIT-DRUGS-EO14059; SDGT SDN 82 GREEN LIGHT COMPUTER CO LLC Deira Al Khabeesi Entity IFSR; SDGT SDN 82 GREEN WAVE TELECOMMUNICATION 8, 12, 9, Menara Mutiara, Bangsar; Jalan Liku, Off Jalan Bangsar Entity IFSR; NPWMD SDN 82 GREENBAY MULTI MEDIA PTE LTD 2 Jalan Kilang Barat, #08-01 Entity TCO SDN 82 GREENBAY PROPERTIES CO. LTD. Entity TCO SDN 82 GREENBAY PROPERTIES PTE. LTD. Entity TCO SDN 82 GREEN CAR RENT LIMITED PARTNERSHIP 445/11 Soi Ramkamhaeng, 39 Lat Phrao Road; Wang Thong Lang; Bang Kapi district Entity SDNTK SDN 81 GREEN ENERGY SOLUTIONS PROJECT MANAGEMENT SERVICES SOLE PROPRIETORSHIP LLC East 40 Al Sa'adah Entity RUSSIA-EO14024 SDN 81 GREEN INDUSTRIES HONG KONG LIMITED 2/F, Green 18, Phase 2; Hong Kong Science Park; Pak Shek Kok, NT Entity IFSR; NPWMD SDN 81 GREEN PINE ASSOCIATED CORPORATION c/o Reconnaissance General Bureau Headquarters; Hyongjesan-Guyok Entity DPRK SDN 81 GREEN WAVE COMPANY 8, 12, 9, Menara Mutiara, Bangsar; Jalan Liku, Off Jalan Bangsar Entity IFSR; NPWMD SDN 81 GREEN WAVE TELECOMMUNICATION SDN BHD 8, 12, 9, Menara Mutiara, Bangsar; Jalan Liku, Off Jalan Bangsar Entity IFSR; NPWMD SDN 81"
+     ]
+    }
+   ],
+   "reasoning": "The submitted exact-threshold SDN search returned zero results; the broader fuzzy search returned 31 candidates. The retained form values confirmed the Greensill query and SDN selection. Because the broader candidates were not fully resolved, the answer reports no confirmed match rather than sanctions clearance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.1",
+   "citations": [
+    {
+     "title": "FCDO - UK Sanctions List Search - GOV.UK",
+     "url": "https://search-uk-sanctions-list.service.gov.uk/?searchValue=Greensill",
+     "excerpts": [
+      "No results found."
+     ]
+    }
+   ],
+   "reasoning": "The official results page for the submitted Greensill query displays no results. This supports the limited name-screen statement only.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.2",
+   "citations": [
+    {
+     "title": "European Union Consolidated Financial Sanctions List",
+     "url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/pdfFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+     "excerpts": [
+      "EUROPEAN COMMISSION Financial Stability, Financial Services and Capital Markets Union (DG FISMA) **European Union** **Consolidated Financial Sanctions List** **This list has been updated on 23/10/2026 17:05**",
+      "The present document contains the Consolidated List of persons, groups and entities subject, under EU Sanctions, to an asset freeze and the prohibition to make funds and economic resources available to them."
+     ]
+    }
+   ],
+   "reasoning": "The official document identifies the consolidated list and its update date. Its complete text, with page markers through the final page, contained no Greensill occurrence. This supports a name-screen negative, not a complete beneficial-ownership determination.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.0",
+   "citations": [
+    {
+     "title": "Lessons from Greensill Capital: Sixth Report of Session 2021–22 — Treasury Committee",
+     "url": "https://committees.parliament.uk/publications/6800/documents/72205/default/",
+     "excerpts": [
+      "The Greensill group sat outside the Bank’s regulatory perimeter and as such was not subject to prudential regulation by the PRA. The holding company, Greensill Capital Pty Limited, was registered in Australia, although its main operating entity, Greensill Capital (UK) Limited was incorporated in England and Wales. This operating entity did not carry out any activities regulated by the Bank under the Financial Services and Markets Act 2000 (FSMA). The group also owned a bank, Greensill Bank AG, which was domiciled and regulated in Germany and was not authorised to perform any regulated activities in the UK.87"
+     ]
+    }
+   ],
+   "reasoning": "Parliament identifies Greensill Capital Pty Limited as the Australian holding company and the UK company as the main operating entity. No foreign registry number was established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.1",
+   "citations": [
+    {
+     "title": "Lessons from Greensill Capital: Sixth Report of Session 2021–22 — Treasury Committee",
+     "url": "https://committees.parliament.uk/publications/6800/documents/72205/default/",
+     "excerpts": [
+      "The Greensill group sat outside the Bank’s regulatory perimeter and as such was not subject to prudential regulation by the PRA. The holding company, Greensill Capital Pty Limited, was registered in Australia, although its main operating entity, Greensill Capital (UK) Limited was incorporated in England and Wales. This operating entity did not carry out any activities regulated by the Bank under the Financial Services and Markets Act 2000 (FSMA). The group also owned a bank, Greensill Bank AG, which was domiciled and regulated in Germany and was not authorised to perform any regulated activities in the UK.87"
+     ]
+    }
+   ],
+   "reasoning": "The report identifies Greensill Bank AG as a group-owned German bank, not the screened UK company. No foreign registry number was established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.2",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL MANAGEMENT COMPANY (UK) LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08037769",
+     "excerpts": [
+      "GREENSILL CAPITAL MANAGEMENT COMPANY (UK) LIMITED Company number **08037769**",
+      "Company status In Administration"
+     ]
+    },
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "Greensill Capital (UK) Limited Greensill Capital Management Company (UK) Limited - Both in administration"
+     ]
+    }
+   ],
+   "reasoning": "Companies House provides the separate company's identity, number and status. The joint report establishes administration alongside GCUK without requiring an inferred ownership relationship.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.3",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL SECURITIES LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/09595415",
+     "excerpts": [
+      "GREENSILL CAPITAL SECURITIES LIMITED Company number **09595415**",
+      "Company status Dissolved"
+     ]
+    },
+    {
+     "title": "Closure of investigation into Mirabella Advisors LLP | FCA",
+     "url": "https://www.fca.org.uk/news/statements/closure-investigation-mirabella-advisors-llp",
+     "excerpts": [
+      "On 4 May 2021, we announced that we had opened an investigation into the oversight of Greensill Capital Securities Limited, an appointed representative, by its principal, Mirabella Advisors LLP."
+     ]
+    }
+   ],
+   "reasoning": "Companies House provides the distinct identity and dissolved status. The FCA identifies its appointed-representative relationship with Mirabella.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.4",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL INVESTMENTS LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/10489840",
+     "excerpts": [
+      "GREENSILL CAPITAL INVESTMENTS LIMITED Company number **10489840**",
+      "Company status Dissolved"
+     ]
+    }
+   ],
+   "reasoning": "The registry establishes a separate similarly named UK entity and dissolved status. No ownership relationship is asserted.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.0",
+   "citations": [
+    {
+     "title": "Lex Greensill to be disqualified from acting as a company director in the UK for nine years - GOV.UK",
+     "url": "https://www.gov.uk/government/news/lex-greensill-to-be-disqualified-from-acting-as-a-company-director-in-the-uk-for-nine-years",
+     "excerpts": [
+      "From: [The Insolvency Service](https://www.gov.uk/government/organisations/insolvency-service) Published: 4 June 2026",
+      "Lex Greensill caused the three Greensill companies to enter transactions that removed the legal protections underpinning the Credit Suisse fund’s investment in late 2020. The transactions meant that the receivables no longer required payment, security held against those receivables was released, and the payment obligations supporting the fund’s trade credit insurance were cancelled. The transactions were entered into without the written consents required. Lex Greensill also caused or allowed Greensill Capital (UK) Limited to use $440 million received in November 2020 for purposes other than redeeming the notes owed to the Credit Suisse fund. The notes all defaulted when they fell due, resulting in a loss of $440 million to the Credit Suisse fund. His conduct breached his legal duty under the Companies Act 2006 to exercise reasonable care, skill and diligence as a company director.",
+      "A six-week trial was due to begin on Monday 8 June, but Lex Greensill signed a disqualification undertaking – a legally-binding agreement where directors do not dispute certain facts (for the purposes of the disqualification proceedings only) to end court action. The disqualification undertaking was accepted by the Secretary of State for Business and Trade on Tuesday 2 June and his ban comes into effect on Tuesday 23 June.",
+      "Financier to be banned until June 2035",
+      "Lex Greensill will be banned as a company director in the UK for nine years after agreeing to be disqualified following an investigation by the Insolvency Service."
+     ]
+    }
+   ],
+   "reasoning": "The official announcement establishes the publication date, admitted misconduct, direct UK-company use of the funds, resulting loss, nine-year undertaking and its acceptance/commencement. It is not presented as a criminal conviction or completed trial judgment.",
+   "confidence": "high"
+  },
+  {
+   "field": "adverse_media.1",
+   "citations": [
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED insolvency - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/insolvency",
+     "excerpts": [
+      "Administration started 8 March 2021"
+     ]
+    },
+    {
+     "title": "GREENSILL CAPITAL (UK) LIMITED overview - Find and update company information - GOV.UK",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173",
+     "excerpts": [
+      "Company status In Administration"
+     ]
+    },
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "The administrations were extended by order of the High Court on 4 September 2026 for a further 24 months and are now due to end on 7 September 2028."
+     ]
+    }
+   ],
+   "reasoning": "The national registry provides the start and continuing administration status; the latest report provides the extension date. Severity is an analytical KYC assessment.",
+   "confidence": "high"
+  },
+  {
+   "field": "adverse_media.2",
+   "citations": [
+    {
+     "title": "Microsoft Word - Bluestone - Greensill Complaint 4842-1228-1057 v.8",
+     "url": "https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r7vSvhS8befA/v0",
+     "excerpts": [
+      "_Plaintiffs._ v. GREENSILL CAPITAL (UK) LIMITED, LEX GREENSILL, ROLAND HARTLEY-URQUHART _Defendants_ .",
+      "Case 1:21-cv-02253 Document 1 Filed 03/15/21 Page 1 of 45",
+      "things, breach of contract, breach of the covenant of good faith and fair dealing, fraud, breach of fiduciary duties, aiding and abetting breaches of fiduciary duties and civil conspiracy all in"
+     ]
+    },
+    {
+     "title": "Bluestone Resources Inc. v. Greensill Capital (UK) Limited, 1:21-cv-02253 – CourtListener.com",
+     "url": "https://www.courtlistener.com/docket/59734365/bluestone-resources-inc-v-greensill-capital-uk-limited/",
+     "excerpts": [
+      "Jul 1, 2022 ORDER OF DISMISSAL... It is ORDERED that the above-entitled action be and is hereby DISMISSED and discontinued without costs, and without prejudice to the right to reopen the action within sixty days if the settlement agreement is not consummated or if there exists another reason that the Court should keep the case open. To be clear, any application to reopen must be filed by the aforementioned deadline; any application to reopen filed thereafter may be denied solely on that basis. Further, requests to extend the deadline to reopen are unlikely to be granted. If the parties wish for the Court to retain jurisdiction for the purposes of enforcing any settlement agreement, they must submit the settlement agreement to the Court by the deadline to reopen to be \"so ordered\" by the Court. Per Paragraph 4(B) of the Court's Individual Rules and Practices for Civil Cases, unless the Court orders otherwise, the Court will not retain jurisdiction to enforce a settlement agreement unless it is made part of the public record. Any pending motions are moot. All conferences are canceled. The Clerk of Court is directed to close the case. SO ORDERED. (Signed by Judge Jesse M. Furman on 7/1/22) (yv) (Entered: 07/01/2022)",
+      "55 Aug 2, 2022 NOTICE OF VOLUNTARY DISMISSAL WITH PREJUDICE. Plaintiffs hereby voluntarily dismiss the instant case and all claims against all defendants with prejudice. No defendant has filed either an answer to the complaint filed in this action or a motion for summary judgment as to the claims asserted in the complaint and therefore dismissal under Rule 41(a)(1)(A)(i) is appropriate. SO ORDERED. (Signed by Judge Jesse M. Furman on 8/2/22) (yv) (Entered: 08/02/2022)"
+     ]
+    }
+   ],
+   "reasoning": "The complaint names the screened company and states the allegations and filing date. The docket records settlement-related dismissal followed by voluntary dismissal with prejudice. No merits finding is inferred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.3",
+   "citations": [
+    {
+     "title": "Gupta Family Group (GFG) Alliance - GOV.UK",
+     "url": "https://www.gov.uk/sfo-cases/gupta-family-group-gfg-alliance",
+     "excerpts": [
+      "The SFO is investigating suspected fraud, fraudulent trading and money laundering in relation to the financing and conduct of the business of companies within the Gupta Family Group (GFG) Alliance, including its financing arrangements with Greensill Capital UK Ltd.",
+      "Case state: [Open](https://www.gov.uk/sfo-cases?sfo_case_state=open) Date announced: 14 May 2021",
+      "27 Apr 2022 – SFO investigators visit addresses around the UK linked with the GFG Alliance."
+     ]
+    }
+   ],
+   "reasoning": "The SFO explicitly links the GFG investigation to financing arrangements with Greensill Capital UK. The answer retains the distinction between the investigation's GFG targets and the screened counterparty, and does not infer charges or guilt.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.4",
+   "citations": [
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "In this regard, in September 2025 we initiated proceedings in Australia (in the Prior Period) to determine the validity of GCUK’s security over LHA, which was subsequently extended to determine the validity of GCUK’s security over MDR (the IB Proceedings). During the Period the IB Proceedings were also extended to address security that we became aware that LHA had granted to LCUK, which was then subsequently transferred to LCIL. The proceedings were extended to cover LCUK and LCIL given this security was granted in breach of GCUK’s security. These proceedings continue to progress, with substantive work to prepare for the trial over the Period and this matter was due to be heard in early September 2026. However, the substantive hearing in the IB Proceedings has been deferred on the basis of an application from LHA and MDR and will now take place in November 2026\\.",
+      "As updated in the Prior Period, immediately prior to the commencement of GCUK’s IB Proceedings, GFG commenced a Part 7 application against GCUK, GBAG and UBS in the Commercial Court in England on 22 September 2025; in breach of GCUK’s statutory moratorium which was not permitted to be lifted. Accordingly, the Joint Administrators defended the proceedings and following an interlocutory hearing to determine jurisdiction, judgment was delivered in GCUK’s favour on 4 February 2026 ruling that the dispute should be determined in the Australian courts. As such, the English proceedings commenced by GFG are stayed until the outcome of the IB Proceedings.",
+      "Proposals The Joint Administrators’ proposals dated 28 April 2021 Reporting Date 7 September 2026"
+     ]
+    }
+   ],
+   "reasoning": "The administrators describe the Australian security dispute, the English action, jurisdiction outcome and stay. The answer dates status to the report rather than assuming the scheduled November hearing has occurred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.5",
+   "citations": [
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "Legal proceedings Australian insurance proceedings GCUK continues to remain an inactive party to Australian insurance court proceedings. During the Period, GCUK has continued working with its legal advisors to provide discovery as instructed by the Australian Court. As detailed in the prior period, the Joint Administrators secured cost coverage from the active parties to ensure any cost burden to the Administration is minimised; and we continue to recover reimbursement in respect of our remuneration on a monthly basis for time costs incurred since 14 August 2024. We continue to work with our legal advisors in respect of GCUK’s ongoing participation in the proceedings, as well as a court referee who was instructed to provide support to the recovery process.",
+      "English insurance proceedings GCUK remains joined to two English insurance court proceedings between investors and insurers. The claim is currently stayed against GCUK for all purposes other than discovery, and the Joint Administrators have agreed the receipt of cost contributions towards its discovery per court orders dated 22 November 2024. During the Period, GCUK has continued to work with its legal advisors regarding documents available for discovery, as instructed by the Court, and commence the discovery process. As with the Australian proceedings, we continue to update the Committee on the progress of the proceedings. We expect the majority of this discovery work to complete in the Following Period.",
+      "Proposals The Joint Administrators’ proposals dated 28 April 2021 Reporting Date 7 September 2026"
+     ]
+    }
+   ],
+   "reasoning": "The report directly establishes GCUK's participation and disclosure obligations in the Australian and English insurance proceedings. No liability finding is supplied, and the answer does not infer one.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.6",
+   "citations": [
+    {
+     "title": "Filing History",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08126173/filing-history/MzU0ODIyNDY1N2FkaXF6a2N4/document?format=pdf&download=0",
+     "excerpts": [
+      "CBILS/CLBILS GBAG has issued legal proceedings against the Secretary of State for Business and Trade in respect of its CBILs and CLBILs investments and underlying guarantees. GCUK (as the accredited lender of the CBILs and CLBILs) has been joined as a defendant to those proceedings and we are required to provide discovery. The disclosure process has continued in the Period, and we anticipate the majority of this discovery work will be completed in the Following Period. We continue to ensure that, to the extent possible, GCUK’s reasonable costs of providing disclosure are paid for by GBAG.",
+      "Proposals The Joint Administrators’ proposals dated 28 April 2021 Reporting Date 7 September 2026"
+     ]
+    }
+   ],
+   "reasoning": "The administrators identify the government-guarantee proceedings, GCUK's role as accredited lender and joined defendant, and continuing disclosure. The date is the report's status date, not an invented commencement date.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
 }

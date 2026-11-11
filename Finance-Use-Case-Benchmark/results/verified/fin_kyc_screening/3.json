@@ -1,0 +1,2244 @@
+{
+ "sub_use_case": "fin_kyc_screening",
+ "input_n": 3,
+ "task": "Run a KYC screen on Binance in France",
+ "labels": {
+  "gpt": "A",
+  "parallel": "B",
+  "exa": "C",
+  "firecrawl": "D",
+  "opus": "E",
+  "nimble": "F"
+ },
+ "unit": "KYC fact",
+ "evidence_pages": 71,
+ "evidence_fetched": 70,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 86,
+ "judge": "v4b",
+ "judge_cost_usd": 2.146,
+ "corrections_v2": {
+  "units_before": 87,
+  "units_after": 59,
+  "dedup_groups": [
+   {
+    "kept": "c3",
+    "merged": [
+     "c4"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c12"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c15",
+     "c16"
+    ]
+   },
+   {
+    "kept": "c17",
+    "merged": [
+     "c76",
+     "c77",
+     "c78",
+     "c79"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19",
+     "c20",
+     "c21"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23"
+    ]
+   },
+   {
+    "kept": "c30",
+    "merged": [
+     "c29",
+     "c31"
+    ]
+   },
+   {
+    "kept": "c41",
+    "merged": [
+     "c43"
+    ]
+   },
+   {
+    "kept": "c44",
+    "merged": [
+     "c45",
+     "c47"
+    ]
+   },
+   {
+    "kept": "c42",
+    "merged": [
+     "c46"
+    ]
+   },
+   {
+    "kept": "c53",
+    "merged": [
+     "c54",
+     "c55"
+    ]
+   },
+   {
+    "kept": "c61",
+    "merged": [
+     "c62",
+     "c63"
+    ]
+   },
+   {
+    "kept": "c64",
+    "merged": [
+     "c65"
+    ]
+   },
+   {
+    "kept": "c66",
+    "merged": [
+     "c67",
+     "c68"
+    ]
+   },
+   {
+    "kept": "c85",
+    "merged": [
+     "c40"
+    ]
+   }
+  ],
+  "cost": 0.035
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Legal name is BINANCE FRANCE SAS.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "BINANCE FRANCE SAS legal name is BINANCE FRANCE SAS.",
+    "B": "BINANCE FRANCE SAS legal name is BINANCE FRANCE SAS.",
+    "C": "BINANCE FRANCE SAS has legal name BINANCE FRANCE SAS.",
+    "D": "The legal name of the screened entity (Binance in France) is BINANCE FRANCE SAS.",
+    "E": "Binance France SAS: legal name is BINANCE FRANCE SAS.",
+    "F": "Binance France SAS legal name is BINANCE FRANCE SAS."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+    "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Registry number is SIREN 905060109 (RCS Paris).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "BINANCE FRANCE SAS registry number is 905060109.",
+    "B": "BINANCE FRANCE SAS registry number is 905060109 (SIREN / RCS Paris).",
+    "C": "BINANCE FRANCE SAS has registry number 905060109 (SIREN; RCS Paris).",
+    "D": "BINANCE FRANCE SAS has French registry number (SIREN) 905060109.",
+    "E": "Binance France SAS: registry number SIREN 905060109 (head office SIRET 90506010900022; EU VAT FR86905060109).",
+    "F": "Binance France SAS registry number is SIREN 905 060 109 (RCS Paris; SIRET siège 905 060 109 00022)."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+    "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "LEI is 969500IHGTBN0TLO0129.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "BINANCE FRANCE SAS LEI is 969500IHGTBN0TLO0129.",
+    "D": "BINANCE FRANCE SAS has LEI 969500IHGTBN0TLO0129.",
+    "E": "Binance France SAS: LEI 969500IHGTBN0TLO0129 (GLEIF registration status LAPSED, entity status ACTIVE; first registered 2023-04-14; as of 2026-11-10).",
+    "F": "Binance France SAS has LEI 969500IHGTBN0TLO0129; LEI registration status is LAPSED (next renewal 2026-04-20, NON_CONFORMING)."
+   },
+   "urls": [
+    "https://pappers.fr/entreprise/binance-france-sas-905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+    "https://www.pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Entity status is ACTIVE but LEI registration status is LAPSED.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "BINANCE FRANCE SAS is an active legal entity, but its LEI registration is LAPSED (GLEIF last updated 2026-10-21; screen as of 2026-11-04).",
+    "D": "The LEI record for BINANCE FRANCE SAS (969500IHGTBN0TLO0129) shows the entity status as ACTIVE, but the LEI registration status as LAPSED."
+   },
+   "urls": [
+    "https://annuaire-entreprises.data.gouv.fr/entreprise/binance-france-sas-905060109",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Jurisdiction is France.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "BINANCE FRANCE SAS jurisdiction is France.",
+    "B": "BINANCE FRANCE SAS jurisdiction is France.",
+    "C": "BINANCE FRANCE SAS jurisdiction is France.",
+    "D": "BINANCE FRANCE SAS is registered in the jurisdiction of France.",
+    "E": "Binance France SAS: jurisdiction is France; legal form société par actions simplifiée (code 5710).",
+    "F": "Binance France SAS jurisdiction is France (registered with the Registre du commerce et des sociétés de Paris; validated by INSEE/Sirene)."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+    "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Incorporation/creation date is 2021-11-03 (RCS/RNE registration 2021-11-08 noted separately by some).",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "BINANCE FRANCE SAS was created on 2021-11-03, with first RNE/RCS registration on 2021-11-08.",
+    "D": "BINANCE FRANCE SAS was incorporated on 2021-11-03.",
+    "E": "Binance France SAS: incorporation date 2021-11-03.",
+    "F": "Binance France SAS incorporation date is 2021-11-03 (first INSEE registration 03/11/2021; RCS Paris registration 08/11/2021)."
+   },
+   "urls": [
+    "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Incorporation (first registration) date is 2021-11-08; 2021-11-03 is given separately as formation/commencement of activity.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "BINANCE FRANCE SAS incorporation (RNE registration) date is 2021-11-08; the registry separately records commencement of activity on 2021-11-03.",
+    "C": "BINANCE FRANCE SAS incorporation date (first registration) is 2021-11-08; the company-data page separately gives formation/creation as 2021-11-03."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109"
+   ],
+   "conflicts_with": [
+    "c9"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Registered address is 1 rue de Stockholm, 75008 Paris, France.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "BINANCE FRANCE SAS registered address is 1 RUE DE STOCKHOLM, 75008 PARIS 8E ARRONDISSEMENT, FRANCE.",
+    "B": "BINANCE FRANCE SAS registered address is 1 rue de Stockholm, 75008 Paris, France.",
+    "C": "BINANCE FRANCE SAS registered address is 1 rue de Stockholm, 75008 Paris, France.",
+    "D": "The registered address of BINANCE FRANCE SAS is 1 RUE DE STOCKHOLM 75008 PARIS."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Entity shows as active in the French registry.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "BINANCE FRANCE SAS is an active legal entity, but its LEI registration is LAPSED (GLEIF last updated 2026-10-21; screen as of 2026-11-04).",
+    "D": "BINANCE FRANCE SAS has status active in the French registry.",
+    "E": "Binance France SAS: administrative status Active (INSEE status 'A', as of 2026-11-10)."
+   },
+   "urls": [
+    "https://annuaire-entreprises.data.gouv.fr/entreprise/binance-france-sas-905060109",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Registered in the Registre national des entreprises; corporate registration is distinct from authorization to provide regulated crypto-asset services.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "BINANCE FRANCE SAS status: registered in the Registre national des entreprises; corporate registration is distinct from authorization to provide regulated crypto-asset services."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Removed from AMF PSAN register (E2022-037, registered 2022-05-04) on 2026-07-02 as MiCA transitional period ended; no MiCA authorisation as of 2026-11-01.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Binance France SAS: removed from the AMF PSAN register (no. E2022-037, registered 2022-05-04) on 2026-07-02 because the MiCA transitional period ended; no MiCA authorisation as of 2026-11-01."
+   },
+   "urls": [
+    "https://cryptobriefing.com/binance-france-close-accounts-fees-november/",
+    "https://minuitcrypto.com/guides/binance-france-legal-mica-agrement",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109",
+    "https://www.amf-france.org/fr/espace-professionnels/fintech/mes-relations-avec-lamf/prestataire-de-services-sur-crypto-actifs-psca/liste-des-psan-radies",
+    "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c17",
+    "c76",
+    "c77",
+    "c78",
+    "c79"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "David Princay is President of Binance France SAS.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "David Princay is President of BINANCE FRANCE SAS, per current officer records reviewed as of 2026-11-04.",
+    "C": "David PRINCAY is President of BINANCE FRANCE SAS per the registry page reviewed.",
+    "D": "DAVID PRINCAY is Président de SAS of BINANCE FRANCE SAS."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://www.infogreffe.fr/entreprise/a99f822d-7499-4a67-96ae-76639c73fb54",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19",
+    "c20",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Christelle Tang is Directeur général (managing director) of Binance France SAS.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Christelle Tang is Directeur général of Binance France SAS.",
+    "B": "Christelle Tang is Directrice générale (general manager) of BINANCE FRANCE SAS, per current officer records reviewed as of 2026-11-04.",
+    "C": "Christelle TANG is managing director (directeur général) of BINANCE FRANCE SAS per the registry page reviewed.",
+    "D": "CHRISTELLE TANG is Directeur Général of BINANCE FRANCE SAS.",
+    "E": "Binance France SAS officer: Christelle Tang is Managing Director (Directeur Général)."
+   },
+   "urls": [
+    "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+    "https://pappers.fr/entreprise/binance-france-sas-905060109",
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5",
+    "https://www.hatvp.fr/le-repertoire/fiche-organisation/?organisation=905060109",
+    "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "Stéphanie Weber (Cabossioras) is former Directeur général of Binance France SAS (appointed 12/07/2023, resigned 5 March 2024).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Stéphanie WEBER (Cabossioras) is former Directeur général of Binance France SAS (appointed 12/07/2023, resigned 5 March 2024)."
+   },
+   "urls": [
+    "https://pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Arnaud Ventura is Chairman of the supervisory board of Binance France SAS, per HATVP disclosure.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Arnaud Ventura is Chairman of the supervisory board of Binance France SAS, as identified in the company's HATVP disclosure."
+   },
+   "urls": [
+    "https://www.hatvp.fr/fiche-organisation/?organisation=905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Bruno Bézard is a member of the supervisory board of Binance France SAS (French nationality), per his Valeo biography.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Bruno Bézard is a member of the supervisory board of Binance France SAS, per his Valeo biography (French nationality)."
+   },
+   "urls": [
+    "https://www.valeo.com/fr/biographie-de-bruno-bezard/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "RSM Paris (SIREN 792111783) is statutory auditor of Binance France SAS.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Binance France SAS officer: RSM Paris (SIREN 792111783), a French company, is statutory auditor (Commissaire aux comptes titulaire)."
+   },
+   "urls": [
+    "https://recherche-entreprises.api.gouv.fr/search?q=905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Changpeng Zhao is founder, former CEO of Binance (stepped down Nov 2023) and ultimate beneficial owner of ~90% of Binance at group level; not confirmed in French beneficial-owners registry.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Changpeng Zhao (CZ) is founder and former CEO of Binance (stepped down Nov 2023) and ultimate beneficial owner of ~90% of Binance at group level; not confirmed in the French beneficial-owners registry (access restricted since 31/07/2024)."
+   },
+   "urls": [
+    "https://www.cnn.com/2025/10/24/business/binance-zhao-trump-pardon"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Intercorp Holdco SAS (984909093) is sole direct shareholder of Binance France SAS per filed shareholder resolution/minutes of 2024-09-17.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "INTERCORP HOLDCO SAS (registry no. 984909093) is the sole direct shareholder of Binance France SAS identified in the filed shareholder resolution (as of 2024-09-17).",
+    "C": "Intercorp Holdco SAS (registry number 984909093) is the direct sole shareholder of BINANCE FRANCE SAS in filed minutes dated 2024-09-17; current share register not obtained."
+   },
+   "urls": [
+    "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2026-09-2024.pdf",
+    "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c29",
+    "c30",
+    "c31"
+   ]
+  },
+  {
+   "cid": "c32",
+   "claim": "Intercorp Holdco SAS (984909093) is a probable French holding company created 2024-02-20, same address and president; a September 2024 snippet names it sole shareholder (unverified).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Binance France SAS related entity: INTERCORP HOLDCO SAS (SIREN 984909093), probable French holding company, created 2024-02-20, same registered address and same president (David Princay); a snippet of a September 2024 shareholder decision names it sole shareholder (unverified)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Binance Holdings Ltd (Cayman Islands, d/b/a Binance.com) is the ultimate parent group entity of Binance France SAS.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Binance Holdings Ltd (Cayman Islands, d/b/a Binance.com) is the ultimate parent group entity of Binance France SAS."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Binance Holdings Limited (Cayman group entity) is co-defendant with Binance France in a 2022 French investor lawsuit; listed on OpenSanctions for regulator action, not sanctions.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Binance France SAS related entity: Binance Holdings Limited (Cayman Islands group entity), co-defendant with Binance France in a 2022 French investor lawsuit; listed on OpenSanctions for regulator action (US CFTC/OFAC enforcement), not sanctions."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Binance Holdings (IE) Limited (registry no. 704567) was former sole shareholder of Binance France SAS (as of 2024-03-19).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "BINANCE HOLDINGS (IE) LIMITED (registry no. 704567) was the former sole shareholder of Binance France SAS, per the filed shareholder resolution preceding the ownership change (as of 2024-03-19)."
+   },
+   "urls": [
+    "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2015-05-2024.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "BSCN Technologies Services (Germany) GmbH is a subsidiary of Binance France SAS disclosed in accounts for year ended 2025-12-31.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "BSCN Technologies Services (Germany) GmbH is a subsidiary of BINANCE FRANCE SAS disclosed in accounts for year ended 2025-12-31."
+   },
+   "urls": [
+    "https://www.pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "BINANCE DERIVATIVES (913864005) is a distinct French company sharing president David Princay.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "BINANCE DERIVATIVES (registry no. 913864005) is a distinct French company sharing president David Princay with Binance France SAS."
+   },
+   "urls": [
+    "https://www.pappers.fr/dirigeant/david_princay_1987-12"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "BINANCE DERIVATIVES CONNECT (980585897) is a distinct French company sharing president David Princay.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "BINANCE DERIVATIVES CONNECT (registry no. 980585897) is a distinct French company sharing president David Princay with Binance France SAS."
+   },
+   "urls": [
+    "https://www.pappers.fr/dirigeant/david_princay_1987-12"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "BINIVERSE SAS (912156973) is a distinct French company sharing president David Princay; a court judgment identifies an economic and social unit of Binance France and Biniverse.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "BINIVERSE SAS (registry no. 912156973) is a distinct French company sharing president David Princay; a court judgment identifies an economic and social unit comprising Binance France and Biniverse."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/1bdc28e34242c5ada2cd031f225003b3b9d8edc2"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Lihua He is a reported beneficial owner of Binance France SAS with a 50% interest as of 2024-05-28 (not verified on registry/current).",
+   "asserted_by": [
+    "A",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "A": "Lihua He is a reported beneficial owner of Binance France SAS with a 50% interest as of 2024-05-28 (current interest not verified).",
+    "E": "Binance France SAS owner: Lihua He, beneficial owner reported at 50% (per Pappers as cited by Cointelegraph, as of 2024-05-28; not verified on the registry)."
+   },
+   "urls": [
+    "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning",
+    "https://www.dlnews.com/articles/regulation/binance-france-drops-cz-as-sole-shareholder-ahead-of-mica/",
+    "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c41",
+    "c43"
+   ]
+  },
+  {
+   "cid": "c42",
+   "claim": "Lihua He (Chinese national) is a reported indirect beneficial-owner candidate: June 2026 reporting identifies equal ownership of Intercorp Holdco since 2025; not verified against French BO register.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Lihua He (Chinese national) is a reported indirect beneficial-owner candidate of BINANCE FRANCE SAS: June 2026 reporting identifies equal ownership of Intercorp Holdco since 2025; not verified against the current French beneficial-ownership register."
+   },
+   "urls": [
+    "https://www.lrt.lt/en/news-in-english/19/2957111/binance-withdraws-from-lithuania"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c42",
+    "c46"
+   ]
+  },
+  {
+   "cid": "c44",
+   "claim": "Yulong Yan is a reported beneficial owner of Binance France SAS with a 50% interest as of 2024-05-28 (current interest not verified).",
+   "asserted_by": [
+    "A",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "A": "Yulong Yan is a reported beneficial owner of Binance France SAS with a 50% interest as of 2024-05-28 (current interest not verified)."
+   },
+   "urls": [
+    "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning",
+    "https://www.dlnews.com/articles/regulation/binance-france-drops-cz-as-sole-shareholder-ahead-of-mica/",
+    "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c44",
+    "c45",
+    "c47"
+   ]
+  },
+  {
+   "cid": "c48",
+   "claim": "PEP: Changpeng Zhao flagged as PEP in OpenSanctions; strategic advisor to Pakistan Crypto Council (07/04/2024) and advisor to President of Kyrgyzstan (03/05/2025).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "PEP: Changpeng Zhao (Binance founder/UBO) is flagged as a PEP in OpenSanctions and holds government-linked advisory roles: strategic advisor to the Pakistan Crypto Council (07/04/2024) and advisor to the President of Kyrgyzstan (03/05/2025)."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Changpeng+Zhao"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Bruno Bézard has historical PEP exposure (former Director-General of the French Treasury, head of public-finance administration, State Shareholding Agency, minister-counsellor in Beijing); not current office or misconduct allegation.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Bruno Bézard (Binance France supervisory-board member) has historical PEP exposure: former Director-General of the French Treasury, former head of the French public-finance administration, former head of the State Shareholding Agency, and former minister-counsellor in Beijing; not a current public office or allegation of misconduct."
+   },
+   "urls": [
+    "https://www.valeo.com/fr/biographie-de-bruno-bezard/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Sanctions: no match for Binance France SAS on OFAC SDN, UK OFSI or EU consolidated lists (OpenSanctions).",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Sanctions screen: Binance France SAS has no match on OFAC SDN, UK OFSI or EU consolidated lists (via OpenSanctions).",
+    "F": "Sanctions: OpenSanctions screen (OFAC SDN, UK OFSI, EU consolidated lists) returned no sanctioned entity named Binance France SAS."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Binance+France"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Sanctions: Binance Holdings Ltd is not OFAC SDN-designated; 21 Nov 2023 OFAC action was a civil settlement of $968,618,825 for 1,667,153 apparent violations (2017–2022); no OFAC listing for Binance France SAS.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Sanctions: Binance Holdings Ltd is not an OFAC SDN-designated person; the 21 Nov 2023 OFAC action was a civil settlement of $968,618,825 for 1,667,153 apparent sanctions violations (2017–2022); no OFAC listing found for Binance France SAS."
+   },
+   "urls": [
+    "https://ofac.treasury.gov/system/files/2023-11/20231121_binance.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c52",
+   "claim": "Sanctions: OpenSanctions returned no sanctions listing for Changpeng Zhao, only Person entity tagged 'PEP' and 'Regulator action'.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Sanctions: OpenSanctions screen returned no sanctions listing for Changpeng Zhao, only a Person entity tagged 'PEP' and 'Regulator action'."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Changpeng+Zhao"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c53",
+   "claim": "OFAC SDN screening (file 2026-10-28) found no confirmed exact-name match for Binance France SAS, Intercorp Holdco SAS, Yulong Yan, Lihua He, David Princay or Christelle Tang; limited name-based screening.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "B": "OFAC SDN screening (file dated 2026-10-28, reviewed as of 2026-11-04) found no confirmed exact-name match for BINANCE FRANCE SAS, INTERCORP HOLDCO SAS, Yulong Yan, Lihua He, David Princay or Christelle Tang; limited name-based screening only, not comprehensive clearance."
+   },
+   "urls": [
+    "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+    "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.txt",
+    "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.XML"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c53",
+    "c54",
+    "c55"
+   ]
+  },
+  {
+   "cid": "c56",
+   "claim": "Sanctions: Binance group entities (Binance Holdings Limited, Binance Holdings (IE) Ltd, Binance (Services) Holdings Ltd) have no sanctions designation; appear on OpenSanctions only under 'regulator action'.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Sanctions screen: Binance group (Binance Holdings Limited, Binance Holdings (IE) Ltd, Binance (Services) Holdings Ltd) has no sanctions designation; appears on OpenSanctions only under 'regulator action' (US CFTC / OFAC enforcement)."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Binance"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "Sanctions: David Princay has no match on OFAC SDN, UK OFSI or EU consolidated lists (OpenSanctions).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Sanctions screen: David Princay (Binance France SAS president) has no match on OFAC SDN, UK OFSI or EU consolidated lists (via OpenSanctions)."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=David+Princay"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "Sanctions: Christelle Tang has no match on OFAC SDN, UK OFSI or EU consolidated lists (OpenSanctions).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Sanctions screen: Christelle Tang (Binance France SAS managing director) has no match on OFAC SDN, UK OFSI or EU consolidated lists (via OpenSanctions)."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Christelle+Tang"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "Sanctions: Lihua He has no match on OFAC SDN, UK OFSI or EU consolidated lists (OpenSanctions).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Sanctions screen: Lihua He (reported Binance France SAS beneficial owner) has no match on OFAC SDN, UK OFSI or EU consolidated lists (via OpenSanctions)."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Lihua+He"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "Sanctions: Yulong Yan has no match on OFAC SDN, UK OFSI or EU consolidated lists (OpenSanctions).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Sanctions screen: Yulong Yan (reported Binance France SAS beneficial owner) has no match on OFAC SDN, UK OFSI or EU consolidated lists (via OpenSanctions)."
+   },
+   "urls": [
+    "https://www.opensanctions.org/search/?q=Yulong+Yan"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c61",
+   "claim": "Adverse media (2022-12-14, medium): investor complaint filed with the public prosecutor naming Binance France and Binance Holdings Limited alleging unlicensed digital-asset services, misleading commercial practices and 'recel d’escroquerie'; Binance denied promoting services in France before authorization; disposition not verified.",
+   "asserted_by": [
+    "A",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "On 2022-12-14 an investor complaint was filed with the public prosecutor naming Binance France and Binance Holdings Limited, alleging unlicensed digital-asset services, misleading commercial practices and 'recel d’escroquerie'; Binance denied promoting its services in France before authorization; these are allegations, disposition not verified (medium severity)."
+   },
+   "urls": [
+    "https://digitalmoneybox.com/news/cryptocurrency/french-investors-sued-binance-for-over-24-million-euros-in-losses",
+    "https://www.bfmtv.com/crypto/en-france-15-investisseurs-deposent-plainte-contre-le-geant-des-cryptos-binance_AV-202212200307.html",
+    "https://www.leparisien.fr/high-tech/binance-france-15-investisseurs-deposent-plainte-contre-la-plate-forme-de-cryptomonnaies-20-12-2022-A2YXARHSZZC4FBJHY45CCKSQPQ.php"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c61",
+    "c62",
+    "c63"
+   ]
+  },
+  {
+   "cid": "c64",
+   "claim": "Adverse media (2023-06-16, high): Paris prosecutor opened preliminary investigation into Binance's French operations for illegal provision of digital asset services and aggravated money laundering; Paris office search confirmed by Changpeng Zhao; escalated into full judicial investigation in January 2025.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Adverse media (2023-06-16, high): Paris prosecutor's office opened a preliminary investigation into Binance's French operations for illegal provision of digital asset services and aggravated money laundering; Paris office search confirmed by Changpeng Zhao; later escalated into a full judicial investigation in January 2025."
+   },
+   "urls": [
+    "https://www.coindesk.com/policy/2023/06/16/binance-under-investigation-in-france-accusations-of-money-laundering/",
+    "https://www.lefigaro.fr/secteur/high-tech/cryptomonnaie-une-enquete-vise-binance-france-notamment-pour-blanchiment-aggrave-20230616"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c64",
+    "c65"
+   ]
+  },
+  {
+   "cid": "c66",
+   "claim": "Adverse media (2025-01-28, high, ongoing as of 09/11/2026): JUNALCO opened judicial investigation against Binance France for aggravated money laundering, laundering of tax fraud, drug trafficking proceeds and illegal PSAN exercise; facts 2019–2024; company denies.",
+   "asserted_by": [
+    "A",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Adverse media (2025-01-28, high, ongoing as of 09/11/2026): French prosecutors (JUNALCO) opened a judicial investigation against Binance France for aggravated money laundering, laundering of tax fraud, laundering linked to drug trafficking and illegal exercise of the PSAN profession; facts 2019–2024; company denies the allegations."
+   },
+   "urls": [
+    "https://next.ink/brief_article/binance-un-juge-dinstruction-enquete-pour-blanchiment-aggrave-entre-autres/",
+    "https://www.boursorama.com/actualite-economique/actualites/france-information-judiciaire-contre-binance-pour-des-faits-presumes-de-blanchiment-606bdf6b06e5930bfb6fa324a82668e5",
+    "https://www.reuters.com/technology/french-investigators-open-money-laundering-probe-against-crypto-platform-binance-2025-01-28/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c66",
+    "c67",
+    "c68"
+   ]
+  },
+  {
+   "cid": "c69",
+   "claim": "Adverse media (2023-11-21, high): Binance Holdings Ltd (parent, not Binance France SAS) pleaded guilty in the US to BSA conspiracy, failure to register as money transmitter and IEEPA violations, agreeing to $4.3bn penalties and 5-year monitor; plea approved 23/02/2024; OFAC settled $968,618,825.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Adverse media (2023-11-21, high): Binance Holdings Ltd (parent, not Binance France SAS) pleaded guilty in the US to Bank Secrecy Act conspiracy, failure to register as money transmitter and IEEPA violations, agreeing to $4.3bn penalties and a 5-year compliance monitor; plea approved 23/02/2024; OFAC settled $968,618,825 simultaneously."
+   },
+   "urls": [
+    "https://www.justice.gov/criminal/case/united-states-v-binance-holdings-limited-dba-binancecom"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c70",
+   "claim": "Adverse media (2024-04-30, high): Changpeng Zhao pleaded guilty to US money-laundering law violations, paid $50m fine, sentenced to four months (released 27/09/2024), pardoned by President Trump (announced 23/10/2025).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Adverse media (2024-04-30, high): Changpeng Zhao, Binance founder and ~90% owner, pleaded guilty to US money-laundering law violations, paid a $50m fine, was sentenced to four months in prison (released 27/09/2024), and was pardoned by President Trump (announced 23/10/2025)."
+   },
+   "urls": [
+    "https://www.cnn.com/2025/10/24/business/binance-zhao-trump-pardon"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c71",
+   "claim": "Adverse media (2023-03-27, medium): CFTC lawsuit against Binance and Zhao alleging willful evasion of US law and illegal derivatives exchange, followed by June 2023 SEC suit on 13 charges.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Adverse media (2023-03-27, medium): At group level, Binance and Zhao faced a CFTC lawsuit alleging willful evasion of US law and operating an illegal derivatives exchange, followed by a June 2023 SEC suit on 13 charges."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Changpeng_Zhao"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c72",
+   "claim": "Adverse media (2024-11-01, medium, ongoing): FTX estate lawsuit against Binance Holdings Ltd, Zhao and others seeking nearly $1.8bn over alleged fraudulent transfers linked to July 2021 share repurchase.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Adverse media (2024-11-01, medium, ongoing): FTX estate lawsuit against Binance Holdings Ltd, Zhao and other executives seeking nearly $1.8bn over alleged fraudulent transfers linked to the July 2021 share repurchase."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Changpeng_Zhao"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c73",
+   "claim": "Adverse media (2025-10-17, medium): ACPR on-site AML/CFT inspections of crypto firms including Binance from late 2024; reportedly told Binance to strengthen risk controls; Binance called them routine; outcome not reported.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Adverse media (medium severity, 2025-10-17): ACPR carried out on-site AML/CFT inspections of crypto firms including Binance from late 2024 and reportedly told Binance to strengthen risk controls; Binance called them routine; outcome not reported."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/france-hits-binance-coinbase-aml-093751261.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c74",
+   "claim": "Adverse media (2024-05-28, medium): AMF warned Binance France in December 2023 to act on beneficial-owner issues after Zhao's US cases; ownership moved to two 50/50 beneficial owners (Lihua He, Yulong Yan), about whom little is public.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Adverse media (medium severity, 2024-05-28): AMF warned Binance France in December 2023 to act on beneficial-owner issues after Changpeng Zhao's US cases (guilty plea November 2023); ownership moved to two 50/50 beneficial owners (Lihua He, Yulong Yan), about whom little is public."
+   },
+   "urls": [
+    "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c75",
+   "claim": "Adverse media (2026-06-29, medium): Binance France SAS accounts disclose ongoing corporate-tax and VAT examination for 2022–2024 and a EUR 523,000 tax-related provision as of 2025-12-31; not a fine or admission.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Adverse media (2026-06-29, medium): Binance France SAS annual accounts disclose an ongoing corporate-tax and VAT examination for financial years 2022–2024 and a tax-related provision of EUR 523,000 as of 2025-12-31; a provision is not a fine or admission of wrongdoing."
+   },
+   "urls": [
+    "https://www.pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c80",
+   "claim": "Adverse media (2026-11-06, high): Binance France winding down; all French customer accounts close 31/12/2026, deposits blocked from 29/11/2026, monthly maintenance fee 0.025% of balance (min 10 USDC); wind-down required by AMF and ESMA under MiCA.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Adverse media (2026-11-06, high): Binance France is winding down; all French customer accounts close 31/12/2026, deposits blocked from 29/11/2026, monthly maintenance fee of 0.025% of balance (min 10 USDC) on unwithdrawn assets; wind-down required by AMF and ESMA under MiCA."
+   },
+   "urls": [
+    "https://www.leparisien.fr/high-tech/la-plate-forme-de-crypto-binance-ferme-le-31-decembre-en-france-ce-que-vous-devez-faire-si-vous-avez-de-largent-dessus-09-11-2026-SLXE6XTPYNEDPBBDJPYHSQN5XY.php"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c81",
+   "claim": "Adverse media (2026-06-10, low): Paris TJ proceedings name Binance France (SAS) as defendant; case redistributed to civil chamber; procedural only, no liability determined.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Adverse media (2026-06-10, low): Paris judicial court proceedings name Binance France as defendant; the order redistributes the case to another civil chamber without deciding liability.",
+    "C": "Adverse media (low severity, 2026-06-10): Paris TJ RG 26/06154 names Binance France SAS as defendant; matter redistributed to the civil chamber; procedural only, no liability determination, allegations unspecified."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/a274bafd5e59759c3f4bb64808578b8f9db9c562"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c82",
+   "claim": "Adverse media (2026-06-01, low): claimant withdrew summary proceedings against Binance France; no merits finding.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Adverse media (2026-06-01, low): an individual claimant withdrew summary proceedings against Binance France; no merits finding.",
+    "C": "Adverse media (low severity, 2026-06-01): Paris TJ RG 26/50834 — claimant withdrew proceedings against Binance France SAS; proceedings extinguished, no merits ruling."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/3f9738bca0d894de16e3620eb5e999fa591106c3"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c83",
+   "claim": "Adverse media (2026-03-25, low): Lyon Court of Appeal reversed order requiring Binance France to disclose wallet-holder information and restrict access, rejecting requests for insufficient evidence; no fraud finding.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Adverse media (2026-03-25, low): the Lyon Court of Appeal reversed in full an order requiring Binance France to disclose wallet-holder information and restrict access, finding insufficient evidence; no finding of fraud by Binance France.",
+    "C": "Adverse media (low severity, 2026-03-25): Lyon appeal RG 25/04129 — alleged scam victim sought wallet-holder identification and account restrictions against Binance France SAS; court reversed the 2025-05-05 order and rejected the requests, as evidence did not show the French SAS controlled the wallets or could obtain other Binance entities' customer data; no fraud finding."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/3110fdd045cad6e02a2fef5ef968bb5284daa86b"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c84",
+   "claim": "Adverse media (2025-11-05, low): North Star Network obtained order requiring Binance France to provide transaction histories linked to alleged fraud by a former North Star employee; Binance France is information holder, fraud attributed to the individual.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Adverse media (2025-11-05, low): North Star Network obtained an order requiring Binance France to provide transaction histories for wallets linked to an allegedly fraudulent former North Star employee; Binance France was the information holder, not the alleged perpetrator.",
+    "C": "Adverse media (low severity, 2025-11-05): Paris TJ RG 25/55721 — North Star Network sought transaction records regarding alleged fraudulent invoicing by a former employee; Binance France SAS ordered to provide transaction history (provisionally enforceable); fraud attributed to the individual, not the SAS."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/9084bec2de1352c809605c06724925f50e4c3588"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c85",
+   "claim": "Adverse media (2025-10-30): Paris TJ (RG 25/54894) rejected claimant's request against Binance France SAS and Nest Services Limited for account-holder data and wallet freezes in alleged crypto fraud; no liability finding.",
+   "asserted_by": [
+    "A",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "Adverse media (2025-10-30, low): a claimant sought account-identification and restrictions from Binance France and Nest Services Limited over an alleged third-party crypto fraud; the court declined summary relief; no liability finding.",
+    "C": "Adverse media (low severity, 2025-10-30): Paris TJ RG 25/54894 — claimant alleging cryptocurrency fraud sought account information and restrictions against Binance France SAS and Nest Services Limited; requests rejected for insufficient grounds for interim relief; no liability finding against the SAS.",
+    "F": "Adverse media (2025-10-30, low): Tribunal judiciaire de Paris (case 25/54894) dismissed (Rejet) a fraud victim's request to compel Binance France SAS and Nest Services Limited to disclose account-holder data and freeze wallets."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/11a4164d424d72c2d5413b84f2c18afb0ac3dc76",
+    "https://librejustice.fr/decision/fr/IFP6JO2O9FQU"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c85",
+    "c40"
+   ]
+  },
+  {
+   "cid": "c86",
+   "claim": "Adverse media (2025-10-02, low): proceedings naming Binance France (SAS) and Nest Services Limited (and Waltio) withdrawn; no merits determination.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Adverse media (2025-10-02, low): Waltio withdrew summary proceedings naming Binance France and Nest Services Limited; no merits determination.",
+    "C": "Adverse media (low severity, 2025-10-02): litigation index names Binance France SAS as defendant with Nest Services Limited and Waltio in Paris TJ RG 25/55628; withdrawal of proceedings/action recorded; no adverse merits finding established."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/a709178f4dca5ebdfdb9ed2d3cc81ac79e092860",
+    "https://www.pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "Adverse media (2024-09-19, low): Binance France and Biniverse prevailed in employee-representative election litigation (Paris TJ RG 24/02635); not an adverse finding.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Adverse media (2024-09-19, low): Binance France and Biniverse successfully challenged employee-representative elections because a candidate lacked required seniority; employment-governance litigation, not a financial-crime finding.",
+    "C": "Adverse media (low severity, 2024-09-19): litigation index names Binance France SAS as claimant in Paris TJ RG 24/02635, involving Biniverse SAS and a trade union; claimant requests granted; not an adverse finding against Binance France SAS."
+   },
+   "urls": [
+    "https://justice.pappers.fr/decision/1bdc28e34242c5ada2cd031f225003b3b9d8edc2",
+    "https://www.pappers.fr/entreprise/binance-france-sas-905060109"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "legal_name",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+   "note": "Target entity is Binance France SAS. GLEIF and INPI both give the legal name BINANCE FRANCE SAS.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "registry_number",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://pappers.fr/entreprise/binance-france-sas-905060109",
+   "note": "SIREN 905 060 109, RCS Paris. The head-office SIRET 90506010900022 and VAT FR86905060109 also match Pappers and INPI.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "lei",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+   "note": "LEI confirmed on GLEIF. Registered 2023-04-14, status LAPSED, next renewal 2026-04-20, policy non-conforming.",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "lei_status",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+   "note": "GLEIF shows entity status ACTIVE and LEI registration status LAPSED, last updated 2026-10-21.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "jurisdiction",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+   "note": "Jurisdiction of formation is FR, legal form SAS (INSEE code 5710), RCS Paris.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "incorporation_date",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+   "note": "Creation and start of activity are 2021-11-03 and RNE registration is 2021-11-08, consistent with all variants.",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "incorporation_date",
+   "related_entity": false,
+   "confidence": "medium",
+   "source": "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+   "note": "First registration on 2021-11-08 is correct and the claim separately notes formation on 2021-11-03. Calling the registration date the incorporation date is loose.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "registered_address",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109",
+   "note": "Head office is 1 rue de Stockholm, 75008 Paris, confirmed by Infogreffe, INPI and GLEIF.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "status",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/binance-france-sas-905060109",
+   "note": "The registry shows the entity as active (administrative status A), updated 2026-11-10.",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true",
+    "C": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "status",
+   "related_entity": false,
+   "confidence": "high",
+   "source": "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+   "note": "The INPI RNE attestation confirms the registration. The company's own accounts say its crypto-asset services depend on separate regulatory status.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "regulatory_status_PSAN_removal",
+   "materiality": "critical",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://minuitcrypto.com/guides/binance-france-legal-mica-agrement",
+   "note": "AMF list shows E2022-037, registered 4 May 2022, delisted 2 July 2026 on automatic lapse at the end of the MiCA transition.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true",
+    "A": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "president",
+   "related_entity": false,
+   "source": "https://recherche-entreprises.api.gouv.fr/search?q=905060109",
+   "note": "Registry lists David Princay as Président de SAS.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true",
+    "A": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "directeur_general",
+   "related_entity": false,
+   "source": "https://data.inpi.fr/export/companies?format=pdf&ids=%5B905060109%5D",
+   "note": "RNE, Infogreffe and HATVP all list Christelle Tang as Directeur Général.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "false",
+   "in_scope": true,
+   "group": "people",
+   "field": "former_dg_weber",
+   "related_entity": false,
+   "source": "https://pappers.fr/entreprise/binance-france-sas-905060109",
+   "note": "BODACC records her resignation as DG effective 16/10/2023, not 5 March 2024; 5 March 2024 is only the date of the registry modification.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "false"
+   },
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "supervisory_board_chair",
+   "related_entity": false,
+   "source": "https://www.hatvp.fr/le-repertoire/fiche-organisation/?organisation=905060109",
+   "note": "HATVP lists Arnaud Ventura as Président du conseil de surveillance.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "supervisory_board_member",
+   "related_entity": false,
+   "source": "https://www.valeo.com/fr/biographie-de-bruno-bezard/",
+   "note": "Valeo biography says he sits on the Binance France supervisory board and is of French nationality.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "statutory_auditor",
+   "related_entity": false,
+   "source": "https://www.infogreffe.fr/entreprise/binance-france-sas/905060109",
+   "note": "RSM Paris (SIREN 792111783) is Commissaire aux comptes titulaire.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "ultimate_beneficial_owner",
+   "related_entity": true,
+   "source": "https://www.cnn.com/2025/10/24/business/binance-zhao-trump-pardon",
+   "note": "Zhao is a group-level owner of about 90% and stepped down as CEO in 2023. The French beneficial-owner data is restricted, so this is not confirmed there.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "sole_shareholder",
+   "related_entity": false,
+   "source": "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2026-09-2024.pdf",
+   "note": "The 17 September 2024 minutes name Intercorp Holdco SAS (984909093) as sole shareholder.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true",
+    "C": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "related_entity_intercorp",
+   "related_entity": true,
+   "source": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093",
+   "note": "Holdco is an active SAS (984909093) at the same address with the same president, and the Sept 2024 minutes name it sole shareholder.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "related_entity_parent",
+   "related_entity": true,
+   "source": "https://ofac.treasury.gov/recent-actions/20231121",
+   "note": "Binance Holdings Ltd is the Cayman group entity (OFAC settlement). Its status as ultimate parent of the French entity is less direct, but the Binance Holdings (IE) Limited link supports the group relation.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_codefendant",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://www.bfmtv.com/crypto/en-france-15-investisseurs-deposent-plainte-contre-le-geant-des-cryptos-binance_AV-202212200307.html",
+   "note": "Dec 2022 complaint by 15 investors names both Binance France and Binance Holdings Limited. The OpenSanctions listing is not shown, but the US enforcement is documented.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "former_shareholder",
+   "related_entity": true,
+   "source": "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2015-05-2024.pdf",
+   "note": "The 19 March 2024 resolution is signed by Binance Holdings (IE) Limited (no. 704567) as sole shareholder, before the sale to Intercorp.",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "subsidiary",
+   "related_entity": true,
+   "source": "https://www.pappers.fr/entreprise/binance-france-sas-905060109",
+   "note": "The accounts for 2025 list BSCN Technologies Services (Germany) GmbH as a 100%-held subsidiary.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "related_entity_derivatives",
+   "related_entity": true,
+   "source": "https://www.pappers.fr/dirigeant/david_princay_1987-12",
+   "note": "Binance Derivatives appears among David Princay's linked companies. The listing excerpt does not show the registry number, so confidence is medium.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "related_entity_derivatives_connect",
+   "related_entity": true,
+   "source": "https://www.pappers.fr/dirigeant/david_princay_1987-12",
+   "note": "Binance Derivatives Connect (980585897) has David Princay as president since 22 May 2024.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "registration",
+   "field": "related_entity_biniverse",
+   "related_entity": true,
+   "source": "https://justice.pappers.fr/decision/1bdc28e34242c5ada2cd031f225003b3b9d8edc2",
+   "note": "Biniverse (912156973) has Princay as president. The TJ Paris judgment of Sept 2024 has both companies as joint plaintiffs, consistent with an economic and social unit; confidence is medium.",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "beneficial_owner_lihua_he",
+   "related_entity": false,
+   "source": "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning",
+   "note": "Cointelegraph and DL News report Lihua He and Yulong Yan holding 50% each in May 2024. Current ownership is indirect, through Intercorp Holdco.",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "beneficial_owner_lihua_he_indirect",
+   "related_entity": false,
+   "source": "https://www.lrt.lt/en/news-in-english/19/2957111/binance-withdraws-from-lithuania",
+   "note": "LRT reports Chinese nationals Lihua He and Yulong Yan own Intercorp Holdco equally since 2025.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true"
+   }
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "people",
+   "field": "beneficial_owner_yulong_yan",
+   "related_entity": false,
+   "source": "https://www.dlnews.com/articles/regulation/binance-france-drops-cz-as-sole-shareholder-ahead-of-mica/",
+   "note": "Yulong Yan is reported at 50%, and the Holdco minutes show he holds 50 of the 100 shares.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "B": "true"
+   }
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "pep_changpeng_zhao",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://en.wikipedia.org/wiki/Changpeng_Zhao",
+   "note": "Advisory roles confirmed by Wikipedia (7 Apr 2024, 3 May 2025); Zhao is no longer owner of Binance France (shares sold in 2024), so he is a related person, not current UBO.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "pep_bruno_bezard",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.valeo.com/fr/biographie-de-bruno-bezard/",
+   "note": "Valeo bio confirms he sits on the Binance France supervisory board and held the Treasury DG, APE, public finance and Beijing posts.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "sanctions_entity",
+   "materiality": "critical",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.opensanctions.org/search/?q=Binance+France",
+   "note": "No sanctions listing for Binance France SAS; consistent with what I know.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "ofac_settlement_binance_holdings",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://ofac.treasury.gov/recent-actions/20231121",
+   "note": "OFAC settlement of $968,618,825 for 1,667,153 apparent violations (2017-2022) confirmed; it concerns Binance Holdings Ltd, a parent or affiliate.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "sanctions_changpeng_zhao",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://www.opensanctions.org/search/?q=Changpeng+Zhao",
+   "note": "Zhao is not sanctioned; the PEP and regulator-action tags are plausible; he is a former owner, hence related.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "ofac_sdn_screen",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.XML",
+   "note": "No matches in the SDN file; name-based only; the 28 Oct date is a minor discrepancy against the 09 Nov file date.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true"
+   }
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "sanctions_binance_group",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://www.opensanctions.org/search/?q=Binance",
+   "note": "The Binance group is not sanctioned; it appears only as regulator-action entries; the finding concerns affiliates.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "sanctions_david_princay",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.opensanctions.org/search/?q=David+Princay",
+   "note": "President of Binance France per the registry; no sanctions match.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "sanctions_christelle_tang",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.opensanctions.org/search/?q=Christelle+Tang",
+   "note": "OpenSanctions returned no matching entities; she is Directeur Général per INPI.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "sanctions_lihua_he",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.opensanctions.org/search/?q=Lihua+He",
+   "note": "No sanctions match; ownership confirmed via Intercorp Holdco minutes.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "sanctions_yulong_yan",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.opensanctions.org/search/?q=Yulong+Yan",
+   "note": "No sanctions match; ownership confirmed via Intercorp Holdco minutes.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.leparisien.fr/high-tech/binance-france-15-investisseurs-deposent-plainte-contre-la-plate-forme-de-cryptomonnaies-20-12-2022-A2YXARHSZZC4FBJHY45CCKSQPQ.php",
+   "note": "Target is Binance France SAS (RCS 905060109). The 14 Dec 2022 complaint names Binance France and Binance Holdings Limited, with PSAN violation, misleading practices and recel d'escroquerie; Binance denied promoting before authorization.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c64": {
+   "cid": "c64",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "critical",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.reuters.com/technology/french-investigators-open-money-laundering-probe-against-crypto-platform-binance-2025-01-28/",
+   "note": "The Paris preliminary investigation was announced in June 2023 and escalated to a judicial investigation in January 2025 per Reuters. The probe is still active.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "critical",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://minuitcrypto.com/guides/binance-france-legal-mica-agrement",
+   "note": "A judicial investigation for aggravated money laundering and illegal PSAN exercise over 2019-2024 is open and ongoing. This is an active legal action against the target.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://www.justice.gov/criminal/case/united-states-v-binance-holdings-limited-dba-binancecom",
+   "note": "The 21 Nov 2023 US plea, $4.3bn penalties and OFAC $968.6m settlement are real. They concern the parent, Binance Holdings Ltd, not Binance France SAS.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c70": {
+   "cid": "c70",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://www.cnn.com/2025/10/24/business/binance-zhao-trump-pardon",
+   "note": "The guilty plea, $50m fine, four-month sentence and Trump pardon are confirmed. Zhao is a group founder who no longer owns Binance France, so this is a related-entity finding.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c71": {
+   "cid": "c71",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning",
+   "note": "The CFTC suit in March 2023 and SEC suit in June 2023 are real. They are group-level actions against the parent and Zhao.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c72": {
+   "cid": "c72",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": true,
+   "source": "https://en.wikipedia.org/wiki/Changpeng_Zhao",
+   "note": "The FTX suit of Nov 2024 seeks about $1.8bn from Binance Holdings, Zhao and others. It does not name Binance France.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c73": {
+   "cid": "c73",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://finance.yahoo.com/news/france-hits-binance-coinbase-aml-093751261.html",
+   "note": "ACPR on-site AML inspections since late 2024 are reported, with Binance told to strengthen risk controls. The outcome is not reported.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://cointelegraph.com/news/binance-france-new-shareholders-amf-warning",
+   "note": "The AMF warned Binance France in Dec 2023, and ownership moved in May 2024 to Lihua He and Yulong Yan, who hold 50/50 via Intercorp Holdco.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_wind_down",
+   "materiality": "critical",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.leparisien.fr/high-tech/la-plate-forme-de-crypto-binance-ferme-le-31-decembre-en-france-ce-que-vous-devez-faire-si-vous-avez-de-largent-dessus-09-11-2026-SLXE6XTPYNEDPBBDJPYHSQN5XY.php",
+   "note": "Accounts close on 31 December 2026, the fee date is 29 November and the fee is 0.025% (minimum 10 USDC). The AMF/ESMA-required wind-down is per Crypto Briefing.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_paris_redistribution",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://justice.pappers.fr/decision/a274bafd5e59759c3f4bb64808578b8f9db9c562",
+   "note": "The 10 June 2026 redistribution order names Binance France SAS as defendant. It is procedural only.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c82": {
+   "cid": "c82",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_withdrawn_referral",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://justice.pappers.fr/decision/3f9738bca0d894de16e3620eb5e999fa591106c3",
+   "note": "The 1 June 2026 summary proceedings (RG 26/50834) ended with a recorded withdrawal (désistement). No merits finding.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c83": {
+   "cid": "c83",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_lyon_appeal",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://justice.pappers.fr/decision/3110fdd045cad6e02a2fef5ef968bb5284daa86b",
+   "note": "On 25 March 2026 the Lyon Court of Appeal reversed the 5 May 2025 order in full. The detailed reasoning in variant C is not shown in the passages, but the outcome is supported.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c84": {
+   "cid": "c84",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_north_star",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://justice.pappers.fr/decision/9084bec2de1352c809605c06724925f50e4c3588",
+   "note": "The 5 November 2025 order (RG 25/55721) directs Binance France SAS to provide transaction histories. It is the information holder, not the alleged fraudster.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c85": {
+   "cid": "c85",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_nest_services_rejected",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://justice.pappers.fr/decision/11a4164d424d72c2d5413b84f2c18afb0ac3dc76",
+   "note": "The 30 October 2025 order (RG 25/54894) dismissed all of the claimant's requests. No liability finding.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_waltio_withdrawal",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://justice.pappers.fr/decision/a709178f4dca5ebdfdb9ed2d3cc81ac79e092860",
+   "note": "On 2 October 2025 the court recorded Waltio's withdrawal (RG 25/55628) against Binance France SAS and Nest Services Limited. No merits determination.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media_election_litigation",
+   "materiality": "minor",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://justice.pappers.fr/decision/1bdc28e34242c5ada2cd031f225003b3b9d8edc2",
+   "note": "Binance France SAS and Biniverse were claimants and won all requests (24/02635). The seniority reasoning in variant A is not visible in the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c75": {
+   "cid": "c75",
+   "verdict": "true",
+   "in_scope": true,
+   "group": "screening",
+   "field": "adverse_media: tax examination and provision",
+   "materiality": "useful",
+   "false_hit": false,
+   "related_entity": false,
+   "source": "https://www.pappers.fr/entreprise/binance-france-sas-905060109",
+   "note": "Target is Binance France SAS (RCS 905060109). Its 2025 accounts, Note 8, state a EUR 523k provision 'dans le cadre du contrôle fiscal en cours', within total risk provisions of EUR 1,163k at 31 Dec 2025. This is a provision, not a fine or admission. I did not see the corporate-tax/VAT and 2022–20...",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "note": "The HATVP filing for organisation 905060109 lists VENTURA Arnaud as 'Président du conseil de surveillance'. The bylaws of Binance France SAS do provide for a supervisory board."
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "The sole-shareholder minutes dated 17 Sept 2024 name Intercorp Holdco SAS (RCS 984 909 093) as sole shareholder. The current share register was not obtained."
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "note": "Pappers lists BINANCE DERIVATIVES (913 864 005), a separate SAS, with David Prinçay as president since 24/05/2022. He is also president of Binance France SAS per HATVP."
+  },
+  "c68": {
+   "cid": "c68",
+   "verdict": "true",
+   "note": "The judicial investigation opened in January 2025 for aggravated laundering and illegal PSAN practice, covering influencer advertising and AML failures. It follows the 2022 preliminary probe, Binance denies it, and it covers Binance companies active in France. The 2019-2024 period and June 2023 wide"
+  },
+  "c71": {
+   "cid": "c71",
+   "verdict": "false",
+   "note": "The CFTC and SEC suits target Binance Holdings and Zhao in the US, i.e. the group and parent level, not Binance France SAS."
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "note": "TJ Paris RG 26/06154 of 10 June 2026 names SAS BINANCE FRANCE as defendant. The order only moves the case to the 9th civil chamber."
+  }
+ },
+ "scores": {
+  "gpt": {
+   "units": 31,
+   "unverifiable": 0,
+   "true": 27,
+   "wrong": 2.0,
+   "truth": 50,
+   "coverage": 0.754,
+   "accuracy": 0.931,
+   "combined": 0.833,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 0.0,
+   "truth": 50,
+   "coverage": 0.666,
+   "accuracy": 1.0,
+   "combined": 0.799,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 19,
+   "unverifiable": 0,
+   "true": 18,
+   "wrong": 0.5,
+   "truth": 50,
+   "coverage": 0.565,
+   "accuracy": 0.973,
+   "combined": 0.715,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0.0,
+   "truth": 50,
+   "coverage": 0.48,
+   "accuracy": 1.0,
+   "combined": 0.649,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 26,
+   "unverifiable": 0,
+   "true": 25,
+   "wrong": 0.5,
+   "truth": 50,
+   "coverage": 0.823,
+   "accuracy": 0.98,
+   "combined": 0.895,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 27,
+   "unverifiable": 0,
+   "true": 24,
+   "wrong": 2.0,
+   "truth": 50,
+   "coverage": 0.756,
+   "accuracy": 0.923,
+   "combined": 0.831,
+   "metric": "F1"
+  }
+ }
+}

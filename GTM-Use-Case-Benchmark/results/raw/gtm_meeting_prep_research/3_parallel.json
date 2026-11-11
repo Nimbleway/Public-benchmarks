@@ -1,0 +1,558 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Vercel (vercel.com)",
+ "input_n": 3,
+ "tier": "pro",
+ "status": "completed",
+ "seconds": 154,
+ "run_id": "trun_75ae0d14b3f84a2aace92c9143459152",
+ "output": {
+  "company": "Vercel",
+  "talking_points": [
+   "With Drives now generally available, where are the biggest reliability gaps in preserving agent workspaces across runs? Source: https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+   "Following BYOC's launch, which enterprise controls most often determine whether an agent deployment reaches production? Source: https://vercel.com/blog/vercel-for-enterprise",
+   "How do billing disputes and other exceptions move from automated support to a human owner? Source: https://community.vercel.com/t/production-app-suspended-while-billing-dispute-has-been-unanswered-since-aug-27/48943"
+  ],
+  "key_people": [
+   {
+    "title": "Founder and CEO",
+    "source_url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+    "recent": "In the October 16, 2026 announcement, discussed agent commerce with Shopify CEO Tobi Lütke as Vercel Shop became generally available.",
+    "name": "Guillermo Rauch"
+   },
+   {
+    "title": "Chief Technology Officer",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap",
+    "recent": "At Ship 2026, introduced Vercel Daemons for continuously running background workers and outlined support for broader backend workloads.",
+    "name": "Malte Ubl"
+   },
+   {
+    "title": "Chief Operating Officer",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap",
+    "recent": "At Ship 2026, announced BYOC on AWS general availability and Enterprise-Managed Authorization for Vercel Connect in public beta.",
+    "name": "Jeanne Grosser"
+   }
+  ],
+  "missing_fields": [],
+  "challenges": [
+   {
+    "evidence": "Vercel's October 14 report disclosed a Linux-kernel flaw capable of breaking sandbox isolation, demonstrated on researcher-controlled machines matching Vercel Sandbox's configuration. Vercel said it coordinated mitigation with the researcher and AWS; fixes were under private review and CVEs pending as of that report. No reports showed access to customer data. This is not evidence of a production breach or confirmation that the issue remains unresolved today.",
+    "date": "2026-10-14",
+    "source_url": "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
+    "challenge": "Hardening Sandbox isolation against kernel-level vulnerabilities."
+   },
+   {
+    "evidence": "On September 7, a customer alleged unexpected automatic Vercel Agent charges, an unanswered billing case, and disabled production deployments. In a September 24 reply, Vercel said support had issued a refund the previous week. This is an individual, subsequently refunded complaint—not evidence of a platform-wide or still-unresolved problem.",
+    "date": "2026-09-24",
+    "source_url": "https://community.vercel.com/t/production-app-suspended-while-billing-dispute-has-been-unanswered-since-aug-27/48943",
+    "challenge": "Billing clarity and timely support escalation for automated Agent usage."
+   }
+  ],
+  "what_they_do": {
+   "value": "Vercel is the AI Cloud—a unified platform for building, deploying, and scaling AI-powered applications and agentic workloads.",
+   "source_url": "https://vercel.com/docs",
+   "as_of": "2026-10-08"
+  },
+  "recent_changes": [
+   {
+    "type": "Product launch and partnership",
+    "date": "2026-10-16",
+    "headline": "Vercel Shop and the rebuilt Hydrogen SDK become generally available.",
+    "source_url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+    "summary": "The Shopify collaboration adds an open-source Next.js storefront template with machine-readable product information and tools designed for shopping agents."
+   },
+   {
+    "type": "Product launch",
+    "date": "2026-10-15",
+    "headline": "Vercel Drives becomes generally available.",
+    "source_url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+    "summary": "Persistent storage preserves agent workspaces and file-based memory after a Sandbox stops; subsequent runs and other Sandboxes can mount the same Drive."
+   },
+   {
+    "type": "Enterprise product launches",
+    "date": "2026-10-15",
+    "headline": "BYOC on AWS reaches general availability; Enterprise-Managed Authorization enters public beta.",
+    "source_url": "https://vercel.com/blog/vercel-for-enterprise",
+    "summary": "BYOC keeps application compute and data within the customer's AWS boundary. Enterprise-Managed Authorization lets agents access connected services on employees' behalf through the organization's identity provider."
+   }
+  ],
+  "priorities": [
+   {
+    "evidence": "Vercel launched Drives into general availability, allowing agent workspaces, file-based memory, datasets, and build artifacts to persist across Sandbox runs.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+    "priority": "Make agent workloads persistent across runs."
+   },
+   {
+    "evidence": "The enterprise announcement positions Vercel as a central control plane for builders, apps, agents, tokens, and spending, alongside BYOC on AWS general availability and Enterprise-Managed Authorization in public beta.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/blog/vercel-for-enterprise",
+    "priority": "Expand enterprise adoption through centralized governance, identity controls, and customer-cloud deployment."
+   },
+   {
+    "evidence": "Vercel Shop became generally available with machine-readable product pages and agent shopping tools, extending the Shopify partnership beyond storefronts designed solely for people.",
+    "date": "2026-10-16",
+    "source_url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+    "priority": "Build infrastructure for agent-driven commerce."
+   },
+   {
+    "evidence": "Vercel's Sandbox security report describes collaboration with researchers, AWS, and Trail of Bits, implementation of structural hardening recommendations, and work on kernel-vulnerability mitigation.",
+    "date": "2026-10-14",
+    "source_url": "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
+    "priority": "Strengthen Sandbox security and isolation."
+   },
+   {
+    "evidence": "In a September 15 interview report, COO Jeanne DeWitt Grosser described extensive inbound sales-development automation and a home-built support agent handling most support cases.",
+    "date": "2026-09-15",
+    "source_url": "https://tomtunguz.com/single-digit-thousand-dollar-ai-sdr",
+    "priority": "Automate internal go-to-market and support workflows with AI agents."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "company",
+   "citations": [
+    {
+     "title": "Vercel Documentation",
+     "url": "https://vercel.com/docs",
+     "excerpts": [
+      "Vercel Documentation Vercel is the AI Cloud - a unified platform for building, deploying, and scaling AI-powered applications and agentic workloads."
+     ]
+    }
+   ],
+   "reasoning": "Vercel's documentation explicitly identifies the company and its platform.",
+   "confidence": "high"
+  },
+  {
+   "field": "talking_points",
+   "citations": [
+    {
+     "title": "Vercel Drives is now generally available",
+     "url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+     "excerpts": [
+      "Its files remain available after the sandbox stops, so later runs and other sandboxes can access them by mounting the same Drive."
+     ]
+    },
+    {
+     "title": "Vercel for Enterprise",
+     "url": "https://vercel.com/blog/vercel-for-enterprise",
+     "excerpts": [
+      "Enterprise Apps and Agents is a central control plane for governing every builder, app, agent, token, and dollar."
+     ]
+    },
+    {
+     "title": "Production app suspended while billing dispute has been unanswered since Aug 27",
+     "url": "https://community.vercel.com/t/production-app-suspended-while-billing-dispute-has-been-unanswered-since-aug-27/48943",
+     "excerpts": [
+      "It has now been 11 days since I opened the support case without receiving a response, and our production deployments",
+      "Found your case (thanks for sharing the number) and it looks like the support team was able to get you a refund last week"
+     ]
+    }
+   ],
+   "reasoning": "The questions are proposed meeting angles grounded in persistent agent storage, enterprise governance, and a billing-support escalation example. They do not assert that the suggested gaps exist.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_people",
+   "citations": [
+    {
+     "title": "Vercel and Shopify make agents first-class shoppers",
+     "url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+     "excerpts": [
+      "It runs on Next.js, it's built on Shopify, and it's freaking fast. > — Guillermo Rauch, Founder & CEO @ Vercel",
+      "![Shopify CEO Tobi Lütke and Vercel CEO Guillermo Rauch discuss the future of agent commerce"
+     ]
+    },
+    {
+     "title": "Vercel Ship 2026 recap",
+     "url": "https://vercel.com/blog/vercel-ship-2026-recap",
+     "excerpts": [
+      "In the next keynote, Malte Ubl (CTO, Vercel)",
+      "Jeanne Grosser (COO, Vercel) focused on what happens when everyone in a company can build."
+     ]
+    }
+   ],
+   "reasoning": "Primary Vercel announcements identify the three executives, their roles, and their recent areas of activity; the element-level pointers add supporting launch details.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "All requested fields have support in the opened sources. The brief does not claim exhaustive coverage of every event or challenge.",
+   "confidence": "medium"
+  },
+  {
+   "field": "challenges",
+   "citations": [
+    {
+     "title": "Findings from the $1M Vercel Sandbox challenge",
+     "url": "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
+     "excerpts": [
+      "Second, using the same flaw, they were able to run commands with full administrator privileges",
+      "Fixes are under private review and CVEs are pending, so we are not publishing additional details until the patches are public.",
+      "No reports showed anyone accessing customer data in Vercel Sandbox."
+     ]
+    },
+    {
+     "title": "Production app suspended while billing dispute has been unanswered since Aug 27",
+     "url": "https://community.vercel.com/t/production-app-suspended-while-billing-dispute-has-been-unanswered-since-aug-27/48943",
+     "excerpts": [
+      "It has now been 11 days since I opened the support case without receiving a response, and our production deployments",
+      "Found your case (thanks for sharing the number) and it looks like the support team was able to get you a refund last week"
+     ]
+    }
+   ],
+   "reasoning": "The security report documents a concrete isolation vulnerability and its dated remediation status. The community thread documents a customer allegation and a later refund response. Both are explicitly qualified to avoid asserting an ongoing breach or systemic billing failure.",
+   "confidence": "medium"
+  },
+  {
+   "field": "what_they_do",
+   "citations": [
+    {
+     "title": "Vercel Documentation",
+     "url": "https://vercel.com/docs",
+     "excerpts": [
+      "Vercel Documentation Vercel is the AI Cloud - a unified platform for building, deploying, and scaling AI-powered applications and agentic workloads."
+     ]
+    }
+   ],
+   "reasoning": "The sentence uses Vercel's own documentation wording. The as-of date reflects the supplied source's last verification date.",
+   "confidence": "high"
+  },
+  {
+   "field": "recent_changes",
+   "citations": [
+    {
+     "title": "Vercel and Shopify make agents first-class shoppers",
+     "url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+     "excerpts": [
+      "**Published:** October 16, 2026 | **Authors:** Boris Besemer, Dan Laugharn, Kevin Sundstrom"
+     ]
+    },
+    {
+     "title": "Vercel Drives is now generally available",
+     "url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+     "excerpts": [
+      "**Published:** October 15, 2026 | **Authors:** Tom Lienard, Marc Codina Segura, Andy Waller, Luke Phillips\\-Sheard, Joe Haddad",
+      "Vercel Drives is now generally available"
+     ]
+    },
+    {
+     "title": "Vercel for Enterprise",
+     "url": "https://vercel.com/blog/vercel-for-enterprise",
+     "excerpts": [
+      "**Published:** October 15, 2026 | **Authors:** Jeanne Grosser, Kim Neuwirth"
+     ]
+    }
+   ],
+   "reasoning": "The announcements are dated October 15–16, 2026, inside the requested 90-day window. Their product availability and capabilities are grounded in the element-level citations.",
+   "confidence": "high"
+  },
+  {
+   "field": "priorities",
+   "citations": [
+    {
+     "title": "Vercel Drives is now generally available",
+     "url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+     "excerpts": [
+      "Use Drives to preserve an agent’s workspace or file-based memory across runs"
+     ]
+    },
+    {
+     "title": "Vercel for Enterprise",
+     "url": "https://vercel.com/blog/vercel-for-enterprise",
+     "excerpts": [
+      "Enterprise Apps and Agents is a central control plane for governing every builder, app, agent, token, and dollar."
+     ]
+    },
+    {
+     "title": "Vercel and Shopify make agents first-class shoppers",
+     "url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+     "excerpts": [
+      "Vercel Shop brings the store’s product catalog, cart, and checkout"
+     ]
+    },
+    {
+     "title": "Findings from the $1M Vercel Sandbox challenge",
+     "url": "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
+     "excerpts": [
+      "Immediately after being notified, we collaborated with the researcher to understand and mitigate the vulnerability"
+     ]
+    },
+    {
+     "title": "When Inbound Sells Itself • Tomasz Tunguz",
+     "url": "https://tomtunguz.com/single-digit-thousand-dollar-ai-sdr",
+     "excerpts": [
+      "> “We had 90% automation of sales development for inbound."
+     ]
+    }
+   ],
+   "reasoning": "The priorities synthesize demonstrated investments from dated launches, security work, and an executive interview. They are not claimed to be an official ranked corporate priority list.",
+   "confidence": "medium"
+  },
+  {
+   "field": "talking_points.0",
+   "citations": [
+    {
+     "title": "Vercel Drives is now generally available",
+     "url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+     "excerpts": [
+      "Its files remain available after the sandbox stops, so later runs and other sandboxes can access them by mounting the same Drive.",
+      "Use Drives to preserve an agent’s workspace or file-based memory across runs"
+     ]
+    }
+   ],
+   "reasoning": "Persistent workspaces directly motivate a discovery question about cross-run reliability; the question does not presume a failure.",
+   "confidence": "medium"
+  },
+  {
+   "field": "talking_points.1",
+   "citations": [
+    {
+     "title": "Vercel for Enterprise",
+     "url": "https://vercel.com/blog/vercel-for-enterprise",
+     "excerpts": [
+      "Enterprise Apps and Agents is a central control plane for governing every builder, app, agent, token, and dollar.",
+      "[**Bring Your Own Cloud**](https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available)** (BYOC) on AWS"
+     ]
+    }
+   ],
+   "reasoning": "The enterprise control-plane positioning and BYOC launch support asking which controls matter most for adoption.",
+   "confidence": "medium"
+  },
+  {
+   "field": "talking_points.2",
+   "citations": [
+    {
+     "title": "Production app suspended while billing dispute has been unanswered since Aug 27",
+     "url": "https://community.vercel.com/t/production-app-suspended-while-billing-dispute-has-been-unanswered-since-aug-27/48943",
+     "excerpts": [
+      "It has now been 11 days since I opened the support case without receiving a response, and our production deployments",
+      "Found your case (thanks for sharing the number) and it looks like the support team was able to get you a refund last week"
+     ]
+    }
+   ],
+   "reasoning": "A reported delayed billing response and subsequent refund support a question about human escalation, without generalizing the complaint.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_people.0",
+   "citations": [
+    {
+     "title": "Vercel and Shopify make agents first-class shoppers",
+     "url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+     "excerpts": [
+      "It runs on Next.js, it's built on Shopify, and it's freaking fast. > — Guillermo Rauch, Founder & CEO @ Vercel",
+      "![Shopify CEO Tobi Lütke and Vercel CEO Guillermo Rauch discuss the future of agent commerce",
+      "**Published:** October 16, 2026 | **Authors:** Boris Besemer, Dan Laugharn, Kevin Sundstrom",
+      "Today, [Vercel Shop](https://vercel.shop), our open source [Next.js](https://nextjs.org) storefront template"
+     ]
+    }
+   ],
+   "reasoning": "The announcement identifies Rauch as founder and CEO, depicts his agent-commerce discussion, and dates the associated launch.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_people.1",
+   "citations": [
+    {
+     "title": "Vercel Ship 2026 recap",
+     "url": "https://vercel.com/blog/vercel-ship-2026-recap",
+     "excerpts": [
+      "In the next keynote, Malte Ubl (CTO, Vercel)",
+      "![CTO Malte Ubl announced Daemons"
+     ]
+    }
+   ],
+   "reasoning": "The recap explicitly names Ubl as CTO and attributes the Daemons announcement to him.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_people.2",
+   "citations": [
+    {
+     "title": "Vercel Ship 2026 recap",
+     "url": "https://vercel.com/blog/vercel-ship-2026-recap",
+     "excerpts": [
+      "Jeanne Grosser (COO, Vercel) focused on what happens when everyone in a company can build.",
+      "In his opening keynote, Guillermo pointed to claims that AI would replace developers, then used Vercel's own data to prove them wrong.",
+      "[Enterprise-Managed Authorization for Vercel Connect](https://vercel.com/changelog/vercel-connect-adds-enterprise-managed-authorization) launched in public beta."
+     ]
+    }
+   ],
+   "reasoning": "The recap identifies Grosser as COO and describes the enterprise availability announcements in her keynote section.",
+   "confidence": "high"
+  },
+  {
+   "field": "challenges.0",
+   "citations": [
+    {
+     "title": "Findings from the $1M Vercel Sandbox challenge",
+     "url": "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
+     "excerpts": [
+      "**Published:** October 14, 2026 | **Authors:** Andy Riancho",
+      "Second, using the same flaw, they were able to run commands with full administrator privileges",
+      "The packet-related crash and code execution attacks were demonstrated on the researcher’s own KVM and Firecracker machines",
+      "Immediately after being notified, we collaborated with the researcher to understand and mitigate the vulnerability",
+      "Fixes are under private review and CVEs are pending, so we are not publishing additional details until the patches are public.",
+      "No reports showed anyone accessing customer data in Vercel Sandbox."
+     ]
+    }
+   ],
+   "reasoning": "The primary report directly supports the vulnerability, test environment, mitigation, pending status at publication, and absence of reported customer-data access. Present-day unresolved status is deliberately not asserted.",
+   "confidence": "medium"
+  },
+  {
+   "field": "challenges.1",
+   "citations": [
+    {
+     "title": "Production app suspended while billing dispute has been unanswered since Aug 27",
+     "url": "https://community.vercel.com/t/production-app-suspended-while-billing-dispute-has-been-unanswered-since-aug-27/48943",
+     "excerpts": [
+      "thewoodshedlab (@maddoxkennerson-3010) · 2026-09-07",
+      "Case ID: 01UGy2fIc2PLV1Ni Case opened: August 27, 2026 Current status: No response received as of September 7",
+      "Once I discovered the source of the charges, I immediately disabled the automatic Agent features.",
+      "It has now been 11 days since I opened the support case without receiving a response, and our production deployments",
+      "Amy Egan (@amyegan) · 2026-09-24",
+      "Found your case (thanks for sharing the number) and it looks like the support team was able to get you a refund last week"
+     ]
+    }
+   ],
+   "reasoning": "The thread supports a dated customer allegation and later refund response. The characterization is limited to that individual complaint rather than a verified systemic failure.",
+   "confidence": "medium"
+  },
+  {
+   "field": "recent_changes.0",
+   "citations": [
+    {
+     "title": "Vercel and Shopify make agents first-class shoppers",
+     "url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+     "excerpts": [
+      "**Published:** October 16, 2026 | **Authors:** Boris Besemer, Dan Laugharn, Kevin Sundstrom",
+      "Today, [Vercel Shop](https://vercel.shop), our open source [Next.js](https://nextjs.org) storefront template",
+      "Earlier this year, [Vercel and Shopify announced plans to rebuild Hydrogen](https://vercel.com/blog/vercel-and-shopify-are-rebuilding-hydrogen) to work across JavaScript frameworks. Today, [the rebuilt SDK is generally available](https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available).",
+      "Vercel Shop makes product pages available as [machine-readable content"
+     ]
+    }
+   ],
+   "reasoning": "The dated announcement states the general availability of Shop and Hydrogen and describes machine-readable commerce capabilities.",
+   "confidence": "high"
+  },
+  {
+   "field": "recent_changes.1",
+   "citations": [
+    {
+     "title": "Vercel Drives is now generally available",
+     "url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+     "excerpts": [
+      "**Published:** October 15, 2026 | **Authors:** Tom Lienard, Marc Codina Segura, Andy Waller, Luke Phillips\\-Sheard, Joe Haddad",
+      "Vercel Drives is now generally available",
+      "A Drive is persistent storage that you mount as a directory in a Vercel Sandbox. Its files remain available after the sandbox stops, so later runs and other sandboxes can access them by mounting the same Drive. Use Drives to preserve an agent’s workspace or file-based memory across runs, or to make datasets, models, dependencies, and build artifacts available across sandboxes."
+     ]
+    }
+   ],
+   "reasoning": "The changelog provides the launch date, availability status, and persistent-storage behavior.",
+   "confidence": "high"
+  },
+  {
+   "field": "recent_changes.2",
+   "citations": [
+    {
+     "title": "Vercel for Enterprise",
+     "url": "https://vercel.com/blog/vercel-for-enterprise",
+     "excerpts": [
+      "**Published:** October 15, 2026 | **Authors:** Jeanne Grosser, Kim Neuwirth",
+      "[**Bring Your Own Cloud**](https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available)** (BYOC) on AWS** is generally available, giving you the full Vercel developer experience, while keeping compute and data inside your AWS boundary. [**Enterprise-Managed Authorization**](https://vercel.com/changelog/vercel-connect-adds-enterprise-managed-authorization) through Vercel Connect is launching in public beta, giving agents the ability to access connected services on behalf of employees through your IdP."
+     ]
+    }
+   ],
+   "reasoning": "The enterprise announcement explicitly gives BYOC's GA status and Enterprise-Managed Authorization's public-beta status and purpose.",
+   "confidence": "high"
+  },
+  {
+   "field": "priorities.0",
+   "citations": [
+    {
+     "title": "Vercel Drives is now generally available",
+     "url": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+     "excerpts": [
+      "**Published:** October 15, 2026 | **Authors:** Tom Lienard, Marc Codina Segura, Andy Waller, Luke Phillips\\-Sheard, Joe Haddad",
+      "Its files remain available after the sandbox stops, so later runs and other sandboxes can access them by mounting the same Drive. Use Drives to preserve an agent’s workspace or file-based memory across runs, or to make datasets, models, dependencies, and build artifacts available across sandboxes."
+     ]
+    }
+   ],
+   "reasoning": "Shipping persistent agent storage demonstrates investment in continuity across agent runs; the priority label is a synthesis of the launch.",
+   "confidence": "medium"
+  },
+  {
+   "field": "priorities.1",
+   "citations": [
+    {
+     "title": "Vercel for Enterprise",
+     "url": "https://vercel.com/blog/vercel-for-enterprise",
+     "excerpts": [
+      "**Published:** October 15, 2026 | **Authors:** Jeanne Grosser, Kim Neuwirth",
+      "Enterprise Apps and Agents is a central control plane for governing every builder, app, agent, token, and dollar.",
+      "[**Bring Your Own Cloud**](https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available)** (BYOC) on AWS** is generally available, giving you the full Vercel developer experience, while keeping compute and data inside your AWS boundary. [**Enterprise-Managed Authorization**](https://vercel.com/changelog/vercel-connect-adds-enterprise-managed-authorization) through Vercel Connect is launching in public beta, giving agents the ability to access connected services on behalf of employees through your IdP."
+     ]
+    }
+   ],
+   "reasoning": "The governance positioning and enterprise launches support the synthesized enterprise-adoption priority.",
+   "confidence": "medium"
+  },
+  {
+   "field": "priorities.2",
+   "citations": [
+    {
+     "title": "Vercel and Shopify make agents first-class shoppers",
+     "url": "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+     "excerpts": [
+      "**Published:** October 16, 2026 | **Authors:** Boris Besemer, Dan Laugharn, Kevin Sundstrom",
+      "Today, [Vercel Shop](https://vercel.shop), our open source [Next.js](https://nextjs.org) storefront template",
+      "Vercel Shop makes product pages available as [machine-readable content",
+      "Vercel Shop brings the store’s product catalog, cart, and checkout"
+     ]
+    }
+   ],
+   "reasoning": "The launch and agent-specific storefront capabilities demonstrate investment in agent commerce.",
+   "confidence": "medium"
+  },
+  {
+   "field": "priorities.3",
+   "citations": [
+    {
+     "title": "Findings from the $1M Vercel Sandbox challenge",
+     "url": "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
+     "excerpts": [
+      "**Published:** October 14, 2026 | **Authors:** Andy Riancho",
+      "Immediately after being notified, we collaborated with the researcher to understand and mitigate the vulnerability",
+      "On top of that foundation, they gave us three structural recommendations, which we implemented: **Find and eliminate all trust in the guest.** Our control plane accepted values returned by software running inside the microVM, and every one of those values is tenant input. Anything that crosses the boundary should be derived server-side or signed with a key the guest cannot reach. **One policy, one decider.** Egress enforcement was split across subsystems that each parsed the same network policy independently, and they did not always agree. We now use one canonicalization routine per data type, one component per decision, and revalidate connections when policy changes. **Assume the next zero day.** Keep host and guest kernels up to date, reduce the kernel attack surface via build and runtime configs, disable nested virtualization, and use Firecracker’s jailer to run each microVM process with restricted permissions and isolate it from the rest of the host."
+     ]
+    }
+   ],
+   "reasoning": "The report describes actual security collaboration and implemented structural hardening, supporting the security-investment priority.",
+   "confidence": "medium"
+  },
+  {
+   "field": "priorities.4",
+   "citations": [
+    {
+     "title": "When Inbound Sells Itself • Tomasz Tunguz",
+     "url": "https://tomtunguz.com/single-digit-thousand-dollar-ai-sdr",
+     "excerpts": [
+      "September 15, 2026 · 2 min read",
+      "[Jeanne DeWitt Grosser](https://www.linkedin.com/in/jeannedewitt) , COO of Vercel",
+      "> “We had 90% automation of sales development for inbound.",
+      "And our support agent that we’ve home-built handles 93% of all support cases"
+     ]
+    }
+   ],
+   "reasoning": "The dated interview report attributes internal sales and support automation to the COO. This supports the investment direction, but it is a third-party interview account rather than an official priority statement.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.1,
+ "cost_basis": "list"
+}

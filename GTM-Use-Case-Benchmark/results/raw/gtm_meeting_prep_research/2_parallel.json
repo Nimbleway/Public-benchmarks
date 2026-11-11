@@ -1,404 +1,448 @@
 {
  "arm": "parallel",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Gong (gong.io)",
+ "input_n": 2,
  "tier": "pro",
  "status": "completed",
- "seconds": 230,
- "run_id": "trun_75ae0d14b3f84a2a86f62d969517b4a8",
+ "seconds": 215,
+ "run_id": "trun_75ae0d14b3f84a2aac99671160aded01",
  "output": {
   "company": "Gong (gong.io)",
   "talking_points": [
-   "With Enrich and Deep Mode generally available, how are you measuring data quality and answer accuracy as adoption grows? Source: https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-   "Which workflows are the first priorities for automatically triggered Custom Agents, and what results will determine whether you expand deployment? Source: https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-   "How are you demonstrating the value of the broader platform to price-sensitive buyers? An August review acknowledged higher pricing while praising the more structured tech stack. Source: https://www.trustradius.com/products/gong-io/pricing"
+   "With Gong Activate and the new R&D leadership, which agent-driven workflows are the next priority—and how will you measure their business impact?",
+   "As Gong Enrich expands the data foundation, how are you addressing integration friction and making licensing and usage costs clear to customers?",
+   "Following the Klue incident and Guy Havusha’s CISO appointment, what additional controls are priorities for third-party integrations and agents acting on customer data?"
   ],
   "key_people": [
    {
-    "title": "Co-Founder and Chief Executive Officer",
-    "source_url": "https://www.gong.io/press/gong-named-a-leader-in-2026-gartner-magic-quadrant-for-revenue-action-orchestration-for-second-consecutive-year",
-    "recent": "On October 16, 2026, said Gong is focused on helping revenue teams move “from insight to action to results, at scale.”",
+    "title": "CEO & Co-Founder",
+    "source_url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+    "recent": "On November 4, 2026, said Gong’s next phase is agents that take action and deliver results at enterprise scale, rather than just surface insights.",
     "name": "Amit Bendov"
    },
    {
-    "title": "Chief Product Officer and Co-Founder",
-    "source_url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-    "recent": "On September 30, 2026, explained that Gong Enrich extends account and contact context into the Revenue Graph, emphasizing that revenue decisions depend on the context behind them.",
-    "name": "Eilon Reshef"
+    "title": "Chief R&D Officer",
+    "source_url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+    "recent": "Appointed November 4, 2026, to lead R&D and expand agentic capabilities across Gong’s Revenue Graph, Revenue Harness and Revenue Operating Surfaces.",
+    "name": "Liron Shtraichman"
    },
    {
-    "title": "Chief Revenue Architect",
-    "source_url": "https://www.gong.io/press/gong-partnering-with-microsoft-to-enable-enterprises-to-automate-workflows-act-faster-and-win-more-revenue-with-ai",
-    "recent": "On July 1, 2026, said Microsoft Marketplace availability makes it easier for enterprises to bring revenue AI directly into their workflows.",
-    "name": "Shane Evans"
+    "title": "Chief Information Security Officer",
+    "source_url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+    "recent": "Named CISO on November 4, 2026, after serving as VP of Platform Security; leads global security, privacy and compliance as Gong expands AI-agent execution.",
+    "name": "Guy Havusha"
    }
   ],
-  "missing_fields": [],
+  "missing_fields": [
+   "challenges.current_status: Whether the April 2026 customer complaints persist as of November 9, 2026, could not be verified. The security incident below is historical; Klue reported integration restoration in July."
+  ],
   "challenges": [
    {
-    "evidence": "An incentivized customer review dated August 18, 2026, said pricing “may be a little bit more expensive,” while also praising the more structured tech stack and sales customer experience. This is a customer value-perception signal, not evidence of widespread churn or financial distress.",
-    "date": "2026-08-18",
-    "source_url": "https://www.trustradius.com/products/gong-io/pricing",
-    "challenge": "Some customers perceive Gong as relatively expensive."
+    "evidence": "Gong disclosed that an unauthorized actor accessed third-party integrator Klue’s integration service, potentially exposing some connected customers’ internal licensed-user names, business titles and emails. Gong said this was not a direct breach of its products or systems and identified no direct impact to call recordings or transcripts. This is a historical security exposure, not a confirmed ongoing outage: Klue reported restoration on July 27, 2026 (https://klue.com/blog/integrations-restored-salesforce-and-gong-reconnected).",
+    "date": "2026-06-19",
+    "source_url": "https://www.gong.io/blog/klue-security-incident",
+    "challenge": "Third-party integration security exposure and associated customer-data risk."
    },
    {
-    "evidence": "TrustRadius’s review synthesis, last published July 1, 2026, reports occasional inconsistencies in AI summaries and transcription, especially with technical jargon or accents, and related search difficulties. It also says overall sentiment is positive; these are aggregated customer reports, not a confirmed platform-wide defect.",
-    "date": "2026-07-01",
-    "source_url": "https://www.trustradius.com/products/gong-io/reviews?company-size=small-business&dimension=company-size",
-    "challenge": "Customer-reported transcription and AI-summary inconsistencies can make information retrieval harder."
+    "evidence": "An April 15, 2026 Gartner Peer Insights review criticized limited integration and additional fees for core features. An April 29, 2026 favorable review nevertheless described licensing as costly and complex. These are individual customer opinions, not proof of a systemic problem or its persistence today.",
+    "date": "2026-04-15; 2026-04-29",
+    "source_url": "https://www.gartner.com/reviews/market/revenue-action-orchestration/vendor/gong",
+    "challenge": "Documented customer friction around interoperability, licensing complexity and additional fees."
    }
   ],
   "what_they_do": {
-   "value": "Gong provides a Revenue AI OS that turns insight into action—and action into sustainable growth.",
-   "source_url": "https://www.gong.io/",
-   "as_of": "2026-10-20"
+   "value": "Gong Revenue AI unifies data, insights, and workflows into a single, trusted system that observes, guides, and acts alongside the world’s most successful revenue teams.",
+   "source_url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+   "as_of": "2026-11-04"
   },
   "recent_changes": [
    {
-    "type": "Product launch",
-    "date": "2026-09-30",
-    "headline": "Mission Callisto expands Gong into sales-data enrichment and agentic workflows",
-    "source_url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-    "summary": "Announced Gong Enrich, Deep Mode in Gong Assistant, and enhancements to Agent Builder and Dashboards. Enrich and Deep Mode were generally available; expanded Dashboards, automatically triggered Custom Agents, and other Assistant enhancements were rolling out throughout 2026."
+    "type": "Leadership",
+    "date": "2026-11-04",
+    "headline": "Gong appoints new R&D and security leaders.",
+    "source_url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+    "summary": "Liron Shtraichman was appointed Chief R&D Officer and Guy Havusha was named CISO, supporting expanded agentic capabilities and enterprise security."
    },
    {
     "type": "Product announcement",
     "date": "2026-09-30",
-    "headline": "Gong announces Gong Activate at Celebrate ’26",
+    "headline": "Gong announces Activate and its self-improving revenue loop.",
     "source_url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
-    "summary": "Announced a next-generation Revenue AI offering intended to deploy revenue motions that win, retain, and grow accounts. Amit Bendov described the vision as a self-improving revenue loop; the announcement should not be treated as confirmation of general availability."
+    "summary": "Activate brings agents and revenue teams together around shared account motions, with outcomes feeding back into the Revenue Graph. The release announces the product but does not establish general availability."
    },
    {
-    "type": "Industry recognition",
-    "date": "2026-10-16",
-    "headline": "Gong named a Leader in Gartner’s Revenue Action Orchestration Magic Quadrant",
-    "source_url": "https://www.gong.io/press/gong-named-a-leader-in-2026-gartner-magic-quadrant-for-revenue-action-orchestration-for-second-consecutive-year",
-    "summary": "Gong’s announcement highlighted its recognition and reiterated the strategic focus on moving revenue teams from insights to actions and results at scale."
+    "type": "Product launch",
+    "date": "2026-09-30",
+    "headline": "Gong introduces Enrich, Agent Builder and Deep Mode.",
+    "source_url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
+    "summary": "Enrich fills missing account and contact details; Agent Builder creates event-triggered custom agents; Deep Mode investigates complex business questions within Gong Assistant."
    }
   ],
   "priorities": [
    {
-    "evidence": "Mission Callisto introduced Gong Enrich to expand the Revenue Graph with third-party contact and account data. Customers can connect supported providers and configure their search order. Gong said Enrich was generally available on the announcement date.",
-    "date": "2026-09-30",
-    "source_url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-    "priority": "Make the Revenue Graph more complete through account and contact enrichment."
+    "evidence": "The new R&D leader’s stated remit is expanding agentic capabilities across Gong’s core platform. Amit Bendov described the next phase as agents that take action and deliver results at enterprise scale.",
+    "date": "2026-11-04",
+    "source_url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+    "priority": "Expand agentic Revenue AI from insights into enterprise-scale execution."
    },
    {
-    "evidence": "Agent Builder enables Custom Agents to run in response to defined events and conditions. Teams can specify triggers, conditions, and actions visually or in natural language; automatically triggered Custom Agents were rolling out throughout 2026.",
+    "evidence": "Gong introduced Enrich to fill missing account and contact details, expanding the Revenue Graph with richer third-party data and reducing sellers’ research work.",
     "date": "2026-09-30",
-    "source_url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-    "priority": "Automate revenue workflows with configurable, event-triggered agents."
+    "source_url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
+    "priority": "Strengthen the account-and-contact data foundation through Gong Enrich."
    },
    {
-    "evidence": "Gong Assistant gained Deep Mode for complex strategic questions and comprehensive reports, plus natural-language creation of Gong Engage Flows. Deep Mode was generally available; other Assistant enhancements were rolling out throughout 2026.",
-    "date": "2026-09-30",
-    "source_url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-    "priority": "Expand Gong Assistant from answering questions into investigation and workflow creation."
-   },
-   {
-    "evidence": "Expanded Gong Dashboards cover the full revenue lifecycle rather than forecasting alone. Teams can define metrics in Gong Data Studio and reuse them across views; the expanded capabilities were rolling out throughout 2026.",
-    "date": "2026-09-30",
-    "source_url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-    "priority": "Give RevOps a shared measurement layer across the revenue lifecycle."
+    "evidence": "Gong named Guy Havusha CISO with responsibility for global security, privacy and compliance. His remit explicitly makes data security and governance differentiators as AI agents take on more revenue-cycle work.",
+    "date": "2026-11-04",
+    "source_url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+    "priority": "Make enterprise security and governance central to AI-agent adoption."
    }
   ]
  },
- "cost_usd": 0.1,
- "cost_basis": "list",
  "basis": [
   {
    "field": "company",
    "citations": [
     {
-     "title": "Gong partnering with Microsoft to enable enterprises to automate workflows, act faster, and win more revenue with AI",
-     "url": "https://www.gong.io/press/gong-partnering-with-microsoft-to-enable-enterprises-to-automate-workflows-act-faster-and-win-more-revenue-with-ai",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "**SAN FRANCISCO, Calif. — July 1, 2026** – [Gong](https://www.gong.io/) , the leading revenue AI company, today announced it is now available in Microsoft Marketplace, deepening its collaboration with Microsoft to simplify and expand how enterprises buy, deploy, and generate value from revenue AI."
+      "Gong harnesses the power of AI to transform how revenue teams win."
      ]
     }
    ],
-   "reasoning": "The official gong.io announcement identifies Gong and links to its own domain, establishing the exact entity.",
+   "reasoning": "Gong’s own announcement identifies the company and its revenue-AI business; the source is on gong.io.",
    "confidence": "high"
   },
   {
    "field": "talking_points",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "Gong Enrich and Deep Mode are now generally available.",
-      "Agent Builder enables teams to create Custom Agents that automatically run in response to the events and conditions they define, turning work that once needed someone to remember and act into an automated workflow."
-     ]
-    },
-    {
-     "title": "Gong Pricing 2026",
-     "url": "https://www.trustradius.com/products/gong-io/pricing",
-     "excerpts": [
-      "Rating: 9 out of 10 > “ Pricing wise it may be a little bit more expensive but still gave us a much more structured tech stack and customer experience for Sales people. ” > > View full review Verified User August 18, 2026 Incentivized"
-     ]
-    }
-   ],
-   "reasoning": "The questions are proposed discussion angles grounded in available products, event-triggered agents, and a dated pricing review. They do not assert unverified internal objectives or results.",
-   "confidence": "medium"
-  },
-  {
-   "field": "key_people",
-   "citations": [
-    {
-     "title": "Gong Named a Leader in 2026 Gartner® Magic Quadrant™ for Revenue Action Orchestration for second consecutive year",
-     "url": "https://www.gong.io/press/gong-named-a-leader-in-2026-gartner-magic-quadrant-for-revenue-action-orchestration-for-second-consecutive-year",
-     "excerpts": [
-      "“Gong created the Revenue AI category, we’re leading it, and we’re committed to leading it for years to come,” said Amit Bendov, co-founder and CEO of Gong. “We’re focused on helping revenue teams move from insight to action to results, at scale."
-     ]
-    },
-    {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-     "excerpts": [
-      "\"Every revenue decision is only as good as the context behind it,\" said Eilon Reshef, Chief Product Officer and Co-Founder at Gong.",
-      "\"Gong Enrich makes sure that context doesn't stop where the conversation ends — it automatically extends to every account and contact a team touches, and flows straight back into the Revenue Graph."
-     ]
-    },
-    {
-     "title": "Gong partnering with Microsoft to enable enterprises to automate workflows, act faster, and win more revenue with AI",
-     "url": "https://www.gong.io/press/gong-partnering-with-microsoft-to-enable-enterprises-to-automate-workflows-act-faster-and-win-more-revenue-with-ai",
-     "excerpts": [
-      "“With Gong now available in Microsoft Marketplace, it’s easier for organizations to bring revenue AI directly into their workflows”, said Shane Evans, Chief Revenue Architect at Gong. “Microsoft is where revenue professionals get work done and where enterprises build their infrastructure on Azure."
-     ]
-    }
-   ],
-   "reasoning": "Official announcements identify the executives, titles, and statements. The current About page also corroborated the titles during research, although Shane's cited action is older than the other two.",
-   "confidence": "medium"
-  },
-  {
-   "field": "missing_fields",
-   "citations": [],
-   "reasoning": "Each requested field has supporting material from opened pages. The answer avoids unsupported financial, layoff, and ongoing-litigation claims rather than adding unverified detail.",
-   "confidence": "medium"
-  },
-  {
-   "field": "challenges",
-   "citations": [
-    {
-     "title": "Gong Pricing 2026",
-     "url": "https://www.trustradius.com/products/gong-io/pricing",
-     "excerpts": [
-      "Rating: 9 out of 10 > “ Pricing wise it may be a little bit more expensive but still gave us a much more structured tech stack and customer experience for Sales people. ” > > View full review Verified User August 18, 2026 Incentivized"
-     ]
-    },
-    {
-     "title": "Gong Reviews from Real Users | TrustRadius",
-     "url": "https://www.trustradius.com/products/gong-io/reviews?company-size=small-business&dimension=company-size",
-     "excerpts": [
-      "Synthesised from 63 reviews | Last Published July 1, 2026",
-      "AI-driven summaries and transcriptions can be inconsistent, especially with technical jargon or accents.",
-      "Search functionality is sometimes cumbersome or ineffective due to transcription inaccuracies.",
-      "Despite these areas for improvement, the overall sentiment is positive, with many attributing increased sales and improved team collaboration to Gong."
-     ]
-    }
-   ],
-   "reasoning": "Customer-review evidence supports narrowly worded pricing and accuracy complaints. These secondary sources do not establish prevalence, commercial impact, or a company-wide defect, so the answer explicitly preserves those limitations.",
-   "confidence": "medium"
-  },
-  {
-   "field": "what_they_do",
-   "citations": [
-    {
-     "title": "Gong - Revenue AI OS",
-     "url": "https://www.gong.io/",
-     "excerpts": [
-      "The only Revenue AI OS that turns insight into action — and action into sustainable growth."
-     ]
-    }
-   ],
-   "reasoning": "The sentence uses Gong's own homepage description, omitting the unverified exclusivity claim and recording the research date.",
-   "confidence": "high"
-  },
-  {
-   "field": "recent_changes",
-   "citations": [
-    {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-     "excerpts": [
-      "September 30, 2026",
-      "Mission Callisto also introduces Deep Mode in Gong Assistant, along with enhancements to Agent Builder and Gong Dashboards.",
-      "Gong Enrich and Deep Mode are now generally available.",
-      "Expanded Gong Dashboards, automatically triggered Custom Agents, and other Gong Assistant enhancements are rolling out throughout this year."
+      "This experience will be invaluable at Gong, where he will lead R&D and be focused on expanding the agentic capabilities Gong delivers to leading revenue teams across its Revenue Graph, Revenue Harness, Revenue Operating Surfaces and more.",
+      "As CISO, Havusha leads Gong’s global security, privacy, and compliance programs, ensuring that the customer data powering Gong’s AI and the agents acting on it meet the highest enterprise standards. As AI agents take on more work across the revenue cycle, Havusha will be responsible for ensuring that data security and governance serve as strategic differentiators and value propositions for our customers."
      ]
     },
     {
      "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
      "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
      "excerpts": [
-      "Gong also announced Gong Activate, the next generation of Revenue AI, that allows teams to deploy the motions that win, retain, and grow accounts, with agents and reps all working from the same blueprint.",
-      "Today, we’re taking the next step with the announcement of Gong Activate – centered on Gong’s vision for a self-improving revenue loop,” said Amit Bendov, Gong Co-founder and CEO. “For years, AI told you how to win."
+      "Gong Enrich, a new [sales enrichment](https://www.gong.io/blog/gong-enrich-sales-prospecting) offering, helps close the data gaps that slow sellers down, automatically filling in missing account and contact details so reps spend less time researching and more time acting."
      ]
     },
     {
-     "title": "Gong Named a Leader in 2026 Gartner® Magic Quadrant™ for Revenue Action Orchestration for second consecutive year",
-     "url": "https://www.gong.io/press/gong-named-a-leader-in-2026-gartner-magic-quadrant-for-revenue-action-orchestration-for-second-consecutive-year",
+     "title": "Gong Reviews, Ratings & Features 2026 | Gartner Peer Insights",
+     "url": "https://www.gartner.com/reviews/market/revenue-action-orchestration/vendor/gong",
      "excerpts": [
-      "October 16, 2026",
-      "Being named a Leader in the 2026 Gartner Magic Quadrant for Revenue Action Orchestration for the second consecutive year reflects that commitment and the outcomes our customers drive with Revenue AI.”"
+      "dislikes While the tool is strong, there are a few things that are not great: 1) They want to keep all call knowledge in Gong which means it doesn't play nice with other tools 2) The AI in Gong isn't as powerful as other tools currently in the market 3) They are taking pieces that are core to the users now and making them additional fees"
+     ]
+    },
+    {
+     "title": "Klue Security Incident | Gong",
+     "url": "https://www.gong.io/blog/klue-security-incident",
+     "excerpts": [
+      "Gong was recently notified by Klue that they experienced a security incident in which an unauthorized actor obtained access to their integration service."
      ]
     }
    ],
-   "reasoning": "The official dated announcements fall within the requested recent period. The answer distinguishes general availability from rollout and announcement, without inventing an Activate availability date.",
+   "reasoning": "The questions connect the documented agentic roadmap, enrichment launch, customer complaints and security responsibilities. They are proposed discussion angles, not claims that additional undisclosed problems exist.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_people",
+   "citations": [
+    {
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+     "excerpts": [
+      "**SAN FRANCISCO — November 4, 2026** —Gong, the leader in revenue AI, today announced the appointment of [Liron Shtraichman](https://www.linkedin.com/in/liron-shtraichman-3919015a/) as Chief R&D (research & development) Officer and [Guy Havusha](https://www.linkedin.com/in/guy-havusha/) as Chief Information Security Officer (CISO",
+      "The next phase is about agents that don’t just surface insights, but take action and deliver results at enterprise scale,” said Amit Bendov, CEO and co-founder of Gong. “Liron has scaled a global engineering organization and led a full transition to AI-native development. And with Guy leading security, our customers can put AI agents to work knowing their data is protected to the highest enterprise standards. That’s exactly the experience to keep transforming how revenue teams win.",
+      "This experience will be invaluable at Gong, where he will lead R&D and be focused on expanding the agentic capabilities Gong delivers to leading revenue teams across its Revenue Graph, Revenue Harness, Revenue Operating Surfaces and more.",
+      "Previously serving as Vice President of Platform Security at Gong, Havusha now takes the reins as CISO, a role he is familiar with, having also previously served as Global CISO at monday.com.",
+      "As CISO, Havusha leads Gong’s global security, privacy, and compliance programs, ensuring that the customer data powering Gong’s AI and the agents acting on it meet the highest enterprise standards."
+     ]
+    }
+   ],
+   "reasoning": "The November 4 company announcement directly supplies the appointments, titles, responsibilities and CEO statement. The current About page also lists these leaders.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The opened review evidence is dated April. No opened source established whether those complaints remained unresolved in November; this is a research limitation, not an assertion about the company.",
+   "confidence": "low"
+  },
+  {
+   "field": "challenges",
+   "citations": [
+    {
+     "title": "Klue Security Incident | Gong",
+     "url": "https://www.gong.io/blog/klue-security-incident",
+     "excerpts": [
+      "Published on: June 19, 2026",
+      "To be clear: this was an incident that originated with third-party integrator Klue. It was not a direct breach of Gong’s own products or systems.",
+      "Gong has not identified any direct impact to customer call recordings or transcripts.",
+      "Based upon those IP Addresses and information available at this time, we can confirm that a subset of customers using the Klue integration may have had internal licensed user data accessed, though we can confirm no direct impact on call recordings or customer transcripts. Examples of data accessed included user names, user business titles and user emails"
+     ]
+    },
+    {
+     "title": "Integrations Restored: Salesforce and Gong Reconnected - Klue",
+     "url": "https://klue.com/blog/integrations-restored-salesforce-and-gong-reconnected",
+     "excerpts": [
+      "By Jason Smith 2 min read July 27, 2026 I’m pleased to share that both Salesforce and Gong have reinstated their Klue integrations in their respective marketplaces. As a result, all Klue integrations are once again available for customers to enable."
+     ]
+    },
+    {
+     "title": "Gong Reviews, Ratings & Features 2026 | Gartner Peer Insights",
+     "url": "https://www.gartner.com/reviews/market/revenue-action-orchestration/vendor/gong",
+     "excerpts": [
+      "Favorable Review 5.0 April 29, 2026 Product: [Gong](https://www.gartner.com/reviews/product/gong-1585323509?marketSeoName=revenue-action-orchestration) Positive Experience With Sales Insights Despite Costly and Complex Licensing Model",
+      "Critical Review 3.0 April 15, 2026 Product: [Gong](https://www.gartner.com/reviews/product/gong-1585323509?marketSeoName=revenue-action-orchestration) Limited Integration And Additional Fees Affect Gong’s Core Features Over Time",
+      "Gartner Peer Insights content consists of the opinions of individual end users"
+     ]
+    }
+   ],
+   "reasoning": "Gong directly disclosed the third-party incident and limited its scope; Klue subsequently reported restoration. Dated Gartner reviews document customer complaints, with Gartner’s disclaimer supporting attribution as opinions. These sources establish historical issues, not unresolved November problems.",
+   "confidence": "medium"
+  },
+  {
+   "field": "what_they_do",
+   "citations": [
+    {
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+     "excerpts": [
+      "Gong Revenue AI unifies data, insights, and workflows into a single, trusted system that observes, guides, and acts alongside the world’s most successful revenue teams.",
+      "November 4, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The sentence reproduces Gong’s own company description from its dated November 4 announcement.",
+   "confidence": "high"
+  },
+  {
+   "field": "recent_changes",
+   "citations": [
+    {
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+     "excerpts": [
+      "**SAN FRANCISCO — November 4, 2026** —Gong, the leader in revenue AI, today announced the appointment of [Liron Shtraichman](https://www.linkedin.com/in/liron-shtraichman-3919015a/) as Chief R&D (research & development) Officer and [Guy Havusha](https://www.linkedin.com/in/guy-havusha/) as Chief Information Security Officer (CISO"
+     ]
+    },
+    {
+     "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
+     "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
+     "excerpts": [
+      "September 30, 2026",
+      "Gong also announced Gong Activate, the next generation of Revenue AI, that allows teams to deploy the motions that win, retain, and grow accounts, with agents and reps all working from the same blueprint.",
+      "And measurement creates constant feedback, folding outcomes back into the Revenue Graph so every decision and action sharpens the next.",
+      "Gong Enrich, a new [sales enrichment](https://www.gong.io/blog/gong-enrich-sales-prospecting) offering, helps close the data gaps that slow sellers down, automatically filling in missing account and contact details so reps spend less time researching and more time acting.",
+      "**Agent Builder** enables teams to create custom agents that automatically run in response to the events and conditions they define, helping automate and scale your most critical, winning workflows. Define the triggers, conditions, steps, and actions, or simply describe the agent you want in natural language.",
+      "**Deep Mode,** an agent within the Gong Assistant, takes on the investigation behind hard business questions, turning what used to take hours of manual digging into a grounded, comprehensive answer."
+     ]
+    }
+   ],
+   "reasoning": "The dated company announcements establish November leadership changes and September product announcements, all within the requested 90-day window. Activate is conservatively described as announced rather than generally available.",
    "confidence": "high"
   },
   {
    "field": "priorities",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "[**Gong Enrich**](http://gong.io/blog/gong-enrich-sales-prospecting) expands the Gong Revenue Graph with third-party contact and account data.",
-      "Agent Builder enables teams to create Custom Agents that automatically run in response to the events and conditions they define, turning work that once needed someone to remember and act into an automated workflow.",
-      "Gong Assistant gains **Deep Mode** , a new mode for complex strategic questions that previously required teams to gather information from multiple systems and connect the dots themselves. By examining a broader set of business information and signals, Deep Mode creates a grounded, comprehensive report, saving hours of manual investigation.",
-      "Gong Dashboards expand beyond forecasting to cover the full revenue lifecycle, giving RevOps a single place to track performance at every stage of the business, not just pipeline.",
-      "Expanded Gong Dashboards, automatically triggered Custom Agents, and other Gong Assistant enhancements are rolling out throughout this year."
+      "This experience will be invaluable at Gong, where he will lead R&D and be focused on expanding the agentic capabilities Gong delivers to leading revenue teams across its Revenue Graph, Revenue Harness, Revenue Operating Surfaces and more.",
+      "The next phase is about agents that don’t just surface insights, but take action and deliver results at enterprise scale,” said Amit Bendov, CEO and co-founder of Gong. “Liron has scaled a global engineering organization and led a full transition to AI-native development. And with Guy leading security, our customers can put AI agents to work knowing their data is protected to the highest enterprise standards. That’s exactly the experience to keep transforming how revenue teams win.",
+      "As CISO, Havusha leads Gong’s global security, privacy, and compliance programs, ensuring that the customer data powering Gong’s AI and the agents acting on it meet the highest enterprise standards. As AI agents take on more work across the revenue cycle, Havusha will be responsible for ensuring that data security and governance serve as strategic differentiators and value propositions for our customers."
+     ]
+    },
+    {
+     "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
+     "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
+     "excerpts": [
+      "Gong Enrich, a new [sales enrichment](https://www.gong.io/blog/gong-enrich-sales-prospecting) offering, helps close the data gaps that slow sellers down, automatically filling in missing account and contact details so reps spend less time researching and more time acting.",
+      "[### Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams Today Gong announced Mission Callisto, its latest product launch, anchored by Gong Enrich, a new capability that expands the Gong Revenue Graph with richer third-party account and contact data. Press Release September 30, 2026](https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer)"
      ]
     }
    ],
-   "reasoning": "The four priorities synthesize concrete product investments announced in September. They are evidence-based interpretations of investment direction, not claims about undisclosed budgets or internal rankings.",
+   "reasoning": "The priorities synthesize explicit executive remits and product launches. They indicate active strategic investment areas, not quantified spending commitments.",
    "confidence": "medium"
   },
   {
    "field": "talking_points.0",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "Gong Enrich and Deep Mode are now generally available."
+      "This experience will be invaluable at Gong, where he will lead R&D and be focused on expanding the agentic capabilities Gong delivers to leading revenue teams across its Revenue Graph, Revenue Harness, Revenue Operating Surfaces and more."
+     ]
+    },
+    {
+     "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
+     "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
+     "excerpts": [
+      "Gong also announced Gong Activate, the next generation of Revenue AI, that allows teams to deploy the motions that win, retain, and grow accounts, with agents and reps all working from the same blueprint."
      ]
     }
    ],
-   "reasoning": "General availability provides a factual basis for asking about adoption and quality measurement; the question does not presume results.",
+   "reasoning": "The question follows directly from the new R&D remit and Activate announcement; asking about measurement does not assert an unreported problem.",
    "confidence": "medium"
   },
   {
    "field": "talking_points.1",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
+     "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
      "excerpts": [
-      "Agent Builder enables teams to create Custom Agents that automatically run in response to the events and conditions they define, turning work that once needed someone to remember and act into an automated workflow.",
-      "Expanded Gong Dashboards, automatically triggered Custom Agents, and other Gong Assistant enhancements are rolling out throughout this year."
+      "Gong Enrich, a new [sales enrichment](https://www.gong.io/blog/gong-enrich-sales-prospecting) offering, helps close the data gaps that slow sellers down, automatically filling in missing account and contact details so reps spend less time researching and more time acting."
+     ]
+    },
+    {
+     "title": "Gong Reviews, Ratings & Features 2026 | Gartner Peer Insights",
+     "url": "https://www.gartner.com/reviews/market/revenue-action-orchestration/vendor/gong",
+     "excerpts": [
+      "dislikes While the tool is strong, there are a few things that are not great: 1) They want to keep all call knowledge in Gong which means it doesn't play nice with other tools 2) The AI in Gong isn't as powerful as other tools currently in the market 3) They are taking pieces that are core to the users now and making them additional fees"
      ]
     }
    ],
-   "reasoning": "The question follows directly from the announced event-triggered agents and rollout.",
+   "reasoning": "Connects the enrichment launch with documented customer concerns, framing their current relevance as a question.",
    "confidence": "medium"
   },
   {
    "field": "talking_points.2",
    "citations": [
     {
-     "title": "Gong Pricing 2026",
-     "url": "https://www.trustradius.com/products/gong-io/pricing",
+     "title": "Klue Security Incident | Gong",
+     "url": "https://www.gong.io/blog/klue-security-incident",
      "excerpts": [
-      "Rating: 9 out of 10 > “ Pricing wise it may be a little bit more expensive but still gave us a much more structured tech stack and customer experience for Sales people. ” > > View full review Verified User August 18, 2026 Incentivized"
+      "Gong was recently notified by Klue that they experienced a security incident in which an unauthorized actor obtained access to their integration service."
+     ]
+    },
+    {
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
+     "excerpts": [
+      "As CISO, Havusha leads Gong’s global security, privacy, and compliance programs, ensuring that the customer data powering Gong’s AI and the agents acting on it meet the highest enterprise standards. As AI agents take on more work across the revenue cycle, Havusha will be responsible for ensuring that data security and governance serve as strategic differentiators and value propositions for our customers."
      ]
     }
    ],
-   "reasoning": "The review supports asking about value justification while retaining its favorable context.",
+   "reasoning": "The historical integration incident and current CISO remit ground a question about future controls, without claiming the appointment was caused by the incident.",
    "confidence": "medium"
   },
   {
    "field": "key_people.0",
    "citations": [
     {
-     "title": "Gong Named a Leader in 2026 Gartner® Magic Quadrant™ for Revenue Action Orchestration for second consecutive year",
-     "url": "https://www.gong.io/press/gong-named-a-leader-in-2026-gartner-magic-quadrant-for-revenue-action-orchestration-for-second-consecutive-year",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "October 16, 2026",
-      "“Gong created the Revenue AI category, we’re leading it, and we’re committed to leading it for years to come,” said Amit Bendov, co-founder and CEO of Gong. “We’re focused on helping revenue teams move from insight to action to results, at scale."
+      "The next phase is about agents that don’t just surface insights, but take action and deliver results at enterprise scale,” said Amit Bendov, CEO and co-founder of Gong. “Liron has scaled a global engineering organization and led a full transition to AI-native development. And with Guy leading security, our customers can put AI agents to work knowing their data is protected to the highest enterprise standards. That’s exactly the experience to keep transforming how revenue teams win.",
+      "November 4, 2026"
      ]
     }
    ],
-   "reasoning": "The dated official release identifies Bendov as co-founder and CEO and contains the quoted strategic focus.",
+   "reasoning": "The CEO’s title and statement are directly attributed in the November 4 release.",
    "confidence": "high"
   },
   {
    "field": "key_people.1",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "September 30, 2026",
-      "\"Every revenue decision is only as good as the context behind it,\" said Eilon Reshef, Chief Product Officer and Co-Founder at Gong.",
-      "\"Gong Enrich makes sure that context doesn't stop where the conversation ends — it automatically extends to every account and contact a team touches, and flows straight back into the Revenue Graph."
+      "**SAN FRANCISCO — November 4, 2026** —Gong, the leader in revenue AI, today announced the appointment of [Liron Shtraichman](https://www.linkedin.com/in/liron-shtraichman-3919015a/) as Chief R&D (research & development) Officer and [Guy Havusha](https://www.linkedin.com/in/guy-havusha/) as Chief Information Security Officer (CISO",
+      "This experience will be invaluable at Gong, where he will lead R&D and be focused on expanding the agentic capabilities Gong delivers to leading revenue teams across its Revenue Graph, Revenue Harness, Revenue Operating Surfaces and more."
      ]
     }
    ],
-   "reasoning": "The launch release directly identifies Reshef's role and explains his product rationale.",
+   "reasoning": "The release directly names Shtraichman, his appointment and his agentic R&D responsibilities.",
    "confidence": "high"
   },
   {
    "field": "key_people.2",
    "citations": [
     {
-     "title": "Gong partnering with Microsoft to enable enterprises to automate workflows, act faster, and win more revenue with AI",
-     "url": "https://www.gong.io/press/gong-partnering-with-microsoft-to-enable-enterprises-to-automate-workflows-act-faster-and-win-more-revenue-with-ai",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "July 1, 2026",
-      "“With Gong now available in Microsoft Marketplace, it’s easier for organizations to bring revenue AI directly into their workflows”, said Shane Evans, Chief Revenue Architect at Gong. “Microsoft is where revenue professionals get work done and where enterprises build their infrastructure on Azure."
+      "**SAN FRANCISCO — November 4, 2026** —Gong, the leader in revenue AI, today announced the appointment of [Liron Shtraichman](https://www.linkedin.com/in/liron-shtraichman-3919015a/) as Chief R&D (research & development) Officer and [Guy Havusha](https://www.linkedin.com/in/guy-havusha/) as Chief Information Security Officer (CISO",
+      "Previously serving as Vice President of Platform Security at Gong, Havusha now takes the reins as CISO, a role he is familiar with, having also previously served as Global CISO at monday.com.",
+      "As CISO, Havusha leads Gong’s global security, privacy, and compliance programs, ensuring that the customer data powering Gong’s AI and the agents acting on it meet the highest enterprise standards."
      ]
     }
    ],
-   "reasoning": "The announcement directly supplies Evans's title and statement. His action is explicitly dated rather than presented as a last-90-days event.",
+   "reasoning": "The release supplies Havusha’s appointment, previous position and current security remit.",
    "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "No opened source established November persistence of the dated complaints. This explicitly records that limitation.",
+   "confidence": "low"
   },
   {
    "field": "challenges.0",
    "citations": [
     {
-     "title": "Gong Pricing 2026",
-     "url": "https://www.trustradius.com/products/gong-io/pricing",
+     "title": "Klue Security Incident | Gong",
+     "url": "https://www.gong.io/blog/klue-security-incident",
      "excerpts": [
-      "Rating: 9 out of 10 > “ Pricing wise it may be a little bit more expensive but still gave us a much more structured tech stack and customer experience for Sales people. ” > > View full review Verified User August 18, 2026 Incentivized"
+      "Published on: June 19, 2026",
+      "Gong was recently notified by Klue that they experienced a security incident in which an unauthorized actor obtained access to their integration service.",
+      "To be clear: this was an incident that originated with third-party integrator Klue. It was not a direct breach of Gong’s own products or systems.",
+      "Gong has not identified any direct impact to customer call recordings or transcripts.",
+      "Based upon those IP Addresses and information available at this time, we can confirm that a subset of customers using the Klue integration may have had internal licensed user data accessed, though we can confirm no direct impact on call recordings or customer transcripts. Examples of data accessed included user names, user business titles and user emails"
+     ]
+    },
+    {
+     "title": "Integrations Restored: Salesforce and Gong Reconnected - Klue",
+     "url": "https://klue.com/blog/integrations-restored-salesforce-and-gong-reconnected",
+     "excerpts": [
+      "By Jason Smith 2 min read July 27, 2026 I’m pleased to share that both Salesforce and Gong have reinstated their Klue integrations in their respective marketplaces. As a result, all Klue integrations are once again available for customers to enable."
      ]
     }
    ],
-   "reasoning": "A dated, incentivized review supports the limited claim about one customer's price perception, with positive context preserved.",
+   "reasoning": "Gong’s disclosure establishes the incident and limited potential data exposure. Klue’s July announcement establishes reported restoration, so the answer expressly avoids portraying an ongoing outage.",
    "confidence": "medium"
   },
   {
    "field": "challenges.1",
    "citations": [
     {
-     "title": "Gong Reviews from Real Users | TrustRadius",
-     "url": "https://www.trustradius.com/products/gong-io/reviews?company-size=small-business&dimension=company-size",
+     "title": "Gong Reviews, Ratings & Features 2026 | Gartner Peer Insights",
+     "url": "https://www.gartner.com/reviews/market/revenue-action-orchestration/vendor/gong",
      "excerpts": [
-      "Synthesised from 63 reviews | Last Published July 1, 2026",
-      "AI-driven summaries and transcriptions can be inconsistent, especially with technical jargon or accents.",
-      "Search functionality is sometimes cumbersome or ineffective due to transcription inaccuracies.",
-      "Despite these areas for improvement, the overall sentiment is positive, with many attributing increased sales and improved team collaboration to Gong."
+      "Favorable Review 5.0 April 29, 2026 Product: [Gong](https://www.gartner.com/reviews/product/gong-1585323509?marketSeoName=revenue-action-orchestration) Positive Experience With Sales Insights Despite Costly and Complex Licensing Model",
+      "Critical Review 3.0 April 15, 2026 Product: [Gong](https://www.gartner.com/reviews/product/gong-1585323509?marketSeoName=revenue-action-orchestration) Limited Integration And Additional Fees Affect Gong’s Core Features Over Time",
+      "Gartner Peer Insights content consists of the opinions of individual end users"
      ]
     }
    ],
-   "reasoning": "The synthesis date and reported limitations support the challenge, while positive overall sentiment prevents overstatement.",
+   "reasoning": "The dated review titles directly support the reported complaints. The disclaimer and absence of recent follow-up require treating them as individual historical opinions.",
    "confidence": "medium"
   },
   {
    "field": "recent_changes.0",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "September 30, 2026",
-      "Mission Callisto also introduces Deep Mode in Gong Assistant, along with enhancements to Agent Builder and Gong Dashboards.",
-      "Gong Enrich and Deep Mode are now generally available.",
-      "Expanded Gong Dashboards, automatically triggered Custom Agents, and other Gong Assistant enhancements are rolling out throughout this year."
+      "**SAN FRANCISCO — November 4, 2026** —Gong, the leader in revenue AI, today announced the appointment of [Liron Shtraichman](https://www.linkedin.com/in/liron-shtraichman-3919015a/) as Chief R&D (research & development) Officer and [Guy Havusha](https://www.linkedin.com/in/guy-havusha/) as Chief Information Security Officer (CISO",
+      "This experience will be invaluable at Gong, where he will lead R&D and be focused on expanding the agentic capabilities Gong delivers to leading revenue teams across its Revenue Graph, Revenue Harness, Revenue Operating Surfaces and more.",
+      "As CISO, Havusha leads Gong’s global security, privacy, and compliance programs, ensuring that the customer data powering Gong’s AI and the agents acting on it meet the highest enterprise standards."
      ]
     }
    ],
-   "reasoning": "The launch date, components, and explicit availability statements directly support the event summary.",
+   "reasoning": "The company directly announced both November appointments and their relevant responsibilities.",
    "confidence": "high"
   },
   {
@@ -408,98 +452,81 @@
      "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
      "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
      "excerpts": [
-      "**LAS VEGAS and SAN FRANCISCO — September 30, 2026 —** [Gong](http://gong.io/) today unveiled several major revenue AI announcements at Celebrate '26, its annual customer conference live from Las Vegas.",
+      "September 30, 2026",
       "Gong also announced Gong Activate, the next generation of Revenue AI, that allows teams to deploy the motions that win, retain, and grow accounts, with agents and reps all working from the same blueprint.",
-      "Today, we’re taking the next step with the announcement of Gong Activate – centered on Gong’s vision for a self-improving revenue loop,” said Amit Bendov, Gong Co-founder and CEO. “For years, AI told you how to win."
+      "That's the backdrop for Gong Activate, centered on Gong’s vision for a self-improving “revenue loop",
+      "And measurement creates constant feedback, folding outcomes back into the Revenue Graph so every decision and action sharpens the next."
      ]
     }
    ],
-   "reasoning": "The dated announcement establishes Activate and Bendov's stated vision, without establishing general availability.",
+   "reasoning": "The September announcement describes Activate and its feedback loop. No general-availability claim is introduced.",
    "confidence": "high"
   },
   {
    "field": "recent_changes.2",
    "citations": [
     {
-     "title": "Gong Named a Leader in 2026 Gartner® Magic Quadrant™ for Revenue Action Orchestration for second consecutive year",
-     "url": "https://www.gong.io/press/gong-named-a-leader-in-2026-gartner-magic-quadrant-for-revenue-action-orchestration-for-second-consecutive-year",
+     "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
+     "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
      "excerpts": [
-      "October 16, 2026",
-      "“Gong created the Revenue AI category, we’re leading it, and we’re committed to leading it for years to come,” said Amit Bendov, co-founder and CEO of Gong. “We’re focused on helping revenue teams move from insight to action to results, at scale.",
-      "Being named a Leader in the 2026 Gartner Magic Quadrant for Revenue Action Orchestration for the second consecutive year reflects that commitment and the outcomes our customers drive with Revenue AI.”"
+      "September 30, 2026",
+      "Gong Enrich, a new [sales enrichment](https://www.gong.io/blog/gong-enrich-sales-prospecting) offering, helps close the data gaps that slow sellers down, automatically filling in missing account and contact details so reps spend less time researching and more time acting.",
+      "**Agent Builder** enables teams to create custom agents that automatically run in response to the events and conditions they define, helping automate and scale your most critical, winning workflows. Define the triggers, conditions, steps, and actions, or simply describe the agent you want in natural language.",
+      "**Deep Mode,** an agent within the Gong Assistant, takes on the investigation behind hard business questions, turning what used to take hours of manual digging into a grounded, comprehensive answer."
      ]
     }
    ],
-   "reasoning": "The official release directly reports the recognition and accompanying strategic statement.",
+   "reasoning": "The dated product announcement directly describes all three capabilities.",
    "confidence": "high"
   },
   {
    "field": "priorities.0",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "[**Gong Enrich**](http://gong.io/blog/gong-enrich-sales-prospecting) expands the Gong Revenue Graph with third-party contact and account data.",
-      "Customers can connect multiple supported providers and configure Gong to search them in the order that works best for their business — using the providers and credits they already have, then filling remaining gaps with Gong Credits and data from a growing network of Gong Enrich Data Partners, including Apollo, [Findymail](https://collective.gong.io/integrations/findymail-enrich-data-partner) , Firmable, Kernel, [LeadIQ](https://collective.gong.io/integrations/leadiq-enrich-data-partner) , [Lusha](https://collective.gong.io/integrations/lusha-enrich-data-partner) , [RocketReach](https://collective.gong.io/integrations/rocketreach-enrich-data-partner) , [Wiza,](https://collective.gong.io/integrations/wiza-enrich-data-partner) [ZeroBounce](https://collective.gong.io/integrations/zerobounce-enrich-data-partner) , and [ZoomInfo](https://collective.gong.io/integrations/zoominfo-enrich-data-partner) .",
-      "Gong Enrich and Deep Mode are now generally available."
+      "November 4, 2026",
+      "This experience will be invaluable at Gong, where he will lead R&D and be focused on expanding the agentic capabilities Gong delivers to leading revenue teams across its Revenue Graph, Revenue Harness, Revenue Operating Surfaces and more.",
+      "The next phase is about agents that don’t just surface insights, but take action and deliver results at enterprise scale,” said Amit Bendov, CEO and co-founder of Gong. “Liron has scaled a global engineering organization and led a full transition to AI-native development. And with Guy leading security, our customers can put AI agents to work knowing their data is protected to the highest enterprise standards. That’s exactly the experience to keep transforming how revenue teams win."
      ]
     }
    ],
-   "reasoning": "Enrichment functionality, provider configuration, and availability demonstrate this product investment.",
-   "confidence": "medium"
+   "reasoning": "An explicit executive remit and CEO statement directly establish enterprise-scale agent execution as a current strategic focus.",
+   "confidence": "high"
   },
   {
    "field": "priorities.1",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "From Data to Action: Gong Debuts New Revenue AI Innovation at Celebrate '26",
+     "url": "https://www.gong.io/press/new-revenue-ai-innovation-celebrate-26",
      "excerpts": [
-      "Agent Builder enables teams to create Custom Agents that automatically run in response to the events and conditions they define, turning work that once needed someone to remember and act into an automated workflow.",
-      "Teams can define the trigger, conditions, and actions in a visual editor, or describe the agent they want in their own words.",
-      "Expanded Gong Dashboards, automatically triggered Custom Agents, and other Gong Assistant enhancements are rolling out throughout this year."
+      "September 30, 2026",
+      "Gong Enrich, a new [sales enrichment](https://www.gong.io/blog/gong-enrich-sales-prospecting) offering, helps close the data gaps that slow sellers down, automatically filling in missing account and contact details so reps spend less time researching and more time acting.",
+      "[### Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams Today Gong announced Mission Callisto, its latest product launch, anchored by Gong Enrich, a new capability that expands the Gong Revenue Graph with richer third-party account and contact data. Press Release September 30, 2026](https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer)"
      ]
     }
    ],
-   "reasoning": "The announced capabilities and rollout support workflow automation as an investment priority.",
+   "reasoning": "The launch establishes active work on enrichment and third-party account/contact data. Calling it a priority is a synthesis of the product investment rather than a spending disclosure.",
    "confidence": "medium"
   },
   {
    "field": "priorities.2",
    "citations": [
     {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
+     "title": "Gong Strengthens Leadership Team with Appointment of Liron Shtraichman as Chief R&D Officer",
+     "url": "https://www.gong.io/press/gong-leadership-liron-shtraichman-chief-r-and-d-officer",
      "excerpts": [
-      "Gong Assistant gains **Deep Mode** , a new mode for complex strategic questions that previously required teams to gather information from multiple systems and connect the dots themselves. By examining a broader set of business information and signals, Deep Mode creates a grounded, comprehensive report, saving hours of manual investigation.",
-      "Gong Assistant now enables teams to build **Gong Engage Flows** from a natural-language request, helping organizations turn the practices of their top-performing reps into repeatable Flows the broader team can run.",
-      "Gong Enrich and Deep Mode are now generally available.",
-      "Expanded Gong Dashboards, automatically triggered Custom Agents, and other Gong Assistant enhancements are rolling out throughout this year."
+      "November 4, 2026",
+      "As CISO, Havusha leads Gong’s global security, privacy, and compliance programs, ensuring that the customer data powering Gong’s AI and the agents acting on it meet the highest enterprise standards. As AI agents take on more work across the revenue cycle, Havusha will be responsible for ensuring that data security and governance serve as strategic differentiators and value propositions for our customers."
      ]
     }
    ],
-   "reasoning": "Deep Mode and natural-language Flow creation support the stated Assistant expansion, with availability distinctions retained.",
-   "confidence": "medium"
-  },
-  {
-   "field": "priorities.3",
-   "citations": [
-    {
-     "title": "Gong announces Mission Callisto, unveils sales enrichment layer for Revenue teams",
-     "url": "https://www.gong.io/press/gong-mission-callisto-sales-enrichment-layer",
-     "excerpts": [
-      "Gong Dashboards expand beyond forecasting to cover the full revenue lifecycle, giving RevOps a single place to track performance at every stage of the business, not just pipeline.",
-      "Teams can define metrics once in Gong Data Studio and reuse them across every view, so sales, marketing, and customer success all work from the same numbers instead of maintaining separate reports.",
-      "Expanded Gong Dashboards, automatically triggered Custom Agents, and other Gong Assistant enhancements are rolling out throughout this year."
-     ]
-    }
-   ],
-   "reasoning": "Full-lifecycle dashboards and reusable metrics support the shared-measurement priority, with rollout qualified.",
-   "confidence": "medium"
+   "reasoning": "The company explicitly assigns global security, privacy, compliance and AI governance responsibilities to its newly named CISO.",
+   "confidence": "high"
   }
  ],
- "sub_use_case": "gtm_meeting_prep_research",
- "input": "Prepare me for a meeting with Gong (gong.io)",
- "input_n": 2
+ "cost_usd": 0.1,
+ "cost_basis": "list"
 }

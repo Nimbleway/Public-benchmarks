@@ -1,147 +1,160 @@
 {
  "arm": "nimble",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Datadog (datadoghq.com)",
+ "input_n": 1,
  "tier": "medium",
  "status": "completed",
- "seconds": 152,
- "run_id": "task_run_272829fd75f44d73aa9edb6dd0b88e69",
+ "seconds": 189,
+ "run_id": "task_run_0586813efd874c999b320c2e29155f48",
  "output": {
-  "company": "Datadog, Inc. (NASDAQ: DDOG)",
+  "company": "Datadog",
   "challenges": [
    {
-    "date": "2026-08-06",
-    "evidence": "\"Datadog beats Q2 2026 estimates, but shares fall 15.6% as autonomy tension rises\" (LinkedIn post on the Aug 6, 2026 earnings); Luminix Oct 2, 2026 update: \"The stock still fell ~17% after the Q2 report on August 6, as investors wanted a larger raise, and traded roughly $220-268 through September.\"",
-    "challenge": "Market disappointment despite a beat — shares fell ~15.6-17% after the Q2 2026 report because investors wanted a larger guidance raise",
-    "source_url": "46a432c9"
+    "date": "2026-11-04",
+    "evidence": "CFO David Obstler on the Q3 2026 call: 'As we communicated in August, our largest customer reduced their usage in the third quarter, while their usage remained above their minimum commitment' — and Q4 guidance 'contemplates their revenue at their minimum commitment'; excluding that customer, implied Q4 growth is low-to-mid 30s%. Press reporting ties the largest customer to OpenAI shifting high-volume log workloads to ClickHouse.",
+    "challenge": "Concentration risk on its largest customer (widely reported as OpenAI), which cut usage in Q3 2026 and anchors Q4 guidance at only its minimum commitment",
+    "source_url": "https://datadog.gcs-web.com/static-files/5a9f8cad-20c9-4b7c-9758-8f243e417d61"
    },
    {
-    "date": "2026-10-02",
-    "evidence": "\"Pricing pressure is the main lever competitors use. Per-host and per-metric billing gets expensive as AI and Kubernetes telemetry explodes; Grafana Cloud, New Relic, Coralogix and self-hosted OpenTelemetry stacks sell predictability and lower ingestion costs.\" A cloud communications company cut $144,000/year from its Datadog bill in six weeks; Goldman Sachs downgraded Datadog to Sell (Jan 2026, $113 target) citing customer budget fatigue and deflationary architectures from hyperscaler bundles — though the bear case had not played out as of Sept 2026 (Grafana passed $400M ARR by Jan 2026).",
-    "challenge": "Usage-based pricing under cost pressure — 'deflationary architectures' and cheaper rivals",
-    "source_url": "46a432c9"
+    "date": "2026-11-04",
+    "evidence": "On the Q3 2026 call Obstler described Q3 renewal extensions with large AI customers that 'extend and increase the commit, but do better pricing'; Pomel noted several early renewals with large customers, while positive long-term, 'do create, like, headwind into the short term into the revenue.'",
+    "challenge": "Short-term revenue headwind from early renewals and pricing concessions granted to large AI customers",
+    "source_url": "https://datadog.gcs-web.com/static-files/5a9f8cad-20c9-4b7c-9758-8f243e417d61"
    },
    {
-    "date": "2026-08-06",
-    "evidence": "Palo Alto Networks completed its ~$3B Chronosphere acquisition (Jan 29, 2026) and reports observability ARR above $500M — \"security-plus-observability convergence aimed directly at Datadog's market\"; Dynatrace took its Autonomous SRE Agent to GA the same month Datadog unveiled fully autonomous Bits AI; the 2026 Gartner MQ names Dynatrace, Splunk, New Relic, Elastic and Grafana all Leaders — \"breadth is a moat, but it's becoming table stakes.\"",
-    "challenge": "Intensifying competition, including security-observability convergence and the autonomy race",
-    "source_url": "46a432c9"
+    "date": "2026-05",
+    "evidence": "A Dealroom news note (May 2026) headlined 'Datadog's pricing paradox: beloved product, but hyperscale customers forced to churn — OpenAI shifts to ClickHouse,' citing a viral post that churners 'love it and don't want to churn, but are forced to because their biz side insists on absolute extortion,' and analyst notes that Datadog's dual ingestion-and-retention log pricing creates bill shock at hyperscale; Datadog's Trustpilot profile (retrieved Nov 9, 2026) shows a 1.7/5 TrustScore across 24 reviews.",
+    "challenge": "Persistent pricing backlash / bill-shock perception at hyperscale, driving defection of the largest log workloads",
+    "source_url": "https://app.dealroom.co/news/note/datadog-s-pricing-paradox-beloved-product-but-hyperscale-customers-forced-to-churn-openai-shifts-to-clickhouse"
    },
    {
-    "date": "2026-10-02",
-    "evidence": "FY2026 guidance \"explicitly models growth excluding the largest customer (widely believed to be OpenAI, estimated at $150-$300 million ARR) at 20%+\" — one customer may represent ~5-10% of revenue, and an in-house build would be material (Guggenheim-flagged risk). Management has repeatedly cautioned: \"we may see volatility in our revenue growth... as customers renew with us on different terms and as they may choose to optimize cloud and observability usage over time.\"",
-    "challenge": "AI-native customer concentration and usage volatility",
-    "source_url": "46a432c9"
+    "date": "2026-10-22",
+    "evidence": "Value Add VC (Oct 22, 2026): Datadog's reported ~$4B Upwind offer is only a ~5% premium over Upwind's $3.8B last-round valuation, 'intensifying competition after Google's roughly $32 billion acquisition of Wiz and Palo Alto Networks' continued roll-ups'; on the Q3 call Pomel noted Datadog leads observability 'but with a percentage market share still in the teens.'",
+    "challenge": "Intense competitive pressure in cloud security (Google–Wiz at ~$32B, Palo Alto roll-ups) against a still-modest mid-teens share of the broader observability market",
+    "source_url": "https://valueaddvc.com/pulse/datadog-upwind-4b-acquisition-offer-2026"
    }
   ],
   "key_people": [
    {
     "name": "Olivier Pomel",
-    "title": "Co-Founder & CEO",
-    "recent": "On the Aug 6, 2026 Q2 call/release: \"Datadog delivered a strong quarter, with 36% year-over-year revenue growth... Our customers are building and deploying with AI, and they are using the Datadog platform to observe, secure, and act on their AI-enabled solutions\"; per call commentary, \"the future of observability is not just observing, it's fixing.\"",
-    "source_url": "e27fd8d8"
+    "title": "CEO & Co-Founder",
+    "recent": "Led the Q3 2026 earnings call (Nov 4, 2026): non-AI customer revenue growth accelerated for a fifth straight quarter to high-20s% YoY; 'All 15 of the top 15 AI leaders are our customers'; over 850 AI customers; Infrastructure Monitoring passed $2B ARR; framed Bits AI/Scout as steps toward autonomous operations.",
+    "source_url": "https://datadoghq.com/about/leadership"
    },
    {
     "name": "David Obstler",
     "title": "Chief Financial Officer",
-    "recent": "Delivered FY2026 guidance raised twice to $4.45-4.47B (~30% growth); his stated framework: \"we try to plan with more conservative revenues\" while flagging AI-native cohort volatility and concentration.",
-    "source_url": "e27fd8d8"
+    "recent": "On the Q3 2026 call (Nov 4, 2026) reported revenue of $1.197B (+35% YoY), set Q4 guidance assuming the largest customer's revenue at its minimum commitment, and explained that early renewals with large AI customers at better pricing create a short-term revenue headwind.",
+    "source_url": "https://datadoghq.com/about/leadership"
    },
    {
     "name": "Alexis Lê-Quôc",
     "title": "CTO & Co-Founder",
-    "recent": null,
-    "source_url": "e27fd8d8"
+    "recent": "Listed as a speaker for DASH 2026, Datadog's AI and observability conference; original member of the devops movement who still drives the company's technical direction.",
+    "source_url": "https://datadoghq.com/about/leadership"
+   },
+   {
+    "name": "Yanbing Li",
+    "title": "Chief Product Officer",
+    "recent": "Listed as a speaker for DASH 2026; her product organization shipped the June 9, 2026 launch of 100+ capabilities for autonomy, AI and security, and the October 2026 GA of Bits Testing.",
+    "source_url": "https://datadoghq.com/about/leadership"
    },
    {
     "name": "Adam Blitzer",
     "title": "Chief Operating Officer",
     "recent": null,
-    "source_url": "e27fd8d8"
-   },
-   {
-    "name": "Yanbing Li",
-    "title": "Chief Product Officer",
-    "recent": null,
-    "source_url": "e27fd8d8"
+    "source_url": "https://datadoghq.com/about/leadership"
    }
   ],
   "priorities": [
    {
-    "date": "2026-08-06",
-    "evidence": "Q2 2026 press release (Aug 6, 2026): \"Launched AI-powered Bits Code, Bits Chat, and Bits Agent Builder for general availability\"; DASH 2026 highlight: \"fully autonomous Bits AI for end-to-end incident detection, investigation, and remediation.\" CEO Pomel: \"We are innovating rapidly to help our customers manage rising complexity, and increasingly build autonomy into their operations.\"",
-    "priority": "Scaling fully autonomous agentic AI ('AI for Datadog')",
-    "source_url": "ae5702b7"
+    "date": "2026-11-04",
+    "evidence": "On the Q3 2026 earnings call (Nov 4, 2026) CEO Olivier Pomel said Bits AI 'has become the fastest-adopted product in our history'; Bits Testing became generally available in October; and in October the company introduced Scout, 'our own reasoning model specifically optimized for SRE tasks,' built on in-house distributed-learning infrastructure and now powering Bits' investigations — research aimed at 'a step change in capabilities across our platform' toward autonomous operations.",
+    "priority": "AI for Datadog: agentic automation of the platform (Bits AI agents, Bits Testing, Scout SRE reasoning model)",
+    "source_url": "https://datadog.gcs-web.com/static-files/5a9f8cad-20c9-4b7c-9758-8f243e417d61"
    },
    {
-    "date": "2026-06-09",
-    "evidence": "At DASH 2026 (June 9-10, 2026) Datadog launched 100+ capabilities including AI Guard \"to protect AI agents from prompt injection and poisoning attacks,\" Agent Evals and an Agent Console for debugging and governing AI agents, and GPU monitoring. LLM Observability passed 1,000+ customers with traced spans up 10x in six months (Q4 2025 call).",
-    "priority": "Building out observability and security for customers' own AI stacks ('Datadog for AI')",
-    "source_url": "46a432c9"
+    "date": "2026-11-04",
+    "evidence": "Q3 2026 call: GPU devices monitored up 8x year-to-date with frontier labs as design partners; Agent Observability spans up 9x; AI Guard protects agents against prompt injection and data exfiltration; beyond the three major clouds, AI providers are now the largest category of spend customers monitor in Cloud Cost Management, with CCM customers tracking AI costs up more than 11x; over 850 AI customers (up from ~750) including 39 spending more than $1M annually.",
+    "priority": "Datadog for AI: observability, security and cost governance for the AI stack (GPU Monitoring, Agent Observability, AI Guard, AI cost management in CCM)",
+    "source_url": "https://datadog.gcs-web.com/static-files/5a9f8cad-20c9-4b7c-9758-8f243e417d61"
    },
    {
-    "date": "2026-06-30",
-    "evidence": "\"Acquired Adaptive ML, a frontier AI startup developing the world's first Reinforcement Learning Operations platform, to accelerate Datadog AI Research's investment in world models and agentic LLM post-training for observability — combining Datadog's access to real-world infrastructure and security data with Adaptive ML's expertise in building specialized, high-performance AI agents.\" Completed June 30, 2026.",
-    "priority": "Buying AI research capability — the Adaptive ML acquisition",
-    "source_url": "ae5702b7"
+    "date": "2026-11-02",
+    "evidence": "Datadog published 'Datadog is now available on Anthropic's Claude Marketplace' (Nov 2, 2026) and on the Q3 call said it was 'a launch partner to OpenAI's new enterprise marketplace' — 'customers can buy our product directly through the frontier labs they already work with.'",
+    "priority": "Distribution through frontier-lab marketplaces (Anthropic Claude Marketplace; OpenAI enterprise marketplace launch partner)",
+    "source_url": "https://datadoghq.com/blog/datadog-anthropic-claude-marketplace"
    },
    {
-    "date": "2026-08-06",
-    "evidence": "Datadog's security suite surpassed $100M ARR growing mid-40s% YoY (Q2 2025 call); DASH 2026 added AI Guard and Bits Security Analyst; 8,500+ customers already use Datadog security products but security holds only ~2% of wallet share in large accounts — analysts flag it as the most underappreciated growth vector, with Cloud SIEM correlating threats to live telemetry.",
-    "priority": "Growing the security business beyond observability",
-    "source_url": "46a432c9"
+    "date": "2026-11-04",
+    "evidence": "Q3 2026 call: 61% of customers now use 4+ products (up from 54% a year ago), 41% use 6+ (up from 31%), 16% use 10+ (up from 8%); the Infrastructure Monitoring suite exceeds $2 billion in ARR, growing mid-30s% YoY; management says it is the market-share leader in global observability 'but with a percentage market share still in the teens.'",
+    "priority": "Platform consolidation and multi-product expansion across observability, security, digital experience and software delivery",
+    "source_url": "https://datadog.gcs-web.com/static-files/5a9f8cad-20c9-4b7c-9758-8f243e417d61"
    },
    {
-    "date": "2026-06-09",
-    "evidence": "DASH 2026 launch: \"Bring Your Own Cloud for deploying Datadog within customer environments\"; a dedicated BYOC Log Management product is live on datadoghq.com. Commentators read BYOC as the largest ingestion-billing vendor conceding \"the data wants to stay where it lives.\"",
-    "priority": "Deployment flexibility — Bring Your Own Cloud (BYOC)",
-    "source_url": "ae5702b7"
+    "date": "2026-10-22",
+    "evidence": "Datadog was named a Leader in AIOps Platforms Research (Oct 29, 2026); The Information reported (Oct 22, 2026) that Datadog offered about $4 billion to acquire cloud-security startup Upwind, which would be among its largest deals; the June 30, 2026 Adaptive ML acquisition and DASH 2026 launch of 100+ AI/security capabilities show the same security-and-AI R&D push.",
+    "priority": "Scaling the security business (Cloud SIEM, AI Guard, Bits Security Analyst) including reported M&A (≈$4B offer for Upwind)",
+    "source_url": "https://valueaddvc.com/pulse/datadog-upwind-4b-acquisition-offer-2026"
+   },
+   {
+    "date": "2026-11-04",
+    "evidence": "Q3 2026 call: one of the world's largest technology companies 'nearly triples their annual commitment' just two quarters after landing, scaling Datadog across AI training workloads; Datadog for Startups is being broadened 'to a larger number of start-ups that are earlier in their lifecycle' with deeper engineering collaboration for the fastest-growing AI-native companies; new-customer contribution to YoY revenue growth rose to ~30% from 25% a year ago.",
+    "priority": "Land-and-expand with AI-native startups and hyperscale AI workloads (Datadog for Startups program expansion)",
+    "source_url": "https://datadog.gcs-web.com/static-files/5a9f8cad-20c9-4b7c-9758-8f243e417d61"
    }
   ],
   "what_they_do": {
-   "as_of": "2026-10-20",
-   "value": "In Datadog's own words: \"the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale\" — bringing applications, infrastructure, data, models and security into one place and using AI to detect and resolve issues before they impact customers. The company brands itself \"the leading AI-powered observability and security platform.\"",
-   "source_url": "e27fd8d8"
+   "as_of": "2026-11-09",
+   "value": "Datadog is the AI-powered observability and security platform for cloud applications — in its own words, 'the essential monitoring platform for cloud applications' whose homepage tagline is 'See inside any stack, any app, at any scale, anywhere.'",
+   "source_url": "https://datadoghq.com/"
   },
   "missing_fields": [],
   "recent_changes": [
    {
-    "date": "2026-08-06",
-    "type": "earnings / guidance raise",
-    "summary": "Q2 2026 revenue $1.12B, +36% YoY; non-GAAP EPS $0.65; operating cash flow $316M / FCF $279M; ~4,720 customers with $100k+ ARR (+23%); $5.0B cash. FY2026 guidance raised to $4.45-4.47B (raised twice in 2026); Q3 guided $1.135-1.145B.",
-    "headline": "Datadog Announces Second Quarter 2026 Financial Results",
-    "source_url": "ae5702b7"
+    "date": "2026-11-04",
+    "type": "earnings",
+    "summary": "Q3 2026 revenue $1.197B (+35% YoY, above the high end of guidance); ~33,500 customers; FCF $251M; FY2026 guidance raised to $4.515–4.525B (~32% growth); Q4 guided at $1.19–1.20B with the largest customer assumed at minimum commitment.",
+    "headline": "Datadog Announces Third Quarter 2026 Financial Results",
+    "source_url": "https://datadog.gcs-web.com/news-releases"
    },
    {
-    "date": "2026-08-06",
-    "type": "market reaction",
-    "summary": "After the Aug 6, 2026 report the stock dropped 15.6-17% — investors wanted a larger raise — and traded roughly $220-268 through September 2026; commentary framed the tension between autonomy ambitions and ingestion-based billing.",
-    "headline": "Shares fall ~15.6-17% post-earnings despite the beat",
-    "source_url": "6d9ed24b"
+    "date": "2026-11-03",
+    "type": "product launch",
+    "summary": "New integration lets teams evaluate AI agents with Fireworks AI models inside Datadog Agent Observability, extending the Datadog-for-AI stack.",
+    "headline": "Evaluate your AI agents with Fireworks AI models in Datadog Agent Observability",
+    "source_url": "https://datadoghq.com/blog/fireworks-ai-integration"
    },
    {
-    "date": "2026-08-06",
-    "type": "analyst recognition",
-    "summary": "Q2 2026 release: \"Named a Leader in the Gartner Magic Quadrant for Observability Platforms, 2026. This is the sixth consecutive year\"; a Datadog blog adds it was named 'Company to Beat' in Gartner's August 2026 AI Vendor Race.",
-    "headline": "Leader in Gartner Magic Quadrant for Observability Platforms for the 6th consecutive year; 'Company to Beat' in Gartner's Aug 2026 AI Vendor Race",
-    "source_url": "ae5702b7"
+    "date": "2026-11-02",
+    "type": "partnership/launch",
+    "summary": "Agent Observability became available on Anthropic's Claude Marketplace, part of a distribution push through frontier-lab marketplaces (Datadog is also a launch partner on OpenAI's enterprise marketplace).",
+    "headline": "Datadog is now available on Anthropic's Claude Marketplace",
+    "source_url": "https://datadoghq.com/blog/datadog-anthropic-claude-marketplace"
    },
    {
-    "date": "2026-06-30",
-    "type": "M&A",
-    "summary": "Datadog completed its acquisition of Adaptive ML, a Reinforcement Learning Operations startup, to power world models and agentic LLM post-training for observability via Datadog AI Research.",
-    "headline": "Adaptive ML acquisition completed (June 30, 2026 — just outside the 90-day window, listed in Q2 'recent business highlights')",
-    "source_url": "ae5702b7"
+    "date": "2026-10-29",
+    "type": "recognition",
+    "summary": "Named a Leader in AIOps Platforms Research by an independent research firm, adding to its sixth consecutive year as a Leader in the Gartner Magic Quadrant for Observability Platforms (July 2026).",
+    "headline": "Datadog Named a Leader in AIOps Platforms Research",
+    "source_url": "https://datadog.gcs-web.com/news-releases"
+   },
+   {
+    "date": "2026-10-22",
+    "type": "M&A (reported)",
+    "summary": "The Information reported Datadog offered about $4 billion to acquire cloud-security startup Upwind — a modest ~5% premium over Upwind's $3.8B last-round valuation and among Datadog's largest deals, intensifying its security push against Google-Wiz and Palo Alto Networks.",
+    "headline": "Datadog Offered $4B To Acquire Upwind",
+    "source_url": "https://valueaddvc.com/pulse/datadog-upwind-4b-acquisition-offer-2026"
    }
   ],
   "talking_points": [
-   "Autonomy economics: Bits AI now detects, investigates and remediates end-to-end, and Pomel says \"the future of observability is not just observing, it's fixing\" — but Datadog bills on ingestion/indexing/hosts. Ask: how will they price autonomy, and can an agent that shrinks the data lake coexist with the revenue model?",
-   "BYOC and cost pressure: DASH 2026's Bring Your Own Cloud concedes data wants to stay put, while Grafana/OTel-native/hyperscaler bundles attack on ingestion cost (one customer cut $144k/year in six weeks). Ask how BYOC changes expansion economics and where Datadog draws the pricing line.",
-   "AI-native concentration: FY2026 guidance is built ex-largest-customer at 20%+ growth (largest widely believed to be OpenAI at ~$150-300M ARR). Ask how concentrated the AI-native cohort really is and what in-housing or usage optimization by the top customer would mean for 2027.",
-   "Security as the next billion-dollar line: security just crossed $100M ARR with only ~2% wallet share in large accounts, while Palo Alto/Chronosphere converges from the other side. Ask what the path from $100M to $1B looks like and where partners fit."
+   "Concentration: with your largest customer's usage down and Q4 guided at its minimum commitment, how are you rebalancing growth toward the 850+ other AI customers and the accelerating non-AI base?",
+   "Agentic roadmap: Bits AI is your fastest-adopted product ever and Scout is your own SRE reasoning model — where does autonomy in observability go next, and how do you keep that wedge against OpenTelemetry-native and cheaper alternatives?",
+   "Pricing trust: bill shock from ingest-plus-retention pricing is the loudest complaint (the reported OpenAI-to-ClickHouse log move) — is AI-cost governance in CCM and commit-based renewals changing that story for hyperscale customers?",
+   "Security expansion: with the reported ~$4B Upwind bid, AI Guard and Bits Security Analyst, how does security fold into the platform-consolidation pitch against Wiz, CrowdStrike and Palo Alto?"
   ]
  },
  "cost_usd": 0.1,
- "cost_basis": "list",
- "sub_use_case": "gtm_meeting_prep_research",
- "input": "Prepare me for a meeting with Datadog (datadoghq.com)",
- "input_n": 1
+ "cost_basis": "list"
 }

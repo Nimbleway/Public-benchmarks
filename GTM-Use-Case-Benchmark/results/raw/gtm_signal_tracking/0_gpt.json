@@ -1,0 +1,103 @@
+{
+ "arm": "gpt",
+ "sub_use_case": "gtm_signal_tracking",
+ "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
+ "input_n": 0,
+ "tier": "medium",
+ "model": "gpt-6.1-sol",
+ "status": "completed",
+ "seconds": 44,
+ "run_id": "resp_0caef2f623298a13006af3446c947087d2b1ce121225a0e76c",
+ "output": {
+  "company": "Mercury",
+  "since": "2026-09-21",
+  "events": [
+   {
+    "date": "2026-11-10",
+    "type": "product_release",
+    "headline": "Command adds external credit-card spending analysis",
+    "summary": "Personal customers can connect external credit cards and ask Command for spending analysis and visualizations.",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-11-05",
+    "type": "product_launch",
+    "headline": "Mercury launches Agent Controls",
+    "summary": "Customers can inspect connected AI agents, restrict their permissions, review activity, and disconnect access.",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-11-04",
+    "type": "product_release",
+    "headline": "Mercury redesigns Treasury",
+    "summary": "Treasury adds expense-based portfolio recommendations, U.S. Treasury ladders, and portfolio rebalancing.",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-10-20",
+    "type": "product_launch",
+    "headline": "Mercury launches Payroll",
+    "summary": "Integrated payroll includes employee and contractor payments, benefits, retirement plans, and payroll compliance support.",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-10-15",
+    "type": "product_release",
+    "headline": "Mercury enables account actions through ChatGPT and Claude",
+    "summary": "Connected assistants can prepare transfers, recipient payments, and transaction categorization, subject to customer approval.",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-10-14",
+    "type": "product_release",
+    "headline": "Mercury adds linked-account transfers and recurring external payments",
+    "summary": "Customers can connect Mercury accounts, automate transfers between them, and schedule recurring payments to external accounts.",
+    "source_url": "https://mercury.com/releases"
+   },
+   {
+    "date": "2026-09-29",
+    "type": "product_release",
+    "headline": "Mercury API adds real-time payments",
+    "summary": "Business and Personal accounts provided through Column can send real-time payments programmatically.",
+    "source_url": "https://mercury.com/releases"
+   }
+  ],
+  "checked_sources": [
+   "https://mercury.com/releases",
+   "https://mercury.com/releases?page=2",
+   "https://mercury.com/blog",
+   "https://mercury.com/blog/topics/company-news",
+   "https://mercury.com/blog/introducing-mercury-payroll",
+   "https://mercury.com/blog/introducing-mercury-agent-controls",
+   "https://mercury.com/blog/how-we-reinvented-mercury-treasury",
+   "https://www.bankingnewsai.com/fintech/mercury"
+  ]
+ },
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "raw_text": null,
+ "cost_usd": 0.1481,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "token_cost_usd": 0.0981,
+ "usage": {
+  "input_tokens": 42376,
+  "input_tokens_details": {
+   "cache_write_tokens": 4830,
+   "cached_tokens": 0
+  },
+  "output_tokens": 1332,
+  "output_tokens_details": {
+   "reasoning_tokens": 650
+  },
+  "total_tokens": 43708
+ },
+ "search_calls": 5,
+ "search_actions": {
+  "search": 2,
+  "open_page": 3
+ },
+ "error": null
+}

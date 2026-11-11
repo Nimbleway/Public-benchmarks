@@ -1,0 +1,129 @@
+{
+ "sub": "fin_adverse_media",
+ "i": 2,
+ "task": "Find fraud and bribery allegations involving Adani Green Energy, including the US indictment",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is the current status of the US criminal case (EDNY, unsealed 20 Nov 2024) against Gautam Adani, Sagar Adani and Vneet Jaain (former Adani Green CEO, now a director)? Which charges were brought, and has the case ended?",
+   "answer": "The indictment alleged a roughly $265m bribery scheme to Indian officials to win solar power contracts (SECI), and securities and wire fraud tied to Adani Green's US-investor fundraising. Judge Nicholas Garaufis dismissed the criminal case with prejudice on 10 Aug 2026 at DOJ's request. Charges dismissed were Counts 2–4 (securities fraud, wire fraud conspiracy) against Gautam Adani, Sagar Adani and Jaain. Adani Green says the dismissal bars any re-prosecution on the same allegations. Coverage reports this as a complete end to the criminal track, with no trial and no conviction. I did not retrieve the court order itself, so this rests on press reports and the company's exchange filing.",
+   "importance": "critical",
+   "source": "https://www.business-standard.com/companies/news/adani-s-us-legal-saga-from-bribery-indictment-to-criminal-case-dismissal-126081101061_1.html"
+  },
+  {
+   "id": "k2",
+   "question": "What happened in the parallel SEC civil case, and was Adani Green Energy itself a defendant or penalised?",
+   "answer": "The SEC's civil complaint (EDNY, Nov 2024) alleged securities fraud tied to Adani Green's bond offering. The defendants were Gautam Adani and Sagar Adani, plus Azure Power-linked individuals. In May 2026 the SEC moved for consent judgments: a $6m penalty for Gautam Adani and $12m for Sagar Adani. The court entered final judgment on 10 Aug 2026, with both consenting without admitting or denying the allegations. Penalties are payable within 30 days. Adani Green Energy Ltd says it was not a party and faces no charges in the SEC matter. Check whether the SEC case against the other named defendants (Azure Power-related individuals) is still open.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26554"
+  },
+  {
+   "id": "k3",
+   "question": "Is there any related US sanctions or other enforcement action in the Adani Group, and which entity was involved?",
+   "answer": "Business Standard reports a separate OFAC sanctions matter involving Adani Enterprises (not Adani Green), settled for $275m. This is a group-level contagion point, not an Adani Green finding. I did not verify the details (alleged conduct, date) against OFAC's own release. Confirm against OFAC's enforcement releases before relying on this.",
+   "importance": "critical",
+   "source": "https://www.business-standard.com/companies/news/adani-s-us-legal-saga-from-bribery-indictment-to-criminal-case-dismissal-126081101061_1.html"
+  },
+  {
+   "id": "k4",
+   "question": "What is the correct legal entity and group, and who are the people named in the allegations?",
+   "answer": "Adani Green Energy Limited is an Indian-listed company headquartered in Ahmedabad, India. It is part of the Adani Group, chaired by Gautam Adani. The other individuals named were Sagar Adani (nephew, executive director at Adani Green) and Vneet Jaain (former CEO, now a director). Other named individuals were Ranjit Gupta, Rupesh Agarwal, Cyril Cabanes, Saurabh Agarwal, Deepak Malhotra (Azure Power-linked, per the 2024 DOJ/SEC filings). Do not confuse it with Adani Enterprises, Adani Power or Azure Power. Registry details (CIN) were not verified here.",
+   "importance": "critical",
+   "source": "https://techcrunch.com/2024/11/20/solar-power-magnate-gautam-adani-and-others-indicted-over-alleged-250m-bribery-scheme"
+  },
+  {
+   "id": "k5",
+   "question": "What is still open after the US dismissal and settlement, and what do the 2024 allegations still imply for exposure?",
+   "answer": "The US criminal and SEC tracks against the Adanis are closed. Remaining items to check: (a) whether the SEC or DOJ matter remains live against the other named defendants (Azure Power-linked individuals, Cabanes and others); (b) Indian proceedings, including SEBI probes of the group and any Indian cases over the alleged payments to state officials; (c) lender and bond-market effects. Adani Green's 2024 dollar bond issue was pulled after the indictment, and some lenders and investors paused. Dismissal reduces but does not remove reputational and ESG screening risk, since the allegations were never adjudicated and the SEC settlement was a no-admit consent. I did not research the SEBI/India items in this pass.",
+   "importance": "critical",
+   "source": "https://www.business-standard.com/companies/news/adani-s-us-legal-saga-from-bribery-indictment-to-criminal-case-dismissal-126081101061_1.html"
+  },
+  {
+   "id": "k6",
+   "question": "What was the market and financing impact of the 2024 indictment on Adani Green, and has it recovered?",
+   "answer": "After the 20 Nov 2024 unsealing, Adani Group shares fell sharply, with Adani Green hit hard. The group withdrew a planned dollar bond offering. After the May 2026 SEC settlement move, Adani stocks recovered. The August 2026 dismissal was welcomed by Adani, who said that truth had prevailed. I did not verify the current share price, credit ratings or debt maturities. A lender should pull current ratings and the dollar-bond maturity schedule.",
+   "importance": "useful",
+   "source": "https://www.newsofbahrain.com/world/133059.html"
+  },
+  {
+   "id": "k7",
+   "question": "Were the allegations ever proven, and what does the Adani side say?",
+   "answer": "No. There was no conviction or trial finding. The criminal case was dismissed on DOJ's own motion after a review. The SEC matter settled on a no-admit basis. The Adanis have consistently denied wrongdoing and called the 2024 allegations baseless. Adani Green said the dismissal is complete and cannot be reopened. Status for each event in the report should be 'dismissed' (criminal) and 'settled' (SEC, Adani Enterprises OFAC).",
+   "importance": "useful",
+   "source": "https://www.dtnext.in/news/world/us-judge-dismisses-criminal-case-against-gautam-adani-sagar-adani"
+  }
+ ],
+ "labels": {
+  "nimble": "A",
+  "firecrawl": "B",
+  "exa": "C",
+  "parallel": "D",
+  "opus": "E",
+  "gpt": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "wrong",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "wrong",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.207
+}

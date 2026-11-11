@@ -1,9 +1,1057 @@
 {
  "arm": "parallel",
- "tier": "ultra2x",
- "status": "rejected",
- "error": "{\"type\":\"error\",\"error\":{\"message\":\"Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.\",\"detail\":null}}",
  "sub_use_case": "fin_due_diligence",
  "input": "Write a due diligence memo on Canva",
- "input_n": 1
+ "input_n": 1,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 461,
+ "run_id": "trun_4edfe0d7a0da43afba1545a413de71de",
+ "output": {
+  "company": "Canva (Canva Pty Ltd, Australia)",
+  "red_flags": [
+   {
+    "date": "2026-08-12",
+    "claim": "AI unit economics: Fortune reported that unexpectedly high AI delivery costs prompted slower product rollout and a reduction in expected revenue growth from 30% to 20%. These were forecasts, not actual results.",
+    "source_url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Execution disruption: the company’s restructuring announcement, observed as of this date, says 1,271 people, or 22% of Canva, will be impacted. This is an impact count, not a verified count of completed layoffs.",
+    "source_url": "https://www.canva.com/newsroom/news/canva-team-update/"
+   },
+   {
+    "date": "2026-09-18",
+    "claim": "Valuation pressure: investor marks reported in September 2026 ranged from US$34.9 billion to US$39.3 billion, below the US$42 billion employee share-sale valuation announced in August 2025. These marks are not new financing prices.",
+    "source_url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Reporting controls: ASIC reports that Canva Pty Ltd paid A$198,000 for alleged late financial-report lodgment; its FY2024 consolidated report was lodged on 2026-03-27, after the 2025-04-30 deadline. Payment was not an admission of liability.",
+    "source_url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time"
+   },
+   {
+    "date": "2026-09-16",
+    "claim": "Third-party security exposure: Canva’s notification published by Turkey’s regulator described a breach affecting data associated with 424 Turkish organizations; the affected individual count remained unknown at notification.",
+    "source_url": "https://www.kvkk.gov.tr/Icerik/8961/kamuoyu-duyurusu-veri-ihlali-bildirimi-canva-pty-ltd"
+   },
+   {
+    "date": "2026-01-28",
+    "claim": "Product-specific patent exposure: the Delhi High Court dismissed Canva’s appeal against interim restrictions on its Present and Record feature in India. The ruling was preliminary, not a final infringement judgment.",
+    "source_url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf"
+   }
+  ],
+  "traction": [
+   {
+    "date": "2026-02-18",
+    "claim": "Company claim for 2025, reported by TechCrunch: more than 265 million monthly active users, over 31 million paid users, and 20% growth in monthly active users.",
+    "source_url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises"
+   },
+   {
+    "date": "2026-02-18",
+    "claim": "Company claim for 2025: B2B business, defined as companies with more than 25 seats, grew 100% and reached $500 million in annual recurring revenue.",
+    "source_url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Company claim, observed as of this date: Canva’s business page names Zoom, Salesforce, Skyscanner, F45 and OMD in customer case-study results. These are company-selected references, not independently verified customer-contract disclosures.",
+    "source_url": "https://enterprise.canva.com/"
+   },
+   {
+    "date": "2026-02-18",
+    "claim": "Company claim: its ChatGPT integration had generated more than 26 million user conversations by October 2025. TechCrunch also reported integrations with ChatGPT and Claude; commercial partnership terms were not disclosed.",
+    "source_url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises"
+   }
+  ],
+  "missing_fields": [
+   "Latest audited consolidated financial statements; current net income, EBITDA, cash, debt, cash runway and AI contribution margins.",
+   "Exact post-restructuring headcount and the split between eliminated, relocated and otherwise changed roles.",
+   "Independently current CFO incumbency and CTO successor as of 2026-11-09.",
+   "Complete primary-financing history after the verified 2021 round, current capitalization table, and proceeds or completion details of the announced 2025 employee share sale.",
+   "Company-specific sanctions and beneficial-owner screening results; no sanctions clearance is asserted.",
+   "Primary court confirmation of the reported US patent-case dismissal and any later merits disposition of the Indian patent dispute.",
+   "A representative quantitative employee-review trend; the available employee comments are anecdotal."
+  ],
+  "legal_and_regulatory": [
+   {
+    "date": "2026-11-09",
+    "claim": "ASIC record observed as of this date: Canva Pty Ltd and three named group affiliates each paid A$198,000, totaling A$792,000, over alleged failure to lodge FY2024 financial reports by 2025-04-30. Canva Pty Ltd lodged the consolidated report on 2026-03-27. ASIC states payment is neither an admission of liability nor a conviction.",
+    "source_url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time"
+   },
+   {
+    "date": "2026-09-16",
+    "claim": "Turkey’s KVKK published Canva Pty Ltd’s breach notification describing unauthorized access involving a third-party tool and suspected data exfiltration. Data associated with 424 Turkish organizations was affected; individual numbers were unknown. Exposed categories included employee business-contact details and certain customer documents. The regulator’s examination was ongoing at publication.",
+    "source_url": "https://www.kvkk.gov.tr/Icerik/8961/kamuoyu-duyurusu-veri-ihlali-bildirimi-canva-pty-ltd"
+   },
+   {
+    "date": "2026-01-28",
+    "claim": "In Canva v. RxPrism, the Delhi High Court dismissed Canva’s appeal, leaving interim restrictions on Present and Record in India in place in the dispute over patent IN360726. The court expressly confined its observations to the preliminary stage; merits remained for trial.",
+    "source_url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf"
+   },
+   {
+    "date": "2025-08-18",
+    "claim": "DigiMedia Tech filed a patent-infringement complaint against Canva Pty Ltd in the Eastern District of Texas. The complaint contains allegations and requests for relief, not findings of infringement.",
+    "source_url": "https://storage.courtlistener.com/recap/gov.uscourts.txed.239841/gov.uscourts.txed.239841.1.0.pdf"
+   },
+   {
+    "date": "2025-10-30",
+    "claim": "Aggregator-reported disposition: Patsnap records DigiMedia Tech v. Canva Pty Ltd, case 2:25-cv-00808, as closed with prejudice on this date following the parties’ stipulation, with each side bearing its own costs and fees. The underlying dismissal order was not independently verified.",
+    "source_url": "https://www.patsnap.com/resources/blog/litigation/digimedia-tech-v-canva-image-upload-patent-dismissal-patsnap"
+   }
+  ],
+  "reputation": [
+   {
+    "date": "2026-11-03",
+    "claim": "Trustpilot review-aggregator snapshot: 4.0/5 across 8,093 reviews, with 51% five-star and 29% one-star ratings. Displayed comments include a cancellation/refund complaint alongside praise for video editing, presentations and usability. These are self-selected customer reports, not adjudicated findings.",
+    "source_url": "https://www.trustpilot.com/review/canva.com"
+   },
+   {
+    "date": "2026-11-03",
+    "claim": "Glassdoor employee-review snapshot is mixed: January and July 2026 examples praise compensation, while January examples criticize communication, promotion assessments and leadership clarity. These individual reviews do not establish a representative company-wide trend.",
+    "source_url": "https://www.glassdoor.com/Reviews/Canva-communication-Reviews-EI_IE1013251.0,5_KH6,19.htm"
+   },
+   {
+    "date": "2026-08-12",
+    "claim": "Critical press: Fortune focused on AI delivery costs forcing slower rollout and a reduced growth forecast, challenging the economics of Canva’s expansion into broader workplace software.",
+    "source_url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592"
+   }
+  ],
+  "verdict": "Canva shows substantial company-reported subscription scale, paid adoption and named enterprise deployments, with its founding team still listed in senior operating roles. Before investing, reconcile revenue with audited accounts and examine AI unit economics, investor valuation markdowns, restructuring execution, reporting controls, breach remediation and the Indian patent restrictions.",
+  "financial_signals": [
+   {
+    "date": "2025",
+    "claim": "Company claim in its 2025 annual review: revenue reached $3.5 billion. This is a company statement, not independently verified audited financial information; the cited revenue sentence does not expressly identify the dollar currency.",
+    "source_url": "https://www.canva.com/newsroom/news/canva-2025-wrap"
+   },
+   {
+    "date": "2026-02-18",
+    "claim": "Company claim reported by TechCrunch: annual recurring revenue reached $4 billion by the end of 2025. This is ARR, not recognized annual revenue, and should not be substituted for the annual-review revenue figure.",
+    "source_url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises"
+   },
+   {
+    "date": "2026-08-12",
+    "claim": "Fortune reported that Canva reduced expected revenue growth from 30% to 20% as higher-than-expected AI costs slowed rollout. CEO Melanie Perkins said the company was rebuilding architecture, reducing unit costs and strengthening the business model. The growth figures were forecasts.",
+    "source_url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Company claim, announcement observed as of this date: restructuring will impact 1,271 people, or 22% of Canva, and include employee departures. Perkins said growth had slowed for the first time in a decade. Exact completed layoffs and resulting headcount were not established.",
+    "source_url": "https://www.canva.com/newsroom/news/canva-team-update/"
+   }
+  ],
+  "team": [
+   {
+    "date": "2026-11-09",
+    "claim": "The official leadership page, observed as of this date, lists co-founders Melanie Perkins as CEO, Cliff Obrecht as COO and Cameron Adams as CPO. It also lists Zach Kitschke as chief marketing officer and Jennie Rogerson as global head of people.",
+    "source_url": "https://public.canva.site/canva-press-hub-leadership"
+   },
+   {
+    "date": "2026-05-04",
+    "claim": "EdTech Innovation Hub reported CTO Brendan Humphreys’ announced departure, scheduled for 2026-06-19, with a subsequent advisory role. It reported prior experience at Atlassian and as founder of Cenqua. Completion of the departure and a successor were not independently reconfirmed.",
+    "source_url": "https://www.edtechinnovationhub.com/news/canvas-cto-steps-down-after-12-years-as-the-company-navigates-its-ai-pivot"
+   },
+   {
+    "date": "2026-05-18",
+    "claim": "The Australian Financial Review reported that four senior leaders were leaving during May 2026. Its accessible reporting named growth lead Iain Dowling, who announced his resignation, and senior engineering director Jonathan Ross, scheduled to leave at month-end.",
+    "source_url": "https://www.afr.com/technology/canva-loses-senior-leaders-amid-push-into-artificial-intelligence-20260518-p5zy4d"
+   }
+  ],
+  "business": [
+   {
+    "date": "2026-01-28",
+    "claim": "Canva is an Australian technology company operating a globally used online design and content-creation platform. Its business offering supports visual communication, collaboration and content production.",
+    "source_url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Pricing page observed as of this date: freemium subscription model spanning Free and paid Pro plans for individuals, Business for individuals and teams, and sales-led Enterprise for organizations. Education offerings cover eligible schools, educators and students.",
+    "source_url": "https://www.canva.com/pricing/"
+   }
+  ],
+  "funding": [
+   {
+    "date": "2021-09-15",
+    "claim": "Company announcement: a US$200 million funding round led by T. Rowe Price valued Canva at US$40 billion.",
+    "source_url": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication"
+   },
+   {
+    "date": "2025-08-20",
+    "claim": "Reuters reported an announced employee share sale at a US$42 billion valuation, led by existing shareholder Fidelity Management, with JPMorgan’s asset-management division joining as a new investor. This was employee secondary liquidity, not a disclosed primary cash raise; transaction size was not revealed.",
+    "source_url": "https://www.reuters.com/world/asia-pacific/australias-canva-begins-share-sale-42-billion-valuation-2025-08-20"
+   },
+   {
+    "date": "2026-09-18",
+    "claim": "Investor valuation estimates reported by Forbes Australia: T. Rowe Price implied US$38.2 billion, Franklin Templeton US$39.3 billion during the June 2026 quarter, and Blackbird US$34.9 billion. These are investor marks, distinct from the announced US$42 billion secondary-sale valuation.",
+    "source_url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton"
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "company",
+   "citations": [
+    {
+     "title": "26-090MR Canva Group pays $792,000 in infringement notices for failing to lodge financial reports on time | ASIC",
+     "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time",
+     "excerpts": [
+      "ASIC has issued infringement notices totalling $792,000 to four companies within the Australian Canva Group, operator of the global online design and publishing tool Canva, for allegedly failing to lodge their financial reports for the financial year ending 31 December 2024 by the required date. Canva Pty Ltd, Canva Operations Pty Limited, Canva Trading Pty Ltd, and Fusion Books Pty Ltd each paid an infringement notice of $198,000 for not lodging their financial reports by the 30 April 2025"
+     ]
+    },
+    {
+     "title": "Case 2:25-cv-00808-RWS-RSP Document 1 Filed 08/18/25 Page 1 of 21 PageID #: 1 IN THE UNITED STATES DISTRICT COURT FOR",
+     "url": "https://storage.courtlistener.com/recap/gov.uscourts.txed.239841/gov.uscourts.txed.239841.1.0.pdf",
+     "excerpts": [
+      "2\\. Upon information and belief, Defendant Canva Pty Ltd is an Australian company."
+     ]
+    }
+   ],
+   "reasoning": "The regulator associates the Canva brand with the Australian Canva Group and names Canva Pty Ltd; the complaint also identifies that entity as Australian.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags",
+   "citations": [
+    {
+     "title": "Canva, the rare startup that grew fast and made money, sees AI cut its growth forecast by a third | Fortune",
+     "url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592",
+     "excerpts": [
+      "The design-software company [cut its expected revenue growth rate by a third to 20%"
+     ]
+    },
+    {
+     "title": "An important update on our team",
+     "url": "https://www.canva.com/newsroom/news/canva-team-update/",
+     "excerpts": [
+      "This means 1,271 people, or 22% of Canva, will be impacted."
+     ]
+    },
+    {
+     "title": "Canva value marked down by US titans",
+     "url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton",
+     "excerpts": [
+      "Blackbird, Canva’s earliest backer and its largest VC shareholder, slashed the valuation of its holdings by 17 per cent from US$42 billion to US$34.9"
+     ]
+    },
+    {
+     "title": "26-090MR Canva Group pays $792,000 in infringement notices for failing to lodge financial reports on time | ASIC",
+     "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time",
+     "excerpts": [
+      "Canva Pty Ltd, Canva Operations Pty Limited, Canva Trading Pty Ltd, and Fusion Books Pty Ltd each paid an infringement notice of $198,000"
+     ]
+    },
+    {
+     "title": "Kamuoyu Duyurusu (Veri İhlali Bildirimi) – Canva Pty Ltd | Kişisel Verileri Koruma Kurumu",
+     "url": "https://www.kvkk.gov.tr/Icerik/8961/kamuoyu-duyurusu-veri-ihlali-bildirimi-canva-pty-ltd",
+     "excerpts": [
+      "Türkiye’de yer alan 424"
+     ]
+    },
+    {
+     "title": "$~ * IN THE HIGH COURT OF DELHI AT NEW DELHI Judgment reserved on: 01.12.2025 Judgment pronounced on: 28.01.2026 +",
+     "url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf",
+     "excerpts": [
+      "**197\\.** In the circumstances, we are of the considered view that no compelling case has been made out to warrant interference with the impugned judgment. **198\\.** Accordingly, after having carefully examined the reasoning adopted by the learned Single Judge, we find no merit in the present appeal"
+     ]
+    }
+   ],
+   "reasoning": "The risks rest on the same sourced forecasts, restructuring, valuation marks, reporting action, breach notification and interim patent proceedings disclosed elsewhere in the memo.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction",
+   "citations": [
+    {
+     "title": "Canva gets to $4B in revenue as LLM referral traffic rises | TechCrunch",
+     "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises",
+     "excerpts": [
+      "Canva had more than 265 million monthly active users and over 31 million paid users in 2025, according to the company.",
+      "The subscription-based company also saw its B2B business, which accounts for companies with more than 25 seats, grow by 100% with $500 million in ARR.",
+      "Canva is also actively integrating with chatbots like ChatGPT"
+     ]
+    },
+    {
+     "title": "Canva for business | Empowering small medium businesses and enterprises",
+     "url": "https://enterprise.canva.com/",
+     "excerpts": [
+      "60% increase in content creation in one month F45 230 hours of design saved in three months Zoom 66% reduction in cost per design with Canva over 12 months Salesforce This is a trademark of Salesforce.com, inc., and is used here with permission. 6 months for a full global rebrand Skyscanner 70% faster social asset creation OMD"
+     ]
+    }
+   ],
+   "reasoning": "TechCrunch attributes adoption and B2B metrics to Canva; the business page supplies named references, and the article describes chatbot integrations. Claims remain explicitly company-reported.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "These are limitations of the available verification, not assertions that the underlying information or events do not exist.",
+   "confidence": "low"
+  },
+  {
+   "field": "legal_and_regulatory",
+   "citations": [
+    {
+     "title": "26-090MR Canva Group pays $792,000 in infringement notices for failing to lodge financial reports on time | ASIC",
+     "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time",
+     "excerpts": [
+      "Canva Pty Ltd, Canva Operations Pty Limited, Canva Trading Pty Ltd, and Fusion Books Pty Ltd each paid an infringement notice of $198,000"
+     ]
+    },
+    {
+     "title": "Kamuoyu Duyurusu (Veri İhlali Bildirimi) – Canva Pty Ltd | Kişisel Verileri Koruma Kurumu",
+     "url": "https://www.kvkk.gov.tr/Icerik/8961/kamuoyu-duyurusu-veri-ihlali-bildirimi-canva-pty-ltd",
+     "excerpts": [
+      "Konuya ilişkin inceleme devam etmekle birlikte, Kişisel Verileri Koruma Kurulunun 16.09.2026 tarih ve 2026/2037 sayılı Kararı ile söz konusu veri ihlal bildiriminin Kurumun internet sitesinde ilan edilmesine karar verilmiştir."
+     ]
+    },
+    {
+     "title": "$~ * IN THE HIGH COURT OF DELHI AT NEW DELHI Judgment reserved on: 01.12.2025 Judgment pronounced on: 28.01.2026 +",
+     "url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf",
+     "excerpts": [
+      "**200\\.** It is clarified that the observations made herein are confined to the _prima facie_ stage and shall not be construed as an expression of opinion on the merits of the case, which shall be decided independently at the stage of trial"
+     ]
+    },
+    {
+     "title": "Case 2:25-cv-00808-RWS-RSP Document 1 Filed 08/18/25 Page 1 of 21 PageID #: 1 IN THE UNITED STATES DISTRICT COURT FOR",
+     "url": "https://storage.courtlistener.com/recap/gov.uscourts.txed.239841/gov.uscourts.txed.239841.1.0.pdf",
+     "excerpts": [
+      "55\\. Defendant has made, used, sold, offered for sale, and/or imported one or more of the inventions claimed in the ’088 patent"
+     ]
+    },
+    {
+     "title": "DigiMedia Tech v. Canva Pty | Patent Lawsuit 2:25-cv-00808",
+     "url": "https://www.patsnap.com/resources/blog/litigation/digimedia-tech-v-canva-image-upload-patent-dismissal-patsnap",
+     "excerpts": [
+      "The recorded basis of termination is dismissed with prejudice."
+     ]
+    }
+   ],
+   "reasoning": "Regulator notices and the Indian judgment provide primary evidence. The US complaint establishes allegations only; the later dismissal is separately labeled as an aggregator report.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation",
+   "citations": [
+    {
+     "title": "Canva Reviews | Read Customer Service Reviews of canva.com",
+     "url": "https://www.trustpilot.com/review/canva.com",
+     "excerpts": [
+      "8,093 • TrustScore 4 out of 5",
+      "5-star 51% 4-star 9% 3-star 5% 2-star 6% 1-star 29%"
+     ]
+    },
+    {
+     "title": "Canva \"communication\" Reviews | Glassdoor",
+     "url": "https://www.glassdoor.com/Reviews/Canva-communication-Reviews-EI_IE1013251.0,5_KH6,19.htm",
+     "excerpts": [
+      "4\\.0 Jan 24, 2026 Strong pay, growing company Accountant Current employee, more than 1 year San Francisco, CA Recommend CEO approval Business Outlook Pros Pay is above market, company is exciting and has high upside Cons Can be chaotic and communication is clunky."
+     ]
+    },
+    {
+     "title": "Canva, the rare startup that grew fast and made money, sees AI cut its growth forecast by a third | Fortune",
+     "url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592",
+     "excerpts": [
+      "The cost problem lands at a pivotal moment for Canva because AI is central to its effort to become a broader workplace-software platform."
+     ]
+    }
+   ],
+   "reasoning": "The review snapshots support mixed customer and employee observations, not representative sentiment trends. Fortune supplies the critical-press theme.",
+   "confidence": "medium"
+  },
+  {
+   "field": "verdict",
+   "citations": [
+    {
+     "title": "Canva gets to $4B in revenue as LLM referral traffic rises | TechCrunch",
+     "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises",
+     "excerpts": [
+      "Canva had more than 265 million monthly active users and over 31 million paid users in 2025, according to the company.",
+      "That user base helped push its annual recurring revenue to $4 billion by the end of year, Canva co-founder and COO Cliff Obrecht"
+     ]
+    },
+    {
+     "title": "Canva, the rare startup that grew fast and made money, sees AI cut its growth forecast by a third | Fortune",
+     "url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592",
+     "excerpts": [
+      "The design-software company [cut its expected revenue growth rate by a third to 20%"
+     ]
+    },
+    {
+     "title": "An important update on our team",
+     "url": "https://www.canva.com/newsroom/news/canva-team-update/",
+     "excerpts": [
+      "This means 1,271 people, or 22% of Canva, will be impacted."
+     ]
+    },
+    {
+     "title": "26-090MR Canva Group pays $792,000 in infringement notices for failing to lodge financial reports on time | ASIC",
+     "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time",
+     "excerpts": [
+      "Canva Pty Ltd lodged its FY24 consolidated report covering the four companies on 27 March 2026."
+     ]
+    },
+    {
+     "title": "Kamuoyu Duyurusu (Veri İhlali Bildirimi) – Canva Pty Ltd | Kişisel Verileri Koruma Kurumu",
+     "url": "https://www.kvkk.gov.tr/Icerik/8961/kamuoyu-duyurusu-veri-ihlali-bildirimi-canva-pty-ltd",
+     "excerpts": [
+      "Türkiye’de yer alan 424"
+     ]
+    }
+   ],
+   "reasoning": "The verdict balances reported commercial scale against the documented operating, financial-control, security and litigation diligence issues; it is an investment assessment rather than a sourced fact.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals",
+   "citations": [
+    {
+     "title": "A transformative year for Canva: 2025 in review",
+     "url": "https://www.canva.com/newsroom/news/canva-2025-wrap",
+     "excerpts": [
+      "Our business kept growing too, reaching $3.5 billion in revenue ."
+     ]
+    },
+    {
+     "title": "Canva gets to $4B in revenue as LLM referral traffic rises | TechCrunch",
+     "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises",
+     "excerpts": [
+      "That user base helped push its annual recurring revenue to $4 billion by the end of year, Canva co-founder and COO Cliff Obrecht"
+     ]
+    },
+    {
+     "title": "Canva, the rare startup that grew fast and made money, sees AI cut its growth forecast by a third | Fortune",
+     "url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592",
+     "excerpts": [
+      "The design-software company [cut its expected revenue growth rate by a third to 20%"
+     ]
+    },
+    {
+     "title": "An important update on our team",
+     "url": "https://www.canva.com/newsroom/news/canva-team-update/",
+     "excerpts": [
+      "This means 1,271 people, or 22% of Canva, will be impacted."
+     ]
+    }
+   ],
+   "reasoning": "The sources distinguish the company’s annual-review revenue statement from year-end ARR, prospective growth guidance and restructuring impact.",
+   "confidence": "medium"
+  },
+  {
+   "field": "team",
+   "citations": [
+    {
+     "title": "Press Hub | Leadership",
+     "url": "https://public.canva.site/canva-press-hub-leadership",
+     "excerpts": [
+      "Leadership Team [Read Bio](https://www.canva.com/design/DAFPdTsg9hc/m-y8GypDZEdZXP3_T1RzUQ/edit?utm_content=DAFPdTsg9hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [Melanie Perkins](https://www.canva.com/design/DAFPdTsg9hc/m-y8GypDZEdZXP3_T1RzUQ/edit?utm_content=DAFPdTsg9hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [CEO & Co-founder"
+     ]
+    },
+    {
+     "title": "Canva CTO Brendan Humphreys steps down after 12 years | ETIH EdTech News — EdTech Innovation Hub",
+     "url": "https://www.edtechinnovationhub.com/news/canvas-cto-steps-down-after-12-years-as-the-company-navigates-its-ai-pivot",
+     "excerpts": [
+      "His departure date is set for June 19, 2026. He will reportedly stay on as an advisor after that.",
+      "Before joining Canva, Humphreys spent nearly seven years at Atlassian as a Principal Developer and previously founded Cenqua."
+     ]
+    },
+    {
+     "title": "Canva loses four senior leaders as company makes AI pivot, prepares for IPO",
+     "url": "https://www.afr.com/technology/canva-loses-senior-leaders-amid-push-into-artificial-intelligence-20260518-p5zy4d",
+     "excerpts": [
+      "Growth lead Iain Dowling announced his resignation on Monday after eight years in senior positions across the design team."
+     ]
+    }
+   ],
+   "reasoning": "The official page provides listed executive roles. Separate reporting supports announced leadership departures and Humphreys’ earlier employers, with completion caveats retained.",
+   "confidence": "medium"
+  },
+  {
+   "field": "business",
+   "citations": [
+    {
+     "title": "$~ * IN THE HIGH COURT OF DELHI AT NEW DELHI Judgment reserved on: 01.12.2025 Judgment pronounced on: 28.01.2026 +",
+     "url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf",
+     "excerpts": [
+      "**4\\.** Defendant No. 1, Canva Pvt Ltd., is an Australian technology company operating a globally used online design and content-creation platform under the brand name “Canva”. The dispute in the present"
+     ]
+    },
+    {
+     "title": "Canva Pricing: Compare Free, Pro, Business and Enterprise plans",
+     "url": "https://www.canva.com/pricing/",
+     "excerpts": [
+      "Individuals Free Design anything and bring your ideas to life. No cost, just creativity. US$ 0 /year for one person",
+      "Organizations Enterprise Empower your organization with end-to-end visual communication. Let’s talk Get in touch to learn more [Contact Sales"
+     ]
+    }
+   ],
+   "reasoning": "The court describes the Australian global design-platform business; the pricing page directly identifies free, subscription and enterprise offerings.",
+   "confidence": "high"
+  },
+  {
+   "field": "funding",
+   "citations": [
+    {
+     "title": "Canva Announces USD 40 Billion Valuation Fueled by the Global Demand for Visual Communication",
+     "url": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication",
+     "excerpts": [
+      "SYDNEY, 15 September 2021 – Canva, the global visual communications platform, today announced a USD $40 billion valuation after a USD $200 million funding round led by T. Rowe Price and joined by new and existing strategic investors including Franklin Templeton, Sequoia Capital Global Equities, Bessemer Venture Partners, Greenoaks Capital, Dragoneer Investments, Blackbird, Felicis, and AirTree Ventures."
+     ]
+    },
+    {
+     "title": "Australia's Canva begins share sale at $42 billion valuation | Reuters",
+     "url": "https://www.reuters.com/world/asia-pacific/australias-canva-begins-share-sale-42-billion-valuation-2025-08-20",
+     "excerpts": [
+      "Aug 20 (Reuters) - Australian graphic design platform Canva launched an employee stock sale that values the company at $42 billion"
+     ]
+    },
+    {
+     "title": "Canva value marked down by US titans",
+     "url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton",
+     "excerpts": [
+      "Meanwhile, Franklin Templeton pulled the design giant down to US$39.3 billion during the June quarter.",
+      "Blackbird, Canva’s earliest backer and its largest VC shareholder, slashed the valuation of its holdings by 17 per cent from US$42 billion to US$34.9"
+     ]
+    }
+   ],
+   "reasoning": "The official financing announcement establishes the primary round. Reuters describes employee liquidity, while Forbes reports later investor valuation marks rather than another financing.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.0",
+   "citations": [
+    {
+     "title": "Canva, the rare startup that grew fast and made money, sees AI cut its growth forecast by a third | Fortune",
+     "url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592",
+     "excerpts": [
+      "The design-software company [cut its expected revenue growth rate by a third to 20%"
+     ]
+    },
+    {
+     "title": "Canva value marked down by US titans",
+     "url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton",
+     "excerpts": [
+      "But Canva in July told investors that delays to product rollouts due to rising AI costs would come alongside revenue growth of 20 per cent for the year, [according to the Australian Financial Review](https://www.afr.com/technology/canva-s-big-backers-slash-10b-from-software-giant-amid-ai-pivot-20260813-p60o48) , a markdown from earlier projections of 30 per cent"
+     ]
+    }
+   ],
+   "reasoning": "The reporting links AI costs and rollout delays to the forecast reduction; the figures are not represented as actual growth.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.1",
+   "citations": [
+    {
+     "title": "An important update on our team",
+     "url": "https://www.canva.com/newsroom/news/canva-team-update/",
+     "excerpts": [
+      "This means 1,271 people, or 22% of Canva, will be impacted.",
+      "Sadly, it will also mean saying goodbye to teammates and friends who have helped build Canva into what it is today."
+     ]
+    }
+   ],
+   "reasoning": "The company announces affected people and departures but does not establish a completed-layoff count.",
+   "confidence": "high"
+  },
+  {
+   "field": "red_flags.2",
+   "citations": [
+    {
+     "title": "Canva value marked down by US titans",
+     "url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton",
+     "excerpts": [
+      "Meanwhile, Franklin Templeton pulled the design giant down to US$39.3 billion during the June quarter.",
+      "Blackbird, Canva’s earliest backer and its largest VC shareholder, slashed the valuation of its holdings by 17 per cent from US$42 billion to US$34.9"
+     ]
+    },
+    {
+     "title": "Australia's Canva begins share sale at $42 billion valuation | Reuters",
+     "url": "https://www.reuters.com/world/asia-pacific/australias-canva-begins-share-sale-42-billion-valuation-2025-08-20",
+     "excerpts": [
+      "Aug 20 (Reuters) - Australian graphic design platform Canva launched an employee stock sale that values the company at $42 billion"
+     ]
+    }
+   ],
+   "reasoning": "The investor marks bracket the stated range and are lower than the announced employee-sale valuation; the valuation-risk characterization is synthesis.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.3",
+   "citations": [
+    {
+     "title": "26-090MR Canva Group pays $792,000 in infringement notices for failing to lodge financial reports on time | ASIC",
+     "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time",
+     "excerpts": [
+      "Canva Pty Ltd, Canva Operations Pty Limited, Canva Trading Pty Ltd, and Fusion Books Pty Ltd each paid an infringement notice of $198,000",
+      "Canva Pty Ltd lodged its FY24 consolidated report covering the four companies on 27 March 2026.",
+      "Payment of an infringement notice is not an admission of guilt or liability, and the companies are not regarded as having been convicted of the alleged offence."
+     ]
+    }
+   ],
+   "reasoning": "ASIC provides the payment, deadline, eventual filing date and legal qualification. The reporting-control concern is an assessment of those facts.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.4",
+   "citations": [
+    {
+     "title": "Kamuoyu Duyurusu (Veri İhlali Bildirimi) – Canva Pty Ltd | Kişisel Verileri Koruma Kurumu",
+     "url": "https://www.kvkk.gov.tr/Icerik/8961/kamuoyu-duyurusu-veri-ihlali-bildirimi-canva-pty-ltd",
+     "excerpts": [
+      "Veri sorumlusu sıfatını haiz Canva Pty Ltd tarafından Kurula iletilen veri ihlali bildiriminde özetle; Veri sorumlusunun kullandığı üçüncü taraf bir araçta yaşanan yetkisiz erişim neticesinde ihlalin meydana geldiği; tehdit aktörünün, veri işleyen ile olan bağlantı aracılıyla bazı kişisel verileri dışarı aktardığının (sızdırdığının) değerlendirildiği, Türkiye’de yer alan 424 organizasyon/kuruluş ile ilişkili verilerin ihlalden etkilendiği ancak ihlalden etkilenen gerçek kişi sayısının henüz tespit edilemediği,"
+     ]
+    }
+   ],
+   "reasoning": "The regulator reproduces Canva’s notification of third-party access and the affected organizational scope, with individual numbers unknown.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.5",
+   "citations": [
+    {
+     "title": "$~ * IN THE HIGH COURT OF DELHI AT NEW DELHI Judgment reserved on: 01.12.2025 Judgment pronounced on: 28.01.2026 +",
+     "url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf",
+     "excerpts": [
+      "**5\\.** By the impugned judgment, the learned Single Judge has recorded a _prima facie_ finding that Defendant’s “ **Present and Record** ” feature infringes the Suit Patent and consequently granted an interim injunction restraining the Defendant from using the impugned feature in India and _inter alia_ directed : _\"92. In view of the above discussion, the Defendant shall stand restrained from making available their Canva product with the 'Present and Record' feature, which infringes the Plaintiff's Suit_ 2 “Suit Patent” hereinafter Signed By:ANUBHAV TRIPATHI Signing Date:28.01.2026 19:18:32 Signature Not Verified FAO(OS) (COMM) 211/2023 Page **4** of **71** _Patent being IN360726 or use any other feature that would result in infringement of the Plaintiff's patent IN360726. 93. This Court also notices that the Defendant No. I is an Australian company and the Defendant Nos.2 & 3 are the senior officials in the said company. The Defendant has no assets in India and also do not have physical business in India. Accordingly, considering the revenue and sales figures of the users who have used the 'Present and Record' feature in India at least once as per the Defendant themselves, till 30th June, 2022 the Defendant No.I- Canva Pvt. Ltd",
+      "for infringement, compared the essential features/ inventive steps of the Suit Patent with the Defendant’s product and returned the following findings on each of the four disputed inventive steps: _66\\. After perusing the manner in which the Defendant’s product_ _functions, insofar as A1 and A4 are concerned, it would be_ _incorrect for the Defendant’s to argue that their product does not_ _have a layered presentation or a PIP second media. A bare perusal_ _of the Defendant’s product would show that the feature of PIP_ _exists. However, the absence of this feature is argued on the basis that it is not in the form of a moveable window. The question whether the window is moveable or not, is irrelevant insofar as the_ _Plaintiff’s product is concerned. The product is focused on the_ _existence of two media i.e. the first, and the second media in the form of a PIP. The movement is not an essential feature of the_ _Plaintiff’s product, but the fact that the fi_ _rst and second media is integrated in a manner as to sync the audio with the video and the image is essential. The syncing of the audio, video and the image_ _clearly exists in the Defendant’s product. Thus, the distinction that_ _the Defendant seeks to draw is of no consequence when judging_ _the core of the Plaintiff’s product._ _67\\. Insofar as C6 [“Content... Configured through \"Configuration_ _Interface\" which loads already configured interactive content_ _settings of stored interactive content...”]_ _and C7 [\"...call-to-action user interface button are enabled (as per interactive content settings data) and displayed only while Rendering and playing as_ _a part of the interactive content\"] are concerned, the Defendant’s_ Signed By:ANUBHAV TRIPATHI Signing Date:28.01.2026 19:18:32 Signature Not Verified FAO(OS) (COMM) 211/2023 Page **49** of **71** _argument is that there is no separate configuration interface for the Call-to-Action button in the sandwiched layer._"
+     ]
+    }
+   ],
+   "reasoning": "The judgment recounts the interim feature restrictions, dismisses the appeal and expressly reserves final merits for trial.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction.0",
+   "citations": [
+    {
+     "title": "Canva gets to $4B in revenue as LLM referral traffic rises | TechCrunch",
+     "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises",
+     "excerpts": [
+      "Creative company Canva ended 2025 on a high note with a 20% increase in monthly active users, growth that was partially propelled by adoption of its AI tools. Canva had more than 265 million monthly active users and over 31 million paid users in 2025, according to the company."
+     ]
+    }
+   ],
+   "reasoning": "The article explicitly attributes the 2025 user counts and growth to Canva.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction.1",
+   "citations": [
+    {
+     "title": "Canva gets to $4B in revenue as LLM referral traffic rises | TechCrunch",
+     "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises",
+     "excerpts": [
+      "The subscription-based company also saw its B2B business, which accounts for companies with more than 25 seats, grow by 100% with $500 million in ARR."
+     ]
+    }
+   ],
+   "reasoning": "The article states the B2B seat definition, growth and ARR together.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction.2",
+   "citations": [
+    {
+     "title": "Canva for business | Empowering small medium businesses and enterprises",
+     "url": "https://enterprise.canva.com/",
+     "excerpts": [
+      "60% increase in content creation in one month F45 230 hours of design saved in three months Zoom 66% reduction in cost per design with Canva over 12 months Salesforce This is a trademark of Salesforce.com, inc., and is used here with permission. 6 months for a full global rebrand Skyscanner 70% faster social asset creation OMD"
+     ]
+    }
+   ],
+   "reasoning": "The company page names these organizations alongside selected customer results; no independent contract verification is implied.",
+   "confidence": "high"
+  },
+  {
+   "field": "traction.3",
+   "citations": [
+    {
+     "title": "Canva gets to $4B in revenue as LLM referral traffic rises | TechCrunch",
+     "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises",
+     "excerpts": [
+      "Canva is also actively integrating with chatbots like ChatGPT"
+     ]
+    }
+   ],
+   "reasoning": "The article describes the integrations and attributes the October 2025 conversation count to Canva.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "Current audited financial statements and these financial line items were not verified.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The impact announcement does not establish a verified post-restructuring workforce or complete role-outcome breakdown.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [],
+   "reasoning": "Historical appointment and departure coverage did not establish both current incumbencies as of the memo date.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.3",
+   "citations": [],
+   "reasoning": "The verified announcements do not establish a complete current capitalization or financing record.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.4",
+   "citations": [],
+   "reasoning": "No company-specific sanctions or beneficial-owner screening result was verified.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.5",
+   "citations": [],
+   "reasoning": "The US disposition rests on a labeled secondary summary, and the Indian primary judgment is interlocutory.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.6",
+   "citations": [],
+   "reasoning": "Selected employee comments do not provide a representative longitudinal sentiment measure.",
+   "confidence": "low"
+  },
+  {
+   "field": "legal_and_regulatory.0",
+   "citations": [
+    {
+     "title": "26-090MR Canva Group pays $792,000 in infringement notices for failing to lodge financial reports on time | ASIC",
+     "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-090mr-canva-group-pays-792-000-in-infringement-notices-for-failing-to-lodge-financial-reports-on-time",
+     "excerpts": [
+      "ASIC has issued infringement notices totalling $792,000 to four companies within the Australian Canva Group, operator of the global online design and publishing tool Canva, for allegedly failing to lodge their financial reports for the financial year ending 31 December 2024 by the required date. Canva Pty Ltd, Canva Operations Pty Limited, Canva Trading Pty Ltd, and Fusion Books Pty Ltd each paid an infringement notice of $198,000 for not lodging their financial reports by the 30 April 2025 due date. Canva Pty Ltd lodged its FY24 consolidated report covering the four companies on 27 March 2026. Payment of an infringement notice is not an admission of guilt or liability, and the companies are not regarded as having been convicted of the alleged offence."
+     ]
+    }
+   ],
+   "reasoning": "ASIC directly states the group total, entity-level payments, late-reporting dates and non-admission qualification.",
+   "confidence": "high"
+  },
+  {
+   "field": "legal_and_regulatory.1",
+   "citations": [
+    {
+     "title": "Kamuoyu Duyurusu (Veri İhlali Bildirimi) – Canva Pty Ltd | Kişisel Verileri Koruma Kurumu",
+     "url": "https://www.kvkk.gov.tr/Icerik/8961/kamuoyu-duyurusu-veri-ihlali-bildirimi-canva-pty-ltd",
+     "excerpts": [
+      "Veri sorumlusu sıfatını haiz Canva Pty Ltd tarafından Kurula iletilen veri ihlali bildiriminde özetle; Veri sorumlusunun kullandığı üçüncü taraf bir araçta yaşanan yetkisiz erişim neticesinde ihlalin meydana geldiği; tehdit aktörünün, veri işleyen ile olan bağlantı aracılıyla bazı kişisel verileri dışarı aktardığının (sızdırdığının) değerlendirildiği, Türkiye’de yer alan 424 organizasyon/kuruluş ile ilişkili verilerin ihlalden etkilendiği ancak ihlalden etkilenen gerçek kişi sayısının henüz tespit edilemediği, İhlalden etkilenen kişisel veriler arasında veri sorumlusu müşterilerinin çalışanlarına ait isim, iş e-posta adresi, iş yeri konumu, iş amaçlı kullanılan telefon numaraları bilgilerinin bulunduğu; (veri sorumlusu ile paylaşıldığı ölçüde) müşteri sipariş formları, sözleşmeler, faturalar, veri koruma anlaşmaları, ana hizmet sözleşmeleri ve diğer rutin iş yazışmalarının ihlale konu olduğu,",
+      "Konuya ilişkin inceleme devam etmekle birlikte, Kişisel Verileri Koruma Kurulunun 16.09.2026 tarih ve 2026/2037 sayılı Kararı ile söz konusu veri ihlal bildiriminin Kurumun internet sitesinde ilan edilmesine karar verilmiştir."
+     ]
+    }
+   ],
+   "reasoning": "The Turkish regulator publishes the controller’s reported mechanism, affected data and scope, and states its examination is continuing.",
+   "confidence": "medium"
+  },
+  {
+   "field": "legal_and_regulatory.2",
+   "citations": [
+    {
+     "title": "$~ * IN THE HIGH COURT OF DELHI AT NEW DELHI Judgment reserved on: 01.12.2025 Judgment pronounced on: 28.01.2026 +",
+     "url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf",
+     "excerpts": [
+      "asserts ownership of Indian Patent No. **_‘IN360726’_** titled _“A system and_ _a method for creating and sharing interactive content rapidly anywhere_ _and anytime_ _”_ _2_ _._",
+      "**5\\.** By the impugned judgment, the learned Single Judge has recorded a _prima facie_ finding that Defendant’s “ **Present and Record** ” feature infringes the Suit Patent and consequently granted an interim injunction restraining the Defendant from using the impugned feature in India and _inter alia_ directed : _\"92. In view of the above discussion, the Defendant shall stand restrained from making available their Canva product with the 'Present and Record' feature, which infringes the Plaintiff's Suit_ 2 “Suit Patent” hereinafter Signed By:ANUBHAV TRIPATHI Signing Date:28.01.2026 19:18:32 Signature Not Verified FAO(OS) (COMM) 211/2023 Page **4** of **71** _Patent being IN360726 or use any other feature that would result in infringement of the Plaintiff's patent IN360726. 93. This Court also notices that the Defendant No. I is an Australian company and the Defendant Nos.2 & 3 are the senior officials in the said company. The Defendant has no assets in India and also do not have physical business in India. Accordingly, considering the revenue and sales figures of the users who have used the 'Present and Record' feature in India at least once as per the Defendant themselves, till 30th June, 2022 the Defendant No.I- Canva Pvt. Ltd",
+      "for infringement, compared the essential features/ inventive steps of the Suit Patent with the Defendant’s product and returned the following findings on each of the four disputed inventive steps: _66\\. After perusing the manner in which the Defendant’s product_ _functions, insofar as A1 and A4 are concerned, it would be_ _incorrect for the Defendant’s to argue that their product does not_ _have a layered presentation or a PIP second media. A bare perusal_ _of the Defendant’s product would show that the feature of PIP_ _exists. However, the absence of this feature is argued on the basis that it is not in the form of a moveable window. The question whether the window is moveable or not, is irrelevant insofar as the_ _Plaintiff’s product is concerned. The product is focused on the_ _existence of two media i.e. the first, and the second media in the form of a PIP. The movement is not an essential feature of the_ _Plaintiff’s product, but the fact that the fi_ _rst and second media is integrated in a manner as to sync the audio with the video and the image is essential. The syncing of the audio, video and the image_ _clearly exists in the Defendant’s product. Thus, the distinction that_ _the Defendant seeks to draw is of no consequence when judging_ _the core of the Plaintiff’s product._ _67\\. Insofar as C6 [“Content... Configured through \"Configuration_ _Interface\" which loads already configured interactive content_ _settings of stored interactive content...”]_ _and C7 [\"...call-to-action user interface button are enabled (as per interactive content settings data) and displayed only while Rendering and playing as_ _a part of the interactive content\"] are concerned, the Defendant’s_ Signed By:ANUBHAV TRIPATHI Signing Date:28.01.2026 19:18:32 Signature Not Verified FAO(OS) (COMM) 211/2023 Page **49** of **71** _argument is that there is no separate configuration interface for the Call-to-Action button in the sandwiched layer._"
+     ]
+    }
+   ],
+   "reasoning": "The primary judgment identifies the patent and interim relief, dismisses the appeal and excludes a final merits determination.",
+   "confidence": "medium"
+  },
+  {
+   "field": "legal_and_regulatory.3",
+   "citations": [
+    {
+     "title": "Case 2:25-cv-00808-RWS-RSP Document 1 Filed 08/18/25 Page 1 of 21 PageID #: 1 IN THE UNITED STATES DISTRICT COURT FOR",
+     "url": "https://storage.courtlistener.com/recap/gov.uscourts.txed.239841/gov.uscourts.txed.239841.1.0.pdf",
+     "excerpts": [
+      "CANVA PTY LTD, Defendant.",
+      "55\\. Defendant has made, used, sold, offered for sale, and/or imported one or more of the inventions claimed in the ’088 patent",
+      "This 18th day of August, 2025."
+     ]
+    },
+    {
+     "title": "DigiMedia Tech v. Canva Pty | Patent Lawsuit 2:25-cv-00808",
+     "url": "https://www.patsnap.com/resources/blog/litigation/digimedia-tech-v-canva-image-upload-patent-dismissal-patsnap",
+     "excerpts": [
+      "2:25-cv-00808 is a patent infringement action brought by DigiMedia Tech, LLC against Canva Pty, Ltd., filed on 18 Aug 2025 in the United States District Court for the Eastern District of Texas"
+     ]
+    }
+   ],
+   "reasoning": "The complaint names the defendant, alleges infringement and supplies the date; the matching case summary identifies the district and plaintiff.",
+   "confidence": "medium"
+  },
+  {
+   "field": "legal_and_regulatory.4",
+   "citations": [
+    {
+     "title": "DigiMedia Tech v. Canva Pty | Patent Lawsuit 2:25-cv-00808",
+     "url": "https://www.patsnap.com/resources/blog/litigation/digimedia-tech-v-canva-image-upload-patent-dismissal-patsnap",
+     "excerpts": [
+      "2:25-cv-00808 is a patent infringement action brought by DigiMedia Tech, LLC against Canva Pty, Ltd., filed on 18 Aug 2025 in the United States District Court for the Eastern District of Texas. The case closed on 30 October 2025.",
+      "The recorded basis of termination is dismissed with prejudice",
+      "Each party is to bear its own costs, expenses, and attorneys’ fees.",
+      "**Source: Patsnap Litigation Data.** Case 2:25-cv-00808, United States District Court for the Eastern District of Texas."
+     ]
+    }
+   ],
+   "reasoning": "Patsnap supplies the case identity, closure date, stipulated dismissal and cost allocation. Its status as a secondary aggregator is explicit.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation.0",
+   "citations": [
+    {
+     "title": "Canva Reviews | Read Customer Service Reviews of canva.com",
+     "url": "https://www.trustpilot.com/review/canva.com",
+     "excerpts": [
+      "8,093 • TrustScore 4 out of 5",
+      "5-star 51% 4-star 9% 3-star 5% 2-star 6% 1-star 29%",
+      "Scammers that didn't want to give me my money back despite me cancelling my account and not even using it.",
+      "I love editing videos and making presentations on Canva, it's my favourite hobby on my PC and I love doing it just for fun! Thank you for making such an awesome, enjoyable, free-to-use graphic design software. 5 stars! ⭐⭐⭐⭐⭐ October 31, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The prior verified snapshot contains the rating distribution and contrasting user comments. They are presented as customer reports, not substantiated misconduct.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation.1",
+   "citations": [
+    {
+     "title": "Canva \"communication\" Reviews | Glassdoor",
+     "url": "https://www.glassdoor.com/Reviews/Canva-communication-Reviews-EI_IE1013251.0,5_KH6,19.htm",
+     "excerpts": [
+      "4\\.0 Jan 24, 2026 Strong pay, growing company Accountant Current employee, more than 1 year San Francisco, CA Recommend CEO approval Business Outlook Pros Pay is above market, company is exciting and has high upside Cons Can be chaotic and communication is clunky.",
+      "3\\.0 Jan 13, 2026 It's very different once you're in Accountant Former employee, more than 3 years Makati City Recommend CEO approval Business Outlook Pros \\- bfast/lunch/dinner buffet - Apple products + Google Workspace + Slack + Zoom - Season Opener events - Club activities - Annual performance review (both for you and your coach); - Non-monetary Benefits e.g. EAP from InfinitCare and InTouch, Canvaversary and Birthday gifts. - Cool workspace! Cons \\- A very verryyy confusing skills assessment for promotion - Vague performance review. They based your salary increase depends on the good feedback you get from your coach and peers. - Great culture at first but it became messy when they added leadership team members from US. - Poor communication channels from leadership team. - Unclear explanation on recent layoffs they made in Finance. - They cost-cut but spends a loooot of discretionary expenses.",
+      "Jul 19, 2026 Strong pay but culture prioritises style over substance Senior software engineer Current employee, more than 3 years Sydney Recommend CEO approval Business Outlook Pros The compensation is one of the biggest advantages of working here. The pay is competitive"
+     ]
+    }
+   ],
+   "reasoning": "These selected reviews support the compensation and communication themes but not a statistically representative trend.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation.2",
+   "citations": [
+    {
+     "title": "Canva, the rare startup that grew fast and made money, sees AI cut its growth forecast by a third | Fortune",
+     "url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592",
+     "excerpts": [
+      "The design-software company [cut its expected revenue growth rate by a third to 20%",
+      "The cost problem lands at a pivotal moment for Canva because AI is central to its effort to become a broader workplace-software platform."
+     ]
+    }
+   ],
+   "reasoning": "Fortune’s critical framing directly connects the AI-cost reset to Canva’s broader workplace-software ambitions.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.0",
+   "citations": [
+    {
+     "title": "A transformative year for Canva: 2025 in review",
+     "url": "https://www.canva.com/newsroom/news/canva-2025-wrap",
+     "excerpts": [
+      "A transformative year for Canva: 2025",
+      "Our business kept growing too, reaching $3.5 billion in revenue ."
+     ]
+    }
+   ],
+   "reasoning": "The annual-review context establishes the reporting year and directly states the revenue figure without an explicit currency label in that sentence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.1",
+   "citations": [
+    {
+     "title": "Canva gets to $4B in revenue as LLM referral traffic rises | TechCrunch",
+     "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises",
+     "excerpts": [
+      "That user base helped push its annual recurring revenue to $4 billion by the end of year, Canva co-founder and COO Cliff Obrecht"
+     ]
+    }
+   ],
+   "reasoning": "The article identifies the metric as annual recurring revenue at year-end and attributes it to the COO.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.2",
+   "citations": [
+    {
+     "title": "Canva, the rare startup that grew fast and made money, sees AI cut its growth forecast by a third | Fortune",
+     "url": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third?j=159536&jb=146&l=1227_HTML&u=11503592",
+     "excerpts": [
+      "The design-software company [cut its expected revenue growth rate by a third to 20%",
+      "“This validated the demand, but also showed us we needed to reduce the cost of completing an AI task to support a broad rollout,” Perkins said"
+     ]
+    },
+    {
+     "title": "Canva value marked down by US titans",
+     "url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton",
+     "excerpts": [
+      "But Canva in July told investors that delays to product rollouts due to rising AI costs would come alongside revenue growth of 20 per cent for the year, [according to the Australian Financial Review](https://www.afr.com/technology/canva-s-big-backers-slash-10b-from-software-giant-amid-ai-pivot-20260813-p60o48) , a markdown from earlier projections of 30 per cent"
+     ]
+    }
+   ],
+   "reasoning": "The sources provide the forecast change and management’s explanation for addressing AI costs; no realized growth rate is inferred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.3",
+   "citations": [
+    {
+     "title": "An important update on our team",
+     "url": "https://www.canva.com/newsroom/news/canva-team-update/",
+     "excerpts": [
+      "This means 1,271 people, or 22% of Canva, will be impacted.",
+      "Sadly, it will also mean saying goodbye to teammates and friends who have helped build Canva into what it is today.",
+      "This has been our hardest year yet, and as we shared earlier this year, our growth has slowed for the first time in a decade."
+     ]
+    }
+   ],
+   "reasoning": "The company’s note supplies the impact count, planned departures and slowdown statement. It does not substantiate a completed-layoff total.",
+   "confidence": "high"
+  },
+  {
+   "field": "team.0",
+   "citations": [
+    {
+     "title": "Press Hub | Leadership",
+     "url": "https://public.canva.site/canva-press-hub-leadership",
+     "excerpts": [
+      "Leadership Team [Read Bio](https://www.canva.com/design/DAFPdTsg9hc/m-y8GypDZEdZXP3_T1RzUQ/edit?utm_content=DAFPdTsg9hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [Melanie Perkins](https://www.canva.com/design/DAFPdTsg9hc/m-y8GypDZEdZXP3_T1RzUQ/edit?utm_content=DAFPdTsg9hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [CEO & Co-founder",
+      "[Read Bio](https://www.canva.com/design/DAFPdS6dzNo/6dwa5f21dz457esIDwLaBQ/edit?utm_content=DAFPdS6dzNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [Cameron Adams](https://www.canva.com/design/DAFPdS6dzNo/6dwa5f21dz457esIDwLaBQ/edit?utm_content=DAFPdS6dzNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [CPO & Co-founder",
+      "[Read Bio](https://www.canva.com/design/DAFPdW2F-2M/XcD5zIVVhPlJkflYr8zEvQ/edit?utm_content=DAFPdW2F-2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [Cliff Obrecht](https://www.canva.com/design/DAFPdW2F-2M/XcD5zIVVhPlJkflYr8zEvQ/edit?utm_content=DAFPdW2F-2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [COO & Co-founder",
+      "[Read Bio](https://www.canva.com/design/DAFPdYMMgco/H2BXml68NfUF3g-Bziljew/edit?utm_content=DAFPdYMMgco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [Zach Kitschke](https://www.canva.com/design/DAFPdYMMgco/H2BXml68NfUF3g-Bziljew/edit?utm_content=DAFPdYMMgco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [Chief Marketing Officer",
+      "[Read Bio](https://www.canva.com/design/DAFPdaBfhQo/VNsHizX_K1aOHHvek5lzog/edit?utm_content=DAFPdaBfhQo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [Jennie Rogerson](https://www.canva.com/design/DAFPdaBfhQo/VNsHizX_K1aOHHvek5lzog/edit?utm_content=DAFPdaBfhQo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) [GLOBAL HEAD OF PEOPLE"
+     ]
+    }
+   ],
+   "reasoning": "The official leadership page lists all five names and roles. The claim is limited to what the page displayed on observation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "team.1",
+   "citations": [
+    {
+     "title": "Canva CTO Brendan Humphreys steps down after 12 years | ETIH EdTech News — EdTech Innovation Hub",
+     "url": "https://www.edtechinnovationhub.com/news/canvas-cto-steps-down-after-12-years-as-the-company-navigates-its-ai-pivot",
+     "excerpts": [
+      "4 May",
+      "[**Canva's**](https://www.edtechinnovationhub.com/news/tag/Canva) **Chief Technology Officer Brendan Humphreys has announced he is leaving",
+      "His departure date is set for June 19, 2026. He will reportedly stay on as an advisor after that.",
+      "Before joining Canva, Humphreys spent nearly seven years at Atlassian as a Principal Developer and previously founded Cenqua."
+     ]
+    }
+   ],
+   "reasoning": "The article reports the announced CTO departure date, expected advisory role and prior companies; completion is not asserted.",
+   "confidence": "medium"
+  },
+  {
+   "field": "team.2",
+   "citations": [
+    {
+     "title": "Canva loses four senior leaders as company makes AI pivot, prepares for IPO",
+     "url": "https://www.afr.com/technology/canva-loses-senior-leaders-amid-push-into-artificial-intelligence-20260518-p5zy4d",
+     "excerpts": [
+      "May 18, 2026 – 5.16pm Four senior leaders at Canva have left the design software giant this month at a time when the company is undertaking big changes to reposition itself as an artificial intelligence platform. Growth lead Iain Dowling announced his resignation on Monday after eight years in senior positions across the design team. Senior engineering director Jonathan Ross will leave at the end of this month."
+     ]
+    }
+   ],
+   "reasoning": "The dated report describes four senior departures and names Dowling and Ross, distinguishing resignation from a scheduled departure.",
+   "confidence": "medium"
+  },
+  {
+   "field": "business.0",
+   "citations": [
+    {
+     "title": "$~ * IN THE HIGH COURT OF DELHI AT NEW DELHI Judgment reserved on: 01.12.2025 Judgment pronounced on: 28.01.2026 +",
+     "url": "https://delhihighcourt.nic.in/app/showFileJudgment/75228012026FAC2112023_192846.pdf",
+     "excerpts": [
+      "**4\\.** Defendant No. 1, Canva Pvt Ltd., is an Australian technology company operating a globally used online design and content-creation platform under the brand name “Canva”. The dispute in the present"
+     ]
+    },
+    {
+     "title": "Canva for business | Empowering small medium businesses and enterprises",
+     "url": "https://enterprise.canva.com/",
+     "excerpts": [
+      "Canva for business Our all-in-one visual communication platform transforms how individuals, teams, and organizations design, collaborate, and deliver content at scale."
+     ]
+    }
+   ],
+   "reasoning": "The court establishes the Australian global design-platform identity, and the company describes its collaboration and visual-communication offering.",
+   "confidence": "high"
+  },
+  {
+   "field": "business.1",
+   "citations": [
+    {
+     "title": "Canva Pricing: Compare Free, Pro, Business and Enterprise plans",
+     "url": "https://www.canva.com/pricing/",
+     "excerpts": [
+      "Individuals Free Design anything and bring your ideas to life. No cost, just creativity. US$ 0 /year for one person",
+      "Individuals Pro Unlock premium content, more powerful design tools, and AI features. US$ 144 /year for one person",
+      "Individuals and teams Business Create content faster, market smarter, and grow your business with advanced tools. US$ 250 /year per person",
+      "Organizations Enterprise Empower your organization with end-to-end visual communication. Let’s talk Get in touch to learn more [Contact Sales",
+      "What if I am a student or teacher? Canva Education"
+     ]
+    }
+   ],
+   "reasoning": "The pricing page directly separates free, paid individual/team, enterprise and education offerings.",
+   "confidence": "high"
+  },
+  {
+   "field": "funding.0",
+   "citations": [
+    {
+     "title": "Canva Announces USD 40 Billion Valuation Fueled by the Global Demand for Visual Communication",
+     "url": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication",
+     "excerpts": [
+      "SYDNEY, 15 September 2021 – Canva, the global visual communications platform, today announced a USD $40 billion valuation after a USD $200 million funding round led by T. Rowe Price and joined by new and existing strategic investors including Franklin Templeton, Sequoia Capital Global Equities, Bessemer Venture Partners, Greenoaks Capital, Dragoneer Investments, Blackbird, Felicis, and AirTree Ventures."
+     ]
+    }
+   ],
+   "reasoning": "The company announcement states the date, primary capital raised, lead investor and valuation.",
+   "confidence": "high"
+  },
+  {
+   "field": "funding.1",
+   "citations": [
+    {
+     "title": "Australia's Canva begins share sale at $42 billion valuation | Reuters",
+     "url": "https://www.reuters.com/world/asia-pacific/australias-canva-begins-share-sale-42-billion-valuation-2025-08-20",
+     "excerpts": [
+      "Aug 20 (Reuters) - Australian graphic design platform Canva launched an employee stock sale that values the company at $42 billion",
+      "Employees will be able to sell their shares to both new and existing investors in the funding round led by shareholder Fidelity Management, Canva said. JPMorgan's asset management division is joining as a new investor.",
+      "Details of the number of shares to be sold were not revealed."
+     ]
+    }
+   ],
+   "reasoning": "Reuters describes employees selling existing shares, identifies participating investors and says share-sale quantities were not revealed. It does not establish completion or primary proceeds.",
+   "confidence": "medium"
+  },
+  {
+   "field": "funding.2",
+   "citations": [
+    {
+     "title": "Canva value marked down by US titans",
+     "url": "https://www.forbes.com.au/news/innovation/canva-valuation-marked-down-by-us-titans-t-rowe-price-and-franklin-templeton",
+     "excerpts": [
+      "Published on September 18, 2026",
+      "**US$38.2 billion.** That is T. Rowe Price’s implied valuation of Canva, down 9.1 per cent from US$42 billion at the start of the year",
+      "Meanwhile, Franklin Templeton pulled the design giant down to US$39.3 billion during the June quarter.",
+      "Blackbird, Canva’s earliest backer and its largest VC shareholder, slashed the valuation of its holdings by 17 per cent from US$42 billion to US$34.9"
+     ]
+    }
+   ],
+   "reasoning": "Forbes identifies separate investor-implied valuations and the Franklin reporting quarter. The memo preserves the distinction between those marks and a transaction valuation.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
 }

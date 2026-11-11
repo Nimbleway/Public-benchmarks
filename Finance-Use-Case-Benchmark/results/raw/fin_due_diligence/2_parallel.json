@@ -1,9 +1,1025 @@
 {
  "arm": "parallel",
- "tier": "ultra2x",
- "status": "rejected",
- "error": "{\"type\":\"error\",\"error\":{\"message\":\"Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.\",\"detail\":null}}",
  "sub_use_case": "fin_due_diligence",
  "input": "Write a due diligence memo on Deel",
- "input_n": 2
+ "input_n": 2,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 507,
+ "run_id": "trun_4edfe0d7a0da43af944811d5430c93c1",
+ "output": {
+  "company": "Deel (Deel, Inc.)",
+  "red_flags": [
+   {
+    "date": "2026-11-07",
+    "claim": "Legal/governance risk: the Rippling espionage litigation remains in active discovery, including forensic-inspection proceedings. Allegations against Deel have not been established as liability in the reviewed records.",
+    "source_url": "https://www.courtlistener.com/docket/69744528/people-center-inc-v-deel-inc/?order_by=desc"
+   },
+   {
+    "date": "2026-06-26",
+    "claim": "Third-party security risk: Deel disclosed unauthorized CRM access through its Klue integration, affecting commercial/contact information and limited personal data. Deel says its platform itself was not involved.",
+    "source_url": "https://www.deel.com/blog/klue-security-incident-deel-impact"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Service-quality diligence flag: BBB lists unanswered complaints involving payments, withdrawals, billing and support. These are unverified customer allegations, not established misconduct.",
+    "source_url": "https://bbb.org/us/ca/san-francisco/profile/payroll-services/deel-inc-1116-931420/complaints?page=1"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Financial-definition risk: the current press page claims revenue above $1.5 billion without specifying its measurement period or whether it means recognized revenue or annualized revenue. Do not treat this figure as verified ARR.",
+    "source_url": "https://www.deel.com/press"
+   }
+  ],
+  "traction": [
+   {
+    "date": "2026-11-09",
+    "claim": "Company claim, as of the page reviewed: more than 40,000 customers, ranging from startups to enterprises.",
+    "source_url": "https://www.deel.com/press"
+   },
+   {
+    "date": "2025-06-03",
+    "claim": "Company claim, as of June 2025: more than 35,000 customers, including Reddit, Klarna and Cloudflare.",
+    "source_url": "https://www.deel.com/blog/deel-celebrates-one-billion-revenue-run-rate"
+   },
+   {
+    "date": "2025-10-20",
+    "claim": "Company claim, in the October 2025 financing update: $22 billion in payroll processed annually and more than 1.5 million workers served. Payroll processed is transaction volume, not Deel revenue.",
+    "source_url": "https://www.deel.com/blog/new-investment-valuation"
+   }
+  ],
+  "missing_fields": [
+   "Audited financial statements, recognized annual revenue, net income, cash flow, cash balance and runway.",
+   "Measurement period and accounting definition of the current press page's $1.5 billion revenue claim.",
+   "A consistently defined headcount time series and confirmed hiring or layoff totals.",
+   "A longitudinal employee-review trend rather than a current rating snapshot.",
+   "Regulator-confirmed licensing status and enforcement dispositions.",
+   "Definitive sanctions/OFAC screening results and transaction-level sanctions exposure.",
+   "The CRM incident's affected-person count and independent validation of remediation.",
+   "Named commercial partnerships verified from opened pages.",
+   "Ofer Simon's current role and dated departure history."
+  ],
+  "legal_and_regulatory": [
+   {
+    "date": "2025-03-17",
+    "claim": "Rippling filed People Center, Inc. v. Deel, Inc., alleging corporate espionage and trade-secret theft involving a Rippling employee allegedly paid in cryptocurrency. The allegations include RICO claims; they are allegations, not findings of liability.",
+    "source_url": "https://cases.justia.com/federal/district-courts/california/candce/3:2025cv02576/446484/411/0.pdf"
+   },
+   {
+    "date": "2026-11-07",
+    "claim": "The reviewed federal docket shows continuing discovery: forensic-inspection requests were granted on November 6 and another discovery order issued November 7. No final merits judgment was identified in the reviewed docket entries.",
+    "source_url": "https://www.courtlistener.com/docket/69744528/people-center-inc-v-deel-inc/?order_by=desc"
+   },
+   {
+    "date": "2026-09-25",
+    "claim": "The court compelled arbitration of certain Deel counterclaims, partly dismissed others and allowed selected false-advertising theories against Rippling to proceed. This was a procedural/pleading ruling, not a final determination of the parties' underlying accusations.",
+    "source_url": "https://cases.justia.com/federal/district-courts/california/candce/3:2025cv02576/446484/411/0.pdf"
+   },
+   {
+    "date": "2025-08-19",
+    "claim": "In Damian v. Deel, a separate RICO action alleging unlicensed money transmission and deficient compliance controls, the court dismissed the complaint and closed the case. It found standing and RICO-enterprise pleading defects; the order was not a regulatory licensing or sanctions clearance.",
+    "source_url": "https://www.courtlistener.com/docket/69515477/59/damian-v-deel-inc"
+   },
+   {
+    "date": "2026-06-26",
+    "claim": "Company disclosure: unauthorized CRM access was confirmed June 17, 2026 through a compromised Klue connection. Business/contact information and limited personal data were compromised; Deel says the incident did not involve its platform itself and that it revoked the vendor's access.",
+    "source_url": "https://www.deel.com/blog/klue-security-incident-deel-impact"
+   }
+  ],
+  "reputation": [
+   {
+    "date": "2026-11-09",
+    "claim": "Trustpilot snapshot: 4.5/5 from 9,751 reviews. Positive themes include usability and payments; negative themes include support response times and payment tracking. Reviews are user opinions and are not fact-checked by Trustpilot.",
+    "source_url": "https://www.trustpilot.com/review/deel.com"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Glassdoor snapshot: 4.3/5 from 2,147 reviews, with 84% recommending Deel. Displayed reviews praise remote flexibility but also criticize ownership, management and quantity-over-quality pressures; no reliable historical rating trend was established.",
+    "source_url": "https://www.glassdoor.com/Reviews/Deel-Reviews-E3728271.htm"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "BBB snapshot: 19 complaints over the preceding three years and seven over the preceding 12 months; all 19 were marked unanswered. Recurring allegations concern payment/withdrawal delays, billing/refunds and support escalation. BBB does not verify complainants' assertions.",
+    "source_url": "https://bbb.org/us/ca/san-francisco/profile/payroll-services/deel-inc-1116-931420/complaints?page=1"
+   },
+   {
+    "date": "2025-04-05",
+    "claim": "Critical press: TechCrunch reported the communications chief's departure amid scrutiny of Rippling's spying allegations. The report does not establish that the lawsuit caused the departure.",
+    "source_url": "https://techcrunch.com/2025/04/05/deels-comms-chief-departs-amidst-spying-lawsuit-from-rippling"
+   }
+  ],
+  "verdict": "Deel has a broad global payroll/HR offering, substantial company-reported customer scale and institutional backing. Further investment work should prioritize reconciling revenue and profitability definitions, assessing unresolved litigation, and testing third-party security and payment-support controls before relying on the reported scale and valuation.",
+  "financial_signals": [
+   {
+    "date": "2026-11-09",
+    "claim": "Company claim on the current press page: revenue has surpassed $1.5 billion. The page does not specify the measurement period or establish that this is ARR or audited annual revenue.",
+    "source_url": "https://www.deel.com/press"
+   },
+   {
+    "date": "2025-06-03",
+    "claim": "Company claims as of June 3, 2025: a $1 billion revenue run rate, 75% year-on-year revenue growth, nearly three years of profitability and more than 6,500 team members.",
+    "source_url": "https://www.deel.com/blog/deel-celebrates-one-billion-revenue-run-rate"
+   },
+   {
+    "date": "2025-10-16",
+    "claim": "CEO statement reported by Reuters: monthly revenue first exceeded $100 million in September 2025. This is a company-reported monthly milestone, not independently verified annual revenue.",
+    "source_url": "https://www.reuters.com/business/payroll-platform-deel-valued-173-billion-latest-funding-round-2025-10-16"
+   },
+   {
+    "date": "2026-07-13",
+    "claim": "Company claim: Deel's July 2026 article describes giving its 7,000 employees Claude access earlier in 2026. This is a workforce datapoint, not a consistently defined headcount series.",
+    "source_url": "https://www.deel.com/deel-works/shuo-wang-deel-convention-breaking"
+   },
+   {
+    "date": "2026-09-30",
+    "claim": "Aggregator data: Tracxn reports 9,671 employees as of September 30, 2026. Comparability with Deel's earlier 'team members' and 'employees' figures was not verified.",
+    "source_url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU"
+   }
+  ],
+  "team": [
+   {
+    "date": "2026-11-09",
+    "claim": "Official biographies identify Alex Bouaziz as CEO/cofounder and Shuo Wang as CRO/cofounder. Bouaziz previously co-founded Sarona Ventures; Wang co-founded Aeris Cleantec and was its CTO before its acquisition by iRobot.",
+    "source_url": "https://www.deel.com/about"
+   },
+   {
+    "date": "2025-11-03",
+    "claim": "Deel appointed Joe Kauffman President and CFO after his tenure as Credit Karma's CFO, President and CEO. Former CFO Philippe Bouaziz continued as Executive Chairman and Chief Strategy Officer.",
+    "source_url": "https://www.deel.com/blog/new-cfo-announcement"
+   },
+   {
+    "date": "2025-04-05",
+    "claim": "Notable departure within the review period: communications head Elisabeth Diana left in April 2025, according to TechCrunch. She previously led communications at Instagram and corporate communications at Facebook.",
+    "source_url": "https://techcrunch.com/2025/04/05/deels-comms-chief-departs-amidst-spying-lawsuit-from-rippling"
+   },
+   {
+    "date": "2026-10-28",
+    "claim": "Aggregator data: Tracxn additionally lists Ofer Simon among Deel's founders. His current operating role and departure date were not verified.",
+    "source_url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU"
+   }
+  ],
+  "business": [
+   {
+    "date": "2026-11-09",
+    "claim": "B2B payroll and HR platform for startups through enterprises: hiring, payroll, benefits, mobility, performance and device management. Company-stated geographic coverage is 150 countries as of the page reviewed.",
+    "source_url": "https://www.deel.com/press"
+   },
+   {
+    "date": "2026-11-09",
+    "claim": "Service-based, per-worker monthly pricing. Listed starting prices as of review were $49 per contractor per month and $599 per employer-of-record employee per month; actual pricing depends on services used.",
+    "source_url": "https://www.deel.com/pricing"
+   }
+  ],
+  "funding": [
+   {
+    "date": "2025-10-16",
+    "claim": "Latest financing identified: $300 million Series E at a $17.3 billion valuation, co-led by Ribbit Capital, Andreessen Horowitz and Coatue Management. The company announcement is corroborated by Reuters.",
+    "source_url": "https://www.deel.com/blog/new-investment-valuation"
+   },
+   {
+    "date": "2026-10-28",
+    "claim": "Aggregator data as of October 28, 2026: Tracxn lists approximately $986 million raised across eight rounds. This is an aggregator total, not a verified capitalization table.",
+    "source_url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU"
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "company",
+   "citations": [
+    {
+     "title": "Case 3:25-cv-02576 Document 1 Filed 03/17/25 Page 1 of 48 1 QUINN EMANUEL URQUHART & SULLIVAN, LLP Alex Spiro (pro",
+     "url": "https://rippling2.imgix.net/Complaint.pdf",
+     "excerpts": [
+      "10\\. Defendant Deel Inc. is a Delaware corporation with its principal place of business in San Francisco, California."
+     ]
+    }
+   ],
+   "reasoning": "The court complaint explicitly identifies Defendant Deel Inc., establishing the exact legal entity.",
+   "confidence": "high"
+  },
+  {
+   "field": "red_flags",
+   "citations": [
+    {
+     "title": "People Center, Inc. v. Deel, Inc., 3:25-cv-02576 – CourtListener.com",
+     "url": "https://www.courtlistener.com/docket/69744528/people-center-inc-v-deel-inc/?order_by=desc",
+     "excerpts": [
+      "482 Nov 6, 2026 Order by Magistrate Judge Lisa J. Cisneros granting 410 and 428 Request for Forensic Inspection"
+     ]
+    },
+    {
+     "title": "Klue security incident - Deel impact",
+     "url": "https://www.deel.com/blog/klue-security-incident-deel-impact",
+     "excerpts": [
+      "We are writing to inform customers and partners about a security incident involving a portion of Deel's sales data via the compromise of a third party integration. While the incident did not involve the Deel platform itself, it did result in unauthorized access to a portion of public, business contact, and commercial information stored in our CRM environment. We take any unauthorized access to customer information extremely seriously and are working with leading cybersecurity and legal experts to investigate the matter, support affected stakeholders, and safeguard our customers’ data. **What happened** On June 17, 2026, we confirmed that an unauthorized party had accessed business contact and commercial information stored in Deel's customer relationship management (CRM) system. Our investigation determined that the access occurred through a compromised connection with Klue, a third-party software provider that integrated with our CRM. After confirming the activity, we immediately secured the affected connection, removed the vendor's access, and began a comprehensive investigation with the support of independent cybersecurity experts. **What information was involved** The affected information consists primarily of business-to-business contact, commercial, and public information used by our sales and marketing teams, including information such as: names, business email addresses, job titles, phone numbers, and business details. A very limited amount of personal data synced to our CRM was also compromised."
+     ]
+    },
+    {
+     "title": "Deel, Inc. | BBB Complaints | Better Business Bureau",
+     "url": "https://bbb.org/us/ca/san-francisco/profile/payroll-services/deel-inc-1116-931420/complaints?page=1",
+     "excerpts": [
+      "All complaint statuses (19) Complaint Unanswered (19) ### Complaint type"
+     ]
+    },
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "At just over seven years old, Deel has surpassed $1.5bn in revenue and has a valuation of $17.3bn."
+     ]
+    }
+   ],
+   "reasoning": "The flags are assessments based on the separately reported litigation, security disclosure, complaint record and incompletely defined revenue statement. They do not assert proven misconduct or audited financial conclusions.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "Trusted by 40,000+ customers, Deel handles the complexities of global employment and alleviates compliance concerns when hiring and growing internationally."
+     ]
+    },
+    {
+     "title": "A Billion Thank Yous: Deel Celebrates $1bn Run Rate",
+     "url": "https://www.deel.com/blog/deel-celebrates-one-billion-revenue-run-rate",
+     "excerpts": [
+      "It has 35,000-plus customers, including Reddit, Klarna, and Cloudflare."
+     ]
+    },
+    {
+     "title": "Our Series E: Building the global infrastructure of work",
+     "url": "https://www.deel.com/blog/new-investment-valuation",
+     "excerpts": [
+      "Deel processes $22 billion in payroll annually, and serves 35,000+ customers and 1.5+ million workers in 150+ countries."
+     ]
+    }
+   ],
+   "reasoning": "Company pages directly supply customer counts, named customers and payroll/worker volumes. All are explicitly attributed as company claims rather than independent verification.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "These identify limits of the reviewed material, not findings that the information does not exist. No definitive values were established for these items.",
+   "confidence": "low"
+  },
+  {
+   "field": "legal_and_regulatory",
+   "citations": [
+    {
+     "title": "PEOPLE CENTER, INC. v. DEEL, INC., et al. a 12, No. 25-cv-02576-CRB",
+     "url": "https://cases.justia.com/federal/district-courts/california/candce/3:2025cv02576/446484/411/0.pdf",
+     "excerpts": [
+      "In its complaint, Rippling alleges the Deel and others conspired to, and conducted, a corporate espionage scheme to steal Rippling’s trade secrets. FAC ¶ 1. In executing the alleged scheme, Deel CEO Alex Bouaziz hired Keith O’Brien, a Rippling employee based in Ireland, to act as a corporate spy for Deel.",
+      "**III.** **CONCLUSION** For the foregoing reasons, the Court **DENIES** the motion to strike and for other relief, **GRANTS** the motion to compel arbitration, and **DENIES** in part and **GRANTS** in part the motion to dismiss. **IT IS SO ORDERED.** Dated: September 25, 2026 CHARLES R. BREYER United States District Judge"
+     ]
+    },
+    {
+     "title": "People Center, Inc. v. Deel, Inc., 3:25-cv-02576 – CourtListener.com",
+     "url": "https://www.courtlistener.com/docket/69744528/people-center-inc-v-deel-inc/?order_by=desc",
+     "excerpts": [
+      "486 Nov 7, 2026 Order by Magistrate Judge Lisa J. Cisneros resolving 338 Discovery Letter Brief."
+     ]
+    },
+    {
+     "title": "Melanie Damian v. Deel, Inc., DPayments, LLC, and Jeremy Berger, No. 25-20017-CIV-MARTINEZ — Order Granting Motion to Dismiss",
+     "url": "https://www.courtlistener.com/docket/69515477/59/damian-v-deel-inc",
+     "excerpts": [
+      "Accordingly, Defendants’ Motion to Dismiss, (ECF No. 14), is GRANTED. Plaintiff's Complaint, (ECF No. 1), is DISMISSED. This case is CLOSED"
+     ]
+    },
+    {
+     "title": "Klue security incident - Deel impact",
+     "url": "https://www.deel.com/blog/klue-security-incident-deel-impact",
+     "excerpts": [
+      "We are writing to inform customers and partners about a security incident involving a portion of Deel's sales data via the compromise of a third party integration. While the incident did not involve the Deel platform itself, it did result in unauthorized access to a portion of public, business contact, and commercial information stored in our CRM environment. We take any unauthorized access to customer information extremely seriously and are working with leading cybersecurity and legal experts to investigate the matter, support affected stakeholders, and safeguard our customers’ data. **What happened** On June 17, 2026, we confirmed that an unauthorized party had accessed business contact and commercial information stored in Deel's customer relationship management (CRM) system. Our investigation determined that the access occurred through a compromised connection with Klue, a third-party software provider that integrated with our CRM. After confirming the activity, we immediately secured the affected connection, removed the vendor's access, and began a comprehensive investigation with the support of independent cybersecurity experts. **What information was involved** The affected information consists primarily of business-to-business contact, commercial, and public information used by our sales and marketing teams, including information such as: names, business email addresses, job titles, phone numbers, and business details. A very limited amount of personal data synced to our CRM was also compromised."
+     ]
+    }
+   ],
+   "reasoning": "Court records establish the allegations and procedural dispositions; the current docket establishes continuing discovery. The company notice supplies the incident disclosure and its stated scope. Allegations, procedural rulings and company assertions are distinguished.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation",
+   "citations": [
+    {
+     "title": "Deel Reviews | Read Customer Service Reviews of deel.com",
+     "url": "https://www.trustpilot.com/review/deel.com",
+     "excerpts": [
+      "Deel Reviews 9,751 • TrustScore 4.5 out of 5"
+     ]
+    },
+    {
+     "title": "Deel Reviews (2,147): Pros & Cons of Working At Deel | Glassdoor",
+     "url": "https://www.glassdoor.com/Reviews/Deel-Reviews-E3728271.htm",
+     "excerpts": [
+      "Deel reviews 4\\.3 84% would recommend to a friend (2,147 total reviews)"
+     ]
+    },
+    {
+     "title": "Deel, Inc. | BBB Complaints | Better Business Bureau",
+     "url": "https://bbb.org/us/ca/san-francisco/profile/payroll-services/deel-inc-1116-931420/complaints?page=1",
+     "excerpts": [
+      "19 complaintsin the last 3 years. 7 complaintsin the last 12 months."
+     ]
+    },
+    {
+     "title": "Deel’s comms chief departs amidst spying lawsuit from Rippling | TechCrunch",
+     "url": "https://techcrunch.com/2025/04/05/deels-comms-chief-departs-amidst-spying-lawsuit-from-rippling",
+     "excerpts": [
+      "Elisabeth Diana, head of communications at human resources platform Deel, is no longer with the company, according to her [LinkedIn profile"
+     ]
+    }
+   ],
+   "reasoning": "Review platforms establish their published snapshots and complaint records, while TechCrunch supplies the critical reporting. Reviewer allegations and selection limitations prevent treating the material as verified operational findings or a longitudinal trend.",
+   "confidence": "medium"
+  },
+  {
+   "field": "verdict",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "It is one platform for payroll, HR, benefits, mobility, performance and device management across 150 countries.",
+      "Trusted by 40,000+ customers, Deel handles the complexities of global employment and alleviates compliance concerns when hiring and growing internationally.",
+      "At just over seven years old, Deel has surpassed $1.5bn in revenue and has a valuation of $17.3bn."
+     ]
+    },
+    {
+     "title": "Deel hits $17.3 billion valuation, aims to expand globally | Reuters",
+     "url": "https://www.reuters.com/business/payroll-platform-deel-valued-173-billion-latest-funding-round-2025-10-16",
+     "excerpts": [
+      "Oct 16 (Reuters) - Payroll startup Deel said on Thursday it raised $300 million in a funding round, led by new investor Ribbit Capital alongside existing backers Andreessen Horowitz and Coatue Management"
+     ]
+    },
+    {
+     "title": "Klue security incident - Deel impact",
+     "url": "https://www.deel.com/blog/klue-security-incident-deel-impact",
+     "excerpts": [
+      "We are writing to inform customers and partners about a security incident involving a portion of Deel's sales data via the compromise of a third party integration. While the incident did not involve the Deel platform itself, it did result in unauthorized access to a portion of public, business contact, and commercial information stored in our CRM environment. We take any unauthorized access to customer information extremely seriously and are working with leading cybersecurity and legal experts to investigate the matter, support affected stakeholders, and safeguard our customers’ data. **What happened** On June 17, 2026, we confirmed that an unauthorized party had accessed business contact and commercial information stored in Deel's customer relationship management (CRM) system. Our investigation determined that the access occurred through a compromised connection with Klue, a third-party software provider that integrated with our CRM. After confirming the activity, we immediately secured the affected connection, removed the vendor's access, and began a comprehensive investigation with the support of independent cybersecurity experts. **What information was involved** The affected information consists primarily of business-to-business contact, commercial, and public information used by our sales and marketing teams, including information such as: names, business email addresses, job titles, phone numbers, and business details. A very limited amount of personal data synced to our CRM was also compromised."
+     ]
+    }
+   ],
+   "reasoning": "The verdict synthesizes reported scale and institutional funding with the financial-definition, litigation and control concerns described elsewhere. The investment recommendation is an assessment, not a source-stated conclusion.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "At just over seven years old, Deel has surpassed $1.5bn in revenue and has a valuation of $17.3bn."
+     ]
+    },
+    {
+     "title": "A Billion Thank Yous: Deel Celebrates $1bn Run Rate",
+     "url": "https://www.deel.com/blog/deel-celebrates-one-billion-revenue-run-rate",
+     "excerpts": [
+      "Today, we celebrate having reached a $1 billion revenue run rate in just over six years – a milestone that only a small handful of companies achieve.",
+      "Today we’ve been profitable for nearly three years and achieved 75% year on year revenue growth."
+     ]
+    },
+    {
+     "title": "Deel hits $17.3 billion valuation, aims to expand globally | Reuters",
+     "url": "https://www.reuters.com/business/payroll-platform-deel-valued-173-billion-latest-funding-round-2025-10-16",
+     "excerpts": [
+      "Bouaziz said Deel crossed $100 million monthly revenue for the first time in September"
+     ]
+    },
+    {
+     "title": "How Shuo Wang built Deel by breaking convention",
+     "url": "https://www.deel.com/deel-works/shuo-wang-deel-convention-breaking",
+     "excerpts": [
+      "Earlier this year, Deel gave its 7,000 employees Claude access."
+     ]
+    },
+    {
+     "title": "Deel - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+     "url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU",
+     "excerpts": [
+      "As of Sep 30, 2026, the latest [employee count](https://platform.tracxn.com/a/d/company/58b962a4e4b0013e25de2b41/deel:people) at Deel is 9671."
+     ]
+    }
+   ],
+   "reasoning": "These sources provide distinct company-reported financial milestones and workforce datapoints, plus a dated aggregator headcount. Definitions and reporting dates are preserved without computing unsupported ARR or headcount growth.",
+   "confidence": "medium"
+  },
+  {
+   "field": "team",
+   "citations": [
+    {
+     "title": "About Deel | Global HR Solutions for Hiring & Management​",
+     "url": "https://www.deel.com/about",
+     "excerpts": [
+      "Alex Bouaziz (CEO & Co-Founder) Alex Bouaziz is the CEO and co-founder of Deel",
+      "Shuo Wang (CRO & Co-Founder) Shuo Wang is the Chief Revenue Officer and Co-founder of Deel, an all-in-one HR platform for global teams."
+     ]
+    },
+    {
+     "title": "Deel Welcomes Joe Kauffman as President & Chief Financial Officer",
+     "url": "https://www.deel.com/blog/new-cfo-announcement",
+     "excerpts": [
+      "**Deel Welcomes Joe Kauffman as President & Chief Financial Officer** We’re thrilled to welcome Joe Kauffman as Deel’s new President & Chief Financial Officer. Joe joins us after more than a decade at Credit Karma, where he served as CFO, President, and CEO."
+     ]
+    },
+    {
+     "title": "Deel’s comms chief departs amidst spying lawsuit from Rippling | TechCrunch",
+     "url": "https://techcrunch.com/2025/04/05/deels-comms-chief-departs-amidst-spying-lawsuit-from-rippling",
+     "excerpts": [
+      "Her LinkedIn profile shows that she started working at Deel (whose CEO Alex Bouaziz is pictured above) in November 2021 and stopped working there in April 2025"
+     ]
+    },
+    {
+     "title": "Deel - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+     "url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU",
+     "excerpts": [
+      "Deel is a series E company based in San Francisco (United States), founded in 2019 by [Alex Bouaziz](https://tracxn.com/d/people/alex-bouaziz/__rNNSsvEcXQo_hzfB9uUgiaqglN4lFelewcBbGD82JEE) , [Shuo Wang](https://tracxn.com/d/people/shuo-wang/__j1Lnvw6gXiwN0R4Tqf30Bc4XPp4IsTG-tk6-ODf_NUU) and [Ofer Simon](https://platform.tracxn.com/a/d/people/5c2083508f08271106f2190d/ofersimon) . It operates as a Provider of human resources and international payroll compliance software tools. Deel has raised $986M in funding from investors like [Andreessen Horowitz](https://tracxn.com/d/venture-capital/andreess"
+     ]
+    }
+   ],
+   "reasoning": "Official biographies and the CFO appointment establish named leaders and backgrounds; TechCrunch documents the departure. Ofer Simon is separately attributed to Tracxn rather than conflated with the official biographies.",
+   "confidence": "medium"
+  },
+  {
+   "field": "business",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "Deel is a global payroll and HR platform that helps companies hire, manage, pay, and equip any worker, anywhere.",
+      "It is one platform for payroll, HR, benefits, mobility, performance and device management across 150 countries.",
+      "Trusted by 40,000+ companies from startups to enterprise"
+     ]
+    },
+    {
+     "title": "Pricing | Transparent & Fair Pricing | HRIS Costs | Deel",
+     "url": "https://www.deel.com/pricing",
+     "excerpts": [
+      "Starting at $49per contractor per month",
+      "Starting at $125per US PEO employee per month"
+     ]
+    }
+   ],
+   "reasoning": "Deel directly describes its product scope, business customers, geographic coverage and published per-worker starting prices. These describe the offering and advertised prices, not negotiated contract economics.",
+   "confidence": "high"
+  },
+  {
+   "field": "funding",
+   "citations": [
+    {
+     "title": "Our Series E: Building the global infrastructure of work",
+     "url": "https://www.deel.com/blog/new-investment-valuation",
+     "excerpts": [
+      "Today, Deel announced a $300 million Series E funding round, valuing the company at $17.3 billion.",
+      "We’re thrilled to welcome Ribbit Capital as a new investor, co-leading this round alongside our long-time partners Andreessen Horowitz and Coatue Management"
+     ]
+    },
+    {
+     "title": "Deel hits $17.3 billion valuation, aims to expand globally | Reuters",
+     "url": "https://www.reuters.com/business/payroll-platform-deel-valued-173-billion-latest-funding-round-2025-10-16",
+     "excerpts": [
+      "Oct 16 (Reuters) - Payroll startup Deel said on Thursday it raised $300 million in a funding round, led by new investor Ribbit Capital alongside existing backers Andreessen Horowitz and Coatue Management"
+     ]
+    },
+    {
+     "title": "Deel - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+     "url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU",
+     "excerpts": [
+      "[$986M](https://platform.tracxn.com/a/d/company/58b962a4e4b0013e25de2b41:funding-and-investors) in 8 rounds"
+     ]
+    }
+   ],
+   "reasoning": "The company announcement and Reuters agree on the financing amount, valuation and investors. Reuters supplies the announcement date; the cumulative total is explicitly labelled as Tracxn aggregator data.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.0",
+   "citations": [
+    {
+     "title": "People Center, Inc. v. Deel, Inc., 3:25-cv-02576 – CourtListener.com",
+     "url": "https://www.courtlistener.com/docket/69744528/people-center-inc-v-deel-inc/?order_by=desc",
+     "excerpts": [
+      "482 Nov 6, 2026 Order by Magistrate Judge Lisa J. Cisneros granting 410 and 428 Request for Forensic Inspection",
+      "486 Nov 7, 2026 Order by Magistrate Judge Lisa J. Cisneros resolving 338 Discovery Letter Brief."
+     ]
+    }
+   ],
+   "reasoning": "Recent inspection and discovery orders support the assessment that litigation remains an unresolved diligence risk; they do not establish liability.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.1",
+   "citations": [
+    {
+     "title": "Klue security incident - Deel impact",
+     "url": "https://www.deel.com/blog/klue-security-incident-deel-impact",
+     "excerpts": [
+      "We are writing to inform customers and partners about a security incident involving a portion of Deel's sales data via the compromise of a third party integration. While the incident did not involve the Deel platform itself, it did result in unauthorized access to a portion of public, business contact, and commercial information stored in our CRM environment. We take any unauthorized access to customer information extremely seriously and are working with leading cybersecurity and legal experts to investigate the matter, support affected stakeholders, and safeguard our customers’ data. **What happened** On June 17, 2026, we confirmed that an unauthorized party had accessed business contact and commercial information stored in Deel's customer relationship management (CRM) system. Our investigation determined that the access occurred through a compromised connection with Klue, a third-party software provider that integrated with our CRM. After confirming the activity, we immediately secured the affected connection, removed the vendor's access, and began a comprehensive investigation with the support of independent cybersecurity experts. **What information was involved** The affected information consists primarily of business-to-business contact, commercial, and public information used by our sales and marketing teams, including information such as: names, business email addresses, job titles, phone numbers, and business details. A very limited amount of personal data synced to our CRM was also compromised."
+     ]
+    }
+   ],
+   "reasoning": "The company describes the third-party compromise, affected data and platform exclusion, supporting a supplier-security risk assessment.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.2",
+   "citations": [
+    {
+     "title": "Deel, Inc. | BBB Complaints | Better Business Bureau",
+     "url": "https://bbb.org/us/ca/san-francisco/profile/payroll-services/deel-inc-1116-931420/complaints?page=1",
+     "excerpts": [
+      "All complaint statuses (19) Complaint Unanswered (19) ### Complaint type",
+      "On February 5th, I initiated a withdrawal of $5,077.50 USD from my Deel account to my personal Mexican bank account according to exchange rate of the day amount of 87,093.59 MXN. 2\\. As of today, a month has passed and the funds",
+      "Because the account is no longer active, the promised credit cannot be applied, and the appropriate resolution is a monetary refund"
+     ]
+    }
+   ],
+   "reasoning": "Unanswered status and payment/refund allegations support closer service-control diligence, not a finding that the allegations are true.",
+   "confidence": "medium"
+  },
+  {
+   "field": "red_flags.3",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "At just over seven years old, Deel has surpassed $1.5bn in revenue and has a valuation of $17.3bn."
+     ]
+    }
+   ],
+   "reasoning": "The revenue sentence states an amount without an accounting period or ARR definition. The flag concerns interpretation of that statement.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction.0",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "Trusted by 40,000+ customers, Deel handles the complexities of global employment and alleviates compliance concerns when hiring and growing internationally.",
+      "Trusted by 40,000+ companies from startups to enterprise"
+     ]
+    }
+   ],
+   "reasoning": "The current company page supplies the customer count and customer-size range; attribution avoids treating marketing claims as independently verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction.1",
+   "citations": [
+    {
+     "title": "A Billion Thank Yous: Deel Celebrates $1bn Run Rate",
+     "url": "https://www.deel.com/blog/deel-celebrates-one-billion-revenue-run-rate",
+     "excerpts": [
+      "June 03, 2025",
+      "It has 35,000-plus customers, including Reddit, Klarna, and Cloudflare."
+     ]
+    }
+   ],
+   "reasoning": "The dated company post directly names the customers and states the customer count.",
+   "confidence": "medium"
+  },
+  {
+   "field": "traction.2",
+   "citations": [
+    {
+     "title": "Our Series E: Building the global infrastructure of work",
+     "url": "https://www.deel.com/blog/new-investment-valuation",
+     "excerpts": [
+      "Last Update October 20, 2025",
+      "Deel processes $22 billion in payroll annually, and serves 35,000+ customers and 1.5+ million workers in 150+ countries."
+     ]
+    }
+   ],
+   "reasoning": "The financing update supplies payroll volume and worker count. The wording distinguishes processed payroll from platform revenue.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "No audited financial statements or verified liquidity and cash-flow values were established from the reviewed pages.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The current revenue claim could not be assigned a verified accounting period or definition.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [],
+   "reasoning": "Available workforce snapshots use different definitions and do not establish verified hiring or layoff totals.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.3",
+   "citations": [],
+   "reasoning": "A current aggregate and individual reviews do not establish a longitudinal employee-rating trend.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.4",
+   "citations": [],
+   "reasoning": "Court allegations were not substituted for regulator-confirmed licensing or enforcement dispositions.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.5",
+   "citations": [],
+   "reasoning": "No definitive screening outcome or transaction-level sanctions assessment was obtained.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.6",
+   "citations": [],
+   "reasoning": "The disclosure does not establish a verified affected-person count or independent remediation validation.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.7",
+   "citations": [],
+   "reasoning": "No named commercial partnership was sufficiently verified for inclusion.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.8",
+   "citations": [],
+   "reasoning": "The founder listing does not establish Ofer Simon's current role or a dated exit.",
+   "confidence": "low"
+  },
+  {
+   "field": "legal_and_regulatory.0",
+   "citations": [
+    {
+     "title": "PEOPLE CENTER, INC. v. DEEL, INC., et al. a 12, No. 25-cv-02576-CRB",
+     "url": "https://cases.justia.com/federal/district-courts/california/candce/3:2025cv02576/446484/411/0.pdf",
+     "excerpts": [
+      "In its complaint, Rippling alleges the Deel and others conspired to, and conducted, a corporate espionage scheme to steal Rippling’s trade secrets. FAC ¶ 1. In executing the alleged scheme, Deel CEO Alex Bouaziz hired Keith O’Brien, a Rippling employee based in Ireland, to act as a corporate spy for Deel.",
+      "This Court held that most of those claims—including the RICO claim—were plausibly pled and denied in part Deel’s motion to dismiss on February 23, 2026"
+     ]
+    },
+    {
+     "title": "People Center, Inc. v. Deel, Inc., 3:25-cv-02576 – CourtListener.com",
+     "url": "https://www.courtlistener.com/docket/69744528/people-center-inc-v-deel-inc/?order_by=desc",
+     "excerpts": [
+      "Date Filed: March 17, 2025"
+     ]
+    }
+   ],
+   "reasoning": "The docket dates the filing; the order recounts the alleged paid espionage and treatment of the RICO pleading. A plausible pleading is not adjudicated liability.",
+   "confidence": "medium"
+  },
+  {
+   "field": "legal_and_regulatory.1",
+   "citations": [
+    {
+     "title": "People Center, Inc. v. Deel, Inc., 3:25-cv-02576 – CourtListener.com",
+     "url": "https://www.courtlistener.com/docket/69744528/people-center-inc-v-deel-inc/?order_by=desc",
+     "excerpts": [
+      "482 Nov 6, 2026 Order by Magistrate Judge Lisa J. Cisneros granting 410 and 428 Request for Forensic Inspection",
+      "486 Nov 7, 2026 Order by Magistrate Judge Lisa J. Cisneros resolving 338 Discovery Letter Brief."
+     ]
+    }
+   ],
+   "reasoning": "The November entries directly document continued discovery. The negative statement is limited to the docket material reviewed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "legal_and_regulatory.2",
+   "citations": [
+    {
+     "title": "PEOPLE CENTER, INC. v. DEEL, INC., et al. a 12, No. 25-cv-02576-CRB",
+     "url": "https://cases.justia.com/federal/district-courts/california/candce/3:2025cv02576/446484/411/0.pdf",
+     "excerpts": [
+      "**3\\.** **Conclusion for Motion to Compel Arbitration** This Court thus **GRANTS** the motion to compel arbitration of the counterclaims relating to Johnson’s access and use of Deel",
+      " Deel alleges that Rippling’s “Snake Oil” advertisement contains many false or misleading statements. Id. ¶¶ 326–31. These statements include: Rippling’s claim that managers cannot have customized permissions settings on Deel, even though Deel claims they can, id. ¶ 327; Rippling’s claim that Deel relies on third parties for tasks like contractor management, even though Deel does not use third parties for all these tasks, id. ¶ 329; ¹³ Rippling’s claim that Deel’s workflows are limited to only three automated actions, even though Deel allows clients to choose from a wider array of actions, id. ¶ 330; and Rippling’s claim that Deel users cannot share one-time reports, even though Deel users do have this capability, id. ¶ 331. Deel allege that these claims were still up on Rippling’s website and clearly displayed on March 25, 2026, when these allegations were first raised. Deel has thus sufficiently identified the misleading/false comments and explained why they are misleading/false. These claims go towards the inherent characteristics of Deel’s products and services. And Deel plausibly alleges that these potential misrepresentations may harm their reputation and 13 The Court agrees with Rippling that the statement in this advertisement does not plausibly imply that Rippling “does not rely on third parties,” since the ad only purports to highlight Deel’s inconsistent messaging. See ¶¶ 326, 329; MTD at 26–27. Nonetheless, Deel plausibly alleges other parts of Rippling’s statement are misleading or false so this determination is not dispositive for the claim. 27 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 United States District Court Northern District of California goodwill with the public. Id. ¶ 461. The Court thus **DENIES** the motion to dismiss these claims.",
+      "**III.** **CONCLUSION** For the foregoing reasons, the Court **DENIES** the motion to strike and for other relief, **GRANTS** the motion to compel arbitration, and **DENIES** in part and **GRANTS** in part the motion to dismiss. **IT IS SO ORDERED.** Dated: September 25, 2026 CHARLES R. BREYER United States District Judge"
+     ]
+    }
+   ],
+   "reasoning": "The order resolves arbitration and dismissal motions and preserves certain advertising claims. Its posture supports the procedural, rather than final-liability, characterization.",
+   "confidence": "medium"
+  },
+  {
+   "field": "legal_and_regulatory.3",
+   "citations": [
+    {
+     "title": "Melanie Damian v. Deel, Inc., DPayments, LLC, and Jeremy Berger, No. 25-20017-CIV-MARTINEZ — Order Granting Motion to Dismiss",
+     "url": "https://www.courtlistener.com/docket/69515477/59/damian-v-deel-inc",
+     "excerpts": [
+      "Case 1:25-cv-20017-JEM Document 59 Entered on FLSD Docket 08/19/2025 Page 1 of 8",
+      "Plaintiff claims that “Deel has knowingly processed payments and transmitted monies without proper licensing",
+      "Here, Plaintiff fails to allege in her Complaint how Defendants’ lack of licensure harmed Plaintiff",
+      "Plaintiff's allegations confirm that the purported enterprise is nothing more than Deel and its affiliates acting within a unified and legitimate corporate",
+      "Accordingly, Defendants’ Motion to Dismiss, (ECF No. 14), is GRANTED. Plaintiff's Complaint, (ECF No. 1), is DISMISSED. This case is CLOSED"
+     ]
+    }
+   ],
+   "reasoning": "The order dates and records dismissal and closure, with standing and enterprise-pleading grounds. It does not function as a regulatory clearance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "legal_and_regulatory.4",
+   "citations": [
+    {
+     "title": "Klue security incident - Deel impact",
+     "url": "https://www.deel.com/blog/klue-security-incident-deel-impact",
+     "excerpts": [
+      "Last Update June 26, 2026",
+      "We are writing to inform customers and partners about a security incident involving a portion of Deel's sales data via the compromise of a third party integration. While the incident did not involve the Deel platform itself, it did result in unauthorized access to a portion of public, business contact, and commercial information stored in our CRM environment. We take any unauthorized access to customer information extremely seriously and are working with leading cybersecurity and legal experts to investigate the matter, support affected stakeholders, and safeguard our customers’ data. **What happened** On June 17, 2026, we confirmed that an unauthorized party had accessed business contact and commercial information stored in Deel's customer relationship management (CRM) system. Our investigation determined that the access occurred through a compromised connection with Klue, a third-party software provider that integrated with our CRM. After confirming the activity, we immediately secured the affected connection, removed the vendor's access, and began a comprehensive investigation with the support of independent cybersecurity experts. **What information was involved** The affected information consists primarily of business-to-business contact, commercial, and public information used by our sales and marketing teams, including information such as: names, business email addresses, job titles, phone numbers, and business details. A very limited amount of personal data synced to our CRM was also compromised.",
+      "Disconnected the third-party vendor and revoked its access"
+     ]
+    }
+   ],
+   "reasoning": "The dated company notice directly describes confirmation, access path, scope, platform exclusion and access revocation. Scope remains attributed to the company.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation.0",
+   "citations": [
+    {
+     "title": "Deel Reviews | Read Customer Service Reviews of deel.com",
+     "url": "https://www.trustpilot.com/review/deel.com",
+     "excerpts": [
+      "Deel Reviews 9,751 • TrustScore 4.5 out of 5",
+      "Considering 1,741 reviews, reviewers overwhelmingly had a great experience with this company. Customers frequently mention that the modern platform features a clean and intuitive user interface, making global payments, smooth onboarding, and international work simple, professional, and entirely reli able. People also appreciate that money transfers and financial transactions are consistently processed on time without any unexpected delays.",
+      "However, some customers also noted persistent challenges with customer support response times, evening coverage gaps, and complicated tracking issues",
+      "We use technology to protect platform integrity, but we don't fact-check reviews"
+     ]
+    }
+   ],
+   "reasoning": "Trustpilot provides the aggregate, summarized themes and its limitation on fact-checking. These are reputation signals, not verified performance measures.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation.1",
+   "citations": [
+    {
+     "title": "Deel Reviews (2,147): Pros & Cons of Working At Deel | Glassdoor",
+     "url": "https://www.glassdoor.com/Reviews/Deel-Reviews-E3728271.htm",
+     "excerpts": [
+      "Deel reviews 4\\.3 84% would recommend to a friend (2,147 total reviews)",
+      "Pros Good experience but not the role I wanted when I joined Cons Not the role I wanted, too segmented, little ownership",
+      "Cons \\- a toxic workplace where the CEO pushes all employees to dismantle software methodology and teamwork in order to use insane levels of AI",
+      "Pros Good work cukture Good pay Remote Flexibility Cons Too much focus on delivering quantity"
+     ]
+    }
+   ],
+   "reasoning": "The profile supplies rating and recommendation aggregates; selected reviews establish the reported themes. They do not supply a historical aggregate series.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation.2",
+   "citations": [
+    {
+     "title": "Deel, Inc. | BBB Complaints | Better Business Bureau",
+     "url": "https://bbb.org/us/ca/san-francisco/profile/payroll-services/deel-inc-1116-931420/complaints?page=1",
+     "excerpts": [
+      "19 complaintsin the last 3 years. 7 complaintsin the last 12 months.",
+      "All complaint statuses (19) Complaint Unanswered (19) ### Complaint type",
+      "On February 5th, I initiated a withdrawal of $5,077.50 USD from my Deel account to my personal Mexican bank account according to exchange rate of the day amount of 87,093.59 MXN. 2\\. As of today, a month has passed and the funds",
+      "Because the account is no longer active, the promised credit cannot be applied, and the appropriate resolution is a monetary refund",
+      "BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties"
+     ]
+    }
+   ],
+   "reasoning": "BBB directly states the complaint windows and unanswered status; examples support payment, refund and support themes. Its disclaimer limits the claims' evidentiary weight.",
+   "confidence": "medium"
+  },
+  {
+   "field": "reputation.3",
+   "citations": [
+    {
+     "title": "Deel’s comms chief departs amidst spying lawsuit from Rippling | TechCrunch",
+     "url": "https://techcrunch.com/2025/04/05/deels-comms-chief-departs-amidst-spying-lawsuit-from-rippling",
+     "excerpts": [
+      "11:48 AM PDT · April 5, 2025",
+      "Elisabeth Diana, head of communications at human resources platform Deel, is no longer with the company, according to her [LinkedIn profile",
+      "Rippling, a workforce management platform, [announced](https://www.rippling.com/blog/lawsuit-alleges-12-billion-unicorn-deel-cultivated-spy-orchestrated-long-running-trade-secret-theft-corporate-espionage-against-competitor) on March 17 that it was suing Deel over alleged spying, leveling charges ranging from violation of the RICO racketeering act (often used to prosecute members of the Mafia) to misappropriation of trade secrets and unfair competition. At that time, Rippling didn’t reveal the name of the employee in question, but that changed on April 2, when it [released an affidavit](https://techcrunch.com/2025/04/02/the-affidavit-of-a-rippling-employee-caught-spying-for-deel-reads-like-a-movie/) signed by the employee, Keith O’Brien"
+     ]
+    }
+   ],
+   "reasoning": "The dated article reports the departure alongside the spying litigation. Temporal association is not presented as causation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.0",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "At just over seven years old, Deel has surpassed $1.5bn in revenue and has a valuation of $17.3bn."
+     ]
+    }
+   ],
+   "reasoning": "The page directly states the revenue amount but does not define its period or accounting basis in that statement.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.1",
+   "citations": [
+    {
+     "title": "A Billion Thank Yous: Deel Celebrates $1bn Run Rate",
+     "url": "https://www.deel.com/blog/deel-celebrates-one-billion-revenue-run-rate",
+     "excerpts": [
+      "June 03, 2025",
+      "Today, we celebrate having reached a $1 billion revenue run rate in just over six years – a milestone that only a small handful of companies achieve.",
+      "Today we’ve been profitable for nearly three years and achieved 75% year on year revenue growth.",
+      "In five years, the company has grown to 6,500+ team members worldwide in over 100 different countries and raised over $600 million in funding."
+     ]
+    }
+   ],
+   "reasoning": "The dated post directly supplies all four historical company claims. None is represented as an audited result.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.2",
+   "citations": [
+    {
+     "title": "Deel hits $17.3 billion valuation, aims to expand globally | Reuters",
+     "url": "https://www.reuters.com/business/payroll-platform-deel-valued-173-billion-latest-funding-round-2025-10-16",
+     "excerpts": [
+      "October 16, 2025 8:45 AM EDT Updated October 16, 2025",
+      "Bouaziz said Deel crossed $100 million monthly revenue for the first time in September"
+     ]
+    }
+   ],
+   "reasoning": "Reuters dates and attributes the September monthly-revenue milestone to the CEO.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.3",
+   "citations": [
+    {
+     "title": "How Shuo Wang built Deel by breaking convention",
+     "url": "https://www.deel.com/deel-works/shuo-wang-deel-convention-breaking",
+     "excerpts": [
+      "Author Kim Cunningham Published July 13, 2026",
+      "Earlier this year, Deel gave its 7,000 employees Claude access."
+     ]
+    }
+   ],
+   "reasoning": "The publication date and retrospective wording establish a company-reported workforce datapoint earlier in 2026, not an exact July census.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financial_signals.4",
+   "citations": [
+    {
+     "title": "Deel - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+     "url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU",
+     "excerpts": [
+      "As of Sep 30, 2026, the latest [employee count](https://platform.tracxn.com/a/d/company/58b962a4e4b0013e25de2b41/deel:people) at Deel is 9671."
+     ]
+    }
+   ],
+   "reasoning": "The aggregator directly supplies both the employee count and September 30 as-of date. Comparability is explicitly left unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "team.0",
+   "citations": [
+    {
+     "title": "About Deel | Global HR Solutions for Hiring & Management​",
+     "url": "https://www.deel.com/about",
+     "excerpts": [
+      "Alex Bouaziz (CEO & Co-Founder) Alex Bouaziz is the CEO and co-founder of Deel",
+      "Alex grew up in Paris and graduated from Technion and then MIT with a Masters in Civil and Environmental Engineering. Prior to Deel he co-founded investment fund Sarona Ventures.",
+      "Shuo Wang (CRO & Co-Founder) Shuo Wang is the Chief Revenue Officer and Co-founder of Deel, an all-in-one HR platform for global teams.",
+      "Prior to Deel, Shuo co-founded Aeris Cleantec and served as CTO until its acquisition by iRobot."
+     ]
+    }
+   ],
+   "reasoning": "Official biographies directly establish the roles and prior companies. The current-role interpretation has some freshness risk because the page is undated.",
+   "confidence": "medium"
+  },
+  {
+   "field": "team.1",
+   "citations": [
+    {
+     "title": "Deel Welcomes Joe Kauffman as President & Chief Financial Officer",
+     "url": "https://www.deel.com/blog/new-cfo-announcement",
+     "excerpts": [
+      "Last Update November 03, 2025",
+      "**Deel Welcomes Joe Kauffman as President & Chief Financial Officer** We’re thrilled to welcome Joe Kauffman as Deel’s new President & Chief Financial Officer. Joe joins us after more than a decade at Credit Karma, where he served as CFO, President, and CEO.",
+      "Alongside this transition, Philippe Bouaziz, who has served as Deel’s CFO since day one, will continue his work as Executive Chairman and Chief Strategy Officer."
+     ]
+    }
+   ],
+   "reasoning": "The company announcement directly dates Kauffman's appointment, describes his Credit Karma roles and states Philippe Bouaziz's continuing positions.",
+   "confidence": "high"
+  },
+  {
+   "field": "team.2",
+   "citations": [
+    {
+     "title": "Deel’s comms chief departs amidst spying lawsuit from Rippling | TechCrunch",
+     "url": "https://techcrunch.com/2025/04/05/deels-comms-chief-departs-amidst-spying-lawsuit-from-rippling",
+     "excerpts": [
+      "Her LinkedIn profile shows that she started working at Deel (whose CEO Alex Bouaziz is pictured above) in November 2021 and stopped working there in April 2025",
+      "She was previously head of communications at Instagram and corporate head of communications at Facebook."
+     ]
+    }
+   ],
+   "reasoning": "TechCrunch reports the departure month and prior communications roles. This is press reporting rather than a direct employment record.",
+   "confidence": "medium"
+  },
+  {
+   "field": "team.3",
+   "citations": [
+    {
+     "title": "Deel - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+     "url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU",
+     "excerpts": [
+      "Deel is a series E company based in San Francisco (United States), founded in 2019 by [Alex Bouaziz](https://tracxn.com/d/people/alex-bouaziz/__rNNSsvEcXQo_hzfB9uUgiaqglN4lFelewcBbGD82JEE) , [Shuo Wang](https://tracxn.com/d/people/shuo-wang/__j1Lnvw6gXiwN0R4Tqf30Bc4XPp4IsTG-tk6-ODf_NUU) and [Ofer Simon](https://platform.tracxn.com/a/d/people/5c2083508f08271106f2190d/ofersimon) . It operates as a Provider of human resources and international payroll compliance software tools. Deel has raised $986M in funding from investors like [Andreessen Horowitz](https://tracxn.com/d/venture-capital/andreess"
+     ]
+    }
+   ],
+   "reasoning": "The verified Tracxn profile names Ofer Simon among the founders. The answer does not infer his current role or exit date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "business.0",
+   "citations": [
+    {
+     "title": "About Deel | Mission, Leadership & Press Resources",
+     "url": "https://www.deel.com/press",
+     "excerpts": [
+      "Deel is a global payroll and HR platform that helps companies hire, manage, pay, and equip any worker, anywhere.",
+      "It is one platform for payroll, HR, benefits, mobility, performance and device management across 150 countries.",
+      "Trusted by 40,000+ companies from startups to enterprise"
+     ]
+    }
+   ],
+   "reasoning": "The company directly describes its product categories, customer range and stated geographic coverage.",
+   "confidence": "high"
+  },
+  {
+   "field": "business.1",
+   "citations": [
+    {
+     "title": "Pricing | Transparent & Fair Pricing | HRIS Costs | Deel",
+     "url": "https://www.deel.com/pricing",
+     "excerpts": [
+      "Starting at $49per contractor per month",
+      "Starting at $125per US PEO employee per month",
+      "Deel offers flexible pricing based on your hiring needs."
+     ]
+    }
+   ],
+   "reasoning": "Published pricing establishes the recurring billing units and starting amounts, while the flexibility statement qualifies actual pricing.",
+   "confidence": "high"
+  },
+  {
+   "field": "funding.0",
+   "citations": [
+    {
+     "title": "Our Series E: Building the global infrastructure of work",
+     "url": "https://www.deel.com/blog/new-investment-valuation",
+     "excerpts": [
+      "Today, Deel announced a $300 million Series E funding round, valuing the company at $17.3 billion.",
+      "We’re thrilled to welcome Ribbit Capital as a new investor, co-leading this round alongside our long-time partners Andreessen Horowitz and Coatue Management"
+     ]
+    },
+    {
+     "title": "Deel hits $17.3 billion valuation, aims to expand globally | Reuters",
+     "url": "https://www.reuters.com/business/payroll-platform-deel-valued-173-billion-latest-funding-round-2025-10-16",
+     "excerpts": [
+      "October 16, 2025 8:45 AM EDT Updated October 16, 2025",
+      "Oct 16 (Reuters) - Payroll startup Deel said on Thursday it raised $300 million in a funding round, led by new investor Ribbit Capital alongside existing backers Andreessen Horowitz and Coatue Management"
+     ]
+    }
+   ],
+   "reasoning": "The primary announcement gives the Series E designation, amount, valuation and co-leads; Reuters corroborates these terms and supplies the October 16 announcement date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "funding.1",
+   "citations": [
+    {
+     "title": "Deel - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+     "url": "https://tracxn.com/d/companies/deel/__0QGPRxeNO6btLSLEVFaxlsxExp-2aMVx74Et0xat7KU",
+     "excerpts": [
+      "[$986M](https://platform.tracxn.com/a/d/company/58b962a4e4b0013e25de2b41:funding-and-investors) in 8 rounds"
+     ]
+    }
+   ],
+   "reasoning": "The verified aggregator profile explicitly lists the cumulative amount and round count. It does not establish a reconciled capitalization table.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
 }

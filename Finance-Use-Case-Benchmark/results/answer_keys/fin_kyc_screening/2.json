@@ -1,0 +1,142 @@
+{
+ "sub": "fin_kyc_screening",
+ "i": 2,
+ "task": "Run a KYC screen on Greensill Capital in the United Kingdom",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which legal entity is 'Greensill Capital' in the UK, what is its registry number, and what is its current status?",
+   "answer": "The main UK operating company is Greensill Capital (UK) Limited, the English subsidiary of the Greensill group. Related entities include Greensill Capital Management Co (UK) Ltd, Greensill Capital Pty (Australia), Greensill Bank AG (Bremen, Germany) and Greensill Capital Inc. (US). The group holding was Greensill Capital Ltd. The UK company went into administration on 8 March 2021, and Grant Thornton were the administrators. The researcher must read the current Companies House number, LEI (GLEIF), incorporation date, registered address and status (administration or dissolved) directly from the registries. I did not verify these from memory. A Greensill Capital branch or a different group entity must not be reported as the UK entity.",
+   "importance": "critical",
+   "source": "https://find-and-update.company-information.service.gov.uk/ (search 'Greensill Capital (UK)'); https://search.gleif.org"
+  },
+  {
+   "id": "k2",
+   "question": "Is the company insolvent or in a restructuring, and what is the status of the group's insolvency proceedings?",
+   "answer": "Yes. Greensill Bank AG was put under a BaFin moratorium on 3 March 2021 and then into insolvency. The UK entity entered administration on 8 March 2021, as did other group entities. The group collapsed after Tokio Marine and other insurers declined to renew trade-credit cover. Credit Suisse then froze about US$10bn of supply-chain finance funds. Greensill is not a going concern. The answer must be a 'do not onboard or lend' finding, and the current administration or liquidation status should be confirmed on the registry.",
+   "importance": "critical",
+   "source": "https://www.grantthornton.co.uk/ (Greensill administration notices)"
+  },
+  {
+   "id": "k3",
+   "question": "Who are the current directors, officers, PSCs and beneficial owners?",
+   "answer": "Lex Greensill (Australian) founded the group, was CEO and held the controlling stake. Former directors and officers must be taken from the Companies House officers and PSC pages. Since the company is in administration, the administrators run it and the former directors have in most cases resigned or been removed. The SoftBank Vision Fund was a major minority investor, and I believe it held a stake of roughly 20%. Ownership and PSC details must be verified at source, with nationality and dates of birth noted where given.",
+   "importance": "critical",
+   "source": "https://find-and-update.company-information.service.gov.uk/"
+  },
+  {
+   "id": "k4",
+   "question": "Do the entity or its owners and directors match OFAC SDN, UK OFSI or EU consolidated sanctions lists?",
+   "answer": "I know of no sanctions listing of Greensill Capital, Greensill Bank or Lex Greensill. This is from memory and has not been re-run. The three lists (OFAC SDN, OFSI consolidated list, EU consolidated list) must be searched on the entity, its owners and its main counterparty. Any hits on common names should be excluded as namesakes and counted. Sanjeev Gupta and GFG Alliance, the biggest borrower, are, as far as I know, not sanctioned either. The sanctions risk is indirect, through GFG exposure, and is not a list match.",
+   "importance": "critical",
+   "source": "https://sanctionssearch.ofac.treas.gov/; https://sanctionslist.fcdo.gov.uk/; https://www.sanctionsmap.eu/"
+  },
+  {
+   "id": "k5",
+   "question": "Are any owners or directors politically exposed persons (PEPs)?",
+   "answer": "No owner or director is a PEP in the formal sense, as far as I know. There is a political-connection angle, though. David Cameron, a former UK Prime Minister, was an adviser to Greensill and lobbied ministers and officials in 2020 to 2021. Lex Greensill was a Cabinet Office adviser to the Cameron government from 2011 and held a Whitehall pass. Cameron is a former PEP and a connected person, and was not an owner or director. This should be flagged as a PEP-adjacent relationship and not as a PEP finding about the entity. Cameron held share options, and that should be verified.",
+   "importance": "critical",
+   "source": "https://www.gov.uk/government/publications/review-of-the-use-of-supply-chain-finance-in-government-the-boardman-review"
+  },
+  {
+   "id": "k6",
+   "question": "What enforcement actions, investigations and lawsuits exist, with dates, severity and status?",
+   "answer": "All are high severity. The items below are from memory and their current status must be checked. (1) BaFin imposed a moratorium on Greensill Bank in March 2021, and German prosecutors opened a criminal probe in Bremen. (2) The UK Serious Fraud Office opened an investigation in 2021 into GFG Alliance and Greensill financing, covering suspected fraud and money laundering. (3) The FCA investigated Greensill's compliance. (4) FINMA ran enforcement proceedings against Credit Suisse over Greensill funds. (5) The Treasury Committee and the Public Accounts Committee held inquiries in 2021 and the Boardman review was published. (6) Credit Suisse and other investors brought civil claims, and the insurer litigation includes Tokio Marine and Insurance Australia Group. I did not confirm the outcomes, and those must be checked.",
+   "importance": "critical",
+   "source": "https://www.sfo.gov.uk/ ; https://www.bafin.de/ ; https://www.finma.ch/"
+  },
+  {
+   "id": "k7",
+   "question": "Which counterparties create contagion risk, and who might carry liabilities today?",
+   "answer": "The largest exposures were to Sanjeev Gupta's GFG Alliance, at roughly US$5bn, and to Credit Suisse supply-chain finance funds with about US$10bn of assets. Others were Katerra and Bluestone, and SoftBank's Vision Fund was linked. The creditors in the group's insolvency estates are bondholders, banks and funds. Any relationship with these parties needs enhanced due diligence. Exposure to GFG's restructuring continues, so check the latest administrators' reports.",
+   "importance": "useful",
+   "source": "https://www.reuters.com/ (Greensill collapse coverage)"
+  },
+  {
+   "id": "k8",
+   "question": "What overall risk rating should be given, and what is the rationale?",
+   "answer": "High. Greensill is insolvent (UK administration from March 2021, German bank in insolvency), several regulatory and criminal investigations were or are open (BaFin, SFO, FCA, FINMA, Bremen prosecutors), the group faces large litigation and creditor claims, and the founder and the entity have political-lobbying links. No sanctions match was found as far as I know, and no formal PEP owner was found. The rating is high because of insolvency and enforcement, not because of sanctions. The count of excluded namesakes (for example other 'Greensill' entities and the Greensill Capital Pty entity in Australia) should be reported as namesakes_excluded.",
+   "importance": "critical",
+   "source": "https://find-and-update.company-information.service.gov.uk/"
+  }
+ ],
+ "labels": {
+  "exa": "E",
+  "nimble": "F",
+  "firecrawl": "G",
+  "gpt": "H",
+  "parallel": "I",
+  "opus": "J"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  }
+ },
+ "cost_usd": 0.213
+}

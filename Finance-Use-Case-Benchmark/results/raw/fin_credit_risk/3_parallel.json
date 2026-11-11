@@ -1,0 +1,697 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "fin_credit_risk",
+ "input": "Assess the credit and counterparty risk of Wolfspeed",
+ "input_n": 3,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 432,
+ "run_id": "trun_ee10de0fcb3b429696a5f8d3d576e7c0",
+ "output": {
+  "risk_rationale": "Elevated as of 2026-11-04: Wolfspeed remains loss-making following its September 2025 Chapter 11 emergence, with a $115.4 million operating loss in its latest verified quarter and further workforce reductions ([Q4 results](https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf)). Offsetting this, June 28 cash and short-term investments totaled $1.089 billion against $1.782 billion of debt principal, and management stated that liquidity would cover at least one year after financial-statement issuance ([FY2026 10-K](https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm)). The October 7 announcement of up to $1.5 billion of government financing is a potential mitigant, but it remains conditional and is not counted as funded or immediately available liquidity ([announcement](https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-conditional-30-year-loan-commitment-from-us-department-of-war-to-advance-domestic-wide-bandgap-supply-chain/)).",
+  "ownership": {
+   "value": "Public company, NYSE: WOLF, reorganized following its September 2025 Chapter 11 emergence. The June 9, 2026 S-1 disclosed Renesas Electronics America as a 39.9% beneficial owner; this is a dated SEC beneficial-ownership disclosure, not a verified current voting-control percentage. Renesas's restructuring-related equity issuance and board representation received CFIUS clearance in January 2026.",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526263909/d125615ds1.htm",
+   "as_of": "2026-06-09"
+  },
+  "company": "Wolfspeed, Inc.",
+  "distress_signals": [
+   {
+    "date": "2026-08-20",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "summary": "The FY2026 10-K reported an approximately 28% cumulative headcount reduction under the 2025 restructuring plan. The Durham, North Carolina 150mm device fabrication facility ceased production in the second quarter of fiscal 2026."
+   },
+   {
+    "date": "2026-08-20",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "summary": "A separate approximately 8% headcount reduction was implemented and substantially completed in the second quarter of fiscal 2026. Another approximately 6% workforce reduction was approved in the fourth quarter, with implementation expected during the first half of fiscal 2027; these percentages relate to separate plans and should not be added together."
+   },
+   {
+    "date": "2026-08-20",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "summary": "Liquidity/going-concern mitigant: despite continuing losses and restructuring, management concluded that liquidity would meet cash needs for at least one year after issuance of the financial statements. This is management's assessment, not a guaranteed cash runway."
+   }
+  ],
+  "missing_fields": [
+   "credit_ratings: current issuer ratings, outlooks and rating changes during 2025-11-04 through 2026-11-04 were not verified; no rating is assumed.",
+   "financials: Q1 FY2027 actual results and a corresponding 10-Q were not verified. The earnings call was scheduled for 2026-11-04 at 5:00 p.m. Eastern; June 28, 2026 figures are the latest actuals verified.",
+   "financials: current undrawn revolver or other immediately drawable committed-credit availability was not verified.",
+   "payment_behaviour: current supplier payment times, arrears, late-payment reports, liens, judgments and collection suits were not verified. Historical bankruptcy claim treatment does not establish current payment punctuality.",
+   "ownership: current voting-control percentages beyond the dated June 9, 2026 beneficial-ownership disclosure were not verified."
+  ],
+  "credit_ratings": [],
+  "financials": [
+   {
+    "stated_by": "Wolfspeed, Inc.; fiscal Q4 earnings release dated 2026-08-19",
+    "value": 149600000.0,
+    "period": "Three months ended 2026-06-28; Successor",
+    "source_url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+    "currency": "USD",
+    "metric": "Revenue"
+   },
+   {
+    "stated_by": "Wolfspeed, Inc.; fiscal Q4 earnings release dated 2026-08-19",
+    "value": -115400000.0,
+    "period": "Three months ended 2026-06-28; Successor",
+    "source_url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+    "currency": "USD",
+    "metric": "GAAP operating income / loss"
+   },
+   {
+    "stated_by": "Wolfspeed, Inc.; fiscal Q4 earnings release dated 2026-08-19",
+    "value": 576300000.0,
+    "period": "As of 2026-06-28",
+    "source_url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+    "currency": "USD",
+    "metric": "Cash and cash equivalents"
+   },
+   {
+    "stated_by": "Wolfspeed, Inc.; fiscal Q4 earnings release dated 2026-08-19",
+    "value": 512300000.0,
+    "period": "As of 2026-06-28",
+    "source_url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+    "currency": "USD",
+    "metric": "Short-term investments"
+   },
+   {
+    "stated_by": "Wolfspeed, Inc.; fiscal Q4 earnings release dated 2026-08-19",
+    "value": 1088600000.0,
+    "period": "As of 2026-06-28",
+    "source_url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+    "currency": "USD",
+    "metric": "Total cash, cash equivalents and short-term investments"
+   },
+   {
+    "stated_by": "Wolfspeed, Inc.; FY2026 Form 10-K filed 2026-08-20",
+    "value": 1782000000.0,
+    "period": "As of 2026-06-28",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "currency": "USD",
+    "metric": "Total outstanding debt principal reported in the notes table"
+   },
+   {
+    "stated_by": "Wolfspeed, Inc.; FY2026 Form 10-K filed 2026-08-20",
+    "value": 1687500000.0,
+    "period": "As of 2026-06-28",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "currency": "USD",
+    "metric": "Debt carrying amount reported in the notes table, after unamortized premiums and discounts"
+   },
+   {
+    "stated_by": "Wolfspeed, Inc. management; FY2026 Form 10-K filed 2026-08-20",
+    "value": 12.0,
+    "period": "Management assessment at financial-statement issuance in August 2026",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "currency": null,
+    "metric": "Stated minimum liquidity coverage after financial-statement issuance, in months; not a guaranteed cash runway"
+   }
+  ],
+  "risk_call": "elevated",
+  "payment_behaviour": [
+   {
+    "date": "2026-08-20",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "summary": "The FY2026 10-K states that general unsecured claimholders received payment in full in cash, reimbursement, or other treatment rendering their claims unimpaired under the reorganization. It also states that claims reconciliation was substantially completed, with remaining prepetition claims being settled in the ordinary course. This historical treatment does not verify current supplier payment timing or the absence of arrears."
+   }
+  ],
+  "debt_events": [
+   {
+    "date": "2025-06-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "summary": "Wolfspeed filed voluntary Chapter 11 petitions. This is a historical bankruptcy event; the company subsequently emerged."
+   },
+   {
+    "date": "2025-09-29",
+    "source_url": "https://investor.wolfspeed.com/news/news-details/2025/Wolfspeed-Successfully-Completes-Financial-Restructuring-Emerges-as-Financially-Stronger-Company-Well-Positioned-in-Silicon-Carbide-Market/default.aspx",
+    "summary": "Emerged from Chapter 11 after completing its financial restructuring. The company reported approximately 70% lower total debt and approximately 60% lower annual cash interest expense, with debt maturities extended to 2030."
+   },
+   {
+    "date": "2026-03",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "summary": "Issued $379.0 million of 3.5% Convertible 1.5-Lien Senior Secured Notes due 2031 and repurchased $475.9 million of New Senior Secured Notes as part of the financing transactions."
+   },
+   {
+    "date": "2026-06-28",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "summary": "Reported compliance with all covenants relating to its outstanding notes. The New Senior Secured Notes require at least $350 million of unrestricted cash and cash equivalents at each calendar month-end; compliance was verified only for the disclosed June 28 reporting date."
+   },
+   {
+    "date": "2026-10-07",
+    "source_url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-conditional-30-year-loan-commitment-from-us-department-of-war-to-advance-domestic-wide-bandgap-supply-chain/",
+    "summary": "Announced a conditional commitment from the U.S. Department of War for a senior secured delayed-draw term loan of up to $1.5 billion with a 30-year tenor. Definitive agreements and funding remained subject to due diligence, negotiations, approvals, appropriations, consents and other conditions; financing was not assured. Potential warrants could cover up to 7.5% of fully diluted equity as funding tranches are drawn."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**Operating loss** (115.4) (581.6)",
+      "Cash, cash equivalents, and short-term investments $1,088.6 $955.4"
+     ]
+    },
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "|(in millions of U.S. Dollars) | | |Maturity Date (1) | | |Effective Interest Rate | | |Initial Principal | | |Repayment of principal (2) | | |Conversion to common stock (3) | | |Outstanding principal | | |Unamortized premium/discount | | | | | |Ending Balance | | |Equity component | | |Fair Value | | |Fair value level | | | |New Senior Secured Notes | | |6/23/2030 | | |12\\.9 % | | |$ 1,259.2 | | |($ 623\\.3 ) | | |$ — | | |$ 635\\.9 | | |$ 59\\.2 | | | | | |$ 695\\.1 | | |$ — | | |$ 705\\.7 | | |Level 2 | | | |New 2L Non-Convertible Notes | | |6/15/2031 | | |12\\.5 % | | |296\\.4 | | |— | | |— | | |$ 296\\.4 | | |( 60\\.5 ) | | | | | |$ 235\\.9 | | |— | | |269\\.0 | | |Level 2 | | | |New 2L Non-Renesas Convertible Notes (4) | | |6/15/2031 | | |3\\.0 % | | |331\\.4 | | |— | | |( 64\\.3 ) | | |$ 267\\.1 | | |( 5\\.6 ) | | | | | |$ 261\\.5 | | |136\\.1 | | |1,059.5 | | |Level 2 | | | |New 2L Renesas Convertible Notes (5) | | |6/15/2031 | | |12\\.3 % | | |203\\.6 | | |— | | |— | | |$ 203\\.6 | | |( 74\\.0 ) | | | | | |$ 129\\.6 | | |87\\.9 | | |517\\.8 | | |Level 3 | | | |1\\.5L Convertible Notes (6) | | |3/15/2031 | | |4\\.3 % | | |379\\.0 | | |— | | |— | | |$ 379\\.0 | | |( 13\\.6 ) | | | | | |$ 365\\.4 | | |— | | |913\\.8 | | |Level 2 | | | | | | | | | | | | |$ 2,469.6 | | |($ 623\\.3 ) | | |($ 64\\.3 ) | | |$ 1,782.0 | | |($ 94\\.5 ) | | | | | |$ 1,687.5 | | |$ 224\\.0 | | |$ 3,465.8 | | | | | |",
+      "The Successor has assessed the impact of the current softening demand for its products and the competitive industry it serves on the Company's liquidity requirements over the next 12 months. To support this assessment, the Successor has analyzed the following factors: (1) its current financial condition, including available liquidity sources; (2) both conditional and unconditional obligations that are due or anticipated; (3) the funds necessary to sustain operations in light of its current financial condition, obligations, and expected cash flows; and (4) any other conditions or events that may adversely impact the Successor’s ability to meet its obligations for at least one year after the issuance date of the financial statements. Based on such evaluation, the Successor has concluded that the Successor will have sufficient liquidity to meet its future cash needs with cash, cash equivalents and short-term investments and cash flows from operations for at least one year after the issuance date of the financial statements as the restructuring of its debt significantly reduced the amount of outstanding debt and ongoing interest payments."
+     ]
+    },
+    {
+     "title": "\n\tWolfspeed Successfully Completes Financial Restructuring, Emerges as Financially Stronger Company Well Positioned in Silicon Carbide Market - Wolfspeed, Inc.\n",
+     "url": "https://investor.wolfspeed.com/news/news-details/2025/Wolfspeed-Successfully-Completes-Financial-Restructuring-Emerges-as-Financially-Stronger-Company-Well-Positioned-in-Silicon-Carbide-Market/default.aspx",
+     "excerpts": [
+      "(NYSE: WOLF), a global leader in silicon carbide technologies, today announced the successful completion of its financial restructuring process and emergence from Chapter 11 protection. Through the restructuring process, Wolfspeed has reduced its total debt by approximately 70%, with maturities extended to 2030, and lowered its annual cash interest expense by roughly 60%."
+     ]
+    },
+    {
+     "title": "Wolfspeed Announces Conditional 30-Year, $1.5 Billion Loan Commitment from U.S. Department of War to Advance Domestic Wide Bandgap Supply Chain | Wolfspeed",
+     "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-conditional-30-year-loan-commitment-from-us-department-of-war-to-advance-domestic-wide-bandgap-supply-chain/",
+     "excerpts": [
+      "** The conditional commitment letter contemplates a senior secured delayed-draw term loan facility of up to $1.5 billion. “This conditional 30-year commitment represents another significant milestone in our ongoing efforts to optimize Wolfspeed’s capital structure and improve our financial foundation,” **said Gregor van Issum, Chief Financial Officer of Wolfspeed.** “Subject to the satisfaction of diligence, negotiation of definitive agreements, and other financial, legal, and investment conditions, the broader commitment is expected to provide additional long-dated capital to support our strategic priorities, improve financial flexibility, and further position Wolfspeed for long-term value creation.” In connection with the potential financing and subject to the negotiation and execution of definitive agreements, Wolfspeed would be required to issue to the DoW VWAP-based warrants to purchase, in the aggregate, up to 7.5% of Wolfspeed’s fully diluted equity, with the warrants issuable pro rata as and when financing tranches are funded. The execution of the definitive agreements and consummation of the potential financing are subject to substantial due diligence and numerous conditions, the negotiation and finalization of agreements, significant closing conditions, governmental authorizations and approvals, appropriations and required third-party consents. There can be no assurance that definitive agreements will be executed or that any financing will be provided."
+     ]
+    }
+   ],
+   "reasoning": "The issuer reports continuing operating losses, substantial remaining debt and a recent bankruptcy restructuring. Cash and investments and management's stated liquidity coverage mitigate near-term pressure. The government financing is expressly conditional, so excluding it from available liquidity is appropriate. The elevated assessment is analytical synthesis, not an agency rating or a prediction of default.",
+   "confidence": "medium"
+  },
+  {
+   "field": "ownership",
+   "citations": [
+    {
+     "title": "\n\tWolfspeed Announces CFIUS Clearance and Completion of Equity Issuance to Renesas as Part of Court-Approved Restructuring - Wolfspeed, Inc.\n",
+     "url": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-Announces-CFIUS-Clearance-and-Completion-of-Equity-Issuance-to-Renesas-as-Part-of-Court-Approved-Restructuring/default.aspx",
+     "excerpts": [
+      "Wolfspeed (NYSE: WOLF) leads the market in the worldwide adoption of silicon carbide technologies that power the world’s most disruptive innovations.",
+      "Renesas, a Tokyo-based global leader in advanced semiconductor solutions who was a pre-petition creditor of Wolfspeed, agreed to convert its outstanding unsecured loan into a combination of equity and secured convertible debt as part of the court-approved restructuring plan. Following CFIUS clearance, Renesas will also receive a seat on Wolfspeed’s Board of Directors, and has appointed Aris Bolisay, who serves as Renesas's vice president of finance. Due to Renesas acquiring a substantial equity position in a U.S. semiconductor manufacturer and the right to appoint a member of Wolfspeed’s Board of Directors, the transaction required review and clearance by the CFIUS."
+     ]
+    },
+    {
+     "title": "WOLFSPEED, INC. S-1 filed June 9, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526263909/d125615ds1.htm",
+     "excerpts": [
+      "|  | **Shares of Common Stock Beneficially Owned** |  | | **Name of beneficial owner** | **Number** | **Percentage** | | **5% Stockholders** |  |  | | Renesas Electronics America Inc. <sup>(1)</sup> | 23,315,760 | 39.9% | | Entities managed by Whitebox Advisors LLC <sup>(2)</sup> | 5,696,405 | 9.9% |",
+      "On September 29, 2025 (the “Plan Effective Date”), the conditions to the effectiveness of the Plan were satisfied or waived and the Plan became effective. The Company emerged from the Chapter 11 Cases on September 29, 2025."
+     ]
+    }
+   ],
+   "reasoning": "The issuer identifies its public listing. The June S-1 gives Renesas's beneficial ownership, while the January release explains the restructuring-related equity and board rights. The answer dates the disclosure and does not equate beneficial ownership with a verified current voting stake.",
+   "confidence": "medium"
+  },
+  {
+   "field": "company",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**_DURHAM, N.C._** _August 19, 2026 --_ Wolfspeed, Inc."
+     ]
+    }
+   ],
+   "reasoning": "The company's own earnings release identifies the reporting entity as Wolfspeed, Inc.",
+   "confidence": "high"
+  },
+  {
+   "field": "distress_signals",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "During the third and fourth quarters of fiscal 2025, the Company increased the scope of the planned headcount reductions, primarily in its Materials Products operations and supporting roles. The 2025 Restructuring Plan resulted in a cumulative total headcount reduction of approximately 28 %. The Company's 150mm device fabrication facility in North Carolina ceased production in the second quarter of fiscal 2026.",
+      "2026 Restructuring Plans During the second quarter of fiscal 2026, the Company implemented and substantially completed a headcount reduction (the \"2026 Restructuring\"), of approximately 8 %, to better align with business needs as a result of the transition of Wolfspeed's internal chip manufacturing to 200mm and reduced demand for 150mm substrates. The severance and benefit costs related to this initiative were recorded in the second quarter of fiscal 2026 in accordance with the provisions of ASC 712-10, \"Nonretirement Postemployment Benefits\". No further charges are expected.",
+      "During the fourth quarter of fiscal 2026, the Company approved a restructuring plan designed to further optimize its organizational structure with current business needs. The Company recorded severance and related benefit costs in accordance with the provisions of ASC 712-10, \"Nonretirement Postemployment Benefits\". This planned workforce reduction of approximately 6 % of the employee population is expected to occur by the first half of fiscal 2027.",
+      "As described above and in Note 3, \"Emergence from Voluntary Reorganization under Chapter 11'\", as of the Effective Date, the Company emerged from the Chapter 11 Cases and continues to operate as a viable going concern. The accompanying consolidated financial statements have been prepared on the basis that the Company will continue to operate as a going concern, which contemplates that the Company will be able to realize assets and settle liabilities in the normal course of business for twelve months following the date of this filing. Upon emergence from the Chapter 11 Cases, the Company significantly improved its liquidity position through a comprehensive restructuring of its capital structure. As part of the Plan, the Company issued the new debt and equity described in Note 3, \"Emergence from Voluntary Reorganization under Chapter 11,\" which resulted in a reduction of the total debt by approximately 70 % compared to the pre-emergence levels. The Company had $ 1\\.1 billion of cash, cash equivalents and short term investments as of June 28, 2026; under the terms of our New Senior Secured Notes, the Company is required to have a minimum cash balance of $ 350\\.0 million at the last calendar date of each month. The Successor has assessed the impact of the current softening demand for its products and the competitive industry it serves on the Company's liquidity requirements over the next 12 months. To support this assessment, the Successor has analyzed the following factors: (1) its current financial condition, including available liquidity sources; (2) both conditional and unconditional obligations that are due or anticipated; (3) the funds necessary to sustain operations in light of its current financial condition, obligations, and expected cash flows; and (4) any other conditions or events that may adversely impact the Successor’s ability to meet its obligations for at least one year after the issuance date of the financial statements. Based on such evaluation, the Successor has concluded that the Successor will have sufficient liquidity to meet its future cash needs with cash, cash equivalents and short-term investments and cash flows from operations for at least one year after the issuance date of the financial statements as the restructuring of its debt significantly reduced the amount of outstanding debt and ongoing interest payments."
+     ]
+    }
+   ],
+   "reasoning": "The annual report directly describes multiple workforce plans and the facility cessation. Its liquidity assessment supplies a mitigating consideration rather than a current going-concern warning. Implementation expectations are preserved as expectations.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [
+    {
+     "title": "Commercial Credit Report for Wolfspeed Inc - Report Preview",
+     "url": "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=4974",
+     "excerpts": [
+      "Scores and Ratings |FRISK ® Score |Z'' Score |PAYCE ® Score |DBT Index |Moody's Rating |Fitch Rating |DBRS Rating | |\\- |Yes |\\- |Yes |\\- |\\- |\\- |"
+     ]
+    },
+    {
+     "title": "Wolfspeed, Inc. Announces Date of Fiscal First Quarter Earnings Call for November 4, 2026 | Wolfspeed",
+     "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-inc-announces-date-of-fiscal-first-quarter-earnings-call-for-november-4-2026",
+     "excerpts": [
+      "(NYSE: WOLF), a global leader in silicon carbide technology, will conduct a conference call and audio webcast to discuss its first quarter fiscal 2027 results on Wednesday, November 4, 2026, at 5:00 pm Eastern Time. The call will be hosted by Robert Feurle, Chief Executive Officer, and Gregor van Issum, Chief Financial Officer. A live webcast of the earnings conference call along with the earnings release will be available on Wolfspeed’s Investor Relations website at [**https://investor.wolfspeed.com**](https://investor.wolfspeed.com/) ."
+     ]
+    }
+   ],
+   "reasoning": "The opened credit-report preview does not disclose actual agency ratings, and the issuer page schedules rather than reports Q1 earnings. Other entries describe verification gaps, not assertions that facilities, adverse payment records or ownership changes do not exist.",
+   "confidence": "low"
+  },
+  {
+   "field": "credit_ratings",
+   "citations": [
+    {
+     "title": "Commercial Credit Report for Wolfspeed Inc - Report Preview",
+     "url": "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=4974",
+     "excerpts": [
+      "Scores and Ratings |FRISK ® Score |Z'' Score |PAYCE ® Score |DBT Index |Moody's Rating |Fitch Rating |DBRS Rating | |\\- |Yes |\\- |Yes |\\- |\\- |\\- |",
+      "Monday, October 26, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The dated preview contains no disclosed Moody's, Fitch or DBRS rating values. No current agency rating, outlook or twelve-month rating history was verified, so the array is empty; this does not establish that Wolfspeed is unrated.",
+   "confidence": "low"
+  },
+  {
+   "field": "financials",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**Three months ended June 28, 2026**",
+      "**Revenue, net** $149.6 $197.0",
+      "**Operating loss** (115.4) (581.6)",
+      "**Cash and cash equivalents, end of period** $576.3 $481.0 $467.2 add: Short-term Investments $512.3 $354.4 $488.2 **Cash, cash equivalents, and short-term investments** $1,088.6 $835.4 $955.4"
+     ]
+    },
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "|(in millions of U.S. Dollars) | | |Maturity Date (1) | | |Effective Interest Rate | | |Initial Principal | | |Repayment of principal (2) | | |Conversion to common stock (3) | | |Outstanding principal | | |Unamortized premium/discount | | | | | |Ending Balance | | |Equity component | | |Fair Value | | |Fair value level | | | |New Senior Secured Notes | | |6/23/2030 | | |12\\.9 % | | |$ 1,259.2 | | |($ 623\\.3 ) | | |$ — | | |$ 635\\.9 | | |$ 59\\.2 | | | | | |$ 695\\.1 | | |$ — | | |$ 705\\.7 | | |Level 2 | | | |New 2L Non-Convertible Notes | | |6/15/2031 | | |12\\.5 % | | |296\\.4 | | |— | | |— | | |$ 296\\.4 | | |( 60\\.5 ) | | | | | |$ 235\\.9 | | |— | | |269\\.0 | | |Level 2 | | | |New 2L Non-Renesas Convertible Notes (4) | | |6/15/2031 | | |3\\.0 % | | |331\\.4 | | |— | | |( 64\\.3 ) | | |$ 267\\.1 | | |( 5\\.6 ) | | | | | |$ 261\\.5 | | |136\\.1 | | |1,059.5 | | |Level 2 | | | |New 2L Renesas Convertible Notes (5) | | |6/15/2031 | | |12\\.3 % | | |203\\.6 | | |— | | |— | | |$ 203\\.6 | | |( 74\\.0 ) | | | | | |$ 129\\.6 | | |87\\.9 | | |517\\.8 | | |Level 3 | | | |1\\.5L Convertible Notes (6) | | |3/15/2031 | | |4\\.3 % | | |379\\.0 | | |— | | |— | | |$ 379\\.0 | | |( 13\\.6 ) | | | | | |$ 365\\.4 | | |— | | |913\\.8 | | |Level 2 | | | | | | | | | | | | |$ 2,469.6 | | |($ 623\\.3 ) | | |($ 64\\.3 ) | | |$ 1,782.0 | | |($ 94\\.5 ) | | | | | |$ 1,687.5 | | |$ 224\\.0 | | |$ 3,465.8 | | | | | |",
+      "The Successor has assessed the impact of the current softening demand for its products and the competitive industry it serves on the Company's liquidity requirements over the next 12 months. To support this assessment, the Successor has analyzed the following factors: (1) its current financial condition, including available liquidity sources; (2) both conditional and unconditional obligations that are due or anticipated; (3) the funds necessary to sustain operations in light of its current financial condition, obligations, and expected cash flows; and (4) any other conditions or events that may adversely impact the Successor’s ability to meet its obligations for at least one year after the issuance date of the financial statements. Based on such evaluation, the Successor has concluded that the Successor will have sufficient liquidity to meet its future cash needs with cash, cash equivalents and short-term investments and cash flows from operations for at least one year after the issuance date of the financial statements as the restructuring of its debt significantly reduced the amount of outstanding debt and ongoing interest payments."
+     ]
+    }
+   ],
+   "reasoning": "The issuer's quarterly release supplies actual revenue, operating loss and liquidity balances; the annual report distinguishes outstanding principal from carrying debt and states management's liquidity horizon. Values in millions were converted to dollars. The coverage statement is not presented as a calculated or guaranteed runway.",
+   "confidence": "high"
+  },
+  {
+   "field": "risk_call",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**Operating loss** (115.4) (581.6)"
+     ]
+    },
+    {
+     "title": "\n\tWolfspeed Successfully Completes Financial Restructuring, Emerges as Financially Stronger Company Well Positioned in Silicon Carbide Market - Wolfspeed, Inc.\n",
+     "url": "https://investor.wolfspeed.com/news/news-details/2025/Wolfspeed-Successfully-Completes-Financial-Restructuring-Emerges-as-Financially-Stronger-Company-Well-Positioned-in-Silicon-Carbide-Market/default.aspx",
+     "excerpts": [
+      "(NYSE: WOLF), a global leader in silicon carbide technologies, today announced the successful completion of its financial restructuring process and emergence from Chapter 11 protection. Through the restructuring process, Wolfspeed has reduced its total debt by approximately 70%, with maturities extended to 2030, and lowered its annual cash interest expense by roughly 60%."
+     ]
+    },
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "|(in millions of U.S. Dollars) | | |Maturity Date (1) | | |Effective Interest Rate | | |Initial Principal | | |Repayment of principal (2) | | |Conversion to common stock (3) | | |Outstanding principal | | |Unamortized premium/discount | | | | | |Ending Balance | | |Equity component | | |Fair Value | | |Fair value level | | | |New Senior Secured Notes | | |6/23/2030 | | |12\\.9 % | | |$ 1,259.2 | | |($ 623\\.3 ) | | |$ — | | |$ 635\\.9 | | |$ 59\\.2 | | | | | |$ 695\\.1 | | |$ — | | |$ 705\\.7 | | |Level 2 | | | |New 2L Non-Convertible Notes | | |6/15/2031 | | |12\\.5 % | | |296\\.4 | | |— | | |— | | |$ 296\\.4 | | |( 60\\.5 ) | | | | | |$ 235\\.9 | | |— | | |269\\.0 | | |Level 2 | | | |New 2L Non-Renesas Convertible Notes (4) | | |6/15/2031 | | |3\\.0 % | | |331\\.4 | | |— | | |( 64\\.3 ) | | |$ 267\\.1 | | |( 5\\.6 ) | | | | | |$ 261\\.5 | | |136\\.1 | | |1,059.5 | | |Level 2 | | | |New 2L Renesas Convertible Notes (5) | | |6/15/2031 | | |12\\.3 % | | |203\\.6 | | |— | | |— | | |$ 203\\.6 | | |( 74\\.0 ) | | | | | |$ 129\\.6 | | |87\\.9 | | |517\\.8 | | |Level 3 | | | |1\\.5L Convertible Notes (6) | | |3/15/2031 | | |4\\.3 % | | |379\\.0 | | |— | | |— | | |$ 379\\.0 | | |( 13\\.6 ) | | | | | |$ 365\\.4 | | |— | | |913\\.8 | | |Level 2 | | | | | | | | | | | | |$ 2,469.6 | | |($ 623\\.3 ) | | |($ 64\\.3 ) | | |$ 1,782.0 | | |($ 94\\.5 ) | | | | | |$ 1,687.5 | | |$ 224\\.0 | | |$ 3,465.8 | | | | | |",
+      "The Successor has assessed the impact of the current softening demand for its products and the competitive industry it serves on the Company's liquidity requirements over the next 12 months. To support this assessment, the Successor has analyzed the following factors: (1) its current financial condition, including available liquidity sources; (2) both conditional and unconditional obligations that are due or anticipated; (3) the funds necessary to sustain operations in light of its current financial condition, obligations, and expected cash flows; and (4) any other conditions or events that may adversely impact the Successor’s ability to meet its obligations for at least one year after the issuance date of the financial statements. Based on such evaluation, the Successor has concluded that the Successor will have sufficient liquidity to meet its future cash needs with cash, cash equivalents and short-term investments and cash flows from operations for at least one year after the issuance date of the financial statements as the restructuring of its debt significantly reduced the amount of outstanding debt and ongoing interest payments."
+     ]
+    },
+    {
+     "title": "Wolfspeed Announces Conditional 30-Year, $1.5 Billion Loan Commitment from U.S. Department of War to Advance Domestic Wide Bandgap Supply Chain | Wolfspeed",
+     "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-conditional-30-year-loan-commitment-from-us-department-of-war-to-advance-domestic-wide-bandgap-supply-chain/",
+     "excerpts": [
+      "The execution of the definitive agreements and consummation of the potential financing are subject to substantial due diligence and numerous conditions, the negotiation and finalization of agreements, significant closing conditions, governmental authorizations and approvals, appropriations and required third-party consents."
+     ]
+    }
+   ],
+   "reasoning": "Elevated balances continuing losses, restructuring history and remaining debt against disclosed liquidity and extended maturities. Conditional financing is not treated as cash. This is a judgment under incomplete current rating and payment information.",
+   "confidence": "medium"
+  },
+  {
+   "field": "payment_behaviour",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "• General Unsecured Claims – Holders of general unsecured claims received payment in full in cash, reimbursement, or such other treatment rendering such general unsecured claims unimpaired.",
+      "The Company has substantially completed its claims reconciliation process, and is working to settle all remaining outstanding prepetition claims in the ordinary course."
+     ]
+    }
+   ],
+   "reasoning": "The annual report directly states the treatment of general unsecured claims and the status of reconciliation. It does not establish present supplier payment speed, so the answer expressly limits the conclusion.",
+   "confidence": "medium"
+  },
+  {
+   "field": "debt_events",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "On June 30, 2025 (the “Petition Date”), Wolfspeed, Inc. (the \"Company,\" \"we,\" \"us,\" or \"our\") and its wholly owned subsidiary, Wolfspeed Texas LLC (together with the Company, the “Debtors”), voluntarily filed petitions (the \"Chapter 11 Cases\") for relief under Chapter 11 of the United States Bankruptcy Code (the “Bankruptcy Code”) in the United States Bankruptcy Court for the Southern District of Texas, Houston Division (the “Bankruptcy Court”) to implement a prepackaged Chapter 11 plan of reorganization (the \"Plan\"). The Chapter 11 Cases were administered jointly under the caption In re Wolfspeed, Inc., et al , case number 25-90163 (CML). The Chapter 11 filings, including the Plan and the Disclosure Statement filed on June 30, 2025, were intended to facilitate a comprehensive balance sheet restructuring pursuant to the Restructuring Support Agreement.",
+      "On March 19, 2026, the Company entered into a Securities Purchase Agreement (the “Securities Purchase Agreement”) with certain investors in connection with a private placement offering of shares of common stock and pre‑funded warrants to purchase shares of common stock, resulting in aggregate gross proceeds of approximately $96.9 million. On March 19, 2026, the Company also entered into a separate, privately negotiated issuance of 3.5% Convertible 1.5 Lien Senior Secured Notes due 2031 (the “1.5L Convertible Notes”) in an aggregate principal amount of $379.0 million. The aggregate gross proceeds from these transactions were used to repurchase $475.9 million aggregate principal amount of the New Senior Secured Notes, which the total payment of $524.3 million included a make‑whole premium funded by the Company and accrued and unpaid interest.",
+      "The New Senior Secured Notes Indenture contains certain customary affirmative covenants, negative covenants, and events of default, including a minimum liquidity financial covenant requiring the Company to have an aggregate amount of unrestricted cash and cash equivalents maintained in accounts over which the Collateral Agent has been granted a perfected first lien security interest of at least $ 350,000,000 as of the last day of any calendar month.",
+      "As of June 28, 2026, the Company was in compliance with all covenants relating to the New Senior Secured Notes, New 2L Non-Convertible Notes, New 2L Non-Renesas Convertible Notes, New 2L Renesas Convertible Notes, and the 1.5L Convertible Notes."
+     ]
+    },
+    {
+     "title": "\n\tWolfspeed Successfully Completes Financial Restructuring, Emerges as Financially Stronger Company Well Positioned in Silicon Carbide Market - Wolfspeed, Inc.\n",
+     "url": "https://investor.wolfspeed.com/news/news-details/2025/Wolfspeed-Successfully-Completes-Financial-Restructuring-Emerges-as-Financially-Stronger-Company-Well-Positioned-in-Silicon-Carbide-Market/default.aspx",
+     "excerpts": [
+      "(NYSE: WOLF), a global leader in silicon carbide technologies, today announced the successful completion of its financial restructuring process and emergence from Chapter 11 protection. Through the restructuring process, Wolfspeed has reduced its total debt by approximately 70%, with maturities extended to 2030, and lowered its annual cash interest expense by roughly 60%."
+     ]
+    },
+    {
+     "title": "Wolfspeed Announces Conditional 30-Year, $1.5 Billion Loan Commitment from U.S. Department of War to Advance Domestic Wide Bandgap Supply Chain | Wolfspeed",
+     "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-conditional-30-year-loan-commitment-from-us-department-of-war-to-advance-domestic-wide-bandgap-supply-chain/",
+     "excerpts": [
+      "**Transaction Details ** The conditional commitment letter contemplates a senior secured delayed-draw term loan facility of up to $1.5 billion. “This conditional 30-year commitment represents another significant milestone in our ongoing efforts to optimize Wolfspeed’s capital structure and improve our financial foundation,” **said Gregor van Issum, Chief Financial Officer of Wolfspeed.** “Subject to the satisfaction of diligence, negotiation of definitive agreements, and other financial, legal, and investment conditions, the broader commitment is expected to provide additional long-dated capital to support our strategic priorities, improve financial flexibility, and further position Wolfspeed for long-term value creation.” In connection with the potential financing and subject to the negotiation and execution of definitive agreements, Wolfspeed would be required to issue to the DoW VWAP-based warrants to purchase, in the aggregate, up to 7.5% of Wolfspeed’s fully diluted equity, with the warrants issuable pro rata as and when financing tranches are funded. The execution of the definitive agreements and consummation of the potential financing are subject to substantial due diligence and numerous conditions, the negotiation and finalization of agreements, significant closing conditions, governmental authorizations and approvals, appropriations and required third-party consents. There can be no assurance that definitive agreements will be executed or that any financing will be provided. Additional details are available in Wolfspeed’s Current Report on Form 8-K filed today with the U.S. Securities and Exchange Commission."
+     ]
+    }
+   ],
+   "reasoning": "Primary filings and issuer releases document bankruptcy, emergence, the March financing, covenant requirements and reported compliance, and the October conditional financing. Historical and conditional events are distinguished from current defaults and funded debt.",
+   "confidence": "high"
+  },
+  {
+   "field": "distress_signals.0",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "During the third and fourth quarters of fiscal 2025, the Company increased the scope of the planned headcount reductions, primarily in its Materials Products operations and supporting roles. The 2025 Restructuring Plan resulted in a cumulative total headcount reduction of approximately 28 %. The Company's 150mm device fabrication facility in North Carolina ceased production in the second quarter of fiscal 2026."
+     ]
+    }
+   ],
+   "reasoning": "The annual report states the cumulative workforce reduction and the fiscal-quarter timing of the Durham production cessation.",
+   "confidence": "high"
+  },
+  {
+   "field": "distress_signals.1",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "2026 Restructuring Plans During the second quarter of fiscal 2026, the Company implemented and substantially completed a headcount reduction (the \"2026 Restructuring\"), of approximately 8 %, to better align with business needs as a result of the transition of Wolfspeed's internal chip manufacturing to 200mm and reduced demand for 150mm substrates. The severance and benefit costs related to this initiative were recorded in the second quarter of fiscal 2026 in accordance with the provisions of ASC 712-10, \"Nonretirement Postemployment Benefits\". No further charges are expected.",
+      "During the fourth quarter of fiscal 2026, the Company approved a restructuring plan designed to further optimize its organizational structure with current business needs. The Company recorded severance and related benefit costs in accordance with the provisions of ASC 712-10, \"Nonretirement Postemployment Benefits\". This planned workforce reduction of approximately 6 % of the employee population is expected to occur by the first half of fiscal 2027."
+     ]
+    }
+   ],
+   "reasoning": "The filing separately identifies the approximately 8% completed plan and approximately 6% planned reduction. The answer preserves their separate bases and prospective timing.",
+   "confidence": "high"
+  },
+  {
+   "field": "distress_signals.2",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "As described above and in Note 3, \"Emergence from Voluntary Reorganization under Chapter 11'\", as of the Effective Date, the Company emerged from the Chapter 11 Cases and continues to operate as a viable going concern. The accompanying consolidated financial statements have been prepared on the basis that the Company will continue to operate as a going concern, which contemplates that the Company will be able to realize assets and settle liabilities in the normal course of business for twelve months following the date of this filing. Upon emergence from the Chapter 11 Cases, the Company significantly improved its liquidity position through a comprehensive restructuring of its capital structure. As part of the Plan, the Company issued the new debt and equity described in Note 3, \"Emergence from Voluntary Reorganization under Chapter 11,\" which resulted in a reduction of the total debt by approximately 70 % compared to the pre-emergence levels. The Company had $ 1\\.1 billion of cash, cash equivalents and short term investments as of June 28, 2026; under the terms of our New Senior Secured Notes, the Company is required to have a minimum cash balance of $ 350\\.0 million at the last calendar date of each month. The Successor has assessed the impact of the current softening demand for its products and the competitive industry it serves on the Company's liquidity requirements over the next 12 months. To support this assessment, the Successor has analyzed the following factors: (1) its current financial condition, including available liquidity sources; (2) both conditional and unconditional obligations that are due or anticipated; (3) the funds necessary to sustain operations in light of its current financial condition, obligations, and expected cash flows; and (4) any other conditions or events that may adversely impact the Successor’s ability to meet its obligations for at least one year after the issuance date of the financial statements. Based on such evaluation, the Successor has concluded that the Successor will have sufficient liquidity to meet its future cash needs with cash, cash equivalents and short-term investments and cash flows from operations for at least one year after the issuance date of the financial statements as the restructuring of its debt significantly reduced the amount of outstanding debt and ongoing interest payments."
+     ]
+    }
+   ],
+   "reasoning": "Management's sufficient-liquidity conclusion is directly disclosed and presented as a mitigating assessment, not an assurance.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [
+    {
+     "title": "Commercial Credit Report for Wolfspeed Inc - Report Preview",
+     "url": "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=4974",
+     "excerpts": [
+      "Scores and Ratings |FRISK ® Score |Z'' Score |PAYCE ® Score |DBT Index |Moody's Rating |Fitch Rating |DBRS Rating | |\\- |Yes |\\- |Yes |\\- |\\- |\\- |"
+     ]
+    }
+   ],
+   "reasoning": "No actual rating values appear in the opened preview. The broader current rating and change history remain unverified rather than proven absent.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [
+    {
+     "title": "Wolfspeed, Inc. Announces Date of Fiscal First Quarter Earnings Call for November 4, 2026 | Wolfspeed",
+     "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-inc-announces-date-of-fiscal-first-quarter-earnings-call-for-november-4-2026",
+     "excerpts": [
+      "(NYSE: WOLF), a global leader in silicon carbide technology, will conduct a conference call and audio webcast to discuss its first quarter fiscal 2027 results on Wednesday, November 4, 2026, at 5:00 pm Eastern Time. The call will be hosted by Robert Feurle, Chief Executive Officer, and Gregor van Issum, Chief Financial Officer. A live webcast of the earnings conference call along with the earnings release will be available on Wolfspeed’s Investor Relations website at [**https://investor.wolfspeed.com**](https://investor.wolfspeed.com/) ."
+     ]
+    },
+    {
+     "title": "Silicon Carbide News | Wolfspeed",
+     "url": "https://www.wolfspeed.com/company/news-events/news",
+     "excerpts": [
+      "Aug 19, 2026 [### Wolfspeed Reports Financial Results for the Fourth Quarter of Fiscal 2026](https://s29.q4cdn.com/278875087/files/doc_earnings/2026/q4/earnings-result/Wolfspeed_Q4_2026_Earnings_Release.pdf) Read More"
+     ]
+    }
+   ],
+   "reasoning": "The issuer scheduled the Q1 call for November 4 and its news page identifies the August Q4 results. These support the disclosed availability limitation but do not prove that results could not appear later that day.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [],
+   "reasoning": "An immediately drawable revolver or committed-credit amount was not verified. No negative assertion about the existence of a facility is made.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.3",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "• General Unsecured Claims – Holders of general unsecured claims received payment in full in cash, reimbursement, or such other treatment rendering such general unsecured claims unimpaired."
+     ]
+    }
+   ],
+   "reasoning": "The available evidence concerns historical claim treatment, not current supplier payment performance. Current adverse payment records remain unverified.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.4",
+   "citations": [
+    {
+     "title": "WOLFSPEED, INC. S-1 filed June 9, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526263909/d125615ds1.htm",
+     "excerpts": [
+      "|  | **Shares of Common Stock Beneficially Owned** |  | | **Name of beneficial owner** | **Number** | **Percentage** | | **5% Stockholders** |  |  | | Renesas Electronics America Inc. <sup>(1)</sup> | 23,315,760 | 39.9% | | Entities managed by Whitebox Advisors LLC <sup>(2)</sup> | 5,696,405 | 9.9% |"
+     ]
+    }
+   ],
+   "reasoning": "The S-1 provides dated beneficial ownership, which is not sufficient to establish current voting-control percentages.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.0",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**Three months ended June 28, 2026**",
+      "**Revenue, net** $149.6 $197.0"
+     ]
+    }
+   ],
+   "reasoning": "The release reports quarterly revenue of $149.6 million, converted to $149,600,000.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.1",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**Three months ended June 28, 2026**",
+      "**Operating loss** (115.4) (581.6)"
+     ]
+    }
+   ],
+   "reasoning": "The quarterly GAAP operating loss is $115.4 million; the negative sign preserves its loss character.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.2",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**Cash and cash equivalents, end of period** $576.3 $481.0 $467.2 add: Short-term Investments $512.3 $354.4 $488.2 **Cash, cash equivalents, and short-term investments** $1,088.6 $835.4 $955.4"
+     ]
+    }
+   ],
+   "reasoning": "The release reports June 28 cash and equivalents of $576.3 million.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.3",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "**Cash and cash equivalents, end of period** $576.3 $481.0 $467.2 add: Short-term Investments $512.3 $354.4 $488.2 **Cash, cash equivalents, and short-term investments** $1,088.6 $835.4 $955.4"
+     ]
+    }
+   ],
+   "reasoning": "The same reconciliation separately reports short-term investments of $512.3 million.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.4",
+   "citations": [
+    {
+     "title": "Wolfspeed Q4 FY26 Earnings Release | Wolfspeed",
+     "url": "https://assets.wolfspeed.com/uploads/2026/08/Wolfspeed_Q4_2026_Earnings_Release.pdf",
+     "excerpts": [
+      "Cash, cash equivalents, and short-term investments $1,088.6 $955.4"
+     ]
+    }
+   ],
+   "reasoning": "The issuer directly reports combined liquidity of $1,088.6 million; it is not added to the component balances as separate incremental liquidity.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.5",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "|(in millions of U.S. Dollars) | | |Maturity Date (1) | | |Effective Interest Rate | | |Initial Principal | | |Repayment of principal (2) | | |Conversion to common stock (3) | | |Outstanding principal | | |Unamortized premium/discount | | | | | |Ending Balance | | |Equity component | | |Fair Value | | |Fair value level | | | |New Senior Secured Notes | | |6/23/2030 | | |12\\.9 % | | |$ 1,259.2 | | |($ 623\\.3 ) | | |$ — | | |$ 635\\.9 | | |$ 59\\.2 | | | | | |$ 695\\.1 | | |$ — | | |$ 705\\.7 | | |Level 2 | | | |New 2L Non-Convertible Notes | | |6/15/2031 | | |12\\.5 % | | |296\\.4 | | |— | | |— | | |$ 296\\.4 | | |( 60\\.5 ) | | | | | |$ 235\\.9 | | |— | | |269\\.0 | | |Level 2 | | | |New 2L Non-Renesas Convertible Notes (4) | | |6/15/2031 | | |3\\.0 % | | |331\\.4 | | |— | | |( 64\\.3 ) | | |$ 267\\.1 | | |( 5\\.6 ) | | | | | |$ 261\\.5 | | |136\\.1 | | |1,059.5 | | |Level 2 | | | |New 2L Renesas Convertible Notes (5) | | |6/15/2031 | | |12\\.3 % | | |203\\.6 | | |— | | |— | | |$ 203\\.6 | | |( 74\\.0 ) | | | | | |$ 129\\.6 | | |87\\.9 | | |517\\.8 | | |Level 3 | | | |1\\.5L Convertible Notes (6) | | |3/15/2031 | | |4\\.3 % | | |379\\.0 | | |— | | |— | | |$ 379\\.0 | | |( 13\\.6 ) | | | | | |$ 365\\.4 | | |— | | |913\\.8 | | |Level 2 | | | | | | | | | | | | |$ 2,469.6 | | |($ 623\\.3 ) | | |($ 64\\.3 ) | | |$ 1,782.0 | | |($ 94\\.5 ) | | | | | |$ 1,687.5 | | |$ 224\\.0 | | |$ 3,465.8 | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "The debt table totals outstanding principal at $1,782.0 million, distinct from its carrying amount.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.6",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "|(in millions of U.S. Dollars) | | |Maturity Date (1) | | |Effective Interest Rate | | |Initial Principal | | |Repayment of principal (2) | | |Conversion to common stock (3) | | |Outstanding principal | | |Unamortized premium/discount | | | | | |Ending Balance | | |Equity component | | |Fair Value | | |Fair value level | | | |New Senior Secured Notes | | |6/23/2030 | | |12\\.9 % | | |$ 1,259.2 | | |($ 623\\.3 ) | | |$ — | | |$ 635\\.9 | | |$ 59\\.2 | | | | | |$ 695\\.1 | | |$ — | | |$ 705\\.7 | | |Level 2 | | | |New 2L Non-Convertible Notes | | |6/15/2031 | | |12\\.5 % | | |296\\.4 | | |— | | |— | | |$ 296\\.4 | | |( 60\\.5 ) | | | | | |$ 235\\.9 | | |— | | |269\\.0 | | |Level 2 | | | |New 2L Non-Renesas Convertible Notes (4) | | |6/15/2031 | | |3\\.0 % | | |331\\.4 | | |— | | |( 64\\.3 ) | | |$ 267\\.1 | | |( 5\\.6 ) | | | | | |$ 261\\.5 | | |136\\.1 | | |1,059.5 | | |Level 2 | | | |New 2L Renesas Convertible Notes (5) | | |6/15/2031 | | |12\\.3 % | | |203\\.6 | | |— | | |— | | |$ 203\\.6 | | |( 74\\.0 ) | | | | | |$ 129\\.6 | | |87\\.9 | | |517\\.8 | | |Level 3 | | | |1\\.5L Convertible Notes (6) | | |3/15/2031 | | |4\\.3 % | | |379\\.0 | | |— | | |— | | |$ 379\\.0 | | |( 13\\.6 ) | | | | | |$ 365\\.4 | | |— | | |913\\.8 | | |Level 2 | | | | | | | | | | | | |$ 2,469.6 | | |($ 623\\.3 ) | | |($ 64\\.3 ) | | |$ 1,782.0 | | |($ 94\\.5 ) | | | | | |$ 1,687.5 | | |$ 224\\.0 | | |$ 3,465.8 | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "The debt table reports an ending carrying balance of $1,687.5 million after unamortized premiums and discounts.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.7",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "The Successor has assessed the impact of the current softening demand for its products and the competitive industry it serves on the Company's liquidity requirements over the next 12 months. To support this assessment, the Successor has analyzed the following factors: (1) its current financial condition, including available liquidity sources; (2) both conditional and unconditional obligations that are due or anticipated; (3) the funds necessary to sustain operations in light of its current financial condition, obligations, and expected cash flows; and (4) any other conditions or events that may adversely impact the Successor’s ability to meet its obligations for at least one year after the issuance date of the financial statements. Based on such evaluation, the Successor has concluded that the Successor will have sufficient liquidity to meet its future cash needs with cash, cash equivalents and short-term investments and cash flows from operations for at least one year after the issuance date of the financial statements as the restructuring of its debt significantly reduced the amount of outstanding debt and ongoing interest payments."
+     ]
+    }
+   ],
+   "reasoning": "Management states sufficient liquidity for at least one year after issuance. Twelve months expresses that stated minimum; it is not a burn-rate-derived estimate.",
+   "confidence": "medium"
+  },
+  {
+   "field": "payment_behaviour.0",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "• General Unsecured Claims – Holders of general unsecured claims received payment in full in cash, reimbursement, or such other treatment rendering such general unsecured claims unimpaired.",
+      "The Company has substantially completed its claims reconciliation process, and is working to settle all remaining outstanding prepetition claims in the ordinary course."
+     ]
+    }
+   ],
+   "reasoning": "The filing directly reports unimpaired general unsecured claim treatment and remaining claims reconciliation. The answer does not turn that into a claim of current punctual supplier payment.",
+   "confidence": "medium"
+  },
+  {
+   "field": "debt_events.0",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "On June 30, 2025 (the “Petition Date”), Wolfspeed, Inc. (the \"Company,\" \"we,\" \"us,\" or \"our\") and its wholly owned subsidiary, Wolfspeed Texas LLC (together with the Company, the “Debtors”), voluntarily filed petitions (the \"Chapter 11 Cases\") for relief under Chapter 11 of the United States Bankruptcy Code (the “Bankruptcy Code”) in the United States Bankruptcy Court for the Southern District of Texas, Houston Division (the “Bankruptcy Court”) to implement a prepackaged Chapter 11 plan of reorganization (the \"Plan\"). The Chapter 11 Cases were administered jointly under the caption In re Wolfspeed, Inc., et al , case number 25-90163 (CML). The Chapter 11 filings, including the Plan and the Disclosure Statement filed on June 30, 2025, were intended to facilitate a comprehensive balance sheet restructuring pursuant to the Restructuring Support Agreement."
+     ]
+    }
+   ],
+   "reasoning": "The annual report gives the voluntary Chapter 11 petition date and identifies Wolfspeed as a debtor.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.1",
+   "citations": [
+    {
+     "title": "\n\tWolfspeed Successfully Completes Financial Restructuring, Emerges as Financially Stronger Company Well Positioned in Silicon Carbide Market - Wolfspeed, Inc.\n",
+     "url": "https://investor.wolfspeed.com/news/news-details/2025/Wolfspeed-Successfully-Completes-Financial-Restructuring-Emerges-as-Financially-Stronger-Company-Well-Positioned-in-Silicon-Carbide-Market/default.aspx",
+     "excerpts": [
+      "September 29, 2025",
+      "(NYSE: WOLF), a global leader in silicon carbide technologies, today announced the successful completion of its financial restructuring process and emergence from Chapter 11 protection. Through the restructuring process, Wolfspeed has reduced its total debt by approximately 70%, with maturities extended to 2030, and lowered its annual cash interest expense by roughly 60%."
+     ]
+    }
+   ],
+   "reasoning": "The dated issuer emergence release reports completion, debt reduction, cash-interest reduction and maturity extension.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.2",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "On March 19, 2026, the Company entered into a Securities Purchase Agreement (the “Securities Purchase Agreement”) with certain investors in connection with a private placement offering of shares of common stock and pre‑funded warrants to purchase shares of common stock, resulting in aggregate gross proceeds of approximately $96.9 million. On March 19, 2026, the Company also entered into a separate, privately negotiated issuance of 3.5% Convertible 1.5 Lien Senior Secured Notes due 2031 (the “1.5L Convertible Notes”) in an aggregate principal amount of $379.0 million. The aggregate gross proceeds from these transactions were used to repurchase $475.9 million aggregate principal amount of the New Senior Secured Notes, which the total payment of $524.3 million included a make‑whole premium funded by the Company and accrued and unpaid interest."
+     ]
+    }
+   ],
+   "reasoning": "The annual report describes the March securities financing, $379.0 million notes issuance and $475.9 million senior-note repurchase. A month-level event date avoids conflating agreement and issuance dates.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.3",
+   "citations": [
+    {
+     "title": "wolf-20260628",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "excerpts": [
+      "The New Senior Secured Notes Indenture contains certain customary affirmative covenants, negative covenants, and events of default, including a minimum liquidity financial covenant requiring the Company to have an aggregate amount of unrestricted cash and cash equivalents maintained in accounts over which the Collateral Agent has been granted a perfected first lien security interest of at least $ 350,000,000 as of the last day of any calendar month.",
+      "As of June 28, 2026, the Company was in compliance with all covenants relating to the New Senior Secured Notes, New 2L Non-Convertible Notes, New 2L Non-Renesas Convertible Notes, New 2L Renesas Convertible Notes, and the 1.5L Convertible Notes."
+     ]
+    }
+   ],
+   "reasoning": "The filing specifies the $350 million month-end minimum-cash covenant and reports compliance as of June 28. The answer does not extrapolate compliance to November.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.4",
+   "citations": [
+    {
+     "title": "Wolfspeed Announces Conditional 30-Year, $1.5 Billion Loan Commitment from U.S. Department of War to Advance Domestic Wide Bandgap Supply Chain | Wolfspeed",
+     "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-conditional-30-year-loan-commitment-from-us-department-of-war-to-advance-domestic-wide-bandgap-supply-chain/",
+     "excerpts": [
+      "DURHAM, N.C. — October 7, 2026 — Wolfspeed, Inc. (NYSE: WOLF) today announced it has received a conditional loan commitment letter from the U.S. Department of War (“DoW”), through its Office of Strategic Capital (“OSC”), for up to $1.5 billion of long-term financing to support the domestic development and production of silicon carbide (SiC) materials and wide bandgap power devices, with an additional focus on U.S. national security applications.",
+      "Feurle continued** , “We believe the scale and 30-year tenor of this conditional commitment reflects the long-term importance of the technology and manufacturing capabilities Wolfspeed has built in the United States **.** This financing would strengthen our continued advancement of silicon carbide materials and wide bandgap power devices, reinforcing our efforts to build a more resilient U.S. semiconductor and defense industrial base.” **Transaction Details ** The conditional commitment letter contemplates a senior secured delayed-draw term loan facility of up to $1.5 billion. “This conditional 30-year commitment represents another significant milestone in our ongoing efforts to optimize Wolfspeed’s capital structure and improve our financial foundation,” **said Gregor van Issum, Chief Financial Officer of Wolfspeed.** “Subject to the satisfaction of diligence, negotiation of definitive agreements, and other financial, legal, and investment conditions, the broader commitment is expected to provide additional long-dated capital to support our strategic priorities, improve financial flexibility, and further position Wolfspeed for long-term value creation.” In connection with the potential financing and subject to the negotiation and execution of definitive agreements, Wolfspeed would be required to issue to the DoW VWAP-based warrants to purchase, in the aggregate, up to 7.5% of Wolfspeed’s fully diluted equity, with the warrants issuable pro rata as and when financing tranches are funded. The execution of the definitive agreements and consummation of the potential financing are subject to substantial due diligence and numerous conditions, the negotiation and finalization of agreements, significant closing conditions, governmental authorizations and approvals, appropriations and required third-party consents. There can be no assurance that definitive agreements will be executed or that any financing will be provided."
+     ]
+    }
+   ],
+   "reasoning": "The October 7 issuer announcement states the conditional amount, proposed tenor and delayed-draw structure, warrant terms, and numerous closing conditions. It does not report funded proceeds.",
+   "confidence": "high"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
+}

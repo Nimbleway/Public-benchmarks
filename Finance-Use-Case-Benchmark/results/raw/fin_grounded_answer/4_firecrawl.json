@@ -1,0 +1,109 @@
+{
+ "arm": "firecrawl",
+ "sub_use_case": "fin_grounded_answer",
+ "input": "What has Salesforce changed in Agentforce pricing in 2026?",
+ "input_n": 4,
+ "tier": "spark-2/medium",
+ "status": "completed",
+ "seconds": 53,
+ "run_id": "01a1c5f7-3d2a-720b-92d4-e5e1aa543241",
+ "output": {
+  "question": "What has Salesforce changed in Agentforce pricing in 2026?",
+  "answer": "As of November 10, 2026, Salesforce has shifted Agentforce toward bundled, outcome- and consumption-based pricing rather than only the earlier per-conversation model. On September 3 it introduced Core, Advanced, and Max editions at $195, $395, and $550 per user/month; Core, Advanced, and Max include 500,000, 1 million, and 2.75 million Flex Credits per organization per year, respectively, while Max kept the Agentforce 1 price and existing Agentforce 1 customers can upgrade to Max at no extra cost. Salesforce also lists Flex Credits at $500 per 100,000 credits, Conversations at $2 each, Agentforce add-ons at $125/user/month, and Help Agent resolutions at $2 each; Help Agent uses outcome-based billing, so customers pay when an issue is resolved.",
+  "as_of": "2026-11-10",
+  "key_facts": [
+   {
+    "fact": "On September 3, 2026, Salesforce launched new Core, Advanced, and Max editions for Agentforce Sales, Service, and Industries, consolidating AI, Slack, analytics, security, and support into the editions.",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "date": "2026-09-03"
+   },
+   {
+    "fact": "The 2026 edition prices are $195 per user/month for Core, $395 per user/month for Advanced, and $550 per user/month for Max; Max maintained the Agentforce 1 price.",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "date": "2026-09-03"
+   },
+   {
+    "fact": "The new editions include 500,000 Flex Credits for Core, 1 million for Advanced, and 2.75 million for Max, each per organization per year.",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "date": "2026-09-03"
+   },
+   {
+    "fact": "Existing Agentforce 1 Edition customers can upgrade to Max at no extra cost, with up to $500 in added value.",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "date": "2026-09-03"
+   },
+   {
+    "fact": "Current Agentforce consumption prices are $500 per 100,000 Flex Credits and $2 per conversation; the page also lists Agentforce add-ons at $125 per user/month, the Agentforce User License at $5 per user/month plus Flex Credits, and Max from $550 per user/month.",
+    "source_url": "https://www.salesforce.com/agentforce/pricing/",
+    "date": "2026-11-10"
+   },
+   {
+    "fact": "Salesforce's current pricing page lists Help Agent Resolutions at $2, and Salesforce describes Help Agent as outcome-based pricing where customers pay when the agent resolves an issue autonomously.",
+    "source_url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+    "date": "2026-06-24"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Salesforce is launching new Core, Advanced, and Max editions for Agentforce Sales, Agentforce Service, and Agentforce Industries",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "publisher": "Salesforce",
+    "published_date": "2026-09-03"
+   },
+   {
+    "quote": "Core Editions now include 500,000 Flex Credits, Advanced Editions include 1 million Flex Credits, and Max Editions include 2.75 million Flex Credits",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "publisher": "Salesforce",
+    "published_date": "2026-09-03"
+   },
+   {
+    "quote": "Core Editions: $195 per user/month ... Advanced Editions: $395 per user/month ... Max Editions: $550 per user/month (zero pricing change and offering nearly 60% more value than Agentforce 1 Edition)",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "publisher": "Salesforce",
+    "published_date": "2026-09-03"
+   },
+   {
+    "quote": "existing Agentforce 1 Edition customers can upgrade at no extra cost to our new Max edition, with up to $500 in added value",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "publisher": "Salesforce",
+    "published_date": "2026-09-03"
+   },
+   {
+    "quote": "$500 USD/Per 100k Credits",
+    "source_url": "https://www.salesforce.com/agentforce/pricing/",
+    "publisher": "Salesforce",
+    "published_date": null
+   },
+   {
+    "quote": "$2 USD/Per conversation",
+    "source_url": "https://www.salesforce.com/agentforce/pricing/",
+    "publisher": "Salesforce",
+    "published_date": null
+   },
+   {
+    "quote": "With pay-per-resolution pricing, you are charged when Help Agent resolves an issue autonomously, start to finish. If the customer asks for a human or walks away unhappy, there is no charge.",
+    "source_url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+    "publisher": "Salesforce",
+    "published_date": "2026-06-24"
+   }
+  ],
+  "caveats": [
+   "Salesforce says pricing and packaging are subject to change, availability may vary by region, and customer agreements govern actual pricing.",
+   "The September 2026 announcement says existing customer pricing on legacy editions remains unchanged; the new Core and Advanced prices therefore should not be assumed to apply retroactively to all customers.",
+   "The Agentforce pricing page is a current pricing page but does not display a publication date; its figures are treated as observed on 2026-11-10.",
+   "The $2 Help Agent resolution figure is on Salesforce's current pricing page, while the Help Agent announcement establishes the outcome-based billing approach."
+  ],
+  "missing_fields": []
+ },
+ "cost_usd": 0.0673,
+ "cost_basis": "credits x Standard rate",
+ "credits": 68,
+ "exchange": {
+  "enabled": true,
+  "requireApproval": false,
+  "onTermsRequired": "skip",
+  "paidCalls": 0,
+  "creditsUsed": null
+ },
+ "error": null
+}

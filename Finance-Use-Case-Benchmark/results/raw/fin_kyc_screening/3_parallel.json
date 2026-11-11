@@ -1,0 +1,547 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "fin_kyc_screening",
+ "input": "Run a KYC screen on Binance in France",
+ "input_n": 3,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 462,
+ "run_id": "trun_63550df7c67c4a5b8069b5f3f0b3c8b9",
+ "output": {
+  "risk_rationale": "As of 2026-11-04, the risk rating is high because of the investor complaint and French money-laundering/licensing investigation described in adverse_media; these are allegations and investigations, not established convictions. The legal entity is active, but its LEI registration is lapsed. The documented ownership chain identifies Intercorp Holdco SAS as the direct shareholder and Yulong Yan and Lihua He as equal indirect owners, although the restricted beneficial-owner register was not independently inspected. OFAC and UK checks produced no confirmed exact-name match; these are limited name-based results, not comprehensive clearance. EU screening remains inconclusive. No substantiated PEP flag was identified, which is not equivalent to PEP clearance. Three findings were excluded from attribution: the foreign Binance Holdings Ltd. OFAC settlement, the Mexican INTERCORP LEGOCA sanctions namesake, and a January 2025 platform-level investigation whose source did not expressly identify this French legal entity. Missing_fields: people[*].nationality; independently verified beneficial-owner-register entries; complete supervisory-board membership; current disposition of the French proceedings; sanctions[2].match. Registration distinguishes entity creation from first registry registration.",
+  "pep": [],
+  "sanctions": [
+   {
+    "party": "BINANCE FRANCE SAS; INTERCORP HOLDCO SAS; Yulong Yan (Allan Yan); Lihua He; David Princay; Christelle Tang",
+    "source_url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.XML",
+    "list": "OFAC Specially Designated Nationals and Blocked Persons List",
+    "match": "No confirmed exact-name match located in the file dated 2026-10-28, reviewed for this screen as of 2026-11-04. INTERCORP LEGOCA, S.A. DE C.V. is a Mexican entity, not the French INTERCORP HOLDCO SAS. Limited name-based screening only; comprehensive alias, identity and ownership clearance was not established."
+   },
+   {
+    "party": "BINANCE FRANCE SAS; INTERCORP HOLDCO SAS; Yulong Yan (Allan Yan); Lihua He; David Princay; Christelle Tang",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.txt",
+    "list": "UK Sanctions List — UK financial sanctions/OFSI screening",
+    "match": "No confirmed exact-name match located in the report dated 2026-11-03, reviewed as of 2026-11-04. Limited name-based screening only; comprehensive identity and ownership clearance was not established."
+   },
+   {
+    "party": "BINANCE FRANCE SAS; INTERCORP HOLDCO SAS; Yulong Yan (Allan Yan); Lihua He; David Princay; Christelle Tang",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
+    "list": "EU consolidated list of persons, groups and entities subject to financial sanctions",
+    "match": null
+   }
+  ],
+  "namesakes_excluded": 3.0,
+  "input_name": "Binance",
+  "people": [
+   {
+    "role": "President; identified in the current officer records reviewed for the screen as of 2026-11-04.",
+    "name": "David Princay",
+    "source_url": "https://www.infogreffe.fr/entreprise/a99f822d-7499-4a67-96ae-76639c73fb54",
+    "nationality": null
+   },
+   {
+    "role": "Directrice générale / general manager; identified in the current officer records reviewed for the screen as of 2026-11-04.",
+    "name": "Christelle Tang",
+    "source_url": "https://www.hatvp.fr/le-repertoire/fiche-organisation/?organisation=905060109",
+    "nationality": null
+   },
+   {
+    "role": "Documented indirect owner, calculated at 50% through INTERCORP HOLDCO SAS. June 2026 shareholder minutes identify his equal holding in the parent; the parent's ownership of Binance France is documented in accounts as at 2025-12-31. Beneficial-owner-register status was not independently verified.",
+    "name": "Yulong Yan",
+    "source_url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+    "nationality": null
+   },
+   {
+    "role": "Documented indirect owner, calculated at 50% through INTERCORP HOLDCO SAS. June 2026 shareholder minutes identify her equal holding in the parent; the parent's ownership of Binance France is documented in accounts as at 2025-12-31. Beneficial-owner-register status was not independently verified.",
+    "name": "Lihua He",
+    "source_url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+    "nationality": null
+   }
+  ],
+  "related_entities": [
+   {
+    "relation": "Sole direct shareholder; 100% holding documented as at 2025-12-31 in the latest reviewed annual accounts. Source: https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+    "registry_number": "984909093 — RCS Paris",
+    "name": "INTERCORP HOLDCO SAS"
+   }
+  ],
+  "risk_rating": "high",
+  "registration": {
+   "registered_address": "1 rue de Stockholm, 75008 Paris, France",
+   "incorporation_date": "2021-11-03 — entity creation; first RNE/RCS registration on 2021-11-08",
+   "legal_name": "BINANCE FRANCE SAS",
+   "registry_number": "905060109 — SIREN / RCS Paris",
+   "source_url": "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+   "lei": "969500IHGTBN0TLO0129",
+   "status": "Active legal entity; LEI registration LAPSED. GLEIF last updated 2026-10-21; screen as of 2026-11-04. National-register source: https://annuaire-entreprises.data.gouv.fr/entreprise/binance-france-sas-905060109",
+   "jurisdiction": "France"
+  },
+  "adverse_media": [
+   {
+    "date": "2022-12-14",
+    "status": "Complaint filed with the public prosecutor; Binance disputed the unauthorized-promotion allegation. Subsequent disposition was not verified as of 2026-11-04.",
+    "severity": "medium",
+    "source_url": "https://www.bfmtv.com/crypto/en-france-15-investisseurs-deposent-plainte-contre-le-geant-des-cryptos-binance_AV-202212200307.html",
+    "summary": "An investor complaint expressly named Binance France alongside Binance Holdings Limited. It alleged unlicensed digital-asset services, misleading commercial practices and 'recel d’escroquerie'. Binance denied promoting its services in France before authorization. These remain allegations, not findings of liability.",
+    "category": "Investor complaint / alleged fraud and licensing breaches"
+   },
+   {
+    "date": "2023-06-16",
+    "status": "Preliminary investigation reported on this date; Binance stated that it had fully cooperated with investigators. The subsequent entity-specific disposition was not verified as of 2026-11-04.",
+    "severity": "high",
+    "source_url": "https://www.lefigaro.fr/secteur/high-tech/cryptomonnaie-une-enquete-vise-binance-france-notamment-pour-blanchiment-aggrave-20230616",
+    "summary": "Reporting expressly identified Binance's French arm as the subject of an inquiry concerning alleged illegal provision of digital-asset services and aggravated money laundering, including alleged failures in monitoring the origin of funds. No conviction or final enforcement finding against BINANCE FRANCE SAS was established by the reviewed source.",
+    "category": "Money-laundering allegations / unauthorized digital-asset services"
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "En France, 15 investisseurs déposent plainte contre le géant des cryptos Binance",
+     "url": "https://www.bfmtv.com/crypto/en-france-15-investisseurs-deposent-plainte-contre-le-geant-des-cryptos-binance_AV-202212200307.html",
+     "excerpts": [
+      "15 investisseurs clients de la plateforme ont déposé plainte le 14 décembre contre Binance France et la holding Binance Holdings Limited"
+     ]
+    },
+    {
+     "title": "Cryptomonnaie : une enquête vise Binance France, notamment pour blanchiment aggravé",
+     "url": "https://www.lefigaro.fr/secteur/high-tech/cryptomonnaie-une-enquete-vise-binance-france-notamment-pour-blanchiment-aggrave-20230616",
+     "excerpts": [
+      "La branche française de Binance, première plateforme mondiale d'échanges de cryptoactifs, est visée par une enquête à Paris pour avoir démarché des clients sans autorisation et manqué à ses obligations de contrôle des fonds de ses clients, a indiqué vendredi le parquet."
+     ]
+    },
+    {
+     "title": "BINANCE FRANCE SAS - LEI 969500IHGTBN0TLO0129",
+     "url": "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+     "excerpts": [
+      "Its LEI registration is LAPSED and its entity status is ACTIVE."
+     ]
+    },
+    {
+     "title": "Comptes annuels au 31 décembre 2025",
+     "url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+     "excerpts": [
+      "**Monsieur Yulong Yan** , associé détenant 50 actions de la Société"
+     ]
+    },
+    {
+     "title": "Société BINANCE FRANCE SAS : Chiffre d'affaires, statuts, extrait d'immatriculation",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109",
+     "excerpts": [
+      "Actionnaires et bénéficiaires effectifs de BINANCE FRANCE SAS Accès restreint aux données des bénéficiaires effectifs"
+     ]
+    }
+   ],
+   "reasoning": "The complaint expressly names Binance France, and the French-arm investigation supports a serious adverse-risk assessment without proving liability. GLEIF distinguishes active entity status from a lapsed LEI. The shareholder minutes support the documented ownership chain, while the restricted beneficial-owner information limits verification. The rating, screening limitations and missing-information disclosures are analytical conclusions rather than findings stated by a regulator.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep",
+   "citations": [],
+   "reasoning": "No substantiated evidence of a politically exposed position was located for the identified owners or officers. The empty array denotes no supported flag, not a definitive negative PEP determination.",
+   "confidence": "low"
+  },
+  {
+   "field": "sanctions",
+   "citations": [
+    {
+     "title": "sanctionslistservice.ofac.treas.gov",
+     "url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.XML",
+     "excerpts": [
+      "10/28/2026 19484 36 AEROCARIBBEAN AIRLINES Entity CUBA 12 a.k.a. strong AERO-CARIBBEAN",
+      "18094 INTERCORP LEGOCA, S.A. DE C.V. Entity SDNTK 10409 Folio Mercantil No. 65256 Mexico"
+     ]
+    },
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.txt",
+     "excerpts": [
+      "Report Date: 03-Nov-2026 Last Updated"
+     ]
+    },
+    {
+     "title": "Consolidated list of persons, groups and entities subject to EU financial sanctions",
+     "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions?locale=en",
+     "excerpts": [
+      "Consolidated Financial Sanctions File 1.1 CSV \\- Access [Access URL](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)"
+     ]
+    }
+   ],
+   "reasoning": "The official files establish the OFAC and UK snapshot dates and the EU data source. Name searches did not establish an exact match for the screened parties in the OFAC and UK material. The identified INTERCORP sanctions record describes a Mexican entity, not the French parent. These are limited name-based results. EU candidate resolution was incomplete, so its match field is null.",
+   "confidence": "low"
+  },
+  {
+   "field": "namesakes_excluded",
+   "citations": [
+    {
+     "title": "Enforcement Release: NOVEMBER 21, 2023 OFAC Settles with Binance Holdings, Ltd. for $968,618,825 Related to Apparent Violations of Multiple Sanctions",
+     "url": "https://ofac.treasury.gov/system/files/2023-11/20231121_binance.pdf",
+     "excerpts": [
+      "Binance Holdings, Ltd. (“Binance”), a Cayman Islands"
+     ]
+    },
+    {
+     "title": "sanctionslistservice.ofac.treas.gov",
+     "url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.XML",
+     "excerpts": [
+      "18094 INTERCORP LEGOCA, S.A. DE C.V. Entity SDNTK 10409 Folio Mercantil No. 65256 Mexico"
+     ]
+    },
+    {
+     "title": "Communiqué de presse",
+     "url": "https://www.tribunal-de-paris.justice.fr/sites/default/files/2025-01/20250128PRJUNALCO.pdf",
+     "excerpts": [
+      "Le 28 janvier 2025, la Juridiction nationale de lutte contre la criminalité organisée (JUNALCO) a ouvert une information judiciaire sur les infractions de blanchiment aggravé, blanchiment de fraude fiscale, blanchiment en lien avec un trafic de produit stupéfiant et exercice illégal de la profession de prestataire de service sur actifs numériques (PSAN) susceptibles d’être reprochées à la plateforme d’échange en cryptoactifs Binance"
+     ]
+    }
+   ],
+   "reasoning": "The count is an analyst tally of three excluded findings: an OFAC settlement targeting Cayman Islands Binance Holdings Ltd.; a Mexican INTERCORP sanctions namesake; and a platform-level judicial-investigation statement that does not expressly identify the screened French legal company. The unresolved EU candidate was not counted as an exclusion.",
+   "confidence": "medium"
+  },
+  {
+   "field": "input_name",
+   "citations": [],
+   "reasoning": "Binance is transcribed from the user's requested operating name; France is the requested jurisdiction. This field is not a claim that Binance is the registered legal name.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people",
+   "citations": [
+    {
+     "title": "Fiche Binance France Sas",
+     "url": "https://www.hatvp.fr/le-repertoire/fiche-organisation/?organisation=905060109",
+     "excerpts": [
+      "dirigeants Identité Fonctions exercées M PRINCAY David Président MME TANG Christelle Directrice Générale"
+     ]
+    },
+    {
+     "title": "Société BINANCE FRANCE SAS : Chiffre d'affaires, statuts, extrait d'immatriculation",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109",
+     "excerpts": [
+      "Mise à jour RCS : le 01/10/2026"
+     ]
+    },
+    {
+     "title": "Comptes annuels au 31 décembre 2025",
+     "url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+     "excerpts": [
+      "**Monsieur Yulong Yan** , associé détenant 50 actions de la Société",
+      "Au 31 décembre 2025, le capital social de 100 euros était composé de 100 actions"
+     ]
+    },
+    {
+     "title": "Binance France Sas Statuts Mis À Jour 26 09 2024",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2026-09-2024.pdf",
+     "excerpts": [
+      "**Intercorp Holdco SAS** , a French company with its registered office at 1 rue de Stockholm, 75008 Paris, registered in France with the Paris Trade and Companies Register under number 984 909 093, duly represented by its legal representative, David Prinçay, acting as sole shareholder of the Company (the \" **Sole** **Shareholder**"
+     ]
+    }
+   ],
+   "reasoning": "Official officer disclosures identify Princay and Tang, with a recent registry-derived update providing a recency signal. Primary shareholder minutes identify Yan and He as the parent's equal shareholders; the subsidiary ownership documentation establishes the indirect chain. Nationality and independently certified beneficial-owner-register status were not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities",
+   "citations": [
+    {
+     "title": "Binance France Sas Statuts Mis À Jour 26 09 2024",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2026-09-2024.pdf",
+     "excerpts": [
+      "**Intercorp Holdco SAS** , a French company with its registered office at 1 rue de Stockholm, 75008 Paris, registered in France with the Paris Trade and Companies Register under number 984 909 093, duly represented by its legal representative, David Prinçay, acting as sole shareholder of the Company (the \" **Sole** **Shareholder**"
+     ]
+    },
+    {
+     "title": "Comptes annuels au 31 décembre 2025",
+     "url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+     "excerpts": [
+      "Quote-part du capital détenue 100%"
+     ]
+    }
+   ],
+   "reasoning": "The French company's resolutions identify Intercorp Holdco SAS, including its registry identity, as sole shareholder. The subsequently reviewed annual accounts corroborate full ownership at the stated accounting date. This is a related parent, not a substitute screening subject.",
+   "confidence": "medium"
+  },
+  {
+   "field": "risk_rating",
+   "citations": [
+    {
+     "title": "Cryptomonnaie : une enquête vise Binance France, notamment pour blanchiment aggravé",
+     "url": "https://www.lefigaro.fr/secteur/high-tech/cryptomonnaie-une-enquete-vise-binance-france-notamment-pour-blanchiment-aggrave-20230616",
+     "excerpts": [
+      "Cette enquête préliminaire, « _porte d'une part sur des faits d'exercice illégal de la fonction de prestataire de services sur actifs numériques (PSAN"
+     ]
+    },
+    {
+     "title": "En France, 15 investisseurs déposent plainte contre le géant des cryptos Binance",
+     "url": "https://www.bfmtv.com/crypto/en-france-15-investisseurs-deposent-plainte-contre-le-geant-des-cryptos-binance_AV-202212200307.html",
+     "excerpts": [
+      "La plainte, déposée auprès du procureur de la République, fait état de \"violation du monopole des prestataires de services sur actifs numériques\" (PSAN, NDLR), \"pratique commerciale trompeuse"
+     ]
+    },
+    {
+     "title": "Société BINANCE FRANCE SAS : Chiffre d'affaires, statuts, extrait d'immatriculation",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109",
+     "excerpts": [
+      "Actionnaires et bénéficiaires effectifs de BINANCE FRANCE SAS Accès restreint aux données des bénéficiaires effectifs"
+     ]
+    }
+   ],
+   "reasoning": "High is an analytical KYC rating driven chiefly by serious French money-laundering allegations and licensing concerns, reinforced by an investor complaint and remaining verification gaps. It is not a judicial determination or a sanctions designation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "registration",
+   "citations": [
+    {
+     "title": "BINANCE FRANCE SAS - LEI 969500IHGTBN0TLO0129",
+     "url": "https://www.gleif.org/lei/969500IHGTBN0TLO0129",
+     "excerpts": [
+      "BINANCE FRANCE SAS is a legal entity under the jurisdiction of France (FR) with Legal Entity Identifier (LEI) 969500IHGTBN0TLO0129.",
+      "Its LEI registration is LAPSED and its entity status is ACTIVE.",
+      "Entity created at: 2021-11-03",
+      "Registration Date: 2023-04-14 Last Update: 2026-10-21 Status: LAPSED Next Renewal: 2026-04-20"
+     ]
+    },
+    {
+     "title": "Société BINANCE FRANCE SAS à 75008 PARIS - SIREN 905 060 109 | L’Annuaire des Entreprises",
+     "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/binance-france-sas-905060109",
+     "excerpts": [
+      "|SIREN |905 060 109",
+      "|Adresse postale |1 RUE DE STOCKHOLM 75008 PARIS"
+     ]
+    },
+    {
+     "title": "BINANCE FRANCE SAS (905060109) à Paris - SASh | Infogreffe",
+     "url": "https://www.infogreffe.fr/entreprise/a99f822d-7499-4a67-96ae-76639c73fb54",
+     "excerpts": [
+      "Informations complémentaires Inscription Première immatriculation le 08/11/2021",
+      "SIREN : 905 060 109 • Inscrite au R.C.S PARIS"
+     ]
+    }
+   ],
+   "reasoning": "GLEIF directly supplies the legal name, jurisdiction, LEI, creation date and distinct entity/LEI statuses. The national business directory supplies the SIREN and address; the commercial registry confirms Paris registration and first registration date. Creation on 3 November and first registration on 8 November are deliberately distinguished.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media",
+   "citations": [
+    {
+     "title": "En France, 15 investisseurs déposent plainte contre le géant des cryptos Binance",
+     "url": "https://www.bfmtv.com/crypto/en-france-15-investisseurs-deposent-plainte-contre-le-geant-des-cryptos-binance_AV-202212200307.html",
+     "excerpts": [
+      "15 investisseurs clients de la plateforme ont déposé plainte le 14 décembre contre Binance France et la holding Binance Holdings Limited",
+      "La plainte, déposée auprès du procureur de la République, fait état de \"violation du monopole des prestataires de services sur actifs numériques\" (PSAN, NDLR), \"pratique commerciale trompeuse"
+     ]
+    },
+    {
+     "title": "Cryptomonnaie : une enquête vise Binance France, notamment pour blanchiment aggravé",
+     "url": "https://www.lefigaro.fr/secteur/high-tech/cryptomonnaie-une-enquete-vise-binance-france-notamment-pour-blanchiment-aggrave-20230616",
+     "excerpts": [
+      "La branche française de Binance, première plateforme mondiale d'échanges de cryptoactifs, est visée par une enquête à Paris pour avoir démarché des clients sans autorisation et manqué à ses obligations de contrôle des fonds de ses clients, a indiqué vendredi le parquet.",
+      "Cette enquête préliminaire, « _porte d'une part sur des faits d'exercice illégal de la fonction de prestataire de services sur actifs numériques (PSAN"
+     ]
+    }
+   ],
+   "reasoning": "Both retained reports expressly connect the allegations to Binance France or its French arm. The complaint and investigation are presented as allegations, with their reported procedural stages preserved. No later entity-specific conviction, closure or sanction is inferred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.0",
+   "citations": [
+    {
+     "title": "sanctionslistservice.ofac.treas.gov",
+     "url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.XML",
+     "excerpts": [
+      "10/28/2026 19484 36 AEROCARIBBEAN AIRLINES Entity CUBA 12 a.k.a. strong AERO-CARIBBEAN",
+      "18094 INTERCORP LEGOCA, S.A. DE C.V. Entity SDNTK 10409 Folio Mercantil No. 65256 Mexico"
+     ]
+    }
+   ],
+   "reasoning": "The official SDN snapshot is dated 28 October 2026. Name-based review did not establish an exact match for the screened parties. The INTERCORP candidate has a different full legal name and Mexican identifying details, supporting exclusion rather than attribution to the French parent.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.1",
+   "citations": [
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.txt",
+     "excerpts": [
+      "Report Date: 03-Nov-2026 Last Updated"
+     ]
+    }
+   ],
+   "reasoning": "The pointer establishes the official report date. The no-confirmed-exact-name-match conclusion results from name-based review of the retrieved material, not a certificate of clearance; aliases and beneficial ownership remain limitations.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.2",
+   "citations": [
+    {
+     "title": "Consolidated list of persons, groups and entities subject to EU financial sanctions",
+     "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions?locale=en",
+     "excerpts": [
+      "Consolidated Financial Sanctions File 1.1 CSV \\- Access [Access URL](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)"
+     ]
+    }
+   ],
+   "reasoning": "The official EU dataset page identifies the consolidated CSV source. It does not establish a negative screening result. Candidate resolution was incomplete, so match is null.",
+   "confidence": "low"
+  },
+  {
+   "field": "people.0",
+   "citations": [
+    {
+     "title": "Fiche Binance France Sas",
+     "url": "https://www.hatvp.fr/le-repertoire/fiche-organisation/?organisation=905060109",
+     "excerpts": [
+      "dirigeants Identité Fonctions exercées M PRINCAY David Président MME TANG Christelle Directrice Générale"
+     ]
+    },
+    {
+     "title": "Société BINANCE FRANCE SAS : Chiffre d'affaires, statuts, extrait d'immatriculation",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109",
+     "excerpts": [
+      "[PRINCAY David](https://www.pappers.fr/dirigeant/david_princay_1987-12) Président 38 ans - 12/1987 Depuis le 15/11/2021"
+     ]
+    }
+   ],
+   "reasoning": "The official HATVP disclosure and registry-derived company record identify David Princay as president. No nationality is established by these records, so nationality is null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.1",
+   "citations": [
+    {
+     "title": "Fiche Binance France Sas",
+     "url": "https://www.hatvp.fr/le-repertoire/fiche-organisation/?organisation=905060109",
+     "excerpts": [
+      "dirigeants Identité Fonctions exercées M PRINCAY David Président MME TANG Christelle Directrice Générale"
+     ]
+    },
+    {
+     "title": "Société BINANCE FRANCE SAS : Chiffre d'affaires, statuts, extrait d'immatriculation",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109",
+     "excerpts": [
+      "[TANG Christelle](https://www.pappers.fr/dirigeant/christelle_tang_1991-06) Directeur général 35 ans - 06/1991 Depuis le 12/07/2023"
+     ]
+    }
+   ],
+   "reasoning": "The official HATVP disclosure and registry-derived record identify Christelle Tang as general manager. Appointment-date variations between secondary records are not reproduced. Nationality remains null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.2",
+   "citations": [
+    {
+     "title": "Comptes annuels au 31 décembre 2025",
+     "url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+     "excerpts": [
+      "**PROCES-VERBAL VERBAL DES DECISIONS DES ASSOCIES** **DU JUIN 2026** **_MINUTES OF THE SHAREHOLDERS DECISIONS_** **_DATED JUNE 2026_** **Monsieur Yulong Yan** , associé détenant 50 actions de la Société",
+      "Au 31 décembre 2025, le capital social de 100 euros était composé de 100 actions",
+      "Quote-part du capital détenue 100%"
+     ]
+    },
+    {
+     "title": "Binance France Sas Statuts Mis À Jour 26 09 2024",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2026-09-2024.pdf",
+     "excerpts": [
+      "**Intercorp Holdco SAS** , a French company with its registered office at 1 rue de Stockholm, 75008 Paris, registered in France with the Paris Trade and Companies Register under number 984 909 093, duly represented by its legal representative, David Prinçay, acting as sole shareholder of the Company (the \" **Sole** **Shareholder**"
+     ]
+    }
+   ],
+   "reasoning": "The June 2026 minutes identify Yan's holding in the parent; the capital note and subsidiary ownership documentation support the calculation of an equal indirect interest. This is a documented ownership-chain inference, not a certified beneficial-owner-register entry. Nationality was not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.3",
+   "citations": [
+    {
+     "title": "Comptes annuels au 31 décembre 2025",
+     "url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+     "excerpts": [
+      "**PROCES-VERBAL VERBAL DES DECISIONS DES ASSOCIES** **DU JUIN 2026** **_MINUTES OF THE SHAREHOLDERS DECISIONS_** **_DATED JUNE 2026_** **Monsieur Yulong Yan** , associé détenant 50 actions de la Société",
+      "Au 31 décembre 2025, le capital social de 100 euros était composé de 100 actions",
+      "Quote-part du capital détenue 100%"
+     ]
+    },
+    {
+     "title": "Binance France Sas Statuts Mis À Jour 26 09 2024",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2026-09-2024.pdf",
+     "excerpts": [
+      "**Intercorp Holdco SAS** , a French company with its registered office at 1 rue de Stockholm, 75008 Paris, registered in France with the Paris Trade and Companies Register under number 984 909 093, duly represented by its legal representative, David Prinçay, acting as sole shareholder of the Company (the \" **Sole** **Shareholder**"
+     ]
+    }
+   ],
+   "reasoning": "The June 2026 minutes identify He's equal holding in the parent. Combining it with the documented sole-parent relationship yields the stated indirect interest. Independent beneficial-owner-register confirmation and nationality are unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.0",
+   "citations": [
+    {
+     "title": "Binance France Sas Statuts Mis À Jour 26 09 2024",
+     "url": "https://www.pappers.fr/entreprise/binance-france-sas-905060109/documents/BINANCE%20FRANCE%20SAS%20-%20Statuts%20mis%20%C3%A0%20jour%2026-09-2024.pdf",
+     "excerpts": [
+      "**Intercorp Holdco SAS** , a French company with its registered office at 1 rue de Stockholm, 75008 Paris, registered in France with the Paris Trade and Companies Register under number 984 909 093, duly represented by its legal representative, David Prinçay, acting as sole shareholder of the Company (the \" **Sole** **Shareholder**"
+     ]
+    },
+    {
+     "title": "Comptes annuels au 31 décembre 2025",
+     "url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093/comptes/INTERCORP%20HOLDCO%20SAS%20-%20Comptes%20sociaux%202025%2009-07-2026.pdf",
+     "excerpts": [
+      "Quote-part du capital détenue 100%"
+     ]
+    },
+    {
+     "title": "Société INTERCORP HOLDCO SAS : Chiffre d'affaires, statuts, extrait d'immatriculation",
+     "url": "https://www.pappers.fr/entreprise/intercorp-holdco-sas-984909093",
+     "excerpts": [
+      "Intercorp Holdco SAS 984 909 093 · Active"
+     ]
+    }
+   ],
+   "reasoning": "The resolutions provide the parent's identity, Paris registry number and sole-shareholder status. The accounts corroborate the holding at the stated accounting date. The relationship is dated rather than assumed unchanged indefinitely.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.0",
+   "citations": [
+    {
+     "title": "En France, 15 investisseurs déposent plainte contre le géant des cryptos Binance",
+     "url": "https://www.bfmtv.com/crypto/en-france-15-investisseurs-deposent-plainte-contre-le-geant-des-cryptos-binance_AV-202212200307.html",
+     "excerpts": [
+      "Publié le 20/12/2022 à 12h27",
+      "15 investisseurs clients de la plateforme ont déposé plainte le 14 décembre contre Binance France et la holding Binance Holdings Limited",
+      "La plainte, déposée auprès du procureur de la République, fait état de \"violation du monopole des prestataires de services sur actifs numériques\" (PSAN, NDLR), \"pratique commerciale trompeuse",
+      "> \"Binance n’a pas fait de promotion en France avant d’être autorisé à le faire. Les groupes Telegram sont des forums communautaires mondiaux, que n’importe quel utilisateur de Telegram peut créer ou rejoindre volontairement"
+     ]
+    }
+   ],
+   "reasoning": "The article's publication date establishes the year for the reported 14 December filing, and it expressly names Binance France. It gives the alleged offenses and Binance's denial. Medium severity is an analytical assessment; no later disposition is claimed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.1",
+   "citations": [
+    {
+     "title": "Cryptomonnaie : une enquête vise Binance France, notamment pour blanchiment aggravé",
+     "url": "https://www.lefigaro.fr/secteur/high-tech/cryptomonnaie-une-enquete-vise-binance-france-notamment-pour-blanchiment-aggrave-20230616",
+     "excerpts": [
+      "Le 16 juin 2023 à 19h38",
+      "La branche française de Binance est visée par une enquête judiciaire pour avoir démarché des clients sans autorisation et manqué à ses obligations de contrôle des fonds",
+      "Cette enquête préliminaire, « _porte d'une part sur des faits d'exercice illégal de la fonction de prestataire de services sur actifs numériques (PSAN",
+      "Sur Twitter, Binance a assuré avoir « _pleinement coopéré"
+     ]
+    }
+   ],
+   "reasoning": "The dated report explicitly identifies Binance's French arm and describes a preliminary investigation into licensing and aggravated-money-laundering allegations, together with its cooperation response. The date is the reporting date, not an invented investigation-opening date. High severity is an analytical assessment; subsequent entity-specific legal outcome remains unverified.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list"
+}

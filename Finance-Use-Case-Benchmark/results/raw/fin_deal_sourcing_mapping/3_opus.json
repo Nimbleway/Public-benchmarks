@@ -1,0 +1,64 @@
+{
+ "arm": "opus",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find founder-owned US specialty chemical distributors with 50-250 employees and no private equity owner",
+ "input_n": 3,
+ "tier": "high",
+ "status": "completed",
+ "seconds": 386,
+ "run_id": "763825a3-1e6b-4141-a0da-ef21bc08f472",
+ "output": {
+  "companies": [
+   {
+    "name": "Gantrade Corporation",
+    "domain": "gantrade.com",
+    "hq": "Park Ridge, NJ, USA (founded in Montvale, NJ; the company's July 2025 release is datelined Montvale)",
+    "founded_year": 1975,
+    "employees": "About 62 as of Oct 2026, across North America, Europe and Asia; size band 51-200 (LeadIQ estimate, https://leadiq.com/c/gantrade-corporation/607dbf0a1be80a5a76ceca12)",
+    "ownership": "founder-owned (inferred: founder Mahendra Parekh is listed as President of a private company; no page I opened shows his share of ownership)",
+    "criteria_evidence": [
+     {
+      "criterion": "Founder-owned",
+      "evidence": "Company release dated July 10, 2025: Gantrade was founded in 1975 in Montvale, NJ by Mahendra Parekh. MarketScreener lists Mahendra Parekh as the current President of Gantrade Corp., described as a private company (no start date or shareholding shown). The Gantrade Europe entities are run by Parekh family members (Hemal Aaron Parekh, Nayan Gregory Parekh).",
+      "source_url": "https://www.gantrade.com/blog/gantrade-corporation-celebrates-50-years-of-excellence-innovation-and-global-growth"
+     },
+     {
+      "criterion": "Founder-owned (founder's current role)",
+      "evidence": "MarketScreener insider profile: Mahendra Parekh, President, Gantrade Corp. (private company).",
+      "source_url": "https://ca.marketscreener.com/insider/MAHENDRA-PAREKH-A0A67A"
+     },
+     {
+      "criterion": "US-based",
+      "evidence": "Americas office in Park Ridge, NJ, listed first among its offices (others in the UK, Belgium and Dalian, China). LeadIQ also lists the HQ as Park Ridge, New Jersey.",
+      "source_url": "https://www.gantrade.com/about-us"
+     },
+     {
+      "criterion": "Specialty chemical distributor",
+      "evidence": "Supplies monomers, intermediates and polymers (polyols, epoxy resins, isocyanates, acrylates, PTMEG, solvents) to coatings, adhesives, sealants and elastomers, plus plastics, construction, textiles and packaging. Stocks inventory on three continents.",
+      "source_url": "https://www.gantrade.com/blog/gantrade-corporation-celebrates-50-years-of-excellence-innovation-and-global-growth"
+     },
+     {
+      "criterion": "50-250 employees",
+      "evidence": "About 62 employees as of Oct 2026; size band 51-200 (third-party estimate).",
+      "source_url": "https://leadiq.com/c/gantrade-corporation/607dbf0a1be80a5a76ceca12"
+     },
+     {
+      "criterion": "No private equity owner",
+      "evidence": "A search for Gantrade acquisitions or private equity deals in 2024-2026 found nothing (results were only namesakes such as Gantrex and Gantner). Neither Gantrade's own pages nor MarketScreener mention an outside investor; MarketScreener lists it as private.",
+      "source_url": "https://ca.marketscreener.com/insider/MAHENDRA-PAREKH-A0A67A"
+     }
+    ],
+    "headcount_growth": null,
+    "last_round": null,
+    "traction": "50th anniversary in 2025, with entities opened in the UK (1981), China (2005) and Belgium (2019). Site headlines mention a Union Pacific Pinnacle Award for the second year running and a North American launch of ROPOL polycarbonate polyols with Cromogenia. LeadIQ estimates revenue at $50M-$100M (as of Oct 2026). Sources: https://www.gantrade.com/blog/gantrade-corporation-celebrates-50-years-of-excellence-innovation-and-global-growth ; https://leadiq.com/c/gantrade-corporation/607dbf0a1be80a5a76ceca12",
+    "rank": 1,
+    "rank_reason": "The only candidate with evidence for every criterion: US-based, distributes CASE and urethane specialty intermediates, about 62 employees, the 1975 founder still listed as President, and no private equity deal found. Two weak points: ownership is inferred from his title rather than from a filing, and the headcount is a third-party estimate near the bottom of the range. Not bootstrapped, so there is no funding round; last_round is null."
+   }
+  ],
+  "search_notes": "Scope as of 2026-11-10. I read 'founder-owned' strictly as the founder still owning the company. Multi-generation family firms, ESOPs and owners who bought out the founder do not count. Only Gantrade qualified. missing_fields for Gantrade: headcount_growth (I opened only one dated count; a search snippet put LeadIQ at about 69 as of Dec 2025, but I did not open that version, so there are not two verified dated counts) and last_round (no funding round found). EXCLUDED, owned by private equity or a strategic buyer: Mays Chemical (sold to Ravago, July 2024; capstonepartners.com); Shrieve Chemical (Gemspring Capital, continuation vehicle led by StepStone); Connection Chemical (bought by Shrieve, Nov 2024); EMCO Chemical (founder-owned but over 500 employees, and Lindsay Goldberg agreed to buy it; mdm.com); Aakash Chemicals (CenterOak Partners majority stake, 2017); Callahan Chemical (Tilley-Phoenix/SK Capital, 2022); Charkit Chemical (LeBaronBrown Industries majority stake); U.S. Chemicals (Maroon Group/CI Capital, 2016); M.F. Cachat (IMCD, 2015); Ribelin (KODA, then Azelis); Deveraux Specialties (Safic-Alcan, 2026); Access Ingredients (Vivify/Gryphon). EXCLUDED, employee-owned: Sea-Land Chemical (100% ESOP), Essential Ingredients (employee-owned; founders Maynard and Gerlach), Dorsett & Jackson, TCR Industries, Palmer Holland. EXCLUDED, family-owned but the founder no longer owns it: Coyne Chemical (founded 1868), GJ Chemical (now led by Diana Colonna and Robert Masci; LeadIQ about 255 employees), Seeler Industries (founded 1978; Steve Seeler, EVP in 2013 and now CEO, so likely second generation), Lintech International (founder Tom Hinson was succeeded by CEO Julie Van Brunt in 2013; woman-owned), Catalynt Solutions/TRInternational (founder Anthony Ridnell; CEO Megan Gluth bought 100% in 2021). NEAR-MISSES, a criterion could not be verified: Wego Chemical Group, Great Neck NY (founded 1978, privately owned, 'family-built', 200+ employees per womeninchemicals.com, led by CEO Bert Eshaghpour; no source confirms he or a relative founded it, and directories also name partner Edward Khalily); Silver Fern Chemical, Seattle (founded 2004 by Lisa and Sam King, who still run it as a family business with nine US warehouses; headcount unverified, with directories ranging from about 15 to 50-100, and the Vaia listing appeared to describe a Santa Barbara entity); Chem-Materials, Westlake OH (in business since 1987, president Phil Haagensen; founder, ownership and headcount not found). EXCLUDED, too small: The Plaza Group, Houston (founder Randy Velarde; about 35 employees, mainly petrochemical marketing) and Tri-iso (about 11-25 employees). EXCLUDED, other: RSC Chemical Solutions (mainly a manufacturer, not founder-owned) and Norman, Fox & Co. (manufacturer and repackager; ownership unverified). Limits: I could not read two PDFs (a CCD Partners 2025 distribution watchlist and a 2019 Form 5500 filing for Silver Fern), the Alliance for Chemical Distribution full member directory was not opened, and several headcounts come from third-party estimates. Next steps would be the ACD member list, state filings for Wego and Silver Fern, and LinkedIn headcounts."
+ },
+ "raw_text": null,
+ "cost_usd": 1.9346854999999994,
+ "cost_basis": "Claude Code reported, API-equivalent",
+ "num_turns": 70
+}

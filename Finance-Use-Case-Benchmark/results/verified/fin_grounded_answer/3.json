@@ -1,0 +1,601 @@
+{
+ "sub_use_case": "fin_grounded_answer",
+ "input_n": 3,
+ "task": "What changed in the most recent FOMC statement compared with the previous one?",
+ "labels": {
+  "gpt": "A",
+  "nimble": "B",
+  "firecrawl": "C",
+  "opus": "D",
+  "parallel": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 4,
+ "evidence_fetched": 4,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 17,
+ "judge": "v4b",
+ "judge_cost_usd": 0.659,
+ "corrections_v2": {
+  "units_before": 18,
+  "units_after": 16,
+  "dedup_groups": [
+   {
+    "kept": "c6",
+    "merged": [
+     "c5"
+    ]
+   },
+   {
+    "kept": "c16",
+    "merged": [
+     "c17"
+    ]
+   }
+  ],
+  "cost": 0.012
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "The October 28, 2026 FOMC statement decided to maintain the federal funds target range at 3-3/4 to 4 percent.",
+   "asserted_by": [
+    "B",
+    "F",
+    "E",
+    "C",
+    "A",
+    "D"
+   ],
+   "variants": {
+    "B": "The most recent FOMC statement was issued October 28, 2026 (October 27-28 meeting), and the FOMC decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent.",
+    "F": "At its October 28, 2026 meeting, the FOMC decided to maintain the federal funds target range at 3-3/4 to 4 percent.",
+    "E": "At its October 28, 2026 meeting, the FOMC decided to maintain the federal funds target range at 3-3/4 to 4 percent.",
+    "C": "In its October 28, 2026 statement, the FOMC decided to maintain the federal funds target range at 3-3/4 to 4 percent.",
+    "A": "The most recent FOMC statement, dated October 28, 2026, held the federal funds target range at 3.75%–4.00%.",
+    "D": "In the October 28, 2026 FOMC statement, the Committee decided to maintain the federal funds target range at 3-3/4 to 4 percent."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/2026-press-fomc.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The most recent FOMC statement was released on October 28, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The most recent FOMC statement was released on October 28, 2026."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The previous FOMC statement (September 16, 2026) raised the federal funds target range by 1/4 percentage point to 3-3/4 to 4 percent.",
+   "asserted_by": [
+    "B",
+    "F",
+    "E",
+    "C",
+    "A",
+    "D"
+   ],
+   "variants": {
+    "B": "The previous FOMC statement (September 16, 2026) raised the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent.",
+    "F": "At its September 16, 2026 meeting, the FOMC raised the federal funds target range by 25 basis points (1/4 percentage point) to 3-3/4 to 4 percent.",
+    "E": "At its September 16, 2026 meeting, the FOMC raised the federal funds target range by 1/4 percentage point to 3-3/4 to 4 percent.",
+    "C": "In its September 16, 2026 statement, the FOMC decided to raise the federal funds target range by 1/4 percentage point to 3-3/4 to 4 percent.",
+    "A": "The previous FOMC statement, dated September 16, 2026, raised the federal funds target range by 0.25 percentage point to 3.75%–4.00%.",
+    "D": "In the September 16, 2026 FOMC statement, the Committee raised the federal funds target range by 1/4 percentage point to 3-3/4 to 4 percent."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The September 16, 2026 FOMC statement was approved unanimously, 12–0.",
+   "asserted_by": [
+    "B",
+    "F",
+    "E",
+    "C",
+    "A",
+    "D"
+   ],
+   "variants": {
+    "B": "The September 16, 2026 FOMC statement was approved unanimously by a 12-0 vote.",
+    "F": "The September 16, 2026 FOMC statement was approved by a unanimous 12–0 vote.",
+    "E": "The September 16, 2026 FOMC statement was approved by a 12–0 vote.",
+    "C": "The FOMC's September 16, 2026 statement was approved by a unanimous 12-0 vote.",
+    "A": "The September 16, 2026 FOMC vote was 12–0.",
+    "D": "The September 16, 2026 FOMC policy vote was 12–0."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "The October 28, 2026 FOMC statement was approved 10–2, with Lisa D. Cook and Beth M. Hammack dissenting because they preferred to raise the target range by 1/4 percentage point.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "The October 28, 2026 FOMC statement was approved by a 10-2 vote, with Lisa D. Cook and Beth M. Hammack dissenting because they preferred to raise the target range for the federal funds rate by 1/4 percentage point.",
+    "F": "The October 28, 2026 FOMC statement was approved by a 10–2 vote, with Lisa D. Cook and Beth M. Hammack dissenting because they preferred to raise the target range by 1/4 percentage point.",
+    "C": "The FOMC's October 28, 2026 statement was approved by a 10-2 vote, with Lisa D. Cook and Beth M. Hammack dissenting because they preferred to raise the target range by 1/4 percentage point.",
+    "A": "The October 28, 2026 FOMC vote was 10–2, with Lisa Cook and Beth Hammack dissenting in favor of another quarter-point rate increase.",
+    "D": "The October 28, 2026 FOMC policy vote was 10–2, with Lisa D. Cook and Beth M. Hammack dissenting because they favored another 1/4-point rate increase."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "The description of economic activity changed from expanding at a 'solid' pace (September 2026) to a 'strong' pace (October 2026).",
+   "asserted_by": [
+    "B",
+    "F",
+    "E",
+    "C",
+    "A",
+    "D"
+   ],
+   "variants": {
+    "B": "The October 2026 FOMC statement describes economic activity as expanding at a 'strong pace', replacing the September statement's 'solid pace'.",
+    "F": "The FOMC's description of economic activity changed from 'expanding at a solid pace' in the September 2026 statement to 'expanding at a strong pace' in the October 28, 2026 statement.",
+    "E": "The October 28, 2026 FOMC statement described economic activity as expanding at a 'strong' pace. The September 16, 2026 FOMC statement described economic activity as expanding at a 'solid' pace.",
+    "C": "The FOMC's October 28, 2026 statement describes economic activity as expanding at a 'strong' pace, whereas the September statement described it as expanding at a 'solid' pace.",
+    "A": "The October 28, 2026 FOMC statement described economic activity as expanding at a 'strong' pace, whereas the September 16 statement described it as 'solid'.",
+    "D": "The FOMC's description of economic activity changed from expanding at a 'solid pace' in the September 2026 statement to expanding at a 'strong pace' in the October 2026 statement."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "The September statement said the policy action would support a timelier return of inflation to the 2 percent goal; the October statement dropped that and instead said the accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to 2 percent.",
+   "asserted_by": [
+    "B",
+    "F",
+    "E",
+    "C",
+    "A",
+    "D"
+   ],
+   "variants": {
+    "B": "The October 2026 FOMC statement dropped September's inflation sentence 'Today's policy action will support a timelier return to the Committee's 2 percent goal' and replaced it with 'The accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to the Committee's 2 percent goal.'",
+    "F": "The September 16, 2026 FOMC statement said the policy action would support a timelier return of inflation to the Committee's 2 percent goal. The October 28, 2026 FOMC statement said the accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to its 2 percent goal.",
+    "E": "The October 28, 2026 FOMC statement said the accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to its 2 percent goal. The September 16, 2026 FOMC statement said the policy action would support a timelier return to the Committee's 2 percent goal.",
+    "C": "The FOMC's inflation language changed from saying the September policy action would support a timelier return of inflation to the 2 percent goal to saying that the accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to 2 percent.",
+    "A": "The September 16, 2026 FOMC statement said the policy action would support a timelier return to the Committee's 2 percent inflation goal. The October 28, 2026 statement replaced the September assurance about the hike's effects with language that the accumulation of more information will help the Committee determine the policy stance.",
+    "D": "The September 2026 FOMC hike was tied to a 'timelier return' of inflation to 2 percent, whereas the October 2026 statement said more information will help the Committee set a policy stance ensuring a timely return to its 2 percent goal (based on paraphrases, not exact quotes)."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "The shift in inflation language suggests a data-dependent pause.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "...suggesting a data-dependent pause (based on paraphrases, not exact quotes)."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Both the September and October 2026 statements say uncertainty remains elevated owing in part to geopolitical developments, domestic spending has been resilient, productivity growth is strong, capital investment is robust, and job gains have kept pace with the workforce with the unemployment rate little changed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Both the September and October 2026 FOMC statements say uncertainty remains elevated owing in part to geopolitical developments, domestic spending has been resilient, productivity growth is strong, capital investment is robust, and job gains have kept pace with the workforce with the unemployment rate little changed."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "The labor-market sentence ('Job gains have kept pace with the workforce...') was unchanged between the September and October 2026 statements.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The labor-market sentence ('Job gains have kept pace with the workforce...') was unchanged between the September and October 2026 FOMC statements."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Both the September and October 2026 statements say the Committee continues maintaining ample reserves, that inflation remains elevated, and that the Committee will deliver price stability.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Both the September and October 2026 FOMC statements say the Committee continues its policy of maintaining ample reserves in the banking system, that inflation remains elevated, and that the Committee will deliver price stability."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "The Fed continues to maintain ample reserves, as in the September 2026 statement.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The Fed continues to maintain ample reserves, as in the September 2026 statement."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "The line 'Inflation remains elevated' was unchanged between the September and October 2026 statements.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The line 'Inflation remains elevated' was unchanged between the September and October 2026 FOMC statements."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "The remaining economic assessments, the ample-reserves policy and the commitment to price stability were unchanged between the September 16 and October 28, 2026 statements.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The remaining economic assessments, the ample-reserves policy and the commitment to price stability were unchanged between the September 16 and October 28, 2026 FOMC statements."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "The next FOMC meeting is scheduled/expected for December 8–9, 2026.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "As of October 28, 2026, the Federal Reserve calendar listed the next FOMC meeting for December 8–9, 2026.",
+    "D": "The next FOMC meeting is expected on December 8–9, 2026."
+   },
+   "urls": [],
+   "conflicts_with": [],
+   "merged_from": [
+    "c16",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "Minutes of the October 2026 FOMC meeting are scheduled for release on November 18, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Minutes of the October 2026 FOMC meeting are scheduled for release on November 18, 2026."
+   },
+   "urls": [
+    "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "Oct 28 statement maintains the range at 3-3/4 to 4 percent; all variants match.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/2026-press-fomc.htm",
+   "note": "Fed press release list last updated Oct 28, 2026, and the Oct 28 statement is the latest one.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+   "note": "Sept 16 statement raised the range by 1/4 point to 3-3/4 to 4 percent.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+   "note": "Sept statement was approved by a 12-0 vote.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "Cook and Hammack dissented, preferring a 1/4-point hike.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "B": "true",
+    "F": "true",
+    "C": "true",
+    "A": "true",
+    "D": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "Sept said 'solid pace'; Oct said 'strong pace', per the excerpts and the Sept passage.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "Sept said the action would support a timelier return; Oct says more information will help determine the stance.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+   "note": "The Sept text matches; the Oct text is not fully shown, but the fragmentary and cross-system evidence suggests the same language, so this is a medium-confidence call.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+   "note": "Sept sentence is confirmed; Oct is not shown in the passages but is consistent with the other systems' claims, so medium confidence.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "Oct passages show 'The Committee is continu[ing]...' and 'will deliver price stability'; Sept confirmed.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "Both statements say the Committee is continuing its policy of maintaining ample reserves.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+   "note": "Sept confirmed; Oct is not shown directly but is consistent with the other systems, so medium confidence.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "Largely consistent with the passages; the main changes are the rate decision, the 'strong' wording, the inflation sentence and the dissents. Medium confidence.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "note": "The saved passages don't show the date, but the published 2026 FOMC calendar lists December 8-9 as the next meeting after October 27-28. This is context, not a statement change.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "B": "true"
+   }
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "note": "Minutes are normally released three weeks after the meeting, which gives Wednesday, November 18, 2026. The passages don't state the date.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "The Oct 28 statement held the rate at 3-3/4 to 4% after the Sept 16 hike, and the inflation line changed from \"Today's policy action will support a timelier return\" to \"The accumulation of more information will help the Committee determine the policy stance\". That reads as data-dependent wording ...",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "note": "Checked on federalreserve.gov. The Sept 16 and Oct 28, 2026 statements both say 'The Committee is continuing its policy of maintaining ample reserves in the banking system', 'Inflation remains elevated.' and 'The Committee will deliver price stability.'"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "note": "Both statements use the exact sentence 'Inflation remains elevated.' The sentence after it changed: Sept said 'Today's policy action will support a timelier return...' and Oct says 'The accumulation of more information will help...'"
+  }
+ },
+ "scores": {
+  "gpt": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 81.75,
+   "coverage": 0.624,
+   "accuracy": 1.0,
+   "combined": 0.768,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 81.75,
+   "coverage": 0.697,
+   "accuracy": 1.0,
+   "combined": 0.822,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 81.75,
+   "coverage": 0.587,
+   "accuracy": 1.0,
+   "combined": 0.74,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 81.75,
+   "coverage": 0.89,
+   "accuracy": 1.0,
+   "combined": 0.942,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 81.75,
+   "coverage": 0.587,
+   "accuracy": 1.0,
+   "combined": 0.74,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 81.75,
+   "coverage": 0.624,
+   "accuracy": 1.0,
+   "combined": 0.768,
+   "metric": "F1"
+  }
+ }
+}

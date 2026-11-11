@@ -1,0 +1,168 @@
+{
+ "arm": "opus",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Vercel (vercel.com)",
+ "input_n": 3,
+ "tier": "medium",
+ "status": "completed",
+ "seconds": 102,
+ "run_id": "edc1f0c2-a150-48d7-adc2-5b5481b21789",
+ "output": {
+  "company": "Vercel (vercel.com)",
+  "what_they_do": {
+   "value": "Vercel calls itself \"Agentic Infrastructure\": \"For coding agents to ship apps and agents automated by agents.\"",
+   "source_url": "https://vercel.com/",
+   "as_of": "2026-11-10"
+  },
+  "priorities": [
+   {
+    "priority": "Making Vercel the platform where AI agents build, deploy and run software",
+    "evidence": "Ship 2026 launches: Python GA, Vercel Daemons (public beta), Vercel Drives GA for Sandbox, persistent memory in the eve agent framework, Vercel Connect GA with more than 1,000 connectors, and MCP Events (beta). Rauch said that over 12 months developer count rose 3x, new projects doubled and agent-triggered deployments rose 28x.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "priority": "Growing AI Gateway as a multi-model control layer",
+    "evidence": "Ship 2026 added spending budgets, US-only inference and Zero Data Retention to AI Gateway. Virtual Models launched on Oct 28. Vercel's November Production Index says decision models made up 26.1% of Gateway requests in October and that Anthropic is the first-choice lab for 42.7% of new teams, versus 24.0% for OpenAI.",
+    "date": "2026-11-09",
+    "source_url": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
+   },
+   {
+    "priority": "Security for the platform and for customers' code",
+    "evidence": "Vercel Security Review, an AI code scanner that runs on every GitHub push, is in public beta for Pro and Enterprise teams. Vercel is rolling out Device Bound Session Credentials to tie login sessions to devices. CTO Malte Ubl says DPoP is coming to the CLI.",
+    "date": "2026-11-05",
+    "source_url": "https://helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking"
+   },
+   {
+    "priority": "Developer workflow tools built for high volumes of agent-generated pull requests",
+    "evidence": "Vercel CI is in beta on all plans. It runs only the tasks a change affects, and Vercel says it got its own push-to-green 2-6x faster, with almost 8M tasks run. Vercel Schedules (public beta, Nov 4) lets agents and apps create recurring or one-time tasks at runtime without redeploying.",
+    "date": "2026-10-28",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   },
+   {
+    "priority": "Getting ready for an IPO while revenue grows fast",
+    "evidence": "Rauch said Vercel is \"getting more ready for it every day\" and gave no exact timing. Forbes put the revenue run rate at $340M at the end of February 2026, up from $100M at the start of 2024. In a separate interview Rauch said \"I think next year\" about an IPO.",
+    "date": "2026-04-13",
+    "source_url": "https://finance.yahoo.com/markets/stocks/articles/vercel-ceo-guillermo-rauch-signals-152229505.html"
+   }
+  ],
+  "challenges": [
+   {
+    "challenge": "Fallout from a security breach through a third-party AI tool",
+    "evidence": "Attackers compromised Context.ai, an AI tool a Vercel employee used, then took over that employee's Google Workspace and Vercel accounts. They moved through internal systems and decrypted customers' non-sensitive environment variables. Vercel brought in Google Mandiant. The incident was closed on 2026-10-16 after all remediation was finished.",
+    "date": "2026-10-16",
+    "source_url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident"
+   },
+   {
+    "challenge": "Competition from hyperscalers and Cloudflare, and a weak market for software IPOs",
+    "evidence": "Coverage names Cloudflare and AWS as hosting competitors. It also says a sharp sell-off in software stocks, driven by fears of AI disruption, has largely frozen the IPO pipeline.",
+    "date": "2026-04-13",
+    "source_url": "https://finance.yahoo.com/markets/stocks/articles/vercel-ceo-guillermo-rauch-signals-152229505.html"
+   },
+   {
+    "challenge": "Price pressure on per-seat pricing",
+    "evidence": "A comparison site says Netlify moved to flat pricing in April 2026, so a 5-person team pays $20/month on Netlify against $100/month on Vercel Pro. Cloudflare's $5 plan has no bandwidth or egress charges. The page has no publication date and comes from a third-party review site.",
+    "date": "2026 (undated, after April 2026)",
+    "source_url": "https://www.devtoolreviews.com/reviews/vercel-vs-netlify-vs-cloudflare-pages-pricing-comparison-2026"
+   },
+   {
+    "challenge": "Customers face very fast AI model turnover",
+    "evidence": "Vercel's own data shows more than half of October's language-model requests went to models under 60 days old, a model 'half-life' of about 6 weeks. Anthropic's share of Gateway spend fell from 69.2% in Dec 2025 to 32.2% in Oct 2026.",
+    "date": "2026-11-09",
+    "source_url": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
+   }
+  ],
+  "recent_changes": [
+   {
+    "date": "2026-11-09",
+    "type": "report",
+    "headline": "AI Gateway Production Index, November 2026",
+    "summary": "Decision models are 26% of requests. Anthropic is picked first by new teams about 2:1 over OpenAI. Opus 5.5 was the top model by spend.",
+    "source_url": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
+   },
+   {
+    "date": "2026-11-04",
+    "type": "launch",
+    "headline": "Vercel Schedules (public beta)",
+    "summary": "Apps and agents can create one-time and recurring tasks at runtime through the SDK, CLI or API, without redeploying. Built on Queues.",
+    "source_url": "https://vercel.com/blog/introducing-vercel-schedules"
+   },
+   {
+    "date": "2026-11-02",
+    "type": "launch",
+    "headline": "Vercel Security Review (public beta) and Device Bound Session Credentials rollout",
+    "summary": "AI security scanning on every push for Pro and Enterprise teams. Sessions are tied to the device to stop cookie hijacking. Free use of Security Review ends on 2026-11-10.",
+    "source_url": "https://helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking"
+   },
+   {
+    "date": "2026-10-28",
+    "type": "launch",
+    "headline": "Vercel CI (beta) and Virtual Models on AI Gateway",
+    "summary": "CI runs only affected tasks, configured through turbo.json, and is in beta on all plans. Virtual Models were announced on AI Gateway the same day.",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   },
+   {
+    "date": "2026-10-16",
+    "type": "security",
+    "headline": "April 2026 security incident formally closed",
+    "summary": "All remediation was finished. Environment variable management, security overviews and the activity log were improved.",
+    "source_url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident"
+   },
+   {
+    "date": "2026-10-15",
+    "type": "event/launches",
+    "headline": "Vercel Ship 2026 recap",
+    "summary": "More than 10,000 attendees across five cities. Launches included Python GA, Daemons, Drives, Connect GA, Bring Your Own Cloud on AWS GA, Passport beta and AI SDK 7.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   }
+  ],
+  "key_people": [
+   {
+    "name": "Guillermo Rauch",
+    "title": "Founder & CEO",
+    "recent": "At Ship 2026 he said production context turns software into a loop, citing agent-triggered deployments up 28x over 12 months. In April 2026 he said Vercel is getting IPO-ready.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Malte Ubl",
+    "title": "CTO",
+    "recent": "Explained the Device Bound Session Credentials rollout, which works only in Chrome on Mac and Windows for now, and the DPoP work for the CLI (Nov 2026).",
+    "source_url": "https://helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking"
+   },
+   {
+    "name": "Nick Bogaty",
+    "title": "Chief Revenue Officer",
+    "recent": "Joined from Adobe as CRO (2026-01-13).",
+    "source_url": "https://vercel.com/blog"
+   },
+   {
+    "name": "Jeanne DeWitt Grosser",
+    "title": "Chief Operating Officer",
+    "recent": "Interviewed by First Round Review (2026-02-05). Joined as COO in March 2025.",
+    "source_url": "https://vercel.com/press"
+   },
+   {
+    "name": "Talha Tariq",
+    "title": "CTO of Security",
+    "recent": "Joined in October 2025 to lead security. His area now covers Security Review and the work after the breach. No recent public statement from him was found.",
+    "source_url": "https://vercel.com/blog"
+   }
+  ],
+  "talking_points": [
+   "The AI Gateway index shows a model half-life of about 6 weeks and new decision and voice workloads. How are enterprise customers asking you to help them evaluate and switch models, and where does your own tooling stop?",
+   "After the Context.ai incident and the Security Review and Device Bound Session Credentials launches, how are you vetting the third-party AI tools your employees and customers connect, and what is still on the security roadmap before an IPO?",
+   "With agent-triggered deployments up 28x and products like CI, Schedules and Daemons built for agent workloads, what bottlenecks (data, compute cost, observability) are you seeing as agent-heavy customers scale, and where do partners fit in?"
+  ],
+  "missing_fields": [
+   "Current revenue or ARR (latest figure verified: $340M run rate as of Feb 2026; the $500M-$600M mid-2026 figures are unverified)",
+   "Funding or M&A within the last 90 days (none found; Better Auth acquisition on 2026-07-07 is outside the window)",
+   "Layoffs (none found)",
+   "Recent statements from Nick Bogaty, Jeanne DeWitt Grosser and Talha Tariq in the last 90 days",
+   "Firm IPO date (Rauch only said \"next year\" in April 2026)"
+  ]
+ },
+ "raw_text": null,
+ "cost_usd": 0.3870676,
+ "cost_basis": "Claude Code reported, API-equivalent",
+ "num_turns": 19
+}

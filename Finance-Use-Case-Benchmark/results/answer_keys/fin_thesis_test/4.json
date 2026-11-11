@@ -1,0 +1,129 @@
+{
+ "sub": "fin_thesis_test",
+ "i": 4,
+ "task": "Test the thesis: Rivian can reach sustained positive gross profit with the R2",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is Rivian's latest reported gross profit, and how much of it comes from vehicles versus software and services?",
+   "answer": "Q3 2026, reported 29 Oct 2026: revenue was $2.155B (+38% year on year) and consolidated gross profit was $176M, an 8% margin. That margin was down from about 11% in Q2. The automotive segment still had a gross LOSS of about $80M, narrowed from about $130M. Software and services made about $256M of gross profit at a 42% margin. The consolidated positive figure therefore depends on software and services (VW JV revenue) and on regulatory credits. Automotive gross profit on its own is not yet positive. These figures come from search summaries of the release and are not checked against the filing.",
+   "importance": "critical",
+   "source": "https://rivian.com/newsroom/article/rivian-releases-third-quarter-2026-financial-results"
+  },
+  {
+   "id": "k2",
+   "question": "Is R2 itself margin-accretive yet? What did the ramp cost in Q3, and what is Rivian's guidance on when R2 gross profit turns positive?",
+   "answer": "R2 is in its early ramp and is not yet accretive. Q3 carried about $120M of incremental cost of revenues from the R2 ramp. R2 was reported as the best-selling model in Q3, with deliveries a record 19,248. I found no R2-only unit gross margin and no disclosed R2 target date. Verify management's 2027 commentary in the Q3 call transcript and shareholder letter. This is the central uncertainty: R2 unit economics (BOM, Normal plant utilisation, the cost target relative to the roughly $45k price) are unproven.",
+   "importance": "critical",
+   "source": "https://theevreport.com/rivian-q3-2026-results-r2-best-seller"
+  },
+  {
+   "id": "k3",
+   "question": "What is the 2026 guidance for deliveries, adjusted EBITDA and capex, and what does it imply for how far Rivian is from sustained profitability?",
+   "answer": "Guidance was raised on 29 Oct 2026. Deliveries are now 67,000–70,000 (from 65,000–70,000). Adjusted EBITDA is about -$1.85B to -$1.75B, which is about $100M better at the midpoint. Capex is $1.40–1.50B, cut by about $300M at the midpoint. Q3 free cash flow was about -$1.12B, compared with -$421M a year earlier. Large EBITDA losses show that positive gross profit does not mean operating profitability. Gross profit alone is too weak a test of the thesis.",
+   "importance": "critical",
+   "source": "https://finance.yahoo.com/news/rivian-raises-2026-guidance-q3-121611797.html"
+  },
+  {
+   "id": "k4",
+   "question": "Are the recent gross-profit gains durable or driven by one-offs: regulatory credits, tariff refunds, VW JV revenue?",
+   "answer": "Q3 automotive improvement was reportedly helped by regulatory credits and an IEEPA tariff refund receivable. Both are non-recurring or policy-dependent. US federal EV credits and emissions-credit regimes have been weakened. VW JV software revenue depends on milestone timing. 'Sustained' gross profit therefore needs a clean, ex-credit, ex-one-off figure. Check the 10-Q for quantified amounts.",
+   "importance": "critical",
+   "source": "https://www.goodcarbadcar.net/rivian-q3-2026-earnings-cash-burn-r2/"
+  },
+  {
+   "id": "k5",
+   "question": "Does Rivian have the liquidity to fund the ramp until R2 reaches scale?",
+   "answer": "Cash burn is heavy, with Q3 FCF at about -$1.1B. Check the Q3 10-Q for cash and short-term investments, the DOE loan status, and VW JV tranche timing. The unresolved item is the cash runway through 2027 and whether more equity or debt raises are needed. This is a financing-risk issue that could interrupt the path to sustained profit.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001874178/000187417826000053/ex-9922q26rivianearnings.htm"
+  },
+  {
+   "id": "k6",
+   "question": "What are the main external risks to R2 margins: tariffs, EV demand and credits, competition and pricing?",
+   "answer": "The risks are tariffs on parts (the IEEPA refund suggests tariff costs were material), loss of the US consumer EV tax credit, pricing pressure from Tesla and others in the mid-size SUV segment, and R2 cannibalising R1. Quantify each from the 10-Q risk factors and from analyst commentary.",
+   "importance": "useful",
+   "source": "https://theevreport.com/rivian-q3-2026-results-r2-best-seller"
+  },
+  {
+   "id": "k7",
+   "question": "What would change the view, and what is the verdict?",
+   "answer": "Verdict: partly supported. Consolidated gross profit is positive ($176M in Q3), but it is not 'sustained' and it is not R2-driven. Automotive gross profit is still negative, the R2 ramp adds cost, and software and credits flatter the total. Positive signals: automotive gross loss narrowing again with R2 volume rising, disclosure of positive R2 unit margin, and a clean ex-credit gross profit above zero for 2+ quarters. Negative signals: automotive gross loss widening, delivery guidance cuts, R2 cost overruns, or an equity raise.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000065/ex-9923q26rivianearnings.htm"
+  }
+ ],
+ "labels": {
+  "opus": "A",
+  "exa": "B",
+  "firecrawl": "C",
+  "parallel": "D",
+  "nimble": "E",
+  "gpt": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.172
+}

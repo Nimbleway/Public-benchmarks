@@ -1,0 +1,142 @@
+{
+ "sub": "gtm_meeting_prep_research",
+ "i": 1,
+ "task": "Prepare me for a meeting with Datadog (datadoghq.com)",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What does Datadog do, in its own terms, and how big is it?",
+   "answer": "Datadog describes itself as the observability and security platform for cloud applications. It sells a SaaS platform covering infrastructure monitoring, APM, logs, security, digital experience, and increasingly AI/LLM observability and incident response. It is public (NASDAQ: DDOG). Q3 2026 revenue was about $1.20B, up about 35% year over year, according to secondary summaries. I did not verify this against the primary release, so check the 8-K or press release before quoting it.",
+   "importance": "critical",
+   "source": "https://247wallst.com/cards/datadog-q3-2026-earnings-ddog-01m6k7tgxeyhm20j14dy1tccg9"
+  },
+  {
+   "id": "k2",
+   "question": "What did the latest earnings (Q3 2026, reported about Nov 4, 2026) show, and what is the guidance?",
+   "answer": "Secondary sources report non-GAAP operating margin of about 28% and non-GAAP EPS of $0.81 against a consensus of about $0.64. Full-year 2026 revenue guidance was raised to about $4.515–4.525B. Q4 guidance was reported as about $1.19–1.20B revenue and $280–290M non-GAAP operating income. That Q4 range looks low next to Q3 revenue of $1.20B, so verify the numbers in the primary release before using them. Management reportedly called the outlook conservative, assuming the largest customer spends only its minimum commitment. Early renewals brought bigger commitments but with volume discounts, a short-term revenue headwind.",
+   "importance": "critical",
+   "source": "https://www.heygotrade.com/en/news/datadog-q3-2026-financial-results/"
+  },
+  {
+   "id": "k3",
+   "question": "What are Datadog's current investment priorities?",
+   "answer": "(1) AI: observability for LLMs and agents, plus AI-native customers who drive usage growth. (2) Platform expansion into security, incident and on-call response, and cost management. (3) Product launches announced at its DASH conference. (4) Sales capacity and go-to-market for large enterprises. I did not confirm exact dates for each item, so confirm them on the Datadog newsroom and the Q3 call transcript.",
+   "importance": "critical",
+   "source": "https://capital.com/en-au/news/datadog-publishes-q3-2026-earnings-call-transcript"
+  },
+  {
+   "id": "k4",
+   "question": "What challenges and risks is Datadog visibly facing?",
+   "answer": "(a) Customer concentration: AI-native customers, with the largest customer treated at its minimum commitment in the Q4 guide. (b) Pricing and discount pressure: early renewals of large commitments came with volume discounts. (c) Cloud cost optimization by customers, and competition from Dynatrace, Splunk/Cisco, Grafana, Elastic, the hyperscalers' native tools, and open-source or OpenTelemetry-based tools. (d) Customer complaints about billing complexity and cost. I did not run a dated check on (d).",
+   "importance": "critical",
+   "source": "https://capital.com/en-au/news/datadog-publishes-q3-2026-earnings-call-transcript"
+  },
+  {
+   "id": "k5",
+   "question": "What changed in the last 90 days (since about Aug 2026)?",
+   "answer": "Datadog reported Q2 2026 results around Aug 6 and Q3 around Nov 4, with the guidance raise noted above. I did not verify any M&A, leadership changes, layoffs, or new financing in this window. The seller should scan the Datadog newsroom and SEC 8-K filings for these. No layoffs were found in my search, but I did not run a dedicated layoff search.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001561550/000162828026069792/ex-991x20260930x8k.htm"
+  },
+  {
+   "id": "k6",
+   "question": "Who are the key people for the meeting?",
+   "answer": "Olivier Pomel is co-founder and CEO. Alexis Lê-Quôc is co-founder and CTO. David Obstler is CFO, though I did not confirm he is still in the role. Verify current titles, and the chief revenue and product leaders, on the Datadog leadership page. Pomel's recent statements center on AI-driven demand and on platform consolidation as customers cut vendors.",
+   "importance": "useful",
+   "source": "https://www.datadoghq.com/about/leadership/"
+  },
+  {
+   "id": "k7",
+   "question": "Are there any distress signals, such as default, restructuring, going-concern doubt, or sanctions?",
+   "answer": "None found. Datadog is a profitable, growing public company with a non-GAAP operating margin of about 28%. I did not check for sanctions or enforcement actions, and I did not check debt. The check I ran was one earnings-results search, not a screening search. Run an enforcement and sanctions search before relying on this.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001561550/000162828026069792/ex-991x20260930x8k.htm"
+  },
+  {
+   "id": "k8",
+   "question": "What talking points fit the evidence?",
+   "answer": "(1) How is AI and LLM workload growth changing their observability and cost needs? (2) With early renewals bringing discounts, how are they thinking about consolidating vendors and committing to spend? (3) How do they manage telemetry cost and billing predictability as volume grows?",
+   "importance": "useful",
+   "source": "https://capital.com/en-au/news/datadog-publishes-q3-2026-earnings-call-transcript"
+  }
+ ],
+ "labels": {
+  "opus": "A",
+  "parallel": "B",
+  "gpt": "C",
+  "firecrawl": "D",
+  "nimble": "E",
+  "exa": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "parallel": {
+   "k1": "missing",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing",
+   "k8": "missing"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  }
+ },
+ "cost_usd": 0.114
+}

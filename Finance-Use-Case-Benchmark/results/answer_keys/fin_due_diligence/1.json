@@ -1,0 +1,129 @@
+{
+ "sub": "fin_due_diligence",
+ "i": 1,
+ "task": "Write a due diligence memo on Canva",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is Canva's latest valuation mark, and how reliable is it? Is the direction up or down?",
+   "answer": "The best-documented primary mark is about US$42B, from the August 2025 employee secondary sale (Fidelity and JPMorgan Asset Management reportedly took part). Other figures conflict. Sacra and an archived Startup Daily piece cite about US$65B, and some reports cite a roughly US$56B plan. Fund marks in 2026 are lower, at about US$34.9B–39.3B. One report says Blackbird and AirTree marked down their stakes, and one says a mark was cut about 17% to US$34.9B in August 2026. I found no confirmed new priced round. The mark has drifted down, so the IC should confirm the latest secondary price and the investors' marks directly.",
+   "importance": "critical",
+   "source": "https://www.revenuememo.com/p/canva-funding"
+  },
+  {
+   "id": "k2",
+   "question": "What is Canva's scale and growth (ARR, user numbers), and who is the source?",
+   "answer": "Co-founder and COO Cliff Obrecht reportedly said Canva has about US$4B ARR, growing about 35%. This is a company claim from February 2026, relayed by TechCrunch and SaaStr. Sacra's estimate is US$4B at end of 2025, up 43% year on year. This is an aggregator estimate. One blog gives US$2.5B ARR, which conflicts and looks unreliable. Canva has not published audited revenue that I could find, apart from the late statutory filings in Australia (see k4).",
+   "importance": "critical",
+   "source": "https://www.saastr.com/canva-crosses-a-stunning-4b-arr/"
+  },
+  {
+   "id": "k3",
+   "question": "What is the IPO timeline and the strategic risk around it?",
+   "answer": "Canva earlier signalled it was IPO-ready, and Blackbird had told LPs of a possible 2H 2026 listing. As of May 2026, reporting says the listing is now planned for 2027, with the delay attributed to a major AI-related restructure and a move to AI-credit pricing. IT Brief questions the valuation amid the AI pivot, and Capital Brief flags AI-driven pressure on software multiples and competition from Adobe. No official IPO date has been announced. There are reports of a US redomicile and a share restructure, which need verification from filings.",
+   "importance": "critical",
+   "source": "https://ia.acs.org.au/article/2026/canva-fined--800k-ahead-of-ipo.html"
+  },
+  {
+   "id": "k4",
+   "question": "Has any regulator taken action against Canva, and what does it say about governance?",
+   "answer": "Yes. On 6–7 May 2026, ASIC issued infringement notices totalling A$792,000 (4 × A$198,000). The entities were Canva Pty Ltd, Canva Operations, Canva Trading and Fusion Books. The reason was that the FY2024 financial reports, due end of April 2025, were lodged in late March 2026, almost a year late. The payment is not an admission of liability. This is a financial-reporting discipline red flag ahead of an IPO. I found no sanctions hit and no other regulator action in these searches, but I did not check the OFAC list directly.",
+   "importance": "critical",
+   "source": "https://ia.acs.org.au/article/2026/canva-fined--800k-ahead-of-ipo.html"
+  },
+  {
+   "id": "k5",
+   "question": "Are there known lawsuits or data breaches?",
+   "answer": "No major pending lawsuit was found in the searches I ran (news searches on Canva with lawsuit, breach and regulator). The known historical security incident is the May 2019 breach, which exposed about 139M user records. That is old, and I did not re-verify it in this pass. The team should still check PACER, the US state dockets and the Australian Federal Court, and the OAIC, which this pass did not cover.",
+   "importance": "useful",
+   "source": "https://ia.acs.org.au/article/2026/canva-fined--800k-ahead-of-ipo.html"
+  },
+  {
+   "id": "k6",
+   "question": "Who leads Canva, and has the ownership and control structure changed?",
+   "answer": "Founders Melanie Perkins (CEO), Cliff Obrecht (COO) and Cameron Adams (Chief Product Officer) still lead the company. Cliff Obrecht is still speaking publicly as COO in 2026. Founder control and a US redomicile or share-class restructure were reported in 2026 and need confirmation. Departures in the last two years were not verified in this pass.",
+   "importance": "useful",
+   "source": "https://thesizzle.com.au/p/canva-quietly-shifted-billions-of-shares-ahead-of-expected-us-public-offering"
+  },
+  {
+   "id": "k7",
+   "question": "What is the correct legal entity and who are the investors?",
+   "answer": "The operating parent is Canva Pty Ltd (Australia, Sydney). ASIC named four group entities in the fine: Canva Pty Ltd, Canva Operations, Canva Trading and Fusion Books. Known investors include Blackbird, AirTree, Sequoia, Franklin, T. Rowe Price, Fidelity, JPMorgan AM and Bond. The ACN was not retrieved, so check the ASIC registry. If a US holding company has been created, it also needs checking.",
+   "importance": "useful",
+   "source": "https://www.revenuememo.com/p/canva-funding"
+  }
+ ],
+ "labels": {
+  "gpt": "A",
+  "opus": "B",
+  "parallel": "C",
+  "nimble": "E",
+  "firecrawl": "F",
+  "exa": "G"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.281
+}

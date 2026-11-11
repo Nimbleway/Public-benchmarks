@@ -1,0 +1,26 @@
+{
+ "k4": {
+  "verdict": "key_right",
+  "disputed_point": "Whether any Adyen owner or director is a PEP. Answer A lists Adine Grate and Chris Vogelzang as 'potential former-PEP' flags.",
+  "why": "Answer A does not identify a current PEP. It calls both flags 'potential' and 'inferred', and says current PEP status is not confirmed. Grate left the Swedavia board in April 2019. Vogelzang left ABN AMRO in 2017. Both departures are far outside the usual 12-month post-office window. A state-owned-enterprise board seat in the distant past, or a role at a state-supported bank, does not make someone a current PEP. This matches the key, which says no PEP is known, that it was not checked against a PEP database, and that named individuals and state-linked holders still need screening. The state-linked holder Temasek (6.39%) is already covered by the key's caveat about sovereign-wealth funds. I did not read the Adyen governance page (it redirects to investors.adyen.com/governance, which I did not fetch). A search confirmed that Verhagen becomes Supervisory Board chair and that Vogelzang was approved on 7 Oct 2026. Neither is a politician or minister.",
+  "corrected_answer": null,
+  "source": "https://www.adyen.com/press-and-media/resolution-adopted-at-adyen-2026-egm",
+  "wrong_arms": [
+   "gpt"
+  ],
+  "cost": 0.065
+ },
+ "k7": {
+  "verdict": "both_ok",
+  "disputed_point": "The overall risk rating. The key says provisional low. All three answers say provisional medium.",
+  "why": "The two ratings rest on the same facts and differ only in how they weigh unverified checks. The key treats Adyen as low risk because it is a listed company supervised by DNB as a bank, with no known PEP owners, sanctions match or major enforcement action. It also says the rating is provisional and should rise to medium if open regulatory measures or high-risk-merchant fraud exposure turn up. The answers also say provisional. They use medium because the KvK, GLEIF, ownership and sanctions checks were incomplete and the SEPA-fraud litigation counts as fraud exposure. None of them found a sanctions match, an AML enforcement action or a confirmed PEP. Answer C flags former-PEP possibilities for two supervisory board members as historical connections, not confirmed status. My own search found no 2026 DNB or AFM enforcement action against Adyen. DNB's 2026 enforcement list names other firms: ABN AMRO, AFS E-Venues and Yoursafe. The search was limited to one query. A risk rating is a judgement call with no single correct value. The key's low rating and the answers' medium rating are both defensible, and the actions each recommends are the same: verify first, then finalise.",
+  "corrected_answer": "Provisional rating: low. This rests on a listed, bank-regulated Dutch company with no known PEP owners, no known sanctions match and no known major enforcement action. Because the sanctions, PEP and adverse-media checks and the registry/GLEIF details were not verified live, the rating is provisional. Before onboarding, pull the KvK extract and GLEIF record, run the live sanctions screens, and read the DNB and AFM registers and recent news. Raise the rating to medium if there are open regulatory measures or payment-fraud exposure to high-risk merchants. Note: a provisional medium rating is also acceptable. It reflects the same facts, with the unverified KvK, GLEIF, ownership and sanctions checks and the SEPA-fraud litigation weighted more heavily. Either way, the next step is to complete those verifications before approval.",
+  "source": "https://www.dnb.nl/en/general-news/enforcement-measures-2026/",
+  "wrong_arms": [
+   "exa",
+   "parallel",
+   "gpt"
+  ],
+  "cost": 0.103
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "arm": "firecrawl",
+ "sub_use_case": "fin_kyc_screening",
+ "input": "Run a KYC screen on Binance in France",
+ "input_n": 3,
+ "tier": "spark-2/high",
+ "status": "completed",
+ "seconds": 254,
+ "run_id": "01a1a0e5-bea2-70fd-a082-47b2cdc33069",
+ "output": {
+  "input_name": "Binance",
+  "registration": {
+   "legal_name": "BINANCE FRANCE SAS",
+   "registry_number": "905060109",
+   "lei": "969500IHGTBN0TLO0129",
+   "jurisdiction": "France",
+   "incorporation_date": "2021-11-03",
+   "registered_address": "1 RUE DE STOCKHOLM 75008 PARIS",
+   "status": "active",
+   "source_url": "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5"
+  },
+  "related_entities": [
+   {
+    "name": "BINANCE DERIVATIVES",
+    "relation": "Separate French Binance-named SAS at the same registered address; not the screened entity",
+    "registry_number": "913864005"
+   },
+   {
+    "name": "BINANCE DERIVATIVES CONNECT",
+    "relation": "Separate French Binance-named SAS at the same registered address; not the screened entity",
+    "registry_number": "980585897"
+   },
+   {
+    "name": "Binance Holdings Limited",
+    "relation": "Separate Binance.com group/operating entity referenced in U.S. enforcement materials; not BINANCE FRANCE SAS",
+    "registry_number": null
+   }
+  ],
+  "people": [
+   {
+    "name": "DAVID PRINCAY",
+    "role": "Président de SAS",
+    "nationality": null,
+    "source_url": "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5"
+   },
+   {
+    "name": "CHRISTELLE TANG",
+    "role": "Directeur Général",
+    "nationality": null,
+    "source_url": "https://recherche-entreprises.api.gouv.fr/search?q=905060109&page=1&per_page=5"
+   }
+  ],
+  "sanctions": [
+   {
+    "party": "BINANCE FRANCE SAS",
+    "list": "OFAC SDN and other OFAC sanctions lists",
+    "match": "No result returned for the exact legal name plus French SIREN 905060109 at minimum score 100; no identity match found.",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/"
+   },
+   {
+    "party": "BINANCE FRANCE SAS",
+    "list": "UK OFSI Consolidated List",
+    "match": "No result returned for the exact organization name; no identity match found.",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml"
+   },
+   {
+    "party": "BINANCE FRANCE SAS",
+    "list": "EU Consolidated Financial Sanctions List",
+    "match": "No organization result returned for the exact name; no identity match found.",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content"
+   },
+   {
+    "party": "DAVID PRINCAY",
+    "list": "OFAC SDN and other OFAC sanctions lists",
+    "match": "No result returned for the exact name at minimum score 100; no identity match found.",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/"
+   },
+   {
+    "party": "DAVID PRINCAY",
+    "list": "UK OFSI Consolidated List",
+    "match": "No result returned for the exact person name; no identity match found.",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml"
+   },
+   {
+    "party": "DAVID PRINCAY",
+    "list": "EU Consolidated Financial Sanctions List",
+    "match": "No person result returned for the exact name; no identity match found.",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content"
+   },
+   {
+    "party": "CHRISTELLE TANG",
+    "list": "OFAC SDN and other OFAC sanctions lists",
+    "match": "No result returned for the exact name at minimum score 100; no identity match found.",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/"
+   },
+   {
+    "party": "CHRISTELLE TANG",
+    "list": "UK OFSI Consolidated List",
+    "match": "No result returned for the exact person name; no identity match found.",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml"
+   },
+   {
+    "party": "CHRISTELLE TANG",
+    "list": "EU Consolidated Financial Sanctions List",
+    "match": "No person result returned for the exact name; no identity match found.",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content"
+   }
+  ],
+  "pep": [],
+  "adverse_media": [],
+  "namesakes_excluded": 3,
+  "risk_rating": "medium",
+  "risk_rationale": "BINANCE FRANCE SAS is active in the French registry and has two current officers identified there, while the entity and those officers returned no exact-name/identifier matches in the OFAC, UK OFSI or EU consolidated-list searches. GLEIF identifies the exact legal entity and LEI 969500IHGTBN0TLO0129, but reports the LEI entity as ACTIVE while the LEI registration status is LAPSED, which is a material KYC data-quality concern. No beneficial-owner record, PEP evidence or entity-resolved adverse-media finding was available in the reviewed sources; three group/platform-level reports (the 2023 U.S. DOJ criminal resolution, the 2023 U.S. Treasury/OFAC settlement, and a 2025 report of a French Binance investigation) were excluded because they did not identify SIREN 905060109. On the available evidence, the active registry status and clean sanctions checks support neither high risk nor low risk because beneficial ownership is unverified and the LEI is lapsed."
+ },
+ "cost_usd": 0.2871,
+ "cost_basis": "credits x Standard rate",
+ "credits": 290,
+ "exchange": {
+  "enabled": true,
+  "requireApproval": false,
+  "onTermsRequired": "skip",
+  "paidCalls": 5,
+  "creditsUsed": 55
+ },
+ "error": null
+}

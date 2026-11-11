@@ -1,0 +1,291 @@
+{
+ "arm": "gpt",
+ "sub_use_case": "fin_kyc_screening",
+ "input": "Run a KYC screen on Wirecard in Germany",
+ "input_n": 1,
+ "tier": "high",
+ "model": "gpt-6.1-sol",
+ "status": "completed",
+ "seconds": 345,
+ "run_id": "resp_04309a97cfdcae4b006af34627986c87d2ac4abf650517cb75",
+ "output": {
+  "input_name": "Wirecard",
+  "as_of": "2026-11-10",
+  "registration": {
+   "legal_name": "Wirecard AG",
+   "registry_number": "HRB 169227, Amtsgericht München",
+   "lei": "529900A8LX4KL0YUTH71",
+   "jurisdiction": "Germany",
+   "incorporation_date": "1999-05-06",
+   "registered_address": "Humboldtstraße 8, 85609 Aschheim, Germany",
+   "status": "In insolvency",
+   "source_url": "https://wirecard.com/de/impressum/",
+   "as_of": "2026-11-10",
+   "supplementary_sources": [
+    {
+     "fields": [
+      "legal_name",
+      "registry_number",
+      "status"
+     ],
+     "source_url": "https://wirecard.com/wp-content/uploads/2020/10/Eroeffnungsbeschluss-WDAG.pdf",
+     "as_of": "2020-08-25"
+    },
+    {
+     "fields": [
+      "incorporation_date"
+     ],
+     "source_url": "https://wirecard.com/wp-content/uploads/2020/11/Einzelabschluss_WD_AG_2018.pdf#page=115",
+     "as_of": "2018-12-31"
+    },
+    {
+     "fields": [
+      "lei",
+      "jurisdiction",
+      "registry_number"
+     ],
+     "source_url": "https://lei.bloomberg.com/leis/view/529900A8LX4KL0YUTH71",
+     "as_of": "2020-11-13",
+     "note": "The displayed LEI record is LAPSED. Its old address and ACTIVE entity label are not treated as evidence of current operating status."
+    }
+   ],
+   "verification_note": "The German registry portal and GLEIF were accessed, but an entity-specific national-registry extract and readable direct GLEIF record could not be retrieved. The populated values therefore have the alternative sources identified above and are not represented as fully registry/GLEIF-verified."
+  },
+  "related_entities": [
+   {
+    "name": "Wirecard Technologies GmbH",
+    "relation": "Separate German operating subsidiary historically reported within Wirecard AG's holdings; not the screened entity.",
+    "registry_number": "HRB 200352, Amtsgericht München",
+    "source_url": "https://wirecard.com/wp-content/uploads/2020/12/Eroeffnungsbeschluss-Wirecard-Technologies-GmbH.pdf",
+    "as_of": "2020-08-25",
+    "relationship_source_url": "https://wirecard.com/wp-content/uploads/2020/11/Einzelabschluss_WD_AG_2018.pdf#page=127",
+    "relationship_as_of": "2018-12-31"
+   },
+   {
+    "name": "WDB Abwicklungs AG i.L., formerly Wirecard Bank AG",
+    "relation": "Separate banking subsidiary historically associated with Wirecard AG. The bank subsequently changed its name and entered corporate liquidation; its officers and regulatory findings are not attributed to Wirecard AG.",
+    "registry_number": "HRB 161178, Amtsgericht München",
+    "source_url": "https://www.wdb-abwicklung.de/impressum/",
+    "as_of": "2026-11-10",
+    "relationship_source_url": "https://wirecard.com/2020/08/25/opening-of-insolvency-proceedings-concerning-assets-of-wirecard-ag-dr-jur-michael-jaffe-appointed-as-insolvency-administrator/",
+    "relationship_as_of": "2020-08-25"
+   },
+   {
+    "name": "WIRECARD CARD SOLUTIONS LIMITED",
+    "relation": "Separate UK subsidiary, not a German branch or Wirecard AG itself. FCA restrictions concerning this company are excluded from the screened entity's adverse findings.",
+    "registry_number": "07875693",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/07875693",
+    "as_of": "2026-11-10",
+    "relationship_source_url": "https://www.fca.org.uk/news/news-stories/requirements-imposed-wirecard-authorisation",
+    "relationship_as_of": "2020-06-29"
+   }
+  ],
+  "people": [
+   {
+    "name": "Dr. jur. Michael Jaffé",
+    "role": "Court-appointed insolvency administrator over Wirecard AG's assets; not identified as a director or beneficial owner.",
+    "nationality": null,
+    "source_url": "https://wirecard.com/de/impressum/",
+    "as_of": "2026-11-10"
+   }
+  ],
+  "sanctions": [
+   {
+    "party": "Wirecard AG",
+    "list": "OFAC Specially Designated Nationals and Blocked Persons List",
+    "match": null,
+    "source_url": "https://sanctionslist.ofac.treas.gov/Home/SdnList",
+    "as_of": "2026-11-10",
+    "screening_note": "Inconclusive. The official service was opened, but searchable list contents could not be retrieved. No negative or positive screening result is asserted."
+   },
+   {
+    "party": "Wirecard AG",
+    "list": "UK Sanctions List, successor to the OFSI Consolidated List",
+    "match": "No exact-name occurrence found for Wirecard or Wire Card in the official publication generated on 2026-11-10. This limited name check is not a beneficial-ownership or control clearance.",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+    "as_of": "2026-11-10",
+    "screening_note": "The OFSI Consolidated List stopped being updated on 2026-01-28; the current UK Sanctions List was used instead.",
+    "method_source_url": "https://www.gov.uk/government/publications/the-uk-sanctions-list"
+   },
+   {
+    "party": "Wirecard AG",
+    "list": "EU Consolidated Financial Sanctions List",
+    "match": null,
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf",
+    "as_of": "2026-11-10",
+    "screening_note": "Inconclusive. Official consolidated-list downloads could not be retrieved. No negative or positive screening result is asserted."
+   },
+   {
+    "party": "Dr. jur. Michael Jaffé",
+    "list": "UK Sanctions List",
+    "match": "No occurrence found using the surname fragment JAFF in the official publication. This is a limited name check, not comprehensive identity screening.",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+    "as_of": "2026-11-10"
+   },
+   {
+    "party": null,
+    "list": "OFAC SDN; UK Sanctions List; EU Consolidated Financial Sanctions List",
+    "match": null,
+    "source_url": null,
+    "as_of": "2026-11-10",
+    "screening_note": "Current beneficial owners were not established, so owner-level sanctions screening and ownership/control analysis could not be completed."
+   }
+  ],
+  "pep": [],
+  "adverse_media": [
+   {
+    "date": "2019-04-15",
+    "category": "Regulatory enforcement / financial reporting",
+    "summary": "BaFin imposed a EUR 1.52 million fine on Wirecard AG for late publication of parts of its half-year financial report and the associated availability announcement. The amount is as reported for the decision dated 2019-04-15.",
+    "severity": "medium",
+    "status": "The Federal Finance Ministry records that Wirecard accepted the fine but challenged publication; publication followed a court decision in September 2019.",
+    "source_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Internationales_Finanzmarkt/Finanzmarktpolitik/2020-07-17-Sachstandsbericht-Wirecard.pdf?__blob=publicationFile&v=3",
+    "as_of": "2020-07-16"
+   },
+   {
+    "date": "2020-06-22",
+    "category": "Accounting irregularities / issuer disclosure",
+    "summary": "Wirecard AG's management board announced that EUR 1.9 billion of reported bank trust-account balances probably did not exist and withdrew previously published financial assessments and forecasts. The amount is as disclosed on 2020-06-22.",
+    "severity": "high",
+    "status": "Issuer acknowledgement of likely nonexistent reported assets; not itself a criminal judgment.",
+    "source_url": "https://wirecard.com/2020/06/22/wirecard-ag-statement-of-the-management-board-about-the-current-situation-of-the-company/",
+    "as_of": "2020-06-22"
+   },
+   {
+    "date": "2020-08-25",
+    "category": "Insolvency",
+    "summary": "The Munich Local Court opened insolvency proceedings over Wirecard AG because of inability to pay and over-indebtedness and appointed Michael Jaffé as administrator. The order identifies the debtor by its Munich registry number.",
+    "severity": "high",
+    "status": "The company's current legal notice continues to identify Wirecard AG as in insolvency.",
+    "source_url": "https://wirecard.com/wp-content/uploads/2020/10/Eroeffnungsbeschluss-WDAG.pdf",
+    "as_of": "2026-11-10",
+    "status_source_url": "https://wirecard.com/de/impressum/"
+   },
+   {
+    "date": "2022-05-05",
+    "category": "Civil litigation / invalid financial statements",
+    "summary": "Munich Regional Court I declared Wirecard AG's annual financial statements for 2017 and 2018 and the related profit-appropriation resolutions void. The court explained that its conclusion did not require a final determination that the underlying third-party-acquiring business was fabricated.",
+    "severity": "high",
+    "status": "Judgment was not final when announced. Its subsequent appellate status was not verified.",
+    "source_url": "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2022/13.php",
+    "as_of": "2022-05-05"
+   },
+   {
+    "date": "2024-09-05",
+    "category": "Civil litigation / directors' duties",
+    "summary": "Munich Regional Court I awarded Wirecard AG's insolvency administrator EUR 140 million plus interest against former management-board members for breaches of duty involving an unsecured loan and a bond subscription funded or directed by Wirecard AG. The amount is as awarded on 2024-09-05. This was a recovery for the estate, not a fine imposed on Wirecard AG.",
+    "severity": "high",
+    "status": "Judgment was not final when announced. Its subsequent appellate status was not verified.",
+    "source_url": "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2024/10.php",
+    "as_of": "2024-09-05"
+   },
+   {
+    "date": "2025-11-13",
+    "category": "Shareholder litigation / insolvency claims",
+    "summary": "The Federal Court of Justice held that shareholders' capital-market damages claims were not ordinary insolvency claims against the company. The opened source is the announcement by counsel representing Wirecard AG's insolvency administrator.",
+    "severity": "medium",
+    "status": "The shareholder claimant's action was dismissed at final instance. The ruling concerns insolvency ranking, not a criminal finding.",
+    "source_url": "https://www.sza.de/assets/downloads/SZA-Pressemitteilung-Wirecard-BGH-2025-11-14.pdf",
+    "as_of": "2025-11-14"
+   },
+   {
+    "date": "2026-10-28",
+    "category": "Criminal proceedings / alleged fraud",
+    "summary": "The trial of former Wirecard AG chief executive Markus Braun and co-defendants concerning allegedly fabricated revenue and deception of lenders remained underway. Braun denied the allegations. The report stated that closing-argument and verdict dates had not been set.",
+    "severity": "high",
+    "status": "Pending as of the latest opened procedural report. These are proceedings against individuals concerning Wirecard's business, not a criminal conviction of Wirecard AG.",
+    "source_url": "https://www.ad-hoc-news.de/wirtschaft/wirecard-prozess-verteidiger-erhalten-letzte-frist-im-november/70425445",
+    "as_of": "2026-10-28",
+    "underlying_proceedings_source_url": "https://www.justiz.bayern.de/gerichte-und-behoerden/staatsanwaltschaft/muenchen-1/presse/2022/2.php"
+   }
+  ],
+  "namesakes_excluded": 2,
+  "namesakes_excluded_as_of": "2026-11-10",
+  "exclusion_audit": [
+   {
+    "reason": "Excluded FCA operating restrictions against the separate UK company Wirecard Card Solutions Limited; they were not restrictions imposed on Wirecard AG.",
+    "source_url": "https://www.fca.org.uk/news/news-stories/requirements-imposed-wirecard-authorisation"
+   },
+   {
+    "reason": "Excluded the MAS enforcement announcement concerning penalties against other financial institutions following Wirecard-linked examinations; those penalties were not imposed on Wirecard AG.",
+    "source_url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20media%20release_MAS%20Penalises%203%20Banks%20and%20an%20Insurer%20for%20Breaches%20of%20Anti-Money%20Laundering%20Requirements.pdf?path=%2Fsgpcmedia%2Fmedia_releases%2Fmas%2Fpress_release%2FP-20230621-2%2Fattachment%2FMAS+media+release_MAS+Penalises+3+Banks+and+an+Insurer+for+Breaches+of+Anti-Money+Laundering+Requirements.pdf"
+   }
+  ],
+  "risk_rating": "high",
+  "risk_rationale": "High risk based on Wirecard AG's continuing insolvency, its acknowledgement of likely nonexistent reported assets, the BaFin reporting fine, the judgments invalidating financial statements and finding former directors liable, and continuing criminal proceedings concerning its historical business, as documented in adverse_media. This assessment concerns the German issuer Wirecard AG, historically a group holding company, rather than substituting its operating subsidiaries. Criminal allegations are distinguished from findings, and historical non-final judgments are not represented as subsequently final. The limited UK name check does not offset the adverse record. Current directors and beneficial ownership remain unverified, OFAC and EU screening could not be completed, and no PEP clearance is established; this is an incomplete KYC screen, not onboarding clearance.",
+  "missing_fields": [
+   {
+    "field": "registration.national_registry_verification",
+    "reason": "An entity-specific current German register extract could not be retrieved; alternative issuer and court evidence is explicitly identified.",
+    "source_url": "https://www.handelsregister.de/rp_web/welcome.xhtml"
+   },
+   {
+    "field": "registration.direct_gleif_verification",
+    "reason": "The GLEIF search page did not expose a readable record and the API record could not be retrieved. The LEI shown above was read on Bloomberg's LEI page instead.",
+    "source_url": "https://search.gleif.org/#/record/529900A8LX4KL0YUTH71"
+   },
+   {
+    "field": "people.current_directors_and_officers",
+    "reason": "Current management-board and supervisory-board appointments could not be established from a current official extract. Historical personnel are not represented as current.",
+    "source_url": "https://www.handelsregister.de/rp_web/welcome.xhtml"
+   },
+   {
+    "field": "people.current_beneficial_owners",
+    "reason": "No entity-specific Transparency Register record was retrieved. Historical shareholders are not assumed to be current beneficial owners.",
+    "source_url": "https://www.transparenzregister.de/"
+   },
+   {
+    "field": "people[0].nationality",
+    "reason": "Michael Jaffé's nationality was not stated on the cited company legal notice.",
+    "source_url": "https://wirecard.com/de/impressum/"
+   },
+   {
+    "field": "sanctions[0].match",
+    "reason": "OFAC list screening could not be completed.",
+    "source_url": "https://sanctionslist.ofac.treas.gov/Home/SdnList"
+   },
+   {
+    "field": "sanctions[2].match",
+    "reason": "EU consolidated-list screening could not be completed.",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf"
+   },
+   {
+    "field": "sanctions[4].party, sanctions[4].match, sanctions[4].source_url",
+    "reason": "Beneficial owners were unidentified; owner-level sanctions screening was not performed.",
+    "source_url": null
+   },
+   {
+    "field": "pep.current_directors_and_beneficial_owners",
+    "reason": "An empty pep array means no evidenced current-person flag is reported, not that current directors and owners were verified as non-PEPs.",
+    "source_url": null
+   }
+  ]
+ },
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "raw_text": null,
+ "cost_usd": 0.5842,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "token_cost_usd": 0.4242,
+ "usage": {
+  "input_tokens": 150100,
+  "input_tokens_details": {
+   "cache_write_tokens": 16,
+   "cached_tokens": 5387
+  },
+  "output_tokens": 13421,
+  "output_tokens_details": {
+   "reasoning_tokens": 9587
+  },
+  "total_tokens": 163521
+ },
+ "search_calls": 16,
+ "search_actions": {
+  "search": 10,
+  "open_page": 6
+ },
+ "error": null
+}

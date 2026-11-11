@@ -1,0 +1,129 @@
+{
+ "sub": "fin_due_diligence",
+ "i": 2,
+ "task": "Write a due diligence memo on Deel",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is the status of Rippling v. Deel (corporate espionage / RICO / trade-secrets suit, N.D. Cal.) and Deel's countersuit, and what is the Irish-court angle?",
+   "answer": "Rippling sued in March 2025, alleging a paid spy inside Rippling fed information to Deel, and that CEO Alex Bouaziz was the architect. Deel denies wrongdoing and countersued. Rippling's claims have survived dismissal motions. In Feb 2026 Deel lost a bid to disqualify Quinn Emanuel (Law360). Per Bloomberg Government (reported about 26 Sep 2026), a federal judge rejected Deel's bid to strike testimony from a key witness and pared back some of Deel's claims, while core Rippling claims proceed. A parallel Irish proceeding includes a sworn statement from the alleged spy. The case is unresolved, with no trial verdict found. I could only see the Bloomberg headline and summaries, so check the PACER docket. Nothing after late Sep 2026 was found.",
+   "importance": "critical",
+   "source": "https://news.bgov.com/private-equity/deel-dealt-fresh-setbacks-in-rippling-case-over-alleged-spying"
+  },
+  {
+   "id": "k2",
+   "question": "Is there a criminal or regulatory investigation of Deel?",
+   "answer": "Yes, reported. In Jan 2026 the WSJ reported that the DOJ (N.D. Cal.) opened a criminal probe and sent grand jury subpoenas over alleged trade-secret theft, wire fraud and the use of intermediaries to fund the espionage. Deel said it was not aware of a criminal investigation and would cooperate. I found no charges as of the latest results. This is a key tail risk, and the status should be rechecked.",
+   "importance": "critical",
+   "source": "https://techcrunch.com/2026/01/23/the-rippling-deel-corporate-spying-scandal-may-have-taken-another-wild-turn"
+  },
+  {
+   "id": "k3",
+   "question": "Is there any sanctions-evasion or money-laundering exposure, and what happened to the Florida receiver suit?",
+   "answer": "Damian (receiver for Surge Capital Ventures) v. Deel, S.D. Fla. 1:25-cv-20017, filed 3 Jan 2025, alleged RICO claims and that Deel processed payments for Russian-linked entities and partnered with a sanctioned Russian bank. A Florida federal judge dismissed it (reported Aug 2025). I could not confirm whether the dismissal was with or without prejudice, or whether there was an appeal or refiling. I found no OFAC penalty or regulator sanctions action against Deel. The check I ran was a web search of press and docket aggregators, not OFAC's enforcement list directly, which still needs to be run.",
+   "importance": "critical",
+   "source": "https://techcrunch.com/2025/08/19/deel-scores-a-lawsuit-win-but-not-against-rippling"
+  },
+  {
+   "id": "k4",
+   "question": "What is the latest funding round and valuation, and who led it?",
+   "answer": "The latest priced round is the $300M Series E in Oct 2025 at a $17.3B valuation, co-led by Ribbit Capital, Andreessen Horowitz and Coatue, with General Catalyst and others participating. The previous round was the $425M Series D in 2022 at $12B. I found no new primary round in 2026. TechStackIPO's claims of a $23.8B valuation and an S-1 filing are unreliable and unverified.",
+   "importance": "critical",
+   "source": "https://pulse2.com/deel-300-million-series-e-at-17-3-billion-valuation-raised-for-hr-and-payroll-platform/amp/"
+  },
+  {
+   "id": "k5",
+   "question": "What are Deel's revenue and scale figures, and who says so?",
+   "answer": "Company claim: it passed $1B ARR in 2025, with a first $100M revenue month, 35,000+ customers and about $22B of annual payroll processed. A secondary source reports $1.4B+ ARR in 2026, apparently from the CEO (a podcast and a July 2026 article), with the valuation unchanged at $17.3B. This is not audited, and I found no primary Deel release confirming it.",
+   "importance": "critical",
+   "source": "https://www.sourcery.vc/p/breaking-deel-hits-14b-arr-ceo-alex"
+  },
+  {
+   "id": "k6",
+   "question": "What does Deel sell and who are the legal entity and the leadership?",
+   "answer": "Deel is a global HR, payroll, Employer of Record (EOR), contractor-payment and compliance platform for companies hiring across 150+ countries. It was founded in 2019 (Y Combinator) by CEO Alex Bouaziz and President Shuo Wang, and is headquartered in San Francisco. The corporate entity is Deel, Inc. (the defendant in the litigation). I did not verify the Delaware registry number or any executive departures in the last two years, and both need checking.",
+   "importance": "useful",
+   "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Deel_Inc"
+  },
+  {
+   "id": "k7",
+   "question": "Are there other legal or regulatory items, such as data breaches, worker-classification issues or employee-review trends?",
+   "answer": "Not verified in this pass. The search did not cover Glassdoor trends, a data breach, or other enforcement beyond the items above. Treat these as open diligence items: check the CourtListener and PACER dockets, the SEC, FTC and state AG sites, and the Irish court filings.",
+   "importance": "useful",
+   "source": "https://pacermonitor.com/public/case/56388273/Damian_v_DEEL_INC_et_al"
+  }
+ ],
+ "labels": {
+  "exa": "A",
+  "nimble": "B",
+  "firecrawl": "C",
+  "parallel": "F",
+  "opus": "I",
+  "gpt": "J"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.272
+}
