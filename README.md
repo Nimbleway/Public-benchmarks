@@ -9,6 +9,11 @@ Public, reproducible benchmark suites published by Nimble.
   [DRACO benchmark](https://arxiv.org/abs/2602.11685). Scores agents across
   100 cross-domain tasks against expert-curated rubrics on factual accuracy,
   breadth/depth of analysis, presentation quality, and citation quality.
+- [`Due-Diligence-Benchmark/`](./Due-Diligence-Benchmark) — 1,000 questions
+  investment analysts ask about companies, funds and markets, across 371 use
+  cases and 14 topics (financials, ownership, legal, management, alternative
+  data and more). Unlabeled: score answers with an LLM judge. Part of it is
+  grounded in data read from public sites, listed in its README.
 - [`Finance-Use-Case-Benchmark/`](./Finance-Use-Case-Benchmark) — real-world
   finance research jobs (credit risk, due diligence, KYC screening, portfolio
   monitoring). Same instructions and output schema for every provider; every
@@ -18,6 +23,11 @@ Public, reproducible benchmark suites published by Nimble.
   research jobs (account briefs, account signals), run and scored the same way
   as the finance benchmark. Includes all raw outputs, judge verdicts and the
   harness to rerun it.
+- [`Lead-Enrichment-Benchmark/`](./Lead-Enrichment-Benchmark) — 1,000
+  questions sales, RevOps and marketing teams ask about accounts and leads,
+  across 313 use cases and 12 topics (contacts, firmographics, technographics,
+  funding, hiring signals and more). Unlabeled, built the same way as the due
+  diligence set.
 - [`SimpleQA-Benchmark/`](./SimpleQA-Benchmark) — provider-neutral benchmark
   harness for web search APIs. Runs a [SimpleQA](https://github.com/openai/simple-evals)
   slice through each provider, grades answers with the official SimpleQA
