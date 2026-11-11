@@ -1,0 +1,1248 @@
+{
+ "sub_use_case": "fin_grounded_answer",
+ "input_n": 0,
+ "task": "What did Snowflake say about consumption trends on its most recent earnings call?",
+ "labels": {
+  "parallel": "A",
+  "nimble": "B",
+  "opus": "C",
+  "gpt": "D",
+  "exa": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 11,
+ "evidence_fetched": 11,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 43,
+ "judge": "v4b",
+ "judge_cost_usd": 1.025,
+ "corrections_v2": {
+  "units_before": 45,
+  "units_after": 37,
+  "dedup_groups": [
+   {
+    "kept": "c7",
+    "merged": [
+     "c8"
+    ]
+   },
+   {
+    "kept": "c10",
+    "merged": [
+     "c11"
+    ]
+   },
+   {
+    "kept": "c14",
+    "merged": [
+     "c15",
+     "c16"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23"
+    ]
+   },
+   {
+    "kept": "c27",
+    "merged": [
+     "c28"
+    ]
+   },
+   {
+    "kept": "c40",
+    "merged": [
+     "c41"
+    ]
+   }
+  ],
+  "cost": 0.018
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Snowflake's most recent earnings call as of Nov 10, 2026 was the Q2 FY2027 call, held September 2, 2026.",
+   "asserted_by": [
+    "B",
+    "E",
+    "A",
+    "F",
+    "D",
+    "C"
+   ],
+   "variants": {
+    "B": "Snowflake's most recent earnings call covered Q2 fiscal 2027, with results released September 2, 2026.",
+    "E": "Snowflake's most recent earnings call as of 2026-11-10 was its Q2 FY2027 call, held on September 2, 2026.",
+    "A": "Snowflake's most recent earnings call as of November 10, 2026 was its Q2 FY2027 call, held September 2, 2026.",
+    "F": "Snowflake's most recent earnings call as of 2026-11-10 was the Q2 FY27 call held on September 2, 2026.",
+    "D": "Snowflake held its Q2 FY2027 earnings call on September 2, 2026, the latest earnings call identified as of November 10, 2026.",
+    "C": "Snowflake's most recent earnings call is for Q2 fiscal 2027, held September 2, 2026."
+   },
+   "urls": [
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/",
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The Q2 FY2027 quarter ended July 31, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "quarter ended July 31, 2026",
+    "C": "Q2 fiscal 2027 (quarter ended July 31, 2026)"
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The Q3 FY2027 earnings call had not yet occurred as of Nov 10, 2026.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Snowflake's Q3 FY2027 earnings call had not yet occurred as of November 10, 2026.",
+    "F": "the Q3 FY27 call had not yet occurred."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Snowflake's Q3 FY2027 earnings call is scheduled for 2 p.m. Pacific Time on December 2, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Snowflake's Q3 FY2027 earnings conference call is scheduled to begin at 2 p.m. Pacific Time on December 2, 2026."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/fy27-q3-earnings-date-announcement"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Q3 FY27 results will probably be reported in late November or early December 2026, after which the Q2 call will no longer be the latest.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Snowflake's Q3 FY27 results will probably be reported in late November or early December 2026, after which the Q2 call will no longer be the latest."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Q2 FY2027 product revenue was $1.49 billion.",
+   "asserted_by": [
+    "B",
+    "D",
+    "C"
+   ],
+   "variants": {
+    "B": "Q2 FY2027 product revenue was $1.49 billion, up 37% year over year.",
+    "D": "product revenue for the quarter ended July 31, 2026 was $1.49 billion, up 37% year over year.",
+    "C": "Snowflake's Q2 FY27 product revenue was $1.49B."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://pulse2.com/snowflake-q2-fiscal-2027-revenue-rises-35-to-1-55-billion-as-product-revenue-guidance-is-raised/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Q2 FY2027 product revenue grew 37% year over year.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "B": "up 37% year over year",
+    "D": "up 37% year over year"
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Q2 FY2027 was Snowflake's third consecutive quarter of product revenue growth acceleration.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Q2 FY2027 was Snowflake's third consecutive quarter of product revenue growth acceleration.",
+    "D": "Snowflake's Q2 FY2027 was its third consecutive quarter of product revenue growth acceleration."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm?trk=article-ssr-frontend-pulse_little-text-block"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Q2 benefited from strength in the core data platform and a meaningful step-up in AI revenue.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "B": "driven by strength in both the core data platform and a meaningful step-up in AI revenue.",
+    "A": "Q2 benefited from continued strength in its core data platform business and a meaningful step-up in AI revenue.",
+    "D": "Snowflake management attributed accelerating growth/consumption momentum to strength in its core data platform and a meaningful step-up in AI revenue."
+   },
+   "urls": [
+    "http://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c10",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "CEO Ramaswamy described a 'flywheel effect' in which AI products CoWork and CoCo drive rapid adoption, user growth, new workloads and platform consumption.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Snowflake CEO Sridhar Ramaswamy described a 'flywheel effect' in which AI products CoWork and CoCo drive rapid adoption, user growth, new workloads and overall platform consumption."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Snowflake's release said AI strength is fueling rapid adoption, user growth, new workloads, and overall platform consumption.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Snowflake's release said the AI strength is fueling rapid adoption, user growth, new workloads, and overall platform consumption."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm?trk=article-ssr-frontend-pulse_little-text-block"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Management said customers using AI on Snowflake consume more across the data platform, a 'structural multiplier' for the business.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "customers using AI on Snowflake consume more across the data platform, which it called a structural multiplier for its business.",
+    "A": "customers using AI on Snowflake consume more across the data platform, creating a 'structural multiplier' for its business.",
+    "F": "AI activation continues to lift overall platform consumption, and customers using AI on Snowflake consume more across the data platform, which it called a structural multiplier for the business."
+   },
+   "urls": [
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c14",
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Management said consumption was accelerating, with AI bringing new workloads onto the platform.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "management said consumption was accelerating, with AI bringing new workloads onto the platform."
+   },
+   "urls": [
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Accounts using CoCo consume more of the core platform, which management described as a flywheel effect.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Snowflake said accounts using CoCo are consuming more of the core platform, describing a flywheel effect.",
+    "F": "Snowflake CFO Brian Robins said accounts using CoCo consume more of Snowflake's core platform, describing a flywheel effect."
+   },
+   "urls": [
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "CoWork consumption was scaling and contributing revenue.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Snowflake said CoWork consumption was scaling and contributing revenue."
+   },
+   "urls": [
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "CFO Brian Robins made the comments on CoCo and CoWork consumption trends.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "CFO Brian Robins made the comments on the CoCo and CoWork consumption trends."
+   },
+   "urls": [
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "AI products contributed approximately half of the acceleration, with other products, faster migrations and workloads supplying the rest.",
+   "asserted_by": [
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "On the call, Ramaswamy said AI products contributed approximately half of Snowflake's growth acceleration, with core products and faster migrations supplying the rest.",
+    "F": "Snowflake CEO Sridhar Ramaswamy said AI products contributed approximately half of the acceleration in consumption, while other products, faster migrations and other workloads also showed robust growth."
+   },
+   "urls": [
+    "https://finance.yahoo.com/technology/ai/articles/snow-q2-earnings-call-highlights-140000166.html",
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "The acceleration was broad-based and not concentrated in AI-native companies.",
+   "asserted_by": [
+    "F",
+    "D"
+   ],
+   "variants": {
+    "F": "Snowflake management said the acceleration was broad-based rather than concentrated in AI-native companies.",
+    "D": "Snowflake management said the acceleration came from a very broad swath of customers and was not concentrated in AI-native companies."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Snowflake tracks time to 80% of purchased consumption for new logos by cohort, and it has visibly improved for the newest cohorts.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Snowflake tracks a metric, time to 80% of purchased consumption for new logos, measured cohort by cohort, and said it has 'very, very visibly improved' for the newest cohorts of customers.",
+    "F": "Snowflake said cohort effects were noticeable, with the newest customer cohorts reaching 80% of purchased consumption more visibly."
+   },
+   "urls": [
+    "http://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Snowflake is not ready to share exact uplift numbers for the consumption effect of AI adoption.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Snowflake management said it isn't ready to share exact uplift numbers for the consumption effect of AI adoption.",
+    "F": "Snowflake said it was not ready to share exact consumption uplift numbers for AI adopters, but that it measures cohort behavior."
+   },
+   "urls": [
+    "http://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Snowflake's forecast is based on observed consumption patterns.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Snowflake said its forecast is based on observed consumption patterns.",
+    "F": "Snowflake said its forecast is based on observed consumption patterns",
+    "C": "Snowflake's forecast is based on observed consumption patterns, per Robins."
+   },
+   "urls": [
+    "https://finance.yahoo.com/technology/ai/articles/snow-q2-earnings-call-highlights-140000166.html",
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c27",
+    "c28"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "Snowflake raised FY2027 product revenue guidance to $6.07 billion, 36% year-over-year growth.",
+   "asserted_by": [
+    "E",
+    "F",
+    "D",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "E": "Snowflake raised its FY2027 product revenue guidance to $6.07 billion, representing 36% year-over-year growth.",
+    "F": "raised FY27 product revenue guidance to $6.07 billion, representing 36% year-over-year growth.",
+    "D": "Snowflake raised FY2027 product-revenue guidance to $6.07 billion, representing 36% year-over-year growth, as of September 2, 2026.",
+    "B": "Snowflake raised full-year FY2027 product revenue guidance to $6,070 million (36% year-over-year growth)",
+    "C": "Snowflake raised its FY27 product revenue guidance to $6.07B (36% year over year growth)"
+   },
+   "urls": [
+    "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Prior FY2027 product revenue guidance was $5.84 billion.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "from prior guidance of $5,840 million",
+    "C": "from $5.84B"
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Prior FY2027 product revenue guidance implied 31% year-over-year growth.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "prior guidance of $5,840 million (31% growth)"
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Snowflake guided Q3 FY2027 product revenue to $1.588–$1.593 billion, 37–38% growth.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Snowflake guided Q3 FY2027 product revenue to $1,588–$1,593 million, representing 37–38% year-over-year growth.",
+    "C": "Snowflake guided Q3 FY27 product revenue to $1.588–$1.593B, representing 37–38% growth."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://pulse2.com/snowflake-q2-fiscal-2027-revenue-rises-35-to-1-55-billion-as-product-revenue-guidance-is-raised/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Snowflake's net revenue retention rate was 126%.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Snowflake's net revenue retention rate was 126% as of July 31, 2026.",
+    "C": "Snowflake's net revenue retention was 126% in Q2 FY27."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://pulse2.com/snowflake-q2-fiscal-2027-revenue-rises-35-to-1-55-billion-as-product-revenue-guidance-is-raised/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Remaining performance obligations were $9.00 billion, up 30% year over year.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Snowflake's remaining performance obligations were $9.00 billion as of July 31, 2026, up 30% year over year.",
+    "C": "Snowflake's remaining performance obligations (RPO) were $9B, up 30%, in Q2 FY27."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://pulse2.com/snowflake-q2-fiscal-2027-revenue-rises-35-to-1-55-billion-as-product-revenue-guidance-is-raised/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "CoCo surpassed 9,100 accounts.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Snowflake's CoCo surpassed 9,100 accounts, adding more than 2,000 in the quarter, and CoWork expanded to 5,800 accounts.",
+    "F": "Snowflake had 9,100 CoCo accounts in Q2 FY27."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+    "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "CoCo added more than 2,000 accounts in the quarter, and CoWork expanded to 5,800 accounts.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "adding more than 2,000 in the quarter, and CoWork expanded to 5,800 accounts."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Snowflake added 692 net new customers in Q2 FY2027, up 32% year over year.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Snowflake added 692 net new customers in Q2 FY2027, up 32% year over year."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Snowflake had 828 customers with trailing 12-month product revenue above $1 million (up 27% YoY) and 829 Forbes Global 2000 customers.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Snowflake had 828 customers with trailing 12-month product revenue greater than $1 million, up 27% year over year, and 829 Forbes Global 2000 customers."
+   },
+   "urls": [
+    "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Snowflake raised FY2027 non-GAAP operating margin guidance to 14.5% from 13.5%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Snowflake raised FY2027 non-GAAP operating margin guidance to 14.5% from 13.5%."
+   },
+   "urls": [
+    "https://finance.yahoo.com/technology/ai/articles/snow-q2-earnings-call-highlights-140000166.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Snowflake guided non-GAAP product gross margin to 74% due to higher mix of fast-growing AI workloads.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Snowflake guided non-GAAP product gross margin to 74% due to the higher mix of fast-growing AI workloads."
+   },
+   "urls": [
+    "https://finance.yahoo.com/technology/ai/articles/snow-q2-earnings-call-highlights-140000166.html",
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c40",
+    "c41"
+   ]
+  },
+  {
+   "cid": "c42",
+   "claim": "Product revenue growth accelerated by 7 percentage points in two quarters, after ending the prior fiscal year at 30% growth.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Snowflake's product revenue growth accelerated by 7 percentage points in two quarters, after ending the prior fiscal year at 30% growth."
+   },
+   "urls": [
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-snowflake-beats-q2-2026-estimates-shares-jump-22-93CH-4886846"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Snowflake shares jumped about 22% after hours following the Q2 FY2027 results and raised outlook.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Snowflake shares jumped about 22% after hours following the Q2 FY2027 results and raised outlook."
+   },
+   "urls": [
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-snowflake-beats-q2-2026-estimates-shares-jump-22-93CH-4886846"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "Snowflake expects bookings to be increasingly weighted towards the fourth quarter.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Snowflake expects bookings to be increasingly weighted towards the fourth quarter."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Snowflake's Q2 FY27 total revenue rose 35% to about $1.55B.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Snowflake's Q2 FY27 total revenue rose 35% to about $1.55B."
+   },
+   "urls": [
+    "https://pulse2.com/snowflake-q2-fiscal-2027-revenue-rises-35-to-1-55-billion-as-product-revenue-guidance-is-raised/"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Q2 FY27 results and call were September 2, 2026; Q3 call is scheduled for Dec 2, so Q2 is the latest.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Release states Q2 fiscal 2027 ended July 31, 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/fy27-q3-earnings-date-announcement",
+   "note": "Q3 results are scheduled for Dec 2, 2026, after today's date, so the call has not yet occurred.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/fy27-q3-earnings-date-announcement",
+   "note": "Company announcement gives the call at 2 p.m. PT on December 2, 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/fy27-q3-earnings-date-announcement",
+   "note": "Q3 is scheduled for Dec 2, so early December is correct; 'probably' hedges, and the Q2 call will then be superseded.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Product revenue was $1,491.9M, about $1.49B.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Release table shows 37% year-over-year product revenue growth.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Release and call both say Q2 was the third consecutive quarter of acceleration.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/",
+   "note": "Robins said Q2 benefited from core data platform strength and a meaningful step-up in AI revenue.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true",
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Ramaswamy's release quote describes a flywheel effect with CoWork and CoCo fueling adoption, user growth, new workloads and platform consumption.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Release quote says CoWork and CoCo are fueling rapid adoption, user growth, new workloads and overall platform consumption.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.yahoo.com/technology/ai/articles/snow-q2-earnings-call-highlights-140000166.html",
+   "note": "Sources confirm customers using AI consume more across the platform; the exact 'structural multiplier' wording is not seen in the passages but is plausible from the call.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "F": "true",
+    "C": "true",
+    "D": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "note": "Management said AI brings new workloads and the flywheel is accelerating, with product revenue growth accelerating for a third straight quarter.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "note": "Robins said adopters of CoCo and CoWork also increase business within the core, and management called the effect a flywheel.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "note": "Robins made the remarks on CoCo and CoWork adopters increasing core business.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://finance.yahoo.com/technology/ai/articles/snow-q2-earnings-call-highlights-140000166.html",
+   "note": "Ramaswamy said AI products contributed about half of the acceleration, with core products and faster migrations supplying the rest.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true",
+    "E": "true"
+   }
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "note": "Ramaswamy said growth came from a broad customer base and AI-native companies remain a small part of revenue.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "note": "The transcript says time to 80% of purchased consumption has 'very, very visibly improved' for the newest cohorts.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "note": "Robins said guidance is based on observed behavior up until the call.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true",
+    "C": "true",
+    "B": "true",
+    "D": "true"
+   }
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "The press release gives FY27 product revenue guidance of $6,070M, 36% growth.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Previous guidance was $5,840M, or 31% growth.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Release says the new $6,070M guide is up from the previous $5,840M, or 31% growth.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Q3 guide of $1,588M-$1,593M, or 37-38% growth, is confirmed by the release and the call transcript. The Q3 report is not yet out as of today, so this is the latest guidance.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "NRR of 126% is in the release and the call.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "RPO of $9.00B, up 30%, is confirmed.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "CoCo passed 9,100 accounts, and CoWork is at 5,800, per the release.",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "The release states more than 2,000 CoCo accounts were added in the quarter, and CoWork reached 5,800.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "692 net new customers, up 32% year over year, is confirmed.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "828 customers above $1M (up 27%) and 829 Forbes Global 2000 customers are confirmed.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "The margin guide rose from 13.5% to 14.5%. It is a margin item rather than a consumption item.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/09/09/snowflake-snow-q2-2027-earnings-call-transcript/",
+   "note": "The CFO tied the 74% gross margin guide to a higher mix of AI workloads.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   }
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "note": "The call says growth exited Q4 at 30% and added 7 points of acceleration in two quarters to 37%.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-snowflake-beats-q2-2026-estimates-shares-jump-22-93CH-4886846",
+   "note": "Shares rose 22.37% after hours, per Investing.com.",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-snowflake-beats-q2-2026-estimates-shares-jump-22-93CH-4886846",
+   "note": "The CFO's call remarks say customers favor Q4 renewals, so bookings will be increasingly weighted to Q4.",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027/",
+   "note": "Total revenue of $1.55B, up 35%, is confirmed.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+   "confidence": "high",
+   "note": "The CFO said on the Q2 FY27 call: \"Consumption of CoWork is scaling and driving revenue contribution alongside a diverse set of AI tools.\" Text confirmed in the stockanalysis.com copy of the transcript. The Q2 call is the latest, since Q3 hasn't been reported as of 2026-11-10.",
+   "via": "agent"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://stockanalysis.com/stocks/snow/transcripts/681381-q2-2027/",
+   "confidence": "high",
+   "note": "CEO Ramaswamy: \"At this time, we are not ready to share the exact uplift numbers, but we do measure cohort behavior.\" Both variants A and F match. The Motley Fool transcript says the same.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "note": "Q2 FY27 is the latest call (Sept 2, 2026; Q3 results are due Dec 2). In the press release Ramaswamy said AI is 'creating a flywheel effect across the business' and that CoWork and CoCo are 'driving transformational outcomes.' On the call he said the flywheel strengthens platform demand through AI ad"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "note": "Per the Q2 FY27 call transcript, CFO Robins said: 'As always, our forecast is based on observed consumption patterns. There are no changes to our forecast methodology or our guidance philosophy.'"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "The Q2 FY27 release raised FY27 product revenue guidance to $6,070M, up from the prior $5,840M (31% growth). The $5.84B figure was set at Q1. This is context for the consumption question rather than a direct answer."
+  }
+ },
+ "scores": {
+  "parallel": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 37,
+   "truth_weight": 169.5,
+   "coverage": 0.177,
+   "accuracy": 1.0,
+   "combined": 0.301,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 24,
+   "unverifiable": 0,
+   "true": 24,
+   "wrong": 0,
+   "truth": 37,
+   "truth_weight": 169.5,
+   "coverage": 0.748,
+   "accuracy": 1.0,
+   "combined": 0.856,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 17,
+   "unverifiable": 0,
+   "true": 17,
+   "wrong": 0,
+   "truth": 37,
+   "truth_weight": 169.5,
+   "coverage": 0.584,
+   "accuracy": 1.0,
+   "combined": 0.737,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 37,
+   "truth_weight": 169.5,
+   "coverage": 0.354,
+   "accuracy": 1.0,
+   "combined": 0.523,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 37,
+   "truth_weight": 169.5,
+   "coverage": 0.288,
+   "accuracy": 1.0,
+   "combined": 0.447,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 37,
+   "truth_weight": 169.5,
+   "coverage": 0.372,
+   "accuracy": 1.0,
+   "combined": 0.542,
+   "metric": "F1"
+  }
+ }
+}

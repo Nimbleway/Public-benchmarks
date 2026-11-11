@@ -1,23 +1,31 @@
 """One function per provider. Same instructions, same task, same output schema. Each returns
-{arm, tier, status, seconds, output, cost_usd, cost_basis, run_id, error}.
+{arm, tier, status, seconds, output, cost_usd, cost_basis, run_id, error, ...}.
 
-Price-matched tiers (list price per run):
+Price-matched tiers (list price per run) for the four research APIs:
   tier     Nimble          Exa Agent        Parallel Task      Firecrawl Agent (spark-2, dynamic credits)
   medium   medium $0.10    medium $0.10     pro $0.10          effort medium, maxCredits 2500 (default)
   high     high   $0.50    high   $0.50     ultra2x $0.60      effort high,   maxCredits 2500 (default)
 No x-high tier: due diligence runs at high.
 
-Keys come from the environment (or .env): NIMBLE_API_KEY, EXA_API_KEY, PARALLEL_API_KEY, FIRECRAWL_API_KEY.
+Two frontier models with their own web tools, tier = reasoning effort (medium / high), never x-high:
+  gpt    GPT-6.1 Sol through the OpenAI Responses API with the built-in web_search tool
+  opus   Claude Opus 5.5 through the Claude Code CLI (headless), tools limited to WebSearch and WebFetch
+
+Keys come from the environment (or .env): NIMBLE_API_KEY, EXA_API_KEY, PARALLEL_API_KEY, FIRECRAWL_API_KEY,
+OPENAI_API_KEY. The opus arm uses your own `claude` CLI login.
 """
 import copy
 import json
 import os
+import re
+import subprocess
 import time
+from collections import Counter
 
 import certifi
 import httpx
 
-from . import load_env
+from . import ROOT, load_env
 
 load_env()
 
@@ -49,6 +57,10 @@ LIST = {"nimble": {"medium": 0.10, "high": 0.50, "x-high": 2.00},
         "exa": {"medium": 0.10, "high": 0.50},
         "parallel": {"pro": 0.10, "ultra2x": 0.60, "ultra8x": 2.40}}
 FC_CREDIT_USD = 99 / 100_000  # Firecrawl Standard plan rate
+# gpt-6.1-sol, $ per 1M tokens: input, cached input, output (third-party price trackers, Nov 2026; not yet checked on
+# openai.com), plus $10 per 1,000 web search calls.
+SOL_PRICE = (2.0, 0.10, 10.0)
+WEB_SEARCH_CALL_USD = 10 / 1000
 
 
 def prompt(spec, task):
@@ -182,4 +194,71 @@ def run_firecrawl(spec, task, tier):
             "error": d.get("error"), "exchange": d.get("exchange")}
 
 
-ARMS = {"nimble": run_nimble, "exa": run_exa, "parallel": run_parallel, "firecrawl": run_firecrawl}
+def _json_out(text):
+    m = re.search(r"\{.*\}", text or "", re.S)
+    try:
+        return json.loads(m.group(0)) if m else None
+    except json.JSONDecodeError:
+        return None
+
+
+def run_gpt(spec, task, tier, model="gpt-6.1-sol", price=SOL_PRICE):
+    h = {"Authorization": f"Bearer {KEY('OPENAI_API_KEY')}", "Content-Type": "application/json"}
+    body = {"model": model, "reasoning": {"effort": "high" if tier == "high" else "medium"},
+            "tools": [{"type": "web_search"}], "background": True,
+            "instructions": spec["instructions"] + "\n\nReturn only JSON matching this output schema:\n" + json.dumps(spec["output_schema"]),
+            "input": f"Task: {task}"}
+    t0 = time.time()
+    r = httpx.post("https://api.openai.com/v1/responses", headers=h, json=body, **H)
+    if r.status_code >= 400:
+        return {"arm": "gpt", "tier": body["reasoning"]["effort"], "status": "error", "error": r.text[:800]}
+    rid = r.json()["id"]
+
+    def done():
+        d = httpx.get(f"https://api.openai.com/v1/responses/{rid}", headers=h, **H).json()
+        return d if d.get("status") in ("completed", "failed", "cancelled", "incomplete") else None
+    d = poll(done, 10) or {"status": "timeout"}
+    text, cites, actions = "", [], Counter()
+    for item in d.get("output") or []:
+        if item.get("type") == "web_search_call":
+            actions[(item.get("action") or {}).get("type") or "search"] += 1
+        for c in item.get("content") or []:
+            if c.get("type") == "output_text":
+                text += c.get("text") or ""
+                cites += [{"url": a.get("url"), "title": a.get("title")} for a in c.get("annotations") or [] if a.get("url")]
+    u = d.get("usage") or {}
+    calls = sum(actions.values())
+    token_cost = cost = None
+    if price and u:
+        cached = (u.get("input_tokens_details") or {}).get("cached_tokens") or 0
+        token_cost = round(((u.get("input_tokens", 0) - cached) * price[0] + cached * price[1] + u.get("output_tokens", 0) * price[2]) / 1e6, 4)
+        cost = round(token_cost + calls * WEB_SEARCH_CALL_USD, 4)
+    st = "completed" if d.get("status") == "completed" else d.get("status")
+    return {"arm": "gpt", "model": model, "tier": body["reasoning"]["effort"], "run_id": rid, "status": st,
+            "seconds": round(time.time() - t0), "output": _json_out(text) if text else None,
+            "raw_text": None if _json_out(text) else text[:20000], "basis": [{"citations": cites}], "usage": u,
+            "search_calls": calls, "search_actions": dict(actions), "token_cost_usd": token_cost, "cost_usd": cost,
+            "cost_basis": "tokens x list price + $10 per 1K web search calls" if cost is not None else "tokens only",
+            "error": (d.get("error") or {}).get("message") if isinstance(d.get("error"), dict) else d.get("error")}
+
+
+def run_opus(spec, task, tier):
+    eff = "high" if tier == "high" else "medium"
+    sysmsg = spec["instructions"] + "\n\nUse web search and page fetches as needed. Return only JSON matching this output schema:\n" + json.dumps(spec["output_schema"])
+    args = ["claude", "-p", "--strict-mcp-config", "--disable-slash-commands", "--setting-sources", "project",
+            "--model", "claude-opus-5-5", "--effort", eff, "--system-prompt", sysmsg, "--output-format", "json",
+            "--tools", "WebSearch,WebFetch", "--allowedTools", "WebSearch", "WebFetch"]
+    t0 = time.time()
+    try:
+        p = subprocess.run(args, input=f"Task: {task}", capture_output=True, text=True, timeout=3600, cwd=ROOT)
+        env = json.loads(p.stdout)
+    except Exception as e:  # noqa: BLE001
+        return {"arm": "opus", "tier": eff, "status": "error", "seconds": round(time.time() - t0), "error": str(e)[:800]}
+    out = _json_out(env.get("result"))
+    return {"arm": "opus", "tier": eff, "run_id": env.get("session_id"), "status": "completed" if out is not None else "failed",
+            "seconds": round(time.time() - t0), "output": out, "raw_text": None if out is not None else (env.get("result") or "")[:20000],
+            "cost_usd": env.get("total_cost_usd"), "cost_basis": "Claude Code reported, API-equivalent", "num_turns": env.get("num_turns")}
+
+
+ARMS = {"nimble": run_nimble, "exa": run_exa, "parallel": run_parallel, "firecrawl": run_firecrawl,
+        "gpt": run_gpt, "opus": run_opus}

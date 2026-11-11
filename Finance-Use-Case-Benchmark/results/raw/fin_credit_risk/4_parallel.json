@@ -1,0 +1,735 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "fin_credit_risk",
+ "input": "Assess the credit and counterparty risk of AMC Entertainment",
+ "input_n": 4,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 402,
+ "run_id": "trun_ee10de0fcb3b4296bfa57d05aa03bef2",
+ "output": {
+  "risk_rationale": "As of 2026-11-04, credit and counterparty risk is elevated: Fitch's B-/Positive rating and history of substantial negative free cash flow indicate meaningful speculative-grade risk (https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026). AMC reported $3.9142 billion of corporate borrowing principal at June 30 and warned that historical cash-burn rates were unsustainable, although first-half operating cash flow improved to positive $106.9 million (https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm). Preliminary August 31 cash of $832.5 million and the completed October 5 refinancing extending major maturities to 2031 and 2033 mitigate near-term risk, but that cash balance predates the refinancing and post-closing liquidity was not verified (https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm; https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm).",
+  "ownership": {
+   "value": "Public company with publicly held common stock. The latest proxy identifies institutional beneficial holders including Pentwater Capital Management LP and Discovery Capital Management LLC; a recent change of control or controlling sponsor was not verified.",
+   "source_url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-093412/tm264130-4_def14a.htm",
+   "as_of": "2026-07-31"
+  },
+  "company": "AMC Entertainment Holdings, Inc. (NYSE: AMC), consolidated",
+  "distress_signals": [
+   {
+    "date": "2026-07-23",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "summary": "The Q2 Form 10-Q warned that historical cash-burn rates were not sustainable long-term and that additional liquidity beyond twelve months was not assured. Management nevertheless believed existing cash plus operating cash generation would cover operations and obligations for the next twelve months; this is a management liquidity warning, not an identified auditor substantial-doubt opinion."
+   },
+   {
+    "date": "2025-12-31",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000016/amc-20251231x10k.htm",
+    "summary": "FY2025 non-cash long-lived-asset impairments totaled $43.5 million, affecting 47 U.S. theatres and 20 international theatres. These impairments indicate asset underperformance but do not establish that those theatres closed."
+   }
+  ],
+  "missing_fields": [
+   "payment_behaviour: current supplier-payment delays, liens, collection suits or creditor judgments against the exact entity were not verified. The empty list does not establish timely payment.",
+   "financials: actual Q3 2026 results and a Q3 Form 10-Q were not verified. AMC scheduled its results and webcast for November 4, 2026 after market close; the latest full financial filing verified was Q2 2026.",
+   "financials: exact, reconciled post-October 5 refinancing debt, cash and total available liquidity were not verified; the later remaining-debt figure is a management approximation.",
+   "financials: quantified undrawn revolving-credit availability was not verified.",
+   "ownership: a recent change-of-control event or controlling sponsor was not verified.",
+   "distress_signals: current layoffs, hiring freezes, confirmed site closures, CFO departures, auditor changes and major-customer losses were not verified."
+  ],
+  "credit_ratings": [
+   {
+    "date": "2026-07-28",
+    "source_url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+    "summary": "Latest verified S&P issuer credit rating: B-/Stable, upgraded from CCC+/Negative on improved operating performance and expected credit-metric improvement."
+   },
+   {
+    "date": "2026-09-21",
+    "source_url": "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026",
+    "summary": "Fitch affirmed the long-term issuer default rating at B- with a Positive outlook. New first-lien debt was rated B/RR3 and second-lien debt CCC/RR6. Fitch's issuer history also records a new B- rating on September 8, 2026."
+   },
+   {
+    "date": "2026-09-21",
+    "source_url": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+    "summary": "Investing.com reported Moody's upgrade of AMC's corporate family rating to B3 from Caa2, with the outlook changed to Positive from Stable. The speculative-grade liquidity rating improved to SGL-3 from SGL-4. This rating action was verified through secondary reporting rather than an opened Moody's release."
+   }
+  ],
+  "financials": [
+   {
+    "stated_by": "AMC Entertainment Holdings, Inc., September 21, 2026 Form 8-K exhibit; preliminary, unaudited and not independently reviewed",
+    "value": 1334800000.0,
+    "period": "Two months ended 2026-08-31; disclosed 2026-09-21",
+    "source_url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+    "currency": "USD",
+    "metric": "Consolidated revenue, preliminary two-month period; not a full-quarter result"
+   },
+   {
+    "stated_by": "AMC Entertainment Holdings, Inc., Q2 2026 Form 10-Q",
+    "value": 1596700000.0,
+    "period": "Three months ended 2026-06-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "currency": "USD",
+    "metric": "Total revenue, latest verified full quarterly filing"
+   },
+   {
+    "stated_by": "AMC Entertainment Holdings, Inc., Q2 2026 Form 10-Q",
+    "value": 238100000.0,
+    "period": "Three months ended 2026-06-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "currency": "USD",
+    "metric": "GAAP operating income"
+   },
+   {
+    "stated_by": "AMC Entertainment Holdings, Inc., Q2 2026 Form 10-Q",
+    "value": 321400000.0,
+    "period": "Three months ended 2026-06-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "currency": "USD",
+    "metric": "Adjusted EBITDA, non-GAAP"
+   },
+   {
+    "stated_by": "AMC Entertainment Holdings, Inc., September 21, 2026 Form 8-K exhibit; preliminary, unaudited and not independently reviewed",
+    "value": 832500000.0,
+    "period": "As of 2026-08-31; disclosed 2026-09-21",
+    "source_url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+    "currency": "USD",
+    "metric": "Cash and cash equivalents, excluding restricted cash; predates October refinancing"
+   },
+   {
+    "stated_by": "AMC Entertainment Holdings, Inc., Q2 2026 Form 10-Q",
+    "value": 3914200000.0,
+    "period": "As of 2026-06-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "currency": "USD",
+    "metric": "Total principal amount of corporate borrowings, excluding lease liabilities; not the GAAP carrying amount"
+   },
+   {
+    "stated_by": "AMC management, October 5, 2026 refinancing announcement",
+    "value": 4000000000.0,
+    "period": "Statement dated 2026-10-05",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+    "currency": "USD",
+    "metric": "Remaining debt, approximately; management description not reconciled to the filed corporate-borrowings measure"
+   },
+   {
+    "stated_by": "AMC Entertainment Holdings, Inc., Q2 2026 Form 10-Q",
+    "value": 106900000.0,
+    "period": "Six months ended 2026-06-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "currency": "USD",
+    "metric": "Net cash provided by operating activities"
+   },
+   {
+    "stated_by": "AMC management, Q2 2026 Form 10-Q",
+    "value": 12.0,
+    "period": "Forward-looking statement in Form 10-Q filed 2026-07-23",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "currency": null,
+    "metric": "Months of management-stated liquidity coverage from existing cash plus expected operating cash generation; not cash-only runway or a guarantee"
+   },
+   {
+    "stated_by": null,
+    "value": null,
+    "period": "As of 2026-11-04; not verified",
+    "source_url": null,
+    "currency": "USD",
+    "metric": "Undrawn revolving-credit availability"
+   }
+  ],
+  "risk_call": "elevated",
+  "payment_behaviour": [],
+  "debt_events": [
+   {
+    "date": "2026-01-29",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926007682/tm264399d1_8k.htm",
+    "summary": "AMC entered a lender letter agreement providing for indenture amendments to facilitate refinancing of existing AMC and Odeon debt. Implementation was targeted by February 23, 2026, and AMC committed to a consent fee payable in common stock. The filing did not describe this as a default or covenant-breach cure."
+   },
+   {
+    "date": "2026-06-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+    "summary": "AMC stated that it believed it was in full compliance with outstanding-debt agreements and related covenants. The Form 10-Q reported no defaults upon senior securities; this is a June 30 status, not confirmation of all obligations through November 4."
+   },
+   {
+    "date": "2026-10-05",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+    "summary": "Completed $3.97 billion of refinancing: $2.0 billion of 8.875% first-lien notes due 2031, an $850 million first-lien term loan due October 5, 2031, and a $1.12 billion second-lien term loan at 11.25% due October 5, 2033. Existing AMC and Odeon term loans were repaid, the tender offer settled, and all $903.4 million of Muvico 1.5L notes were redeemed. The financing extends major maturities but does not establish that total debt fell by the amount refinanced."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "Fitch Rates Amc Entertainment New First Lien Debt B Rr3 21 09 2026",
+     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026",
+     "excerpts": [
+      "Fitch Ratings - Toronto - 21 Sep 2026",
+      "**Negative FCF, Improving Liquidity** : AMC generated substantial negative FCF over the last four years"
+     ]
+    },
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "|Total principal amount of corporate borrowings | |$ |3,914.2",
+      "Our historical cash burn rates are not sustainable long-term.",
+      "|Net cash provided by (used in) operating activities | | |106\\.9"
+     ]
+    },
+    {
+     "title": "September 21, 2026 - EXHIBIT 99.1 - 8-K: Current report | AMC Entertainment Holdings, Inc. (AMC)",
+     "url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+     "excerpts": [
+      "|Additionally, cash and cash equivalents as of August 31, 2026 was $832.5 million, excluding restricted cash"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+     "excerpts": [
+      "**Debt Maturities Extended to 2031 and 2033**",
+      "(NYSE: AMC) (the “Company” or “AMC”) announced today that it has successfully completed its previously announced refinancing of $3.97 billion"
+     ]
+    }
+   ],
+   "reasoning": "The rating and negative-free-cash-flow history support significant credit risk. Filed debt principal and the cash-burn warning are constraints, while positive operating cash flow, later preliminary cash and completed maturity extensions are mitigants. The risk conclusion is analytical; the August cash balance is explicitly not treated as post-refinancing liquidity.",
+   "confidence": "medium"
+  },
+  {
+   "field": "ownership",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "Securities registered pursuant to Section 12(b) of the Act: | | | | | | |**Title of each class** | |**Trading Symbol** | |**Name of each exchange on which registered** | |Class A common stock | |AMC | |New York Stock Exchange"
+     ]
+    },
+    {
+     "title": "August 10, 2026 - DEF 14A: Definitive proxy statements | AMC Entertainment Holdings, Inc. (AMC)",
+     "url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-093412/tm264130-4_def14a.htm",
+     "excerpts": [
+      "NYSE rules permit brokers to vote shares on certain proposals when they have not received any directions.",
+      "|UBS Group AG(1) |​ |​ |​ |​ |31,798,365 |​ |​ |​ |​ |​ |3\\.56 |​ |​ | |Discovery Capital Management, LLC(2) |​ |​ |​ |​ |55,511,739 |​ |​ |​ |​ |​ |6\\.22 |​ |​ | |Pentwater Capital Management LP(3) |​ |​ |​ |​ |63,643,277 |​ |​ |​ |​ |​ |7\\.13"
+     ]
+    }
+   ],
+   "reasoning": "The filing establishes public-market registration and the proxy identifies beneficial owners as of July 31. Absence of a verified change of control is disclosed as a research limitation, not proof that none occurred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "company",
+   "citations": [
+    {
+     "title": "Amc Entertainment Holdings Inc 82727879",
+     "url": "https://www.fitchratings.com/entity/amc-entertainment-holdings-inc-82727879",
+     "excerpts": [
+      "AMC Entertainment Holdings, Inc."
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+     "excerpts": [
+      "**LEAWOOD, KANSAS – October 5, 2026:** AMC Entertainment Holdings, Inc. (NYSE: AMC) (the “Company” or “AMC”) announced today that it has successfully completed its previously announced refinancing of $3.97 billion of its existing debt, including the offering of $2,000 million aggregate principal amount of first lien notes due 2031 (the “Notes”) in a private offering (the “Offering”), borrowing of a new $850 million first lien term loan facility (the “New 1L Term Loan Facility”) and a new second lien term loan facility"
+     ]
+    }
+   ],
+   "reasoning": "The issuer identity is AMC Entertainment Holdings, Inc.; the company's announcement identifies NYSE: AMC. Financial figures are consolidated AMC figures, not AMC Networks or standalone subsidiary figures.",
+   "confidence": "high"
+  },
+  {
+   "field": "distress_signals",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "We believe our existing cash and cash equivalents, together with cash generated from operations, will be sufficient to fund our operations and satisfy our obligations currently and through the next twelve months",
+      "Our historical cash burn rates are not sustainable long-term.",
+      "Further, there can be no assurances that we will be successful in generating the additional liquidity necessary to meet our obligations beyond twelve"
+     ]
+    },
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._December 31, 2025",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000016/amc-20251231x10k.htm",
+     "excerpts": [
+      "During the year ended December 31, 2025, we recorded non-cash impairment charges"
+     ]
+    }
+   ],
+   "reasoning": "The quarterly liquidity discussion provides both the warning and management's near-term sufficiency assessment. Annual impairment disclosures provide a separate, realized asset-underperformance signal without implying closures.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "These entries identify limits of the verified evidence. Missing payment or event information is not treated as an authoritative negative or evidence of timely payment.",
+   "confidence": "low"
+  },
+  {
+   "field": "credit_ratings",
+   "citations": [
+    {
+     "title": "Research Update: AMC Entertainment Holdings Inc.  | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+     "excerpts": [
+      "|Issuer Credit Rating |B-/Stable/-- |CCC+/Negative/-- |",
+      "28-Jul-2026 | 13:26 EDT"
+     ]
+    },
+    {
+     "title": "Fitch Rates Amc Entertainment New First Lien Debt B Rr3 21 09 2026",
+     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026",
+     "excerpts": [
+      "Fitch Ratings - Toronto - 21 Sep 2026"
+     ]
+    },
+    {
+     "title": "Moody’s upgrades AMC rating to B3 on debt refinancing plan By Investing.com",
+     "url": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+     "excerpts": [
+      "Investing.com - Moody’s Ratings upgraded AMC Entertainment Holdings Inc.’s ( [NYSE:AMC](https://www.investing.com/equities/amc-entertat-hld) ) Corporate",
+      "The firm changed the outlook for all issuers to positive from stable and upgraded AMC’s Speculative Grade Liquidity rating to SGL-3 from SGL-4."
+     ]
+    }
+   ],
+   "reasoning": "S&P and Fitch are primary agency sources; Moody's is explicitly attributed to secondary reporting. These are the latest verified actions found, with their outlooks and changes preserved.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "|Total revenues | | |1,596.7",
+      "|Operating income (loss) | | |238\\.1",
+      "|Total principal amount of corporate borrowings | |$ |3,914.2",
+      "We believe our existing cash and cash equivalents, together with cash generated from operations, will be sufficient to fund our operations and satisfy our obligations currently and through the next twelve months"
+     ]
+    },
+    {
+     "title": "September 21, 2026 - EXHIBIT 99.1 - 8-K: Current report | AMC Entertainment Holdings, Inc. (AMC)",
+     "url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+     "excerpts": [
+      "|Additionally, cash and cash equivalents as of August 31, 2026 was $832.5 million, excluding restricted cash"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+     "excerpts": [
+      "Since 2020, AMC has paid down a total of nearly $2 billion"
+     ]
+    }
+   ],
+   "reasoning": "The list distinguishes full quarterly filing data, later preliminary two-month data, management's approximate debt description and a forward-looking liquidity statement. Dollar amounts reported in millions are converted to USD units; unavailable revolving availability remains null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "risk_call",
+   "citations": [
+    {
+     "title": "Fitch Rates Amc Entertainment New First Lien Debt B Rr3 21 09 2026",
+     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026",
+     "excerpts": [
+      "Fitch Ratings - Toronto - 21 Sep 2026"
+     ]
+    },
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "Our historical cash burn rates are not sustainable long-term."
+     ]
+    },
+    {
+     "title": "September 21, 2026 - EXHIBIT 99.1 - 8-K: Current report | AMC Entertainment Holdings, Inc. (AMC)",
+     "url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+     "excerpts": [
+      "|Additionally, cash and cash equivalents as of August 31, 2026 was $832.5 million, excluding restricted cash"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+     "excerpts": [
+      "**Debt Maturities Extended to 2031 and 2033**"
+     ]
+    }
+   ],
+   "reasoning": "Elevated is an analytical assessment balancing speculative-grade credit and cash-generation risk against meaningful cash and extended maturities. It is not an agency rating or an assertion of imminent default.",
+   "confidence": "medium"
+  },
+  {
+   "field": "payment_behaviour",
+   "citations": [],
+   "reasoning": "No sufficiently verified current trade-payment evidence against the exact entity was established. Standalone subsidiary cases and a vendor settlement in which AMC collected money were excluded.",
+   "confidence": "low"
+  },
+  {
+   "field": "debt_events",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926007682/tm264399d1_8k.htm",
+     "excerpts": [
+      "The amendments (the “Indenture Amendments”) will, among other things, provide the Company with the flexibility to refinance"
+     ]
+    },
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "As of June 30, 2026, the Company believes that it was in full compliance"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+     "excerpts": [
+      "The New 1L Term Loan Credit Agreement provides for the New 1L Term Loans in an initial aggregate principal amount of $850.0 million",
+      "The New 2L Term Loan Credit Agreement provides for the New 2L Term Loans in an initial aggregate principal amount of $1,120.0 million"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+     "excerpts": [
+      "(NYSE: AMC) (the “Company” or “AMC”) announced today that it has successfully completed its previously announced refinancing of $3.97 billion"
+     ]
+    }
+   ],
+   "reasoning": "The events separate a January agreement for future amendments, June covenant status, and October completed refinancing. Refinancing proceeds are not mischaracterized as equivalent debt reduction.",
+   "confidence": "high"
+  },
+  {
+   "field": "credit_ratings.0",
+   "citations": [
+    {
+     "title": "Research Update: AMC Entertainment Holdings Inc.  | S&P Global Ratings",
+     "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101697301",
+     "excerpts": [
+      "|Issuer Credit Rating |B-/Stable/-- |CCC+/Negative/-- |",
+      "28-Jul-2026 | 13:26 EDT",
+      "**The upgrade reflects expected improved credit metrics and positive reported cash flow.**"
+     ]
+    }
+   ],
+   "reasoning": "The dated primary S&P action directly identifies the rating upgrade, outlook and rationale.",
+   "confidence": "high"
+  },
+  {
+   "field": "credit_ratings.1",
+   "citations": [
+    {
+     "title": "Fitch Rates Amc Entertainment New First Lien Debt B Rr3 21 09 2026",
+     "url": "https://www.fitchratings.com/research/corporate-finance/fitch-rates-amc-entertainment-new-first-lien-debt-b-rr3-21-09-2026",
+     "excerpts": [
+      "Fitch Ratings - Toronto - 21 Sep 2026",
+      "Fitch has assigned AMC's new first lien debt a 'B‌' rating with a Recovery Rating of 'RR3' and its second lien debt a rating of 'CCC'/'RR6'."
+     ]
+    },
+    {
+     "title": "Amc Entertainment Holdings Inc 82727879",
+     "url": "https://www.fitchratings.com/entity/amc-entertainment-holdings-inc-82727879",
+     "excerpts": [
+      "Rating Action Commentary / Tue 08 Sep, 2026 [Fitch Assigns AMC Entertainment First-Time 'B-‌' IDR; Outlook Positive"
+     ]
+    }
+   ],
+   "reasoning": "The primary Fitch release gives the affirmed issuer rating and new debt ratings; issuer history documents the September 8 initial action.",
+   "confidence": "high"
+  },
+  {
+   "field": "credit_ratings.2",
+   "citations": [
+    {
+     "title": "Moody’s upgrades AMC rating to B3 on debt refinancing plan By Investing.com",
+     "url": "https://www.investing.com/news/stock-market-news/moodys-upgrades-amc-rating-to-b3-on-debt-refinancing-plan-93CH-4909529",
+     "excerpts": [
+      "PublishedSep 21, 2026, 02:56 PM",
+      "Investing.com - Moody’s Ratings upgraded AMC Entertainment Holdings Inc.’s ( [NYSE:AMC](https://www.investing.com/equities/amc-entertat-hld) ) Corporate",
+      "The firm changed the outlook for all issuers to positive from stable and upgraded AMC’s Speculative Grade Liquidity rating to SGL-3 from SGL-4."
+     ]
+    }
+   ],
+   "reasoning": "The dated secondary report states the Moody's corporate-family, outlook and liquidity-rating changes. Confidence is reduced because an agency release was not opened.",
+   "confidence": "medium"
+  },
+  {
+   "field": "debt_events.0",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926007682/tm264399d1_8k.htm",
+     "excerpts": [
+      "On January 29, 2026, AMC Entertainment Holdings, Inc. (the “Company” or “AMC”) and Muvico, LLC, a wholly owned subsidiary of the Company (“Muvico”), entered into a letter agreement (the “Letter Agreement”) with certain holders of Muvico’s Senior Secured Notes due 2029 (the “2029 Notes,” and such holders, the “2029 Noteholders”), pursuant to which the Company, Muvico and the 2029 Noteholders agreed to amend the indenture",
+      "The amendments (the “Indenture Amendments”) will, among other things, provide the Company with the flexibility to refinance",
+      "Pursuant to the Letter Agreement, the parties agreed to cooperate (including cooperating with the trustee and the notes collateral agent) in good faith to memorialize and effectuate the Indenture Amendments as soon as reasonably practicable, and in any event, no later than February 23, 2026",
+      "In consideration for the 2029 Noteholders’ agreement to the Indenture Amendments, AMC will pay"
+     ]
+    }
+   ],
+   "reasoning": "The SEC filing documents the letter agreement, planned implementation and equity consent fee; the answer does not claim the amendments had already been implemented.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.1",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "As of June 30, 2026, the Company believes that it was in full compliance"
+     ]
+    }
+   ],
+   "reasoning": "The company explicitly reports covenant compliance and no senior-security defaults for the covered filing period, without establishing a later all-obligations status.",
+   "confidence": "high"
+  },
+  {
+   "field": "debt_events.2",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+     "excerpts": [
+      "(NYSE: AMC) (the “Company” or “AMC”) announced today that it has successfully completed its previously announced refinancing of $3.97 billion"
+     ]
+    },
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_8k.htm",
+     "excerpts": [
+      "The Notes will bear interest at a rate of 8.875% per annum",
+      "The New 1L Term Loan Credit Agreement provides for the New 1L Term Loans in an initial aggregate principal amount of $850.0 million",
+      "The New 2L Term Loan Credit Agreement provides for the New 2L Term Loans in an initial aggregate principal amount of $1,120.0 million",
+      "The New 2L Term Loans bear interest at a fixed 11.25% interest rate",
+      "On the Closing Date, the Company repaid in full the outstanding term loans under that certain credit agreement, dated as of July 22, 2024, by and among the Company and Muvico, as borrowers, the lenders party thereto and Wilmington Savings Fund Society, FSB, as administrative agent and collateral agent (as amended, the “Existing Term Loan Facility”), with a portion of the net proceeds from the Notes offering and the New Term Loan Facilities. _Odeon",
+      "On the Closing Date, the Company settled its previously announced cash tender offer (the “Tender Offer”) for any and all of the Company’s outstanding 7.500% Senior Secured Notes due 2029 (the “AMC Secured Notes”). $355,515,000 aggregate principal amount of AMC Secured Notes were validly tendered and accepted for purchase in the Tender Offer. The Company also satisfied and discharged the indenture governing the AMC Secured Notes (the “AMC Secured Notes Indenture”) by irrevocably depositing with CSC Delaware Trust Company (as successor to U.S. Bank Trust Company, National Association), the trustee under the AMC Secured Notes Indenture, non-callable U.S. government securities sufficient to pay the redemption price of the remaining aggregate principal amount of AMC Secured Notes not tendered in the Tender Offer. Such remaining AMC Secured Notes will be redeemed on or about February 15, 2027 at a redemption price of 100\\.000% of the principal amount thereof plus accrued and unpaid interest to the redemption date. 5 _Redemption of Muvico"
+     ]
+    }
+   ],
+   "reasoning": "The completed refinancing is confirmed by the press release and SEC filing. Facility amounts sum to $3.97 billion; rates, maturities and retirement actions are transaction terms rather than forecasts.",
+   "confidence": "high"
+  },
+  {
+   "field": "distress_signals.0",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "We believe our existing cash and cash equivalents, together with cash generated from operations, will be sufficient to fund our operations and satisfy our obligations currently and through the next twelve months",
+      "Our historical cash burn rates are not sustainable long-term.",
+      "Further, there can be no assurances that we will be successful in generating the additional liquidity necessary to meet our obligations beyond twelve",
+      "|Rent | | |325\\.3 | | |115\\.4 | | |440\\.7 |"
+     ]
+    }
+   ],
+   "reasoning": "The quarterly management discussion directly states both the liquidity warning and its twelve-month sufficiency assessment. It is not presented as an auditor going-concern qualification.",
+   "confidence": "medium"
+  },
+  {
+   "field": "distress_signals.1",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._December 31, 2025",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000016/amc-20251231x10k.htm",
+     "excerpts": [
+      "During the year ended December 31, 2025, we recorded non-cash impairment charges",
+      "|Impairment of long-lived assets | |$ |43\\.5"
+     ]
+    }
+   ],
+   "reasoning": "The annual report identifies the affected theatre counts and total impairment expense. No closure inference is made.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.0",
+   "citations": [
+    {
+     "title": "September 21, 2026 - EXHIBIT 99.1 - 8-K: Current report | AMC Entertainment Holdings, Inc. (AMC)",
+     "url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+     "excerpts": [
+      "Published on September 21, 2026 **Exhibit 99.1** **Certain Preliminary Financial and Operating Data for the Two Months Ended August 31, 2026** | |Two Months Ended August 31, |Two Months Ended August 31, |Two Months Ended August 31, |Two Months Ended August 31, |Two Months Ended August 31, |Two Months Ended August 31, | | |(In millions) |2026 |2025 |Change | |% Change | | | |North American box office ¹ |$2,462.9 |$1,826.8 |$ |636\\.1 | |34\\.8 |% | |Company consolidated total revenue |$1,334.8 |$937\\.2 |$ |397\\.6 | |42\\.2 |% | |Consolidated Key Performance Indicators | | | | | | | | |Attendance (in thousands) |58,203 |42,840 | |15,363 | |35\\.9 |% | |Admissions revenue per patron |$12\\.89 |$12\\.14 |$ |0\\.75 | |6\\.2 |% | |Food and beverage revenue per patron |$7\\.90 |$7\\.70 |$ |0\\.20 | |2\\.6 |% | |Other theatre revenue per patron |$2\\.14 |$2\\.04 |$ |0\\.10 | |4\\.9 |% | |Total revenue per patron |$22\\.93 |$21\\.88 |$ |1\\.05 | |4\\.8 |% |",
+      "The preliminary estimated financial information for the two months ended August 31, 2026 is unaudited"
+     ]
+    }
+   ],
+   "reasoning": "The company exhibit reports $1,334.8 million for the two-month period. The answer preserves the preliminary status and does not compare it as a full-quarter figure.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.1",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "|**(In millions, except share and per share amounts)** |**​ ​ ​** |**June 30, 2026**",
+      "|Total revenues | | |1,596.7"
+     ]
+    }
+   ],
+   "reasoning": "Quarterly revenue of $1,596.7 million is converted to $1,596,700,000 without rounding.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.2",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "|Operating income (loss) | | |238\\.1"
+     ]
+    }
+   ],
+   "reasoning": "The quarterly operating-income row directly reports $238.1 million, converted to USD units.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.3",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "|Adjusted EBITDA | |$ |285\\.6 | |$ |35\\.8 | |$ |321\\.4"
+     ]
+    }
+   ],
+   "reasoning": "The company's reconciliation reports total adjusted EBITDA of $321.4 million; it is explicitly labeled non-GAAP.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.4",
+   "citations": [
+    {
+     "title": "September 21, 2026 - EXHIBIT 99.1 - 8-K: Current report | AMC Entertainment Holdings, Inc. (AMC)",
+     "url": "https://investor.amctheatres.com/sec-filings/all-sec-filings/content/0001104659-26-109129/tm2625696d2_ex99-1.htm",
+     "excerpts": [
+      "|Additionally, cash and cash equivalents as of August 31, 2026 was $832.5 million, excluding restricted cash",
+      "The preliminary estimated financial information for the two months ended August 31, 2026 is unaudited"
+     ]
+    }
+   ],
+   "reasoning": "The exhibit directly states cash of $832.5 million as of August 31, excluding restricted cash. Its provisional status and pre-refinancing date are retained.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.5",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "|Total principal amount of corporate borrowings | |$ |3,914.2",
+      "|Finance lease liabilities | | |52\\.6"
+     ]
+    }
+   ],
+   "reasoning": "The debt table separates $3,914.2 million corporate principal from finance leases and subsequent carrying-value adjustments. The answer uses the principal measure rather than conflating it with net carrying value.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.6",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000110465926113853/tm2627016d1_ex99-1.htm",
+     "excerpts": [
+      "Since 2020, AMC has paid down a total of nearly $2 billion"
+     ]
+    }
+   ],
+   "reasoning": "The refinancing announcement's management statement describes approximately $4 billion of remaining debt. This is retained only as an approximate description, not an exact reconciled balance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.7",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "|Net cash provided by (used in) operating activities | | |106\\.9"
+     ]
+    }
+   ],
+   "reasoning": "The six-month cash-flow statement reports $106.9 million of cash provided by operating activities.",
+   "confidence": "high"
+  },
+  {
+   "field": "financials.8",
+   "citations": [
+    {
+     "title": "AMC ENTERTAINMENT HOLDINGS, INC._June 30, 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1411579/000141157926000059/amc-20260630x10q.htm",
+     "excerpts": [
+      "We believe our existing cash and cash equivalents, together with cash generated from operations, will be sufficient to fund our operations and satisfy our obligations currently and through the next twelve months"
+     ]
+    }
+   ],
+   "reasoning": "Twelve months is management's stated forward coverage using cash plus operating cash generation. It is not a calculated cash-only runway.",
+   "confidence": "medium"
+  },
+  {
+   "field": "financials.9",
+   "citations": [],
+   "reasoning": "No quantified undrawn revolving-credit availability was verified, so the amount and source attribution remain null.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "This explicitly discloses that verified current payment-behaviour evidence was unavailable; no timely-payment inference is made.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [
+    {
+     "title": "AMC Entertainment Holdings, Inc. to Announce Third Quarter 2026 Results and Host Earnings Webcast :: AMC Entertainment Holdings, Inc. (AMC)",
+     "url": "https://investor.amctheatres.com/news-events/press-releases/detail/445/amc-entertainment-holdings-inc-to-announce-third-quarter-2026-results-and-host-earnings-webcast",
+     "excerpts": [
+      "Date: Wednesday, November 4, 2026 Time: 4:00 PM CST / 5:00 PM EST",
+      "The Company will host an earnings webcast, after the market closes"
+     ]
+    }
+   ],
+   "reasoning": "The company announced a November 4 after-market earnings event. This supports the schedule, but not an assertion that actual Q3 results had been released and verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [],
+   "reasoning": "The exact reconciled post-refinancing balance sheet was not verified. An approximate management debt statement is not substituted for that missing information.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.3",
+   "citations": [],
+   "reasoning": "Quantified undrawn revolver availability was not established from the opened disclosures.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.4",
+   "citations": [],
+   "reasoning": "The public-company and beneficial-owner disclosures do not establish a verified recent control transaction or controlling sponsor.",
+   "confidence": "low"
+  },
+  {
+   "field": "missing_fields.5",
+   "citations": [],
+   "reasoning": "The specified distress-event categories were not verified as current events. Impairments, employee counts and hypothetical recovery scenarios were not misrepresented as layoffs, closures or bankruptcy.",
+   "confidence": "low"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list",
+ "completed_on": "2026-11-04"
+}

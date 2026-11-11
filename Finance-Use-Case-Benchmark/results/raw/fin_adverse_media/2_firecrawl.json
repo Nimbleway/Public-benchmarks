@@ -1,0 +1,120 @@
+{
+ "arm": "firecrawl",
+ "sub_use_case": "fin_adverse_media",
+ "input": "Find fraud and bribery allegations involving Adani Green Energy, including the US indictment",
+ "input_n": 2,
+ "tier": "spark-2/high",
+ "status": "completed",
+ "seconds": 295,
+ "run_id": "01a1c5f7-b7e6-7730-b449-d9441349472f",
+ "output": {
+  "entity": {
+   "legal_name": "Adani Green Energy Limited",
+   "hq_country": "India",
+   "group": "Adani Group"
+  },
+  "events": [
+   {
+    "date": "2023-01-24",
+    "type": "short-seller allegation — accounting fraud, stock manipulation and money laundering",
+    "jurisdiction": "India / global markets",
+    "status": "alleged",
+    "parties": "Adani Group, including Adani Green Energy Limited; Hindenburg Research as the reporting short seller",
+    "amount": null,
+    "summary": "Hindenburg Research alleged that the Adani Group engaged in a decades-long stock-manipulation and accounting-fraud scheme involving offshore entities, and specifically discussed Adani Green Energy shares and a Cyprus-based entity reported to have held more than US$420 million of Adani Green shares; these were unadjudicated allegations and Adani denied them in its published response.",
+    "source_url": "https://hindenburgresearch.com/adani/"
+   },
+   {
+    "date": "2024-11-20",
+    "type": "criminal indictment — bribery/FCPA-related conspiracy, securities-fraud conspiracy, wire-fraud conspiracy and securities fraud",
+    "jurisdiction": "United States, Eastern District of New York",
+    "status": "dismissed",
+    "parties": "Adani Green Energy Limited in the alleged corporate conduct; executives Gautam S. Adani, Sagar R. Adani and Vneet S. Jaain",
+    "amount": "More than US$250 million in alleged bribes; solar contracts projected to generate more than US$2 billion in after-tax profits over about 20 years; financing included more than US$2 billion in loans and more than US$1 billion in bond offerings (as alleged on 2024-11-20)",
+    "summary": "The DOJ said a five-count indictment charged Gautam Adani, Sagar Adani and Vneet Jaain with allegedly concealing a bribery scheme used to obtain Indian solar-energy contracts and raising money from U.S. and international investors through false and misleading statements; the charges against these three were later dismissed with prejudice on 2026-08-10.",
+    "source_url": "https://www.justice.gov/usao-edny/pr/billionaire-chairman-conglomerate-and-seven-other-senior-business-executives-indicted"
+   },
+   {
+    "date": "2024-11-20",
+    "type": "SEC civil enforcement — alleged anti-bribery disclosure and securities-fraud violations",
+    "jurisdiction": "United States, Eastern District of New York",
+    "status": "settled",
+    "parties": "Adani Green Energy Limited; Gautam S. Adani and Sagar R. Adani",
+    "amount": "US$750 million Adani Green bond offering, including more than US$175 million raised from U.S. investors; alleged bribes described as the equivalent of hundreds of millions of dollars (as of 2024-11-20)",
+    "summary": "The SEC alleged that Gautam and Sagar Adani orchestrated payments or promises of payments to Indian government officials to benefit Adani Green and Azure Power, while Adani Green's 2021 bond offering materials falsely or misleadingly described its anti-bribery compliance; the individuals later consented to final judgments without admitting or denying the allegations.",
+    "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26177"
+   },
+   {
+    "date": "2026-08-10",
+    "type": "criminal case dismissal with prejudice",
+    "jurisdiction": "United States, Eastern District of New York",
+    "status": "dismissed",
+    "parties": "Gautam S. Adani, Sagar R. Adani and Vneet S. Jaain, all identified in the case as Adani Green/Adani Group executives",
+    "amount": null,
+    "summary": "The court granted in part the DOJ's Rule 48(a) motion and dismissed with prejudice Counts Two, Three and Four of the indictment—securities-fraud conspiracy, wire-fraud conspiracy and securities fraud—as alleged against Gautam Adani, Sagar Adani and Vneet Jaain; the order did not adjudicate the truth of the underlying allegations.",
+    "source_url": "https://www.courtlistener.com/docket/69394937/united-states-v-adani/?order_by=desc#entry-49"
+   },
+   {
+    "date": "2026-08-10",
+    "type": "SEC final consent judgment — securities-fraud and anti-bribery disclosure allegations",
+    "jurisdiction": "United States, Eastern District of New York",
+    "status": "settled",
+    "parties": "Gautam S. Adani; Adani Green Energy Limited was the company whose offering and compliance statements were at issue",
+    "amount": "US$6,000,000 civil penalty ordered against Gautam Adani (as of 2026-08-10)",
+    "summary": "Gautam Adani consented to a final judgment permanently enjoining violations of the federal securities antifraud provisions and ordering a US$6 million civil penalty, without admitting or denying the SEC complaint's allegations.",
+    "source_url": "https://www.courtlistener.com/docket/69394927/securities-and-exchange-commission-v-adani/?order_by=desc#entry-43"
+   },
+   {
+    "date": "2026-08-10",
+    "type": "SEC final consent judgment — securities-fraud and anti-bribery disclosure allegations",
+    "jurisdiction": "United States, Eastern District of New York",
+    "status": "settled",
+    "parties": "Sagar R. Adani; Adani Green Energy Limited was the company whose offering and compliance statements were at issue",
+    "amount": "US$12,000,000 civil penalty ordered against Sagar Adani (as of 2026-08-10)",
+    "summary": "Sagar Adani consented to a final judgment permanently enjoining violations of the federal securities antifraud provisions and ordering a US$12 million civil penalty, without admitting or denying the SEC complaint's allegations.",
+    "source_url": "https://www.courtlistener.com/docket/69394927/securities-and-exchange-commission-v-adani/?order_by=desc#entry-44"
+   },
+   {
+    "date": "2026-09-22",
+    "type": "SEBI regulatory settlement — disclosure, audit-report and corporate-governance violations",
+    "jurisdiction": "India, Securities and Exchange Board of India",
+    "status": "settled",
+    "parties": "Adani Green Energy Limited (AGEL) and other Adani Group listed companies",
+    "amount": "INR 4,550,000 (₹45.50 lakh) settlement amount for AGEL (as of 2026-09-22)",
+    "summary": "SEBI said its examination covered related-party-transaction disclosure and corporate-governance issues highlighted in the Hindenburg Report; for AGEL, the adjudication concerned specified audit and limited-review reports signed without a valid peer-review certificate, and AGEL settled without admitting or denying the findings, after which the proceedings were disposed of.",
+    "source_url": "https://www.sebi.gov.in/enforcement/orders/sep-2026/settlement-order-in-the-matter-of-adani-group-companies_104647.html"
+   }
+  ],
+  "excluded_namesakes": [
+   {
+    "name": "Azure Power Global Limited",
+    "reason": "A separate renewable-energy company involved in the same DOJ/SEC fact pattern; it is not Adani Green Energy Limited.",
+    "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26177"
+   },
+   {
+    "name": "Adani Enterprises Limited and other Adani Group companies",
+    "reason": "Parent, sister or other group entities were excluded as separate legal entities; they are mentioned only where a source expressly ties the conduct to Adani Green Energy Limited or its executives.",
+    "source_url": "https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-181.pdf"
+   },
+   {
+    "name": "Adani Power Limited / Adani Ports and Special Economic Zone Limited / Adani Total Gas Limited",
+    "reason": "Other listed Adani companies named in broader Hindenburg or SEBI materials, but not the exact target entity for this investigation.",
+    "source_url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2026/1790075703744_1.pdf"
+   }
+  ],
+  "assessment": "As of 2026-11-10, Adani Green Energy presents elevated financial-crime and conduct risk because U.S. prosecutors and the SEC alleged that its senior executives used bribery-linked solar contracts and misleading anti-bribery disclosures to obtain financing, while SEBI separately resolved an AGEL disclosure/audit-report enforcement matter. The criminal counts against the three Adani Green executives were dismissed with prejudice and the SEC matters ended in consent judgments without admissions, so there is no conviction or merits finding against AGEL in the sources reviewed; the principal open risk is the continuing reputational and control implication of serious, unresolved underlying allegations despite those procedural resolutions.",
+  "missing_fields": []
+ },
+ "cost_usd": 0.995,
+ "cost_basis": "credits x Standard rate",
+ "credits": 1005,
+ "exchange": {
+  "enabled": true,
+  "requireApproval": false,
+  "onTermsRequired": "skip",
+  "paidCalls": 4,
+  "creditsUsed": 60
+ },
+ "error": null,
+ "completed_on": "2026-11-10"
+}

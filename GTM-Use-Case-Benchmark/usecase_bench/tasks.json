@@ -1,7 +1,7 @@
 [
  {
   "id": "gtm_meeting_prep_research",
-  "name": "Account brief (meeting prep)",
+  "name": "Meeting prep and account research",
   "vertical": "gtm",
   "tier": "medium",
   "use_case": "research",
@@ -199,9 +199,10 @@
   "inputs": [
    "Prepare me for a meeting with Attio (attio.com)",
    "Prepare me for a meeting with Datadog (datadoghq.com)",
-   "Prepare me for a meeting with Gong (gong.io)"
+   "Prepare me for a meeting with Gong (gong.io)",
+   "Prepare me for a meeting with Vercel (vercel.com)",
+   "Prepare me for a meeting with Monday.com (monday.com)"
   ],
-  "scoring_rule": "Unit = distinct finding, weighted by usefulness to the seller: critical 3, useful 2, minor 1.",
   "unit": {
    "name": "distinct finding",
    "definition": "One unit per distinct finding a seller would use: each priority, each challenge, each recent change/event, each key person with their role. Restatements of the same finding are one unit; generic company description is one unit at most.",
@@ -209,12 +210,15 @@
   },
   "judge_tag": {
    "key": "materiality",
-   "spec": "\"materiality\": \"critical|useful|minor\"  (for a seller preparing this meeting)"
-  }
+   "spec": "\"materiality\": \"critical|useful|minor\", \"fresh\": true|false"
+  },
+  "metric": "F1",
+  "answer_key": true,
+  "scoring_rule": "Unit = distinct finding, weighted by how much it matters to the seller today: critical 6, useful 2, minor 0.5; x1.5 when fresh (last 90 days or current state)."
  },
  {
   "id": "gtm_signal_tracking",
-  "name": "Account signals",
+  "name": "Track signals that create sales opportunities",
   "vertical": "gtm",
   "tier": "medium",
   "use_case": "research",
@@ -289,9 +293,10 @@
   "inputs": [
    "Check Mercury (mercury.com) for changes since 2026-09-21",
    "Check Clay (clay.com) for changes since 2026-09-21",
-   "Check Rippling (rippling.com) for changes since 2026-09-21"
+   "Check Rippling (rippling.com) for changes since 2026-09-21",
+   "Check Anthropic (anthropic.com) for changes since 2026-09-21",
+   "Check Klarna (klarna.com) for changes since 2026-09-21"
   ],
-  "scoring_rule": "Unit = event after the since-date. Buying signals (funding, leadership, expansion, hiring push, major launch, M&A, pricing) weigh 2; minor releases weigh 1.",
   "unit": {
    "name": "event",
    "definition": "One unit per distinct dated event the output reports. The same event reported twice is one unit.",
@@ -300,6 +305,9 @@
   "judge_tag": {
    "key": "signal",
    "spec": "\"signal\": \"buying|minor\"  (buying = funding, leadership change, expansion, hiring push, major launch, M&A, pricing change; minor = routine feature or changelog entry)"
-  }
+  },
+  "metric": "F2",
+  "answer_key": false,
+  "scoring_rule": "Unit = event after the since-date. Buying signals (funding, leadership, expansion, hiring push, major launch, M&A, pricing) weigh 3; minor releases weigh 0.5."
  }
 ]

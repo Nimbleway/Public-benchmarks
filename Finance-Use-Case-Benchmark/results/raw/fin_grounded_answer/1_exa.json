@@ -1,0 +1,85 @@
+{
+ "arm": "exa",
+ "sub_use_case": "fin_grounded_answer",
+ "input": "What guidance did Nike give for the current quarter on its most recent earnings call, and how did the stock react?",
+ "input_n": 1,
+ "tier": "medium",
+ "status": "completed",
+ "seconds": 83,
+ "run_id": "agent_run_1d8ab2d864d844fd8d7df34f873e5db9",
+ "output": {
+  "as_of": "2026-11-10",
+  "answer": "On its Oct. 1, 2026 earnings call, Nike said fiscal Q2 2027 revenue would face an approximately 400-basis-point headwind from lapping EMEA Cyber Week promotions and higher North America sell-in, while it expected fiscal 2027 revenue to decline in the high-single-digit range, EBIT to fall by more than revenue, and adjusted EPS to be $1.15–$1.35 excluding about $0.15 of Pace-related restructuring costs. Investors reacted negatively: Nike shares were down about 6% in morning trading on Oct. 2 after the weak outlook and restructuring/layoff plans.",
+  "caveats": [
+   "Nike did not give a standalone precise Q2 revenue-growth or decline percentage in the opened transcript; the approximately 400-basis-point figure is the incremental comparison headwind, not necessarily the quarter's total decline. The stock figure is an intraday morning-trading reaction, not the final Oct. 2 closing move."
+  ],
+  "passages": [
+   {
+    "quote": "These 2 items will represent a headwind of approximately 400 basis points to revenues in the second quarter.",
+    "publisher": "NIKE, Inc.",
+    "source_url": "https://investors.nike.com/_assets/_d80c0c7184a5cfee727eb24592b06677/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf",
+    "published_date": "2026-10-01"
+   },
+   {
+    "quote": "Revenues are expected to decline high-single digits in fiscal 2027.",
+    "publisher": "NIKE, Inc.",
+    "source_url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "published_date": "2026-10-01"
+   },
+   {
+    "quote": "Adjusted Diluted earnings per share** is expected to be in the range of $1.15 to $1.35, which excludes approximately $0.15 of restructuring expenses related to Pace for fiscal 2027.",
+    "publisher": "NIKE, Inc.",
+    "source_url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "published_date": "2026-10-01"
+   },
+   {
+    "quote": "Its shares were last down about 6% in morning trading on Friday.",
+    "publisher": "CNBC",
+    "source_url": "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html",
+    "published_date": "2026-10-02"
+   }
+  ],
+  "question": "What guidance did Nike give for the current quarter on its most recent earnings call, and how did the stock react?",
+  "key_facts": [
+   {
+    "date": "2026-10-01",
+    "fact": "Nike said the two Q2 comparison items—EMEA Cyber Week promotions and higher North America sell-in—would be an approximately 400-basis-point revenue headwind.",
+    "source_url": "https://investors.nike.com/_assets/_d80c0c7184a5cfee727eb24592b06677/nike/db/938/9591/webcast_transcript/NIKE+Inc.+Q1FY27+OFFICIAL+Transcript_+FINAL.pdf"
+   },
+   {
+    "date": "2026-10-01",
+    "fact": "Nike's fiscal 2027 outlook was high-single-digit revenue decline, EBIT declining by a greater percentage than revenue, and adjusted diluted EPS of $1.15–$1.35 excluding approximately $0.15 of Pace restructuring expense.",
+    "source_url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results"
+   },
+   {
+    "date": "2026-10-02",
+    "fact": "Nike shares were down about 6% in morning trading on Oct. 2 after the results and guidance.",
+    "source_url": "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html"
+   }
+  ],
+  "missing_fields": [
+   "exact Q2 total revenue-growth or decline percentage",
+   "exact Oct. 2 closing-price reaction"
+  ]
+ },
+ "cost_usd": 0.1,
+ "cost_basis": "billed",
+ "usage": {
+  "agentComputeUnits": 0.4,
+  "searches": 12,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "data_sources": [
+  "financial_datasets"
+ ],
+ "cost_breakdown": {
+  "total": 0.1,
+  "agentCompute": 0.04,
+  "search": 0.06,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "error": null,
+ "completed_on": "2026-11-10"
+}

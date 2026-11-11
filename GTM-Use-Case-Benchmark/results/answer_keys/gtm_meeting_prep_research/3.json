@@ -1,0 +1,129 @@
+{
+ "sub": "gtm_meeting_prep_research",
+ "i": 3,
+ "task": "Prepare me for a meeting with Vercel (vercel.com)",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What does Vercel say it does, and how has its positioning changed?",
+   "answer": "Vercel began as a frontend cloud and Next.js platform. It now describes itself as an AI cloud and 'agentic infrastructure'. Its Agent Stack groups AI SDK, AI Gateway, Sandbox, Passport, Connect and eve. A seller should frame any pitch around AI apps and agents as well as web hosting. This comes from a third-party summary dated 2026-11-05, so check it against vercel.com.",
+   "importance": "critical",
+   "source": "https://blog.mean.ceo/vercel-news-november-2026/"
+  },
+  {
+   "id": "k2",
+   "question": "What is Vercel's latest funding round and valuation, and has it raised since?",
+   "answer": "The latest disclosed round is the Series F of $300M, co-led by Accel and GIC, in September 2025 at a $9.3B valuation. The previous round was the Series E of $250M in May 2024 at $3.25B. I found no newer disclosed round or IPO filing. Figures of $12.8B and $7.8B on aggregator sites are modeled estimates, not funding marks. I did not check SEC filings or Vercel's own announcements.",
+   "importance": "critical",
+   "source": "https://en.wikipedia.org/wiki/Vercel"
+  },
+  {
+   "id": "k3",
+   "question": "What security incident did Vercel have in 2026, and why does it matter for the meeting?",
+   "answer": "Vercel disclosed unauthorized access to internal systems on 2026-04-19, affecting a limited subset of customers. It said the breach began with a compromise of the third-party AI tool Context.ai. The attacker reached an employee's Google Workspace account and some environments and environment variables not marked 'sensitive'. A person claiming ShinyHunters affiliation offered the data for $2M, but the post was later deleted and the group reportedly denied involvement. Vercel and GitHub, Microsoft, npm and Socket confirmed on 2026-04-21 that no published npm packages were compromised. Expect security and trust questions. Vercel also runs a $1M HackerOne challenge on Sandbox.",
+   "importance": "critical",
+   "source": "https://en.wikipedia.org/wiki/Vercel"
+  },
+  {
+   "id": "k4",
+   "question": "What changed recently (M&A, board, leadership, partnerships)?",
+   "answer": "Mitchell Hashimoto (HashiCorp co-founder) joined the board in March 2026. Vercel acquired Better Auth and the Egyptian startup Stakpak in July 2026. That is about 4 months before today, so it falls just outside a strict 90-day window. The sources I read did not show clear M&A, layoff or leadership events in the last 90 days (since about 2026-08-12). Vercel has added a 'Continue with ChatGPT' login. I did not check the Vercel changelog or blog directly, so recent launches may be missing.",
+   "importance": "critical",
+   "source": "https://en.wikipedia.org/wiki/Vercel"
+  },
+  {
+   "id": "k5",
+   "question": "Who are the key people to know?",
+   "answer": "CEO and co-founder Guillermo Rauch. CTO Malte Ubl. COO Jeanne DeWitt Grosser. CFO Marten Abrahamsen. CRO Nick Bogaty. CMO Keith Messick. Talha Tariq is listed as security-focused CTO. Board member Mitchell Hashimoto. I did not verify what each person recently said, so check each person's recent statements before the meeting. The roster comes from a third-party blog and should be confirmed on LinkedIn or Vercel's own site.",
+   "importance": "useful",
+   "source": "https://blog.mean.ceo/vercel-news-november-2026/"
+  },
+  {
+   "id": "k6",
+   "question": "How large is Vercel and how fast is it growing?",
+   "answer": "Reported revenue figures conflict. One source says ARR passed $200M in mid-2025. Another reports a $340M run rate at the end of February 2026. Headcount is about 1,015 in 2026, up about 33% in a year per LinkedIn data. I found no layoffs. The company is clearly in growth mode, so budget and hiring are likely healthy. Treat the revenue figures as unverified.",
+   "importance": "useful",
+   "source": "https://venturecapitaltracker.com/2026-vercel-revenue-340m-9-3b-valuation"
+  },
+  {
+   "id": "k7",
+   "question": "What competitive and customer pain points are visible?",
+   "answer": "Pricing is the main one. Vercel introduced a more transparent data-transfer pricing model in mid-2024, but high-traffic customers still compare it with AWS and Cloudflare. The April 2026 breach adds trust pressure. Competition comes from the hyperscalers, Cloudflare and Netlify, and from AI app builders. Evidence for these competitors is thin and based on one third-party source.",
+   "importance": "useful",
+   "source": "https://blog.mean.ceo/vercel-news-november-2026/"
+  }
+ ],
+ "labels": {
+  "firecrawl": "A",
+  "gpt": "B",
+  "parallel": "C",
+  "exa": "D",
+  "opus": "E",
+  "nimble": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "missing",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "missing",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "missing",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.108
+}

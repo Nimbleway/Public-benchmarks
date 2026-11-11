@@ -1,0 +1,195 @@
+{
+ "arm": "gpt",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Vercel (vercel.com)",
+ "input_n": 3,
+ "tier": "medium",
+ "model": "gpt-6.1-sol",
+ "status": "completed",
+ "seconds": 55,
+ "run_id": "resp_0b67ffaad5712101006af3446c860087d2b1b4f87329e7f847",
+ "output": {
+  "company": "Vercel",
+  "what_they_do": {
+   "value": "Vercel provides Agentic Infrastructure to ship apps and agents, enable coding agents to deploy software, and automate production investigations and fixes.",
+   "source_url": "https://vercel.com/",
+   "as_of": "2026-11-10"
+  },
+  "priorities": [
+   {
+    "priority": "Build infrastructure for production AI agents and full-stack applications.",
+    "evidence": "Launched Vercel Schedules so applications and agents can create, change, and cancel scheduled work at runtime without redeploying, with testing in Preview environments.",
+    "date": "2026-11-04",
+    "source_url": "https://vercel.com/blog/introducing-vercel-schedules"
+   },
+   {
+    "priority": "Automate application security within the development workflow.",
+    "evidence": "Launched Security Review in public beta: Vercel Agent scans repository pushes for vulnerabilities, reports findings, and can validate and push fixes with permission.",
+    "date": "2026-11-02",
+    "source_url": "https://vercel.com/blog/vercel-security-review"
+   },
+   {
+    "priority": "Make CI keep pace with coding agents.",
+    "evidence": "Announced Vercel CI in beta, using Turborepo to run only affected tasks on appropriately sized compute. Vercel reported its own push-to-CI-passed time was 2–6 times faster as of October 28, 2026.",
+    "date": "2026-10-28",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   },
+   {
+    "priority": "Expand enterprise adoption through customer-controlled infrastructure.",
+    "evidence": "Made Bring Your Own Cloud on AWS generally available for Enterprise customers, keeping function execution within customers' AWS security boundaries while Vercel manages deployments, routing, and static assets.",
+    "date": "2026-10-15",
+    "source_url": "https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available"
+   },
+   {
+    "priority": "Improve pricing predictability for Pro customers.",
+    "evidence": "Introduced Flat Rate CDN with predictable monthly billing and traffic-spike protection, explicitly responding to customer feedback about unexpected CDN bills.",
+    "date": "2026-09-08",
+    "source_url": "https://vercel.com/blog/introducing-flat-rate-cdn"
+   }
+  ],
+  "challenges": [
+   {
+    "challenge": "Customer dissatisfaction with unpredictable CDN costs.",
+    "evidence": "Vercel acknowledged that viral launches, traffic bursts, and misconfigured routes could produce unexpected bills and make growth feel problematic. Flat Rate CDN is its announced response; the source does not establish whether dissatisfaction has since been eliminated.",
+    "date": "2026-09-08",
+    "source_url": "https://vercel.com/blog/introducing-flat-rate-cdn"
+   },
+   {
+    "challenge": "Third-party AI-tool security exposure, demonstrated by a security incident that is now closed.",
+    "evidence": "An attacker compromised Context.ai, accessed an employee's accounts, and pivoted into Vercel systems to decrypt environment variables not marked sensitive. Vercel notified affected customers and shipped safeguards. Its October 16, 2026 update states that remediation is complete and the incident is closed; this is not an active breach.",
+    "date": "2026-10-16",
+    "source_url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident"
+   },
+   {
+    "challenge": "Internal CI throughput needed to keep up with coding agents.",
+    "evidence": "In announcing Vercel CI, the company described agent-generated pull requests waiting on CI and said its own CI now keeps up with its agents. This documents an operational bottleneck and its mitigation, not an unresolved outage.",
+    "date": "2026-10-28",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   }
+  ],
+  "recent_changes": [
+   {
+    "date": "2026-11-04",
+    "type": "product_launch",
+    "headline": "Introduced Vercel Schedules",
+    "summary": "Added runtime-managed scheduling for applications and agents, including recurring work and Preview testing.",
+    "source_url": "https://vercel.com/blog/introducing-vercel-schedules"
+   },
+   {
+    "date": "2026-11-02",
+    "type": "public_beta",
+    "headline": "Launched Vercel Security Review",
+    "summary": "Expanded Vercel Agent with vulnerability scanning on repository pushes and permission-based fixes.",
+    "source_url": "https://vercel.com/blog/vercel-security-review"
+   },
+   {
+    "date": "2026-10-28",
+    "type": "beta_launch",
+    "headline": "Announced Vercel CI",
+    "summary": "Introduced change-aware CI with task-specific compute and Turborepo integration.",
+    "source_url": "https://vercel.com/blog/introducing-vercel-ci"
+   },
+   {
+    "date": "2026-10-28",
+    "type": "product_launch",
+    "headline": "Introduced Virtual Models on AI Gateway",
+    "summary": "Centralized model selection, fallbacks, priorities, and Zero Data Retention settings behind a model ID, allowing updates without application redeployment.",
+    "source_url": "https://vercel.com/blog/ai-gateway-virtual-models"
+   },
+   {
+    "date": "2026-10-16",
+    "type": "security_remediation",
+    "headline": "Closed the April security incident",
+    "summary": "Reported that all remediation actions related to the incident were complete.",
+    "source_url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident"
+   },
+   {
+    "date": "2026-10-15",
+    "type": "general_availability",
+    "headline": "Made Python a first-class Vercel runtime",
+    "summary": "Added native Python support for APIs, full-stack applications, and agents, with shared frontend/backend deployment workflows.",
+    "source_url": "https://vercel.com/changelog/python-on-vercel-is-now-generally-available"
+   },
+   {
+    "date": "2026-10-15",
+    "type": "general_availability",
+    "headline": "Launched Bring Your Own Cloud on AWS",
+    "summary": "Enabled Enterprise customers to run Vercel Functions in their own AWS accounts.",
+    "source_url": "https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available"
+   },
+   {
+    "date": "2026-09-08",
+    "type": "pricing_launch",
+    "headline": "Introduced Flat Rate CDN for Pro teams",
+    "summary": "Added predictable CDN billing and traffic-spike protection.",
+    "source_url": "https://vercel.com/blog/introducing-flat-rate-cdn"
+   }
+  ],
+  "key_people": [
+   {
+    "name": "Guillermo Rauch",
+    "title": "Founder and CEO",
+    "recent": "In the October 15, 2026 Ship recap, emphasized using production context to drive autonomous investigation, fixes, and continuous software improvement.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Malte Ubl",
+    "title": "CTO",
+    "recent": "The October 15, 2026 recap reports that he announced Python general availability and introduced Vercel Daemons for continuously running background workers.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Tomo Occhino",
+    "title": "CPO",
+    "recent": "Presented Agent Stack updates, including persistent agent workspaces and model-spending controls, in the October 15, 2026 recap.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Jeanne Grosser",
+    "title": "COO",
+    "recent": "Focused on enterprise deployment governance and announced Bring Your Own Cloud general availability, as reported October 15, 2026.",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap"
+   },
+   {
+    "name": "Yury Selivanov",
+    "title": "Director of Engineering",
+    "recent": "Authored the October 15, 2026 announcement making Python a first-class language and runtime on Vercel.",
+    "source_url": "https://vercel.com/changelog/python-on-vercel-is-now-generally-available"
+   }
+  ],
+  "talking_points": [
+   "With Schedules and Python expanding agent workloads, where is the biggest remaining gap between a successful prototype and reliable production adoption?",
+   "Following BYOC's launch and closure of the April incident, which security or governance requirements still slow enterprise approvals?",
+   "After Flat Rate CDN and Vercel CI, how are you measuring improvements in customer cost predictability and developer throughput?"
+  ],
+  "missing_fields": []
+ },
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "raw_text": null,
+ "cost_usd": 0.1885,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "token_cost_usd": 0.1285,
+ "usage": {
+  "input_tokens": 55328,
+  "input_tokens_details": {
+   "cache_write_tokens": 20,
+   "cached_tokens": 5196
+  },
+  "output_tokens": 2775,
+  "output_tokens_details": {
+   "reasoning_tokens": 741
+  },
+  "total_tokens": 58103
+ },
+ "search_calls": 6,
+ "search_actions": {
+  "search": 2,
+  "open_page": 4
+ },
+ "error": null,
+ "completed_on": "2026-11-10"
+}

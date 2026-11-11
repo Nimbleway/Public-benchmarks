@@ -1,0 +1,142 @@
+{
+ "sub": "fin_credit_risk",
+ "i": 4,
+ "task": "Assess the credit and counterparty risk of AMC Entertainment",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is AMC's latest liquidity and operating position (revenue, adjusted EBITDA, cash, free cash flow)?",
+   "answer": "Q3 2026 (quarter ended Sep 30, 2026), per the company's 8-K and 10-Q: revenue $1.711B (up about 32%), adjusted EBITDA $347.5M, cash $751.9M excluding $39.6M restricted cash, and free cash flow of about $109M. Management expects full-year 2026 free cash flow to be positive. I did not verify the RCF or total debt line items. Leverage is still above management's target. Check the 10-Q for the exact total debt figure and any revolver.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+  },
+  {
+   "id": "k2",
+   "question": "What happened in the October 2026 refinancing, and what is the new maturity profile?",
+   "answer": "On Oct 5, 2026 AMC refinanced about 97% of its debt. The package was $2.0B of 8.875% first lien notes due 2031, an $850M first lien term loan and a $1.12B second lien term loan. Proceeds retired the 7.5% notes due 2029, Muvico's 2029 notes and the existing term loans. The $125.5M of 6.125% subordinated notes due 2027 were redeemed in Q3. Near-term maturity risk is largely removed, with most debt now due in 2031 and 2033. The cost is a higher coupon and a heavy debt load of roughly $4B or more (verify). Check whether the earlier 2024-25 exchanges and the first-lien status of the new notes matter to your exposure.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+  },
+  {
+   "id": "k3",
+   "question": "What are the current credit ratings and outlooks, and have they changed in the last 12 months?",
+   "answer": "S&P reportedly upgraded AMC to B- from CCC+ with a stable outlook around July 2026. That is a secondary-source report (FXLeaders, 31 Jul 2026). S&P was reported to expect a modest 2026 FCF deficit and about $75M positive FCF in 2027. An earlier May 2026 blog showed CCC+/negative and Moody's in the Caa range. I could not confirm Moody's current rating or any post-refinancing action. B- is still speculative grade. Confirm on the S&P and Moody's sites, and check for new-issue ratings on the October 2026 debt.",
+   "importance": "critical",
+   "source": "https://www.fxleaders.com/news/2026/07/31/amc-stock-eyes-3-after-credit-upgrade-and-record-revenue-but-dilution-risk-remains/"
+  },
+  {
+   "id": "k4",
+   "question": "Is there any going-concern language, default, covenant breach or missed payment?",
+   "answer": "None found in the sources I read. The Q3 2026 results show a net profit of $109.3M and positive free cash flow, and the debt was refinanced out to 2031/2033. The history includes earlier distressed-style exchanges (2022-2024), and the 2026 refinancing should be read in that light. Confirm the going-concern and risk-factor sections of the 10-Q.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+  },
+  {
+   "id": "k5",
+   "question": "What is the ownership structure and the dilution or equity-issuance risk?",
+   "answer": "AMC Entertainment Holdings, Inc. is publicly listed (NYSE: AMC) with a large retail shareholder base. Wanda is no longer a controlling holder. Past rounds of ATM equity issuance and the conversion of debt to equity diluted holders. Commentary from July 2026 still flags dilution risk. The company can raise cash through equity, which supports creditors but weakens shareholders. Verify the current share count and any ATM program in the 10-Q.",
+   "importance": "useful",
+   "source": "https://www.fxleaders.com/news/2026/07/31/amc-stock-eyes-3-after-credit-upgrade-and-record-revenue-but-dilution-risk-remains/"
+  },
+  {
+   "id": "k6",
+   "question": "Is there payment-behaviour evidence such as liens, judgments, supplier complaints or landlord disputes?",
+   "answer": "I ran no dedicated court or lien search, and none of the sources I read mention material supplier or lien problems. Check PACER, UCC filings and the 10-Q legal proceedings section. Historically AMC deferred rent and had landlord negotiations in 2020-21. Treat this item as unverified rather than clear.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000075/amc-20260930x10q.htm"
+  },
+  {
+   "id": "k7",
+   "question": "What are the distress signals and the sector drivers (box office, leadership, closures)?",
+   "answer": "The recent signals are positive: Q3 revenue rose 32% and the company is expanding theaters, per the Q3 call. Earnings still depend on the film slate and box office, and leverage remains high. I found no CFO departure, auditor change or large layoffs in the sources I read. Verify recent 8-Ks for executive changes.",
+   "importance": "useful",
+   "source": "https://www.zacks.com/stock/news/3024090/amc-q3-earnings-call-highlights-cash-flow-and-theater-expansion"
+  },
+  {
+   "id": "k8",
+   "question": "What is the overall risk call?",
+   "answer": "Elevated. Liquidity of about $750M and the October 2026 refinancing to 2031/2033 remove near-term default risk. The company is still heavily levered, rated B- (S&P), has a second lien layer and a high 8.875% coupon, and depends on the box office. For counterparty exposure of short duration, this is moderate. For unsecured or long-dated exposure, it is elevated.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000073/amc-ex99d1.htm"
+  }
+ ],
+ "labels": {
+  "nimble": "B",
+  "parallel": "C",
+  "gpt": "D",
+  "exa": "G",
+  "opus": "I",
+  "firecrawl": "J"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "exa": {
+   "k1": "missing",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "parallel": {
+   "k1": "missing",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "firecrawl": {
+   "k1": "missing",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "missing",
+   "k8": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  }
+ },
+ "cost_usd": 0.223
+}

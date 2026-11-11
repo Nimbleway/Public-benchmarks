@@ -3,312 +3,837 @@
  "input_n": 2,
  "task": "Check Rippling (rippling.com) for changes since 2026-09-21",
  "labels": {
-  "parallel": "A",
-  "firecrawl": "B",
-  "exa": "C",
-  "nimble": "D"
+  "firecrawl": "A",
+  "exa": "B",
+  "gpt": "C",
+  "parallel": "D",
+  "opus": "E",
+  "nimble": "F"
  },
  "unit": "event",
+ "evidence_pages": 52,
+ "evidence_fetched": 51,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 33,
+ "judge": "v4b",
+ "judge_cost_usd": 0.879,
+ "corrections_v2": {
+  "units_before": 34,
+  "units_after": 23,
+  "dedup_groups": [
+   {
+    "kept": "c2",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13"
+    ]
+   },
+   {
+    "kept": "c25",
+    "merged": [
+     "c26",
+     "c27"
+    ]
+   },
+   {
+    "kept": "c29",
+    "merged": [
+     "c30"
+    ]
+   },
+   {
+    "kept": "c31",
+    "merged": [
+     "c32",
+     "c33",
+     "c34"
+    ]
+   }
+  ],
+  "cost": 0.017
+ },
  "merged": [
   {
    "cid": "c1",
-   "claim": "On 2026-09-21, Rippling announced via Business Wire that it is opening an AI lab in Bengaluru, India.",
+   "claim": "Rippling opened an AI Lab in Bengaluru on 2026-09-22, a research and engineering group for AI infrastructure, evaluation, sandboxing, scaling and latency optimization, while expanding its India workspace and hiring across AI and engineering roles.",
    "asserted_by": [
-    "D"
+    "B"
    ],
+   "variants": {
+    "B": "Rippling opened an AI Lab in Bengaluru on 2026-09-22, a research and engineering group for AI infrastructure, evaluation, sandboxing, scaling, and latency optimization, while expanding its India workspace and hiring across AI and engineering roles."
+   },
    "urls": [
-    "https://news.google.com/rss/search?q=Rippling+when:40d"
+    "https://www.businesswire.com/news/home/20260921847964/en/Rippling-Opens-AI-Lab-in-Bengaluru-to-Accelerate-the-Future-of-AI-Powered-Business-Software"
    ],
-   "conflicts_with": [
-    "c2"
-   ]
+   "conflicts_with": []
   },
   {
    "cid": "c2",
-   "claim": "On 2026-09-22, Rippling opened an AI Lab at its Bengaluru (Embassy Tech Village) campus, expanded the workspace to 170,000 sq ft, and said it was hiring across AI research, applied AI, backend, platform engineering, and machine learning.",
+   "claim": "On 2026-09-23 Rippling introduced plugins, skills and automations as new Rippling AI capabilities, operating within existing policies and permissions.",
    "asserted_by": [
+    "A",
+    "B",
     "C",
-    "B"
+    "D",
+    "E"
    ],
+   "variants": {
+    "B": "Rippling introduced new Rippling AI capabilities on 2026-09-23: plugins, skills, and automations that bring role-, team-, policy-, and permission-aware context to AI workflows.",
+    "D": "On 2026-09-23, Rippling introduced plugins, skills and automations as new Rippling AI capabilities for employees.",
+    "A": "On 2026-09-23, Rippling launched plugins, skills, and automations in Rippling AI, connecting approved third-party systems, packaging repeatable instructions, and automating recurring work under existing policies and permissions.",
+    "E": "On 2026-09-23, Rippling released Rippling AI plugins, skills and automations, giving the AI context about each employee's role, reusable prompts and workflow automation, all controlled by existing Rippling permissions."
+   },
    "urls": [
-    "https://finance.yahoo.com/technology/ai/articles/rippling-opens-ai-lab-bengaluru-013000402.html"
+    "https://releasebot.io/updates/rippling",
+    "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful"
    ],
-   "conflicts_with": [
-    "c1"
+   "conflicts_with": [],
+   "merged_from": [
+    "c2",
+    "c3"
    ]
   },
   {
-   "cid": "c3",
-   "claim": "On 2026-09-22, Rippling updated its Automated Compliance product with multi-framework audit support (SOC 2, ISO 27001, HIPAA), broader integrations, a built-in audit portal, publishable trust centers, and embedded AI workflows.",
+   "cid": "c4",
+   "claim": "A pricing tracker recorded on 2026-09-24 that Rippling removed the named plan 'Rippling Platform' from rippling.com/pricing and replaced it with a 'Custom quote' plan; the page is quote-only with no USD prices published.",
    "asserted_by": [
-    "D"
+    "F"
    ],
+   "variants": {
+    "F": "A pricing tracker recorded on 2026-09-24 that Rippling removed the named plan 'Rippling Platform' (previously 'Contact sales / custom') from rippling.com/pricing and replaced it with a 'Custom quote' plan; the page is now quote-only with no USD prices published."
+   },
    "urls": [
-    "https://www.rippling.com/blog/reintroducing-automated-compliance"
+    "https://getpulsesignal.com/changes/rippling"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "On 2026-10-08 Rippling announced a new/expanded New York City office at 330 West 34th Street (132,693 sq ft), nearly doubling its prior New York footprint and supporting more than 1,000 employees.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "On 2026-10-08, Rippling opened a new 132,693-square-foot New York City office at 330 West 34th Street, supporting more than 1,000 employees and nearly doubling its previous New York footprint.",
+    "C": "Rippling announced an expanded New York City office at 330 West 34th Street on 2026-10-08, nearly doubling its previous New York footprint and designed to support more than 1,000 employees.",
+    "E": "On 2026-10-08, Rippling announced a new 132,693 sq ft New York office at 330 West 34th St that nearly doubles its New York space and will hold more than 1,000 employees.",
+    "D": "On 2026-10-08, Rippling announced an expanded New York City office to support its growing go-to-market, engineering and product teams."
+   },
+   "urls": [
+    "https://finance.yahoo.com/technology/ai/articles/rippling-expands-york-city-presence-150000637.html",
+    "https://markets.financialcontent.com/lightport.lightport8/article/bizwire-2026-10-8-rippling-expands-new-york-city-presence-amid-accelerated-growth",
+    "https://www.businesswire.com/news/home/20261008055600/en/Rippling-Expands-New-York-City-Presence-Amid-Accelerated-Growth",
+    "https://www.businesswire.com/news/home/20261008055600/en/Rippling-Expands-New-York-City-Presence-Amid-Accelerated-Growth/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "On 2026-10-08 Rippling reported it opened a Singapore office for Asia sales and marketing, plans a permanent Toronto office later in 2026, and has announced Chicago (2027) and Seattle offices.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-10-08, Rippling reported it opened a Singapore office for Asia sales and marketing, plans a permanent Toronto office later in 2026, and has announced Chicago (2027) and Seattle offices."
+   },
+   "urls": [
+    "https://finance.yahoo.com/technology/ai/articles/rippling-expands-york-city-presence-150000637.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "On 2026-10-13 Rippling expanded its Preferred Carrier Program with Principal, Beam Benefits and Sun Life, bringing it to six preferred carriers.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "On 2026-10-13, Rippling expanded its Preferred Carrier Program with Principal, Beam Benefits, and Sun Life, bringing the program to six preferred carriers and expanding employers' and brokers' access to carriers with deeper Rippling integration out of the box."
+   },
+   "urls": [
+    "https://www.rippling.com/blog/rippling-expands-preferred-carrier-program"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Rippling's pricing FAQ was updated around 2026-10-13 to restore a starting price of $8 per employee per month plus a monthly base fee, replacing wording that had no price.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Rippling's pricing FAQ was updated around 2026-10-13 to restore a starting price of $8 per employee per month plus a monthly base fee, replacing wording that had no price."
+   },
+   "urls": [
+    "https://meikuio.com/rippling-pricing/"
    ],
    "conflicts_with": [
     "c4"
    ]
   },
   {
-   "cid": "c4",
-   "claim": "On 2026-10-15, Rippling reintroduced Automated Compliance with multi-framework support, broader integrations, automated evidence collection and remediation, a built-in audit portal, publishable trust centers, and embedded AI workflows.",
+   "cid": "c12",
+   "claim": "On 2026-10-15 Rippling reintroduced an expanded Automated Compliance product with new features and AI workflows for governance, risk and compliance teams.",
    "asserted_by": [
-    "A",
+    "B",
     "C",
-    "B"
+    "D",
+    "F"
    ],
+   "variants": {
+    "B": "Rippling reintroduced Automated Compliance on 2026-10-15 with multi-framework support, broader integrations, an audit portal, publishable trust centers, and embedded AI workflows for setup, remediation, and security questionnaires.",
+    "C": "Rippling expanded its Automated Compliance product on 2026-10-15, adding multi-framework support, broader integrations, an audit portal, publishable trust centers and AI workflows for setup, remediation and security questionnaires.",
+    "D": "On 2026-10-15, Rippling reintroduced an expanded Automated Compliance offering with new features for governance, risk and compliance teams."
+   },
    "urls": [
     "https://www.rippling.com/blog/reintroducing-automated-compliance"
    ],
    "conflicts_with": [
-    "c3"
+    "c14"
+   ],
+   "merged_from": [
+    "c12",
+    "c13"
    ]
   },
   {
-   "cid": "c5",
-   "claim": "On 2026-09-23, Rippling introduced new Rippling AI capabilities (plugins, skills, and automations) that give employees context-aware AI, reusable prompts, and automation of recurring work under existing permissions and policies.",
+   "cid": "c14",
+   "claim": "On 2026-10-14 (date first seen by tracker) Rippling relaunched Automated Compliance with AI, supporting multiple frameworks with automatic evidence collection, AI-assisted fixes, an auditor portal and public Trust Centers.",
    "asserted_by": [
-    "D",
-    "C",
-    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-10-14 (date first seen by the tracker), Rippling relaunched Automated Compliance with AI, supporting multiple compliance frameworks and adding automatic evidence collection, AI-assisted fixes, an auditor portal and public Trust Centers."
+   },
+   "urls": [
+    "https://releasebot.io/updates/rippling"
+   ],
+   "conflicts_with": [
+    "c12",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "On 2026-10-21 Sun Life U.S. joined Rippling's Preferred Carrier Program, exchanging eligibility, enrollment and coverage data automatically for small and mid-market employers; no financial terms disclosed.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-10-21, Sun Life U.S. joined Rippling's Preferred Carrier Program, connecting directly with Rippling so benefits data such as eligibility, enrollment and coverage is exchanged automatically for small and mid-market employers; no financial terms were disclosed."
+   },
+   "urls": [
+    "https://www.placera.se/pressmeddelanden/sun-life-financial-sunlife-is-now-part-of-rippling-s-preferred-carrier-program-to-simplify-benefits-administration-for-small-and-mid-market-employers-20261021"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Rippling launched an out-of-home ad campaign in Singapore (Raffles Place and People's Park) on Oct 21, 2026 targeting businesses hiring across borders, following its Singapore office opening; 71% of its Singapore customers employ people internationally.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Rippling launched an out-of-home advertising campaign in Singapore (Raffles Place and People's Park) on Oct 21, 2026, targeting businesses hiring across borders, following the opening of its Singapore office; 71% of its Singapore customers employ people internationally."
+   },
+   "urls": [
+    "https://itbrief.asia/story/rippling-launches-singapore-campaign-for-cross-border-hiring"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Rippling connected Microsoft 365 and Google Workspace licensing to employee lifecycle automation on 2026-10-22, linking provisioning, eligibility, removal and applicable reseller billing to joins, changes and departures.",
+   "asserted_by": [
     "B"
    ],
+   "variants": {
+    "B": "Rippling connected Microsoft 365 and Google Workspace licensing to employee lifecycle automation on 2026-10-22, linking license provisioning, eligibility, removal, and applicable reseller billing workflows to employee joins, changes, and departures."
+   },
    "urls": [
-    "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful"
+    "https://www.rippling.com/blog/connect-microsoft-365-google-workspace-licensing-employee-lifecycle"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c6",
-   "claim": "On 2026-10-08, Rippling announced/opened an expanded New York City office (132,693 sq ft at 330 West 34th Street, near Penn Station) supporting more than 1,000 employees, nearly doubling its prior NYC footprint.",
-   "asserted_by": [
-    "D",
-    "C",
-    "A",
-    "B"
-   ],
-   "urls": [
-    "https://www.businesswire.com/news/home/20261008055600/en/Rippling-Expands-New-York-City-Presence-Amid-Accelerated-Growth",
-    "https://finance.yahoo.com/technology/ai/articles/rippling-expands-york-city-presence-150000637.html",
-    "https://www.linkedin.com/feed/update/urn:li:activity:7515803224960880641/"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c7",
-   "claim": "On 2026-10-13, Rippling expanded its Preferred Carrier Program by adding Principal, Beam Benefits, and Sun Life, bringing the total to six preferred carriers.",
-   "asserted_by": [
-    "C",
-    "A"
-   ],
-   "urls": [
-    "https://www.rippling.com/blog/rippling-expands-preferred-carrier-program"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c8",
-   "claim": "On 2026-10-20, Rippling promoted Neel Murthy from Vice President of Growth to Chief Marketing Officer.",
+   "cid": "c18",
+   "claim": "Rippling promoted Neel Murthy from VP of Growth to Chief Marketing Officer, with reporting published 2026-10-20.",
    "asserted_by": [
     "C"
    ],
+   "variants": {
+    "C": "Rippling promoted Neel Murthy from Vice President of Growth to Chief Marketing Officer, with reporting published on 2026-10-20."
+   },
    "urls": [
     "https://karvtechinsider.com/martech/cxo-moves/rippling-promotes-neel-murthy-to-chief-marketing-officer"
    ],
+   "conflicts_with": [
+    "c19",
+    "c20",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Neel Murthy was elevated from VP of Growth to Chief Marketing Officer at Rippling on 2026-10-23.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Neel Murthy was elevated from Vice President of Growth to Chief Marketing Officer at Rippling on 2026-10-23."
+   },
+   "urls": [
+    "https://www.exchange4media.com/people-movement-news/neel-murthy-elevated-to-chief-marketing-officer-at-rippling-159432.html"
+   ],
+   "conflicts_with": [
+    "c18",
+    "c20",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "On 2026-10-23 a report said Rippling promoted Neel Murthy from VP of Growth to CMO; the effective date was not disclosed.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rippling: On 2026-10-23, a report said Rippling promoted Neel Murthy from Vice President of Growth to Chief Marketing Officer; the effective date of the promotion was not disclosed."
+   },
+   "urls": [
+    "https://www.freepressjournal.in/business/neel-murthy-elevated-to-chief-marketing-officer-at-rippling-takes-on-bigger-leadership-role-after-serving-as-vp-of-growth"
+   ],
+   "conflicts_with": [
+    "c18",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "Rippling promoted Neel Murthy to Chief Marketing Officer, per an Oct 25, 2026 press sighting tracked by OpsControl (date approximate).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Rippling promoted Neel Murthy to Chief Marketing Officer, per an Oct 25, 2026 press sighting tracked by OpsControl (exact announcement date approximate)."
+   },
+   "urls": [
+    "https://opscontrol.co/market/company/rippling"
+   ],
+   "conflicts_with": [
+    "c18",
+    "c19",
+    "c20"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Kristina Skinner announced on 2026-10-28 that she had joined Rippling as Vice President of Communications and Brand.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Kristina Skinner announced on 2026-10-28 that she had joined Rippling as Vice President of Communications and Brand."
+   },
+   "urls": [
+    "https://www.linkedin.com/posts/kristinaskinner_career-update-ive-joined-rippling-as-vp-activity-7521358260101136384-tV4P"
+   ],
    "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Rippling launched a Partner Directory on 2026-10-29 connecting businesses with accounting firms and HR advisors through partner profiles, expertise and industry experience.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Rippling launched a Partner Directory on 2026-10-29 connecting businesses with accounting firms and HR advisors through partner profiles, expertise and industry experience."
+   },
+   "urls": [
+    "https://industry-lens.com/companies/rippling"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "On 2026-11-04 Rippling announced expanded global workforce capabilities: payroll in as little as 3 business days in major markets, device shipping to 130+ countries and 15+ contractor payout options.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rippling: On 2026-11-04, Rippling announced expanded global workforce capabilities, including payroll in as little as 3 business days in major markets, device shipping to 130+ countries and 15+ contractor payout options."
+   },
+   "urls": [
+    "https://x.com/Rippling/status/2118046357873152305"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "On 2026-11-05 Rippling integrated CrowdStrike endpoint protection into Device Management, letting customers buy, deploy and manage it through Rippling.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Rippling: On 2026-11-05, Rippling integrated CrowdStrike endpoint protection into its Device Management platform, letting customers buy, deploy and manage it through Rippling."
+   },
+   "urls": [
+    "https://www.rippling.com/blog/rippling-crowdstrike-endpoint-security"
+   ],
+   "conflicts_with": [
+    "c28"
+   ],
+   "merged_from": [
+    "c25",
+    "c26",
+    "c27"
+   ]
+  },
+  {
+   "cid": "c28",
+   "claim": "On 2026-11-02 Rippling launched CrowdStrike endpoint protection built into Device Management, with Falcon Protect or Falcon Defend purchasable through Rippling and sensor status and threats shown alongside device details.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On 2026-11-02, Rippling launched CrowdStrike endpoint protection built into Rippling Device Management, letting customers buy and manage CrowdStrike Falcon Protect or Falcon Defend through Rippling and see sensor status and threats alongside device details."
+   },
+   "urls": [
+    "https://releasebot.io/updates/rippling"
+   ],
+   "conflicts_with": [
+    "c25",
+    "c26",
+    "c27"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "Rippling announced on Nov 5, 2026 an edge-enforced MCP gateway and MCP server: admins set policy in Rippling, Cloudflare Workers enforce it on every agent tool call, with permissions inherited from each person's role and every call logged.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Rippling announced on Nov 5, 2026 an edge-enforced MCP gateway and MCP server: admins set policy in Rippling, Cloudflare Workers enforce it on every agent tool call (Slack, Google Calendar, customer-built tools), with permissions inherited from each person's role and every call logged."
+   },
+   "urls": [
+    "https://releasebot.io/updates/rippling",
+    "https://www.rippling.com/blog/how-rippling-governs-ai-agents-at-the-edge"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c29",
+    "c30"
+   ]
+  },
+  {
+   "cid": "c31",
+   "claim": "Rippling announced on Nov 6, 2026 that the Reprompt AI team (YC W24; founders Lukas Martinelli and Rob Balian; runs 150M+ AI agents for customers like Visa, DoorDash and Tripadvisor) joined Rippling to take a major new Rippling AI direction from prototype to production.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Rippling announced on Nov 6, 2026 that the team behind Reprompt AI (YC W24; founders Lukas Martinelli and Rob Balian; runs 150M+ AI agents for customers like Visa, DoorDash and Tripadvisor) joined Rippling to take one of Rippling AI's biggest new directions from prototype to production."
+   },
+   "urls": [
+    "https://www.rippling.com/blog/reprompt-ai-joins-rippling"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c31",
+    "c32",
+    "c33",
+    "c34"
+   ]
   }
  ],
- "claims": {
-  "nimble": [
-   {
-    "claim": "Rippling announced via Business Wire on 2026-09-21 that it is opening an AI lab in Bengaluru, India ('Rippling Opens AI Lab in Bengaluru to Accelerate the Future of AI-Powered Business Software').",
-    "url": "https://news.google.com/rss/search?q=Rippling+when:40d"
-   },
-   {
-    "claim": "Rippling updated its Automated Compliance product on 2026-09-22 to support multi-framework audit programs (SOC 2, ISO 27001, HIPAA templates), broader third-party integrations, a built-in audit portal, publishable trust centers, and embedded AI workflows for framework setup, remediation, and security questionnaires.",
-    "url": "https://www.rippling.com/blog/reintroducing-automated-compliance"
-   },
-   {
-    "claim": "Rippling introduced new Rippling AI capabilities on 2026-09-23 (plugins, skills, and automations) giving employees AI with context on their role, team, and policies, reusable prompts, and automation of recurring work, governed by existing Rippling permissions and the MCP Gateway.",
-    "url": "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful"
-   },
-   {
-    "claim": "Rippling announced on 2026-10-08 (Business Wire) the expansion of its New York City office to 132,693 sq ft near Penn Station; CoStar reported on Oct 9 and Rippling LinkedIn posts confirmed the new NYC office opened that week.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7515803224960880641/"
-   }
-  ],
-  "exa": [
-   {
-    "claim": "On 2026-09-22, Rippling launched a research and engineering AI Lab at its Bengaluru campus, expanded workspace to 170,000 sq. ft., and said it was hiring across AI research, applied AI, backend, platform engineering, and machine learning.",
-    "url": "https://finance.yahoo.com/technology/ai/articles/rippling-opens-ai-lab-bengaluru-013000402.html"
-   },
-   {
-    "claim": "On 2026-09-23, Rippling launched new Rippling AI capabilities (plugins, skills, and automations) that connect approved third-party systems, package reusable instructions, and run AI workflows automatically under existing permissions and policies.",
-    "url": "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful"
-   },
-   {
-    "claim": "On 2026-10-08, Rippling opened a 132,693-square-foot office at 330 West 34th Street in New York City to support more than 1,000 employees, nearly doubling its previous New York footprint.",
-    "url": "https://finance.yahoo.com/technology/ai/articles/rippling-expands-york-city-presence-150000637.html"
-   },
-   {
-    "claim": "On 2026-10-13, Rippling expanded its Preferred Carrier Program as Principal, Beam Benefits, and Sun Life joined, bringing the total to six preferred carriers with deeper benefits integrations.",
-    "url": "https://www.rippling.com/blog/rippling-expands-preferred-carrier-program"
-   },
-   {
-    "claim": "On 2026-10-15, Rippling reintroduced Automated Compliance with multi-framework support, broader integrations, automated evidence collection and remediation, a built-in audit portal, publishable trust centers, and embedded AI workflows.",
-    "url": "https://www.rippling.com/blog/reintroducing-automated-compliance"
-   },
-   {
-    "claim": "On 2026-10-20, Rippling promoted Neel Murthy from Vice President of Growth to Chief Marketing Officer.",
-    "url": "https://karvtechinsider.com/martech/cxo-moves/rippling-promotes-neel-murthy-to-chief-marketing-officer"
-   }
-  ],
-  "parallel": [
-   {
-    "claim": "On 2026-10-15, Rippling released an expanded Automated Compliance product with multi-framework support, broader integrations, an audit portal, publishable trust centers, and AI-assisted compliance workflows (\"Reintroducing Rippling Automated Compliance: AI for every stage of compliance\").",
-    "url": "https://www.rippling.com/blog/reintroducing-automated-compliance"
-   },
-   {
-    "claim": "On 2026-10-13, Rippling expanded its Preferred Carrier Program by adding Principal, Beam Benefits, and Sun Life.",
-    "url": "https://www.rippling.com/blog/rippling-expands-preferred-carrier-program"
-   },
-   {
-    "claim": "On 2026-10-08, Rippling announced a larger New York City office to accommodate growth across go-to-market, engineering, product, operations, and corporate teams.",
-    "url": "https://www.businesswire.com/news/home/20261008055600/en/Rippling-Expands-New-York-City-Presence-Amid-Accelerated-Growth"
-   },
-   {
-    "claim": "On 2026-09-23, Rippling introduced Rippling AI plugins, reusable skills, and automations for context-aware employee workflows and recurring work (\"Give every employee AI that has the context to be useful\").",
-    "url": "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful"
-   }
-  ],
-  "firecrawl": [
-   {
-    "claim": "On 2026-09-22, Rippling opened an AI Lab in Bengaluru at its Embassy Tech Village campus, expanded its Bengaluru workspace to 170,000 sq ft, and said it was hiring across AI research, applied AI, backend, platform engineering, machine learning, and engineering leadership.",
-    "url": "https://finance.yahoo.com/technology/ai/articles/rippling-opens-ai-lab-bengaluru-013000402.html"
-   },
-   {
-    "claim": "On 2026-09-23, Rippling announced new Rippling AI capabilities (plugins, skills, and automations) that connect approved third-party systems, package reusable instructions, and run recurring AI workflows under existing workforce policies and permissions.",
-    "url": "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful"
-   },
-   {
-    "claim": "On 2026-10-08, Rippling opened a new 132,693-square-foot New York City office at 330 West 34th Street, supporting more than 1,000 employees across go-to-market, engineering, product and design, operations, and corporate functions, nearly doubling its prior New York footprint.",
-    "url": "https://www.businesswire.com/news/home/20261008055600/en/Rippling-Expands-New-York-City-Presence-Amid-Accelerated-Growth"
-   },
-   {
-    "claim": "On 2026-10-15, Rippling reintroduced Automated Compliance with multi-framework support, broader integrations, a built-in audit portal, publishable trust centers, and embedded AI workflows for framework setup, remediation, and security questionnaires.",
-    "url": "https://www.rippling.com/blog/reintroducing-automated-compliance"
-   }
-  ]
- },
  "verified": {
   "c1": {
    "cid": "c1",
    "verdict": "true",
    "in_scope": true,
    "signal": "buying",
-   "source": "https://www.uniindia.com/business-wire-india/rippling-opens-ai-lab-in-bengaluru-to-accelerate-the-future-of-ai-powered-business-software-101825/188026",
-   "note": "The Business Wire India release is dated 2026-09-22, not 09-21 as claimed. The event is real and after the since-date. It duplicates c2."
+   "source": "https://www.businesswire.com/news/home/20260921847964/en/Rippling-Opens-AI-Lab-in-Bengaluru-to-Accelerate-the-Future-of-AI-Powered-Business-Software",
+   "note": "The press release is URL-dated 20260921 and stockanalysis lists it as Sep 21 or later. The claim says 09-22, but the since-date is 09-21 and the BusinessWire release URL shows 09-21, so the event date is borderline and likely on the 21st (not after). Marked true given the Bengaluru publication ti...",
+   "via": "passages"
   },
   "c2": {
    "cid": "c2",
    "verdict": "true",
    "in_scope": true,
    "signal": "buying",
-   "source": "https://finance.yahoo.com/technology/ai/articles/rippling-opens-ai-lab-bengaluru-013000402.html",
-   "note": "Confirmed on 2026-09-22: AI Lab at Embassy Tech Village, 170,000 sq ft workspace, hiring across the listed AI and engineering roles."
-  },
-  "c3": {
-   "cid": "c3",
-   "verdict": "true",
-   "in_scope": true,
-   "signal": "minor",
-   "source": "https://www.rippling.com/blog/reintroducing-automated-compliance",
-   "note": "The product update is real, but the blog post is dated 2026-10-15, not 09-22. It duplicates c4 and is still after the since-date."
+   "source": "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful",
+   "note": "Rippling's blog introduces plugins, skills and automations in Rippling AI; four systems agree on 09-23.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "A": "true",
+    "E": "true",
+    "C": "true"
+   }
   },
   "c4": {
    "cid": "c4",
    "verdict": "true",
    "in_scope": true,
-   "signal": "buying",
-   "source": "https://www.rippling.com/blog/reintroducing-automated-compliance",
-   "note": "Blog post dated 2026-10-15 confirms multi-framework support, audit portal, trust centers and AI-assisted evidence remediation."
+   "signal": "minor",
+   "source": "https://getpulsesignal.com/changes/rippling",
+   "note": "The tracker shows Rippling Platform removed and Custom quote added; the entry is dated at the top of the list after 09-17, consistent with 09-24.",
+   "via": "passages"
   },
   "c5": {
    "cid": "c5",
    "verdict": "true",
    "in_scope": true,
    "signal": "buying",
-   "source": "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful",
-   "note": "Blog dated 2026-09-23 confirms plugins, skills and automations under existing permissions. Automations are waitlist-only."
-  },
-  "c6": {
-   "cid": "c6",
-   "verdict": "true",
-   "in_scope": true,
-   "signal": "buying",
-   "source": "https://finance.yahoo.com/technology/ai/articles/rippling-expands-york-city-presence-150000637.html",
-   "note": "The Yahoo Finance copy of the press release, dated 2026-10-08, confirms the 132,693 sq ft office at 330 W 34th St for 1,000+ employees, nearly double the prior 67,000 sq ft. The BusinessWire original returned 403 and the fallback fetch failed with a 500 error, so I did not read it."
-  },
-  "c7": {
-   "cid": "c7",
-   "verdict": "true",
-   "in_scope": true,
-   "signal": "minor",
-   "source": "https://www.rippling.com/blog/rippling-expands-preferred-carrier-program",
-   "note": "Rippling's blog post is dated 2026-10-13. It adds Principal, Beam Benefits and Sun Life, for six preferred carriers in total. This is a routine partnership expansion."
+   "source": "https://www.businesswire.com/news/home/20261008055600/en/Rippling-Expands-New-York-City-Presence-Amid-Accelerated-Growth",
+   "note": "The Oct 8 release confirms the 132,693 sq ft office, 1,000+ employees, and nearly doubled footprint.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true",
+    "D": "true",
+    "B": "true",
+    "F": "true"
+   }
   },
   "c8": {
    "cid": "c8",
    "verdict": "true",
    "in_scope": true,
    "signal": "buying",
+   "source": "https://www.businesswire.com/news/home/20261008055600/en/Rippling-Expands-New-York-City-Presence-Amid-Accelerated-Growth",
+   "note": "The release states the Singapore office opened, the Toronto office is coming, Chicago is in 2027, and Seattle is established.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.rippling.com/blog/rippling-expands-preferred-carrier-program",
+   "note": "The blog dated Oct 13, 2026 confirms the expansion to six carriers.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.rippling.com/blog/ai-that-has-the-context-to-be-useful",
+   "note": "The blog list dates the reintroduction at Oct 14, 2026, still after the since-date; the 10-15 date is off by a day but the event is real.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://releasebot.io/updates/rippling",
+   "note": "Releasebot shows first seen Oct 14, 2026 with the described capabilities.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.sunlife.com/us/en/about/newsroom/news-releases/announcement/sunlife-is-now-part-of-ripplings-preferred-carrier-program-to-simplify-benefits-administration-for-small-and-mid-market-employers/124144/",
+   "note": "The Sun Life release dated Oct 21, 2026 confirms the carrier joined the program.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://itbrief.asia/story/rippling-launches-singapore-campaign-for-cross-border-hiring",
+   "note": "IT Brief dated Oct 21, 2026 confirms the OOH campaign, placements and 71% stat.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.rippling.com/blog/connect-microsoft-365-google-workspace-licensing-employee-lifecycle",
+   "note": "Rippling blog published Oct 22, 2026 describes the licensing-to-lifecycle connection.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
    "source": "https://karvtechinsider.com/martech/cxo-moves/rippling-promotes-neel-murthy-to-chief-marketing-officer",
-   "note": "The article is dated 2026-10-20 and reports Neel Murthy's promotion from VP of Growth to CMO. This is a leadership change. I found only this one source."
+   "note": "Karv article dated Oct 20, 2026 reports the promotion from VP Growth to CMO.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.exchange4media.com/people-movement-news/neel-murthy-elevated-to-chief-marketing-officer-at-rippling-159432.html",
+   "note": "Exchange4media published Oct 23, 2026 reporting the elevation.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.freepressjournal.in/business/neel-murthy-elevated-to-chief-marketing-officer-at-rippling-takes-on-bigger-leadership-role-after-serving-as-vp-of-growth",
+   "note": "FPJ Oct 23, 2026 report gives no effective date, consistent with the claim.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://opscontrol.co/market/company/rippling",
+   "note": "OpsControl lists the CMO promotion seen Oct 25, 2026, approximate date as claimed.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.linkedin.com/posts/kristinaskinner_career-update-ive-joined-rippling-as-vp-activity-7521358260101136384-tV4P",
+   "note": "Her LinkedIn post says she joined Rippling as VP of Communications, with the post about a week old. The 'and Brand' part of the title and the exact Oct 28 date are not confirmed, but the hire is after the since-date.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://industry-lens.com/companies/rippling",
+   "note": "Industry-lens lists the Partner Directory launch on 2026-10-29, backed by a Rippling LinkedIn post checked Oct 29.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://x.com/Rippling/status/2118046357873152305",
+   "note": "Rippling's X post of Nov 4, 2026 announces 3-day payroll, devices to 130+ countries and 15+ contractor payout options.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.rippling.com/blog/rippling-crowdstrike-endpoint-security",
+   "note": "Rippling blog dated Nov 5, 2026 announces the CrowdStrike integration.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "F": "true"
+   }
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "false",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.rippling.com/blog/rippling-crowdstrike-endpoint-security",
+   "note": "The launch is dated Nov 5, 2026 in the sources; nothing supports Nov 2.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://www.rippling.com/blog/how-rippling-governs-ai-agents-at-the-edge",
+   "note": "Blog and Releasebot dated Nov 5, 2026 describe admin policy in Rippling enforced at the edge by Cloudflare, covering Slack and Google Calendar tools. The MCP gateway itself was first introduced Aug 20, so this is an architecture write-up more than a new launch.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true"
+   }
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.rippling.com/blog/reprompt-ai-joins-rippling",
+   "note": "Rippling's own blog (Nov 6, 2026) confirms the Reprompt AI team joined, with the founders, customers and 150M+ agents as stated, and 'one of Rippling AI's biggest new directions' going from prototype to production.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true",
+    "D": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://meikuio.com/rippling-pricing/",
+   "confidence": "medium",
+   "note": "Meikuio says the pricing FAQ source code shows an edit on 2026-10-13. Its 2026-09-28 capture named no number and the 2026-10-04 capture showed no $8 figure. By 2026-10-15 the FAQ read \"start at $8 per employee per month, with a monthly base fee\". I confirmed this only in that one third-party arti...",
+   "via": "agent"
   }
  },
- "audit": {},
- "scores": {
-  "parallel": {
-   "units": 4,
-   "unverifiable": 0,
-   "true": 4,
-   "wrong": 0,
-   "truth": 8,
-   "coverage": 0.5,
-   "accuracy": 1.0,
-   "combined": 0.556
+ "audit": {
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "note": "PulseSignal's Rippling log has a 2026-09-24 entry: 'Rippling Platform' (was 'Contact sales / custom') removed and 'Custom quote' added. No Rippling plan shows a USD price."
   },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "note": "Yahoo/BusinessWire article dated Oct 8, 2026: Singapore office open for Asia sales and marketing, permanent Toronto office planned for later in 2026, Chicago opening in 2027, Seattle office already exists and is adding engineering teams."
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "meikuio says the FAQ was last edited Oct 13, 2026. The $8 figure was gone on Oct 4 and was back by mid-October as '$8 per employee per month, with a monthly base fee'."
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "note": "exchange4media reports Murthy promoted from VP of Growth to CMO. A search listing dates it 23 Oct 2026, but one profile page says Oct 2023 and I couldn't confirm the date on the article itself."
+  }
+ },
+ "scores": {
   "firecrawl": {
-   "units": 4,
+   "units": 3,
    "unverifiable": 0,
-   "true": 4,
+   "true": 3,
    "wrong": 0,
-   "truth": 8,
-   "coverage": 0.571,
+   "truth": 22,
+   "truth_weight": 51.0,
+   "coverage": 0.176,
    "accuracy": 1.0,
-   "combined": 0.625
+   "combined": 0.211,
+   "metric": "F2"
   },
   "exa": {
-   "units": 6,
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 51.0,
+   "coverage": 0.422,
+   "accuracy": 1.0,
+   "combined": 0.477,
+   "metric": "F2"
+  },
+  "gpt": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 51.0,
+   "coverage": 0.431,
+   "accuracy": 1.0,
+   "combined": 0.487,
+   "metric": "F2"
+  },
+  "parallel": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 51.0,
+   "coverage": 0.314,
+   "accuracy": 1.0,
+   "combined": 0.364,
+   "metric": "F2"
+  },
+  "opus": {
+   "units": 7,
    "unverifiable": 0,
    "true": 6,
-   "wrong": 0,
-   "truth": 8,
-   "coverage": 0.786,
-   "accuracy": 1.0,
-   "combined": 0.821
+   "wrong": 1,
+   "truth": 22,
+   "truth_weight": 51.0,
+   "coverage": 0.304,
+   "accuracy": 0.969,
+   "combined": 0.352,
+   "metric": "F2"
   },
   "nimble": {
-   "units": 4,
+   "units": 8,
    "unverifiable": 0,
-   "true": 4,
+   "true": 8,
    "wrong": 0,
-   "truth": 8,
-   "coverage": 0.5,
+   "truth": 22,
+   "truth_weight": 51.0,
+   "coverage": 0.324,
    "accuracy": 1.0,
-   "combined": 0.556
+   "combined": 0.374,
+   "metric": "F2"
   }
- },
- "judge_cost_usd": 0.1
+ }
 }

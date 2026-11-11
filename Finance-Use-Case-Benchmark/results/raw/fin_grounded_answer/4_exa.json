@@ -1,0 +1,100 @@
+{
+ "arm": "exa",
+ "sub_use_case": "fin_grounded_answer",
+ "input": "What has Salesforce changed in Agentforce pricing in 2026?",
+ "input_n": 4,
+ "tier": "medium",
+ "status": "completed",
+ "seconds": 62,
+ "run_id": "agent_run_da3c37c7955649d9a454d12ad82165b5",
+ "output": {
+  "as_of": "2026-11-10",
+  "answer": "As of November 10, 2026, Salesforce has expanded Agentforce beyond a single consumption model: it introduced a standalone Agentforce Coworker license at $50 per user per month, and its current pricing page offers Flex Credits at $500 per 100,000 credits, Conversations at $2 per conversation, and Help Agent resolutions at $2 each. In September, Salesforce replaced the prior enterprise tiers with Core ($195/user/month), Advanced ($395), and Max ($550); Core, Advanced, and Max include 500,000, 1 million, and 2.75 million Flex Credits respectively, while Max stayed at the former Agentforce 1 price and existing Agentforce 1 customers can upgrade at no extra cost. Salesforce also launched outcome-based Help Agent pricing in July: customers pay only when the agent autonomously resolves an issue, with no charge for escalation or an unsuccessful interaction.",
+  "caveats": [
+   "Salesforce says pricing and packaging are subject to change, availability can vary by region, and customer agreements govern final pricing.",
+   "The current pricing page does not provide a publication date; its listed prices are treated as current as of 2026-11-10.",
+   "Salesforce's September announcement says new Industry Edition pricing would take effect later in fall 2026, but the opened sources did not verify a separate Industry Edition price or effective date."
+  ],
+  "passages": [
+   {
+    "quote": "At $50 per user per month, pricing is simple and predictable, which makes it easier for enterprises to expand adoption with confidence.",
+    "publisher": "Salesforce",
+    "source_url": "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users/",
+    "published_date": "2026-11-04"
+   },
+   {
+    "quote": "Flex Credits $ 500 per 100k Credits ... Conversations $ 2 per conversation ... Help Agent Resolutions $ 2",
+    "publisher": "Salesforce",
+    "source_url": "https://www.salesforce.com/agentforce/pricing/",
+    "published_date": null
+   },
+   {
+    "quote": "Core Editions: $195 per user/month ... Advanced Editions: $395 per user/month ... Max Editions: $550 per user/month (zero pricing change...)",
+    "publisher": "Salesforce",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "published_date": "2026-09-03"
+   },
+   {
+    "quote": "Core Editions now include 500,000 Flex Credits, Advanced Editions include 1 million Flex Credits, and Max Editions include 2.75 million Flex Credits",
+    "publisher": "Salesforce",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/",
+    "published_date": "2026-09-03"
+   },
+   {
+    "quote": "With pay-per-resolution pricing, you are charged when Help Agent resolves an issue autonomously, start to finish. If the customer asks for a human or walks away unhappy, there is no charge.",
+    "publisher": "Salesforce",
+    "source_url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+    "published_date": "2026-06-25"
+   }
+  ],
+  "question": "What has Salesforce changed in Agentforce pricing in 2026?",
+  "key_facts": [
+   {
+    "date": "2026-11-04",
+    "fact": "Salesforce introduced Agentforce Coworker as a standalone license priced at $50 per user per month; the SKU was available in November 2026.",
+    "source_url": "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users/"
+   },
+   {
+    "date": "2026-11-10",
+    "fact": "Salesforce's current Agentforce pricing page lists Flex Credits at $500 per 100,000 credits, Conversations at $2 per conversation, and Help Agent Resolutions at $2.",
+    "source_url": "https://www.salesforce.com/agentforce/pricing/"
+   },
+   {
+    "date": "2026-09-03",
+    "fact": "Salesforce introduced Core, Advanced, and Max editions at $195, $395, and $550 per user per month, respectively.",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   },
+   {
+    "date": "2026-09-03",
+    "fact": "The new editions include 500,000 Flex Credits for Core, 1 million for Advanced, and 2.75 million for Max; Max had no price increase versus Agentforce 1, and existing Agentforce 1 customers could upgrade at no extra cost.",
+    "source_url": "https://www.salesforce.com/news/stories/salesforce-simplifies-editions-2026/"
+   },
+   {
+    "date": "2026-06-25",
+    "fact": "Agentforce Help Agent introduced pay-per-resolution pricing: customers are charged only when it autonomously resolves an issue from start to finish, and not when the customer escalates or is dissatisfied; the pricing became available in July 2026.",
+    "source_url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/"
+   }
+  ],
+  "missing_fields": []
+ },
+ "cost_usd": 0.1,
+ "cost_basis": "billed",
+ "usage": {
+  "agentComputeUnits": 0.4,
+  "searches": 12,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "data_sources": [
+  "financial_datasets"
+ ],
+ "cost_breakdown": {
+  "total": 0.1,
+  "agentCompute": 0.04,
+  "search": 0.06,
+  "emails": 0,
+  "phoneNumbers": 0
+ },
+ "error": null,
+ "completed_on": "2026-11-10"
+}

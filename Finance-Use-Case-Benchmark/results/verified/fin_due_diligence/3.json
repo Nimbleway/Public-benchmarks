@@ -1,0 +1,4544 @@
+{
+ "sub_use_case": "fin_due_diligence",
+ "input_n": 3,
+ "task": "Write a due diligence memo on Databricks",
+ "labels": {
+  "gpt": "A",
+  "nimble": "B",
+  "exa": "C",
+  "parallel": "D",
+  "firecrawl": "E",
+  "opus": "F"
+ },
+ "unit": "material finding",
+ "evidence_pages": 128,
+ "evidence_fetched": 128,
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 164,
+ "judge": "v4b",
+ "judge_cost_usd": 4.85,
+ "corrections_v2": {
+  "units_before": 173,
+  "units_after": 140,
+  "dedup_groups": [
+   {
+    "kept": "c2",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13"
+    ]
+   },
+   {
+    "kept": "c14",
+    "merged": [
+     "c15",
+     "c16"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23",
+     "c24"
+    ]
+   },
+   {
+    "kept": "c29",
+    "merged": [
+     "c30"
+    ]
+   },
+   {
+    "kept": "c34",
+    "merged": [
+     "c35"
+    ]
+   },
+   {
+    "kept": "c36",
+    "merged": [
+     "c37"
+    ]
+   },
+   {
+    "kept": "c39",
+    "merged": [
+     "c40"
+    ]
+   },
+   {
+    "kept": "c41",
+    "merged": [
+     "c42"
+    ]
+   },
+   {
+    "kept": "c43",
+    "merged": [
+     "c44",
+     "c45",
+     "c46",
+     "c47"
+    ]
+   },
+   {
+    "kept": "c48",
+    "merged": [
+     "c49"
+    ]
+   },
+   {
+    "kept": "c50",
+    "merged": [
+     "c51",
+     "c52",
+     "c53"
+    ]
+   },
+   {
+    "kept": "c70",
+    "merged": [
+     "c71"
+    ]
+   },
+   {
+    "kept": "c84",
+    "merged": [
+     "c85"
+    ]
+   },
+   {
+    "kept": "c82",
+    "merged": [
+     "c83"
+    ]
+   },
+   {
+    "kept": "c87",
+    "merged": [
+     "c88"
+    ]
+   },
+   {
+    "kept": "c101",
+    "merged": [
+     "c102"
+    ]
+   },
+   {
+    "kept": "c103",
+    "merged": [
+     "c104"
+    ]
+   },
+   {
+    "kept": "c144",
+    "merged": [
+     "c145",
+     "c146"
+    ]
+   },
+   {
+    "kept": "c157",
+    "merged": [
+     "c158"
+    ]
+   },
+   {
+    "kept": "c63",
+    "merged": [
+     "c62",
+     "c64"
+    ]
+   },
+   {
+    "kept": "c140",
+    "merged": [
+     "c141"
+    ]
+   },
+   {
+    "kept": "c93",
+    "merged": [
+     "c94"
+    ]
+   }
+  ],
+  "cost": 0.072
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Databricks was founded in 2013 by Ali Ghodsi, Ion Stoica, Matei Zaharia, Patrick Wendell, Reynold Xin, Andy Konwinski and Arsalan Tavakoli(-Shiraji), from UC Berkeley.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "Databricks was founded in 2013 by Ali Ghodsi, Ion Stoica, Matei Zaharia, Patrick Wendell, Reynold Xin, Andy Konwinski and Arsalan Tavakoli-Shiraji.",
+    "B": "Databricks founders (aggregator): Ali Ghodsi, Ion Stoica, Matei Zaharia, Patrick Wendell, Reynold Xin, Andy Konwinski, Arsalan Tavakoli-Shiraji.",
+    "C": "Databricks was founded in 2013 by Berkeley researchers Ali Ghodsi, Andy Konwinski, Ion Stoica, Patrick Wendell, Reynold Xin, Matei Zaharia and Arsalan Tavakoli.",
+    "D": "Databricks' 2013 founding team was Ali Ghodsi, Matei Zaharia, Ion Stoica, Patrick Wendell, Reynold Xin, Andy Konwinski and Arsalan Tavakoli-Shiraji, from UC Berkeley's AMPLab."
+   },
+   "urls": [
+    "https://answers.databricks.com/who-invented-the-lakehouse",
+    "https://stockanalysis.com/private/databricks",
+    "https://eecs.berkeley.edu/news/cloud-startup-databricks-raises-1-billion-series-g-funding/",
+    "https://www.databricks.com/spark/about"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Ali Ghodsi is Databricks co-founder and CEO.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "B": "Ali Ghodsi is co-founder and CEO of Databricks (company press release).",
+    "C": "Ali Ghodsi is Databricks co-founder and CEO, confirmed in the company's 2026-08-13 financing announcement.",
+    "F": "Ali Ghodsi is co-founder and CEO of Databricks."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+    "https://www.databricks.com/dataaisummit/speaker/ali-ghodsi"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "Matei Zaharia is Databricks co-founder and CTO and a UC Berkeley associate professor; he created Apache Spark.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "Databricks co-founder Matei Zaharia is CTO and a UC Berkeley associate professor; he created Apache Spark and contributed to MLflow and Delta Lake.",
+    "C": "Matei Zaharia is Databricks co-founder and CTO and a UC Berkeley associate professor; he started Apache Spark during his Berkeley doctorate.",
+    "D": "Matei Zaharia is Databricks co-founder and CTO and an associate professor at UC Berkeley."
+   },
+   "urls": [
+    "https://www.databricks.com/dataaisummit/speaker/matei-zaharia",
+    "https://www.databricks.com/blog/author/matei-zaharia",
+    "https://people.eecs.berkeley.edu/~matei"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Executives per The Information (Apr 2025): Ion Stoica co-founder & Executive Chair; Matei Zaharia co-founder & CTO; Hatim Shafique COO; Andy Kofoid leads sales and marketing; Tram Phi SVP & General Counsel.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks executives (The Information, Apr 2025): Ion Stoica co-founder & Executive Chair; Matei Zaharia co-founder & CTO; Hatim Shafique COO; Andy Kofoid leads sales and marketing; Tram Phi SVP & General Counsel."
+   },
+   "urls": [
+    "https://theinformation.com/org-charts/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Board includes Ion Stoica, Ali Ghodsi, Matei Zaharia, Ben Horowitz (a16z), Elena Donio, Pete Sonsini (NEA), Jonathan Chadwick and Scott Shenker.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks board includes Ion Stoica, Ali Ghodsi, Matei Zaharia, Ben Horowitz (a16z), Elena Donio (ex-Twilio), Pete Sonsini (NEA), Jonathan Chadwick (ex-VMware), Scott Shenker (UC Berkeley)."
+   },
+   "urls": [
+    "https://theinformation.com/org-charts/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Five of seven co-founders had day-to-day roles as of April 2025; a sixth sits on the board.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Five of seven Databricks co-founders still had day-to-day roles as of April 2025; a sixth sits on the board."
+   },
+   "urls": [
+    "https://theinformation.com/org-charts/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Company page lists founder roles: Ghodsi CEO, Stoica Executive Chair, Zaharia CTO, Wendell VP Engineering, Xin Chief Architect, Konwinski co-founder, Tavakoli-Shiraji SVP Field Engineering.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Databricks lists Ali Ghodsi as Co-founder and CEO, Ion Stoica as Co-founder and Executive Chair, Matei Zaharia as Co-founder and CTO, Patrick Wendell as Co-founder and VP of Engineering, Reynold Xin as Co-founder and Chief Architect, Andy Konwinski as Co-founder, and Arsalan Tavakoli-Shiraji as Co-founder and SVP of Field Engineering (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/founders"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Executive page lists Kofoid, Conte, Reichanadter, Phi, Gabrisko, Schultz, Shafique, Serna, Zutshi, Marur, Meyer and Conway in the roles stated.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Databricks' executive page lists Andy Kofoid (President, Global Field Operations), David Conte (CFO), Amy Reichanadter (Chief People Officer), Trâm Phi (SVP and General Counsel), Ron Gabrisko (CRO), Rick Schultz (CMO), Hatim Shafique (COO), Fermín Serna (Chief Security Officer), Naveen Zutshi (CIO), Vinod Marur (SVP Engineering), David Meyer (SVP Products) and Adam Conway (SVP Products) (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/leadership-team"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Executive roster per aggregator (not company-verified, Aug 2026).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Databricks executives per an aggregator (not company-verified, as of Aug 2026): David Conte (CFO since Oct 2019), Ion Stoica (co-founder, Executive Chair), Hatim Shafique (COO), Rick Schultz (CMO), Ron Gabrisko (CRO), Andy Kofoid (President, Global Field Operations), Reynold Xin (Chief Architect), Naveen Zutshi (CIO), Fermín Serna (CSO), Amy Reichanadter (Chief People Officer); co-founders also include Patrick Wendell, Arsalan Tavakoli-Shiraji, Andy Konwinski."
+   },
+   "urls": [
+    "https://derrick-app.com/company/databricks/executives"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Leadership: Ghodsi CEO, David Conte CFO, Ron Gabrisko CRO, Hatim Shafique COO.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Databricks leadership: Ali Ghodsi is co-founder and CEO, David Conte CFO, Ron Gabrisko chief revenue officer, Hatim Shafique chief operating officer."
+   },
+   "urls": [
+    "https://www.databricks.com/company/leadership-team"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Dave Conte is CFO of Databricks.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Dave Conte is CFO of Databricks."
+   },
+   "urls": [
+    "https://research.contrary.com/report/databricks",
+    "https://www.databricks.com/dataaisummit/speaker/dave-conte"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c12",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Dave Conte was appointed Databricks CFO in October 2019, previously CFO at Splunk and Opsware and began at Ernst & Young.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "C": "Dave Conte joined Databricks as CFO in October 2019 after serving as CFO at Splunk and Opsware, with earlier experience at Ernst & Young.",
+    "D": "Databricks CFO Dave Conte previously served as CFO at Splunk and Opsware and began his career at Ernst & Young (appointed 2019-10-22)."
+   },
+   "urls": [
+    "https://tollbit.forbes.com/sites/nataliesachmechi/2019/10/23/data-analytics-startup-databricks-names-its-first-cfo/",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-appoints-dave-conte-as-chief-financial-officer"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c14",
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Hatim Shafique is COO; previously COO and SVP Tech Ops at AppDynamics, earlier CA Wily.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Hatim Shafique is Databricks COO; previously COO and SVP of Tech Ops at AppDynamics, with earlier roles at CA Wily."
+   },
+   "urls": [
+    "https://www.databricks.com/blog/author/hatim-shafique"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Andy Kofoid is President, Global Field Operations at Databricks.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Andy Kofoid is President, Global Field Operations at Databricks."
+   },
+   "urls": [
+    "https://www.databricks.com/blog/author/andy-kofoid",
+    "https://www.databricks.com/company/newsroom/press-releases/fox-corporation-selects-databricks-strategic-partner-next"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Kofoid joined from Salesforce (President of North America); earlier at ExactTarget, Dassault Systemes, Oracle, IBM (2021).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Databricks President Andy Kofoid joined from Salesforce, where he was President of North America; earlier employers included ExactTarget, Dassault Systemes, Oracle and IBM (2021)."
+   },
+   "urls": [
+    "https://www.prnewswire.com/news-releases/andy-kofoid-joins-databricks-as-president-of-global-field-operations-301365763.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Ron Gabrisko is CRO; Databricks appointed Simon Davies (ex-SAP, Splunk) SVP/GM Asia Pacific and Japan in April 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Ron Gabrisko is Chief Revenue Officer of Databricks, and Databricks appointed former SAP and Splunk executive Simon Davies as SVP and General Manager for Asia Pacific and Japan (April 2026)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-appoints-simon-davies-head-asia-pacific-japan-amidst"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Bloomberg (2025-09-12) reported AI head Naveen Rao would leave his operating role to start a new company; Databricks confirmed a transition to an advisory role and planned investment in his startup.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks AI head Naveen Rao left his operating role to start another company (Bloomberg, 2025-09-12); Databricks confirmed a transition to an advisory role and planned investment in his startup.",
+    "C": "Bloomberg reported in September 2025 that Databricks AI chief Naveen Rao would leave his operating role to start a computing venture; Databricks confirmed a transition to an advisory role and planned investment in his startup.",
+    "D": "Bloomberg (2025-09-12) reported AI head Naveen Rao planned to leave to launch a computer startup; Databricks confirmed a transition to an advisory role and plans to invest in the venture; no effective date given."
+   },
+   "urls": [
+    "https://bloomberg.com/news/articles/2025-09-12/databricks-ai-chief-to-exit-launch-a-new-computer-startup",
+    "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html",
+    "https://www.bloomberg.com/news/articles/2025-09-12/databricks-ai-chief-to-exit-launch-a-new-computer-startup"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23",
+    "c24"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "No successor named for head-of-AI role as of Sept 13, 2025; analysts split on impact (InfoWorld).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks had named no successor for the head-of-AI role as of Sept 13, 2025; analysts split on impact of Rao's exit (InfoWorld)."
+   },
+   "urls": [
+    "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Moor Insights' Robert Kramer warned rivals could exploit Databricks' AI leadership gap; Futurum's Bradley Shimmin disagreed.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "After Naveen Rao's exit, Moor Insights analyst Robert Kramer warned rivals could exploit Databricks' AI leadership gap to win customers; Futurum's Bradley Shimmin disagreed."
+   },
+   "urls": [
+    "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Zaharia is CTO; analysts named him and Ghodsi as AI leadership the company would rely on after Rao left.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Matei Zaharia is Databricks CTO; analysts named him and Ghodsi as AI leadership the company would rely on after Naveen Rao left."
+   },
+   "urls": [
+    "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Red flag: AI leadership continuity risk following Naveen Rao's transition to an advisory role.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Red flag: Databricks AI leadership continuity risk following Naveen Rao's transition out of his operating role to an advisory relationship."
+   },
+   "urls": [
+    "https://www.bloomberg.com/news/articles/2025-09-12/databricks-ai-chief-to-exit-launch-a-new-computer-startup"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Anil Bhasin, VP India & SAARC, departed Jan 15, 2025 to join a cybersecurity venture.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Anil Bhasin, Databricks VP India & SAARC, departed Jan 15, 2025 to join a cybersecurity venture (TechCircle)."
+   },
+   "urls": [
+    "https://techcircle.in/2025/01/16/databricks-india-vp-steps-down",
+    "https://www.techcircle.in/2025/01/16/databricks-india-vp-steps-down"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c29",
+    "c30"
+   ]
+  },
+  {
+   "cid": "c31",
+   "claim": "Drew Herd, who led the Google Cloud partnership for almost 6 years, announced his departure (~May 2026).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Drew Herd, who led Databricks' Google Cloud partnership for almost 6 years, announced his departure (~May 2026, LinkedIn)."
+   },
+   "urls": [
+    "https://linkedin.com/posts/drew-herd-5326981_bricksters-activity-7449832027924881408-ZGQw"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Amy Reichanadter is Chief People Officer.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Amy Reichanadter is Databricks Chief People Officer (per company Glassdoor responses)."
+   },
+   "urls": [
+    "https://glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "In January 2016 Ali Ghodsi became CEO and Ion Stoica Executive Chairman.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "In January 2016 Databricks announced Ali Ghodsi became CEO and Ion Stoica became Executive Chairman (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-announces-changes-leadership-team-align-rapid-growth"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Series J ($10B at $62B, announced Dec 2024) led by Thrive Capital.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks' Series J was led by Thrive Capital, with Andreessen Horowitz, DST Global, GIC, Insight Partners and WCM Investment Management as co-leads (announced 2024-12-17).",
+    "C": "Reuters reported Databricks' $10 billion Series J at a $62 billion valuation, announced 2024-12-17 and led by Thrive Capital.",
+    "F": "Databricks raised $10B at a $62B valuation in December 2024 and $1B at a $100B valuation in September 2025."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation",
+    "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation",
+    "https://www.reuters.com/technology/databricks-secures-62-bln-valuation-ai-focused-funding-round-2024-12-17/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c34",
+    "c35"
+   ]
+  },
+  {
+   "cid": "c36",
+   "claim": "Final close (2025-01-22) of $10B Series J at $62B plus a separate $5.25B credit facility; investors included QIA, Temasek, Macquarie-administered entities and Meta; equity lead not identified.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "D": "Databricks announced (2025-01-22) the final close of its $10 billion Series J at a $62 billion valuation and a separate $5.25 billion credit facility; investors included QIA, Temasek, Macquarie-administered entities and Meta; equity lead not identified."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-announces-15B-financing-ai-talent-global-expansion"
+   ],
+   "conflicts_with": [
+    "c38"
+   ],
+   "merged_from": [
+    "c36",
+    "c37"
+   ]
+  },
+  {
+   "cid": "c38",
+   "claim": "Databricks reportedly raised ~$5B in debt from Blackstone, Apollo and Blue Owl, its largest debt raise ever (Bloomberg, Jan 2025).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks reportedly raised ~$5B in debt from Blackstone, Apollo and Blue Owl, its largest debt raise ever (Bloomberg, Jan 2025)."
+   },
+   "urls": [
+    "https://techcircle.in/2025/01/16/databricks-india-vp-steps-down"
+   ],
+   "conflicts_with": [
+    "c36"
+   ]
+  },
+  {
+   "cid": "c39",
+   "claim": "Series K: $1B at valuation above $100B, closed 2025-09-08, co-led by a16z, Insight, MGX, Thrive, WCM.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks closed a $1 billion Series K at a valuation above $100 billion, co-led by Andreessen Horowitz, Insight Partners, MGX, Thrive Capital and WCM Investment Management (company-reported, 2025-09-08).",
+    "C": "Databricks announced closing a $1 billion Series K on 2025-09-08 at a valuation above $100 billion; co-leads were Andreessen Horowitz, Insight Partners, MGX, Thrive Capital and WCM Investment Management.",
+    "F": "Databricks raised $10B at a $62B valuation in December 2024 and $1B at a $100B valuation in September 2025."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-raising-series-k-investment-100-billion-valuation",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-surpasses-4b-revenue-run-rate-exceeding-1b-ai-revenue"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c39",
+    "c40"
+   ]
+  },
+  {
+   "cid": "c41",
+   "claim": "Series L announced 2025-12-16: >$4B at $134B, led by Insight Partners, Fidelity and J.P. Morgan Asset Management.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks announced a Series L exceeding $4 billion at a $134 billion valuation, led by Insight Partners, Fidelity Management & Research and J.P. Morgan Asset Management (company-reported, 2025-12-16); it preceded and was later expanded by the February 2026 update, not a separate additive round.",
+    "C": "Databricks announced Series L on 2025-12-16 raising more than $4 billion at a $134 billion valuation, led by Insight Partners, Fidelity Management & Research Company and J.P. Morgan Asset Management.",
+    "E": "Reuters reported Databricks raised more than $4 billion in a Series L at a $134 billion valuation in December 2025, led by Insight Partners, Fidelity Management & Research Company and J.P. Morgan Asset Management."
+   },
+   "urls": [
+    "https://builtin.com/articles/databricks-raises-4b-series-l-134b-valuation-20251216",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-surpasses-4-8b-revenue-run-rate-growing-55-year-over-year",
+    "https://www.reuters.com/technology/data-analytics-firm-databricks-valued-134-billion-latest-funding-round-2025-12-16/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c41",
+    "c42"
+   ]
+  },
+  {
+   "cid": "c43",
+   "claim": "Series L expanded (2026-02-09) to ~$5B equity at $134B plus ~$2B additional debt capacity, JPMorgan Chase leading credit facilities.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks expanded its Series L to approximately $5 billion of equity at a $134 billion valuation, plus approximately $2 billion of additional debt capacity, with JPMorgan Chase leading the credit facilities (company-reported, 2026-02-09).",
+    "C": "Reuters reported on 2026-02-09 that Databricks completed approximately $5 billion equity funding at a $134 billion valuation, plus a separate $2 billion debt financing led by JPMorgan Chase; this followed the Series L announcement."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate",
+    "https://www.reuters.com/business/databricks-valued-134-billion-latest-fundraise-cnbc-reports-2026-02-09/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c43",
+    "c44",
+    "c45",
+    "c46",
+    "c47"
+   ]
+  },
+  {
+   "cid": "c48",
+   "claim": "July 16, 2026 term sheet for a strategic round at $188B valuation.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Databricks signed a July 16, 2026 term sheet for a strategic round at a $188B valuation."
+   },
+   "urls": [
+    "https://databricks.techfabric.com/guide/databricks-by-the-numbers",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-strategic-round-funding-188-billion-valuation"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c48",
+    "c49"
+   ]
+  },
+  {
+   "cid": "c50",
+   "claim": "Aug 13, 2026: Databricks announced/closed $5B strategic round at $190B valuation led by Coatue, with Blackstone, MGX, T. Rowe Price accounts and Sixth Street Growth.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks closed $5 billion in strategic funding at a $190 billion valuation, led by Coatue with Blackstone, MGX, T. Rowe Price accounts and Sixth Street Growth (company-reported, 2026-08-13).",
+    "C": "Databricks announced on 2026-08-13 it closed $5 billion at a $190 billion valuation, led by Coatue alongside Blackstone, MGX, T. Rowe Price-advised accounts and new investor Sixth Street Growth.",
+    "D": "Databricks announced (2026-08-13) a $5 billion strategic equity round at a $190 billion valuation, led by Coatue, with Blackstone, MGX, T. Rowe Price-advised accounts and Sixth Street Growth among investors.",
+    "E": "In August 2026 Databricks announced it closed a $5 billion strategic funding round at a $190 billion valuation, led by Coatue with Blackstone, MGX, T. Rowe Price and Sixth Street Growth among named participants (company claim)."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+    "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c50",
+    "c51",
+    "c52",
+    "c53"
+   ]
+  },
+  {
+   "cid": "c54",
+   "claim": "Valuation tripled from $62B (Dec 2024) to $190B (Aug 2026) in 20 months across five rounds; headline figures are unaudited run-rates.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks valuation tripled from $62B (Dec 2024) to $190B (Aug 2026) in 20 months across five rounds; headline figures are unaudited run-rates disclosed at fundraising moments."
+   },
+   "urls": [
+    "https://databricks.techfabric.com/guide/databricks-by-the-numbers"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c55",
+   "claim": "Secondary-market implied valuation $228.17B at $308.41/share (Nov 8, 2026); total funding $25.55B across 15 rounds.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks secondary-market implied valuation $228.17B at $308.41/share as of Nov 8, 2026; total funding $25.55B across 15 rounds (Clarity data via aggregator)."
+   },
+   "urls": [
+    "https://stockanalysis.com/private/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c56",
+   "claim": "Series H: $1.6B at $38B post-money (Aug 2021), led by Counterpoint Global (Morgan Stanley).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Databricks announced a $1.6 billion Series H at a $38 billion post-money valuation in August 2021, led by Counterpoint Global (Morgan Stanley) (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-raises-1-6-billion-series-h-investment-at-38-billion-valuation"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "Databricks remains private; the CEO says it intends to go public but cites 'too much distraction in the public market'.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Databricks remains private; the CEO says it intends to go public but cites 'too much distraction in the public market' now."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/08/13/databricks-funding-round-190-billion-valuation.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "Databricks is privately held; shares do not trade on public exchanges (Nasdaq Private Market, 2026-11-10).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Databricks is privately held; shares do not trade on public exchanges (Nasdaq Private Market, 2026-11-10)."
+   },
+   "urls": [
+    "https://www.nasdaqprivatemarket.com/company/databricks/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "Ranked No. 3 on CNBC's 2026 Disruptor 50; CNBC says it has passed Snowflake in market value.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Databricks ranked No. 3 on CNBC's 2026 Disruptor 50 list; CNBC says it has passed Snowflake in market value."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/08/13/databricks-funding-round-190-billion-valuation.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "TechCrunch called it unusual to announce the $188B round before funds were in hand, credited part of the jump to an 'AI halo', noted the 'run out of letters' meme.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "TechCrunch called it unusual for Databricks to announce the $188B round before funds were in hand, credited part of the valuation jump to an 'AI halo', and noted the 'run out of letters' meme about its many rounds."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c61",
+   "claim": "Red flag: valuation rose from $134B to $190B in ~six months; July round announced before closing without disclosed size.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Red flag: Databricks' valuation rose from $134B to $190B in about six months, and the July round was announced before closing without a disclosed size."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c63",
+   "claim": "Red flag: $190B valuation accompanied only run-rate revenue and adjusted cash-flow disclosures rather than audited financials; recognized revenue and cash-flow reconciliations should be obtained.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Red flag: the $190 billion Databricks valuation accompanied only run-rate revenue and adjusted cash-flow disclosures; recognized-revenue and cash-flow reconciliations should be obtained (2026-08-13).",
+    "C": "Red flag: Databricks' $190 billion valuation accompanies company-reported annualized revenue and adjusted cash-flow measures rather than audited financials; revenue quality, cash-flow adjustments and financing preferences need validation."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/08/13/databricks-funding-round-190-billion-valuation.html",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c62",
+    "c63",
+    "c64"
+   ]
+  },
+  {
+   "cid": "c65",
+   "claim": "Revenue run-rate exceeded $7B with >80% YoY growth in Q2 (announced 2026-08-13); run-rate, not recognized revenue.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks surpassed a $7 billion revenue run-rate, growing over 80% year over year in its Q2 (company claim, 2026-08-13); this is a run-rate disclosure, not reported full-year revenue.",
+    "B": "Databricks crossed a $7B revenue run-rate with >80% YoY growth in Q2 (announced Aug 13, 2026).",
+    "C": "Databricks (company claim, Q2 reported 2026-08-13) exceeded a $7 billion annualized revenue run-rate (not recognized full-year revenue).",
+    "D": "Databricks (company claim, 2026-08-13): revenue run-rate exceeded $7 billion with more than 80% year-over-year growth in its second quarter; annualized run-rate, not verified recognized revenue.",
+    "E": "Databricks reported a revenue run-rate above $7 billion, year-over-year growth above 80% in Q2 2026, and positive adjusted free cash flow over the last 12 months (company claim).",
+    "F": "Databricks reported revenue run-rate above $7B in fiscal Q2 (Aug 2026), growing more than 80% YoY, with positive adjusted trailing-12-month free cash flow; no audited figures are public."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c66",
+   "claim": "Positive adjusted free cash flow over the preceding 12 months (company claim, unaudited, 2026-08-13).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks reported positive adjusted free cash flow over the preceding 12 months (company claim, 2026-08-13).",
+    "B": "Databricks claims positive adjusted free cash flow over the last 12 months (unaudited).",
+    "C": "Databricks (company claim, 2026-08-13) reported positive adjusted free cash flow over the preceding twelve months; no GAAP profitability or audited reconciliation established.",
+    "D": "Databricks (company claim, 2026-08-13): adjusted free cash flow was positive over the preceding twelve months; does not establish GAAP profitability.",
+    "E": "Databricks reported ... positive adjusted free cash flow over the last 12 months (company claim).",
+    "F": "Databricks reported revenue run-rate above $7B ... with positive adjusted trailing-12-month free cash flow; no audited figures are public."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c67",
+   "claim": "Lakehouse data-warehousing run-rate exceeded $1.5B growing >100% YoY; Lakebase exceeded $100M run-rate (Aug 2026).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks' data warehousing business exceeded a $1.5 billion revenue run-rate with over 100% annual growth, and Lakebase exceeded a $100 million revenue run-rate (company claim, 2026-08-13).",
+    "B": "Databricks Lakehouse data-warehousing product surpassed $1.5B run-rate growing >100% YoY; Lakebase surpassed $100M run-rate (Aug 2026).",
+    "C": "Databricks (company claim, Q2 reported 2026-08-13): ... Lakehouse warehousing exceeded $1.5 billion run-rate growing more than 100%; Lakebase exceeded $100 million run-rate.",
+    "E": "Databricks reported Lakehouse revenue run-rate above $1.5 billion with growth above 100% year over year, and Lakebase revenue run-rate above $100 million (company claim, Aug 2026).",
+    "F": "Databricks (company claim, Aug 2026) reports Lakehouse data warehousing run-rate above $1.5B growing >100% YoY, and Lakebase run-rate above $100M."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c68",
+   "claim": "Revenue run-rate surpassed $5.4B with ~65% YoY growth (2026-02-09).",
+   "asserted_by": [
+    "A",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks' revenue run-rate exceeded $5.4 billion, including $1.4 billion from AI products (company claim, 2026-02-09).",
+    "D": "Databricks (company claim, 2026-02-09): revenue run-rate surpassed $5.4 billion with 65% year-over-year growth.",
+    "F": "Databricks reported revenue run-rate above $5.4B in fiscal Q4 (Feb 2026), growing more than 65% YoY, with positive trailing-12-month free cash flow."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c69",
+   "claim": "AI products crossed $1.4B revenue run-rate (Feb 2026, company claim).",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks' revenue run-rate exceeded $5.4 billion, including $1.4 billion from AI products (company claim, 2026-02-09).",
+    "B": "Databricks AI products crossed $1.4B revenue run-rate (Feb 2026, company claim).",
+    "F": "Databricks (company claim, Feb 2026) reports net revenue retention above 140% and AI products passing a $1.4B revenue run-rate."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c70",
+   "claim": "Revenue run-rate >$4.8B in Dec 2025 quarter (Q3), growing >55% YoY.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Databricks (company claim, Q3 reported 2025-12-16): $4.8 billion revenue run-rate, more than 55% year-over-year growth and net retention above 140%.",
+    "F": "Databricks reported revenue run-rate above $4.8B in fiscal Q3 (Dec 2025), growing more than 55% YoY."
+   },
+   "urls": [
+    "https://builtin.com/articles/databricks-raises-4b-series-l-134b-valuation-20251216",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-surpasses-4-8b-revenue-run-rate-growing-55-year-over-year",
+    "https://www.reuters.com/technology/data-analytics-firm-databricks-valued-134-billion-latest-funding-round-2025-12-16/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c70",
+    "c71"
+   ]
+  },
+  {
+   "cid": "c72",
+   "claim": "Run-rate trajectory: >$3B (Jan 2025 qtr); >$4B +50% (Sep 2025); >$4.8B +55% (Dec 2025); >$5.4B +65% (Feb 2026); >$7B +80% (Aug 2026).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks run-rate trajectory (company claims): >$3B (Jan 2025 quarter); >$4B +50% (Sep 2025); >$4.8B +55% (Dec 2025); >$5.4B +65% (Feb 2026); >$7B +80% (Aug 2026)."
+   },
+   "urls": [
+    "https://databricks.techfabric.com/guide/databricks-by-the-numbers"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c73",
+   "claim": "Dec 2024 expectation: cross $3B run-rate and reach positive FCF in quarter ending Jan 31, 2025, with non-GAAP subscription gross margins above 80%.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Databricks said in December 2024 it expected to cross a $3 billion revenue run-rate and reach positive free cash flow in the quarter ending January 31, 2025, with non-GAAP subscription gross margins above 80% (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation"
+   ],
+   "conflicts_with": [
+    "c75"
+   ]
+  },
+  {
+   "cid": "c74",
+   "claim": "Net revenue retention above 140% (reported Feb 2026; no newer figure).",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks reported net retention exceeding 140% (company claim, 2026-02-09).",
+    "B": "Databricks claims net retention rate sustaining above 140% (Feb 2026).",
+    "D": "Databricks (company claim, 2026-02-09): net retention exceeded 140%; no newer retention figure verified.",
+    "F": "Databricks (company claim, Feb 2026) reports net revenue retention above 140% and AI products passing a $1.4B revenue run-rate."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c75",
+   "claim": "Sacra estimates $7B annualized revenue (July 2026), ~80% YoY growth in Q2 2026, FCF positive for full year 2025, gross margins 70-80%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Sacra estimates Databricks at $7B annualized revenue (July 2026), ~80% YoY growth in Q2 2026, FCF positive for full year 2025, gross margins 70-80%."
+   },
+   "urls": [
+    "https://sacra.com/c/databricks"
+   ],
+   "conflicts_with": [
+    "c73"
+   ]
+  },
+  {
+   "cid": "c76",
+   "claim": "CNBC reported revenue of $2.6B for fiscal year ended January 2025.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "CNBC reported Databricks revenue of $2.6 billion for the fiscal year ended January 2025."
+   },
+   "urls": [
+    "https://www.cnbc.com/2025/06/11/databricks-says-annualized-revenue-to-reach-3point7-billion-by-next-month.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c77",
+   "claim": "Dec 2024: 500+ customers at >$1M run-rate and Databricks SQL at $600M run-rate, up >150% YoY.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Dec 2024 Series J announcement reported Databricks had 500+ customers at over $1 million annual revenue run-rate and Databricks SQL at a $600 million revenue run-rate, up more than 150% year over year (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c78",
+   "claim": "Investing.com: $190B valuation implies ~27x the $7B run-rate revenue.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Investing.com: Databricks' $190B valuation implies ~27x the $7B run-rate revenue."
+   },
+   "urls": [
+    "https://investing.com/news/stock-market-news/databricks-closes-5b-round-at-190b-valuation-as-revenue-tops-7b-runrate-4858534"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c79",
+   "claim": "Growth driven largely by existing customers: run-rate up ~75% while customer count up ~one-third between Sep 2025 and Aug 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks growth is driven largely by existing customers: run-rate rose ~75% while customer count rose ~one-third between Sep 2025 and Aug 2026."
+   },
+   "urls": [
+    "https://databricks.techfabric.com/guide/databricks-by-the-numbers"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c80",
+   "claim": "More than 20,000 organizations use the platform, including 70% of the Fortune 500 (company claim, 2026).",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks claims more than 20,000 organizations and 70% of the Fortune 500 use its platform; named customers include Block, Comcast, Condé Nast, Rivian and Shell (company claim, 2026-11-10).",
+    "B": "Databricks claims 20,000+ organizations use its platform, including 70% of the Fortune 500 (Aug 2026).",
+    "D": "Databricks (company claim, 2026-08-13): more than 20,000 organizations use it, including 70% of the Fortune 500; named customers include adidas, AT&T, Bayer, Block, Mastercard, Rivian and Unilever.",
+    "E": "Databricks said more than 20,000 organizations, including adidas, AT&T, Bayer, Block, Mastercard, Rivian and Unilever, use its platform, and that 70% of the Fortune 500 use it (company claim, Aug 2026).",
+    "F": "Databricks (company claim) serves more than 20,000 organizations, including 70% of the Fortune 500."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+    "https://www.databricks.com/company/about-us"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c81",
+   "claim": "Named customers (Aug 2026): adidas, AT&T, Bayer, Block, Mastercard, Rivian, Unilever.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Databricks named customers (Aug 2026): adidas, AT&T, Bayer, Block, Mastercard, Rivian and Unilever.",
+    "C": "Databricks (company claim, 2026-08-13): more than 20,000 organizations use the platform; named customers include adidas, AT&T, Bayer, Block, Mastercard, Rivian and Unilever.",
+    "D": "... named customers include adidas, AT&T, Bayer, Block, Mastercard, Rivian and Unilever.",
+    "E": "... including adidas, AT&T, Bayer, Block, Mastercard, Rivian and Unilever ...",
+    "F": "Databricks named customers (company claim) include adidas, AT&T, Bayer, Block, Mastercard, Rivian and Unilever."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c82",
+   "claim": "Named customers Block, Comcast, Condé Nast, Rivian, Shell (company about-us page, Nov 2026).",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "named customers include Block, Comcast, Condé Nast, Rivian and Shell (company claim, 2026-11-10)."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-raising-series-k-investment-100-billion-valuation",
+    "https://www.databricks.com/company/about-us"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c82",
+    "c83"
+   ]
+  },
+  {
+   "cid": "c84",
+   "claim": "More than 1,000 customers above $1M run-rate and more than 100 above $10M (Aug 2026).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks reported over 1,000 customers consuming above a $1 million revenue run-rate, including over 100 above $10 million (company claim, 2026-08-13).",
+    "B": "Databricks claims over 1,000 customers at >$1M run-rate and over 100 customers at >$10M run-rate (Aug 2026).",
+    "C": "more than 1,000 customers consume above a $1 million annual revenue run-rate and more than 100 above $10 million.",
+    "D": "more than 1,000 customers consume at an annualized run-rate above $1 million each, including more than 100 above $10 million each.",
+    "E": "Databricks reported more than 1,000 customers consuming at over $1 million revenue run-rate and more than 100 customers consuming at over $10 million revenue run-rate (company claim, Aug 2026)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c84",
+    "c85"
+   ]
+  },
+  {
+   "cid": "c86",
+   "claim": "More than 1,200 global cloud, ISV and consulting partners.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Databricks claims an ecosystem of more than 1,200 cloud, ISV and consulting partners (company claim, 2026-11-10).",
+    "D": "Databricks (company claim): more than 1,200 global cloud, ISV and consulting partners."
+   },
+   "urls": [
+    "https://www.databricks.com/company/about-us"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "Fox Corporation selected Databricks as strategic partner / platform of choice (Oct 2026), multi-year; using Lakebase, Genie Code, Unity Gateway and Genie Ontology.",
+   "asserted_by": [
+    "A",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "Fox Corporation selected Databricks as strategic partner for its next-generation data and AI platform (Oct 13, 2026).",
+    "E": "Fox Corporation announced a multi-year strategic partnership naming Databricks its platform of choice for data, AI applications and agents, using Lakebase, Genie Code, Unity Gateway and Genie Ontology (Oct 2026)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/fox-corporation-selects-databricks-strategic-partner-next"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c87",
+    "c88"
+   ]
+  },
+  {
+   "cid": "c89",
+   "claim": "AXA France unified 200TB from 54 sources on Databricks to serve 6.3M+ customers.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Databricks says AXA France unified 200TB of data from 54 sources on the Databricks platform to serve more than 6.3 million customers (company customer-story claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/customers"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c90",
+   "claim": "HP moving its Customer Data Platform into Databricks, expected 40% cost reduction (Oct 2026).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "HP is moving its Customer Data Platform into Databricks, expected to yield 40% cost reduction (Oct 2026)."
+   },
+   "urls": [
+    "https://opscontrol.co/market/company/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c91",
+   "claim": "Databricks Apps grew 5x YoY with 5,000+ accounts running Apps weekly; Marketplace has 30+ ISV partner solutions (June 2026).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks Apps grew 5x YoY with 5,000+ accounts running Apps weekly; Marketplace has partner solutions from 30+ ISVs (June 2026)."
+   },
+   "urls": [
+    "https://databricks.com/blog/becoming-most-comprehensive-data-ai-ecosystem-earth"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c92",
+   "claim": "Microsoft partnership extended into the 2030s (2026-07-23), deeper Azure integration.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "A": "Databricks and Microsoft extended their partnership into the 2030s, with deeper integration of Databricks capabilities into Microsoft products and increased internal use of Azure (company claim, 2026-07-23).",
+    "B": "Databricks and Microsoft extended their strategic partnership through the 2030s, deepening Azure integration (July 23, 2026).",
+    "C": "Databricks (company claim) expanded its Microsoft partnership on 2026-07-23 into the 2030s, including Azure infrastructure commitments and integration of Genie and governance into Microsoft products."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-and-microsoft-expand-partnership-help-enterprises-bring"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c93",
+   "claim": "Multi-year, minimum $100M OpenAI partnership with GPT-5 native, plus Google Gemini, SAP and Palantir partnerships (Sacra).",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Databricks has a multi-year, minimum $100M OpenAI partnership with GPT-5 natively available, plus Google Gemini integration and SAP and Palantir partnerships (Sacra)."
+   },
+   "urls": [
+    "https://sacra.com/c/databricks",
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-and-openai-launch-groundbreaking-partnership-bring"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c93",
+    "c94"
+   ]
+  },
+  {
+   "cid": "c95",
+   "claim": "Launched/expanded partnerships with Microsoft, Google Cloud, Anthropic, SAP and Palantir in the two quarters before Aug 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks launched or expanded partnerships with Microsoft, Google Cloud, Anthropic, SAP and Palantir in the two quarters before Aug 2025."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-raising-series-k-investment-100-billion-valuation"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c96",
+   "claim": "Acquisitions: MosaicML $1.3B (2023), Neon (May 2025, ~$1B reported), Tecton (Aug 2025), Row Zero (Sep 2026), Electric/PGlite (Aug 2026).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks acquisitions: MosaicML $1.3B (2023), Neon (May 2025, ~$1B reported), Tecton (Aug 2025), Row Zero (Sep 2026), Electric/PGlite (Aug 2026)."
+   },
+   "urls": [
+    "https://databricks.techfabric.com/guide/databricks-by-the-numbers"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c97",
+   "claim": "June 2026: agreed to acquire Panther Labs (AI SOC) for undisclosed price, third security acquisition, competing with CrowdStrike and Cisco's Splunk.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In June 2026 Databricks agreed to acquire Panther Labs (AI SOC platform) for an undisclosed price, its third security acquisition, putting it against CrowdStrike and Cisco's Splunk."
+   },
+   "urls": [
+    "https://www.thestar.com.my/tech/tech-news/2026/06/16/databricks-strikes-deal-to-buy-panther-labs-in-cybersecurity-push"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c98",
+   "claim": "TechTarget (2025-10-01) warned acquisitions including Mooncake and Neon could create fragmented, hard-to-integrate infrastructure; analyst risk, not demonstrated failure.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "TechTarget analysis (2025-10-01) warned Databricks' acquisitions including Mooncake and Neon could create fragmented, hard-to-integrate infrastructure; an analyst risk assessment, not a demonstrated failure."
+   },
+   "urls": [
+    "https://www.techtarget.com/news/Mooncake-acquisition-boosts-Databricks-database-capabilities/842412/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c99",
+   "claim": "Databricks sells a unified Data + AI Platform on an open lakehouse architecture.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Databricks sells a unified Data + AI Platform for data integration, processing, governance, analytics and AI, built on an open lakehouse architecture.",
+    "D": "Databricks sells an enterprise Data + AI Platform built on an open lakehouse architecture, combining governed data with organization-specific AI capabilities.",
+    "E": "Databricks, Inc. sells a Data + AI Platform built on an open lakehouse architecture that unifies enterprise data, governance, analytics, machine learning and AI applications (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/product/data-lakehouse",
+    "https://www.databricks.com/company/about-us"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c100",
+   "claim": "Product suite includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse and Unity Catalog.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "B": "Databricks sells the Data + AI Platform unifying data engineering, warehousing, analytics and AI (Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, Unity Catalog) (company claim).",
+    "C": "Databricks (company claim) sells a unified enterprise Data + AI Platform; products include Lakeflow, Lakehouse, Unity Catalog, Agent Bricks, Genie and Lakebase.",
+    "E": "Databricks' current product suite includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse and Unity Catalog (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c101",
+   "claim": "Products include Lakebase (serverless Postgres), Genie Code, Unity Gateway and Genie Ontology.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Databricks products include Lakebase (serverless Postgres database), Genie Code (engineering AI agent), Unity Gateway (AI governance and cost controls) and Genie Ontology (organizational context)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-strategic-round-funding-188-billion-valuation",
+    "https://www.databricks.com/company/newsroom/press-releases/fox-corporation-selects-databricks-strategic-partner-next"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c101",
+    "c102"
+   ]
+  },
+  {
+   "cid": "c103",
+   "claim": "Consumption-based pricing: pay-as-you-go compute (per-second, DBUs) with discounted committed-use contracts; storage/networking vary by cloud.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "Databricks uses a consumption-based model: pay-as-you-go billing at per-second granularity, with discounted committed-use contracts.",
+    "C": "Databricks (company claim) uses consumption-based pricing with pay-as-you-go compute and discounted committed-use contracts measured in DBUs; storage and networking costs depend on cloud services, and Microsoft bills Azure Databricks usage directly.",
+    "D": "Databricks uses a consumption-based model: pay-as-you-go compute billed per second, with storage, networking and other costs varying by service and cloud provider."
+   },
+   "urls": [
+    "https://sacra.com/c/databricks",
+    "https://www.databricks.com/product/pricing"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c103",
+    "c104"
+   ]
+  },
+  {
+   "cid": "c105",
+   "claim": "DBU pricing against committed spend (DBCU); Photon and Serverless SKUs carry higher per-DBU rates (Redress Compliance).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Databricks uses consumption pricing per DBU against committed spend (DBCU commits); Photon and Serverless SKUs carry higher per-DBU rates (per third-party procurement advisory Redress Compliance)."
+   },
+   "urls": [
+    "https://redresscompliance.com/databricks-procurement-strategy-download.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c106",
+   "claim": "G2 pricing: from $99 per feature/month (Basic), no permanent free tier; production needs negotiated enterprise agreement; DBU pricing sits on top of cloud costs.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks pricing (G2): from $99 per feature/month (Basic), no permanent free tier; production requires negotiated enterprise agreement; DBU pricing sits on top of underlying cloud costs."
+   },
+   "urls": [
+    "https://g2.com/it/products/databricks/pricing"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c107",
+   "claim": "Platform operates across AWS, Microsoft Azure and Google Cloud.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Databricks platform operates across AWS, Microsoft Azure and Google Cloud.",
+    "B": "Databricks operates natively across AWS, Microsoft Azure and Google Cloud."
+   },
+   "urls": [
+    "https://www.databricks.com/partners/cloud-partners",
+    "https://stockanalysis.com/private/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c108",
+   "claim": "Headquartered in San Francisco with 30+ offices globally.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Databricks is headquartered in San Francisco with 30+ offices globally (company claim).",
+    "C": "Databricks (company claim, 2026-08-13) is headquartered in San Francisco with more than 30 offices globally.",
+    "D": "Databricks is headquartered in San Francisco with offices worldwide.",
+    "E": "Databricks is headquartered in San Francisco and has 30+ offices globally (company claim).",
+    "F": "Databricks, Inc. is headquartered in San Francisco with 30+ offices worldwide and calls itself 'the Data and AI company'; founded in 2013."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+    "https://www.databricks.com/company/about-us"
+   ],
+   "conflicts_with": [
+    "c109"
+   ]
+  },
+  {
+   "cid": "c109",
+   "claim": "HQ in San Francisco with more than 35 offices in 22 countries (as of 2026-01-31).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Databricks is headquartered in San Francisco with more than 35 offices in 22 countries across the Americas, Europe and Asia-Pacific (company-reported, as of 2026-01-31)."
+   },
+   "urls": [
+    "https://www.databricks.com/legal/modern-slavery-policy-statement"
+   ],
+   "conflicts_with": [
+    "c108"
+   ]
+  },
+  {
+   "cid": "c110",
+   "claim": "Serves telecom, media & entertainment, financial services, public sector, healthcare & life sciences, retail and manufacturing.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks serves telecom, media & entertainment, financial services, public sector, healthcare & life sciences, retail and manufacturing."
+   },
+   "urls": [
+    "https://databricks.com/company/leadership-team"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c111",
+   "claim": "Founded by the original creators of the lakehouse, Apache Spark, Delta Lake, MLflow and Unity Catalog.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "Databricks was founded by the original creators of the lakehouse, Apache Spark, Delta Lake, MLflow and Unity Catalog, built on open source (company claim).",
+    "E": "Databricks says it was founded in 2013 by the original creators of the lakehouse architecture and open-source projects including Apache Spark, Delta Lake, MLflow and Unity Catalog (company claim)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/about-us"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c112",
+   "claim": "Plans >US$350M investment in Singapore for AI operations, targets Abu Dhabi/Middle East, doubled NYC office at 5 Bryant Park.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks plans to invest more than US$350M in Singapore for AI operations, targets Abu Dhabi/Middle East growth, and doubled its NYC office at 5 Bryant Park."
+   },
+   "urls": [
+    "https://opscontrol.co/market/company/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c113",
+   "claim": "Opening/expanding presence in London, Singapore, Latin America and the Middle East (Dec 2024).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Databricks reported opening or expanding regional presence in London, Singapore, Latin America and the Middle East as part of global expansion (company claim, Dec 2024)."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c114",
+   "claim": "Headcount grew ~40% from ~7,100 (July 2024) to ~10,000 (Oct 2026) per aggregators.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks headcount grew ~40% from ~7,100 (July 2024) to ~10,000 (Oct 2026) per aggregators."
+   },
+   "urls": [
+    "https://stockanalysis.com/private/databricks"
+   ],
+   "conflicts_with": [
+    "c117",
+    "c118"
+   ]
+  },
+  {
+   "cid": "c115",
+   "claim": "~8,000 employees in March 2025 (company), planning to more than double SF employee footprint over two years.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Databricks had approximately 8,000 employees in March 2025 and planned to more than double its San Francisco employee footprint over the following two years.",
+    "C": "Databricks (company claim, 2025-03-06) had approximately 8,000 employees in 23 countries and planned to more than double its San Francisco employee footprint over two years."
+   },
+   "urls": [
+    "https://www.databricks.com/company/newsroom/press-releases/databricks-deepens-san-francisco-investment-new-office-and-multi"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c116",
+   "claim": "Reuters: ~7,000 employees in Dec 2024; management had slowed headcount expansion and offshored some jobs to lower costs.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Reuters reported Databricks had about 7,000 employees in December 2024 and that management had slowed headcount expansion and offshored some jobs to lower costs."
+   },
+   "urls": [
+    "https://www.reuters.com/technology/databricks-secures-62-bln-valuation-ai-focused-funding-round-2024-12-17/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c117",
+   "claim": "Company describes more than 12,000 people as employees (2026-09-28).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Databricks described more than 12,000 people as employees (company claim, 2026-09-28)."
+   },
+   "urls": [
+    "https://www.databricks.com/blog/how-databricks-rolls-out-frontier-models-12000-employees-day-1"
+   ],
+   "conflicts_with": [
+    "c114",
+    "c118"
+   ]
+  },
+  {
+   "cid": "c118",
+   "claim": "Revelio Labs estimated 14,321 employees worldwide as of March 2026, up 2.2% YoY.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Revelio Labs estimated Databricks had 14,321 employees worldwide as of March 2026, up 2.2% year over year (aggregator estimate)."
+   },
+   "urls": [
+    "https://www.reveliolabs.com/companies/databricks/employees"
+   ],
+   "conflicts_with": [
+    "c114",
+    "c117"
+   ]
+  },
+  {
+   "cid": "c119",
+   "claim": "Revelio: 1,211 active job postings in 2026, down 12.0% from 2025.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Revelio Labs reported Databricks had 1,211 active job postings in 2026, down 12.0% from 2025 (aggregator estimate)."
+   },
+   "urls": [
+    "https://www.reveliolabs.com/companies/databricks/employees"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c120",
+   "claim": "Observed professional profiles rose 15.8% from 12,299 (Aug 2025) to 14,237 (Jul 2026) (Unify; profile counts, not headcount).",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Unify data shows observed professional profiles up 15.8%, from 12,299 (Aug 2025) to 14,237 (Jul 2026); profile-coverage counts, not company-reported headcount.",
+    "F": "Databricks observed headcount (aggregator, LinkedIn-style profiles) rose from 12,299 in Aug 2025 to 14,237 in July 2026 (+15.8%), with 2,822 observed hires in the last 12 months."
+   },
+   "urls": [
+    "https://www.unifygtm.com/insights/headcount/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c121",
+   "claim": "Unify recorded 2,822 observed hire events in its latest twelve-month window.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Unify recorded 2,822 observed hire events in its latest twelve-month window; an aggregator hiring signal, not verified company hiring.",
+    "F": "... with 2,822 observed hires in the last 12 months."
+   },
+   "urls": [
+    "https://www.unifygtm.com/insights/headcount/databricks"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c122",
+   "claim": "KORE1 (conflicted recruiting blog): no WARN filing or company-wide layoff found; est. <50 targeted cuts March 2026; >840 open reqs May 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Per recruiting-firm blog KORE1 (disclosed conflict, some errors): no WARN filing or company-wide Databricks layoff found; estimated fewer than 50 targeted cuts in March 2026 from anonymous posts; more than 840 open requisitions in early May 2026."
+   },
+   "urls": [
+    "https://www.kore1.com/databricks-layoffs-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c123",
+   "claim": "Unverified Blind claims of layoffs of new hires before vesting (Oct 2025); no company-confirmed layoff numbers.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Unverified Blind employee claims of Databricks layoffs of new hires right before vesting (Oct 2025); no company-confirmed layoff numbers."
+   },
+   "urls": [
+    "https://teamblind.com/company/Databricks/reviews"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c124",
+   "claim": "Reuters (2025-04-24): plan to raise India headcount >50% to >750 and invest >$250M locally; completion unverified.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Reuters reported on 2025-04-24 Databricks' plan to increase India headcount more than 50% to above 750 by fiscal-year end and invest more than $250 million locally; completion unverified."
+   },
+   "urls": [
+    "https://www.reuters.com/world/india/databricks-boost-hiring-invest-250-million-india-ai-expansion-2025-04-24/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c125",
+   "claim": "New office leases in San Francisco and Sunnyvale to attract AI talent (Sept 2025).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks signed new office leases in San Francisco and Sunnyvale to attract AI talent (Sept 2025)."
+   },
+   "urls": [
+    "https://databricks.com/company/newsroom/press-releases/databricks-surpasses-4b-revenue-run-rate-exceeding-1b-ai-revenue"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c126",
+   "claim": "In re Mosaic LLM Litigation (N.D. Cal., 24-cv-01451): on 2026-04-21 court denied dismissal and motion to strike renewed DBRX copyright allegations; no finding of infringement.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "In In re Mosaic LLM Litigation, the court denied dismissal of authors' amended direct copyright-infringement claim over Databricks' DBRX models, allowing it to proceed (2026-04-21); this is not a liability determination.",
+    "C": "In In Re Mosaic LLM Litigation (N.D. Cal., 24-cv-01451), Judge Breyer on 2026-04-21 denied dismissal and striking of renewed DBRX copyright allegations against Databricks; not a finding of infringement, damages or class certification.",
+    "D": "In In re Mosaic LLM Litigation (No. 24-cv-01451-CRB), the N.D. Cal. on 2026-04-21 denied dismissal of the direct copyright-infringement claim tied to DBRX and denied the motion to strike; the claim proceeds, with no finding that infringement occurred.",
+    "E": "Plaintiffs' counsel reports that on April 21, 2026 the court denied Databricks' and MosaicML's motion to dismiss and motion to strike DBRX-related allegations in the copyright litigation."
+   },
+   "urls": [
+    "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/288",
+    "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_24-cv-01451/pdf/USCOURTS-cand-3_24-cv-01451-34.pdf"
+   ],
+   "conflicts_with": [
+    "c127"
+   ]
+  },
+  {
+   "cid": "c127",
+   "claim": "Motion to dismiss in the AI copyright case denied on April 22, 2026.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Databricks/MosaicML faces an active AI copyright class action in N.D. Cal.; motion to dismiss denied Apr 22, 2026 (Law360).",
+    "F": "In re Mosaic LLM Litigation (N.D. Cal., Judge Charles Breyer): authors' copyright class action against Databricks and MosaicML over LLM (incl. DBRX) training on books; motion to dismiss Second Amended Complaint denied 2026-04-22; summary judgment motions on infringement and fair use filed 2026-06-30; SJ/Daubert hearing moved to 2026-12-18."
+   },
+   "urls": [
+    "https://law360.com/articles/2468654/judge-lets-ai-copyright-claims-against-databricks-proceed",
+    "https://chatgptiseatingtheworld.com/category/in-re-mosaic-llm-litigation/"
+   ],
+   "conflicts_with": [
+    "c126"
+   ]
+  },
+  {
+   "cid": "c128",
+   "claim": "Copyright suit (plaintiffs incl. Makkai, Reynolds, Nazemian) alleges MosaicML used Books3 to train MPT and DBRX; Judge Charles B. Dreyer found allegations sufficient.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The copyright suit (plaintiffs incl. Rebecca Makkai, Jason Reynolds, Abdi Nazemian) alleges MosaicML used Books3 to train MPT and Databricks' DBRX; Judge Charles B. Dreyer found allegations sufficient."
+   },
+   "urls": [
+    "https://lunch.publishersmarketplace.com/2026/04/authors-copyright-suit-against-databricks-will-continue"
+   ],
+   "conflicts_with": [
+    "c126"
+   ]
+  },
+  {
+   "cid": "c129",
+   "claim": "Mealey's: judge ruled Mosaic and Databricks face direct copyright infringement claims, finding plaintiffs adequately tied copying to LLM training.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Per Mealey's, the judge ruled Mosaic and Databricks face direct copyright infringement claims, finding plaintiffs adequately tied copying of their works to LLM training."
+   },
+   "urls": [
+    "https://www.mealeys.com/mealeys/articles/2469288"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c130",
+   "claim": "Makkai and Reynolds filed copyright complaint against Databricks and Mosaic ML in N.D. Cal. on May 2, 2024.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Rebecca Makkai and Jason Reynolds filed a copyright complaint against Databricks, Inc. and Mosaic ML, Inc. in the Northern District of California on May 2, 2024 (court docket)."
+   },
+   "urls": [
+    "https://www.courtlistener.com/docket/68497293/makkai-v-databricks-inc/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c131",
+   "claim": "Consolidated In re Mosaic LLM Litigation alleges unauthorized use of copyrighted books in training, with Second Amended Complaint adding DBRX allegations (plaintiffs' counsel).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Plaintiffs' counsel reports the consolidated In re Mosaic LLM Litigation alleges unauthorized use of copyrighted books in MosaicML/Databricks model training, with a Second Amended Consolidated Complaint adding DBRX allegations; these are allegations, not adjudicated findings."
+   },
+   "urls": [
+    "https://www.saverilawfirm.com/databricks-inc.-large-language-model-litigation"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c132",
+   "claim": "The Register (2026-04-29) covered authors' allegations that DBRX involved copyrighted books from pirated training material and Databricks' challenge.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The Register (2026-04-29) covered authors' allegations that DBRX involved copyrighted books from pirated training material and Databricks' challenge; contested allegations, not an adjudicated finding."
+   },
+   "urls": [
+    "https://www.theregister.com/offbeat/2026/04/29/databricks-fails-to-shake-authors-copyright-claim/5224253"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c133",
+   "claim": "2026-06-22 order set amicus-briefing procedures for summary-judgment motions in the Mosaic litigation; procedural.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "a 2026-06-22 order in the Mosaic LLM copyright litigation set amicus-briefing procedures for summary-judgment motions; procedural, not a merits disposition."
+   },
+   "urls": [
+    "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/302"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c134",
+   "claim": "Summary-judgment and related motions in Mosaic litigation scheduled for December 18, 2026, replacing the October hearing date.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The court scheduled summary-judgment and related motions in the Mosaic litigation for December 18, 2026, replacing the October hearing date (as of 2026-10-15)."
+   },
+   "urls": [
+    "https://apps.cand.uscourts.gov/telhrg/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c135",
+   "claim": "Summary judgment motions on infringement and fair use filed 2026-06-30 in Mosaic litigation.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "summary judgment motions on infringement and fair use filed 2026-06-30; SJ/Daubert hearing moved to 2026-12-18."
+   },
+   "urls": [
+    "https://chatgptiseatingtheworld.com/category/in-re-mosaic-llm-litigation/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c136",
+   "claim": "Red flag: DBRX copyright claim survived dismissal; exposure (training-data rights, indemnities, reserves) warrants investigation; liability not established.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Red flag: the DBRX copyright infringement claim against Databricks survived dismissal, warranting review of training-data rights, indemnities and potential litigation reserves.",
+    "C": "Red flag: Databricks' DBRX training-data copyright claim survived an April 2026 dismissal motion; liability is not established, but exposure needs investigation."
+   },
+   "urls": [
+    "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/288"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c137",
+   "claim": "Red flag: ongoing copyright litigation risk over MosaicML/DBRX training data.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Red flag: Databricks faces ongoing copyright litigation risk over MosaicML/DBRX training data."
+   },
+   "urls": [
+    "https://www.saverilawfirm.com/databricks-inc.-large-language-model-litigation"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c138",
+   "claim": "R2 Solutions v. Databricks (E.D. Tex. 4:23-cv-01147): on 2026-02-02 court struck Databricks' supplemental invalidity contentions and certain expert opinions and denied its competing motions; procedural, not a liability judgment.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "In R2 Solutions LLC v. Databricks (patent infringement), the court struck Databricks' supplemental invalidity contentions and certain expert opinions and denied its competing motions on infringement contentions and claim construction (2026-02-02).",
+    "D": "in R2 Solutions LLC v. Databricks, Inc. (No. 4:23-cv-01147, E.D. Tex.), on 2026-02-02 the court granted motions striking certain Databricks supplemental invalidity contentions and expert opinions, and denied Databricks' competing strike and supplemental claim-construction motions; procedural patent rulings, not a liability judgment."
+   },
+   "urls": [
+    "https://www.govinfo.gov/content/pkg/USCOURTS-txed-4_23-cv-01147/pdf/USCOURTS-txed-4_23-cv-01147-4.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c139",
+   "claim": "Red flag: exclusion of supplemental invalidity contentions and expert opinions in R2 patent case warrants specialist review; disposition and exposure unverified.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Red flag: exclusion of Databricks' supplemental invalidity contentions and expert opinions in the R2 patent case warrants specialist review; current disposition and financial exposure were not verified."
+   },
+   "urls": [
+    "https://www.govinfo.gov/content/pkg/USCOURTS-txed-4_23-cv-01147/pdf/USCOURTS-txed-4_23-cv-01147-4.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c140",
+   "claim": "Poulin Holdings v. Databricks (E.D. Tex. 4:26-cv-00245) filed Mar 10, 2026; Databricks answered Jun 18 and moved to transfer to N.D. Cal. Aug 13; docket active Nov 6, 2026.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Patent suit Poulin Holdings, LLC v. Databricks, Inc., No. 4:26-cv-00245 (E.D. Tex.), filed Mar 10, 2026; Databricks answered Jun 18 and moved to transfer to N.D. Cal. Aug 13, 2026; docket active Nov 6, 2026."
+   },
+   "urls": [
+    "https://ipverse.greyb.com/litigations/poulin-holdings-llc-v-databricks-inc--txed--4-26-cv-00245",
+    "https://pacermonitor.com/public/case/63511519/Poulin_Holdings"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c140",
+    "c141"
+   ]
+  },
+  {
+   "cid": "c142",
+   "claim": "Databricks sued Ascend IP and founders (W.D. Wash.) in Sept 2024 alleging an 'extortion scheme'; Byteweavr has a separate pending patent suit in Texas, which Databricks denies.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks sued patent-monetization firm Ascend IP and founders (W.D. Wash., No. 2:24-cv-01417) in Sept 2024 alleging an 'extortion scheme'; Byteweavr has a separate pending patent suit against Databricks in Texas, which Databricks denies (Reuters)."
+   },
+   "urls": [
+    "https://reuters.com/legal/litigation/databricks-sues-patent-holders-over-alleged-extortion-scheme-2024-09-09"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c143",
+   "claim": "DOJ/OCAHO case Ferrero v. Databricks dismissed with prejudice 2024-09-04 after full settlement; terms undisclosed, liability not adjudicated.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "DOJ/OCAHO immigration-related employment-discrimination case Ferrero v. Databricks was dismissed with prejudice on 2024-09-04 after the parties reported full settlement; terms undisclosed and liability not adjudicated."
+   },
+   "urls": [
+    "https://www.justice.gov/d9/2024-09/1505b.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c144",
+   "claim": "SANS (2026-03-31) relayed alleged TeamPCP-linked compromise; Databricks investigated, found nothing/no supporting evidence and requested more information; unconfirmed, no customer-data impact established.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "SANS relayed Databricks' response to an alleged TeamPCP compromise: its internal investigation found no evidence supporting the information supplied and it requested more information; the allegation remained unconfirmed (2026-03-31).",
+    "D": "SANS reported an alleged TeamPCP-linked compromise (2026-03-31); Databricks said it investigated internal systems and 'found nothing'; no confirmed breach or customer-data impact was established."
+   },
+   "urls": [
+    "https://cybersecuritynews.com/databricks-teampcp-supply-chain/",
+    "https://isc.sans.edu/diary/32846",
+    "https://securitypointbreak.com/2026/03/30/teampcp-campaign-expands-as-databricks-investigates-potential-exposure"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c144",
+    "c145",
+    "c146"
+   ]
+  },
+  {
+   "cid": "c147",
+   "claim": "BeyondTrust (Oct 2025) found unredacted JSESSIONID session tokens in Unity Catalog audit logs enabling session hijacking; Databricks patched it.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "BeyondTrust (Oct 2025) found unredacted JSESSIONID session tokens in Databricks Unity Catalog audit logs enabling session hijacking; Databricks patched it."
+   },
+   "urls": [
+    "https://beyondtrust.com/blog/entry/databricks-audit-log-vulnerability"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c148",
+   "claim": "2025 security incident: stolen credential used to access and manipulate a cloud-hosted Databricks workspace (BeyondTrust disclosure).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "2025 security incident: stolen credential used to access and manipulate a cloud-hosted Databricks workspace (BeyondTrust disclosure)."
+   },
+   "urls": [
+    "https://breachhistory.com/blog/databricks-data-breaches-full-timeline-through-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c149",
+   "claim": "TechRadar (2026-08-29): Carhartt leak of 12.9M accounts likely originated from Carhartt's Databricks analytics environment; customer-environment exposure, not established compromise of Databricks.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "TechRadar reported that a Carhartt data leak affecting 12.9 million user accounts likely originated from Carhartt's Databricks analytics environment; this is reported customer-environment exposure, not an established compromise of Databricks' corporate systems or shared platform (2026-08-29)."
+   },
+   "urls": [
+    "https://www.techradar.com/pro/security/carhartt-data-breach-exposed-information-from-12-9-million-user-accounts"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c150",
+   "claim": "Red flag: obtain root-cause analysis and responsibility allocation for the Carhartt customer-environment incident.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Red flag: Databricks diligence should obtain the root-cause analysis and responsibility allocation for the reported Carhartt customer-environment incident; it is not proof of a corporate Databricks breach."
+   },
+   "urls": [
+    "https://www.techradar.com/pro/security/carhartt-data-breach-exposed-information-from-12-9-million-user-accounts"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c151",
+   "claim": "BDO SOC 3 opinion (2025-08-15): controls effective for security, availability, confidentiality for 2024-07-01 to 2025-06-30; no system incidents causing failure to meet commitments.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "BDO SOC 3 opinion dated 2025-08-15 found Databricks' controls effective for security, availability and confidentiality for 2024-07-01 through 2025-06-30; management reported no system incidents causing failure to meet commitments in that period."
+   },
+   "urls": [
+    "https://www.databricks.com/sites/default/files/2025-08/Databricks-2025-SOC-3-Report.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c152",
+   "claim": "Customer agreement requires export-control and sanctions compliance; contractual policy, not verified absence of sanctions exposure.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Databricks' customer agreement requires export-control and sanctions compliance and prohibits access where unlawful; this is contractual policy, not verified absence of sanctions exposure (2026-02-20)."
+   },
+   "urls": [
+    "https://www.databricks.com/legal/mcsa"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c153",
+   "claim": "Glassdoor: 4.0/5 from 1,713 reviews; 92% CEO approval; rating down 3% over 12 months; Best Places to Work 2022, 2025, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks Glassdoor: 4.0/5 from 1,713 reviews; 92% approve of CEO Ali Ghodsi; rating down 3% over 12 months; Best Places to Work 2022, 2025, 2026."
+   },
+   "urls": [
+    "https://glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": [
+    "c154",
+    "c155",
+    "c156"
+   ]
+  },
+  {
+   "cid": "c154",
+   "claim": "Glassdoor (2026-11-03 snapshot): 4.0/5 from 1,712 reviews, 77% recommend, 92% CEO approval.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Glassdoor snapshot (2026-11-03): Databricks 4.0/5 overall from 1,712 reviews, 77% recommend, 92% CEO approval, 3% rating decline over twelve months, 3.3/5 work-life balance.",
+    "E": "Glassdoor shows Databricks at 4.0/5 from 1,712 reviews, with 77% recommending to a friend, 92% CEO approval and 87% positive business outlook (aggregator data)."
+   },
+   "urls": [
+    "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": [
+    "c153",
+    "c155",
+    "c156"
+   ]
+  },
+  {
+   "cid": "c155",
+   "claim": "Glassdoor (2026-11-10): 4.0/5 across 1,713 reviews, 77% recommend, work-life balance 3.3/5.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Glassdoor shows Databricks with a 4.0/5 overall employee rating across 1,713 reviews, 77% would recommend, and work-life balance rated 3.3/5 (2026-11-10)."
+   },
+   "urls": [
+    "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": [
+    "c153",
+    "c154",
+    "c156"
+   ]
+  },
+  {
+   "cid": "c156",
+   "claim": "Glassdoor snapshot: 4.1/5 from 1,705 employee reviews, 77% recommend.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Databricks: Glassdoor snapshot shows 4.1/5 from 1,705 employee reviews, with 77% recommending the company."
+   },
+   "urls": [
+    "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": [
+    "c153",
+    "c154",
+    "c155"
+   ]
+  },
+  {
+   "cid": "c157",
+   "claim": "Glassdoor weakest categories: work/life balance 3.3 and senior management 3.7; reviews cite intense pressure and burnout.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "Databricks Glassdoor weakest categories: work/life balance 3.3 and senior management 3.7; reviews cite intense pressure and burnout."
+   },
+   "urls": [
+    "https://glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+    "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c157",
+    "c158"
+   ]
+  },
+  {
+   "cid": "c159",
+   "claim": "Glassdoor work-life balance 3.3/5 versus 4.1/5 overall; reviews mention politics and stalled progression.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Databricks: Glassdoor work-life balance rated 3.3/5 versus 4.1/5 overall; recent reviews mention politics and stalled progression (self-selected review evidence)."
+   },
+   "urls": [
+    "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c160",
+   "claim": "Recent Glassdoor reviews praise colleagues, products and innovation but criticize workload and work-life balance; one cites sales pressure.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Recent anonymous Glassdoor reviews of Databricks praise colleagues, products and innovation but repeatedly criticize workload and work-life balance; one cites sales pressure (self-selected accounts)."
+   },
+   "urls": [
+    "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c161",
+   "claim": "Red flag: Glassdoor shows declining aggregate ratings and weaker work-life balance (directional, not proof of attrition).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Red flag: Glassdoor reports declining aggregate ratings and weaker work-life balance at Databricks (directional signal, not proof of attrition)."
+   },
+   "urls": [
+    "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c162",
+   "claim": "Glassdoor demographic gaps: people with disabilities 2.2 (16 ratings), Hispanic/Latinx 3.0, LGBTQ+ 3.2, women 3.6 vs men 4.1.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks Glassdoor demographic gaps: people with disabilities 2.2 stars (16 ratings), Hispanic/Latinx 3.0, LGBTQ+ 3.2, women 3.6 vs men 4.1."
+   },
+   "urls": [
+    "https://glassdoor.com/Reviews/Databricks-Reviews-E954734.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c163",
+   "claim": "Blind: 3.8/5 from 946 reviews; work/life balance 3.0; 'brutal deliver or out culture' and politics, but praise for compensation and CEO.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks Blind: 3.8/5 from 946 reviews; work/life balance 3.0; recent reviews cite 'brutal deliver or out culture' and politics, while praising compensation and CEO."
+   },
+   "urls": [
+    "https://teamblind.com/company/Databricks/reviews"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c164",
+   "claim": "G2: 4.6/5 from 1,403 reviews; 79% 5-star.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks G2 rating: 4.6/5 from 1,403 reviews; 79% 5-star."
+   },
+   "urls": [
+    "https://g2.com/it/products/databricks/pricing"
+   ],
+   "conflicts_with": [
+    "c165",
+    "c166"
+   ]
+  },
+  {
+   "cid": "c165",
+   "claim": "G2 snapshot: 4.6/5 from 1,401 reviews; praise for unified engineering/analytics/ML, collaboration, scale; complaints on learning curve, cost, slow large queries, notebook Git friction.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Databricks: G2 snapshot shows 4.6/5 from 1,401 customer reviews, praising unified engineering/analytics/ML, collaboration and scale; complaints include learning curve, cost management, slow large queries and notebook Git friction."
+   },
+   "urls": [
+    "https://www.g2.com/products/databricks/reviews"
+   ],
+   "conflicts_with": [
+    "c164",
+    "c166"
+   ]
+  },
+  {
+   "cid": "c166",
+   "claim": "G2: 4.6/5 across 1,398 reviews (2026-10-29); complaints about learning curve, complexity and cost management, praise for collaboration and integration.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "G2 rates Databricks 4.6/5 across 1,398 reviews, with recurring complaints about learning curve, complexity and cost management alongside praise for collaboration and integration (2026-10-29)."
+   },
+   "urls": [
+    "https://www.g2.com/products/databricks/reviews?page=1"
+   ],
+   "conflicts_with": [
+    "c164",
+    "c165"
+   ]
+  },
+  {
+   "cid": "c167",
+   "claim": "G2 snapshot (2026-11-03): praise for collaboration, integration, unified workflows; negatives are learning curve, complexity, cost management.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "G2 snapshot (2026-11-03): users praise Databricks' collaboration, integration and unified workflows; recurring negatives are learning curve, complexity and cost management."
+   },
+   "urls": [
+    "https://www.g2.com/products/databricks/reviews"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c168",
+   "claim": "G2 reviewers repeatedly flag pricing/cost-management complexity and steep learning curve (user reports, not measured churn); customer cost-control and onboarding diligence priority.",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "C": "Red flag: G2 reviews of Databricks repeatedly flag complexity, learning curve and cost management.",
+    "D": "Databricks: G2 reviewers repeatedly cite pricing/cost-management complexity and a steep learning curve (user reports, not measured churn), flagged as a customer cost-control and onboarding diligence priority."
+   },
+   "urls": [
+    "https://www.g2.com/products/databricks/reviews"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c169",
+   "claim": "Inferred adoption risk: complaints about complexity, learning requirements and cost management could increase implementation friction and constrain expansion.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Inferred adoption risk: recurring customer complaints about Databricks' complexity, learning requirements and cost management could increase implementation friction and constrain expansion."
+   },
+   "urls": [
+    "https://www.g2.com/products/databricks/reviews?page=1"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c170",
+   "claim": "G2 customer complaint (Dec 2025): pricing calculator off ~10x, only partial refund; broader reviews call DBU pricing opaque.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "G2 customer complaint (Dec 2025): Databricks pricing calculator off ~10x, only partial refund; broader reviews call DBU pricing opaque."
+   },
+   "urls": [
+    "https://g2.com/it/products/databricks/pricing"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c171",
+   "claim": "Capterra: 4.5/5 (28 reviews); criticisms include cost unpredictability at scale, cluster startup delays and learning curve.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Databricks Capterra: 4.5/5 (28 reviews); criticisms include cost unpredictability at scale, cluster startup delays and learning curve."
+   },
+   "urls": [
+    "https://capterra.com/p/148499/Databricks/reviews"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c172",
+   "claim": "PissedConsumer shows a 2025-04-17 complaint about a failed certification exam and replacement voucher support, with AI-summarized billing/pricing and slow-support allegations; evidence thin.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "PissedConsumer shows a 2025-04-17 complaint about a failed Databricks certification exam and replacement-voucher support, with AI-summarized allegations of billing/pricing and slow-support problems; evidence is thin."
+   },
+   "urls": [
+    "https://www.pissedconsumer.com/databricks/RT-F.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c173",
+   "claim": "Customer cost complaints (procurement advisory with commercial interest): usage-forecast commitments, renewal commits opening 25–60% higher, Photon/Serverless premiums, always-on AI endpoints, retirement of Azure Standard tier.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Databricks customer cost complaints (per procurement advisory with commercial interest): usage-forecast commitments, renewal commits opening 25–60% higher, Photon and Serverless premiums, always-on AI endpoints, and retirement of the Azure Standard tier."
+   },
+   "urls": [
+    "https://redresscompliance.com/databricks-procurement-strategy-download.html"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/spark/about",
+   "note": "Company page confirms seven AMPLab founders in 2013; all variant wordings match (B is aggregator-labelled, still correct).",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.investing.com/news/stock-market-news/databricks-closes-5b-round-at-190b-valuation-as-revenue-tops-7b-runrate-4858534",
+   "note": "Aug 2026 funding announcement quotes Ghodsi as co-founder and CEO.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "F": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/dataaisummit/speaker/matei-zaharia",
+   "note": "Company bio confirms CTO, Berkeley associate professor, started Spark in his PhD, and worked on MLflow and Delta Lake.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://theinformation.com/org-charts/databricks",
+   "note": "The Information org chart (updated Apr 2025) lists Hatim Shafique as COO, Tram Phi as GC and Kofoid leading sales and marketing; Stoica and Zaharia roles are consistent with other sources. The page is dated and partly paywalled.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.nasdaqprivatemarket.com/company/databricks/",
+   "note": "Board members Horowitz, Donio, Chadwick, Sonsini and Shenker are listed, along with Stoica, Ghodsi and Zaharia.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://theinformation.com/org-charts/databricks",
+   "note": "The Information page states five of seven co-founders have day-to-day roles and a sixth is on the board (April 2025).",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://derrick-app.com/company/databricks/executives",
+   "note": "Roles match the company leadership page and aggregator listings.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://derrick-app.com/company/databricks/executives",
+   "note": "Executive roles match the company leadership page excerpt and corroborating listings.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://derrick-app.com/company/databricks/executives",
+   "note": "Aggregator (data as of Aug 2026) lists these roles, and Conte as CFO since Oct 2019.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.nasdaqprivatemarket.com/company/databricks/",
+   "note": "Conte CFO, Gabrisko CRO, Shafique COO and Ghodsi CEO are consistent across the company page and aggregators.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/dataaisummit/speaker/dave-conte",
+   "note": "Data + AI Summit speaker page lists Dave Conte as CFO, Databricks.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-appoints-dave-conte-as-chief-financial-officer",
+   "note": "Press release dated Oct 22, 2019 matches the appointment, the Splunk and Opsware CFO roles, and the E&Y start.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "A": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/blog/author/hatim-shafique",
+   "note": "Company bio confirms COO, former AppDynamics COO/SVP Tech Ops, CA Wily.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/fox-corporation-selects-databricks-strategic-partner-next",
+   "note": "Recent company release lists Kofoid with this title.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.prnewswire.com/news-releases/andy-kofoid-joins-databricks-as-president-of-global-field-operations-301365763.html",
+   "note": "Aug 2021 release confirms ex-Salesforce North America President and earlier ExactTarget, Dassault, Oracle, IBM.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-appoints-simon-davies-head-asia-pacific-japan-amidst",
+   "note": "April 20, 2026 release: Davies (ex-SAP, Splunk) SVP/GM APJ; Gabrisko quoted as CRO.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.bloomberg.com/news/articles/2025-09-12/databricks-ai-chief-to-exit-launch-a-new-computer-startup",
+   "note": "Bloomberg Sept 12, 2025 matches: planned exit, advisory role, planned investment.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html",
+   "note": "InfoWorld Sept 13, 2025 shows split analyst views; no successor mentioned, a weak negative claim.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html",
+   "note": "Kramer warned of rival risk; Shimmin disagreed, per InfoWorld.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html",
+   "note": "Shimmin said company can rely on CEO Ghodsi and CTO Zaharia.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://infoworld.com/article/4056636/databricks-at-a-crossroads-can-its-ai-strategy-prevail-without-naveen-rao.html",
+   "note": "Backed by cited departure and analyst concern, though a year old and contested.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://techcircle.in/2025/01/16/databricks-india-vp-steps-down",
+   "note": "TechCircle: last day Jan 15, 2025, moving into a cybersecurity venture.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   }
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-deepens-san-francisco-investment-new-office-and-multi",
+   "note": "Databricks' own press release and Glassdoor responses name Amy Reichanadter as Chief People Officer.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-announces-changes-leadership-team-align-rapid-growth",
+   "note": "The 11 Jan 2016 press release says Ghodsi became CEO and Stoica became Executive Chairman.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation",
+   "note": "The 17 Dec 2024 release confirms $10B at $62B led by Thrive with the named co-leads; the $1B at $100B in Sept 2025 is confirmed by the Series K release.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "F": "true",
+    "B": "true",
+    "E": "true"
+   }
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-announces-15B-financing-ai-talent-global-expansion",
+   "note": "The 22 Jan 2025 release confirms the final close, the $5.25B credit facility, and QIA, Temasek, Macquarie and Meta as investors.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://techcircle.in/2025/01/16/databricks-india-vp-steps-down",
+   "note": "Techcircle relays Bloomberg's report of about $5B from Blackstone, Apollo and Blue Owl as the largest debt raise ever; it is reported, not company-confirmed.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-surpasses-4b-revenue-run-rate-exceeding-1b-ai-revenue",
+   "note": "The 8 Sep 2025 release confirms $1B Series K at over $100B with the five named co-leads; the Dec 2024 $10B at $62B is also confirmed.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-surpasses-4-8b-revenue-run-rate-growing-55-year-over-year",
+   "note": "The 16 Dec 2025 release announces a >$4B Series L at $134B; Built In and Sacra name Insight, Fidelity and J.P. Morgan AM as leads. The round was superseded by the Aug 2026 $190B round.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate",
+   "note": "The release confirms ~$5B equity at $134B plus ~$2B debt capacity, and Reuters dates it 9 Feb 2026 with JPMorgan leading the credit facilities.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-strategic-round-funding-188-billion-valuation",
+   "note": "July 16, 2026 release says a term sheet was signed at $188B.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Aug 13, 2026 release: $5B at $190B led by Coatue with Blackstone, MGX, T. Rowe Price, Sixth Street Growth; this is the latest round.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "B": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://databricks.techfabric.com/guide/databricks-by-the-numbers",
+   "note": "Valuation went from $62B (Dec 2024) to $190B (Aug 2026) over five rounds; run-rate figures are company-disclosed and unaudited.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c55": {
+   "cid": "c55",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://stockanalysis.com/private/databricks",
+   "note": "Aggregator shows implied valuation ~$227.7B at ~$307.81 on Nov 9 with $25.55B total funding and 15 rounds; the exact Nov 8 figures ($228.17B, $308.41) differ slightly but are within daily movement.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-raises-1-6-billion-series-h-investment-at-38-billion-valuation",
+   "note": "Aug 31, 2021 release confirms $1.6B Series H at $38B post-money led by Counterpoint Global; stale history.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.cnbc.com/2026/08/13/databricks-funding-round-190-billion-valuation.html",
+   "note": "CNBC quotes Ghodsi on 'too much distraction in the public market'; company remains private.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.nasdaqprivatemarket.com/company/databricks/",
+   "note": "NPM page says there is no ticker and shares are traded privately, not on stock exchanges.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.cnbc.com/2026/08/13/databricks-funding-round-190-billion-valuation.html",
+   "note": "CNBC says it ranked No. 3 on the 2026 Disruptor 50 and has exceeded Snowflake in market value.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+   "note": "TechCrunch article confirms the pre-funding announcement; the 'AI halo' and 'run out of letters' phrases are not visible in the excerpts, but the article's framing and the multiple-round pattern fit.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://sacra.com/c/databricks",
+   "note": "Valuation rose $134B (Dec 2025/Feb 2026) to $190B (Aug 2026); TechCrunch July 17 reported $188B before the Aug 13 close. The 'size undisclosed' detail is unconfirmed but the core is supported.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c63": {
+   "cid": "c63",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Press release discloses only run-rate and 'adjusted free cash flow'; no audited financials. The red flag is a fair inference.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Aug 13, 2026 release: crossed $7B run-rate, >80% YoY in Q2. Variants labelled run-rate are accurate.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Release states continued positive adjusted free cash flow over the last 12 months.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Release: Lakehouse >$1.5B run-rate growing >100% YoY; Lakebase >$100M run-rate.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c68": {
+   "cid": "c68",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate",
+   "note": "Feb 9, 2026 release: $5.4B run-rate, >65% YoY, $1.4B AI products, positive 12-month FCF.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate",
+   "note": "Feb 2026 release: AI products crossed $1.4B run-rate and net retention is >140%.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c70": {
+   "cid": "c70",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-surpasses-4-8b-revenue-run-rate-growing-55-year-over-year",
+   "note": "Dec 16, 2025 release: >$4.8B run-rate, >55% YoY, net retention >140%.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "F": "true",
+    "E": "true"
+   }
+  },
+  "c72": {
+   "cid": "c72",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://databricks.techfabric.com/guide/databricks-by-the-numbers",
+   "note": "Trajectory table matches the company releases. The Jan 2025 $3B figure was an expectation rather than a reported result.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c73": {
+   "cid": "c73",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation",
+   "note": "Series J release (Dec 17, 2024) states the expectations exactly as claimed.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate",
+   "note": "Feb 2026 release: net retention sustaining >140%. The Aug 2026 release does not update it.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c75": {
+   "cid": "c75",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://sacra.com/c/databricks",
+   "note": "Sacra estimates $7B annualized in July 2026, ~80% Q2 growth and FCF-positive for 2025. The 70-80% gross margin range is not directly shown (80% as of June 2024), so that detail is partly unsupported.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c76": {
+   "cid": "c76",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.cnbc.com/2025/06/11/databricks-says-annualized-revenue-to-reach-3point7-billion-by-next-month.html",
+   "note": "CNBC reported $2.6B revenue for fiscal year ended January 2025; stale history.",
+   "via": "passages"
+  },
+  "c77": {
+   "cid": "c77",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation",
+   "note": "Series J release of Dec 17, 2024 states 500+ $1M customers and $600M SQL run-rate up >150%.",
+   "via": "passages"
+  },
+  "c78": {
+   "cid": "c78",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://stockanalysis.com/private/databricks",
+   "note": "$190B over $7B run-rate gives P/S 27.1; Investing.com reported the round and run-rate, though the 27x multiple is a derived figure.",
+   "via": "passages"
+  },
+  "c79": {
+   "cid": "c79",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://databricks.techfabric.com/guide/databricks-by-the-numbers",
+   "note": "Aggregator analysis states run-rate up ~75% and customers up about a third; it is an inference, not company data.",
+   "via": "passages"
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Aug 13, 2026 release says 20,000+ orgs and 70% of Fortune 500; the customer list in variant A comes from the about-us page, not the release.",
+   "via": "passages"
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Release names adidas, AT&T, Bayer, Block, Mastercard, Rivian, Unilever.",
+   "via": "passages"
+  },
+  "c82": {
+   "cid": "c82",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/about-us",
+   "note": "About-us page lists Block, Comcast, Condé Nast, Rivian, Shell.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c84": {
+   "cid": "c84",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Release states >1,000 at $1M and >100 at $10M run-rate.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c86": {
+   "cid": "c86",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/about-us",
+   "note": "About-us page states 1,200+ global cloud, ISV and consulting partners.",
+   "via": "passages"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/fox-corporation-selects-databricks-strategic-partner-next",
+   "note": "Oct 13, 2026 release announces a multi-year partnership using Lakebase, Genie Code, Unity Gateway and Genie Ontology.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://opscontrol.co/market/company/databricks",
+   "note": "Aggregator news feed reports HP moving its CDP to Databricks with an expected 40% cost reduction; single secondary source.",
+   "via": "passages"
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-and-microsoft-expand-partnership-help-enterprises-bring",
+   "note": "July 23, 2026 press release confirms extension into the 2030s, Azure Cobalt use, and Genie integration with Microsoft products.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c93": {
+   "cid": "c93",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://sacra.com/c/databricks",
+   "note": "Sacra states the multi-year minimum $100M OpenAI deal with GPT-5 and Gemini; the Series K release confirms SAP and Palantir partnerships.",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c95": {
+   "cid": "c95",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://databricks.com/company/newsroom/press-releases/databricks-raising-series-k-investment-100-billion-valuation",
+   "note": "Aug 19, 2025 Series K release states partnerships with Microsoft, Google Cloud, Anthropic, SAP and Palantir in the last two quarters.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c96": {
+   "cid": "c96",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://databricks.techfabric.com/guide/databricks-by-the-numbers",
+   "note": "MosaicML $1.3B, Neon May 2025 (~$1B reported), and Row Zero Sept 2026 are confirmed; Tecton (Aug 2025) and Electric/PGlite (Aug 2026) are not shown in passages but are plausible.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c97": {
+   "cid": "c97",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.thestar.com.my/tech/tech-news/2026/06/16/databricks-strikes-deal-to-buy-panther-labs-in-cybersecurity-push",
+   "note": "Reuters (June 16, 2026) confirms the Panther Labs deal, undisclosed terms, third security acquisition, competing with CrowdStrike and Splunk.",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.techtarget.com/news/Mooncake-acquisition-boosts-Databricks-database-capabilities/842412/",
+   "note": "TechTarget article dated Oct 1, 2025 on Mooncake and Neon exists; the fragmentation-risk framing is not visible in the passages but is plausible analyst commentary.",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c99": {
+   "cid": "c99",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Company boilerplate describes a unified Data + AI Platform on an open lakehouse/open source foundation.",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c100": {
+   "cid": "c100",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+   "note": "Boilerplate lists Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse and Unity Catalog.",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "E": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/fox-corporation-selects-databricks-strategic-partner-next",
+   "note": "Fox release (Oct 2026) describes Lakebase, Genie Code, Unity Gateway and Genie Ontology as stated.",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c103": {
+   "cid": "c103",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/product/pricing",
+   "note": "Pricing page shows usage-based pricing in DBUs, pay-as-you-go with committed discounts, and Azure Databricks priced by Microsoft.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "B": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c105": {
+   "cid": "c105",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://redresscompliance.com/databricks-procurement-strategy-download.html",
+   "note": "Redress states DBCU commits, Photon raising the effective DBU rate, and serverless SKUs carrying the highest per-DBU rates.",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c106": {
+   "cid": "c106",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://g2.com/it/products/databricks/pricing",
+   "note": "G2 shows Basic at $99/feature/month and DBU pricing sits on top of cloud costs; the claim's enterprise-agreement and no-free-tier details are partly unsupported, and Free Edition exists.",
+   "via": "passages"
+  },
+  "c107": {
+   "cid": "c107",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/partners/cloud-partners",
+   "note": "Company page confirms Databricks runs natively on AWS, Azure and GCP.",
+   "via": "passages"
+  },
+  "c108": {
+   "cid": "c108",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/about-us",
+   "note": "HQ in San Francisco with offices worldwide is confirmed; the 30+ count is consistent with the 35+ offices stated in the modern slavery statement.",
+   "via": "passages"
+  },
+  "c109": {
+   "cid": "c109",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/legal/modern-slavery-policy-statement",
+   "note": "Statement says more than 35 offices in 22 countries as of 31 Jan 2026.",
+   "via": "passages"
+  },
+  "c110": {
+   "cid": "c110",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/leadership-team",
+   "note": "Databricks nav lists these industry solutions (telecom, media, financial services, public sector); healthcare, retail and manufacturing are also standard verticals.",
+   "via": "passages"
+  },
+  "c111": {
+   "cid": "c111",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/about-us",
+   "note": "Company about page states exactly this founding claim.",
+   "via": "passages"
+  },
+  "c112": {
+   "cid": "c112",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://opscontrol.co/market/company/databricks",
+   "note": "Aggregator news feed reports the $350M+ Singapore investment, the Abu Dhabi focus and the 5 Bryant Park doubling (NY Post, Oct 2026).",
+   "via": "passages"
+  },
+  "c113": {
+   "cid": "c113",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation",
+   "note": "Dec 17, 2024 Series J release cites the London, Singapore, Latin America and Middle East expansion.",
+   "via": "passages"
+  },
+  "c115": {
+   "cid": "c115",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.cnbc.com/2025/06/11/databricks-says-annualized-revenue-to-reach-3point7-billion-by-next-month.html",
+   "note": "About 8,000 employees is corroborated by CNBC (June 2025) and the March 6, 2025 SF press release.",
+   "via": "passages"
+  },
+  "c117": {
+   "cid": "c117",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/blog/how-databricks-rolls-out-frontier-models-12000-employees-day-1",
+   "note": "Company blog dated Sept 28, 2026 refers to more than 12,000 employees.",
+   "via": "passages"
+  },
+  "c119": {
+   "cid": "c119",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.reveliolabs.com/companies/databricks/employees",
+   "note": "Revelio reports 1,326 active postings in 2026, down 1.3%, not 1,211 down 12.0%.",
+   "via": "passages"
+  },
+  "c120": {
+   "cid": "c120",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.unifygtm.com/insights/headcount/databricks",
+   "note": "Unify page gives profiles up 15.8% from 12,299 to 14,237 and 2,822 hires; it is a profile count, not headcount.",
+   "via": "passages"
+  },
+  "c121": {
+   "cid": "c121",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.unifygtm.com/insights/headcount/databricks",
+   "note": "Unify page reports 2,822 new hires in the last 12 months; it is an aggregator profile-based signal, not company data.",
+   "via": "passages"
+  },
+  "c122": {
+   "cid": "c122",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.kore1.com/databricks-layoffs-2026/",
+   "note": "KORE1 states no mass layoff, fewer than 50 targeted cuts from Blind posts, no WARN notice, and more than 840 open requisitions; a conflicted source.",
+   "via": "passages"
+  },
+  "c124": {
+   "cid": "c124",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.reuters.com/world/india/databricks-boost-hiring-invest-250-million-india-ai-expansion-2025-04-24/",
+   "note": "Reuters 2025-04-24 reports headcount rising over 50% to more than 750 and more than $250M invested in India.",
+   "via": "passages"
+  },
+  "c126": {
+   "cid": "c126",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/288",
+   "note": "Order dated April 21, 2026 denies the motion to dismiss and the motion to strike the DBRX allegations; it is not a finding of liability, and the case is active.",
+   "via": "passages"
+  },
+  "c127": {
+   "cid": "c127",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/288",
+   "note": "The order is dated April 21, 2026; April 22 is only the Law360 and press date, so the stated denial date is wrong.",
+   "label_verdicts": {
+    "B": "false",
+    "F": "false"
+   },
+   "via": "passages"
+  },
+  "c128": {
+   "cid": "c128",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/288",
+   "note": "The judge is Charles R. Breyer, not 'Charles B. Dreyer'; the Publishers Marketplace item misnamed him.",
+   "via": "passages"
+  },
+  "c129": {
+   "cid": "c129",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.mealeys.com/mealeys/articles/2469288",
+   "note": "Mealey's article of April 23, 2026 reports direct copyright claims proceeding because plaintiffs adequately tied the copying to LLM training.",
+   "via": "passages"
+  },
+  "c130": {
+   "cid": "c130",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.courtlistener.com/docket/68497293/makkai-v-databricks-inc/",
+   "note": "Makkai v. Databricks docket shows service on 5/9/2024, consistent with a May 2, 2024 filing; the filing date itself is not shown in the passages.",
+   "via": "passages"
+  },
+  "c131": {
+   "cid": "c131",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.saverilawfirm.com/databricks-inc.-large-language-model-litigation",
+   "note": "Plaintiffs' counsel and the court order confirm the consolidated case and the SACC adding the DBRX claim; these are allegations, not findings.",
+   "via": "passages"
+  },
+  "c132": {
+   "cid": "c132",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.theregister.com/offbeat/2026/04/29/databricks-fails-to-shake-authors-copyright-claim/5224253",
+   "note": "The Register of 29 Apr 2026 covers the authors' Books3 and DBRX allegations and Databricks' failed challenge.",
+   "via": "passages"
+  },
+  "c133": {
+   "cid": "c133",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/302",
+   "note": "Filing 302, a stipulation and order re amici curiae briefs, was filed 6/22/2026; it is procedural.",
+   "via": "passages"
+  },
+  "c134": {
+   "cid": "c134",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://apps.cand.uscourts.gov/telhrg/",
+   "note": "Court calendar shows the Oct 30, 2026 hearing vacated and the summary-judgment and Daubert motions reset to 12/18/2026.",
+   "via": "passages"
+  },
+  "c135": {
+   "cid": "c135",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://apps.cand.uscourts.gov/telhrg/",
+   "note": "Summary-judgment motions (dkts 321, 324) are on the docket and the hearing moved to 12/18/2026; the 6/30 filing date fits the docket sequence but is not directly shown.",
+   "via": "passages"
+  },
+  "c136": {
+   "cid": "c136",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/288",
+   "note": "Judge Breyer denied the motion to dismiss the DBRX direct infringement claim on April 21, 2026; liability is not established. Variant A omits the date but is correct.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c137": {
+   "cid": "c137",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv01451/426188/288",
+   "note": "The In re Mosaic LLM Litigation is ongoing, with the DBRX claim allowed to proceed.",
+   "via": "passages"
+  },
+  "c138": {
+   "cid": "c138",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.govinfo.gov/app/details/USCOURTS-txed-4_23-cv-01147/USCOURTS-txed-4_23-cv-01147-4",
+   "note": "The 2/2/2026 order granted R2's motions to strike (Dkt. 205, 207) and denied Databricks' motions (Dkt. 223, 224).",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c139": {
+   "cid": "c139",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": true,
+   "source": "https://www.govinfo.gov/app/details/USCOURTS-txed-4_23-cv-01147/USCOURTS-txed-4_23-cv-01147-4",
+   "note": "The strike orders are confirmed by the docket; the red-flag framing is a reasonable diligence item with exposure stated as unverified. The passages cited for it are unrelated.",
+   "via": "passages"
+  },
+  "c140": {
+   "cid": "c140",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://pacermonitor.com/public/case/63511519/Poulin_Holdings",
+   "note": "Filing date of 3/10/2026 and Judge Kernodle are confirmed, and the docket shows a transfer motion and an opposition filed 10/29. The June 18 answer and Aug 13 transfer-motion dates are not directly shown but are consistent with the docket.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c142": {
+   "cid": "c142",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://reuters.com/legal/litigation/databricks-sues-patent-holders-over-alleged-extortion-scheme-2024-09-09",
+   "note": "Reuters confirms Databricks v. Weisfield, W.D. Wash. 2:24-cv-01417, filed Sept 2024 against Ascend IP and its founders. The ByteWeavr Texas suit is separately evidenced by the docket exhibits.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c143": {
+   "cid": "c143",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.justice.gov/d9/2024-09/1505b.pdf",
+   "note": "The OCAHO order granting the joint motion to dismiss in Ferrero v. Databricks is dated Sept 2024. The dismissal with prejudice and the settlement are plausible but not fully visible in the passage.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c144": {
+   "cid": "c144",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://isc.sans.edu/diary/32846",
+   "note": "The SANS ISC diary (updated 2026-03-31) reports Databricks investigating the alleged TeamPCP-linked compromise and quotes its statement that it found no supporting evidence. The breach remains unconfirmed.",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "C": "true",
+    "B": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c147": {
+   "cid": "c147",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://beyondtrust.com/blog/entry/databricks-audit-log-vulnerability",
+   "note": "BeyondTrust's Oct 8, 2025 post describes unredacted JSESSIONID tokens in Unity Catalog audit logs. The patch claim is not visible in the passages.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c148": {
+   "cid": "c148",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://breachhistory.com/blog/databricks-data-breaches-full-timeline-through-2026",
+   "note": "An aggregator reports BeyondTrust described stolen-credential access to a Databricks workspace. It was a customer-side incident, not a Databricks breach.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c149": {
+   "cid": "c149",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.techradar.com/pro/security/carhartt-data-breach-exposed-information-from-12-9-million-user-accounts",
+   "note": "TechRadar, published 29 Aug 2026, says the 12.9M-account data came from Carhartt's Databricks analytics platform. This is a customer-environment exposure, not a compromise of Databricks itself.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c150": {
+   "cid": "c150",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": true,
+   "source": "https://www.techradar.com/pro/security/carhartt-data-breach-exposed-information-from-12-9-million-user-accounts",
+   "note": "This is a reasonable diligence follow-up based on the reported Carhartt incident, and it correctly says this is not proof of a Databricks breach.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c151": {
+   "cid": "c151",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/sites/default/files/2025-08/Databricks-2025-SOC-3-Report.pdf",
+   "note": "The SOC 3 report is hosted on Databricks' site (2025-08) and the period fits; the PDF text is garbled, so the details rest on consistency.",
+   "via": "passages"
+  },
+  "c152": {
+   "cid": "c152",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.databricks.com/legal/mcsa",
+   "note": "The MCSA was last updated 2026-02-20 and the claim is correctly framed as contractual policy, not proof of no sanctions exposure.",
+   "via": "passages"
+  },
+  "c153": {
+   "cid": "c153",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "Glassdoor shows 4.1, not 4.0, with 1,713 reviews; the 92% CEO approval and the 3% decline match.",
+   "via": "passages"
+  },
+  "c154": {
+   "cid": "c154",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "Overall is 4.1, not 4.0; the other metrics match. Variant E also says 87% outlook against 88% on the page.",
+   "label_verdicts": {
+    "C": "false",
+    "E": "false"
+   },
+   "via": "passages"
+  },
+  "c155": {
+   "cid": "c155",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "The page shows 4.1/5 from 1,713 reviews, not 4.0; the 77% recommend and 3.3 work-life balance figures match.",
+   "via": "passages"
+  },
+  "c156": {
+   "cid": "c156",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "An earlier snapshot showed 4.1 from 1,705 reviews and 77% recommend; the figures are consistent and the review count has since grown.",
+   "via": "passages"
+  },
+  "c157": {
+   "cid": "c157",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "Work-life balance 3.3 and senior management 3.7 are the lowest category scores on the page.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "false"
+   }
+  },
+  "c159": {
+   "cid": "c159",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "Work-life balance 3.3 against 4.1 overall is confirmed; the review themes are plausible and labelled as self-selected.",
+   "via": "passages"
+  },
+  "c160": {
+   "cid": "c160",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "Reviews are mixed, praising technology and innovation while criticising work-life balance and leadership culture.",
+   "via": "passages"
+  },
+  "c161": {
+   "cid": "c161",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": true,
+   "source": "https://glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "Glassdoor says the rating decreased 3% over 12 months and work-life balance is 3.3; the claim is hedged as directional.",
+   "via": "passages"
+  },
+  "c162": {
+   "cid": "c162",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://glassdoor.com/Reviews/Databricks-Reviews-E954734.htm",
+   "note": "All the demographic figures match the page (disabilities 2.2 from 16 ratings, Hispanic/Latinx 3.0, LGBTQ+ 3.2, women 3.6, men 4.1), though the sample sizes are small.",
+   "via": "passages"
+  },
+  "c163": {
+   "cid": "c163",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://teamblind.com/company/Databricks/reviews",
+   "note": "Blind shows 3.8 from 946 reviews; the quoted themes are plausible but not seen in the passages.",
+   "via": "passages"
+  },
+  "c164": {
+   "cid": "c164",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.g2.com/products/databricks/reviews",
+   "note": "G2 shows 4.6/5 from 1,403 reviews with 79% giving five stars.",
+   "via": "passages"
+  },
+  "c165": {
+   "cid": "c165",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.g2.com/products/databricks/reviews",
+   "note": "An earlier snapshot showed 4.6 from 1,401 reviews, and the count later rose to 1,403-1,404; the praise and complaint themes are typical of G2 reviews.",
+   "via": "passages"
+  },
+  "c166": {
+   "cid": "c166",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.g2.com/products/databricks/reviews?page=1",
+   "note": "G2 shows 4.6/5 with ~1,400 reviews (1,404 on page, 1,398 plausible at the earlier date); complaint themes consistent with the other G2 snapshots.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c167": {
+   "cid": "c167",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.g2.com/products/databricks/reviews",
+   "note": "G2 page (updated Nov 4, 2026) shows 4.6/5 and notes a steep learning curve and cost management as negatives.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c168": {
+   "cid": "c168",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.g2.com/products/databricks/reviews",
+   "note": "G2 and Capterra reviews do cite cost management and learning curve, but these are user-report themes and not a strong red flag.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c170": {
+   "cid": "c170",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://g2.com/it/products/databricks/pricing",
+   "note": "A G2 review submitted 12/16/2025 is titled 'serious pricing calculation errors and inadequate remedies' (0.5/5), matching the claim; it is a single anecdote.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c171": {
+   "cid": "c171",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://capterra.com/p/148499/Databricks/reviews",
+   "note": "Capterra reviews are around 4.5 and mention unpredictable costs; the 28-review count and cluster startup delays are not confirmed in the passages.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c172": {
+   "cid": "c172",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.pissedconsumer.com/databricks/RT-F.html",
+   "note": "PissedConsumer shows an Apr 17, 2025 complaint about an associate data engineer exam and voucher support, with AI highlights on billing and slow support.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c173": {
+   "cid": "c173",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://redresscompliance.com/databricks-procurement-strategy-download.html",
+   "note": "Advisory page cites 25-60% opening renewal uplifts, Photon and serverless pressure, and the Azure Standard retirement; the advisory has a commercial interest.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://linkedin.com/posts/drew-herd-5326981_bricksters-activity-7449832027924881408-ZGQw",
+   "note": "Drew Herd's own LinkedIn post says 'After almost 6 years' he is leaving Databricks and its Google partnership. The post is undated in the cache, so ~May 2026 is not confirmed.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c89": {
+   "cid": "c89",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.databricks.com/customers/axa-france",
+   "note": "Databricks' AXA France customer story gives 200TB from 54 sources and 6.3M+ customers. This is a vendor claim with no independent source.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c91": {
+   "cid": "c91",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://databricks.com/blog/becoming-most-comprehensive-data-ai-ecosystem-earth",
+   "note": "The Data + AI Summit blog confirms 5X Apps growth and 5,000+ accounts running Apps weekly. The '30+ ISV' figure is not stated outright; the post names 9 launch partners plus 'more than twenty others'.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c114": {
+   "cid": "c114",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://stockanalysis.com/private/databricks",
+   "note": "The aggregator lists 10,000 employees. Reuters gave ~7,000 in Dec 2024. I did not find the 7,100 (July 2024) figure, but 7,100 to 10,000 is about +41%, so the ~40% growth is consistent.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c116": {
+   "cid": "c116",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://thestar.com.my/tech/tech-news/2024/12/17/databricks-secures-62-billion-valuation-in-ai-focused-funding-round",
+   "note": "The Reuters article, as republished by The Star, says 7,000 employees, efforts to slow headcount expansion, and offshoring some jobs for lower costs.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c118": {
+   "cid": "c118",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.reveliolabs.com/companies/databricks/employees",
+   "note": "The saved Revelio page gives about 15,578 employees as of June 2026, up 2.9% YoY. It does not contain 14,321 or 2.2% for March 2026.",
+   "via": "agent"
+  },
+  "c123": {
+   "cid": "c123",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://www.teamblind.com/company/Databricks/reviews",
+   "note": "The saved Blind page has no review text, and the Blind post I fetched came back empty. A web search surfaced an Oct 2025 Blind review by a Solutions Architect saying 'Layoffs of new hires right before vesting; I've seen this happen to a large number of colleagues.' I could not open that review my...",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "retried": true
+  },
+  "c125": {
+   "cid": "c125",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "red_flag": false,
+   "source": "https://databricks.com/company/newsroom/press-releases/databricks-surpasses-4b-revenue-run-rate-exceeding-1b-ai-revenue",
+   "note": "The press release says the company signed new office leases in San Francisco and Sunnyvale this year to attract AI talent. I did not check the Sept 2025 date separately.",
+   "via": "agent"
+  },
+  "c169": {
+   "cid": "c169",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "red_flag": false,
+   "source": "https://www.g2.com/products/databricks/reviews?page=1",
+   "note": "The saved G2 page mentions complexity, learning curve and cost, but I only counted keyword hits and did not read the reviews. The claim is an inference, and the evidence is moderately supportive.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "note": "Zaharia's Berkeley page: associate professor, Databricks co-founder and CTO, started Apache Spark during his PhD, helped build MLflow and Delta Lake."
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "TechCircle (2025-01-16): India/SAARC VP; Jan 15 was his last day; leaving for a cybersecurity venture; previously at UiPath, Palo Alto Networks and Cisco."
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "note": "Glassdoor company response is signed 'Amy Reichanadter, Chief People Officer'."
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "note": "Press release dated 2024-12-17 matches: raising $10B, $8.6B completed, $62B valuation, led by Thrive, co-led by a16z, DST, GIC, Insight and WCM."
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "note": "Release dated 2026-02-09 lists JPMorganChase, Glade Brook, Goldman Sachs Alternatives and Microsoft; JPMorgan Chase Bank led the credit facilities; the $2B is described as 'debt capacity'."
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "note": "TechFabric: valuation went from $62B (Dec 2024) to $190B (Aug 2026), 'five rounds in twenty months'; the figures are company-disclosed run-rates."
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "note": "TechCrunch (2026-07-17): $188B round announced before the money arrived, amount not disclosed; it closed in Aug 2026 at $190B, about 6 months after the $134B Series L closed in Feb."
+  },
+  "c76": {
+   "cid": "c76",
+   "verdict": "true",
+   "note": "CNBC (2025-06-11): $2.6B revenue in the fiscal year that ended in January 2025."
+  },
+  "c94": {
+   "cid": "c94",
+   "verdict": "true",
+   "note": "Databricks release dated 2025-09-25: $100M multi-year partnership with Agent Bricks. The release doesn't say OpenAI uses Databricks; only secondary search summaries do."
+  },
+  "c99": {
+   "cid": "c99",
+   "verdict": "true",
+   "note": "About-us page: Data + AI Platform built on an open lakehouse architecture."
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "note": "FOX press release describes Lakebase (serverless Postgres), Genie Code, Unity Gateway and Genie Ontology."
+  },
+  "c106": {
+   "cid": "c106",
+   "verdict": "true",
+   "note": "G2 (Italian page): Basic from $99 per feature/month, no permanent free tier, custom-quoted paid plans, DBU charges on top of cloud costs."
+  },
+  "c109": {
+   "cid": "c109",
+   "verdict": "true",
+   "note": "Modern slavery statement: San Francisco HQ; more than 35 offices in 22 countries as of 31 Jan 2026."
+  },
+  "c110": {
+   "cid": "c110",
+   "verdict": "true",
+   "note": "Databricks site lists all seven industries."
+  },
+  "c119": {
+   "cid": "c119",
+   "verdict": "false",
+   "note": "Revelio (cached and live) shows 1,326 postings in 2026 vs 1,315 in 2025, not 1,211 down 12.0%. The page calls it a 1.3% decline, but its own numbers show an increase."
+  },
+  "c129": {
+   "cid": "c129",
+   "verdict": "true",
+   "note": "Mealey's (2026-04-23): direct copyright claims against Mosaic and Databricks proceed; copying adequately tied to LLM training."
+  },
+  "c148": {
+   "cid": "c148",
+   "verdict": "unverifiable",
+   "note": "Only source is aggregator BreachHistory; the BeyondTrust item found is an audit-log vulnerability blog post (could not fetch). No confirmed 2025 incident found."
+  },
+  "c161": {
+   "cid": "c161",
+   "verdict": "unverifiable",
+   "note": "Glassdoor shows 4.1 overall and 3.3 for work-life balance, but no trend data showing a decline."
+  },
+  "c167": {
+   "cid": "c167",
+   "verdict": "true",
+   "note": "G2 review summary covers integrations and workflows, with complaints about learning curve, complexity and cost management. The 2026-11-03 snapshot date could not be checked."
+  },
+  "c168": {
+   "cid": "c168",
+   "verdict": "true",
+   "note": "G2 reviews repeatedly mention a steep learning curve and asks for clearer cost controls and easier onboarding; these are user reports."
+  }
+ },
+ "scores": {
+  "gpt": {
+   "units": 49,
+   "unverifiable": 0,
+   "true": 48,
+   "wrong": 1,
+   "truth": 133,
+   "truth_weight": 247.0,
+   "coverage": 0.495,
+   "accuracy": 0.994,
+   "combined": 0.661,
+   "red_flag_recall": 0.5555555555555556,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 63,
+   "unverifiable": 0,
+   "true": 60,
+   "wrong": 3,
+   "truth": 133,
+   "truth_weight": 247.0,
+   "coverage": 0.473,
+   "accuracy": 0.93,
+   "combined": 0.627,
+   "red_flag_recall": 0.0,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 41,
+   "unverifiable": 0,
+   "true": 40,
+   "wrong": 1,
+   "truth": 133,
+   "truth_weight": 247.0,
+   "coverage": 0.363,
+   "accuracy": 0.992,
+   "combined": 0.532,
+   "red_flag_recall": 0.5555555555555556,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 30,
+   "unverifiable": 0,
+   "true": 30,
+   "wrong": 0,
+   "truth": 133,
+   "truth_weight": 247.0,
+   "coverage": 0.29,
+   "accuracy": 1.0,
+   "combined": 0.45,
+   "red_flag_recall": 0.1111111111111111,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 34,
+   "unverifiable": 0,
+   "true": 30,
+   "wrong": 4,
+   "truth": 133,
+   "truth_weight": 247.0,
+   "coverage": 0.291,
+   "accuracy": 0.917,
+   "combined": 0.442,
+   "red_flag_recall": 0.3333333333333333,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 38,
+   "unverifiable": 0,
+   "true": 37,
+   "wrong": 1,
+   "truth": 133,
+   "truth_weight": 247.0,
+   "coverage": 0.348,
+   "accuracy": 0.935,
+   "combined": 0.507,
+   "red_flag_recall": 0.2222222222222222,
+   "metric": "F1"
+  }
+ }
+}

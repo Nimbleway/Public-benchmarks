@@ -1,0 +1,147 @@
+{
+ "arm": "firecrawl",
+ "sub_use_case": "fin_deal_sourcing_mapping",
+ "input": "Find family-owned German machine-tool manufacturers (Mittelstand) with 100-500 employees",
+ "input_n": 4,
+ "tier": "spark-2/high",
+ "status": "completed",
+ "seconds": 339,
+ "run_id": "01a1a0e7-925f-7319-8f63-79ae5b63f380",
+ "output": {
+  "companies": [
+   {
+    "name": "HEDELIUS Maschinenfabrik GmbH",
+    "domain": "hedelius.de",
+    "hq": "Meppen, Lower Saxony, Germany",
+    "founded_year": 1967,
+    "employees": "247 employees (the EMO 2025 exhibitor profile says the company 'now employs 247'; as_of 2025/source page accessed 2026-11-03)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "German machine-tool manufacturer",
+      "evidence": "The company says it develops and produces CNC machining centres in Meppen, Germany; the EMO profile specifies vertical CNC travelling-column machining centres and automation solutions.",
+      "source_url": "https://www.hedelius.de/en/company"
+     },
+     {
+      "criterion": "Family-owned",
+      "evidence": "HEDELIUS describes itself as an independent family-run business; the EMO exhibitor profile also calls it a family business.",
+      "source_url": "https://www.hedelius.de/en/company"
+     },
+     {
+      "criterion": "100-500 employees",
+      "evidence": "The 2025 EMO exhibitor profile states 247 employees, within the requested range.",
+      "source_url": "https://visitors.emo-hannover.de/exhibitor/hedelius/068440"
+     }
+    ],
+    "headcount_growth": null,
+    "last_round": null,
+    "traction": "The company reports more than 3,000 machining centres delivered; a 2023 company update says 2022 turnover rose 11% to just under EUR 70 million and that order books were well filled.",
+    "rank": 1,
+    "rank_reason": "Best-supported fit: exact German manufacturer, explicit family ownership, a directly sourced 247-person count, and strong disclosed operating traction (3,000+ machines delivered plus 2022 growth/order-book evidence)."
+   },
+   {
+    "name": "F. Zimmermann GmbH",
+    "domain": "zimmermann-inc.com",
+    "hq": "Stuttgart region, Germany",
+    "founded_year": 1933,
+    "employees": "190 worldwide (company career page; as_of the page's current statement, accessed 2026-11-03)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "German machine-tool manufacturer",
+      "evidence": "The company describes itself as a family-run German manufacturer of large 5- and 6-axis gantry and horizontal milling machines, with headquarters in the Stuttgart region.",
+      "source_url": "https://www.zimmermann-inc.com/company/"
+     },
+     {
+      "criterion": "Family-owned",
+      "evidence": "The career page explicitly calls F. Zimmermann GmbH a family-run company.",
+      "source_url": "https://www.zimmermann-inc.com/career/"
+     },
+     {
+      "criterion": "100-500 employees",
+      "evidence": "The company's career page states that it currently employs 190 people worldwide, within the requested range.",
+      "source_url": "https://www.zimmermann-inc.com/career/"
+     }
+    ],
+    "headcount_growth": null,
+    "last_round": null,
+    "traction": "The company reports more than 200 machines in North America and more than 600 machines worldwide.",
+    "rank": 2,
+    "rank_reason": "Clear exact-entity fit with a current 190-person statement, family-run ownership, and meaningful installed-base evidence; ranked below HEDELIUS because the opened sources did not provide a dated headcount trend or a recent financial-growth statement."
+   },
+   {
+    "name": "KUNZMANN Maschinenbau GmbH",
+    "domain": "kunzmann-fraesmaschinen.de",
+    "hq": "Remchingen-Nöttingen, Baden-Württemberg, Germany",
+    "founded_year": 1907,
+    "employees": "Approximately 110 (current company history page, accessed 2026-11-03); the FY2015 register-derived filing reported 105 employees",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "German machine-tool manufacturer",
+      "evidence": "The current company history page says KUNZMANN develops, sells and builds universal milling machines and machining centres; the registry describes its purpose as manufacturing CNC universal drilling and milling machines.",
+      "source_url": "https://www.kunzmann-fraesmaschinen.de/unternehmen/geschichte/"
+     },
+     {
+      "criterion": "Family-owned",
+      "evidence": "The company history records that the Eisler family group around machine-tool maker WEILER took over KUNZMANN in 2016; an earlier succession was also a management buyout by the Kachel, Kremer and Siebler families.",
+      "source_url": "https://www.kunzmann-fraesmaschinen.de/unternehmen/geschichte/"
+     },
+     {
+      "criterion": "100-500 employees",
+      "evidence": "The current company history page states approximately 110 employees; an opened register-derived filing reports 105 employees for 2015.",
+      "source_url": "https://www.kunzmann-fraesmaschinen.de/unternehmen/geschichte/"
+     }
+    ],
+    "headcount_growth": "105 employees in FY2015 to approximately 110 on the current company history page (current page accessed 2026-11-03). Sources: https://handelsregister.ai/en/o/kunzmann-maschinenbau-gmbh-49e77cc7cd431f574579021b97ab4f32 and https://www.kunzmann-fraesmaschinen.de/unternehmen/geschichte/",
+    "last_round": "2016 takeover by the Eisler family group as a succession transaction; the opened sources do not describe it as a funding round",
+    "traction": "The company launched the WF 410 MC+ and WF 610 MC+ at EMO Hannover in 2023, added an automation package to the WF 610 CNC in 2024, and updated models in 2025 with Heidenhain's TNC7 go control.",
+    "rank": 3,
+    "rank_reason": "Strongest disclosed headcount trend and a current count close to the lower bound, with clear family succession and ongoing product releases; ranked below the larger candidates on scale."
+   },
+   {
+    "name": "SPINNER Werkzeugmaschinenfabrik GmbH",
+    "domain": "spinner.eu.com",
+    "hq": "Sauerlach, Bavaria, Germany",
+    "founded_year": 1949,
+    "employees": "Approximately 300 at the Sauerlach headquarters; the group is reported at approximately 600–670 worldwide (current exact-entity enrichment last seen 2026-09; accessed 2026-11-03)",
+    "ownership": "family-owned",
+    "criteria_evidence": [
+     {
+      "criterion": "German machine-tool manufacturer",
+      "evidence": "SPINNER's company page describes more than 70 years of designing, optimising and manufacturing machine tools and reports more than 20,000 machines worldwide.",
+      "source_url": "https://www.spinner.eu.com/en/about-spinner"
+     },
+     {
+      "criterion": "Family-owned",
+      "evidence": "The exact-company enrichment describes SPINNER as an owner-managed family business, with its headquarters in Sauerlach near Munich.",
+      "source_url": "/workspace/exchange/research/datalegion_headcount.json"
+     },
+     {
+      "criterion": "100-500 employees",
+      "evidence": "The exact-company enrichment states 300 employees at the Sauerlach headquarters. The same record distinguishes this from the larger worldwide group, so the qualification is on the German operating entity/HQ scope rather than the consolidated group.",
+      "source_url": "/workspace/exchange/research/datalegion_headcount.json"
+     }
+    ],
+    "headcount_growth": null,
+    "last_round": null,
+    "traction": "SPINNER reports more than 20,000 machines worldwide and more than 1,000 machines per year; its company page reports approximately 600 employees in the group.",
+    "rank": 4,
+    "rank_reason": "Qualifies on the exact German headquarters entity at approximately 300 employees and has exceptional installed-base/annual-output evidence, but is ranked lower because the consolidated group is above 500 employees and the scope needs diligence confirmation."
+   }
+  ],
+  "search_notes": "As_of 2026-11-03. I returned only exact entities for which the opened sources support German machine-tool activity, family ownership and a 100–500 employee scope. Missing_fields: dated two-point headcount growth for HEDELIUS, F. Zimmermann and SPINNER; disclosed funding-round data for all four (KUNZMANN has a 2016 family succession acquisition, not a financing round). SPINNER is included with an explicit scope caveat because the exact German headquarters is reported at approximately 300 employees while the worldwide group is above 500. Excluded Weiler because the opened company source reported approximately 550 employees; excluded Röders from this screen because opened sources conflicted between 170 and approximately 500 employees and the directly opened current page was primarily a foundry/entity profile; excluded Monforts because opened ownership sources describe an acquired/corporate-backed history rather than a clearly family-owned current entity; excluded Kern Microtechnik after the opened AMETEK acquisition source showed non-family ownership. A premium company-data lookup was used as an exact-entity cross-check, but its numeric monthly headcount history was not used where it was missing or unreliable."
+ },
+ "cost_usd": 0.7177,
+ "cost_basis": "credits x Standard rate",
+ "credits": 725,
+ "exchange": {
+  "enabled": true,
+  "requireApproval": false,
+  "onTermsRequired": "skip",
+  "paidCalls": 1,
+  "creditsUsed": 200
+ },
+ "error": null,
+ "completed_on": "2026-11-03"
+}

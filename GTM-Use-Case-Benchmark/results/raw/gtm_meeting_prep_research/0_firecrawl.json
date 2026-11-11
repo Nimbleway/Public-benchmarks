@@ -1,133 +1,148 @@
 {
  "arm": "firecrawl",
+ "sub_use_case": "gtm_meeting_prep_research",
+ "input": "Prepare me for a meeting with Attio (attio.com)",
+ "input_n": 0,
  "tier": "spark-2/medium",
  "status": "completed",
- "seconds": 85,
- "run_id": "01a15e02-129e-74a3-b623-48de8f3b0593",
+ "seconds": 96,
+ "run_id": "01a1c1b9-b899-772e-90d7-7a46f7965fba",
  "output": {
   "company": "Attio",
   "what_they_do": {
-   "value": "Attio is the platform that builds pipeline, advances deals, and grows accounts around the clock.",
+   "value": "Attio is the CRM for agentic revenue: a platform that builds pipeline, advances deals, and grows accounts around the clock.",
    "source_url": "https://attio.com/",
-   "as_of": "2026-10-21"
+   "as_of": "2026-11-09"
   },
   "priorities": [
    {
-    "priority": "Build the architecture for agentic revenue: a hybrid platform designed for people and AI agents.",
-    "evidence": "Attio says it is introducing a new shape of software and is launching SQL Engine, Data Connectors, Agent Scale, and Activities in beta to help teams scale revenue motions.",
-    "date": null,
-    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+    "priority": "Build and ship an AI-native CRM platform with programmable AI primitives, agent collaboration, natural-language workflows, and an extensible app ecosystem.",
+    "evidence": "Attio says it is investing in APIs, SDKs, natural-language interfaces, an App SDK in beta, agent collaboration, and advanced permissions; it describes engineering as a focus area with continued team scaling and heavy R&D investment.",
+    "date": "2025-08 (Series B announcement; exact publication date not shown on opened page)",
+    "source_url": "https://attio.com/blog/attio-raises-52m-series-b"
    },
    {
-    "priority": "Make Workflows the operating layer for AI-assisted revenue orchestration.",
-    "evidence": "Attio describes Workflows as its engine for orchestrating AI agents across every account and signal, covering prospecting, lead triage, briefings, follow-up, stalled-deal revival, and signal-based outreach.",
-    "date": null,
+    "priority": "Expand globally and scale go-to-market around the company’s ‘GTM builder’ customer segment.",
+    "evidence": "The Series B announcement says Attio will keep expanding globally to GTM builders everywhere and reports 5,000 paying customers with a goal of 4x ARR growth that year.",
+    "date": "2025-08 (Series B announcement; exact publication date not shown on opened page)",
+    "source_url": "https://attio.com/blog/attio-raises-52m-series-b"
+   },
+   {
+    "priority": "Make CRM context conversational and actionable through Ask Attio and AI agents.",
+    "evidence": "Attio launched Ask Attio so users can query records, calls, emails, web searches, and connected data sources through AI; the product is positioned for meeting preparation, customer-success handoffs, and surfacing expansion or risk signals.",
+    "date": "2026-02-04 (date reported in an opened 2026 product review)",
+    "source_url": "https://attio.com/blog/introducing-ask-attio"
+   },
+   {
+    "priority": "Automate revenue operations and outbound execution with Workflows and revenue agents.",
+    "evidence": "Attio describes workflows that research leads, score them against an ICP, create deals, assign AEs, detect funding/executive/hiring signals, and let teams build workflows in natural language.",
+    "date": "2026-06-09 (date reported in an opened 2026 product review)",
     "source_url": "https://attio.com/blog/orchestrate-revenue-agents"
    },
    {
-    "priority": "Scale the data and developer platform so CRM data is queryable, connected, extensible, and usable by agents.",
-    "evidence": "The architecture announcement highlights SQL access, a live Postgres-compatible data connector, support for hundreds of millions of records, and structured Activities; the Product Lead role also calls for scalable foundations, AI capabilities, APIs, schemas, and platform architecture.",
-    "date": null,
-    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
-   },
-   {
-    "priority": "Invest in product and engineering talent and ship rapidly while expanding the platform globally.",
-    "evidence": "Attio's funding announcement says it is scaling engineering, expanding globally, and accelerating AI-primitives development; its current Product Lead posting says the team ships constantly and is hiring people to extend AI capabilities and guide the next generation of the platform.",
-    "date": "2025-08-26",
-    "source_url": "https://attio.com/blog/attio-raises-52m-series-b"
+    "priority": "Scale the team through builder-oriented hiring, including GTM Engineering, Customer Success, Support, and Partnerships graduates.",
+    "evidence": "Attio calls its graduate program a core talent philosophy, says graduates have pushed new AI-supercharged ways of working, and lists hiring in GTM Engineering, Customer Success & Support, and Partnerships.",
+    "date": "2026 (page does not show a more specific publication date)",
+    "source_url": "https://attio.com/blog/why-attio-hires-graduates"
    }
   ],
   "challenges": [
    {
-    "challenge": "Turning AI-agent capability into reliable, governed work at scale.",
-    "evidence": "Attio explicitly frames the problem as software not being built for agents and emphasizes permissions, inspectable agent actions, reliability, and control; the Product Lead role calls out trade-offs among speed, safety, usability, performance, and architectural scale.",
-    "date": null,
-    "source_url": "https://attio.com/blog/introducing-the-architecture-for-agentic-revenue"
+    "challenge": "Credit-based billing can make AI, enrichment, and workflow costs less predictable at scale.",
+    "evidence": "An independent 2026 review says Attio combines seat pricing with usage-based credits and that reviewers flag credit usage as something that needs watching, especially for enrichment and agents across large record sets.",
+    "date": "2026-08-29",
+    "source_url": "https://marketbetter.ai/blog/attio-crm-review-2026/"
    },
    {
-    "challenge": "Competing against legacy CRM assumptions and a fragmented GTM-tool ecosystem.",
-    "evidence": "Attio says legacy CRMs assume manual inputs, rigid workflows, and human-only operators, while core GTM capabilities have historically been spread across thousands of point tools requiring costly integrations.",
-    "date": "2025-08-26",
-    "source_url": "https://attio.com/blog/attio-raises-52m-series-b"
+    "challenge": "Native integrations and the broader integration ecosystem remain less extensive than larger CRM competitors.",
+    "evidence": "The 2026 review says the native library is still thin compared with HubSpot and Salesforce and that reviewers flag missing native integrations, particularly for email marketing, sometimes requiring Zapier.",
+    "date": "2026-08-29",
+    "source_url": "https://marketbetter.ai/blog/attio-crm-review-2026/"
    },
    {
-    "challenge": "Maintaining product simplicity and customer experience as the product surface and technical complexity expand.",
-    "evidence": "The Product Lead brief says Attio needs people comfortable with complex data models, edge cases, schemas, API design, performance, safety, usability, and building foundations that scale while preserving a best-in-class customer experience.",
-    "date": null,
-    "source_url": "https://attio.com/careers/product-lead-europe-and-united-kingdom-remote"
+    "challenge": "Reporting and sales-activity analytics are not yet as deep as incumbent CRM platforms.",
+    "evidence": "The review reports complaints that built-in reporting is generic, that users export raw data to Google Sheets, and that per-rep activity reporting requires workarounds.",
+    "date": "2026-08-29",
+    "source_url": "https://marketbetter.ai/blog/attio-crm-review-2026/"
+   },
+   {
+    "challenge": "Support, onboarding, SLAs, and governance become constraints for larger or more operationally demanding teams.",
+    "evidence": "The review says lower tiers lack live chat and an SLA below Enterprise, onboarding materials are thin for advanced automations, and credit caps and missing integrations become operational constraints as teams grow beyond roughly 10–15 people.",
+    "date": "2026-08-29",
+    "source_url": "https://marketbetter.ai/blog/attio-crm-review-2026/"
    }
   ],
   "recent_changes": [
    {
-    "date": "2026-09-23",
-    "type": "Product launch / enhancement",
-    "headline": "Workflow history and agent log",
-    "summary": "Attio added visibility into every workflow run and agent step, including tools called, records changed, and credits used.",
-    "source_url": "https://attio.com/changelog/2026/workflow-history-and-agent-log"
+    "date": "2026-10-29",
+    "type": "Product launch/update",
+    "headline": "Activities: capture support tickets, social DMs, and product events as structured data",
+    "summary": "Attio added Activities so teams can bring interactions into records with custom schemas, use them in Workflows, log them from Zapier, and report on them.",
+    "source_url": "https://attio.com/changelog/2026/activities"
    },
    {
-    "date": "2026-09-23",
-    "type": "Product launch / integrations",
-    "headline": "New workflow blocks and app updates",
-    "summary": "Attio added call-recording and meeting-linking workflow blocks, plus Resend and ClickUp integrations; Aircall now writes AI call summaries into notes.",
-    "source_url": "https://attio.com/changelog/2026/app-updates"
+    "date": "2026-10-29",
+    "type": "Product update",
+    "headline": "Workflows updates extend team messaging and workflow variables",
+    "summary": "Workflow Send actions can message a person or channel in Slack, the variable picker is searchable, and Broadcast/Celebration blocks can address teams as well as individuals.",
+    "source_url": "https://attio.com/changelog/2026/workflows-updates"
    },
    {
-    "date": "2026-08-25",
-    "type": "Product / developer platform update",
-    "headline": "New Workflows apps, blocks, and developer-platform updates",
-    "summary": "Attio added Google Sheets, Asana, and Hunter workflow apps, expanded workflow controls, and shipped new API/MCP capabilities plus a stable App SDK 1.0.0.",
-    "source_url": "https://attio.com/changelog/2026/updates-to-developer-platform"
-   },
-   {
-    "date": "2026-07-28",
-    "type": "Product enhancement",
-    "headline": "Formula attributes, new workflow blocks, and more Ask Attio models",
-    "summary": "The July changelog records new formula attributes, workflow blocks, mobile performance improvements, and additional models in Ask Attio.",
-    "source_url": "https://attio.com/changelog/2026"
+    "date": "2026-10 (page date not shown)",
+    "type": "Operating model / go-to-market",
+    "headline": "How Attio uses Attio to run its GTM",
+    "summary": "Attio described a close-to-200-person, product-led Series B company using one shared context layer for signups, leads, support tickets, product usage, sales, and customer-success signals; the page names Kyle Doherty and Zev Lebowitz as operators behind the system.",
+    "source_url": "https://attio.com/blog/the-system-that-runs-our-gtm"
    }
   ],
   "key_people": [
    {
     "name": "Nicolas Sharp",
-    "title": "CEO & Co-founder",
-    "recent": "In announcing the Inconvo team joining Attio, Sharp said the company is building a CRM with first-class agentic access across every surface and that the new engineers fit Attio's builder philosophy.",
-    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
+    "title": "CEO and co-founder",
+    "recent": "In a March 2026 GV interview, Sharp said Attio’s differentiation is an AI CRM built to ingest and understand emails, calls, product data, billing, and calendar events in real time, while remaining flexible and connected to the rest of a company’s workflows.",
+    "source_url": "https://www.gv.com/news/interview-with-nicholas-sharp-founder-of-attio"
    },
    {
-    "name": "Eoghan Mulcahy",
-    "title": "Co-founder of Inconvo; joining Attio Engineering",
-    "recent": "He joined Attio's Engineering team and said he was excited to help shape how AI becomes part of the CRM experience.",
-    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
-   },
-   {
-    "name": "Liam Mulcahy",
-    "title": "Co-founder of Inconvo; joining Attio Engineering",
-    "recent": "He joined Attio's Engineering team and highlighted the combination of technical depth and care for users that attracted him to the company.",
-    "source_url": "https://attio.com/blog/inconvo-is-joining-attio"
+    "name": "Alex Christie",
+    "title": "Co-founder",
+    "recent": "The GV interview says Christie co-founded Attio with Sharp after assessing Salesforce’s API and user experience and concluding there was substantial room to improve CRM.",
+    "source_url": "https://www.gv.com/news/interview-with-nicholas-sharp-founder-of-attio"
    },
    {
     "name": "Michael McBride",
-    "title": "GV board member",
-    "recent": "He joined Attio's board as part of the Series B; Attio cited his experience scaling revenue more than 100x through GitLab's IPO and beyond.",
+    "title": "GV General Partner and Attio board member",
+    "recent": "Attio announced that McBride joined its board as part of the Series B; the company highlighted his experience scaling GitLab revenue more than 100x through IPO and beyond.",
     "source_url": "https://attio.com/blog/attio-raises-52m-series-b"
+   },
+   {
+    "name": "Kyle Doherty",
+    "title": "Rev Ops Lead",
+    "recent": "Doherty is named as one of the operators explaining how Attio centralizes leads, customer interactions, and communication in Attio and its wider GTM stack.",
+    "source_url": "https://attio.com/blog/the-system-that-runs-our-gtm"
+   },
+   {
+    "name": "Zev Lebowitz",
+    "title": "Head of Solutions",
+    "recent": "Lebowitz is named alongside Doherty as an operator behind Attio’s shared GTM context layer and customer operating model.",
+    "source_url": "https://attio.com/blog/the-system-that-runs-our-gtm"
    }
   ],
   "talking_points": [
-   "As Workflows expands across every account and signal, where does Attio most need stronger reliability, governance, or observability?",
-   "How are customers prioritizing the new SQL, Data Connectors, Activities, and App SDK capabilities—and which integrations or data sources are hardest to operationalize?",
-   "As Attio scales engineering and global go-to-market, how is the team balancing rapid AI shipping with simplicity, safety, and a best-in-class customer experience?"
+   "As Attio scales AI agents and usage-based credits, how are you balancing agent autonomy with predictable cost, governance, and permissions?",
+   "With Activities and Workflows now pulling more support, product, and engagement signals into the CRM, which new signals most improve prioritization for Sales and Customer Success?",
+   "As Attio expands globally and beyond startup-sized teams, where are integration depth, reporting, onboarding, or SLA requirements creating the most friction?"
   ],
   "missing_fields": [
-   "Exact publication dates were not visible on the opened Attio blog pages for the architecture, Workflows, Inconvo, and Ask Attio announcements.",
-   "No independently verified layoffs, missed targets, customer complaints, or regulatory problems were found on the pages opened; challenges are limited to explicitly stated product and scaling tensions.",
-   "No current executive title or recent statement was verified for additional Attio leaders beyond the people listed above."
+   "Exact publication date for the Attio Series B announcement",
+   "Exact publication date for the Attio graduate hiring page",
+   "Exact publication date for the Attio GTM operating-model page",
+   "Verified Attio-specific layoffs, missed financial targets, regulatory issues, or customer complaint counts",
+   "Verified current executive titles beyond the leaders named on the opened pages"
   ]
  },
- "cost_usd": 0.1535,
+ "cost_usd": 0.1148,
  "cost_basis": "credits x Standard rate",
- "error": null,
- "credits": 155,
+ "credits": 116,
  "exchange": {
   "enabled": true,
   "requireApproval": false,
@@ -135,7 +150,6 @@
   "paidCalls": 0,
   "creditsUsed": null
  },
- "sub_use_case": "gtm_meeting_prep_research",
- "input": "Prepare me for a meeting with Attio (attio.com)",
- "input_n": 0
+ "error": null,
+ "completed_on": "2026-11-09"
 }

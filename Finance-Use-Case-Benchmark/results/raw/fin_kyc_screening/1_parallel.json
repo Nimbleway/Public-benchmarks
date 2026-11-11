@@ -1,9 +1,596 @@
 {
  "arm": "parallel",
- "tier": "ultra2x",
- "status": "rejected",
- "error": "{\"type\":\"error\",\"error\":{\"message\":\"Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.\",\"detail\":null}}",
  "sub_use_case": "fin_kyc_screening",
  "input": "Run a KYC screen on Wirecard in Germany",
- "input_n": 1
+ "input_n": 1,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 598,
+ "run_id": "trun_63550df7c67c4a5bb2cdde349178dd38",
+ "output": {
+  "risk_rationale": "High risk as of 2026-11-09: Wirecard AG remains in insolvency, and the reviewed sources document serious accounting-fraud proceedings, securities litigation and civil recovery action involving its former management (see adverse_media). The latest criminal-trial report reviewed, dated 2026-09-30, did not establish a conviction. No confirmed sanctions match was identified within the screening described below; one unrelated OFAC candidate was excluded. These results are not an ownership-based sanctions clearance because current beneficial owners could not be established. No PEP finding was substantiated, but ownership and governance gaps prevent a complete PEP assessment. Registration information combines the company's current insolvency imprint with GLEIF (https://www.gleif.org/lei/529900A8LX4KL0YUTH71): GLEIF's record was last updated on 2020-11-13 and retains the older Einsteinring address, whereas the current imprint reports Humboldtstraße 8. A current original national-register extract was not obtained. Missing fields/information: registration.incorporation_date; independently confirmed current national-register particulars; complete current directors/officers and beneficial owners; the administrator's nationality; comprehensive owner sanctions and PEP results. Empty PEP results and null values mean unconfirmed, not cleared.",
+  "pep": [],
+  "sanctions": [
+   {
+    "party": "Wirecard AG",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/",
+    "list": "OFAC Specially Designated Nationals and Blocked Persons List",
+    "match": "No confirmed match in the search performed as of 2026-11-09 against the list updated 2026-11-06. Searching Wirecard at an 80 minimum name score returned CHENGDU KEYLINK WIRELESS TECHNOLOGY CO., LTD, score 82. Excluded: its legal name and address differ from the German company Wirecard AG, HRB 169227. This does not establish clearance of unidentified owners."
+   },
+   {
+    "party": "Dr. Michael Jaffé — insolvency administrator, not an identified beneficial owner",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/",
+    "list": "OFAC Specially Designated Nationals and Blocked Persons List",
+    "match": "The Michael Jaffe search returned no results as of screening on 2026-11-09; the displayed SDN list update was 2026-11-06. This is a name-search result, not a comprehensive identity or ownership clearance."
+   },
+   {
+    "party": "Wirecard AG; Dr. Michael Jaffé",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+    "list": "UK Sanctions List — successor to the OFSI Consolidated List",
+    "match": "No exact-name occurrence was found in the retrieved official publication generated 2026-11-03, reviewed for this screen as of 2026-11-09. This limited text check does not exclude aliases or sanctions arising through unidentified owners. The former OFSI Consolidated List stopped updating on 2026-01-28."
+   },
+   {
+    "party": "Wirecard AG; Dr. Michael Jaffé",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+    "list": "EU consolidated financial sanctions list",
+    "match": "No exact-name occurrence was found in the retrieved official file dated 2026-10-23, reviewed for this screen as of 2026-11-09. This limited text check is not definitive alias, beneficial-ownership or control screening; current owners remain unverified."
+   }
+  ],
+  "namesakes_excluded": 1.0,
+  "input_name": "Wirecard",
+  "people": [
+   {
+    "role": "Court-appointed insolvency administrator over Wirecard AG's assets; appointment and ongoing proceedings confirmed by the administrator's case page and company imprint, reviewed as of 2026-11-09. Not presented as a director or beneficial owner.",
+    "name": "Dr. Michael Jaffé",
+    "source_url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+    "nationality": null
+   }
+  ],
+  "related_entities": [
+   {
+    "relation": "Separate German legal entity, not the screened company. GLEIF records Wirecard AG as its direct and ultimate consolidation parent for the accounting period ending 2018-12-31, with the relationship reported from 2019-08-12. Historical relationship only; current ownership not independently confirmed as of 2026-11-09. Source: https://www.gleif.org/lei/529900VH0MQZASU8AR79",
+    "registry_number": "Amtsgericht München HRB 187465",
+    "name": "Wirecard Sales International Holding GmbH"
+   },
+   {
+    "relation": "Separate German legal entity, not the screened company. GLEIF records Wirecard AG as its direct and ultimate consolidation parent, with relationship registration dated 2019-08-08. Historical relationship only; current ownership not independently confirmed as of 2026-11-09. Source: https://www.gleif.org/lei/529900Z54V2EA48D2Y27",
+    "registry_number": "Amtsgericht München HRB 200352",
+    "name": "Wirecard Technologies GmbH"
+   }
+  ],
+  "risk_rating": "high",
+  "registration": {
+   "registered_address": "Humboldtstraße 8, 85609 Aschheim, Germany — reported by the current company imprint, reviewed as of 2026-11-09; not independently confirmed from a current original national-register extract.",
+   "incorporation_date": null,
+   "legal_name": "Wirecard AG",
+   "registry_number": "Amtsgericht München HRB 169227",
+   "source_url": "https://www.wirecard.com/de/impressum",
+   "lei": "529900A8LX4KL0YUTH71",
+   "status": "In insolvency; proceedings opened 2020-08-25 and reported ongoing on the administrator's case page reviewed as of 2026-11-09. Separately, GLEIF reports entity status ACTIVE and LEI status LAPSED in its record last updated 2020-11-13; ACTIVE must not be interpreted as solvent or normally operating.",
+   "jurisdiction": "Germany"
+  },
+  "adverse_media": [
+   {
+    "date": "2020-08-25",
+    "status": "Insolvency proceedings reported ongoing on the administrator's case page reviewed as of 2026-11-09.",
+    "severity": "high",
+    "source_url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+    "summary": "The Munich Local Court opened insolvency proceedings over Wirecard AG's assets and appointed Dr. Michael Jaffé as administrator. Wirecard AG had filed its insolvency application on 2020-06-25.",
+    "category": "Insolvency"
+   },
+   {
+    "date": "2020-07-07",
+    "status": "Complaint filed; the opened complaint does not establish a final outcome. Current disposition unverified as of 2026-11-09.",
+    "severity": "high",
+    "source_url": "https://www.classaction.org/media/brown-v-wirecard-ag-et-al.pdf",
+    "summary": "Brown v. Wirecard AG et al., case 2:20-cv-03326, names Wirecard AG as a defendant in a US securities class action alleging materially misleading financial statements and cash balances. These are allegations in a complaint, not adjudicated findings.",
+    "category": "Securities-fraud allegations / civil litigation"
+   },
+   {
+    "date": "2022-06-09",
+    "status": "Civil asset-arrest order confirmed; the court stated that its judgment was not final on 2022-06-09. Subsequent finality unverified as of 2026-11-09.",
+    "severity": "high",
+    "source_url": "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2022/15.php",
+    "summary": "In recovery proceedings brought by Wirecard AG's insolvency administrator, the Munich I Regional Court confirmed an asset-arrest order against former CEO Markus Braun for EUR 140 million, as reported on 2022-06-09. The court found the asserted management-duty breaches sufficiently substantiated for that civil measure. This was not a criminal conviction or a fine imposed on Wirecard AG.",
+    "category": "Civil recovery / management-duty breaches"
+   },
+   {
+    "date": "2025-11-13",
+    "status": "Federal Court of Justice judgment issued; case IX ZR 127/24.",
+    "severity": "medium",
+    "source_url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025211.html",
+    "summary": "In litigation concerning Wirecard AG's insolvency, the Federal Court of Justice held that shareholders' capital-market damages claims do not participate as ordinary insolvency claims and rank behind ordinary insolvency creditors. This is an insolvency-distribution ruling, not a new criminal finding against the company.",
+    "category": "Shareholder litigation / insolvency claims"
+   },
+   {
+    "date": "2026-09-30",
+    "status": "Trial ongoing in the latest report reviewed, dated 2026-09-30; the defense requested suspension. No conviction established by the reviewed sources as of 2026-11-09.",
+    "severity": "high",
+    "source_url": "https://www.diebayern.de/justiz/wirecard-verteidiger-wollen-prozess-vor-ende-noch-aushebeln-3186332",
+    "summary": "The Munich criminal proceedings concerning the Wirecard fraud complex and former CEO Markus Braun remained ongoing. Braun denied wrongdoing. This management-related proceeding is directly connected to Wirecard's collapse; it is not reported here as a corporate conviction of Wirecard AG.",
+    "category": "Fraud allegations / criminal proceedings"
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "Wirecard AG - Jaffe Rechtsanwälte",
+     "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+     "excerpts": [
+      "Verfahrensstatus laufendes Verfahren"
+     ]
+    },
+    {
+     "title": "Wirecard: Verteidiger wollen Prozess vor Ende noch aushebeln",
+     "url": "https://www.diebayern.de/justiz/wirecard-verteidiger-wollen-prozess-vor-ende-noch-aushebeln-3186332",
+     "excerpts": [
+      "Im Münchner Wirecard-Prozess wollen die Verteidiger des früheren Vorstandschefs Markus Braun das seit fast vier Jahren laufende Verfahren noch auf den letzten Metern aushebeln."
+     ]
+    },
+    {
+     "title": "Pressemitteilung 15/2022 - Bayerisches Staatsministerium der Justiz",
+     "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2022/15.php",
+     "excerpts": [
+      "Markus Braun, richtenden Arrestbefehl vom 30.12.2021 über € 140 Mio. bestätigt** (Az. 5HK O 17659/21)."
+     ]
+    },
+    {
+     "title": "Wirecard AG - LEI 529900A8LX4KL0YUTH71",
+     "url": "https://www.gleif.org/lei/529900A8LX4KL0YUTH71",
+     "excerpts": [
+      "Last Update: 2020-11-13"
+     ]
+    },
+    {
+     "title": "Impressum - wirecard",
+     "url": "https://www.wirecard.com/de/impressum",
+     "excerpts": [
+      "**Sitz der Gesellschaft:** Humboldtstraße 8 85609 Aschheim Deutschland"
+     ]
+    },
+    {
+     "title": "Wirecard AG, Aschheim, Landkreis München | Registercheck",
+     "url": "https://www.registercheck.de/companies/wirecard-ag",
+     "excerpts": [
+      "Kontrollstruktur Für die Rechtsform AG führt das Handelsregister keine Gesellschafterliste."
+     ]
+    }
+   ],
+   "reasoning": "Ongoing insolvency, the Wirecard criminal trial and the civil recovery measure support the high-risk assessment. The GLEIF update date and current imprint explain the registration-source discrepancy. Ownership and current-governance gaps are disclosed rather than converted into negative sanctions or PEP findings.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep",
+   "citations": [],
+   "reasoning": "No substantiated PEP finding was obtained. The empty array is not a negative clearance: current owners and the complete current governing body were not established.",
+   "confidence": "low"
+  },
+  {
+   "field": "sanctions",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 1 Found Name Address Type Program(s) List Score CHENGDU KEYLINK WIRELESS TECHNOLOGY CO., LTD No. 2, F5, Building 5; No. 5 Xixin Avenue; High-Tech Zone Entity RUSSIA-EO14024 SDN 82",
+      "Your search has not returned any results."
+     ]
+    },
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+     "excerpts": [
+      "**DateGenerated: 03/11/2026** UK SANCTIONS LIST PUBLICATION"
+     ]
+    },
+    {
+     "title": "The UK Sanctions List - GOV.UK",
+     "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+     "excerpts": [
+      "The OFSI Consolidated List of Asset Freeze Targets closed on Wednesday 28 January 2026 and is no longer being updated."
+     ]
+    }
+   ],
+   "reasoning": "The OFAC result records the unrelated candidate, while the administrator search explicitly returned no results. The UK publication date and OFSI closure establish the relevant UK source. UK and EU negative statements are limited to exact-name checks of the retrieved publications; unidentified owners and aliases were not cleared.",
+   "confidence": "medium"
+  },
+  {
+   "field": "namesakes_excluded",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 1 Found Name Address Type Program(s) List Score CHENGDU KEYLINK WIRELESS TECHNOLOGY CO., LTD No. 2, F5, Building 5; No. 5 Xixin Avenue; High-Tech Zone Entity RUSSIA-EO14024 SDN 82"
+     ]
+    },
+    {
+     "title": "Wirecard AG - LEI 529900A8LX4KL0YUTH71",
+     "url": "https://www.gleif.org/lei/529900A8LX4KL0YUTH71",
+     "excerpts": [
+      "Wirecard AG is a legal entity under the jurisdiction of Germany (DE) with Legal Entity Identifier (LEI) 529900A8LX4KL0YUTH71."
+     ]
+    }
+   ],
+   "reasoning": "One potential sanctions candidate was excluded: Chengdu Keylink Wireless Technology is not the German legal entity identified by GLEIF. The count concerns rejected screening findings, not the separately disclosed related companies.",
+   "confidence": "medium"
+  },
+  {
+   "field": "input_name",
+   "citations": [
+    {
+     "title": "Wirecard AG - LEI 529900A8LX4KL0YUTH71",
+     "url": "https://www.gleif.org/lei/529900A8LX4KL0YUTH71",
+     "excerpts": [
+      "Wirecard AG is a legal entity under the jurisdiction of Germany (DE) with Legal Entity Identifier (LEI) 529900A8LX4KL0YUTH71."
+     ]
+    }
+   ],
+   "reasoning": "The input name is copied from the request; GLEIF supports resolving the German target to Wirecard AG.",
+   "confidence": "high"
+  },
+  {
+   "field": "people",
+   "citations": [
+    {
+     "title": "Wirecard AG - Jaffe Rechtsanwälte",
+     "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+     "excerpts": [
+      "Insolvenzverwalter Dr. jur. Michael Jaffé"
+     ]
+    },
+    {
+     "title": "Impressum - wirecard",
+     "url": "https://www.wirecard.com/de/impressum",
+     "excerpts": [
+      "**Wirecard AG in Insolvenz** ** Dr. jur. Michael Jaffé in seiner Eigenschaft als Insolvenzverwalter über das Vermögen der Wirecard AG**"
+     ]
+    }
+   ],
+   "reasoning": "The administrator's case page and company imprint identify Michael Jaffé in his insolvency-administrator capacity. They do not establish that he is a director or beneficial owner, and the answer makes no such claim. The complete current board and ownership remain unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities",
+   "citations": [
+    {
+     "title": "Wirecard Sales International Holding GmbH - LEI 529900VH0MQZASU8AR79",
+     "url": "https://www.gleif.org/lei/529900VH0MQZASU8AR79",
+     "excerpts": [
+      "Its direct parent is Wirecard AG (LEI 529900A8LX4KL0YUTH71).",
+      "Registered As: HRB 187465"
+     ]
+    },
+    {
+     "title": "Wirecard Technologies GmbH - LEI 529900Z54V2EA48D2Y27",
+     "url": "https://www.gleif.org/lei/529900Z54V2EA48D2Y27",
+     "excerpts": [
+      "Direct Parent: Wirecard AG ([LEI 529900A8LX4KL0YUTH71](https://www.gleif.org/lei/529900A8LX4KL0YUTH71), DE, LAPSED)",
+      "Registered As: HRB 200352"
+     ]
+    }
+   ],
+   "reasoning": "The separate GLEIF records identify the related German entities and their registry numbers. Consolidation relationships are reported as historical records rather than current ownership assertions.",
+   "confidence": "medium"
+  },
+  {
+   "field": "risk_rating",
+   "citations": [
+    {
+     "title": "Wirecard AG - Jaffe Rechtsanwälte",
+     "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+     "excerpts": [
+      "Verfahrensstatus laufendes Verfahren"
+     ]
+    },
+    {
+     "title": "Pressemitteilung 39/2026 - Bayerisches Staatsministerium der Justiz",
+     "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/oberlandesgerichte/muenchen/presse/2026/39.php",
+     "excerpts": [
+      "Landgericht München I: Strafverfahren gegen Dr. Markus B. u.a. wegen des Verdachts des gewerbsmäßigen Bandenbetrugs („Wirecard“)"
+     ]
+    },
+    {
+     "title": "Pressemitteilung 15/2022 - Bayerisches Staatsministerium der Justiz",
+     "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2022/15.php",
+     "excerpts": [
+      "Da von den insgesamt abgeflossenen € 200 Mio. nur € 60 Mio. an die Wirecard AG zurückflossen, beträgt der zu ersetzende Schaden € 140 Mio."
+     ]
+    }
+   ],
+   "reasoning": "High is an analytical risk classification based on continuing insolvency, serious entity-linked fraud proceedings and the substantial civil recovery findings, not a rating quoted from a source.",
+   "confidence": "medium"
+  },
+  {
+   "field": "registration",
+   "citations": [
+    {
+     "title": "Wirecard AG - LEI 529900A8LX4KL0YUTH71",
+     "url": "https://www.gleif.org/lei/529900A8LX4KL0YUTH71",
+     "excerpts": [
+      "Wirecard AG is a legal entity under the jurisdiction of Germany (DE) with Legal Entity Identifier (LEI) 529900A8LX4KL0YUTH71.",
+      "Registered At: Commercial Register, Local Court München (RA000304) Registered As: HRB 169227",
+      "Its LEI registration is LAPSED and its entity status is ACTIVE.",
+      "Last Update: 2020-11-13"
+     ]
+    },
+    {
+     "title": "Impressum - wirecard",
+     "url": "https://www.wirecard.com/de/impressum",
+     "excerpts": [
+      "**Sitz der Gesellschaft:** Humboldtstraße 8 85609 Aschheim Deutschland",
+      "**Handelsregister** : Amtsgericht München, HRB 169227 **Umsatzsteuer-Identifikationsnummer** : DE 201591202"
+     ]
+    },
+    {
+     "title": "Wirecard AG - Jaffe Rechtsanwälte",
+     "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+     "excerpts": [
+      "Eröffnungsdatum 25\\.08.2020"
+     ]
+    }
+   ],
+   "reasoning": "GLEIF supplies the legal identity, jurisdiction, LEI and registry identifier. The current company imprint supplies the reported address and insolvency identity, corroborated by the administrator's case page. The incorporation date is left null, and the absence of a current original national-register extract and stale GLEIF status are expressly disclosed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media",
+   "citations": [
+    {
+     "title": "Wirecard AG - Jaffe Rechtsanwälte",
+     "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+     "excerpts": [
+      "Eröffnungsdatum 25\\.08.2020"
+     ]
+    },
+    {
+     "title": "Brown v. Wirecard AG et al. - 2:20-cv-03326",
+     "url": "https://www.classaction.org/media/brown-v-wirecard-ag-et-al.pdf",
+     "excerpts": [
+      "Case 2:20-cv-03326 Document 1 Filed 07/07/20 Page 1 of 31"
+     ]
+    },
+    {
+     "title": "Pressemitteilung 15/2022 - Bayerisches Staatsministerium der Justiz",
+     "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2022/15.php",
+     "excerpts": [
+      "Pressemitteilung 15 vom 09.06.2022"
+     ]
+    },
+    {
+     "title": "Der Bundesgerichtshof  -  Presse : Pressemitteilungen aus dem Jahr 2025 - Von Aktionären der Wirecard AG angemeldete Ansprüche  sind keine einfachen Insolvenzforderungen",
+     "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025211.html",
+     "excerpts": [
+      "**Urteil vom 13. November 2025 - IX ZR 127/24**"
+     ]
+    },
+    {
+     "title": "Wirecard: Verteidiger wollen Prozess vor Ende noch aushebeln",
+     "url": "https://www.diebayern.de/justiz/wirecard-verteidiger-wollen-prozess-vor-ende-noch-aushebeln-3186332",
+     "excerpts": [
+      "[München](https://www.diebayern.de/nachrichten/ort/muenchen \"München Nachrichten\") 30\\. September 2026 13:49 Uhr 1 Min"
+     ]
+    }
+   ],
+   "reasoning": "Each included event falls within the requested period and is tied to Wirecard AG, its insolvency estate or its former management's Wirecard conduct. Allegations, civil measures and criminal convictions are kept distinct; no auditor or subsidiary penalty is attributed to the screened entity.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.0",
+   "citations": [
+    {
+     "title": "Wirecard AG - Jaffe Rechtsanwälte",
+     "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+     "excerpts": [
+      "Insolvenzverwalter Dr. jur. Michael Jaffé"
+     ]
+    },
+    {
+     "title": "JAFFÉ Rechtsanwälte PartG mbB",
+     "url": "https://www.jaffe-partner.de/index.php/de/berufstraeger/dr-jur-michael-jaffe",
+     "excerpts": [
+      "Dr. jur. Michael Jaffé Partner, Insolvenzverwalter Geboren 1963 in München Zulassung als Rechtsanwalt seit 1993 Insolvenzverwalter seit 1995/1996"
+     ]
+    }
+   ],
+   "reasoning": "The case page identifies the administrator; his professional biography does not explicitly state nationality, so nationality remains null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.0",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 1 Found Name Address Type Program(s) List Score CHENGDU KEYLINK WIRELESS TECHNOLOGY CO., LTD No. 2, F5, Building 5; No. 5 Xixin Avenue; High-Tech Zone Entity RUSSIA-EO14024 SDN 82",
+      "SDN List last updated on: 11/6/2026 2:33:11 PM Non-SDN List last updated on: 11/4/2026 12:33:06 PM"
+     ]
+    }
+   ],
+   "reasoning": "The Wirecard search returned the named candidate and score. Comparing that candidate's name and address with Wirecard AG supports rejecting it as a false positive, not declaring the unidentified ownership chain clear.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.1",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 0 Found Name Address Type Program(s) List Score",
+      "Your search has not returned any results.",
+      "SDN List last updated on: 11/6/2026 2:33:11 PM Non-SDN List last updated on: 11/4/2026 12:33:06 PM"
+     ]
+    }
+   ],
+   "reasoning": "The submitted Michael Jaffe query produced an explicit no-results response. The result is limited to that name query and dated list.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.2",
+   "citations": [
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+     "excerpts": [
+      "**DateGenerated: 03/11/2026** UK SANCTIONS LIST PUBLICATION"
+     ]
+    },
+    {
+     "title": "The UK Sanctions List - GOV.UK",
+     "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+     "excerpts": [
+      "The OFSI Consolidated List of Asset Freeze Targets closed on Wednesday 28 January 2026 and is no longer being updated."
+     ]
+    }
+   ],
+   "reasoning": "These spans establish the publication date and replacement of the closed OFSI list. The limited negative was obtained by checking the retrieved publication text, not from an explicit official no-match certificate; aliases and owners remain unverified.",
+   "confidence": "low"
+  },
+  {
+   "field": "sanctions.3",
+   "citations": [
+    {
+     "title": "webgate.ec.europa.eu",
+     "url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+     "excerpts": [
+      "23/10/2026;7035;P;2020/716 (OJ L168);2020-05-29;https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN;SYR;(Date"
+     ]
+    }
+   ],
+   "reasoning": "The dated official file was retrieved and checked for the stated exact names. The cited span supports file dating, not a comprehensive negative across all aliases or ownership relationships; the answer explicitly limits the result.",
+   "confidence": "low"
+  },
+  {
+   "field": "related_entities.0",
+   "citations": [
+    {
+     "title": "Wirecard Sales International Holding GmbH - LEI 529900VH0MQZASU8AR79",
+     "url": "https://www.gleif.org/lei/529900VH0MQZASU8AR79",
+     "excerpts": [
+      "Wirecard Sales International Holding GmbH is a legal entity under the jurisdiction of Germany (DE) with Legal Entity Identifier (LEI) 529900VH0MQZASU8AR79.",
+      "Registered As: HRB 187465",
+      "Its direct parent is Wirecard AG (LEI 529900A8LX4KL0YUTH71).",
+      "Relationship Periods: Accounting: 2018-01-01 to 2018-12-31; Relationship: 2019-08-12 onwards; Document Filing: 2019-04-24 onwards"
+     ]
+    }
+   ],
+   "reasoning": "GLEIF supplies the separate entity's identity, registry number and dated consolidation relationships. The answer does not assume that the historical relationship remains current.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.1",
+   "citations": [
+    {
+     "title": "Wirecard Technologies GmbH - LEI 529900Z54V2EA48D2Y27",
+     "url": "https://www.gleif.org/lei/529900Z54V2EA48D2Y27",
+     "excerpts": [
+      "Wirecard Technologies GmbH",
+      "Registered As: HRB 200352",
+      "Direct Parent: Wirecard AG ([LEI 529900A8LX4KL0YUTH71](https://www.gleif.org/lei/529900A8LX4KL0YUTH71), DE, LAPSED)",
+      "Ultimate Parent: Wirecard AG ([LEI 529900A8LX4KL0YUTH71](https://www.gleif.org/lei/529900A8LX4KL0YUTH71), DE, LAPSED)",
+      "Registration Date: 2019-08-08"
+     ]
+    }
+   ],
+   "reasoning": "GLEIF identifies the separate legal entity and its recorded consolidation parents, with the relationship registration date. Current ownership is explicitly unconfirmed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.0",
+   "citations": [
+    {
+     "title": "Wirecard AG - Jaffe Rechtsanwälte",
+     "url": "https://www.jaffe-rae.de/referenzverfahren/detail/wirecard-ag",
+     "excerpts": [
+      "Eröffnungsdatum 25\\.08.2020",
+      "Verfahrensstatus laufendes Verfahren",
+      "Die **[Wirecard AG](https://www.wirecard.com/)** stellte am 25. Juni 2020 beim zuständigen Amtsgericht München einen Antrag auf Eröffnung eines Insolvenzverfahrens."
+     ]
+    }
+   ],
+   "reasoning": "The administrator's primary case page states the filing, opening date and ongoing status. Severity is the screening assessment.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.1",
+   "citations": [
+    {
+     "title": "Brown v. Wirecard AG et al. - 2:20-cv-03326",
+     "url": "https://www.classaction.org/media/brown-v-wirecard-ag-et-al.pdf",
+     "excerpts": [
+      "Case 2:20-cv-03326 Document 1 Filed 07/07/20 Page 1 of 31",
+      "WIRECARD AG, MARKUS BRAUN, JAN MARSALEK, BURKHARD LEY, ALEXANDER VON KNOOP, SUSANNE STEIDL, WULF MATTHIAS, and ERNST & YOUNG GMBH WIRTSCHAFTSPRUEFUNGSGESELLSCHAFT,",
+      "Case No: COMPLAINT -- CLASS ACTION JURY TRIAL DEMANDED",
+      "62\\. The statements contained in ¶¶20-61 were materially false and/or misleading"
+     ]
+    }
+   ],
+   "reasoning": "The filed complaint establishes the case date, Wirecard AG's defendant status and allegations of misleading statements. It does not establish their truth or the lawsuit's current disposition.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.2",
+   "citations": [
+    {
+     "title": "Pressemitteilung 15/2022 - Bayerisches Staatsministerium der Justiz",
+     "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2022/15.php",
+     "excerpts": [
+      "Pressemitteilung 15 vom 09.06.2022",
+      "Markus Braun, richtenden Arrestbefehl vom 30.12.2021 über € 140 Mio. bestätigt** (Az. 5HK O 17659/21).",
+      "Da von den insgesamt abgeflossenen € 200 Mio. nur € 60 Mio. an die Wirecard AG zurückflossen, beträgt der zu ersetzende Schaden € 140 Mio.",
+      "Das Urteil ist nicht rechtkräftig"
+     ]
+    }
+   ],
+   "reasoning": "The court release establishes the confirmation date, amount and expressly non-final status. The measure was against Braun in the administrator's civil recovery action, not a company fine or criminal conviction.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.3",
+   "citations": [
+    {
+     "title": "Der Bundesgerichtshof  -  Presse : Pressemitteilungen aus dem Jahr 2025 - Von Aktionären der Wirecard AG angemeldete Ansprüche  sind keine einfachen Insolvenzforderungen",
+     "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025211.html",
+     "excerpts": [
+      "**Urteil vom 13. November 2025 - IX ZR 127/24**",
+      "Die von der Klägerin zur Tabelle angemeldeten Forderungen stellen keine einfachen Insolvenzforderungen gemäß § 38 InsO dar.",
+      "Kapitalmarktrechtliche Schadensersatzansprüche der Aktionäre sind derart mit der Stellung als Aktionär verknüpft, dass sie in der Insolvenz der Gesellschaft hinter den Forderungen einfacher Insolvenzgläubiger gemäß § 38 InsO zurücktreten."
+     ]
+    }
+   ],
+   "reasoning": "The Federal Court of Justice release states the judgment date and the ranking of shareholder damages claims. The answer confines the event to insolvency litigation.",
+   "confidence": "high"
+  },
+  {
+   "field": "adverse_media.4",
+   "citations": [
+    {
+     "title": "Wirecard: Verteidiger wollen Prozess vor Ende noch aushebeln",
+     "url": "https://www.diebayern.de/justiz/wirecard-verteidiger-wollen-prozess-vor-ende-noch-aushebeln-3186332",
+     "excerpts": [
+      "[München](https://www.diebayern.de/nachrichten/ort/muenchen \"München Nachrichten\") 30\\. September 2026 13:49 Uhr 1 Min",
+      "Im Münchner Wirecard-Prozess wollen die Verteidiger des früheren Vorstandschefs Markus Braun das seit fast vier Jahren laufende Verfahren noch auf den letzten Metern aushebeln. Brauns Anwältin Theres Kraußlach forderte die Aussetzung des Prozesses und begründete das mit dem Recht Brauns auf ein faires Verfahren.",
+      "Braun hat mehrfach seine Unschuld beteuert. Der österreichische Manager sieht sich selbst als Opfer der wahren Betrügerbande um Marsalek, zu der auch die in Koblenz angeklagte Managerin gehört haben soll."
+     ]
+    },
+    {
+     "title": "Pressemitteilung 39/2026 - Bayerisches Staatsministerium der Justiz",
+     "url": "https://www.justiz.bayern.de/gerichte-und-behoerden/oberlandesgerichte/muenchen/presse/2026/39.php",
+     "excerpts": [
+      "Landgericht München I: Strafverfahren gegen Dr. Markus B. u.a. wegen des Verdachts des gewerbsmäßigen Bandenbetrugs („Wirecard“)"
+     ]
+    }
+   ],
+   "reasoning": "The dated report describes continuing proceedings and the defense's position. The official court release identifies the Wirecard commercial-gang-fraud suspicion. Predictions about conviction are not treated as an actual judgment.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list",
+ "completed_on": "2026-11-09"
 }

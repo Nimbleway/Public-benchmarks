@@ -1,0 +1,138 @@
+{
+ "sub": "fin_grounded_answer",
+ "i": 0,
+ "task": "What did Snowflake say about consumption trends on its most recent earnings call?",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which earnings call is the most recent, and when was it held? Is a newer one due soon?",
+   "answer": "Q2 FY2027 (quarter ended July 31, 2026), reported and discussed on Sept 2, 2026. The Q3 FY2027 report is expected in late November 2026. As of Nov 10, 2026 the Q2 call is still the latest.",
+   "importance": "critical",
+   "source": "https://www.nasdaq.com/press-release/snowflake-reports-financial-results-second-quarter-fiscal-2027-2026-09-02"
+  },
+  {
+   "id": "k2",
+   "question": "What did management say about the overall consumption trend and product revenue growth?",
+   "answer": "Product revenue was $1.49B (about $1,491.9M), up 37% YoY. This was the third straight quarter of acceleration, from 30% growth exiting Q4 FY26. The CFO credited both the core data platform and a meaningful step-up in AI revenue. The CEO said CoWork and CoCo are driving rapid adoption, user growth, new workloads and overall platform consumption.",
+   "importance": "critical",
+   "source": "https://www.nasdaq.com/press-release/snowflake-reports-financial-results-second-quarter-fiscal-2027-2026-09-02"
+  },
+  {
+   "id": "k3",
+   "question": "How much of the consumption acceleration came from AI versus core and migrations?",
+   "answer": "Management estimated AI products contributed roughly half of the recent growth acceleration. Migrations and other products supported the rest. CoCo passed 9,100 accounts, adding more than 2,000 net in the quarter. CoWork reached 5,800 accounts, up about 11% QoQ. Management called AI a multiplier for the consumption model. This comes from a third-party transcript summary (TradingKey), so check the wording against the transcript.",
+   "importance": "critical",
+   "source": "https://www.tradingkey.com/news/transcripts/262147569-tradingkey"
+  },
+  {
+   "id": "k4",
+   "question": "What guidance did Snowflake give that reflects expected consumption (Q3 and full year)?",
+   "answer": "FY27 product revenue guidance was raised to $6.07B (36% growth) from $5.84B (31%). About 1 point of that growth comes from the Observe acquisition. Q3 product revenue guidance is $1,588–1,593M, or 37–38% growth. Non-GAAP operating margin guidance rose to 14.5% from 13.5%.",
+   "importance": "critical",
+   "source": "https://www.nasdaq.com/press-release/snowflake-reports-financial-results-second-quarter-fiscal-2027-2026-09-02"
+  },
+  {
+   "id": "k5",
+   "question": "What do the demand and customer-expansion indicators show?",
+   "answer": "Net revenue retention was 126%. Customers above $1M trailing-12-month product revenue numbered 828 (+27% YoY). 65 customers were above $10M. Total customers were 14,554, with 692 net adds. RPO was $9.0B (+30% YoY), and about 54% of it is expected to be recognized within 12 months.",
+   "importance": "critical",
+   "source": "https://www.nasdaq.com/press-release/snowflake-reports-financial-results-second-quarter-fiscal-2027-2026-09-02"
+  },
+  {
+   "id": "k6",
+   "question": "What risks or caveats did management flag around consumption?",
+   "answer": "Product gross margin guidance was cut to about 74% because AI workloads carry a lower initial margin. Bookings are weighted toward Q4. Part of the growth comes from the Observe acquisition, so it is not all organic. Consumption revenue is recognized as customers use compute, storage and data transfer, so it can fluctuate.",
+   "importance": "useful",
+   "source": "https://www.tradingkey.com/news/transcripts/262147569-tradingkey"
+  },
+  {
+   "id": "k7",
+   "question": "How did the market react?",
+   "answer": "Shares jumped sharply after the results. They rose about 22–23% in after-hours trading on Sept 2, 2026, and were up roughly 20–23% intraday on Sept 3 from a prior close of about $306. Reported closing gains ranged from about 16% to about 22%, and the stock hit its highest level since late 2021. This figure comes from secondary sources.",
+   "importance": "useful",
+   "source": "https://247wallst.com/investing/2026/09/03/snowflake-soars-23-as-ai-fueled-guidance-raise-tops-estimates-oracle-advances-3-cloudflare-edges-higher/",
+   "key_original": {
+    "answer": "Shares rose about 11.5% after the results. This figure comes from secondary sources.",
+    "source": "https://beancount.io/blog/2026/09/10/snowflake-q2-fy2027-earnings-analysis"
+   },
+   "audit": {
+    "verdict": "key_wrong",
+    "why": "The cited beancount.io page says nothing about the share reaction. When I fetched it, it contained no stock price, after-hours move or percentage change. The pre-earnings close was about $306 (implied $305.84). Several outlets reported a much bigger move after the Sept 2, 2026 results. Tikr's headline says shares jumped 23%. 247WallSt reported +23% to $377.11 intraday on Sept 3. Schaeffer's reported +20% on the morning of Sept 3. Goldesel.de reported +21.6% to $371.94. A Zacks/Finviz piece said about 16% on Sept 3. Investing.com and others reported about 22–23% after hours. Reported closing figures conflict. The closing gain was at least about 16% by the lowest report and about 22% by the highest. I found no source for 11.5%, and it matches none of these moves.",
+    "disputed_point": "Size of the market reaction. The key says shares rose about 11.5%. Sources I opened put the jump at roughly 16–23%, about double the key's figure."
+   }
+  }
+ ],
+ "labels": {
+  "nimble": "A",
+  "exa": "B",
+  "firecrawl": "C",
+  "parallel": "D",
+  "opus": "E",
+  "gpt": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "missing",
+   "k4": "missing",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "missing"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "missing"
+  }
+ },
+ "cost_usd": 0.081
+}

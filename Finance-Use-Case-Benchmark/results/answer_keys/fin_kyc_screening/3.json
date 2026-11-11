@@ -1,0 +1,129 @@
+{
+ "sub": "fin_kyc_screening",
+ "i": 3,
+ "task": "Run a KYC screen on Binance in France",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which legal entity is the correct 'Binance in France', and what are its registry number, LEI, status and registered address? Is the group parent a different entity?",
+   "answer": "The French operating entity is Binance France SAS. The AMF registered it as a PSAN (digital asset service provider) on 4 May 2022 under number E2022-037. The AMF page lists custody as the registered service. The entity's SIREN, LEI, incorporation date, registered address and active status were NOT verified in this research. Read them from the Registre national du commerce et des sociétés / INPI / Pappers and from GLEIF before relying on them. Binance France SAS is the local PSAN vehicle. It is not the global exchange operator or the group parent. The Binance group has no single parent company: global operations have been run through several entities (e.g. Binance Holdings, Binance Capital Management, and Binance (Services) Holdings). Those, and the other Binance entities in the EU, belong in related_entities. A branch is not the entity.",
+   "importance": "critical",
+   "source": "https://www.amf-france.org/sites/institutionnel/files/pdf/73326/fr/Binance_France_SAS.pdf"
+  },
+  {
+   "id": "k2",
+   "question": "What is Binance's regulatory authorisation status in France today? Is it only a PSAN registration, or does it hold an agrément or a MiCA CASP licence?",
+   "answer": "The only verified fact is the PSAN registration, E2022-037, from May 2022. It is a registration, not the optional AMF agrément. It was also not verified whether Binance France SAS holds a MiCA CASP authorisation. The PSAN regime was transitional, and French PSAN registrations had to be replaced by MiCA CASP authorisation by the end of the transition period (the French transition ran to 30 June 2026). Check the AMF PSAN register and the ESMA CASP register for current status. If Binance has no CASP licence, offering services to French clients after that date is a major red flag.",
+   "importance": "critical",
+   "source": "https://www.amf-france.org/sites/institutionnel/files/pdf/73326/fr/Binance_France_SAS.pdf"
+  },
+  {
+   "id": "k3",
+   "question": "Is there an active French criminal or judicial investigation into Binance, and what are the allegations and status?",
+   "answer": "Yes. Paris prosecutors (JUNALCO) opened a judicial investigation, reported in January 2025, into suspected laundering of drug-trafficking and tax-fraud proceeds from 2019–2024. It also covers failures in KYC and anti-money-laundering and counter-terrorist-financing duties, and operating in France before registering with the AMF. An earlier preliminary investigation opened in June 2023, for illegal canvassing and aggravated money laundering. Binance denies the allegations and says it will fight any charges. No 2026 development in the French case was found, so the current status (charges, trial, settlement) is unverified. Severity: high. Status: ongoing.",
+   "importance": "critical",
+   "source": "https://globalinvestigationsreview.com/article/france-accuses-binance-of-helping-launder-fraud-drugs-profits"
+  },
+  {
+   "id": "k4",
+   "question": "Are Binance, its owners or its directors on OFAC SDN, UK OFSI or EU consolidated sanctions lists? Is there any sanctions-related enforcement history?",
+   "answer": "No direct listing of Binance, Binance France SAS, or Changpeng Zhao (CZ) was found. This check should be re-run on the live OFAC SDN, OFSI and EU consolidated lists, which was not done here. Sanctions exposure is still material. In November 2023 Binance pleaded guilty to US charges and paid about $4.3bn, which included OFAC settlement of about $968m for sanctions violations (Iran and others), with a monitor imposed. In 2026 the WSJ reported a US DOJ sanctions-evasion probe, per Wikipedia. That report was not verified and its status is unknown. Any hits on lists for similarly named parties should be counted in namesakes_excluded.",
+   "importance": "critical",
+   "source": "https://en.wikipedia.org/wiki/Binance"
+  },
+  {
+   "id": "k5",
+   "question": "Who owns and controls Binance France SAS (UBO/PSC), and who are its current directors, and are any of them PEPs?",
+   "answer": "Not verified. The French register (RBE, with INPI/Infogreffe filings) must be read for the president and beneficial owners of Binance France SAS. Group-level context: Changpeng Zhao (Canadian national, born in China) is the majority owner, and he stepped down as CEO in 2023. He pleaded guilty to a US AML violation, served 4 months in prison, and received a US presidential pardon in October 2025. Richard Teng is the CEO. No PEP flag was verified. Check CZ's ties to government officials and the UAE and US political connections that have been reported. Do not assume the ownership of Binance France SAS matches the group without checking.",
+   "importance": "critical",
+   "source": "https://en.wikipedia.org/wiki/Binance"
+  },
+  {
+   "id": "k6",
+   "question": "What are the other adverse-media items from the last 10 years, with severity and status?",
+   "answer": "(1) US DOJ/FinCEN/OFAC/CFTC resolution, November 2023, about $4.3bn: high, resolved with a monitor. (2) CFTC and SEC suits against Binance, from 2023: high/medium. The SEC case was dismissed in 2025. (3) CZ's guilty plea, a 4-month sentence, and his pardon in October 2025. (4) French investigations, 2023 and 2025: high, ongoing (see k3). (5) ACPR AML checks on exchanges, including Binance, reported in October 2025: medium, status unknown. (6) Other regulators acted over unlicensed operation in several countries, e.g. Netherlands, Italy, Nigeria, Canada and others: medium. Dates and statuses should be verified against primary sources.",
+   "importance": "useful",
+   "source": "https://en.wikipedia.org/wiki/Binance"
+  },
+  {
+   "id": "k7",
+   "question": "What is the overall risk rating, and what should the user do today?",
+   "answer": "HIGH. The rating rests on an open French judicial AML investigation, a large US AML and sanctions resolution with a monitor, the pending sanctions-evasion reports, and unconfirmed MiCA authorisation. Before onboarding or transacting: (a) confirm the entity's SIREN, LEI, address and status; (b) confirm the CASP and PSAN status on the AMF/ESMA registers; (c) re-run the sanctions screening on live lists; (d) get the UBO from the RBE; (e) obtain updates on the French case status. Apply enhanced due diligence and senior sign-off.",
+   "importance": "critical",
+   "source": "https://cointelegraph.com/news/france-investigation-binance-money-laundering-tax-fraud"
+  }
+ ],
+ "labels": {
+  "gpt": "B",
+  "nimble": "C",
+  "firecrawl": "D",
+  "opus": "E",
+  "exa": "H",
+  "parallel": "I"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "wrong"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.179
+}

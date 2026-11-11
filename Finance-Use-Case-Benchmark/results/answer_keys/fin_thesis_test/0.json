@@ -1,0 +1,129 @@
+{
+ "sub": "fin_thesis_test",
+ "i": 0,
+ "task": "Test the thesis: data-center power demand supports Vistra's growth over the next 3 years",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What do the latest results (Q3 2026, reported about 6 Nov 2026) and guidance show? Is growth already visible in the numbers?",
+   "answer": "Q3 2026 adjusted EBITDA was about $2.38B, up more than 50% year over year. Revenue was about $6.35B, up 28%, but missed consensus of about $6.79B. 2026 adjusted EBITDA guidance was narrowed to $7.1–7.5B and adjusted FCF before growth to $4.3–4.7B. 2027 guidance was initiated at $7.7–8.5B EBITDA and $4.3–5.1B FCF before growth. The midpoint implies roughly 9% EBITDA growth in 2027. Free cash flow before growth is only flat to modestly higher, so part of the 2026 step-up came from acquisitions, and data-center demand is not the only driver. The shares rose about 5–10% after the results. Check this against the primary release.",
+   "importance": "critical",
+   "source": "https://finviz.com/news/418259/vistra-reports-third-quarter-2026-results"
+  },
+  {
+   "id": "k2",
+   "question": "What contracted data-center deals does Vistra have, and when do they start delivering? Is the thesis backed by signed contracts or only by expected demand?",
+   "answer": "The Comanche Peak PPA (1,200 MW, 20 years, investment-grade counterparty) was announced in the Q3 2025 release. Management targets energization at the end of 2027, so it adds little to 2026 earnings and contributes mainly from 2028. Vistra also signed a 207 MW, 20-year PPA with New Era Energy & Digital at the Odessa combined-cycle plant. Management has kept talking about further deals at other sites. The contracted volume is small against Vistra's fleet of about 40+ GW, so the 3-year upside depends on signing more deals. Verify the counterparty names, pricing, and any other deals, such as Meta/nuclear, in the filings.",
+   "importance": "critical",
+   "source": "https://investor.vistracorp.com/2025-11-06-Vistra-Reports-Third-Quarter-2025-Results,-Narrows-2025-Guidance,-and-Initiates-2026-Guidance"
+  },
+  {
+   "id": "k3",
+   "question": "What is the regional demand outlook (ERCOT and PJM), and is there any regulatory or permitting risk to data-center load, such as the Texas audit and pause and SB6?",
+   "answer": "Management kept its 2030 demand-growth outlook at 4–6% a year in ERCOT and 2–3% in PJM. Texas has a data-center audit and permitting pause, and large-load rules (SB6) apply. On the Q2 2026 call, management said Comanche Peak is not expected to be affected. Crypto sites going offline for data-center conversion also cut Texas load. The risk is that interconnection timing slips and load arrives later than forecast.",
+   "importance": "critical",
+   "source": "https://www.marketbeat.com/instant-alerts/vistra-q2-earnings-call-highlights-2026-08-09/"
+  },
+  {
+   "id": "k4",
+   "question": "How much of Vistra's earnings growth comes from other sources, such as M&A, the Lotus gas acquisition, retail, and cost or capacity prices, rather than data centers?",
+   "answer": "A large share of the 2026 jump came from Texas (about 56% of the $797M quarterly EBITDA increase, per one write-up) and from acquisitions. The Lotus and Cogentrix deals are worth checking, as is how much of the 2027 range is organic. Retail margins and capacity auction prices also matter. The analyst should split the EBITDA bridge into data-center contracts and other sources. Unverified here.",
+   "importance": "critical",
+   "source": "https://fourweekmba.com/ai-texas-made-56-of-vistras-797m-jump-in-quarterly-ebitda/"
+  },
+  {
+   "id": "k5",
+   "question": "What are the main risks and counterarguments: valuation, merchant price exposure, political and price-cap intervention in PJM, and a possible AI capex slowdown?",
+   "answer": "Vistra is a merchant generator and its earnings depend on power and capacity prices. PJM faces capacity price caps and political pressure over co-location. Hyperscaler capex could slow, and counterparties could renegotiate. The stock already prices in a lot of the AI story. The 2027 FCF range of $4.3–5.1B shows slow organic growth before new deals. Need current valuation (EV/EBITDA, FCF yield) data, which I have not verified.",
+   "importance": "critical",
+   "source": "https://www.marketbeat.com/instant-alerts/transcript-vistra-q3-earnings-call-highlights-2026-11-08/"
+  },
+  {
+   "id": "k6",
+   "question": "What are the balance sheet and capital allocation constraints (leverage, buybacks, growth capex, nuclear uprates and new gas builds)?",
+   "answer": "Vistra runs a heavy buyback and dividend program alongside acquisitions and growth capex. Check net debt/EBITDA, debt maturities, and the credit rating and outlook. The growth plans (nuclear uprates, new CCGT/peakers, possibly 2027–2030 builds) need funding. Not verified here; check the 10-Q.",
+   "importance": "useful",
+   "source": "https://investor.vistracorp.com"
+  },
+  {
+   "id": "k7",
+   "question": "What events would change the view over the next 12 months?",
+   "answer": "Upside: new large contracts at Martin Lake, Vistra's gas plants and Beaver Valley or Perry; PJM capacity auction results; early energization at Comanche Peak. Downside: a Texas or PJM rule that limits co-located or large-load deals; hyperscaler capex cuts; a guidance cut; a failure to sign another contract by 2027; PJM price caps.",
+   "importance": "useful",
+   "source": "https://finviz.com/news/418349/vistra-shares-rise-5-as-q3-profit-surges-despite-revenue-miss-raises-2026-outlook"
+  }
+ ],
+ "labels": {
+  "nimble": "A",
+  "gpt": "B",
+  "exa": "C",
+  "parallel": "D",
+  "opus": "E",
+  "firecrawl": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "missing",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.188
+}

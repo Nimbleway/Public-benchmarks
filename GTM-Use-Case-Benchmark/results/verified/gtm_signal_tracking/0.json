@@ -3,37 +3,95 @@
  "input_n": 0,
  "task": "Check Mercury (mercury.com) for changes since 2026-09-21",
  "labels": {
-  "firecrawl": "A",
-  "parallel": "B",
+  "opus": "A",
+  "exa": "B",
   "nimble": "C",
-  "exa": "D"
+  "gpt": "D",
+  "parallel": "E",
+  "firecrawl": "F"
  },
  "unit": "event",
+ "evidence_pages": 37,
+ "evidence_fetched": 36,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 23,
+ "judge": "v4b",
+ "judge_cost_usd": 0.769,
+ "corrections_v2": {
+  "units_before": 27,
+  "units_after": 17,
+  "dedup_groups": [
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9",
+     "c10"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16",
+     "c17"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23",
+     "c24",
+     "c25"
+    ]
+   },
+   {
+    "kept": "c26",
+    "merged": [
+     "c27"
+    ]
+   }
+  ],
+  "cost": 0.003
+ },
  "merged": [
   {
    "cid": "c1",
-   "claim": "On 2026-10-20, Mercury launched Mercury Payroll (W-2 and 1099 payroll, benefits, tax compliance; AI-native/Mercury Command assistance), free through 2026-12-31, then $100/month plus $50 per person paid per month from 2027-01-01.",
+   "claim": "Taylor Murphy announced on 2026-09-28 that he joined Mercury to lead data engineering and platform.",
    "asserted_by": [
-    "A",
-    "B",
-    "C",
-    "D"
+    "B"
    ],
+   "variants": {
+    "B": "Taylor Murphy announced on 2026-09-28 that he joined Mercury to lead its data engineering and platform team (Head of Data Engineering & Platform)."
+   },
    "urls": [
-    "https://www.businesswire.com/news/home/20261020220473/en/",
-    "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll",
-    "https://mercury.com/blog/introducing-mercury-payroll"
+    "https://www.linkedin.com/posts/tayloramurphy_excited-to-share-ive-joined-mercury-to-lead-activity-7510416435333095424-bttQ"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c2",
-   "claim": "On 2026-10-15, Mercury enabled customers to ask ChatGPT or Claude (via MCP) to move money, pay recipients, and categorize transactions, with user approval required before actions execute.",
+   "claim": "On 2026-09-28 Mercury added wire drawdowns so payroll providers such as Sequoia and Gusto can withdraw funds directly from Mercury accounts (Column, N.A. and Choice Financial Group).",
    "asserted_by": [
-    "B",
     "C",
-    "D"
+    "B",
+    "E",
+    "F",
+    "A"
    ],
+   "variants": {
+    "C": "On 2026-09-28, Mercury enabled wire drawdowns on accounts provided through both Column, N.A. and Choice Financial Group, letting businesses authorize payroll providers such as Sequoia and Gusto to withdraw funds directly.",
+    "B": "On 2026-09-28 Mercury added wire drawdowns so payroll providers such as Sequoia and Gusto can withdraw funds directly from eligible Mercury accounts.",
+    "E": "Mercury enabled payroll-provider wire drawdown authorization on 2026-09-28 for Mercury accounts provided through both Column, N.A. and Choice Financial Group.",
+    "F": "On 2026-09-28, Mercury added wire drawdowns from accounts at Column, N.A. and Choice Financial Group, allowing payroll providers such as Sequoia and Gusto to withdraw funds directly.",
+    "A": "Mercury announced on 2026-09-28 that customers can authorize wire drawdowns for payroll providers such as Sequoia and Gusto, for accounts through Column, N.A. and Choice Financial Group."
+   },
    "urls": [
     "https://mercury.com/releases"
    ],
@@ -41,12 +99,23 @@
   },
   {
    "cid": "c3",
-   "claim": "On 2026-10-14, Mercury added faster priority support for Plus and Pro customers, while all customers retain 24/7 support.",
+   "claim": "On 2026-09-29 Mercury made real-time payments available through the Mercury API for Business and Personal accounts provided through Column, N.A., arriving in seconds around the clock.",
    "asserted_by": [
-    "B",
     "C",
-    "D"
+    "B",
+    "E",
+    "F",
+    "D",
+    "A"
    ],
+   "variants": {
+    "C": "On 2026-09-29, Mercury made real-time payments available through the Mercury API (paymentMethod set to realTimePayment), with funds arriving in seconds 24/7/365 on Mercury Business and Personal accounts provided through Column, N.A.",
+    "B": "On 2026-09-29 Mercury enabled Business and Personal accounts provided through Column to send real-time payments through the Mercury API, including nights, weekends, and holidays.",
+    "E": "Mercury added API-based real-time payments on 2026-09-29 via the Mercury API, including nights, weekends and holidays, for eligible Business and Personal accounts provided through Column, N.A.",
+    "F": "On 2026-09-29, the Mercury API added real-time payments via the realTimePayment payment method, with funds arriving in seconds around the clock for eligible Business and Personal accounts through Column, N.A.",
+    "D": "Mercury API added real-time payments on 2026-09-29: Business and Personal accounts provided through Column can send real-time payments programmatically.",
+    "A": "Mercury announced on 2026-09-29 that its API can send real-time payments arriving within seconds at any time, for accounts provided through Column, N.A."
+   },
    "urls": [
     "https://mercury.com/releases"
    ],
@@ -54,12 +123,19 @@
   },
   {
    "cid": "c4",
-   "claim": "On 2026-10-14, Mercury released linked accounts: connect multiple Mercury accounts, move money between them (instant on same partner bank), auto-transfer rules, and recurring external transfers.",
+   "claim": "On 2026-10-14 Mercury made faster Priority Support available to Plus and Pro customers, while all customers keep 24/7 support.",
    "asserted_by": [
-    "B",
     "C",
-    "D"
+    "B",
+    "F",
+    "A"
    ],
+   "variants": {
+    "C": "On 2026-10-14, Mercury added faster, priority support for customers on its Plus and Pro subscription plans, while all customers retain 24/7 support.",
+    "B": "On 2026-10-14 Mercury added Priority Support (faster priority support) for Plus and Pro customers, while 24/7 support remained available to all customers.",
+    "F": "On 2026-10-14, Mercury made faster Priority Support available to customers on its Plus and Pro subscription plans, while retaining 24/7 support for all customers.",
+    "A": "Mercury made Priority Support available to Plus and Pro customers on 2026-10-14 as a plan benefit, while all customers keep 24/7 access."
+   },
    "urls": [
     "https://mercury.com/releases"
    ],
@@ -67,136 +143,289 @@
   },
   {
    "cid": "c5",
-   "claim": "On 2026-09-29, the Mercury API added real-time payments (paymentMethod: realTimePayment), delivering funds in seconds 24/7/365 for Business and Personal accounts provided through Column, N.A.",
+   "claim": "On 2026-10-14 Mercury let customers link multiple Mercury accounts for direct transfers, with scheduled auto-transfers and recurring transfers to external bank accounts.",
    "asserted_by": [
+    "A",
     "B",
     "C",
-    "D"
+    "D",
+    "E",
+    "F"
    ],
+   "variants": {
+    "B": "On 2026-10-14 Mercury let customers connect multiple Mercury accounts for direct transfers and schedule recurring transfers to external bank accounts.",
+    "E": "Mercury released a feature on 2026-10-14 ('All your accounts, connected') enabling linking of multiple Mercury accounts for direct transfers and scheduled auto-transfers.",
+    "D": "Mercury added linked-account transfers and recurring external payments on 2026-10-14: customers can connect Mercury accounts, automate transfers between them, and schedule recurring payments to external accounts.",
+    "A": "Mercury released a feature on 2026-10-14 letting customers link multiple Mercury accounts for quick transfers, set automatic transfer rules and schedule recurring sends to outside bank accounts."
+   },
+   "urls": [
+    "https://mercury.com/releases"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "On 2026-10-15 Mercury released actions in ChatGPT and Claude: users can ask them to move money, pay recipients or categorize transactions, with approval required.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "On 2026-10-15 Mercury released actions in ChatGPT and Claude, letting users ask them to move money, pay recipients, or categorize transactions, with approval required before money moves.",
+    "E": "Mercury released the ability on 2026-10-15 to take action on a Mercury account from ChatGPT and Claude, allowing customers to initiate money movements, pay recipients and categorize transactions, with approval required.",
+    "A": "Mercury announced on 2026-10-15 that customers can connect Mercury to ChatGPT or Claude to move money, pay recipients or categorize transactions, with each action requiring the user's approval."
+   },
+   "urls": [
+    "https://mercury.com/releases"
+   ],
+   "conflicts_with": [
+    "c11"
+   ],
+   "merged_from": [
+    "c8",
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "On 2026-10-14 Mercury added account actions to ChatGPT and Claude, with user approval required before anything moves.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2026-10-14, Mercury added account actions to ChatGPT and Claude, letting users ask them to move money, pay recipients, or categorize transactions using Mercury account data, with user approval required before anything moves."
+   },
+   "urls": [
+    "https://mercury.com/releases"
+   ],
+   "conflicts_with": [
+    "c8",
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "On 2026-10-19 Mercury let applicants apply with a completed Form SS-4 while their EIN is pending, providing the EIN within 90 days of approval.",
+   "asserted_by": [
+    "B",
+    "A"
+   ],
+   "variants": {
+    "B": "On 2026-10-19 Mercury opened applications with a pending EIN: applicants can use a completed Form SS-4 and provide the EIN within 90 days of approval.",
+    "A": "Mercury announced on 2026-10-19 that businesses can apply for an account with a completed Form SS-4 while their EIN is pending, then have 90 days after approval to provide it."
+   },
+   "urls": [
+    "https://mercury.com/releases"
+   ],
+   "conflicts_with": [
+    "c13"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "On 2026-10-15 Mercury began allowing applicants to apply with a completed Form SS-4 while their EIN is pending, use an approved account, and provide the EIN within 90 days of approval.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2026-10-15, Mercury began allowing account applicants to apply using a completed Form SS-4 while their EIN is pending, begin using an approved account, and provide the EIN within 90 days of approval."
+   },
+   "urls": [
+    "https://mercury.com/releases"
+   ],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "On 2026-10-19 CEO Immad Akhund said in a Newcomer interview that Mercury reached $1B annualized run-rate revenue, growing about 50% year over year, with more than 450,000 customers (secondary coverage).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2026-10-19, CEO Immad Akhund said in a Newcomer interview that Mercury reached $1B in annualized run-rate revenue, growing about 50% year over year, with more than 450,000 customers (secondary coverage, not a Mercury announcement)."
+   },
+   "urls": [
+    "https://valueaddvc.com/pulse/mercury-1-billion-annualized-revenue-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "On 2026-10-20 Mercury launched Mercury Payroll with employee and contractor payroll (W-2 and 1099), benefits, retirement plans and payroll compliance support.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Mercury launched Mercury Payroll on 2026-10-20, offering integrated employee and contractor payroll, benefits, retirement plans and payroll tax/compliance administration.",
+    "D": "Mercury launched Payroll on 2026-10-20, with employee and contractor payments, benefits, retirement plans, and payroll compliance support.",
+    "A": "Mercury launched Mercury Payroll on 2026-10-20 for W-2 and 1099 workers, with health benefits, 401(k) and compliance support, in all 50 states."
+   },
+   "urls": [
+    "https://businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll",
+    "https://mercury.com/blog/introducing-mercury-payroll"
+   ],
+   "conflicts_with": [
+    "c18"
+   ],
+   "merged_from": [
+    "c15",
+    "c16",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "On 2026-10-19 Mercury launched Mercury Payroll (W-2 and 1099 contractor payroll, health benefits, 401(k), compliance support in all 50 states).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2026-10-19, Mercury launched Mercury Payroll, offering W-2 and 1099 contractor payroll, health benefits, 401(k), and payroll compliance support for tax filings, registrations, and related paperwork in all 50 states."
+   },
+   "urls": [
+    "https://mercury.com/blog/introducing-mercury-payroll"
+   ],
+   "conflicts_with": [
+    "c15",
+    "c16",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "On 2026-10-20 Mercury released a redesigned Mercury Treasury recommending portfolios around monthly expenses with U.S. Treasury ladders, rebalancing, for customers with $250K+.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2026-10-20, Mercury released a redesigned Mercury Treasury that recommends portfolios around monthly expenses, adds U.S. Treasury ladders, and rebalances as the business spends and ladder rungs mature; it is available to eligible customers with $250K+ across Mercury accounts."
+   },
+   "urls": [
+    "https://mercury.com/releases"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "On 2026-11-04 Mercury launched a redesigned Mercury Treasury built around monthly business expenses, with personalized portfolios, U.S. Treasury ladders and rebalancing; requires $250K+ across Mercury accounts.",
+   "asserted_by": [
+    "C",
+    "B",
+    "E",
+    "D",
+    "A"
+   ],
+   "variants": {
+    "C": "On 2026-11-04, Mercury launched a redesigned Mercury Treasury that recommends a portfolio built around a business's monthly expenses with U.S. Treasury ladders for longer-term cash, auto-rebalancing as rungs mature, available to customers with $250K+ across Mercury accounts.",
+    "B": "On 2026-11-04 Mercury introduced a reinvented Mercury Treasury experience built around monthly business outflows, including personalized portfolios and U.S. Treasury bond ladders, requiring at least $250,000 across Mercury accounts.",
+    "E": "Mercury reinvented its Treasury product on 2026-11-04, redesigning it around business spending, combining personalized investment recommendations with U.S. Treasury bond ladders and adapting portfolios.",
+    "D": "Mercury redesigned Treasury on 2026-11-04, adding expense-based portfolio recommendations, U.S. Treasury ladders, and portfolio rebalancing.",
+    "A": "Mercury released a redesigned Treasury on 2026-11-04 that builds a portfolio based on monthly expenses and offers U.S. Treasury ladders, with accounts needing $250K+ in balances to qualify."
+   },
+   "urls": [
+    "https://mercury.com/blog/how-we-reinvented-mercury-treasury"
+   ],
+   "conflicts_with": [
+    "c19"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "On 2026-11-04 Mercury introduced a 30-day free trial of Mercury Plus for eligible customers not previously on a paid plan, renewing at $35/month.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "On 2026-11-04, Mercury introduced a 30-day free trial of Mercury Plus for eligible customers who have not previously subscribed to a paid plan, unlocking recurring invoices, ACH debit ($1/transaction), unlimited 1099 tax filings, and priority support; it renews at $35/month after the trial."
+   },
    "urls": [
     "https://mercury.com/releases"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c6",
-   "claim": "On 2026-09-28, Mercury enabled wire drawdowns so payroll providers such as Sequoia and Gusto can withdraw funds directly from eligible Mercury accounts (Column, N.A. and Choice Financial Group).",
+   "cid": "c22",
+   "claim": "On 2026-11-05 Mercury launched Agent Controls for connected AI agents, including permissions, approvals, spending limits, activity tracking, and disconnecting agents.",
    "asserted_by": [
+    "A",
+    "B",
     "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "On 2026-11-05 Mercury launched Mercury Agent Controls for connected AI agents, including permissions, approvals, spending limits, activity tracking, and the ability to disconnect agents.",
+    "E": "Mercury launched Agent Controls on 2026-11-05, introducing permissions, approvals, spending limits and activity tracking for connected AI agents, with the ability to disconnect agents."
+   },
+   "urls": [
+    "https://mercury.com/blog/introducing-mercury-agent-controls",
+    "https://mercury.com/releases"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23",
+    "c24",
+    "c25"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "On 2026-11-10 Mercury Command added external credit-card spending analysis: personal customers can connect external credit cards and ask Command for spending analysis and visualizations.",
+   "asserted_by": [
+    "A",
     "D"
    ],
+   "variants": {
+    "D": "Mercury's Command added external credit-card spending analysis on 2026-11-10: personal customers can connect external credit cards and ask Command for spending analysis and visualizations."
+   },
    "urls": [
     "https://mercury.com/releases"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c26",
+    "c27"
+   ]
   }
  ],
- "claims": {
-  "nimble": [
-   {
-    "claim": "Mercury launched Mercury Payroll on Oct 20, 2026, letting founders run W-2 and 1099 payroll, benefits, and tax compliance from their Mercury account with AI assistance via Mercury Command; it is free through Dec 31, 2026, then $100/month plus $50/month per person paid starting Jan 1, 2027.",
-    "url": "https://www.businesswire.com/news/home/20261020220473/en/"
-   },
-   {
-    "claim": "On Oct 15, 2026, Mercury enabled ChatGPT and Claude to move money, pay recipients, and categorize transactions on a Mercury account via MCP, with every action requiring user approval.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "As of Oct 14, 2026, Mercury added faster priority support for customers on its paid Plus and Pro subscription plans, while all customers retain 24/7 support.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On Oct 14, 2026, Mercury released the ability to link multiple Mercury accounts to move money between them, with instant transfers between accounts on the same partner bank, auto-transfer rules, and recurring external transfers.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On Sep 29, 2026, Mercury added real-time payments to its API (paymentMethod: realTimePayment), delivering funds in seconds 24/7/365 on Business and Personal accounts provided through Column, N.A.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On Sep 28, 2026, Mercury enabled wire drawdowns from accounts provided through both Column, N.A. and Choice Financial Group, so payroll providers like Sequoia and Gusto can withdraw funds directly.",
-    "url": "https://mercury.com/releases"
-   }
-  ],
-  "exa": [
-   {
-    "claim": "On 2026-09-28, Mercury added wire drawdowns that let payroll providers such as Sequoia and Gusto withdraw funds directly from eligible Mercury accounts.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-09-29, the Mercury API added real-time payments via the realTimePayment payment method, with funds arriving in seconds around the clock for eligible Business and Personal accounts.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-10-14, Mercury let customers connect multiple Mercury accounts, move money between eligible accounts, create auto-transfer rules, and schedule recurring external transfers.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-10-14, Mercury made faster priority support available to Plus and Pro customers while retaining 24/7 support for all customers.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-10-15, Mercury enabled customers to ask ChatGPT or Claude to move money, pay recipients, or categorize transactions, with approval required before actions execute.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-10-20, Mercury launched Mercury Payroll for W-2 employees and 1099 contractors, with benefits, 401(k) options, tax and compliance handling, and coverage in all 50 states.",
-    "url": "https://mercury.com/blog/introducing-mercury-payroll"
-   }
-  ],
-  "parallel": [
-   {
-    "claim": "Mercury launched AI-native Payroll on 2026-10-20, offering payroll, benefits and tax-compliance tools for eligible U.S. customers; pricing is $0 through 2026-12-31, then $100/month plus $50 per person paid that month from 2027-01-01.",
-    "url": "https://www.businesswire.com/news/home/20261020220473/en/Mercury-Launches-AI-Native-Payroll"
-   },
-   {
-    "claim": "On 2026-10-15, Mercury released a feature letting customers ask ChatGPT or Claude to move money, pay recipients and categorize transactions on Mercury accounts, with approval required before money moves.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-10-14, Mercury added priority support for Plus and Pro subscribers, while all customers retain round-the-clock support.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-10-14, Mercury released linked accounts features: customers can connect multiple Mercury accounts, transfer directly between them, automate linked-account transfers and schedule recurring payments to external bank accounts.",
-    "url": "https://mercury.com/releases"
-   },
-   {
-    "claim": "On 2026-09-29, the Mercury API added real-time payments arriving in seconds, including nights, weekends and holidays, for Mercury Business and Personal accounts provided through Column, N.A.",
-    "url": "https://mercury.com/releases"
-   }
-  ],
-  "firecrawl": [
-   {
-    "claim": "On 2026-10-20, Mercury launched Mercury Payroll for W-2 employees and 1099 contractors, including benefits, 401(k), tax filings, registrations, and compliance support in all 50 states; it is free for eligible customers through 2026, then priced at $100/month plus $50 per person paid per month starting in 2027.",
-    "url": "https://mercury.com/blog/introducing-mercury-payroll"
-   }
-  ]
- },
  "verified": {
-  "c1": {
-   "cid": "c1",
-   "verdict": "true",
-   "in_scope": true,
-   "signal": "buying",
-   "source": "https://mercury.com/blog/introducing-mercury-payroll",
-   "note": "Mercury's blog post dated 2026-10-20 says Payroll launches today. It is free through the end of 2026, then $100/month plus $50 per person paid. The BusinessWire page returned 403, so I did not check the AI-native/Mercury Command detail."
-  },
   "c2": {
    "cid": "c2",
    "verdict": "true",
    "in_scope": true,
    "signal": "minor",
    "source": "https://mercury.com/releases",
-   "note": "The release notes dated 2026-10-15 describe a ChatGPT and Claude integration to move money, pay recipients and categorize transactions. Nothing moves until the user approves. The notes don't mention MCP."
+   "note": "Release notes dated Sep 28, 2026 confirm wire drawdowns for payroll providers on Column and Choice accounts.",
+   "via": "passages"
   },
   "c3": {
    "cid": "c3",
    "verdict": "true",
    "in_scope": true,
    "signal": "minor",
-   "source": "https://mercury.com/releases",
-   "note": "The release notes dated 2026-10-14 say Plus and Pro customers get faster support and all customers keep 24/7 support."
+   "source": "https://mercury.com/releases?page=1",
+   "note": "Release notes dated Sep 29, 2026 confirm real-time payments via the Mercury API for Column-provided accounts.",
+   "via": "passages"
   },
   "c4": {
    "cid": "c4",
@@ -204,7 +433,8 @@
    "in_scope": true,
    "signal": "minor",
    "source": "https://mercury.com/releases",
-   "note": "The release notes dated 2026-10-14 describe linked accounts, with transfers in seconds on the same partner bank, auto-transfer rules and recurring external transfers."
+   "note": "Oct 14, 2026 release note confirms Priority Support for Plus and Pro customers, with 24/7 support still available to all.",
+   "via": "passages"
   },
   "c5": {
    "cid": "c5",
@@ -212,65 +442,254 @@
    "in_scope": true,
    "signal": "minor",
    "source": "https://mercury.com/releases",
-   "note": "The release notes dated 2026-09-29 describe real-time payments through the API, with funds arriving in seconds on Business and Personal accounts through Column, N.A. The notes don't say 24/7/365 explicitly, but they say funds arrive any time."
+   "note": "Oct 14, 2026 'All your accounts, connected' release confirms linked accounts, auto-transfers and recurring external transfers.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "D": "true",
+    "A": "true",
+    "C": "true",
+    "F": "true"
+   }
   },
-  "c6": {
-   "cid": "c6",
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://mercury.com/releases",
+   "note": "Oct 15, 2026 release confirms ChatGPT and Claude actions, with approval required before anything moves.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "A": "true",
+    "C": "true",
+    "D": "true"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "false",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://mercury.com/releases",
+   "note": "The ChatGPT and Claude actions release is dated Oct 15, 2026, not Oct 14, so the claimed date is wrong.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://mercury.com/releases?page=1",
+   "note": "Oct 19, 2026 release confirms applying with Form SS-4 while the EIN is pending, with 90 days after approval to provide it.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "false",
+   "in_scope": true,
+   "signal": "minor",
+   "source": "https://mercury.com/releases?page=1",
+   "note": "The pending-EIN release is dated Oct 19, 2026, not Oct 15, so the claimed date is wrong.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://valueaddvc.com/pulse/mercury-1-billion-annualized-revenue-2026",
+   "note": "Article dated Oct 19, 2026 reports the Newcomer interview with $1B annualized revenue, ~50% growth and 450K+ customers.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://mercury.com/releases",
+   "note": "Oct 20, 2026 release and press release confirm the Mercury Payroll launch with W-2 and 1099 payroll, benefits, 401(k) and compliance support.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "A": "true",
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "false",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://mercury.com/releases",
+   "note": "Payroll launched Oct 20, 2026 per release notes; Oct 19 was the pending-EIN release, so the date is wrong.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "false",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://mercury.com/releases?page=1",
+   "note": "Redesigned Treasury released Nov 4, 2026, not Oct 20; the Oct 20 entry is Payroll.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://mercury.com/releases?page=1",
+   "note": "Release notes and blog dated Nov 4, 2026 confirm the redesigned Treasury with ladders, rebalancing, $250K+ requirement.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://mercury.com/releases?page=1",
+   "note": "Release dated Nov 5, 2026 confirms Agent Controls with permissions, approvals, activity record and disconnect; blog mentions spending limits.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "F": "true",
+    "D": "true",
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://www.linkedin.com/posts/tayloramurphy_excited-to-share-ive-joined-mercury-to-lead-activity-7510416435333095424-bttQ",
+   "note": "The LinkedIn post says he joined Mercury to lead. Its activity ID decodes to about 2026-09-28, which is after the since-date. I could not read the exact title text, so the data engineering and platform scope comes from the claim.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "agent"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "signal": "buying",
+   "source": "https://pricingsaas.com/news/article/mercury-added-a-free-trial-to-plus-plan-signups",
+   "note": "PricingSaaS detected the Plus signup button change to 'Start 30-day free trial' on Nov 5 2026, with billing starting after the trial. $35/month is the commonly listed Plus price. The eligibility and feature details were not confirmed.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "agent"
+  },
+  "c26": {
+   "cid": "c26",
    "verdict": "true",
    "in_scope": true,
    "signal": "minor",
    "source": "https://mercury.com/releases",
-   "note": "Mercury's release notes have a September 28, 2026 entry, 'Authorize wire drawdowns for payroll'. It names Sequoia and Gusto and covers accounts through Column, N.A. and Choice Financial Group. The date is after 2026-09-21. I rated it a routine feature release, so the signal is minor."
+   "note": "The live releases page has a Nov 10 2026 Personal entry, 'See more of your spending in one place'. It lets users add credit cards from other banks and ask Command about spending across them.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true"
+   },
+   "via": "agent"
   }
  },
  "audit": {
   "c6": {
    "cid": "c6",
    "verdict": "true",
-   "note": "Mercury's releases page has a Sep 28, 2026 entry, 'Authorize wire drawdowns for payroll'. It says users can set up wire drawdowns from Mercury accounts held through Column, N.A. and Choice Financial Group. Payroll providers such as Sequoia and Gusto can then be authorized to withdraw funds directly. Sep 28 is after the Sep 21 since-date."
+   "note": "Mercury's releases page has an Oct 14, 2026 entry, 'All your accounts, connected'. It covers linked Mercury accounts, transfers on the same partner bank that land in seconds, scheduled auto-transfer rules and recurring transfers to outside banks. The date is after 2026-09-21."
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "note": "The redesign is real: the releases page has a 'Treasury, reinvented' entry covering expense-based portfolios, U.S. Treasury ladders, rebalancing and $250K+ eligibility. But it is dated Nov 4, 2026, not Oct 20; the Oct 20 entry is Mercury Payroll. I marked it true because the rule only requires a dat"
   }
  },
  "scores": {
-  "firecrawl": {
-   "units": 1,
+  "opus": {
+   "units": 11,
    "unverifiable": 0,
-   "true": 1,
+   "true": 11,
    "wrong": 0,
-   "truth": 6,
-   "coverage": 0.286,
+   "truth": 13,
+   "truth_weight": 24.0,
+   "coverage": 0.75,
    "accuracy": 1.0,
-   "combined": 0.333
-  },
-  "parallel": {
-   "units": 5,
-   "unverifiable": 0,
-   "true": 5,
-   "wrong": 0,
-   "truth": 6,
-   "coverage": 0.857,
-   "accuracy": 1.0,
-   "combined": 0.882
-  },
-  "nimble": {
-   "units": 6,
-   "unverifiable": 0,
-   "true": 6,
-   "wrong": 0,
-   "truth": 6,
-   "coverage": 1.0,
-   "accuracy": 1.0,
-   "combined": 1.0
+   "combined": 0.789,
+   "metric": "F2"
   },
   "exa": {
-   "units": 6,
+   "units": 10,
    "unverifiable": 0,
-   "true": 6,
+   "true": 10,
    "wrong": 0,
-   "truth": 6,
-   "coverage": 1.0,
+   "truth": 13,
+   "truth_weight": 24.0,
+   "coverage": 0.729,
    "accuracy": 1.0,
-   "combined": 1.0
+   "combined": 0.771,
+   "metric": "F2"
+  },
+  "nimble": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.0,
+   "coverage": 0.708,
+   "accuracy": 1.0,
+   "combined": 0.752,
+   "metric": "F2"
+  },
+  "gpt": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.0,
+   "coverage": 0.562,
+   "accuracy": 1.0,
+   "combined": 0.616,
+   "metric": "F2"
+  },
+  "parallel": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.0,
+   "coverage": 0.562,
+   "accuracy": 1.0,
+   "combined": 0.616,
+   "metric": "F2"
+  },
+  "firecrawl": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 4,
+   "truth": 13,
+   "truth_weight": 24.0,
+   "coverage": 0.208,
+   "accuracy": 0.345,
+   "combined": 0.226,
+   "metric": "F2"
   }
- },
- "judge_cost_usd": 0.061
+ }
 }

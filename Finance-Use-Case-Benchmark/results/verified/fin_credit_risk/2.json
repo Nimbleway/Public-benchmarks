@@ -3,441 +3,649 @@
  "input_n": 2,
  "task": "Assess the credit and counterparty risk of Beyond Meat",
  "labels": {
-  "exa": "A",
-  "nimble": "B",
-  "firecrawl": "C"
+  "nimble": "A",
+  "firecrawl": "B",
+  "exa": "C",
+  "opus": "D",
+  "parallel": "E",
+  "gpt": "F"
  },
  "unit": "credit fact",
+ "evidence_pages": 41,
+ "evidence_fetched": 41,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 2,
+ "decided_from_passages": 105,
+ "judge": "v4b",
+ "judge_cost_usd": 1.85,
+ "corrections_v2": {
+  "units_before": 107,
+  "units_after": 91,
+  "dedup_groups": [
+   {
+    "kept": "c2",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c4",
+    "merged": [
+     "c47",
+     "c48",
+     "c49"
+    ]
+   },
+   {
+    "kept": "c6",
+    "merged": [
+     "c8"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c12"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c14"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16"
+    ]
+   },
+   {
+    "kept": "c24",
+    "merged": [
+     "c25"
+    ]
+   },
+   {
+    "kept": "c57",
+    "merged": [
+     "c58"
+    ]
+   },
+   {
+    "kept": "c60",
+    "merged": [
+     "c61"
+    ]
+   },
+   {
+    "kept": "c74",
+    "merged": [
+     "c76"
+    ]
+   },
+   {
+    "kept": "c77",
+    "merged": [
+     "c78"
+    ]
+   },
+   {
+    "kept": "c81",
+    "merged": [
+     "c85",
+     "c86"
+    ]
+   },
+   {
+    "kept": "c88",
+    "merged": [
+     "c89"
+    ]
+   }
+  ],
+  "cost": 0.042
+ },
  "merged": [
   {
    "cid": "c1",
-   "claim": "Beyond Meat, Inc. is a public company (Nasdaq: BYND) with no PE or single controlling sponsor and no verified change of control. The 2025 debt exchange heavily diluted existing shareholders.",
+   "claim": "Beyond Meat common stock is publicly listed on Nasdaq under BYND.",
    "asserted_by": [
-    "A",
-    "B",
-    "C"
+    "E",
+    "F"
    ],
+   "variants": {
+    "E": "Beyond Meat, Inc. is publicly traded on Nasdaq under ticker BYND (as of 2026-11-04).",
+    "F": "Beyond Meat, Inc. is a publicly listed company on Nasdaq under ticker BYND (as of 2026-10-01)."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://wallstreetzen.com/stocks/us/nasdaq/bynd/ownership",
-    "https://investors.beyondmeat.com/node/14626/html"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c2",
-   "claim": "Largest holders per WallStreetZen (2026): Kleiner Perkins Caufield & Byers XIV LLC 28.61%, Seth Goldman 10.60%, CEO Ethan Brown 5.10%.",
+   "claim": "Founder Ethan Brown is President & CEO; no controlling or PE sponsor found.",
    "asserted_by": [
-    "B"
+    "A",
+    "B",
+    "D"
    ],
+   "variants": {
+    "A": "Public company with founder Ethan Brown as President & CEO and no controlling sponsor.",
+    "D": "Publicly traded on Nasdaq (BYND), led by CEO Ethan Brown, with no PE sponsor or change of control found."
+   },
    "urls": [
-    "https://wallstreetzen.com/stocks/us/nasdaq/bynd/ownership"
+    "https://investors.beyondmeat.com/board-member-management/ethan-brown",
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c3",
-   "claim": "Millennium Management LLC, Millennium Group Management LLC and Israel A. Englander reported beneficial ownership of 957,442 shares (5.2%) under Schedule 13G as of 2026-09-21, not filed to influence control.",
-   "asserted_by": [
-    "C"
-   ],
-   "urls": [
-    "https://investors.beyondmeat.com/node/14626/html"
-   ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c2",
+    "c3"
+   ]
   },
   {
    "cid": "c4",
-   "claim": "FY2025 net revenues were $275.5M, down 15.6% YoY.",
+   "claim": "The October 2025 debt exchange issued 317,834,446 shares to creditors, materially diluting existing shareholders.",
    "asserted_by": [
-    "B"
+    "C",
+    "E",
+    "F"
    ],
+   "variants": {
+    "C": "The October 2025 debt exchange issued 317,834,446 shares to participating creditors, materially diluting existing shareholders."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000119312526150414/d138891dars.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c47",
+    "c48",
+    "c49"
+   ]
   },
   {
    "cid": "c5",
-   "claim": "FY2025 loss from operations was $333.6M (operating margin -121.1%).",
+   "claim": "Shareholder dilution: Q3 weighted shares rose from 2.56M to 19.15M YoY after the October 2025 exchange.",
    "asserted_by": [
-    "B"
+    "A"
    ],
+   "variants": {
+    "A": "Shareholder base heavily diluted by the October 2025 debt-for-equity exchange (Q3 weighted shares rose from 2.56M to 19.15M YoY)."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c6",
-   "claim": "FY2025 Adjusted EBITDA was -$179.3M (-65.1% of net revenues).",
+   "claim": "Q3 2026 (quarter ended 2026-09-26) revenue was $64.529M.",
    "asserted_by": [
-    "B"
+    "B",
+    "D",
+    "E",
+    "F"
    ],
+   "variants": {
+    "B": "Total net revenues were $64.529 million for the three months ended 2026-09-26 (company-reported, unaudited).",
+    "E": "Reported total net revenue of $64.529 million for the three months ended 2026-09-26.",
+    "F": "Reported revenue of USD 64,529,000 for the three months ended 2026-09-26 (released 2026-11-04, unaudited)."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c8"
+   ]
   },
   {
    "cid": "c7",
-   "claim": "Cash and cash equivalents including restricted cash were $217.5M as of 2025-12-31.",
+   "claim": "Q3 2026 revenue declined 8.1% YoY.",
    "asserted_by": [
-    "B"
+    "A",
+    "B",
+    "C",
+    "F"
    ],
+   "variants": {
+    "A": "Total net revenues were $64.5M in Q3 2026, down 8.1% YoY.",
+    "B": "Third-quarter 2026 revenue fell 8.1% year over year to $64.529 million.",
+    "C": "Revenue for the three months ended 2026-09-26 was $64.529 million (unaudited), down 8.1% year over year.",
+    "F": "Revenue for the quarter ended 2026-09-26 declined 8.1% year over year."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c8",
-   "claim": "Total debt carrying value (net of discount; 2027 Notes, 2030 PIK notes, DDTL) was $415.7M as of 2025-12-31.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c9",
-   "claim": "Net cash used in operating activities in FY2025 was $144.9M.",
+   "claim": "Q3 2026 volume fell 10.9% YoY.",
    "asserted_by": [
     "B"
    ],
+   "variants": {
+    "B": "Third-quarter 2026 volume fell 10.9% year over year."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c10",
-   "claim": "FY2025 net income of $219.0M included a $548.7M non-cash gain on debt restructuring; about $17.6M of debt issuance costs were expensed.",
+   "claim": "Q4 2026 revenue guidance is approximately $54–59M.",
    "asserted_by": [
-    "B"
+    "B",
+    "D"
    ],
+   "variants": {
+    "B": "Guided fourth-quarter 2026 revenue to approximately $54–59 million.",
+    "D": "Guided Q4 2026 net revenue to a range of about $54M to $59M."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c11",
-   "claim": "Q1 2026 net revenues were $58.2M, down 15.3% YoY.",
+   "claim": "Nine-month 2026 revenue was $191.567M.",
    "asserted_by": [
-    "B"
+    "C",
+    "D"
    ],
+   "variants": {
+    "C": "Revenue for the nine months ended 2026-09-26 was $191.567 million (unaudited)."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results/",
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c12",
-   "claim": "Q1 2026 loss from operations was $41.1M.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results"
-   ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12"
+   ]
   },
   {
    "cid": "c13",
-   "claim": "Q1 2026 net loss was $28.5M.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c14",
-   "claim": "Cash, cash equivalents and restricted cash were $205.8M as of 2026-03-28.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c15",
-   "claim": "Total debt was $411.6M as of 2026-03-28 (Q1 2026 10-Q).",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c16",
-   "claim": "Stockholders' deficit was $21.1M as of 2026-03-28.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c17",
-   "claim": "Q2 2026 (quarter ended 2026-06-27) net revenue was $68.832M, down 8.2% YoY.",
+   "claim": "Q3 2026 loss from operations was about $92.96M (~$93.0M).",
    "asserted_by": [
     "A",
     "B",
-    "C"
+    "C",
+    "D",
+    "E",
+    "F"
    ],
+   "variants": {
+    "A": "Loss from operations was $93.0M in Q3 2026 (operating margin -144.1%), including $57.1M impairments and $20.8M Campus HQ charges.",
+    "B": "Loss from operations of $92.96 million for the three months ended 2026-09-26 (company-reported, unaudited).",
+    "C": "Operating loss was $92.960 million (unaudited), including $57.1 million non-cash impairments and $20.8 million accelerated rent expense.",
+    "E": "Operating loss of $92.96 million for the three months ended 2026-09-26.",
+    "F": "Operating income of USD -92,960,000 for the three months ended 2026-09-26."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Q3 2026 Adjusted EBITDA was about -$24.6M (-$24.556M).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Adjusted EBITDA loss was $24.6M in Q3 2026 (-38.1% of revenues).",
+    "B": "Adjusted EBITDA loss of $24.556 million for the three months ended 2026-09-26 (non-GAAP, unaudited).",
+    "C": "Adjusted EBITDA (non-GAAP) was negative $24.556 million (unaudited).",
+    "E": "Adjusted EBITDA (non-GAAP) of -$24.556 million.",
+    "F": "Adjusted EBITDA (non-GAAP) of USD -24,556,000."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Q3 2026 net loss was $82.8M.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Q3 2026 net loss of $82.8M."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c18",
-   "claim": "Q2 2026 operating loss was $30.806M.",
+   "claim": "Q3 2026 included a $57.1M non-cash impairment of long-lived assets.",
    "asserted_by": [
-    "A",
     "B",
-    "C"
+    "E",
+    "F",
+    "D"
    ],
+   "variants": {
+    "B": "Quarter ended 2026-09-26 included $57.097 million of non-cash long-lived-asset impairment charges.",
+    "E": "Recorded a $57.1 million non-cash impairment charge on long-lived assets in Q3 2026.",
+    "F": "Operating results for the quarter included USD 57.1 million of noncash long-lived-asset impairments.",
+    "D": "Recorded a $57.1M non-cash impairment in Q3 2026."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c19",
-   "claim": "Q2 2026 net income was $16.4M, driven primarily by a $57.7M non-cash gain on debt extinguishment from 2030 Notes conversions rather than profitable operations.",
+   "claim": "Q3 2026 included about $20.8M of accelerated rent expense from partial termination of the Campus/El Segundo HQ lease.",
    "asserted_by": [
-    "A",
-    "B"
+    "B",
+    "E",
+    "D"
    ],
+   "variants": {
+    "B": "Included $20.832 million of non-cash accelerated rent expense tied to a partial Campus Headquarters lease termination.",
+    "E": "Recorded $20.8 million of non-cash accelerated rent expense in Q3 2026 from partially terminating the Campus Headquarters lease.",
+    "D": "Recorded $20.8M of accelerated rent from a partial termination of the El Segundo headquarters lease in Q3 2026."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c20",
-   "claim": "Q2 2026 Adjusted EBITDA (non-GAAP) was approximately -$27.7M (-40.2% of net revenues).",
+   "claim": "Cash and cash equivalents excluding restricted cash were $154.6M as of 2026-09-26.",
    "asserted_by": [
-    "A",
     "B",
-    "C"
+    "C",
+    "E",
+    "F",
+    "D"
    ],
+   "variants": {
+    "B": "$154.623 million as of 2026-09-26 (company-reported, unaudited).",
+    "C": "Cash and cash equivalents, excluding restricted cash, were $154.623 million.",
+    "E": "Cash and cash equivalents, excluding restricted cash, of $154.623 million.",
+    "F": "USD 154,623,000 excluding restricted cash.",
+    "D": "Cash and cash equivalents of $154.6M as of 2026-09-26."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c21",
-   "claim": "H1 2026 gain on debt extinguishment was $63.8M.",
+   "claim": "Cash, cash equivalents and restricted cash were $169.3M as of 2026-09-26.",
    "asserted_by": [
-    "B"
+    "A",
+    "B",
+    "C",
+    "E",
+    "D"
    ],
+   "variants": {
+    "A": "$169.3M of cash and cash equivalents including restricted cash.",
+    "B": "$169.3 million including restricted cash (company-reported, unaudited).",
+    "C": "$169.262 million.",
+    "E": "$169.262 million.",
+    "D": "$169.3M."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c22",
-   "claim": "Unrestricted cash and cash equivalents were $171.369M as of 2026-06-27.",
+   "claim": "Total debt carrying value net of discount was ~$313.9M as of 2026-09-26.",
    "asserted_by": [
     "A",
-    "C"
+    "B",
+    "C",
+    "E",
+    "F"
    ],
+   "variants": {
+    "A": "Total outstanding carrying value of debt, net of debt discount, was $313.9M (including undiscounted future cash flows of the 2030 notes).",
+    "B": "$313.9 million (company-reported, unaudited).",
+    "C": "Approximately $313.9 million (rounded; includes undiscounted future cash flows of remaining 2030 notes, excludes leases).",
+    "E": "Approximately $313.9 million (rounded; not principal face value).",
+    "F": "Approximately USD 313.9 million (net of discount, excluding leases)."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c23",
-   "claim": "Current restricted cash was $5.516M as of 2026-06-27.",
+   "claim": "Debt of $313.9M comprised 2027 Notes $14.5M (current), 2030 Notes $209.6M, delayed draw term loans $89.8M.",
    "asserted_by": [
-    "A"
+    "D"
    ],
+   "variants": {
+    "D": "Total debt of $313.9M: 2027 Notes $14.5M (current), 2030 Notes $209.6M, delayed draw term loans $89.8M."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c24",
-   "claim": "Non-current restricted cash was $9.25M as of 2026-06-27.",
-   "asserted_by": [
-    "A"
-   ],
-   "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c25",
-   "claim": "Cash and cash equivalents including restricted cash were $186.1M as of 2026-06-27.",
-   "asserted_by": [
-    "B",
-    "C"
-   ],
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c26",
-   "claim": "Total debt outstanding was $323.8M carrying value (net of discounts and issuance costs, excluding leases; 2030 PIK notes, 2027 Notes, DDTL) as of 2026-06-27.",
+   "claim": "Net cash used in operating activities was $37.3M ($37.258M) in the nine months ended 2026-09-26.",
    "asserted_by": [
     "A",
     "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "$37.258 million (company-reported, unaudited).",
+    "C": "$37.258 million.",
+    "E": "Used $37.258 million.",
+    "F": "USD -37,258,000."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c24",
+    "c25"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "Total current liabilities were $85.625M as of 2026-09-26.",
+   "asserted_by": [
     "C"
    ],
+   "variants": {
+    "C": "Total current liabilities were $85.625 million as of 2026-09-26."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results/"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c27",
-   "claim": "$29.459M of 0% 2027 convertible notes remained outstanding as of 2026-06-27, maturing 2027-03-15.",
+   "claim": "Total stockholders' deficit was $6.6M as of 2026-09-26.",
    "asserted_by": [
-    "A"
+    "D"
    ],
+   "variants": {
+    "D": "Total stockholders' deficit of $6.6M as of 2026-09-26."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c28",
-   "claim": "The delayed-draw term loan was fully drawn as of 2026-06-27, with $0 remaining availability.",
+   "claim": "FY2025 net revenues were $275.5M, down 15.6% YoY.",
    "asserted_by": [
-    "A",
-    "C"
+    "A"
    ],
+   "variants": {
+    "A": "Net revenues were $275.5M in FY2025, down 15.6% YoY."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c29",
-   "claim": "The delayed-draw term loan had $110.9M outstanding including accrued PIK interest as of 2026-06-27.",
+   "claim": "FY2025 loss from operations was $332.7M (-120.8% margin).",
    "asserted_by": [
-    "C"
+    "A"
    ],
+   "variants": {
+    "A": "Loss from operations was $332.7M in FY2025 (operating margin -120.8%)."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c30",
-   "claim": "Loan and Security Agreement of 2025-05-07 with Unprocessed Foods, LLC (Ahimsa DDTL) for up to $100.0M; $40.0M drawn 2025-06-26 and $60.0M on 2025-09-18 ($100.0M drawn in FY2025).",
+   "claim": "FY2025 Adjusted EBITDA loss was $178.4M (-64.8% of net revenues).",
    "asserted_by": [
-    "B",
-    "C"
+    "A"
    ],
+   "variants": {
+    "A": "Adjusted EBITDA loss was $178.4M in FY2025 (-64.8% of net revenues)."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c31",
-   "claim": "Net cash used in operating activities in H1 2026 was $23.2M (vs $58.0M in H1 2025); management expects to keep operating at a loss for the foreseeable future.",
+   "claim": "FY2025 net cash used in operating activities was $144.9M.",
    "asserted_by": [
-    "A",
-    "B",
-    "C"
+    "A"
    ],
+   "variants": {
+    "A": "Net cash used in operating activities was $144.9M in FY2025."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c32",
-   "claim": "Management stated in the June 27, 2026 10-Q that existing cash plus anticipated operating cash flows should fund operations for the next 12 months, conditional on revenue, cash-flow and cost assumptions.",
+   "claim": "Cash, cash equivalents and restricted cash were $217.5M as of 2025-12-31.",
    "asserted_by": [
     "A",
-    "C"
+    "D"
    ],
+   "variants": {
+    "A": "$217.5M of cash and cash equivalents including restricted cash as of 2025-12-31.",
+    "D": "$217.5M as of 2025-12-31."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c33",
-   "claim": "Debt agreements carry a $15.0M minimum-liquidity covenant, tested quarterly.",
+   "claim": "Total debt carrying value net of discount was $415.7M as of 2025-12-31.",
    "asserted_by": [
-    "A",
-    "C"
+    "A"
    ],
+   "variants": {
+    "A": "Total outstanding carrying value of debt, net of debt discount, was $415.7M as of 2025-12-31."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c34",
-   "claim": "Company reported compliance with covenants of the 2030 Notes and the Loan and Security Agreement as of 2026-06-27.",
+   "claim": "The Loan and Security Agreement/2030 notes carry a $15M minimum liquidity covenant.",
    "asserted_by": [
-    "A",
-    "C"
+    "C",
+    "D"
    ],
+   "variants": {
+    "C": "Subject to a $15 million minimum liquidity covenant under its 2030 notes, tested quarterly (as of 2026-06-27).",
+    "D": "Loan and Security Agreement has a $15M minimum liquidity covenant."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
     "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c35",
-   "claim": "The 2030 second-lien notes mature 2030-10-15 and bear 7% interest (9.5% when paid in kind).",
+   "claim": "Loan agreement caps cash used to repay 2027 Notes at $60M and cash interest on subordinated/unsecured debt at $20M a year.",
    "asserted_by": [
-    "A"
+    "D"
    ],
+   "variants": {
+    "D": "Cash used to repay the 2027 Notes is capped at $60M and cash interest on subordinated and unsecured debt is capped at $20M a year (per FY2025 10-K)."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c36",
-   "claim": "Debt agreements include a $60.0M cap on cash used to repay the 2027 Notes at maturity, subject to stated exceptions.",
+   "claim": "Company reported covenant compliance under term loan and 2030 notes as of 2026-06-27.",
    "asserted_by": [
-    "C"
+    "C",
+    "F"
    ],
+   "variants": {
+    "C": "Reported compliance with both its loan-agreement and 2030-note covenants as of June 27, 2026.",
+    "F": "Reported compliance with covenants under its term loan and 2030 notes, including USD 15 million minimum-liquidity requirements."
+   },
    "urls": [
     "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
@@ -445,1251 +653,2085 @@
   },
   {
    "cid": "c37",
-   "claim": "Oct 2025 exchange offer early settlement (2025-10-13): $1,114,603,000 (96.92%) of 0% Convertible Senior Notes due 2027 exchanged for $196.2M of new 7.00% Convertible Senior Secured Second Lien PIK Toggle Notes due 2030 plus 316,150,176 shares (total new notes $208.7M including $12.5M SteerCo premium); covenants and certain events of default were stripped from the remaining 2027 Notes indenture.",
+   "claim": "Management (Q2 2026 10-Q, 2026-08-06) expects existing cash and anticipated operating cash flows to cover the next twelve months, conditional on its plan.",
    "asserted_by": [
-    "B"
+    "C",
+    "E",
+    "F"
    ],
+   "variants": {
+    "C": "Existing cash and anticipated operating cash flows expected to cover requirements for the next twelve months, conditional on its business plan.",
+    "E": "Expects to fund operations for 12 months, conditional on business plan; not a guaranteed runway.",
+    "F": "Expected to cover the following twelve months, conditional on revenue, cost and working-capital assumptions."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meat-announces-early-tender-results-and-early-settlement"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c38",
-   "claim": "Final settlement of the exchange offer on 2025-10-30: 97.44% of 2027 notes exchanged, $209.721M of 7.00% second-lien 2030 notes issued (including steering-committee premium) and 317,834,446 common shares issued, leaving $29.459M of 2027 notes; a major restructuring with substantial dilution.",
+   "claim": "Analyst estimate: unrestricted cash runs out Q1 2028 (vs Q3 2027 before September 2026 actions); company gave no runway figure.",
    "asserted_by": [
-    "A",
-    "C"
+    "A"
    ],
+   "variants": {
+    "A": "Seeking Alpha / Distressed Value Investing (2026-09-24) estimates unrestricted cash will run out in Q1 2028, versus Q3 2027 before the September 2026 actions; no company runway figure."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+    "https://seekingalpha.com/article/4949390-beyond-meat-runway-extended-by-debt-for-equity-swap-but-cash-burn-remains-problematic"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c39",
-   "claim": "The Oct 2025 exchange offer was determined to qualify as a troubled debt restructuring (ASC 470-60).",
+   "claim": "FY2025 10-K: company expects to raise significant additional capital and may be unable to refinance 2027 Notes on satisfactory terms; $29.459M of 2027 Notes outstanding.",
    "asserted_by": [
-    "B",
-    "C"
+    "D"
    ],
+   "variants": {
+    "D": "FY2025 10-K showed $29.459M of 2027 Notes outstanding; expects to raise significant additional capital, cannot assure success, may not refinance the 2027 Notes on satisfactory terms."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c40",
-   "claim": "Reuters reported the debt swap was launched to help avoid near-term default and hugely diluted the stock.",
+   "claim": "In August 2024 Beyond Meat began discussions with bondholders on a balance-sheet restructuring (per WSJ via Food Dive).",
    "asserted_by": [
-    "B"
+    "A"
    ],
+   "variants": {
+    "A": "In August 2024 Beyond Meat engaged with a group of bondholders to begin discussions on a balance-sheet restructuring (per WSJ, cited by Food Dive)."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c41",
-   "claim": "About $148.7M net proceeds were received from ATM common stock sales during FY2025.",
+   "claim": "May 2025: $100M Delayed Draw Term Loan raised with Unprocessed Foods; FY2025 financing included $100.0M of draws.",
    "asserted_by": [
-    "B"
+    "A"
    ],
+   "variants": {
+    "A": "In May 2025 Beyond Meat raised a $100M Delayed Draw Term Loan Facility with Unprocessed Foods, LLC; FY2025 financing included $100.0M of aggregate draws."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c42",
-   "claim": "On 2026-08-05 the company disclosed it no longer satisfies Form S-3 eligibility and cannot access its ATM Program, limiting financing flexibility.",
+   "claim": "On 2025-05-07 closed up to $100M senior secured DDTL from Unprocessed Foods (Ahimsa affiliate); PIK 12.0% before 2030 maturity, 17.5% after; warrants for up to 12.5% of shares.",
    "asserted_by": [
-    "A",
     "B"
    ],
+   "variants": {
+    "B": "On 2025-05-07 closed up to $100 million of senior secured delayed-draw term-loan financing from Unprocessed Foods, LLC (an Ahimsa Foundation affiliate); PIK 12.0% before initial 2030 maturity and 17.5% afterward; warrants for up to 12.5% of outstanding shares."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-announces-100-million-new-senior-secured-financing"
    ],
-   "conflicts_with": []
+   "conflicts_with": [
+    "c43"
+   ]
   },
   {
    "cid": "c43",
-   "claim": "On 2026-08-11 the company effected a 1-for-30 reverse stock split and authorized-share reduction to regain Nasdaq minimum bid compliance; conversion rates of the 2027 and 2030 convertible notes and warrants were proportionately adjusted.",
+   "claim": "On 2025-05-09 closed $100M DDTL from Unprocessed Foods; 12.0%/17.5% PIK; maturity 7 Feb 2030 extendable to 7 May 2035; carrying value $89.8M at 26 Sep 2026.",
    "asserted_by": [
-    "B"
+    "D"
    ],
+   "variants": {
+    "D": "On 2025-05-09 closed a $100M senior secured delayed-draw term loan from Unprocessed Foods, LLC (Ahimsa Foundation affiliate), interest 12.0% before initial maturity and 17.5% after, paid in kind; initial maturity 7 Feb 2030, extendable to 7 May 2035; carrying value $89.8M net at 26 Sep 2026."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000057/bynd-20260811.htm"
+    "https://www.abladvisor.com/deal-tables/deal/8430/beyond-meat-closes-100mm-new-senior-secured-financing-from-ahimsa-foundation-aff"
    ],
-   "conflicts_with": []
+   "conflicts_with": [
+    "c42"
+   ]
   },
   {
    "cid": "c44",
-   "claim": "Second supplemental indenture executed 2026-08-10 removing certain restrictions on repurchasing or exchanging 2027 notes for cash and/or equity and extending the conversion interest make-whole period to 2029-01-15.",
+   "claim": "$100M first-lien DDTL matures Feb 7, 2030 with 12% interest compounded quarterly and paid in kind.",
    "asserted_by": [
-    "A"
-   ],
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000119312526341312/d156122d8k.htm"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c45",
-   "claim": "On 2026-09-23 the company entered exchange agreements to retire about $15.0M principal of remaining 0% 2027 Convertible Notes at 96% of face value, settled in common stock (1,097,444 shares initially, up to 848,265 more at final settlement around Sept 28, subject to closing conditions; completion not confirmed).",
-   "asserted_by": [
-    "A",
-    "B",
     "C"
    ],
+   "variants": {
+    "C": "$100 million first-lien delayed-draw term-loan facility maturing February 7, 2030, with 12% interest compounded quarterly and paid in kind."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000119312526398531/d186483d8k.htm",
-    "https://investors.beyondmeat.com/node/14621/html"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c46",
-   "claim": "Beyond Meat has no public credit rating from S&P, Moody's or Fitch on the issuer or its convertible notes (0% due 2027; 7% second lien PIK toggle due 2030); notes appear unrated.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://cbonds.com/company/137191/"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c47",
-   "claim": "On 2025-02-27 the company laid off 6% of its workforce (~44 employees) and suspended operations in China (~20 jobs, ~95% of local workforce).",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://www.fooddive.com/news/beyond-meat-cutting-6-of-workforce-to-reduce-expenses/741119/"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c48",
-   "claim": "Aug 2025: another layoff (44 employees, ~6% of global workforce, ~$0.8-1.3M severance, ~$7M annualized savings); AlixPartners MD John Boken appointed interim Chief Transformation Officer, targeting EBITDA-positivity in H2 2026.",
-   "asserted_by": [
-    "B"
-   ],
-   "urls": [
-    "https://greenqueen.com.hk/beyond-meat-q2-2025-earnings-sales-layoffs-ground-rebrand"
-   ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c49",
-   "claim": "Company ceased operational activities in China at end of 2025 and is winding down the facility and lease; it reported continuing charges from the China cessation and a partial headquarters lease termination, with workforce reductions, product-line exits and footprint optimization.",
-   "asserted_by": [
-    "A",
-    "C"
-   ],
-   "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
     "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c50",
-   "claim": "Material weakness in internal control over financial reporting disclosed 2025-11-12 (inadequate technical resources for complex transactions); Q3 2025 earnings delayed about a week.",
+   "cid": "c45",
+   "claim": "The $100M DDTL was fully drawn, with $0 undrawn availability, as of 2026-06-27.",
    "asserted_by": [
-    "B"
+    "E",
+    "F"
    ],
+   "variants": {
+    "E": "$100 million DDTL fully drawn, with $0 undrawn availability, as of 2026-06-27.",
+    "F": "USD 0 undrawn availability as of 2026-06-27; the entire USD 100 million facility was drawn."
+   },
    "urls": [
-    "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c51",
-   "claim": "$77.4M of non-cash impairment charges recorded in Q3 2025.",
+   "cid": "c46",
+   "claim": "Unprocessed Foods (Ahimsa affiliate) is the senior secured lender and holds warrants.",
    "asserted_by": [
-    "B"
+    "D"
    ],
+   "variants": {
+    "D": "Senior secured lender is Unprocessed Foods, LLC (Ahimsa Foundation affiliate), which also holds warrants from the term loan."
+   },
    "urls": [
-    "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444"
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Exchange completed 2025-10-29 (settled 30 Oct): ~$1.117B (97.16%) of 2027 notes swapped for ~$209.2M 2030 notes plus ~316.9M shares, leaving $32.66M outstanding.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Completed a distressed-style exchange (final settlement 30 Oct 2025): about $1.117B of the $1.15B 0% Convertible Notes due 2027 (97.16%) swapped for about $209.2M of new 7.00% 2030 notes plus about 316.9M new shares, leaving $32.66M of 2027 Notes outstanding."
+   },
+   "urls": [
+    "https://www.quiverquant.com/news/Beyond+Meat+Announces+Final+Results+of+Exchange+Offer+for+Convertible+Senior+Notes"
+   ],
+   "conflicts_with": [
+    "c47",
+    "c48",
+    "c49"
+   ]
+  },
+  {
+   "cid": "c51",
+   "claim": "Oct 2025 exchange produced a $548.7M non-cash gain on debt restructuring; shares fell >48% to $1.03 on 2025-10-13.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "On 2025-10-30 completed an exchange offer converting 0% 2027 notes into new 7.00% 2030 notes, producing a $548.7M non-cash gain on debt restructuring; shares fell more than 48% to $1.03 on 2025-10-13."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1655210/000165521026000016/ex991pressrelease-q4andful.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c52",
-   "claim": "Corporate controller and principal accounting officer Yi (Jevy) Luo was terminated 2025-12-18; CFO Lubi Kutua assumed principal accounting officer duties.",
+   "claim": "In 1H 2026 holders converted $68.8M principal of 2030 notes into shares.",
    "asserted_by": [
-    "B"
+    "F"
    ],
+   "variants": {
+    "F": "During the first six months of 2026, holders converted USD 68.8 million principal of the 2030 notes into shares."
+   },
    "urls": [
-    "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c53",
-   "claim": "Further material weaknesses were disclosed with the delayed FY2025 10-K (filed 2026-04-09).",
+   "claim": "Non-cash gains on debt extinguishment of $63.8M in 1H 2026 from 2030 note conversions.",
    "asserted_by": [
-    "B"
+    "D"
    ],
+   "variants": {
+    "D": "Recorded non-cash gains on debt extinguishment of $63.8M for 1H 2026 from conversions of part of the 2030 Notes (per Q2 10-Q)."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c54",
-   "claim": "As of 2026-06-27 (10-Q filed 2026-08-06) disclosure controls were not effective: two material weaknesses remain unremediated (non-routine/complex transactions accounting; inventory valuation/data integrity), with corrections to comparative-period accounting.",
+   "claim": "2030 notes permit 9.5% PIK interest instead of 7% cash interest.",
    "asserted_by": [
-    "A",
-    "C"
+    "F"
    ],
+   "variants": {
+    "F": "2030 notes permit 9.5% payment-in-kind interest instead of 7% cash interest."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502",
     "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c55",
-   "claim": "Reuters (2025-10-23): annual sales have declined since 2022, the company has never had an annual profit, its 'survival hangs in the balance', and it has never flagged going-concern risk.",
+   "claim": "On 2026-07-17 an 8-K disclosed private talks with 2030 noteholders on an indenture amendment; no assurance of consents.",
    "asserted_by": [
-    "B"
+    "A"
    ],
+   "variants": {
+    "A": "Disclosed in an 8-K private discussions with holders of the 2030 Notes on an indenture amendment to remove restrictions on repurchasing/exchanging the 2027 Notes for cash and/or equity and extend the make-whole period, with no assurance consents would be obtained."
+   },
    "urls": [
-    "https://reuters.com/business/boom-bust-beyond-meat-struggles-stay-relevant-2025-10-23"
+    "https://investors.beyondmeat.com/static-files/1ff43c6e-dc78-4918-851c-d846043026fe"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c56",
-   "claim": "Customer-loss signal (Aug 2025): reports that McDonald's removed McPlant from its Austrian menu and is running out its Beyond Meat contract; Q2 2025 US retail revenue dropped ~27%.",
+   "claim": "On 2026-08-10 a supplemental indenture to the 2030 notes removed restrictions on repurchasing/exchanging 2027 notes for cash/equity and extended the make-whole end date from 2028-10-15 to 2029-01-15.",
    "asserted_by": [
-    "B"
+    "A",
+    "C",
+    "E",
+    "F",
+    "D"
    ],
+   "variants": {
+    "A": "Entered a Second Supplemental Indenture with Wilmington Trust amending the 2030 Notes indenture, removing restrictions and extending make-whole end date from 2028-10-15 to 2029-01-15.",
+    "C": "Executed a second supplemental indenture removing certain restrictions and extending the make-whole period from October 15, 2028 to January 15, 2029.",
+    "E": "Executed a supplemental indenture removing certain restrictions and extending the conversion make-whole period end from 2028-10-15 to 2029-01-15.",
+    "F": "Amended the 2030-note indenture to remove certain restrictions and extended the conversion interest make-whole period end from 2028-10-15 to 2029-01-15.",
+    "D": "Entered a Second Supplemental Indenture (trustee Wilmington Trust) removing restrictions and extending the interest make-whole period from 15 Oct 2028 to 15 Jan 2029."
+   },
    "urls": [
-    "https://greenqueen.com.hk/beyond-meat-q2-2025-earnings-sales-layoffs-ground-rebrand"
+    "https://investors.beyondmeat.com/static-files/ab47abbd-5166-429f-84b2-7fb25d4a68fc"
    ],
    "conflicts_with": []
   },
   {
    "cid": "c57",
-   "claim": "Creditsafe data: days-beyond-terms rose from 8 days in Aug 2024 to 19 days in Jul 2025 vs a 12-day industry average, indicating possible liquidity pressure; the company said it was not planning to file for bankruptcy.",
+   "claim": "1-for-30 reverse stock split effective 2026-08-13.",
    "asserted_by": [
-    "B"
+    "D"
    ],
+   "variants": {
+    "D": "A 1-for-30 reverse stock split took effect 2026-08-13, adjusting the conversion rates on the 2030 and 2027 Notes."
+   },
    "urls": [
-    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/"
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
-   "conflicts_with": []
-  },
-  {
-   "cid": "c58",
-   "claim": "Food Dive (2024-08-21), citing Creditsafe data, reported 36% of the company's 2024 bills were at least 91 days overdue; the company called the figures highly inaccurate and disputed them.",
-   "asserted_by": [
-    "A"
-   ],
-   "urls": [
-    "https://www.fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812/"
-   ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "merged_from": [
+    "c57",
+    "c58"
+   ]
   },
   {
    "cid": "c59",
-   "claim": "Sonate trademark litigation: jury verdict 2025-11-24 awarded $23.5M actual damages and $15.4M disgorgement against Beyond Meat, which recorded a $38.9M litigation accrual; post-trial motions were pending per the June 2026 10-Q.",
+   "claim": "On 2026-03-04 Nasdaq issued a minimum bid-price deficiency notice (shares below $1 since start of 2026); delisting risk; reverse split used to address.",
    "asserted_by": [
     "A"
    ],
+   "variants": {
+    "A": "On 2026-03-04 received a Nasdaq minimum bid-price deficiency after shares traded below $1 since the start of 2026, creating delisting risk; a 1-for-30 reverse split effective 2026-08-13 was used to address it."
+   },
    "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   ],
-   "conflicts_with": [
-    "c60"
-   ]
-  },
-  {
-   "cid": "c60",
-   "claim": "On 2026-09-18 a federal court entered a $15.4375M judgment against Beyond Meat in the Sonate trademark case ($37,500 actual damages plus $15.4M disgorgement), subject to possible further motions or appeals.",
-   "asserted_by": [
-    "C"
-   ],
-   "urls": [
-    "https://investors.beyondmeat.com/node/14616/html"
-   ],
-   "conflicts_with": [
-    "c59"
-   ]
-  },
-  {
-   "cid": "c61",
-   "claim": "Settled a former co-manufacturer dispute in its favour for $11M: $4M received in June 2026 and $7.1M including interest received 2026-07-10.",
-   "asserted_by": [
-    "A"
-   ],
-   "urls": [
-    "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
+    "https://runcheyresearch.com/forecasting/markets/bynd-q4-2025-going-concern"
    ],
    "conflicts_with": []
   },
   {
+   "cid": "c60",
+   "claim": "On 2026-09-23 Beyond Meat exchanged $15.0M principal of 2027 Notes for ~1.55M common shares in privately negotiated exchanges.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Entered privately negotiated exchange agreements exchanging $15.0 million principal for approximately 1.55 million common shares.",
+    "C": "Exchanged $15 million principal of 2027 notes for approximately 1.55 million common shares; $14.5 million remained outstanding, due March 15, 2027.",
+    "E": "Exchanged $15.0 million principal of 0% convertible notes due 2027 for approximately 1.55 million common shares; about $14.5 million remained outstanding, maturing 2027-03-15.",
+    "D": "Exchanged $15.0M principal of 2027 Notes for about 1.55M common shares, leaving $14.5M due 15 Mar 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000119312526398531/d186483d8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c60",
+    "c61"
+   ]
+  },
+  {
    "cid": "c62",
-   "claim": "CreditRiskMonitor's undated preview flags tax-lien filings against Beyond Meat, Inc. with no date, amount or jurisdiction; unverified screening flag only.",
+   "claim": "$14.5M principal of 0% 2027 Notes remained outstanding as of 2026-09-26, maturing 2027-03-15.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F",
+    "D"
+   ],
+   "variants": {
+    "A": "$14.5M of 0% Convertible Senior Notes due 2027 outstanding as of 2026-09-26, maturing 2027-03-15.",
+    "B": "$14.5 million aggregate principal of 2027 Notes remaining as of 2026-09-26, maturing 2027-03-15.",
+    "F": "USD 14.5 million principal of 2027 notes outstanding, maturing 2027-03-15.",
+    "D": "$14.5M of 0% Convertible Notes due 15 Mar 2027 outstanding as of 2026-09-26, classified as current."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c63",
+   "claim": "Sonate/Vegadelphia trademark judgment of $15,437,500 entered 2026-09-18 ($37,500 actual damages plus ~$15.4M disgorgement); further motions/appeals possible; payment not verified.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Court entered a $15,437,500 judgment, reduced from an earlier $38.9 million jury award; further motions or appeals remained possible.",
+    "E": "$15,437,500 judgment entered 2026-09-18 ($37,500 actual damages plus $15.4 million disgorgement); further motions or appeals possible; payment not verified.",
+    "F": "USD 15,437,500 trademark-infringement judgment entered 2026-09-18, reduced from the original jury award; disclosed 2026-09-22; payment status not verified."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000064/bynd-20260918.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c64",
+   "claim": "Sonate judgment was reduced by ~$23.5M in September 2026; with note exchange cut future outflows by nearly $40M.",
    "asserted_by": [
     "A"
    ],
+   "variants": {
+    "A": "In September 2026 a court reduced the Sonate judgment by approximately $23.5M; combined with the note exchange this reduced future outflows by nearly $40M."
+   },
+   "urls": [
+    "https://seekingalpha.com/article/4949390-beyond-meat-runway-extended-by-debt-for-equity-swap-but-cash-burn-remains-problematic"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c65",
+   "claim": "Nov 2025 jury awarded ~$39M in Vegadelphia (Sonate) case; Judge Talwani cut actual damages to $37,500, leaving ~$15.44M owed.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "A Nov 2025 jury awarded about $39M; Judge Talwani cut actual damages to $37,500, leaving about $15.44M (disgorgement) owed; further motions or appeals possible."
+   },
+   "urls": [
+    "https://www.greenqueen.com.hk/beyond-meat-dunkin-trademark-infringement-lawsuit-damages-vegadelphia/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c66",
+   "claim": "On 2026-10-22 the First Circuit docket recorded Sonate's appeal.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2026-10-22 the First Circuit docket recorded Sonate's appeal in the trademark litigation (continuing litigation)."
+   },
+   "urls": [
+    "https://dockets.justia.com/docket/circuit-courts/ca1/26-2175"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c67",
+   "claim": "FY2025 included a $38.9M non-cash litigation accrual and an arbitration with a former co-manufacturer ($8.1M legal fees).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Recorded a $38.9M non-cash litigation accrual in FY2025 and an arbitration with a former co-manufacturer ($8.1M legal fees)."
+   },
+   "urls": [
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c68",
+   "claim": "Beyond Meat won its dispute with a former co-manufacturer over ending a production agreement.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Won its arbitration-related dispute with a former co-manufacturer over ending a production agreement."
+   },
+   "urls": [
+    "https://www.greenqueen.com.hk/beyond-meat-dunkin-trademark-infringement-lawsuit-damages-vegadelphia/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c69",
+   "claim": "CreditRiskMonitor preview (2026-11-07) flagged tax-lien filings 'Yes', without details.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "CreditRiskMonitor public report preview (2026-11-07) flagged tax-lien filings as 'Yes', with no filing dates, amounts, jurisdictions or disposition provided."
+   },
    "urls": [
     "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=30647979"
    ],
    "conflicts_with": []
   },
   {
-   "cid": "c63",
-   "claim": "Leadership transition: COO Brijesh Krishnaswamy began full-time on 2026-09-30; interim Chief Transformation Officer John Boken (named 'David Boken' in source A) stepped down effective 2026-10-07, with responsibilities reassigned.",
+   "cid": "c70",
+   "claim": "Reporting-covenant default under Loan and Security Agreement for failing to deliver audited 2025 financials by 2026-03-31; remedied after 2026-04-09 10-K; no missed payment.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Reporting-covenant default after failing to deliver audited 2025 financial statements by 2026-03-31; remedied after the 2026-04-09 Form 10-K filing. No missed debt payment disclosed.",
+    "F": "Failed to deliver audited annual financial statements to its lender by 2026-03-31 and remedied by 2026-04-09; not a missed debt payment."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c71",
+   "claim": "No disclosed S&P, Moody's or Fitch rating; effectively unrated.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "No disclosed S&P, Moody's or Fitch credit rating; appears effectively unrated (an Argus downgrade was an equity rating only)."
+   },
+   "urls": [
+    "https://last10k.com/sec-filings/bynd/0001655210-26-000022.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c72",
+   "claim": "Creditsafe (Aug 2024): 36% of 2024 bills were 91+ days late; company disputed as highly inaccurate.",
    "asserted_by": [
     "A",
+    "F"
+   ],
+   "variants": {
+    "A": "36% of Beyond Meat's 2024 bills were 91+ days late; the company called the figures 'highly inaccurate'.",
+    "F": "Food Dive reported Creditsafe data indicating 36% of 2024 vendor bills were at least 91 days overdue; company rejected figures as highly inaccurate (historical, disputed)."
+   },
+   "urls": [
+    "https://fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c73",
+   "claim": "91+ day late payments rose from 9.7% (Oct 2023) to 42.3% (Nov 2023) and 69.7% (Dec 2023).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "91+ day late payments rose from 9.7% (Oct 2023) to 42.3% (Nov 2023) and 69.7% (Dec 2023)."
+   },
+   "urls": [
+    "https://fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c74",
+   "claim": "Days beyond terms rose from 8 (Aug 2024) to 19 (July 2025) vs 12 industry average.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Averaged 19 days beyond payment terms, versus 8 in August 2024 and an industry average of 12 (disputed by company).",
+    "E": "Days beyond payment terms rose from 8 in August 2024 to 19 in July 2025 versus an industry average of 12."
+   },
+   "urls": [
+    "https://cfodive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808427",
+    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c74",
+    "c76"
+   ]
+  },
+  {
+   "cid": "c75",
+   "claim": "Creditsafe characterized the rising days-beyond-terms trend as indicating possible liquidity pressure.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Days beyond terms rose from 8 to 19, above the 12-day industry average; Creditsafe characterized the trend as indicating possible liquidity pressure."
+   },
+   "urls": [
+    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c77",
+   "claim": "About half of outstanding bills were 1–30 days overdue in July 2025.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "About half of outstanding bills were 1–30 days overdue.",
+    "E": "About half of outstanding bills 1–30 days overdue in July 2025."
+   },
+   "urls": [
+    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296",
+    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c77",
+    "c78"
+   ]
+  },
+  {
+   "cid": "c79",
+   "claim": "Company told Food Dive (2025-08-22) it had not filed and was not planning to file for bankruptcy.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Told Food Dive (2025-08-22) it had not filed and was not planning to file for bankruptcy (company denial, not evidence concerns resolved)."
+   },
+   "urls": [
+    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c80",
+   "claim": "Jan 2026: court granted Don Lee Farms right to attach ~$630,000 of assets; third amended complaint names executives alleging fraudulent alteration of a consultant's report.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "L.A. County Superior Court granted Don Lee Farms the right to attach nearly $630,000 of assets in a breach-of-contract case; third amended complaint names executives alleging fraudulent alteration of a food-safety consultant's report."
+   },
+   "urls": [
+    "https://meatingplace.com/don-lee-farms-steps-up-legal-pressure-on-beyond-meat"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c81",
+   "claim": "2025-08-06: ~44 North American employees (~6%) cut, John Boken (AlixPartners) appointed interim CTO at $215,000/month, AP Services team at $135,000/week.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "A": "Cut ~44 North American employees (~6% of global workforce), appointed AlixPartners' John Boken as interim CTO ($215,000/month) and engaged AP Services core team at $135,000/week."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1655210/000165521025000149/bynd-20250806.htm",
+    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/",
+    "https://www.fooddive.com/news/beyond-meat-to-cut-6-of-workforce-as-plant-based-demand-languishes/757037/"
+   ],
+   "conflicts_with": [
+    "c82"
+   ],
+   "merged_from": [
+    "c81",
+    "c85",
+    "c86"
+   ]
+  },
+  {
+   "cid": "c82",
+   "claim": "2025-08-06 management approved ~40 North American layoffs (~5% of global workforce), substantially complete by end Q3 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Management approved approximately 40 North American layoffs (about 5% of global workforce), substantially completed by end of Q3 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000119312526150414/d138891dars.pdf"
+   ],
+   "conflicts_with": [
+    "c81"
+   ]
+  },
+  {
+   "cid": "c83",
+   "claim": "FY2025 10-K: workforce reductions approved Feb 24 (~44 NA/EU plus ~20 China) and Aug 6 (~40 NA); China operations ceased by end 2025.",
+   "asserted_by": [
     "C"
    ],
+   "variants": {
+    "C": "Workforce reductions approved February 24 (about 44 North America/EU employees plus about 20 China employees) and August 6 (about 40 North America employees), and China operational activities ceased by year-end 2025."
+   },
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000068/bynd-20260930.htm",
-    "https://investors.beyondmeat.com/node/14631/html"
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c84",
+   "claim": "Repeated workforce cuts: ~65 (Nov 2023), ~44 (Feb 2025), ~40 (Aug 2025), ~20 from China exit.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Repeated workforce cuts: about 65 staff (Nov 2023), about 44 (Feb 2025), about 40 (Aug 2025), and about 20 from ending China operations at end-2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c87",
+   "claim": "Food Dive reported an interim chief transformation officer was named.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Food Dive reported Beyond Meat had named an interim chief transformation officer for turnaround and restructuring efforts."
+   },
+   "urls": [
+    "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c88",
+   "claim": "On 2026-10-07 interim CTO John Boken scheduled to step down, duties to new full-time COO (planned handover).",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Disclosed that Interim Chief Transformation Officer John Boken was scheduled to step down, with responsibilities transferred to the new full-time COO and other leaders (planned handover)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000068/bynd-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c88",
+    "c89"
+   ]
+  },
+  {
+   "cid": "c90",
+   "claim": "Q3 2025: $77.4M non-cash impairment, gross profit ~halved to $7.2M, material weakness; Q3 earnings delayed ~one week.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Q3 2025 results included $77.4M non-cash impairment of long-lived assets, gross profit nearly halved to $7.2M, and a material weakness in ICFR; Q3 earnings delayed about one week."
+   },
+   "urls": [
+    "https://cfodive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808427"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c91",
+   "claim": "Controller/PAO Yi (Jevy) Luo terminated, last day 2025-12-23 (announced 2025-12-18); CFO Lubi Kutua assumed duties.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Terminated corporate controller and principal accounting officer Yi (Jevy) Luo effective December 23, 2025 (announced 2025-12-18); CFO Lubi Kutua assumed principal-accounting-officer responsibilities pending a replacement."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521025000220/bynd-20251218.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c92",
+   "claim": "Controller terminated; Tony Kalajian appointed chief accounting officer effective 2026-01-12.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Terminated controller Luo (last day 2025-12-23); CFO Lubi Kutua assumed those duties and Tony Kalajian was appointed chief accounting officer effective 2026-01-12."
+   },
+   "urls": [
+    "https://cfodive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808427"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c93",
+   "claim": "Second material weakness (inventory provision accounting) identified in FY2025 / existing in FY2025 10-K.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Identified a second material weakness (inventory provision accounting) in FY2025.",
+    "D": "FY2025 10-K discloses existing material weaknesses in ICFR (inventory provision)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c94",
+   "claim": "Q2 2026 filing reported unremediated material weaknesses (complex transactions, inventory valuation) as of 2026-06-27.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Quarterly filing of 2026-08-06 reported unremediated material weaknesses in complex-transaction accounting and inventory valuation as of 2026-06-27."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c95",
+   "claim": "Deloitte issued unqualified financial-statement opinion (no going-concern language) but adverse ICFR opinion on FY2025.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "10-K filed late on 2026-04-09; Deloitte issued an unqualified opinion (no going-concern language) but an adverse opinion on ICFR.",
+    "F": "On 2026-04-08 Deloitte issued an unmodified financial-statement opinion but an adverse opinion on ICFR due to material weaknesses (not a going-concern qualification)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000119312526150414/d138891dars.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c96",
+   "claim": "China operations ceased in FY2025 ($5.8M expenses); El Segundo Campus HQ lease partially terminated.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Ceased operations in China in FY2025 ($5.8M expenses) and partially terminated the El Segundo Campus HQ lease."
+   },
+   "urls": [
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c97",
+   "claim": "China wind-down substantially complete in 1H 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "China operational wind-down was substantially complete during the first half of 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c98",
+   "claim": "Q2 2026 10-Q described cost/footprint reductions incl. workforce cuts and China exit in 2025.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Q2 2026 10-Q described cost and footprint reductions, including workforce reductions and cessation of operational activities in China in 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c99",
+   "claim": "FY2025 $48.1M write-down of assets held for sale.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Recorded a $48.1M write-down of assets held for sale in FY2025."
+   },
+   "urls": [
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c100",
+   "claim": "Company no longer meets Form S-3 eligibility and cannot use its ATM equity program.",
+   "asserted_by": [
+    "C",
+    "E",
+    "D"
+   ],
+   "variants": {
+    "C": "Disclosed in Q2 2026 10-Q it no longer meets Form S-3 eligibility and cannot access its ATM equity program.",
+    "E": "Stated in 2026-11-04 earnings release it no longer meets S-3 eligibility and cannot access ATM program.",
+    "D": "No longer qualifies for Form S-3, so its ATM equity program is unavailable."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c101",
+   "claim": "2026-03-17 delay of Q4/FY2025 results/10-K for inventory review; untimely filer lost S-3 eligibility; errors in interim 2025 statements.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Delayed Q4/FY2025 results and 10-K to review inventory balances/provisions, became an untimely filer losing Form S-3 eligibility (closing the ATM pathway), and disclosed errors in previously issued interim 2025 financial statements."
+   },
+   "urls": [
+    "https://cfodive.com/news/beyond-meat-delays-fy25-results-accounting-investigation/815111"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c102",
+   "claim": "2026-09-24 Rosen Law Firm class action against company, CEO Brown and CFO Kutua over long-lived asset book values; analysts flagged bankruptcy/dilution risks.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Rosen Law Firm filed a class action against Beyond Meat, CEO Ethan Brown and CFO Lubi Kutua alleging misleading statements about the book value of certain long-lived assets; analysts flagged bankruptcy and dilution risks."
+   },
+   "urls": [
+    "https://cfodive.com/news/beyond-meat-delays-fy25-results-accounting-investigation/815111"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c103",
+   "claim": "Q3 2026 revenue pressure from category-demand declines; repositioned as 'Beyond The Plant Protein Company' expanding into functional beverages.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Persistent category-demand declines and revenue declines across channels; repositioned as 'Beyond The Plant Protein Company' expanding into functional beverages."
+   },
+   "urls": [
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c104",
+   "claim": "Q3 2026 results affected by U.S. retail distribution losses and lower international foodservice volumes.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Q3 2026 results were affected by U.S. retail distribution losses and lower international foodservice volumes."
+   },
+   "urls": [
+    "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c105",
+   "claim": "CFO cited lost club-store distribution, fewer breakfast sausage outlets, and lower international QSR sales as Q3 2026 revenue drivers.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "CFO cited lost club-store distribution for burger and dinner sausage, fewer retail outlets for breakfast sausage, and lower sales to international quick-service restaurant customers."
+   },
+   "urls": [
+    "https://fool.com/earnings/call-transcripts/2026/11/05/beyond-meat-bynd-q3-2026-earnings-call-transcript"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c106",
+   "claim": "On 2026-11-05 filed Form 12b-25 (NT 10-Q) for Q3 2026, expecting to file by 2026-11-10 without assurance, citing close procedures for impairment and lease modifications.",
+   "asserted_by": [
+    "A",
+    "C",
+    "F",
+    "D"
+   ],
+   "variants": {
+    "A": "Filed NT 10-Q for Q3 2026, expecting no later than 2026-11-10 with no assurance; cited additional time for financial close and documentation of non-routine transactions, including a long-lived asset impairment and lease modifications.",
+    "C": "Filed notification of late filing because close procedures and documentation for asset impairment and lease modifications were incomplete; expected filing by November 10, 2026 without assurance.",
+    "F": "Filed late-filing notice citing unfinished close procedures involving impairments and lease modifications; expected filing by 2026-11-10 but warned of further delay.",
+    "D": "Filed NT 10-Q on 2026-11-05, needing more time to close books including long-lived asset impairment and lease modifications; expected to file by 10 Nov 2026, possibly later."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000074/bynd-form12bx25q3202610xq.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c107",
+   "claim": "Warrants for ~4.17M shares issued to distributor Big Geyser in June 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Issued warrants for about 4.17M shares to distributor Big Geyser in June 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm"
    ],
    "conflicts_with": []
   }
  ],
- "claims": {
-  "nimble": [
-   {
-    "claim": "Beyond Meat, Inc. (Nasdaq: BYND) is a public company with no PE or single controlling sponsor; largest holders per WallStreetZen (2026): Kleiner Perkins Caufield & Byers XIV LLC 28.61%, Seth Goldman 10.60%, CEO Ethan Brown 5.10%.",
-    "url": "https://wallstreetzen.com/stocks/us/nasdaq/bynd/ownership"
-   },
-   {
-    "claim": "Beyond Meat net revenues FY2025 were $275.5M, down 15.6% YoY.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat loss from operations FY2025 was $333.6M (operating margin -121.1%).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat Adjusted EBITDA FY2025 was -$179.3M (-65.1% of net revenues).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat cash and cash equivalents including restricted cash were $217.5M as of 2025-12-31.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat total debt carrying value (net of discount; 2027 Notes, 2030 PIK notes, DDTL) was $415.7M as of 2025-12-31.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat net cash used in operating activities FY2025 was $144.9M.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat net revenues Q1 2026 were $58.2M, down 15.3% YoY.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results"
-   },
-   {
-    "claim": "Beyond Meat loss from operations Q1 2026 was $41.1M.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results"
-   },
-   {
-    "claim": "Beyond Meat net loss Q1 2026 was $28.5M.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results"
-   },
-   {
-    "claim": "Beyond Meat cash, cash equivalents and restricted cash were $205.8M as of 2026-03-28.",
-    "url": "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html"
-   },
-   {
-    "claim": "Beyond Meat total debt was $411.6M as of 2026-03-28 (Q1 2026 10-Q).",
-    "url": "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html"
-   },
-   {
-    "claim": "Beyond Meat stockholders' deficit was $21.1M as of 2026-03-28.",
-    "url": "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html"
-   },
-   {
-    "claim": "Beyond Meat net revenues Q2 2026 were $68.8M, down 8.2% YoY.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat loss from operations Q2 2026 was $30.8M.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat net income Q2 2026 was $16.4M, driven by a $57.7M non-cash gain on debt extinguishment from 2030 Notes conversions.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat Adjusted EBITDA Q2 2026 was -$27.7M (-40.2% of net revenues).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat cash and cash equivalents including restricted cash were $186.1M as of 2026-06-27.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat total debt carrying value (2030 PIK notes, 2027 Notes, DDTL) was $323.8M as of 2026-06-27.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat net cash used in operating activities H1 2026 was $23.2M (vs $58.0M in H1 2025).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat completed an exchange offer in Oct 2025 (early settlement 2025-10-13, completed 2025-10-30): $1,114,603,000 (96.92%) of 0% Convertible Senior Notes due 2027 were exchanged into $196.2M of new 7.00% Convertible Senior Secured Second Lien PIK Toggle Notes due 2030 plus 316,150,176 shares (total new notes $208.7M including $12.5M SteerCo premium); covenants and certain events of default were stripped from the remaining 2027 Notes indenture.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meat-announces-early-tender-results-and-early-settlement"
-   },
-   {
-    "claim": "Beyond Meat determined the Oct 2025 Exchange Offer qualified as a troubled debt restructuring (ASC 470-60); FY2025 net income of $219.0M included a $548.7M non-cash gain on debt restructuring, and about $17.6M of debt issuance costs were expensed.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Reuters reported Beyond Meat's debt swap was launched to help avoid near-term default and hugely diluted the stock.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat drew $100.0M in aggregate under the Delayed Draw Term Loan Facility with Unprocessed Foods, LLC (Ahimsa DDTL) during FY2025.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat received about $148.7M net proceeds from ATM common stock sales during FY2025.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm"
-   },
-   {
-    "claim": "Beyond Meat H1 2026 gain on debt extinguishment was $63.8M.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat on 2026-08-11 effected a 1-for-30 reverse stock split and authorized-share reduction to regain Nasdaq minimum bid price compliance; conversion rates of the 2027 and 2030 convertible notes and warrants were proportionately adjusted.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000057/bynd-20260811.htm"
-   },
-   {
-    "claim": "Beyond Meat on 2026-09-23 entered exchange agreements to retire about $15.0M principal of remaining 0% Convertible Senior Notes due 2027 at 96% of face value, settled in common stock (1,097,444 shares initially, up to 848,265 more at final settlement).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000119312526398531/d186483d8k.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc. has no public credit rating from S&P, Moody's or Fitch on the issuer or its convertible notes (0% due 2027; 7% second lien PIK toggle due 2030); the notes appear unrated.",
-    "url": "https://cbonds.com/company/137191/"
-   },
-   {
-    "claim": "Beyond Meat laid off 6% of its workforce (~44 employees) on 2025-02-27 and suspended operations in China (~20 jobs, ~95% of local workforce).",
-    "url": "https://www.fooddive.com/news/beyond-meat-cutting-6-of-workforce-to-reduce-expenses/741119/"
-   },
-   {
-    "claim": "Beyond Meat announced another layoff in Aug 2025 (44 employees, ~6% of global workforce, ~$0.8-1.3M severance, ~$7M annualized savings) and appointed AlixPartners MD John Boken as interim Chief Transformation Officer, targeting EBITDA-positivity in H2 2026.",
-    "url": "https://greenqueen.com.hk/beyond-meat-q2-2025-earnings-sales-layoffs-ground-rebrand"
-   },
-   {
-    "claim": "Beyond Meat disclosed a material weakness in internal control over financial reporting on 2025-11-12 (inadequate technical resources for complex transactions) and delayed Q3 2025 earnings about a week.",
-    "url": "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444"
-   },
-   {
-    "claim": "Beyond Meat recorded $77.4M of non-cash impairment charges in Q3 2025.",
-    "url": "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444"
-   },
-   {
-    "claim": "Beyond Meat terminated corporate controller and principal accounting officer Yi (Jevy) Luo on 2025-12-18; CFO Lubi Kutua assumed principal accounting officer duties.",
-    "url": "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444"
-   },
-   {
-    "claim": "Beyond Meat disclosed on 2026-08-05 that it no longer satisfies Form S-3 eligibility and is unable to access its ATM Program.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat disclosed further material weaknesses with its delayed FY2025 10-K (filed 2026-04-09).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Reuters (2025-10-23): Beyond Meat's annual sales have declined since 2022, it has never had an annual profit, its 'survival hangs in the balance', and it has never flagged going-concern risk.",
-    "url": "https://reuters.com/business/boom-bust-beyond-meat-struggles-stay-relevant-2025-10-23"
-   },
-   {
-    "claim": "Beyond Meat customer-loss signal (Aug 2025): reports McDonald's removed McPlant from its Austrian menu and is running out its Beyond Meat contract; Q2 2025 US retail revenue dropped ~27%.",
-    "url": "https://greenqueen.com.hk/beyond-meat-q2-2025-earnings-sales-layoffs-ground-rebrand"
-   },
-   {
-    "claim": "Creditsafe data: Beyond Meat's days-beyond-terms rose from 8 days in Aug 2024 to 19 days in Jul 2025 vs a 12-day industry average; Creditsafe said this indicates possible liquidity pressures; the company said it was not planning to file for bankruptcy.",
-    "url": "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/"
-   }
-  ],
-  "exa": [
-   {
-    "claim": "Beyond Meat, Inc. is a public company with common stock listed on Nasdaq under BYND; the 2025 debt exchange materially diluted existing shareholders, with no verified change of control or PE sponsor.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. net revenue was $68.832 million for the three months ended 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. operating loss was $30.806 million for the three months ended 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. adjusted EBITDA (company-defined, non-GAAP) was approximately -$27.7 million for the three months ended 2026-06-27.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc. had unrestricted cash and cash equivalents of $171.369 million as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. had current restricted cash of $5.516 million as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. had non-current restricted cash of $9.25 million as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. total debt outstanding was $323.796 million carrying value (net of discounts and issuance costs, excluding leases) as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. had $29.459 million of 2027 convertible notes outstanding as of 2026-06-27, maturing 2027-03-15.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. had $0 remaining availability under its delayed-draw term loan facility as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. net cash used in operating activities was $23.156 million for the six months ended 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. completed final settlement of its convertible-debt exchange on 2025-10-30: 97.44% of 2027 notes exchanged, $209.721 million of second-lien 2030 notes issued (including steering-committee premium) and 317,834,446 common shares issued, leaving $29.459 million of 2027 notes; a major restructuring with substantial shareholder dilution.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. reported covenant compliance under its 2030 notes as of 2026-06-27; the notes carry a $15 million quarterly minimum-liquidity covenant, mature 2030-10-15, and bear 7% interest (9.5% when paid in kind).",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc.'s delayed-draw facility was fully drawn as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. executed a second supplemental indenture on 2026-08-10 removing certain restrictions on repurchasing or exchanging 2027 notes for cash and/or equity and extending the conversion interest make-whole period to 2029-01-15.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000119312526341312/d156122d8k.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc. entered agreements on 2026-09-23 to exchange approximately $15 million principal of 2027 notes for common stock at 96% of face value, with 1,097,444 initial shares and up to 848,265 additional shares at final settlement around September 28, subject to closing conditions; completion not confirmed.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000119312526398531/d186483d8k.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc. management stated in the June 27, 2026 10-Q that existing cash and anticipated operating cash flows should fund operations for the next twelve months, conditional on revenue, cash-flow and cost assumptions.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. disclosed it cannot access its ATM equity program because it no longer satisfies Form S-3 eligibility, limiting financing flexibility.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. quarterly revenue declined 8.2% year over year in the quarter ended 2026-06-27.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc.'s reported net income for the quarter ended 2026-06-27 was driven primarily by a $57.7 million non-cash debt-extinguishment gain rather than profitable operations.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc.'s 10-Q filed 2026-08-06 continued to disclose existing material weaknesses in internal control over financial reporting and corrections to comparative-period accounting.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. reported continuing charges from the cessation of China operations in 2025 and a partial headquarters lease termination.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. leadership transition: Mr. Krishnaswamy began full-time employment on 2026-09-30 replacing interim COO David Boken, who was also to step down as interim Chief Transformation Officer effective 2026-10-07.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000068/bynd-20260930.htm"
-   },
-   {
-    "claim": "Food Dive (2024-08-21), citing Creditsafe data, reported that 36% of Beyond Meat, Inc.'s 2024 bills were at least 91 days overdue; the company called the figures highly inaccurate and disputed them.",
-    "url": "https://www.fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812/"
-   },
-   {
-    "claim": "In the Sonate trademark litigation (jury verdict 2025-11-24), a jury awarded $23.5 million actual damages and $15.4 million disgorgement against Beyond Meat, Inc., which recorded a $38.9 million litigation accrual; post-trial motions remained pending per the June 2026 10-Q.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "Beyond Meat, Inc. settled a former co-manufacturer dispute in its favour for $11 million: $4 million received in June 2026 and $7.1 million including interest received 2026-07-10.",
-    "url": "https://investors.beyondmeat.com/static-files/3b3bf43f-d7e6-4aa2-aa01-c694cfa84502"
-   },
-   {
-    "claim": "CreditRiskMonitor's undated preview flags tax-lien filings against Beyond Meat, Inc. with no date, amount or jurisdiction; unverified screening flag only.",
-    "url": "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=30647979"
-   }
-  ],
-  "firecrawl": [
-   {
-    "claim": "Beyond Meat, Inc. net revenue was $68.832 million for the three months ended 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   },
-   {
-    "claim": "Beyond Meat, Inc. reported an operating loss of $30.806 million for the three months ended 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   },
-   {
-    "claim": "Beyond Meat, Inc. adjusted EBITDA (non-GAAP) was -$27.7 million for the three months ended 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   },
-   {
-    "claim": "Beyond Meat, Inc. had unrestricted cash and cash equivalents of $171.369 million as of 2026-06-27.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc. had cash and cash equivalents including restricted cash of $186.1 million as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   },
-   {
-    "claim": "Beyond Meat, Inc. total outstanding debt, carrying value net of debt discount, was $323.8 million as of 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   },
-   {
-    "claim": "Beyond Meat management stated that existing cash plus anticipated operating cash flows are sufficient to fund operations for the next 12 months as of 2026-06-27.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "Beyond Meat, Inc. debt agreements include a $15.0 million minimum liquidity covenant, tested quarterly (disclosed as of 2026-06-27).",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "On 2026-09-23 Beyond Meat entered privately negotiated exchange agreements for about $15.0 million principal of its remaining 0% Convertible Senior Notes due 2027 at 96% of face value, initially issuing 1,097,444 shares and potentially up to 848,265 additional shares under a VWAP true-up.",
-    "url": "https://investors.beyondmeat.com/node/14621/html"
-   },
-   {
-    "claim": "On 2025-10-30 Beyond Meat completed an exchange offer in which 97.44% of the 2027 Notes were tendered, resulting in issuance of $209.721 million of 7.00% Convertible Senior Secured Second Lien PIK Toggle Notes due 2030 and 317,834,446 new shares, accounted for as a troubled debt restructuring.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "On 2025-05-07 Beyond Meat entered a Loan and Security Agreement for a delayed-draw term loan of up to $100.0 million; $40.0 million was drawn 2025-06-26 and $60.0 million on 2025-09-18.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "Beyond Meat's delayed-draw term loan had $110.9 million outstanding including accrued PIK interest as of 2026-06-27, with no amount available to borrow.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "Beyond Meat reported compliance with 2030 Notes and Loan and Security Agreement covenants as of 2026-06-27.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "Beyond Meat's debt agreements include a $60.0 million cap on cash used to repay the 2027 Notes at maturity, subject to stated exceptions.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "On 2026-09-18 a federal court entered a $15.4375 million judgment against Beyond Meat in the Sonate trademark case ($37,500 actual damages plus $15.4 million disgorgement), subject to possible further motions or appeals.",
-    "url": "https://investors.beyondmeat.com/node/14616/html"
-   },
-   {
-    "claim": "Beyond Meat's revenue declined 8.2% year-over-year in the quarter ended 2026-06-27.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   },
-   {
-    "claim": "Beyond Meat had negative operating cash flow of $23.2 million for the six months ended 2026-06-27 and expects to continue operating at a loss for the foreseeable future.",
-    "url": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-second-quarter-2026-financial-results-0"
-   },
-   {
-    "claim": "Beyond Meat management concluded disclosure controls were not effective as of 2026-06-27 because two material weaknesses remain unremediated: accounting for non-routine and complex transactions, and inventory valuation/data integrity.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "Beyond Meat ceased operational activities in China at the end of 2025 and is winding down the facility and lease, with workforce reductions, product-line exits and manufacturing/real-estate footprint optimization as part of its cost-reduction program.",
-    "url": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm"
-   },
-   {
-    "claim": "Beyond Meat's interim Chief Transformation Officer John Boken stepped down effective 2026-10-07 after COO Brijesh Krishnaswamy started full-time on 2026-09-30, with responsibilities reassigned.",
-    "url": "https://investors.beyondmeat.com/node/14631/html"
-   },
-   {
-    "claim": "Beyond Meat, Inc. is publicly traded (NASDAQ: BYND); Millennium Management LLC, Millennium Group Management LLC and Israel A. Englander reported beneficial ownership of 957,442 shares (5.2%) under Schedule 13G, as of 2026-09-21, not filed to influence control.",
-    "url": "https://investors.beyondmeat.com/node/14626/html"
-   }
-  ]
- },
  "verified": {
   "c1": {
    "cid": "c1",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://wallstreetzen.com/stocks/us/nasdaq/bynd/ownership",
-   "note": "BYND is public and no single holder controls it. Kleiner is the largest at about 29%. I did not check the other claim details, such as the dilutive 2025 exchange or the absence of a change of control, against the primary filings."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "The Q3 2026 release and the 10-Q cover page list common stock as BYND on Nasdaq.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c2": {
    "cid": "c2",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "minor",
-   "source": "https://wallstreetzen.com/stocks/us/nasdaq/bynd/ownership",
-   "note": "The page shows Kleiner 28.61%, Goldman 10.60% and Brown 5.10%."
-  },
-  "c3": {
-   "cid": "c3",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "minor",
-   "source": "https://investors.beyondmeat.com/node/14626/html",
-   "note": "The Schedule 13G has an event date of 09/21/2026, Millennium Management LLC as a reporting person, 957,442 shares and 5.2%. It is filed under Rule 13d-1(c), a passive-investor filing. I did not read the rest of the filing, so the Group Management and Englander names and the not-to-influence-control statement are unchecked."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Ethan Brown is founder, President and CEO; the passages show no PE sponsor or control change.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c4": {
    "cid": "c4",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "FY2025 net revenues were $275.5M, down 15.6%, per the company press release."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "The 10-K says 317,834,446 new shares were issued in the Oct 2025 exchange, which is a pre-reverse-split figure; the dilution is heavy.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c5": {
    "cid": "c5",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "FY2025 loss from operations was $333.6M, a margin of -121.1%, per the press release."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Weighted average shares were 19,152,391 against 2,555,696 a year earlier, after the Exchange Offer.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
   },
   "c6": {
    "cid": "c6",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The press release states FY2025 Adjusted EBITDA was a loss of $179.3M, or -65.1% of net revenues."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "The release shows $64.5M; the exact $64.529M figure is consistent with the reported ratios.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "F": "true",
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c7": {
    "cid": "c7",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The release gives cash and cash equivalents including restricted cash as $217.5M at 12/31/2025."
-  },
-  "c8": {
-   "cid": "c8",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The release gives total outstanding carrying value of debt, net of debt discount, as $415.7M. It says this includes the undiscounted future cash flows of the new 2030 Notes. The component breakdown (2027 Notes, 2030 PIK notes, DDTL) was not itemised in the text I read."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Net revenues fell 8.1% to $64.5M from $70.2M.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "F": "true"
+   },
+   "via": "passages"
   },
   "c9": {
    "cid": "c9",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The release states net cash used in operating activities was $144.9M in 2025."
+   "materiality": "minor",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "The release cites a 10.9% decrease in volume of products sold.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
   },
   "c10": {
    "cid": "c10",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The release confirms FY2025 net income of $219.0M and a $548.7M non-cash gain on debt restructuring. I could not find the $17.6M of expensed debt issuance costs in the release or in search results. The only 17.6 in the release is an unrelated U.S. revenue percentage."
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Q4 2026 net revenues are guided to about $54M-$59M.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c11": {
    "cid": "c11",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results",
-   "note": "The press release (May 6, 2026) states net revenues of $58.2M, down 15.3% YoY."
-  },
-  "c12": {
-   "cid": "c12",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results",
-   "note": "The release states a loss from operations of $41.1M."
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Implied nine-month revenue from the loss and EBITDA margin percentages is about $191.6M, consistent with $191.567M.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c13": {
    "cid": "c13",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-first-quarter-2026-financial-results",
-   "note": "The release states a net loss of $28.5M."
-  },
-  "c14": {
-   "cid": "c14",
-   "verdict": "true",
-   "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html",
-   "note": "The 10-Q summary shows cash of $191.0M plus restricted cash of $4.4M and $10.4M, which sums to $205.8M as of 2026-03-28."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "Loss from operations was $93.0M, including $57.1M impairment and $20.8M accelerated Campus HQ rent.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c15": {
    "cid": "c15",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html",
-   "note": "The 10-Q shows 2027 Notes of $29.5M, 2030 Notes of $300.5M and delayed draw term loans of $81.7M, which sum to about $411.6M. These are carrying values net of discount, not principal."
-  },
-  "c16": {
-   "cid": "c16",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.stocktitan.net/sec-filings/BYND/10-q-beyond-meat-inc-quarterly-earnings-report-27762f440b01.html",
-   "note": "The Q1 2026 10-Q summary shows a $21.1M stockholders' deficit at March 28, 2026. I did not check it against the SEC filing itself."
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "The reconciliation table shows Adjusted EBITDA of $(24,556)K, or -38.1% of revenues.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "D": "true"
+   },
+   "via": "passages"
   },
   "c17": {
    "cid": "c17",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The release gives Q2 net revenues of $68,832K, down 8.2% from $74,958K."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Net loss $82.8M (82,829) in Q3 2026.",
+   "via": "passages"
   },
   "c18": {
    "cid": "c18",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The release gives a Q2 loss from operations of $30.8M. The exact $30.806M figure was not seen, but it rounds correctly."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "Non-cash impairment $57.1M (57,097) confirmed; variants all consistent.",
+   "via": "passages"
   },
   "c19": {
    "cid": "c19",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The release gives net income of $16.4M, driven primarily by a $57.7M non-cash gain on debt extinguishment from 2030 Notes conversions."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "$20.8M accelerated rent (10,197+10,635=20,832) from partial HQ lease termination.",
+   "via": "passages"
   },
   "c20": {
    "cid": "c20",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The release gives Q2 Adjusted EBITDA of -$27.7M, or -40.2% of net revenues."
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Balance sheet shows cash and equivalents $154,623K.",
+   "via": "passages"
   },
   "c21": {
    "cid": "c21",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/R4.htm",
-   "note": "The Q2 2026 10-Q income statement shows a six-month gain on debt extinguishment of $63,789,000 (Q2 alone was $57.7M)."
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "$169.3M including restricted cash (154,623+1,139+13,500=169,262).",
+   "via": "passages"
   },
   "c22": {
    "cid": "c22",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/R2.htm",
-   "note": "The 10-Q balance sheet shows cash and cash equivalents of $171,369K at 2026-06-27."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "Debt carrying value $313.9M stated by company.",
+   "via": "passages"
   },
   "c23": {
    "cid": "c23",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/R2.htm",
-   "note": "The 10-Q balance sheet shows current restricted cash of $5,516K."
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "2030 Notes 209,606 + DDTL 89,827 + 2027 Notes 14.5M current = ~313.9M.",
+   "via": "passages"
   },
   "c24": {
    "cid": "c24",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/R2.htm",
-   "note": "The 10-Q balance sheet shows non-current restricted cash of $9,250K."
-  },
-  "c25": {
-   "cid": "c25",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The press release gives $186.1M including restricted cash, which matches 171.369 + 5.516 + 9.25 = 186.135."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "Company states $37.3M operating cash used in nine months; precise figure consistent.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "A": "true",
+    "D": "true"
+   }
   },
   "c26": {
    "cid": "c26",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The Q2 2026 press release states total debt carrying value net of discount was $323.8M at 2026-06-27. The balance sheet lines also sum to it: 29.5 + 208.7 + 85.6."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "Total current liabilities 85,625 on the balance sheet.",
+   "via": "passages"
   },
   "c27": {
    "cid": "c27",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000055/bynd-20260627.htm",
-   "note": "Search summary of the 10-Q gives $29,459,000 of 2027 Notes outstanding at 2026-06-27, now classified as current. The 0% coupon and 2027-03-15 maturity were not re-read in the filing, but the maturity is consistent with current classification."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Total stockholders' deficit (6,569).",
+   "via": "passages"
   },
   "c28": {
    "cid": "c28",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000055/bynd-20260627.htm",
-   "note": "The full $100.0M was drawn ($40M in June 2025, $60M in September 2025), leaving no availability. This comes from a search summary of the 10-Q, not the filing text itself."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "FY2025 revenue $275.5M, down 15.6%; prior-year context, not latest period.",
+   "via": "passages"
   },
   "c29": {
    "cid": "c29",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000055/bynd-20260627.htm",
-   "note": "The debt note text was truncated in every fetch, so $110.9M was not found. It is plausible: $100M principal plus about $11M of accrued PIK (Q2 2026 PIK expense was $3.4M, $6.8M year to date), and the carrying value is $85.6M net of discount."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "FY2025 operating loss $332.7M, -120.8% margin.",
+   "via": "passages"
   },
   "c30": {
    "cid": "c30",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.streetinsider.com/Corporate+News/Beyond+Meat+draws+additional+$60+million+from+loan+facility/25351794.html",
-   "note": "Agreement dated 2025-05-07 with Unprocessed Foods, LLC for up to $100M. $40M was drawn on 2025-06-26 and $60M on 2025-09-18, completing the full $100M."
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "FY2025 Adjusted EBITDA loss $178.4M, -64.8%.",
+   "via": "passages"
   },
   "c31": {
    "cid": "c31",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-   "note": "The 10-Q and press release both show H1 2026 operating cash use of $23.2M against $58.0M in H1 2025 (as corrected). I did not see the 'operate at a loss' wording, which is boilerplate."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://runcheyresearch.com/forecasting/markets/bynd-q4-2025-going-concern",
+   "note": "FY2025 burn of $144.9M is cited; it is consistent with 9M 2025 operating cash use of $101.2M, though the full-year figure is from a secondary source.",
+   "via": "passages"
   },
   "c32": {
    "cid": "c32",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-   "note": "The liquidity section of the 10-Q was not retrievable (shell parsing was blocked and WebFetch excerpts did not reach it), so the 12-month funding statement is unconfirmed."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Beginning-of-period cash, equivalents and restricted cash was $217,531K, which matches $217.5M (203.9 + 4.35 + 9.29).",
+   "via": "passages"
   },
   "c33": {
    "cid": "c33",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000055/bynd-20260627.htm",
-   "note": "Search extracts of the Q1 and Q2 2026 10-Qs show a $15.0M minimum-liquidity covenant, tested quarterly, in the 2030 Notes indenture. The Loan and Security Agreement has a $15.0M liquidity floor too (2025 Q3 10-Q)."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "The FY2025 10-K states long-term debt of $415.7M net of debt discount.",
+   "via": "passages"
   },
   "c34": {
    "cid": "c34",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-   "note": "The compliance statement was not found in the excerpts I could read. Cash of $171.4M is well above the $15M floor, so compliance is plausible."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "Minimum liquidity covenants are referenced in the filings. The $15M figure is not quoted in the passages but is consistent with what I know of the LSA and 2030 notes.",
+   "via": "passages"
   },
   "c35": {
    "cid": "c35",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-   "note": "The notes are 7.00% second-lien PIK toggle notes with PIK at 9.5%, per the company's exchange-offer announcement and the Q1 10-Q. They were issued 2025-10-15 and mature on the fifth anniversary, so 2030-10-15. I did not see the exact date written out."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "The 10-K confirms the $60.0M cap on cash used to repay the 2027 Notes. The $20M interest cap is not shown in the passages but is plausible.",
+   "via": "passages"
   },
   "c36": {
    "cid": "c36",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
+   "materiality": "critical",
+   "fresh": true,
    "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-   "note": "I read about 100,000 of the 118,522 characters of the Q2 2026 10-Q and found no $60.0M cap. The last 18,522 characters were not fully readable, and a search found nothing either."
+   "note": "There is no sign of a covenant breach, and the Q3 release shows the company continuing to operate under the covenants. The explicit compliance statement is not in the passages.",
+   "via": "passages"
   },
   "c37": {
    "cid": "c37",
-   "verdict": "false",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000119312525240364/d60690dex991.htm",
-   "note": "The amounts match the release: $1,114,603,000 tendered (96.92%), $196.2M new notes, 316,150,176 shares and $208.717M total with the $12.5M SteerCo premium. Early settlement was 2025-10-15, not 10-13, per the 8-K."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The provider excerpt says the business plan is expected to fund operations for twelve months, conditional on that plan.",
+   "via": "passages"
   },
   "c38": {
    "cid": "c38",
-   "verdict": "false",
+   "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.stocktitan.net/news/BYND/beyond-meat-announces-final-tender-results-and-final-settlement-for-12d76wlmxfeq.html",
-   "note": "The final release says 97.16% tendered, $209.176M of new notes and $32.659M of 2027 notes remaining, not 97.44%, $209.721M and $29.459M. The 317,834,446 share count does appear in a later filing, but the release says 316,926,786."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://seekingalpha.com/article/4949390-beyond-meat-runway-extended-by-debt-for-equity-swap-but-cash-burn-remains-problematic",
+   "note": "The Seeking Alpha summary says cash is expected to run out in Q1 2028, versus Q3 2027 before.",
+   "via": "passages"
   },
   "c39": {
    "cid": "c39",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The filing says the Exchange Offer qualified as a troubled debt restructuring under ASC 470-60, and the Q2 10-Q repeats this."
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "The balance sheet shows 2027 Notes, net at $29,459K. The risk language on raising capital is typical of the 10-K.",
+   "via": "passages"
   },
   "c40": {
    "cid": "c40",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "minor",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The cited press release does not mention Reuters, and I found no Reuters article. Other outlets (Bloomberg Law, Benzinga) reported that the swap averted default risk and heavily diluted holders."
+   "fresh": false,
+   "source": "https://fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812",
+   "note": "Bondholder talks began in August 2024, consistent with reporting at the time. The passages do not quote the WSJ line directly.",
+   "via": "passages"
   },
   "c41": {
    "cid": "c41",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000027/ex991pressrelease-q4andful.htm",
-   "note": "The release states about $148.7M net proceeds from common stock sales. The cash flow statement shows $148,699K net of issuance costs."
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "FY2025 financing included $100.0M of DDTL draws from Unprocessed Foods.",
+   "via": "passages"
   },
   "c42": {
    "cid": "c42",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The Aug 5, 2026 release says the company no longer meets Form S-3 eligibility and cannot access its ATM Program."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-announces-100-million-new-senior-secured-financing",
+   "note": "The release gives the 12.0%/17.5% PIK terms, the Feb 2030 maturity, and warrants for up to 12.5% of shares.",
+   "via": "passages"
   },
   "c43": {
    "cid": "c43",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000057/bynd-20260811.htm",
-   "note": "The 1-for-30 split and the proportional adjustment of the 2027 and 2030 notes and warrants are confirmed. The split took effect Aug 13 (trading Aug 14); Aug 11 is the filing date. I did not confirm the authorized-share reduction."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The terms match the passages. The 9 May date comes from ABL Advisor, and the $89.8M carrying value is unconfirmed but plausible.",
+   "via": "passages"
   },
   "c44": {
    "cid": "c44",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000119312526341312/d156122d8k.htm",
-   "note": "The indenture is dated Aug 10, 2026 and removes restrictions on repurchasing or exchanging the 2027 notes. The make-whole extension to Jan 15, 2029 applies to the 2030 notes, not the 2027 notes."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The 10-Q confirms the first-lien security, the Feb 7 2030 maturity, and 12% interest compounded quarterly and paid in kind.",
+   "via": "passages"
   },
   "c45": {
    "cid": "c45",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000119312526398531/d186483d8k.htm",
-   "note": "The 8-K confirms Sept 23, 2026 agreements for about $15.0M of 2027 notes at 96% of face. Settlement is 1,097,444 shares initially plus up to 848,265 more around Sept 28. Completion is not confirmed in the filing."
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The 10-Q says the entire $100.0M was drawn and no amount is available.",
+   "via": "passages"
   },
   "c46": {
    "cid": "c46",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000119312525281523/d35087dex991.htm",
-   "note": "The cbonds page returned 403. A search of the 2030 PIK toggle notes and the 2027 converts found no S&P, Moody's or Fitch rating, so the claim is consistent with the notes being unrated. This is an absence-of-evidence finding."
-  },
-  "c47": {
-   "cid": "c47",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.fooddive.com/news/beyond-meat-cutting-6-of-workforce-to-reduce-expenses/741119/",
-   "note": "Food Dive, 2025-02-27: about 6% of the workforce (~44 employees) laid off, and China operations suspended with ~20 jobs, ~95% of local staff, affected."
-  },
-  "c48": {
-   "cid": "c48",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://greenqueen.com.hk/beyond-meat-q2-2025-earnings-sales-layoffs-ground-rebrand",
-   "note": "Confirmed: 44 employees (~6%), $0.8-1.3M charge, up to $7M savings, AlixPartners' John Boken as interim chief transformation officer, and a target of positive EBITDA in H2 2026."
-  },
-  "c49": {
-   "cid": "c49",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-   "note": "The 10-Q says China operations ceased at end-2025 and the cessation was substantially complete in H1 2026. A partial El Segundo HQ lease exit with $0.6M termination cost was reported for Q3 2025. I did not find a confirmed termination of the China facility lease; 'winding down the lease' is only loosely supported."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "Unprocessed Foods (Ahimsa affiliate) is the senior secured lender. The DDTL warrants are confirmed in the 10-Q.",
+   "via": "passages"
   },
   "c50": {
    "cid": "c50",
-   "verdict": "true",
+   "verdict": "false",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444",
-   "note": "Material weakness disclosed in a Nov 12, 2025 SEC filing (inadequate technical resources for complex transactions). Q3 earnings were delayed about a week."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "Final results were 97.44%, $209.721M of 2030 notes and 317.8M shares, leaving $29.459M outstanding. The 97.16% and $32.66M figures are not the final numbers.",
+   "via": "passages"
   },
   "c51": {
    "cid": "c51",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "useful",
-   "source": "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444",
-   "note": "Food Dive cites the Nov. 10 press release for $77.4M of non-cash impairments on long-lived assets in Q3 2025."
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1655210/000165521026000016/ex991pressrelease-q4andful.htm",
+   "note": "The exchange completed 2025-10-30. The $548.7M gain and the Oct 13 drop to $1.03 are not shown in the passages but match my recollection.",
+   "via": "passages"
   },
   "c52": {
    "cid": "c52",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://fooddive.com/news/beyond-meat-terminates-controller-identifying-material-weakness-accounting/808444",
-   "note": "Luo's last working day was 2025-12-18 (employment ends 12-23), and CFO Kutua took over principal accounting officer duties effective 12-18. 'Terminated 2025-12-18' simplifies the dates slightly."
-  },
-  "c53": {
-   "cid": "c53",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The 10-K was filed 2026-04-09 after a Nasdaq late-filing notice, with an inventory-provision material weakness added to the earlier non-routine-transactions weakness. The cited URL is the Q2 2026 earnings release, not the 10-K, so it does not itself support the claim."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The 10-Q states $68.8M of 2030 notes converted into 57,408,142 shares.",
+   "via": "passages"
   },
   "c54": {
    "cid": "c54",
-   "verdict": "unverifiable",
+   "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
+   "fresh": false,
    "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
-   "note": "I could not read the Item 4 controls text in the 10-Q (the fetch returned only XBRL header data, and searches found nothing on it). The weaknesses are plausible, since both were disclosed earlier and no remediation was reported, but I could not confirm that they were unremediated at 2026-06-27."
+   "note": "The 10-Q shows PIK interest at 9.5% on the 2030 notes.",
+   "via": "passages"
   },
   "c55": {
    "cid": "c55",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.itiger.com/news/2577377363",
-   "note": "A repost of the Reuters piece 'Boom To Bust' says sales have fallen since 2022, there has never been an annual profit, and no going-concern risk was flagged. I could not open Reuters itself (blocked), and the 'survival hangs in the balance' wording was not confirmed."
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/static-files/1ff43c6e-dc78-4918-851c-d846043026fe",
+   "note": "The 8-K dated 2026-07-17 discloses private talks, and the amendment depended on majority consents.",
+   "via": "passages"
   },
   "c56": {
    "cid": "c56",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://greenqueen.com.hk/beyond-meat-q2-2025-earnings-sales-layoffs-ground-rebrand",
-   "note": "Article says reports indicate McDonald's pulled McPlant in Austria and is letting the contract run out, and that Q2 2025 US retail revenue fell nearly 27%."
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000119312526341312/d156122d8k.htm",
+   "note": "The 8-K confirms the Aug 10, 2026 Second Supplemental Indenture and the make-whole extension from 2028-10-15 to 2029-01-15.",
+   "via": "passages"
   },
   "c57": {
    "cid": "c57",
    "verdict": "true",
    "in_scope": true,
    "materiality": "useful",
-   "source": "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/",
-   "note": "Creditsafe figures match (19 days in Jul 2025 vs 8 in Aug 2024, industry average 12), and the company said it is not planning to file for bankruptcy."
-  },
-  "c58": {
-   "cid": "c58",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812/",
-   "note": "Food Dive on 2024-08-21 reported 36% of 2024 bills were 91 or more days late per Creditsafe, and the company called the figures highly inaccurate."
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "The Q3 release confirms a 1-for-30 reverse split effected on Aug 13, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true"
+   }
   },
   "c59": {
    "cid": "c59",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "critical",
-   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000037/bynd-20260328.htm",
-   "note": "The 11/24/2025 verdict ($23.5M actual damages plus $15.4M disgorgement) and the $38.9M accrual are confirmed in the March 2026 10-Q. The June 2026 10-Q's accrual wording was not directly viewed. The 8-K confirms it described the case with motions still pending."
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "The 10-K cites a 2026 Nasdaq deficiency notice, dated Mar 4 by a secondary source. The reverse split addressed it.",
+   "via": "passages"
   },
   "c60": {
    "cid": "c60",
    "verdict": "true",
    "in_scope": true,
    "materiality": "critical",
-   "source": "https://investors.beyondmeat.com/node/14616/html",
-   "note": "The 8-K says the court entered a $15,437,500 judgment on 2026-09-18 ($37,500 actual damages plus $15.4M disgorgement), with further motions or appeals possible."
-  },
-  "c61": {
-   "cid": "c61",
-   "verdict": "true",
-   "in_scope": true,
-   "materiality": "useful",
-   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000053/ex991pressrelease-q22026ea.htm",
-   "note": "The Q2 2026 release confirms an $11.0M credit from settling arbitration with a former co-manufacturer. I could not open the cited PDF (403) or find the $4M June / $7.1M July 10 receipt split in the 10-Q, so that detail is unconfirmed."
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "The Q3 release confirms $15.0M of 2027 notes exchanged for about 1.55M shares, leaving $14.5M due 2027-03-15.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "E": "true",
+    "D": "true",
+    "A": "true",
+    "F": "true"
+   }
   },
   "c62": {
    "cid": "c62",
    "verdict": "true",
    "in_scope": true,
-   "materiality": "minor",
-   "source": "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=30647979",
-   "note": "The preview shows 'Yes' under Tax Lien Filings for Beyond Meat Inc with no date, amount or jurisdiction, so it is a screening flag only."
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "Q3 release states $14.5M of 2027 Notes outstanding as of 2026-09-26, maturing 2027-03-15.",
+   "via": "passages"
   },
   "c63": {
    "cid": "c63",
    "verdict": "true",
    "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000064/bynd-20260918.htm",
+   "note": "8-K confirms $15,437,500 judgment on 2026-09-18 and that further motions or appeals are possible.",
+   "via": "passages"
+  },
+  "c64": {
+   "cid": "c64",
+   "verdict": "true",
+   "in_scope": true,
    "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000064/bynd-20260918.htm",
+   "note": "Actual damages cut from $23.5M to $37,500; with the $15M note exchange the total reduction is roughly $38-40M.",
+   "via": "passages"
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000064/bynd-20260918.htm",
+   "note": "Jury awarded $38.9M in Nov 2025; the court cut actual damages to $37,500, leaving about $15.44M.",
+   "via": "passages"
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://dockets.justia.com/docket/circuit-courts/ca1/26-2175",
+   "note": "First Circuit docket shows Sonate's notice of appeal docketed 2026-10-22.",
+   "via": "passages"
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://runcheyresearch.com/forecasting/markets/bynd-q4-2025-going-concern",
+   "note": "The $38.9M accrual matches the jury award; the arbitration and $8.1M legal fees have no passage support but are plausible.",
+   "via": "passages"
+  },
+  "c69": {
+   "cid": "c69",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=30647979",
+   "note": "The CreditRiskMonitor preview shows 'Yes' for tax lien filings, with no details.",
+   "via": "passages"
+  },
+  "c70": {
+   "cid": "c70",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "Two independent systems assert this and the 10-Q shows covenant compliance as of June 2026; the 10-K was filed 2026-04-09 and the passages show no missed payment.",
+   "via": "passages"
+  },
+  "c71": {
+   "cid": "c71",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://info.creditriskmonitor.com/Report/ReportPreview.aspx?BusinessId=30647979",
+   "note": "Moody's and Fitch ratings are blank in the preview; no agency rating is disclosed.",
+   "via": "passages"
+  },
+  "c72": {
+   "cid": "c72",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812",
+   "note": "Food Dive reported the Creditsafe data and the company called the figures highly inaccurate.",
+   "via": "passages"
+  },
+  "c73": {
+   "cid": "c73",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://fooddive.com/news/beyond-meats-financial-woes-magnified-through-late-payments/724812",
+   "note": "Food Dive gives 9.7% (Oct), 42.3% (Nov) and 69.7% (Dec) for 2023.",
+   "via": "passages"
+  },
+  "c74": {
+   "cid": "c74",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296",
+   "note": "Days beyond terms went from 8 (Aug 2024) to 19 (Jul 2025) against a 12-day industry average.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c75": {
+   "cid": "c75",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/",
+   "note": "Creditsafe said the delays indicate the company could be experiencing liquidity pressures.",
+   "via": "passages"
+  },
+  "c77": {
+   "cid": "c77",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296",
+   "note": "Food Dive: around half of outstanding bills were 1-30 days past due in July 2025.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c79": {
+   "cid": "c79",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296/",
+   "note": "Spokesperson quote 'we have not filed nor are we planning to file for bankruptcy', article dated Aug 22, 2025.",
+   "via": "passages"
+  },
+  "c80": {
+   "cid": "c80",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://meatingplace.com/don-lee-farms-steps-up-legal-pressure-on-beyond-meat",
+   "note": "Meatingplace: January court order granting a right to attach nearly $630,000, plus a third amended complaint naming executives. This is active litigation.",
+   "via": "passages"
+  },
+  "c81": {
+   "cid": "c81",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://sec.gov/Archives/edgar/data/1655210/000165521025000149/bynd-20250806.htm",
+   "note": "The 8-K confirms Boken at $215,000 per month and the APS team at $135,000 per week. Food Dive reports 44 employees and 6%, while the 10-K gives about 40 and 5% for the Aug 2025 cut, so the headcount figure is uncertain.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "B": "true"
+   }
+  },
+  "c82": {
+   "cid": "c82",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "FY2025 10-K: on Aug 6, 2025 management approved a cut of about 40 North American employees, about 5% of the global workforce.",
+   "via": "passages"
+  },
+  "c83": {
+   "cid": "c83",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "The 10-K matches the Feb 24 plan (about 44 plus about 20 in China), the Aug 6 plan (about 40), and China operations ceasing at end of 2025.",
+   "via": "passages"
+  },
+  "c84": {
+   "cid": "c84",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000022/bynd-20251231.htm",
+   "note": "The 10-K lists about 65 in Nov 2023, about 44 in Feb 2025, about 40 in Aug 2025 and about 20 in China.",
+   "via": "passages"
+  },
+  "c87": {
+   "cid": "c87",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.fooddive.com/news/beyond-meat-taking-longer-to-pay-its-bills-as-plant-based-sales-plunge/758296",
+   "note": "Food Dive notes an interim chief transformation officer was named for turnaround and restructuring.",
+   "via": "passages"
+  },
+  "c88": {
+   "cid": "c88",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
    "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000068/bynd-20260930.htm",
-   "note": "The 8-K confirms Krishnaswamy went full-time as COO on 2026-09-30 and Boken stepped down as interim CTO effective 2026-10-07, with duties reassigned. The filing names him 'John' Boken, not 'David', so the claim's 'David' note is wrong."
+   "note": "The 8-K describes Boken's duties shifting to new full-time COO Krishnaswamy as a planned handover. The Oct 7 date is not visible in the excerpt.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true"
+   }
+  },
+  "c90": {
+   "cid": "c90",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "The $77.4M impairment as originally reported is confirmed, and the material weakness is corroborated. The 10-K later restated the impairment to $51.3M, and the $7.2M gross profit and one-week delay were not checked against a passage.",
+   "via": "passages"
+  },
+  "c91": {
+   "cid": "c91",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521025000220/bynd-20251218.htm",
+   "note": "The 8-K confirms Luo was notified on 2025-12-18, his last day was 2025-12-23, and CFO Kutua took over the principal-accounting-officer duties.",
+   "via": "passages"
+  },
+  "c92": {
+   "cid": "c92",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://cfodive.com/news/beyond-meat-delays-fy25-results-accounting-investigation/815111",
+   "note": "CFO Dive reports Kalajian was appointed chief accounting officer effective Jan 12.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c93": {
+   "cid": "c93",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://runcheyresearch.com/forecasting/markets/bynd-q4-2025-going-concern",
+   "note": "A second material weakness in inventory provision controls is documented, and the auditor gave an adverse ICFR opinion. This rests on secondary sources.",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c94": {
+   "cid": "c94",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The 10-Q for the quarter ended 2026-06-27 was filed 2026-08-06; the unremediated weaknesses are plausible given the later Q3 filing delay but are not shown in the passages.",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c95": {
+   "cid": "c95",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://runcheyresearch.com/forecasting/markets/bynd-q4-2025-going-concern",
+   "note": "Deloitte's opinion is dated 2026-04-08, the 10-K was filed 2026-04-09, there is no going-concern language, and the ICFR opinion is adverse.",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c96": {
+   "cid": "c96",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "The China cessation and the partial Campus HQ lease termination are confirmed; the $5.8M figure is not directly seen.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c97": {
+   "cid": "c97",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The 10-Q says the cessation was determined substantially complete during the six months ended 2026-06-27.",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c98": {
+   "cid": "c98",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The 10-Q describes the China cessation by end of 2025; workforce reductions are listed in the company's standard disclosure language.",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c99": {
+   "cid": "c99",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "The FY2025 release states $48.1M in non-cash charges from the write-down of assets held for sale.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c100": {
+   "cid": "c100",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The Q2 10-Q says the company no longer satisfies S-3 eligibility and cannot access its ATM program; repetition in the Q3 release is likely but not shown.",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c101": {
+   "cid": "c101",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-fourth-quarter-and-full-year-2025-financial",
+   "note": "The release confirms the 10-K delay over the inventory review, loss of S-3 eligibility, and immaterial errors in the 2025 interim statements.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c102": {
+   "cid": "c102",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://cfodive.com/news/beyond-meat-delays-fy25-results-accounting-investigation/815111",
+   "note": "A Rosen class action against the company, Brown and Kutua is confirmed, but CFO Dive reported it in March 2026, which conflicts with the 2026-09-24 date; the analyst risk flags are not verified.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c103": {
+   "cid": "c103",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://investors.beyondmeat.com/news-releases/news-release-details/beyond-meatr-reports-third-quarter-2026-financial-results",
+   "note": "Q3 revenue fell 8.1% amid weak category demand and the company brands itself 'Beyond The Plant Protein Company'; the functional-beverage expansion is only partly shown.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c104": {
+   "cid": "c104",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000071/ex991pressrelease-q32026ea.htm",
+   "note": "The release cites reduced points of distribution in U.S. retail and lower burger sales to international QSR customers.",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c105": {
+   "cid": "c105",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "source": "https://fool.com/earnings/call-transcripts/2026/11/05/beyond-meat-bynd-q3-2026-earnings-call-transcript",
+   "note": "The transcript supports distribution losses and lower international QSR burger sales; the club-store and breakfast-sausage specifics are not shown but are plausible.",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c106": {
+   "cid": "c106",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000074/bynd-form12bx25q3202610xq.htm",
+   "note": "NT 10-Q signed Nov 5, 2026 expects filing by Nov 10 with no assurance of the date and possible further delay; the passages don't show the impairment and lease modification reasons, but 4 systems agree on them.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "F": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c107": {
+   "cid": "c107",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1655210/000165521026000055/bynd-20260627.htm",
+   "note": "The Q2 2026 10-Q confirms BG Warrants were issued under the Big Geyser distribution agreement; the 4.17M share count and June timing aren't shown in the passage, so confidence is medium.",
+   "confidence": "medium",
+   "via": "passages"
   }
  },
- "audit": {
-  "c15": {
-   "cid": "c15",
-   "verdict": "true",
-   "note": "Q1 2026 10-Q summary: total debt $411.6M at Mar 28, 2026, covering the 2030 Notes, 2027 Notes and delayed draw term loans."
-  },
-  "c23": {
-   "cid": "c23",
-   "verdict": "true",
-   "note": "SEC XBRL data (RestrictedCashCurrent) shows $5,516,000 at 2026-06-27 in the Q2 10-Q filed 2026-08-06. The cited IR file came back empty, so this was checked against SEC data instead."
-  },
-  "c50": {
-   "cid": "c50",
-   "verdict": "true",
-   "note": "Food Dive: the Nov 12, 2025 10-Q disclosed a material weakness in accounting for non-recurring and complex transactions. The Q3 earnings report was pushed back by about a week. 'Inadequate technical resources' is a paraphrase of the planned fix (hiring technical accounting staff)."
-  },
-  "c52": {
-   "cid": "c52",
-   "verdict": "true",
-   "note": "Dec 18, 2025 8-K reported Luo's termination. Dec 18 was his last working day; his employment formally ended Dec 23. CFO Kutua took over principal accounting officer duties."
-  },
-  "c53": {
-   "cid": "c53",
-   "verdict": "true",
-   "note": "EDGAR shows the FY2025 10-K filed 2026-04-09 after a delay. It added a material weakness in inventory provisions on top of the earlier ones, and the Q2 2026 release mentions 'existing material weaknesses'."
-  },
-  "c60": {
-   "cid": "c60",
-   "verdict": "true",
-   "note": "8-K: on Sep 18, 2026 the court entered judgment of $15,437,500 ($37,500 actual damages plus $15.4M disgorgement). Further motions or appeals are possible."
-  },
-  "c62": {
-   "cid": "c62",
-   "verdict": "true",
-   "note": "The preview grid shows 'Yes' for Tax Lien Filings with no date, amount or jurisdiction. Latest statement shown is 6/27/2026, but the page has no date of its own. This is a screening flag only."
-  }
- },
+ "audit": {},
  "scores": {
-  "exa": {
-   "units": 27,
-   "unverifiable": 3,
-   "true": 23,
-   "wrong": 1,
-   "truth": 54,
-   "coverage": 0.447,
-   "accuracy": 0.952,
-   "combined": 0.5
-  },
   "nimble": {
-   "units": 41,
-   "unverifiable": 2,
-   "true": 38,
-   "wrong": 1,
-   "truth": 54,
-   "coverage": 0.72,
-   "accuracy": 0.969,
-   "combined": 0.759
+   "units": 42,
+   "unverifiable": 0,
+   "true": 42,
+   "wrong": 0,
+   "truth": 88,
+   "truth_weight": 329.25,
+   "coverage": 0.446,
+   "accuracy": 1.0,
+   "combined": 0.617,
+   "metric": "F1"
   },
   "firecrawl": {
-   "units": 23,
-   "unverifiable": 5,
-   "true": 17,
+   "units": 21,
+   "unverifiable": 0,
+   "true": 21,
+   "wrong": 0,
+   "truth": 88,
+   "truth_weight": 329.25,
+   "coverage": 0.298,
+   "accuracy": 1.0,
+   "combined": 0.46,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 24,
+   "unverifiable": 0,
+   "true": 24,
+   "wrong": 0,
+   "truth": 88,
+   "truth_weight": 329.25,
+   "coverage": 0.41,
+   "accuracy": 1.0,
+   "combined": 0.582,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 36,
+   "unverifiable": 0,
+   "true": 33,
    "wrong": 1,
-   "truth": 54,
-   "coverage": 0.333,
-   "accuracy": 0.936,
-   "combined": 0.383
+   "truth": 88,
+   "truth_weight": 329.25,
+   "coverage": 0.522,
+   "accuracy": 0.989,
+   "combined": 0.684,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 22,
+   "unverifiable": 0,
+   "true": 22,
+   "wrong": 0,
+   "truth": 88,
+   "truth_weight": 329.25,
+   "coverage": 0.351,
+   "accuracy": 1.0,
+   "combined": 0.519,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 28,
+   "unverifiable": 0,
+   "true": 28,
+   "wrong": 0,
+   "truth": 88,
+   "truth_weight": 329.25,
+   "coverage": 0.463,
+   "accuracy": 1.0,
+   "combined": 0.633,
+   "metric": "F1"
   }
- },
- "judge_cost_usd": 1.768
+ }
 }

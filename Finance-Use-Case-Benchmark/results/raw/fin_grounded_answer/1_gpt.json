@@ -1,0 +1,112 @@
+{
+ "arm": "gpt",
+ "sub_use_case": "fin_grounded_answer",
+ "input": "What guidance did Nike give for the current quarter on its most recent earnings call, and how did the stock react?",
+ "input_n": 1,
+ "tier": "medium",
+ "model": "gpt-6.1-sol",
+ "status": "completed",
+ "seconds": 43,
+ "run_id": "resp_0e491a1e31470482006af335c2a32887d28c64ebd219d0d04a",
+ "output": {
+  "question": "What guidance did Nike give for the current quarter on its most recent earnings call, and how did the stock react?",
+  "answer": "On its most recent earnings call, October 1, 2026, Nike did not give a complete standalone forecast for the current fiscal second quarter; instead, it warned of approximately 400 basis points of revenue headwinds from comparisons with prior-year EMEA promotions and North American wholesale shipments. ([investors.nike.com](https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results)) Management said those comparisons would pressure second-quarter revenue growth relative to the first quarter. ([investors.nike.com](https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript)) Its broader fiscal 2027 guidance called for revenue to decline by high single digits and adjusted earnings per share of $1.15–$1.35, as issued October 1. ([investors.nike.com](https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results)) Nike shares fell following the results and outlook, finishing the next trading session, October 2, down 3.6%. ([apnews.com](https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31))",
+  "as_of": "2026-11-10",
+  "key_facts": [
+   {
+    "fact": "Nike's latest reported earnings call was its fiscal 2027 first-quarter call on October 1, 2026.",
+    "source_url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "date": "2026-10-01"
+   },
+   {
+    "fact": "As of the October 1 call, Nike did not provide complete standalone second-quarter guidance. It identified approximately 400 basis points of second-quarter revenue headwinds from prior-year EMEA promotional activity and North American sell-in comparisons, and warned of sequential pressure on revenue growth rates.",
+    "source_url": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+    "date": "2026-10-01"
+   },
+   {
+    "fact": "Nike's October 1 fiscal 2027 outlook projected a high-single-digit revenue decline and adjusted diluted EPS of $1.15–$1.35.",
+    "source_url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "date": "2026-10-01"
+   },
+   {
+    "fact": "Nike stock declined 3.6% in the October 2, 2026 trading session following its earnings release and call.",
+    "source_url": "https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31",
+    "date": "2026-10-02"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "NIKE, Inc. management will host a conference call beginning at approximately 2:00 p.m. PT on October 1, 2026",
+    "source_url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+    "publisher": "NIKE, Inc.",
+    "published_date": "2026-10-01"
+   },
+   {
+    "quote": "These 2 items will represent a headwind of approximately 400 basis points to revenues in the second quarter.",
+    "source_url": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+    "publisher": "NIKE, Inc.",
+    "published_date": "2026-10-01"
+   },
+   {
+    "quote": "Such gains more than made up for a 3.6% drop for Nike.",
+    "source_url": "https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31",
+    "publisher": "Associated Press",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "The approximately 400-basis-point headwind was not a forecast that total quarterly revenue would decline 4%; it described the effect of two comparison factors.",
+   "The fiscal 2027 EPS range is full-year guidance, not second-quarter guidance, and excludes approximately $0.15 per share of restructuring expenses.",
+   "The stock reaction cited is the next regular trading session's decline, not an after-hours move or a change attributable solely to the earnings call.",
+   "The opened Associated Press page did not display a publication date; its October 2, 2026 date was supplied by the search result metadata."
+  ],
+  "missing_fields": [
+   "passages[2].published_date"
+  ]
+ },
+ "basis": [
+  {
+   "citations": [
+    {
+     "url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+     "title": "NIKE, Inc. Reports Fiscal 2027 First Quarter Results :: NIKE, Inc. (NKE)"
+    },
+    {
+     "url": "https://investors.nike.com/financial-information/financial-results/transcript/9591/q1-2027-transcript",
+     "title": "Q1 2027 Transcript :: NIKE, Inc. (NKE)"
+    },
+    {
+     "url": "https://investors.nike.com/news-events/press-releases/detail/575/nike-inc-reports-fiscal-2027-first-quarter-results",
+     "title": "NIKE, Inc. Reports Fiscal 2027 First Quarter Results :: NIKE, Inc. (NKE)"
+    },
+    {
+     "url": "https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31",
+     "title": "US stocks rise near their record after the latest jobs report eases worries about inflation | AP News"
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "cost_usd": 0.1405,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "token_cost_usd": 0.0905,
+ "usage": {
+  "input_tokens": 42619,
+  "input_tokens_details": {
+   "cache_write_tokens": 29,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 1460,
+  "output_tokens_details": {
+   "reasoning_tokens": 399
+  },
+  "total_tokens": 44079
+ },
+ "search_calls": 5,
+ "search_actions": {
+  "search": 2,
+  "open_page": 3
+ },
+ "error": null,
+ "completed_on": "2026-11-10"
+}

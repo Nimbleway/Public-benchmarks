@@ -1,485 +1,2452 @@
 {
+ "suite": "GTM",
  "views": {
-  "all_3way": {
-   "n_tasks": 6,
-   "tasks": [
-    "gtm_meeting_prep_research#0",
-    "gtm_meeting_prep_research#1",
-    "gtm_meeting_prep_research#2",
-    "gtm_signal_tracking#0",
-    "gtm_signal_tracking#1",
-    "gtm_signal_tracking#2"
-   ],
+  "suite": {
+   "n_tasks": 10,
    "arms": {
     "nimble": {
-     "n": 6,
-     "combined": 0.774,
-     "accuracy": 0.948,
-     "coverage": 0.744,
-     "wins": 3,
+     "n": 10,
+     "combined": 0.497,
+     "coverage": 0.427,
+     "accuracy": 0.96,
+     "empty_runs": 0,
+     "wins": 3.0,
      "avg_cost_usd": 0.1,
-     "median_seconds": 175.5,
-     "unverifiable_rate": 0.136
+     "efficiency": 4.97,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.75,
+     "key_n": 5,
+     "median_seconds": 134.5,
+     "tally": {
+      "true": 157,
+      "wrong": 5,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
     },
     "exa": {
-     "n": 6,
-     "combined": 0.753,
-     "accuracy": 0.9,
-     "coverage": 0.727,
-     "wins": 3,
+     "n": 10,
+     "combined": 0.405,
+     "coverage": 0.345,
+     "accuracy": 0.979,
+     "empty_runs": 0,
+     "wins": 0,
      "avg_cost_usd": 0.1,
-     "median_seconds": 62.5,
-     "unverifiable_rate": 0.042
+     "efficiency": 4.05,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.61,
+     "key_n": 5,
+     "median_seconds": 99.0,
+     "tally": {
+      "true": 129,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
+    },
+    "parallel": {
+     "n": 10,
+     "combined": 0.357,
+     "coverage": 0.314,
+     "accuracy": 0.981,
+     "empty_runs": 0,
+     "wins": 0,
+     "avg_cost_usd": 0.1,
+     "efficiency": 3.57,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.43,
+     "key_n": 5,
+     "median_seconds": 230.0,
+     "tally": {
+      "true": 121,
+      "wrong": 3,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
     },
     "firecrawl": {
-     "n": 6,
-     "combined": 0.601,
-     "accuracy": 0.927,
-     "coverage": 0.559,
+     "n": 10,
+     "combined": 0.316,
+     "coverage": 0.279,
+     "accuracy": 0.932,
+     "empty_runs": 0,
      "wins": 0,
      "avg_cost_usd": 0.096,
-     "median_seconds": 74.5,
-     "unverifiable_rate": 0.047
+     "efficiency": 3.3,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.47,
+     "key_n": 5,
+     "median_seconds": 112.0,
+     "tally": {
+      "true": 127,
+      "wrong": 5,
+      "off_scope": 1,
+      "unverifiable": 0
+     }
+    },
+    "gpt": {
+     "n": 10,
+     "combined": 0.448,
+     "coverage": 0.375,
+     "accuracy": 0.999,
+     "empty_runs": 0,
+     "wins": 3.0,
+     "avg_cost_usd": 0.208,
+     "efficiency": 2.16,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.7,
+     "key_n": 5,
+     "median_seconds": 59.5,
+     "tally": {
+      "true": 144,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
+    },
+    "opus": {
+     "n": 10,
+     "combined": 0.52,
+     "coverage": 0.419,
+     "accuracy": 0.992,
+     "empty_runs": 0,
+     "wins": 4.0,
+     "avg_cost_usd": 0.278,
+     "efficiency": 1.87,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.95,
+     "key_n": 5,
+     "median_seconds": 79.5,
+     "tally": {
+      "true": 148,
+      "wrong": 1,
+      "off_scope": 1,
+      "unverifiable": 0
+     }
     }
    }
   },
-  "parallel_4way": {
-   "n_tasks": 6,
-   "tasks": [
-    "gtm_meeting_prep_research#0",
-    "gtm_meeting_prep_research#1",
-    "gtm_meeting_prep_research#2",
-    "gtm_signal_tracking#0",
-    "gtm_signal_tracking#1",
-    "gtm_signal_tracking#2"
-   ],
+  "both": {
+   "n_tasks": 50,
    "arms": {
     "nimble": {
-     "n": 6,
-     "combined": 0.774,
-     "accuracy": 0.948,
-     "coverage": 0.744,
-     "wins": 2,
-     "avg_cost_usd": 0.1,
-     "median_seconds": 175.5,
-     "unverifiable_rate": 0.136
+     "n": 50,
+     "combined": 0.574,
+     "coverage": 0.474,
+     "accuracy": 0.928,
+     "empty_runs": 0,
+     "wins": 17.0,
+     "avg_cost_usd": 0.38,
+     "efficiency": 1.51,
+     "unverifiable_rate": 0.018,
+     "key_critical": 0.923,
+     "key_n": 40,
+     "median_seconds": 220.5,
+     "tally": {
+      "true": 1362,
+      "wrong": 61,
+      "off_scope": 11,
+      "unverifiable": 35
+     }
     },
     "exa": {
-     "n": 6,
-     "combined": 0.753,
-     "accuracy": 0.9,
-     "coverage": 0.727,
-     "wins": 3,
-     "avg_cost_usd": 0.1,
-     "median_seconds": 62.5,
-     "unverifiable_rate": 0.042
+     "n": 50,
+     "combined": 0.445,
+     "coverage": 0.348,
+     "accuracy": 0.977,
+     "empty_runs": 1,
+     "wins": 1.0,
+     "avg_cost_usd": 0.401,
+     "efficiency": 1.11,
+     "unverifiable_rate": 0.003,
+     "key_critical": 0.827,
+     "key_n": 40,
+     "median_seconds": 177.0,
+     "tally": {
+      "true": 852,
+      "wrong": 10,
+      "off_scope": 2,
+      "unverifiable": 5
+     }
     },
     "parallel": {
-     "n": 6,
-     "combined": 0.608,
-     "accuracy": 0.972,
-     "coverage": 0.566,
-     "wins": 1,
-     "avg_cost_usd": 0.1,
-     "median_seconds": 191.5,
-     "unverifiable_rate": 0.057
+     "n": 50,
+     "combined": 0.406,
+     "coverage": 0.322,
+     "accuracy": 0.981,
+     "empty_runs": 1,
+     "wins": 1.0,
+     "avg_cost_usd": 0.45,
+     "efficiency": 0.9,
+     "unverifiable_rate": 0.007,
+     "key_critical": 0.771,
+     "key_n": 40,
+     "median_seconds": 460.5,
+     "tally": {
+      "true": 786,
+      "wrong": 10,
+      "off_scope": 2,
+      "unverifiable": 6
+     }
     },
     "firecrawl": {
-     "n": 6,
-     "combined": 0.601,
-     "accuracy": 0.927,
-     "coverage": 0.559,
+     "n": 50,
+     "combined": 0.374,
+     "coverage": 0.295,
+     "accuracy": 0.942,
+     "empty_runs": 0,
      "wins": 0,
-     "avg_cost_usd": 0.096,
-     "median_seconds": 74.5,
-     "unverifiable_rate": 0.047
+     "avg_cost_usd": 0.308,
+     "efficiency": 1.21,
+     "unverifiable_rate": 0.005,
+     "key_critical": 0.736,
+     "key_n": 40,
+     "median_seconds": 217.0,
+     "tally": {
+      "true": 791,
+      "wrong": 26,
+      "off_scope": 2,
+      "unverifiable": 10
+     }
+    },
+    "gpt": {
+     "n": 50,
+     "combined": 0.5,
+     "coverage": 0.402,
+     "accuracy": 0.98,
+     "empty_runs": 1,
+     "wins": 8.0,
+     "avg_cost_usd": 0.557,
+     "efficiency": 0.9,
+     "unverifiable_rate": 0.008,
+     "key_critical": 0.829,
+     "key_n": 40,
+     "median_seconds": 297.0,
+     "tally": {
+      "true": 989,
+      "wrong": 13,
+      "off_scope": 6,
+      "unverifiable": 10
+     }
+    },
+    "opus": {
+     "n": 50,
+     "combined": 0.571,
+     "coverage": 0.455,
+     "accuracy": 0.944,
+     "empty_runs": 0,
+     "wins": 23.0,
+     "avg_cost_usd": 0.691,
+     "efficiency": 0.83,
+     "unverifiable_rate": 0.004,
+     "key_critical": 0.967,
+     "key_n": 40,
+     "median_seconds": 173.5,
+     "tally": {
+      "true": 1166,
+      "wrong": 24,
+      "off_scope": 9,
+      "unverifiable": 9
+     }
     }
    }
   }
  },
- "by_use_case": {
+ "by_job": {
   "gtm_meeting_prep_research": {
-   "name": "Account brief (meeting prep)",
-   "vertical": "gtm",
+   "name": "Meeting prep and account research",
    "tier": "medium",
+   "metric": "F1",
+   "n_tasks": 5,
    "combined": {
-    "nimble": 0.78,
-    "exa": 0.626,
-    "firecrawl": 0.652
+    "nimble": 0.43,
+    "exa": 0.346,
+    "parallel": 0.226,
+    "firecrawl": 0.294,
+    "gpt": 0.385,
+    "opus": 0.496
    }
   },
   "gtm_signal_tracking": {
-   "name": "Account signals",
-   "vertical": "gtm",
+   "name": "Track signals that create sales opportunities",
    "tier": "medium",
+   "metric": "F2",
+   "n_tasks": 5,
    "combined": {
-    "nimble": 0.767,
-    "exa": 0.881,
-    "firecrawl": 0.55
+    "nimble": 0.564,
+    "exa": 0.465,
+    "parallel": 0.488,
+    "firecrawl": 0.337,
+    "gpt": 0.511,
+    "opus": 0.543
    }
   }
  },
- "per_task": [
-  {
-   "id": "gtm_meeting_prep_research",
-   "name": "Account brief (meeting prep)",
-   "vertical": "gtm",
-   "tier": "medium",
-   "i": 0,
-   "input": "Prepare me for a meeting with Attio (attio.com)",
+ "audit_agreement": {
+  "suite": {
+   "units": 58,
+   "agree": 46,
+   "rate": 0.793
+  },
+  "both": {
+   "units": 258,
+   "agree": 221,
+   "rate": 0.857
+  }
+ },
+ "by_vertical": {
+  "finance": {
+   "n_tasks": 40,
    "arms": {
     "nimble": {
-     "units": 24,
-     "unverifiable": 5,
-     "true": 17,
-     "wrong": 2,
-     "truth": 25,
-     "coverage": 0.776,
-     "accuracy": 0.95,
-     "combined": 0.805,
-     "cost": 0.1,
-     "seconds": 199
+     "n": 40,
+     "combined": 0.594,
+     "coverage": 0.485,
+     "accuracy": 0.92,
+     "empty_runs": 0,
+     "wins": 14.0,
+     "avg_cost_usd": 0.45,
+     "efficiency": 1.32,
+     "unverifiable_rate": 0.021,
+     "key_critical": 0.948,
+     "key_n": 35,
+     "median_seconds": 269.0,
+     "tally": {
+      "true": 1205,
+      "wrong": 56,
+      "off_scope": 11,
+      "unverifiable": 35
+     }
     },
     "exa": {
-     "units": 17,
-     "unverifiable": 1,
-     "true": 11,
-     "wrong": 5,
-     "truth": 25,
-     "coverage": 0.469,
-     "accuracy": 0.793,
-     "combined": 0.511,
-     "cost": 0.1,
-     "seconds": 83
+     "n": 40,
+     "combined": 0.455,
+     "coverage": 0.349,
+     "accuracy": 0.977,
+     "empty_runs": 1,
+     "wins": 1.0,
+     "avg_cost_usd": 0.476,
+     "efficiency": 0.96,
+     "unverifiable_rate": 0.004,
+     "key_critical": 0.858,
+     "key_n": 35,
+     "median_seconds": 177.0,
+     "tally": {
+      "true": 723,
+      "wrong": 9,
+      "off_scope": 2,
+      "unverifiable": 5
+     }
     },
     "parallel": {
-     "units": 12,
-     "unverifiable": 0,
-     "true": 12,
-     "wrong": 0,
-     "truth": 25,
-     "coverage": 0.51,
-     "accuracy": 1.0,
-     "combined": 0.566,
-     "cost": 0.1,
-     "seconds": 184
+     "n": 40,
+     "combined": 0.418,
+     "coverage": 0.323,
+     "accuracy": 0.982,
+     "empty_runs": 1,
+     "wins": 1.0,
+     "avg_cost_usd": 0.537,
+     "efficiency": 0.78,
+     "unverifiable_rate": 0.009,
+     "key_critical": 0.82,
+     "key_n": 35,
+     "median_seconds": 521.5,
+     "tally": {
+      "true": 665,
+      "wrong": 7,
+      "off_scope": 2,
+      "unverifiable": 6
+     }
     },
     "firecrawl": {
-     "units": 20,
-     "unverifiable": 0,
-     "true": 15,
-     "wrong": 5,
-     "truth": 25,
-     "coverage": 0.673,
-     "accuracy": 0.846,
-     "combined": 0.702,
-     "cost": 0.1535,
-     "seconds": 85
+     "n": 40,
+     "combined": 0.388,
+     "coverage": 0.3,
+     "accuracy": 0.945,
+     "empty_runs": 0,
+     "wins": 0,
+     "avg_cost_usd": 0.361,
+     "efficiency": 1.07,
+     "unverifiable_rate": 0.006,
+     "key_critical": 0.774,
+     "key_n": 35,
+     "median_seconds": 222.0,
+     "tally": {
+      "true": 664,
+      "wrong": 21,
+      "off_scope": 1,
+      "unverifiable": 10
+     }
+    },
+    "gpt": {
+     "n": 40,
+     "combined": 0.513,
+     "coverage": 0.408,
+     "accuracy": 0.975,
+     "empty_runs": 1,
+     "wins": 5.0,
+     "avg_cost_usd": 0.644,
+     "efficiency": 0.8,
+     "unverifiable_rate": 0.009,
+     "key_critical": 0.848,
+     "key_n": 35,
+     "median_seconds": 323.0,
+     "tally": {
+      "true": 845,
+      "wrong": 12,
+      "off_scope": 6,
+      "unverifiable": 10
+     }
+    },
+    "opus": {
+     "n": 40,
+     "combined": 0.583,
+     "coverage": 0.464,
+     "accuracy": 0.932,
+     "empty_runs": 0,
+     "wins": 19.0,
+     "avg_cost_usd": 0.794,
+     "efficiency": 0.73,
+     "unverifiable_rate": 0.005,
+     "key_critical": 0.97,
+     "key_n": 35,
+     "median_seconds": 194.0,
+     "tally": {
+      "true": 1018,
+      "wrong": 23,
+      "off_scope": 8,
+      "unverifiable": 9
+     }
     }
-   },
-   "judge_cost_usd": 0.536
+   }
   },
-  {
-   "id": "gtm_meeting_prep_research",
-   "name": "Account brief (meeting prep)",
-   "vertical": "gtm",
-   "tier": "medium",
-   "i": 1,
-   "input": "Prepare me for a meeting with Datadog (datadoghq.com)",
+  "gtm": {
+   "n_tasks": 10,
    "arms": {
     "nimble": {
-     "units": 19,
-     "unverifiable": 4,
+     "n": 10,
+     "combined": 0.497,
+     "coverage": 0.427,
+     "accuracy": 0.96,
+     "empty_runs": 0,
+     "wins": 3.0,
+     "avg_cost_usd": 0.1,
+     "efficiency": 4.97,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.75,
+     "key_n": 5,
+     "median_seconds": 134.5,
+     "tally": {
+      "true": 157,
+      "wrong": 5,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
+    },
+    "exa": {
+     "n": 10,
+     "combined": 0.405,
+     "coverage": 0.345,
+     "accuracy": 0.979,
+     "empty_runs": 0,
+     "wins": 0,
+     "avg_cost_usd": 0.1,
+     "efficiency": 4.05,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.61,
+     "key_n": 5,
+     "median_seconds": 99.0,
+     "tally": {
+      "true": 129,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
+    },
+    "parallel": {
+     "n": 10,
+     "combined": 0.357,
+     "coverage": 0.314,
+     "accuracy": 0.981,
+     "empty_runs": 0,
+     "wins": 0,
+     "avg_cost_usd": 0.1,
+     "efficiency": 3.57,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.43,
+     "key_n": 5,
+     "median_seconds": 230.0,
+     "tally": {
+      "true": 121,
+      "wrong": 3,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
+    },
+    "firecrawl": {
+     "n": 10,
+     "combined": 0.316,
+     "coverage": 0.279,
+     "accuracy": 0.932,
+     "empty_runs": 0,
+     "wins": 0,
+     "avg_cost_usd": 0.096,
+     "efficiency": 3.3,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.47,
+     "key_n": 5,
+     "median_seconds": 112.0,
+     "tally": {
+      "true": 127,
+      "wrong": 5,
+      "off_scope": 1,
+      "unverifiable": 0
+     }
+    },
+    "gpt": {
+     "n": 10,
+     "combined": 0.448,
+     "coverage": 0.375,
+     "accuracy": 0.999,
+     "empty_runs": 0,
+     "wins": 3.0,
+     "avg_cost_usd": 0.208,
+     "efficiency": 2.16,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.7,
+     "key_n": 5,
+     "median_seconds": 59.5,
+     "tally": {
+      "true": 144,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     }
+    },
+    "opus": {
+     "n": 10,
+     "combined": 0.52,
+     "coverage": 0.419,
+     "accuracy": 0.992,
+     "empty_runs": 0,
+     "wins": 4.0,
+     "avg_cost_usd": 0.278,
+     "efficiency": 1.87,
+     "unverifiable_rate": 0.0,
+     "key_critical": 0.95,
+     "key_n": 5,
+     "median_seconds": 79.5,
+     "tally": {
+      "true": 148,
+      "wrong": 1,
+      "off_scope": 1,
+      "unverifiable": 0
+     }
+    }
+   }
+  }
+ },
+ "zero_scored_runs": [],
+ "tasks": [
+  {
+   "job": "gtm_meeting_prep_research",
+   "i": 0,
+   "input": "Prepare me for a meeting with Attio (attio.com)",
+   "units": 64,
+   "winners": [
+    "opus"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 20,
+     "unverifiable": 0,
+     "true": 20,
+     "wrong": 0,
+     "truth": 64,
+     "truth_weight": 155.0,
+     "coverage": 0.363,
+     "accuracy": 1.0,
+     "combined": 0.466,
+     "metric": "F1",
+     "judge_score": 0.533,
+     "key_recall": 0.857,
+     "key_critical": 0.75,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 20,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 4.66
+    },
+    "exa": {
+     "units": 13,
+     "unverifiable": 0,
      "true": 13,
-     "wrong": 2,
-     "truth": 20,
-     "coverage": 0.725,
-     "accuracy": 0.935,
-     "combined": 0.759,
-     "cost": 0.1,
-     "seconds": 152
+     "wrong": 0,
+     "truth": 64,
+     "truth_weight": 155.0,
+     "coverage": 0.231,
+     "accuracy": 1.0,
+     "combined": 0.281,
+     "metric": "F1",
+     "judge_score": 0.375,
+     "key_recall": 0.714,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 13,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 2.81
+    },
+    "parallel": {
+     "units": 10,
+     "unverifiable": 0,
+     "true": 10,
+     "wrong": 0,
+     "truth": 64,
+     "truth_weight": 155.0,
+     "coverage": 0.16,
+     "accuracy": 1.0,
+     "combined": 0.206,
+     "metric": "F1",
+     "judge_score": 0.275,
+     "key_recall": 0.571,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 10,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 2.06
+    },
+    "firecrawl": {
+     "units": 18,
+     "unverifiable": 0,
+     "true": 18,
+     "wrong": 0,
+     "truth": 64,
+     "truth_weight": 155.0,
+     "coverage": 0.231,
+     "accuracy": 1.0,
+     "combined": 0.328,
+     "metric": "F1",
+     "judge_score": 0.375,
+     "key_recall": 0.857,
+     "key_critical": 0.75,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 18,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1148,
+     "efficiency": 2.86
+    },
+    "gpt": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 64,
+     "truth_weight": 155.0,
+     "coverage": 0.335,
+     "accuracy": 1.0,
+     "combined": 0.377,
+     "metric": "F1",
+     "judge_score": 0.502,
+     "key_recall": 0.714,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1546,
+     "efficiency": 2.44
+    },
+    "opus": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 64,
+     "truth_weight": 155.0,
+     "coverage": 0.319,
+     "accuracy": 1.0,
+     "combined": 0.484,
+     "metric": "F1",
+     "judge_score": 0.484,
+     "key_recall": 1.0,
+     "key_critical": 1.0,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.3294229,
+     "efficiency": 1.47
+    }
+   },
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 80,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 104,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 246,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 96,
+     "cost_usd": 0.1148,
+     "cost_basis": "116 run credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 54,
+     "cost_usd": 0.1546,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 104,
+     "cost_usd": 0.3294229,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
+  },
+  {
+   "job": "gtm_meeting_prep_research",
+   "i": 1,
+   "input": "Prepare me for a meeting with Datadog (datadoghq.com)",
+   "units": 65,
+   "winners": [
+    "nimble"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 20,
+     "unverifiable": 0,
+     "true": 20,
+     "wrong": 0,
+     "truth": 65,
+     "truth_weight": 201.25,
+     "coverage": 0.404,
+     "accuracy": 1.0,
+     "combined": 0.575,
+     "metric": "F1",
+     "judge_score": 0.575,
+     "key_recall": 0.875,
+     "key_critical": 1.0,
+     "key_wrong": 0,
+     "key_items": 8,
+     "tally": {
+      "true": 20,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 5.75
     },
     "exa": {
      "units": 16,
-     "unverifiable": 2,
-     "true": 13,
-     "wrong": 1,
-     "truth": 20,
-     "coverage": 0.75,
-     "accuracy": 0.968,
-     "combined": 0.785,
-     "cost": 0.1,
-     "seconds": 73
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 65,
+     "truth_weight": 201.25,
+     "coverage": 0.299,
+     "accuracy": 1.0,
+     "combined": 0.415,
+     "metric": "F1",
+     "judge_score": 0.461,
+     "key_recall": 0.75,
+     "key_critical": 0.8,
+     "key_wrong": 0,
+     "key_items": 8,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 4.15
     },
     "parallel": {
-     "units": 8,
-     "unverifiable": 3,
-     "true": 5,
+     "units": 9,
+     "unverifiable": 0,
+     "true": 9,
      "wrong": 0,
-     "truth": 20,
-     "coverage": 0.325,
+     "truth": 65,
+     "truth_weight": 201.25,
+     "coverage": 0.112,
      "accuracy": 1.0,
-     "combined": 0.376,
-     "cost": 0.1,
-     "seconds": 199
+     "combined": 0.141,
+     "metric": "F1",
+     "judge_score": 0.201,
+     "key_recall": 0.25,
+     "key_critical": 0.4,
+     "key_wrong": 0,
+     "key_items": 8,
+     "tally": {
+      "true": 9,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 1.41
     },
     "firecrawl": {
-     "units": 15,
-     "unverifiable": 3,
-     "true": 11,
-     "wrong": 1,
-     "truth": 20,
-     "coverage": 0.525,
-     "accuracy": 0.955,
-     "combined": 0.577,
-     "cost": 0.098,
-     "seconds": 64
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 65,
+     "truth_weight": 201.25,
+     "coverage": 0.239,
+     "accuracy": 1.0,
+     "combined": 0.308,
+     "metric": "F1",
+     "judge_score": 0.385,
+     "key_recall": 0.625,
+     "key_critical": 0.6,
+     "key_wrong": 0,
+     "key_items": 8,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.0574,
+     "efficiency": 5.37
+    },
+    "gpt": {
+     "units": 14,
+     "unverifiable": 0,
+     "true": 14,
+     "wrong": 0,
+     "truth": 65,
+     "truth_weight": 201.25,
+     "coverage": 0.281,
+     "accuracy": 1.0,
+     "combined": 0.438,
+     "metric": "F1",
+     "judge_score": 0.438,
+     "key_recall": 0.875,
+     "key_critical": 1.0,
+     "key_wrong": 0,
+     "key_items": 8,
+     "tally": {
+      "true": 14,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.189,
+     "efficiency": 2.32
+    },
+    "opus": {
+     "units": 17,
+     "unverifiable": 0,
+     "true": 17,
+     "wrong": 0,
+     "truth": 65,
+     "truth_weight": 201.25,
+     "coverage": 0.355,
+     "accuracy": 1.0,
+     "combined": 0.524,
+     "metric": "F1",
+     "judge_score": 0.524,
+     "key_recall": 0.875,
+     "key_critical": 1.0,
+     "key_wrong": 0,
+     "key_items": 8,
+     "tally": {
+      "true": 17,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.4009538,
+     "efficiency": 1.31
     }
    },
-   "judge_cost_usd": 1.146
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 189,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 84,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 261,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 96,
+     "cost_usd": 0.0574,
+     "cost_basis": "58 run credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 65,
+     "cost_usd": 0.189,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 170,
+     "cost_usd": 0.4009538,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
   },
   {
-   "id": "gtm_meeting_prep_research",
-   "name": "Account brief (meeting prep)",
-   "vertical": "gtm",
-   "tier": "medium",
+   "job": "gtm_meeting_prep_research",
    "i": 2,
    "input": "Prepare me for a meeting with Gong (gong.io)",
-   "arms": {
+   "units": 58,
+   "winners": [
+    "nimble"
+   ],
+   "scores": {
     "nimble": {
-     "units": 20,
-     "unverifiable": 2,
+     "units": 19,
+     "unverifiable": 0,
+     "true": 19,
+     "wrong": 0,
+     "truth": 58,
+     "truth_weight": 199.25,
+     "coverage": 0.414,
+     "accuracy": 1.0,
+     "combined": 0.586,
+     "metric": "F1",
+     "judge_score": 0.586,
+     "key_recall": 1.0,
+     "key_critical": 1.0,
+     "key_wrong": 0,
+     "key_items": 6,
+     "tally": {
+      "true": 19,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 5.86
+    },
+    "exa": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 58,
+     "truth_weight": 199.25,
+     "coverage": 0.339,
+     "accuracy": 1.0,
+     "combined": 0.443,
+     "metric": "F1",
+     "judge_score": 0.506,
+     "key_recall": 0.833,
+     "key_critical": 0.75,
+     "key_wrong": 0,
+     "key_items": 6,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 4.43
+    },
+    "parallel": {
+     "units": 15,
+     "unverifiable": 0,
      "true": 15,
-     "wrong": 3,
-     "truth": 21,
-     "coverage": 0.75,
-     "accuracy": 0.892,
-     "combined": 0.775,
-     "cost": 0.1,
-     "seconds": 139
+     "wrong": 0,
+     "truth": 58,
+     "truth_weight": 199.25,
+     "coverage": 0.353,
+     "accuracy": 1.0,
+     "combined": 0.391,
+     "metric": "F1",
+     "judge_score": 0.521,
+     "key_recall": 0.667,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 6,
+     "tally": {
+      "true": 15,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.91
+    },
+    "firecrawl": {
+     "units": 18,
+     "unverifiable": 0,
+     "true": 18,
+     "wrong": 0,
+     "truth": 58,
+     "truth_weight": 199.25,
+     "coverage": 0.388,
+     "accuracy": 1.0,
+     "combined": 0.419,
+     "metric": "F1",
+     "judge_score": 0.559,
+     "key_recall": 0.667,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 6,
+     "tally": {
+      "true": 18,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.0594,
+     "efficiency": 7.05
+    },
+    "gpt": {
+     "units": 13,
+     "unverifiable": 0,
+     "true": 13,
+     "wrong": 0,
+     "truth": 58,
+     "truth_weight": 199.25,
+     "coverage": 0.341,
+     "accuracy": 1.0,
+     "combined": 0.445,
+     "metric": "F1",
+     "judge_score": 0.509,
+     "key_recall": 0.833,
+     "key_critical": 0.75,
+     "key_wrong": 0,
+     "key_items": 6,
+     "tally": {
+      "true": 13,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1333,
+     "efficiency": 3.34
+    },
+    "opus": {
+     "units": 21,
+     "unverifiable": 0,
+     "true": 21,
+     "wrong": 0,
+     "truth": 58,
+     "truth_weight": 199.25,
+     "coverage": 0.379,
+     "accuracy": 1.0,
+     "combined": 0.55,
+     "metric": "F1",
+     "judge_score": 0.55,
+     "key_recall": 1.0,
+     "key_critical": 1.0,
+     "key_wrong": 0,
+     "key_items": 6,
+     "tally": {
+      "true": 21,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.37939599999999996,
+     "efficiency": 1.45
+    }
+   },
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 107,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 83,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 215,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 64,
+     "cost_usd": 0.0594,
+     "cost_basis": "60 run credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 54,
+     "cost_usd": 0.1333,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 101,
+     "cost_usd": 0.37939599999999996,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
+  },
+  {
+   "job": "gtm_meeting_prep_research",
+   "i": 3,
+   "input": "Prepare me for a meeting with Vercel (vercel.com)",
+   "units": 70,
+   "winners": [
+    "opus"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 21,
+     "unverifiable": 0,
+     "true": 20,
+     "wrong": 1,
+     "truth": 67,
+     "truth_weight": 213.25,
+     "coverage": 0.327,
+     "accuracy": 0.959,
+     "combined": 0.305,
+     "metric": "F1",
+     "judge_score": 0.488,
+     "key_recall": 0.571,
+     "key_critical": 0.25,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 20,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.05
     },
     "exa": {
      "units": 19,
      "unverifiable": 0,
-     "true": 10,
-     "wrong": 9,
-     "truth": 21,
-     "coverage": 0.568,
-     "accuracy": 0.641,
-     "combined": 0.581,
-     "cost": 0.1,
-     "seconds": 73
+     "true": 19,
+     "wrong": 0,
+     "truth": 67,
+     "truth_weight": 213.25,
+     "coverage": 0.302,
+     "accuracy": 1.0,
+     "combined": 0.348,
+     "metric": "F1",
+     "judge_score": 0.464,
+     "key_recall": 0.571,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 19,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.48
     },
     "parallel": {
-     "units": 19,
+     "units": 11,
      "unverifiable": 0,
-     "true": 15,
-     "wrong": 4,
-     "truth": 21,
-     "coverage": 0.773,
-     "accuracy": 0.829,
-     "combined": 0.783,
-     "cost": 0.1,
-     "seconds": 230
+     "true": 11,
+     "wrong": 0,
+     "truth": 67,
+     "truth_weight": 213.25,
+     "coverage": 0.172,
+     "accuracy": 1.0,
+     "combined": 0.184,
+     "metric": "F1",
+     "judge_score": 0.294,
+     "key_recall": 0.286,
+     "key_critical": 0.25,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 11,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 1.84
     },
     "firecrawl": {
-     "units": 19,
+     "units": 17,
      "unverifiable": 0,
-     "true": 12,
-     "wrong": 7,
-     "truth": 21,
-     "coverage": 0.659,
-     "accuracy": 0.763,
-     "combined": 0.678,
-     "cost": 0.095,
-     "seconds": 85
+     "true": 16,
+     "wrong": 1,
+     "truth": 67,
+     "truth_weight": 213.25,
+     "coverage": 0.309,
+     "accuracy": 0.989,
+     "combined": 0.294,
+     "metric": "F1",
+     "judge_score": 0.471,
+     "key_recall": 0.286,
+     "key_critical": 0.25,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 1,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1554,
+     "efficiency": 1.89
+    },
+    "gpt": {
+     "units": 17,
+     "unverifiable": 0,
+     "true": 17,
+     "wrong": 0,
+     "truth": 67,
+     "truth_weight": 213.25,
+     "coverage": 0.218,
+     "accuracy": 1.0,
+     "combined": 0.268,
+     "metric": "F1",
+     "judge_score": 0.358,
+     "key_recall": 0.571,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 17,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1885,
+     "efficiency": 1.42
+    },
+    "opus": {
+     "units": 20,
+     "unverifiable": 0,
+     "true": 19,
+     "wrong": 1,
+     "truth": 67,
+     "truth_weight": 213.25,
+     "coverage": 0.275,
+     "accuracy": 0.951,
+     "combined": 0.374,
+     "metric": "F1",
+     "judge_score": 0.427,
+     "key_recall": 0.857,
+     "key_critical": 0.75,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 19,
+      "wrong": 0,
+      "off_scope": 1,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.3870676,
+     "efficiency": 0.97
     }
    },
-   "judge_cost_usd": 0.447
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 110,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 546,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 154,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 539,
+     "cost_usd": 0.1554,
+     "cost_basis": "107 run credits + 50 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 55,
+     "cost_usd": 0.1885,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 102,
+     "cost_usd": 0.3870676,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
   },
   {
-   "id": "gtm_signal_tracking",
-   "name": "Account signals",
-   "vertical": "gtm",
-   "tier": "medium",
+   "job": "gtm_meeting_prep_research",
+   "i": 4,
+   "input": "Prepare me for a meeting with Monday.com (monday.com)",
+   "units": 81,
+   "winners": [
+    "opus"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 13,
+     "wrong": 3,
+     "truth": 77,
+     "truth_weight": 290.5,
+     "coverage": 0.146,
+     "accuracy": 0.81,
+     "combined": 0.217,
+     "metric": "F1",
+     "judge_score": 0.248,
+     "key_recall": 0.714,
+     "key_critical": 0.75,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 13,
+      "wrong": 3,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 2.17
+    },
+    "exa": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 77,
+     "truth_weight": 290.5,
+     "coverage": 0.192,
+     "accuracy": 1.0,
+     "combined": 0.241,
+     "metric": "F1",
+     "judge_score": 0.322,
+     "key_recall": 0.571,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 2.41
+    },
+    "parallel": {
+     "units": 17,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 1,
+     "truth": 77,
+     "truth_weight": 290.5,
+     "coverage": 0.167,
+     "accuracy": 0.843,
+     "combined": 0.209,
+     "metric": "F1",
+     "judge_score": 0.279,
+     "key_recall": 0.571,
+     "key_critical": 0.5,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 16,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 2.09
+    },
+    "firecrawl": {
+     "units": 18,
+     "unverifiable": 0,
+     "true": 17,
+     "wrong": 1,
+     "truth": 77,
+     "truth_weight": 290.5,
+     "coverage": 0.109,
+     "accuracy": 0.984,
+     "combined": 0.123,
+     "metric": "F1",
+     "judge_score": 0.197,
+     "key_recall": 0.429,
+     "key_critical": 0.25,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 17,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1663,
+     "efficiency": 0.74
+    },
+    "gpt": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 77,
+     "truth_weight": 290.5,
+     "coverage": 0.294,
+     "accuracy": 1.0,
+     "combined": 0.398,
+     "metric": "F1",
+     "judge_score": 0.455,
+     "key_recall": 0.714,
+     "key_critical": 0.75,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1409,
+     "efficiency": 2.82
+    },
+    "opus": {
+     "units": 17,
+     "unverifiable": 0,
+     "true": 17,
+     "wrong": 0,
+     "truth": 77,
+     "truth_weight": 290.5,
+     "coverage": 0.379,
+     "accuracy": 1.0,
+     "combined": 0.549,
+     "metric": "F1",
+     "judge_score": 0.549,
+     "key_recall": 0.857,
+     "key_critical": 1.0,
+     "key_wrong": 0,
+     "key_items": 7,
+     "tally": {
+      "true": 17,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.3225435,
+     "efficiency": 1.7
+    }
+   },
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 186,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 545,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 214,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 539,
+     "cost_usd": 0.1663,
+     "cost_basis": "168 run credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 54,
+     "cost_usd": 0.1409,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 95,
+     "cost_usd": 0.3225435,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
+  },
+  {
+   "job": "gtm_signal_tracking",
    "i": 0,
    "input": "Check Mercury (mercury.com) for changes since 2026-09-21",
-   "arms": {
+   "units": 17,
+   "winners": [
+    "opus"
+   ],
+   "scores": {
     "nimble": {
-     "units": 6,
+     "units": 9,
      "unverifiable": 0,
-     "true": 6,
+     "true": 9,
      "wrong": 0,
-     "truth": 6,
-     "coverage": 1.0,
+     "truth": 13,
+     "truth_weight": 24.0,
+     "coverage": 0.708,
      "accuracy": 1.0,
-     "combined": 1.0,
-     "cost": 0.1,
-     "seconds": 122
+     "combined": 0.752,
+     "metric": "F2",
+     "tally": {
+      "true": 9,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 7.52
     },
     "exa": {
-     "units": 6,
+     "units": 10,
      "unverifiable": 0,
-     "true": 6,
+     "true": 10,
      "wrong": 0,
-     "truth": 6,
-     "coverage": 1.0,
+     "truth": 13,
+     "truth_weight": 24.0,
+     "coverage": 0.729,
      "accuracy": 1.0,
-     "combined": 1.0,
-     "cost": 0.1,
-     "seconds": 42
+     "combined": 0.771,
+     "metric": "F2",
+     "tally": {
+      "true": 10,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 7.71
     },
     "parallel": {
-     "units": 5,
-     "unverifiable": 0,
-     "true": 5,
-     "wrong": 0,
-     "truth": 6,
-     "coverage": 0.857,
-     "accuracy": 1.0,
-     "combined": 0.882,
-     "cost": 0.1,
-     "seconds": 107
-    },
-    "firecrawl": {
-     "units": 1,
-     "unverifiable": 0,
-     "true": 1,
-     "wrong": 0,
-     "truth": 6,
-     "coverage": 0.286,
-     "accuracy": 1.0,
-     "combined": 0.333,
-     "cost": 0.0703,
-     "seconds": 53
-    }
-   },
-   "judge_cost_usd": 0.061
-  },
-  {
-   "id": "gtm_signal_tracking",
-   "name": "Account signals",
-   "vertical": "gtm",
-   "tier": "medium",
-   "i": 1,
-   "input": "Check Clay (clay.com) for changes since 2026-09-21",
-   "arms": {
-    "nimble": {
-     "units": 8,
-     "unverifiable": 0,
-     "true": 7,
-     "wrong": 1,
-     "truth": 9,
-     "coverage": 0.714,
-     "accuracy": 0.909,
-     "combined": 0.746,
-     "cost": 0.1,
-     "seconds": 213
-    },
-    "exa": {
      "units": 7,
      "unverifiable": 0,
      "true": 7,
      "wrong": 0,
-     "truth": 9,
-     "coverage": 0.786,
+     "truth": 13,
+     "truth_weight": 24.0,
+     "coverage": 0.562,
      "accuracy": 1.0,
-     "combined": 0.821,
-     "cost": 0.1,
-     "seconds": 52
-    },
-    "parallel": {
-     "units": 5,
-     "unverifiable": 0,
-     "true": 5,
-     "wrong": 0,
-     "truth": 9,
-     "coverage": 0.429,
-     "accuracy": 1.0,
-     "combined": 0.484,
-     "cost": 0.1,
-     "seconds": 153
+     "combined": 0.616,
+     "metric": "F2",
+     "tally": {
+      "true": 7,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 6.16
     },
     "firecrawl": {
-     "units": 5,
+     "units": 9,
      "unverifiable": 0,
      "true": 5,
+     "wrong": 4,
+     "truth": 13,
+     "truth_weight": 24.0,
+     "coverage": 0.208,
+     "accuracy": 0.345,
+     "combined": 0.226,
+     "metric": "F2",
+     "tally": {
+      "true": 5,
+      "wrong": 4,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.0584,
+     "efficiency": 3.87
+    },
+    "gpt": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 7,
      "wrong": 0,
-     "truth": 9,
-     "coverage": 0.643,
+     "truth": 13,
+     "truth_weight": 24.0,
+     "coverage": 0.562,
      "accuracy": 1.0,
-     "combined": 0.692,
-     "cost": 0.0495,
-     "seconds": 53
+     "combined": 0.616,
+     "metric": "F2",
+     "tally": {
+      "true": 7,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1481,
+     "efficiency": 4.16
+    },
+    "opus": {
+     "units": 11,
+     "unverifiable": 0,
+     "true": 11,
+     "wrong": 0,
+     "truth": 13,
+     "truth_weight": 24.0,
+     "coverage": 0.75,
+     "accuracy": 1.0,
+     "combined": 0.789,
+     "metric": "F2",
+     "tally": {
+      "true": 11,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.182004,
+     "efficiency": 4.34
     }
    },
-   "judge_cost_usd": 0.066
-  },
-  {
-   "id": "gtm_signal_tracking",
-   "name": "Account signals",
-   "vertical": "gtm",
-   "tier": "medium",
-   "i": 2,
-   "input": "Check Rippling (rippling.com) for changes since 2026-09-21",
-   "arms": {
+   "runs": {
     "nimble": {
-     "units": 4,
-     "unverifiable": 0,
-     "true": 4,
-     "wrong": 0,
-     "truth": 8,
-     "coverage": 0.5,
-     "accuracy": 1.0,
-     "combined": 0.556,
-     "cost": 0.1,
-     "seconds": 215
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 129,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
     },
     "exa": {
-     "units": 6,
-     "unverifiable": 0,
-     "true": 6,
-     "wrong": 0,
-     "truth": 8,
-     "coverage": 0.786,
-     "accuracy": 1.0,
-     "combined": 0.821,
-     "cost": 0.1,
-     "seconds": 52
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 63,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
     },
     "parallel": {
-     "units": 4,
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 215,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 65,
+     "cost_usd": 0.0584,
+     "cost_basis": "59 run credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 44,
+     "cost_usd": 0.1481,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 55,
+     "cost_usd": 0.182004,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
+  },
+  {
+   "job": "gtm_signal_tracking",
+   "i": 1,
+   "input": "Check Clay (clay.com) for changes since 2026-09-21",
+   "units": 28,
+   "winners": [
+    "gpt"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 11,
      "unverifiable": 0,
-     "true": 4,
+     "true": 10,
+     "wrong": 1,
+     "truth": 26,
+     "truth_weight": 53.0,
+     "coverage": 0.283,
+     "accuracy": 0.833,
+     "combined": 0.326,
+     "metric": "F2",
+     "tally": {
+      "true": 10,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.26
+    },
+    "exa": {
+     "units": 9,
+     "unverifiable": 0,
+     "true": 8,
+     "wrong": 1,
+     "truth": 26,
+     "truth_weight": 53.0,
+     "coverage": 0.217,
+     "accuracy": 0.793,
+     "combined": 0.254,
+     "metric": "F2",
+     "tally": {
+      "true": 8,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 2.54
+    },
+    "parallel": {
+     "units": 11,
+     "unverifiable": 0,
+     "true": 11,
      "wrong": 0,
-     "truth": 8,
-     "coverage": 0.5,
+     "truth": 26,
+     "truth_weight": 53.0,
+     "coverage": 0.34,
      "accuracy": 1.0,
-     "combined": 0.556,
-     "cost": 0.1,
-     "seconds": 322
+     "combined": 0.391,
+     "metric": "F2",
+     "tally": {
+      "true": 11,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.91
     },
     "firecrawl": {
      "units": 4,
      "unverifiable": 0,
      "true": 4,
      "wrong": 0,
-     "truth": 8,
-     "coverage": 0.571,
+     "truth": 26,
+     "truth_weight": 53.0,
+     "coverage": 0.132,
      "accuracy": 1.0,
-     "combined": 0.625,
-     "cost": 0.1079,
-     "seconds": 85
+     "combined": 0.16,
+     "metric": "F2",
+     "tally": {
+      "true": 4,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.0762,
+     "efficiency": 2.1
+    },
+    "gpt": {
+     "units": 12,
+     "unverifiable": 0,
+     "true": 12,
+     "wrong": 0,
+     "truth": 26,
+     "truth_weight": 53.0,
+     "coverage": 0.349,
+     "accuracy": 1.0,
+     "combined": 0.401,
+     "metric": "F2",
+     "tally": {
+      "true": 12,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.2563,
+     "efficiency": 1.56
+    },
+    "opus": {
+     "units": 9,
+     "unverifiable": 0,
+     "true": 9,
+     "wrong": 0,
+     "truth": 26,
+     "truth_weight": 53.0,
+     "coverage": 0.321,
+     "accuracy": 1.0,
+     "combined": 0.371,
+     "metric": "F2",
+     "tally": {
+      "true": 9,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1918376,
+     "efficiency": 1.93
     }
    },
-   "judge_cost_usd": 0.1
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 96,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 94,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 261,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 86,
+     "cost_usd": 0.0762,
+     "cost_basis": "free run, priced at median 77 credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 64,
+     "cost_usd": 0.2563,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 64,
+     "cost_usd": 0.1918376,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
+  },
+  {
+   "job": "gtm_signal_tracking",
+   "i": 2,
+   "input": "Check Rippling (rippling.com) for changes since 2026-09-21",
+   "units": 23,
+   "winners": [
+    "gpt"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 8,
+     "unverifiable": 0,
+     "true": 8,
+     "wrong": 0,
+     "truth": 22,
+     "truth_weight": 51.0,
+     "coverage": 0.324,
+     "accuracy": 1.0,
+     "combined": 0.374,
+     "metric": "F2",
+     "tally": {
+      "true": 8,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.74
+    },
+    "exa": {
+     "units": 8,
+     "unverifiable": 0,
+     "true": 8,
+     "wrong": 0,
+     "truth": 22,
+     "truth_weight": 51.0,
+     "coverage": 0.422,
+     "accuracy": 1.0,
+     "combined": 0.477,
+     "metric": "F2",
+     "tally": {
+      "true": 8,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 4.77
+    },
+    "parallel": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 7,
+     "wrong": 0,
+     "truth": 22,
+     "truth_weight": 51.0,
+     "coverage": 0.314,
+     "accuracy": 1.0,
+     "combined": 0.364,
+     "metric": "F2",
+     "tally": {
+      "true": 7,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.64
+    },
+    "firecrawl": {
+     "units": 3,
+     "unverifiable": 0,
+     "true": 3,
+     "wrong": 0,
+     "truth": 22,
+     "truth_weight": 51.0,
+     "coverage": 0.176,
+     "accuracy": 1.0,
+     "combined": 0.211,
+     "metric": "F2",
+     "tally": {
+      "true": 3,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.0762,
+     "efficiency": 2.77
+    },
+    "gpt": {
+     "units": 9,
+     "unverifiable": 0,
+     "true": 9,
+     "wrong": 0,
+     "truth": 22,
+     "truth_weight": 51.0,
+     "coverage": 0.431,
+     "accuracy": 1.0,
+     "combined": 0.487,
+     "metric": "F2",
+     "tally": {
+      "true": 9,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.296,
+     "efficiency": 1.65
+    },
+    "opus": {
+     "units": 7,
+     "unverifiable": 0,
+     "true": 6,
+     "wrong": 1,
+     "truth": 22,
+     "truth_weight": 51.0,
+     "coverage": 0.304,
+     "accuracy": 0.969,
+     "combined": 0.352,
+     "metric": "F2",
+     "tally": {
+      "true": 6,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.25428739999999994,
+     "efficiency": 1.38
+    }
+   },
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 155,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 94,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 261,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 128,
+     "cost_usd": 0.0762,
+     "cost_basis": "free run, priced at median 77 credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 85,
+     "cost_usd": 0.296,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 63,
+     "cost_usd": 0.25428739999999994,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
+  },
+  {
+   "job": "gtm_signal_tracking",
+   "i": 3,
+   "input": "Check Anthropic (anthropic.com) for changes since 2026-09-21",
+   "units": 51,
+   "winners": [
+    "gpt"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 15,
+     "unverifiable": 0,
+     "true": 15,
+     "wrong": 0,
+     "truth": 50,
+     "truth_weight": 115.0,
+     "coverage": 0.37,
+     "accuracy": 1.0,
+     "combined": 0.423,
+     "metric": "F2",
+     "tally": {
+      "true": 15,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 4.23
+    },
+    "exa": {
+     "units": 13,
+     "unverifiable": 0,
+     "true": 13,
+     "wrong": 0,
+     "truth": 50,
+     "truth_weight": 115.0,
+     "coverage": 0.317,
+     "accuracy": 1.0,
+     "combined": 0.368,
+     "metric": "F2",
+     "tally": {
+      "true": 13,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 3.68
+    },
+    "parallel": {
+     "units": 25,
+     "unverifiable": 0,
+     "true": 24,
+     "wrong": 1,
+     "truth": 50,
+     "truth_weight": 115.0,
+     "coverage": 0.452,
+     "accuracy": 0.99,
+     "combined": 0.507,
+     "metric": "F2",
+     "tally": {
+      "true": 24,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 5.07
+    },
+    "firecrawl": {
+     "units": 12,
+     "unverifiable": 0,
+     "true": 12,
+     "wrong": 0,
+     "truth": 50,
+     "truth_weight": 115.0,
+     "coverage": 0.313,
+     "accuracy": 1.0,
+     "combined": 0.363,
+     "metric": "F2",
+     "tally": {
+      "true": 12,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.0842,
+     "efficiency": 4.31
+    },
+    "gpt": {
+     "units": 31,
+     "unverifiable": 0,
+     "true": 30,
+     "wrong": 1,
+     "truth": 50,
+     "truth_weight": 115.0,
+     "coverage": 0.543,
+     "accuracy": 0.992,
+     "combined": 0.598,
+     "metric": "F2",
+     "tally": {
+      "true": 30,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.3446,
+     "efficiency": 1.74
+    },
+    "opus": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 50,
+     "truth_weight": 115.0,
+     "coverage": 0.396,
+     "accuracy": 1.0,
+     "combined": 0.45,
+     "metric": "F2",
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.15732839999999998,
+     "efficiency": 2.86
+    }
+   },
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 140,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 817,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 245,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 539,
+     "cost_usd": 0.0842,
+     "cost_basis": "80 run credits + 5 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 158,
+     "cost_usd": 0.3446,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 44,
+     "cost_usd": 0.15732839999999998,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
+  },
+  {
+   "job": "gtm_signal_tracking",
+   "i": 4,
+   "input": "Check Klarna (klarna.com) for changes since 2026-09-21",
+   "units": 26,
+   "winners": [
+    "nimble"
+   ],
+   "scores": {
+    "nimble": {
+     "units": 23,
+     "unverifiable": 0,
+     "true": 23,
+     "wrong": 0,
+     "truth": 25,
+     "truth_weight": 50.0,
+     "coverage": 0.93,
+     "accuracy": 1.0,
+     "combined": 0.943,
+     "metric": "F2",
+     "tally": {
+      "true": 23,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 9.43
+    },
+    "exa": {
+     "units": 10,
+     "unverifiable": 0,
+     "true": 10,
+     "wrong": 0,
+     "truth": 25,
+     "truth_weight": 50.0,
+     "coverage": 0.4,
+     "accuracy": 1.0,
+     "combined": 0.455,
+     "metric": "F2",
+     "tally": {
+      "true": 10,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 4.55
+    },
+    "parallel": {
+     "units": 12,
+     "unverifiable": 0,
+     "true": 11,
+     "wrong": 1,
+     "truth": 25,
+     "truth_weight": 50.0,
+     "coverage": 0.51,
+     "accuracy": 0.981,
+     "combined": 0.564,
+     "metric": "F2",
+     "tally": {
+      "true": 11,
+      "wrong": 1,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1,
+     "efficiency": 5.64
+    },
+    "firecrawl": {
+     "units": 18,
+     "unverifiable": 0,
+     "true": 18,
+     "wrong": 0,
+     "truth": 25,
+     "truth_weight": 50.0,
+     "coverage": 0.68,
+     "accuracy": 1.0,
+     "combined": 0.726,
+     "metric": "F2",
+     "tally": {
+      "true": 18,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1089,
+     "efficiency": 6.67
+    },
+    "gpt": {
+     "units": 10,
+     "unverifiable": 0,
+     "true": 10,
+     "wrong": 0,
+     "truth": 25,
+     "truth_weight": 50.0,
+     "coverage": 0.4,
+     "accuracy": 1.0,
+     "combined": 0.455,
+     "metric": "F2",
+     "tally": {
+      "true": 10,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.2266,
+     "efficiency": 2.01
+    },
+    "opus": {
+     "units": 16,
+     "unverifiable": 0,
+     "true": 16,
+     "wrong": 0,
+     "truth": 25,
+     "truth_weight": 50.0,
+     "coverage": 0.71,
+     "accuracy": 1.0,
+     "combined": 0.754,
+     "metric": "F2",
+     "tally": {
+      "true": 16,
+      "wrong": 0,
+      "off_scope": 0,
+      "unverifiable": 0
+     },
+     "cost_usd": 0.1727055,
+     "efficiency": 4.37
+    }
+   },
+   "runs": {
+    "nimble": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 201,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "exa": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 817,
+     "cost_usd": 0.1,
+     "cost_basis": "billed"
+    },
+    "parallel": {
+     "status": "completed",
+     "tier": "pro",
+     "seconds": 184,
+     "cost_usd": 0.1,
+     "cost_basis": "list"
+    },
+    "firecrawl": {
+     "status": "completed",
+     "tier": "spark-2/medium",
+     "seconds": 539,
+     "cost_usd": 0.1089,
+     "cost_basis": "110 run credits + 0 provider credits"
+    },
+    "gpt": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 74,
+     "cost_usd": 0.2266,
+     "cost_basis": "tokens x list price + $10 per 1K web search calls"
+    },
+    "opus": {
+     "status": "completed",
+     "tier": "medium",
+     "seconds": 54,
+     "cost_usd": 0.1727055,
+     "cost_basis": "Claude Code reported, API-equivalent"
+    }
+   }
   }
- ],
- "judge_audit": {
-  "units": 13,
-  "agree": 12,
-  "rate": 0.923
- },
- "judge_cost_usd": 2.36,
- "rescore_mismatches": 0
+ ]
 }

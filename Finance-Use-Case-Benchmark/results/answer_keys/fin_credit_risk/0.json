@@ -1,0 +1,129 @@
+{
+ "sub": "fin_credit_risk",
+ "i": 0,
+ "task": "Assess the credit and counterparty risk of Spirit Airlines",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What is Spirit Airlines' operating status today, and what is the status of its Chapter 11 case: reorganisation, wind-down, or conversion to Chapter 7?",
+   "answer": "Spirit stopped all flights at about 3 a.m. ET on 2 May 2026 and is no longer an operating airline. On 4 May it asked the bankruptcy court to approve an orderly wind-down and asset sale, and a court order authorising this was entered on 8 May 2026. Sources describe a wind-down inside Chapter 11, not a Chapter 7 conversion. One source says asset sales were still under way as of about 8 Nov 2026. The company is a liquidating debtor, so it cannot be treated as a going concern. Check the docket (S.D.N.Y., Case No. 25-11897) for the latest. The docket number is from memory and not verified in this research.",
+   "importance": "critical",
+   "source": "https://www.cnn.com/2026/05/02/business/spirit-to-halt-all-flights"
+  },
+  {
+   "id": "k2",
+   "question": "What happened in the bankruptcy history: the two Chapter 11 filings and the failed February 2026 exit plan?",
+   "answer": "Spirit filed its first Chapter 11 in November 2024 and emerged in March 2025. It filed again on 29 Aug 2025, about five months after emerging. In Feb 2026 it reached a deal with creditors to exit as a much smaller carrier, cutting debt and lease obligations from $7.4bn to $2.1bn. The exit failed. A rescue of about $500m from the federal government was not closed, and fuel costs rose by about $100m over March and April 2026 because of the Iran conflict. CEO Dave Davis said the company 'ran out of runway'.",
+   "importance": "critical",
+   "source": "https://www.cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html"
+  },
+  {
+   "id": "k3",
+   "question": "What are the credit ratings, and how much debt and liquidity does Spirit have?",
+   "answer": "Ratings are not useful here. Spirit is a debtor in liquidation, so any agency ratings would have been withdrawn or sit at D/default. I did not verify the withdrawal notices. Pre-collapse debt and lease obligations were about $7.4bn, and the exit plan would have cut them to $2.1bn. Cash ran out and no liquidity facility was available. Secured creditors, including aircraft lessors and financiers and the bondholders, recover first from the asset sales. Unsecured creditors, customers' vouchers and credits, and Free Spirit points holders will likely recover little. I did not find latest-filing figures for revenue, EBITDA and cash. Take them from the final 10-Q and the Monthly Operating Reports.",
+   "importance": "critical",
+   "source": "https://skift.com/2026/02/24/spirit-airlines-reaches-deal-to-emerge-from-bankruptcy/"
+  },
+  {
+   "id": "k4",
+   "question": "What is the state of the asset sales, in particular the collapsed $533m aircraft sale to CSDS and the related litigation?",
+   "answer": "A $533m sale of about 20 aircraft to CSDS unravelled after the buyer repeatedly missed deadlines. Spirit's legal team has sued over it. This is an open dispute and affects how much cash the estate can distribute to creditors. Check the docket for the latest.",
+   "importance": "critical",
+   "source": "https://9fin.com/insights/spirit-bankruptcy-planes"
+  },
+  {
+   "id": "k5",
+   "question": "What happens to customer refunds, vouchers and Free Spirit points, and what does that mean for counterparties?",
+   "answer": "Tickets paid by card are refunded to the original payment method through chargeback. Vouchers, credits and Free Spirit points become bankruptcy claims, and whether they are refunded is to be decided in the bankruptcy process. Any contract with Spirit, including trade payables, leases and a co-brand credit card, is an unsecured claim against the estate. Expect cents on the dollar or less. Receivables should be treated as at risk and written off or reserved. Any exposure should be lodged by filing a proof of claim before the bar date.",
+   "importance": "critical",
+   "source": "https://www.npr.org/2026/05/02/nx-s1-5807933/spirit-airlines-ceases-operations-folds"
+  },
+  {
+   "id": "k6",
+   "question": "Who owns Spirit and who runs it now?",
+   "answer": "Spirit Airlines is a public company. After the first Chapter 11 the equity was largely cancelled or heavily diluted, with bondholders taking control. I did not verify the current shareholders. Dave Davis is still CEO and is overseeing the wind-down with about 130 other employees. The rest of the workforce was dismissed when operations stopped. A sale to JetBlue was blocked in 2024, and Frontier talks failed earlier. There is no live acquirer for the company as a whole.",
+   "importance": "useful",
+   "source": "https://www.cnbc.com/2026/05/04/spirit-airlines-shut-down-ceo-dave-davis.html"
+  },
+  {
+   "id": "k7",
+   "question": "What is the overall risk call, and what did the due diligence check find on sanctions and on payment behaviour?",
+   "answer": "Risk call: HIGH, effectively a default. The company has ceased operations, is liquidating in Chapter 11, and is the first major US airline to fail for financial reasons in about 25 years. Payment behaviour is not reliable: obligations are stayed and subject to claims. I ran only news searches. I did not run a sanctions, PEP or court-record screening, and found no sanctions issue in the news. A counterparty should file claims and monitor the docket rather than extend any new credit or accept Spirit as a payer.",
+   "importance": "critical",
+   "source": "https://www.bankruptcydata.com/feeds/blog/spirit-airlines-bankruptcy"
+  }
+ ],
+ "labels": {
+  "opus": "A",
+  "gpt": "B",
+  "parallel": "C",
+  "exa": "E",
+  "nimble": "F",
+  "firecrawl": "G"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "missing",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.204
+}

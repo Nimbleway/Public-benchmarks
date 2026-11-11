@@ -1,0 +1,1146 @@
+{
+ "sub_use_case": "fin_adverse_media",
+ "input_n": 1,
+ "task": "Find bribery and market-manipulation enforcement actions involving Glencore since 2018",
+ "labels": {
+  "opus": "A",
+  "parallel": "B",
+  "nimble": "C",
+  "gpt": "D",
+  "exa": "E",
+  "firecrawl": "F"
+ },
+ "unit": "adverse event",
+ "evidence_pages": 54,
+ "evidence_fetched": 54,
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 68,
+ "judge": "v4b",
+ "judge_cost_usd": 1.802,
+ "corrections_v2": {
+  "units_before": 68,
+  "units_after": 27,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13",
+     "c14",
+     "c15",
+     "c16"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19",
+     "c20",
+     "c21",
+     "c22"
+    ]
+   },
+   {
+    "kept": "c24",
+    "merged": [
+     "c25",
+     "c26",
+     "c27",
+     "c28",
+     "c29"
+    ]
+   },
+   {
+    "kept": "c30",
+    "merged": [
+     "c31",
+     "c32",
+     "c33"
+    ]
+   },
+   {
+    "kept": "c34",
+    "merged": [
+     "c35",
+     "c36",
+     "c37",
+     "c38",
+     "c39"
+    ]
+   },
+   {
+    "kept": "c41",
+    "merged": [
+     "c40",
+     "c42",
+     "c43"
+    ]
+   },
+   {
+    "kept": "c45",
+    "merged": [
+     "c46",
+     "c47",
+     "c48",
+     "c49",
+     "c50"
+    ]
+   },
+   {
+    "kept": "c51",
+    "merged": [
+     "c52"
+    ]
+   },
+   {
+    "kept": "c54",
+    "merged": [
+     "c55",
+     "c56",
+     "c57",
+     "c58"
+    ]
+   },
+   {
+    "kept": "c59",
+    "merged": [
+     "c60",
+     "c61"
+    ]
+   },
+   {
+    "kept": "c62",
+    "merged": [
+     "c63",
+     "c64"
+    ]
+   }
+  ],
+  "cost": 0.042
+ },
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "In July 2018 the US DOJ subpoenaed a Glencore plc subsidiary for FCPA and money-laundering compliance documents on Nigeria, DRC and Venezuela business from 2007, opening the US criminal probe that ended in the May 2022 guilty pleas.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "In July 2018 the US DOJ subpoenaed a Glencore plc subsidiary for documents on FCPA and money-laundering compliance concerning business in Nigeria, the DRC and Venezuela from 2007 onward, opening the US criminal probe that ended in the May 2022 guilty pleas."
+   },
+   "urls": [
+    "https://fcpa.stanford.edu/investigation.html?id=390",
+    "https://www.glencore.com/media-and-insights/news/Subpoena-from-United-States-Department-of-Justice",
+    "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "In early 2018 Dutch authorities opened a criminal foreign-bribery investigation into Glencore International AG over suspected bribery to obtain DRC copper and cobalt mining licences.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Dutch authorities opened a foreign-bribery investigation in early 2018 into suspected bribery to obtain copper and cobalt mining licences in the DRC.",
+    "F": "In early 2018 the Dutch Public Prosecutor's Office and the Fiscal Information and Investigation Service opened a criminal investigation into Glencore International AG over possible bribery of senior DRC officials to obtain cobalt and copper mining licences."
+   },
+   "urls": [
+    "https://www.prosecutionservice.nl/latest/news/2024/08/05/glencore-bribery-investigation-concluded-with-summary-penalty-order-in-switzerland-dutch-prosecutor-dismisses-case"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "On 5 August 2024 Dutch prosecutors dismissed their DRC bribery case against Glencore International AG following the Swiss resolution.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "On 2024-08-05 Dutch prosecutors dismissed their case against Glencore International AG over suspected bribery for DRC mining rights following the Swiss resolution.",
+    "D": "Dutch prosecutors (Public Prosecutor's Office and FIOD) dismissed their DRC mining-related bribery case against Glencore International AG on 2024-08-05, following the Swiss summary penalty order.",
+    "E": "The case against this entity was dismissed on 5 August 2024 following the Swiss resolution."
+   },
+   "urls": [
+    "https://www.prosecutionservice.nl/latest/news/2024/08/05/glencore-bribery-investigation-concluded-with-summary-penalty-order-in-switzerland-dutch-prosecutor-dismisses-case"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "On 2018-04-30 Glencore Agriculture B.V. and Glencore Ltd settled CFTC charges over cotton-futures position-limit breaches, wash trades and inaccurate reports, paying a US$2 million penalty.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Glencore Agriculture B.V. (formerly Glencore Grain B.V.) and Glencore Ltd. settled CFTC charges on 2018-04-30 over cotton-futures position-limit breaches, illegal exchange-for-physical wash trades and inaccurate reports. They paid a US$2 million civil monetary penalty, jointly and severally."
+   },
+   "urls": [
+    "https://www.cftc.gov/PressRoom/PressReleases/7721-18"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "On 2019-04-25 Glencore plc disclosed a CFTC investigation into possible Commodity Exchange Act violations via corrupt practices, at an early stage and similar in scope to the DOJ investigation.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2019-04-25 Glencore plc disclosed that the U.S. Commodity Futures Trading Commission was investigating whether Glencore and its subsidiaries violated the Commodity Exchange Act or CFTC regulations through corrupt practices connected with commodities; the investigation was at an early stage and similar in scope to the DOJ investigation."
+   },
+   "urls": [
+    "https://www.glencore.com/dam/jcr:88992a99-239b-4e93-a7c1-e5d52212817f/201904251930-CFTC-annnouncement-re-the-commodity-futures-trading-commission.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "In December 2018 Brazilian federal prosecutors said Glencore International A.G., with Vitol and Trafigura, paid over US$30 million in bribes to Petrobras employees in 160+ operations in 2011-2014.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "In December 2018 Brazilian federal prosecutors said Glencore International A.G., along with Vitol and Trafigura, paid more than US$30 million in bribes to Petrobras employees in over 160 operations between 2011 and 2014 (Operation Car Wash)."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/brazil-prosecutors-petrobras-received-bribes-glencore-trafigura-vitol-115217036--finance.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "UK SFO opened a criminal bribery investigation into the Glencore Group (commenced 12 June 2019; Glencore informed 5 December 2019), covering South Sudan and other countries.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The UK Serious Fraud Office opened a criminal bribery investigation into the Glencore Group (commenced 12 June 2019, Glencore informed 5 December 2019), covering South Sudan and other countries."
+   },
+   "urls": [
+    "https://publiceye.ch/en/topics/commodities/rohma/when-commodity-traders-get-caught/glencore-and-the-flying-briefcases-in-south-sudan"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "On 2019-12-05 the UK SFO launched an investigation into suspected bribery offences at the Glencore group of companies.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "On 2019-12-05 the UK Serious Fraud Office launched an investigation into suspected bribery offences at the Glencore group of companies."
+   },
+   "urls": [
+    "https://www.gov.uk/sfo-cases/glencore-group-of-companies"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Glencore International A.G. pleaded guilty on 24 May 2022 in SDNY to conspiracy to violate the FCPA (over $100m paid via intermediaries 2007-2018 to bribe officials in seven countries); in February 2023 it was sentenced to about $700m, $29.6m restitution and five years' probation.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "On 24 May 2022 Glencore International A.G. pleaded guilty in SDNY to conspiracy to violate the FCPA (over $100 million paid via intermediaries in 2007-2018 to bribe officials in Nigeria, Cameroon, Ivory Coast, Equatorial Guinea, Brazil, Venezuela and the DRC); in February 2023 it was sentenced to about $700 million (US$428.5m fine plus US$272.2m forfeiture), $29.6m restitution and five years' probation."
+   },
+   "urls": [
+    "https://justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+    "https://www.glencore.com/media-and-insights/news/glencore-reaches-coordinated-resolutions-with-us-uk-and-brazilian-authorities",
+    "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+    "https://www.justice.gov/usao-sdny/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-conspiracies"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "On 2023-02-28 Glencore International A.G. was sentenced in SDNY for FCPA conspiracy, gross US$700,706,965 before cross-agency credits.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On 2023-02-28 Glencore International A.G. was sentenced in the US (Southern District of New York) for conspiracy to violate the FCPA after a guilty plea, with a gross US$700,706,965 criminal resolution (US$428,521,173 fine plus US$272,185,792 forfeiture/disgorgement), before cross-agency credits."
+   },
+   "urls": [
+    "https://www.courtlistener.com/docket/63333987/39/united-states-v-glencore-international-ag"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "On 24 May 2022 Glencore Ltd. pleaded guilty in D. Connecticut to conspiracy to manipulate Platts fuel-oil benchmarks (2011-2019), US$341,221,682 fine and US$144,417,203 forfeiture.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "On 24 May 2022 Glencore Ltd. pleaded guilty in the District of Connecticut to conspiracy to engage in commodity price manipulation of S&P Global Platts fuel-oil benchmarks (2011-2019), paying a US$341,221,682 criminal fine and US$144,417,203 forfeiture."
+   },
+   "urls": [
+    "https://justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+    "https://www.glencore.com/media-and-insights/news/glencore-reaches-coordinated-resolutions-with-us-uk-and-brazilian-authorities",
+    "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+    "https://www.justice.gov/usao-sdny/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-conspiracies"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "On 2022-09-23 Glencore Ltd. was sentenced in D. Connecticut for fuel-oil benchmark price manipulation conspiracy: US$341,221,682 fine plus US$144,417,203 forfeiture, before CFTC credits.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On 2022-09-23 Glencore Ltd. was sentenced in the US (District of Connecticut) after pleading guilty to conspiracy to engage in commodity price manipulation of fuel-oil benchmark prices, with a US$341,221,682 fine plus US$144,417,203 forfeiture, before CFTC credits."
+   },
+   "urls": [
+    "https://www.courtlistener.com/docket/63339118/66/united-states-v-glencore-ltd"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "On 24 May 2022 the CFTC ordered Glencore International A.G., Glencore Ltd. and Chemoil to pay US$1.186 billion (largest in CFTC history) for manipulating Platts benchmarks and corrupt payments in Brazil, Cameroon, Nigeria, Venezuela and Mexico.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "On 24 May 2022 the US CFTC ordered Glencore International A.G., Glencore Ltd. and Chemoil Corporation to pay US$1.186 billion (the largest in CFTC history) for manipulating Platts oil benchmarks and for fraud and corrupt payments to state-owned entity employees in Brazil, Cameroon, Nigeria, Venezuela and Mexico."
+   },
+   "urls": [
+    "https://cftc.gov/PressRoom/PressReleases/8534-22",
+    "https://www.cftc.gov/PressRoom/PressReleases/8534-22",
+    "https://www.cftc.gov/media/7291/enfglencoreorder052422/download"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29"
+   ]
+  },
+  {
+   "cid": "c30",
+   "claim": "On 24 May 2022 Glencore International A.G. agreed to pay US$39,598,367 to Brazil's MPF to resolve Petrobras-related bribery allegations from Operation Car Wash.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "C": "On 24 May 2022 Glencore International A.G. agreed to pay US$39,598,367 to the Brazilian Federal Prosecutor's Office (MPF) to resolve Petrobras-related bribery allegations from Operation Car Wash.",
+    "B": "On 2022-05-24 Glencore International AG settled with Brazil's Federal Prosecutor's Office (MPF) over Petrobras-related bribery from Operation Car Wash, agreeing to pay US$39,598,367."
+   },
+   "urls": [
+    "https://glencore.com/media-and-insights/news/glencore-reaches-coordinated-resolutions-with-us-uk-and-brazilian-authorities",
+    "https://www.glencore.com/media-and-insights/news/glencore-reaches-coordinated-resolutions-with-us-uk-and-brazilian-authorities",
+    "https://www.saudlaw.com/glencore-enters-into-global-resolution-with-the-mpf-and-doj/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c30",
+    "c31",
+    "c32",
+    "c33"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Glencore Energy UK Ltd pleaded guilty in June 2022 to seven Bribery Act counts over ~$29m bribes in five countries; on 3 Nov 2022 Southwark Crown Court ordered £280,965,092.95 (£182.9m fine plus £93.5m confiscation).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Glencore Energy UK Ltd pleaded guilty in June 2022 to seven Bribery Act 2010 counts (five of bribery, two of failure to prevent bribery) over about $29 million in bribes in Nigeria, Cameroon, Ivory Coast, Equatorial Guinea and South Sudan, and on 3 November 2022 Southwark Crown Court ordered it to pay £280,965,092.95 (£182.9m fine plus £93.5m confiscation)."
+   },
+   "urls": [
+    "https://gov.uk/sfo-cases/glencore-employees",
+    "https://www.gov.uk/sfo-cases/glencore-group-of-companies",
+    "https://www.judiciary.uk/wp-content/uploads/2022/11/Sentencing-Remarks-Glencore.pdf",
+    "https://www.sfo.gov.uk/2022/05/24/serious-fraud-office-charges-glencore-with-seven-counts-of-bribery/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c34",
+    "c35",
+    "c36",
+    "c37",
+    "c38",
+    "c39"
+   ]
+  },
+  {
+   "cid": "c41",
+   "claim": "On 2022-12-05 Glencore International AG, on behalf of its Congolese-associated companies, agreed to pay the DRC US$180 million to settle claims over alleged group corruption in 2007-2018.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Glencore International AG, on behalf of its Congolese-associated companies, agreed on 2022-12-05 to pay the DRC US$180 million to settle present and future claims arising from alleged group corruption during 2007–2018.",
+    "B": "On 2022-12-05 Glencore International AG, for its Congolese-associated companies, settled with the Democratic Republic of the Congo claims over alleged group corruption in 2007-2018, agreeing to pay US$180 million."
+   },
+   "urls": [
+    "https://africa.businessinsider.com/local/markets/glencore-pays-dr-congo-dollar180-million-over-recent-corruption-scandal/jh0fvpv",
+    "https://www.aljazeera.com/news/2022/12/6/glencore-to-pay-180m-over-drc-corruption-claims",
+    "https://www.glencore.com/media-and-insights/news/glencore-reaches-agreement-with-the-democratic-republic-of-congo-over-past-conduct"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c40",
+    "c41",
+    "c42",
+    "c43"
+   ]
+  },
+  {
+   "cid": "c44",
+   "claim": "In May 2023 the Swiss OAG partially abandoned its bribery proceedings against Glencore International AG on two facts and ordered a compensation claim of about CHF 27 million (about US$29 million) in connection with the US guilty plea.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In May 2023 the Swiss Office of the Attorney General partially abandoned its bribery proceedings against Glencore International AG concerning two facts and ordered Glencore to pay a compensation claim of approximately CHF 27 million (about US$29 million) in connection with the US guilty plea."
+   },
+   "urls": [
+    "https://www.admin.ch/en/nsb?id=101995"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "On 5 Aug 2024 Swiss OAG convicted Glencore International A.G. by summary penalty order of inadequate organisation re bribery over DRC mine deals (Mutanda and Kansuki via Dan Gertler): CHF 2m fine and ~US$150m compensation claim.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "On 5 August 2024 Switzerland's Office of the Attorney General convicted Glencore International A.G. by summary penalty order of inadequate organisation in connection with bribery of foreign officials over DRC mine deals (Mutanda and Kansuki via Dan Gertler), imposing a CHF 2 million fine and a compensation claim of about US$150 million."
+   },
+   "urls": [
+    "https://publiceye.ch/en/topics/commodities/after-criminal-complaint-by-public-eye-glencore-convicted-following-corrupt-mine-deals-in-the-drc",
+    "https://www.admin.ch/en/nsb?id=101995",
+    "https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-101995.html",
+    "https://www.eid.admin.ch/en/nsb?id=101995"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c45",
+    "c46",
+    "c47",
+    "c48",
+    "c49",
+    "c50"
+   ]
+  },
+  {
+   "cid": "c51",
+   "claim": "In May 2024 Nigeria announced a US$50 million bribery settlement with Glencore International A.G., following Glencore's US, UK and Brazilian resolutions.",
+   "asserted_by": [
+    "C",
+    "D"
+   ],
+   "variants": {
+    "C": "In May 2024 Nigeria announced a US$50 million bribery settlement with Glencore International A.G., following Glencore's US, UK and Brazilian resolutions."
+   },
+   "urls": [
+    "https://nairametrics.com/2024/05/24/glencore-to-pay-nigeria-50-million-settlement-penalty-after-bribery-conviction-fagbemi/",
+    "https://spotlightcorruption.org/cases/glencores-conviction-for-endemic-corporate-corruption"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c51",
+    "c52"
+   ]
+  },
+  {
+   "cid": "c53",
+   "claim": "In September 2024 Jersey's Economic Crime and Confiscation Unit notified/disclosed to Glencore plc an investigation into group corruption, related money laundering and the accuracy of IPO-related assurances (2011 IPO prospectus); still disclosed at 2026-06-30.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "In September 2024 Jersey's Economic Crime and Confiscation Unit notified Glencore plc of an investigation into group corruption, related money laundering and the accuracy of assurances connected with its 2011 IPO prospectus; unresolved as at 2026-06-30.",
+    "D": "Glencore plc disclosed in September 2024 that Jersey's Economic Crime and Confiscation Unit (Law Officers' Department) is investigating group corruption, related money laundering and the accuracy of IPO-related assurances. The investigation was still disclosed in its half-year report to 2026-06-30."
+   },
+   "urls": [
+    "https://www.glencore.com/.rest/api/v1/documents/static/98cf0f2a-ede7-4ced-9539-061198c3b6be/GLEN-2026-Half-Year-Report.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c54",
+   "claim": "In August 2024 the UK SFO charged six former Glencore employees with conspiring to make corrupt payments in Cameroon, Nigeria and Ivory Coast (2007-2014), some also with conspiracy to falsify documents; not-guilty pleas and trial listed October 2027.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "C": "In August 2024 the UK SFO charged six former Glencore employees (Martin Wakefield, David Perez, Alex Beard, Andrew Gibson, Paul Hopkirk, Ramon Labiaga) with conspiring to make corrupt payments in Cameroon, Nigeria and Ivory Coast (2007-2014), with some also charged with conspiracy to falsify documents; not-guilty pleas have been entered and trial is listed for October 2027."
+   },
+   "urls": [
+    "https://gov.uk/sfo-cases/glencore-employees",
+    "https://www.gov.uk/sfo-cases/glencore-employees",
+    "https://www.theguardian.com/business/2026/sep/10/glencore-former-head-oil-alex-beard-pleads-not-guilty-bribery"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c54",
+    "c55",
+    "c56",
+    "c57",
+    "c58"
+   ]
+  },
+  {
+   "cid": "c59",
+   "claim": "In March 2021 Emilio Jose Heredia Collado, former senior fuel oil trader at Glencore Ltd, pleaded guilty in the US to conspiracy to engage in commodities price manipulation tied to the Platts fuel-oil benchmark scheme.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "In March 2021 Emilio Jose Heredia Collado, former senior fuel oil trader at Glencore Ltd, pleaded guilty in the US to conspiracy to engage in commodities price manipulation tied to the Platts fuel-oil benchmark scheme."
+   },
+   "urls": [
+    "https://jdsupra.com/legalnews/glencore-pleads-guilty-and-agrees-to-1-7667550",
+    "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c59",
+    "c60",
+    "c61"
+   ]
+  },
+  {
+   "cid": "c62",
+   "claim": "In July 2021 former Glencore West Africa crude desk trader Anthony Stimler pleaded guilty in the US to FCPA and money-laundering conspiracies over bribe payments, and cooperated.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "In July 2021 former Glencore West Africa crude oil desk trader Anthony Stimler pleaded guilty in the US to conspiracy to violate the FCPA and conspiracy to commit money laundering over bribe payments, and cooperated with the investigation."
+   },
+   "urls": [
+    "https://jdsupra.com/legalnews/glencore-s-bribery-schemes-part-iii-of-v-1939491",
+    "https://www.courtlistener.com/docket/60081084/18/united-states-v-stimler",
+    "https://www.reuters.com/legal/government/former-glencore-trader-pleads-guilty-new-york-over-nigerian-oil-bribery-scheme-2021-07-26/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c62",
+    "c63",
+    "c64"
+   ]
+  },
+  {
+   "cid": "c65",
+   "claim": "In March 2025 the US DOJ terminated early the two independent compliance monitorships (SDNY and D. Connecticut) imposed on Glencore under the 2022 resolutions.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "In March 2025 the US DOJ terminated early the two independent compliance monitorships (SDNY and District of Connecticut) imposed on Glencore plc, Glencore International A.G. and Glencore Ltd under the 2022 bribery and market-manipulation resolutions."
+   },
+   "urls": [
+    "https://lexology.com/pro/content/doj-ends-glencore-monitorship"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c66",
+   "claim": "Excluded namesake: JPMorgan precious-metals traders (Nowak, Smith, Jordan) and the Scotiabank metals-trader DPA are other banks' metals-desk actions, not Glencore.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Excluded namesake: JPMorgan Chase & Co. precious-metals traders (Nowak, Smith, Jordan) and the Scotiabank metals-trader DPA are separate banks' metals-desk enforcement actions, not Glencore entities or people."
+   },
+   "urls": [
+    "https://justice.gov/criminal/criminal-vns/bank-nova-scotia-deferred-prosecution-agreement-dpa"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c67",
+   "claim": "Excluded namesake: Platinum Partners (investment-fraud indictment) is unrelated to Glencore.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Platinum Partners (investment-fraud indictment) is unrelated to Glencore."
+   },
+   "urls": [
+    "https://businessinsider.com/platinum-partners-department-of-justice-indictment-for-fraud-2016-12"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c68",
+   "claim": "Excluded namesake: Fleurette Properties (~$30m Dutch DRC bribery penalty order, March 2026) is Gertler-linked but a separate company, not a Glencore entity.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Excluded namesake: Fleurette Properties (~$30m Dutch DRC bribery penalty order, March 2026) is Gertler-linked but a separate company, not a Glencore entity."
+   },
+   "urls": [
+    "https://globalinvestigationsreview.com/organisations/glencore-plc"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://fcpa.stanford.edu/investigation.html?id=390",
+   "note": "The July 2018 DOJ subpoena covered FCPA and money-laundering compliance for Nigeria, DRC and Venezuela from 2007, and the probe ended in the May 2022 guilty pleas.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "F": "true",
+    "E": "true"
+   }
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.prosecutionservice.nl/latest/news/2024/08/05/glencore-bribery-investigation-concluded-with-summary-penalty-order-in-switzerland-dutch-prosecutor-dismisses-case",
+   "note": "The Dutch prosecution service says it opened a criminal investigation in early 2018 into DRC cobalt and copper licence bribery.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.prosecutionservice.nl/latest/news/2024/08/05/glencore-bribery-investigation-concluded-with-summary-penalty-order-in-switzerland-dutch-prosecutor-dismisses-case",
+   "note": "The Dutch prosecutor dismissed the case against Glencore International AG on 5 Aug 2024 after the Swiss summary penalty order.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true",
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.cftc.gov/PressRoom/PressReleases/7721-18",
+   "note": "The CFTC release of 30 Apr 2018 confirms the settled cotton position-limit, EFP and Form 304 charges and the $2 million penalty.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.glencore.com/media-and-insights/news/announcement-re-the-commodity-futures-trading-commission",
+   "note": "Glencore's 25 Apr 2019 announcement matches the claim: early stage, scope similar to the DOJ investigation.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://finance.yahoo.com/news/brazil-prosecutors-petrobras-received-bribes-glencore-trafigura-vitol-115217036--finance.html",
+   "note": "Reuters reports Brazilian prosecutors alleging over $30m in bribes by Vitol, Trafigura and Glencore in 160+ operations in 2011-2014.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.sfo.gov.uk/2022/05/24/serious-fraud-office-charges-glencore-with-seven-counts-of-bribery/",
+   "note": "The SFO opened Operation Azoth in June 2019 and announced the case on 5 Dec 2019, covering South Sudan and other countries.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://www.gov.uk/sfo-cases/glencore-group-of-companies",
+   "note": "5 Dec 2019 is the announcement date; the SFO actually opened the investigation in June 2019, so 'launched' on that date is slightly loose.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+   "note": "The May 2022 plea and the roughly $700m fine and forfeiture are confirmed; the Feb 2023 sentencing, restitution and probation details are not in the passages and are accepted from recollection.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "A": "true",
+    "F": "true",
+    "E": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.courtlistener.com/docket/63333987/39/united-states-v-glencore-international-ag",
+   "note": "SDNY judgment entered 28 Feb 2023; $428.5m + $272.2m = $700.7m gross before credits.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+   "note": "DOJ confirms the plea in D. Conn., the 2011-2019 conduct and both amounts.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "D": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.courtlistener.com/docket/63339118/66/united-states-v-glencore-ltd",
+   "note": "The sentencing transcript and Bloomberg confirm the 23 Sep 2022 sentence with the stated fine and forfeiture.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.cftc.gov/PressRoom/PressReleases/8534-22",
+   "note": "The CFTC order of 24 May 2022 totals $1.186bn, the largest ever; it covers Brazil, Cameroon, Nigeria and Venezuela corruption plus Mexico confidential-information misuse.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "B": "true",
+    "F": "true",
+    "D": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.glencore.com/media-and-insights/news/glencore-reaches-coordinated-resolutions-with-us-uk-and-brazilian-authorities",
+   "note": "Glencore International AG agreed to pay $39,598,367 under a resolution signed with the MPF over Petrobras bribery allegations from Operation Car Wash.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "B": "true",
+    "E": "true",
+    "D": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://caselaw.nationalarchives.gov.uk/ewcr/2022/2",
+   "note": "Guilty pleas on 21 June 2022 to 7 Bribery Act counts and the 3 Nov 2022 sentencing at Southwark are confirmed. Total is about £281m, made up of fine, confiscation and costs.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "B": "true",
+    "D": "true",
+    "F": "true",
+    "A": "true"
+   }
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.glencore.com/media-and-insights/news/glencore-reaches-agreement-with-the-democratic-republic-of-congo-over-past-conduct",
+   "note": "Glencore International AG, on behalf of its Congolese-associated companies, agreed to pay $180m on 5 Dec 2022.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "B": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://publiceye.ch/en/topics/commodities/after-criminal-complaint-by-public-eye-glencore-convicted-following-corrupt-mine-deals-in-the-drc",
+   "note": "The OAG imposed a $29.7m claim in May 2023 tied to the US guilty plea, consistent with CHF 27m. The partial abandonment of two facts is not stated in the passages but is plausible.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.admin.ch/en/nsb?id=101995",
+   "note": "OAG release of 5 Aug 2024 confirms the summary penalty order, CHF 2m fine and USD 150m compensation claim for inadequate organisation over DRC mine bribery.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "B": "true",
+    "F": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://nairametrics.com/2024/05/24/glencore-to-pay-nigeria-50-million-settlement-penalty-after-bribery-conviction-fagbemi/",
+   "note": "Nigeria's attorney-general announced a $50m settlement with Glencore International A.G. in May 2024, after the US, UK and Brazil resolutions.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true"
+   }
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/949157/000110465925109946/xslSCHEDULE_13D_X01/primary_doc.xml",
+   "note": "The Jersey ECCU notification of September 2024 is confirmed; no passage shows it was still disclosed at 2026-06-30, but it is consistent with an open matter.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "source": "https://www.gov.uk/sfo-cases/glencore-employees",
+   "note": "The SFO page and the Guardian confirm the six defendants, the charges, the not-guilty pleas and the 4 October 2027 trial; Perez was charged in September 2024, not August.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "B": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "source": "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+   "note": "The DOJ release confirms the March 2021 guilty plea to conspiracy to engage in commodities price manipulation by the former Glencore Ltd. trader.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "B": "true"
+   }
+  },
+  "c62": {
+   "cid": "c62",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://jdsupra.com/legalnews/glencore-s-bribery-schemes-part-iii-of-v-1939491",
+   "note": "Stimler pleaded guilty July 2021 to FCPA and money-laundering conspiracies and cooperated.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://globalinvestigationsreview.com/organisations/glencore-plc",
+   "note": "DOJ ended the Glencore monitorships early in March 2025 (GIR 19 March 2025; Glencore 13D confirms).",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://justice.gov/criminal/criminal-vns/bank-nova-scotia-deferred-prosecution-agreement-dpa",
+   "note": "Scotiabank DPA and JPMorgan metals traders are unrelated banks' cases, correctly excluded.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "source": "https://businessinsider.com/platinum-partners-department-of-justice-indictment-for-fraud-2016-12",
+   "note": "Platinum Partners is a hedge-fund fraud case, unrelated to Glencore; correct exclusion.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c68": {
+   "cid": "c68",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "source": "https://globalinvestigationsreview.com/organisations/glencore-plc",
+   "note": "GIR 10 March 2026: Fleurette Properties accepted a $30m Dutch penalty order; Gertler-linked, separate from Glencore.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  }
+ },
+ "audit": {},
+ "scores": {
+  "opus": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 121.0,
+   "coverage": 0.471,
+   "accuracy": 1.0,
+   "combined": 0.64,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 121.0,
+   "coverage": 0.612,
+   "accuracy": 1.0,
+   "combined": 0.759,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 18,
+   "unverifiable": 0,
+   "true": 18,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 121.0,
+   "coverage": 0.628,
+   "accuracy": 1.0,
+   "combined": 0.772,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 121.0,
+   "coverage": 0.595,
+   "accuracy": 1.0,
+   "combined": 0.746,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 14,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 121.0,
+   "coverage": 0.62,
+   "accuracy": 1.0,
+   "combined": 0.765,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 121.0,
+   "coverage": 0.413,
+   "accuracy": 1.0,
+   "combined": 0.585,
+   "metric": "F1"
+  }
+ }
+}

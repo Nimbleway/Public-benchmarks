@@ -1,0 +1,142 @@
+{
+ "sub": "fin_hf_company_research",
+ "i": 2,
+ "task": "Research Boeing (boeing.com) for a hedge fund",
+ "key": [
+  {
+   "id": "k1",
+   "question": "What did Boeing report for Q3 2026 (reported Oct 27, 2026), and how does it compare with the prior year and guidance?",
+   "answer": "Revenue was $24.2B, up 4%. GAAP net loss was $116M, or -$0.26 per share, against a $5.3B loss a year earlier. Core EPS was -$0.34. Operating cash flow was $1.5B and free cash flow was +$464M. About $700M of DOJ settlement payments were absorbed in the quarter. Commercial Airplanes lost $697M (-6.5% margin). Defense, Space & Security earned $492M, including a $252M gain on the HRL sale. Global Services margin was 18.3%. Backlog is a record $745B. I did not check the result against consensus EPS; the analyst should do that.",
+   "importance": "critical",
+   "source": "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Third-Quarter-Results/default.aspx"
+  },
+  {
+   "id": "k2",
+   "question": "What is Boeing's current free cash flow guidance and 737 ramp plan, and did either change?",
+   "answer": "2026 free cash flow guidance was narrowed to about $2B, from the earlier $1–3B range. The company expects about $3B in 2027 and targets $10B by 2029. The 737 rate of 47 per month slips to early 2027, and 52 per month is now targeted for 2H 2027. Boeing will miss its roughly 500 737 deliveries target for 2026. The CEO said no significant 737 ramp until late 2027. This is the key estimate-revision driver.",
+   "importance": "critical",
+   "source": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html"
+  },
+  {
+   "id": "k3",
+   "question": "What are Boeing's credit ratings, outlooks, liquidity and debt load?",
+   "answer": "The Q3 2026 10-Q reports S&P at BBB- stable and Moody's at Baa3 stable, both the lowest investment-grade notch. Fitch affirmed BBB- in June 2026 and moved the outlook to positive from stable, so an upgrade is possible. Cash and marketable securities are $20.7B, consolidated debt is $45.9B, and $10B of credit facilities are undrawn. The risk is a fall to junk if free cash flow disappoints. I did not pull the maturity schedule from the 10-Q.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+  },
+  {
+   "id": "k4",
+   "question": "What is the status of the 777X, 737-7 and 737-10 certifications, and what charges are involved?",
+   "answer": "The 737-7 received its amended type certificate and the 737-10 was certified in October 2026. First 777-9 delivery is expected in 2027. Boeing took a $4.9B charge in Oct 2025, which pushed cumulative 777X charges above $15B. The FAA may certify the 777X only after the remaining 737 MAX work, and that timing is uncertain. Cathay targets end-2027. A further slip would mean more charges and delayed cash.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026050038/ba-20260630.htm"
+  },
+  {
+   "id": "k5",
+   "question": "What event-driven and legal items matter: DOJ settlement, divestitures, Spirit AeroSystems, defense wins?",
+   "answer": "About $700M of DOJ settlement payments went out in Q3 2026. Boeing sold HRL Laboratories, a $252M gain in the quarter. The US Navy selected Boeing for the F/A-XX fighter, a large long-term defense award. I did not confirm the Spirit AeroSystems acquisition closing or the Jeppesen sale status. Verify both in the 10-Q.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/Archives/edgar/data/0000012927/000162828026067508/ba-20260930.htm"
+  },
+  {
+   "id": "k6",
+   "question": "What are the dated catalysts over the next 6 months?",
+   "answer": "Candidates are: the 737 rate move to 47 per month in early 2027; the 787 rate step-up planned for December 2026; Q4 and full-year 2026 results in late January 2027, including 2027 guidance (about $3B free cash flow) and any 777X charge; 777X certification progress; and monthly delivery and order reports, with the first around Dec 9. Exact dates are unconfirmed and should be checked against Boeing's investor calendar.",
+   "importance": "useful",
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/10/27/boeing-ba-q3-2026-earnings-call-transcript/"
+  },
+  {
+   "id": "k7",
+   "question": "What are the main risks and the leadership context?",
+   "answer": "The CEO is Kelly Ortberg. The main risks are the 737 ramp slipping again, FAA production caps and safety scrutiny, 777X delays and charges, core losses continuing, and a ratings slip given the Baa3/BBB- floor. Positive offsets are the record $745B backlog, services margins, and defense wins.",
+   "importance": "critical",
+   "source": "https://finance.yahoo.com/markets/stocks/articles/boeing-co-ba-q3-2026-010518267.html"
+  },
+  {
+   "id": "k8",
+   "question": "Were there insider or ownership changes (Form 4, 13D/13G)?",
+   "answer": "Not checked in this pass. The analyst should review EDGAR Form 4 and 13G filings for Boeing (CIK 12927) for recent executive and director transactions and large holder changes.",
+   "importance": "useful",
+   "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000012927&type=4"
+  }
+ ],
+ "labels": {
+  "nimble": "A",
+  "firecrawl": "B",
+  "opus": "C",
+  "gpt": "D",
+  "parallel": "E",
+  "exa": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  }
+ },
+ "cost_usd": 0.271
+}

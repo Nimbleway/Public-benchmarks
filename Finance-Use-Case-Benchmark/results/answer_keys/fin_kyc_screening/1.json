@@ -1,0 +1,142 @@
+{
+ "sub": "fin_kyc_screening",
+ "i": 1,
+ "task": "Run a KYC screen on Wirecard in Germany",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which legal entity is the correct Wirecard entity, and what are its registry number, LEI, address and current status?",
+   "answer": "The main entity is Wirecard AG, a German Aktiengesellschaft registered at Amtsgericht München under HRB 169227. Its registered address is Einsteinring 35, Aschheim (Munich). Its LEI is 529900A8LX4KL0YUTH71, which Bloomberg's mirror of GLEIF shows as LAPSED. Both the HRB and LEI come from that Bloomberg mirror, so check them against the Handelsregister and GLEIF directly. The company is not a going concern. The board filed for insolvency on 25 June 2020, and proceedings were opened on 1 September 2020 under case reference 1542 IN 1308/20, with Michael Jaffé as administrator. Six subsidiaries entered insolvency with it, including Wirecard Technologies GmbH and Wirecard Payment Solutions Holdings. Wirecard Bank AG was handled separately and its customer business was sold. Wirecard Card Solutions Ltd (UK) was placed under FCA restrictions. The Asian and other units were sold off. Wirecard is in liquidation and is not a live counterparty.",
+   "importance": "critical",
+   "source": "https://lei.bloomberg.com/leis/view/529900A8LX4KL0YUTH71"
+  },
+  {
+   "id": "k2",
+   "question": "Is Wirecard solvent or operating? Is it in insolvency, and what is the status of creditor claims and asset realisation?",
+   "answer": "Wirecard AG is insolvent. The board applied on 25 June 2020 after €1.9bn of cash that the company claimed to hold could not be found. Proceedings were opened on 1 September 2020. The administrator, Michael Jaffé, is selling assets and pursuing claims. Creditor claims run into billions of euros and recoveries will be a small fraction of that. The business, shell and brand are not a going concern. Anyone onboarding it as a customer or counterparty should decline. Anyone with exposure should treat it as a claim in a wind-down. Confirm current claims and distribution status in the insolvency notices at insolvenzbekanntmachungen.de.",
+   "importance": "critical",
+   "source": "https://www.justiz.bayern.de/gerichte-und-behoerden/amtsgerichte/muenchen/presse/2020/26.php"
+  },
+  {
+   "id": "k3",
+   "question": "Who are the current directors and officers, and who are the owners or beneficial owners?",
+   "answer": "There are no operating directors or officers in the normal sense. The company is under an insolvency administrator, Michael Jaffé, who controls it. The former CEO Markus Braun (Austrian) is a defendant in the criminal trial. Former COO Jan Marsalek (Austrian) is a fugitive. Former CFO Alexander von Knoop, former chairman Thomas Eichelmann and others have left. Wirecard AG was listed on the Frankfurt Stock Exchange (DAX), so it had no single controlling shareholder or UBO. Braun held about 7% before the collapse and Marsalek about 2–3%. Shares were delisted after the insolvency. The German Transparency Register has no single UBO to report. Confirm the current extract from the Handelsregister and the Transparenzregister.",
+   "importance": "critical",
+   "source": "https://www.justiz.bayern.de/gerichte-und-behoerden/amtsgerichte/muenchen/presse/2020/26.php"
+  },
+  {
+   "id": "k4",
+   "question": "Does the entity or any associated person appear on OFAC SDN, UK OFSI or EU consolidated sanctions lists?",
+   "answer": "I did not run the live list checks. I found no evidence that Wirecard AG is itself sanctioned by OFAC, OFSI or the EU. The red flag is Jan Marsalek, the former COO. He is wanted internationally and is reported to have ties to Russian intelligence. He was charged in the UK in 2024 as part of the Bulgarian spy ring case, and the UK sanctioned Russian GRU-linked actors in related actions. Whether he is personally designated on the UK, EU or US lists must be checked directly against the OFSI consolidated list, the EU Financial Sanctions Files and the OFAC SDN search. Match on full name and date of birth (Marsalek, born 1980, Austrian) and exclude namesakes. Wirecard AG itself: none found.",
+   "importance": "critical",
+   "source": "https://sanctionssearch.ofac.treas.gov/"
+  },
+  {
+   "id": "k5",
+   "question": "Are any owners or directors politically exposed persons (PEPs)?",
+   "answer": "I found no evidence that any Wirecard director or owner is a PEP. The question is not fully closed, because the fraud involved political connections. Examples include reports of lobbying of German officials, including former minister Karl-Theodor zu Guttenberg as adviser, and the Marsalek intelligence links. These are lobbying and association concerns, not PEP status. The administrator is a lawyer. Confirm with a commercial PEP database.",
+   "importance": "useful",
+   "source": "https://www.irishtimes.com/business/financial-services/2026/04/10/wirecard-trial-shows-the-risks-of-slow-legal-process/"
+  },
+  {
+   "id": "k6",
+   "question": "What is the status of the Wirecard criminal trial and enforcement actions, and what are the key adverse media items?",
+   "answer": "Severity is high across the board. The scandal involved around €1.9bn of non-existent cash, accounting fraud, market manipulation and suspected money laundering. Markus Braun and two co-defendants have been on trial at the Munich Regional Court since December 2022. The charges are commercial gang fraud, false accounting, market manipulation and breach of trust. Braun denies them and has been in pre-trial detention for more than six years. As of late October 2026, the court was setting a two-week deadline for final evidence motions and was moving towards a verdict. I found no report of a verdict. Other items: a civil suit left former executives facing a roughly €140m damages bill. BaFin faced scrutiny for its role. EY, the former auditor, faces claims and regulatory action. Investor class actions (KapMuG) are pending. Marsalek is a fugitive, and the UK has since charged him in connection with Russian espionage. Check the Landgericht München I press releases for a verdict.",
+   "importance": "critical",
+   "source": "https://www.irishtimes.com/business/financial-services/2026/04/10/wirecard-trial-shows-the-risks-of-slow-legal-process/"
+  },
+  {
+   "id": "k7",
+   "question": "What is the overall KYC risk rating?",
+   "answer": "HIGH, and the answer is to not onboard. Wirecard AG is an insolvent shell with a record of massive accounting fraud and alleged money laundering. Its former senior management is on trial or at large, and Marsalek has alleged Russian intelligence ties. The entity is not live and has no operating business. No sanctions designation was found on Wirecard AG itself, and no PEP was found. The sanctions result for individuals, especially Marsalek, should be confirmed live. Treat any dealing as a claim against the insolvency estate only.",
+   "importance": "critical",
+   "source": "https://www.boersen-zeitung.de/english/wirecard-trial-faces-delays"
+  },
+  {
+   "id": "k8",
+   "question": "Are there related entities that could be confused with the main entity?",
+   "answer": "Yes. Related entities include Wirecard Bank AG, Wirecard Technologies GmbH, Wirecard Payment Solutions Holdings Ltd and Wirecard Card Solutions Ltd (UK). Wirecard Central Eastern Europe GmbH (Austria) and the Asian subsidiaries were sold. A branch or subsidiary is not the parent. Names like 'Wirecard Brasil' or 'Wirecard Asia Pacific' belong to separate entities, some acquired by other groups. Do not tie their findings to Wirecard AG without checking the registry number. The 'Wirecard' name and some activities live on under new owners, so exclude namesakes unless tied by registry number.",
+   "importance": "useful",
+   "source": "https://www.cash-online.de/a/wirecard-meldet-insolvenz-an-aktie-vom-handel-ausgesetzt-535575/"
+  }
+ ],
+ "labels": {
+  "exa": "A",
+  "gpt": "C",
+  "nimble": "D",
+  "parallel": "G",
+  "firecrawl": "H",
+  "opus": "I"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct",
+   "k8": "missing"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct",
+   "k7": "correct",
+   "k8": "correct"
+  }
+ },
+ "cost_usd": 0.208
+}

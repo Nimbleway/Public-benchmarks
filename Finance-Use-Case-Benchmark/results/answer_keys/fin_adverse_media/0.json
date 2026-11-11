@@ -1,0 +1,129 @@
+{
+ "sub": "fin_adverse_media",
+ "i": 0,
+ "task": "Find bribery and corruption allegations involving Embraer, in Brazil and abroad",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Who is the correct legal entity, and is it part of a larger group?",
+   "answer": "Embraer S.A. (Empresa Brasileira de Aeronáutica S.A.), headquartered in São José dos Campos, São Paulo, Brazil. It is listed on B3 (EMBR3) and on the NYSE as ADRs (ERJ). It is a stand-alone listed company with no controlling parent. Its subsidiaries include Embraer Aircraft Holding, Embraer Defense & Security and Embraer Services. The CNPJ I recall is 07.689.002/0001-89, which I did not re-verify. Analysts should screen the issuer and its subsidiaries together, because the 2016 settlement was with the parent.",
+   "importance": "critical",
+   "source": "https://www.justice.department.gov/opa/pr/embraer-agrees-pay-more-107-million-resolve-foreign-corrupt-practices-act-investigation"
+  },
+  {
+   "id": "k2",
+   "question": "What was the principal corruption case against Embraer, who resolved it, and for how much?",
+   "answer": "In October 2016 Embraer resolved a Foreign Corrupt Practices Act (FCPA) investigation with the US Department of Justice (DOJ) and the Securities and Exchange Commission (SEC). The DOJ deal was a three-year deferred prosecution agreement with a criminal penalty of about $107M. The SEC settlement was about $98M in disgorgement and interest. The total was roughly $205M, with credit for payments to Brazilian authorities. Charges were a conspiracy to violate the FCPA's anti-bribery provisions, plus books-and-records and internal-controls violations. This is settled, and the DPA term ended in 2019. I recall that the DOJ then dismissed the charges, but I did not re-verify that.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/news/pressrelease/2016-224.html"
+  },
+  {
+   "id": "k3",
+   "question": "Which countries, deals and amounts were involved in the bribery conduct?",
+   "answer": "There were four episodes. (1) Dominican Republic, 2008–2009: about $3.5M in payments tied to Super Tucano military aircraft sales. (2) Saudi Arabia, 2010–2011: about $1.65M paid through an agent on a sale of executive jets. (3) Mozambique, 2008–2011: payments connected to LAM airline aircraft sales. (4) India, 2008: about $5.76M of payments through an intermediary, connected to an Indian government airborne early-warning aircraft deal. The authorities also found that Embraer had falsely recorded the payments as agent or consultant fees and had weak internal controls.",
+   "importance": "critical",
+   "source": "https://www.justice.gov/opa/pr/embraer-agrees-pay-more-107-million-resolve-foreign-corrupt-practices-act-investigation"
+  },
+  {
+   "id": "k4",
+   "question": "Are there open or parallel investigations outside the US, in Brazil, India or elsewhere?",
+   "answer": "Brazilian authorities (the Federal Prosecution Service and the Federal Police) took part in or ran parallel probes, and the 2016 US resolution gave credit for Brazilian payments. In India, the Central Bureau of Investigation (CBI) and the Enforcement Directorate looked at the 2008 AEW&C deal and an arms-dealer intermediary. I could not confirm the current status of the Indian matter, nor any Brazilian sanction, so treat both as unverified and check them directly. I found no evidence of a new bribery charge against Embraer since the 2016 settlement.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/litigation/admin/2016/34-79088.pdf"
+  },
+  {
+   "id": "k5",
+   "question": "Did the DOJ resolution impose compliance obligations, and has Embraer met them?",
+   "answer": "Yes. The DPA required Embraer to cooperate, to improve its compliance program, and to report to the DOJ for three years. It also required it to retain an independent compliance monitor (the monitorship term was shorter). The DPA term ran to 2019 and has ended. The analyst should confirm the dismissal and the end of reporting in the DOJ docket, and check for any breach allegation afterwards. I found none.",
+   "importance": "useful",
+   "source": "https://www.justice.gov/opa/pr/embraer-agrees-pay-more-107-million-resolve-foreign-corrupt-practices-act-investigation"
+  },
+  {
+   "id": "k6",
+   "question": "Is there any sanctions, debarment or PEP issue for Embraer, and do other adverse events exist (for example the Boeing dispute)?",
+   "answer": "I know of no sanctions or debarment listing for Embraer, but I did not run a live screening, so the analyst should screen OFAC, EU, UK and World Bank debarment lists. The Boeing joint-venture dispute is commercial, not bribery. Boeing terminated the deal in April 2020, and the dispute went to arbitration. It was resolved in September 2024, with Boeing paying Embraer about $150M. It is not a corruption matter.",
+   "importance": "useful",
+   "source": "https://www.reuters.com/business/aerospace-defense/"
+  },
+  {
+   "id": "k7",
+   "question": "What is the overall risk, and what remains open?",
+   "answer": "The risk is moderate to low and historical. The conduct was in 2008–2011, the settlement was in 2016, and the DPA ended in 2019. Open points are the status of the Indian and Brazilian probes, any local follow-on in the Dominican Republic, Saudi Arabia and Mozambique, and whether the compliance program is effective in high-risk defense and agent sales. The analyst should run a fresh news check for events after 2019.",
+   "importance": "critical",
+   "source": "https://www.sec.gov/news/pressrelease/2016-224.html"
+  }
+ ],
+ "labels": {
+  "parallel": "A",
+  "opus": "B",
+  "firecrawl": "C",
+  "gpt": "D",
+  "nimble": "E",
+  "exa": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "missing",
+   "k4": "missing",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "gpt": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  },
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "missing",
+   "k7": "correct"
+  }
+ },
+ "cost_usd": 0.188
+}

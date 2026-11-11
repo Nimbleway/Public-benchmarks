@@ -1,0 +1,996 @@
+{
+ "arm": "parallel",
+ "sub_use_case": "fin_kyc_screening",
+ "input": "Run a KYC screen on Adyen in the Netherlands",
+ "input_n": 4,
+ "tier": "ultra2x",
+ "status": "completed",
+ "seconds": 1673,
+ "run_id": "trun_63550df7c67c4a5ba27169e5b8d27ab0",
+ "output": {
+  "risk_rationale": "As of 2026-11-09, the provisional KYC rating is medium. Adyen N.V. is an identifiable, active Dutch entity and DNB-registered bank, with publicly disclosed governance. The entity-specific litigation located does not establish financial misconduct by Adyen: it was the victim in the SEPA fraud judgment dated 2024-05-08, Solitary's claims were rejected on 2025-06-11, and Shankar's case was dismissed procedurally in January 2025. No confirmed sanctions designation or PEP finding was established, but this is not a complete clearance: the retrieved sanctions versions have different update dates, current ultimate beneficial ownership was not verified, Goldman Sachs' OFAC screening was not completed, and historical holding-vehicle name overlaps remain unresolved. AFM positions below are dated disclosures, not proof of current beneficial ownership or control. The 12 excluded candidates comprise 10 sanctions name collisions and two litigation records whose exact-entity connection was not independently established. Missing_fields: direct KvK company/UBO extract; verified current beneficial owners/PSC and complete ownership-control chain; completed sanctions resolution for historical holding vehicles and Goldman Sachs' OFAC check; nationalities of Hwa Tsao, Herna Verhagen, Chris Vogelzang and A.D. Schuijff; registry numbers of related entities other than Adyen International B.V.; and any later appeal or reopening status of the reported proceedings.",
+  "pep": [],
+  "sanctions": [
+   {
+    "party": "Adyen N.V.; BlackRock Inc.; Pieter van der Does; Arnout Schuijff; T. Rowe Price Group, Inc.",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/",
+    "list": "OFAC SDN List",
+    "match": "No confirmed match in the completed name searches against the SDN version updated 2026-11-06. Adyen returned eight fuzzy matches: six ADEN individuals, ISLAMIC ARMY OF ADEN, and the vessel AYDEN. These were excluded because their names and party types do not identify the Dutch company. BlackRock returned BLACK ROCK, a vessel, and Blacks, an individual, neither identifying BlackRock Inc. Searches for Pieter van der Does, Arnout Schuijff and T. Rowe Price returned no results. These name checks do not establish ownership-based sanctions clearance."
+   },
+   {
+    "party": "Adyen N.V.; current directors/officers listed below; BlackRock Inc.; T. Rowe Price Group, Inc.; Goldman Sachs Group Inc., The",
+    "source_url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+    "list": "UK Sanctions List, replacing the former OFSI consolidated list",
+    "match": "No exact-name match located for these subjects in the retrieved full list generated 2026-11-03. Historical holding vehicles are not cleared by this result. The former OFSI consolidated list stopped being updated on 2026-01-28; the UK Sanctions List is the current designation source."
+   },
+   {
+    "party": "Adyen N.V.; current directors/officers listed below; BlackRock Inc.; T. Rowe Price Group, Inc.; Goldman Sachs Group Inc., The",
+    "source_url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/pdfFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+    "list": "EU Consolidated Financial Sanctions List",
+    "match": "No exact-name match located for these subjects in the retrieved full list updated 2026-10-23. This is a name-text check of that version, not confirmation of current beneficial ownership or absence of ownership/control-based restrictions. Historical holding vehicles remain unresolved."
+   },
+   {
+    "party": "Goldman Sachs Group Inc., The",
+    "source_url": "https://sanctionssearch.ofac.treas.gov/",
+    "list": "OFAC SDN List",
+    "match": null
+   },
+   {
+    "party": "A.D. Schuijff; Dia Holding b.v.; Sintentis b.v. — historical ownership disclosure only",
+    "source_url": null,
+    "list": "OFAC SDN List; UK Sanctions List; EU Consolidated Financial Sanctions List",
+    "match": null
+   }
+  ],
+  "namesakes_excluded": 12.0,
+  "input_name": "Adyen",
+  "people": [
+   {
+    "role": "Management Board member; Co-founder and Co-CEO, as of 2026-11-09",
+    "name": "Pieter van der Does",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "Dutch"
+   },
+   {
+    "role": "Management Board member; Co-CEO, as of 2026-11-09",
+    "name": "Ingo Uytdehaage",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "Dutch"
+   },
+   {
+    "role": "Management Board member; Chief Commercial Officer, as of 2026-11-09",
+    "name": "Roelant Prins",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "Dutch"
+   },
+   {
+    "role": "Management Board member; Chief Risk and Compliance Officer, as of 2026-11-09",
+    "name": "Mariëtte Swart",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "Dutch"
+   },
+   {
+    "role": "Management Board member; Chief Human Resources Officer, as of 2026-11-09",
+    "name": "Brooke Nayden",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "American"
+   },
+   {
+    "role": "Management Board member; Chief Technology Officer, as of 2026-11-09",
+    "name": "Tom Adams",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "Australian"
+   },
+   {
+    "role": "Interim Chief Financial Officer; expressly not a statutory board member, as of 2026-11-09",
+    "name": "Hwa Tsao",
+    "source_url": "https://investors.adyen.com/governance",
+    "nationality": null
+   },
+   {
+    "role": "Supervisory Board Chair, effective 2026-11-01",
+    "name": "Herna Verhagen",
+    "source_url": "https://www.adyen.com/press-and-media/resolution-adopted-at-adyen-2026-egm",
+    "nationality": null
+   },
+   {
+    "role": "Supervisory Board member; appointment approved 2026-10-07",
+    "name": "Chris Vogelzang",
+    "source_url": "https://www.adyen.com/press-and-media/resolution-adopted-at-adyen-2026-egm",
+    "nationality": null
+   },
+   {
+    "role": "Supervisory Board member; Chair of the Nomination and Remuneration Committee, as of 2026-11-09",
+    "name": "Caoimhe Keogan",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "Irish"
+   },
+   {
+    "role": "Supervisory Board member, as of 2026-11-09",
+    "name": "Pamela Joseph",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "American"
+   },
+   {
+    "role": "Supervisory Board member, as of 2026-11-09",
+    "name": "Adine Grate",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "Swedish"
+   },
+   {
+    "role": "Supervisory Board member, as of 2026-11-09",
+    "name": "Steve van Wyk",
+    "source_url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+    "nationality": "American"
+   },
+   {
+    "role": "Historical notified shareholder only: 6.45% capital and voting interests as of 2018-06-13, indirectly through Dia Holding b.v. and Sintentis b.v.; current ownership and beneficial-owner status not verified",
+    "name": "A.D. Schuijff",
+    "source_url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+    "nationality": null
+   }
+  ],
+  "related_entities": [
+   {
+    "relation": "Dutch subsidiary whose direct and ultimate parent is Adyen N.V.; reviewed as of 2026-11-09. Source: https://www.gleif.org/lei/254900GZI5YQV9VVOW75",
+    "registry_number": "55995608",
+    "name": "Adyen International B.V."
+   },
+   {
+    "relation": "AFM-notified position as of 2026-06-25: total capital interest 4.75% and total voting interest 5.54%, including potential interests. Not verified as an ultimate beneficial owner. Source: https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?id=196165&KeyWords=Adyen",
+    "registry_number": null,
+    "name": "BlackRock Inc."
+   },
+   {
+    "relation": "AFM-notified position as of 2026-06-26: total capital interest 4.93% and total voting interest 4.71%, including potential voting interests. Not verified as an ultimate beneficial owner. Source: https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=adyen&id=196255",
+    "registry_number": null,
+    "name": "T. Rowe Price Group, Inc."
+   },
+   {
+    "relation": "AFM-notified position as of 2026-06-29: total capital and voting interests each 2.11%, comprising 0.26% indirectly real and 1.85% indirectly potential interests. Not verified as an ultimate beneficial owner. Source: https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?id=196399&KeyWords=Adyen",
+    "registry_number": null,
+    "name": "Goldman Sachs Group Inc., The"
+   },
+   {
+    "relation": "Historical intermediate holding vehicle named in A.D. Schuijff's disclosure dated 2018-06-13; current connection not verified. Source: https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+    "registry_number": null,
+    "name": "Dia Holding b.v."
+   },
+   {
+    "relation": "Historical intermediate holding vehicle named in A.D. Schuijff's disclosure dated 2018-06-13; current connection not verified. Source: https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+    "registry_number": null,
+    "name": "Sintentis b.v."
+   }
+  ],
+  "risk_rating": "medium",
+  "registration": {
+   "registered_address": "Simon Carmiggeltstraat 6, 1011DJ Amsterdam, Netherlands",
+   "incorporation_date": "2006-11-24",
+   "legal_name": "Adyen N.V.",
+   "registry_number": "34259528",
+   "source_url": "https://www.gleif.org/lei/724500973ODKK3IFQ447",
+   "lei": "724500973ODKK3IFQ447",
+   "status": "ACTIVE; LEI registration ISSUED. GLEIF record last updated 2026-05-15; reviewed as of 2026-11-09.",
+   "jurisdiction": "Netherlands"
+  },
+  "adverse_media": [
+   {
+    "date": "2024-05-08",
+    "status": "Judgment ordered defendants to repay the amounts received, with statutory interest. The court found no contributory fault by Adyen. Later appeal status not verified.",
+    "severity": "medium",
+    "source_url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:3288",
+    "summary": "Adyen N.V. was the plaintiff and victim of SEPA direct-debit fraud between 2023-01-20 and 2023-02-02. The judgment states that Adyen had advanced more than EUR 2,647,415 and sought recovery. This is operational fraud exposure, not a finding that Adyen committed fraud.",
+    "category": "Fraud victim; civil recovery litigation"
+   },
+   {
+    "date": "2024-12-13",
+    "status": "Dismissed on 2025-01-24 because the plaintiff did not pay the filing fee; judgment entered 2025-01-27. Later reopening or appeal status not verified.",
+    "severity": "low",
+    "source_url": "https://dockets.justia.com/docket/illinois/ilndce/1:2024cv12868/469774",
+    "summary": "Shankar v. Adyen NV was filed in the Northern District of Illinois. The opened docket identifies Adyen NV as defendant but does not provide enough detail to characterize the substantive allegations. The procedural dismissal is not a merits finding against Adyen.",
+    "category": "Civil lawsuit"
+   },
+   {
+    "date": "2025-06-11",
+    "status": "Amsterdam District Court rejected all Solitary claims and awarded costs against Solitary. Later appeal status not verified.",
+    "severity": "low",
+    "source_url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2025:3935",
+    "summary": "Solitary B.V. sued Adyen N.V. over alleged breaches of duties and misuse of contractual powers concerning the deposit level for Athlete's payment services. The court did not find that Adyen had breached its contract or acted unlawfully.",
+    "category": "Commercial litigation; alleged breach of duty"
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "risk_rationale",
+   "citations": [
+    {
+     "title": "Registerdetailpagina | Adyen N.V. | De Nederlandsche Bank",
+     "url": "https://www.dnb.nl/openbaar-register/registerdetailpagina?registerCode=WFTKF&relationNumber=F0001",
+     "excerpts": [
+      "Statutaire zetel: AMSTERDAM, NEDERLAND KvK: 34259528 LEI-code: 724500973ODKK3IFQ447 Relatienummer DNB: F0001 Type: Bank - CI"
+     ]
+    },
+    {
+     "title": "Adyen N.V. - LEI 724500973ODKK3IFQ447",
+     "url": "https://www.gleif.org/lei/724500973ODKK3IFQ447",
+     "excerpts": [
+      "Its LEI registration is ISSUED and its entity status is ACTIVE."
+     ]
+    },
+    {
+     "title": "ECLI:NL:RBAMS:2024:3288, Rechtbank Amsterdam, C/13/734517 / HA ZA 23-528",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:3288",
+     "excerpts": [
+      "Adyen heeft geen eigen schuld aan dit misbruik."
+     ]
+    },
+    {
+     "title": "ECLI:NL:RBAMS:2025:3935, Rechtbank Amsterdam, 756034 HA ZA 24-974",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2025:3935",
+     "excerpts": [
+      "5 De beslissing De rechtbank 5\\.1. wijst de vorderingen van Solitary af,"
+     ]
+    },
+    {
+     "title": "Shankar v. Adyen NV\n         1:2024cv12868        | U.S. District Court for the Northern District of Illinois        | Justia",
+     "url": "https://dockets.justia.com/docket/illinois/ilndce/1:2024cv12868/469774",
+     "excerpts": [
+      "|January 24, 2025 |Filing 14 MINUTE entry before the Honorable Jeremy C. Daniel: The plaintiff had until January 17, 2025, to pay the filing fee. The plaintiff has not done so. Accordingly, this case is dismissed. Civil case terminated. Mailed notice. (vcf, ) |"
+     ]
+    },
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "Date of transaction 13 jun 2018"
+     ]
+    }
+   ],
+   "reasoning": "The identity records support an active Dutch bank. The judgments distinguish fraud suffered by Adyen from wrongdoing by it, and show rejected or procedurally dismissed claims. The old shareholder notification cannot establish current beneficial ownership. The provisional rating and limitations are analytical conclusions, not an official risk classification.",
+   "confidence": "medium"
+  },
+  {
+   "field": "pep",
+   "citations": [],
+   "reasoning": "No substantiated PEP finding was established. The empty array means no evidenced positive was reported, not that all directors and unidentified beneficial owners were conclusively cleared.",
+   "confidence": "low"
+  },
+  {
+   "field": "sanctions",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 8 Found Name Address Type Program(s) List Score ADEN, Abukar Ali Individual SDGT SDN 95 ADEN, Ahmed Individual SDGT SDN 95 ADEN, Mahad Isse Individual SDGT SDN 95 ADEN, Mohamed Abdi Individual SDGT SDN 95 ADEN, Mohamoud Abdi Individual SDGT SDN 95 ADEN, Mohamud Abdi Individual SDGT SDN 95 ISLAMIC ARMY OF ADEN Entity SDGT SDN 95 AYDEN Vessel IRAN-EO13902 SDN 94",
+      "Lookup Results: 2 Found Name Address Type Program(s) List Score BLACK ROCK Vessel SDGT SDN 100 Blacks Individual ILLICIT-DRUGS-EO14059 SDN 90",
+      "Lookup Results: 0 Found Name Address Type Program(s) List Score Your search has not returned any results.",
+      "Your search has not returned any results."
+     ]
+    },
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+     "excerpts": [
+      "**DateGenerated: 03/11/2026** UK SANCTIONS LIST PUBLICATION"
+     ]
+    },
+    {
+     "title": "European Union Consolidated Financial Sanctions List",
+     "url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/pdfFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+     "excerpts": [
+      "European Union Consolidated Financial Sanctions List"
+     ]
+    }
+   ],
+   "reasoning": "OFAC results support the reported fuzzy collisions and zero-result searches. Direct name comparisons were also performed across the retrieved full UK and EU documents. Negative results are limited to the names and versions examined. The Goldman OFAC result and historical ownership-chain screening remain explicitly unresolved.",
+   "confidence": "medium"
+  },
+  {
+   "field": "namesakes_excluded",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 8 Found Name Address Type Program(s) List Score ADEN, Abukar Ali Individual SDGT SDN 95 ADEN, Ahmed Individual SDGT SDN 95 ADEN, Mahad Isse Individual SDGT SDN 95 ADEN, Mohamed Abdi Individual SDGT SDN 95 ADEN, Mohamoud Abdi Individual SDGT SDN 95 ADEN, Mohamud Abdi Individual SDGT SDN 95 ISLAMIC ARMY OF ADEN Entity SDGT SDN 95 AYDEN Vessel IRAN-EO13902 SDN 94",
+      "Lookup Results: 2 Found Name Address Type Program(s) List Score BLACK ROCK Vessel SDGT SDN 100 Blacks Individual ILLICIT-DRUGS-EO14059 SDN 90"
+     ]
+    },
+    {
+     "title": "ECLI:NL:GHAMS:2017:3215, Gerechtshof Amsterdam, 200.214.931/01",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI%3ANL%3AGHAMS%3A2017%3A3215",
+     "excerpts": [
+      "ADYEN B.V. , gevestigd te Amsterdam, geïntimeerde,"
+     ]
+    },
+    {
+     "title": "Smith v. Yeti Coolers, LLC, 754 F.Supp.3d 933",
+     "url": "https://app.midpage.ai/case/smith-v-yeti-coolers-llc-1000416870568",
+     "excerpts": [
+      "Plaintiff Taylor Smith brought a putative class action alleging privacy violations against YETI Coolers, LLC, related to its use of Adyen, a third-party payment processor, on www.yeti.com."
+     ]
+    }
+   ],
+   "reasoning": "Eight Adyen-query collisions plus two BlackRock-query collisions give ten sanctions exclusions. Two additional litigation candidates were not independently tied to the exact registry identity: a proceeding naming Adyen B.V. and the YETI case referring generically to Adyen. They were conservatively omitted, without asserting that Adyen B.V. was necessarily an unrelated company.",
+   "confidence": "medium"
+  },
+  {
+   "field": "input_name",
+   "citations": [],
+   "reasoning": "Copied directly from the user's requested company name.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people",
+   "citations": [
+    {
+     "title": "Governance - Adyen",
+     "url": "https://investors.adyen.com/governance",
+     "excerpts": [
+      "## Pieter van der Does Co-founder and Co-CEO With over two decades of experience in the payments industry, Pieter van der Does, was CCO at Bibit before co-founding Adyen in 2006. Since then, Adyen has grown from a startup into a globally operating business, averaging double-digit annual growth since 2007. Pieter built Adyen to transform the payments landscape, and has since solved payment complexity for many of the world’s leading businesses. He has earned a degree in Economics from the University of Amsterdam. ## Ingo Uytdehaage Co-CEO Ingo joined Adyen as the CFO in 2011 and was appointed as co-CEO in 2023. Before joining Adyen, he gained extensive experience in the field of finance at several large enterprises. Having earned two business degrees and held multiple managerial positions, Ingo plays an essential role in Adyen’s continued growth. He has earned degrees in accounting and finance from Maastricht University and followed the CPA post-graduate program from the Vrije Universiteit in Amsterdam. Ingo is a member of the Non-Executive Board of Vinted. ## Roelant Prins CCO As the Chief Commercial Officer of Adyen, Roelant is responsible for all commercial activities and development. After starting his career as a consultant, he moved on to the online payments industry in early 2000. Throughout the years, Roelant has held various international management roles in sales and business development for companies providing payment solutions to international ecommerce businesses. He has earned a degree in Economics from Erasmus University Rotterdam. Roelant is a member of the Supervisory Board of Seenons B.V. ## Mariëtte Swart CRCO Mariëtte is the Chief Risk and Compliance Officer of Adyen. Prior to this role, she was Adyen’s General Counsel and built the legal team from the ground up. Before joining Adyen, Mariëtte worked at an international law firm where she gained vast experience in global financial services, helping companies with products in payments, debt and equity solutions, M&A and financial markets. She has earned a degree in Regulated Markets and Corporate Law from Utrecht University. ## Brooke Nayden CHRO Brooke is the Chief Human Resources Officer at Adyen. Brooke has spent her career helping tech companies scale throughout high-growth phases, and brings a comprehensive understanding of the talent landscape to Adyen’s Management Board. At Adyen, Brooke served as Global Head of HR as part of the Global Leadership team, a role in which she successfully led the company’s expansion. Previously at Atlassian, she focused on Technical and Leadership Recruitment. Brooke holds a degree in History and Literature from Claremont McKenna College. ## Tom Adams CTO Tom is the Chief Technology Officer of Adyen. Prior to joining Adyen, he led the global engineering organization at Cash App (Block, Inc.). Tom has held senior leadership positions in various financial services and technology companies in the United States and Australia. With over 25 years of experience in technical and leadership roles, he brings significant leadership experience in high-growth technology companies. Tom holds a Bachelor of Information Technology in Computer Science and a Bachelor of Science in Physical Mathematics from Griffith University. ## Hwa Tsao Interim CFO As interim Chief Financial Officer of Adyen, Hwa Tsao is responsible for the company’s financial operations and continuity throughout the transition towards a permanent CFO. Before taking on this role, Hwa served as Adyen's Senior Vice President, Group Finance. His scope included Accounting and Control, Tax, Strategic Finance and Revenue Analytics, Financial Planning and Analysis, Pricing, Finance Data and Technology, and Investor Relations. He brings more than 20 years of senior finance experience, having held leadership roles at ServiceNow, and HP Inc. Earlier in his career, Hwa worked in Mergers and Acquisitions at Citigroup. Hwa holds a Bachelors degree and Juris Doctor from the University of Michigan, an LLM in Taxation from the New York University School of Law, as well as an MBA from the UCLA Anderson School of Management. Hwa is not a member of the statutory board."
+     ]
+    },
+    {
+     "title": "All resolutions adopted at Adyen N.V.’s 2026 AGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/all-resolutions-adopted-at-2026-agm",
+     "excerpts": [
+      "The Supervisory Board currently consists of Piero Overmars, Caoimhe Keogan, Pamela Joseph, Adine Grate, Steve van Wyk, and Herna Verhagen."
+     ]
+    },
+    {
+     "title": "Resolution adopted at Adyen N.V.’s 2026 EGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/resolution-adopted-at-adyen-2026-egm",
+     "excerpts": [
+      "(AMS: ADYEN) announces that its shareholders approved the appointment of Chris Vogelzang as a member of the Supervisory Board at the Extraordinary General Meeting (EGM), held on October 7, 2026. Effective November 1, 2026, Piero Overmars will formally retire from the Supervisory Board. Herna Verhagen will succeed Piero Overmars as Chair of the Supervisory Board on the same date."
+     ]
+    },
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "A.D. Schuijff - Adyen N.V. - Amsterdam"
+     ]
+    }
+   ],
+   "reasoning": "The current governance page identifies management and the interim non-statutory CFO. The AGM roster is updated by the October EGM appointment and November chair/retirement transition. Annual-report nationality evidence is specified per person below. The shareholder record is expressly historical, not represented as current beneficial ownership.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities",
+   "citations": [
+    {
+     "title": "Adyen International B.V. - LEI 254900GZI5YQV9VVOW75",
+     "url": "https://www.gleif.org/lei/254900GZI5YQV9VVOW75",
+     "excerpts": [
+      "(Primary) Legal Name: Adyen International B.V. (nl) Registered At: Business Register, The Netherlands Chamber of Commerce (RA000463) Registered As: 55995608",
+      "Its direct parent is Adyen N.V. (LEI 724500973ODKK3IFQ447)."
+     ]
+    },
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?id=196165&KeyWords=Adyen",
+     "excerpts": [
+      "Person obliged to notify BlackRock Inc."
+     ]
+    },
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=adyen&id=196255",
+     "excerpts": [
+      "Person obliged to notify T. Rowe Price Group, Inc."
+     ]
+    },
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?id=196399&KeyWords=Adyen",
+     "excerpts": [
+      "Person obliged to notify Goldman Sachs Group Inc., The"
+     ]
+    },
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "|Type of share Gewoon aandeel |Number of shares 1\\.898.339,00 |Number of voting rights 1\\.898.339,00 |Capital interest Reëel |Voting rights Reëel |Manner of disposal Middellijk (Dia Holding b.v.,Sintentis b.v."
+     ]
+    }
+   ],
+   "reasoning": "GLEIF identifies the Dutch subsidiary and its parent. AFM identifies dated institutional positions and historical intermediate holding vehicles. These are not treated as evidence of present ultimate beneficial control.",
+   "confidence": "medium"
+  },
+  {
+   "field": "risk_rating",
+   "citations": [
+    {
+     "title": "Adyen N.V. - LEI 724500973ODKK3IFQ447",
+     "url": "https://www.gleif.org/lei/724500973ODKK3IFQ447",
+     "excerpts": [
+      "Its LEI registration is ISSUED and its entity status is ACTIVE."
+     ]
+    },
+    {
+     "title": "ECLI:NL:RBAMS:2024:3288, Rechtbank Amsterdam, C/13/734517 / HA ZA 23-528",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:3288",
+     "excerpts": [
+      "In de periode 20 januari tot en met 2 februari 2023 is Adyen slachtoffer geworden van fraude met SEPA-incasso’s.",
+      "Adyen heeft geen eigen schuld aan dit misbruik."
+     ]
+    },
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "Date of transaction 13 jun 2018"
+     ]
+    }
+   ],
+   "reasoning": "Medium is a provisional due-diligence judgment reflecting verified identity, fraud exposure, and material ownership/screening gaps. It is not a finding of criminality or an official rating.",
+   "confidence": "medium"
+  },
+  {
+   "field": "registration",
+   "citations": [
+    {
+     "title": "Adyen N.V. - LEI 724500973ODKK3IFQ447",
+     "url": "https://www.gleif.org/lei/724500973ODKK3IFQ447",
+     "excerpts": [
+      "Adyen N.V. is a legal entity under the jurisdiction of Netherlands (the) (NL) with Legal Entity Identifier (LEI) 724500973ODKK3IFQ447.",
+      "Its LEI registration is ISSUED and its entity status is ACTIVE.",
+      "Registered As: 34259528",
+      "Entity created at: 2006-11-24",
+      "Legal Address (nl) Country: NL | Netherlands (the) First Legal Address Line: Simon Carmiggeltstraat 6 City: Amsterdam Postal Code: 1011DJ",
+      "Last Update: 2026-05-15"
+     ]
+    },
+    {
+     "title": "Registerdetailpagina | Adyen N.V. | De Nederlandsche Bank",
+     "url": "https://www.dnb.nl/openbaar-register/registerdetailpagina?registerCode=WFTKF&relationNumber=F0001",
+     "excerpts": [
+      "Statutaire zetel: AMSTERDAM, NEDERLAND KvK: 34259528 LEI-code: 724500973ODKK3IFQ447 Relatienummer DNB: F0001 Type: Bank - CI"
+     ]
+    }
+   ],
+   "reasoning": "GLEIF directly states the legal identity, jurisdiction, registry number, creation date, address and active status. DNB independently corroborates the Dutch registry number and LEI. The incorporation date is GLEIF's entity-created date; a direct KvK extract was not obtained.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media",
+   "citations": [
+    {
+     "title": "ECLI:NL:RBAMS:2024:3288, Rechtbank Amsterdam, C/13/734517 / HA ZA 23-528",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:3288",
+     "excerpts": [
+      "Vonnis van 8 mei 2024",
+      "Adyen heeft geen eigen schuld aan dit misbruik."
+     ]
+    },
+    {
+     "title": "Shankar v. Adyen NV\n         1:2024cv12868        | U.S. District Court for the Northern District of Illinois        | Justia",
+     "url": "https://dockets.justia.com/docket/illinois/ilndce/1:2024cv12868/469774",
+     "excerpts": [
+      "|January 24, 2025 |Filing 14 MINUTE entry before the Honorable Jeremy C. Daniel: The plaintiff had until January 17, 2025, to pay the filing fee. The plaintiff has not done so. Accordingly, this case is dismissed. Civil case terminated. Mailed notice. (vcf, ) |"
+     ]
+    },
+    {
+     "title": "ECLI:NL:RBAMS:2025:3935, Rechtbank Amsterdam, 756034 HA ZA 24-974",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2025:3935",
+     "excerpts": [
+      "5 De beslissing De rechtbank 5\\.1. wijst de vorderingen van Solitary af,"
+     ]
+    }
+   ],
+   "reasoning": "The reported cases are tied to Adyen N.V./Adyen NV. Outcomes are described without turning allegations into findings or victimization into misconduct. Severity labels are analytical assessments, and later procedural developments remain unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.0",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Pieter van der Does Co-Founder and Co-CEO",
+      "MALE - 1969 - DUTCH MANAGEMENT BOARD MEMBER SINCE 2007 CURRENT TERM: JUNE 2022 - JUNE 2026"
+     ]
+    },
+    {
+     "title": "All resolutions adopted at Adyen N.V.’s 2026 AGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/all-resolutions-adopted-at-2026-agm",
+     "excerpts": [
+      "This included the reappointments of Pieter van der Does (co-founder and Co-CEO) and Roelant Prins (CCO) as members of the Management Board for four-year terms until 2030."
+     ]
+    }
+   ],
+   "reasoning": "Annual-report evidence supplies nationality and role; the AGM confirms reappointment.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.1",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Ingo Uytdehaage Co-CEO",
+      "MALE - 1973 - DUTCH MANAGEMENT BOARD MEMBER SINCE 2011 CURRENT TERM: MAY 2023 - MAY 2027"
+     ]
+    },
+    {
+     "title": "Governance - Adyen",
+     "url": "https://investors.adyen.com/governance",
+     "excerpts": [
+      "## Ingo Uytdehaage Co-CEO Ingo joined Adyen as the CFO in 2011 and was appointed as co-CEO in 2023."
+     ]
+    }
+   ],
+   "reasoning": "The annual report states nationality, and current governance confirms the co-CEO role.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.2",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Roelant Prins CCO",
+      "MALE - 1975 - DUTCH MANAGEMENT BOARD MEMBER SINCE 2007 CURRENT TERM: JUNE 2022 - JUNE 2026"
+     ]
+    },
+    {
+     "title": "All resolutions adopted at Adyen N.V.’s 2026 AGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/all-resolutions-adopted-at-2026-agm",
+     "excerpts": [
+      "This included the reappointments of Pieter van der Does (co-founder and Co-CEO) and Roelant Prins (CCO) as members of the Management Board for four-year terms until 2030."
+     ]
+    }
+   ],
+   "reasoning": "Nationality and role are stated in the annual report; the AGM confirms renewal.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.3",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Mariëtte Swart CRCO",
+      "FEMALE - 1980 - DUTCH MANAGEMENT BOARD MEMBER SINCE 2020 CURRENT TERM: MAY 2023 - MAY 2027"
+     ]
+    },
+    {
+     "title": "Governance - Adyen",
+     "url": "https://investors.adyen.com/governance",
+     "excerpts": [
+      "## Mariëtte Swart CRCO Mariëtte is the Chief Risk and Compliance Officer of Adyen."
+     ]
+    }
+   ],
+   "reasoning": "Annual-report nationality and current governance role agree.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.4",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Brooke Nayden CHRO",
+      "FEMALE - 1991 - AMERICAN MANAGEMENT BOARD MEMBER SINCE 2023 CURRENT TERM: MAY 2023 - MAY 2027"
+     ]
+    },
+    {
+     "title": "Governance - Adyen",
+     "url": "https://investors.adyen.com/governance",
+     "excerpts": [
+      "## Brooke Nayden CHRO Brooke is the Chief Human Resources Officer at Adyen."
+     ]
+    }
+   ],
+   "reasoning": "Annual-report nationality and current governance role support this entry.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.5",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Tom Adams CTO",
+      "MALE - 1976 - AUSTRALIAN MANAGEMENT BOARD MEMBER SINCE 2024 CURRENT TERM: OCTOBER 2024 - OCTOBER 2028"
+     ]
+    },
+    {
+     "title": "Governance - Adyen",
+     "url": "https://investors.adyen.com/governance",
+     "excerpts": [
+      "## Tom Adams CTO Tom is the Chief Technology Officer of Adyen."
+     ]
+    }
+   ],
+   "reasoning": "Annual-report nationality and current governance role support this entry.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.6",
+   "citations": [
+    {
+     "title": "Governance - Adyen",
+     "url": "https://investors.adyen.com/governance",
+     "excerpts": [
+      "## Hwa Tsao Interim CFO As interim Chief Financial Officer of Adyen, Hwa Tsao is responsible for the company’s financial operations and continuity throughout the transition towards a permanent CFO.",
+      "Hwa is not a member of the statutory board."
+     ]
+    }
+   ],
+   "reasoning": "The governance page expressly identifies the interim CFO and excludes statutory board membership. Nationality was not stated.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.7",
+   "citations": [
+    {
+     "title": "Resolution adopted at Adyen N.V.’s 2026 EGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/resolution-adopted-at-adyen-2026-egm",
+     "excerpts": [
+      "Effective November 1, 2026, Piero Overmars will formally retire from the Supervisory Board. Herna Verhagen will succeed Piero Overmars as Chair of the Supervisory Board on the same date."
+     ]
+    }
+   ],
+   "reasoning": "The EGM announcement establishes the effective chair transition. No nationality was read.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.8",
+   "citations": [
+    {
+     "title": "Resolution adopted at Adyen N.V.’s 2026 EGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/resolution-adopted-at-adyen-2026-egm",
+     "excerpts": [
+      "(AMS: ADYEN) announces that its shareholders approved the appointment of Chris Vogelzang as a member of the Supervisory Board at the Extraordinary General Meeting (EGM), held on October 7, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The official announcement confirms approval of the supervisory appointment. Nationality was not found.",
+   "confidence": "high"
+  },
+  {
+   "field": "people.9",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Caoimhe Keogan Chair of the Nomination and Remuneration Committee",
+      "FEMALE - 1978 - IRISH APPOINTED IN FEBRUARY 2021 CURRENT TERM: FEBRUARY 2025 - FEBRUARY 2029"
+     ]
+    },
+    {
+     "title": "All resolutions adopted at Adyen N.V.’s 2026 AGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/all-resolutions-adopted-at-2026-agm",
+     "excerpts": [
+      "The Supervisory Board currently consists of Piero Overmars, Caoimhe Keogan, Pamela Joseph, Adine Grate, Steve van Wyk, and Herna Verhagen."
+     ]
+    }
+   ],
+   "reasoning": "The annual report gives nationality and committee role; the AGM roster corroborates continuing supervisory membership.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.10",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Pamela Joseph Supervisory Board member",
+      "FEMALE - 1959 - AMERICAN APPOINTED IN MAY 2019 CURRENT TERM: MAY 2023 - MAY 2027"
+     ]
+    },
+    {
+     "title": "All resolutions adopted at Adyen N.V.’s 2026 AGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/all-resolutions-adopted-at-2026-agm",
+     "excerpts": [
+      "The Supervisory Board currently consists of Piero Overmars, Caoimhe Keogan, Pamela Joseph, Adine Grate, Steve van Wyk, and Herna Verhagen."
+     ]
+    }
+   ],
+   "reasoning": "The annual report supplies nationality and role, corroborated by the AGM roster.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.11",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Adine Grate Supervisory Board member",
+      "FEMALE - 1961 - SWEDISH APPOINTED IN MAY 2024 CURRENT TERM: MAY 2024 - MAY 2028"
+     ]
+    },
+    {
+     "title": "All resolutions adopted at Adyen N.V.’s 2026 AGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/all-resolutions-adopted-at-2026-agm",
+     "excerpts": [
+      "The Supervisory Board currently consists of Piero Overmars, Caoimhe Keogan, Pamela Joseph, Adine Grate, Steve van Wyk, and Herna Verhagen."
+     ]
+    }
+   ],
+   "reasoning": "The annual report supplies nationality and role, corroborated by the AGM roster.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.12",
+   "citations": [
+    {
+     "title": "2025 Annual Report & Consolidated Financial Statements",
+     "url": "https://brand.adyen.com/api/asset/eyJjbGllbnRJZCI6bnVsbCwiaWQiOjEyMjMwOCwidGltZXN0YW1wIjoxNzc1NTY0MjQ0LCJ2ZXJzaW9uIjoxNzcyNjkwMjA3fQ:adyen:DEcCEo4XPo3eDfzj-fjMZ366g2pQkuoZMPARCHC5BoE/download",
+     "excerpts": [
+      "Steve van Wyk Supervisory Board member",
+      "MALE - 1958 - AMERICAN APPOINTED IN MAY 2025 CURRENT TERM: MAY 2025 - MAY 2029"
+     ]
+    },
+    {
+     "title": "All resolutions adopted at Adyen N.V.’s 2026 AGM - Adyen",
+     "url": "https://www.adyen.com/press-and-media/all-resolutions-adopted-at-2026-agm",
+     "excerpts": [
+      "The Supervisory Board currently consists of Piero Overmars, Caoimhe Keogan, Pamela Joseph, Adine Grate, Steve van Wyk, and Herna Verhagen."
+     ]
+    }
+   ],
+   "reasoning": "The annual report supplies nationality and role, corroborated by the AGM roster.",
+   "confidence": "medium"
+  },
+  {
+   "field": "people.13",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "A.D. Schuijff - Adyen N.V. - Amsterdam",
+      "Date of transaction 13 jun 2018",
+      "|Type Kapitaalbelang |Total holding 6,45 % |Directly real 0,00 % |",
+      "|Type of share Gewoon aandeel |Number of shares 1\\.898.339,00 |Number of voting rights 1\\.898.339,00 |Capital interest Reëel |Voting rights Reëel |Manner of disposal Middellijk (Dia Holding b.v.,Sintentis b.v."
+     ]
+    }
+   ],
+   "reasoning": "AFM establishes only the dated notification and indirect holding chain. Present ownership, nationality and UBO status are not inferred.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.0",
+   "citations": [
+    {
+     "title": "Adyen International B.V. - LEI 254900GZI5YQV9VVOW75",
+     "url": "https://www.gleif.org/lei/254900GZI5YQV9VVOW75",
+     "excerpts": [
+      "(Primary) Legal Name: Adyen International B.V. (nl) Registered At: Business Register, The Netherlands Chamber of Commerce (RA000463) Registered As: 55995608",
+      "Its direct parent is Adyen N.V. (LEI 724500973ODKK3IFQ447)."
+     ]
+    }
+   ],
+   "reasoning": "GLEIF directly identifies the subsidiary, registry number and parent relationship.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.1",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?id=196165&KeyWords=Adyen",
+     "excerpts": [
+      "Date of transaction 25 jun 2026 Person obliged to notify BlackRock Inc. Issuing institution Adyen N.V.",
+      "|Type Kapitaalbelang |Total holding 4,75 % |Directly real 0,00 % |Directly potential 0,00 % |Indirectly real 4,35 % |Indirectly potential 0,40 % | |Type Stemrecht |Total holding 5,54 % |Directly real 0,00 % |Directly potential 0,00 % |Indirectly real 5,08 % |Indirectly potential 0,47 % |"
+     ]
+    }
+   ],
+   "reasoning": "AFM states the dated BlackRock capital and voting interests. The entry is not represented as proof of current beneficial ownership.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.2",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=adyen&id=196255",
+     "excerpts": [
+      "Date of transaction 26 jun 2026 Person obliged to notify T. Rowe Price Group, Inc. Issuing institution Adyen N.V.",
+      "|Type Kapitaalbelang |Total holding 4,93 % |Directly real 0,00 % |Directly potential 0,00 % |Indirectly real 4,93 % |Indirectly potential 0,00 % | |Type Stemrecht |Total holding 4,71 % |Directly real 0,00 % |Directly potential 0,00 % |Indirectly real 2,64 % |Indirectly potential 2,07 % |"
+     ]
+    }
+   ],
+   "reasoning": "The later June notification is used rather than the earlier June position. Current UBO status is not inferred.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.3",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?id=196399&KeyWords=Adyen",
+     "excerpts": [
+      "Date of transaction 29 jun 2026 Person obliged to notify Goldman Sachs Group Inc., The Issuing institution Adyen N.V.",
+      "|Type Kapitaalbelang |Total holding 2,11 % |Directly real 0,00 % |Directly potential 0,00 % |Indirectly real 0,26 % |Indirectly potential 1,85 % |"
+     ]
+    }
+   ],
+   "reasoning": "The disclosure explicitly separates real and potential interests, preventing them from being misrepresented as an equivalent beneficial shareholding.",
+   "confidence": "high"
+  },
+  {
+   "field": "related_entities.4",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "Date of transaction 13 jun 2018",
+      "|Type of share Gewoon aandeel |Number of shares 1\\.898.339,00 |Number of voting rights 1\\.898.339,00 |Capital interest Reëel |Voting rights Reëel |Manner of disposal Middellijk (Dia Holding b.v.,Sintentis b.v."
+     ]
+    }
+   ],
+   "reasoning": "The historical disclosure identifies Dia Holding in the indirect chain. No present relationship or registry number is asserted.",
+   "confidence": "medium"
+  },
+  {
+   "field": "related_entities.5",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "Date of transaction 13 jun 2018",
+      "|Type of share Gewoon aandeel |Number of shares 1\\.898.339,00 |Number of voting rights 1\\.898.339,00 |Capital interest Reëel |Voting rights Reëel |Manner of disposal Middellijk (Dia Holding b.v.,Sintentis b.v."
+     ]
+    }
+   ],
+   "reasoning": "The historical disclosure identifies Sintentis in the indirect chain. No present relationship or registry number is asserted.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.0",
+   "citations": [
+    {
+     "title": "Sanctions List Search",
+     "url": "https://sanctionssearch.ofac.treas.gov/",
+     "excerpts": [
+      "Lookup Results: 8 Found Name Address Type Program(s) List Score ADEN, Abukar Ali Individual SDGT SDN 95 ADEN, Ahmed Individual SDGT SDN 95 ADEN, Mahad Isse Individual SDGT SDN 95 ADEN, Mohamed Abdi Individual SDGT SDN 95 ADEN, Mohamoud Abdi Individual SDGT SDN 95 ADEN, Mohamud Abdi Individual SDGT SDN 95 ISLAMIC ARMY OF ADEN Entity SDGT SDN 95 AYDEN Vessel IRAN-EO13902 SDN 94",
+      "SDN List last updated on: 11/6/2026 2:33:11 PM Non-SDN List last updated on: 11/4/2026 12:33:06 PM",
+      "Lookup Results: 2 Found Name Address Type Program(s) List Score BLACK ROCK Vessel SDGT SDN 100 Blacks Individual ILLICIT-DRUGS-EO14059 SDN 90",
+      "Lookup Results: 0 Found Name Address Type Program(s) List Score Your search has not returned any results."
+     ]
+    }
+   ],
+   "reasoning": "The completed searches yielded ten incompatible fuzzy identities and three zero-result searches. Entity-type and name differences support exclusion, but not a complete ownership-based clearance.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.1",
+   "citations": [
+    {
+     "title": "Uk Sanctions List",
+     "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.html",
+     "excerpts": [
+      "**DateGenerated: 03/11/2026** UK SANCTIONS LIST PUBLICATION"
+     ]
+    },
+    {
+     "title": "The UK Sanctions List - GOV.UK",
+     "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+     "excerpts": [
+      "The UK Sanctions List is now the only source for all UK sanctions designations. The OFSI Consolidated List of Asset Freeze Targets closed on Wednesday 28 January 2026 and is no longer being updated."
+     ]
+    }
+   ],
+   "reasoning": "The full retrieved UK list was compared against the specified subject names. The header dates the version and official guidance explains replacement of the OFSI list. Historical intermediary resolution is excluded from the negative conclusion.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.2",
+   "citations": [
+    {
+     "title": "European Union Consolidated Financial Sanctions List",
+     "url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/pdfFullSanctionsList/content?token=dG9rZW4tMjAxNw",
+     "excerpts": [
+      "European Union Consolidated Financial Sanctions List",
+      "**This list has been updated on 23/10/2026 17:05**"
+     ]
+    }
+   ],
+   "reasoning": "The retrieved full EU document was checked by direct name-text comparison. The conclusion is limited to the retrieved dated version, not fuzzy identity resolution or ownership/control screening.",
+   "confidence": "medium"
+  },
+  {
+   "field": "sanctions.3",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?id=196399&KeyWords=Adyen",
+     "excerpts": [
+      "Person obliged to notify Goldman Sachs Group Inc., The Issuing institution Adyen N.V."
+     ]
+    }
+   ],
+   "reasoning": "AFM establishes why this institutional name was in scope. No completed OFAC result was obtained, so match is null.",
+   "confidence": "low"
+  },
+  {
+   "field": "sanctions.4",
+   "citations": [
+    {
+     "title": "Result from register substantial holdings and gross short positions",
+     "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/substantiele-deelnemingen/details?KeyWords=Adyen%20[357.98]&id=60128",
+     "excerpts": [
+      "A.D. Schuijff - Adyen N.V. - Amsterdam",
+      "|Type of share Gewoon aandeel |Number of shares 1\\.898.339,00 |Number of voting rights 1\\.898.339,00 |Capital interest Reëel |Voting rights Reëel |Manner of disposal Middellijk (Dia Holding b.v.,Sintentis b.v."
+     ]
+    }
+   ],
+   "reasoning": "The historic ownership disclosure establishes the names, but current identity links and sanctions resolution were not completed. Null does not imply a match or clearance.",
+   "confidence": "low"
+  },
+  {
+   "field": "adverse_media.0",
+   "citations": [
+    {
+     "title": "ECLI:NL:RBAMS:2024:3288, Rechtbank Amsterdam, C/13/734517 / HA ZA 23-528",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:3288",
+     "excerpts": [
+      "Vonnis van 8 mei 2024",
+      "de naamloze vennootschap ADYEN N.V. , gevestigd te Amsterdam, eiseres,",
+      "In de periode 20 januari tot en met 2 februari 2023 is Adyen slachtoffer geworden van fraude met SEPA-incasso’s.",
+      "Adyen had op dat moment al een bedrag van meer dan € 2.647.415,- voorgeschoten. Dit is het bedrag dat Adyen in deze procedure terugvordert.",
+      "Adyen heeft geen eigen schuld aan dit misbruik.",
+      "Gedaagden zullen op grond van een door hen gepleegde onrechtmatige daad worden veroordeeld tot terugbetaling van het door ieder van hen ontvangen bedrag zoals opgenomen in overweging 2.5."
+     ]
+    }
+   ],
+   "reasoning": "The judgment identifies the exact plaintiff, fraud period, advance amount and recovery order. It expressly rejects contributory fault by Adyen. Medium severity reflects the operational fraud exposure, not culpability.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.1",
+   "citations": [
+    {
+     "title": "Shankar v. Adyen NV\n         1:2024cv12868        | U.S. District Court for the Northern District of Illinois        | Justia",
+     "url": "https://dockets.justia.com/docket/illinois/ilndce/1:2024cv12868/469774",
+     "excerpts": [
+      "[Justia](https://www.justia.com/) [Dockets & Filings](https://dockets.justia.com/) [Seventh Circuit](https://dockets.justia.com/browse/circuit-7) [Illinois](https://dockets.justia.com/browse/circuit-7/state-illinois) [Northern District](https://dockets.justia.com/browse/circuit-7/state-illinois/court-ilndce) Shankar v. Adyen NV **Shankar v. Adyen NV** |Plaintiff: |Raghavendran Shankar | |Defendant: |Adyen NV |",
+      "|Case Number: |1:2024cv12868 | |Filed: |December 13, 2024 | |Court: |U.S. District Court for the Northern District of Illinois |",
+      "|January 24, 2025 |Filing 14 MINUTE entry before the Honorable Jeremy C. Daniel: The plaintiff had until January 17, 2025, to pay the filing fee. The plaintiff has not done so. Accordingly, this case is dismissed. Civil case terminated. Mailed notice. (vcf, ) |",
+      "|January 27, 2025 |Filing 15 ENTERED JUDGMENT. Mailed notice. (vcf, ) |"
+     ]
+    }
+   ],
+   "reasoning": "The docket identifies the named defendant, filing date and procedural termination. Its limited allegation detail prevents a stronger characterization, and later developments remain unknown.",
+   "confidence": "medium"
+  },
+  {
+   "field": "adverse_media.2",
+   "citations": [
+    {
+     "title": "ECLI:NL:RBAMS:2025:3935, Rechtbank Amsterdam, 756034 HA ZA 24-974",
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2025:3935",
+     "excerpts": [
+      "Datum uitspraak 11-06-2025 Datum publicatie 04-07-2025 Zaaknummer 756034 HA ZA 24-974",
+      "SOLITARY B.V. , gevestigd te Groningen, eiseres, hierna te noemen: Solitary, advocaat: mr. H.J. Tulp, tegen de naamloze vennootschap ADYEN N.V. , gevestigd te Amsterdam, gedaagde, hierna te noemen: Adyen,",
+      "Solitary vordert dat de rechtbank, voor zoveel mogelijk uitvoerbaar bij voorraad, voor recht verklaart dat: (i) Adyen is tekortgeschoten in de nakoming van haar (contractuele dan wel buitencontractuele) bijzondere zorgplicht jegens Athlete, althans misbruik heeft gemaakt van haar contractuele bevoegdheid tot verhoging van de Buffer (ook wel het deposit level genoemd) en de verlenging van de Termijn van Doorbetaling, en/of is tekortgeschoten dan wel onrechtmatig heeft gehandeld jegens Athlete doordat zij de gemaakte afspraken en gedane toezeggingen rondom de overstap naar Acapture niet is nagekomen, een en ander steeds terwijl zij daarbij geen rekening heeft gehouden met de gerechtvaardigde belangen van Athlete; (ii) Adyen jegens Solitary aansprakelijk is voor vergoeding van de schade als gevolg van of in verband met de verhogingen van de Buffer, het verlengen van de Termijn van Doorbetaling en/of de niet-nakoming van diverse gemaakte afspraken en gedane toezeggingen, zoals nader op te maken bij staat en te vereffenen volgens de wet; (iii) Adyen jegens [naam] aansprakelijk is voor vergoeding van de door hem als gevolg van het faillissement van Athlete geleden schade, zoals nader op te maken bij staat en te vereffenen volgens de wet, een en ander met veroordeling van Adyen in de proces- en nakosten.",
+      "5 De beslissing De rechtbank 5\\.1. wijst de vorderingen van Solitary af,"
+     ]
+    }
+   ],
+   "reasoning": "The primary judgment supplies the date, exact defendant, allegations and rejection of claims. Low severity reflects the civil-commercial nature and favorable disposition, not a criminal or regulatory finding.",
+   "confidence": "medium"
+  }
+ ],
+ "cost_usd": 0.6,
+ "cost_basis": "list",
+ "completed_on": "2026-11-09"
+}

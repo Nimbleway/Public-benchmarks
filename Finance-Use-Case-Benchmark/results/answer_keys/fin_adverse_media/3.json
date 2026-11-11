@@ -1,0 +1,125 @@
+{
+ "sub": "fin_adverse_media",
+ "i": 3,
+ "task": "Find bribery and corruption cases involving Trafigura",
+ "key": [
+  {
+   "id": "k1",
+   "question": "Which legal entity is the subject, where is it headquartered, and which group does it belong to? Which entities are the named defendants in each case?",
+   "answer": "Trafigura Group Pte. Ltd. is the Singapore-registered parent, with major operations in Geneva, Lucerne and Amsterdam. It is privately owned, with employee shareholders, and is not part of another group. Trafigura Beheer B.V. (Netherlands) is the entity that pleaded guilty to the US charge. It is also the defendant in the Swiss case, where the Federal Criminal Court convicted it in January 2025 over the Angola/Sonangol bribery. The Swiss prosecution names 'Trafigura Beheer BV', not Trafigura Group Pte Ltd. Check the registry numbers and exact entity names before onboarding. Namesakes to screen out: Trafigura Foundation, and other Trafigura subsidiaries such as Impala Terminals, Puma Energy (former affiliate) and Nyrstar, whose conduct is separate.",
+   "importance": "critical",
+   "source": "https://admin.ch/gov/en/start/documentation/media-releases.msg-id-99242.html",
+   "key_original": {
+    "answer": "Trafigura Group Pte. Ltd. is the Singapore-registered parent, with major operations in Geneva, Lucerne and Amsterdam. It is privately owned, with employee shareholders, and is not part of another group. Trafigura Beheer B.V. (Netherlands) is the entity that pleaded guilty to the US charge. The defendant in the Swiss case is Trafigura Group (the Swiss prosecution names 'Trafigura Group Pte Ltd'). Check the registry numbers and exact entity names before onboarding. Namesakes to screen out: Trafigura Foundation, and other Trafigura subsidiaries such as Impala Terminals, Puma Energy (former affiliate) and Nyrstar, whose conduct is separate.",
+    "source": "https://www.justice.gov/opa/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme"
+   },
+   "audit": {
+    "verdict": "key_wrong",
+    "why": "The Swiss Office of the Attorney General's release, hosted on admin.ch, says the indicted company is TRAFIGURA BEHEER BV. It was charged with failing to take the organisational measures needed to prevent bribery. Swissinfo reports that the Federal Criminal Court convicted Trafigura Beheer BV on 31 January 2025. It says Trafigura was charged through its Dutch holding company. So the same entity, Trafigura Beheer B.V., is the defendant in both the US plea and the Swiss case. Trafigura Group Pte Ltd is not the named defendant in either. I did not check where Trafigura Beheer B.V. is headquartered or the other details in the key, so I left them unchanged.",
+    "disputed_point": "Which entity is the named defendant in the Swiss case. The key says it is 'Trafigura Group Pte Ltd'. Sources say it is Trafigura Beheer B.V."
+   }
+  },
+  {
+   "id": "k2",
+   "question": "What was the US DOJ FCPA case against Trafigura (Brazil/Petrobras), and how was it resolved?",
+   "answer": "On 28 Mar 2024 Trafigura Beheer B.V. pleaded guilty in the US to conspiracy to violate the FCPA. The conduct was bribes paid to Petrobras officials in Brazil, via shell companies and offshore accounts, to win oil-products business (about 2 cents... sources cite up to 20 cents per barrel). The company profited by about $61m. It agreed to a criminal fine of $80,488,040 and forfeiture of $46,510,257, about $127m in total. DOJ credited up to $26.8m against payments to Brazilian authorities. No monitor was imposed, but the company must file annual remediation reports. DOJ said cooperation was imperfect because Trafigura failed to preserve and produce some documents on time. Status: resolved by plea, with ongoing compliance reporting.",
+   "importance": "critical",
+   "source": "https://www.justice.gov/opa/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme"
+  },
+  {
+   "id": "k3",
+   "question": "What was the Swiss Angola bribery case, what was the verdict, and what is its status now?",
+   "answer": "The Swiss Federal Criminal Court in Bellinzona convicted Trafigura Group on 31 Jan 2025 of failing to prevent bribery. The case concerned more than $5m paid via intermediaries to an Angolan Sonangol official (Paulo Gouveia Junior) to win oil deals around 2009-2011. The company received a fine of about CHF/USD 3m and a compensation claim of about $145m. Former COO Mike Wainwright was convicted of bribery and received a sentence of about 32 months (partly suspended). A Geneva intermediary received a suspended 24-month sentence. Trafigura appealed in Dec 2025 against the finding that its compliance system was inadequate, and Wainwright also appealed. I found no appellate ruling or hearing date as of Nov 2026, so the conviction is not final.",
+   "importance": "critical",
+   "source": "https://www.courthousenews.com/swiss-criminal-court-convicts-commodities-firm-trafigura-in-angola-bribery-case/"
+  },
+  {
+   "id": "k4",
+   "question": "Are there other open or past bribery or corruption matters involving Trafigura (Brazil authorities, Mexico/Pemex, Ecuador, Nigeria, DRC and others)?",
+   "answer": "There was a parallel Brazilian resolution (the Petrobras-related conduct), with DOJ crediting up to $26.8m against it. I could not verify other matters in this search. Earlier allegations are known from public reporting: Mexico (Pemex), Ecuador/Petroecuador-related allegations, and the 2006 Probo Koala toxic-waste case (an environmental matter, not bribery). Other trading houses (Gunvor, Vitol, Glencore) have separate cases and must not be conflated with Trafigura. The analyst should run an adverse-media check for each of these before sign-off.",
+   "importance": "useful",
+   "source": "https://www.justice.gov/opa/pr/swiss-commodities-trading-company-pleads-guilty-foreign-bribery-scheme"
+  },
+  {
+   "id": "k5",
+   "question": "What are the compliance gaps and the remediation or governance consequences for Trafigura?",
+   "answer": "The Swiss court found organisational failure: the compliance system was inadequate, and a former compliance officer was nicknamed 'Mr Non-Compliant' in reporting. DOJ found cooperation shortfalls. A further consequence is the ongoing annual reporting obligation under the plea. Swiss, US and other authorities have accepted Trafigura's remediation steps, but the Swiss court rejected the compliance defence. I did not verify post-2025 compliance changes, lender or ratings impact, or debarment.",
+   "importance": "useful",
+   "source": "https://www.bloomberg.com/news/articles/2025-12-10/trafigura-appeals-swiss-conviction-over-bribery-controls"
+  },
+  {
+   "id": "k6",
+   "question": "What is the overall risk, and what is still open?",
+   "answer": "The risk is high for corruption. Trafigura has a US corporate guilty plea (2024) and a first-instance Swiss corporate conviction (2025) with a $145m compensation order. Both involve proven, repeated bribery through intermediaries. Open items: the Swiss appeal outcome; the Wainwright appeal; payment of the compensation claim; the DOJ annual reporting period; and any new investigations. Sanctions and PEP checks were not run here, so run them separately.",
+   "importance": "critical",
+   "source": "https://news.bgov.com/white-collar-and-criminal-law/trafigura-appeals-swiss-conviction-over-bribery-controls"
+  }
+ ],
+ "labels": {
+  "exa": "A",
+  "parallel": "B",
+  "opus": "C",
+  "gpt": "D",
+  "firecrawl": "E",
+  "nimble": "F"
+ },
+ "graded_arms": [
+  "nimble",
+  "exa",
+  "parallel",
+  "firecrawl",
+  "gpt",
+  "opus"
+ ],
+ "grades": {
+  "exa": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct"
+  },
+  "parallel": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "opus": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  },
+  "gpt": {
+   "k1": "wrong",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct"
+  },
+  "firecrawl": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "missing",
+   "k6": "correct"
+  },
+  "nimble": {
+   "k1": "correct",
+   "k2": "correct",
+   "k3": "correct",
+   "k4": "correct",
+   "k5": "correct",
+   "k6": "correct"
+  }
+ },
+ "cost_usd": 0.12
+}
