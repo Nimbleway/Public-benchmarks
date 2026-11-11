@@ -46,7 +46,7 @@ Reply with JSON only: {{"verdict": "...", "disputed_point": "...", "why": "...",
 
 
 def ask(system, user):
-    args = BASE + ["--model", "claude-sonnet-5-5", "--effort", "high", "--system-prompt", system, "--output-format", "json",
+    args = BASE + ["--model", os.environ.get("KEY_AUDIT_MODEL", "claude-sonnet-5-5"), "--effort", "high", "--system-prompt", system, "--output-format", "json",
                    "--tools", "WebSearch,WebFetch", "--allowedTools", "WebSearch", "WebFetch"]
     for _ in range(2):
         p = subprocess.run(args, input=user, capture_output=True, text=True, timeout=1800, cwd=ROOT)

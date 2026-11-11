@@ -12,7 +12,8 @@ It is the GTM half of a GTM and finance suite; the finance half is in
 [`Finance-Use-Case-Benchmark/`](../Finance-Use-Case-Benchmark). Both were run
 together with the same harness, judge and method.
 
-Runs: November 3 to 10, 2026. Judged: November 10, 2026, every run of a task
+Runs: November 3 to 10, 2026 (per provider, from each result's `completed_on`:
+Nimble Nov 9, Exa Nov 3–9, Parallel Nov 4–9, Firecrawl Nov 3–9, GPT-6.1 Sol Nov 10, Claude Opus 5.5 Nov 10). Judged: November 10, 2026, every run of a task
 side by side. Corrections: November 11, 2026 (see
 [Corrections log](#corrections-log)).
 
@@ -227,8 +228,10 @@ missed what the others proved exists. It is not an exhaustive answer set.
 
 ## Judge note
 
-The judge is Claude (Sonnet for extraction, merge, verification, grading and
-corrections; Opus for the audit sample), and Claude wrote the answer keys,
+The judge is Claude (`claude-sonnet-5-5` for extraction, merge, verification,
+grading and corrections; `claude-opus-5-5` for the audit sample; the code pins
+these IDs, overridable with `JUDGE_MODEL` and `AUDIT_MODEL`; the stale-key
+audit uses `claude-sonnet-5-5`, overridable with `KEY_AUDIT_MODEL`), and Claude wrote the answer keys,
 while Claude Opus 5.5 is one of the contestants. The judge may prefer answers
 written the way Claude writes; we have not measured this. Mitigations:
 providers are shown under shuffled anonymous labels, verdicts are decided
@@ -254,6 +257,12 @@ provider cited a page.
   exhaustive answer set.
 - Verdicts, answer keys and audits are model judgments. They have not been
   validated by sales practitioners.
+- Evidence passages and fetched page text are not shipped (copyright). Each
+  verdict ships with its source URL and a note cut to 300 characters, so a
+  verdict can be checked by opening the URL, not against the exact passage
+  the judge read.
+- Every unit in this suite has a verdict. (In the finance suite 21 units
+  were never given one; see the finance README.)
 - Instructions contain the run date and signal tracking asks about events
   after a fixed date, so a later run is a different test.
 
@@ -267,6 +276,8 @@ provider.
 
 ## Corrections log
 
+- **Known issue (v2):** 21 finance units have no judge verdict and are
+  excluded from scoring for every provider (none in this suite).
 - **v2 corrections (Nov 11 2026, after external review):** stale answer-key
   items re-checked by a non-contestant model (no GTM key changed; all
   providers re-graded where a key changed); 1,205 duplicate units merged
@@ -287,6 +298,10 @@ results/
   answer_keys/<job>/<i>.json           key questions and answers, key_original/audit where changed, grades per provider
     summary.json                         the tables above, per-task scores and runs, judge agreement
 ```
+
+Each `raw/` record has `completed_on`: the date the result file was last
+written (UTC); a few records were rewritten the same week when cost fields
+were added.
 
 Provider file names: `nimble`, `exa`, `parallel`, `firecrawl`, `gpt`, `opus`.
 In `verified/` and `answer_keys/`, `labels` maps each provider to the
@@ -326,6 +341,19 @@ Recompute the tables from the shipped results (offline, no keys needed):
 ```bash
 python -m usecase_bench.summary      # writes results/summary.json, prints the tables
 ```
+
+Run the test (recomputes the summary in a temp copy and compares it with the
+shipped `results/summary.json`):
+
+```bash
+uv run pytest      # or: python -m pytest
+```
+
+**What reproduces exactly.** `usecase_bench.summary` on the shipped results
+reproduces every published number exactly, offline. Rerunning the providers
+or the judge will not reproduce the exact numbers: the live web changes,
+providers update their products and models, and LLM judging is not
+deterministic. Compare relative standings, not third decimals.
 
 To rerun, move the shipped `results/` aside first; every step skips files that
 already exist.

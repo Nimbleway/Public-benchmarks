@@ -15,7 +15,8 @@ It is the finance half of a GTM and finance suite; the GTM half is in
 [`GTM-Use-Case-Benchmark/`](../GTM-Use-Case-Benchmark). Both were run together
 with the same harness, judge and method.
 
-Runs: November 3 to 10, 2026. Judged: November 10, 2026, every run of a task
+Runs: November 3 to 10, 2026 (per provider, from each result's `completed_on`:
+Nimble Nov 9–10, Exa Nov 3–10, Parallel Nov 4–10, Firecrawl Nov 3–10, GPT-6.1 Sol Nov 10, Claude Opus 5.5 Nov 10). Judged: November 10, 2026, every run of a task
 side by side. Corrections: November 11, 2026 (see
 [Corrections log](#corrections-log)).
 
@@ -269,8 +270,10 @@ missed what the others proved exists. It is not an exhaustive answer set.
 
 ## Judge note
 
-The judge is Claude (Sonnet for extraction, merge, verification, grading and
-corrections; Opus for the audit sample), and Claude wrote the answer keys,
+The judge is Claude (`claude-sonnet-5-5` for extraction, merge, verification,
+grading and corrections; `claude-opus-5-5` for the audit sample; the code pins
+these IDs, overridable with `JUDGE_MODEL` and `AUDIT_MODEL`; the stale-key
+audit uses `claude-sonnet-5-5`, overridable with `KEY_AUDIT_MODEL`), and Claude wrote the answer keys,
 while Claude Opus 5.5 is one of the contestants. The judge may prefer answers
 written the way Claude writes; we have not measured this. Mitigations:
 providers are shown under shuffled anonymous labels, verdicts are decided
@@ -296,6 +299,15 @@ provider cited a page.
   exhaustive answer set.
 - Verdicts, answer keys and audits are model judgments. They have not been
   validated by finance practitioners.
+- Evidence passages and fetched page text are not shipped (copyright). Each
+  verdict ships with its source URL and a note cut to 300 characters, so a
+  verdict can be checked by opening the URL, not against the exact passage
+  the judge read.
+- 21 units in this suite were never given a verdict by the judge (a
+  verifier batch returned no result for them): fin_credit_risk/1 (4),
+  fin_credit_risk/2 (2), fin_due_diligence/0 (5), fin_due_diligence/1 (5),
+  fin_thesis_test/4 (5). They are excluded from coverage and accuracy for
+  every provider (they count under unverifiable in the unit tally).
 - Instructions contain the run date and several tasks ask about recent
   events, so a later run is a different test.
 
@@ -309,6 +321,9 @@ provider.
 
 ## Corrections log
 
+- **Known issue (v2):** 21 units have no judge verdict (fin_credit_risk/1,
+  fin_credit_risk/2, fin_due_diligence/0, fin_due_diligence/1,
+  fin_thesis_test/4); they are excluded from scoring for every provider.
 - **v2 corrections (Nov 11 2026, after external review):** stale answer-key
   items re-checked by a non-contestant model (in this suite 5 corrected and 5
   widened; all providers re-graded); 1,205 duplicate units merged across the
@@ -330,6 +345,10 @@ results/
   key_audit/<job>/<i>.json             stale-key audit verdict per disputed key item
   summary.json                         the tables above, per-task scores and runs, judge agreement
 ```
+
+Each `raw/` record has `completed_on`: the date the result file was last
+written (UTC); a few records were rewritten the same week when cost fields
+were added.
 
 Provider file names: `nimble`, `exa`, `parallel`, `firecrawl`, `gpt`, `opus`.
 In `verified/` and `answer_keys/`, `labels` maps each provider to the
@@ -369,6 +388,19 @@ Recompute the tables from the shipped results (offline, no keys needed):
 ```bash
 python -m usecase_bench.summary      # writes results/summary.json, prints the tables
 ```
+
+Run the test (recomputes the summary in a temp copy and compares it with the
+shipped `results/summary.json`):
+
+```bash
+uv run pytest      # or: python -m pytest
+```
+
+**What reproduces exactly.** `usecase_bench.summary` on the shipped results
+reproduces every published number exactly, offline. Rerunning the providers
+or the judge will not reproduce the exact numbers: the live web changes,
+providers update their products and models, and LLM judging is not
+deterministic. Compare relative standings, not third decimals.
 
 To rerun, move the shipped `results/` aside first; every step skips files that
 already exist.

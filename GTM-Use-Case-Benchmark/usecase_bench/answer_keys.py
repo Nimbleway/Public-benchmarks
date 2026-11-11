@@ -65,7 +65,7 @@ def one(u, i):
     lab = dict(zip(labels, "ABCDEFGHIJ", strict=False))
     body = json.dumps(key, ensure_ascii=False) + "\n\n" + "\n\n".join(
         f"=== {lab[a]} ===\n{json.dumps(rec(sub, i, a).get('output'), ensure_ascii=False)[:25000]}" for a in arms)
-    grades, c2 = plain_call(GRADE.format(today=TODAY, task=task), "ANSWER KEY:\n" + body, "sonnet")
+    grades, c2 = plain_call(GRADE.format(today=TODAY, task=task), "ANSWER KEY:\n" + body)
     if not grades:
         return LOG("grade failed", sub, i)
     inv = {L: a for a, L in lab.items()}

@@ -13,6 +13,7 @@ import sys
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
 
 from . import PROVIDERS, RAW, load_tasks, today
 from .arms import ARMS
@@ -43,7 +44,7 @@ def job(arm, u, i, task):
         rec = ARMS[arm](spec(u), task, u["tier"])
     except Exception as e:
         rec = {"arm": arm, "status": "error", "error": str(e)[:800]}
-    rec.update(sub_use_case=u["id"], input=task, input_n=i)
+    rec.update(sub_use_case=u["id"], input=task, input_n=i, completed_on=datetime.now(timezone.utc).date().isoformat())
     with lock:
         spent[arm] += rec.get("cost_usd") or 0
     os.makedirs(os.path.dirname(path), exist_ok=True)

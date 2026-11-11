@@ -27,7 +27,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 from . import EVID, PROVIDERS, RAW, ROOT, VERIFIED, load_tasks, today
-from .claude_cli import FETCH, LOG, evidence_call, extract_call, plain_call, web_call
+from .claude_cli import AUDIT_MODEL, FETCH, LOG, evidence_call, extract_call, plain_call, web_call
 from .scoring import score
 
 TASKS = {u["id"]: u for u in load_tasks()}
@@ -377,7 +377,7 @@ def judge(u, i):
                                       "provider_excerpts": [x for e in ev[c["cid"]] for x in e["provider_excerpts"]][:2],
                                       "passages": passages(c, ev[c["cid"]], pages, generic)} for c in b], ensure_ascii=False)
         with ThreadPoolExecutor(8) as ex:
-            for res, k in ex.map(lambda b: plain_call(isys, ipay(b), "sonnet"), [merged[j:j + 15] for j in range(0, len(merged), 15)]):
+            for res, k in ex.map(lambda b: plain_call(isys, ipay(b)), [merged[j:j + 15] for j in range(0, len(merged), 15)]):
                 cost += k
                 for v in res or []:
                     if isinstance(v, dict) and v.get("cid") and v.get("verdict") in ("true", "false"):
@@ -409,7 +409,7 @@ def judge(u, i):
     sample = [c for c in merged if rnd.random() < 0.10]
     audit = {}
     if sample:
-        res, k = web_call(AUDIT.format(today=TODAY, task=task, verify_rule=verify_rule, fetch=FETCH), payload(sample), model="opus")
+        res, k = web_call(AUDIT.format(today=TODAY, task=task, verify_rule=verify_rule, fetch=FETCH), payload(sample), model=AUDIT_MODEL)
         cost += k
         audit = {v["cid"]: v for v in res or [] if isinstance(v, dict) and v.get("cid")}
 

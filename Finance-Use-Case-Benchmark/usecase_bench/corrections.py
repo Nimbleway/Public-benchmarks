@@ -49,7 +49,7 @@ def dedup(j):
     units = [{"cid": c["cid"], "claim": c["claim"], "verdict": j["verified"].get(c["cid"], {}).get("verdict")} for c in j["merged"]]
     if len(units) < 2:
         return j, [], 0.0
-    groups, cost = plain_call(DEDUP.format(task=j["task"]), json.dumps(units, ensure_ascii=False), "sonnet")
+    groups, cost = plain_call(DEDUP.format(task=j["task"]), json.dumps(units, ensure_ascii=False))
     by = {c["cid"]: c for c in j["merged"]}
     conflict = {(c["cid"], x) for c in j["merged"] for x in (c.get("conflicts_with") or [])}
     done, log = set(), []
@@ -91,7 +91,7 @@ def ownership(j):
                               "evidence": (x.get("evidence") or v.get("note") or "")[:600]})
     if not items:
         return j, [], 0.0
-    out, cost = plain_call(OWNERSHIP.format(task=j["task"]), json.dumps(items, ensure_ascii=False), "sonnet")
+    out, cost = plain_call(OWNERSHIP.format(task=j["task"]), json.dumps(items, ensure_ascii=False))
     log = []
     for o in out or []:
         if not isinstance(o, dict) or o.get("result") not in ("pass", "fail", "unknown"):
