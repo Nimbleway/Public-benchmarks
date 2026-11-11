@@ -1,0 +1,177 @@
+[
+ {
+  "id": "dd_question",
+  "name": "Due diligence questions",
+  "vertical": "Due-Diligence-Benchmark",
+  "tier": "medium",
+  "use_case": "research",
+  "instructions": "You answer ONE current question for an AI assistant that will show your answer to its user.\n\n- answer: 2-5 sentences that answer the question as of today, most recent information first.\n- key_facts: each distinct fact the answer rests on, with source_url and date.\n- passages: the exact source passages (short quotes) that support the answer, each with source_url, publisher and\n  published_date. Prefer primary sources (the company's own release or transcript, the regulator, the filing).\n- caveats: what is uncertain, disputed or may have changed.\nGeneral rules:\n- Today's date is {today}. Prefer the most recent source; give as_of for every number.\n- Stay on the exact entity given. Do not drift to a namesake, a subsidiary, a parent or a similarly named company.\n- Only return a value you read on a page you opened. Otherwise return null and list the field in missing_fields.\n- Cite the page each value came from in source_url.",
+  "output_schema": {
+   "type": "object",
+   "properties": {
+    "question": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "answer": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "as_of": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "key_facts": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "fact": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "passages": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "quote": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "publisher": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "published_date": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "caveats": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    },
+    "missing_fields": {
+     "type": "array",
+     "items": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "description": "fields you could not verify from a page you opened"
+    }
+   }
+  },
+  "exa_data_sources": [
+   "financial_datasets"
+  ],
+  "inputs": [
+   "What is Capital One's company profile?",
+   "Who are Mailchimp's main competitors?",
+   "Who are LinkedIn's main competitors?",
+   "Who are Klaviyo's main competitors?",
+   "Who are eBay's main competitors?",
+   "What are Alphabet's latest earnings results?",
+   "Where can I find General Motors' latest 10-K filing?",
+   "Where can I find JPMorgan Chase's latest annual report?",
+   "Where can I find Target's latest annual report?",
+   "When is Snap's next earnings report?",
+   "Where can I find Bank of America's latest annual report?",
+   "Where can I find Hermès' latest annual report?",
+   "What are Disney's latest financial statements?",
+   "Where can I find Coca-Cola's latest annual report?",
+   "What is Uber's valuation?",
+   "What is Brex's valuation?",
+   "When is SpaceX's IPO date?",
+   "What is Twitter's valuation?",
+   "What is Stripe's valuation?",
+   "What is Ramp's valuation?",
+   "What is Scale AI's valuation?",
+   "What is Bumble's IPO date?",
+   "What is Tesla's valuation?",
+   "What are the key takeaways from Anthropic's S-1 filing?",
+   "What are Berkshire Hathaway's latest 13F holdings?",
+   "What did Arini Capital present to the San Bernardino County Employees' Retirement Association?",
+   "What class action lawsuits has Synchrony Bank faced?",
+   "What lawsuits involve Celsius?",
+   "What lawsuits is DoorDash involved in?",
+   "What settlements has Wells Fargo reached?",
+   "What lawsuits is Costco involved in?",
+   "Who owns NewsBreak?",
+   "Who owns Nokia?",
+   "Who owns Xfinity?",
+   "Who owns Raycon?",
+   "What is Tilray's short interest?",
+   "What is Amazon's stock split history?",
+   "What is Tonix Pharmaceuticals' short interest?",
+   "What is AST SpaceMobile's short interest?",
+   "What is Palantir's stock split history?",
+   "What is fuboTV's short interest?",
+   "What is CleanSpark's short interest?",
+   "What is Hims & Hers Health's short interest?",
+   "What is Rivian's short interest?",
+   "What is Beyond Meat's short interest?",
+   "What acquisitions has IBM made?",
+   "What are the details of Bayer's merger with Monsanto?",
+   "What are the details of the VMware acquisition?",
+   "What acquisitions has Johnson & Johnson made?",
+   "What does Walmart's supply chain look like?"
+  ],
+  "unit": {
+   "name": "answer fact",
+   "definition": "One unit per distinct fact the answer states or rests on (each figure, statement, date, change). Restatements of the same fact are one unit.",
+   "verify_rule": "true if the fact is correct and current as of the run date."
+  },
+  "judge_tag": {
+   "key": "materiality",
+   "spec": "\"materiality\": \"critical|useful|minor\" (critical = needed to answer the question correctly), \"fresh\": true|false, \"answers\": true|false (true = the fact states the answer to the question asked, or part of it; false = context or other facts about the entity)"
+  },
+  "metric": "F1",
+  "answer_key": false,
+  "scoring_rule": "Unit = fact the answer states or rests on, weighted by whether it is needed to answer correctly: critical 6, useful 2, minor 0.5; x1.5 when fresh. F1. No answer key: the set is unlabeled. Headline score: coverage of the pooled true facts that answer the question (answers = true). Thoroughness: coverage of all pooled true facts. Both use the same accuracy."
+ }
+]

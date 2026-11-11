@@ -1,6 +1,7 @@
 """Finance use-case benchmark for web research agents (v2).
 
-Paths: tasks.json lives next to this file; all outputs go to <folder>/results/ (override with BENCH_RESULTS).
+Paths: tasks.json lives next to this file (override with BENCH_TASKS); all outputs go to <folder>/results/ (override
+with BENCH_RESULTS). The two overrides run another suite's tasks, e.g. a question set's, through this harness.
 The judge's page cache goes to <folder>/evidence_cache/ (not shipped, gitignored).
 """
 import json
@@ -9,6 +10,7 @@ from datetime import date
 
 PKG = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(PKG)
+TASKS = os.environ.get("BENCH_TASKS") or os.path.join(PKG, "tasks.json")
 RESULTS = os.environ.get("BENCH_RESULTS") or os.path.join(ROOT, "results")
 RAW = os.path.join(RESULTS, "raw")
 VERIFIED = os.path.join(RESULTS, "verified")
@@ -36,7 +38,7 @@ def load_env(path=os.path.join(ROOT, ".env")):
 
 def load_tasks(root=ROOT):
     """One entry per job: id, name, vertical, tier, instructions, output_schema, inputs, unit and judge rules."""
-    return json.load(open(os.path.join(root, "usecase_bench", "tasks.json")))
+    return json.load(open(TASKS if root == ROOT else os.path.join(root, "usecase_bench", "tasks.json")))
 
 
 def today():

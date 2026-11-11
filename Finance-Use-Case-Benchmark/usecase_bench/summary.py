@@ -19,8 +19,8 @@ import json
 import os
 import statistics as st
 
-from . import NAMES, PROVIDERS, RESULTS, ROOT, load_tasks
-from .scoring import score, tally
+from . import NAMES, PKG, PROVIDERS, RESULTS, ROOT, TASKS, load_tasks
+from .scoring import ANSWER_JOBS, score, tally
 
 FC_CREDIT_USD = 99 / 100_000
 # Firecrawl free daily runs report no credits; they are priced at the median billed credits for the same effort over
@@ -28,6 +28,16 @@ FC_CREDIT_USD = 99 / 100_000
 # medians are fixed here rather than recomputed from the shipped runs).
 FC_FREE_RUN_CREDITS = {"spark-2/high": 294, "spark-2/medium": 77}
 SUITES = ["Finance-Use-Case-Benchmark", "GTM-Use-Case-Benchmark"]
+
+
+def words(r):
+    """Length of a question-set answer: words in its answer, key facts and caveats (None when it has no answer)."""
+    o = (r or {}).get("output")
+    if not isinstance(o, dict) or "answer" not in o:
+        return None
+    parts = [o.get("answer") or ""] + [(f or {}).get("fact") or "" for f in o.get("key_facts") or []] + \
+        [c or "" for c in o.get("caveats") or []]
+    return sum(len(x.split()) for x in parts)
 
 
 def load_json(p):
@@ -83,6 +93,8 @@ def suite_tasks(root):
                     s = {**s, "cost_usd": c, "efficiency": round(s["combined"] / c, 2) if c else None}
                 arms[a] = {"status": (r or {}).get("status", "not run"), "tier": (r or {}).get("tier"),
                            "seconds": (r or {}).get("seconds"), "cost_usd": c, "cost_basis": basis, "score": s}
+                if u["id"] in ANSWER_JOBS and words(r) is not None:
+                    arms[a]["words"] = words(r)
             sc = {a: arms[a]["score"] for a in PROVIDERS if arms[a]["score"]}
             top = max(x["combined"] for x in sc.values())
             winners = [a for a in PROVIDERS if a in sc and abs(sc[a]["combined"] - top) < 1e-9]
@@ -118,7 +130,18 @@ def summarize(rows, arms=PROVIDERS):
                   "key_critical": round(st.mean(s["key_critical"] for s in keyed), 3) if keyed else None, "key_n": len(keyed),
                   "median_seconds": st.median(float(t["arms"][a]["seconds"] or 0) for t in rows),
                   "tally": {k: sum((s.get("tally") or {}).get(k, 0) for s in sc) for k in ("true", "wrong", "off_scope", "unverifiable")}}
-    return {"n_tasks": len(rows), "arms": out}
+        if all("thoroughness" in s for s in sc):  # question sets: thoroughness and answer length
+            out[a].update(thoroughness=round(st.mean(s["thoroughness"] for s in sc), 3),
+                          median_words=st.median(t["arms"][a].get("words") or 0 for t in rows))
+    # length check: how often the longest answer is also a winner (a tie for longest counts if any of them won)
+    sized = [t for t in rows if all("words" in t["arms"][a] for a in arms)]
+    longest = [{a for a in arms if t["arms"][a]["words"] == max(t["arms"][x]["words"] for x in arms)} for t in sized]
+    won = [{a for a in arms if abs(t["arms"][a]["score"]["combined"] - max(t["arms"][x]["score"]["combined"] for x in arms)) < 1e-9}
+           for t in sized]
+    view = {"n_tasks": len(rows), "arms": out}
+    if sized:
+        view["longest_won"] = [sum(bool(lo & w) for lo, w in zip(longest, won, strict=True)), len(sized)]
+    return view
 
 
 def by_job(rows):
@@ -139,15 +162,20 @@ def audit_rate(rows):
 def table(view, title):
     arms = sorted(view["arms"], key=lambda a: -view["arms"][a]["combined"])
     n = view["n_tasks"]
+    qs = "thoroughness" in view["arms"][arms[0]]  # question sets: answer score, thoroughness, length
     lines = [f"### {title} ({n} tasks)", "",
-             "| Provider | Combined | Accuracy | Coverage | Critical key items correct | Wins | Avg cost / run | Median seconds |",
-             "| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |"]
+             "| Provider | Combined | Accuracy | Coverage | " + ("Thoroughness | Median words | " if qs else "Critical key items correct | ")
+             + "Wins | Avg cost / run | Median seconds |",
+             "| :--- | :---: | :---: | :---: | :---: | " + (":---: | " if qs else "") + ":---: | :---: | :---: |"]
     for a in arms:
         x = view["arms"][a]
-        kc = f"{x['key_critical']:.3f}" if x["key_critical"] is not None else "-"
+        kc = f"{x['thoroughness']:.3f} | {x['median_words']:g}" if qs else f"{x['key_critical']:.3f}" if x["key_critical"] is not None else "-"
         wins = f"{x['wins']:g}"
         lines.append(f"| {NAMES[a]} | {x['combined']:.3f} | {x['accuracy']:.3f} | {x['coverage']:.3f} | {kc} | {wins}/{n} | "
                      f"${x['avg_cost_usd']:.2f} | {x['median_seconds']:.0f} |")
+    if view.get("longest_won"):
+        lw, m = view["longest_won"]
+        lines += ["", f"The longest answer was among the winners on {lw} of {m} questions."]
     lines += ["", "Units per provider, as judged (true / wrong / off scope / unverifiable):", "",
               "| Provider | Units | True | Wrong | Off scope | Unverifiable |", "| :--- | :---: | :---: | :---: | :---: | :---: |"]
     for a in arms:
@@ -169,12 +197,13 @@ def job_table(jobs):
 def main():
     rows = suite_tasks(ROOT)
     here = os.path.basename(ROOT)
-    title = "Finance" if rows and rows[0]["vertical"] == "finance" else "GTM"
+    other = os.path.join(PKG, "tasks.json") != TASKS  # another suite's tasks (BENCH_TASKS): no sibling view
+    title = rows[0]["name"] if other and rows else "Finance" if rows and rows[0]["vertical"] == "finance" else "GTM"
     views = {"suite": summarize(rows)}
     jobs = by_job(rows)
     out = {"suite": title, "views": views, "by_job": jobs, "audit_agreement": {"suite": audit_rate(rows)}}
     sibling = [os.path.join(os.path.dirname(ROOT), s) for s in SUITES if s != here]
-    sibling = [s for s in sibling if os.path.exists(os.path.join(s, "usecase_bench", "tasks.json"))]
+    sibling = [s for s in sibling if not other and os.path.exists(os.path.join(s, "usecase_bench", "tasks.json"))]
     both = rows + [t for s in sibling for t in suite_tasks(s)]
     if sibling:
         views["both"] = summarize(both)
@@ -188,7 +217,7 @@ def main():
                     for t in rows]
     json.dump(out, open(os.path.join(RESULTS, "summary.json"), "w"), indent=1, ensure_ascii=False)
     print(table(views["suite"], title))
-    print("\n### Combined score by job (mean of 5 tasks)\n")
+    print(f"\n### Combined score by job (mean of {len(rows) // max(1, len(jobs))} tasks)\n")
     print(job_table(jobs))
     if sibling:
         print()
