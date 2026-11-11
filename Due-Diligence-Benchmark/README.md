@@ -1,93 +1,120 @@
 # Due diligence question set
 
-1,000 questions that investment analysts, at hedge funds and other investment firms, ask the web about a company, a
-fund or a market before they invest or while they hold a position. It is built for comparing web search and research
-APIs on the work these teams actually do: each question comes from a specific use case, such as "Bankruptcy check",
-"Discontinued products" or "Shareholder proposals on ESG", and no use case has more than 3 questions, so no single
-topic dominates a score.
+79 questions that people actually search for and ask online when they research a company or a fund before investing:
+who owns it, how its finances look, who supplies it, how its stock is shorted, how a hedge fund has performed. It is
+built for comparing web search and research APIs on that kind of lookup.
 
-The set is **unlabeled**: there are no reference answers. Many answers change over time (a share count, a headcount,
-the latest filing), so a fixed answer key would go stale. Score answers with an LLM judge that rates each one on its
-own, for example on accuracy, relevance, depth and sourcing, rather than against a gold answer.
+Every question traces back to a public signal of real demand: a question Google shows under "People also ask", a
+related search Google suggests, a search phrase with measured monthly volume in Google Ads Keyword Planner, or a post
+on Reddit or Quora. We did not write the questions ourselves; we collected them, filtered them and cleaned up their
+wording.
+
+The set is **unlabeled**: there are no reference answers. Many answers change over time (a short interest figure, a
+credit rating, the latest annual report), so a fixed answer key would go stale. Score answers with an LLM judge that
+rates each one on its own, for example on accuracy, relevance, depth and sourcing, rather than against a gold answer.
 
 Results will be published here once providers are run against it.
+
+## Why demand-based questions
+
+A question set written by the benchmark's authors measures what the authors think matters, and it is easy, even without
+meaning to, to write questions a particular tool handles well. We wanted the opposite: questions chosen by the people
+who do this research, before any provider was run.
+
+- **Real use.** Each question is something people type into Google or ask in an investing community, so a provider's
+  score reflects lookups that actually happen, in the words people use.
+- **Auditable.** Each source is public: anyone can run the same Google searches, open the same Keyword Planner ideas
+  or read the same subreddits and Quora topics, and check that the questions came from there.
+- **Not tuned to any provider.** The questions were collected and frozen before any search or research API was run on
+  them, and no answer quality was looked at when choosing them.
 
 ## What's in it
 
 | | |
 | --- | --- |
 | File | [`data/questions.csv`](data/questions.csv) |
-| Questions | 1,000 |
-| Use cases | 371, at most 3 questions each |
-| Built | 2026-11-11 |
+| Questions | 79 |
+| Collected | November 2026, United States, English |
 | Answers | none (unlabeled) |
-
-Questions by topic:
 
 | Category | Questions | Covers |
 | :--- | ---: | :--- |
-| `fundamentals_financials` | 84 | Revenue, margins, cash, debt, guidance, valuation multiples |
-| `legal_regulatory` | 84 | Lawsuits, regulator actions, sanctions, fines, licences |
-| `management_people` | 84 | Executives and board, their tenure, background and changes |
-| `alt_data_signals` | 84 | App rankings and ratings, web traffic, store counts, product listings |
-| `ownership_insiders` | 83 | Major holders, insider trades, institutional positions, share structure |
-| `fund_manager_odd` | 78 | Operational due diligence on fund managers: registrations, disclosures, service providers |
-| `hiring_workforce` | 72 | Headcount, open roles, layoffs, hiring by team or location |
-| `deals_ma_funding` | 71 | Acquisitions, divestitures, funding rounds, debt raises |
-| `competitive_landscape` | 67 | Competitors, market share, positioning |
-| `products_pricing` | 64 | Products, launches, pricing and plans |
-| `sentiment_reviews` | 64 | Customer and employee reviews, ratings |
-| `esg_controversies` | 58 | Environmental, safety and governance incidents |
-| `supply_chain_customers` | 56 | Key suppliers, customers, contracts and concentration |
-| `industry_macro` | 51 | Sector and macro data that move the company |
-
-558 questions are marked `search` (a short answer from a few pages) and 442 `research` (an answer that needs several
-sources put together); see `endpoint_fit` below.
+| `ownership_and_shareholders` | 7 | Who owns or holds shares, now or at a past date, including stakes bought by named investors |
+| `company_profile` | 4 | What kind of company or fund this is, and who founded it |
+| `competitive_landscape` | 5 | Who the competitors are and how the company compares |
+| `supply_chain_and_customers` | 11 | Who it buys from, ships through or sells to; its distribution and supply-chain situation |
+| `financial_results_and_reports` | 8 | Reported revenue, earnings and income, and the statements or annual reports that publish them |
+| `funding_valuation_and_ipo` | 9 | Funding rounds, valuation and its history, IPO plans, filings, status, date and price |
+| `financial_health_and_credit` | 9 | Whether it is financially sound: debt, credit ratings, distress, layoffs |
+| `stock_and_short_interest` | 13 | Share-price moves, splits, insider buying and selling, short sellers, short interest and borrow |
+| `funds_and_managers` | 7 | A hedge fund or manager: returns, whether it has shut down, its pitches to investors, where its manager invests, its risks |
+| `legal_esg_and_governance` | 4 | Lawsuits and settlements, ESG controversies, and governance policies such as insider trading rules |
+| `strategy_and_operations` | 2 | Strategic moves, such as winding down a business line or entering a new market, and why |
 
 ## Columns
 
 | Column | Meaning |
 | :--- | :--- |
-| `question` | The question, as an analyst would ask it |
+| `question` | The question, as a clean, self-contained sentence |
 | `category` | The topic, from the table above |
-| `use_case` | The specific job the question serves, e.g. "Parent-entity reporting check for Apple Inc." |
-| `persona` | Who asks it: hedge fund equity analyst, portfolio manager, research associate, operational due diligence analyst, credit analyst, short-selling analyst, event-driven / merger-arb analyst, alternative data analyst, ESG / stewardship analyst, macro / sector strategist, compliance officer, compliance / KYC analyst |
-| `endpoint_fit` | `search` for a question a single search should answer, `research` for one that needs a multi-step research run |
 
 ## How it was built
 
-1. **Use cases.** We listed what due diligence teams look up, by persona and topic, each with what the analyst wants
-   to learn and why.
-2. **Questions grounded in real public data.** For a sample of companies and funds, we read the data that public sites
-   actually show and wrote questions whose answers are on those pages. That way the set asks for information that is
-   really published, and in the form it is published. 193 questions (19%) were written this way, from these sites:
+1. **Twelve company searches.** We picked twelve searches that pair a named company or fund with a diligence topic,
+   spread across topics and sectors. Google Ads Keyword Planner shows how often people in the US search each one:
 
-   | Site | What we read | Questions |
-   | :--- | :--- | ---: |
-   | stockanalysis.com | Public-company statistics, financials and ownership | 68 |
-   | finance.yahoo.com | Quotes, key statistics, holders and profiles | 24 |
-   | g2.com | Software product ratings, reviews and categories | 22 |
-   | getlatka.com | SaaS revenue, customer and headcount estimates | 15 |
-   | wikipedia.org | Company histories, executives and corporate events | 12 |
-   | github.com | Open-source organisations and repository activity | 9 |
-   | apps.apple.com | App Store listings, ratings and reviews | 7 |
-   | Bing News | Recent news coverage | 6 |
-   | find-and-update.company-information.service.gov.uk | UK Companies House filings, officers and owners | 6 |
-   | apps.shopify.com | Shopify app listings and reviews | 5 |
-   | play.google.com | Google Play listings, ratings and reviews | 4 |
-   | crunchbase.com | Funding, investors and acquisitions | 3 |
-   | builtin.com | Company profiles and hiring | 3 |
-   | gleif.org | Legal Entity Identifiers and parent companies | 3 |
-   | amazon.com | Product listings, ratings and reviews | 3 |
-   | chromewebstore.google.com | Browser extension listings and users | 3 |
+   | Search | Avg. monthly searches |
+   | :--- | ---: |
+   | Datadog competitors | 880 |
+   | Boeing lawsuits | 390 |
+   | Apple suppliers | 210 |
+   | GameStop short interest | 110 |
+   | Tesla insider trading | 50 |
+   | Carvana credit rating | 40 |
+   | Citadel hedge fund performance | 30 |
+   | Rippling revenue 2025 | 30 |
+   | Peloton debt | 20 |
+   | Revolut financial statements | 20 |
+   | Klarna shareholders | 10 |
+   | Nestle ESG controversies | too few to show |
 
-3. **Questions from the use cases.** An LLM wrote further questions for every use case, naming real companies, funds
-   and people. We dropped questions whose answer is speculative or not public (for example, a company's internal tools
-   or its estimated IT spend).
-4. **Selection.** Duplicates were removed. The 1,000 were picked in turns across categories, and across use cases
-   within a category, with the grounded questions first, so every topic and use case gets its share.
+2. **What people search next.** For each of the twelve we collected:
+   - the questions Google shows under **"People also ask"** and the **related searches** at the bottom of the results
+     page (US, English);
+   - the **Keyword Planner ideas** that name the same company, with their monthly search volume (for example "tesla
+     insider buying", "apple chip supplier", "gamestop short interest january 2021").
 
-Questions are written as of November 2026; many say "as of" a date, and their answers will move.
+3. **What investors ask in communities.** The newest posts in r/SecurityAnalysis, r/ValueInvesting, r/hedgefund and
+   r/investing, and the questions on Quora's Investing, Hedge Funds and Apple topic pages. Most of these are opinions,
+   news or personal advice, so few survived the filter, but the ones that did are real questions about named companies
+   and funds.
+
+4. **Filter.** Duplicates, single words and very long texts were dropped by rule. An LLM then read every remaining item
+   and either kept it, rewrote it, or dropped it:
+   - **kept** a clean question about a named company, fund or person that public web sources can answer;
+   - **rewrote** a keyword phrase or a post title into one clean question with the same intent and entity, adding no
+     facts ("carvana credit rating" → "What is Carvana's credit rating?");
+   - **dropped** questions with no named entity, consumer questions (car financing, card statements), stock-price
+     chatter ("Will Peloton stock go up?"), opinions and news.
+
+5. **Trim.** At most three questions per company and topic, so no single company dominates (for example, nine Revolut
+   annual-report questions became three).
+
+6. **Categories.** The categories were drawn from the questions themselves, and each question was assigned to one by
+   an LLM and checked by hand.
+
+Questions by source:
+
+| Source | Questions |
+| :--- | ---: |
+| Google related searches | 34 |
+| Google "People also ask" | 20 |
+| Google Ads Keyword Planner | 17 |
+| Reddit | 5 |
+| Quora | 3 |
+
+The data was collected with Nimble's web data APIs. Questions are as of November 2026; many name a year or ask for the
+latest figure, so their answers will move.
 
 ## License
 
