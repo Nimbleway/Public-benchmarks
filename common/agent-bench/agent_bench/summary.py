@@ -1,6 +1,6 @@
 """Aggregate results/ into results/summary.json and print the README tables. Offline: no network, no model calls.
 
-    python -m usecase_bench.summary
+    python -m agent_bench.summary --suite <folder> [--suite <other folder> ...]
 
 Per task:
   - every provider is re-scored from the stored verdicts (scoring.score);
@@ -12,14 +12,15 @@ Cost: list price per run for Nimble and Parallel; Exa's billed cost; Firecrawl =
 x the Standard plan rate; GPT-6.1 Sol = tokens x list price + $10 per 1,000 web search calls; Claude Opus 5.5 = the
 API-equivalent total Claude Code reports.
 
-If the sibling suite (GTM-Use-Case-Benchmark next to Finance-Use-Case-Benchmark, or the reverse) is present, the
-"across both suites" view is computed too, from both folders' results.
+With a second --suite (Finance-Use-Case-Benchmark and GTM-Use-Case-Benchmark are published together), the "across
+both suites" view is computed too, from both folders' results; it is written to the first suite's summary.json.
 """
 import json
 import os
 import statistics as st
+import sys
 
-from . import NAMES, PKG, PROVIDERS, RESULTS, ROOT, TASKS, load_tasks
+from .config import NAMES, PROVIDERS, RESULTS, SUITES, load_tasks
 from .scoring import ANSWER_JOBS, score, tally
 
 FC_CREDIT_USD = 99 / 100_000
@@ -27,7 +28,6 @@ FC_CREDIT_USD = 99 / 100_000
 # all billed Firecrawl runs of the full experiment (14 jobs x 5 inputs; this release publishes 10 of the jobs, so the
 # medians are fixed here rather than recomputed from the shipped runs).
 FC_FREE_RUN_CREDITS = {"spark-2/high": 294, "spark-2/medium": 77}
-SUITES = ["Finance-Use-Case-Benchmark", "GTM-Use-Case-Benchmark"]
 
 
 def words(r):
@@ -56,11 +56,11 @@ def cost(r):
     return r.get("cost_usd"), r.get("cost_basis")
 
 
-def suite_tasks(root):
+def suite_tasks(suite):
     """Per-task rows for one suite folder."""
-    res = os.path.join(root, "results") if root != ROOT else RESULTS
+    res = os.path.join(suite, "results")
     rows = []
-    for u in load_tasks(root):
+    for u in load_tasks(suite):
         for i, inp in enumerate(u["inputs"]):
             j = load_json(os.path.join(res, "verified", u["id"], f"{i}.json"))
             if not j:
@@ -195,15 +195,14 @@ def job_table(jobs):
 
 
 def main():
-    rows = suite_tasks(ROOT)
-    here = os.path.basename(ROOT)
-    other = os.path.join(PKG, "tasks.json") != TASKS  # another suite's tasks (BENCH_TASKS): no sibling view
-    title = rows[0]["name"] if other and rows else "Finance" if rows and rows[0]["vertical"] == "finance" else "GTM"
+    if not SUITES:
+        sys.exit(__doc__)
+    rows = suite_tasks(SUITES[0])
+    title = {"finance": "Finance", "gtm": "GTM"}.get(rows[0]["vertical"], rows[0]["name"]) if rows else ""
     views = {"suite": summarize(rows)}
     jobs = by_job(rows)
     out = {"suite": title, "views": views, "by_job": jobs, "audit_agreement": {"suite": audit_rate(rows)}}
-    sibling = [os.path.join(os.path.dirname(ROOT), s) for s in SUITES if s != here]
-    sibling = [s for s in sibling if not other and os.path.exists(os.path.join(s, "usecase_bench", "tasks.json"))]
+    sibling = SUITES[1:]
     both = rows + [t for s in sibling for t in suite_tasks(s)]
     if sibling:
         views["both"] = summarize(both)

@@ -1,11 +1,11 @@
 [project]
-name = "usecase-bench-finance"
+name = "agent-bench"
 version = "2.0.0"
-description = "Reproducible benchmark of web research agents on finance use cases, judged against pooled, page-verified truth and fixed answer keys"
+description = "Shared runner and judge for benchmarks of web research agents: pooled, page-verified truth and optional fixed answer keys"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Apache-2.0" }
-keywords = ["evaluation", "benchmark", "web-research", "agents", "finance"]
+keywords = ["evaluation", "benchmark", "web-research", "agents"]
 
 dependencies = [
   "nimble-python>=1.2",
@@ -21,7 +21,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["usecase_bench"]
+packages = ["agent_bench"]
 
 [tool.ruff]
 line-length = 140

@@ -25,7 +25,7 @@ from collections import Counter
 import certifi
 import httpx
 
-from . import ROOT, load_env
+from .config import PROJECT, load_env
 
 load_env()
 
@@ -250,7 +250,7 @@ def run_opus(spec, task, tier):
             "--tools", "WebSearch,WebFetch", "--allowedTools", "WebSearch", "WebFetch"]
     t0 = time.time()
     try:
-        p = subprocess.run(args, input=f"Task: {task}", capture_output=True, text=True, timeout=3600, cwd=ROOT)
+        p = subprocess.run(args, input=f"Task: {task}", capture_output=True, text=True, timeout=3600, cwd=PROJECT)
         env = json.loads(p.stdout)
     except Exception as e:  # noqa: BLE001
         return {"arm": "opus", "tier": eff, "status": "error", "seconds": round(time.time() - t0), "error": str(e)[:800]}

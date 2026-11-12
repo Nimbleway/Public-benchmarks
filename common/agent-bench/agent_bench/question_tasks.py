@@ -1,14 +1,14 @@
 """Build a tasks.json that runs a sample of a question set through this harness, one job of single questions.
 
-    python -m usecase_bench.question_tasks ../Due-Diligence-Benchmark dd_question "Due diligence questions" 50
-    python -m usecase_bench.question_tasks ../Lead-Enrichment-Benchmark le_question "Lead enrichment questions" 50
+    python -m agent_bench.question_tasks Due-Diligence-Benchmark dd_question "Due diligence questions" 50
+    python -m agent_bench.question_tasks Lead-Enrichment-Benchmark le_question "Lead enrichment questions" 50
 
 Reads <set>/data/questions.csv, samples N questions in proportion to each category's size (largest remainder, drawn
-with random.Random(SEED)), and writes <set>/tasks.json. The job is "Answer a current question with sources" (fin_grounded_answer in this folder's tasks.json): its instructions, output
-schema, unit, judge tag and tier, taken from there rather than copied. A question set has no answer keys, so
-answer_key is false. The judge also tags each fact "answers" (does it answer the question?), so a long answer's extra
-true facts count towards thoroughness, not the headline score (scoring.ANSWER_JOBS). Run it with
-BENCH_TASKS=<set>/tasks.json and BENCH_RESULTS=<set>/results.
+with random.Random(SEED)), and writes <set>/tasks.json. The job is "Answer a current question with sources"
+(fin_grounded_answer in Finance-Use-Case-Benchmark/tasks.json): its instructions, output schema, unit, judge tag and
+tier, taken from there rather than copied. A question set has no answer keys, so answer_key is false. The judge also
+tags each fact "answers" (does it answer the question?), so a long answer's extra true facts count towards
+thoroughness, not the headline score (coverage "answers"). Then run every command with --suite <set>.
 """
 import csv
 import json
@@ -16,9 +16,10 @@ import os
 import random
 import sys
 
-from . import PKG
+from .config import REPO, suite_path
 
 TEMPLATE = "fin_grounded_answer"
+TEMPLATE_SUITE = os.path.join(REPO, "Finance-Use-Case-Benchmark")
 SEED = 2026
 ANSWERS_SPEC = (', "answers": true|false (true = the fact states the answer to the question asked, or part of it; '
                 'false = context or other facts about the entity)')
@@ -40,10 +41,11 @@ def sample(rows, n):
 
 
 def main(folder, job_id, name, n):
+    folder = suite_path(folder)
     with open(os.path.join(folder, "data", "questions.csv"), newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     questions = sample(rows, n)
-    template = next(u for u in json.load(open(os.path.join(PKG, "tasks.json"))) if u["id"] == TEMPLATE)
+    template = next(u for u in json.load(open(os.path.join(TEMPLATE_SUITE, "tasks.json"))) if u["id"] == TEMPLATE)
     task = {**template, "id": job_id, "name": name, "vertical": os.path.basename(os.path.abspath(folder)),
             "inputs": questions, "answer_key": False,
             # a true fact that does not answer the question is context: it neither costs accuracy nor adds coverage

@@ -12,7 +12,7 @@ results/verified/, in place. A task that already has "corrections_v2" is skipped
    only the ownership criteria under that rule, from the evidence notes already recorded ("result_original" keeps the
    judge's first result).
 
-    python -m usecase_bench.corrections [job ...]
+    python -m agent_bench.corrections --suite <folder> [job ...]
 """
 import json
 import os
@@ -20,8 +20,8 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-from . import VERIFIED, load_tasks
 from .claude_cli import LOG, plain_call
+from .config import VERIFIED, load_tasks
 from .scoring import score
 
 OWN = re.compile(r"own|family|founder|bootstrap|investor|private equity|\bpe\b|venture|backed", re.I)

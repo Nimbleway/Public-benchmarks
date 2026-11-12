@@ -5,7 +5,7 @@ questions any good answer must cover, with the answer, importance (critical|usef
 Step 2 (grade): one call per task grades every run (anonymous labels) on every key item: correct | wrong | missing.
 An existing key is kept; a task is re-graded when a provider was added or the key was changed by key_audit (graded_arms = []).
 
-    python -m usecase_bench.answer_keys [job ...]   ->  results/answer_keys/<job>/<i>.json
+    python -m agent_bench.answer_keys --suite <folder> [job ...]   ->  results/answer_keys/<job>/<i>.json
 """
 import json
 import os
@@ -13,8 +13,8 @@ import random
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-from . import KEYS, PROVIDERS, load_tasks, today
 from .claude_cli import FETCH, LOG, plain_call, web_call
+from .config import KEYS, PROVIDERS, load_tasks, today
 from .judge import rec
 
 OUT = KEYS

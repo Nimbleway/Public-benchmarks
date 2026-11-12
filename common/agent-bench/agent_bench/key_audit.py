@@ -13,8 +13,8 @@ for giving the current, correct answer. This step re-checks every key item that 
 - Changed tasks get graded_arms = [] so answer_keys re-grades EVERY provider on that task against the fixed key.
   The original key item is kept under key_original; the verdict under audit.
 
-    python -m usecase_bench.key_audit [job ...]   # audit: writes results/key_audit/<job>/<i>.json, does not touch keys
-    python -m usecase_bench.key_audit apply       # apply verdicts to results/answer_keys/, then re-run answer_keys
+    python -m agent_bench.key_audit --suite <folder> [job ...]   # audit: writes results/key_audit/<job>/<i>.json, does not touch keys
+    python -m agent_bench.key_audit --suite <folder> apply       # apply verdicts to results/answer_keys/, then re-run answer_keys
 """
 import json
 import os
@@ -23,8 +23,8 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-from . import KEY_AUDIT, KEYS, PROVIDERS, ROOT, today
 from .claude_cli import BASE, LOG
+from .config import KEY_AUDIT, KEYS, PROJECT, PROVIDERS, today
 from .judge import rec
 
 OUT = KEY_AUDIT
@@ -49,7 +49,7 @@ def ask(system, user):
     args = BASE + ["--model", os.environ.get("KEY_AUDIT_MODEL", "claude-sonnet-5-5"), "--effort", "high", "--system-prompt", system, "--output-format", "json",
                    "--tools", "WebSearch,WebFetch", "--allowedTools", "WebSearch", "WebFetch"]
     for _ in range(2):
-        p = subprocess.run(args, input=user, capture_output=True, text=True, timeout=1800, cwd=ROOT)
+        p = subprocess.run(args, input=user, capture_output=True, text=True, timeout=1800, cwd=PROJECT)
         try:
             env = json.loads(p.stdout)
             m = re.search(r"\{.*\}", env.get("result") or "", re.S)

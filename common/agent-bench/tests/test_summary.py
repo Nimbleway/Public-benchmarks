@@ -1,4 +1,4 @@
-"""Smoke test: recompute the summary from the shipped results (offline) and compare with results/summary.json.
+"""Smoke test: recompute each suite's summary from its shipped results (offline) and compare with results/summary.json.
 
     uv run pytest      # or: python -m pytest
 """
@@ -8,8 +8,14 @@ import shutil
 import subprocess
 import sys
 
-HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SUITES = ["Finance-Use-Case-Benchmark", "GTM-Use-Case-Benchmark"]
+import pytest
+
+PROJECT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPO = os.path.dirname(os.path.dirname(PROJECT))
+# every benchmark that uses agent-bench; the first suite of each entry is the one whose summary.json is checked, the
+# others are summarized with it (Finance and GTM are published with an "across both suites" view)
+SUITES = [["Finance-Use-Case-Benchmark", "GTM-Use-Case-Benchmark"], ["GTM-Use-Case-Benchmark", "Finance-Use-Case-Benchmark"],
+          ["Due-Diligence-Benchmark"], ["Lead-Enrichment-Benchmark"]]
 
 
 def rounded(x):
@@ -22,15 +28,13 @@ def rounded(x):
     return x
 
 
-def test_summary_matches_shipped(tmp_path):
-    # copy this suite (and the sibling suite, for the cross-suite view) so the shipped summary.json is not overwritten
-    for name in SUITES:
-        src = os.path.join(os.path.dirname(HERE), name)
-        if os.path.exists(os.path.join(src, "usecase_bench", "tasks.json")):
-            shutil.copytree(src, tmp_path / name, ignore=shutil.ignore_patterns(".venv", "__pycache__", "evidence_cache", ".env"))
-    work = tmp_path / os.path.basename(HERE)
-    env = {k: v for k, v in os.environ.items() if k != "BENCH_RESULTS"}
-    subprocess.run([sys.executable, "-m", "usecase_bench.summary"], cwd=work, env=env, check=True, capture_output=True)
-    shipped = json.load(open(os.path.join(HERE, "results", "summary.json")))
-    fresh = json.load(open(work / "results" / "summary.json"))
+@pytest.mark.parametrize("suites", SUITES, ids=lambda s: s[0])
+def test_summary_matches_shipped(tmp_path, suites):
+    # copy the suites so the shipped summary.json is not overwritten
+    for name in suites:
+        shutil.copytree(os.path.join(REPO, name), tmp_path / name, ignore=shutil.ignore_patterns("data"))
+    args = [x for name in suites for x in ("--suite", str(tmp_path / name))]
+    subprocess.run([sys.executable, "-m", "agent_bench.summary", *args], cwd=PROJECT, check=True, capture_output=True)
+    shipped = json.load(open(os.path.join(REPO, suites[0], "results", "summary.json")))
+    fresh = json.load(open(tmp_path / suites[0] / "results" / "summary.json"))
     assert rounded(fresh) == rounded(shipped)

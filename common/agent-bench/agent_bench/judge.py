@@ -14,9 +14,9 @@
 6. Audit: a seeded ~10% sample is re-checked independently by Opus; used only to report agreement.
 7. Score: scoring.score (deterministic).
 
-Then run usecase_bench.corrections (duplicate merge + ownership rule) on the judged tasks.
+Then run agent_bench.corrections (duplicate merge + ownership rule) on the judged tasks.
 
-    python -m usecase_bench.judge [job ...]   ->  results/verified/<job>/<i>.json (existing files are skipped)
+    python -m agent_bench.judge --suite <folder> [job ...]   ->  results/verified/<job>/<i>.json (existing files are skipped)
 """
 import hashlib
 import json
@@ -26,8 +26,8 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-from . import EVID, PROVIDERS, RAW, ROOT, VERIFIED, load_tasks, today
 from .claude_cli import AUDIT_MODEL, FETCH, LOG, evidence_call, extract_call, plain_call, web_call
+from .config import EVID, PROJECT, PROVIDERS, RAW, VERIFIED, load_tasks, today
 from .scoring import score
 
 TASKS = {u["id"]: u for u in load_tasks()}
@@ -269,7 +269,7 @@ def unit_evidence(c, pages, excerpts, texts, labels, generic):
     for u in dict.fromkeys(near):
         has = bool(pages.get(u))
         if has or excerpts.get(u):
-            out.append({"url": u, "file": os.path.relpath(evidence_file(u), ROOT) if has else None,
+            out.append({"url": u, "file": os.path.relpath(evidence_file(u), PROJECT) if has else None,
                         "provider_excerpts": excerpts.get(u, [])[:2]})
     return out[:5]
 
@@ -361,7 +361,7 @@ def judge(u, i):
     by_label = {L: a for a, L in lab.items()}
     ev = {c["cid"]: unit_evidence(c, pages, excerpts, texts, by_label, generic) for c in merged}
     manifest = "\n\nSAVED PAGES (url -> file):\n" + "\n".join(
-        f"{x} -> {os.path.relpath(evidence_file(x), ROOT)}" for x, t in pages.items() if t)
+        f"{x} -> {os.path.relpath(evidence_file(x), PROJECT)}" for x, t in pages.items() if t)
     payload = lambda b: json.dumps([{**{x: c.get(x) for x in ("cid", "claim", "variants", "urls")},  # noqa: E731
                                      "asserted_by_n": len(c.get("asserted_by") or []), "evidence": ev[c["cid"]]} for c in b], ensure_ascii=False)
     ver = {}
