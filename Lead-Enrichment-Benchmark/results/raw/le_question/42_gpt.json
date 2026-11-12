@@ -1,0 +1,75 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0dc5f3c2526341bd006af4b0d967ac87d291f060b8d30607b8",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "Who is the parent company of Lenovo?",
+  "answer": "Lenovo\u2019s parent company is Legend Holdings Corporation. Legend Holdings reported directly and indirectly owning a 32.95% equity interest in Lenovo as of June 30, 2026, so Lenovo is not wholly owned by it.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Legend Holdings Corporation identifies Lenovo Group Limited as its subsidiary.",
+    "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0813/2026081300165.pdf",
+    "date": "2026-08-13"
+   },
+   {
+    "fact": "Legend Holdings directly and indirectly held a 32.95% equity interest in Lenovo as of June 30, 2026.",
+    "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0922/2026092200438.pdf",
+    "date": "2026-06-30"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Lenovo Group Limited, a Subsidiary of the Company",
+    "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0813/2026081300165.pdf",
+    "publisher": "Legend Holdings Corporation",
+    "published_date": "2026-08-13"
+   },
+   {
+    "quote": "As of June 30, 2026, Legend Holdings directly and indirectly held a 32.95% equity interest in Lenovo.",
+    "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0922/2026092200438.pdf",
+    "publisher": "Legend Holdings Corporation",
+    "published_date": "2026-09-22"
+   }
+  ],
+  "caveats": [
+   "The ownership percentage is dated June 30, 2026; it is not a verified live percentage for November 11, 2026."
+  ],
+  "missing_fields": []
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 29785,
+  "input_tokens_details": {
+   "cache_write_tokens": 14,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 786,
+  "output_tokens_details": {
+   "reasoning_tokens": 315
+  },
+  "total_tokens": 30571
+ },
+ "search_calls": 4,
+ "search_actions": {
+  "search": 1,
+  "open_page": 2,
+  "find_in_page": 1
+ },
+ "token_cost_usd": 0.0581,
+ "cost_usd": 0.0981,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Lenovo?",
+ "input_n": 42,
+ "completed_on": "2026-11-11"
+}

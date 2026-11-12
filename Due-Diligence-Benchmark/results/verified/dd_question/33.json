@@ -1,0 +1,887 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 33,
+ "task": "Who owns Xfinity?",
+ "labels": {
+  "firecrawl": "A",
+  "opus": "B",
+  "parallel": "C",
+  "gpt": "D",
+  "exa": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 14,
+ "evidence_fetched": 14,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Comcast Corporation owns Xfinity.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Xfinity is owned by Comcast Corporation.",
+    "C": "Comcast Corporation owns Xfinity.",
+    "D": "Xfinity is owned by Comcast Corporation, which is Xfinity's parent company.",
+    "B": "Comcast Corporation (Nasdaq: CMCSA), headquartered in Philadelphia, owns Xfinity."
+   },
+   "urls": [
+    "https://corporate.comcast.com/privacy-related-businesses",
+    "https://en.wikipedia.org/wiki/Xfinity",
+    "https://www.businesswire.com/news/home/20261028034443/en/Xfinity-High-Speed-Internet-Now-Available-in-Forest-Virginia",
+    "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm?utmComcast=",
+    "https://www.spotlightpa.org/news/2026/06/comcast-split-nbcuniversal-sky-spinoff-two-companies-economy/",
+    "https://www.xfinity.com/learn"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Comcast Corporation is headquartered in Philadelphia and trades on Nasdaq under CMCSA.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Comcast Corporation (Nasdaq: CMCSA), headquartered in Philadelphia"
+   },
+   "urls": [
+    "https://www.spotlightpa.org/news/2026/06/comcast-split-nbcuniversal-sky-spinoff-two-companies-economy/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Xfinity is Comcast's consumer connectivity and entertainment brand.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Xfinity is Comcast's consumer connectivity and entertainment brand."
+   },
+   "urls": [
+    "https://xfinity.com/learn"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Xfinity is Comcast's consumer connectivity and entertainment brand for residential internet, mobile, TV, home security, and home phone services.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "Xfinity is Comcast's consumer connectivity and entertainment brand for residential internet, mobile, TV, home security, and home phone services."
+   },
+   "urls": [
+    "https://www.capecodchamber.org/articles-business/post/xfinity-launches-same-day-wifi/",
+    "https://www.cmcsa.com/static-files/cf49aad3-b578-4c04-be27-ba57134e3548",
+    "https://www.xfinity.com/learn"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Xfinity's network reaches over 65 million homes across America, delivering internet, 5G mobile, TV, home security, and home phone services.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Xfinity's network reaches over 65 million homes across America, delivering internet, 5G mobile, TV, home security, and home phone services."
+   },
+   "urls": [
+    "https://xfinity.com/learn"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Comcast's latest annual report/10-K states it delivers broadband, wireless, video and voice services primarily under the Xfinity, Comcast Business, Sky and NOW brands.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Comcast delivers broadband, wireless, video and voice services primarily under the Xfinity, Comcast Business, Sky and NOW brands.",
+    "C": "Comcast's annual report (dated 2026-02-03) states it delivers broadband, wireless, video and voice services primarily under the Xfinity, Comcast Business, Sky and NOW brands."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1040573/000119312525042517/d921757ds3asr.htm",
+    "https://www.cmcsa.com/static-files/cf49aad3-b578-4c04-be27-ba57134e3548",
+    "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm?utmComcast="
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Comcast's latest Form 10-K / annual report is dated February 3, 2026.",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "Comcast Corporation's latest Form 10-K was filed on February 3, 2026.",
+    "C": "Comcast's annual report (dated 2026-02-03)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm?utmComcast=",
+    "https://www.cmcsa.com/static-files/cf49aad3-b578-4c04-be27-ba57134e3548"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Comcast's Connectivity & Platforms business delivers broadband, mobile, and entertainment through Xfinity, Comcast Business, and Sky.",
+   "asserted_by": [
+    "E",
+    "A"
+   ],
+   "variants": {
+    "E": "Comcast's Connectivity & Platforms business delivers broadband, mobile, and entertainment through Xfinity, Comcast Business, and Sky.",
+    "A": "Comcast states that, through Xfinity, Comcast Business, and Sky, it delivers broadband, mobile, and entertainment services."
+   },
+   "urls": [
+    "https://corporate.comcast.com/company/connectivity-platforms"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Comcast's boilerplate says it delivers broadband, wireless and video through Xfinity, Comcast Business and Sky (seen only in a search-result snippet).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Comcast's boilerplate says it delivers broadband, wireless and video through Xfinity, Comcast Business and Sky (seen only in a search-result snippet)."
+   },
+   "urls": [
+    "https://cmcsa.gcs-web.com/node/45796"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Comcast's official corporate site lists Xfinity under the heading \"Comcast's Businesses.\"",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Comcast's official corporate site lists Xfinity under the heading \"Comcast's Businesses.\""
+   },
+   "urls": [
+    "https://corporate.comcast.com/privacy-related-businesses"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Comcast Cable Communications, LLC does business as Xfinity and is a business segment and division of Comcast Corporation.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Comcast Cable Communications, LLC does business as Xfinity and is a business segment and division of Comcast Corporation."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Xfinity"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Xfinity is used to market consumer cable television, internet, telephone, and wireless services provided by Comcast.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Xfinity is used to market consumer cable television, internet, telephone, and wireless services provided by Comcast."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Xfinity"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "The Xfinity brand was first introduced in 2010; before that, these services were marketed primarily under the Comcast name.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The Xfinity brand was first introduced in 2010; before that, these services were marketed primarily under the Comcast name."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Xfinity"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Comcast Corporation is a publicly traded company.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "Comcast Corporation is a publicly traded company.",
+    "E": "Comcast Corporation is a publicly traded company."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Xfinity is a brand and operating division, not a separately traded company; ownership ultimately rests with Comcast Corporation's shareholders.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Xfinity is a brand and operating division, not a separately traded company; ownership ultimately rests with Comcast Corporation's shareholders."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "The Brian L. Roberts family holds supervoting shares that give it voting control of Comcast.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "The Brian L. Roberts family holds supervoting shares that give it voting control of Comcast."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Comcast"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c20",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "As of November 11, 2026, there is no indication in the reviewed sources that Comcast's ownership of Xfinity has changed.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "As of November 11, 2026, there is no indication in the reviewed sources that Comcast's ownership of Xfinity has changed."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "A Comcast release dated 2026-10-28 refers to the brand as 'Comcast's Xfinity' and announces completion of a network expansion project (Xfinity High-Speed Internet now available in Forest, Virginia).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "A Comcast release dated 2026-10-28 refers to the brand as 'Comcast's Xfinity' and announces completion of a network expansion project (Xfinity High-Speed Internet now available in Forest, Virginia)."
+   },
+   "urls": [
+    "https://www.businesswire.com/news/home/20261028034443/en/Xfinity-High-Speed-Internet-Now-Available-in-Forest-Virginia"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "A June 16, 2026 Comcast release refers to 'Comcast's Xfinity' and announced the rollout of same-day WiFi equipment.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "A June 16, 2026 Comcast release refers to 'Comcast's Xfinity' and announced the rollout of same-day WiFi equipment."
+   },
+   "urls": [
+    "https://www.capecodchamber.org/articles-business/post/xfinity-launches-same-day-wifi/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "An executive's title in the June 2026 Comcast release is 'SVP & GM Connectivity at Comcast's Xfinity'.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "An executive's title in the June 2026 Comcast release is 'SVP & GM Connectivity at Comcast's Xfinity'."
+   },
+   "urls": [
+    "https://www.capecodchamber.org/articles-business/post/xfinity-launches-same-day-wifi/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "On June 29, 2026, Comcast announced a plan to split into two public companies by spinning off NBCUniversal and Sky.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On June 29, 2026, Comcast announced a plan to split into two public companies by spinning off NBCUniversal and Sky."
+   },
+   "urls": [
+    "https://www.spotlightpa.org/news/2026/06/comcast-split-nbcuniversal-sky-spinoff-two-companies-economy/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "The NBCUniversal and Sky spin-off is planned as a tax-free transaction.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The NBCUniversal and Sky spin-off is planned as a tax-free transaction."
+   },
+   "urls": [
+    "https://cmcsa.gcs-web.com/node/45796"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Philadelphia-based Comcast will continue providing internet services to residential and business customers (Xfinity), so the split does not change Xfinity's ownership.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Philadelphia-based Comcast will continue providing internet services to residential and business customers (Xfinity), so the split does not change Xfinity's ownership."
+   },
+   "urls": [
+    "https://www.spotlightpa.org/news/2026/06/comcast-split-nbcuniversal-sky-spinoff-two-companies-economy/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Comcast said it expects to complete the separation process in about a year.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Comcast said it expects to complete the separation process in about a year."
+   },
+   "urls": [
+    "https://www.spotlightpa.org/news/2026/06/comcast-split-nbcuniversal-sky-spinoff-two-companies-economy/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Michael Angelakis, former CFO, is to become CEO of the remaining Comcast broadband company.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Michael Angelakis, former CFO, is to become CEO of the remaining Comcast broadband company."
+   },
+   "urls": [
+    "https://www.spotlightpa.org/news/2026/06/comcast-split-nbcuniversal-sky-spinoff-two-companies-economy/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "The spin-off had not finished as of the latest sources (June 2026) and is pending regulatory and board approvals; details of the remaining company could change.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The spin-off had not finished as of the latest sources (June 2026) and is pending regulatory and board approvals; details of the remaining company could change."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.businesswire.com/news/home/20261028034443/en/Xfinity-High-Speed-Internet-Now-Available-in-Forest-Virginia",
+   "note": "Comcast's Oct 2026 release names Xfinity as its brand. All variants (F, C, D, B) hold, including the Philadelphia HQ and Nasdaq: CMCSA details.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true",
+    "D": "true",
+    "B": "true",
+    "E": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://cmcsa.gcs-web.com/node/45796",
+   "note": "The June 2026 release is datelined Philadelphia and gives Nasdaq: CMCSA.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://xfinity.com/learn",
+   "note": "Xfinity is Comcast's residential consumer brand, per the Xfinity site.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.xfinity.com/learn",
+   "note": "The Xfinity site lists internet, mobile, TV, home security and home phone as its residential services.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cmcsa.com/static-files/cf49aad3-b578-4c04-be27-ba57134e3548",
+   "note": "Item 1 of the 2025 10-K has this wording, and the auditor report is dated Feb 3, 2026.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cmcsa.com/static-files/cf49aad3-b578-4c04-be27-ba57134e3548",
+   "note": "The auditor report in the 10-K is dated Feb 3, 2026, consistent with the filing date. The 2025 10-K is the latest annual report.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://corporate.comcast.com/company/connectivity-platforms",
+   "note": "The Comcast corporate page states this almost verbatim.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://cmcsa.gcs-web.com/node/45796",
+   "note": "The June 2026 Comcast release boilerplate has this wording.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/Xfinity",
+   "note": "Wikipedia says Comcast Cable Communications does business as Xfinity and is a division of Comcast. The 10-K confirms Comcast Cable is a consolidated subsidiary.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://xfinity.com/learn",
+   "note": "Xfinity is Comcast's consumer brand for internet, mobile, TV, home security and home phone; the claim's service list (cable TV, internet, telephone, wireless) is broadly consistent.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://xfinity.com/learn",
+   "note": "Xfinity's own page says the brand was introduced in 2010 to represent Comcast's residential services; earlier marketing under the Comcast name is well known.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.businesswire.com/news/home/20261028034443/en/Xfinity-High-Speed-Internet-Now-Available-in-Forest-Virginia",
+   "note": "Comcast Corporation trades on Nasdaq as CMCSA.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://xfinity.com/learn",
+   "note": "Xfinity is Comcast's consumer brand and part of Comcast, with no separate listing, so ownership rests with Comcast shareholders.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm?utmComcast=",
+   "note": "The 10-K says Class B stock carries 33 1/3% of combined voting power and is non-dilutable, and Brian Roberts owns all of it; 'voting control' is a slight overstatement of a one-third stake but is the commonly used characterization.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.businesswire.com/news/home/20261028034443/en/Xfinity-High-Speed-Internet-Now-Available-in-Forest-Virginia",
+   "note": "The Oct 28, 2026 release still calls it 'Comcast's Xfinity', and the planned spin-off leaves Xfinity with Comcast.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.businesswire.com/news/home/20261028034443/en/Xfinity-High-Speed-Internet-Now-Available-in-Forest-Virginia",
+   "note": "The release is dated Oct 28, 2026 and opens with 'Comcast's Xfinity today announced the completion of a network expansion project' in Forest, Virginia.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.capecodchamber.org/articles-business/post/xfinity-launches-same-day-wifi/",
+   "note": "The Jun 16, 2026 post says 'Comcast's Xfinity today announced the rollout of same-day WiFi equipment (Gateway) delivery'.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.capecodchamber.org/articles-business/post/xfinity-launches-same-day-wifi/",
+   "note": "The quote is attributed to Eric Jagher, SVP & GM Connectivity at Comcast's Xfinity.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": false,
+   "source": "https://cmcsa.gcs-web.com/node/45796",
+   "note": "The Jun 29, 2026 Comcast release announced the intention to separate into two public companies via a tax-free spin-off of NBCUniversal and Sky.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://cmcsa.gcs-web.com/node/45796",
+   "note": "The release describes a 'tax-free spin-off of NBCUniversal and Sky'.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.spotlightpa.org/news/2026/06/comcast-split-nbcuniversal-sky-spinoff-two-companies-economy/",
+   "note": "AP says Philadelphia-based Comcast will continue providing internet services to residential and business customers; Xfinity stays with Comcast.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://cmcsa.gcs-web.com/node/45796",
+   "note": "The release subtitle says the separation is 'to be Completed in Approximately One Year'.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://cmcsa.gcs-web.com/node/45796",
+   "note": "Michael Angelakis, Comcast's former CFO, will become CEO of Comcast after the separation.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://xfinity.com/learn",
+   "note": "Xfinity's own page says its network reaches over 65 million homes and offers internet, 5G mobile, TV, home security and home phone.",
+   "via": "agent"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.comcast.com/company/connectivity-platforms",
+   "note": "The saved 'Comcast's Businesses' page has the heading but no Xfinity text. Comcast's connectivity page does name Xfinity as one of its businesses. Medium confidence.",
+   "via": "agent"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://cmcsa.gcs-web.com/node/45796",
+   "note": "The June 29, 2026 release announced the NBCUniversal and Sky spin-off. Comcast said it expects to finish in about a year, pending regulatory and board approvals. I found nothing showing it is complete by Nov 2026. The spin-off leaves Xfinity inside Comcast.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "note": "Comcast is still based in Philadelphia and trades on Nasdaq as CMCSA. It kept the ticker after spinning off Versant in Jan 2026. The NBCUniversal/Sky split announced in June 2026 is still pending, about a year from completion, and the broadband company stays Philadelphia-based."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 28,
+ "scores": {
+  "firecrawl": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 96.0,
+   "coverage": 0.211,
+   "accuracy": 1.0,
+   "combined": 0.348,
+   "thorough_coverage": 0.156,
+   "answer_truth": 11,
+   "thoroughness": 0.27,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 96.0,
+   "coverage": 0.368,
+   "accuracy": 1.0,
+   "combined": 0.538,
+   "thorough_coverage": 0.518,
+   "answer_truth": 11,
+   "thoroughness": 0.683,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 96.0,
+   "coverage": 0.263,
+   "accuracy": 1.0,
+   "combined": 0.417,
+   "thorough_coverage": 0.195,
+   "answer_truth": 11,
+   "thoroughness": 0.327,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 96.0,
+   "coverage": 0.211,
+   "accuracy": 1.0,
+   "combined": 0.348,
+   "thorough_coverage": 0.125,
+   "answer_truth": 11,
+   "thoroughness": 0.222,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 96.0,
+   "coverage": 0.368,
+   "accuracy": 1.0,
+   "combined": 0.538,
+   "thorough_coverage": 0.289,
+   "answer_truth": 11,
+   "thoroughness": 0.448,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 96.0,
+   "coverage": 0.526,
+   "accuracy": 1.0,
+   "combined": 0.69,
+   "thorough_coverage": 0.411,
+   "answer_truth": 11,
+   "thoroughness": 0.583,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.779,
+ "corrections_v2": {
+  "units_before": 31,
+  "units_after": 26,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7"
+    ]
+   },
+   {
+    "kept": "c10",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c20",
+    "merged": [
+     "c21"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

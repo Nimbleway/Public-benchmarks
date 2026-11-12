@@ -1,0 +1,924 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 10,
+ "task": "Where can I find Bank of America's latest annual report?",
+ "labels": {
+  "gpt": "A",
+  "firecrawl": "B",
+  "nimble": "C",
+  "parallel": "D",
+  "opus": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 13,
+ "evidence_fetched": 13,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Bank of America's latest annual report is the 2025 Annual Report.",
+   "asserted_by": [
+    "C",
+    "D",
+    "B",
+    "A",
+    "E"
+   ],
+   "variants": {
+    "C": "Bank of America's latest annual report is the 2025 Annual Report (fiscal year ended December 31, 2025).",
+    "D": "Bank of America's latest annual report, as of November 11, 2026, is its 2025 Annual Report.",
+    "B": "As of November 11, 2026, Bank of America's latest annual report is its 2025 Annual Report.",
+    "A": "As of November 11, 2026, the latest annual report listed on Bank of America Corporation's official annual reports page is the 2025 Annual Report.",
+    "E": "Bank of America's latest annual report is the 2025 Annual Report, which is available from the Annual Reports & Proxy Statements page of its Investor Relations site."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+    "https://investor.bankofamerica.com/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The 2025 Annual Report covers fiscal year 2025, which ended December 31, 2025.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Bank of America's latest annual report is the 2025 Annual Report (fiscal year ended December 31, 2025).",
+    "E": "The 2025 Annual Report covers fiscal year 2025, which ended December 31, 2025."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The 2025 Annual Report is the newest one listed on Bank of America's Investor Relations 'Annual Reports & Proxy Statements' page (investor.bankofamerica.com/annual-reports-and-proxy-statements), where it can be selected under 2025.",
+   "asserted_by": [
+    "D",
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "D": "The 2025 Annual Report is the newest annual report listed on Bank of America's official Annual Reports & Proxy Statements page.",
+    "A": "Bank of America's Annual Reports & Proxy Statements page is at https://investor.bankofamerica.com/annual-reports-and-proxy-statements, where the 2025 Annual Report can be selected under 2025.",
+    "C": "The Investor Relations 'Annual Reports & Proxy Statements' page links the 2025 Annual Report PDF under the '2025' heading, as the newest annual report.",
+    "E": "The 2025 Annual Report is available from the Annual Reports & Proxy Statements page of its Investor Relations site."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/annual-reports-and-proxy-statements"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The Annual Reports & Proxy Statements page links to a PDF named 'BAC 2025 Annual Report.pdf'.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "The page links the 2025 Annual Report PDF ('BAC 2025 Annual Report.pdf') under the '2025' heading.",
+    "E": "The Annual Reports & Proxy Statements page links to a PDF of the BAC 2025 Annual Report."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/annual-reports-and-proxy-statements"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Bank of America's 2025 Annual Report is available as a downloadable PDF (BAC 2025 Annual Report.pdf) hosted on a cloudfront CDN.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "Bank of America's 2025 Annual Report is available as a downloadable PDF (BAC 2025 Annual Report.pdf)."
+   },
+   "urls": [
+    "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+    "https://investor.bankofamerica.com/",
+    "https://investor.bankofamerica.com/annual-reports-and-proxy-statements"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "The Investor Relations homepage identifies the document as the '2025 Annual Report' (alongside the 2026 Proxy Statement) and links directly to its PDF.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bank of America's Investor Relations homepage identifies the document as the '2025 Annual Report' (alongside the 2026 Proxy Statement) and links directly to its PDF."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Bank of America's Form 10-K for fiscal year ended December 31, 2025 was filed with the SEC on February 25, 2026.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Bank of America's Annual Report on Form 10-K for fiscal year ended December 31, 2025 was filed with the SEC on February 25, 2026."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports",
+    "https://sec.gov/Archives/edgar/data/70858/000007085826000157/0000070858-26-000157-index-headers.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10",
+    "c17",
+    "c32"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Bank of America's 2025 Form 10-K covers the fiscal year ended December 31, 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Bank of America's 2025 Form 10-K covers the fiscal year ended December 31, 2025."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000157/bac-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "The fiscal 2025 Form 10-K has accession number 0000070858-26-000157 and document name bac-20251231.htm.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The Bank of America fiscal 2025 Form 10-K has accession number 0000070858-26-000157 and document name bac-20251231.htm."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/70858/000007085826000157/0000070858-26-000157-index-headers.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "The fiscal 2025 Form 10-K can be read on SEC EDGAR (sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm).",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "The Bank of America fiscal 2025 Form 10-K can be read on SEC EDGAR at sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm, or via EDGAR's Bank of America filings page (CIK 0000070858).",
+    "F": "Bank of America's 2025 Form 10-K can be read directly on the SEC website."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Bank of America's Form 10-K states that its Annual Reports on Form 10-K are available on the Investor Relations portion of its website as soon as reasonably practicable after filing, and at www.sec.gov.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Bank of America's Form 10-K states that its Annual Reports on Form 10-K are available on the Investor Relations portion of its website as soon as reasonably practicable after filing, and at the SEC's website, www.sec.gov."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "'Annual report' can mean either the shareholder Annual Report (the PDF on the IR site) or the Form 10-K filed with the SEC; both cover fiscal year 2025.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "'Annual report' can mean either the shareholder Annual Report (the PDF on the IR site) or the statutory Annual Report on Form 10-K filed with the SEC; both cover fiscal year 2025."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Bank of America Corporation's latest listed annual report is on its Investor Relations Annual Reports page (regulatory-and-other-filings/annual-reports).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Bank of America Corporation's latest listed annual report is on its Investor Relations Annual Reports page."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Bank of America's latest 10-K filing (filed 2026-02-25) is 314 pages long.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bank of America's latest 10-K filing (filed 2026-02-25) is 314 pages long."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "The latest 10-K is available in HTML on the IR site at .../select-sec-filings/content/0000070858-26-000157/bac-20251231.htm.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bank of America's latest 10-K is available in HTML at https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000157/bac-20251231.htm."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "The latest 10-K filing PDF is available at .../select-sec-filings/content/0000070858-26-000157/0000070858-26-000157.pdf.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bank of America's latest 10-K filing PDF is available at https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000157/0000070858-26-000157.pdf."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "The Bank of America homepage calls the document the 2025 Annual Report, while the filings page identifies the same fiscal-year reporting as the 2025 Form 10-K filed in 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The Bank of America homepage calls the document the 2025 Annual Report, while the filings page identifies the same fiscal-year reporting as the 2025 Form 10-K filed in 2026."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "The 2025 annual-report PDF (bofaannualreport2025.pdf) is available through the SEC archive / SEC filing page for the annual report to security holders.",
+   "asserted_by": [
+    "F",
+    "A"
+   ],
+   "variants": {
+    "F": "Bank of America's 2025 annual-report PDF is available through the SEC archive.",
+    "A": "The SEC filing page for Bank of America's annual report to security holders links to the file bofaannualreport2025.pdf."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/bofaannualreport2025.pdf",
+    "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Bank of America's annual report to security holders was filed with the SEC on March 23, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Bank of America's annual report to security holders was filed with the SEC on March 23, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "The annual report filed with the SEC on March 23, 2026 covers the reporting period ended December 31, 2025.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The Bank of America annual report filed with the SEC on March 23, 2026 covers the reporting period ended December 31, 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "The 2026 Proxy Statement and 2026 Additional Solicitation Materials are on the same Annual Reports & Proxy Statements page.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Bank of America's 2026 Proxy Statement and 2026 Additional Solicitation Materials are on the same Annual Reports & Proxy Statements page."
+   },
+   "urls": [
+    "https://investor.bankofamerica.com/annual-reports-and-proxy-statements"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Bank of America announced on March 30, 2026 that the 2025 Annual Report and 2026 Proxy Statement were available on its Investor Relations site.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Bank of America announced on March 30, 2026 that the 2025 Annual Report and 2026 Proxy Statement were available on its Investor Relations site."
+   },
+   "urls": [
+    "https://alumni.bankofamerica.com/home/articles/2025-annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "The announcement gives a direct link to the 2025 report at investor.bankofamerica.com/2025-annual-report.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The announcement gives a direct link to the 2025 report at investor.bankofamerica.com/2025-annual-report."
+   },
+   "urls": [
+    "https://alumni.bankofamerica.com/home/articles/2025-annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "The 2025 Annual Report includes a letter from Chair and CEO Brian Moynihan.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Bank of America's 2025 Annual Report includes a letter from Chair and CEO Brian Moynihan."
+   },
+   "urls": [
+    "https://alumni.bankofamerica.com/home/articles/2025-annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "The 2025 Annual Report includes sections on each of the company's eight lines of business.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Bank of America's 2025 Annual Report includes sections on each of the company's eight lines of business."
+   },
+   "urls": [
+    "https://alumni.bankofamerica.com/home/articles/2025-annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "The 2025 Annual Report includes an update on human capital management.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Bank of America's 2025 Annual Report includes an update on human capital management."
+   },
+   "urls": [
+    "https://alumni.bankofamerica.com/home/articles/2025-annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Bank of America's 2026 annual report will probably come out around March or April 2027.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Bank of America's 2026 annual report will probably come out around March or April 2027."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "The IR site has the Form 10-K under Regulatory & Other Filings > Select SEC Filings, and it is also on SEC EDGAR.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Bank of America's IR site has the Form 10-K under Regulatory & Other Filings > Select SEC Filings, and it is also on SEC EDGAR."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "A search summary said the IR homepage might still label its annual report link as 2024, but the Annual Reports & Proxy Statements page shows 2025 as the latest.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "A search summary said the Bank of America IR homepage might still label its annual report link as 2024, but the Annual Reports & Proxy Statements page shows 2025 as the latest."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c8"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+   "note": "IR page lists the 2025 Annual Report as the newest, under the 2025 heading; the 10-K and ARS filings are also for FY2025.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://d1io3yog0oux5.cloudfront.net/_299021e6298435f69aca9ed18a91ea2d/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+   "note": "The report states its data is as of year-end December 31, 2025, and the 10-K covers the fiscal year ended Dec 31, 2025.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+   "note": "The 2025 heading is the first on the page, above 2024 and 2023, and links the 2025 Annual Report.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+   "note": "The page links to .../BAC+2025+Annual+Report.pdf.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://d1io3yog0oux5.cloudfront.net/_299021e6298435f69aca9ed18a91ea2d/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+   "note": "The PDF is fetched from the cloudfront host and has the stated filename.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/",
+   "note": "The homepage section is titled '2025 Bank of America Annual Report & 2026 Proxy Statement' and links the PDF.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/70858/000007085826000157/0000070858-26-000157-index-headers.html",
+   "note": "The EDGAR header shows 10-K filed 2026-02-25 for the period ending 2025-12-31.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "F": "true",
+    "B": "true",
+    "E": "true"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm",
+   "note": "The cover page says 'For the Fiscal Year Ended December 31, 2025'.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/70858/000007085826000157/0000070858-26-000157-index-headers.html",
+   "note": "The accession number and filename match the EDGAR header.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm",
+   "note": "The 10-K document is hosted on sec.gov at that path.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm",
+   "note": "The 10-K text states reports are available on the IR site and at www.sec.gov.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html",
+   "note": "The shareholder report (also filed as ARS on 2026-03-23) and the 10-K both cover FY2025.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports",
+   "note": "The IR Annual Reports page lists the latest 10-K (02/25/26); the glossy annual report is on a separate page, but the claim holds.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.bankofamerica.com/regulatory-and-other-filings/annual-reports",
+   "note": "The page lists 314 pages for the 02/25/26 10-K.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000157/bac-20251231.htm",
+   "note": "The IR-hosted HTML 10-K for FY2025 exists at this URL.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000157/0000070858-26-000157.pdf",
+   "note": "The PDF of the 10-K is hosted at this IR URL.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.bankofamerica.com/",
+   "note": "The homepage links the '2025 Annual Report' while the filings page lists the FY2025 Form 10-K filed 2026-02-25.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html",
+   "note": "The SEC ARS filing page links bofaannualreport2025.pdf.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html",
+   "note": "The ARS filing date is 2026-03-23.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html",
+   "note": "The period of report for the ARS is 2025-12-31.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+   "note": "The page's 2025 section lists the 2026 Proxy Statement and the 2026 Additional Solicitation Materials alongside the Annual Report.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://alumni.bankofamerica.com/home/articles/2025-annual-report",
+   "note": "The alumni post dated March 30, 2026 says both documents are available on the IR site.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://alumni.bankofamerica.com/home/articles/2025-annual-report",
+   "note": "The post links the 2025 Annual Report to investor.bankofamerica.com/2025-annual-report.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://d1io3yog0oux5.cloudfront.net/_299021e6298435f69aca9ed18a91ea2d/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+   "note": "The report opens with a letter from Chair and CEO Brian Moynihan.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://alumni.bankofamerica.com/home/articles/2025-annual-report",
+   "note": "The post says the report features each of the eight lines of business.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://alumni.bankofamerica.com/home/articles/2025-annual-report",
+   "note": "The post and the report's table of contents include a human capital management update.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000157/bac-20251231.htm",
+   "note": "The IR site's Regulatory & Other Filings > Select SEC Filings section hosts the 10-K, and the same filing is on sec.gov EDGAR.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+   "note": "The Annual Reports & Proxy Statements page lists 2025 Annual Report first, above 2024. The claim about the homepage label is just a hedge from a search summary, not verified.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/0000070858-26-000209-index.html",
+   "note": "This is a forecast, not a stated fact. The 2025 annual report (ARS) was filed with the SEC on 2026-03-23, so a March or April 2027 release for the 2026 report fits that pattern. The 10-K itself comes out earlier, around February. No source confirms the 2027 date.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "note": "The live Annual Reports & Proxy Statements page lists '2025 Annual Report' under the '2025' heading. It links to .../annual_report/BAC+2025+Annual+Report.pdf, and 2025 is the newest year shown, followed by 2024 and earlier."
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "note": "Regulatory & Other Filings > Select SEC Filings has a filing-type filter that includes 'Annual Reports' (Form 10-K), and the page links to SEC EDGAR (CIK 0000070858) for all other filings. The page itself says it is for informational purposes only."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 33,
+ "scores": {
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 93.25,
+   "coverage": 0.325,
+   "accuracy": 1.0,
+   "combined": 0.491,
+   "thorough_coverage": 0.29,
+   "answer_truth": 18,
+   "thoroughness": 0.449,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 93.25,
+   "coverage": 0.407,
+   "accuracy": 1.0,
+   "combined": 0.578,
+   "thorough_coverage": 0.362,
+   "answer_truth": 18,
+   "thoroughness": 0.531,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 93.25,
+   "coverage": 0.458,
+   "accuracy": 1.0,
+   "combined": 0.628,
+   "thorough_coverage": 0.402,
+   "answer_truth": 18,
+   "thoroughness": 0.574,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 93.25,
+   "coverage": 0.285,
+   "accuracy": 1.0,
+   "combined": 0.443,
+   "thorough_coverage": 0.225,
+   "answer_truth": 18,
+   "thoroughness": 0.368,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 14,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 93.25,
+   "coverage": 0.461,
+   "accuracy": 1.0,
+   "combined": 0.631,
+   "thorough_coverage": 0.461,
+   "answer_truth": 18,
+   "thoroughness": 0.631,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 29,
+   "truth_weight": 93.25,
+   "coverage": 0.244,
+   "accuracy": 1.0,
+   "combined": 0.392,
+   "thorough_coverage": 0.225,
+   "answer_truth": 18,
+   "thoroughness": 0.368,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.968,
+ "corrections_v2": {
+  "units_before": 34,
+  "units_after": 29,
+  "dedup_groups": [
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c10",
+     "c17",
+     "c32"
+    ]
+   }
+  ],
+  "cost": 0.024
+ }
+}

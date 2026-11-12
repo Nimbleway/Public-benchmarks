@@ -1,0 +1,769 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 11,
+ "task": "Who is AWS's CTO?",
+ "labels": {
+  "opus": "A",
+  "firecrawl": "B",
+  "parallel": "C",
+  "exa": "D",
+  "gpt": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 12,
+ "evidence_fetched": 12,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Matt Wood holds the title Chief AI & Technology Officer at AWS.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Matt Wood's LinkedIn profile lists his position as Chief AI & Technology Officer, AWS. (Also: Matt Wood holds the title Chief AI and Technology Officer at AWS.)",
+    "C": "Dr. Matt Wood holds the AWS title Chief AI & Technology Officer.",
+    "E": "Matt Wood is AWS Chief AI and Technology Officer, as identified in Amazon's announcement of September 17, 2026."
+   },
+   "urls": [
+    "https://aboutamazon.com/news/aws/aws-cto-future-of-ai",
+    "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+    "https://linkedin.com/in/themza",
+    "https://www.aboutamazon.com/news/aws/aws-cto-future-of-ai"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c12"
+   ],
+   "merged_from": [
+    "c1",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Matt Wood presented at the AWS Global Meeting on September 17, 2026, laying out a vision for the future of AI.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "Matt Wood ... presented as such at the AWS Global Meeting on September 17, 2026.",
+    "E": "At the AWS Global Meeting on September 17, 2026, Matt Wood laid out a vision for the future of AI."
+   },
+   "urls": [
+    "https://aboutamazon.com/news/aws/aws-cto-future-of-ai",
+    "https://www.aboutamazon.com/news/aws/aws-cto-future-of-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Amazon's news site headlines Matt Wood as the 'AWS CTO'.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Amazon's news site headlines him as the 'AWS CTO'."
+   },
+   "urls": [
+    "https://aboutamazon.com/news/aws/aws-cto-future-of-ai"
+   ],
+   "conflicts_with": [
+    "c20",
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Matt Wood returned to AWS in May 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Matt Wood returned to AWS in May 2026."
+   },
+   "urls": [
+    "https://aws.amazon.com/blogs/aws-insights/author/mawood"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Matt Wood returned to AWS as Chief AI & Technology Officer in 2026, after almost 15 years at AWS earlier in his career.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Matt Wood returned to AWS as Chief AI & Technology Officer in 2026, after almost 15 years at AWS earlier in his career."
+   },
+   "urls": [
+    "https://linkedin.com/in/themza"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Before returning to AWS, Matt Wood most recently led commercial technology and innovation at PwC.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Before returning to AWS, Matt Wood most recently led commercial technology and innovation at PwC."
+   },
+   "urls": [
+    "https://linkedin.com/in/themza"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "At re:Invent in December 2025, Werner Vogels said he would no longer give his annual closing keynote but was not leaving Amazon.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "At AWS re:Invent in December 2025, Werner Vogels said he would no longer give his annual closing keynote but was not leaving Amazon."
+   },
+   "urls": [
+    "https://siliconangle.com/2025/12/05/amazon-cto-werner-vogels-foresees-rise-renaissance-developer-final-keynote-aws-reinvent/",
+    "https://techcrunch.com/2025/12/04/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "After Vogels gave up the keynote in December 2025, there was speculation that he might retire.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "After Werner Vogels gave up the keynote in December 2025, there was speculation that he might retire."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "IT Brew reported on November 5, 2026 that Pedram Rezaei, a 20+ year Microsoft veteran most recently in Microsoft's Superintelligence AI division, joined AWS in October 2026 'to become CTO'.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "IT Brew reported on November 5, 2026 that Pedram Rezaei, a 20+ year Microsoft veteran most recently in Microsoft's Superintelligence AI division, joined AWS in October 2026 'to become CTO'."
+   },
+   "urls": [
+    "https://www.itbrew.com/stories/october-in-the-tech-c-suite-featured-cto-shifts"
+   ],
+   "conflicts_with": [
+    "c1",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Per Swami Sivasubramanian's memo, Pedram Rezaei's work at AWS will focus on Amazon Quick and Kiro.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Per Swami Sivasubramanian's memo, Pedram Rezaei's work at AWS will focus on Amazon Quick and Kiro."
+   },
+   "urls": [
+    "https://www.itbrew.com/stories/october-in-the-tech-c-suite-featured-cto-shifts"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Pedram Rezaei's LinkedIn profile lists him as 'Distinguished Engineer / VP at Amazon Web Services (AWS)', not CTO, so a company-wide AWS CTO title is unconfirmed and the role may be product-scoped.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Pedram Rezaei's own LinkedIn profile lists his position as 'Distinguished Engineer / VP at Amazon Web Services (AWS)', not CTO, so his holding a company-wide AWS CTO title is unconfirmed and the role may be product-scoped."
+   },
+   "urls": [
+    "https://www.linkedin.com/in/pedramrezaei"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "A January 2026 leaked AWS org chart still showed Werner Vogels as 'VP and CTO' among CEO Matt Garman's direct reports.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "A January 2026 leaked AWS org chart still showed Werner Vogels as 'VP and CTO' among CEO Matt Garman's direct reports."
+   },
+   "urls": [
+    "https://b17news.com/a-leaked-aws-org-chart-shows-who-reports-to-ceo-matt-garman-now-and-whos-out/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Third-party pages such as The Information org chart and older blog posts still list Werner Vogels as VP & CTO of Amazon, which is outdated relative to 2026 sources showing Wood in the technology chief role.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Third-party pages such as The Information org chart and older blog posts still list Werner Vogels as VP & CTO of Amazon, which is outdated relative to 2026 sources showing Wood in the technology chief role."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c16",
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "Werner Vogels is identified on an AWS page as VP and CTO at Amazon.com.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Dr. Werner Vogels is identified on an Amazon Web Services page as VP and CTO at Amazon.com.",
+    "B": "Dr. Werner Vogels is identified on AWS's Executive Insights page as \"VP & CTO at Amazon.com.\""
+   },
+   "urls": [
+    "https://aws.amazon.com/executive-insights/content/werner-vogels-2026-tech-predictions/"
+   ],
+   "conflicts_with": [
+    "c15"
+   ],
+   "merged_from": [
+    "c16",
+    "c19",
+    "c20"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Amazon's About Amazon article identifies Werner Vogels as Amazon's chief technology officer.",
+   "asserted_by": [
+    "D",
+    "B"
+   ],
+   "variants": {
+    "D": "Amazon identifies Werner Vogels as Amazon's chief technology officer (Amazon article dated 2025-11-25 on his 2026 predictions).",
+    "B": "Amazon's official About Amazon article identifies Dr. Werner Vogels as Amazon's chief technology officer."
+   },
+   "urls": [
+    "https://www.aboutamazon.com/news/aws/werner-vogels-amazon-cto-predictions-2026"
+   ],
+   "conflicts_with": [
+    "c15"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "The About Amazon article identifying Vogels as Amazon's CTO was published on 2025-11-25.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "The About Amazon article identifying Werner Vogels as Amazon's CTO was published on 2025-11-25.",
+    "D": "Amazon article dated 2025-11-25 on his 2026 predictions."
+   },
+   "urls": [
+    "https://www.aboutamazon.com/news/aws/werner-vogels-amazon-cto-predictions-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Official sources describe Vogels as Amazon.com/Amazon CTO and do not use the exact title 'AWS CTO'; AWS is the Amazon business associated with the cited materials.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "The official sources describe Werner Vogels as Amazon.com/Amazon CTO and do not use the exact title \"AWS CTO\"; AWS is the Amazon business associated with the cited materials."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c3"
+   ],
+   "merged_from": [
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "As of November 11, 2026, Werner Vogels is the executive commonly associated with AWS's technology leadership.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "As of November 11, 2026, Werner Vogels is the executive commonly associated with AWS's technology leadership."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c15"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "Werner Vogels is Amazon's CTO and vice president, in charge of driving technology innovation, and is listed as 'Werner Vogels (CTO)' among Amazon's current people (Wikipedia).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Werner Vogels is Amazon's chief technology officer and vice president, in charge of driving technology innovation within the company, and is listed as 'Werner Vogels (CTO)' among Amazon's current people."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Werner_Vogels"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "The Wikipedia article on Werner Vogels, last edited 1 November 2026, still lists him as Amazon's CTO and mentions no retirement, departure or successor.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The Wikipedia article on Werner Vogels, last edited 1 November 2026, still lists him as Amazon's CTO and mentions no retirement, departure or successor."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Werner_Vogels"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Amazon has no widely reported standalone 'AWS CTO' role, but AWS has its own senior technology executives.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Amazon has no widely reported standalone 'AWS CTO' role, but AWS has its own senior technology executives."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c3"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+   "note": "AWS's own author page, Amazon's Sept 17, 2026 article and Wood's LinkedIn profile all give his title as Chief AI & Technology Officer.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.aboutamazon.com/news/aws/aws-cto-future-of-ai",
+   "note": "Amazon's article, published Sept 17, 2026, says Wood laid out a vision for AI at the AWS Global Meeting.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://linkedin.com/in/themza",
+   "note": "The page's H1 reads 'chief AI and technology officer', but its URL slug and the title listed on LinkedIn use 'AWS CTO'; this is a weak, headline-wording point.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+   "note": "The AWS bio says he returned in May 2026; LinkedIn shows the role starting May 2026.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://linkedin.com/in/themza",
+   "note": "His LinkedIn About section states this and the AWS blog bio says the same.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://linkedin.com/in/themza",
+   "note": "LinkedIn and the AWS bio say he most recently led commercial technology and innovation at PwC (CTIO, Oct 2024 to May 2026).",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://techcrunch.com/2025/12/04/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/",
+   "note": "TechCrunch quotes him: 'This is my final re:Invent keynote... I'm not leaving Amazon'.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "F": "true"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.itbrew.com/stories/october-in-the-tech-c-suite-featured-cto-shifts",
+   "note": "IT Brew's October CTO-shifts piece and Rezaei's LinkedIn (now at AWS) are consistent with this, but the excerpt does not show the quote.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://b17news.com/a-leaked-aws-org-chart-shows-who-reports-to-ceo-matt-garman-now-and-whos-out/",
+   "note": "The Jan 30, 2026 article lists Vogels among those who stayed on the org chart, as Amazon's overall CTO.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://aws.amazon.com/executive-insights/content/werner-vogels-2026-tech-predictions/",
+   "note": "Vogels still holds the Amazon-wide CTO title per AWS's own page and the Jan 2026 org chart, and nothing shows The Information listing him; Wood's AWS role does not make that outdated.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://aws.amazon.com/executive-insights/content/werner-vogels-2026-tech-predictions/",
+   "note": "The AWS Executive Insights page labels him 'Dr. Werner Vogels, VP & CTO at Amazon.com'.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true",
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.aboutamazon.com/news/aws/werner-vogels-amazon-cto-predictions-2026",
+   "note": "The About Amazon article, dated Nov 25 2025, calls him 'Amazon's chief technology officer'; this is still his current title.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.aboutamazon.com/news/aws/werner-vogels-amazon-cto-predictions-2026",
+   "note": "The page says 'Published: November 25, 2025'; the date is older than 90 days and is only supporting detail.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.aboutamazon.com/news/aws/werner-vogels-amazon-cto-predictions-2026",
+   "note": "Amazon sources call Vogels 'Amazon CTO' and none uses the literal title 'AWS CTO' for him.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "false",
+    "B": "true"
+   }
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://b17news.com/a-leaked-aws-org-chart-shows-who-reports-to-ceo-matt-garman-now-and-whos-out/",
+   "note": "He remains a public face of AWS tech, though he stopped giving the re:Invent keynote in 2025. The claim is vague and omits Matt Wood.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/Werner_Vogels",
+   "note": "Wikipedia describes him as 'American computer scientist and Amazon CTO'; this matches the other sources.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Werner_Vogels",
+   "note": "The page was last edited 1 Nov 2026 and still calls him Amazon CTO; no departure is shown in the excerpts.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://aboutamazon.com/news/aws/aws-cto-future-of-ai",
+   "note": "Amazon's own Sept 2026 article names Matt Wood AWS Chief AI and Technology Officer, so an AWS-specific tech chief is reported.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://siliconangle.com/2025/12/05/amazon-cto-werner-vogels-foresees-rise-renaissance-developer-final-keynote-aws-reinvent/",
+   "note": "Vogels said he was not leaving Amazon and was only giving up the keynote. The saved pages and my search found no reporting that speculated about his retirement, and no reporting that he retired.",
+   "via": "agent"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.itbrew.com/stories/october-in-the-tech-c-suite-featured-cto-shifts",
+   "note": "Search results on the Sivasubramanian memo say Rezaei will start on Kiro and Quick. I did not find that wording in the saved IT Brew page.",
+   "via": "agent"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://geekwire.com/2026/amazon-hires-a-microsoft-ai-leader-to-help-build-its-tools-for-coding-and-work/",
+   "note": "GeekWire reports he joined AWS as a distinguished engineer; his CTO title was at Microsoft Copilot. I could not see the LinkedIn headline in the saved page, so confidence is medium.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "note": "Amazon's Sept 17, 2026 article, his AWS Insights author page and the AWS Newsroom all name Matt Wood as AWS Chief AI & Technology Officer. He rejoined in May 2026 in this newly created role."
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "note": "Amazon's article dated Sept 17, 2026 says that at the AWS Global Meeting, Wood laid out a vision for where AI is heading and gave a live demo."
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "unverifiable",
+   "note": "Sources show Vogels gave his final re:Invent keynote in Dec 2025 and said he was not retiring or leaving Amazon. No source found reports retirement speculation after that. The 'not ready to retire' headlines are from 2021, and Wikipedia doesn't mention it."
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "note": "Wikipedia calls him Amazon's CTO and VP, 'in charge of driving technology innovation within the company'. AWS Summit London (April 2026) lists him as VP & CTO, Amazon.com. No departure has been reported. This is Amazon's CTO title, not an AWS one."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 23,
+ "scores": {
+  "opus": {
+   "units": 6,
+   "unverifiable": 1,
+   "true": 4,
+   "wrong": 1,
+   "truth": 18,
+   "truth_weight": 69.75,
+   "coverage": 0.222,
+   "accuracy": 0.626,
+   "combined": 0.328,
+   "thorough_coverage": 0.222,
+   "answer_truth": 8,
+   "thoroughness": 0.328,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 69.75,
+   "coverage": 0.389,
+   "accuracy": 1.0,
+   "combined": 0.56,
+   "thorough_coverage": 0.308,
+   "answer_truth": 8,
+   "thoroughness": 0.471,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 69.75,
+   "coverage": 0.167,
+   "accuracy": 1.0,
+   "combined": 0.286,
+   "thorough_coverage": 0.158,
+   "answer_truth": 8,
+   "thoroughness": 0.272,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 1,
+   "truth": 18,
+   "truth_weight": 69.75,
+   "coverage": 0.389,
+   "accuracy": 0.878,
+   "combined": 0.539,
+   "thorough_coverage": 0.308,
+   "answer_truth": 8,
+   "thoroughness": 0.456,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 69.75,
+   "coverage": 0.333,
+   "accuracy": 1.0,
+   "combined": 0.5,
+   "thorough_coverage": 0.301,
+   "answer_truth": 8,
+   "thoroughness": 0.463,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 1,
+   "truth": 18,
+   "truth_weight": 69.75,
+   "coverage": 0.5,
+   "accuracy": 0.987,
+   "combined": 0.664,
+   "thorough_coverage": 0.534,
+   "answer_truth": 8,
+   "thoroughness": 0.693,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.982,
+ "corrections_v2": {
+  "units_before": 26,
+  "units_after": 21,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c4"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c16",
+    "merged": [
+     "c19",
+     "c20"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c21"
+    ]
+   }
+  ],
+  "cost": 0.02
+ }
+}

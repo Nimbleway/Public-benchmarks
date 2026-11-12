@@ -1,0 +1,590 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 4,
+ "task": "Who is Dow's CTO?",
+ "labels": {
+  "firecrawl": "A",
+  "parallel": "B",
+  "exa": "C",
+  "gpt": "D",
+  "nimble": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 6,
+ "evidence_fetched": 6,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "As of November 11, 2026, André (Andre B.) Argenton is Dow's Chief Technology & Sustainability Officer, which is Dow's CTO role.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Dr. Andre B. Argenton is Dow Inc.'s chief technology officer as of November 11, 2026, with the title Chief Technology & Sustainability Officer.",
+    "C": "As of November 11, 2026, Andre B. Argenton is Dow's Chief Technology & Sustainability Officer (the CTO role).",
+    "A": "André (Andre B.) Argenton is Dow's Chief Technology & Sustainability Officer (Dow's CTO) as of November 11, 2026.",
+    "D": "André Argenton is Dow's Chief Technology & Sustainability Officer (Dow's CTO) as of November 11, 2026."
+   },
+   "urls": [
+    "https://corporate.dow.com/en-us/about-dow/leadership.html",
+    "https://corporate.dow.com/en-us/about-dow/leadership/andre-argenton.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Dow's current official title for the role is \"Chief Technology & Sustainability Officer,\" not simply \"Chief Technology Officer.\"",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Dow's current official title for the role is \"Chief Technology & Sustainability Officer,\" not simply \"Chief Technology Officer.\""
+   },
+   "urls": [
+    "https://corporate.dow.com/en-us/about-dow/leadership/andre-argenton.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Andre Argenton was appointed Dow's Chief Technology and Sustainability Officer effective January 1, 2026.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Andre Argenton was appointed Dow's Chief Technology and Sustainability Officer effective January 1, 2026.",
+    "C": "Dow appointed Andre Argenton Chief Technology and Sustainability Officer effective January 1, 2026."
+   },
+   "urls": [
+    "https://trellis.net/article/dows-sustainability-chief-adds-responsibility-for-rd/",
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Andre Argenton succeeds/succeeded A.N. Sreeram as Dow's chief technology officer.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Andre Argenton succeeds A.N. Sreeram as Dow's chief technology officer.",
+    "C": "Andre Argenton succeeded A.N. Sreeram as Dow's chief technology officer."
+   },
+   "urls": [
+    "https://trellis.net/article/dows-sustainability-chief-adds-responsibility-for-rd/",
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+    "https://www.tradingview.com/news/tradingview:a74b99327c891:0-dow-inc-announces-management-changes/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "A.N. Sreeram, Senior Vice President and Chief Technology Officer of Dow Inc., gave notice of retirement on December 29, 2025, effective June 30, 2026.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "A.N. Sreeram, Senior Vice President and Chief Technology Officer of Dow Inc., gave notice of his retirement on December 29, 2025, effective June 30, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+    "https://www.tradingview.com/news/tradingview:a74b99327c891:0-dow-inc-announces-management-changes/"
+   ],
+   "conflicts_with": [
+    "c8"
+   ],
+   "merged_from": [
+    "c7",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "According to Trellis, A.N. Sreeram retired effective January 1, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "According to Trellis, A.N. Sreeram retired effective January 1, 2026."
+   },
+   "urls": [
+    "https://trellis.net/article/dows-sustainability-chief-adds-responsibility-for-rd/"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Before his new role, Argenton served as Dow's Chief Sustainability Officer and Vice President of Environment, Health & Safety.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Before his new role, Andre Argenton served as Dow's Chief Sustainability Officer and Vice President of Environment, Health & Safety."
+   },
+   "urls": [
+    "https://trellis.net/article/dows-sustainability-chief-adds-responsibility-for-rd/",
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Andre Argenton has over 25 years of experience at Dow, including senior leadership roles in Research & Development.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Andre Argenton has over 25 years of experience at Dow, including senior leadership roles in Research & Development."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Argenton joined Dow in Brazil in 1999.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Argenton joined Dow in Brazil in 1999."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "In his role, Argenton leads Dow's global research and development organization.",
+   "asserted_by": [
+    "E",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "E": "In his new role, Argenton leads Dow's global research and development organization while continuing to lead its environment, health, safety and sustainability organization.",
+    "C": "In his role, Argenton leads Dow's global research and development organization.",
+    "F": "Argenton now also leads Dow's global R&D organization."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+    "https://trellis.net/article/dows-sustainability-chief-adds-responsibility-for-rd/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Argenton continues to lead Dow's environment, health, safety and sustainability organization.",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "In his new role, Argenton leads Dow's global research and development organization while continuing to lead its environment, health, safety and sustainability organization.",
+    "C": "Argenton continues to lead Dow's environment, health, safety and sustainability organization."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Dow's corporate website states Argenton is responsible for leading Dow's global Research & Development organization, Sustainability, and Environmental Health and Safety.",
+   "asserted_by": [
+    "E",
+    "A",
+    "D"
+   ],
+   "variants": {
+    "E": "Dow's corporate website states Argenton is responsible for leading Dow's global Research & Development organization, Sustainability and Environmental Health and Safety.",
+    "A": "André Argenton is responsible for leading Dow's global Research & Development organization, Sustainability, and Environmental Health and Safety.",
+    "D": "André Argenton leads Dow's global Research & Development organization, Sustainability, and Environmental Health and Safety."
+   },
+   "urls": [
+    "https://corporate.dow.com/en-us/about-dow/leadership/andre-argenton.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Dow filed a Form 8-K dated January 5, 2026 about the management change/appointment.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "The appointment and role transition are documented in Dow Inc.'s Form 8-K dated January 5, 2026.",
+    "F": "Dow filed an 8-K about the management change on January 5, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+    "https://www.tradingview.com/news/tradingview:a74b99327c891:0-dow-inc-announces-management-changes/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Dow announced the management change on December 29, 2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Dow announced the management change on December 29, 2025."
+   },
+   "urls": [
+    "https://www.tradingview.com/news/tradingview:a74b99327c891:0-dow-inc-announces-management-changes/"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.dow.com/en-us/about-dow/leadership.html",
+   "note": "Dow's leadership page lists Andre Argenton as Chief Technology & Sustainability Officer; the SEC 8-K and Trellis confirm he took over the CTO role from Sreeram.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true",
+    "A": "true",
+    "D": "true",
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.dow.com/en-us/about-dow/leadership/andre-argenton.html",
+   "note": "The official title is the combined 'Chief Technology & Sustainability Officer', as shown on his profile page.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "The 8-K states he was appointed Chief Technology and Sustainability Officer effective January 1, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true"
+   }
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "The 8-K says Sreeram 'will be succeeded by Andre Argenton'.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true",
+    "F": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "The 8-K states Sreeram gave notice on December 29, 2025 of retirement effective June 30, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://trellis.net/article/dows-sustainability-chief-adds-responsibility-for-rd/",
+   "note": "Trellis does say he retired effective Jan 1, which conflicts with the 8-K's June 30 date; the claim accurately attributes the statement to Trellis.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "The 8-K says he most recently served as Chief Sustainability Officer and VP of EH&S.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "The 8-K says he brings over 25 years at Dow, including senior R&D leadership roles.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://trellis.net/article/dows-sustainability-chief-adds-responsibility-for-rd/",
+   "note": "Trellis says he joined Dow Brazil in 1999; Dow's profile also gives 1999.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "The 8-K says Argenton will lead Dow's global R&D organization (and continue to lead EHS&S); Dow's leadership page confirms it. Variants E, C and F are all supported.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "The 8-K says he continues to lead the environment, health, safety and sustainability organization; Dow's profile confirms he is responsible for it. This is context about his role, not the CTO answer itself.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.dow.com/en-us/about-dow/leadership/andre-argenton.html",
+   "note": "Dow's profile page states he is responsible for leading the global R&D organization, Sustainability and Environmental Health and Safety. Variants E, A and D match its wording.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.tradingview.com/news/tradingview:a74b99327c891:0-dow-inc-announces-management-changes/",
+   "note": "TradingView lists the SEC filing as the 8-K of Jan. 05, 2026. The filing covers the Argenton appointment, so both variants hold. This is provenance, not the answer.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526002444/d63273d8k.htm",
+   "note": "Sreeram gave notice of retirement on Dec 29, 2025. The public announcement was in the Jan 5, 2026 8-K, so the December 29 date is when notice was given, not the announcement. This is a minor imprecision, and it is background rather than the answer.",
+   "via": "passages"
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 20,
+ "scores": {
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.289,
+   "answer_truth": 6,
+   "thoroughness": 0.449,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 1,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.281,
+   "accuracy": 1.0,
+   "combined": 0.439,
+   "thorough_coverage": 0.217,
+   "answer_truth": 6,
+   "thoroughness": 0.356,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.906,
+   "accuracy": 1.0,
+   "combined": 0.951,
+   "thorough_coverage": 0.783,
+   "answer_truth": 6,
+   "thoroughness": 0.878,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.289,
+   "answer_truth": 6,
+   "thoroughness": 0.449,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.906,
+   "accuracy": 1.0,
+   "combined": 0.951,
+   "thorough_coverage": 0.892,
+   "answer_truth": 6,
+   "thoroughness": 0.943,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.625,
+   "accuracy": 1.0,
+   "combined": 0.769,
+   "thorough_coverage": 0.614,
+   "answer_truth": 6,
+   "thoroughness": 0.761,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.689,
+ "corrections_v2": {
+  "units_before": 20,
+  "units_after": 14,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c10"
+    ]
+   },
+   {
+    "kept": "c4",
+    "merged": [
+     "c13"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c12"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c9"
+    ]
+   }
+  ],
+  "cost": 0.018
+ }
+}

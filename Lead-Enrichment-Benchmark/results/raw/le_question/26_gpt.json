@@ -1,0 +1,81 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0606771357c8380b006af4b0813af887d2b0dbab5573db52f9",
+ "status": "completed",
+ "seconds": 32,
+ "output": {
+  "question": "Has General Motors announced layoffs?",
+  "answer": "Yes. As of November 11, 2026, the most recent announcement I verified concerns 350 workers at GM\u2019s Lansing Grand River Assembly/Stamping and Lansing Regional Stamping facilities, with layoffs scheduled to begin January 14, 2027. GM said the production downtime involves preparing the plant for the next-generation Cadillac CT5. ([wilx.com](https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp))",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "As reported August 17, 2026, General Motors announced layoffs affecting 350 workers at Lansing Grand River Assembly/Stamping and Lansing Regional Stamping, effective January 14, 2027.",
+    "source_url": "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp",
+    "date": "2026-08-17"
+   },
+   {
+    "fact": "GM said employees would prepare Lansing Grand River for production of the next-generation Cadillac CT5 during the production downtime.",
+    "source_url": "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp",
+    "date": "2026-08-17"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Starting January 14th, 2027, 350 layoffs are coming to the Lansing Grand River Assembly and Stamping plant and the Lansing Regional Stamping facility.",
+    "source_url": "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp",
+    "publisher": "WILX",
+    "published_date": "2026-08-17"
+   },
+   {
+    "quote": "Our skilled-trades team will be working to prepare the plant for production of the next-generation Cadillac CT5.",
+    "source_url": "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp",
+    "publisher": "WILX",
+    "published_date": "2026-08-17"
+   }
+  ],
+  "caveats": [
+   "These are scheduled layoffs, not confirmation that the workers have already been laid off.",
+   "I did not verify a newer announcement; this is not an exhaustive count of GM layoffs.",
+   "The Michigan WARN website opened, but its individual notice records did not load, so the details above rely on reporting quoting GM."
+  ],
+  "missing_fields": []
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": [
+    {
+     "url": "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp",
+     "title": "\u2018They all come here:\u2019 Local business prepares for life after GM layoffs"
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 38877,
+  "input_tokens_details": {
+   "cache_write_tokens": 12,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 1087,
+  "output_tokens_details": {
+   "reasoning_tokens": 472
+  },
+  "total_tokens": 39964
+ },
+ "search_calls": 5,
+ "search_actions": {
+  "search": 2,
+  "open_page": 3
+ },
+ "token_cost_usd": 0.0793,
+ "cost_usd": 0.1293,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Has General Motors announced layoffs?",
+ "input_n": 26,
+ "completed_on": "2026-11-11"
+}

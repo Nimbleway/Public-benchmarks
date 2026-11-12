@@ -1,0 +1,79 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_082e57ddce6c28c5006af4b06a222c87d292088aaddfaa5d15",
+ "status": "completed",
+ "seconds": 34,
+ "output": {
+  "question": "What is Tesla's valuation?",
+  "answer": "Tesla, Inc. (NASDAQ: TSLA) has a market valuation of approximately $1.39 trillion as of November 11, 2026, at 17:59 UTC, according to the latest financial-data feed. This is its market capitalization\u2014the value of its outstanding shares\u2014not an estimate of intrinsic value. ([stockanalysis.com](https://stockanalysis.com/stocks/tsla/market-cap/))",
+  "as_of": "2026-11-11T17:59:04Z",
+  "key_facts": [
+   {
+    "fact": "Tesla's market capitalization was $1,391,294,310,000 as of November 11, 2026, at 17:59:04 UTC.",
+    "source_url": null,
+    "date": "2026-11-11T17:59:04Z"
+   },
+   {
+    "fact": "Market capitalization is calculated by multiplying the stock price by shares outstanding.",
+    "source_url": "https://stockanalysis.com/stocks/tsla/market-cap/",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Formula: Market Cap = Stock Price * Shares Outstanding",
+    "source_url": "https://stockanalysis.com/stocks/tsla/market-cap/",
+    "publisher": "Stock Analysis",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "The latest market-cap figure comes from the dedicated financial-data feed, not an opened webpage; a corresponding source URL was unavailable.",
+   "Opened webpages reported conflicting market capitalizations. The dedicated financial-data feed was prioritized.",
+   "Market capitalization fluctuates with Tesla's share price."
+  ],
+  "missing_fields": [
+   "key_facts[0].source_url",
+   "passages[0].published_date",
+   "Opened-webpage verification of the latest financial-data feed's market capitalization"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": [
+    {
+     "url": "https://stockanalysis.com/stocks/tsla/market-cap/",
+     "title": "Tesla (TSLA) Market Cap & Net Worth"
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 18761,
+  "input_tokens_details": {
+   "cache_write_tokens": 12,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 906,
+  "output_tokens_details": {
+   "reasoning_tokens": 468
+  },
+  "total_tokens": 19667
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0373,
+ "cost_usd": 0.0573,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "dd_question",
+ "input": "What is Tesla's valuation?",
+ "input_n": 22,
+ "completed_on": "2026-11-11"
+}

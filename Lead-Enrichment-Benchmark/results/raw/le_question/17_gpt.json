@@ -1,0 +1,79 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_04126947198c8b90006af4b05dba6087d2b99a896bed8979c5",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "What is Apple's annual revenue?",
+  "answer": "Apple Inc.\u2019s latest annual revenue was US$478.834 billion for fiscal 2026, ended September 26, 2026. Revenue, reported as total net sales, increased 15% from US$416.161 billion in fiscal 2025. ([sec.gov](https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm))",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Apple reported total net sales of US$478.834 billion for fiscal 2026, ended September 26, 2026.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "date": "2026-09-26"
+   },
+   {
+    "fact": "Fiscal 2026 total net sales increased 15% from US$416.161 billion in fiscal 2025, ended September 27, 2025.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "date": "2026-09-26"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "For the fiscal year ended September 26, 2026",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "publisher": "Apple Inc. / U.S. Securities and Exchange Commission",
+    "published_date": "2026-11-03"
+   },
+   {
+    "quote": "Total net sales | $ | 478,834 | | | 15 | % | | $ | 416,161",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "publisher": "Apple Inc. / U.S. Securities and Exchange Commission",
+    "published_date": "2026-11-03"
+   }
+  ],
+  "caveats": [
+   "This is fiscal-year revenue, not calendar-year revenue or profit. The source table reports dollars in millions."
+  ],
+  "missing_fields": []
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+     "title": "aapl-20260926"
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 25449,
+  "input_tokens_details": {
+   "cache_write_tokens": 12,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 725,
+  "output_tokens_details": {
+   "reasoning_tokens": 206
+  },
+  "total_tokens": 26174
+ },
+ "search_calls": 3,
+ "search_actions": {
+  "search": 1,
+  "open_page": 2
+ },
+ "token_cost_usd": 0.0488,
+ "cost_usd": 0.0788,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "What is Apple's annual revenue?",
+ "input_n": 17,
+ "completed_on": "2026-11-11"
+}

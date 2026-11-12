@@ -1,0 +1,303 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69a0b4b9ea180545c6",
+ "status": "completed",
+ "seconds": 158,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Beyond Meat's short interest?",
+  "passages": [
+   {
+    "quote": "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** .",
+    "publisher": "ChartExchange",
+    "published_date": null,
+    "source_url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest"
+   },
+   {
+    "quote": "|2026-10-30 |38\\.19 |6,300,973 |6\\.62 |\\+76,108 |\\+1.22 |17,193,965 |16,499,574 |",
+    "publisher": "ChartExchange",
+    "published_date": null,
+    "source_url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest"
+   },
+   {
+    "quote": "FINRA requires firms to report short interest positions in all customer and proprietary accounts in all equity securities twice a month.",
+    "publisher": "FINRA",
+    "published_date": null,
+    "source_url": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+   }
+  ],
+  "answer": "Beyond Meat (NASDAQ: BYND) had 6,300,973 shares sold short in the latest report verified as of November 11, 2026, covering positions on October 30, 2026. For that settlement date, ChartExchange reports short interest of 38.19% and 6.62 days to cover.",
+  "caveats": [
+   "These figures are an October 30, 2026 snapshot, not a live November 11 position; short interest is reported twice monthly.",
+   "The company-specific figures come from ChartExchange, which attributes its data to FINRA; they were not independently verified against a primary BYND short-interest record."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date",
+   "passages[2].published_date"
+  ],
+  "as_of": "2026-11-11; short-interest settlement date: 2026-10-30",
+  "key_facts": [
+   {
+    "date": "2026-10-30",
+    "source_url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+    "fact": "Beyond Meat's reported short position was 6,300,973 shares."
+   },
+   {
+    "date": "2026-10-30",
+    "source_url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+    "fact": "ChartExchange reported short interest of 38.19%."
+   },
+   {
+    "date": "2026-10-30",
+    "source_url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+    "fact": "Days to cover was 6.62."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no external factual claim is introduced.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** .",
+      "|2026-10-30 |38\\.19 |6,300,973 |6\\.62 |\\+76,108 |\\+1.22 |17,193,965 |16,499,574 |"
+     ]
+    },
+    {
+     "title": "Short Interest Reporting | FINRA.org",
+     "url": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+     "excerpts": [
+      "FINRA requires firms to report short interest positions in all customer and proprietary accounts in all equity securities twice a month."
+     ]
+    }
+   ],
+   "reasoning": "The opened ChartExchange page supplies the exact summary and table row, while FINRA supplies the reporting-frequency passage. Publication dates were not established and are null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** .",
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-30 |38\\.19 |6,300,973 |6\\.62 |\\+76,108 |\\+1.22 |17,193,965 |16,499,574 |"
+     ]
+    }
+   ],
+   "reasoning": "The summary states the October 30 short position and percentage. The table headers identify 6.62 as days to cover. This is the newest verified record found, but the company-specific source is secondary, so confidence is medium.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** .",
+      "\u00b9 Data from Finra."
+     ]
+    },
+    {
+     "title": "Short Interest Reporting | FINRA.org",
+     "url": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+     "excerpts": [
+      "FINRA requires firms to report short interest positions in all customer and proprietary accounts in all equity securities twice a month."
+     ]
+    }
+   ],
+   "reasoning": "The dated snapshot and FINRA's twice-monthly reporting requirement support the lag caveat. ChartExchange explicitly attributes its data to FINRA, but the opened FINRA page is a reporting-policy page rather than a BYND position record.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "Publication dates for these pages were not verified from the opened content, so the corresponding fields remain null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** ."
+     ]
+    }
+   ],
+   "reasoning": "November 11 is the user-specified answer cutoff; the source explicitly dates the underlying short-interest snapshot October 30.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** .",
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-30 |38\\.19 |6,300,973 |6\\.62 |\\+76,108 |\\+1.22 |17,193,965 |16,499,574 |"
+     ]
+    }
+   ],
+   "reasoning": "The dated summary and labeled table directly provide all three numerical facts without rounding or calculations.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** ."
+     ]
+    }
+   ],
+   "reasoning": "Exact quotation of ChartExchange's dated summary; its publication date was not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "|2026-10-30 |38\\.19 |6,300,973 |6\\.62 |\\+76,108 |\\+1.22 |17,193,965 |16,499,574 |"
+     ]
+    }
+   ],
+   "reasoning": "Exact source table row supporting the reported figures, including days to cover.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "Short Interest Reporting | FINRA.org",
+     "url": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+     "excerpts": [
+      "FINRA requires firms to report short interest positions in all customer and proprietary accounts in all equity securities twice a month."
+     ]
+    }
+   ],
+   "reasoning": "FINRA directly states the reporting requirement and frequency; the page publication date remains unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** ."
+     ]
+    },
+    {
+     "title": "Short Interest Reporting | FINRA.org",
+     "url": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+     "excerpts": [
+      "FINRA requires firms to report short interest positions in all customer and proprietary accounts in all equity securities twice a month."
+     ]
+    }
+   ],
+   "reasoning": "The October 30 snapshot and twice-monthly reporting requirement establish that the figures are not a live November 11 reading.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.1",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "\u00b9 Data from Finra."
+     ]
+    }
+   ],
+   "reasoning": "The footnote establishes ChartExchange's attribution. The qualification about independent verification describes the limits of the retrieved evidence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "No verified publication date was found for the ChartExchange page.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The table passage comes from the same ChartExchange page, whose publication date was not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [],
+   "reasoning": "No verified publication date was found for the FINRA reporting page.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** ."
+     ]
+    }
+   ],
+   "reasoning": "Directly states 6,300,973 shares short on October 30, 2026.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "As of **2026-10-30** , there were **6,300,973** shares short with a short interest of **38\\.19%** ."
+     ]
+    }
+   ],
+   "reasoning": "Directly states the provider-reported short-interest percentage of 38.19% for the dated record.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.2",
+   "citations": [
+    {
+     "title": "BYND Short Interest: 38.19% (Oct 30) - Beyond Meat | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-bynd/short-interest",
+     "excerpts": [
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-30 |38\\.19 |6,300,973 |6\\.62 |\\+76,108 |\\+1.22 |17,193,965 |16,499,574 |"
+     ]
+    }
+   ],
+   "reasoning": "The table header identifies the 6.62 value in the October 30 row as days to cover.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "What is Beyond Meat's short interest?",
+ "input_n": 44,
+ "completed_on": "2026-11-11"
+}

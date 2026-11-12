@@ -1,0 +1,965 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 25,
+ "task": "Has CDW announced layoffs?",
+ "labels": {
+  "gpt": "A",
+  "nimble": "B",
+  "parallel": "C",
+  "exa": "D",
+  "opus": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 9,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "In July 2026, CDW confirmed that it made organizational changes that included coworker reductions (layoffs), per a company statement to CRN.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "CDW confirmed in July 2026 that it made organizational changes that included coworker reductions (layoffs), per a company statement to CRN.",
+    "D": "In July 2026, CDW confirmed that recent organizational changes included \"coworker reductions\" (layoffs)."
+   },
+   "urls": [
+    "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+    "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html",
+    "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "CDW has publicly confirmed workforce reductions (layoffs).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "CDW has publicly confirmed workforce reductions (layoffs)."
+   },
+   "urls": [
+    "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "CDW confirmed a new round of layoffs in July 2026 as part of a broader cost-cutting effort.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "CDW confirmed a new round of layoffs in July 2026 as part of a broader cost-cutting effort."
+   },
+   "urls": [
+    "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "CDW said the organizational changes were intended to sharpen operating discipline and reinvest in its highest-return, highest-growth opportunities, focusing resources where customers need it most.",
+   "asserted_by": [
+    "B",
+    "D",
+    "C"
+   ],
+   "variants": {
+    "B": "CDW said the July 2026 changes were intended to sharpen operating discipline and reinvest in its highest-return, highest-growth opportunities, focusing resources where customers need it most.",
+    "D": "CDW said the organizational changes were intended to sharpen its operating discipline and reinvest in the highest-return, highest-growth opportunities, focusing resources where customers need it most.",
+    "C": "CDW said the organizational changes were intended to sharpen operating discipline and reinvest in the highest-return, highest-growth opportunities, focusing resources where customers need them most."
+   },
+   "urls": [
+    "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+    "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "CDW did not disclose the number of employees affected by the layoffs / coworker reductions (July 2026).",
+   "asserted_by": [
+    "B",
+    "D",
+    "C",
+    "A",
+    "E"
+   ],
+   "variants": {
+    "B": "CDW did not disclose the number of employees affected by the July 2026 layoffs.",
+    "D": "CDW did not disclose the number of employees affected by the July 2026 coworker reductions.",
+    "C": "CDW did not disclose the number of employees impacted by the reductions.",
+    "A": "CDW did not disclose the number of employees affected by the layoffs reported by CRN.",
+    "E": "CDW did not disclose how many employees were affected by the July 2026 layoffs."
+   },
+   "urls": [
+    "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+    "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+    "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "CRN reported, citing sources, that CDW initiated a round of layoffs in July 2026.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "CRN reported, citing sources, that CDW initiated a round of layoffs in July 2026."
+   },
+   "urls": [
+    "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "CRN published its report on CDW's job cuts on July 16, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "CRN published its report on CDW's job cuts on July 16, 2026."
+   },
+   "urls": [
+    "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "The Itz Big article reporting CDW's layoffs was published July 18, 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Itz Big article reporting CDW's layoffs was published July 18, 2026."
+   },
+   "urls": [
+    "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "The possibility of layoffs had been raised on CDW's Q1 2026 earnings call in May 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The possibility of layoffs had been raised on CDW's Q1 2026 earnings call in May 2026."
+   },
+   "urls": [
+    "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "CDW's 'Geared For Growth' AI-first initiative targets cost savings of up to $200 million, with run-rate savings of $100M-$200M into 2027-2028.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "CDW's 'Geared For Growth' AI-first initiative targets cost savings of up to $200 million, with run-rate savings of $100M-$200M into 2027-2028."
+   },
+   "urls": [
+    "https://crn.com/news/ai/2026/cdw-ceo-christine-leahy-geared-for-growth-ai-first-plan"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "The CDW layoffs are linked to CDW's AI-first 'Geared For Growth' initiative, which targets up to $200 million in cost savings.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The CDW layoffs are linked to CDW's AI-first 'Geared For Growth' initiative, which targets up to $200 million in cost savings."
+   },
+   "urls": [
+    "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Search snippets said CDW's 'Geared for Growth' program was disclosed on CDW's May 6, 2026 Q1 earnings call.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Search snippets said CDW's 'Geared for Growth' program was disclosed on CDW's May 6, 2026 Q1 earnings call."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "CDW CEO Christine Leahy said the Geared For Growth initiative will 'supercharge' the company as it embeds AI throughout the $23.2 billion organization.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "CDW CEO Christine Leahy said the Geared For Growth initiative will 'supercharge' the company as it embeds AI throughout the $23.2 billion organization."
+   },
+   "urls": [
+    "https://crn.com/news/ai/2026/cdw-ceo-christine-leahy-geared-for-growth-ai-first-plan"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "In July 2025, CDW cut more workers in what Crain's Chicago Business reported was its fourth round of layoffs over two years.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In July 2025, CDW cut more workers in what Crain's Chicago Business reported was its fourth round of layoffs over two years."
+   },
+   "urls": [
+    "https://chicagobusiness.com/technology/cdw-cuts-more-workers-fourth-layoff-round-over-2-years"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "CDW laid off between 450 and 750 employees in April 2023.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "CDW laid off between 450 and 750 employees in April 2023.",
+    "E": "CDW previously laid off between 450 and 750 employees in April 2023."
+   },
+   "urls": [
+    "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+    "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "A figure of about 700 CDW employees cut circulates online, but it comes from forum speculation and is unverified.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "A figure of about 700 CDW employees cut circulates online, but it comes from forum speculation and is unverified."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Anonymous, unverified posts on TheLayoff.com describe other CDW cuts in early 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Anonymous, unverified posts on TheLayoff.com describe other CDW cuts in early 2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "On its Q3 2026 earnings call (Nov. 4, 2026), CDW reported 14,600 total coworkers, of which approximately 10,500 were customer-facing.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On its Q3 2026 earnings call (Nov. 4, 2026), CDW reported 14,600 total coworkers, of which approximately 10,500 were customer-facing."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/11/04/cdw-cdw-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "CDW's Q3 2026 headcount includes approximately 600 new coworkers added through the Lovelytics acquisition.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "CDW's Q3 2026 headcount includes approximately 600 new coworkers added through the Lovelytics acquisition."
+   },
+   "urls": [
+    "https://www.fool.com/earnings/call-transcripts/2026/11/04/cdw-cdw-q3-2026-earnings-call-transcript/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "CDW's latest Form 10-Q was filed on November 4, 2026 and covers the quarter ended September 30, 2026.",
+   "asserted_by": [
+    "F",
+    "D"
+   ],
+   "variants": {
+    "F": "CDW's latest Form 10-Q was filed on November 4, 2026 and covers the quarter ended September 30, 2026.",
+    "D": "CDW's filing dated November 4, 2026 (third-quarter 2026 period ended September 30, 2026)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "CDW's workplace-optimization costs (per its 10-Q) include costs related to workforce reductions.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "CDW's filing dated November 4, 2026 (third-quarter 2026 period ended September 30, 2026) says its workplace-optimization costs include costs related to workforce reductions.",
+    "F": "CDW defines its workplace-optimization costs as including costs related to workforce reductions and charges related to the reduction of its real estate lease portfolio."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "CDW's workplace-optimization costs (per its 10-Q) include charges related to the reduction of its real estate lease portfolio.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "CDW's workplace-optimization costs in the filing also include charges related to the reduction of its real estate lease portfolio.",
+    "F": "CDW defines its workplace-optimization costs as including costs related to workforce reductions and charges related to the reduction of its real estate lease portfolio."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "CDW's November 4, 2026 third-quarter 2026 earnings release disclosed costs related to workforce reductions and charges related to the reduction of its real estate lease portfolio, under 'workplace optimization'.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "CDW's November 4, 2026 third-quarter 2026 earnings release disclosed costs related to workforce reductions and charges related to the reduction of its real estate lease portfolio, under 'workplace optimization'."
+   },
+   "urls": [
+    "https://investor.cdw.com/news/news-details/2026/CDW-Reports-Third-Quarter-2026-Earnings/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "CDW reported $75.2 million of workplace-optimization costs for the nine months ended September 30, 2026 (versus $15.5 million in the comparison period).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "CDW reported $75.2 million of workplace-optimization costs for the nine months ended September 30, 2026 (versus $15.5 million in the comparison period)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "CDW's 10-Q confirms workforce reductions have occurred, so CDW has had layoffs or other workforce reductions.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "CDW's 10-Q confirms workforce reductions have occurred, so CDW has had layoffs or other workforce reductions."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "CDW's selling and administrative expenses increased $207 million, or 8.6%, primarily due to higher compensation expense, including performance-based incentives, and higher workplace optimization costs.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "CDW's selling and administrative expenses increased $207 million, or 8.6%, primarily due to higher compensation expense, including performance-based incentives, and higher workplace optimization costs."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "CDW's filing does not disclose the number of employees affected by workforce reductions.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "CDW's filing does not disclose the number of employees affected by workforce reductions."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "The workplace-optimization amount combines workforce-reduction costs and real-estate lease-portfolio reduction charges, so it is not a layoff cost alone.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "CDW's workplace optimization costs combine workforce reductions with real-estate lease portfolio reductions, so they are not solely layoff costs.",
+    "F": "The workplace-optimization amount combines workforce-reduction costs and real-estate lease-portfolio reduction charges, so it is not a layoff cost alone."
+   },
+   "urls": [
+    "https://investor.cdw.com/news/news-details/2026/CDW-Reports-Third-Quarter-2026-Earnings/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "The reviewed source is a regulatory disclosure (Form 10-Q), not a standalone CDW press release announcing layoffs; no separate public layoff announcement was identified.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The reviewed source is a regulatory disclosure (Form 10-Q), not a standalone CDW press release announcing layoffs; no separate public layoff announcement was identified."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "CRN quotes a CDW spokesperson confirming organizational changes that included coworker reductions, with layoffs starting in July 2026.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "C": "true",
+    "A": "true",
+    "E": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "No passage was attached to this unit, but the CRN spokesperson statement confirms the reductions, and the Q3 call also cites a coworker component of the savings.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html",
+   "note": "CDW confirmed layoffs in July 2026, tied to the AI-first cost-savings program.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "This is the company's stated rationale, quoted verbatim in CRN.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "CRN states: 'The company did not disclose the number of impacted employees.'",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "CRN opens with 'CDW in July initiated a round of layoffs, sources told CRN.'",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html",
+   "note": "The page is dated July 18, 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "Analysts asked about layoffs on the Q1 2026 call in May, and CEO Leahy answered without denying them.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://itzbig.com/cdw-layoffs-ai-cost-cutting.html",
+   "note": "The sources tie the layoffs to Geared For Growth, and the Q3 call cites a coworker component of the savings.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "CRN's wording is that CRN says the initiative will 'supercharge' the company; the quote is not attributed to Leahy, so the claim misattributes it.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://chicagobusiness.com/technology/cdw-cuts-more-workers-fourth-layoff-round-over-2-years",
+   "note": "Crain's article dated July 22, 2025 has the headline 'CDW cuts more workers in fourth layoff round over 2 years'.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "CRN and itzbig both state CDW laid off between 450 and 750 employees in April 2023.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/04/cdw-cdw-q3-2026-earnings-call-transcript/",
+   "note": "Transcript: coworker count 14,600, customer-facing approximately 10,500.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/11/04/cdw-cdw-q3-2026-earnings-call-transcript/",
+   "note": "Transcript: headcount reflects about 600 coworkers from Lovelytics.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm",
+   "note": "10-Q for period ended 9/30/2026 is signed and dated November 4, 2026.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm",
+   "note": "10-Q cites higher workplace optimization costs; CDW's definition includes workforce reduction costs, consistent with CRN's confirmed coworker reductions, though the definition text isn't in the passages.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm",
+   "note": "CDW's workplace optimization definition covers lease portfolio reduction charges; no passage shown, but consistent with CDW's known disclosures.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.cdw.com/news/news-details/2026/CDW-Reports-Third-Quarter-2026-Earnings/default.aspx",
+   "note": "Release's non-GAAP reconciliation defines workplace optimization this way; the passage shown doesn't quote it but it matches CDW's standard definition.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "CDW spokesperson confirmed coworker reductions to CRN and the 10-Q cites workplace optimization costs; CDW has had layoffs.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm",
+   "note": "10-Q text matches exactly.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "The saved CRN page has no visible date. The itzbig rewrite is dated July 18, 2026, so a July publication is plausible, but July 16 is not confirmed.",
+   "via": "agent"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "CRN says the initiative targets cost savings of up to $200 million. Search results from Seeking Alpha, Yahoo and Motley Fool give $100M–$200M run-rate savings into 2027–2028.",
+   "via": "agent",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true"
+   }
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/05/06/cdw-cdw-q1-2026-earnings-transcript/",
+   "note": "The Q1 2026 earnings call was on May 6, 2026, and the program was discussed there. CRN also says the layoff question came up on the May call.",
+   "via": "agent"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://channelfutures.com/channel-business/cdw-layoffs-reportedly-a-blow-to-hundreds-of-workers-globally",
+   "note": "The cited itzbig page has no 700 figure. A 600-700 figure from TheLayoff.com posts does exist, but it dates to the April 2023 layoffs, so it is unverified forum speculation and not a 2026 number.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://crn.com/news/channel-news/2026/cdw-cuts-jobs-as-ai-cost-cutting-drive-takes-hold",
+   "note": "The claim is partly wrong on timing. CRN cites thelayoff.com only for layoffs 'last July', meaning 2025. TheLayoff posts about 2026 (for example thread 1kxqr8t49, July 17) concern the July 2026 round, and one search snippet mentioned an estimated 600-700 workers. I found nothing placing these posts ",
+   "label_verdicts": {
+    "E": "false"
+   },
+   "retried": true
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm",
+   "note": "The non-GAAP reconciliation shows workplace optimization of $75.2M for the nine months ended 9/30/2026 versus $15.5M a year earlier.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm",
+   "note": "The filing and the release give only dollar costs for workforce reductions and never a headcount. CRN and itzbig also report that CDW declined to say how many employees were affected.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.cdw.com/news/news-details/2026/CDW-Reports-Third-Quarter-2026-Earnings/default.aspx",
+   "note": "The footnote reads \"Includes costs related to workforce reductions and charges related to the reduction of our real estate lease portfolio.\"",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000114/cdw-20260930.htm",
+   "note": "The 10-Q only mentions workforce-reduction costs in footnotes and is not a layoff press release. The layoffs were confirmed by a spokesperson to CRN rather than announced by CDW. The claim that no separate announcement was found is consistent with the evidence.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "note": "The CRN article says 'CDW in July initiated a round of layoffs, sources told CRN.' A CDW spokesperson confirmed there were 'coworker reductions' but did not say how many people were affected."
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "note": "CRN says analysts asked about layoffs on the Q1 FY2026 call in May. CEO Leahy answered that the savings would come from both productivity and cost cuts."
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "note": "CRN ties the cuts to the AI-first 'Geared For Growth' plan, which targets up to $200M in savings. On the Q3 call, the CFO said part of the Geared for Growth savings came from 'a coworker component.'"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "CDW's Q3 2026 10-Q (period ended Sept 30, 2026), year-to-date comparison, says word for word: S&A rose $207M (8.6%), mainly from higher compensation including performance-based incentives, plus higher workplace optimization costs."
+  }
+ },
+ "retried_to_verdict": 2,
+ "unverifiable_first_pass": 3,
+ "decided_from_passages": 22,
+ "scores": {
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 84.75,
+   "coverage": 0.359,
+   "accuracy": 1.0,
+   "combined": 0.529,
+   "thorough_coverage": 0.271,
+   "answer_truth": 15,
+   "thoroughness": 0.427,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 1,
+   "truth": 27,
+   "truth_weight": 84.75,
+   "coverage": 0.219,
+   "accuracy": 0.981,
+   "combined": 0.358,
+   "thorough_coverage": 0.307,
+   "answer_truth": 15,
+   "thoroughness": 0.467,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 4,
+   "unverifiable": 1,
+   "true": 3,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 84.75,
+   "coverage": 0.125,
+   "accuracy": 0.909,
+   "combined": 0.22,
+   "thorough_coverage": 0.118,
+   "answer_truth": 15,
+   "thoroughness": 0.209,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 84.75,
+   "coverage": 0.266,
+   "accuracy": 1.0,
+   "combined": 0.42,
+   "thorough_coverage": 0.268,
+   "answer_truth": 15,
+   "thoroughness": 0.423,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 1,
+   "truth": 27,
+   "truth_weight": 84.75,
+   "coverage": 0.312,
+   "accuracy": 0.979,
+   "combined": 0.474,
+   "thorough_coverage": 0.277,
+   "answer_truth": 15,
+   "thoroughness": 0.432,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 84.75,
+   "coverage": 0.469,
+   "accuracy": 1.0,
+   "combined": 0.638,
+   "thorough_coverage": 0.434,
+   "answer_truth": 15,
+   "thoroughness": 0.605,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.145,
+ "corrections_v2": {
+  "units_before": 33,
+  "units_after": 29,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c6"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c16"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   }
+  ],
+  "cost": 0.024
+ }
+}

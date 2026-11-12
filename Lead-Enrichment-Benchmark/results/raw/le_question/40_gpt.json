@@ -1,0 +1,74 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_06a41921e91aabbb006af4b0d74f2087d2a5accd3587122ba6",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "Who is the parent company of Colgate-Palmolive?",
+  "answer": "Colgate-Palmolive Company has no parent company; it is a standalone publicly traded corporation. Its common stock trades on the New York Stock Exchange under the ticker CL.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Colgate-Palmolive is a standalone company, not a subsidiary of a larger corporation.",
+    "source_url": "https://legalclarity.org/who-owns-colgate-shareholders-and-corporate-structure/",
+    "date": "2026-06-11"
+   },
+   {
+    "fact": "Colgate-Palmolive Company's common stock is listed on the New York Stock Exchange under CL.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21665/000002166526000006/cl-20251231.htm",
+    "date": "2026-02-23"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Colgate-Palmolive is a standalone publicly traded company.",
+    "source_url": "https://legalclarity.org/who-owns-colgate-shareholders-and-corporate-structure/",
+    "publisher": "LegalClarity",
+    "published_date": "2026-06-11"
+   },
+   {
+    "quote": "Common Stock, $1.00 par value | CL | New York Stock Exchange",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21665/000002166526000006/cl-20251231.htm",
+    "publisher": "Colgate-Palmolive Company via U.S. Securities and Exchange Commission",
+    "published_date": "2026-02-23"
+   }
+  ],
+  "caveats": [
+   "The explicit no-parent statement comes from a secondary source dated June 11, 2026; the primary filing independently confirms the public stock listing."
+  ],
+  "missing_fields": []
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 16756,
+  "input_tokens_details": {
+   "cache_write_tokens": 18,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 566,
+  "output_tokens_details": {
+   "reasoning_tokens": 125
+  },
+  "total_tokens": 17322
+ },
+ "search_calls": 3,
+ "search_actions": {
+  "search": 1,
+  "open_page": 2
+ },
+ "token_cost_usd": 0.0298,
+ "cost_usd": 0.0598,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Colgate-Palmolive?",
+ "input_n": 40,
+ "completed_on": "2026-11-11"
+}

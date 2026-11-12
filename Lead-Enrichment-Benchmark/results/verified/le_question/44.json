@@ -1,0 +1,829 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 44,
+ "task": "Who is the parent company of Bath & Body Works?",
+ "labels": {
+  "opus": "A",
+  "exa": "B",
+  "nimble": "C",
+  "gpt": "D",
+  "parallel": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 11,
+ "evidence_fetched": 11,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Bath & Body Works, Inc. is the parent company / corporate owner of Bath & Body Works.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "The parent company of the Bath & Body Works retailer is Bath & Body Works, Inc.",
+    "B": "Bath & Body Works, Inc. is the parent company and corporate owner of the Bath & Body Works brand.",
+    "C": "Bath & Body Works is owned by Bath & Body Works, Inc. (NYSE: BBWI)",
+    "D": "Bath & Body Works, Inc. is the corporate parent of Bath & Body Works",
+    "E": "Bath & Body Works' corporate parent is Bath & Body Works, Inc.",
+    "F": "Bath & Body Works is operated by Bath & Body Works, Inc."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Bath_%26_Body_Works",
+    "https://investors.bbwinc.com/static-files/81521c89-5b48-4984-941b-78eb9cdb6f3a",
+    "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+    "https://www.bbwinc.com/about-us"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Bath & Body Works, Inc. is a standalone/independent publicly traded company and not a subsidiary of another parent.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "a standalone, publicly traded company with no larger parent company; it is the top of its corporate structure",
+    "D": "it is a standalone publicly traded company and not a subsidiary of another corporate parent",
+    "E": "a standalone, independent publicly traded company",
+    "F": "an independent public company rather than a subsidiary of a separate parent company"
+   },
+   "urls": [
+    "https://investors.bbwinc.com/static-files/81521c89-5b48-4984-941b-78eb9cdb6f3a",
+    "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+    "https://stockanalysis.com/stocks/bbwi/company/",
+    "https://www.bbwinc.com/about-us"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c2",
+    "c3",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "The stock is dispersed among shareholders, so there is no controlling parent.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Bath & Body Works, Inc.'s stock is dispersed among shareholders, so there is no controlling parent."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "L Brands, Inc. was renamed Bath & Body Works, Inc. effective August 2, 2021, in connection with the Victoria's Secret separation.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "C": "formerly L Brands, Inc. and was renamed effective August 2, 2021, in connection with the separation of its Victoria's Secret business.",
+    "D": "L Brands, Inc. changed its corporate name to Bath & Body Works, Inc., effective August 2, 2021, when the Victoria's Secret business was separated."
+   },
+   "urls": [
+    "https://investors.bbwinc.com/news-releases/news-release-details/l-brands-inc-board-approves-separation-victorias-secret-co-and",
+    "https://linkedin.com/company/lbrands",
+    "https://stockanalysis.com/stocks/bbwi/company/",
+    "https://www.sec.gov/Archives/edgar/data/701985/000114036121026658/nt10026698x7_8k.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c7",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "In August 2021 Victoria's Secret was separated/spun off from L Brands and became an independent public company; L Brands continued as Bath & Body Works, Inc.",
+   "asserted_by": [
+    "A",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Victoria's Secret was spun off from L Brands (now Bath & Body Works, Inc.) around the August 2021 renaming and is now a separate company.",
+    "E": "In August 2021, L Brands separated Victoria's Secret, which became an independent public company, and L Brands continued as Bath & Body Works, Inc."
+   },
+   "urls": [
+    "https://www.bbwinc.com/about-us"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "The Victoria's Secret spin-off created Victoria's Secret & Co., including Victoria's Secret Lingerie, PINK and Victoria's Secret Beauty.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The Victoria's Secret business was spun off into a separate independent publicly traded company, Victoria's Secret & Co., which includes Victoria's Secret Lingerie, PINK and Victoria's Secret Beauty."
+   },
+   "urls": [
+    "https://investors.bbwinc.com/news-releases/news-release-details/l-brands-inc-board-approves-separation-victorias-secret-co-and"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Bath & Body Works announced its standalone public company status after the Victoria's Secret separation (announcement dated August 3, 2021).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Bath & Body Works announced its status as a standalone public company following the separation of Victoria's Secret (announcement dated August 3, 2021)."
+   },
+   "urls": [
+    "https://investors.bbwinc.com/news-releases/news-release-details/bath-body-works-inc-completes-separation-victorias-secret"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Victoria's Secret has no ownership tie to Bath & Body Works, Inc.; older references naming L Brands as owner are outdated.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Victoria's Secret no longer has any ownership tie to Bath & Body Works, Inc., and older references naming L Brands as owner are outdated."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Bath & Body Works, Inc. trades under the ticker BBWI.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Bath & Body Works, Inc. trades under the ticker symbol BBWI."
+   },
+   "urls": [
+    "https://investors.bbwinc.com/news-releases/news-release-details/l-brands-inc-board-approves-separation-victorias-secret-co-and",
+    "https://linkedin.com/company/lbrands",
+    "https://stockanalysis.com/stocks/bbwi/company/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c14",
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Bath & Body Works, Inc. is headquartered in Columbus, Ohio.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Bath & Body Works, Inc. is headquartered in Columbus, Ohio."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+    "https://stockanalysis.com/stocks/bbwi/company/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Bath & Body Works, Inc. had 201,134,265 shares outstanding as of March 6, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Bath & Body Works, Inc. had 201,134,265 shares outstanding as of March 6, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "The latest Form 10-K covers the fiscal year ended January 31, 2026, with Bath & Body Works, Inc. as registrant.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "most recent annual report (Form 10-K) covers the fiscal year ended January 31, 2026, with Bath & Body Works, Inc. as the registrant.",
+    "F": "Bath & Body Works, Inc. is the registrant named in its latest SEC Form 10-K (filed 2026-03-12, fiscal year ended 2026-01-31)"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "The latest Form 10-K was filed March 12, 2026.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "latest annual report (Form 10-K) was filed on March 12, 2026.",
+    "F": "latest SEC Form 10-K (filed 2026-03-12...)"
+   },
+   "urls": [
+    "https://investors.bbwinc.com/static-files/81521c89-5b48-4984-941b-78eb9cdb6f3a",
+    "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "In its Form 10-K, Bath & Body Works, Inc. refers to itself as \"we\" and the \"Company\".",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "In its Form 10-K, Bath & Body Works, Inc. refers to itself as \"we\" and the \"Company\".",
+    "F": "which refers to Bath & Body Works, Inc. as \"we\" and the \"Company.\""
+   },
+   "urls": [
+    "https://investors.bbwinc.com/static-files/81521c89-5b48-4984-941b-78eb9cdb6f3a",
+    "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Bath & Body Works, Inc. is identified as the 'Parent Company' (issuer of the Notes) in its annual report dated March 12, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Bath & Body Works, Inc. is identified as the 'Parent Company' (issuer of the Notes) in its annual report dated March 12, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Bath & Body Works, Inc. describes itself as a global leader in personal care and home fragrance.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bath & Body Works, Inc. describes itself as a global leader in personal care and home fragrance."
+   },
+   "urls": [
+    "https://investors.bbwinc.com/static-files/81521c89-5b48-4984-941b-78eb9cdb6f3a"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Bath & Body Works, Inc. operates as a specialty retailer of personal care and home fragrance products.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Bath & Body Works, Inc. operates as a specialty retailer of personal care and home fragrance products."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/bbwi/company/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "As of January 31, 2026, Bath & Body Works, Inc. had 100% owned subsidiaries, including Bath & Body Works, LLC and Bath & Body Works Brand Management, Inc.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "As of January 31, 2026, Bath & Body Works, Inc. had 100% owned subsidiaries, including Bath & Body Works, LLC and Bath & Body Works Brand Management, Inc."
+   },
+   "urls": [
+    "https://investors.bbwinc.com/static-files/81521c89-5b48-4984-941b-78eb9cdb6f3a"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Daniel Heaf is listed as Chief Executive Officer and Director of Bath & Body Works, Inc.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Daniel Heaf is listed as Chief Executive Officer and Director of Bath & Body Works, Inc."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/bbwi/company/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Wikipedia's navigation box for the parent company lists Victoria's Secret under 'Former' brands.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Wikipedia's navigation box for the parent company lists Victoria's Secret under 'Former' brands."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Bath_%26_Body_Works"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Bath & Body Works was founded in 1990.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Bath & Body Works was founded in 1990."
+   },
+   "urls": [
+    "https://www.bbwinc.com/about-us"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "The latest SEC filing describes Bath & Body Works as the company's brand and business, including company-operated stores and e-commerce sites.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The latest SEC filing describes Bath & Body Works as the company's brand and business, including company-operated stores and e-commerce sites."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.bbwinc.com/about-us",
+   "note": "Bath & Body Works, Inc. (NYSE: BBWI) is the corporate entity that owns and operates the brand, per its own site and 10-K.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.bbwinc.com/about-us",
+   "note": "Company says it became an independent public company in Aug 2021; no higher parent appears in the 10-K or elsewhere.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true",
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "Widely held public stock with about 25,000 record holders and no controlling parent.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.bbwinc.com/news-releases/news-release-details/l-brands-inc-board-approves-separation-victorias-secret-co-and",
+   "note": "Board-approved name change was expected effective Aug 2, 2021 in connection with the separation.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.bbwinc.com/about-us",
+   "note": "Victoria's Secret was spun off in Aug 2021 and L Brands continued as Bath & Body Works, Inc.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.bbwinc.com/news-releases/news-release-details/bath-body-works-inc-completes-separation-victorias-secret",
+   "note": "Release says the new Victoria's Secret & Co. includes Lingerie, PINK and Beauty.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.bbwinc.com/news-releases/news-release-details/bath-body-works-inc-completes-separation-victorias-secret",
+   "note": "The Aug 3, 2021 release launched Bath & Body Works as a standalone public company.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/701985/000114036121026658/nt10026698x7_8k.htm",
+   "note": "8-K says Bath & Body Works retains no ownership interest in Victoria's Secret.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "The 10-K confirms the common stock trades on the NYSE under BBWI.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "10-K lists principal executive offices in Columbus, Ohio.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "10-K cover states 201,134,265 shares as of March 6, 2026.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "10-K for fiscal year ended Jan 31, 2026 is registered by Bath & Body Works, Inc., which is itself the publicly traded top-level company (no parent).",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.bbwinc.com/static-files/81521c89-5b48-4984-941b-78eb9cdb6f3a",
+   "note": "10-K signed and dated March 12, 2026; later filings are 10-Qs, so it remains the latest 10-K.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "10-K uses 'we', 'our' and 'the Company' for Bath & Body Works, Inc.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "10-K states Notes were issued by Bath & Body Works, Inc. (the 'Parent Company'), i.e. the top-level parent of the subsidiaries.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.bbwinc.com/about-us",
+   "note": "No passage quoted, but the company's standard self-description is a global leader in personal care and home fragrance; consistent with known boilerplate.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/bbwi/company/",
+   "note": "Specialty retail of personal care and home fragrance products is consistent with the company profile and 10-K.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "10-K references 100% owned subsidiaries; Bath & Body Works, LLC and Brand Management are consistent with the Exhibit 21 subsidiary list, though not shown in the excerpt.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/bbwi/company/",
+   "note": "Daniel Heaf is listed as CEO and Director; the 10-K signature page confirms it.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Bath_%26_Body_Works",
+   "note": "Wikipedia navbox lists Victoria's Secret under 'Former'.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.bbwinc.com/about-us",
+   "note": "Company states Bath & Body Works was founded in 1990.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+   "note": "10-K describes Bath & Body Works as the company's brand and business, with stores and e-commerce.",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "note": "BBWI is an independent NYSE-listed company. Institutional investors hold about 95% of its shares, and no one holds a controlling stake. A Nov 2026 search found no news of an acquisition or takeover (sources: sec.gov BBWI 10-Q for 2026-08-01; marketbeat.com holdings reports from 2026)."
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "note": "In August 2021, L Brands spun off Victoria's Secret as a separate public company and renamed itself Bath & Body Works, Inc. (bbwinc.com/about-us; investors.bbwinc.com)."
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "note": "The company still trades under the ticker BBWI, according to its 2026 SEC 10-Q and 8-K filings."
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "note": "The ticker changed from LB to BBWI with the 2021 name change. The 10-K for fiscal year ending 2026-01-31 lists common stock with a $0.50 par value on the NYSE."
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "The 10-K for fiscal year ending 2026-01-31 describes the Bath & Body Works brand selling through company-operated stores and e-commerce sites (sec.gov bbwi-20260131.htm)."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 30,
+ "scores": {
+  "opus": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 54.5,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.514,
+   "answer_truth": 6,
+   "thoroughness": 0.679,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 54.5,
+   "coverage": 0.583,
+   "accuracy": 1.0,
+   "combined": 0.737,
+   "thorough_coverage": 0.427,
+   "answer_truth": 6,
+   "thoroughness": 0.598,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 54.5,
+   "coverage": 0.667,
+   "accuracy": 1.0,
+   "combined": 0.8,
+   "thorough_coverage": 0.624,
+   "answer_truth": 6,
+   "thoroughness": 0.768,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 54.5,
+   "coverage": 0.75,
+   "accuracy": 1.0,
+   "combined": 0.857,
+   "thorough_coverage": 0.541,
+   "answer_truth": 6,
+   "thoroughness": 0.702,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 54.5,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.417,
+   "answer_truth": 6,
+   "thoroughness": 0.589,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 54.5,
+   "coverage": 0.583,
+   "accuracy": 1.0,
+   "combined": 0.737,
+   "thorough_coverage": 0.477,
+   "answer_truth": 6,
+   "thoroughness": 0.646,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.604,
+ "corrections_v2": {
+  "units_before": 30,
+  "units_after": 22,
+  "dedup_groups": [
+   {
+    "kept": "c2",
+    "merged": [
+     "c3",
+     "c5"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c6",
+     "c8"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c11"
+    ]
+   },
+   {
+    "kept": "c14",
+    "merged": [
+     "c15",
+     "c16"
+    ]
+   },
+   {
+    "kept": "c17",
+    "merged": [
+     "c18"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

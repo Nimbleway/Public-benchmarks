@@ -1,0 +1,221 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69946ffcdb6cf2cdf0",
+ "status": "completed",
+ "seconds": 79,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is the parent company of Jewel-Osco?",
+  "passages": [
+   {
+    "quote": "Today, Jewel-Osco is a vital part of Albertsons Inc.",
+    "publisher": "Jewel-Osco",
+    "published_date": null,
+    "source_url": "https://www.jewelosco.com/about-us.html"
+   },
+   {
+    "quote": "Tom Lofland , President, Jewel-Osco Division",
+    "publisher": "Albertsons Companies, Inc.",
+    "published_date": null,
+    "source_url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx"
+   }
+  ],
+  "answer": "Jewel-Osco\u2019s parent company is Albertsons Companies, Inc. Albertsons\u2019 official leadership page lists Jewel-Osco as one of its divisions.",
+  "caveats": [
+   "Jewel-Osco\u2019s About Us page uses the wording \u201cAlbertsons Inc.\u201d and \u201cprivately held\u201d; the parent\u2019s leadership page identifies the company as Albertsons Companies, Inc."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": null,
+    "source_url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+    "fact": "Jewel-Osco operates as a division of Albertsons Companies, Inc."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "This is the question supplied by the user.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "About Us | Jewel-Osco",
+     "url": "https://www.jewelosco.com/about-us.html",
+     "excerpts": [
+      "Today, Jewel-Osco is a vital part of Albertsons Inc., a privately held grocery company that is proud to continue serving the Chicagoland area and beyond."
+     ]
+    },
+    {
+     "title": "\n\tAlbertsons Companies, Inc. - About ACI - Our Leadership\n",
+     "url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+     "excerpts": [
+      "Tom Lofland , President, Jewel-Osco Division"
+     ]
+    }
+   ],
+   "reasoning": "The quotations reproduce the relevant wording from Jewel-Osco\u2019s official About Us page and Albertsons\u2019 official leadership page. Neither page supplied a publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "About Us | Jewel-Osco",
+     "url": "https://www.jewelosco.com/about-us.html",
+     "excerpts": [
+      "Today, Jewel-Osco is a vital part of Albertsons Inc., a privately held grocery company that is proud to continue serving the Chicagoland area and beyond."
+     ]
+    },
+    {
+     "title": "\n\tAlbertsons Companies, Inc. - About ACI - Our Leadership\n",
+     "url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+     "excerpts": [
+      "Susan Morris is the Chief Executive Officer of Albertsons Companies, Inc., a leading food and drug retailer in the United States.",
+      "Tom Lofland , President, Jewel-Osco Division"
+     ]
+    }
+   ],
+   "reasoning": "Jewel-Osco identifies itself as part of Albertsons. Albertsons\u2019 leadership page supplies the corporate name Albertsons Companies, Inc. and explicitly lists the Jewel-Osco Division. The precise parent name is synthesized across these official statements, with differing corporate wording disclosed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "About Us | Jewel-Osco",
+     "url": "https://www.jewelosco.com/about-us.html",
+     "excerpts": [
+      "Today, Jewel-Osco is a vital part of Albertsons Inc., a privately held grocery company that is proud to continue serving the Chicagoland area and beyond."
+     ]
+    },
+    {
+     "title": "\n\tAlbertsons Companies, Inc. - About ACI - Our Leadership\n",
+     "url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+     "excerpts": [
+      "Susan Morris is the Chief Executive Officer of Albertsons Companies, Inc., a leading food and drug retailer in the United States."
+     ]
+    }
+   ],
+   "reasoning": "The two official pages use the different corporate descriptions reported in the caveat.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No publication date was available in the opened content of either official page, so both publication-date fields remain null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The date is the assessment date specified by the user, not a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "\n\tAlbertsons Companies, Inc. - About ACI - Our Leadership\n",
+     "url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+     "excerpts": [
+      "Susan Morris is the Chief Executive Officer of Albertsons Companies, Inc., a leading food and drug retailer in the United States.",
+      "Tom Lofland , President, Jewel-Osco Division"
+     ]
+    }
+   ],
+   "reasoning": "The official leadership page identifies Albertsons Companies, Inc. and lists Jewel-Osco as a division. The page is undated.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "About Us | Jewel-Osco",
+     "url": "https://www.jewelosco.com/about-us.html",
+     "excerpts": [
+      "Today, Jewel-Osco is a vital part of Albertsons Inc., a privately held grocery company that is proud to continue serving the Chicagoland area and beyond."
+     ]
+    }
+   ],
+   "reasoning": "This is an exact excerpt from Jewel-Osco\u2019s official About Us page.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "\n\tAlbertsons Companies, Inc. - About ACI - Our Leadership\n",
+     "url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+     "excerpts": [
+      "Tom Lofland , President, Jewel-Osco Division"
+     ]
+    }
+   ],
+   "reasoning": "The official Albertsons leadership page explicitly lists the Jewel-Osco Division.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "About Us | Jewel-Osco",
+     "url": "https://www.jewelosco.com/about-us.html",
+     "excerpts": [
+      "Today, Jewel-Osco is a vital part of Albertsons Inc., a privately held grocery company that is proud to continue serving the Chicagoland area and beyond."
+     ]
+    },
+    {
+     "title": "\n\tAlbertsons Companies, Inc. - About ACI - Our Leadership\n",
+     "url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+     "excerpts": [
+      "Susan Morris is the Chief Executive Officer of Albertsons Companies, Inc., a leading food and drug retailer in the United States."
+     ]
+    }
+   ],
+   "reasoning": "The caveat accurately reports the differing wording without adopting the privately held description as a current fact.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The opened Jewel-Osco About Us page did not provide a publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The opened Albertsons leadership page did not provide a publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "\n\tAlbertsons Companies, Inc. - About ACI - Our Leadership\n",
+     "url": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+     "excerpts": [
+      "Susan Morris is the Chief Executive Officer of Albertsons Companies, Inc., a leading food and drug retailer in the United States.",
+      "Tom Lofland , President, Jewel-Osco Division"
+     ]
+    }
+   ],
+   "reasoning": "The corporate identity and division listing together establish Jewel-Osco\u2019s relationship to Albertsons Companies, Inc.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Jewel-Osco?",
+ "input_n": 48,
+ "completed_on": "2026-11-11"
+}

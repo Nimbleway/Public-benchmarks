@@ -1,0 +1,194 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b6991e9ef48838f0d33",
+ "status": "completed",
+ "seconds": 46,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is CDW's annual revenue?",
+  "passages": [
+   {
+    "quote": "|Net sales |$22,424.1 |$20,998.7 |",
+    "publisher": "CDW Corporation",
+    "published_date": null,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm"
+   },
+   {
+    "quote": "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |",
+    "publisher": "CDW Corporation",
+    "published_date": null,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm"
+   }
+  ],
+  "answer": "CDW\u2019s latest full-year revenue was $22.4241 billion ($22,424.1 million) for the year ended December 31, 2025. The company reports this revenue as \u201cnet sales\u201d in its annual filing.",
+  "caveats": [
+   "This is the reported annual figure for 2025, not trailing-twelve-month revenue."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2025-12-31",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+    "fact": "CDW reported annual net sales of $22,424.1 million, equivalent to $22.4241 billion, for the year ended December 31, 2025."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no external evidence is required.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|Net sales |$22,424.1 |$20,998.7 |",
+      "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |"
+     ]
+    }
+   ],
+   "reasoning": "The two excerpts reproduce the net-sales row and its units and annual-period header from CDW's SEC filing. The publication date was not available in the supplied excerpts.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|Net sales |$22,424.1 |$20,998.7 |",
+      "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |"
+     ]
+    }
+   ],
+   "reasoning": "The net-sales row gives 22,424.1, and the header identifies millions of dollars and the year ended December 31, 2025. Dividing the millions figure by 1,000 gives 22.4241 billion. Describing 2025 as the latest full year also relies on the current date preceding the end of 2026.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |"
+     ]
+    }
+   ],
+   "reasoning": "The header explicitly identifies an annual period ending December 31, 2025, rather than a trailing-twelve-month period.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "Neither supplied passage includes the filing's publication date, so both publication-date fields remain null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "Uses the task's stated current date and the supplied research's verification date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|Net sales |$22,424.1 |$20,998.7 |",
+      "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |"
+     ]
+    }
+   ],
+   "reasoning": "Together the excerpts establish annual net sales, the amount in millions, and the fiscal-year-end date. The billion-dollar amount is a unit conversion.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|Net sales |$22,424.1 |$20,998.7 |"
+     ]
+    }
+   ],
+   "reasoning": "Exact net-sales row from CDW's filing; its publication date is unavailable in the excerpt.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |"
+     ]
+    }
+   ],
+   "reasoning": "Exact header establishing dollar units in millions and the annual reporting periods; its publication date is unavailable in the excerpt.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |"
+     ]
+    }
+   ],
+   "reasoning": "The stated year-end period supports distinguishing annual revenue from trailing-twelve-month revenue.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The available net-sales excerpt does not supply a publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The available reporting-period excerpt does not supply a publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "cdw-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/1402057/000140205726000011/cdw-20251231.htm",
+     "excerpts": [
+      "|Net sales |$22,424.1 |$20,998.7 |",
+      "|(dollars in millions, except per share amounts) |Year Ended December 31, / 2025 |Year Ended December 31, / 2024 |"
+     ]
+    }
+   ],
+   "reasoning": "The row and header jointly support $22,424.1 million for the year ended December 31, 2025; conversion to billions yields $22.4241 billion.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "What is CDW's annual revenue?",
+ "input_n": 13,
+ "completed_on": "2026-11-11"
+}

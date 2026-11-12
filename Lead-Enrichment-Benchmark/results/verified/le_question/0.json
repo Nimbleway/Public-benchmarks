@@ -1,0 +1,866 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 0,
+ "task": "Is Anduril publicly traded?",
+ "labels": {
+  "gpt": "A",
+  "opus": "B",
+  "parallel": "C",
+  "exa": "D",
+  "firecrawl": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 10,
+ "evidence_fetched": 10,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "As of November 11, 2026, Anduril is a private company and is not publicly traded.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Anduril Industries is a private company and is not publicly traded (as of November 11, 2026).",
+    "B": "Anduril Industries is privately held and not publicly traded as of November 11, 2026.",
+    "C": "Anduril is privately owned and is not publicly traded as of November 11, 2026.",
+    "D": "As of November 11, 2026, Anduril is not publicly traded.",
+    "E": "As of 2026-11-11, Anduril Industries is not publicly traded; its stock does not trade on public stock exchanges."
+   },
+   "urls": [
+    "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy",
+    "https://forgeglobal.com/anduril_ipo/",
+    "https://www.anduril.com/investor-relations",
+    "https://www.nasdaqprivatemarket.com/company/anduril/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Anduril is privately owned; investment in its stock is available only to a small number of investors, most of whom are well known to the company.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Investment in Anduril stock is available only to a small number of investors, most of whom are well known to the company.",
+    "D": "Anduril is privately owned, and investment in Anduril stock is only available to a small number of investors, most of whom are well known to the company.",
+    "F": "Anduril Industries is privately owned; investment in its stock is only available to a small number of investors, most of whom are well known to the company."
+   },
+   "urls": [
+    "https://www.anduril.com/investor-relations",
+    "https://anduril.com/investor-relations"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Anduril states that it does not currently offer opportunities for retail investors to invest in the company.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Anduril states that it does not currently offer opportunities for retail investors to invest in the company."
+   },
+   "urls": [
+    "https://anduril.com/investor-relations",
+    "https://www.anduril.com/investor-relations"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Anduril has no public stock ticker symbol because it is a private company.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Anduril has no public stock ticker symbol because it is a private company."
+   },
+   "urls": [
+    "https://www.nasdaqprivatemarket.com/company/anduril/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "As of October 2026, Anduril remains privately held with no publicly announced IPO date or stock ticker.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "As of October 2026, Anduril remains privately held with no publicly announced IPO date or stock ticker."
+   },
+   "urls": [
+    "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy",
+    "https://smartasset.com/investing/anduril-ipo-date"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Anduril had not filed for an IPO as of October 20, 2026.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Anduril had not filed for an IPO as of October 20, 2026."
+   },
+   "urls": [
+    "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy",
+    "https://smartasset.com/investing/anduril-ipo-date"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c10",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "TradingView lists Anduril's IPO as in the rumored stage as of Nov 11, 2026, with no official filing or confirmation.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "TradingView lists Anduril Industries' IPO as being in the rumored stage as of Nov 11, 2026, with no official filing or confirmation."
+   },
+   "urls": [
+    "https://www.tradingview.com/symbols/NASDAQ-ANDURIL/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "TradingView's 'NASDAQ-ANDURIL' page is only a pre-IPO placeholder and does not mean the shares are listed or trading.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "TradingView's 'NASDAQ-ANDURIL' page is only a pre-IPO placeholder and does not mean the shares are listed or trading."
+   },
+   "urls": [
+    "https://www.tradingview.com/symbols/NASDAQ-ANDURIL/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Nasdaq Private Market describes Anduril stock as a private security, and an investor needs to be accredited to trade shares.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Nasdaq Private Market describes Anduril stock as a private security, and says an investor needs to be accredited to trade shares."
+   },
+   "urls": [
+    "https://www.nasdaqprivatemarket.com/company/anduril/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Anduril shares can be bought directly through the company or through a secondary marketplace such as Nasdaq Private Market, rather than on a public exchange.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Anduril shares can be bought directly through the company or through a secondary trading marketplace such as Nasdaq Private Market, rather than on a public exchange."
+   },
+   "urls": [
+    "https://www.nasdaqprivatemarket.com/company/anduril/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "The Nasdaq Private Market Anduril company page reports an update date of 2026-10-28.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Nasdaq Private Market Anduril company page reports an update date of 2026-10-28."
+   },
+   "urls": [
+    "https://www.nasdaqprivatemarket.com/company/anduril/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Anduril shares can only be bought on secondary markets for private stock, such as Forge.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Anduril shares can only be bought on secondary markets for private stock, such as Forge."
+   },
+   "urls": [
+    ""
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Anduril announced a $5 billion Series H raise on May 13, 2026, led by Thrive Capital and Andreessen Horowitz, bringing its valuation to $61 billion.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Anduril announced a $5 billion Series H raise on May 13, 2026, led by Thrive Capital and Andreessen Horowitz, bringing its valuation to $61 billion."
+   },
+   "urls": [
+    "https://anduril.com/news/anduril-announces-usd5b-series-h-raise",
+    "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19",
+    "c20",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Reuters reported in July 2026 that Anduril was discussing financing that could value it at roughly $100 billion; the talks were fluid with no decisions made.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Reuters reported in July 2026 that Anduril was discussing financing that could value it at roughly $100 billion; the talks were fluid with no decisions made."
+   },
+   "urls": [
+    "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy",
+    "https://smartasset.com/investing/anduril-ipo-date"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "An Anduril employee share tender offer launched in October 2026 values the company at roughly $90 billion.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "An Anduril employee share tender offer launched in October 2026 values the company at roughly $90 billion."
+   },
+   "urls": [
+    "https://news.bloomberglaw.com/private-equity/anduril-to-sell-insider-shares-at-roughly-90-billion-valuation-correct",
+    "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c24",
+    "c27"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "The Anduril employee tender offer opened October 13, 2026 and closed November 9, 2026, priced at $94.80 per share and capped at about $1.3 billion.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The Anduril employee tender offer opened October 13, 2026 and closed November 9, 2026, priced at $94.80 per share and capped at about $1.3 billion."
+   },
+   "urls": [
+    "https://news.bloomberglaw.com/private-equity/anduril-to-sell-insider-shares-at-roughly-90-billion-valuation-correct"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "The ~$90 billion tender valuation is a private-market tender price, not a market-traded value, and the company did not publicly confirm tender details.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The ~$90 billion tender valuation is a private-market tender price, not a market-traded value, and the company did not publicly confirm tender details."
+   },
+   "urls": [
+    "https://news.bloomberglaw.com/private-equity/anduril-to-sell-insider-shares-at-roughly-90-billion-valuation-correct"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "The Anduril employee tender offer is a private-share transaction, not a public listing.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The Anduril employee tender offer is a private-share transaction, not a public listing."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "In October 2026, CNBC reported an Anduril employee tender offer at about a $90 billion valuation; it has not been confirmed as a completed round.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In October 2026, CNBC reported an Anduril employee tender offer at about a $90 billion valuation; it has not been confirmed as a completed round."
+   },
+   "urls": [
+    "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Co-founder Palmer Luckey has said Anduril will \"definitely\" go public, possibly within \"low single-digit years\".",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Co-founder Palmer Luckey has said Anduril will \"definitely\" go public, possibly within \"low single-digit years\"."
+   },
+   "urls": [
+    "",
+    "https://smartasset.com/investing/anduril-ipo-date"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c30",
+    "c31"
+   ]
+  },
+  {
+   "cid": "c32",
+   "claim": "In July 2026, Anduril CEO Brian Schimpf said listing in the middle of a hype cycle would be a mistake.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "In July 2026, Anduril CEO Brian Schimpf said listing in the middle of a hype cycle would be a mistake."
+   },
+   "urls": [
+    ""
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Forecasts that Anduril will list in 2026, 2027 or 2028 come from low-authority sites and are speculative.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Forecasts that Anduril will list in 2026, 2027 or 2028 come from low-authority sites and are speculative."
+   },
+   "urls": [
+    ""
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Anduril itself flags third-party funds offering retail access to \"pre-IPO Anduril shares\" as very likely scams.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Anduril itself flags third-party funds offering retail access to \"pre-IPO Anduril shares\" as very likely scams."
+   },
+   "urls": [
+    "https://anduril.com/investor-relations"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nasdaqprivatemarket.com/company/anduril/",
+   "note": "Anduril's own IR page, NPM and TradingView (IPO only 'rumored' as of Nov 11, 2026) all show it is private. Every variant A-E says the same thing.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.anduril.com/investor-relations",
+   "note": "Quoted from Anduril's investor relations page.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.anduril.com/investor-relations",
+   "note": "The IR page and SmartAsset (no standard retail brokerage access) support this. The exact retail wording is not in the excerpt.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.smartasset.com/investing/anduril-ipo-date",
+   "note": "Anduril remains private with no ticker per SmartAsset (October 2026). The TradingView NASDAQ-ANDURIL page is a placeholder.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://smartasset.com/investing/anduril-ipo-date",
+   "note": "SmartAsset says 'privately held as of October 2026, with no publicly announced IPO date or stock ticker.'",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy",
+   "note": "The article, updated Oct 20, 2026, says no S-1 has been filed. SmartAsset says the same as of October 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.tradingview.com/symbols/NASDAQ-ANDURIL/",
+   "note": "The TradingView text is quoted directly, including the Nov 11, 2026 date.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.tradingview.com/symbols/NASDAQ-ANDURIL/",
+   "note": "The page shows 'No trades' and an IPO status of rumored, so it is a placeholder. The word 'placeholder' is an inference.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nasdaqprivatemarket.com/company/anduril/",
+   "note": "NPM treats these as unregistered private company securities and offers its services only to accredited investors.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nasdaqprivatemarket.com/company/anduril/",
+   "note": "NPM page states price estimate as of October 28, 2026, which matches the update date claimed.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://forgeglobal.com/anduril_ipo/",
+   "note": "'Only on Forge' is too narrow: shares are also available via Nasdaq Private Market, EquityZen and SPVs, so the 'only such as Forge' wording is misleading though private-only is true.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://anduril.com/news/anduril-announces-usd5b-series-h-raise",
+   "note": "Anduril's own May 13, 2026 release confirms $5B Series H, $61B valuation, led by Thrive and a16z.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://smartasset.com/investing/anduril-ipo-date",
+   "note": "Reuters July 2026 report of ~$100B talks, described as fluid with no decisions made.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+   "note": "CNBC confirms tender offer valuing company at roughly $90B.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true"
+   }
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+   "note": "Opened Oct 13, closes Nov 9, $94.80/share, capped at $1.3B; matches CNBC/Bloomberg.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+   "note": "Private-market tender part is right, but CNBC says Anduril confirmed the report, contradicting 'did not publicly confirm'.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+   "note": "Employee tender of private shares; Anduril remains private with no S-1 filed, so not a public listing.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
+   "note": "Tender was confirmed by Anduril and has closed (Nov 9); it is just not a priced funding round, so 'not confirmed' wording is misleading.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://smartasset.com/investing/anduril-ipo-date",
+   "note": "Luckey said 'definitely' go public in 2025 and suggested an IPO within 'low single-digit years'; no S-1 filed.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://everything-pr.com/anduril-ipo-watch-defense-tech-communications-strategy",
+   "note": "Everything-PR states Schimpf said in July 2026 that an IPO in a hype cycle would be a mistake; single secondary source, no primary quote.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.anduril.com/investor-relations",
+   "note": "Anduril's IR page warns about third parties offering 'pre-IPO Anduril shares' and reports apparently fraudulent schemes, but explicitly does not say every such firm is fraudulent, so 'very likely scams' slightly overstates it.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nasdaqprivatemarket.com/company/anduril/",
+   "note": "NPM page says Anduril stock does not trade on public exchanges. It says you can buy shares directly through the company or via a secondary marketplace like Nasdaq Private Market. Accredited investors only.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.tradingview.com/symbols/NASDAQ-ANDURIL/",
+   "note": "Anduril is still private. As of Nov 11, 2026 TradingView lists its IPO as 'rumored' with 'No trades'. The Everything-PR page (updated Nov 1, 2026) says no S-1 has been filed and no date announced. SmartAsset says no S-1 or underwriters as of Oct 2026. Forge Global says Anduril is not traded on publi",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "retried": true
+  }
+ },
+ "audit": {
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "note": "As of late Oct/Nov 2026, Anduril is still private. It has no S-1 filing and has announced no IPO date or ticker. Luckey says it will go public eventually but has set no timeline, and in July 2026 CEO Schimpf warned against an IPO during a hype cycle. Sources: everything-pr.com, smartasset.com, ipo.c"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "note": "Bloomberg, as covered by Benzinga, Yahoo Finance and startupfortune, reported that the employee tender offer opened Oct 13, 2026 and was set to close Nov 9, 2026. Price was $94.80 per share, capped at about $1.3B, implying a valuation near $90B. These dates are the scheduled ones; I found no report "
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 32,
+ "scores": {
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 75.25,
+   "coverage": 0.24,
+   "accuracy": 1.0,
+   "combined": 0.387,
+   "thorough_coverage": 0.159,
+   "answer_truth": 9,
+   "thoroughness": 0.275,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 2,
+   "truth": 20,
+   "truth_weight": 75.25,
+   "coverage": 0.4,
+   "accuracy": 0.831,
+   "combined": 0.54,
+   "thorough_coverage": 0.392,
+   "answer_truth": 9,
+   "thoroughness": 0.533,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 75.25,
+   "coverage": 0.36,
+   "accuracy": 1.0,
+   "combined": 0.529,
+   "thorough_coverage": 0.239,
+   "answer_truth": 9,
+   "thoroughness": 0.386,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 75.25,
+   "coverage": 0.54,
+   "accuracy": 1.0,
+   "combined": 0.701,
+   "thorough_coverage": 0.439,
+   "answer_truth": 9,
+   "thoroughness": 0.61,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 75.25,
+   "coverage": 0.36,
+   "accuracy": 1.0,
+   "combined": 0.529,
+   "thorough_coverage": 0.289,
+   "answer_truth": 9,
+   "thoroughness": 0.448,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 1,
+   "truth": 20,
+   "truth_weight": 75.25,
+   "coverage": 0.34,
+   "accuracy": 0.919,
+   "combined": 0.496,
+   "thorough_coverage": 0.452,
+   "answer_truth": 9,
+   "thoroughness": 0.606,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.805,
+ "corrections_v2": {
+  "units_before": 34,
+  "units_after": 23,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c5",
+     "c6"
+    ]
+   },
+   {
+    "kept": "c3",
+    "merged": [
+     "c4"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c10",
+    "merged": [
+     "c11"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19",
+     "c20",
+     "c21"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23"
+    ]
+   },
+   {
+    "kept": "c24",
+    "merged": [
+     "c27"
+    ]
+   },
+   {
+    "kept": "c30",
+    "merged": [
+     "c31"
+    ]
+   }
+  ],
+  "cost": 0.022
+ }
+}

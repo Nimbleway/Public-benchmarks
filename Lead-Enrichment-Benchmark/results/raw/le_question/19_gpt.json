@@ -1,0 +1,74 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0023d37e2400a593006af4b05fb49087d28e306ecfe0387d15",
+ "status": "completed",
+ "seconds": 24,
+ "output": {
+  "question": "What is IBM's annual revenue?",
+  "answer": "IBM\u2019s annual revenue was $67.535 billion for the fiscal year ended December 31, 2025, its latest completed fiscal year as of November 11, 2026. Revenue increased 7.6% from $62.753 billion in fiscal 2024.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "IBM reported revenue of $67,535 million for the fiscal year ended December 31, 2025.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "date": "2025-12-31"
+   },
+   {
+    "fact": "Fiscal 2025 revenue increased 7.6% from fiscal 2024 revenue of $62,753 million.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "date": "2025-12-31"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "($ and shares in millions except per share amounts)\nFor year ended December 31:",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "publisher": "IBM / U.S. Securities and Exchange Commission",
+    "published_date": "2026-02-24"
+   },
+   {
+    "quote": "Revenue (2) | | $ | 67,535 | | | $ | 62,753 | | | 7.6 | %",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "publisher": "IBM / U.S. Securities and Exchange Commission",
+    "published_date": "2026-02-24"
+   }
+  ],
+  "caveats": [
+   "Annual revenue is interpreted as revenue for the latest completed fiscal year, not trailing-twelve-month revenue or a forecast."
+  ],
+  "missing_fields": []
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 16757,
+  "input_tokens_details": {
+   "cache_write_tokens": 13,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 590,
+  "output_tokens_details": {
+   "reasoning_tokens": 78
+  },
+  "total_tokens": 17347
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0301,
+ "cost_usd": 0.0501,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "What is IBM's annual revenue?",
+ "input_n": 19,
+ "completed_on": "2026-11-11"
+}

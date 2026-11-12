@@ -1,0 +1,2257 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 24,
+ "task": "What are Berkshire Hathaway's latest 13F holdings?",
+ "labels": {
+  "opus": "A",
+  "nimble": "B",
+  "firecrawl": "C",
+  "parallel": "D",
+  "gpt": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 27,
+ "evidence_fetched": 27,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Berkshire Hathaway's latest 13F-HR covers the quarter ended June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "most recent 13F-HR covers the period ended 2026-06-30",
+    "B": "most recent 13F-HR covers the quarter ended June 30, 2026",
+    "C": "latest SEC 13F-HR located covers the quarter ended 2026-06-30",
+    "D": "latest identified Form 13F covers the quarter ended June 30, 2026",
+    "E": "most recent listed 13F is for Q2 2026 (June 30, 2026)",
+    "F": "latest available Form 13F-HR covers holdings as of 2026-06-30"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm",
+    "https://13f.info/manager/0001067983-berkshire-hathaway-inc"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The Q2 2026 13F-HR was filed on August 14, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "filed with the SEC on 2026-08-14",
+    "B": "filed with the SEC on August 14, 2026",
+    "C": "filed on 2026-08-14",
+    "D": "filed on August 14, 2026",
+    "E": "filed on August 14, 2026",
+    "F": "filed 2026-08-14"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The Q2 2026 13F-HR accession number is 0001193125-26-352200.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "accession 0001193125-26-352200",
+    "B": "accession 0001193125-26-352200"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The Q2 2026 13F-HR was accepted at 16:05:04 on the filing date.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "accepted 16:05:04"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "As of about Nov 11, 2026, no 13F later than the Q2 2026 filing (e.g. Q3 2026) had been filed.",
+   "asserted_by": [
+    "A",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "A": "no later 13F-HR appears on EDGAR; Q3 2026 13F had not been filed as of Nov. 11, 2026",
+    "B": "as of November 10-11, 2026, Berkshire had not yet filed its Q3 2026 13F; listed as still to file",
+    "E": "as of November 11, 2026 the most recent listed 13F is for Q2 2026"
+   },
+   "urls": [
+    "https://holdingsintel.com/reports/2026-Q3",
+    "https://13f.info/manager/0001067983-berkshire-hathaway-inc"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "The Q3 2026 13F (positions as of Sept 30, 2026) is due/expected around November 16, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "A": "due around Nov. 16, 2026",
+    "B": "filings for quarter ended September 30, 2026 were due November 16, 2026",
+    "D": "next 13F was expected to be filed on November 16, 2026, reporting holdings as of September 30"
+   },
+   "urls": [
+    "https://holdingsintel.com/reports/2026-Q3",
+    "https://finance.yahoo.com/markets/stocks/articles/greg-abel-next-13f-lands-103109425.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "The Q2 2026 13F reports a total information-table value of $299,253,556,246.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "$299,253,556,246 (about $299.25B)",
+    "B": "$299,253,556,246",
+    "C": "$299,253,556,246",
+    "D": "$299,253,556,246",
+    "E": "$299,253,556,246",
+    "F": "$299,253,556,246 (about $299.254 billion)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/primary_doc.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "The Q2 2026 13F reports 89 information-table entries.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "89 table entries",
+    "B": "89 information table entries",
+    "C": "89 line items",
+    "D": "89 information-table entries",
+    "E": "89 information-table entries on the cover page",
+    "F": "89 information-table entries"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/primary_doc.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "The Q2 2026 13F has 14 other included managers.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "14 other included managers"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/primary_doc.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "The Q2 2026 13F-HR was signed by Marc D. Hamburg, Senior Vice President, Omaha NE, on 08-14-2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "signed by Marc D. Hamburg, Senior Vice President, Omaha NE, on 08-14-2026"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/primary_doc.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "The Q2 2026 13F entries aggregate to 29 issuers/positions/securities.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "holdings across 29 issuers",
+    "D": "a holdings tracker summarizes it as 29 positions",
+    "E": "entries aggregate to 29 securities"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt",
+    "https://wallstpal.com/fund/berkshire-hathaway",
+    "https://13f.info/13f/000119312526352200-berkshire-hathaway-inc-q2-2026"
+   ],
+   "conflicts_with": [
+    "c12",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Aggregated by issuer, the Q2 2026 13F covers 26 issuers.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "aggregated by issuer, covers 26 issuers"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "13f.chat reports $289.7B total, 31 positions and 78.8M Alphabet shares for Berkshire, which differs from the SEC filing's figures.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "13f.chat reports a total of $289.7B, 31 positions and 78.8M Alphabet shares, which differs from the SEC filing's figures"
+   },
+   "urls": [
+    "https://13f.chat/berkshire-hathaway"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Berkshire held 227,917,808 Apple shares worth $65,950,296,923 (about $66.0B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "227,917,808 Apple shares worth $65,950,296,923",
+    "B": "227,917,808 Apple shares worth $65,950,296,923",
+    "C": "227,917,808 shares of Apple valued at $65,950,296,923",
+    "D": "227,917,808 shares of Apple valued at $66.0B",
+    "E": "Apple $65,950,296,923 (227,917,808 shares)",
+    "F": "Apple valued at $65.950 billion (227,917,808 shares)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml",
+    "https://wallstpal.com/fund/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Apple is Berkshire's largest position in the Q2 2026 13F.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "A": "its largest holding",
+    "B": "its largest position",
+    "D": "its largest holding by reported value"
+   },
+   "urls": [
+    "https://wallstpal.com/fund/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Berkshire held 151,610,700 American Express shares worth $51,282,319,275 (about $51.3B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "151,610,700 American Express shares worth $51,282,319,275",
+    "B": "151,610,700 American Express shares worth $51,282,319,275",
+    "C": "151,610,700 shares valued at $51,282,319,275",
+    "D": "151,610,700 shares valued at $51.3B",
+    "E": "valued at $51,282,319,275",
+    "F": "valued at $51.282 billion (151,610,700 shares)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Berkshire held 400,000,000 Coca-Cola shares worth $32,508,000,000 (about $32.5B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "400,000,000 shares worth $32,508,000,000",
+    "B": "400,000,000 shares worth $32,508,000,000",
+    "C": "400,000,000 shares valued at $32,508,000,000",
+    "D": "400,000,000 shares valued at $32.5B",
+    "E": "valued at $32,508,000,000",
+    "F": "valued at $32.508 billion (400,000,000 shares)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Berkshire held 483,394,015 Bank of America shares worth $27,543,790,975 (about $27.5B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "483,394,015 shares worth $27,543,790,975",
+    "B": "483,394,015 shares worth $27,543,790,975",
+    "C": "483,394,015 shares valued at $27,543,790,975",
+    "D": "483,394,015 shares valued at $27.5B",
+    "E": "valued at $27,543,790,975",
+    "F": "valued at $27.544 billion (483,394,015 shares)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Berkshire's combined Alphabet (Class A and C) holding was 105,979,600 shares worth $37,764,088,383 at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "105,979,600 Alphabet shares (all classes) worth $37,764,088,383",
+    "B": "combined A and C 105,979,600 shares worth $37,764,088,383",
+    "C": "105,979,600 shares of Alphabet valued at $37,764,088,383",
+    "F": "Alphabet valued at $37.764 billion (105,979,600 shares)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Berkshire held 78,791,167 Alphabet Class A shares worth $28,157,599,351 (about $28.2B) at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "78,791,167 Class A shares worth $28,157,599,351",
+    "D": "78,791,167 shares valued at $28.2B",
+    "E": "Class A valued at $28,157,599,351"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt",
+    "https://wallstpal.com/fund/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Berkshire held 27,188,433 Alphabet Class C shares worth $9,606,489,032 (about $9.61B) at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "27,188,433 Class C shares worth $9,606,489,032",
+    "D": "27,188,433 shares valued at $9.61B"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt",
+    "https://wallstpal.com/fund/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Berkshire held 84,375,856 Chevron shares worth $13,986,141,890 (about $13.99B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "worth about $13.99B",
+    "B": "$13,986,141,890",
+    "C": "$13,986,141,890",
+    "D": "valued at $14.0B",
+    "F": "$13.986 billion"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Berkshire held 264,941,431 Occidental Petroleum shares worth $12,868,205,304 (about $12.87B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "about $12.87B",
+    "B": "$12,868,205,304",
+    "C": "$12,868,205,304",
+    "D": "valued at $12.9B",
+    "F": "$12.868 billion"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Berkshire held 34,249,183 Chubb shares worth $11,670,066,615 (about $11.67B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "about $11.67B",
+    "B": "$11,670,066,615",
+    "C": "$11,670,066,615",
+    "D": "valued at $11.7B",
+    "F": "$11.670 billion"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Berkshire held 24,669,778 Moody's shares worth $11,173,435,852 (about $11.17B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "about $11.17B",
+    "B": "$11,173,435,852",
+    "C": "$11,173,435,852",
+    "D": "valued at $11.2B",
+    "F": "$11.173 billion"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Berkshire held 325,634,818 Kraft Heinz shares worth $7,691,494,401 (about $7.69B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "about $7.69B",
+    "B": "$7,691,494,401",
+    "C": "$7,691,494,401",
+    "F": "$7.691 billion"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Berkshire held 28,880,209 DaVita shares worth $6,425,268,898 (about $6.43B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "A": "about $6.43B",
+    "B": "$6,425,268,898",
+    "C": "$6,425,268,898"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Berkshire held 57,320,000 Delta Air Lines shares worth $5,368,591,200 (about $5.37B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "A": "about $5.37B",
+    "B": "$5,368,591,200",
+    "C": "$5,368,591,200"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Berkshire held 124,807,117 SiriusXM shares worth $3,686,802,237 (about $3.69B) at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "A": "about $3.69B",
+    "B": "$3,686,802,237",
+    "C": "$3,686,802,237"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Berkshire held 8,989,880 VeriSign shares worth $2,261,494,212 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "8,989,880 shares worth $2,261,494,212",
+    "C": "8,989,880 shares valued at $2,261,494,212"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Berkshire held 39,000,000 Kroger shares worth $2,165,670,000 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "39,000,000 shares worth $2,165,670,000",
+    "C": "39,000,000 shares valued at $2,165,670,000"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Berkshire held 27,000,000 Ally Financial shares worth $1,240,650,000 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "27,000,000 shares worth $1,240,650,000",
+    "C": "27,000,000 shares valued at $1,240,650,000"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Berkshire held 13,111,741 Lennar Class A shares worth $1,186,481,443 at June 30, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "13,111,741 Lennar Class A shares worth $1,186,481,443"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Berkshire held 298,117 Lennar Class B shares worth $26,445,959 at June 30, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "298,117 Lennar Class B shares worth $26,445,959"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Berkshire held 13,409,858 Lennar shares (combined classes) worth $1,212,927,402 at June 30, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "13,409,858 shares of Lennar valued at $1,212,927,402"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "Berkshire held 10,587,143 Liberty Live Holdings Series C shares worth $1,118,425,787 at June 30, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "10,587,143 Series C shares worth $1,118,425,787"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Berkshire held 4,986,588 Liberty Live Holdings Series A shares worth $504,941,901 at June 30, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "4,986,588 Series A shares worth $504,941,901"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Berkshire held 15,573,731 Liberty Live shares (combined) worth $1,623,367,688 at June 30, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "15,573,731 shares of Liberty Live valued at $1,623,367,688"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Berkshire held 15,700,000 New York Times Class A shares worth $1,098,686,000 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "15,700,000 Class A shares worth $1,098,686,000",
+    "C": "15,700,000 shares valued at $1,098,686,000"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Berkshire held 3,000,000 Capital One shares worth $601,860,000 at June 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "A": "Capital One (3,000,000 shares)",
+    "B": "3,000,000 shares worth $601,860,000",
+    "C": "3,000,000 shares valued at $601,860,000"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Berkshire held 5,664,793 Louisiana-Pacific shares worth $445,592,617 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "5,664,793 shares worth $445,592,617",
+    "C": "5,664,793 shares valued at $445,592,617"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Berkshire held 1,857,752 Nucor shares worth $413,814,258 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "1,857,752 shares worth $413,814,258",
+    "C": "1,857,752 shares valued at $413,814,258"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Berkshire held 7,347,426 Macy's shares worth $173,031,882 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "7,347,426 shares worth $173,031,882",
+    "C": "7,347,426 shares valued at $173,031,882"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "Berkshire held 11,112 NVR shares worth $75,710,501 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "11,112 shares worth $75,710,501",
+    "C": "11,112 shares valued at $75,710,501"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Berkshire held 433,558 Jefferies Financial Group shares worth $21,669,229 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "433,558 shares worth $21,669,229",
+    "C": "433,558 shares valued at $21,669,229"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "Berkshire held 3,564 D.R. Horton shares worth $580,504 at June 30, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "3,564 shares worth $580,504",
+    "C": "3,564 shares valued at $580,504"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "Other Q2 2026 holdings include Ally, Capital One, D.R. Horton, DaVita, Delta, Jefferies, Kraft Heinz, Kroger, Lennar, Liberty Live, Louisiana-Pacific, Macy's, NVR, NYT, Nucor, Sirius XM and VeriSign; Lennar and Liberty Live have separate share-class entries.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Other holdings include Ally Financial, Capital One, D.R. Horton, DaVita, Delta Air Lines, Jefferies, Kraft Heinz, Kroger, Lennar, Liberty Live, Louisiana-Pacific, Macy's, NVR, New York Times, Nucor, Sirius XM, VeriSign; Lennar (A and B) and Liberty Live (A and C) have separate share-class entries"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Other June 30, 2026 holdings: Chevron, Occidental, Chubb, Moody's, Alphabet Class C, Kraft Heinz, DaVita, Delta, SiriusXM, VeriSign, Kroger, Ally, Lennar A and B, Liberty Live A and C, NYT Class A, Capital One, Louisiana-Pacific, Nucor, Macy's, NVR, Jefferies, D.R. Horton.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "other holdings at June 30, 2026 were Chevron, Occidental Petroleum, Chubb, Moody's, Alphabet Class C, Kraft Heinz, DaVita, Delta Air Lines, SiriusXM, VeriSign, Kroger, Ally Financial, Lennar Classes A and B, Liberty Live Series A and C, New York Times Class A, Capital One, Louisiana-Pacific, Nucor, Macy's, NVR, Jefferies, D.R. Horton"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "The 13F information table has multiple rows for some issuers (share class, manager/discretion), so issuer totals are summed from rows.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "multiple rows for some issuers due to share class and manager/discretion classifications; issuer totals computed by summing rows"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Versus Q1 2026, Berkshire exited Constellation Brands (632,890 shares at Q1).",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "B": "exited Constellation Brands (632,890 shares at Q1)"
+   },
+   "urls": [
+    "https://13f.chat/berkshire-hathaway",
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c50",
+    "c51"
+   ]
+  },
+  {
+   "cid": "c52",
+   "claim": "In Q2 2026 Berkshire added 24,541,369 Alphabet Class A shares (to 78,791,167) and 23,603,218 Class C shares (to 27,188,433).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "added 24,541,369 Class A (to 78,791,167) and 23,603,218 Class C (to 27,188,433)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c53",
+   "claim": "In Q2 2026 Berkshire increased Alphabet by 45%, per 13f.chat.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "increased Alphabet by 45%, per 13f.chat"
+   },
+   "urls": [
+    "https://13f.chat/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c54",
+   "claim": "In Q2 2026 Berkshire added 17,510,544 Delta Air Lines shares (to 57,320,000).",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "B": "added 17,510,544 Delta shares (to 57,320,000)"
+   },
+   "urls": [
+    "https://13f.chat/berkshire-hathaway",
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c54",
+    "c55"
+   ]
+  },
+  {
+   "cid": "c56",
+   "claim": "In Q2 2026 Berkshire added 4,309,071 Macy's shares (to 7,347,426), 3,012,099 Lennar Class A, 553,465 NYT and 60,414 Lennar Class B.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "added 4,309,071 Macy's (to 7,347,426), 3,012,099 Lennar Class A, 553,465 NYT, 60,414 Lennar Class B"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "In Q2 2026 Berkshire trimmed Bank of America by 30,230,150 shares (from 513,624,165 to 483,394,015).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "trimmed BofA by 30,230,150 shares (513,624,165 to 483,394,015)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "In Q2 2026 Berkshire reduced Bank of America by 6%, Capital One by 58% and Nucor by 52%, per 13f.chat.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "reduced Bank of America by 6%, Capital One by 58% and Nucor by 52%, per 13f.chat"
+   },
+   "urls": [
+    "https://13f.chat/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "In Q2 2026 Berkshire cut Kroger by 11,000,000 (to 39,000,000), Capital One by 4,150,000 (to 3,000,000), Nucor by 2,049,323, Ally by 2,000,000 (to 27,000,000) and DaVita by 1,220,376 (to 28,880,209).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "cut Kroger by 11,000,000, Capital One by 4,150,000, Nucor by 2,049,323, Ally by 2,000,000, DaVita by 1,220,376"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "Berkshire left Apple, American Express, Coca-Cola, Chevron, Occidental, Kraft Heinz, Moody's, VeriSign, SiriusXM, Liberty Live (A and C), Louisiana-Pacific, NVR, Jefferies and D.R. Horton unchanged in Q2 2026 versus Q1.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "left those positions unchanged in Q2 2026 versus Q1"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c61",
+   "claim": "Berkshire's total reported 13F value rose from $263,095,703,570 (Q1 2026, 90 entries) to $299,253,556,246 (Q2 2026, 89 entries).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "rose from $263,095,703,570 (Q1, 90 entries) to $299,253,556,246 (Q2, 89 entries)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c62",
+   "claim": "Q1 2026 13F-HR (accession 0001193125-26-226661) was filed 2026-05-15 and Q4 2025 13F-HR (accession 0001193125-26-054580) was filed 2026-02-17.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Q1 2026 filed 2026-05-15; Q4 2025 filed 2026-02-17"
+   },
+   "urls": [
+    "https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001067983&action=getcompany&type=13F-HR"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c63",
+   "claim": "Berkshire's Q3 2026 10-Q (published 2026-11-07) showed cash and Treasury bills of $377.4bn at Sept 30, 2026 and $9.6bn of buybacks in the quarter.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "cash and T-bills $377.4bn at Sept 30, 2026; $9.6bn buybacks"
+   },
+   "urls": [
+    "https://copiocapital.com/blog/berkshire-hathaway-greg-abel-portfolio-q3-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c64",
+   "claim": "Berkshire's five largest equity holdings (Alphabet, American Express, Apple, Bank of America, Coca-Cola) remained the same in Q3 2026, per its quarterly report covered by CNBC on 2026-11-07.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "five largest equity holdings remained the same in Q3 2026"
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c65",
+   "claim": "A 13F is a quarter-end snapshot and does not reflect later trades or price changes.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "quarterly, reflects reportable holdings at quarter-end, not real-time as of 2026-11-11",
+    "D": "omits trades made after quarter-end",
+    "E": "values as of June 30, 2026 do not reflect subsequent trades or price changes",
+    "F": "delayed snapshot; positions may have changed after 2026-06-30"
+   },
+   "urls": [
+    "https://wallstpal.com/fund/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c66",
+   "claim": "A 13F covers only reportable (mainly U.S.-listed long equity) securities and omits shorts, cash, bonds, non-13F assets, wholly owned businesses and most foreign holdings.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "cover only U.S.-listed long equity and exclude foreign holdings such as the Japanese trading houses",
+    "B": "covers only 13F-eligible holdings at quarter-end market values, excluding wholly owned operating businesses, most fixed income and short positions",
+    "C": "does not represent every asset; may omit non-reportable securities, short positions, and assets outside the form's scope",
+    "D": "shows only long U.S. stock positions; omits shorts, cash, bonds, most non-U.S. holdings",
+    "F": "covers only reportable securities, omits non-13F assets, no short positions"
+   },
+   "urls": [
+    "https://wallstpal.com/fund/berkshire-hathaway"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c67",
+   "claim": "Berkshire may omit some positions via confidential treatment, so a 13F may not reveal every holding.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "confidential-treatment positions may be omitted",
+    "B": "historically granted confidential treatment for some positions while building them, so a 13F may not reveal every holding"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c68",
+   "claim": "SquawkFlow flags confidentially omitted positions in Berkshire's filing, but this was not corroborated on the SEC cover page.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "SquawkFlow flags confidentially omitted positions, not corroborated on the opened SEC cover page"
+   },
+   "urls": [
+    "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm",
+   "note": "SEC filing index shows 13F-HR with period of report 2026-06-30, the latest as of Nov 11.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm",
+   "note": "Filing date 2026-08-14 confirmed by SEC index.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm",
+   "note": "Accession number 0001193125-26-352200 matches SEC index.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm",
+   "note": "Acceptance time 16:05:04 shown on SEC index.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://holdingsintel.com/reports/2026-Q3",
+   "note": "Nov 10 tracker lists Berkshire as still to file Q3; EDGAR list shows Q2 as latest.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://holdingsintel.com/reports/2026-Q3",
+   "note": "Q3 13F filings due Nov 16 (Nov 14 is Saturday); Yahoo/24/7 Wall St says Berkshire will file Nov 16.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt",
+   "note": "Filing text shows value total 299253556246.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt",
+   "note": "Summary page lists 89 table entries (14 other managers, 89 entries, value 299253556246).",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200.txt",
+   "note": "Filing text shows '14 89 299253556246' with other included managers list numbered 1-14.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/primary_doc.xml",
+   "note": "Signature block names Marc D. Hamburg, Senior VP, Omaha NE, 08-14-2026.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://13f.info/manager/0001067983-berkshire-hathaway-inc",
+   "note": "13f.info, wallstpal and squawkflow aggregate the 89 entries into 29 positions.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://13f.chat/berkshire-hathaway",
+   "note": "13f.chat shows $289.7B and 31 positions versus SEC $299.25B and 29; the discrepancy is real, and 78.8M Alphabet shares matches holdingsintel.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Apple 227,917,808 shares valued at $65,950,296,923 per squawkflow, consistent with wallstpal's $66.0B.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "Apple is #1 at 22.04% of the Q2 2026 portfolio.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Matches the Q2 2026 13F-HR filed 2026-08-14. Berkshire's Q3 13F is not due until about Nov 16, so this is still the latest.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "400M KO shares at $32,508,000,000 as reported in the Q2 2026 13F, the latest filed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "BAC 483,394,015 shares at $27,543,790,975, confirmed by several independent sources.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Class A 78,791,167 plus Class C 27,188,433 gives 105,979,600 shares. $28,157,599,351 plus $9,606,489,032 gives $37,764,088,383.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Class A figures match the filing data and the Yahoo and WallStPal summaries.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Class C 27,188,433 shares at $9,606,489,032, matching the filing data.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "CVX 84,375,856 shares at $13,986,141,890 per the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "OXY 264,941,431 shares at $12,868,205,304 per the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Chubb 34,249,183 shares at $11,670,066,615 per the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Moody's 24,669,778 shares at $11,173,435,852 per the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/xslForm13F_X02/56757.xml",
+   "note": "The SEC information table shows Kraft Heinz at 7,691,494,401 and 325,634,818 shares.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "DaVita 28,880,209 shares at $6,425,268,898, with WallStPal showing $6.43B.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Delta 57,320,000 shares at $5,368,591,200, confirmed by squawkflow, WallStPal and holdingsintel.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "SiriusXM 124,807,117 shares at $3,686,802,237 per the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "VeriSign 8,989,880 shares at $2,261,494,212 per the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Matches the Q2 2026 13F (filed 2026-08-14) for 39,000,000 Kroger shares at $2,165,670,000. The Q3 filing is not due until Nov 16, so Q2 is still the latest.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Ally 27,000,000 shares at $1,240,650,000, down from 29,000,000 in the prior quarter.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Lennar Class A 13,111,741 shares at $1,186,481,443 matches the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Lennar Class B 298,117 shares at $26,445,959, confirmed by two aggregators (squawkflow, wallstpal).",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Class A plus Class B sums to 13,409,858 shares and $1,212,927,402, consistent with the reported lines.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Liberty Live Series C 10,587,143 shares at $1,118,425,787 matches the 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Liberty Live Series A 4,986,588 shares at $504,941,901, confirmed by squawkflow and wallstpal.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Series A plus Series C sums to 15,573,731 shares and $1,623,367,688.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "NYT Class A 15,700,000 shares at $1,098,686,000 matches the 13F, and holdingsintel also shows 15.7M shares.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Capital One 3,000,000 shares at $601,860,000 matches the Q2 2026 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Louisiana-Pacific 5,664,793 shares at $445,592,617, unchanged from the prior quarter.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Nucor 1,857,752 shares at $413,814,258, trimmed from 3,907,075 shares.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Macy's 7,347,426 shares at $173,031,882 matches the 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "NVR 11,112 shares at $75,710,501 matches the 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Jefferies 433,558 shares at $21,669,229 matches the 13F.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Squawkflow and wallstpal show 3,564 D.R. Horton shares worth $580,504 (new in Q2 2026 13F filed 2026-08-14).",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "Listed names (Lennar A/B, Liberty Live A/C, NYT, Macy's, NVR, Jefferies, D.R. Horton etc.) appear in the Q2 2026 holdings tables.",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "Holdings table includes the listed names at June 30, 2026, including Alphabet Class C and both Lennar and Liberty Live classes.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "Methodology note; the filing lists multiple rows per issuer (e.g. Lennar A/B, Alphabet A/C, Ally with manager codes), consistent with the claim.",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/greg-abel-next-13f-lands-103109425.html",
+   "note": "Berkshire fully exited Constellation Brands by selling its last 632,890 shares in Q2 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true"
+   }
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/greg-abel-next-13f-lands-103109425.html",
+   "note": "Article gives 78,791,167 Class A and 27,188,433 Class C, with 24,541,369 and 23,603,218 shares added.",
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://13f.chat/berkshire-hathaway",
+   "note": "13f.chat says Alphabet up 45% to 78.8M shares; wallstpal agrees (+45.2%).",
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Delta rose from 39,809,456 to 57,320,000 shares, a difference of 17,510,544.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true"
+   }
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "Macy's +141.8% to 7,347,426 (implies ~4.31M added); Lennar B +25.4% from 237,703 to 298,117 gives 60,414; NYT +3.7% and Lennar A +29.8% consistent.",
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/greg-abel-next-13f-lands-103109425.html",
+   "note": "BofA at 483,394,015 shares after a cut of 30,230,150, matching 513,624,165 prior.",
+   "via": "passages"
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://13f.chat/berkshire-hathaway",
+   "note": "13f.chat reports BofA -6%, Capital One -58%, Nucor -52%; wallstpal agrees.",
+   "via": "passages"
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "End counts match (Kroger 39M, Capital One 3M, Ally 27M, DaVita 28,880,209); DaVita drop from 30,100,585 equals 1,220,376; percent changes consistent.",
+   "via": "passages"
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "Table shows 'No change' for Apple, AmEx, Coke, Chevron, Occidental, Kraft Heinz, Moody's etc.; D.R. Horton is listed as new rather than unchanged, so the claim is slightly loose on that item.",
+   "via": "passages"
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.holdingsintel.com/filers/0001067983",
+   "note": "Q1 $263,095,703,570 and Q2 $299,253,556,246 confirmed; SEC cover shows 89 entries (table entries), Q1 count of 90 plausible and not contradicted.",
+   "via": "passages"
+  },
+  "c62": {
+   "cid": "c62",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://13f.info/manager/0001067983-berkshire-hathaway-inc",
+   "note": "13f.info and SEC listing show Q1 2026 filed 5/15/2026 (0001193125-26-226661) and Q4 2025 filed 2/17/2026 (0001193125-26-054580).",
+   "via": "passages"
+  },
+  "c63": {
+   "cid": "c63",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
+   "note": "CNBC and Copio confirm $377.4bn cash and T-bills and $9.6bn Q3 buybacks, reported Nov 7.",
+   "via": "passages"
+  },
+  "c64": {
+   "cid": "c64",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
+   "note": "CNBC and the 10-Q name Alphabet, AmEx, Apple, BofA and Coca-Cola as the five largest holdings in Q3, though this is from the 10-Q rather than the 13F.",
+   "via": "passages"
+  },
+  "c65": {
+   "cid": "c65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/greg-abel-next-13f-lands-103109425.html",
+   "note": "Latest 13F covers positions as of June 30, 2026; the next one is due Nov 16, so positions may have changed since.",
+   "via": "passages"
+  },
+  "c66": {
+   "cid": "c66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://wallstpal.com/fund/berkshire-hathaway",
+   "note": "Sources state a 13F covers long U.S. positions at quarter end and omits shorts, cash, bonds and most non-U.S. holdings.",
+   "via": "passages"
+  },
+  "c67": {
+   "cid": "c67",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "Berkshire has long used confidential treatment requests; SquawkFlow says the Q2 filing omitted positions, though no passage was fetched for this claim.",
+   "via": "passages"
+  },
+  "c68": {
+   "cid": "c68",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://squawkflow.com/institutions/0001067983-berkshire-hathaway-inc",
+   "note": "SquawkFlow does flag a confidential-treatment omission; the SEC cover excerpt shown does not corroborate it, as the claim itself states.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml",
+   "confidence": "high",
+   "note": "The information table's 89 rows collapse to 29 CUSIPs, which map to 26 issuers once Alphabet's two classes, Lennar's two classes and the two Liberty CUSIPs are each combined. The filing lists 89 entries in total.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "note": "The Q2 2026 13F cover page (filed 2026-08-14) lists 14 Other Included Managers."
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "Counting by CUSIP gives 29 securities/positions, which matches 13f.info's '29 holdings'. By issuer it is 26, because Alphabet, Lennar and Liberty Live each have two classes. The '29 issuers' wording is slightly off."
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "note": "Chevron's four rows add up to 84,375,856 shares and $13,986,141,890 in the Q2 information table."
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "note": "Lennar Class A: 745,392 + 12,366,349 = 13,111,741 shares; $67,450,522 + $1,119,030,921 = $1,186,481,443."
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "note": "Q2 table shows Lennar Class B at 298,117 shares, $26,445,959."
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "false",
+   "note": "13f.chat does say this, but it's only half right. Constellation (632,890 shares in Q1) was exited in Q2. Diageo held 227,750 shares at Q4 2025 and was already gone from the Q1 2026 13F, so it was exited in Q1, not Q2."
+  },
+  "c55": {
+   "cid": "c55",
+   "verdict": "true",
+   "note": "Delta went from 39,809,456 shares in Q1 to 57,320,000 in Q2, up about 44%. Matches 13f.chat."
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "note": "SEC filings confirm: Bank of America 513.6M to 483.4M shares (-5.9%), Capital One 7.15M to 3.0M (-58%), Nucor 3.91M to 1.86M (-52%)."
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "false",
+   "note": "The other names on the list have the same share counts in Q1 and Q2, but D.R. Horton isn't in the Q1 2026 13F (or Q4 2025). Its 3,564 shares are new in Q2, so it wasn't 'unchanged'."
+  },
+  "c62": {
+   "cid": "c62",
+   "verdict": "true",
+   "note": "EDGAR's filing list shows 0001193125-26-226661 filed 2026-05-15 and 0001193125-26-054580 filed 2026-02-17."
+  },
+  "c63": {
+   "cid": "c63",
+   "verdict": "true",
+   "note": "Q3 results came out 2026-11-07 (10-Q on SEC 11-09). AP and Copio both give cash and T-bills of $377.4bn at Sept 30 (Reuters' $356.9bn uses a narrower cash definition) and $9.6bn of Q3 buybacks."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 67,
+ "scores": {
+  "opus": {
+   "units": 30,
+   "unverifiable": 0,
+   "true": 30,
+   "wrong": 0,
+   "truth": 66,
+   "truth_weight": 226.75,
+   "coverage": 0.521,
+   "accuracy": 1.0,
+   "combined": 0.685,
+   "thorough_coverage": 0.529,
+   "answer_truth": 52,
+   "thoroughness": 0.692,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 54,
+   "unverifiable": 0,
+   "true": 54,
+   "wrong": 0,
+   "truth": 66,
+   "truth_weight": 226.75,
+   "coverage": 0.851,
+   "accuracy": 1.0,
+   "combined": 0.92,
+   "thorough_coverage": 0.836,
+   "answer_truth": 52,
+   "thoroughness": 0.911,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 34,
+   "unverifiable": 0,
+   "true": 34,
+   "wrong": 0,
+   "truth": 66,
+   "truth_weight": 226.75,
+   "coverage": 0.589,
+   "accuracy": 1.0,
+   "combined": 0.742,
+   "thorough_coverage": 0.542,
+   "answer_truth": 52,
+   "thoroughness": 0.703,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 20,
+   "unverifiable": 0,
+   "true": 20,
+   "wrong": 0,
+   "truth": 66,
+   "truth_weight": 226.75,
+   "coverage": 0.457,
+   "accuracy": 1.0,
+   "combined": 0.627,
+   "thorough_coverage": 0.434,
+   "answer_truth": 52,
+   "thoroughness": 0.606,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 14,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 0,
+   "truth": 66,
+   "truth_weight": 226.75,
+   "coverage": 0.387,
+   "accuracy": 1.0,
+   "combined": 0.558,
+   "thorough_coverage": 0.359,
+   "answer_truth": 52,
+   "thoroughness": 0.529,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 0,
+   "truth": 66,
+   "truth_weight": 226.75,
+   "coverage": 0.392,
+   "accuracy": 1.0,
+   "combined": 0.563,
+   "thorough_coverage": 0.364,
+   "answer_truth": 52,
+   "thoroughness": 0.534,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 3.032,
+ "corrections_v2": {
+  "units_before": 68,
+  "units_after": 66,
+  "dedup_groups": [
+   {
+    "kept": "c50",
+    "merged": [
+     "c51"
+    ]
+   },
+   {
+    "kept": "c54",
+    "merged": [
+     "c55"
+    ]
+   }
+  ],
+  "cost": 0.033
+ }
+}

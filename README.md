@@ -14,8 +14,9 @@ Public, reproducible benchmark suites published by Nimble.
   in (earnings, short interest, valuation, ownership, lawsuits and more): Google
   searches with at least 100 monthly US searches in Google Ads Keyword Planner,
   grown from generic topic searches, plus questions asked on Reddit and Quora,
-  so the companies were chosen by public demand, not by us. Unlabeled: score
-  answers with an LLM judge.
+  so the companies were chosen by public demand, not by us. Unlabeled; a
+  50-question sample is run and judged with
+  [`common/agent-bench`](./common/agent-bench), results in its README.
 - [`Finance-Use-Case-Benchmark/`](./Finance-Use-Case-Benchmark) — real-world
   finance research jobs (due diligence, credit risk, KYC screening, deal
   sourcing, hedge-fund company research, grounded answers, adverse media,
@@ -32,7 +33,7 @@ Public, reproducible benchmark suites published by Nimble.
 - [`Lead-Enrichment-Benchmark/`](./Lead-Enrichment-Benchmark) — 235 questions
   people search for or ask online about a company (layoffs, headcount, executives,
   revenue, subsidiaries and more), collected the same way as the due diligence
-  set. Unlabeled.
+  set. Unlabeled; a 50-question sample is run and judged the same way.
 - [`SimpleQA-Benchmark/`](./SimpleQA-Benchmark) — provider-neutral benchmark
   harness for web search APIs. Runs a [SimpleQA](https://github.com/openai/simple-evals)
   slice through each provider, grades answers with the official SimpleQA

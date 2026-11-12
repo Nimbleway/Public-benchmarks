@@ -1,0 +1,768 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 7,
+ "task": "Where can I find JPMorgan Chase's latest annual report?",
+ "labels": {
+  "exa": "A",
+  "nimble": "B",
+  "parallel": "C",
+  "firecrawl": "D",
+  "gpt": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 11,
+ "evidence_fetched": 11,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "JPMorgan Chase's latest annual report is the 2025 Annual Report, covering fiscal year 2025.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "JPMorgan Chase's latest annual report is the 2025 Annual Report, for the fiscal year ended December 31, 2025.",
+    "F": "JPMorgan Chase's latest annual report covers fiscal year 2025."
+   },
+   "urls": [
+    "https://jpmorganchase.com/ir/annual-report/2025",
+    "https://stocks.observer-reporter.com/observerreporter/article/bizwire-2026-4-6-jpmorganchase-publishes-2025-annual-report-including-chairman-and-ceo-letter-to-shareholders",
+    "https://www.jpmorganchase.com/ir/annual-report",
+    "https://www.jpmorganchase.com/ir/annual-report.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "The latest annual report is the 2025 Annual Report & Proxy, released in April 2026.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "JPMorgan Chase's latest annual report is its 2025 Annual Report & Proxy, released in April 2026."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/ir/annual-report",
+    "https://www.jpmorganchase.com/ir/annual-report.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "JPMorgan Chase announced publication of its 2025 Annual Report on April 6, 2026.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "JPMorgan Chase announced publication of its 2025 Annual Report on April 6, 2026."
+   },
+   "urls": [
+    "https://jpmorganchaseco.gcs-web.com/news-releases/news-release-details/jpmorganchase-publishes-2025-annual-report-including-chairman/",
+    "https://stocks.observer-reporter.com/observerreporter/article/bizwire-2026-4-6-jpmorganchase-publishes-2025-annual-report-including-chairman-and-ceo-letter-to-shareholders"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "The 2025 Annual Report is available as a PDF at jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "JPMorgan Chase's 2025 Annual Report is available as a direct PDF download.",
+    "B": "The full PDF of JPMorgan Chase's 2025 Annual Report is at jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf.",
+    "C": "JPMorgan Chase's 2025 complete annual report is available as a PDF download at https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf",
+    "D": "JPMorgan Chase provides a direct PDF of the full 2025 Annual Report at https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf",
+    "https://www.jpmorganchase.com/ir/annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "The 2025 annual report PDF hosted on jpmorganchase.com is about 4.7 MB.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "A PDF of JPMorgan Chase's 2025 annual report (about 4.7 MB) is hosted at jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "The 2025 annual report PDF is very large; if the direct link is slow, use the landing page or the SEC-hosted copy.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The 2025 annual report PDF (annualreport-2025.pdf) is very large; if the direct link is slow, use the landing page or the SEC-hosted copy."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "The 2025 Complete Annual Report is 364 pages long.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "JPMorgan Chase's 2025 Complete Annual Report is 364 pages long.",
+    "E": "JPMorgan Chase's 2025 Complete Annual Report is 364 pages long."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/ir/annual-report.htm",
+    "https://www.jpmorganchase.com/ir/annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "The Annual Report page at jpmorganchase.com/ir/annual-report is the official landing page for the Annual Report (& Proxy) and letters.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "The landing page for JPMorgan Chase's Annual Report & Proxy is https://www.jpmorganchase.com/ir/annual-report.",
+    "F": "The JPMorgan Chase Annual Report and letters are available on the firm's Investor Relations website at jpmorganchase.com/ir/annual-report."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/ir/annual-report",
+    "https://stocks.observer-reporter.com/observerreporter/article/bizwire-2026-4-6-jpmorganchase-publishes-2025-annual-report-including-chairman-and-ceo-letter-to-shareholders"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "JPMorgan Chase's official annual report page is https://www.jpmorganchase.com/ir/annual-report.htm",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "JPMorgan Chase's official annual report page is https://www.jpmorganchase.com/ir/annual-report.htm"
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/ir/annual-report.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "The official Annual Report & Proxy page provides a \"Download full Annual Report\" link.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "JPMorgan Chase's official Annual Report & Proxy page provides a \"Download full Annual Report\" link."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/ir/annual-report"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "The IR site has a 2025 Annual Report page at jpmorganchase.com/ir/annual-report/2025.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The JPMorgan Chase IR site has a 2025 Annual Report page at jpmorganchase.com/ir/annual-report/2025."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/ir/annual-report/2025"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "The 2025 Annual Report landing page at jpmorganchase.com/ir/annual-report/2025 links to the Chairman and CEO Letter to Shareholders and Senior Executive Letters.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "JPMorgan Chase's 2025 Annual Report landing page on its investor relations site is jpmorganchase.com/ir/annual-report/2025, which links to the Chairman and CEO Letter to Shareholders and Senior Executive Letters."
+   },
+   "urls": [
+    "https://jpmorganchase.com/ir/annual-report/2025"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "The Chairman and CEO Letter to Shareholders for 2025 is at jpmorganchase.com/ir/annual-report/2025/ar-ceo-letters.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The Chairman and CEO Letter to Shareholders for 2025 is at jpmorganchase.com/ir/annual-report/2025/ar-ceo-letters."
+   },
+   "urls": [
+    "https://www.jpmorganchase.com/ir/annual-report/2025"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "The 2025 Annual Report is titled \"Life, Liberty and the Pursuit of Happiness\".",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "JPMorgan Chase's 2025 Annual Report is titled \"Life, Liberty and the Pursuit of Happiness\"."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/19617/000162828026023927/annualreport-2025.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "A copy of the 2025 Annual Report is filed with the SEC at sec.gov/Archives/edgar/data/19617/000162828026023927/annualreport-2025.pdf (Form ARS).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "A copy of JPMorgan Chase's 2025 Annual Report is filed with the SEC at sec.gov/Archives/edgar/data/19617/000162828026023927/annualreport-2025.pdf (annual report to security holders, Form ARS)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/19617/000162828026023927/annualreport-2025.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "JPMorgan Chase's Form 10-K for fiscal year 2025 was filed with the SEC on February 13, 2026, accession no. 0001628280-26-008131.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "JPMorgan Chase's Form 10-K for fiscal year 2025 (period ending 2025-12-31) was filed with the SEC on February 13, 2026, accession no. 0001628280-26-008131."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/19617/0001628280-26-008131-index.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "The fiscal 2025 Form 10-K is readable at sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "JPMorgan Chase's fiscal 2025 Form 10-K is readable at sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm (primary document jpm-20251231.htm)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/19617/0001628280-26-008131-index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Full financial statements for fiscal 2025 are also in the Form 10-K, available on SEC EDGAR and the IR site under SEC Filings.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "JPMorgan Chase's full financial statements for fiscal 2025 are also in the Form 10-K, available on SEC EDGAR and the IR site under SEC Filings."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "\"Annual report\" can mean either the shareholder report with CEO letters or the Form 10-K filed with the SEC; both cover fiscal year 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "\"Annual report\" can mean either the shareholder report with CEO letters or the Form 10-K filed with the SEC; both cover fiscal year 2025."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Printed copies can be requested from Investor Relations at JPMCinvestorrelations@jpmchase.com or 212-270-2479.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Printed copies of JPMorgan Chase's annual report can be requested from Investor Relations at JPMCinvestorrelations@jpmchase.com or 212-270-2479."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "The 2026 annual report would normally come out around April 2027, so the 2025 edition should still be the latest as of November 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The 2026 JPMorgan Chase annual report would normally come out around April 2027, so the 2025 edition should still be the latest as of November 2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "IR page lists 2025 Annual Report (FY ended Dec 31, 2025) as latest; no FY2026 report can exist before 2027.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true",
+    "C": "true",
+    "E": "true",
+    "D": "true"
+   }
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "Page states '2025 Annual Report & Proxy (released April 2026)'.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://jpmorganchaseco.gcs-web.com/news-releases/news-release-details/jpmorganchase-publishes-2025-annual-report-including-chairman/",
+   "note": "Business Wire release dated April 6, 2026 announces publication.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "IR page links the complete annual report PDF at that exact URL.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "IR page lists '2025 Complete Annual Report (364 pgs)'.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://jpmorganchaseco.gcs-web.com/news-releases/news-release-details/jpmorganchase-publishes-2025-annual-report-including-chairman/",
+   "note": "Press release names jpmorganchase.com/ir/annual-report as the IR location for the report and letters.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "Official page URL is /ir/annual-report without '.htm'; the .htm form is a legacy URL not shown as current.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "Page shows a 'Download full Annual Report' link to the 2025 PDF.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report/2025",
+   "note": "The page exists with breadcrumb Annual Report > 2025.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report/2025",
+   "note": "Page links to the Chairman and CEO Letter and Senior Executive Letters (ar-ceo-letters).",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.jpmorganchase.com/ir/annual-report/2025/ar-ceo-letters",
+   "note": "The CEO letter page at that URL is dated April 6, 2026.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf",
+   "note": "The PDF cover reads 'Annual Report 2025: Life, Liberty and the Pursuit of Happiness'.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026023927/annualreport-2025.pdf",
+   "note": "The annual report PDF is hosted on SEC EDGAR under that accession path; the Form ARS label is not directly shown but is consistent with the shareholder annual report filing.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/19617/0001628280-26-008131-index.htm",
+   "note": "The EDGAR index shows Form 10-K, accession 0001628280-26-008131, filed 2026-02-13, period 2025-12-31.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/19617/0001628280-26-008131-index.htm",
+   "note": "Index lists jpm-20251231.htm as the primary 10-K document under that path.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/19617/0001628280-26-008131-index.htm",
+   "note": "The 10-K is on EDGAR; the IR site links to SEC Filings & Other Disclosures.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/19617/0001628280-26-008131-index.htm",
+   "note": "EDGAR labels the 10-K 'Annual report' and the shareholder report incorporates the 2025 Form 10-K; both cover FY2025.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "The IR page lists 212-270-2479 and JPMCinvestorrelations@jpmchase.com for requests for printed materials.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/ir/annual-report",
+   "note": "The 2025 report was released April 2026, so the next would normally follow in about April 2027; the 2025 edition remains the latest.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf",
+   "note": "The saved page confirms the 2025 annual report PDF is hosted at that URL. No saved page or header check gives the 4.7 MB size, and my own size check was blocked.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026023927/annualreport-2025.pdf",
+   "note": "This is practical advice, not a checkable fact. The saved pages confirm the landing page and the SEC-hosted copy of the same long report both exist. The report text is about 300k characters, so calling it very large is reasonable.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "note": "Confirmed: JPMorganChase filed its 10-K for the fiscal year ended Dec 31, 2025 with the SEC on Feb 13, 2026 (Business Wire release; EDGAR accession 0001628280-26-008131), so the 'unconfirmed' hedge is unneeded."
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "note": "JPM puts out a shareholder annual report with the Chairman/CEO letter (published Apr 6, 2026) and separately files a Form 10-K with the SEC (Feb 13, 2026). Both cover FY2025."
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "note": "The 2025 annual report came out Apr 6, 2026, and JPM usually publishes it in early April. No 2026 report is expected before about April 2027, so the 2025 edition is the latest as of Nov 2026. The April 2027 date is a projection from that pattern."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 26,
+ "scores": {
+  "exa": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 84.75,
+   "coverage": 0.292,
+   "accuracy": 1.0,
+   "combined": 0.452,
+   "thorough_coverage": 0.248,
+   "answer_truth": 14,
+   "thoroughness": 0.397,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 84.75,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.469,
+   "answer_truth": 14,
+   "thoroughness": 0.639,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 1,
+   "truth": 19,
+   "truth_weight": 84.75,
+   "coverage": 0.375,
+   "accuracy": 0.769,
+   "combined": 0.504,
+   "thorough_coverage": 0.354,
+   "answer_truth": 14,
+   "thoroughness": 0.485,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 84.75,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.425,
+   "answer_truth": 14,
+   "thoroughness": 0.596,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 84.75,
+   "coverage": 0.167,
+   "accuracy": 1.0,
+   "combined": 0.286,
+   "thorough_coverage": 0.212,
+   "answer_truth": 14,
+   "thoroughness": 0.35,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 9,
+   "unverifiable": 1,
+   "true": 8,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 84.75,
+   "coverage": 0.5,
+   "accuracy": 0.991,
+   "combined": 0.665,
+   "thorough_coverage": 0.496,
+   "answer_truth": 14,
+   "thoroughness": 0.661,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.786,
+ "corrections_v2": {
+  "units_before": 28,
+  "units_after": 21,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3"
+    ]
+   },
+   {
+    "kept": "c4",
+    "merged": [
+     "c5",
+     "c6"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c8"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

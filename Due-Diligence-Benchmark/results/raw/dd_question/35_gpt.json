@@ -1,0 +1,84 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0e39cd7c6f019b1f006af4b0cd02b887d287c6ed3305cf6d63",
+ "status": "completed",
+ "seconds": 33,
+ "output": {
+  "question": "What is Tilray's short interest?",
+  "answer": "As of November 11, 2026, the latest verified short interest for Tilray Brands (NASDAQ: TLRY) was 19,539,742 shares at the October 30, 2026 settlement, down 9.2% from the previous report. That represents approximately 13.4% of its public float, with 4.76 days to cover based on the reported average daily volume.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Short interest was 19,539,742 shares as of the October 30, 2026 settlement.",
+    "source_url": "https://xoomar.com/markets/stocks/tlry",
+    "date": "2026-10-30"
+   },
+   {
+    "fact": "Short interest decreased 9.2% from the preceding settlement report; days to cover were 4.76 as of October 30, 2026.",
+    "source_url": "https://xoomar.com/markets/stocks/tlry",
+    "date": "2026-10-30"
+   },
+   {
+    "fact": "Finviz displayed short float of 13.43% and short interest of 19.54 million shares on November 11, 2026.",
+    "source_url": "https://finviz.com/stock?p=m&t=TLRY&ta=2&ty=si",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "2026-10-30 | 19,539,742 | -9.2% | 4,107,576 | 4.76",
+    "source_url": "https://xoomar.com/markets/stocks/tlry",
+    "publisher": "XOOMAR",
+    "published_date": null
+   },
+   {
+    "quote": "Short Float 13.43%",
+    "source_url": "https://finviz.com/stock?p=m&t=TLRY&ta=2&ty=si",
+    "publisher": "Finviz",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "These are reported settlement-date positions, not a live count of short positions on November 11, 2026.",
+   "The figures were verified on secondary data pages, not directly against a primary FINRA record.",
+   "Float percentages and days-to-cover ratios may differ across providers."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 33809,
+  "input_tokens_details": {
+   "cache_write_tokens": 14,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 812,
+  "output_tokens_details": {
+   "reasoning_tokens": 227
+  },
+  "total_tokens": 34621
+ },
+ "search_calls": 4,
+ "search_actions": {
+  "search": 1,
+  "open_page": 3
+ },
+ "token_cost_usd": 0.0664,
+ "cost_usd": 0.1064,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "dd_question",
+ "input": "What is Tilray's short interest?",
+ "input_n": 35,
+ "completed_on": "2026-11-11"
+}

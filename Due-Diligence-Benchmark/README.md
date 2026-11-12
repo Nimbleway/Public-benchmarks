@@ -19,7 +19,72 @@ The set is **unlabeled**: there are no reference answers. Many answers change ov
 next earnings date, a valuation), so a fixed answer key would go stale. Score answers with an LLM judge that rates each
 one on its own, for example on accuracy, relevance, depth and sourcing, rather than against a gold answer.
 
-Results will be published here once providers are run against it.
+A 50-question sample has been run through six web search and research APIs: see [Results](#results).
+
+## Results
+
+A sample of 50 of the 300 questions (in proportion to each category, fixed seed; listed in
+[`tasks.json`](tasks.json)) was run through six providers on November 11, 2026, and judged with
+[agent-bench](../common/agent-bench). Higher is better for combined, accuracy, coverage and thoroughness. Combined is the
+headline score: F1 of accuracy and of coverage of the facts that answer the question. Thoroughness is the same F1 over
+every true fact found. Wins = questions where the provider had the highest combined score; an exact tie splits the win.
+
+| Provider | Combined | Accuracy | Coverage | Thoroughness | Median words | Wins | Avg cost / run | Median seconds |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Nimble | 0.698 | 0.958 | 0.567 | 0.688 | 352 | 30/50 | $0.10 | 109 |
+| Claude Opus 5.5 | 0.620 | 0.969 | 0.479 | 0.598 | 307 | 10.7/50 | $0.14 | 50 |
+| Exa | 0.561 | 0.973 | 0.408 | 0.513 | 168 | 3.7/50 | $0.10 | 66 |
+| Firecrawl | 0.506 | 0.938 | 0.366 | 0.460 | 171 | 4.3/50 | $0.09 | 54 |
+| GPT-6.1 Sol | 0.504 | 0.978 | 0.357 | 0.457 | 147.5 | 1/50 | $0.09 | 33 |
+| Parallel | 0.424 | 0.937 | 0.294 | 0.385 | 137.5 | 0.3/50 | $0.10 | 128 |
+
+The longest answer was among the winners on 31 of 50 questions.
+
+Units per provider, as judged (true / wrong / off scope / unverifiable):
+
+| Provider | Units | True | Wrong | Off scope | Unverifiable |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Nimble | 960 | 919 | 34 | 6 | 1 |
+| Claude Opus 5.5 | 686 | 658 | 17 | 4 | 7 |
+| Exa | 465 | 451 | 10 | 4 | 0 |
+| Firecrawl | 491 | 471 | 18 | 0 | 2 |
+| GPT-6.1 Sol | 387 | 381 | 5 | 0 | 1 |
+| Parallel | 358 | 347 | 11 | 0 | 0 |
+
+Judge audit agreement: 162/178 units (a seeded ~10% sample re-checked independently by Claude Opus).
+
+All raw outputs, verdicts and per-question scores are in [`results/`](results); `results/summary.json` has the tables
+above. `verified/` does not include the judge's per-provider extraction lists or fetched page text, and verdict notes
+are cut to 300 characters.
+
+## How we measured
+
+The sample runs on [agent-bench](../common/agent-bench), the runner and judge shared with the
+[finance](../Finance-Use-Case-Benchmark) and [GTM](../GTM-Use-Case-Benchmark) use-case benchmarks. The full method is
+in [METHOD.md](../common/agent-bench/METHOD.md). What is specific to this set:
+
+- **One job, one question per task.** Every provider gets the finance suite's "Answer a current question with sources"
+  instructions and output schema (an answer, key facts with sources, caveats), at the medium tier.
+- **Answer-only scoring.** There is no answer key, so the truth set is the pool of true facts the six providers found,
+  and the judge tags each fact "answers the question" or not. The headline score counts only the facts that answer the
+  question, so extra true context cannot outscore a short correct answer; a true extra fact costs no accuracy, a wrong
+  one does. See [answer-only coverage](../common/agent-bench/METHOD.md#answer-only-coverage-coverage-answers).
+- **Length is reported.** Longer answers still tend to find more of the answer: the median answer length and how often
+  the longest answer won are in the table above.
+- **Evidence.** 889 of 906 cited pages were fetched. The duplicate merge correction applies; there are no answer
+  keys, so no key audit.
+- **Cost.** About $31 for all provider runs and $63 for the judge and corrections.
+
+To recompute the tables from the shipped results (offline), from `common/agent-bench`:
+
+```bash
+uv run python -m agent_bench.summary --suite Due-Diligence-Benchmark
+```
+
+To rerun, see [agent-bench's README](../common/agent-bench/README.md#commands): the sample's `tasks.json` is rebuilt
+with `question_tasks`, and every step takes `--suite Due-Diligence-Benchmark`. Limitations: 50 questions and one run per provider per
+question, so small differences are within run-to-run noise; verdicts are model judgments; and many answers change over
+time, so a later run is a different test.
 
 ## Why demand-based questions
 

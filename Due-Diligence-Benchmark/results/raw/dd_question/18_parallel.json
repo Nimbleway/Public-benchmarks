@@ -1,0 +1,271 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b6992caec797673ddc4",
+ "status": "completed",
+ "seconds": 109,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Stripe's valuation?",
+  "passages": [
+   {
+    "quote": "Forge Price valuation\n$199.14B",
+    "publisher": "Forge",
+    "published_date": null,
+    "source_url": "https://forgeglobal.com/stripe_stock"
+   },
+   {
+    "quote": "Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation.",
+    "publisher": "Stripe",
+    "published_date": "2026-02-24",
+    "source_url": "https://stripe.com/newsroom/news/stripe-2025-update"
+   }
+  ],
+  "answer": "As of November 11, 2026, Forge's secondary-market estimate values Stripe at $199.14 billion. Stripe's latest company-announced transaction valuation is $159 billion, from the employee tender offer announced on February 24, 2026\u2014not the same measure as Forge's market estimate.",
+  "caveats": [
+   "The $199.14 billion figure is a Forge secondary-market estimate, not a newly announced Stripe transaction valuation; it may change as market data changes."
+  ],
+  "missing_fields": [
+   "passages[0].published_date: Forge displays an update date of November 11, 2026, but a separate page publication date could not be verified."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://forgeglobal.com/stripe_stock",
+    "fact": "Forge reports a Stripe valuation of $199.14 billion, updated November 11, 2026."
+   },
+   {
+    "date": "2026-02-24",
+    "source_url": "https://stripe.com/newsroom/news/stripe-2025-update",
+    "fact": "Stripe announced an employee tender offer at a $159 billion valuation."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question about Stripe.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price valuation $199.14B"
+     ]
+    },
+    {
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees",
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "excerpts": [
+      "SAN FRANCISCO AND DUBLIN\u2014Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation.",
+      "[February 24, 2026](https://stripe.com/newsroom/news/stripe-2025-update)"
+     ]
+    }
+   ],
+   "reasoning": "Forge supplies the quoted valuation label and amount. Stripe supplies the tender-offer sentence and its release date. Forge's separate publication date was not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price valuation $199.14B",
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    },
+    {
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees",
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "excerpts": [
+      "SAN FRANCISCO AND DUBLIN\u2014Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation.",
+      "[February 24, 2026](https://stripe.com/newsroom/news/stripe-2025-update)"
+     ]
+    }
+   ],
+   "reasoning": "The current Forge valuation and update date support the first sentence. Stripe's own dated release supports the $159 billion tender-offer valuation. Distinguishing the provider's market estimate from the company's transaction valuation requires synthesis; no newer company-announced valuation was found.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price valuation $199.14B",
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    },
+    {
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees",
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "excerpts": [
+      "SAN FRANCISCO AND DUBLIN\u2014Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation."
+     ]
+    }
+   ],
+   "reasoning": "The sources identify different valuation contexts and dates. The warning about changes is a qualification of the dated market estimate, not a prediction of a specific future value.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    }
+   ],
+   "reasoning": "Forge explicitly provides a price-update date; the page reading did not establish a separate publication date, so that passage metadata is null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The latest Forge observation is dated November 11, 2026, matching the requested answer date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price valuation $199.14B",
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    },
+    {
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees",
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "excerpts": [
+      "SAN FRANCISCO AND DUBLIN\u2014Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation.",
+      "[February 24, 2026](https://stripe.com/newsroom/news/stripe-2025-update)"
+     ]
+    }
+   ],
+   "reasoning": "These passages directly provide the two valuation amounts and their respective observation or announcement dates.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price valuation $199.14B"
+     ]
+    }
+   ],
+   "reasoning": "The quotation reproduces Forge's valuation label and amount. A separate publication date was not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees",
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "excerpts": [
+      "SAN FRANCISCO AND DUBLIN\u2014Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation.",
+      "[February 24, 2026](https://stripe.com/newsroom/news/stripe-2025-update)"
+     ]
+    }
+   ],
+   "reasoning": "Stripe's own release directly supplies the quoted tender-offer statement and publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price valuation $199.14B",
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    },
+    {
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees",
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "excerpts": [
+      "SAN FRANCISCO AND DUBLIN\u2014Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation."
+     ]
+    }
+   ],
+   "reasoning": "The dated Forge figure and Stripe's tender-offer statement support treating these as distinct measures rather than interchangeable transaction valuations.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The available date is explicitly an update date; a separate publication date was not established in the page reading.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Buy and Sell Stripe Stock, $78.24 Forge Price - Forge",
+     "url": "https://forgeglobal.com/stripe_stock",
+     "excerpts": [
+      "Forge Price valuation $199.14B",
+      "Forge Price Beacon Updated Nov 11, 2026"
+     ]
+    }
+   ],
+   "reasoning": "Forge directly reports $199.14 billion and the November 11, 2026 update date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees",
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "excerpts": [
+      "SAN FRANCISCO AND DUBLIN\u2014Stripe, the programmable financial services company, has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation.",
+      "[February 24, 2026](https://stripe.com/newsroom/news/stripe-2025-update)"
+     ]
+    }
+   ],
+   "reasoning": "Stripe directly announced the $159 billion employee tender-offer valuation in its February 24, 2026 release.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "What is Stripe's valuation?",
+ "input_n": 18,
+ "completed_on": "2026-11-11"
+}

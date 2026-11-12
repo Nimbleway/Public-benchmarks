@@ -1,0 +1,581 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 21,
+ "task": "What is Bumble's IPO date?",
+ "labels": {
+  "firecrawl": "A",
+  "nimble": "B",
+  "exa": "C",
+  "gpt": "D",
+  "parallel": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 8,
+ "evidence_fetched": 8,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Bumble Inc. went public (IPO / first trading day) on February 11, 2021.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Bumble went public on February 11, 2021 (its ticker symbol is BMBL).",
+    "B": "Bumble Inc. went public on February 11, 2021, when its Class A common stock began trading on the Nasdaq Global Select Market under the ticker BMBL.",
+    "C": "Bumble Inc. went public on February 11, 2021, under the ticker symbol BMBL.",
+    "D": "Bumble Inc. went public (IPO date) on February 11, 2021.",
+    "F": "Bumble Inc.'s Class A shares began trading on the Nasdaq Global Select Market under the ticker BMBL on February 11, 2021 (the IPO date most people mean)."
+   },
+   "urls": [
+    "https://cnbc.com/2021/02/11/bumble-ipo-bmbl-starts-trading-on-nasdaq.html",
+    "https://ir.bumble.com/resources/investor-faqs/default.aspx",
+    "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Prices-2.2-Billion-IPO/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Bumble Inc.'s stock ticker symbol is BMBL.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Bumble Inc.'s stock ticker symbol is BMBL."
+   },
+   "urls": [
+    "https://ir.bumble.com/resources/investor-faqs/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Bumble Inc. is publicly traded on the Nasdaq Global Select Market.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Bumble Inc. is publicly traded on the Nasdaq Global Select Market."
+   },
+   "urls": [
+    "https://ir.bumble.com/resources/investor-faqs/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Bumble announced on February 10, 2021 that its shares were expected to begin trading on the Nasdaq Global Select Market on February 11, 2021 under the symbol BMBL.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Bumble announced on February 10, 2021 that its shares were expected to begin trading on the Nasdaq Global Select Market on February 11, 2021 under the symbol BMBL.",
+    "E": "Bumble Inc. said its shares were expected to begin trading on the Nasdaq Global Select Market on February 11, 2021 under the symbol \"BMBL\"."
+   },
+   "urls": [
+    "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Prices-2.2-Billion-IPO/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Bumble's IPO was priced (pricing announced) on February 10, 2021.",
+   "asserted_by": [
+    "E",
+    "F",
+    "B"
+   ],
+   "variants": {
+    "E": "Bumble Inc.'s IPO pricing was announced on February 10, 2021.",
+    "F": "Bumble Inc. priced its IPO on February 10, 2021.",
+    "B": "Bumble's IPO priced on February 10, 2021 at $43 per share, above the $37–$39 target range."
+   },
+   "urls": [
+    "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Prices-2.2-Billion-IPO/default.aspx",
+    "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Bumble's IPO priced at $43 per share, above the $37–$39 target range.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bumble's IPO priced on February 10, 2021 at $43 per share, above the $37–$39 target range."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Bumble's IPO closed/completed on February 16, 2021, distinct from the February 11, 2021 first trading date.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Bumble Inc. completed its initial public offering of Class A common stock on February 16, 2021; February 11, 2021 is the public-market debut/first-trading date, while February 16, 2021 is the offering-closing date.",
+    "C": "Bumble Inc. closed its IPO on February 16, 2021, which is distinct from the first trading date of February 11, 2021.",
+    "E": "Bumble Inc. announced that it had closed its initial public offering on February 16, 2021.",
+    "F": "Bumble Inc.'s IPO closed on February 16, 2021."
+   },
+   "urls": [
+    "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Closes-2.5-Billion-IPO-and-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares/default.aspx",
+    "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm",
+    "https://www.sec.gov/Archives/edgar/data/1830043/000119312521266589/d13690ds1.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Bumble issued and sold 57.5 million Class A shares in its IPO.",
+   "asserted_by": [
+    "A",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "A": "Bumble Inc. completed its initial public offering of Class A common stock on February 16, 2021, issuing and selling 57.5 million shares of Class A common stock."
+   },
+   "urls": [
+    "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Closes-2.5-Billion-IPO-and-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/1830043/000119312521266589/d13690ds1.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Underwriters fully exercised their option to buy 7,500,000 additional shares.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Underwriters of Bumble Inc.'s IPO fully exercised their option to buy 7,500,000 additional shares."
+   },
+   "urls": [
+    "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Closes-2.5-Billion-IPO-and-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Bumble sold 50 million Class A shares in its IPO for gross proceeds of about $2.2 billion.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Bumble sold 50 million Class A shares in its IPO for gross proceeds of about $2.2 billion."
+   },
+   "urls": [
+    "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Prices-2.2-Billion-IPO/default.aspx",
+    "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c12",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "On its first trading day (Feb 11, 2021), BMBL began trading up nearly 77% at about $76 per share.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On its first trading day (February 11, 2021), BMBL began trading up nearly 77% at about $76 per share."
+   },
+   "urls": [
+    "https://cnbc.com/2021/02/11/bumble-ipo-bmbl-starts-trading-on-nasdaq.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "On its first trading day, Bumble stock closed up 63.5%, valuing Bumble at roughly $7.7 billion.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On its first trading day, Bumble stock closed up 63.5%, valuing Bumble at roughly $7.7 billion market capitalization."
+   },
+   "urls": [
+    "https://cnbc.com/2021/02/11/bumble-ipo-bmbl-starts-trading-on-nasdaq.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Bumble's final IPO prospectus (Form 424B4) is dated February 10, 2021.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bumble's final IPO prospectus (Form 424B4) is dated February 10, 2021."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Bumble's Form 424B4 prospectus was filed with the SEC on February 12, 2021.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Bumble's Form 424B4 prospectus was filed with the SEC on February 12, 2021."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://ir.bumble.com/resources/investor-faqs/default.aspx",
+   "note": "Bumble IR FAQ states it went public Feb 11, 2021 (ticker BMBL); Nasdaq first trading day confirmed by pricing release and CNBC. All variants A-F are accurate.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://ir.bumble.com/resources/investor-faqs/default.aspx",
+   "note": "IR FAQ states ticker symbol is BMBL; context, not the date.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://ir.bumble.com/resources/investor-faqs/default.aspx",
+   "note": "IR FAQ says Bumble is publicly traded on the Nasdaq Global Select Market.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Prices-2.2-Billion-IPO/default.aspx",
+   "note": "Feb 10, 2021 pricing release says shares expected to begin trading on Nasdaq GS on Feb 11, 2021 under BMBL.",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.globenewswire.com/news-release/2021/02/10/2173640/0/en/Bumble-Inc-Prices-2-2-Billion-IPO.html",
+   "note": "Pricing announced Feb 10, 2021 at $43; CNBC confirms above $37-$39 range.",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://cnbc.com/2021/02/11/bumble-ipo-bmbl-starts-trading-on-nasdaq.html",
+   "note": "CNBC: priced at $43, above target range of $37 to $39.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Closes-2.5-Billion-IPO-and-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares/default.aspx",
+   "note": "Closing announced Feb 16, 2021, distinct from Feb 11 first trading day; SEC S-1 confirms.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1830043/000119312521266589/d13690ds1.htm",
+   "note": "SEC filing: Feb 16, 2021 completed IPO issuing and selling 57.5 million Class A shares.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ir.bumble.com/news/news-details/2021/Bumble-Inc.-Closes-2.5-Billion-IPO-and-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares/default.aspx",
+   "note": "Closing release states full exercise of the 7.5M share option.",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.globenewswire.com/news-release/2021/02/10/2173640/0/en/Bumble-Inc-Prices-2-2-Billion-IPO.html",
+   "note": "50M shares at $43 = $2.15B, headlined $2.2 billion IPO.",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://cnbc.com/2021/02/11/bumble-ipo-bmbl-starts-trading-on-nasdaq.html",
+   "note": "CNBC: began trading up nearly 77% at $76 per share.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://cnbc.com/2021/02/11/bumble-ipo-bmbl-starts-trading-on-nasdaq.html",
+   "note": "CNBC: closed up 63.5%, market cap about $7.7 billion.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "confidence": "high",
+   "source": "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm",
+   "note": "The prospectus states its date is February 10, 2021, the pricing date; trading began Feb 11, 2021.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "confidence": "medium",
+   "source": "https://sec.gov/Archives/edgar/data/1830043/000119312521041904/d20761d424b4.htm",
+   "note": "No passage shows a Feb 12 filing date; the 424B4 is normally filed within two business days of pricing, so Feb 12 is plausible, but the accession 0001193125-21-041904 filing date is not confirmed here. Marked false for lack of support, leaning unverifiable.",
+   "via": "passages"
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 18,
+ "scores": {
+  "firecrawl": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.75,
+   "coverage": 0.611,
+   "accuracy": 1.0,
+   "combined": 0.759,
+   "thorough_coverage": 0.465,
+   "answer_truth": 5,
+   "thoroughness": 0.634,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 1,
+   "truth": 13,
+   "truth_weight": 24.75,
+   "coverage": 0.889,
+   "accuracy": 0.96,
+   "combined": 0.923,
+   "thorough_coverage": 0.727,
+   "answer_truth": 5,
+   "thoroughness": 0.828,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.75,
+   "coverage": 0.722,
+   "accuracy": 1.0,
+   "combined": 0.839,
+   "thorough_coverage": 0.545,
+   "answer_truth": 5,
+   "thoroughness": 0.706,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.75,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.515,
+   "answer_truth": 5,
+   "thoroughness": 0.68,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.75,
+   "coverage": 0.333,
+   "accuracy": 1.0,
+   "combined": 0.5,
+   "thorough_coverage": 0.242,
+   "answer_truth": 5,
+   "thoroughness": 0.39,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 24.75,
+   "coverage": 0.722,
+   "accuracy": 1.0,
+   "combined": 0.839,
+   "thorough_coverage": 0.586,
+   "answer_truth": 5,
+   "thoroughness": 0.739,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.574,
+ "corrections_v2": {
+  "units_before": 18,
+  "units_after": 14,
+  "dedup_groups": [
+   {
+    "kept": "c8",
+    "merged": [
+     "c9",
+     "c10"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c18"
+    ]
+   }
+  ],
+  "cost": 0.017
+ }
+}

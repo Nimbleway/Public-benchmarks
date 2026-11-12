@@ -1,0 +1,84 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0f5389508e1408cf006af4b01cabb887d2ab77ee342d568d39",
+ "status": "completed",
+ "seconds": 23,
+ "output": {
+  "question": "Is Discord publicly traded?",
+  "answer": "No. As of November 11, 2026, Discord is privately held and its shares do not trade on public stock exchanges. It has no public stock ticker symbol.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Discord is privately held and is not publicly traded.",
+    "source_url": "https://forgeglobal.com/discord_stock/",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "Discord has no public stock ticker symbol.",
+    "source_url": "https://www.nasdaqprivatemarket.com/company/discord/",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Type\n    Privately Held",
+    "source_url": "https://ea.linkedin.com/company/discord",
+    "publisher": "Discord via LinkedIn",
+    "published_date": null
+   },
+   {
+    "quote": "Discord stock does not trade on public stock exchanges.",
+    "source_url": "https://www.nasdaqprivatemarket.com/company/discord/",
+    "publisher": "Nasdaq Private Market",
+    "published_date": null
+   },
+   {
+    "quote": "There is no ticker symbol for Discord stock because it is a private company.",
+    "source_url": "https://www.nasdaqprivatemarket.com/company/discord/",
+    "publisher": "Nasdaq Private Market",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "The cited company profiles do not state publication dates; their contents were verified on November 11, 2026."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date",
+   "passages[2].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 27686,
+  "input_tokens_details": {
+   "cache_write_tokens": 11,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 582,
+  "output_tokens_details": {
+   "reasoning_tokens": 164
+  },
+  "total_tokens": 28268
+ },
+ "search_calls": 3,
+ "search_actions": {
+  "search": 1,
+  "open_page": 2
+ },
+ "token_cost_usd": 0.0519,
+ "cost_usd": 0.0819,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Is Discord publicly traded?",
+ "input_n": 1,
+ "completed_on": "2026-11-11"
+}

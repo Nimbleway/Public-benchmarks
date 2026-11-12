@@ -1,0 +1,722 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 48,
+ "task": "Who is the parent company of Jewel-Osco?",
+ "labels": {
+  "nimble": "A",
+  "gpt": "B",
+  "exa": "C",
+  "firecrawl": "D",
+  "opus": "E",
+  "parallel": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 6,
+ "evidence_fetched": 6,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Jewel-Osco's parent company is Albertsons Companies, Inc.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Jewel-Osco is owned by Albertsons Companies, Inc. (NYSE: ACI), the Boise, Idaho-based food and drug retailer.",
+    "B": "Albertsons Companies, Inc. is the parent company of Jewel-Osco.",
+    "C": "Jewel-Osco is a supermarket banner operated by Albertsons Companies, Inc., its parent company.",
+    "E": "Jewel-Osco's parent company is Albertsons Companies, Inc. (NYSE: ACI).",
+    "F": "Jewel-Osco's parent company is Albertsons Companies, Inc."
+   },
+   "urls": [
+    "https://www.jewelosco.com/about-us.html",
+    "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+    "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+    "https://www.albertsonsmediacollective.com/content-policy/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Albertsons Companies, Inc. trades on the NYSE under the ticker ACI.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "Albertsons Companies, Inc. (NYSE: ACI)",
+    "E": "Albertsons Companies, Inc. (NYSE: ACI)"
+   },
+   "urls": [
+    "https://www.jewelosco.com/about-us.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Albertsons Companies, Inc. is based in Boise, Idaho.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "the Boise, Idaho-based food and drug retailer",
+    "E": "Albertsons Companies, Inc. is a US food and drug retailer based in Boise, Idaho."
+   },
+   "urls": [
+    "https://www.jewelosco.com/about-us.html",
+    "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Advances-the-ACI-Edge-with-New-Regional-Operating-Model-and-Merch-United/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Jewel-Osco's About Us page says Jewel-Osco is part of Albertsons Inc., a privately held grocery company.",
+   "asserted_by": [
+    "A",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Jewel-Osco's About Us page says Jewel-Osco is part of Albertsons Inc., a privately held grocery company.",
+    "F": "Jewel-Osco's About Us page states that Jewel-Osco is a vital part of Albertsons Inc. (it uses the wording \"Albertsons Inc.\" and describes the company as \"privately held\")."
+   },
+   "urls": [
+    "https://www.jewelosco.com/about-us.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Jewel-Osco's About Us page identifies AB Acquisition LLC as its parent company.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Jewel-Osco's About Us page identifies AB Acquisition LLC as its parent company."
+   },
+   "urls": [
+    "https://www.jewelosco.com/about-us.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "In 2013, AB Acquisition LLC acquired Jewel-Osco from SUPERVALU.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "In 2013, AB Acquisition LLC (Jewel-Osco's parent company, the Albertsons parent entity) acquired Jewel-Osco from SUPERVALU.",
+    "D": "AB Acquisition LLC acquired Jewel-Osco from SUPERVALU in 2013."
+   },
+   "urls": [
+    "https://www.jewelosco.com/about-us.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Albertsons' parent merged with Safeway in 2015, doubling its store base.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Albertsons' parent merged with Safeway in 2015, doubling its store base."
+   },
+   "urls": [
+    "https://www.jewelosco.com/about-us.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Albertsons Companies, Inc. operates 22 banners, including Jewel-Osco, per its Form 10-K for the fiscal year ended February 28, 2026.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Albertsons Companies, Inc. operates 22 banners, including Jewel-Osco, in its Form 10-K for the fiscal year ended February 28, 2026.",
+    "C": "Albertsons Companies, Inc. operates 22 well-known banners, including Albertsons, Safeway, Vons, Pavilions, Randalls, Tom Thumb, Carrs, Jewel-Osco, ACME, Shaw's, Star Market, United Supermarkets, Market Street, Haggen, Kings Food Markets and Balducci's Food Lovers Market."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Albertsons Companies' latest Form 10-K, filed April 27, 2026, lists Jewel-Osco among the banners operated by the company and its subsidiaries.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Albertsons Companies, Inc.'s latest available Form 10-K, filed April 27, 2026, lists Jewel-Osco among the banners operated by the company and its subsidiaries."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Albertsons Companies lists Jewel-Osco among its 22 banners in a July 23, 2026 press release.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Albertsons Companies lists Jewel-Osco among its 22 banners, alongside Albertsons, Safeway, Vons, Shaw's, ACME and others (July 23, 2026 press release)."
+   },
+   "urls": [
+    "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Advances-the-ACI-Edge-with-New-Regional-Operating-Model-and-Merch-United/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Albertsons identifies Jewel-Osco as one of its banners.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Albertsons identifies Jewel-Osco as one of its banner stores, alongside ACME and Balducci's.",
+    "D": "Albertsons Companies, Inc.'s official overview lists Jewel-Osco among its well-known banners."
+   },
+   "urls": [
+    "https://www.albertsonsmediacollective.com/content-policy/default.aspx",
+    "https://www.albertsonscompanies.com/about-aci/overview/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Albertsons Companies' well-known banners include Albertsons, Safeway, Vons, Jewel-Osco, Shaw's, Acme, Tom Thumb, Randalls, United Supermarkets, Pavilions, Star Market, Haggen, Carrs, Kings Food Markets, and Balducci's Food Lovers Market.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Albertsons Companies' well-known banners include Albertsons, Safeway, Vons, Jewel-Osco, Shaw's, Acme, Tom Thumb, Randalls, United Supermarkets, Pavilions, Star Market, Haggen, Carrs, Kings Food Markets, and Balducci's Food Lovers Market."
+   },
+   "urls": [
+    "https://www.albertsonscompanies.com/about-aci/overview/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Albertsons Companies' official leadership page lists Jewel-Osco as a division, with Tom Lofland as President of the Jewel-Osco Division.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Albertsons Companies, Inc.'s official leadership page lists Jewel-Osco as one of its divisions, with Tom Lofland as President of the Jewel-Osco Division."
+   },
+   "urls": [
+    "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Under the ACI Edge regional operating model, Jewel-Osco is part of Albertsons Companies' new East Region, together with the Mid-Atlantic and Shaw's markets.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Under the ACI Edge regional operating model, Jewel-Osco is part of Albertsons Companies' new East Region, together with the Mid-Atlantic and Shaw's markets."
+   },
+   "urls": [
+    "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Advances-the-ACI-Edge-with-New-Regional-Operating-Model-and-Merch-United/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Albertsons has owned Jewel-Osco since it bought American Stores in 1999.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Albertsons has owned Jewel-Osco since it bought American Stores in 1999."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c18"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "Supervalu owned Jewel-Osco from 2006 until 2013.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Supervalu owned Jewel-Osco from 2006 until 2013."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c17"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Jewel-Osco's ownership by Albertsons is unchanged as of November 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Jewel-Osco's ownership by Albertsons is unchanged as of November 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "As of November 11, 2026, Albertsons Companies is the current corporate group commonly identified as Jewel-Osco's parent, while AB Acquisition LLC is the historical acquisition/legal parent reference.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "As of November 11, 2026, Albertsons Companies is the current corporate group commonly identified as Jewel-Osco's parent, while AB Acquisition LLC is the historical acquisition/legal parent reference."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Albertsons' proposed merger with Kroger was terminated in December 2024, with Albertsons since pursuing litigation against Kroger; this does not change Jewel-Osco's parentage.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "Albertsons' proposed merger with Kroger was terminated in December 2024, and Albertsons has since pursued litigation against Kroger; this does not change Jewel-Osco's current parentage."
+   },
+   "urls": [],
+   "conflicts_with": [],
+   "merged_from": [
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "In fiscal Q2 2026, Albertsons said it is reviewing its 'portfolio of banners'; no announcement of a Jewel-Osco sale was found.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "In fiscal Q2 2026, Albertsons said it is reviewing its 'portfolio of banners'; no announcement of a Jewel-Osco sale was found."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Jewel-Osco is run through Albertsons subsidiaries such as Jewel Food Stores, Inc. and American Drug Stores LLC; the ultimate parent is Albertsons Companies, Inc.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Jewel-Osco is run through Albertsons subsidiaries such as Jewel Food Stores, Inc. and American Drug Stores LLC; the ultimate parent is Albertsons Companies, Inc."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+   "note": "10-K lists Jewel-Osco among banners of Albertsons Companies, Inc. (NYSE: ACI, Boise); all variants consistent.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+   "note": "10-K cover shows Class A common stock, ticker ACI, on NYSE.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+   "note": "10-K lists principal executive offices at 250 Parkcenter Blvd., Boise, Idaho.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.jewelosco.com/about-us.html",
+   "note": "About Us page says Jewel-Osco is a vital part of Albertsons Inc., a privately held grocery company; the 'privately held' wording is outdated since ACI is public, but the page does say it.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "A": "true"
+   }
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.jewelosco.com/about-us.html",
+   "note": "The page says 'our parent company—AB Acquisition LLC—acquired Jewel-Osco from SUPERVALU' in 2013, so it does name it as parent, though that is dated history.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.jewelosco.com/about-us.html",
+   "note": "Page states AB Acquisition LLC acquired Jewel-Osco from SUPERVALU in 2013; historical context.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.jewelosco.com/about-us.html",
+   "note": "Page says the parent doubled its store base through the 2015 Safeway merger.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+   "note": "10-K states 22 well known banners including Jewel-Osco.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+   "note": "10-K lists Jewel-Osco among banners; the auditor's report is dated April 27, 2026, consistent with that filing date.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Advances-the-ACI-Edge-with-New-Regional-Operating-Model-and-Merch-United/default.aspx",
+   "note": "Press release lists 22 banners including Jewel-Osco; the July 23, 2026 date is not shown in the excerpts but the release is from 2026 (it cites June 20, 2026 store counts).",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.albertsonscompanies.com/about-aci/overview/default.aspx",
+   "note": "Albertsons overview lists Jewel-Osco among its banners; the media policy page also names ACME and Balducci's.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.albertsonscompanies.com/about-aci/overview/default.aspx",
+   "note": "Banner list matches the overview page exactly.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Advances-the-ACI-Edge-with-New-Regional-Operating-Model-and-Merch-United/default.aspx",
+   "note": "July 23, 2026 press release states the East Region will include the Jewel-Osco, Mid-Atlantic and Shaw's markets.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.jewelosco.com/about-us.html",
+   "note": "Jewel-Osco's own page puts the 2013 acquisition from Supervalu by AB Acquisition and says Albertsons is the current parent. The 1999 American Stores deal is well known (Albertsons bought American Stores, Jewel's owner, in 1999), but the page doesn't mention it. A date gap from 1999 to 2006 is the nu",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.jewelosco.com/about-us.html",
+   "note": "Supervalu acquired Jewel-Osco in 2006 (from Albertsons) and sold it in 2013 (to AB Acquisition); the claim is correct on that history.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Advances-the-ACI-Edge-with-New-Regional-Operating-Model-and-Merch-United/default.aspx",
+   "note": "The July 2026 release and the Feb 2026 10-K list Jewel-Osco among current Albertsons banners; no sale found.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jewelosco.com/about-us.html",
+   "note": "Jewel-Osco says it is part of Albertsons and that AB Acquisition LLC acquired it in 2013; the 10-K shows Albertsons Companies, Inc. as the parent holding company.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+   "note": "The 10-K refers to the termination of the Merger Agreement, with retention payments made Dec 12, 2024. The Kroger litigation is not shown in the passages, but it is known from outside the passages.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true"
+   }
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/aci-20260228.htm",
+   "note": "The 10-K says all operations run through ACI's subsidiaries. The entity names Jewel Food Stores, Inc. and American Drug Stores LLC are not in the passages but are consistent with known filings.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "http://albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+   "note": "The leadership page lists Tom Lofland as President, Jewel-Osco Division, so Jewel-Osco is an Albertsons Companies division. The Jewel-Osco about page and the ACI press release trademark note also tie the banner to Albertsons.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chainstoreage.com/albertsons-beats-street-q2-profit-pulls-guidance-review-business",
+   "note": "Search results on the Q2 fiscal 2026 results (quarter ended Sept 12, 2026) say Albertsons is reviewing its 'portfolio of banners'. They name no Jewel-Osco sale. The saved ACI press release does not contain this quote, and I did not open the Q2 release itself.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "EDGAR shows Albertsons Companies' latest 10-K, for fiscal year ended Feb 28, 2026, was filed 2026-04-27. Item 1 lists Jewel-Osco among its 22 banners. 2026 news (July regional restructuring, president's retirement) still treats Jewel-Osco as part of Albertsons; a standard search found no reports of "
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 22,
+ "scores": {
+  "nimble": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 60.75,
+   "coverage": 0.514,
+   "accuracy": 1.0,
+   "combined": 0.679,
+   "thorough_coverage": 0.543,
+   "answer_truth": 6,
+   "thoroughness": 0.704,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 60.75,
+   "coverage": 0.343,
+   "accuracy": 1.0,
+   "combined": 0.511,
+   "thorough_coverage": 0.198,
+   "answer_truth": 6,
+   "thoroughness": 0.33,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 60.75,
+   "coverage": 0.257,
+   "accuracy": 1.0,
+   "combined": 0.409,
+   "thorough_coverage": 0.247,
+   "answer_truth": 6,
+   "thoroughness": 0.396,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 60.75,
+   "coverage": 0.343,
+   "accuracy": 1.0,
+   "combined": 0.511,
+   "thorough_coverage": 0.28,
+   "answer_truth": 6,
+   "thoroughness": 0.437,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 1,
+   "truth": 20,
+   "truth_weight": 60.75,
+   "coverage": 0.314,
+   "accuracy": 0.981,
+   "combined": 0.476,
+   "thorough_coverage": 0.424,
+   "answer_truth": 6,
+   "thoroughness": 0.592,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 60.75,
+   "coverage": 0.343,
+   "accuracy": 1.0,
+   "combined": 0.511,
+   "thorough_coverage": 0.247,
+   "answer_truth": 6,
+   "thoroughness": 0.396,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.646,
+ "corrections_v2": {
+  "units_before": 24,
+  "units_after": 21,
+  "dedup_groups": [
+   {
+    "kept": "c4",
+    "merged": [
+     "c5"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c8"
+    ]
+   },
+   {
+    "kept": "c21",
+    "merged": [
+     "c22"
+    ]
+   }
+  ],
+  "cost": 0.019
+ }
+}

@@ -1,0 +1,609 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 9,
+ "task": "Who is Stripe's CTO?",
+ "labels": {
+  "nimble": "A",
+  "gpt": "B",
+  "firecrawl": "C",
+  "opus": "D",
+  "parallel": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 7,
+ "evidence_fetched": 7,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Stripe's official leadership page does not list or identify a Chief Technology Officer.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "As of November 11, 2026, Stripe's official leadership page does not list a Chief Technology Officer.",
+    "E": "Stripe's official leadership page lists Will Gaybrick as President, Technology and Business, and does not list a CTO.",
+    "B": "Stripe's official leadership page does not identify a current chief technology officer.",
+    "D": "Stripe's newsroom leadership list does not include a CTO."
+   },
+   "urls": [
+    "https://derrick-app.com/company/stripe/executives",
+    "https://stripe.com/en-ch/newsroom/information",
+    "https://stripe.com/newsroom/information"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Stripe's official leadership page lists Will Gaybrick as President, Technology and Business.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Stripe's official leadership page lists Will Gaybrick as President, Technology and Business.",
+    "E": "Stripe's official leadership page lists Will Gaybrick as President, Technology and Business, and does not list a CTO.",
+    "B": "Stripe's leadership page lists Will Gaybrick as President, Technology and Business.",
+    "D": "Will Gaybrick is listed on Stripe's newsroom leadership list as President, Technology and Business."
+   },
+   "urls": [
+    "https://derrick-app.com/company/stripe/executives",
+    "https://stripe.com/en-ch/newsroom/information",
+    "https://stripe.com/newsroom/information"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c2",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Anthropic announced on October 7, 2025 that Rahul Patil joined Anthropic as its Chief Technology Officer.",
+   "asserted_by": [
+    "F",
+    "E",
+    "C",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "F": "Anthropic announced on October 7, 2025 that Rahul Patil joined Anthropic as its Chief Technology Officer.",
+    "E": "Rahul Patil joined Anthropic as Chief Technology Officer, announced on October 7, 2025.",
+    "C": "Rahul Patil joined Anthropic as its Chief Technology Officer, announced 2025-10-07.",
+    "B": "Anthropic announced Rahul Patil's appointment as its Chief Technology Officer on October 7, 2025.",
+    "D": "Rahul Patil left Stripe to become Anthropic's CTO, announced October 7, 2025."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/rahul-patil-joins-anthropic"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Rahul Patil most recently served as CTO of Stripe before joining Anthropic (so he is Stripe's former CTO).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Rahul Patil most recently served as CTO of Stripe before joining Anthropic.",
+    "E": "Rahul Patil most recently served as CTO of Stripe before joining Anthropic.",
+    "C": "Anthropic describes Rahul Patil as having most recently served as CTO of Stripe before joining Anthropic.",
+    "B": "Rahul Patil most recently served as CTO of Stripe before joining Anthropic, making him Stripe's former CTO."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/rahul-patil-joins-anthropic"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Rahul Patil became Stripe's CTO in August 2024 (reported August 27, 2024), replacing David Singleton.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "C": "Rahul Patil was appointed Stripe's Chief Technology Officer in 2024 (reported 2024-08-27), replacing David Singleton.",
+    "D": "Rahul Patil became Stripe's CTO in August 2024 after David Singleton stepped down."
+   },
+   "urls": [
+    "https://pymnts.com/personnel/2024/stripe-cto-david-singleton-to-step-down-start-own-company",
+    "https://www.financemagnates.com/executives/stripe-promotes-rahul-patil-to-chief-technology-officer-david-singleton-departs/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "David Singleton stepped down as Stripe CTO in August 2024 after seven years to start his own company, and stayed at Stripe until October 2024 to support the transition.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "David Singleton stepped down as Stripe CTO in August 2024 after seven years to start his own company, and remained at Stripe until October 2024 to support the transition."
+   },
+   "urls": [
+    "https://pymnts.com/personnel/2024/stripe-cto-david-singleton-to-step-down-start-own-company",
+    "https://www.financemagnates.com/executives/stripe-promotes-rahul-patil-to-chief-technology-officer-david-singleton-departs/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "A leadership tracker logged Rahul Patil's departure from Stripe to become Anthropic's CTO on October 2, 2025, and shows no CTO among Stripe's current leadership.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "A leadership tracker logged Rahul Patil's departure from Stripe to become Anthropic's CTO on October 2, 2025, and shows no CTO among Stripe's current leadership."
+   },
+   "urls": [
+    "https://leaders.fru.dev/companies/stripe"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Stripe does not appear to have a publicly announced CTO as of November 11, 2026.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Stripe does not appear to have a publicly announced CTO as of November 11, 2026."
+   },
+   "urls": [
+    "https://derrick-app.com/company/stripe/executives"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Stripe has not publicly named a successor CTO after Patil's departure; the conclusion that the role is publicly unfilled rests on the executive listing and the absence of an appointment announcement.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Stripe has not publicly named a successor CTO after Rahul Patil's departure; the conclusion that the role is publicly unfilled rests on the executive listing and the absence of an appointment announcement."
+   },
+   "urls": [
+    "https://derrick-app.com/company/stripe/executives"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c14",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Stripe's official page does not explicitly state the CTO role is vacant; the conclusion that there is no publicly identified current CTO rests on the leadership listing rather than an explicit vacancy announcement.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Stripe's official page does not explicitly state that the CTO role is vacant, so the conclusion that there is no publicly identified current Stripe CTO is based on the current leadership listing rather than an explicit vacancy announcement."
+   },
+   "urls": [
+    "https://stripe.com/newsroom/information"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Stripe may have filled the CTO role internally without announcing it, or moved the duties under Will Gaybrick.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Stripe may have filled the CTO role internally without announcing it, or moved the duties under Will Gaybrick."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Some search-engine AI summaries still describe Rahul Patil as Stripe's CTO in 2026, which is outdated and contradicted by Anthropic's announcement.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Some search-engine AI summaries still describe Rahul Patil as Stripe's CTO in 2026, which is outdated and contradicted by Anthropic's announcement."
+   },
+   "urls": [
+    "https://www.anthropic.com/news/rahul-patil-joins-anthropic"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Some third-party sites still name David Singleton or Rahul Patil as Stripe's CTO; those listings are out of date.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Some third-party sites still name David Singleton or Rahul Patil as Stripe's CTO; those listings are out of date."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stripe.com/newsroom/information",
+   "note": "Stripe's newsroom leadership list shows no CTO; Gaybrick is President, Technology and Business.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "B": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stripe.com/newsroom/information",
+   "note": "Page lists Will Gaybrick as President, Technology and Business.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "B": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
+   "note": "Anthropic post dated Oct 7, 2025 announces Patil as CTO.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
+   "note": "Anthropic says he most recently served as CTO of Stripe.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "C": "true",
+    "B": "true",
+    "A": "true"
+   }
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.financemagnates.com/executives/stripe-promotes-rahul-patil-to-chief-technology-officer-david-singleton-departs/",
+   "note": "Aug 27, 2024 report: Stripe promoted Patil to CTO, replacing Singleton.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://pymnts.com/personnel/2024/stripe-cto-david-singleton-to-step-down-start-own-company",
+   "note": "Stepping down after seven years to start a company, staying until October to support the transition.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://leaders.fru.dev/companies/stripe",
+   "note": "Tracker logs Patil leaving Oct 2, 2025 and shows no CTO among current leaders.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stripe.com/newsroom/information",
+   "note": "No CTO appears on the official leadership list; consistent with no public CTO.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stripe.com/newsroom/information",
+   "note": "No successor named in the listing or in any source found.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   }
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stripe.com/newsroom/information",
+   "note": "The page lists leaders and says nothing about vacancy; the inference rests on the listing.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stripe.com/newsroom/information",
+   "note": "Stripe's leadership page lists no CTO and gives Will Gaybrick the title 'President, Technology and Business', so the hedge that duties sit under him is consistent. Internal filling without an announcement is not confirmed.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
+   "note": "Anthropic confirms Patil left Stripe to become its CTO, so any listing of him as Stripe CTO is outdated. No saved page shows what search-engine AI summaries say.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
+   "note": "The Patil part is outdated per Anthropic's announcement, and Singleton stepped down in 2024 per PYMNTS. The saved third-party pages (derrick-app, fru.dev) list neither as current Stripe CTO, so the claim that some sites still do is not shown by them.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "note": "Correct as history. Patil was named Stripe CTO in Aug 2024, replacing David Singleton, and had been deputy CTO since Jan 2024 (FinTech Futures, PYMNTS, Finance Magnates). He left in Oct 2025 to become Anthropic's CTO, so he is no longer Stripe's CTO. The claim doesn't say he still holds the role."
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "The title 'President of Technology and Business' appears on a Nov 2025 podcast and the Stripe Sessions 2026 pages. The listed remit (engineering, infrastructure, security, partnerships, risk, GTM ops, support) comes only from derrick-app (as of Aug 2026). TheOrg and one Sessions listing use the olde"
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 17,
+ "scores": {
+  "nimble": {
+   "units": 9,
+   "unverifiable": 1,
+   "true": 8,
+   "wrong": 0,
+   "truth": 12,
+   "truth_weight": 60.25,
+   "coverage": 0.824,
+   "accuracy": 0.992,
+   "combined": 0.9,
+   "thorough_coverage": 0.739,
+   "answer_truth": 7,
+   "thoroughness": 0.847,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 12,
+   "truth_weight": 60.25,
+   "coverage": 0.706,
+   "accuracy": 1.0,
+   "combined": 0.828,
+   "thorough_coverage": 0.598,
+   "answer_truth": 7,
+   "thoroughness": 0.748,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 12,
+   "truth_weight": 60.25,
+   "coverage": 0.529,
+   "accuracy": 1.0,
+   "combined": 0.692,
+   "thorough_coverage": 0.481,
+   "answer_truth": 7,
+   "thoroughness": 0.65,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 12,
+   "truth_weight": 60.25,
+   "coverage": 0.588,
+   "accuracy": 1.0,
+   "combined": 0.741,
+   "thorough_coverage": 0.602,
+   "answer_truth": 7,
+   "thoroughness": 0.751,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 12,
+   "truth_weight": 60.25,
+   "coverage": 0.706,
+   "accuracy": 1.0,
+   "combined": 0.828,
+   "thorough_coverage": 0.598,
+   "answer_truth": 7,
+   "thoroughness": 0.748,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 12,
+   "truth_weight": 60.25,
+   "coverage": 0.706,
+   "accuracy": 1.0,
+   "combined": 0.828,
+   "thorough_coverage": 0.647,
+   "answer_truth": 7,
+   "thoroughness": 0.786,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.658,
+ "corrections_v2": {
+  "units_before": 20,
+  "units_after": 13,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c12"
+    ]
+   },
+   {
+    "kept": "c2",
+    "merged": [
+     "c11"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c8"
+    ]
+   },
+   {
+    "kept": "c4",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c16"
+    ]
+   },
+   {
+    "kept": "c14",
+    "merged": [
+     "c17"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

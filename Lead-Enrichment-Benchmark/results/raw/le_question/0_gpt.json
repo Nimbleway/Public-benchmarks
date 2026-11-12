@@ -1,0 +1,77 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_03298cea43c49e3b006af4b01caa1887d2ad85b97e2d606b04",
+ "status": "completed",
+ "seconds": 24,
+ "output": {
+  "question": "Is Anduril publicly traded?",
+  "answer": "No. As of November 11, 2026, Anduril Industries is privately held, does not trade on public stock exchanges, and has no public stock ticker.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Anduril is a private company and is not publicly traded.",
+    "source_url": "https://forgeglobal.com/anduril_ipo/",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "Anduril has no public stock ticker because it is a private company.",
+    "source_url": "https://www.nasdaqprivatemarket.com/company/anduril/",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Anduril is a private company and not publicly traded.",
+    "source_url": "https://forgeglobal.com/anduril_ipo/",
+    "publisher": "Forge Global",
+    "published_date": null
+   },
+   {
+    "quote": "There is no ticker symbol for Anduril stock because it is a private company.",
+    "source_url": "https://www.nasdaqprivatemarket.com/company/anduril/",
+    "publisher": "Nasdaq Private Market",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "Listing status may change; this answer reflects pages checked on November 11, 2026."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 21478,
+  "input_tokens_details": {
+   "cache_write_tokens": 13,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 560,
+  "output_tokens_details": {
+   "reasoning_tokens": 183
+  },
+  "total_tokens": 22038
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0392,
+ "cost_usd": 0.0592,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Is Anduril publicly traded?",
+ "input_n": 0,
+ "completed_on": "2026-11-11"
+}

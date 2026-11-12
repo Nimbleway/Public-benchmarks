@@ -1,0 +1,71 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0ab57b220c842208006af4b0efd2a487d2b2882dada6be5151",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "Who is the parent company of Jewel-Osco?",
+  "answer": "Jewel-Osco\u2019s parent company is Albertsons Companies, Inc. Albertsons identifies Jewel-Osco among its banner stores.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Jewel-Osco is a banner of Albertsons Companies, Inc.",
+    "source_url": "https://www.albertsonsmediacollective.com/content-policy/default.aspx",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "References to \u201cwe/us\u201d or \u201cAlbertsons\u201d means Albertsons Companies, Inc.",
+    "source_url": "https://www.albertsonsmediacollective.com/content-policy/default.aspx",
+    "publisher": "Albertsons Media Collective",
+    "published_date": null
+   },
+   {
+    "quote": "and our affiliates and banner stores such as ACME, Balducci\u2019s, Jewel-Osco",
+    "source_url": "https://www.albertsonsmediacollective.com/content-policy/default.aspx",
+    "publisher": "Albertsons Media Collective",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "The source identifies the corporate parent and banner relationship, not the intermediate legal ownership structure."
+  ],
+  "missing_fields": [
+   "passages.published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 13218,
+  "input_tokens_details": {
+   "cache_write_tokens": 17,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 540,
+  "output_tokens_details": {
+   "reasoning_tokens": 217
+  },
+  "total_tokens": 13758
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0225,
+ "cost_usd": 0.0425,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Jewel-Osco?",
+ "input_n": 48,
+ "completed_on": "2026-11-11"
+}

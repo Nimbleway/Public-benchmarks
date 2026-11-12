@@ -1,0 +1,76 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0516da25a6bb5817006af4b0c23f7c87d2a77849a42848efa9",
+ "status": "completed",
+ "seconds": 23,
+ "output": {
+  "question": "Who owns Xfinity?",
+  "answer": "Xfinity is owned by Comcast Corporation. It is Comcast\u2019s consumer brand for residential internet, mobile, TV, home security, and home phone services.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Comcast is Xfinity\u2019s parent company.",
+    "source_url": "https://www.xfinity.com/learn",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "Xfinity is Comcast\u2019s consumer connectivity and entertainment brand for residential services.",
+    "source_url": "https://www.xfinity.com/learn",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Xfinity is Comcast's consumer connectivity and entertainment brand.",
+    "source_url": "https://www.xfinity.com/learn",
+    "publisher": "Xfinity",
+    "published_date": null
+   },
+   {
+    "quote": "Comcast is the parent company",
+    "source_url": "https://www.xfinity.com/learn",
+    "publisher": "Xfinity",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "Xfinity is a Comcast brand, rather than a separate parent company. The source page does not display a publication date."
+  ],
+  "missing_fields": [
+   "passages.published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 13170,
+  "input_tokens_details": {
+   "cache_write_tokens": 11,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 395,
+  "output_tokens_details": {
+   "reasoning_tokens": 72
+  },
+  "total_tokens": 13565
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.021,
+ "cost_usd": 0.041,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "dd_question",
+ "input": "Who owns Xfinity?",
+ "input_n": 33,
+ "completed_on": "2026-11-11"
+}

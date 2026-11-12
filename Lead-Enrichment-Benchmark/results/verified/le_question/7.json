@@ -1,0 +1,712 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 7,
+ "task": "Who is IBM's CTO?",
+ "labels": {
+  "nimble": "A",
+  "gpt": "B",
+  "firecrawl": "C",
+  "exa": "D",
+  "parallel": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 9,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "IBM's official senior leadership page (as of 2026-11-11) lists no company-wide Chief Technology Officer.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "IBM's official Senior Leadership page, as of 2026-11-11, lists Chairman, President and CEO Arvind Krishna and his direct reports with no Chief Technology Officer, so IBM has no single company-wide CTO.",
+    "B": "IBM's official senior-leadership roster does not identify a company-wide Chief Technology Officer.",
+    "C": "IBM's official senior leadership page lists corporate leadership roles but does not list a company-wide Chief Technology Officer (as of 2026-11-11)."
+   },
+   "urls": [
+    "ee08e542",
+    "https://newsroom.ibm.com/executive-bios",
+    "https://www.ibm.com/investor/governance/senior-leadership"
+   ],
+   "conflicts_with": [
+    "c5"
+   ],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "As of November 11, 2026, Christian Jacobi is IBM's Chief Technology Officer and IBM Fellow for IBM Systems Development.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "As of November 11, 2026, Christian Jacobi is IBM's Chief Technology Officer and IBM Fellow for IBM Systems Development."
+   },
+   "urls": [
+    "https://newsroom.ibm.com/2026-08-24-ibm-unveils-next-generation-dual-architecture-processor-for-ibm-z-and-linuxone",
+    "https://www.ibm.com/think/videos/ai-academy/data-strategy-gen-ai"
+   ],
+   "conflicts_with": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+   ],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Arvind Krishna is IBM's Chairman, President and Chief Executive Officer.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Arvind Krishna is IBM's Chairman, President and Chief Executive Officer.",
+    "C": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM.",
+    "D": "IBM's senior-leadership page lists Arvind Krishna as Chairman, President and Chief Executive Officer.",
+    "F": "Arvind Krishna is IBM's Chairman, President and Chief Executive Officer."
+   },
+   "urls": [
+    "https://www.ibm.com/investor/governance/senior-leadership",
+    "ee08e542"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Dr. Jay M. Gambetta is listed as Director of IBM Research on IBM's senior leadership page.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "A": "IBM's Senior Leadership page lists Dr. Jay M. Gambetta as Director of IBM Research.",
+    "B": "Dr. Jay M. Gambetta is Director of IBM Research."
+   },
+   "urls": [
+    "ee08e542",
+    "https://www.ibm.com/investor/governance/senior-leadership"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Matt Hicks is Senior Vice President and CEO of Red Hat.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "IBM's Senior Leadership page lists Matt Hicks as Senior Vice President and CEO of Red Hat."
+   },
+   "urls": [
+    "ee08e542"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "James J. Kavanaugh is Senior Vice President, Finance and Operations and Chief Financial Officer.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "IBM's Senior Leadership page lists James J. Kavanaugh as Senior Vice President, Finance and Operations and Chief Financial Officer."
+   },
+   "urls": [
+    "ee08e542"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Kareem Yusuf, Ph.D, is Senior Vice President, Ecosystem, Strategic Partners and Initiatives.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "IBM's senior-leadership page lists Kareem Yusuf, Ph.D, as Senior Vice President, Ecosystem, Strategic Partners and Initiatives."
+   },
+   "urls": [
+    "https://www.ibm.com/investor/governance/senior-leadership"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Jonathan H. Adashek is Senior Vice President, Marketing and Communications at IBM.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Jonathan H. Adashek is Senior Vice President, Marketing and Communications at IBM."
+   },
+   "urls": [
+    "https://www.ibm.com/investor/governance/senior-leadership"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Jason McGee is IBM Fellow, CTO of IBM Cloud, and General Manager, Cloud Platform and Common Services.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Jason McGee is IBM Fellow, CTO of IBM Cloud, and General Manager, Cloud Platform and Common Services."
+   },
+   "urls": [
+    "46019c81"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Amith Singhee is Chief Technology Officer of IBM India/South Asia.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Amith Singhee is Chief Technology Officer of IBM India/South Asia.",
+    "C": "Amith Singhee is Director of IBM Research India and Chief Technology Officer of IBM India/South Asia."
+   },
+   "urls": [
+    "77509834",
+    "https://research.ibm.com/people/amith-singhee"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c16",
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Amith Singhee is Director of IBM Research India.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Amith Singhee is Director of IBM Research India.",
+    "C": "Amith Singhee is Director of IBM Research India and Chief Technology Officer of IBM India/South Asia."
+   },
+   "urls": [
+    "https://research.ibm.com/people/amith-singhee"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Shanker V Selvadurai, based in Singapore, is Vice President & CTO of IBM Technology for Asia Pacific, leading the technical organization that helps clients across the region.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Shanker V Selvadurai, based in Singapore, is Vice President & CTO of IBM Technology for Asia Pacific, leading the technical organization that helps clients across the region."
+   },
+   "urls": [
+    "1029a4a2"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "IBM elevated Harish Bharti to CTO, Asia Pacific, for IBM Consulting, announced September 2026 (published 2026-09-16).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "IBM elevated Harish Bharti to chief technology officer (CTO), Asia Pacific, for IBM Consulting, announced in September 2026 (published 2026-09-16)."
+   },
+   "urls": [
+    "a49d1e8f"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "IBM Canada appointed Jessica Rockwood as Chief Technology Officer in August 2026 (published 2026-08-01).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "IBM Canada appointed Jessica Rockwood as Chief Technology Officer in August 2026 (published 2026-08-01)."
+   },
+   "urls": [
+    "9f56e613"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Sujey Edward, previously CTO at Octo, has taken the role of Chief Technology Officer and Senior Partner at IBM, a consulting/practice-level role and not the corporate CTO (GovForum post dated 2026-03-15).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Sujey Edward, previously CTO at Octo, has taken on the role of Chief Technology Officer and Senior Partner at IBM, a consulting/practice-level role and not the corporate CTO (GovForum post dated 2026-03-15)."
+   },
+   "urls": [
+    "https://www.insights.govforum.io/?p=287800"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "IBM's CTO titles are unit- and region-level roles, so any answer naming 'IBM's CTO' refers to a specific unit or region rather than a corporate-wide officer.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "IBM's CTO titles are unit- and region-level roles, so any answer naming 'IBM's CTO' refers to a specific unit or region rather than a corporate-wide officer."
+   },
+   "urls": [
+    "ee08e542"
+   ],
+   "conflicts_with": [
+    "c5"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "IBM has CTOs at the unit and practice level (e.g., IBM Consulting, Software, Infrastructure and Red Hat), so which one counts as 'the CTO' depends on the unit.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "IBM has CTOs at the unit and practice level (for example IBM Consulting, Software, Infrastructure and Red Hat), so which one counts as 'the CTO' depends on the unit."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Older third-party and social profiles (e.g., LinkedIn headlines such as 'CTO at IBM') can be stale or refer to long-standing unit-level roles.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Older third-party and social profiles (e.g., LinkedIn headlines such as 'CTO at IBM') can be stale or refer to long-standing unit-level roles."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Unit-level CTO roles at IBM change frequently, so any named unit CTO could change.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Unit-level CTO roles at IBM change frequently, so any named unit CTO could change."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.ibm.com/investor/governance/senior-leadership",
+   "note": "The page lists Krishna and his reports (Adashek through Wright) and no CTO title appears. Variants A, B and C all hold.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://newsroom.ibm.com/2026-08-24-ibm-unveils-next-generation-dual-architecture-processor-for-ibm-z-and-linuxone",
+   "note": "Jacobi holds the title CTO and IBM Fellow, IBM Systems Development. This is a divisional CTO, not a company-wide one.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.ibm.com/investor/governance/senior-leadership",
+   "note": "The page lists Krishna as Chairman, President and CEO. This is context rather than the CTO answer.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.ibm.com/investor/governance/senior-leadership",
+   "note": "The page lists Gambetta as Director of IBM Research.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.ibm.com/investor/governance/senior-leadership",
+   "note": "The page lists Hicks as SVP and CEO of Red Hat.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.ibm.com/investor/governance/senior-leadership",
+   "note": "The page lists Kavanaugh as SVP, Finance and Operations and CFO.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.ibm.com/executive-bios",
+   "note": "The executive-bios page lists Yusuf with this title. The senior-leadership excerpt is truncated before his entry.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.ibm.com/investor/governance/senior-leadership",
+   "note": "The investor page gives this title, but the newsroom bios page shows 'Chief Global Affairs Officer', so the title may be outdated.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://research.ibm.com/people/amith-singhee",
+   "note": "IBM Research bio states he is CTO of IBM India/South Asia, a regional role not the corporate CTO.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "A": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://research.ibm.com/people/amith-singhee",
+   "note": "Bio states Director of IBM Research India.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.insights.govforum.io/?p=287800",
+   "note": "The GovForum article is dated Jan 18, 2024, not 2026-03-15; the role is a practice-level CTO and Senior Partner, but the date in the claim is wrong.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://newsroom.ibm.com/2026-08-24-ibm-unveils-next-generation-dual-architecture-processor-for-ibm-z-and-linuxone",
+   "note": "Overgeneralized: IBM CTO titles are mostly unit or region-level, but a corporate-wide CTO could exist (historically Dario Gil era, and the senior leadership list shown doesn't name one); the claim is stated absolutely without support.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://newsroom.ibm.com/2026-08-24-ibm-unveils-next-generation-dual-architecture-processor-for-ibm-z-and-linuxone",
+   "note": "Examples like Christian Jacobi as CTO of IBM Systems Development and Sujey Edward at Consulting show unit-level CTOs; the senior leadership page lists no corporate CTO.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.insights.govforum.io/?p=287800",
+   "note": "Reasonable caveat: the GovForum post is from 2024, and unit-level CTO titles appear in older profiles.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.ibm.com/think/author/jason-mcgee",
+   "note": "IBM's author page gives him as IBM Fellow, CTO IBM Cloud, GM Platform and Common Services. This is a product-level CTO role, not IBM's company-wide CTO.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://asean.newsroom.ibm.com/shanker-selvadurai",
+   "note": "IBM's Asia Pacific leadership page lists him as VP & CTO of IBM Technology for Asia Pacific, based in Singapore. This is a regional CTO role, not company-wide.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.hrkatha.com/people/movement/ibm-elevates-harish-bharti-to-cto-asia-pacific-ibm-consulting/",
+   "note": "HR Katha dates the article 2026-09-16. Another source's image path suggests late October, so the date is slightly uncertain. This is a regional CTO role.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://techcouver.com/2025/05/29/ibm-canada-cto-manav-gupta-on-scaling-ai-for-productivity-and-trust/",
+   "note": "No source in the saved evidence or in my search mentions Jessica Rockwood at IBM. IBM Canada's CTO was reported as Manav Gupta in May 2025. I treat the claim as unsupported and mark it false, but my search was not exhaustive.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.ibm.com/investor/governance/senior-leadership",
+   "note": "This is a general caveat that unit-level CTO roles can change. It is plausible, but no source states it directly, and it doesn't name IBM's corporate CTO.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 20,
+ "scores": {
+  "nimble": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 2,
+   "truth": 16,
+   "truth_weight": 50.25,
+   "coverage": 0.333,
+   "accuracy": 0.857,
+   "combined": 0.48,
+   "thorough_coverage": 0.597,
+   "answer_truth": 3,
+   "thoroughness": 0.704,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 50.25,
+   "coverage": 0.333,
+   "accuracy": 1.0,
+   "combined": 0.5,
+   "thorough_coverage": 0.313,
+   "answer_truth": 3,
+   "thoroughness": 0.477,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 50.25,
+   "coverage": 0.333,
+   "accuracy": 1.0,
+   "combined": 0.5,
+   "thorough_coverage": 0.328,
+   "answer_truth": 3,
+   "thoroughness": 0.494,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 50.25,
+   "coverage": 0.667,
+   "accuracy": 1.0,
+   "combined": 0.8,
+   "thorough_coverage": 0.433,
+   "answer_truth": 3,
+   "thoroughness": 0.604,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 1,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 50.25,
+   "coverage": 0.333,
+   "accuracy": 1.0,
+   "combined": 0.5,
+   "thorough_coverage": 0.179,
+   "answer_truth": 3,
+   "thoroughness": 0.304,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 1,
+   "truth": 16,
+   "truth_weight": 50.25,
+   "coverage": 0.667,
+   "accuracy": 0.98,
+   "combined": 0.793,
+   "thorough_coverage": 0.478,
+   "answer_truth": 3,
+   "thoroughness": 0.642,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.671,
+ "corrections_v2": {
+  "units_before": 27,
+  "units_after": 19,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3",
+     "c4"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   },
+   {
+    "kept": "c16",
+    "merged": [
+     "c18",
+     "c19"
+    ]
+   }
+  ],
+  "cost": 0.016
+ }
+}

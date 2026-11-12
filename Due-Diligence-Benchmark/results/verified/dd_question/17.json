@@ -1,0 +1,1038 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 17,
+ "task": "What is Twitter's valuation?",
+ "labels": {
+  "exa": "A",
+  "opus": "B",
+  "parallel": "C",
+  "nimble": "D",
+  "firecrawl": "E",
+  "gpt": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 46,
+ "evidence_fetched": 45,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "xAI acquired X (formerly Twitter) on March 28, 2025, in a deal that valued X at $33 billion in equity.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "xAI acquired X (formerly Twitter) on March 28, 2025, in a deal that valued X at $33 billion in equity.",
+    "B": "On March 28, 2025, xAI bought X in an all-stock deal that valued X at $33 billion of equity, or $45 billion including $12 billion of debt.",
+    "C": "The March 2025 xAI acquisition valued X (formerly Twitter) at US$33 billion in equity.",
+    "D": "On March 28, 2025, Elon Musk's xAI acquired X (Twitter) in an all-stock deal valuing X at $33 billion in equity ($45 billion including $12 billion of debt).",
+    "E": "xAI acquired X (formerly Twitter) in an all-stock deal in March 2025 that valued the social-media platform at $33 billion.",
+    "F": "xAI's acquisition of X (formerly Twitter) on March 28, 2025 valued X at US$33 billion in equity."
+   },
+   "urls": [
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/",
+    "https://x.com/elonmusk/status/1905731750275510312",
+    "https://www.investing.com/news/stock-market-news/musks-xai-buys-social-media-platform-x-for-45-billion-3955500",
+    "https://www.nbcchicago.com/news/business/money-report/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion/3708833/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The xAI–X transaction was all-stock.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "The xAI–X transaction was all-stock.",
+    "B": "xAI bought X in an all-stock deal",
+    "C": "xAI acquired X (formerly Twitter) on March 28, 2025, in an all-stock transaction.",
+    "D": "all-stock deal",
+    "E": "all-stock deal in March 2025"
+   },
+   "urls": [
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The xAI–X deal was stated at $45 billion including $12 billion of debt.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "X's stated enterprise value in the March 2025 xAI transaction was $45 billion, which includes $12 billion of debt (equity value = $45 billion less $12 billion debt = $33 billion).",
+    "B": "$45 billion including $12 billion of debt",
+    "C": "The xAI acquisition deal valued X at US$45 billion including US$12 billion of debt.",
+    "D": "$45 billion including $12 billion of debt",
+    "E": "The xAI–X transaction was described as $45 billion in value including $12 billion of debt, implying $33 billion of equity value for X.",
+    "F": "The March 28, 2025 xAI acquisition of X was announced at a US$45 billion valuation including US$12 billion in debt."
+   },
+   "urls": [
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/",
+    "https://www.sullcrom.com/About/News-and-Events/Highlights/2025/March/xAI-X-Merge-113-Billion-Transaction",
+    "https://threadreaderapp.com/thread/1905731750275510312.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The $45 billion figure is an enterprise-style value including debt and should not be presented as X's equity valuation.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "The $45 billion figure for X is an enterprise value including debt and should not be reported as X's equity valuation.",
+    "E": "The $45 billion figure is an enterprise-style transaction value including $12 billion of debt and should not be presented as equity value."
+   },
+   "urls": [
+    "https://www.sullcrom.com/About/News-and-Events/Highlights/2025/March/xAI-X-Merge-113-Billion-Transaction",
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "The March 2025 xAI–X combination valued xAI at $80 billion.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "The March 2025 xAI–X deal valued xAI at $80 billion.",
+    "F": "The xAI–X combination valued xAI at US$80 billion."
+   },
+   "urls": [
+    "https://threadreaderapp.com/thread/1905731750275510312.html",
+    "https://www.nbcchicago.com/news/business/money-report/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion/3708833/",
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Reuters said the $45 billion X valuation was $1 billion above Musk's 2022 take-private price for Twitter.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Reuters said the $45 billion X valuation was $1 billion above Musk's 2022 take-private price for Twitter."
+   },
+   "urls": [
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Elon Musk paid $44 billion for Twitter in 2022.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "D": "Elon Musk paid $44 billion for Twitter in 2022."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Timeline_of_X",
+    "https://www.linkedin.com/posts/nparekh_anyone-know-what-the-implied-valuation-of-activity-7471258457900244992-d4tj"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Fidelity marked X's equity at roughly $12.5 billion in 2024, a ~79% cut from the $44 billion purchase price and the low point before the 2025 recovery.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Fidelity marked X's equity at roughly $12.5 billion in 2024, a ~79% cut from the $44 billion purchase price and the low point before the 2025 recovery."
+   },
+   "urls": [
+    "https://techcrunch.com/2024/09/29/fidelity-has-cut-xs-value-by-79-since-musk-purchase/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Fidelity valued Twitter equity at $15 billion in 2023.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Fidelity valued Twitter equity at $15 billion in 2023."
+   },
+   "urls": [
+    "https://www.linkedin.com/posts/nparekh_anyone-know-what-the-implied-valuation-of-activity-7471258457900244992-d4tj"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "SpaceX completed an all-stock acquisition of xAI (with X inside it) on February 2, 2026, with the combined company expected to price an IPO at about $1.25 trillion.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "SpaceX completed an all-stock acquisition of xAI (with X inside it) on February 2, 2026, with the combined company expected to price an IPO at a valuation of about $1.25 trillion."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "On February 2, 2026, SpaceX acquired xAI, the parent of X, valuing xAI at $250 billion.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On February 2, 2026, SpaceX acquired xAI, the parent of X, valuing xAI at $250 billion."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Timeline_of_X"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "xAI was valued at about $230 billion in a $20 billion funding round that closed in January 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "xAI was valued at about $230 billion in a $20 billion funding round that closed in January 2026."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "SpaceX opened a secondary share sale in 2025 at an $800 billion valuation.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "SpaceX opened a secondary share sale in 2025 at an $800 billion valuation."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "SpaceX went public in June 2026 in the largest first-time share sale on record, raising about $75 billion ($85.7 billion with overallotment) at roughly a $2 trillion debut valuation.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "SpaceX went public in June 2026 in the largest first-time share sale on record, raising about $75 billion ($85.7 billion with overallotment) at roughly a $2 trillion debut valuation."
+   },
+   "urls": [
+    "https://www.linkedin.com/posts/nparekh_anyone-know-what-the-implied-valuation-of-activity-7471258457900244992-d4tj"
+   ],
+   "conflicts_with": [
+    "c18"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "SpaceX priced its IPO at $135 per share (listed at $135 in June 2026).",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "SpaceX priced its IPO at $135 per share on June 11, 2026.",
+    "D": "SpaceX (ticker SPCX) listed at $135 in June 2026"
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+    "https://finance.yahoo.com/quote/SPCX/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "SpaceX began trading on Nasdaq as SPCX on June 12, 2026, at a valuation of about $1.77 trillion, the largest IPO ever.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SpaceX began trading on Nasdaq under the ticker SPCX on June 12, 2026, at a valuation of about $1.77 trillion, the largest IPO ever."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX"
+   ],
+   "conflicts_with": [
+    "c16"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "SpaceX's market cap was about $2.1 trillion at the first-day close of $161 per share.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SpaceX's market cap was about $2.1 trillion at the first-day close of $161 per share."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "SPCX peaked at $225.64.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "peaked at $225.64"
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/SPCX/"
+   ],
+   "conflicts_with": [
+    "c22"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "SPCX has a 52-week low of $104.83 and a previous close of $143.09.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "SPCX has a 52-week low of $104.83 and a previous close of $143.09."
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/SPCX/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "SpaceX's share price peaked at $211 and was later around $123–125, down about 50% from the peak by late July 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SpaceX shares were down about 50% from their peak by late July 2026. SpaceX's share price peaked at $211 and was later around $123–125."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "As of November 11, 2026, SpaceX (SPCX) had an intraday market cap of about $1.935 trillion.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "As of November 11, 2026, SpaceX (SPCX) had an intraday market cap of about $1.935 trillion."
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/SPCX/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "X became part of xAI (March 2025), which was then taken over by SpaceX (February 2026), so X is now a subsidiary within the SpaceX group.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "it became part of xAI, which was then taken over by SpaceX.",
+    "D": "X Corp. is a wholly owned subsidiary of SpaceX Super Intelligence (formerly xAI) since March 28, 2025, which has been a subsidiary of SpaceX since February 2, 2026",
+    "E": "Twitter was folded into xAI and then xAI was folded into SpaceX"
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/X_Corp",
+    "https://en.wikipedia.org/wiki/Timeline_of_X",
+    "https://www.reuters.com/sustainability/boards-policy-regulation/elon-musk-settles-sec-lawsuit-over-twitter-disclosures-15-million-fine-imposed-2026-05-04/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "X has no separate/standalone published or publicly traded valuation as of now; none found after the 2025 deal or the SpaceX–xAI merger.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "As of November 11, 2026, X has no publicly traded market capitalization, and no newer separately disclosed standalone valuation was found",
+    "B": "Twitter, now called X, has had no separate valuation of its own since 2025... No filing or report found gives a separate value for X inside the SpaceX group after the February 2026 SpaceX–xAI merger.",
+    "D": "X has no standalone published valuation.",
+    "E": "Twitter/X has no separately observable standalone public-market valuation as of 2026-11-11."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/X_Corp",
+    "https://en.wikipedia.org/wiki/Timeline_of_X",
+    "https://www.reuters.com/sustainability/boards-policy-regulation/elon-musk-settles-sec-lawsuit-over-twitter-disclosures-15-million-fine-imposed-2026-05-04/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "$33 billion is the latest disclosed standalone valuation of X found and the best current reference for its equity value, not a live market capitalization.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "$33 billion is the best current reference for X's equity value.",
+    "E": "The $33 billion figure is the latest disclosed standalone transaction valuation found, not a live market capitalization."
+   },
+   "urls": [
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "The $33 billion valuation came from a transaction between companies controlled by Musk, so it is not an independently observed public-market price.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "A": "X is privately held, and the $33 billion valuation came from a transaction between companies controlled by Elon Musk, so it is not an independently observed public-market price.",
+    "B": "The $33 billion X valuation is an internal valuation between companies Musk controls, set by Musk himself, and X has been a private subsidiary with no market price since the 2025 deal.",
+    "F": "The xAI acquisition of X was an all-stock transaction between companies controlled by Elon Musk, so it is not a public-market price."
+   },
+   "urls": [
+    "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/",
+    "https://www.nbcchicago.com/news/business/money-report/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion/3708833/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "X is held within XAI Holdings, a private company that also owns Musk's AI startup, and as of February 2026 it was burdened with billions of dollars in debt.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "X is held within XAI Holdings, a private company that also owns Musk's AI startup, and as of February 2026 it was burdened with billions of dollars in debt."
+   },
+   "urls": [
+    "https://www.bloomberg.com/news/articles/2026-02-04/spacex-merger-provides-lifeline-for-musk-s-debt-ridden-ai-startup"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "An analyst estimate (Nikesh Parekh, LinkedIn, June 2026, not company-confirmed) puts X's implied post-IPO value at about $116 billion, assuming X is 29% of xAI and xAI is 20% of a $2 trillion SpaceX.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "An analyst estimate (Nikesh Parekh, LinkedIn, June 2026, not company-confirmed) puts X's implied post-IPO value at about $116 billion, assuming X is 29% of xAI and xAI is 20% of a $2 trillion SpaceX."
+   },
+   "urls": [
+    "https://www.linkedin.com/posts/nparekh_anyone-know-what-the-implied-valuation-of-activity-7471258457900244992-d4tj"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "The ~$116 billion implied X value represents a 3.5x return from 2022 and a 9.3x return from the 2024 low point.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The ~$116 billion implied X value represents a 3.5x return from 2022 and a 9.3x return from the 2024 low point."
+   },
+   "urls": [
+    "https://www.linkedin.com/posts/nparekh_anyone-know-what-the-implied-valuation-of-activity-7471258457900244992-d4tj"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "X's results are folded into SpaceX's 'Super Intelligence' segment, which had Q3 2026 revenue of $7.56 billion.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "X's results are folded into SpaceX's 'Super Intelligence' segment, which had Q3 2026 revenue of $7.56 billion."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Later private-company valuations of the combined xAI/SpaceX entities cannot be cleanly attributed to Twitter/X alone.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Later private-company valuations of the combined xAI/SpaceX entities cannot be cleanly attributed to Twitter/X alone."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Musk wrote on X that \"xAI and X's futures are intertwined.\"",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Musk wrote on X that \"xAI and X's futures are intertwined.\""
+   },
+   "urls": [
+    "https://www.nbcchicago.com/news/business/money-report/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion/3708833/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "The SpaceX IPO and merger figures come from Wikipedia, not from SpaceX's own SEC filings.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The SpaceX IPO and merger figures come from Wikipedia, not from SpaceX's own SEC filings."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/",
+   "note": "The March 28, 2025 xAI deal valued X at $33B in equity. This is the last explicit standalone X valuation, but it is superseded by the 2026 SpaceX merger.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/",
+   "note": "Reuters and Musk's own post both describe the deal as all-stock.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://threadreaderapp.com/thread/1905731750275510312.html",
+   "note": "Musk's post says '$33 billion ($45B less $12B debt)'. The $45B figure includes the debt.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sullcrom.com/About/News-and-Events/Highlights/2025/March/xAI-X-Merge-113-Billion-Transaction",
+   "note": "Sullivan & Cromwell calls $45B the enterprise value and $33B the value after the $12B of debt. The caution is a valid framing.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://threadreaderapp.com/thread/1905731750275510312.html",
+   "note": "The deal valued xAI at $80B. This is context rather than X's value.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "B": "true",
+    "E": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28",
+   "note": "Reuters reported the remark, which came from analyst Gil Luria, not from Reuters itself. The $1B-above-2022 point is correct.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.nbcchicago.com/news/business/money-report/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion/3708833/",
+   "note": "Musk acquired Twitter for about $44B in 2022. This is historical background.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://techcrunch.com/2024/09/29/fidelity-has-cut-xs-value-by-79-since-musk-purchase/",
+   "note": "A 79% cut from $44B implies about $9B, not $12.5B ($12.5B would be a cut of roughly 72%). The claim is internally inconsistent.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/X_Corp",
+   "note": "Fidelity estimated the company at $15B at the end of May 2023. This is historical.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html",
+   "note": "CNBC reports the merger completed Feb. 2, 2026 and an IPO expected at $1.25T. X now sits inside SpaceX, so there is no standalone valuation.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/SpaceX_Super_Intelligence",
+   "note": "The acquisition valued xAI at $250B and SpaceX at $1T. X is a subsidiary of xAI.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html",
+   "note": "CNBC says xAI was valued at about $230B in a $20B round that closed in early 2026.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html",
+   "note": "CNBC says SpaceX opened a secondary share sale last year at an $800B valuation.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+   "note": "The IPO raised $75B (about $86B with overallotment); the pricing valuation was $1.77T and the first-day market cap about $2.1T, so '$2 trillion' is a loose round-up.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/SpaceX",
+   "note": "SpaceX priced its IPO at $135 per share on June 11, 2026.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/SpaceX",
+   "note": "Trading began June 12 as SPCX; the pricing valuation of $1.77T was the largest IPO ever.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+   "note": "The first-day close was $161 (+19%), for a market cap of about $2.1T.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://finance.yahoo.com/quote/SPCX/",
+   "note": "The 52-week range tops out at 225.64.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://finance.yahoo.com/quote/SPCX/",
+   "note": "Yahoo shows a 52-week low of 104.83 and a previous close of 143.09.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+   "note": "Wikipedia gives a $211 peak and $123-125 later, and separately says about 50% down; the 211 to 123-125 move is closer to 40%, and the 211 peak differs from the 225.64 intraday high.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://finance.yahoo.com/quote/SPCX/",
+   "note": "Yahoo shows an intraday market cap of 1.933T on 11/11/2026, essentially the claimed 1.935T.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/X_Corp",
+   "note": "X Corp. has been a subsidiary of xAI since March 28, 2025, and xAI has been a SpaceX subsidiary since February 2, 2026.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/X_Corp",
+   "note": "X is a wholly owned subsidiary with no separate market price, and no standalone valuation appears in the sources, though absence of a figure cannot be proven.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/",
+   "note": "The March 2025 xAI deal valued X at $33B ($45B enterprise value less $12B debt), the latest disclosed figure in the sources.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/",
+   "note": "It was an all-stock deal between Musk-controlled companies, so the price was set internally rather than by the market.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.bloomberg.com/news/articles/2026-02-04/spacex-merger-provides-lifeline-for-musk-s-debt-ridden-ai-startup",
+   "note": "Bloomberg on Feb 4, 2026 said XAI Holdings owns the AI startup and X and is saddled with billions in debt.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.linkedin.com/posts/nparekh_anyone-know-what-the-implied-valuation-of-activity-7471258457900244992-d4tj",
+   "note": "The LinkedIn post gives the $116B figure from 29% of 20% of $2T (0.29 × 0.2 × 2,000 = 116); it is a simplified personal estimate, not company-confirmed.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.linkedin.com/posts/nparekh_anyone-know-what-the-implied-valuation-of-activity-7471258457900244992-d4tj",
+   "note": "The post states 3.5x from 2022 and 9.3x from the 2024 low.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/X_Corp",
+   "note": "X is a subsidiary of xAI, which is a subsidiary of SpaceX, so combined-entity valuations cannot be attributed to X alone; this is a reasonable caveat supported by the ownership structure.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+   "note": "The cited SpaceX IPO and merger material comes from Wikipedia pages, and none of the passages are from SpaceX SEC filings, so this is a sourcing caveat that holds.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "confidence": "medium",
+   "source": "https://tech-insider.org/spacex-ai-revenue-7-56-billion-q3-2026/",
+   "note": "Multiple outlets report SpaceX's Super Intelligence segment had Q3 2026 revenue of $7.56B, per the Oct 20, 2026 results. I did not find in the saved pages or search results a source stating that X is inside this segment. That inference is plausible because xAI and X merged and SpaceX then merged wit",
+   "via": "agent"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "confidence": "high",
+   "source": "https://www.nbcchicago.com/news/business/money-report/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion/3708833/",
+   "note": "The saved CNBC/NBC article quotes Musk's March 2025 X post: \"xAI and X's futures are intertwined.\" It is historical context, not current valuation.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "note": "Reuters (Mar 28, 2025): in the all-stock deal where xAI bought X, xAI was valued at $80B and X at $33B ($45B minus $12B debt). This is a past deal, but the figure is still correct."
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "note": "SpaceX announced the xAI acquisition on Feb 2, 2026 (reported Feb 3). Reuters, citing an unnamed source, said the deal valued SpaceX at $1T and xAI at $250B, about $1.25T combined (https://foxbusiness.com/fox-news-science/spacex-acquires-xai-record-setting-deal-valued-over-1t ; https://finance.yahoo"
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 32,
+ "scores": {
+  "exa": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 92.0,
+   "coverage": 0.492,
+   "accuracy": 1.0,
+   "combined": 0.66,
+   "thorough_coverage": 0.402,
+   "answer_truth": 10,
+   "thoroughness": 0.574,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 92.0,
+   "coverage": 0.635,
+   "accuracy": 1.0,
+   "combined": 0.777,
+   "thorough_coverage": 0.56,
+   "answer_truth": 10,
+   "thoroughness": 0.718,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 92.0,
+   "coverage": 0.063,
+   "accuracy": 1.0,
+   "combined": 0.119,
+   "thorough_coverage": 0.065,
+   "answer_truth": 10,
+   "thoroughness": 0.122,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 20,
+   "unverifiable": 0,
+   "true": 19,
+   "wrong": 1,
+   "truth": 31,
+   "truth_weight": 92.0,
+   "coverage": 0.524,
+   "accuracy": 0.99,
+   "combined": 0.685,
+   "thorough_coverage": 0.554,
+   "answer_truth": 10,
+   "thoroughness": 0.711,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 92.0,
+   "coverage": 0.54,
+   "accuracy": 1.0,
+   "combined": 0.701,
+   "thorough_coverage": 0.424,
+   "answer_truth": 10,
+   "thoroughness": 0.595,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 92.0,
+   "coverage": 0.206,
+   "accuracy": 1.0,
+   "combined": 0.342,
+   "thorough_coverage": 0.147,
+   "answer_truth": 10,
+   "thoroughness": 0.256,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.912,
+ "corrections_v2": {
+  "units_before": 34,
+  "units_after": 32,
+  "dedup_groups": [
+   {
+    "kept": "c5",
+    "merged": [
+     "c6"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   }
+  ],
+  "cost": 0.02
+ }
+}

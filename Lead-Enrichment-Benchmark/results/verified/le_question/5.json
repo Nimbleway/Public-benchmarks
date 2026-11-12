@@ -1,0 +1,585 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 5,
+ "task": "Who is Walmart's CEO?",
+ "labels": {
+  "exa": "A",
+  "firecrawl": "B",
+  "nimble": "C",
+  "gpt": "D",
+  "opus": "E",
+  "parallel": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 9,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "John Furner is President and CEO of Walmart Inc. as of 2026-11-11.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "John R. Furner is the CEO of Walmart Inc. as of November 11, 2026. John Furner is also the president of Walmart Inc.",
+    "B": "John Furner is the president and chief executive officer of Walmart Inc. (as of November 11, 2026). Walmart's official leadership page lists John Furner as \"President and CEO, Walmart Inc.\"",
+    "C": "John Furner is President and Chief Executive Officer of Walmart Inc. as of 2026-11-11, per Walmart's official leadership page.",
+    "D": "John Furner is president and CEO of Walmart Inc. as of November 11, 2026.",
+    "E": "John Furner is the President and CEO of Walmart Inc., leading 2.1 million associates around the world.",
+    "F": "John Furner is President and CEO of Walmart Inc. as of November 11, 2026."
+   },
+   "urls": [
+    "https://corporate.walmart.com/about/leadership/john-furner",
+    "https://corporate.walmart.com/about/leadership",
+    "https://corporate.walmart.com/about/leadership/john-furner/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "John Furner leads 2.1 million Walmart associates around the world.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "B": "John Furner leads 2.1 million associates around the world at Walmart Inc.",
+    "C": "John Furner leads 2.1 million Walmart associates around the world.",
+    "E": "John Furner is the President and CEO of Walmart Inc., leading 2.1 million associates around the world."
+   },
+   "urls": [
+    "https://corporate.walmart.com/about/leadership/john-furner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "John R. Furner is listed as President, Chief Executive Officer and Director of Walmart, Inc. in the Q2 FY27 earnings call transcript dated 2026-08-20.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "John R. Furner is listed as President, Chief Executive Officer and Director of Walmart, Inc. in the Q2 FY27 earnings call transcript dated 2026-08-20."
+   },
+   "urls": [
+    "https://corporate.walmart.com/content/dam/corporate/documents/newsroom/2026/08/20/walmart-releases-q2-fy27-earnings/q2-fy27-earnings-call-transcript.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Furner's succession of Doug McMillon as Walmart Inc. President and CEO took effect February 1, 2026.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "John Furner took over as Walmart Inc. CEO from Doug McMillon effective February 1, 2026.",
+    "D": "John Furner succeeded Doug McMillon as President and CEO of Walmart Inc., effective February 1, 2026.",
+    "E": "Walmart's Board of Directors elected John Furner to succeed Doug McMillon as President and CEO, effective February 1, 2026.",
+    "F": "John Furner's succession of Doug McMillon as Walmart Inc.'s President and CEO took effect February 1, 2026."
+   },
+   "urls": [
+    "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+    "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-25-000172/pressrelease111425.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Walmart announced the Furner succession of McMillon as CEO on November 14, 2025.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Walmart announced the Furner succession of Doug McMillon as CEO on November 14, 2025.",
+    "E": "Walmart announced the succession (John Furner to succeed Doug McMillon as CEO) in November 2025 (November 14, 2025).",
+    "F": "Walmart announced John Furner's appointment as CEO on November 14, 2025."
+   },
+   "urls": [
+    "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Walmart's Board of Directors elected John Furner to succeed Doug McMillon as President and CEO.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Walmart's Board of Directors elected John Furner to succeed Doug McMillon as President and CEO, effective February 1, 2026.",
+    "F": "Walmart's Board of Directors elected John Furner, 51, to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc."
+   },
+   "urls": [
+    "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "John Furner was 51 at the time of the November 2025 announcement.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "At the time of the announcement, John Furner was 51 and Doug McMillon was 59.",
+    "F": "John Furner, 51, ..."
+   },
+   "urls": [
+    "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Doug McMillon was 59 at the time of the November 14, 2025 announcement.",
+   "asserted_by": [
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Doug McMillon was 59 years old at the time of the November 14, 2025 announcement of his succession.",
+    "E": "At the time of the announcement, John Furner was 51 and Doug McMillon was 59.",
+    "F": "... Doug McMillon, 59 ..."
+   },
+   "urls": [
+    "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-25-000172/pressrelease111425.htm",
+    "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Doug McMillon retired as Walmart CEO on January 31, 2026 and remained on the Board of Directors until the next annual shareholders' meeting.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Doug McMillon retired as Walmart CEO on January 31, 2026, and remained on the Board of Directors until the next annual shareholders' meeting."
+   },
+   "urls": [
+    "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Walmart's Form 8-K (filed January 16, 2026) confirms John Furner's promotion to President and CEO of Walmart Inc. as of the Effective Date, announced November 14, 2025.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Walmart's Form 8-K (filed January 16, 2026) confirms John Furner's promotion to President and CEO of Walmart Inc. as of the Effective Date, announced on November 14, 2025."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/104169/000010416926000023/wmt-20260115.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "John Furner joined Walmart in 1993 as an hourly associate.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "John Furner joined Walmart in 1993 as an hourly associate.",
+    "E": "John Furner started at Walmart in 1993 as an hourly store associate."
+   },
+   "urls": [
+    "https://corporate.walmart.com/about/leadership/john-furner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Before becoming Walmart Inc. CEO, John Furner was President and CEO of Walmart U.S. starting in 2019 (November 2019).",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "John Furner previously served as President and CEO of Walmart U.S. (from 2019) and of Sam's Club U.S.",
+    "E": "Before becoming Walmart Inc. CEO, John Furner was president and CEO of Walmart U.S. starting in November 2019."
+   },
+   "urls": [
+    "https://corporate.walmart.com/about/leadership/john-furner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "John Furner was CEO of Sam's Club (starting in 2017).",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "John Furner previously served as President and CEO of Walmart U.S. (from 2019) and of Sam's Club U.S.",
+    "E": "John Furner was CEO of Sam's Club starting in 2017."
+   },
+   "urls": [
+    "https://corporate.walmart.com/about/leadership/john-furner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "David Guggina succeeded Furner as CEO of Walmart U.S. effective February 1, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "David Guggina succeeded Furner as CEO of Walmart U.S. effective February 1, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/104169/000010416926000023/wmt-20260115.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Kathryn McLay departed as head of Walmart International, effective February 1, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Kathryn McLay departed as head of Walmart International, effective February 1, 2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Furner began his tenure as Walmart Inc. CEO with Walmart reporting another quarter of steady sales.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Furner began his tenure as Walmart Inc. CEO with Walmart reporting another quarter of steady sales."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.walmart.com/about/leadership/john-furner",
+   "note": "Walmart's leadership page lists John Furner as President and CEO, Walmart Inc., and the Aug 2026 call and Jan 2026 8-K are consistent.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://corporate.walmart.com/about/leadership/john-furner",
+   "note": "The bio page says he leads 2.1 million associates around the world.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.walmart.com/content/dam/corporate/documents/newsroom/2026/08/20/walmart-releases-q2-fy27-earnings/q2-fy27-earnings-call-transcript.pdf",
+   "note": "The Q2 FY27 transcript PDF dated 2026-08-20 exists, and Furner as President and CEO is corroborated elsewhere, though the saved text does not show the listing itself.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The press release says Furner succeeds McMillon as President and CEO effective Feb 1, 2026.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The press release is dated Nov 14, 2025.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The release says the Board elected Furner to succeed McMillon.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The release gives Furner's age as 51.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The release gives McMillon's age as 59.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The release says McMillon retires Jan 31, 2026 and stays on the Board until the next annual meeting; he would have left the Board by now, so the past-tense wording fits.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "false"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/104169/000010416926000023/wmt-20260115.htm",
+   "note": "The 8-K refers to Furner's promotion to President and CEO as of the Effective Date, announced Nov 14, 2025; the filing covers Jan 16, 2026 events.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/about/leadership/john-furner",
+   "note": "The bio says he started as an hourly associate in 1993 at Store 100 in Bentonville.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The release says he has served as President and CEO of Walmart U.S. since 2019; the November month is not shown in the passages but is consistent with my own knowledge.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+   "note": "The release says he was President and CEO of Sam's Club U.S.; the 2017 start year is not shown in the passages but matches my own knowledge.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/104169/000010416926000023/wmt-20260115.htm",
+   "note": "The 8-K says Guggina was appointed CEO of Walmart U.S. effective Feb 1, 2026, succeeding Furner.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "false",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/104169/000010416926000023/wmt-20260115.htm",
+   "note": "The 8-K says McLay stays in her role through Jan 31, 2026, then moves to a transitional role until separating on April 30, 2026. So 'departed ... effective Feb 1' is imprecise: the departure from the role took effect Feb 1, but the employment separation was April 30. It is also unrelated to who the ",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://corporate.walmart.com/about/leadership/john-furner",
+   "note": "Furner is CEO, having taken over from Doug McMillon on Feb 1, 2026, and Q4 FY26 and Q1 FY27 results showed steady growth (Q1 revenue up about 7.3%). The 'steady sales' wording is loose, and the claim is historical context, not the answer to who the CEO is. Confidence: medium.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "The 8-K (report date Jan 16, 2026) says Furner's promotion to President and CEO of Walmart Inc., effective Feb 1, 2026, was announced Nov 14, 2025. Walmart's leadership page lists him as current President and CEO. My web search turned up only 2025 coverage, and I found no sign of a later change."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 16,
+ "scores": {
+  "exa": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 38.5,
+   "coverage": 0.48,
+   "accuracy": 1.0,
+   "combined": 0.649,
+   "thorough_coverage": 0.312,
+   "answer_truth": 5,
+   "thoroughness": 0.475,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 38.5,
+   "coverage": 0.36,
+   "accuracy": 1.0,
+   "combined": 0.529,
+   "thorough_coverage": 0.312,
+   "answer_truth": 5,
+   "thoroughness": 0.475,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 2,
+   "truth": 15,
+   "truth_weight": 38.5,
+   "coverage": 0.8,
+   "accuracy": 0.924,
+   "combined": 0.858,
+   "thorough_coverage": 0.792,
+   "answer_truth": 5,
+   "thoroughness": 0.853,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 38.5,
+   "coverage": 0.72,
+   "accuracy": 1.0,
+   "combined": 0.837,
+   "thorough_coverage": 0.481,
+   "answer_truth": 5,
+   "thoroughness": 0.649,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 38.5,
+   "coverage": 0.8,
+   "accuracy": 1.0,
+   "combined": 0.889,
+   "thorough_coverage": 0.766,
+   "answer_truth": 5,
+   "thoroughness": 0.868,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 38.5,
+   "coverage": 0.8,
+   "accuracy": 1.0,
+   "combined": 0.889,
+   "thorough_coverage": 0.597,
+   "answer_truth": 5,
+   "thoroughness": 0.748,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.562,
+ "corrections_v2": {
+  "units_before": 17,
+  "units_after": 16,
+  "dedup_groups": [
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   }
+  ],
+  "cost": 0.013
+ }
+}

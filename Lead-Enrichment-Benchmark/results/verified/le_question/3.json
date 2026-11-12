@@ -1,0 +1,786 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 3,
+ "task": "Who is Accenture's CTO?",
+ "labels": {
+  "gpt": "A",
+  "parallel": "B",
+  "firecrawl": "C",
+  "nimble": "D",
+  "opus": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 9,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Dr. Marc Warner is Accenture's Chief Technology Officer (Global CTO) as of 2026-11-11.",
+   "asserted_by": [
+    "D",
+    "F",
+    "B",
+    "C",
+    "A",
+    "E"
+   ],
+   "variants": {
+    "D": "Dr. Marc Warner is Accenture's Chief Technology Officer as of 2026-11-11.",
+    "F": "As of November 11, 2026, Dr. Marc Warner is Accenture's Global Chief Technology Officer.",
+    "B": "Marc Warner is the Global Chief Technology Officer of Accenture.",
+    "C": "Dr. Marc Warner is Accenture's Global Chief Technology Officer (CTO) as of 2026-11-11.",
+    "A": "As of November 11, 2026, Dr. Marc Warner is Accenture's Global Chief Technology Officer.",
+    "E": "Dr. Marc Warner is Accenture's Chief Technology Officer."
+   },
+   "urls": [
+    "https://www.accenture.com/en-us/about/leadership/marc-warner",
+    "https://www.accenture.com/en/about/leadership/marc-warner",
+    "https://www.accenture.com/us-en/about/leadership/marc-warner",
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Accenture announced/completed its acquisition of Faculty on March 16, 2026.",
+   "asserted_by": [
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Accenture announced on March 16, 2026 that it completed its acquisition of Faculty.",
+    "E": "Accenture completed its acquisition of Faculty on March 16, 2026.",
+    "F": "On March 16, 2026, Accenture announced it had completed its acquisition of Faculty."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Marc Warner became (assumed/expanded his role to) Accenture's CTO on March 16, 2026, when the Faculty acquisition completed.",
+   "asserted_by": [
+    "D",
+    "A",
+    "B",
+    "F",
+    "E"
+   ],
+   "variants": {
+    "D": "Marc Warner became Accenture's CTO on March 16, 2026, when Accenture completed its acquisition of Faculty.",
+    "A": "Marc Warner assumed the role of Accenture's Chief Technology Officer on March 16, 2026, when Accenture completed its acquisition of Faculty.",
+    "B": "In the March 16, 2026 announcement, Accenture stated that Dr. Marc Warner was assuming the role of Accenture's Chief Technology Officer.",
+    "F": "Faculty CEO and co-founder Dr. Marc Warner expanded his role to also become chief technology officer of Accenture.",
+    "E": "When the Faculty acquisition completed, Marc Warner expanded his role to also become Accenture's chief technology officer."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Marc Warner is CEO of Faculty.",
+   "asserted_by": [
+    "D",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Marc Warner ... remains its CEO.",
+    "B": "Marc Warner is CEO of Faculty.",
+    "C": "Marc Warner is also Chief Executive Officer of Faculty.",
+    "E": "Marc Warner is the co-founder and CEO of the London AI firm Faculty.",
+    "F": "Dr. Marc Warner concurrently serves as CEO of Faculty, which is a concurrent role and not a different Accenture CTO."
+   },
+   "urls": [
+    "https://www.accenture.com/us-en/about/leadership/marc-warner",
+    "https://www.accenture.com/en/about/leadership/marc-warner",
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Marc Warner co-founded Faculty, an AI company based in the UK/London.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Marc Warner co-founded Faculty, a UK applied-AI company, and remains its CEO.",
+    "E": "Marc Warner is the co-founder and CEO of the London AI firm Faculty."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Warner holds the CTO role concurrently with his Faculty CEO role (not a different CTO).",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "Dr. Marc Warner concurrently serves as CEO of Faculty, which is a concurrent role and not a different Accenture CTO.",
+    "E": "Warner holds the CTO role alongside his position as Faculty CEO."
+   },
+   "urls": [
+    "https://www.accenture.com/en/about/leadership/marc-warner",
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Marc Warner is a member of Accenture's Global Management Committee.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Marc Warner is a member of Accenture's Global Management Committee.",
+    "C": "Marc Warner is a member of Accenture's Global Management Committee."
+   },
+   "urls": [
+    "https://www.accenture.com/us-en/about/leadership/marc-warner",
+    "https://www.accenture.com/en/about/leadership/marc-warner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Marc Warner joined Accenture's Global Management Committee upon becoming CTO / completion of the Faculty acquisition.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Marc Warner joined Accenture's Global Management Committee upon becoming CTO.",
+    "E": "Marc Warner joined Accenture's Global Management Committee upon completion of the Faculty acquisition."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Accenture's leadership page lists Marc Warner as 'Chief Technology Officer, Accenture and Chief Executive Officer, Faculty'.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Accenture's leadership page lists Marc Warner as 'Chief Technology Officer, Accenture and Chief Executive Officer, Faculty'."
+   },
+   "urls": [
+    "https://www.accenture.com/en-us/about/leadership/marc-warner"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Accenture's September 18, 2026 release (Accenture and Anthropic embedded evaluators team) identifies Warner as Accenture CTO and Faculty CEO.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Accenture's September 18, 2026 release (Accenture and Anthropic partnering to build a team of embedded evaluators at Anthropic) identifies Dr. Marc Warner as chief technology officer of Accenture and CEO of Faculty."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-and-anthropic-partner-to-build-team-of-embedded-evaluators-at-anthropic"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "National CIO Review reported on March 17, 2026 that Accenture appointed Warner as CTO after the Faculty deal closed.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "National CIO Review reported on March 17, 2026 that Accenture appointed Dr. Marc Warner as Chief Technology Officer after the Faculty deal closed."
+   },
+   "urls": [
+    "https://nationalcioreview.com/cxos-on-the-move/accenture-names-chief-technology-officer-following-faculty-deal/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "An October 17, 2026 JobsnHire article still calls Warner Accenture's CTO, covering his remarks at a Fortune Brainstorm AI session.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "An October 17, 2026 JobsnHire article still calls Marc Warner Accenture's chief technology officer, covering his remarks at a Fortune Brainstorm AI session."
+   },
+   "urls": [
+    "https://www.jobsnhire.com/articles/60214/20261017/accenture-cto-says-companies-truly-reinvented-around-ai-are-close-zero-calls-ai-transformations.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Julie Sweet said she looks forward to working with new CTO Marc Warner to shape technology strategy and execution and attract top talent.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Accenture Chair and CEO Julie Sweet said she looks forward to working with new CTO Marc Warner to shape technology strategy and execution and attract top talent."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Rajendra Prasad preceded Marc Warner as Accenture's CTO.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rajendra Prasad preceded Marc Warner as Accenture's CTO."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Rajendra Prasad was named Group Chief Executive—Technology and CTO in Accenture's June 20, 2025 reorganization.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rajendra Prasad was named Group Chief Executive—Technology and Chief Technology Officer in Accenture's June 20, 2025 reorganization (growth-model change)."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Rajendra Prasad was previously Accenture's Chief Information and Asset Engineering Officer.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rajendra Prasad was previously Accenture's Chief Information and Asset Engineering Officer."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Rajendra Prasad succeeded Karthik Narain, who decided to leave Accenture to pursue other opportunities.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rajendra Prasad succeeded Karthik Narain, who decided to leave Accenture to pursue other opportunities."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Rajendra Prasad now focuses on the Group Chief Executive—Technology role and remains in it.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rajendra Prasad now focuses on the Group Chief Executive—Technology role and remains in it."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Some outlets still listed Prasad as CTO around the transition period.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Some outlets still listed Prasad as CTO around the transition period."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c1"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Rajendra Prasad leads 'Technology', one of three Reinvention Engines, in Accenture's March 13, 2026 Reinvention Services leadership announcement, which does not call him CTO.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Rajendra Prasad leads 'Technology', one of three Reinvention Engines, in Accenture's Reinvention Services leadership announcement of March 13, 2026; the announcement does not call him CTO."
+   },
+   "urls": [
+    "https://newsroom.accenture.com/news/2026/accenture-announces-reinvention-services-leadership"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Some Accenture leadership-bio pages describe Prasad as 'Group Chief Executive – Technology and Chief Technology Officer'; these may predate Warner's March 2026 appointment.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Some Accenture leadership-bio pages (e.g., accenture.com/fi-en/about/leadership/rajendra-prasad) describe Rajendra Prasad as 'Group Chief Executive – Technology and Chief Technology Officer'; these pages may predate Warner's March 2026 appointment."
+   },
+   "urls": [
+    "https://www.accenture.com/fi-en/about/leadership/rajendra-prasad"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.accenture.com/en/about/leadership/marc-warner",
+   "note": "Accenture's leadership page and later releases list Dr. Marc Warner as Global CTO; no sign of a successor.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty",
+   "note": "Accenture's release dated March 16, 2026 announces completion of the Faculty acquisition.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty",
+   "note": "The release says Warner expands his role to also become Accenture CTO once the acquisition completed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-and-anthropic-partner-to-build-team-of-embedded-evaluators-at-anthropic",
+   "note": "The September 2026 release and the leadership page both still list him as CEO of Faculty.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty",
+   "note": "The release calls him Faculty CEO and co-founder and Faculty a UK-based AI company, with a London dateline.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.accenture.com/en/about/leadership/marc-warner",
+   "note": "His title combines Accenture CTO and Faculty CEO; the release says he 'expands his role'.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.accenture.com/en/about/leadership/marc-warner",
+   "note": "The leadership bio says he is a member of the Global Management Committee.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty",
+   "note": "The release says he became CTO and joined the committee together once the acquisition completed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.accenture.com/en/about/leadership/marc-warner",
+   "note": "The page heading reads exactly 'Chief Technology Officer, Accenture and Chief Executive Officer, Faculty'.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-and-anthropic-partner-to-build-team-of-embedded-evaluators-at-anthropic",
+   "note": "The Sept 18, 2026 release quotes 'Dr. Marc Warner, chief technology officer, Accenture and CEO, Faculty'.",
+   "confidence": "high",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://nationalcioreview.com/cxos-on-the-move/accenture-names-chief-technology-officer-following-faculty-deal/",
+   "note": "The article, dated March 17, 2026, says Accenture appointed Warner CTO after the Faculty acquisition completed.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.jobsnhire.com/articles/60214/20261017/accenture-cto-says-companies-truly-reinvented-around-ai-are-close-zero-calls-ai-transformations.htm",
+   "note": "The October 17, 2026 article calls Warner Accenture's CTO and covers his Fortune Brainstorm AI remarks, confirming he is still CTO.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty",
+   "note": "Sweet is quoted saying she looks forward to working with 'our new CTO Marc Warner' on technology strategy and talent.",
+   "confidence": "high",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai",
+   "note": "Prasad was named CTO in 2025 and Warner took the CTO title in 2026; Prasad still leads Technology, and the sources do not state outright that Warner succeeded him.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai",
+   "note": "The release names Prasad Group Chief Executive—Technology and CTO; the June 20, 2025 date is from memory, not shown in the passage.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai",
+   "note": "The 2025 release describes Prasad as Accenture's Chief Information and Asset Engineering Officer before the technology role.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.accenture.com/news/2025/accenture-changes-growth-model-to-reinvent-itself-for-the-age-of-ai",
+   "note": "The release says Prasad succeeds Karthik Narain, who decided to leave Accenture.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-announces-reinvention-services-leadership",
+   "note": "Prasad leads Technology in the March 2026 announcement and Warner became CTO, so Prasad holds the group technology role without the CTO title; nothing in the passages shows he has left it since.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://newsroom.accenture.com/news/2026/accenture-announces-reinvention-services-leadership",
+   "note": "The announcement lists Technology led by Rajendra Prasad without calling him CTO; the 'three Reinvention Engines' and March 13 date are not visible in the passages but are plausible.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.accenture.com/fi-en/about/leadership/rajendra-prasad",
+   "note": "I found no news outlet doing this. Accenture's own Finland bio page still lists Prasad as CTO, which fits stale listings after Warner became CTO on March 16, 2026. The 'outlets' wording itself is unproven.",
+   "via": "agent"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.accenture.com/fi-en/about/leadership/rajendra-prasad",
+   "note": "The page I fetched gives Prasad's title as 'Group Chief Executive – Technology and Chief Technology Officer'. Accenture's newsroom says Warner assumed the CTO role on March 16, 2026, so the page is stale.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "note": "Accenture's March 16, 2026 release on completing the Faculty deal says Faculty CEO Marc Warner 'expands his role to also become chief technology officer of Accenture.' His current Accenture leadership page lists him as Global CTO, and no later change was found."
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "note": "Accenture's 2025 growth-model release named Rajendra Prasad Group Chief Executive–Technology and CTO, succeeding Karthik Narain. MarketScreener shows his CTO role ending 2026-03-15, the day before Warner took over. No source directly calls him Warner's predecessor, so this rests on those dates."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 19,
+ "scores": {
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 46.0,
+   "coverage": 0.517,
+   "accuracy": 1.0,
+   "combined": 0.682,
+   "thorough_coverage": 0.326,
+   "answer_truth": 7,
+   "thoroughness": 0.492,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 46.0,
+   "coverage": 0.517,
+   "accuracy": 1.0,
+   "combined": 0.682,
+   "thorough_coverage": 0.451,
+   "answer_truth": 7,
+   "thoroughness": 0.622,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 46.0,
+   "coverage": 0.31,
+   "accuracy": 1.0,
+   "combined": 0.474,
+   "thorough_coverage": 0.277,
+   "answer_truth": 7,
+   "thoroughness": 0.434,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 46.0,
+   "coverage": 0.724,
+   "accuracy": 1.0,
+   "combined": 0.84,
+   "thorough_coverage": 0.647,
+   "answer_truth": 7,
+   "thoroughness": 0.785,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 46.0,
+   "coverage": 0.69,
+   "accuracy": 1.0,
+   "combined": 0.816,
+   "thorough_coverage": 0.69,
+   "answer_truth": 7,
+   "thoroughness": 0.817,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 46.0,
+   "coverage": 0.621,
+   "accuracy": 1.0,
+   "combined": 0.766,
+   "thorough_coverage": 0.565,
+   "answer_truth": 7,
+   "thoroughness": 0.722,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.684,
+ "corrections_v2": {
+  "units_before": 21,
+  "units_after": 21,
+  "dedup_groups": [],
+  "cost": 0.016
+ }
+}

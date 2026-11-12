@@ -1,0 +1,238 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b699e4121aaceba2959",
+ "status": "completed",
+ "seconds": 108,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Oracle's annual revenue?",
+  "passages": [
+   {
+    "quote": "Record FY 2026 Total Revenues $67.4 billion, up 17% USD, and up 16% constant currency",
+    "publisher": "Oracle",
+    "published_date": null,
+    "source_url": "http://oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10"
+   },
+   {
+    "quote": "For the fiscal year ended May 31 , 2026.",
+    "publisher": "Oracle Corporation, via the U.S. Securities and Exchange Commission",
+    "published_date": null,
+    "source_url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+   }
+  ],
+  "answer": "Oracle reported annual revenue of US$67.4 billion for fiscal 2026, ended May 31, 2026\u2014the latest completed fiscal year as of November 11, 2026. Revenue increased 17% in U.S. dollars compared with fiscal 2025.",
+  "caveats": [
+   "This figure is for Oracle's completed fiscal year, not trailing-twelve-month revenue."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-05-31",
+    "source_url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+    "fact": "Oracle's fiscal 2026 revenue was $67,357 million, approximately US$67.4 billion, for the year ended May 31, 2026."
+   },
+   {
+    "date": "2026-05-31",
+    "source_url": "http://oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10",
+    "fact": "Fiscal 2026 revenue increased 17% year over year in U.S. dollars."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question is reproduced from the user's request.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Oracle Announces Record Q4 and FY 2026 Results Driven by Cloud Infrastructure & Cloud Applications",
+     "url": "http://oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10",
+     "excerpts": [
+      "Record FY 2026 Total Revenues $67.4 billion, up 17% USD, and up 16% constant currency"
+     ]
+    },
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    }
+   ],
+   "reasoning": "The Oracle release directly supplies the revenue and growth quotation; Oracle's SEC filing directly supplies the fiscal-year-end quotation. Publication dates were not verified and are left null.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Oracle Announces Record Q4 and FY 2026 Results Driven by Cloud Infrastructure & Cloud Applications",
+     "url": "http://oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10",
+     "excerpts": [
+      "Record FY 2026 Total Revenues $67.4 billion, up 17% USD, and up 16% constant currency"
+     ]
+    },
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    },
+    {
+     "title": "Oracle (ORCL) FY2026 10-K Summary: Business, Risk Factors, MD&A",
+     "url": "https://tickerscout.ai/orcl/narrative",
+     "excerpts": [
+      "Oracle's fiscal year ends on May 31. The company's most recent completed fiscal year, ended May 31, 2026, is fiscal 2026 ."
+     ]
+    }
+   ],
+   "reasoning": "Oracle directly reports $67.4 billion and 17% USD growth for FY2026. Its SEC filing identifies May 31, 2026 as the year end. The current annual-report summary identifies FY2026 as the most recent completed fiscal year; that portion relies on a secondary source and synthesis.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    }
+   ],
+   "reasoning": "The filing explicitly labels the reporting period as a fiscal year. The caveat clarifies the period used rather than making a claim about a separate trailing-twelve-month figure.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "Publication dates were not verified in the available source passages, so both passage publication-date fields are null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The as-of date is the current date explicitly supplied in the task.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "(in millions, except per share data) | | 2026 | | | 2025 | | | 2024 | | | | | | Revenues: | | | | | | | | | | | | | | Total revenues | | | 67,357 | | | | 57,399 | | | | 52,961",
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    },
+    {
+     "title": "Oracle Announces Record Q4 and FY 2026 Results Driven by Cloud Infrastructure & Cloud Applications",
+     "url": "http://oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10",
+     "excerpts": [
+      "Record FY 2026 Total Revenues $67.4 billion, up 17% USD, and up 16% constant currency"
+     ]
+    }
+   ],
+   "reasoning": "The SEC revenue table gives FY2026 total revenue of $67,357 million and the filing states the year end. Oracle's release reports the rounded $67.4 billion figure and 17% USD growth.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Oracle Announces Record Q4 and FY 2026 Results Driven by Cloud Infrastructure & Cloud Applications",
+     "url": "http://oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10",
+     "excerpts": [
+      "Record FY 2026 Total Revenues $67.4 billion, up 17% USD, and up 16% constant currency"
+     ]
+    }
+   ],
+   "reasoning": "This is the exact revenue and growth passage from Oracle's own earnings release. Its publication date remains unverified.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    }
+   ],
+   "reasoning": "This is the exact fiscal-year-end passage from Oracle's SEC filing. Its publication date remains unverified.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    }
+   ],
+   "reasoning": "The reported figure is explicitly tied to the completed fiscal year.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The release's displayed publication date could not be verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The filing's publication date was not verified from the available passages.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "(in millions, except per share data) | | 2026 | | | 2025 | | | 2024 | | | | | | Revenues: | | | | | | | | | | | | | | Total revenues | | | 67,357 | | | | 57,399 | | | | 52,961",
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    }
+   ],
+   "reasoning": "The filing reports total revenue of 67,357 in millions for FY2026 and identifies the fiscal year as ended May 31, 2026. Converting millions to billions and rounding yields approximately $67.4 billion.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Oracle Announces Record Q4 and FY 2026 Results Driven by Cloud Infrastructure & Cloud Applications",
+     "url": "http://oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10",
+     "excerpts": [
+      "Record FY 2026 Total Revenues $67.4 billion, up 17% USD, and up 16% constant currency"
+     ]
+    },
+    {
+     "url": "http://sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+     "excerpts": [
+      "For the fiscal year ended May 31 , 2026."
+     ]
+    }
+   ],
+   "reasoning": "Oracle states 17% USD growth for FY2026; the filing provides the corresponding fiscal-year-end date.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "What is Oracle's annual revenue?",
+ "input_n": 18,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,609 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 24,
+ "task": "How many employees does Capital One have?",
+ "labels": {
+  "opus": "A",
+  "nimble": "B",
+  "exa": "C",
+  "firecrawl": "D",
+  "gpt": "E",
+  "parallel": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 8,
+ "evidence_fetched": 8,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Capital One reported about 77,500 (77.5 thousand) period-end employees as of September 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Capital One Financial Corporation had about 77,500 employees (77.5 thousand, period-end) as of September 30, 2026, the end of Q3 2026.",
+    "C": "Capital One reported 77.5 thousand (77,500) employees at period end on September 30, 2026.",
+    "D": "Capital One reported 77.5 thousand employees (approximately 77,500) at period-end September 30, 2026.",
+    "F": "Capital One Financial Corporation reported 77.5 thousand (77,500) period-end employees as of September 30, 2026."
+   },
+   "urls": [
+    "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+    "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+    "https://stockanalysis.com/stocks/cof/employees/",
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm",
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "The 77,500 figure is from the Q3 2026 earnings release, Table 2 (Selected Metrics—Consolidated).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Capital One Financial Corporation reported approximately 77,500 employees (77.5 thousand, period-end) as of September 30, 2026, per its Q3 2026 earnings release (Table 2: Selected Metrics—Consolidated)."
+   },
+   "urls": [
+    "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The 77.5 thousand period-end count at September 30, 2026 compares with 76.3 thousand in the prior period, a 2% increase.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Capital One's period-end employee count of 77.5 thousand at September 30, 2026 compares with 76.3 thousand in the prior period, a 2% increase."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Period-end employee count was 77.0 thousand at the end of Q3 2025.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Capital One's period-end employee count was 77.0 thousand at the end of Q3 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm"
+   ],
+   "conflicts_with": [
+    "c3"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Capital One released its Q3 2026 results on October 20, 2026.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Capital One's Q3 2026 earnings release is dated October 20, 2026.",
+    "D": "Capital One released its third-quarter 2026 results on October 20, 2026.",
+    "E": "Capital One's Q3 2026 earnings release was published on October 20, 2026.",
+    "F": "Capital One released its third-quarter 2026 results on October 20, 2026, which included the period-end headcount."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex991q32026earningsrelease.htm",
+    "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+    "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Period-end employee count was 78.4 thousand at the end of Q2 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Capital One's period-end employee count was 78.4 thousand at the end of Q2 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Period-end employee count was 77.1 thousand at the end of Q1 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Capital One's period-end employee count was 77.1 thousand at the end of Q1 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Period-end employee count was 76.3 thousand at the end of Q4 2025 (end of 2025).",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Capital One's period-end employee count was 76.3 thousand at the end of Q4 2025 (end of 2025)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000024/cof-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Capital One had about 52,600 employees at the end of 2024, so headcount rose roughly 45% by the end of 2025 (reflecting the Discover acquisition).",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Capital One had about 52,600 employees at the end of 2024, so headcount rose roughly 45% by the end of 2025 (reflecting the Discover acquisition)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/cof/employees/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Capital One's acquisition of Discover closed on May 18, 2025.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Capital One's acquisition of Discover closed on May 18, 2025."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/cof/employees/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Headcount fell from 78.4 thousand in Q2 2026 to 77.5 thousand in Q3 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Headcount fell from 78.4 thousand in Q2 2026 to 77.5 thousand in Q3 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "The reported employee figure is the consolidated count for Capital One Financial Corp., including Discover, not a single subsidiary.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "The reported employee figure is the consolidated count for Capital One Financial Corp., including Discover, not a single subsidiary."
+   },
+   "urls": [
+    "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c16",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "The 77,500 headcount is a quarter-end count rounded to the nearest hundred, not a live headcount for November 11, 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Capital One headcount of 77,500 is a quarter-end count rounded to the nearest hundred, not a live headcount for November 11, 2026."
+   },
+   "urls": [
+    "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Capital One's Q3 2026 Form 10-Q does not disclose a headcount figure, so no more recent primary-source headcount exists as of 2026-11-11.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Capital One's Q3 2026 Form 10-Q does not disclose a headcount figure, so no more recent primary-source headcount exists as of 2026-11-11."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c1"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Capital One has roughly 76,000–78,000 employees as of 2026-11-11.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Capital One has roughly 76,000–78,000 employees as of 2026-11-11."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm",
+   "note": "The Q3 2026 10-Q and earnings release both show 77.5 thousand period-end employees at Sept 30, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+   "note": "The 77.5 figure is correct, but the employees row sits with the Credit Quality Metrics rows, which suggests Table 1 (Financial Summary) rather than Table 2; the table citation is probably wrong.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm",
+   "note": "The 10-Q shows 77.5 versus 76.3 at Dec 31, 2025, a 2% change; 'prior period' means the prior year-end.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+   "note": "The Q3 2025 column shows 77.0 thousand.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+   "note": "The release is dated Oct. 20, 2026.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+   "note": "The Q2 2026 column shows 78.4 thousand.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+   "note": "The Q1 2026 column shows 77.1 thousand.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000024/cof-20251231.htm",
+   "note": "The 10-K shows 76.3 thousand at Dec 31, 2025.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "false"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000024/cof-20251231.htm",
+   "note": "The 10-K shows 52.6 thousand at end of 2024 and 76.3 thousand at end of 2025, a 45% increase, following the Discover closing.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000024/cof-20251231.htm",
+   "note": "The 10-K states that Capital One closed the Discover acquisition on May 18, 2025.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+   "note": "Employees fell from 78.4 to 77.5 thousand quarter over quarter, shown as (1)%.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex991q32026earningsrelease.htm",
+   "note": "Capital One's consolidated reporting is by Capital One Financial Corporation, which absorbed Discover in 2025, so the headcount covers the whole company; the passages do not state the count explicitly but confirm Discover integration.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true"
+   }
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/cof/employees/",
+   "note": "The 77,500 is dated Sep 30, 2026 (quarter-end) and rounded to hundreds, so it is not a live Nov 11 count.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/cof/employees/",
+   "note": "77,500 at Sep 30, 2026 (76,300 at Dec 2025) falls within 76,000-78,000, so the range is consistent.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm",
+   "confidence": "medium",
+   "note": "The saved Q3 2026 10-Q has no headcount figure. Its only 'employees' mention is in forward-looking risk language, and 'associates' does not appear at all. The newer 77,500 figure (Sep 30, 2026) comes from S&P via stockanalysis.com, not a primary source. I did not check the earnings release exhibits ",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "note": "Capital One's Q3 2026 earnings release and its 10-Q for the quarter ended Sep 30, 2026 both show period-end employees of 77.5 thousand, up from 76.3 thousand in Q4 2025. This is the latest reported figure as of the run date."
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "note": "Capital One reports headcount as a period-end figure in thousands to one decimal place, which rounds it to the nearest hundred. So 77,500 is the Sep 30, 2026 quarter-end count, not a live count for Nov 11, 2026."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 19,
+ "scores": {
+  "opus": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.566,
+   "answer_truth": 4,
+   "thoroughness": 0.723,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 1,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.75,
+   "accuracy": 0.969,
+   "combined": 0.846,
+   "thorough_coverage": 0.566,
+   "answer_truth": 4,
+   "thoroughness": 0.715,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.289,
+   "answer_truth": 4,
+   "thoroughness": 0.449,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.289,
+   "answer_truth": 4,
+   "thoroughness": 0.449,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 1,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.0,
+   "accuracy": 0.923,
+   "combined": 0.0,
+   "thorough_coverage": 0.217,
+   "answer_truth": 4,
+   "thoroughness": 0.351,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 41.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.289,
+   "answer_truth": 4,
+   "thoroughness": 0.449,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.562,
+ "corrections_v2": {
+  "units_before": 20,
+  "units_after": 15,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c12"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c14"
+    ]
+   },
+   {
+    "kept": "c16",
+    "merged": [
+     "c17"
+    ]
+   }
+  ],
+  "cost": 0.018
+ }
+}

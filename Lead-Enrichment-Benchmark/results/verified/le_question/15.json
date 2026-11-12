@@ -1,0 +1,716 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 15,
+ "task": "What is Sysco's annual revenue?",
+ "labels": {
+  "opus": "A",
+  "nimble": "B",
+  "exa": "C",
+  "parallel": "D",
+  "firecrawl": "E",
+  "gpt": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 6,
+ "evidence_fetched": 6,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Sysco's fiscal year 2026 sales were $84.6 billion (rounded).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Sysco's (NYSE: SYY) fiscal year 2026 sales, for the year ended June 27, 2026, increased 3.9% to $84.6 billion.",
+    "B": "Sysco's fiscal year 2026 sales (52 weeks ended June 27, 2026) increased 3.9% to $84.6 billion.",
+    "C": "Sysco's fiscal 2026 sales increased 3.9% year over year to $84.6 billion (rounded), per its August 4, 2026 results release.",
+    "D": "Sysco Corporation's fiscal year 2026 sales were $84.6 billion.",
+    "E": "Sysco's release states in narrative text that fiscal year 2026 sales increased 3.9% to $84.6 billion (rounded).",
+    "F": "Sysco's consolidated sales for fiscal 2026 were $84.6 billion."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546",
+    "https://www.sec.gov/Archives/edgar/data/0000096021/000009602126000026/syy2026q4pressrelease.htm",
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000046/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Sysco's fiscal 2026 sales increased 3.9% over fiscal 2025.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Fiscal year 2026 sales increased 3.9% to $84.6 billion.",
+    "B": "Fiscal year 2026 sales increased 3.9% to $84.6 billion.",
+    "C": "Fiscal 2026 sales increased 3.9% year over year.",
+    "D": "Sysco's fiscal year 2026 sales increased 3.9% over the prior fiscal year.",
+    "E": "Sysco's fiscal-year 2026 sales increased 3.9% from fiscal-year 2025 sales of $81.370 billion.",
+    "F": "Sysco's sales for fiscal 2026 increased 3.9% compared with fiscal 2025."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546",
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Sysco's fiscal year 2026 ended June 27, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "for the year ended June 27, 2026",
+    "B": "52 weeks ended June 27, 2026",
+    "C": "52-week year ended June 27, 2026",
+    "D": "Sysco's fiscal year 2026 ended June 27, 2026.",
+    "E": "Sysco's fiscal year 2026 ended June 27, 2026.",
+    "F": "Sysco's fiscal year 2026 ended June 27, 2026."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Fiscal 2026 was a 52-week year.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "fiscal year 2026 sales (52 weeks ended June 27, 2026)",
+    "C": "fiscal 2026 sales for the 52-week year ended June 27, 2026"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Sysco's fiscal 2025 sales were $81,370 million ($81.37 billion).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "A": "Sysco's fiscal 2025 full-year sales were $81,370 million (about $81.37 billion).",
+    "B": "Sysco's fiscal 2025 sales (52 weeks ended June 28, 2025) were $81,370 million (about $81.4 billion).",
+    "C": "Sysco reported fiscal 2025 sales of $81.370 billion.",
+    "E": "fiscal-year 2025 sales of $81.370 billion"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000096021/000009602126000026/syy2026q4pressrelease.htm",
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000046/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Sysco's fiscal 2024 sales were $78,844 million.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Sysco's fiscal 2024 sales (52 weeks ended June 29, 2024) were $78,844 million.",
+    "C": "Sysco reported fiscal 2024 sales of $78.844 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000046/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Sysco announced its fourth-quarter and fiscal year 2026 results on August 4, 2026.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Sysco reported its fiscal 2026 fourth-quarter and full-year results on August 4, 2026.",
+    "D": "Sysco announced its fourth-quarter and fiscal year 2026 results on August 4, 2026.",
+    "E": "Sysco's fiscal 2026 results were announced on August 4, 2026, covering its 13-week fourth fiscal quarter and fiscal year."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Sysco's fourth-quarter fiscal 2026 sales were $22,124 million versus $21,138 million in the prior-year quarter.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Sysco's fourth-quarter fiscal 2026 sales were $22,124 million versus $21,138 million in the prior-year quarter."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Sysco's fourth-quarter fiscal 2026 sales (13-week quarter) increased 4.7% to $22.1 billion.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Sysco's fourth-quarter fiscal 2026 sales (13-week quarter) increased 4.7% to $22.1 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000096021/000009602126000026/syy2026q4pressrelease.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Fiscal 2026 is the latest completed Sysco fiscal-year figure available as of 2026-11-11.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Fiscal 2026 is the latest completed Sysco fiscal-year figure available as of 2026-11-11.",
+    "E": "Fiscal 2026 is the latest full fiscal year available as of November 11, 2026 (Sysco reports on a fiscal-year basis rather than a calendar-year basis)."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Sysco reports on a fiscal-year basis rather than a calendar-year basis.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "Sysco's fiscal year ends in late June or early July, so its fiscal 2026 covers July 2025 to June 27, 2026, not the calendar year.",
+    "E": "Sysco reports on a fiscal-year basis rather than a calendar-year basis."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Sysco's fiscal year ends on the Saturday nearest June 30; fiscal 2027 will be a 53-week year ending July 3, 2027.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Sysco's fiscal year ends on the Saturday nearest June 30; fiscal 2027 will be a 53-week year ending July 3, 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000046/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Sysco guided fiscal 2027 to roughly 6%-7% sales growth on a 53-week basis.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Sysco's fiscal 2027 is a 53-week year, and Sysco guided to roughly 6%–7% sales growth for it.",
+    "B": "Sysco guides fiscal 2027 sales growth of 6%-7% on a 53-week basis, roughly $90 billion in sales."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Fiscal 2027 guidance implies roughly $90 billion in sales.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Sysco guides fiscal 2027 sales growth of 6%-7% on a 53-week basis, roughly $90 billion in sales."
+   },
+   "urls": [
+    "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Sysco's first-quarter fiscal 2027 sales (13 weeks ended September 26, 2026) were $21,744 million, up 2.8% from $21,148 million a year earlier.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Sysco's first-quarter fiscal 2027 sales (13 weeks ended September 26, 2026) were $21,744 million (about $21.7 billion), up 2.8% from $21,148 million a year earlier."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000050/syy-20260926.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Sysco's Q1 FY2027 10-Q says it expects fiscal 2027 sales growth at the lower end of the 6%-7% range.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Sysco noted in its Q1 FY2027 10-Q that it expects fiscal 2027 sales growth at the lower end of the 6%-7% range."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000050/syy-20260926.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Sysco's $84.6 billion in fiscal 2026 sales is an all-time high; the company has grown from $115 million since its formation.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Sysco's $84.6 billion in annual sales in fiscal 2026 is an all-time high; the company has grown from $115 million since its formation."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000046/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Sysco was founded in 1969 and began operating as a public company in March 1970 when stockholders of nine companies exchanged their stock for Sysco common stock.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Sysco was founded in 1969 and commenced operations as a public company in March 1970 when stockholders of nine companies exchanged their stock for Sysco common stock."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/96021/000009602126000046/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "The $58.8 billion figure cited in some coverage is Sysco's U.S. Foodservice segment sales only, not the company total.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The $58.8 billion figure cited in some coverage is Sysco's U.S. Foodservice segment sales only, not the company total."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546",
+   "note": "Sysco's Aug 4, 2026 release states FY2026 sales rose 3.9% to $84.6 billion.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+   "note": "The 10-K confirms sales increased 3.9%, or $3.2 billion, to $84.6 billion.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546",
+   "note": "The release says the fiscal year ended June 27, 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+   "note": "The 10-K describes a 52-week year ended June 27, 2026 for fiscal 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+   "note": "FY2025 sales of $81.37B match prior reporting and the implied 3.9% growth.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+   "note": "FY2024 sales of $78.844B match Sysco's reported figure.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+   "note": "The release is dated Aug 4, 2026 and covers the fourth quarter and full year.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+   "note": "Q4 sales of $22.1B up 4.7% are confirmed, and the exact millions are consistent with that growth.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+   "note": "The release says Q4 sales increased 4.7% to $22.1 billion.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000050/syy-20260926.htm",
+   "note": "FY2027 is still in progress (Q1 ended Sep 26, 2026), so FY2026 is the latest full year.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+   "note": "The fiscal year ends on the Saturday nearest June 30.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000050/syy-20260926.htm",
+   "note": "The 10-K and 10-Q both state fiscal 2027 is a 53-week year ending July 3, 2027.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000050/syy-20260926.htm",
+   "note": "The $90B figure is derived, not quoted: 6-7% growth on $84.6B gives about $89.7-90.5B. The Q1 10-Q puts growth at the lower end of that range, so about $89.7B. The 53rd week is confirmed.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000050/syy-20260926.htm",
+   "note": "The 10-Q says sales rose 2.8%, or $596M, to $21.7B. $21,148M plus $596M equals $21,744M, which matches.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000050/syy-20260926.htm",
+   "note": "The 10-Q says it expects sales growth at the lower end of the 6% to 7% range.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+   "note": "The FY2026 10-K states growth from $115 million to an all-time high of $84.6B in fiscal 2026. The Q4 release confirms $84.6B.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm",
+   "note": "The 10-K states this verbatim. It is background and does not answer the revenue question.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546",
+   "note": "U.S. Foodservice FY2026 sales were $58.8B, against company total sales of $84.6B. The claim that some coverage cites the $58.8B figure is not verified, but the segment-versus-total distinction is correct.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546",
+   "note": "The release introduces FY2027 guidance of 6%-7% sales growth on a 53-week basis. Applying that to $84.55B gives about $90B, so the B label's roughly $90 billion figure is consistent with the guidance. The release does not state $90B itself.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true"
+   },
+   "via": "agent"
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 19,
+ "scores": {
+  "opus": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 56.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.491,
+   "answer_truth": 4,
+   "thoroughness": 0.659,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 56.5,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.801,
+   "answer_truth": 4,
+   "thoroughness": 0.889,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 56.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.416,
+   "answer_truth": 4,
+   "thoroughness": 0.588,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 56.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.301,
+   "answer_truth": 4,
+   "thoroughness": 0.463,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 56.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.412,
+   "answer_truth": 4,
+   "thoroughness": 0.583,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 56.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.265,
+   "answer_truth": 4,
+   "thoroughness": 0.42,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.519,
+ "corrections_v2": {
+  "units_before": 21,
+  "units_after": 19,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c5",
+     "c6"
+    ]
+   }
+  ],
+  "cost": 0.014
+ }
+}

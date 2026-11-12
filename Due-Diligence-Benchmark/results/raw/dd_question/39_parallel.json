@@ -1,0 +1,149 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69aaec29e4492ef738",
+ "status": "completed",
+ "seconds": 81,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Palantir's stock split history?",
+  "passages": [
+   {
+    "quote": "Palantir Technologies (PLTR) has 0 splits in our stock split history database.",
+    "publisher": "Stock Split History",
+    "published_date": null,
+    "source_url": "https://www.stocksplithistory.com/?symbol=pltr"
+   }
+  ],
+  "answer": "As of November 11, 2026, Palantir Technologies (PLTR) has no recorded stock splits\u2014its split-history database lists 0 splits. There are therefore no historical split dates or split ratios to report.",
+  "caveats": [
+   "The supporting source is a third-party database and does not display a publication or update date."
+  ],
+  "missing_fields": [
+   "passages[0].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": null,
+    "source_url": "https://www.stocksplithistory.com/?symbol=pltr",
+    "fact": "Palantir Technologies (PLTR) has 0 recorded stock splits in the database checked as of November 11, 2026."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no source evidence is required.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Palantir Technologies Stock Split History",
+     "url": "https://www.stocksplithistory.com/?symbol=pltr",
+     "excerpts": [
+      "Palantir Technologies stock split history picture Palantir Technologies (PLTR) has 0 splits",
+      "[Stock Split History](https://www.stocksplithistory.com/)"
+     ]
+    }
+   ],
+   "reasoning": "The opened page explicitly states that PLTR has zero splits, and its branding identifies the publisher. No publication date was visible, so that field is null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Palantir Technologies Stock Split History",
+     "url": "https://www.stocksplithistory.com/?symbol=pltr",
+     "excerpts": [
+      "Palantir Technologies stock split history picture Palantir Technologies (PLTR) has 0 splits"
+     ]
+    }
+   ],
+   "reasoning": "The explicit zero-split statement supports no recorded splits. Having no historical split dates or ratios follows from that count. Confidence is limited by reliance on an undated third-party database.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "The caveat describes the source's provenance and the absence of a visible publication/update date in the opened page; no individual passage establishes that absence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "A publication date could not be verified from the opened source and is consequently left null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "This is the research date specified in the task, not a claimed publication or database-update date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Palantir Technologies Stock Split History",
+     "url": "https://www.stocksplithistory.com/?symbol=pltr",
+     "excerpts": [
+      "Palantir Technologies stock split history picture Palantir Technologies (PLTR) has 0 splits"
+     ]
+    }
+   ],
+   "reasoning": "The source directly reports zero recorded splits for Palantir Technologies (PLTR). The source date remains null because none was displayed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Palantir Technologies Stock Split History",
+     "url": "https://www.stocksplithistory.com/?symbol=pltr",
+     "excerpts": [
+      "Palantir Technologies stock split history picture Palantir Technologies (PLTR) has 0 splits",
+      "[Stock Split History](https://www.stocksplithistory.com/)"
+     ]
+    }
+   ],
+   "reasoning": "The quote reproduces the page's zero-split statement in plain text; the publisher is identified by the page branding. Publication date was not available.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [],
+   "reasoning": "Source provenance and missing publication metadata are limitations observed when reading the page, rather than facts asserted by a particular sentence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The opened page provided no verifiable publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Palantir Technologies Stock Split History",
+     "url": "https://www.stocksplithistory.com/?symbol=pltr",
+     "excerpts": [
+      "Palantir Technologies stock split history picture Palantir Technologies (PLTR) has 0 splits"
+     ]
+    }
+   ],
+   "reasoning": "Directly supports the zero-split count for the exact company and ticker. November 11, 2026 is the date checked, not an inferred source-update date.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "What is Palantir's stock split history?",
+ "input_n": 39,
+ "completed_on": "2026-11-11"
+}

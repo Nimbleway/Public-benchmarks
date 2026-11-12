@@ -1,0 +1,800 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 10,
+ "task": "Who is the founder of Five Guys?",
+ "labels": {
+  "exa": "A",
+  "nimble": "B",
+  "opus": "C",
+  "gpt": "D",
+  "firecrawl": "E",
+  "parallel": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 39,
+ "evidence_fetched": 38,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Jerry Murrell is the founder of Five Guys.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Jerry Murrell is the founder of Five Guys.",
+    "D": "Jerry Murrell is the founder of Five Guys."
+   },
+   "urls": [
+    "https://www.fiveguys.com/our-story/",
+    "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Five Guys' official website/company history refers to Jerry Murrell as the Five Guys founder.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "B": "Five Guys' official company history page refers to Jerry Murrell as the Five Guys founder.",
+    "C": "Five Guys' official website calls Jerry Murrell 'Five Guys founder'.",
+    "E": "Five Guys identifies Jerry Murrell as its founder."
+   },
+   "urls": [
+    "https://www.fiveguys.ca/the-five-guys-story",
+    "https://www.fiveguys.com/our-story/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Five Guys was founded in 1986 by Jerry Murrell and Janie Murrell (his wife).",
+   "asserted_by": [
+    "B",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "B": "Five Guys was founded in 1986 by Jerry and Janie Murrell.",
+    "C": "Five Guys was founded in 1986 by Jerry Murrell and his wife Janie Murrell."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys",
+    "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Wikipedia lists Jerry Murrell and Janie Murrell as the founders of Five Guys.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Wikipedia lists Jerry Murrell and Janie Murrell as the founders of Five Guys."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Sources differ on credit: Five Guys' own site names Jerry as 'founder', while Wikipedia credits both Jerry and Janie; the Murrell sons are often described as co-founders.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Sources differ on credit: Five Guys' own site names Jerry as 'founder', while Wikipedia credits both Jerry and Janie; the Murrell sons are often described as co-founders."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Jerry Murrell started Five Guys with his wife, Janie Murrell, and their sons.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Jerry Murrell started Five Guys with his wife, Janie Murrell, and their sons."
+   },
+   "urls": [
+    "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Five Guys opened its first location in Arlington, Virginia, in 1986.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Five Guys opened its first location in Arlington, Virginia, in 1986."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys",
+    "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family",
+    "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family/",
+    "https://www.fiveguys.com/our-story/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Five Guys came to be in 1986 when Jerry and Janie Murrell asked their three sons whether they wanted to go to college or start a business; the sons chose to start a business.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Five Guys came to be in 1986 when Jerry and Janie Murrell asked their three sons whether they wanted to go to college or start a business; the sons chose to start a business.",
+    "E": "Five Guys came to be in 1986 when Jerry and Janie Murrell asked their three sons whether they wanted to go to college or start a business, and the sons chose to start a business."
+   },
+   "urls": [
+    "https://www.fiveguys.ca/the-five-guys-story",
+    "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family",
+    "https://www.fiveguys.com/our-story/"
+   ],
+   "conflicts_with": [
+    "c19"
+   ],
+   "merged_from": [
+    "c15",
+    "c16",
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "The original 'Five Guys' were Jerry Murrell and the couple's sons Jim, Matt, Chad, and Ben.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The original 'Five Guys' were Jerry Murrell and the couple's sons Jim, Matt, Chad, and Ben."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": [
+    "c15"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "The Five Guys name first referred to Jerry Murrell and his four oldest sons; after Tyler was born in 1987 it came to mean the five Murrell sons.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The Five Guys name first referred to Jerry Murrell and his four oldest sons; after Tyler was born in 1987 it came to mean the five Murrell sons."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": [
+    "c21"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "The Murrells had a fifth son, Tyler, two years after the founding (i.e., around 1988).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The Murrells had a fifth son, Tyler, two years after the founding."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "All five Murrell sons (Jim, Matt, Chad, Ben, Tyler) are involved in the Five Guys business.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "C": "All five Murrell sons (Jim, Matt, Chad, Ben, Tyler) are involved in the Five Guys business."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "Five Guys is owned by the Murrell family.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Five Guys is owned by the Murrell family."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Five Guys has been a Washington, DC area favorite since 1986, when Jerry and Janie Murrell offered sage advice to their sons.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Five Guys has been a Washington, DC area favorite since 1986, when Jerry and Janie Murrell offered sage advice to their sons."
+   },
+   "urls": [
+    "https://www.fiveguys.ca/the-five-guys-story"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Jerry Murrell is now CEO of Five Guys.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Jerry Murrell is now CEO of Five Guys."
+   },
+   "urls": [
+    "https://www.bu.edu/bhr/profile/jerry-murrell/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Five Guys is headquartered in Alexandria, Virginia.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Five Guys is headquartered in Alexandria, Virginia."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Five Guys began franchising in early 2003.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Five Guys began franchising in early 2003."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Five Guys had over 1,900 locations open worldwide as of 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Five Guys had over 1,900 locations open worldwide as of 2026."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Five Guys reported revenue of US$2.347 billion in 2023.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Five Guys reported revenue of US$2.347 billion in 2023."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Five Guys had a 32.8% sales increase from 2010 to 2011, making it the fastest-growing fast food chain in the US.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Five Guys had a 32.8% sales increase from 2010 to 2011, making it the fastest-growing fast food chain in the US."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "By 2001, Five Guys had five locations in the Washington, D.C. metro area.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "By 2001, Five Guys had five locations in the Washington, D.C. metro area."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Five_Guys"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Jerry Murrell's formal name appears to be Victor Jerome Murrell, per a search-result snippet on a Marketscreener insider listing (not opened).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Jerry Murrell's formal name appears to be Victor Jerome Murrell, per a search-result snippet on a Marketscreener insider listing (not opened)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family/",
+   "note": "Five Guys' own site and Feb 2026 release call Jerry Murrell the founder.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.fiveguys.com/our-story/",
+   "note": "The official our-story page says 'Five Guys founder Jerry Murrell'.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia says founded in 1986 by Janie and Jerry Murrell; the company page shows both as the couple who started it.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "F": "true"
+   }
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia infobox lists Founders: Jerry Murrell, Janie Murrell.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "The official site names Jerry as founder and Wikipedia credits both Jerry and Janie; the sons are described as the original 'Five Guys', though 'co-founders' is a loose characterization.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.fiveguys.com/news/media-mentions/featured-stories/five-guys-celebrates-40-years-of-burgers-fries-and-family/",
+   "note": "Jerry and Janie with their sons started the business in 1986.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "The first restaurant opened in 1986 in Arlington, Virginia.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "F": "true",
+    "E": "true",
+    "C": "true",
+    "D": "true"
+   }
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.fiveguys.com/our-story/",
+   "note": "Official page says 'three sons'; other sources say four, but the claim matches the page wording.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true",
+    "B": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia states Jerry and sons Jim, Matt, Chad, Ben were the original Five Guys.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Fifth son Tyler came later (two years after founding, ~1988 per Wikipedia); the 1987 birth year is a minor discrepancy, but the substance holds.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia says 'a fifth son, Tyler, two years later' (after the 1986 founding).",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia says all five sons are involved in the business.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Privately held, family-run company; ownership by the Murrell family is consistent with sources and general knowledge, though not stated explicitly in the passages.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.fiveguys.ca/the-five-guys-story",
+   "note": "Quote matches the official site text.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.bu.edu/bhr/profile/jerry-murrell/",
+   "note": "BU profile (2023) lists him as CEO; he is described as founder and still the face of the company in the 2026 release.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia says HQ moved to Alexandria, VA in 2023.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Franchising began in early 2003 per Wikipedia and the official story.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia, as of 2026, says over 1,900 locations; the official site also says more than 1,900.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia states the 32.8% 2010-2011 sales increase and fastest-growing status; historical context, not about the founder.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "Wikipedia states five locations in the DC metro area by 2001; background, not the founder.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Five_Guys",
+   "note": "The Wikipedia infobox lists revenue of US$2.347 billion for 2023. It is background rather than an answer to who the founder is, and it is not the most recent year.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://uk.marketscreener.com/insider/VICTOR-JEROME-MURRELL-A0WOID",
+   "note": "The Marketscreener and Zonebourse insider pages list 'Victor Jerome Murrell' as founder and president of Five Guys, Inc. The Five Guys story pages and the Wikipedia article name him only as Jerry Murrell. The full name rests on aggregator data alone, with no official Five Guys source for it. A few a",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "retried": true
+  }
+ },
+ "audit": {
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "note": "2026 coverage (Fortune in March, Bloomberg in July) still calls Jerry Murrell Five Guys' founder and CEO. I found no report of a leadership change. Sources: https://fortune.com/2026/03/25/five-guys-ceo-jerry-murrell-bonus-employees-bogo-burger/ ; https://money.whatfinger.com/2026/07/27/five-guys-ceo"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "note": "A January 2026 source says over 1,950 locations worldwide. Five Guys announced its 2,000th store in September 2026. Both are over 1,900. Sources: https://1851franchise.com/five-guys-franchise-costs-fees-profit-and-data-for-2025-2728435 ; https://www.financialcontent.com/article/gnwcq-2026-9-25-five-"
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 31,
+ "scores": {
+  "exa": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 46.25,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.341,
+   "answer_truth": 6,
+   "thoroughness": 0.508,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 46.25,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.562,
+   "answer_truth": 6,
+   "thoroughness": 0.72,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 46.25,
+   "coverage": 0.25,
+   "accuracy": 1.0,
+   "combined": 0.4,
+   "thorough_coverage": 0.389,
+   "answer_truth": 6,
+   "thoroughness": 0.56,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 46.25,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.324,
+   "answer_truth": 6,
+   "thoroughness": 0.49,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 46.25,
+   "coverage": 0.125,
+   "accuracy": 1.0,
+   "combined": 0.222,
+   "thorough_coverage": 0.146,
+   "answer_truth": 6,
+   "thoroughness": 0.255,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 46.25,
+   "coverage": 0.125,
+   "accuracy": 1.0,
+   "combined": 0.222,
+   "thorough_coverage": 0.146,
+   "answer_truth": 6,
+   "thoroughness": 0.255,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.884,
+ "corrections_v2": {
+  "units_before": 33,
+  "units_after": 22,
+  "dedup_groups": [
+   {
+    "kept": "c8",
+    "merged": [
+     "c9",
+     "c10",
+     "c11",
+     "c12",
+     "c13",
+     "c14"
+    ]
+   },
+   {
+    "kept": "c3",
+    "merged": [
+     "c4"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16",
+     "c17",
+     "c18"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

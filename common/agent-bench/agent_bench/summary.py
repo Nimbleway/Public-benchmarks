@@ -37,7 +37,8 @@ def words(r):
         return None
     parts = [o.get("answer") or ""] + [(f or {}).get("fact") or "" for f in o.get("key_facts") or []] + \
         [c or "" for c in o.get("caveats") or []]
-    return sum(len(x.split()) for x in parts)
+    # a provider sometimes returns an object where the schema asks for text
+    return sum(len((x if isinstance(x, str) else json.dumps(x, ensure_ascii=False)).split()) for x in parts)
 
 
 def load_json(p):

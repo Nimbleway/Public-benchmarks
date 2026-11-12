@@ -1,0 +1,68 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_01a628a49de9c307006af4b05fd21c87d286db32d60b86c32c",
+ "status": "completed",
+ "seconds": 24,
+ "output": {
+  "question": "What is Stripe's valuation?",
+  "answer": "As of November 11, 2026, Stripe\u2019s latest company-announced valuation I could verify is $159 billion, announced on February 24, 2026. That valuation was set for a tender offer providing liquidity to current and former employees. ([stripe.com](https://stripe.com/newsroom/news/stripe-2025-update))",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Stripe announced a $159 billion valuation for an employee tender offer on February 24, 2026.",
+    "source_url": "https://stripe.com/newsroom/news/stripe-2025-update",
+    "date": "2026-02-24"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "provide liquidity to current and former Stripe employees through a tender offer at a $159B (\u20ac135B) valuation.",
+    "source_url": "https://stripe.com/newsroom/news/stripe-2025-update",
+    "publisher": "Stripe",
+    "published_date": "2026-02-24"
+   }
+  ],
+  "caveats": [
+   "This is the latest company-announced valuation I could verify, not a real-time valuation or a secondary-market estimate."
+  ],
+  "missing_fields": []
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": [
+    {
+     "url": "https://stripe.com/newsroom/news/stripe-2025-update",
+     "title": "Stripe publishes 2025 annual letter and announces tender offer to provide liquidity to current and former employees"
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 25879,
+  "input_tokens_details": {
+   "cache_write_tokens": 12,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 606,
+  "output_tokens_details": {
+   "reasoning_tokens": 313
+  },
+  "total_tokens": 26485
+ },
+ "search_calls": 3,
+ "search_actions": {
+  "search": 2,
+  "find_in_page": 1
+ },
+ "token_cost_usd": 0.0485,
+ "cost_usd": 0.0785,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "dd_question",
+ "input": "What is Stripe's valuation?",
+ "input_n": 18,
+ "completed_on": "2026-11-11"
+}

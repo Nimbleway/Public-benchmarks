@@ -1,0 +1,186 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69b949a99ad4d5776f",
+ "status": "completed",
+ "seconds": 77,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Where can I find JPMorgan Chase's latest annual report?",
+  "passages": [
+   {
+    "quote": "2025 Complete Annual Report (364 pgs)",
+    "publisher": "JPMorganChase",
+    "published_date": null,
+    "source_url": "https://www.jpmorganchase.com/ir/annual-report.htm"
+   },
+   {
+    "quote": "(released April 2026)",
+    "publisher": "JPMorganChase",
+    "published_date": null,
+    "source_url": "https://www.jpmorganchase.com/ir/annual-report.htm"
+   }
+  ],
+  "answer": "As of November 11, 2026, JPMorgan Chase\u2019s latest annual report is its 2025 Annual Report, released in April 2026. Download the [complete report (PDF)](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf), or find it on the company\u2019s official [annual-report page](https://www.jpmorganchase.com/ir/annual-report.htm).",
+  "caveats": [],
+  "missing_fields": [
+   "passages[].published_date: the annual-report webpage does not state its own publication date."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+    "fact": "The latest annual report listed is the 2025 Complete Annual Report, with a direct PDF download link."
+   },
+   {
+    "date": "2026-04",
+    "source_url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+    "fact": "The company states that its 2025 Annual Report was released in April 2026."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question is reproduced from the user's request.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Annual Report | JPMorganChase",
+     "url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+     "excerpts": [
+      "2025 Complete Annual Report (364 pgs) [View Document](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf)",
+      "2025 Annual Report & Proxy (released April 2026)",
+      "[JPMorganChase logo](https://www.jpmorganchase.com/)"
+     ]
+    }
+   ],
+   "reasoning": "The official company page supplies both quoted passages and identifies the publisher. Its own publication date was not established, so those dates are null.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Annual Report | JPMorganChase",
+     "url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+     "excerpts": [
+      "2025 Complete Annual Report (364 pgs) [View Document](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf)",
+      "2025 Annual Report & Proxy (released April 2026)",
+      "Reports by year slide 1 of 10 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015-2003"
+     ]
+    }
+   ],
+   "reasoning": "The current official page features the 2025 report, provides its exact PDF link, and states its April 2026 release. The archive lists earlier report years.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "No material uncertainty affects the requested report location.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The page's own publication date was not established. The report's release month is a separate fact and is not substituted for the webpage publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "This is the date specified in the task and the reference date for the current-page check.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Annual Report | JPMorganChase",
+     "url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+     "excerpts": [
+      "2025 Complete Annual Report (364 pgs) [View Document](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf)",
+      "2025 Annual Report & Proxy (released April 2026)"
+     ]
+    }
+   ],
+   "reasoning": "The company identifies the report and its download link, and explicitly gives April 2026 as the release month.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Annual Report | JPMorganChase",
+     "url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+     "excerpts": [
+      "2025 Complete Annual Report (364 pgs) [View Document](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf)",
+      "[JPMorganChase logo](https://www.jpmorganchase.com/)"
+     ]
+    }
+   ],
+   "reasoning": "The report label is quoted verbatim from JPMorganChase's official page.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Annual Report | JPMorganChase",
+     "url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+     "excerpts": [
+      "2025 Annual Report & Proxy (released April 2026)",
+      "[JPMorganChase logo](https://www.jpmorganchase.com/)"
+     ]
+    }
+   ],
+   "reasoning": "The release-month parenthetical is quoted verbatim from the official company page.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The webpage's publication date was not found; null preserves that gap without conflating it with the report release date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Annual Report | JPMorganChase",
+     "url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+     "excerpts": [
+      "2025 Complete Annual Report (364 pgs) [View Document](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf)",
+      "Reports by year slide 1 of 10 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015-2003"
+     ]
+    }
+   ],
+   "reasoning": "The page features the 2025 report and its PDF link, while its archive lists earlier years. The date denotes the as-of check, not publication.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Annual Report | JPMorganChase",
+     "url": "https://www.jpmorganchase.com/ir/annual-report.htm",
+     "excerpts": [
+      "2025 Annual Report & Proxy (released April 2026)"
+     ]
+    }
+   ],
+   "reasoning": "The company explicitly states the release month; the date retains month-level precision.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "Where can I find JPMorgan Chase's latest annual report?",
+ "input_n": 7,
+ "completed_on": "2026-11-11"
+}

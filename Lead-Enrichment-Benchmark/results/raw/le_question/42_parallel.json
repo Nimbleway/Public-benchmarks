@@ -1,0 +1,234 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b6996210217218c32ff",
+ "status": "completed",
+ "seconds": 96,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is the parent company of Lenovo?",
+  "passages": [
+   {
+    "quote": "Lenovo, a subsidiary of the Company",
+    "publisher": "Legend Holdings Corporation",
+    "published_date": null,
+    "source_url": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf"
+   },
+   {
+    "quote": "As of Mar 31, 2026\n|Name of Shareholders |Shareholding (%) |\n|Legend Holdings Corporation Note 1 |32\\.04 |",
+    "publisher": "Lenovo",
+    "published_date": null,
+    "source_url": "https://investor.lenovo.com/en/ir/shareholding.php"
+   }
+  ],
+  "answer": "Lenovo\u2019s parent company is Legend Holdings Corporation, which identifies Lenovo Group Limited as its subsidiary in its 2026 interim report. Lenovo\u2019s own shareholding disclosure lists Legend Holdings with a 32.04% stake as of March 31, 2026.",
+  "caveats": [
+   "The 32.04% ownership figure is dated March 31, 2026; it should not be treated as a real-time ownership percentage."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": null,
+    "source_url": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+    "fact": "Legend Holdings Corporation\u2019s 2026 interim report explicitly identifies Lenovo Group Limited as its subsidiary."
+   },
+   {
+    "date": "2026-03-31",
+    "source_url": "https://investor.lenovo.com/en/ir/shareholding.php",
+    "fact": "Lenovo disclosed that Legend Holdings Corporation held 32.04% of its shares."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "This is the question supplied by the user, not an externally researched fact.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "INTERIM REPORT",
+     "url": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+     "excerpts": [
+      "On June 17, 2026 (after trading hours), Lenovo, a subsidiary of the Company"
+     ]
+    },
+    {
+     "title": "Shareholding Structure | Lenovo",
+     "url": "https://investor.lenovo.com/en/ir/shareholding.php",
+     "excerpts": [
+      "As of Mar 31, 2026 |Name of Shareholders |Shareholding (%) | |Legend Holdings Corporation Note 1 |32\\.04 |"
+     ]
+    }
+   ],
+   "reasoning": "The interim report contains the quoted subsidiary description, and Lenovo\u2019s shareholding page contains the quoted date, table heading and shareholder row. Publication dates were not explicitly verified and are null.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "INTERIM REPORT",
+     "url": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+     "excerpts": [
+      "\u201cLenovo\u201d Lenovo Group Limited (\u806f\u60f3\u96c6\u5718\u6709\u9650\u516c\u53f8), a limited liability company incorporated under the laws of Hong Kong and listed on the Main Board of the Hong Kong Stock Exchange (Stock Code: 992), and our subsidiary",
+      "5 2026 INTERIM REPORT **LEGEND HOLDINGS CORPORATION**"
+     ]
+    },
+    {
+     "title": "Shareholding Structure | Lenovo",
+     "url": "https://investor.lenovo.com/en/ir/shareholding.php",
+     "excerpts": [
+      "As of Mar 31, 2026 |Name of Shareholders |Shareholding (%) | |Legend Holdings Corporation Note 1 |32\\.04 |"
+     ]
+    }
+   ],
+   "reasoning": "Legend Holdings\u2019 report explicitly defines Lenovo Group Limited as its subsidiary, supporting the parent-company identification. Lenovo independently discloses Legend Holdings\u2019 32.04% holding with a March 31, 2026 reference date. These are dated disclosures rather than real-time confirmation of ownership.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Shareholding Structure | Lenovo",
+     "url": "https://investor.lenovo.com/en/ir/shareholding.php",
+     "excerpts": [
+      "As of Mar 31, 2026 |Name of Shareholders |Shareholding (%) | |Legend Holdings Corporation Note 1 |32\\.04 |"
+     ]
+    }
+   ],
+   "reasoning": "The page expressly dates the shareholding figure to March 31, 2026, limiting how current the percentage can be represented as being.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "Explicit publication dates were not verified on the opened sources. The report year and shareholding reference date were not substituted for publication dates.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "November 11, 2026 is the assessment date specified by the user, not the effective date of the disclosed ownership percentage.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "INTERIM REPORT",
+     "url": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+     "excerpts": [
+      "\u201cLenovo\u201d Lenovo Group Limited (\u806f\u60f3\u96c6\u5718\u6709\u9650\u516c\u53f8), a limited liability company incorporated under the laws of Hong Kong and listed on the Main Board of the Hong Kong Stock Exchange (Stock Code: 992), and our subsidiary",
+      "5 2026 INTERIM REPORT **LEGEND HOLDINGS CORPORATION**"
+     ]
+    },
+    {
+     "title": "Shareholding Structure | Lenovo",
+     "url": "https://investor.lenovo.com/en/ir/shareholding.php",
+     "excerpts": [
+      "As of Mar 31, 2026 |Name of Shareholders |Shareholding (%) | |Legend Holdings Corporation Note 1 |32\\.04 |"
+     ]
+    }
+   ],
+   "reasoning": "The report establishes the subsidiary relationship and identifies its publisher. Lenovo\u2019s disclosure directly establishes the ownership percentage and its reference date.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "INTERIM REPORT",
+     "url": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+     "excerpts": [
+      "On June 17, 2026 (after trading hours), Lenovo, a subsidiary of the Company",
+      "5 2026 INTERIM REPORT **LEGEND HOLDINGS CORPORATION**"
+     ]
+    }
+   ],
+   "reasoning": "The exact subsidiary phrase appears in Legend Holdings Corporation\u2019s interim report.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Shareholding Structure | Lenovo",
+     "url": "https://investor.lenovo.com/en/ir/shareholding.php",
+     "excerpts": [
+      "As of Mar 31, 2026 |Name of Shareholders |Shareholding (%) | |Legend Holdings Corporation Note 1 |32\\.04 |"
+     ]
+    }
+   ],
+   "reasoning": "The quoted date and table entries appear together on Lenovo\u2019s official shareholding page.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Shareholding Structure | Lenovo",
+     "url": "https://investor.lenovo.com/en/ir/shareholding.php",
+     "excerpts": [
+      "As of Mar 31, 2026 |Name of Shareholders |Shareholding (%) | |Legend Holdings Corporation Note 1 |32\\.04 |"
+     ]
+    }
+   ],
+   "reasoning": "The source\u2019s explicit reference date supports qualifying the percentage as historical rather than real-time.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "No explicit publication date was verified for the interim report.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The shareholding page provides an ownership reference date, but no verified publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "INTERIM REPORT",
+     "url": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+     "excerpts": [
+      "\u201cLenovo\u201d Lenovo Group Limited (\u806f\u60f3\u96c6\u5718\u6709\u9650\u516c\u53f8), a limited liability company incorporated under the laws of Hong Kong and listed on the Main Board of the Hong Kong Stock Exchange (Stock Code: 992), and our subsidiary",
+      "5 2026 INTERIM REPORT **LEGEND HOLDINGS CORPORATION**"
+     ]
+    }
+   ],
+   "reasoning": "The report identifies Lenovo Group Limited as a subsidiary and identifies Legend Holdings Corporation as the reporting company.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Shareholding Structure | Lenovo",
+     "url": "https://investor.lenovo.com/en/ir/shareholding.php",
+     "excerpts": [
+      "As of Mar 31, 2026 |Name of Shareholders |Shareholding (%) | |Legend Holdings Corporation Note 1 |32\\.04 |"
+     ]
+    }
+   ],
+   "reasoning": "The official shareholding table directly supplies Legend Holdings\u2019 name, 32.04% stake and March 31, 2026 reference date.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Lenovo?",
+ "input_n": 42,
+ "completed_on": "2026-11-11"
+}

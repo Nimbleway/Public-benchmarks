@@ -1,0 +1,297 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69b7a88f2542158b50",
+ "status": "completed",
+ "seconds": 66,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Tesla's valuation?",
+  "passages": [
+   {
+    "quote": "The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding.",
+    "publisher": "Liquid",
+    "published_date": null,
+    "source_url": "https://www.liquid.trade/markets/tesla"
+   },
+   {
+    "quote": "Tesla has a market cap or net worth of $1.50 trillion. The enterprise value is $1.47 trillion.",
+    "publisher": "Stock Analysis",
+    "published_date": null,
+    "source_url": "https://stockanalysis.com/stocks/tsla/statistics"
+   }
+  ],
+  "answer": "Tesla\u2019s stock-market valuation is approximately US$1.508 trillion\u2014about US$1.5 trillion\u2014by market capitalization as of November 11, 2026, according to Liquid. For comparison, Stock Analysis\u2019s November 10, 2026 snapshot reports a US$1.50 trillion market capitalization and a US$1.47 trillion enterprise value.",
+  "caveats": [
+   "These are third-party market-data snapshots, not a guaranteed live valuation.",
+   "The November 11 market-cap figure and November 10 enterprise-value figure come from different providers and are not synchronized."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.liquid.trade/markets/tesla",
+    "fact": "Liquid reports Tesla's market capitalization at approximately US$1.508 trillion."
+   },
+   {
+    "date": "2026-11-10",
+    "source_url": "https://stockanalysis.com/stocks/tsla/statistics",
+    "fact": "Stock Analysis reports Tesla's market capitalization at US$1.50 trillion in its November 10 snapshot."
+   },
+   {
+    "date": "2026-11-10",
+    "source_url": "https://stockanalysis.com/stocks/tsla/statistics",
+    "fact": "Stock Analysis reports Tesla's enterprise value at US$1.47 trillion in the same snapshot."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no external evidence is required.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    },
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "Tesla has a market cap or net worth of $1.50 trillion. The enterprise value is $1.47 trillion. Market Cap | 1.50T Enterprise Value | 1.47T"
+     ]
+    }
+   ],
+   "reasoning": "The passages reproduce the valuation statements from the two named pages. Publication dates were not established and are therefore null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    },
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "Tesla has a market cap or net worth of $1.50 trillion. The enterprise value is $1.47 trillion. Market Cap | 1.50T Enterprise Value | 1.47T",
+      "(TSLA) NASDAQ: TSLA \u00b7 Real-Time Price \u00b7 USD Full Chart Watchlist Alerts Compare 379.73 +1.68 (0.44%) At close: Nov 10, 2026, 4:00 PM EST"
+     ]
+    }
+   ],
+   "reasoning": "Liquid directly supplies the November 11 market capitalization. Stock Analysis supplies the comparison market capitalization and enterprise value, with its quote header establishing the November 10 snapshot. These are third-party figures rather than a synchronized primary-source valuation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    },
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "(TSLA) NASDAQ: TSLA \u00b7 Real-Time Price \u00b7 USD Full Chart Watchlist Alerts Compare 379.73 +1.68 (0.44%) At close: Nov 10, 2026, 4:00 PM EST"
+     ]
+    }
+   ],
+   "reasoning": "The pages identify different dated observations, supporting the warning that the figures are snapshots rather than synchronized live values.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No publication date was verified for either page. The dates attached to the financial observations are not treated as publication dates.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    }
+   ],
+   "reasoning": "The most recent reported valuation explicitly states November 11, 2026.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    },
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "Tesla has a market cap or net worth of $1.50 trillion. The enterprise value is $1.47 trillion. Market Cap | 1.50T Enterprise Value | 1.47T",
+      "(TSLA) NASDAQ: TSLA \u00b7 Real-Time Price \u00b7 USD Full Chart Watchlist Alerts Compare 379.73 +1.68 (0.44%) At close: Nov 10, 2026, 4:00 PM EST"
+     ]
+    }
+   ],
+   "reasoning": "The sources directly state all three valuation figures. The Stock Analysis quote header dates that page's snapshot to November 10.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    }
+   ],
+   "reasoning": "The quoted sentence directly states Tesla's November 11 market capitalization and its price/share-count context.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "Tesla has a market cap or net worth of $1.50 trillion. The enterprise value is $1.47 trillion. Market Cap | 1.50T Enterprise Value | 1.47T"
+     ]
+    }
+   ],
+   "reasoning": "The first two sentences of this span exactly provide the quoted market capitalization and enterprise value.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    },
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "(TSLA) NASDAQ: TSLA \u00b7 Real-Time Price \u00b7 USD Full Chart Watchlist Alerts Compare 379.73 +1.68 (0.44%) At close: Nov 10, 2026, 4:00 PM EST"
+     ]
+    }
+   ],
+   "reasoning": "Both observations are explicitly dated, so neither should be presented as a guaranteed continuously current value.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.1",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    },
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "(TSLA) NASDAQ: TSLA \u00b7 Real-Time Price \u00b7 USD Full Chart Watchlist Alerts Compare 379.73 +1.68 (0.44%) At close: Nov 10, 2026, 4:00 PM EST"
+     ]
+    }
+   ],
+   "reasoning": "Liquid's November 11 observation and Stock Analysis's November 10 quote establish the timing mismatch.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The Liquid page's publication date was not verified; its valuation observation date is reported separately.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The Stock Analysis page's publication date was not verified; its quote date is reported separately.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Price Chart - Trade TSLA on Liquid",
+     "url": "https://www.liquid.trade/markets/tesla",
+     "excerpts": [
+      "What is the market cap of TSLA? + The market capitalization of Tesla is approximately $1.508T as of November 11, 2026, from a price of $381.77 against 3.95B shares outstanding."
+     ]
+    }
+   ],
+   "reasoning": "Directly states the US$1.508 trillion market capitalization and November 11 date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "Tesla has a market cap or net worth of $1.50 trillion. The enterprise value is $1.47 trillion. Market Cap | 1.50T Enterprise Value | 1.47T",
+      "(TSLA) NASDAQ: TSLA \u00b7 Real-Time Price \u00b7 USD Full Chart Watchlist Alerts Compare 379.73 +1.68 (0.44%) At close: Nov 10, 2026, 4:00 PM EST"
+     ]
+    }
+   ],
+   "reasoning": "The valuation section states US$1.50 trillion; the quote header establishes the November 10 snapshot.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.2",
+   "citations": [
+    {
+     "title": "Tesla (TSLA) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tsla/statistics",
+     "excerpts": [
+      "Tesla has a market cap or net worth of $1.50 trillion. The enterprise value is $1.47 trillion. Market Cap | 1.50T Enterprise Value | 1.47T",
+      "(TSLA) NASDAQ: TSLA \u00b7 Real-Time Price \u00b7 USD Full Chart Watchlist Alerts Compare 379.73 +1.68 (0.44%) At close: Nov 10, 2026, 4:00 PM EST"
+     ]
+    }
+   ],
+   "reasoning": "The valuation section states US$1.47 trillion enterprise value; the quote header dates the page snapshot to November 10.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "What is Tesla's valuation?",
+ "input_n": 22,
+ "completed_on": "2026-11-11"
+}

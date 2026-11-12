@@ -1,0 +1,87 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_00d22142c1391cfe006af4b0a1ad6c87d2ac898416b142a9ea",
+ "status": "completed",
+ "seconds": 44,
+ "output": {
+  "question": "Has USAA announced layoffs?",
+  "answer": "Yes\u2014USAA has publicly confirmed layoffs. An accessible summary of January 29, 2026 reporting says a USAA spokesperson confirmed job cuts, while sources estimated at least 400 affected employees across departments; that figure was not presented as company-confirmed. USAA also explicitly announced approximately 220 role eliminations in April 2024, citing changing business needs. I could not verify the details of a newer October 2026 report because the publisher\u2019s page was inaccessible.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "According to a summary of January 29, 2026 reporting, a USAA spokesperson confirmed job cuts; sources estimated 400 or more affected employees across departments.",
+    "source_url": "https://www.thelayoffclub.com/laid-off-from/usaa",
+    "date": "2026-01-29"
+   },
+   {
+    "fact": "As reported April 12, 2024, USAA announced approximately 220 role eliminations to reprioritize positions amid changing business needs.",
+    "source_url": "https://www.insurancejournal.com/news/national/2024/04/12/769544.htm",
+    "date": "2024-04-12"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "A spokesperson confirmed jobs were cut",
+    "source_url": "https://www.thelayoffclub.com/laid-off-from/usaa",
+    "publisher": "The Layoff Club",
+    "published_date": null
+   },
+   {
+    "quote": "sources put the cuts at 400 or more across departments.",
+    "source_url": "https://www.thelayoffclub.com/laid-off-from/usaa",
+    "publisher": "The Layoff Club",
+    "published_date": null
+   },
+   {
+    "quote": "After careful consideration, we made the difficult decision to eliminate approximately 220 roles.",
+    "source_url": "https://www.insurancejournal.com/news/national/2024/04/12/769544.htm",
+    "publisher": "Insurance Journal",
+    "published_date": "2024-04-12"
+   }
+  ],
+  "caveats": [
+   "The January 2026 information comes from an accessible secondary summary, not an opened USAA release or the original report.",
+   "The January 2026 headcount estimate was attributed to sources, not confirmed by USAA.",
+   "Search surfaced a newer P&C Specialist report dated October 22, 2026, but its page could not be opened; its layoff details are therefore not returned as verified values.",
+   "The accessible sources establish that USAA has announced layoffs, but do not establish the latest company-confirmed layoff count as of November 11, 2026."
+  ],
+  "missing_fields": [
+   "Latest company-confirmed layoff count",
+   "Details of the October 2026 report",
+   "The Layoff Club publication date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 45348,
+  "input_tokens_details": {
+   "cache_write_tokens": 12,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 1098,
+  "output_tokens_details": {
+   "reasoning_tokens": 439
+  },
+  "total_tokens": 46446
+ },
+ "search_calls": 6,
+ "search_actions": {
+  "search": 4,
+  "open_page": 2
+ },
+ "token_cost_usd": 0.0924,
+ "cost_usd": 0.1524,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Has USAA announced layoffs?",
+ "input_n": 31,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,733 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 13,
+ "task": "Where can I find Coca-Cola's latest annual report?",
+ "labels": {
+  "parallel": "A",
+  "firecrawl": "B",
+  "exa": "C",
+  "gpt": "D",
+  "opus": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 11,
+ "evidence_fetched": 11,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Coca-Cola's latest annual report (as of 2026-11-11) is its Form 10-K for fiscal year 2025.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A",
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "F": "Coca-Cola's latest annual report is its Form 10-K for the fiscal year ended December 31, 2025.",
+    "C": "Coca-Cola's latest annual report as of November 11, 2026 is its fiscal-year 2025 Form 10-K.",
+    "A": "The Coca-Cola Company's latest annual report as of November 11, 2026 is its 2025 Form 10-K, covering the fiscal year ended December 31, 2025.",
+    "B": "Coca-Cola's latest annual report as of 2026-11-11 is its FY 2025 Form 10-K, for the fiscal year ended December 31, 2025.",
+    "D": "As of November 11, 2026, The Coca-Cola Company's latest annual report listed is its 2025 Form 10-K, filed February 20, 2026.",
+    "E": "The Coca-Cola Company's latest annual report is its Form 10-K for the fiscal year ended December 31, 2025, filed on February 20, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/21344/0001628280-26-010047-index.htm",
+    "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The 10-K covers the fiscal year ended December 31, 2025.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A",
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "F": "Coca-Cola's latest annual report is its Form 10-K for the fiscal year ended December 31, 2025.",
+    "C": "The Coca-Cola Company's Form 10-K covers the fiscal year ended December 31, 2025.",
+    "A": "...2025 Form 10-K, covering the fiscal year ended December 31, 2025.",
+    "B": "...FY 2025 Form 10-K, for the fiscal year ended December 31, 2025.",
+    "D": "The Coca-Cola Company's 2025 Form 10-K covers the fiscal year ended December 31, 2025.",
+    "E": "...Form 10-K for the fiscal year ended December 31, 2025, filed on February 20, 2026."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The FY2025 Form 10-K was filed on February 20, 2026.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "F": "Coca-Cola's Form 10-K for fiscal year 2025 was filed with the SEC on February 20, 2026.",
+    "C": "The Coca-Cola Company filed its fiscal-year 2025 Form 10-K on February 20, 2026.",
+    "A": "The Coca-Cola Company's 2025 Form 10-K was filed/published on February 20, 2026.",
+    "D": "...2025 Form 10-K, filed February 20, 2026.",
+    "E": "...Form 10-K for the fiscal year ended December 31, 2025, filed on February 20, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/21344/0001628280-26-010047-index.htm",
+    "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The FY2025 10-K has SEC accession number 0001628280-26-010047.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Coca-Cola's FY2025 Form 10-K has SEC accession number 0001628280-26-010047."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/21344/0001628280-26-010047-index.htm",
+    "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021344&type=10-K"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "The FY2025 10-K can be read for free on SEC EDGAR (sec.gov).",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Coca-Cola's FY2025 10-K can be read for free on SEC EDGAR (sec.gov)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/21344/0001628280-26-010047-index.htm",
+    "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "The primary FY2025 10-K document is ko-20251231.htm, an iXBRL document on SEC EDGAR.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The primary Coca-Cola FY2025 10-K document is ko-20251231.htm, an iXBRL document available on SEC EDGAR."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/21344/0001628280-26-010047-index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "The FY2025 10-K is 192 pages long.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "The Coca-Cola FY2025 10-K is 192 pages long.",
+    "E": "Coca-Cola's most recent 10-K, labeled 'Form 10-K: Annual report', is dated 02/20/26, has 192 pages, and is listed first on the company's Annual Filings (10-K) page."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Coca-Cola's investor relations site hosts the annual report under Filings & Reports → Annual Filings (10-K).",
+   "asserted_by": [
+    "F",
+    "D"
+   ],
+   "variants": {
+    "F": "Coca-Cola's investor relations site (investors.coca-colacompany.com) hosts the FY2025 10-K under Filings & Reports → Annual Filings (10-K).",
+    "D": "Coca-Cola's annual report can be found on the company's Investor Relations website under Filings & Reports → Annual Filings (10-K)."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "The Annual Filings (10-K) page lists the FY2025 Form 10-K first.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Coca-Cola's Annual Filings (10-K) investor-relations page lists the FY2025 Form 10-K first.",
+    "E": "...is dated 02/20/26, has 192 pages, and is listed first on the company's Annual Filings (10-K) page."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "The Annual Filings (10-K) page lists a history of annual filings (10-K, 10-K/A) going back decades.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Coca-Cola's Annual Filings (10-K) page lists a history of annual filings (10-K, 10-K/A) going back decades."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "The investor site has an Annual Publications page where items such as the annual report and proxy statement are posted.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Coca-Cola's investor site has an Annual Publications page where annual publications such as the annual report and proxy statement (e.g., the 2025 Proxy Statement) are posted."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/annual-publications"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "No 10-K/A amendment to the FY2025 10-K was observed as of 2026-11-11.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "No 10-K/A amendment for Coca-Cola's FY2025 10-K was observed as of 2026-11-11."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "The FY2025 10-K can be opened as an HTML filing on the Coca-Cola investor relations site (ko-20251231.htm).",
+   "asserted_by": [
+    "C",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "C": "The Coca-Cola Company's FY2025 Form 10-K can be read on Coca-Cola's investor-relations site.",
+    "B": "Coca-Cola's FY 2025 Form 10-K is available as an HTML filing on Coca-Cola Investor Relations at https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm.",
+    "E": "The Coca-Cola 10-K for fiscal year 2025 can be opened as an HTML filing on the Coca-Cola investor relations site at the ko-20251231.htm content URL."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "https://investors.coca-colacompany.com/financial-information"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "The official PDF of the 2025 Form 10-K can be downloaded from the company's investor site.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The official PDF of The Coca-Cola Company's 2025 Form 10-K can be downloaded from the company's investor site."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/0001628280-26-010047.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "The 10-K filing page on the investor site provides a 'Complete Filing PDF' download.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "The Coca-Cola Company's official filing page provides a Complete Filing PDF download.",
+    "D": "The Coca-Cola Company's 2025 Form 10-K report page provides a 'Complete Filing PDF' download."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "The Investor Relations Financial Information page lists FY 2025 with a fiscal year ended December 31, 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Coca-Cola's Investor Relations Financial Information page lists FY 2025 with a fiscal year ended December 31, 2025."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/financial-information"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "The Financial Information page provides the XBRL download for the FY 2025 10-K.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Coca-Cola's Financial Information page provides the XBRL download for the FY 2025 10-K."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/financial-information"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "The direct link to the FY2025 annual report is the HTML Form 10-K filing, not a separately designed glossy annual-report PDF.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The direct link to the FY 2025 annual report is the HTML Form 10-K filing, not a separately designed glossy annual-report PDF."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "The Coca-Cola 10-K before the most recent one was filed on 2025-02-20.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Coca-Cola Co 10-K before the most recent one was filed on 2025-02-20."
+   },
+   "urls": [
+    "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021344&type=10-K"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "The FY2026 10-K is not due until about late February 2027, so as of November 2026 the FY2025 10-K remains the latest annual report.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Coca-Cola's FY2026 10-K is not due until about late February 2027, so as of November 2026 the FY2025 10-K is still the latest annual report."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "IR page and EDGAR list the 10-K filed 02/20/26 for FY ended 12/31/2025 as most recent; no later annual report is shown.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "The cover page states 'For the fiscal year ended December 31, 2025'.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/21344/0001628280-26-010047-index.htm",
+   "note": "The EDGAR filing index shows a filing date of 2026-02-20.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021344&type=10-K",
+   "note": "EDGAR lists Acc-no 0001628280-26-010047 for the 10-K filed 2026-02-20.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true"
+   }
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "The full 10-K text is publicly hosted on sec.gov, which is free to access.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/21344/0001628280-26-010047-index.htm",
+   "note": "The EDGAR index lists document 1 as ko-20251231.htm, an iXBRL 10-K.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The IR page lists 192 pages for the 02/20/26 10-K.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The Annual Filings (10-K) page sits under Filings & Reports on the IR site and hosts the 10-K.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The 02/20/26 10-K is the first row, followed by 02/20/25.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The page has filters for 10-K, 10-K/A and 10-K405 with years back to 1994.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-publications",
+   "note": "An Annual Publications page exists and lists proxy statements; whether it also hosts the annual report is not clearly shown, but proxy statements are posted there.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The 10-K list shows the 02/20/26 10-K as the top entry with no 10-K/A above it; the absence of an amendment is consistent with the evidence.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+   "note": "The investor site hosts the FY2025 10-K (filed 2026-02-20) at this HTML URL.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/0001628280-26-010047.pdf",
+   "note": "The complete filing PDF is hosted on the investor site and contains FY2025 10-K content.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+   "note": "The filing page carries a 'Complete Filing PDF' link to the PDF.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/financial-information",
+   "note": "The page lists fiscal years in the 'Fiscal Year Ended Dec 31' format and links the FY2025 10-K; the exact FY2025 heading was not seen, so confidence is medium.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/financial-information",
+   "note": "The page links the 10-K and its XBRL Zip for the 0001628280-26-010047 filing.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The annual filings page links the 10-K as the annual report; no separate glossy report was shown, so confidence is medium.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The prior 10-K, for FY2024, was filed 02/20/25.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k",
+   "note": "The latest 10-K listed is the 02/20/26 one, and past filings came out around Feb 20, so the FY2026 10-K is not expected before about late February 2027.",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "note": "I checked Coca-Cola's investor Annual Filings (10-K) page live. The first row is the 10-K dated 02/20/26, titled 'Form 10-K: Annual report', with 192 pages. Its file is ko-20251231, so it covers FY2025. It is still the latest annual report as of 2026-11-11. The 192 is the page count shown on that IR"
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 23,
+ "scores": {
+  "parallel": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 80.0,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.45,
+   "answer_truth": 12,
+   "thoroughness": 0.621,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 80.0,
+   "coverage": 0.417,
+   "accuracy": 1.0,
+   "combined": 0.588,
+   "thorough_coverage": 0.394,
+   "answer_truth": 12,
+   "thoroughness": 0.565,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 80.0,
+   "coverage": 0.583,
+   "accuracy": 1.0,
+   "combined": 0.737,
+   "thorough_coverage": 0.525,
+   "answer_truth": 12,
+   "thoroughness": 0.689,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 80.0,
+   "coverage": 0.542,
+   "accuracy": 1.0,
+   "combined": 0.703,
+   "thorough_coverage": 0.487,
+   "answer_truth": 12,
+   "thoroughness": 0.655,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 80.0,
+   "coverage": 0.708,
+   "accuracy": 1.0,
+   "combined": 0.829,
+   "thorough_coverage": 0.653,
+   "answer_truth": 12,
+   "thoroughness": 0.79,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 20,
+   "truth_weight": 80.0,
+   "coverage": 0.583,
+   "accuracy": 1.0,
+   "combined": 0.737,
+   "thorough_coverage": 0.6,
+   "answer_truth": 12,
+   "thoroughness": 0.75,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.604,
+ "corrections_v2": {
+  "units_before": 23,
+  "units_after": 20,
+  "dedup_groups": [
+   {
+    "kept": "c4",
+    "merged": [
+     "c5"
+    ]
+   },
+   {
+    "kept": "c6",
+    "merged": [
+     "c7"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c13"
+    ]
+   }
+  ],
+  "cost": 0.014
+ }
+}

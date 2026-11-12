@@ -1,0 +1,805 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 18,
+ "task": "What is Stripe's valuation?",
+ "labels": {
+  "gpt": "A",
+  "firecrawl": "B",
+  "parallel": "C",
+  "opus": "D",
+  "nimble": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 13,
+ "evidence_fetched": 13,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Stripe announced a tender offer at a $159 billion (€135B) valuation on February 24, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Stripe announced a $159 billion (€135B) valuation on February 24, 2026, for a tender offer providing liquidity to current and former Stripe employees.",
+    "B": "Stripe's latest publicly announced valuation is $159 billion (approximately €135 billion), set in a tender offer. / Stripe announced the $159 billion tender offer valuation on February 24, 2026.",
+    "C": "Stripe announced an employee tender offer at a $159 billion (€135B) valuation on February 24, 2026, providing liquidity to current and former employees.",
+    "D": "Stripe's latest official valuation is $159 billion (about €135 billion), set in an employee tender offer announced February 24, 2026.",
+    "E": "Stripe announced a tender offer on February 24, 2026 at a $159 billion (€135B) valuation, providing liquidity to current and former employees.",
+    "F": "Stripe's latest company-announced tender offer, dated February 24, 2026, valued the company at $159 billion (€135 billion)."
+   },
+   "urls": [
+    "https://stripe.com/newsroom/news/stripe-2025-update",
+    "https://www.cnbc.com/2026/02/24/stripe-value-stock-sale-tender-offer.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c25"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "$159 billion is Stripe's latest company-announced/official valuation.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F",
+    "E"
+   ],
+   "variants": {
+    "B": "Stripe's latest publicly announced valuation is $159 billion",
+    "C": "The $159 billion tender offer valuation is Stripe's latest company-announced transaction valuation",
+    "D": "Stripe's latest official valuation is $159 billion",
+    "F": "Stripe's latest company-announced tender offer ... valued the company at $159 billion",
+    "E": "the last company-announced valuation is $159 billion."
+   },
+   "urls": [
+    "https://stripe.com/newsroom/news/stripe-2025-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The tender offer provides liquidity to current and former Stripe employees.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "A": "for a tender offer providing liquidity to current and former Stripe employees",
+    "B": "Stripe's tender offer provides liquidity to current and former Stripe employees.",
+    "C": "providing liquidity to current and former employees",
+    "E": "providing liquidity to current and former employees"
+   },
+   "urls": [
+    "https://stripe.com/newsroom/news/stripe-2025-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Stripe has signed agreements with investors to provide liquidity through the tender offer.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Stripe has signed agreements with investors to provide liquidity to current and former Stripe employees through a tender offer."
+   },
+   "urls": [
+    "https://stripe.com/newsroom/news/stripe-2025-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Investors including Thrive Capital, Coatue and a16z provided most of the funds for the tender offer.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Investors including Thrive Capital, Coatue, and a16z provided most of the funds for Stripe's tender offer.",
+    "D": "funded mostly by investors including Thrive Capital, Coatue and a16z",
+    "E": "The majority of funds ... come from investors including Thrive Capital, Coatue, and a16z"
+   },
+   "urls": [
+    "https://stripe.com/newsroom/news/stripe-2025-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Stripe used some of its own capital to repurchase shares in the tender offer.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Stripe planned to repurchase shares using some of its own capital as part of the tender offer.",
+    "D": "Stripe also using its own money to buy back shares.",
+    "E": "Stripe also used a portion of its own capital to repurchase shares."
+   },
+   "urls": [
+    "https://stripe.com/newsroom/news/stripe-2025-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Shares in the February 2026 tender offer changed hands at $62.47.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Shares in Stripe's February 2026 tender offer changed hands at $62.47."
+   },
+   "urls": [
+    "https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-economy"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Forge's price for Stripe as of Oct. 1, 2026 was $72.45 per share, implying a $184.4 billion valuation.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "E": "Forge's price for Stripe as of Oct. 1, 2026 was $72.45 per share, implying a $184.4 billion valuation."
+   },
+   "urls": [
+    "https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-economy"
+   ],
+   "conflicts_with": [
+    "c18",
+    "c20"
+   ],
+   "merged_from": [
+    "c8",
+    "c10",
+    "c28"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Forge's implied Stripe valuation is up 99.64% over the past year and above the $159 billion post-money valuation from the February 2026 tender offer.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Forge's implied Stripe valuation is up 99.64% over the past year and above the $159 billion post-money valuation from the February 2026 tender offer."
+   },
+   "urls": [
+    "https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-economy"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Stripe's $159 billion valuation is a more than 70% jump from a similar share sale a year earlier.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Stripe's $159 billion valuation is a more than 70% jump from a similar share sale a year earlier."
+   },
+   "urls": [
+    "https://reuters.com/business/stripe-valuation-jumps-159-billion-latest-share-sale-2026-02-24"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Stripe's valuation in its February 2025 tender offer was $91.5 billion.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Stripe's valuation in its February 2025 tender offer was $91.5 billion."
+   },
+   "urls": [
+    "https://reuters.com/business/stripe-valuation-jumps-159-billion-latest-share-sale-2026-02-24"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Stripe's previous valuation was $106.7 billion, secured in 2025 (September 2025 per one source).",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Stripe's previous valuation mark was $106.7 billion, secured in 2025.",
+    "E": "Stripe secured a $106.7 billion valuation in September 2025, which the $159 billion valuation exceeds."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/stripe-reaches-159-billion-valuation-195143711.html",
+    "https://bloomberg.com/news/articles/2026-02-24/stripe-hits-159-billion-valuation-as-payment-volume-soars"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Co-founder and president John Collison said Stripe has no imminent plans to go public.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Co-founder and president John Collison said Stripe has no imminent plans to go public.",
+    "E": "Co-founder and president John Collison said there are no imminent plans for a Stripe public listing; Stripe remains private."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/stripe-reaches-159-billion-valuation-195143711.html",
+    "https://bloomberg.com/news/articles/2026-02-24/stripe-hits-159-billion-valuation-as-payment-volume-soars"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Stripe remains private, so the $159 billion figure is a tender-offer valuation rather than a public-market capitalization.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Stripe remains private, so the $159 billion figure is a tender-offer valuation rather than a live public-market capitalization.",
+    "D": "Stripe's $159B valuation is a private tender-offer price, not a public market capitalization"
+   },
+   "urls": [
+    "https://agdillon.com/research/stripe/",
+    "https://stripe.com/newsroom/news/stripe-2025-update",
+    "https://www.chargeflow.io/blog/stripe-statistics"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c16",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Stripe has not filed for an IPO.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Stripe has not filed for an IPO."
+   },
+   "urls": [
+    "https://www.chargeflow.io/blog/stripe-statistics"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Stripe's current implied valuation is $205.88 billion as of November 11, 2026 (private-market estimate).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Stripe's current implied valuation is $205.88 billion as of November 11, 2026 (a private-market estimate)."
+   },
+   "urls": [
+    "https://stockanalysis.com/private/stripe/valuation/"
+   ],
+   "conflicts_with": [
+    "c20",
+    "c8"
+   ],
+   "merged_from": [
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Forge's secondary-market estimate values Stripe at $199.14 billion, as updated November 11, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Forge's secondary-market estimate values Stripe at $199.14 billion, as updated November 11, 2026."
+   },
+   "urls": [
+    "https://forgeglobal.com/stripe_stock"
+   ],
+   "conflicts_with": [
+    "c18",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "The $159 billion tender offer valuation is a different measure from Forge's secondary-market estimate.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The $159 billion tender offer valuation ... is a different measure from Forge's secondary-market estimate."
+   },
+   "urls": [
+    "https://stripe.com/newsroom/news/stripe-2025-update"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Private secondary-market estimates of Stripe's value can differ from the company-announced valuation and may change without a public transaction.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Private secondary-market estimates of Stripe's value can differ from the company-announced valuation and may change without a public transaction."
+   },
+   "urls": [],
+   "conflicts_with": [],
+   "merged_from": [
+    "c23",
+    "c24"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "As of October 13, 2026, a Chargeflow statistics page still listed the February 2026 $159B tender as the latest tender valuation Stripe has announced.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "As of October 13, 2026, a Chargeflow statistics page still listed the February 2026 $159B tender as the latest tender valuation Stripe has announced."
+   },
+   "urls": [
+    "https://www.chargeflow.io/blog/stripe-statistics"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Search results mention secondary-market prices implying a Stripe valuation of about $172–177B in July/August 2026 (Hiive/Caplight); unconfirmed and not endorsed by Stripe.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Search results mention secondary-market prices implying a Stripe valuation of about $172–177B in July/August 2026 (Hiive/Caplight); these were not opened or confirmed and Stripe has not endorsed them."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://stripe.com/newsroom/news/stripe-2025-update",
+   "note": "Stripe's own Feb 24, 2026 release announces the tender offer at $159B (€135B); all variants consistent.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.chargeflow.io/blog/stripe-statistics",
+   "note": "As of Oct-Nov 2026 sources, $159B remains the latest company-announced valuation; secondary prices are higher but not company-set.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stripe.com/newsroom/news/stripe-2025-update",
+   "note": "Stripe release and CNBC state current and former employees are eligible to sell.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stripe.com/newsroom/news/stripe-2025-update",
+   "note": "Release says Stripe signed agreements with investors to provide liquidity.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stripe.com/newsroom/news/stripe-2025-update",
+   "note": "Release: majority of funds from Thrive Capital, Coatue, a16z and others.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stripe.com/newsroom/news/stripe-2025-update",
+   "note": "Release says Stripe will use a portion of its own capital to repurchase shares.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-economy",
+   "note": "Benzinga states shares changed hands at $62.47 in the Feb 2026 tender.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-economy",
+   "note": "Benzinga reports Forge price $72.45 as of Oct 1 implying $184.4B.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true"
+   }
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-economy",
+   "note": "Benzinga: up 99.64% over past year and above $159B tender valuation.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://reuters.com/business/stripe-valuation-jumps-159-billion-latest-share-sale-2026-02-24",
+   "note": "Reuters: more than 70% jump from year-earlier sale (159/91.5 = +73.8%).",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/02/24/stripe-value-stock-sale-tender-offer.html",
+   "note": "CNBC and Chargeflow confirm $91.5B in Feb 2025 tender.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.bloomberg.com/news/articles/2025-09-23/stripe-s-valuation-rises-above-its-2021-peak-to-106-7-billion",
+   "note": "Bloomberg Sept 23, 2025 reported $106.7B; the Feb 2026 article calls it the prior valuation.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://bloomberg.com/news/articles/2026-02-24/stripe-hits-159-billion-valuation-as-payment-volume-soars",
+   "note": "Bloomberg: Collison said no imminent plans for a public listing (Feb 2026 statement; may have changed).",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.chargeflow.io/blog/stripe-statistics",
+   "note": "Stripe is private; the $159B is a tender-offer price per Stripe's release, not a market cap.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/02/24/stripe-value-stock-sale-tender-offer.html",
+   "note": "Collison said an IPO is not a priority and there are no imminent plans; no passage shows any filing.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/private/stripe/valuation/",
+   "note": "StockAnalysis lists a Nov 11, 2026 current implied valuation of $205.88B; it is a secondary-market estimate, not confirmed by Stripe.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true"
+   }
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-economy",
+   "note": "The $159B is a tender price of $62.47 per share, while Forge's estimate is a higher secondary-market price.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://agdillon.com/research/stripe/",
+   "note": "Implied valuations are estimates that may differ from actual transaction prices; the secondary estimates here exceed $159B.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.chargeflow.io/blog/stripe-statistics",
+   "note": "Page, last checked Oct 14, 2026, lists Feb 24, 2026 $159B as the latest tender valuation.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://forgeglobal.com/stripe_stock",
+   "note": "Forge's excerpt gives a $199.14B valuation. The saved page's price stamp reads Nov 10, 2026, not Nov 11, and I couldn't find the figure in the saved text. The $78.24 share price against the $63 tender price implies roughly $197B, which is consistent. It is a secondary-market estimate, not a Stripe-e",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.allocations.com/insights/stripe-ipo-2026-what-investors-need-to-know",
+   "note": "The claim is hedged and holds up. Secondary-market data, mainly Hiive and Caplight, implied about $172–177B in July/August 2026. The $177B figure is attributed to July by two sites. The $172–176B figure comes from one blog, dated Aug 19, using Forge at $72.45 and Hiive at $71.49 per share. Stripe ha",
+   "label_verdicts": {
+    "D": "true"
+   },
+   "retried": true
+  }
+ },
+ "audit": {
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "note": "A Benzinga article (Oct 2, 2026) says Forge priced Stripe at $72.45 per share as of Oct 1, which implies a $184.4B valuation. I found no newer Forge price. Sources: https://benzinga.com/markets/private-markets/26/10/62127997/stripes-184-billion-private-market-valuation-puts-a-price-on-the-ai-agent-e"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "note": "CNBC reported on Feb 24, 2026 that Stripe was valued at $159B after a secondary sale for employees and shareholders. Stripe's own newsroom confirms the tender offer at $159B. As of Nov 2026, this is still the latest valuation Stripe has announced itself. Sources: https://www.cnbc.com/2026/02/24/stri"
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 26,
+ "scores": {
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 52.25,
+   "coverage": 0.231,
+   "accuracy": 1.0,
+   "combined": 0.375,
+   "thorough_coverage": 0.153,
+   "answer_truth": 6,
+   "thoroughness": 0.266,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 52.25,
+   "coverage": 0.577,
+   "accuracy": 1.0,
+   "combined": 0.732,
+   "thorough_coverage": 0.488,
+   "answer_truth": 6,
+   "thoroughness": 0.656,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 52.25,
+   "coverage": 0.692,
+   "accuracy": 1.0,
+   "combined": 0.818,
+   "thorough_coverage": 0.44,
+   "answer_truth": 6,
+   "thoroughness": 0.611,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 52.25,
+   "coverage": 0.769,
+   "accuracy": 1.0,
+   "combined": 0.87,
+   "thorough_coverage": 0.608,
+   "answer_truth": 6,
+   "thoroughness": 0.756,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 52.25,
+   "coverage": 0.692,
+   "accuracy": 1.0,
+   "combined": 0.818,
+   "thorough_coverage": 0.593,
+   "answer_truth": 6,
+   "thoroughness": 0.745,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 21,
+   "truth_weight": 52.25,
+   "coverage": 0.692,
+   "accuracy": 1.0,
+   "combined": 0.818,
+   "thorough_coverage": 0.469,
+   "answer_truth": 6,
+   "thoroughness": 0.638,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.802,
+ "corrections_v2": {
+  "units_before": 28,
+  "units_after": 21,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c25"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c10",
+     "c28"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c13"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19"
+    ]
+   },
+   {
+    "kept": "c23",
+    "merged": [
+     "c24"
+    ]
+   },
+   {
+    "kept": "c16",
+    "merged": [
+     "c22"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

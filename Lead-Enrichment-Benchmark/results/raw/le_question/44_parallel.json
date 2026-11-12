@@ -1,0 +1,268 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69ac868283f82cc508",
+ "status": "completed",
+ "seconds": 81,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is the parent company of Bath & Body Works?",
+  "passages": [
+   {
+    "quote": "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works.",
+    "publisher": "Bath & Body Works, Inc.",
+    "published_date": null,
+    "source_url": "https://www.bbwinc.com/about-us"
+   },
+   {
+    "quote": "In conjunction with this announcement, L Brands changed its name to Bath & Body Works, Inc. and now trades under the ticker symbol BBWI.",
+    "publisher": "L Brands (official LinkedIn profile)",
+    "published_date": null,
+    "source_url": "https://linkedin.com/company/lbrands"
+   }
+  ],
+  "answer": "The Bath & Body Works brand\u2019s corporate parent is Bath & Body Works, Inc., a standalone publicly traded company. L Brands is the company\u2019s former name\u2014not a separate current parent\u2014following the August 2021 separation of Victoria\u2019s Secret.",
+  "caveats": [
+   "The retail brand and the public corporation share the Bath & Body Works name; the corporation itself is independent.",
+   "Publication dates were not available for the quoted pages."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.bbwinc.com/about-us",
+    "fact": "Bath & Body Works operates under Bath & Body Works, Inc., an independent publicly traded company."
+   },
+   {
+    "date": "2021-08",
+    "source_url": "https://www.bbwinc.com/about-us",
+    "fact": "L Brands separated Victoria\u2019s Secret and became the independent public company Bath & Body Works."
+   },
+   {
+    "date": "2021-08",
+    "source_url": "https://linkedin.com/company/lbrands",
+    "fact": "In conjunction with the separation, L Brands changed its name to Bath & Body Works, Inc."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question is reproduced from the user's request rather than from a source page.",
+   "confidence": "low"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    },
+    {
+     "title": "linkedin.com",
+     "url": "https://linkedin.com/company/lbrands",
+     "excerpts": [
+      "In conjunction with this announcement, L Brands changed its name to Bath & Body Works, Inc. and now trades under the ticker symbol BBWI."
+     ]
+    }
+   ],
+   "reasoning": "The passages reproduce the company's independence statement and its official former-name statement. Publication dates were unavailable and are therefore null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "[Bath & Body Works, Inc.](https://www.bbwinc.com/)",
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    },
+    {
+     "title": "linkedin.com",
+     "url": "https://linkedin.com/company/lbrands",
+     "excerpts": [
+      "In conjunction with this announcement, L Brands changed its name to Bath & Body Works, Inc. and now trades under the ticker symbol BBWI."
+     ]
+    }
+   ],
+   "reasoning": "The corporate page identifies Bath & Body Works, Inc. and describes its independent public-company status. The official L Brands profile explicitly confirms the name change. Describing the brand's corporate parent requires a small synthesis of the corporate identity and independence statements.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "[Bath & Body Works, Inc.](https://www.bbwinc.com/)",
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    }
+   ],
+   "reasoning": "The corporate identity and independence statement support the brand-versus-corporation distinction. The lack of publication dates is a limitation of the available page metadata, not an affirmative claim in a quoted passage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "Publication dates could not be established from the available pages; the August 2021 event date was not substituted for a publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "This is the research cutoff supplied in the request, not a date asserted by a source passage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "[Bath & Body Works, Inc.](https://www.bbwinc.com/)",
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    },
+    {
+     "title": "linkedin.com",
+     "url": "https://linkedin.com/company/lbrands",
+     "excerpts": [
+      "In conjunction with this announcement, L Brands changed its name to Bath & Body Works, Inc. and now trades under the ticker symbol BBWI."
+     ]
+    }
+   ],
+   "reasoning": "The corporate page supplies the company identity, independence, and separation month. The official L Brands profile supplies the explicit corporate name change.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    }
+   ],
+   "reasoning": "This is the exact independence and separation statement on the company's About Us page; no publication date was stated.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "linkedin.com",
+     "url": "https://linkedin.com/company/lbrands",
+     "excerpts": [
+      "In conjunction with this announcement, L Brands changed its name to Bath & Body Works, Inc. and now trades under the ticker symbol BBWI."
+     ]
+    }
+   ],
+   "reasoning": "This is the exact corporate name-change statement on the official L Brands profile; its publication date was not available.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "[Bath & Body Works, Inc.](https://www.bbwinc.com/)",
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    }
+   ],
+   "reasoning": "The corporate identity and independent-company statement support distinguishing the retail brand from the corporation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.1",
+   "citations": [],
+   "reasoning": "Publication dates were absent from the available page information.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The About Us page did not provide a verifiable publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The available official LinkedIn profile excerpt did not provide a verifiable publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "[Bath & Body Works, Inc.](https://www.bbwinc.com/)",
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    }
+   ],
+   "reasoning": "The company's own page connects the corporate identity with independent public-company status. The date records the research cutoff.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    }
+   ],
+   "reasoning": "The company directly states the separation and transition occurred in August 2021.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.2",
+   "citations": [
+    {
+     "title": "linkedin.com",
+     "url": "https://linkedin.com/company/lbrands",
+     "excerpts": [
+      "In conjunction with this announcement, L Brands changed its name to Bath & Body Works, Inc. and now trades under the ticker symbol BBWI."
+     ]
+    },
+    {
+     "title": "\n    \n        About Us - Impacts Through Fragrance | Bath & Body Works, Inc.\n    \n",
+     "url": "https://www.bbwinc.com/about-us",
+     "excerpts": [
+      "In August 2021, L Brands separated Victoria\u2019s Secret and became an independent public company as Bath & Body Works."
+     ]
+    }
+   ],
+   "reasoning": "The official profile explicitly states the name change; the corporate About Us page supplies the August 2021 timing for the associated separation.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Bath & Body Works?",
+ "input_n": 44,
+ "completed_on": "2026-11-11"
+}

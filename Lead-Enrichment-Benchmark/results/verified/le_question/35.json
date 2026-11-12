@@ -1,0 +1,1261 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 35,
+ "task": "Has Walmart announced layoffs?",
+ "labels": {
+  "gpt": "A",
+  "parallel": "B",
+  "firecrawl": "C",
+  "opus": "D",
+  "exa": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 25,
+ "evidence_fetched": 25,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Walmart will eliminate more than 560 positions across two Bay Area offices: 388 at San Bruno and 180 at Sunnyvale, starting Aug. 9, per state WARN filings.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Walmart will eliminate more than 560 positions across two Bay Area offices: 388 workers at its San Bruno e-commerce hub received permanent layoff notices and 180 employees at its Sunnyvale office face cuts starting Aug. 9, per state WARN filings (reported Oct 18, 2026)."
+   },
+   "urls": [
+    "https://foundernews.eu/walmart-slashes-568-bay-area-corporate-jobs-while-building-arkansas-mega-campus"
+   ],
+   "conflicts_with": [
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "Walmart is closing its Fremont, California retail store, eliminating 169 additional jobs.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Walmart is closing its Fremont, California retail store, eliminating 169 additional jobs."
+   },
+   "urls": [
+    "https://foundernews.eu/walmart-slashes-568-bay-area-corporate-jobs-while-building-arkansas-mega-campus"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Walmart's Bay Area workforce will shrink by roughly 730 positions within a single week (corporate cuts plus Fremont store closure).",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Combined, Walmart's Bay Area workforce will shrink by roughly 730 positions within a single week (corporate cuts plus Fremont store closure)."
+   },
+   "urls": [
+    "https://foundernews.eu/walmart-slashes-568-bay-area-corporate-jobs-while-building-arkansas-mega-campus"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Reuters/CNBC reported on May 13, 2026, citing a source familiar with the matter, that Walmart eliminated about 1,000 roles as it simplified its operating structure.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "In May 2026, Walmart eliminated 1,000 roles as it simplified its operating structure, per a source familiar with the matter cited by Reuters via CNBC.",
+    "E": "Reuters/CNBC reported on May 13, 2026 that Walmart eliminated about 1,000 roles as it simplified its operating structure.",
+    "C": "Reuters reported on May 13, 2026, citing a source familiar with the matter, that Walmart had eliminated 1,000 roles as it simplifies its operating structure."
+   },
+   "urls": [
+    "https://cnbc.com/2026/05/13/walmart-cuts-1000-roles-to-simplify-operations-reports.html",
+    "https://hrexecutive.com/walmart-cuts-1000-corporate-roles-as-ai-reorganization-reshapes-tech-teams/",
+    "https://www.cnbc.com/2026/05/13/walmart-cuts-1000-roles-to-simplify-operations-reports.html",
+    "https://www.reuters.com/legal/litigation/walmart-lays-off-or-relocates-about-1000-corporate-workers-wsj-reports-2026-05-12/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c48"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "The May 2026 Walmart cuts were largely in global technology under new CEO John Furner, and many affected staff were asked to relocate to Bentonville or Northern California.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "The May 2026 Walmart cuts were largely in global technology under new CEO John Furner, and many affected staff were asked to relocate to Bentonville or Northern California offices."
+   },
+   "urls": [
+    "https://cnbc.com/2026/05/13/walmart-cuts-1000-roles-to-simplify-operations-reports.html",
+    "https://www.reuters.com/legal/litigation/walmart-lays-off-or-relocates-about-1000-corporate-workers-wsj-reports-2026-05-12/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "In May 2025, Walmart planned to cut about 1,500 jobs as part of a restructuring to simplify operations.",
+   "asserted_by": [
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "In May 2025, Walmart planned to cut about 1,500 jobs as part of a restructuring push to simplify operations, per a memo seen by Reuters.",
+    "E": "In May 2025, Walmart planned to cut about 1,500 jobs as part of a restructuring to simplify operations."
+   },
+   "urls": [
+    "https://reuters.com/sustainability/walmart-cut-1500-jobs-wall-street-journal-reports-2025-05-21",
+    "https://www.reuters.com/sustainability/walmart-cut-1500-jobs-wall-street-journal-reports-2025-05-21/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "The May 2025 Walmart restructuring affected global technology, U.S. store e-commerce fulfillment and Walmart Connect advertising.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "The May 2025 Walmart cuts affected global technology operations, U.S. store e-commerce fulfillment, and the Walmart Connect advertising business.",
+    "E": "The May 2025 Walmart restructuring affected global technology, U.S. store e-commerce fulfillment and Walmart Connect."
+   },
+   "urls": [
+    "https://reuters.com/sustainability/walmart-cut-1500-jobs-wall-street-journal-reports-2025-05-21",
+    "https://www.reuters.com/sustainability/walmart-cut-1500-jobs-wall-street-journal-reports-2025-05-21/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "In July 2025, Walmart restructured store-support and training roles, eliminating hundreds of roles including the market coordinator position, per a memo from Walmart U.S. EVP of store operations Cedric Clark.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In July 2025, Walmart restructured store-support and training roles, eliminating hundreds of roles including the market coordinator position, per a memo from Walmart U.S. EVP of store operations Cedric Clark."
+   },
+   "urls": [
+    "https://reuters.com/business/retail-consumer/walmart-is-cutting-hundreds-store-support-roles-bloomberg-news-reports-2025-07-16"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Walmart offered employees affected by the July 2025 restructuring alternative roles as coaches.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Walmart offered employees affected by the July 2025 restructuring alternative roles as coaches."
+   },
+   "urls": [
+    "https://reuters.com/business/retail-consumer/walmart-is-cutting-hundreds-store-support-roles-bloomberg-news-reports-2025-07-16"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Walmart restructured its optical business, 'eliminating certain key roles,' per a senior director's LinkedIn post reported by KNWA/KFTA.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Walmart restructured its optical business, 'eliminating certain key roles,' according to a senior director's LinkedIn post reported by KNWA/KFTA (reported around Nov 2025)."
+   },
+   "urls": [
+    "https://nwahomepage.com/news/walmart-news/walmart-optical-division-to-undergo-restructuring/",
+    "https://www.nwahomepage.com/news/walmart-news/walmart-optical-division-to-undergo-restructuring/amp/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Walmart did not disclose how many Optical roles were eliminated.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Walmart did not disclose how many Optical roles were eliminated."
+   },
+   "urls": [
+    "https://www.nwahomepage.com/news/walmart-news/walmart-optical-division-to-undergo-restructuring/amp/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "In May 2026, Walmart confirmed to Fast Company it was eliminating some corporate roles amid simplification of its digital operations, without specifying the number.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "In May 2026, Walmart confirmed to Fast Company that it was eliminating some corporate roles amid simplification of its digital operations, without specifying the exact number of positions."
+   },
+   "urls": [
+    "https://www.fastcompany.com/91541504/walmart-layoffs-today-tech-jobs-cut-memo-does-not-cite-ai"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c16",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "Walmart frames its actions as restructuring and role elimination or relocation rather than a single mass-layoff announcement; many affected employees can transfer or relocate, so net headcount reduction may be smaller than gross figures.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Walmart frames its actions as restructuring and role elimination or relocation rather than a single mass-layoff announcement; many affected employees can transfer internally or relocate, so net headcount reduction may be smaller than gross figures."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Walmart has not published a consolidated total of jobs affected across 2025-2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Walmart has not published a consolidated total of jobs affected across 2025-2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Walmart's June 2026 WARN notices cover 394 affected employees.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Walmart's June 2026 WARN notices cover 394 affected employees.",
+    "D": "On June 19, 2026, Walmart filed nine California WARN notices covering 394 permanent layoffs."
+   },
+   "urls": [
+    "https://www.warntracker.com/layoff/walmart-2026-08-21",
+    "https://www.finalroundai.com/blog/walmart-layoffs"
+   ],
+   "conflicts_with": [
+    "c1"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "Of the 394 affected employees, 88 are in San Bruno, California.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Of the 394 Walmart employees affected by the WARN notices, 88 are in San Bruno, California.",
+    "D": "306 in Sunnyvale and 88 in San Bruno"
+   },
+   "urls": [
+    "https://www.warntracker.com/layoff/walmart-2026-08-21",
+    "https://www.finalroundai.com/blog/walmart-layoffs"
+   ],
+   "conflicts_with": [
+    "c1"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Of the 394 affected employees, 306 are in Sunnyvale, California.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Of the 394 Walmart employees affected by the WARN notices, 306 are in Sunnyvale, California.",
+    "D": "306 in Sunnyvale and 88 in San Bruno"
+   },
+   "urls": [
+    "https://www.finalroundai.com/blog/walmart-layoffs",
+    "https://www.sfchronicle.com/tech/article/walmart-layoffs-sunnyvale-22317365.php/",
+    "https://www.warntracker.com/layoff/walmart-2026-08-21"
+   ],
+   "conflicts_with": [
+    "c1"
+   ],
+   "merged_from": [
+    "c22",
+    "c26"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "The effective/separation date of the San Bruno and Sunnyvale WARN layoffs is August 21, 2026.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "The effective date of Walmart's WARN-notice layoffs in San Bruno and Sunnyvale is August 21, 2026.",
+    "D": "all with an August 21, 2026 separation date."
+   },
+   "urls": [
+    "https://www.warntracker.com/layoff/walmart-2026-08-21",
+    "https://www.finalroundai.com/blog/walmart-layoffs"
+   ],
+   "conflicts_with": [
+    "c1"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "Walmart filed a WARN notice on June 19, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Walmart filed a WARN notice on June 19, 2026."
+   },
+   "urls": [
+    "https://www.warntracker.com/layoff/walmart-2026-08-21"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Walmart filed nine California WARN notices on June 19, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On June 19, 2026, Walmart filed nine California WARN notices covering 394 permanent layoffs: 306 in Sunnyvale and 88 in San Bruno, all with an August 21, 2026 separation date."
+   },
+   "urls": [
+    "https://www.finalroundai.com/blog/walmart-layoffs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Walmart's Sunnyvale layoffs of 306 corporate workers take effect August 21, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Walmart's Sunnyvale layoffs of 306 corporate workers are scheduled to take effect August 21, 2026."
+   },
+   "urls": [
+    "https://www.sfchronicle.com/tech/article/walmart-layoffs-sunnyvale-22317365.php/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "The Walmart Sunnyvale cuts were part of the broader restructuring announced in May 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The Walmart Sunnyvale cuts were part of the broader restructuring announced in May 2026."
+   },
+   "urls": [
+    "https://www.sfchronicle.com/tech/article/walmart-layoffs-sunnyvale-22317365.php/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Walmart has announced layoffs in 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Walmart has announced layoffs in 2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Walmart sent employees a restructuring memo on May 12, 2026.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Walmart sent employees a restructuring memo on May 12, 2026."
+   },
+   "urls": [
+    "https://www.businessinsider.com/read-the-memo-walmart-cuts-reorganizes-1000-jobs-2026-5",
+    "https://www.fastcompany.com/91541504/walmart-layoffs-today-tech-jobs-cut-memo-does-not-cite-ai"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c30",
+    "c31",
+    "c32"
+   ]
+  },
+  {
+   "cid": "c33",
+   "claim": "The affected work was part of a consolidation from separate Walmart U.S., Sam's Club and international teams onto a shared platform.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The affected Walmart work was part of a consolidation from separate Walmart U.S., Sam's Club, and international-market teams onto a shared platform."
+   },
+   "urls": [
+    "https://www.reuters.com/legal/litigation/walmart-lays-off-or-relocates-about-1000-corporate-workers-wsj-reports-2026-05-12/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "On May 13, 2026, The Independent (via Yahoo Finance), citing the WSJ, reported Walmart would lay off or relocate approximately 1,000 corporate employees to streamline operations.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "On May 13, 2026, The Independent (via Yahoo Finance), citing the Wall Street Journal, reported that Walmart would lay off or relocate approximately 1,000 corporate employees as it seeks to streamline operations."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+    "https://www.supermarketnews.com/retail-labor/walmart-cuts-relocates-about-1-000-jobs"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c34",
+    "c35",
+    "c40",
+    "c41"
+   ]
+  },
+  {
+   "cid": "c36",
+   "claim": "The ~1,000 Walmart figure includes relocations, not solely job losses.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "B": "The approximately 1,000-person figure for Walmart includes relocations, not solely job losses.",
+    "D": "The ~1,000 Walmart figure counts relocations as well as eliminations."
+   },
+   "urls": [
+    "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+    "https://www.fastcompany.com/91541504/walmart-layoffs-today-tech-jobs-cut-memo-does-not-cite-ai"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c36",
+    "c37"
+   ]
+  },
+  {
+   "cid": "c38",
+   "claim": "The May 2026 restructuring affected corporate (technology, product, design) positions rather than retail-store staff.",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Walmart's May 2026 restructuring affected corporate positions rather than retail-store staff.",
+    "C": "The May 2026 Walmart announcement focused on corporate technology, product, and design functions, not a company-wide store-worker layoff."
+   },
+   "urls": [
+    "https://www.fastcompany.com/91541504/walmart-layoffs-today-tech-jobs-cut-memo-does-not-cite-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "The announced cuts concern particular corporate, technology, support, training and Optical roles, not a broad company-wide reduction across the store workforce.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The announced Walmart cuts concern particular corporate, technology, support, training and Optical roles, not a broad company-wide reduction across its store workforce."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "The Walmart memo came from Suresh Kumar and Daniel Danker.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The Walmart memo came from Suresh Kumar and Daniel Danker."
+   },
+   "urls": [
+    "https://www.supermarketnews.com/retail-labor/walmart-cuts-relocates-about-1-000-jobs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "The memo gave no headcount figure; the ~1,000 figure comes from WSJ reporting.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The Walmart memo gave no headcount figure; the ~1,000 figure comes from WSJ reporting."
+   },
+   "urls": [
+    "https://www.nbcchicago.com/news/local/walmart-layoffs-internal-memo/3935896/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "Some Walmart employees whose roles are eliminated may be offered other opportunities within Walmart where possible.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Some Walmart employees whose roles are eliminated may be offered other opportunities within Walmart where possible."
+   },
+   "urls": [
+    "https://www.nbcchicago.com/news/local/walmart-layoffs-internal-memo/3935896/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "A person familiar said AI automation did not cause the cuts, and Walmart is still hiring at the corporate level, including tech roles.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "A person familiar with Walmart's reorganization said AI automation did not cause the cuts, and Walmart is still hiring at the corporate level, including for tech roles."
+   },
+   "urls": [
+    "https://www.supermarketnews.com/retail-labor/walmart-cuts-relocates-about-1-000-jobs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "An earlier WARN notice covered 111 employees at a Walmart e-commerce facility in Matteson, Illinois, which is closing.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "An earlier WARN notice covered 111 employees at a Walmart e-commerce facility in Matteson, Illinois, which is closing."
+   },
+   "urls": [
+    "https://www.nbcchicago.com/news/local/walmart-layoffs-internal-memo/3935896/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "Walmart's memo said consolidation has enabled it to create once and scale globally, accelerate innovation and reduce duplication.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Walmart's memo said consolidation has enabled the company to create once and scale globally, accelerate innovation and reduce duplication."
+   },
+   "urls": [
+    "https://www.supermarketnews.com/retail-labor/walmart-cuts-relocates-about-1-000-jobs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Other outlets cite 306 (Sunnyvale only) or 412 for California WARN figures; the blog says 412 is wrong because it reuses a May 2025 San Bruno count.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Other outlets cite 306 (Sunnyvale only) or 412 for the California WARN figures; the blog says 412 is wrong because it reuses a May 2025 San Bruno count."
+   },
+   "urls": [
+    "https://www.finalroundai.com/blog/walmart-layoffs"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.finalroundai.com/blog/walmart-layoffs",
+   "note": "The 388 San Bruno and 180 Sunnyvale figures and the Aug. 9 date are from the 2024 round. The 2026 WARN notices are 88 and 306 (394 total), effective Aug. 21, so the Oct 2026 article is a stale repost.",
+   "label_verdicts": {
+    "F": "false"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://talentrisk.com/companies/walmart",
+   "note": "The 169-employee California WARN notice dates from April 2024 (effective July 2024), so it is not a current Fremont closure; the only source is the stale repost.",
+   "label_verdicts": {
+    "F": "false"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.finalroundai.com/blog/walmart-layoffs",
+   "note": "The 730 total combines the misdated 2024 figures. The 2026 Bay Area WARN total is 394.",
+   "label_verdicts": {
+    "F": "false"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.reuters.com/legal/litigation/walmart-lays-off-or-relocates-about-1000-corporate-workers-wsj-reports-2026-05-12/",
+   "note": "Reuters (May 13, 2026) cites a source saying Walmart eliminated 1,000 roles to simplify its operating structure.",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "C": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.supermarketnews.com/retail-labor/walmart-cuts-relocates-about-1-000-jobs",
+   "note": "The cuts were in Global Tech and Product under CEO Furner, with relocation to Bentonville or Northern California offered, per Reuters, CNBC and Supermarket News.",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.reuters.com/sustainability/walmart-cut-1500-jobs-wall-street-journal-reports-2025-05-21/",
+   "note": "Reuters, May 21, 2025, reports a memo about planned cuts of about 1,500 jobs; this is an earlier round.",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/sustainability/walmart-cut-1500-jobs-wall-street-journal-reports-2025-05-21/",
+   "note": "Reuters lists global technology, U.S. store e-commerce fulfillment and Walmart Connect as the affected areas.",
+   "label_verdicts": {
+    "F": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://reuters.com/business/retail-consumer/walmart-is-cutting-hundreds-store-support-roles-bloomberg-news-reports-2025-07-16",
+   "note": "Reuters, July 16, 2025: Cedric Clark's memo eliminates the market coordinator role; Bloomberg says hundreds of store-support roles are affected.",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://reuters.com/business/retail-consumer/walmart-is-cutting-hundreds-store-support-roles-bloomberg-news-reports-2025-07-16",
+   "note": "The Reuters memo says Walmart plans alternative roles for affected employees, including roles as coaches.",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://nwahomepage.com/news/walmart-news/walmart-optical-division-to-undergo-restructuring/",
+   "note": "KNWA, updated Nov 6, 2026, quotes the senior director's LinkedIn post about eliminating key roles; the variant's 'Nov 2025' date is wrong, it is Nov 2026.",
+   "label_verdicts": {
+    "F": "false",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://nwahomepage.com/news/walmart-news/walmart-optical-division-to-undergo-restructuring/",
+   "note": "Neither the article nor the statement gives a number of roles cut.",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.fastcompany.com/91541504/walmart-layoffs-today-tech-jobs-cut-memo-does-not-cite-ai",
+   "note": "Fast Company (May 13, 2026) says Walmart confirmed it will eliminate some jobs and the memo describes simplifying digital operations; no number given by Walmart (1,000 figure is from sources via Reuters/WSJ).",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.businessinsider.com/read-the-memo-walmart-cuts-reorganizes-1000-jobs-2026-5",
+   "note": "Memo frames changes as updating roles, bringing teams together and aligning to key locations; Reuters/WSJ say cut or relocated; net headcount smaller is a reasonable inference, though no passage states it explicitly.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+   "note": "No consolidated company total found; only press reports of about 1,000 and scattered WARN notices, consistent with the claim.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+   "note": "WARN tracker and Final Round AI both show 394 employees affected, filed June 19, 2026, effective Aug 21; the California notices total 394 (88+306).",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+   "note": "San Bruno, CA listed with 88 employees.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sfchronicle.com/tech/article/walmart-layoffs-sunnyvale-22317365.php/",
+   "note": "SF Chronicle reports 306 workers across eight Sunnyvale sites.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+   "note": "Effective date August 21, 2026 confirmed by WARN tracker, Final Round AI and SF Chronicle.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+   "note": "WARN notice filed June 19, 2026 per tracker and SF Chronicle.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.finalroundai.com/blog/walmart-layoffs",
+   "note": "Final Round AI states nine California WARN notices filed June 19, 2026; secondary source but consistent with the 8 Sunnyvale + 1 San Bruno sites.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sfchronicle.com/tech/article/walmart-layoffs-sunnyvale-22317365.php/",
+   "note": "Layoffs scheduled to take effect Aug. 21 at eight Sunnyvale sites.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sfchronicle.com/tech/article/walmart-layoffs-sunnyvale-22317365.php/",
+   "note": "SF Chronicle: local cuts are part of the broader restructuring announced in May.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/05/13/walmart-cuts-1000-roles-to-simplify-operations-reports.html",
+   "note": "Walmart cut/relocated about 1,000 roles in May 2026 and filed WARN notices in 2026, so it has announced layoffs this year.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.businessinsider.com/read-the-memo-walmart-cuts-reorganizes-1000-jobs-2026-5",
+   "note": "Memo dated May 12, 2026 from Suresh Kumar and Daniel Danker.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/legal/litigation/walmart-lays-off-or-relocates-about-1000-corporate-workers-wsj-reports-2026-05-12/",
+   "note": "Memo describes moving from separate Walmart U.S., Sam's Club, international orgs to one shared platform.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+   "note": "Independent article via Yahoo dated May 13, 2026 cites WSJ on lay off or relocate ~1,000 corporate employees.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true",
+    "D": "true"
+   }
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322",
+   "note": "WSJ says 'cut or relocate about 1,000 corporate workers', so the figure includes relocations.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "A": "true",
+    "C": "true"
+   }
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.fastcompany.com/91541504/walmart-layoffs-today-tech-jobs-cut-memo-does-not-cite-ai",
+   "note": "Fast Company says affected positions do not impact retail staff; corporate tech/product focus.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.nwahomepage.com/news/walmart-news/walmart-optical-division-to-undergo-restructuring/amp/",
+   "note": "Cuts reported are corporate/tech and Optical field support roles, described as small-scale; no store-wide reduction reported; 'support, training' not directly shown but broadly consistent.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.fastcompany.com/91541504/walmart-layoffs-today-tech-jobs-cut-memo-does-not-cite-ai",
+   "note": "Memo sent by Suresh Kumar and Daniel Danker.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.nbcchicago.com/news/local/walmart-layoffs-internal-memo/3935896/",
+   "note": "Memo quotes contain no number; ~1,000 attributed to WSJ; Fast Company says Walmart did not specify the number.",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.businessinsider.com/read-the-memo-walmart-cuts-reorganizes-1000-jobs-2026-5",
+   "note": "Memo: helping them explore other opportunities within Walmart where possible.",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.businessinsider.com/read-the-memo-walmart-cuts-reorganizes-1000-jobs-2026-5",
+   "note": "Source said restructuring not driven by AI automation; hiring-continues part not directly shown in passages but plausible and consistent with WARN/hiring reports.",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.nbcchicago.com/news/local/walmart-layoffs-internal-memo/3935896/",
+   "note": "NBC Chicago and talentrisk confirm a WARN notice for 111 employees at Matteson, IL with the facility closing; it was filed in March 2026, so it is older context.",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.supermarketnews.com/retail-labor/walmart-cuts-relocates-about-1-000-jobs",
+   "note": "No passage quotes the exact wording. The memo's consolidation rationale is consistent with coverage of the May 2026 memo, but I could not verify the phrasing directly.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.finalroundai.com/blog/walmart-layoffs",
+   "note": "The blog does say 412 is incorrect because it reuses the May 2025 San Bruno count. SF Chronicle and WARN Tracker confirm 306 for Sunnyvale and 394 total, so the claim accurately describes the blog's position.",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "note": "Walmart's May 2026 memo talks about roles being 'consolidated or eliminated', and some staff were asked to move to Bentonville or Northern California. Walmart offered 'other opportunities within Walmart where possible' and did not say how many jobs were cut versus moved. About 1,000 roles were cut o"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "note": "Suresh Kumar and Daniel Danker sent a memo dated May 12, 2026 called 'Evolving our tech and product teams for the future'. It reorganized Global Tech and Product + Design, and some roles were eliminated (Bloomberg, Retail Dive, Business Insider)."
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "note": "The WSJ, Bloomberg and Yahoo reported that about 1,000 corporate roles, mainly in the global tech and product teams, would be cut or relocated after the internal memo. Walmart itself did not give a number."
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "note": "The reported cuts hit corporate tech and product roles, and KNWA reported a small Optical field-support restructuring. No broad layoffs of store workers have been announced. I could not separately confirm the 'support/training' part, and the KNWA Optical article had no clear date."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 49,
+ "scores": {
+  "gpt": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 93.25,
+   "coverage": 0.349,
+   "accuracy": 1.0,
+   "combined": 0.517,
+   "thorough_coverage": 0.3,
+   "answer_truth": 24,
+   "thoroughness": 0.462,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 93.25,
+   "coverage": 0.386,
+   "accuracy": 1.0,
+   "combined": 0.557,
+   "thorough_coverage": 0.332,
+   "answer_truth": 24,
+   "thoroughness": 0.499,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 93.25,
+   "coverage": 0.274,
+   "accuracy": 1.0,
+   "combined": 0.43,
+   "thorough_coverage": 0.257,
+   "answer_truth": 24,
+   "thoroughness": 0.409,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 93.25,
+   "coverage": 0.424,
+   "accuracy": 1.0,
+   "combined": 0.595,
+   "thorough_coverage": 0.44,
+   "answer_truth": 24,
+   "thoroughness": 0.611,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 93.25,
+   "coverage": 0.321,
+   "accuracy": 1.0,
+   "combined": 0.486,
+   "thorough_coverage": 0.282,
+   "answer_truth": 24,
+   "thoroughness": 0.439,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 4,
+   "truth": 33,
+   "truth_weight": 93.25,
+   "coverage": 0.168,
+   "accuracy": 0.479,
+   "combined": 0.249,
+   "thorough_coverage": 0.188,
+   "answer_truth": 24,
+   "thoroughness": 0.27,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.019,
+ "corrections_v2": {
+  "units_before": 49,
+  "units_after": 36,
+  "dedup_groups": [
+   {
+    "kept": "c5",
+    "merged": [
+     "c6"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13",
+     "c14"
+    ]
+   },
+   {
+    "kept": "c16",
+    "merged": [
+     "c17"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c26"
+    ]
+   },
+   {
+    "kept": "c30",
+    "merged": [
+     "c31",
+     "c32"
+    ]
+   },
+   {
+    "kept": "c34",
+    "merged": [
+     "c35",
+     "c40",
+     "c41"
+    ]
+   },
+   {
+    "kept": "c4",
+    "merged": [
+     "c48"
+    ]
+   },
+   {
+    "kept": "c36",
+    "merged": [
+     "c37"
+    ]
+   }
+  ],
+  "cost": 0.031
+ }
+}

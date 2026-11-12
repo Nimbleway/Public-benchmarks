@@ -1,0 +1,215 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b699c675fb6d9b6d539",
+ "status": "completed",
+ "seconds": 108,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is IBM's annual revenue?",
+  "passages": [
+   {
+    "quote": "Revenue of $67. 5 billion , up 8 percent, up 6 percent at constant currency",
+    "publisher": "IBM",
+    "published_date": "2026-01-28",
+    "source_url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   },
+   {
+    "quote": "|**TOTAL REVENUE** |19,686 | | |17,553 | | |67,535 | | |62,753 | |",
+    "publisher": "IBM",
+    "published_date": "2026-01-28",
+    "source_url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   }
+  ],
+  "answer": "As of November 11, 2026, IBM's latest reported annual revenue was US$67.535 billion for fiscal 2025, the year ended December 31, 2025. IBM reported this full-year result on January 28, 2026.",
+  "caveats": [
+   "Annual revenue refers to the latest reported completed fiscal year, not quarterly revenue or trailing-12-month revenue."
+  ],
+  "missing_fields": [],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2025-12-31",
+    "source_url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+    "fact": "IBM reported revenue of $67,535 million, equivalent to US$67.535 billion, for the year ended December 31, 2025."
+   },
+   {
+    "date": "2026-01-28",
+    "source_url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+    "fact": "IBM published its fourth-quarter and full-year 2025 results."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question is supplied directly by the user rather than derived from external evidence.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "Revenue of $67. 5 billion , up 8 percent, up 6 percent at constant currency",
+      "|**TOTAL REVENUE** |19,686 | | |17,553 | | |67,535 | | |62,753 | |",
+      "Jan 28, 2026",
+      "28, 2026 / [PRNewswire](http://www.prnewswire.com/) / -- IBM (NYSE: [IBM](http://www.ibm.com/investor) ) today announced fourth-quarter 2025 earnings"
+     ]
+    }
+   ],
+   "reasoning": "The IBM release supplies both quoted revenue passages, identifies IBM as the announcing company, and displays its publication date. The table quotation preserves the source's formatting.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "|**INTERNATIONAL BUSINESS MACHINES CORPORATION** **COMPARATIVE FINANCIAL RESULTS** **(Unaudited; Dollars in millions except per share amounts",
+      "| |**Three Months Ended** **December 31,**",
+      "| |**2025** | | |**2024** | |",
+      "|**TOTAL REVENUE** |19,686 | | |17,553 | | |67,535 | | |62,753 | |",
+      "Jan 28, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The table identifies IBM, states that figures are in millions, labels the annual columns as years ended December 31, and places 67,535 in the 2025 annual column. Dividing millions by 1,000 gives $67.535 billion. The release date is explicit. The financial-period check returned 2025 as the latest annual fiscal year; the current-as-of framing therefore involves combining that check with the primary-source figures.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "| |**Three Months Ended** **December 31,**",
+      "| |**2025** | | |**2024** | |"
+     ]
+    }
+   ],
+   "reasoning": "The source distinguishes quarterly and annual periods. The caveat explains the interpretation used for the user's unqualified annual-revenue question, rather than asserting a separate financial result.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No required factual field remains unverified: the opened IBM release provides revenue, reporting period, publisher, publication date and source URL.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The as-of date is the current date explicitly supplied in the task, not a date claimed by the source.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "|**INTERNATIONAL BUSINESS MACHINES CORPORATION** **COMPARATIVE FINANCIAL RESULTS** **(Unaudited; Dollars in millions except per share amounts",
+      "| |**Three Months Ended** **December 31,**",
+      "| |**2025** | | |**2024** | |",
+      "|**TOTAL REVENUE** |19,686 | | |17,553 | | |67,535 | | |62,753 | |",
+      "Jan 28, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The primary-source table establishes the exact annual revenue and period, and the displayed release date establishes when IBM published the results.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "Revenue of $67. 5 billion , up 8 percent, up 6 percent at constant currency",
+      "Jan 28, 2026",
+      "IBM RELEASES FOURTH-QUARTER RESULTS"
+     ]
+    }
+   ],
+   "reasoning": "The release contains the quoted full-year revenue summary and identifies its publisher and publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "|**TOTAL REVENUE** |19,686 | | |17,553 | | |67,535 | | |62,753 | |",
+      "Jan 28, 2026",
+      "IBM RELEASES FOURTH-QUARTER RESULTS"
+     ]
+    }
+   ],
+   "reasoning": "The quotation reproduces IBM's total-revenue table row, with publication metadata from the same release.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "| |**Three Months Ended** **December 31,**"
+     ]
+    }
+   ],
+   "reasoning": "The table distinguishes three-month from full-year results. The caveat states the reporting-period interpretation chosen for this answer.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "|**INTERNATIONAL BUSINESS MACHINES CORPORATION** **COMPARATIVE FINANCIAL RESULTS** **(Unaudited; Dollars in millions except per share amounts",
+      "| |**Three Months Ended** **December 31,**",
+      "| |**2025** | | |**2024** | |",
+      "|**TOTAL REVENUE** |19,686 | | |17,553 | | |67,535 | | |62,753 | |"
+     ]
+    }
+   ],
+   "reasoning": "Reading the table units, annual-period headings and revenue row together gives $67,535 million for the year ended December 31, 2025, equivalent to $67.535 billion.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "IBM RELEASES FOURTH-QUARTER RESULTS",
+     "url": "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+     "excerpts": [
+      "Jan 28, 2026",
+      "IBM RELEASES FOURTH-QUARTER RESULTS",
+      "| |**2025** | | |**2024** | |"
+     ]
+    }
+   ],
+   "reasoning": "The release title, displayed publication date and financial table establish that IBM published its fourth-quarter and annual 2025 results on January 28, 2026.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "What is IBM's annual revenue?",
+ "input_n": 19,
+ "completed_on": "2026-11-11"
+}

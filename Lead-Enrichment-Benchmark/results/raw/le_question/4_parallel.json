@@ -1,0 +1,147 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69a98bdf5dbcbc5394",
+ "status": "completed",
+ "seconds": 32,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is Dow's CTO?",
+  "passages": [
+   {
+    "quote": "Andre Argenton Chief Technology & Sustainability Officer",
+    "publisher": "Dow",
+    "published_date": null,
+    "source_url": "https://corporate.dow.com/en-us/about-dow/leadership.html"
+   }
+  ],
+  "answer": "As of November 11, 2026, Dow\u2019s CTO is Andre Argenton. His full title is Chief Technology & Sustainability Officer, according to Dow\u2019s corporate leadership page.",
+  "caveats": [
+   "The source\u2019s publication date could not be verified."
+  ],
+  "missing_fields": [
+   "passages[0].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": null,
+    "source_url": "https://corporate.dow.com/en-us/about-dow/leadership.html",
+    "fact": "Dow lists Andre Argenton as Chief Technology & Sustainability Officer."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Dow Leadership | Corporate Dow",
+     "url": "https://corporate.dow.com/en-us/about-dow/leadership.html",
+     "excerpts": [
+      "Andre Argenton Andre Argenton Chief Technology & Sustainability Officer"
+     ]
+    }
+   ],
+   "reasoning": "The quotation is a verbatim substring of Dow's corporate leadership listing. The supplied source metadata identifies Dow and the URL; no publication date was supplied.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Dow Leadership | Corporate Dow",
+     "url": "https://corporate.dow.com/en-us/about-dow/leadership.html",
+     "excerpts": [
+      "Andre Argenton Andre Argenton Chief Technology & Sustainability Officer"
+     ]
+    }
+   ],
+   "reasoning": "Dow's own leadership page directly names Andre Argenton and his full title. The supplied source was verified on November 11, 2026.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "The supplied evidence contains no verified publication date; this describes a limitation of the available evidence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The passage's publication date was not available in the supplied verified source evidence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "Uses the requested current date, which matches the supplied source's last-verified date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Dow Leadership | Corporate Dow",
+     "url": "https://corporate.dow.com/en-us/about-dow/leadership.html",
+     "excerpts": [
+      "Andre Argenton Andre Argenton Chief Technology & Sustainability Officer"
+     ]
+    }
+   ],
+   "reasoning": "The leadership listing directly supports the name and title. The fact's date is null because the source excerpt provides no appointment or publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Dow Leadership | Corporate Dow",
+     "url": "https://corporate.dow.com/en-us/about-dow/leadership.html",
+     "excerpts": [
+      "Andre Argenton Andre Argenton Chief Technology & Sustainability Officer"
+     ]
+    }
+   ],
+   "reasoning": "Exact name and title quoted from Dow's leadership page.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Dow Leadership | Corporate Dow",
+     "url": "https://corporate.dow.com/en-us/about-dow/leadership.html",
+     "excerpts": [
+      "Andre Argenton Andre Argenton Chief Technology & Sustainability Officer"
+     ]
+    }
+   ],
+   "reasoning": "Directly identifies Andre Argenton as Dow's Chief Technology & Sustainability Officer.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [],
+   "reasoning": "Publication-date verification is absent from the supplied evidence.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "Identifies the unverified publication-date field rather than assigning an unsupported date.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is Dow's CTO?",
+ "input_n": 4,
+ "completed_on": "2026-11-11"
+}

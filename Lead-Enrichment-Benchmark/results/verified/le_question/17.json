@@ -1,0 +1,1015 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 17,
+ "task": "What is Apple's annual revenue?",
+ "labels": {
+  "opus": "A",
+  "gpt": "B",
+  "exa": "C",
+  "nimble": "D",
+  "parallel": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 7,
+ "evidence_fetched": 7,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Apple's fiscal 2026 total net sales (annual revenue) were $478.834 billion ($478,834 million) for the twelve months ended September 26, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Apple's total net sales for fiscal 2026 (twelve months ended September 26, 2026) were $478,834 million (about $478.8 billion).",
+    "B": "Apple Inc. reported total net sales (annual revenue) of US$478.834 billion for fiscal 2026, ended September 26, 2026.",
+    "C": "Apple reported fiscal 2026 total net sales of $478.834 billion for the twelve months ended September 26, 2026.",
+    "D": "Apple's fiscal 2026 total net sales (annual revenue), for the year ended September 26, 2026, were $478,834 million (~$478.8 billion), up 15% year over year.",
+    "E": "Apple's fiscal 2026 total net sales (annual revenue) were US$478,834 million (about US$478.834 billion) for the twelve months ended September 26, 2026.",
+    "F": "Apple reported total net sales (annual revenue) of $478.834 billion for the fiscal year ended September 26, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Apple's fiscal 2026 revenue grew about 15% over fiscal 2025.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "A": "Apple's fiscal 2026 revenue grew about 15% over fiscal 2025 (the output calculated this from the 8-K figures).",
+    "B": "Apple's fiscal 2026 total net sales increased 15% from US$416.161 billion in fiscal 2025 (ended September 27, 2025).",
+    "D": "Apple's fiscal 2026 total net sales ... up 15% year over year."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Apple's fiscal 2025 total net sales were $416.161 billion ($416,161 million).",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Apple's total net sales for fiscal 2025 were $416,161 million (about $416.2 billion).",
+    "C": "Apple's total net sales for fiscal 2025 were $416.161 billion.",
+    "D": "Apple's fiscal 2025 total net sales were $416,161 million (~$416.2 billion), up 6% from fiscal 2024.",
+    "E": "Apple's fiscal 2025 total net sales were US$416,161 million."
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+    "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Apple's fiscal 2025 total net sales were up 6% from fiscal 2024.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apple's fiscal 2025 total net sales were $416,161 million (~$416.2 billion), up 6% from fiscal 2024."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Apple's fiscal 2024 total net sales were $391.035 billion.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apple's fiscal 2024 total net sales were $391,035 million (~$391.0 billion)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Apple's earnings release rounds fiscal 2026 revenue to $479 billion and describes it as all-time record revenue.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "Apple described fiscal 2026 revenue of about $479 billion as an all-time record. / Apple's press release rounds the full-year fiscal 2026 revenue to $479 billion; the exact 8-K figure is $478,834 million.",
+    "C": "Apple's earnings release rounds its fiscal 2026 revenue to $479 billion and describes it as all-time record revenue."
+   },
+   "urls": [
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results",
+    "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Apple's Q4 fiscal 2026 revenue was about $114.5 billion ($114.477 billion).",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Apple's fiscal Q4 2026 (September quarter) revenue was $114.5 billion ($114,477 million), up 12% year over year.",
+    "C": "Apple's total net sales for the fourth quarter of fiscal 2026 were $114.477 billion, compared with $102.466 billion in the prior-year quarter.",
+    "D": "Apple's Q4 fiscal 2026 (ended September 26, 2026) quarterly revenue was $114.5 billion, up 12% year over year.",
+    "E": "Apple's fiscal 2026 fourth-quarter total net sales were US$114,477 million, versus US$102,466 million in the prior-year fourth quarter."
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+    "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Apple's Q4 fiscal 2025 total net sales were $102.466 billion.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "A": "Apple's fiscal Q4 2025 total net sales were $102,466 million.",
+    "C": "... compared with $102.466 billion in the prior-year quarter.",
+    "E": "... versus US$102,466 million in the prior-year fourth quarter."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Apple's Q4 fiscal 2026 revenue was up 12% year over year.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "revenue was $114.5 billion ($114,477 million), up 12% year over year.",
+    "D": "quarterly revenue was $114.5 billion, up 12% year over year."
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Apple reported fiscal 2026 Q4/year results on November 2, 2026.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Apple's fiscal 2026 ended September 26, 2026, and Apple reported the results on November 2, 2026.",
+    "D": "Apple issued its Q4 FY2026 earnings press release on November 2, 2026."
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Apple's fiscal 2026 ended September 26, 2026.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "A": "Apple's fiscal 2026 ended September 26, 2026",
+    "E": "Apple's fiscal 2026 ended September 26, 2026."
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+    "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Apple's fiscal year differs from the calendar year (does not end December 31).",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "its fiscal-year revenue differs from calendar-year revenue.",
+    "F": "Apple's fiscal year does not end on December 31; the annual figure covers the 12 months ended September 26, 2026."
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Apple's fiscal 2026 covers September 29, 2025 to September 26, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apple's fiscal 2026 covers September 29, 2025 to September 26, 2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Apple's fiscal 2025 ended September 27, 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "fiscal 2025 (ended September 27, 2025)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Apple reports its revenue figure as \"total net sales.\"",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Apple reports its revenue figure as \"total net sales.\""
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "The Apple earnings-release financial statements cited are labeled unaudited.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Apple earnings-release financial statements cited are labeled unaudited."
+   },
+   "urls": [
+    "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Apple's fiscal 2026 net sales included $355.533 billion from products.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Apple's fiscal 2026 net sales included $355.533 billion from products."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Apple's fiscal 2026 net sales included $123.301 billion from services.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Apple's fiscal 2026 net sales included $123.301 billion from services."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Fiscal.ai's standardized income-statement record identifies the $478.834 billion as Apple's total revenues and links it to Apple's SEC filing.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Fiscal.ai's standardized income-statement record identifies the $478.834 billion amount as Apple's total revenues and links it to Apple's SEC filing."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Apple's net income for fiscal 2026 was $132,175 million (about $132.2 billion).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Apple's net income for fiscal 2026 was $132,175 million (about $132.2 billion)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Apple's net income for fiscal 2025 was $112,010 million.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Apple's net income for fiscal 2025 was $112,010 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "MacRumors reported Apple recorded $478.8 billion in sales and $132.2 billion in net income for fiscal 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "MacRumors reported Apple recorded $478.8 billion in sales and $132.2 billion in net income for the full fiscal year 2026."
+   },
+   "urls": [
+    "https://www.macrumors.com/2026/11/02/apple-4q-2026-earnings/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Apple's diluted EPS for fiscal Q4 2026 was $2.10.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Apple's diluted EPS for fiscal Q4 2026 was $2.10."
+   },
+   "urls": [
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results",
+    "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c24",
+    "c25"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "Apple's net income for fiscal Q4 2026 was $30,711 million, versus $27,466 million in the prior-year quarter.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Apple's net income for fiscal Q4 2026 was $30,711 million, versus $27,466 million in the prior-year quarter."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Apple's Q4 FY2026 company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apple's Q4 FY2026 company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds."
+   },
+   "urls": [
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Apple delivered September quarter records for net income and EPS in Q4 FY2026, with double-digit EPS growth for fiscal 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apple delivered September quarter records for net income and EPS in Q4 FY2026, with double-digit EPS growth for fiscal 2026."
+   },
+   "urls": [
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Apple generated $28 billion in operating cash flow in Q4 FY2026 and returned $28 billion to shareholders.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apple generated $28 billion in operating cash flow in Q4 FY2026 and returned $28 billion to shareholders."
+   },
+   "urls": [
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Apple's installed base of active devices reached a new all-time high across all major product categories and geographic segments.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apple's installed base of active devices reached a new all-time high across all major product categories and geographic segments."
+   },
+   "urls": [
+    "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "The 15% fiscal 2026 revenue growth partly reflects tariff-related and FX dynamics noted in the 10-K.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The 15% fiscal 2026 revenue growth partly reflects tariff-related and FX dynamics noted in the 10-K."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+   "note": "The 8-K and 10-K show $478,834M total net sales; MacRumors reports $478.8B, up 15%.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.macrumors.com/2026/11/02/apple-4q-2026-earnings/",
+   "note": "Earnings call: $478.8B revenue, up 15% year over year; 478,834 / 416,161 = 1.15.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.macrumors.com/2026/11/02/apple-4q-2026-earnings/",
+   "note": "Prior-year comparison: $416.2B in fiscal 2025; the 416,161 row appears in the earnings release.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "note": "416,161 vs 391,035 is +6.4%, which rounds to 6%; this is background history.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "note": "Fiscal 2024 net sales were $391,035M, matching Apple's reported figure; the 10-K covers 2024.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "CFO quote: 'all-time record revenue of $479 billion'.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "Q4 revenue was $114.5B, up 12%; 114,477 vs 102,466.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.macrumors.com/2026/11/02/apple-4q-2026-earnings/",
+   "note": "Year-ago quarter revenue was $102.5B, consistent with 102,466.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "The release states quarterly revenue of $114.5B, up 12 percent year over year.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "Press release is dated November 2, 2026; the quarter ended September 26, 2026.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "Fiscal Q4 and the year ended September 26, 2026.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "note": "The fiscal year ends in late September, not December 31.",
+   "confidence": "high",
+   "label_verdicts": {
+    "C": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+   "note": "Fiscal 2025 ended Sept 27, 2025 (Saturday), so fiscal 2026 began Sept 28, 2025, not Sept 29.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+   "note": "The 8-K comparative column is dated September 27, 2025.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+   "note": "Apple's statements use the line item 'Total net sales' (478,834 for FY26), which is its term for revenue.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+   "note": "Apple's earnings-release statements are labeled unaudited, though the saved excerpt does not show the label. The audited 10-K covers the same year.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "note": "The saved passages are truncated, but 355.533 plus 123.301 equals the 478.834 total net sales, so the split is consistent.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "note": "Services of 123.301 plus products of 355.533 equals the 478.834 total, so the figure is consistent.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+   "note": "The cash flow statement shows net income of 132,175 for the twelve months ended Sept 26, 2026.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+   "note": "FY2025 net income of 112,010 is shown as the prior-year comparison; it is historical context.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.macrumors.com/2026/11/02/apple-4q-2026-earnings/",
+   "note": "MacRumors states $478.8B in sales and $132.2B in net income for the fiscal year, against $416.2B and $112.0B in FY2025.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "Apple's press release states diluted EPS of $2.10 for Q4.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true"
+   }
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.macrumors.com/2026/11/02/apple-4q-2026-earnings/",
+   "note": "MacRumors reports $30.7B for Q4 against $27.5B a year earlier, matching 30,711 and 27,466. The live-blog line saying $37B appears to be a transcription error.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "The release states gross margin of 47.9 percent including about 1 point from tariff refunds.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "The CFO quote in the release says September-quarter records for net income and EPS, and double-digit EPS growth for the year.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "The CFO quote states $28B in operating cash flow and $28B returned to shareholders.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+   "note": "The CFO quote in the release states the installed base reached an all-time high across all major categories and segments.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "unverifiable",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "note": "The 10-K confirms total net sales of $478,834M for fiscal 2026. The saved Fiscal.ai pages are only a marketing page with no Apple income-statement record, so the claim about Fiscal.ai's record and its link to the filing is unconfirmed. This is a point about a data vendor and does not state the answe",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "note": "The 10-K says tariff refunds were booked as a reduction of products cost of sales, so they affect gross margin and not revenue. It cites a favorable FX impact only for Europe net sales. It does not attribute the 15% total growth to tariffs or FX, and names higher iPhone, Services and Mac sales as dr",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "note": "The FY2026 10-K lists the prior-year statements as 'years ended ... September 27, 2025', so fiscal 2025 ended September 27, 2025."
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "unverifiable",
+   "note": "No Fiscal.ai page was available. The SEC 10-K confirms total net sales of $478,834M for FY2026, but I could not check what Fiscal.ai's record says or links to."
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "note": "The Q4 FY2026 8-K Exhibit 99.1 shows diluted EPS of $2.10 for the quarter ended September 26, 2026, up from $1.85 a year earlier."
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "note": "In the press release, CFO Parekh says 'September quarter records for net income and EPS' and 'double-digit EPS growth'. Full-year diluted EPS rose from $7.46 to $8.98, about 20%."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 29,
+ "scores": {
+  "opus": {
+   "units": 14,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 66.5,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.741,
+   "answer_truth": 4,
+   "thoroughness": 0.851,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 66.5,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.188,
+   "answer_truth": 4,
+   "thoroughness": 0.316,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 66.5,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.293,
+   "answer_truth": 4,
+   "thoroughness": 0.453,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 2,
+   "truth": 26,
+   "truth_weight": 66.5,
+   "coverage": 0.625,
+   "accuracy": 0.917,
+   "combined": 0.743,
+   "thorough_coverage": 0.579,
+   "answer_truth": 4,
+   "thoroughness": 0.71,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 66.5,
+   "coverage": 0.375,
+   "accuracy": 1.0,
+   "combined": 0.545,
+   "thorough_coverage": 0.305,
+   "answer_truth": 4,
+   "thoroughness": 0.467,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 5,
+   "unverifiable": 1,
+   "true": 4,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 66.5,
+   "coverage": 0.375,
+   "accuracy": 0.977,
+   "combined": 0.542,
+   "thorough_coverage": 0.237,
+   "answer_truth": 4,
+   "thoroughness": 0.381,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.005,
+ "corrections_v2": {
+  "units_before": 31,
+  "units_after": 29,
+  "dedup_groups": [
+   {
+    "kept": "c6",
+    "merged": [
+     "c7"
+    ]
+   },
+   {
+    "kept": "c24",
+    "merged": [
+     "c25"
+    ]
+   }
+  ],
+  "cost": 0.019
+ }
+}

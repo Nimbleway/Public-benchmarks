@@ -1,0 +1,239 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b699770abcd6ed69856",
+ "status": "completed",
+ "seconds": 63,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is Walmart's CEO?",
+  "passages": [
+   {
+    "quote": "John Furner\nPresident and CEO, Walmart Inc.",
+    "publisher": "Walmart",
+    "published_date": null,
+    "source_url": "https://corporate.walmart.com/about/leadership/john-furner"
+   },
+   {
+    "quote": "its Board of Directors has elected John Furner, 51, to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc., effective February 1, 2026.",
+    "publisher": "Walmart",
+    "published_date": "2025-11-14",
+    "source_url": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0"
+   }
+  ],
+  "answer": "John Furner is Walmart Inc.\u2019s president and chief executive officer as of November 11, 2026. He succeeded Doug McMillon effective February 1, 2026.",
+  "caveats": [
+   "Walmart\u2019s current leadership biography does not display a publication date."
+  ],
+  "missing_fields": [
+   "passages[0].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://corporate.walmart.com/about/leadership/john-furner",
+    "fact": "Walmart\u2019s official leadership biography identifies John Furner as President and CEO of Walmart Inc."
+   },
+   {
+    "date": "2026-02-01",
+    "source_url": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+    "fact": "John Furner succeeded Doug McMillon as Walmart Inc.\u2019s president and CEO, effective February 1, 2026."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the question supplied by the user.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "**John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    },
+    {
+     "title": "Walmart Announces John Furner as President and Chief Executive Officer",
+     "url": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+     "excerpts": [
+      "BENTONVILLE, Ark., Nov. 14, 2025 \u2014 Walmart Inc. (NYSE: WMT) today announced that its Board of Directors has elected John Furner, 51, to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc., effective February 1, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The official biography provides Furner\u2019s name and current title. Walmart\u2019s dated announcement provides the quoted succession statement and its effective date. The biography has no displayed publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "**John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    },
+    {
+     "title": "Walmart Announces John Furner as President and Chief Executive Officer",
+     "url": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+     "excerpts": [
+      "BENTONVILLE, Ark., Nov. 14, 2025 \u2014 Walmart Inc. (NYSE: WMT) today announced that its Board of Directors has elected John Furner, 51, to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc., effective February 1, 2026."
+     ]
+    }
+   ],
+   "reasoning": "Walmart\u2019s current official biography identifies John Furner as CEO of Walmart Inc., rather than a subsidiary. Its official succession announcement states that he would succeed Doug McMillon effective February 1, 2026.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "[Home](https://corporate.walmart.com/) [Leadership](https://corporate.walmart.com/about/leadership) John Furner [Download Photo](https://corporate.walmart.com/content/dam/corporate/images/about/leadership/high-res/John-Furner.jpg) **John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    }
+   ],
+   "reasoning": "The biography was opened and its publication date was not shown. The cited header identifies the page, although an absent date cannot be established by a positive text passage alone.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "[Home](https://corporate.walmart.com/) [Leadership](https://corporate.walmart.com/about/leadership) John Furner [Download Photo](https://corporate.walmart.com/content/dam/corporate/images/about/leadership/high-res/John-Furner.jpg) **John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    }
+   ],
+   "reasoning": "No explicit publication date was found on the opened leadership biography, so its publication-date field is null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "November 11, 2026 is the date supplied for this task and the date of the current-page check, not a publication date claimed by a source.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "**John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    },
+    {
+     "title": "Walmart Announces John Furner as President and Chief Executive Officer",
+     "url": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+     "excerpts": [
+      "BENTONVILLE, Ark., Nov. 14, 2025 \u2014 Walmart Inc. (NYSE: WMT) today announced that its Board of Directors has elected John Furner, 51, to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc., effective February 1, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The biography directly supports the current CEO identification; the announcement directly supports the predecessor and effective date. The first fact\u2019s date denotes the as-of check.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "**John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    }
+   ],
+   "reasoning": "The quotation reproduces the name and title displayed on Walmart\u2019s official biography, with formatting removed. No publication date was displayed.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Walmart Announces John Furner as President and Chief Executive Officer",
+     "url": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+     "excerpts": [
+      "BENTONVILLE, Ark., Nov. 14, 2025 \u2014 Walmart Inc. (NYSE: WMT) today announced that its Board of Directors has elected John Furner, 51, to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc., effective February 1, 2026."
+     ]
+    }
+   ],
+   "reasoning": "Walmart\u2019s November 14, 2025 announcement contains the quoted statement naming Furner, McMillon, the corporate role, and the February 1, 2026 effective date.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "[Home](https://corporate.walmart.com/) [Leadership](https://corporate.walmart.com/about/leadership) John Furner [Download Photo](https://corporate.walmart.com/content/dam/corporate/images/about/leadership/high-res/John-Furner.jpg) **John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    }
+   ],
+   "reasoning": "The opened biography did not show an explicit publication date; the citation identifies the relevant page rather than proving an absence throughout it.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "[Home](https://corporate.walmart.com/) [Leadership](https://corporate.walmart.com/about/leadership) John Furner [Download Photo](https://corporate.walmart.com/content/dam/corporate/images/about/leadership/high-res/John-Furner.jpg) **John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    }
+   ],
+   "reasoning": "The biography\u2019s publication date could not be verified and is therefore listed as missing.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "John Furner, President and CEO, Walmart Inc.",
+     "url": "https://corporate.walmart.com/about/leadership/john-furner",
+     "excerpts": [
+      "**John Furner** **President and CEO, Walmart Inc.**"
+     ]
+    }
+   ],
+   "reasoning": "The current official biography directly identifies Furner as President and CEO of Walmart Inc. The fact\u2019s date is the task\u2019s as-of date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Walmart Announces John Furner as President and Chief Executive Officer",
+     "url": "https://corporate.walmart.com/news/2025/11/14/walmart-announces-john-furner-as-president-and-chief-executive-o0",
+     "excerpts": [
+      "BENTONVILLE, Ark., Nov. 14, 2025 \u2014 Walmart Inc. (NYSE: WMT) today announced that its Board of Directors has elected John Furner, 51, to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc., effective February 1, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The announcement explicitly names Doug McMillon as Furner\u2019s predecessor and gives February 1, 2026 as the effective date.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is Walmart's CEO?",
+ "input_n": 5,
+ "completed_on": "2026-11-11"
+}

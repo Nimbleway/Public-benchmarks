@@ -1,0 +1,166 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69b536d048be3e163b",
+ "status": "completed",
+ "seconds": 63,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Is Anduril publicly traded?",
+  "passages": [
+   {
+    "quote": "Anduril is privately owned, and as such investment in Anduril stock is only available to a small number of investors, most of whom are well known to us.",
+    "publisher": "Anduril",
+    "published_date": null,
+    "source_url": "https://www.anduril.com/investor-relations"
+   }
+  ],
+  "answer": "As of November 11, 2026, Anduril is not publicly traded; it is privately owned. The company\u2019s investor-relations page says investment in its stock is available only to a small number of investors.",
+  "caveats": [
+   "The official page does not state a publication date. Key-fact dates indicate the date checked, not a publication or ownership-change date."
+  ],
+  "missing_fields": [
+   "passages[0].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.anduril.com/investor-relations",
+    "fact": "Anduril states that it is privately owned."
+   },
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.anduril.com/investor-relations",
+    "fact": "Investment in Anduril stock is available only to a small number of investors, most of whom are well known to the company."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "This is the question supplied by the user, not a fact drawn from a source.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Investor Relations | Anduril",
+     "url": "https://www.anduril.com/investor-relations",
+     "excerpts": [
+      "Anduril is privately owned, and as such investment in Anduril stock is only available to a small number of investors, most of whom are well known to us."
+     ]
+    }
+   ],
+   "reasoning": "The opened official investor-relations page contains the quoted sentence verbatim. No publication date was stated on the page.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Investor Relations | Anduril",
+     "url": "https://www.anduril.com/investor-relations",
+     "excerpts": [
+      "Anduril is privately owned, and as such investment in Anduril stock is only available to a small number of investors, most of whom are well known to us."
+     ]
+    }
+   ],
+   "reasoning": "Anduril directly identifies itself as privately owned and restricts investment to a small number of investors, supporting the answer that it is not publicly traded. The page was checked for this response, but its lack of a publication date leaves a minor freshness limitation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "The page reading found no stated publication date. The distinction between verification dates and publication dates describes how the answer's dates are used.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The publication date could not be verified from the opened page, so it is null and explicitly listed as missing.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "This is the date supplied in the task and used for the current verification, not a publication date asserted by the source.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Investor Relations | Anduril",
+     "url": "https://www.anduril.com/investor-relations",
+     "excerpts": [
+      "Anduril is privately owned, and as such investment in Anduril stock is only available to a small number of investors, most of whom are well known to us."
+     ]
+    }
+   ],
+   "reasoning": "The official statement directly supports both private ownership and restricted stock access. Dates identify when these statements were checked.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Investor Relations | Anduril",
+     "url": "https://www.anduril.com/investor-relations",
+     "excerpts": [
+      "Anduril is privately owned, and as such investment in Anduril stock is only available to a small number of investors, most of whom are well known to us."
+     ]
+    }
+   ],
+   "reasoning": "This is the exact ownership and investment-access statement from Anduril's official investor-relations page; its publication date is unavailable.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [],
+   "reasoning": "The opened page did not state a publication date; the answer explicitly labels its fact dates as verification dates.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The page reading could not establish a publication date for the quoted passage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Investor Relations | Anduril",
+     "url": "https://www.anduril.com/investor-relations",
+     "excerpts": [
+      "Anduril is privately owned, and as such investment in Anduril stock is only available to a small number of investors, most of whom are well known to us."
+     ]
+    }
+   ],
+   "reasoning": "The sentence explicitly states that Anduril is privately owned.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Investor Relations | Anduril",
+     "url": "https://www.anduril.com/investor-relations",
+     "excerpts": [
+      "Anduril is privately owned, and as such investment in Anduril stock is only available to a small number of investors, most of whom are well known to us."
+     ]
+    }
+   ],
+   "reasoning": "The sentence explicitly limits stock investment to a small number of investors, most well known to Anduril.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Is Anduril publicly traded?",
+ "input_n": 0,
+ "completed_on": "2026-11-11"
+}

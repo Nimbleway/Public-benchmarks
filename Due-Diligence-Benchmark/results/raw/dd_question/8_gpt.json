@@ -1,0 +1,99 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0f36fc36ab500a0e006af4b0330dc087d28aa2ed827503eb67",
+ "status": "completed",
+ "seconds": 32,
+ "output": {
+  "question": "Where can I find Target's latest annual report?",
+  "answer": "As of November 11, 2026, Target Corporation\u2019s latest annual report is its 2025 Annual Report, available on its [Annual Reports and Archive page](https://corporate.target.com/investors/annual/annual-reports-and-archive). You can read it online or download the PDF; it includes the Form 10-K for the fiscal year ended January 31, 2026. ([corporate.target.com](https://corporate.target.com/investors/annual/annual-reports-and-archive))",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "As of November 11, 2026, Target's official annual-report archive lists the 2025 Annual Report as its latest report, with digital and PDF options.",
+    "source_url": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "Target's annual report includes its Form 10-K.",
+    "source_url": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "The 2025 Annual Report's Form 10-K covers the fiscal year ended January 31, 2026.",
+    "source_url": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+    "date": "2026-01-31"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "2025 digital annual report",
+    "source_url": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+    "publisher": "Target Corporation",
+    "published_date": null
+   },
+   {
+    "quote": "Download the 2025 annual report (PDF)",
+    "source_url": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+    "publisher": "Target Corporation",
+    "published_date": null
+   },
+   {
+    "quote": "Target's annual report includes the 10-K filing",
+    "source_url": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+    "publisher": "Target Corporation",
+    "published_date": null
+   },
+   {
+    "quote": "For the fiscal year ended January 31, 2026",
+    "source_url": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+    "publisher": "Target Corporation",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "The report is labeled 2025 by fiscal year, although that fiscal year ended in 2026.",
+   "The opened pages do not display publication dates."
+  ],
+  "missing_fields": [
+   "passages[].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": [
+    {
+     "url": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+     "title": "Annual Reports & Archive | Target Investor Relations"
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 21441,
+  "input_tokens_details": {
+   "cache_write_tokens": 16,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 970,
+  "output_tokens_details": {
+   "reasoning_tokens": 289
+  },
+  "total_tokens": 22411
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0433,
+ "cost_usd": 0.0633,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "dd_question",
+ "input": "Where can I find Target's latest annual report?",
+ "input_n": 8,
+ "completed_on": "2026-11-11"
+}

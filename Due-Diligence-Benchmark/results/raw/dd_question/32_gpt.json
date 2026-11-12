@@ -1,0 +1,91 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_04995394e7a4de6e006af4b0ae039c87d2bc06bdd69447e2f7",
+ "status": "completed",
+ "seconds": 23,
+ "output": {
+  "question": "Who owns Nokia?",
+  "answer": "Nokia Corporation is publicly traded and owned by its shareholders, rather than a single owner; its shares trade on Nasdaq Helsinki and the New York Stock Exchange. Solidium Oy, wholly owned by the Finnish state, is its largest shareholder registered in Finland, holding 325 million shares, or 5.66%, as of September 30, 2026.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "As verified on November 11, 2026, Nokia Corporation is publicly listed on Nasdaq Helsinki under NOKIA and the New York Stock Exchange under NOK.",
+    "source_url": "https://www.nokia.com/about-us/investors/stock-information/",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "Solidium Oy was Nokia's largest shareholder registered in Finland, holding 325,000,000 shares, representing 5.66% of all shares, as of September 30, 2026.",
+    "source_url": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+    "date": "2026-09-30"
+   },
+   {
+    "fact": "Solidium is wholly owned by the State of Finland and describes itself as a minority owner in its portfolio companies.",
+    "source_url": "https://www.solidium.fi/en/",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "The shares of Nokia Corporation are quoted on the following stock exchanges:",
+    "source_url": "https://www.nokia.com/about-us/investors/stock-information/",
+    "publisher": "Nokia",
+    "published_date": null
+   },
+   {
+    "quote": "SOLIDIUM OY | 325 000 000 | 5.66",
+    "source_url": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+    "publisher": "Nokia",
+    "published_date": null
+   },
+   {
+    "quote": "Solidium is a holding company wholly owned by the State of Finland and a minority owner in nationally important companies.",
+    "source_url": "https://www.solidium.fi/en/",
+    "publisher": "Solidium",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "Nokia's shareholder table covers shareholders registered in Finland, not a complete global ranking of beneficial owners.",
+   "The precise shareholding figures are dated September 30, 2026, and may have changed since then.",
+   "This answer concerns Nokia Corporation itself, not ownership of businesses producing Nokia-branded consumer products."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date",
+   "passages[2].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 24725,
+  "input_tokens_details": {
+   "cache_write_tokens": 10,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 778,
+  "output_tokens_details": {
+   "reasoning_tokens": 137
+  },
+  "total_tokens": 25503
+ },
+ "search_calls": 3,
+ "search_actions": {
+  "search": 1,
+  "open_page": 2
+ },
+ "token_cost_usd": 0.0479,
+ "cost_usd": 0.0779,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "dd_question",
+ "input": "Who owns Nokia?",
+ "input_n": 32,
+ "completed_on": "2026-11-11"
+}

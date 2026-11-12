@@ -1,0 +1,238 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69a168af059c00aedd",
+ "status": "completed",
+ "seconds": 94,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Where can I find Bank of America's latest annual report?",
+  "passages": [
+   {
+    "quote": "2025 Annual Report",
+    "publisher": "Bank of America Corporation",
+    "published_date": null,
+    "source_url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements"
+   },
+   {
+    "quote": "annual report 2025",
+    "publisher": "Bank of America Corporation",
+    "published_date": null,
+    "source_url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf"
+   }
+  ],
+  "answer": "As of November 11, 2026, Bank of America\u2019s latest annual report is its 2025 Annual Report. You can [download the PDF directly](https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf) or find it on the official [Annual Reports & Proxy Statements page](https://investor.bankofamerica.com/annual-reports-and-proxy-statements).",
+  "caveats": [
+   "Publication dates for the cited listing and PDF could not be verified; 2025 is the report year."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+    "fact": "The newest annual report listed on Bank of America's official annual-report page is the 2025 Annual Report."
+   },
+   {
+    "date": null,
+    "source_url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+    "fact": "The 2025 Annual Report is available as a downloadable PDF linked from the official annual-report page."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no external evidence is needed.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Annual Reports & Proxy Statements | Bank of America Corporation (BAC)",
+     "url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+     "excerpts": [
+      "2025 [2025 Annual Report](https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf)"
+     ]
+    },
+    {
+     "title": "Annual Report 2025",
+     "url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+     "excerpts": [
+      "**annual report 2025**"
+     ]
+    }
+   ],
+   "reasoning": "The official listing supplies the annual-report link label, and the opened PDF supplies the quoted report title. Publication dates were not verified and are null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Annual Reports & Proxy Statements | Bank of America Corporation (BAC)",
+     "url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+     "excerpts": [
+      "Annual Reports & Proxy Statements 2025 [2025 Annual Report](https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf)"
+     ]
+    },
+    {
+     "title": "Annual Report 2025",
+     "url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+     "excerpts": [
+      "**annual report 2025**"
+     ]
+    }
+   ],
+   "reasoning": "The current official listing identifies the 2025 Annual Report as its newest annual report and provides the direct PDF link. Opening that PDF confirmed the report year. The latest-status conclusion depends on the current listing rather than an explicit publication-date statement.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Annual Report 2025",
+     "url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+     "excerpts": [
+      "**annual report 2025**"
+     ]
+    }
+   ],
+   "reasoning": "The PDF explicitly labels 2025 as the annual-report year. The publication-date qualification describes an unverified field, not a claim that the document has no publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "Publication dates were not established from the opened sources, so both passage publication-date fields remain null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "This is the research reference date supplied in the task, not a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Annual Reports & Proxy Statements | Bank of America Corporation (BAC)",
+     "url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+     "excerpts": [
+      "Annual Reports & Proxy Statements 2025 [2025 Annual Report](https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf)"
+     ]
+    },
+    {
+     "title": "Annual Report 2025",
+     "url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+     "excerpts": [
+      "**annual report 2025**"
+     ]
+    }
+   ],
+   "reasoning": "The official listing establishes the newest listed report and its download link; the opened PDF confirms that the linked document is the 2025 annual report. The first date denotes the observation date, while the unknown publication date for the PDF remains null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Annual Reports & Proxy Statements | Bank of America Corporation (BAC)",
+     "url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+     "excerpts": [
+      "2025 [2025 Annual Report](https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf)"
+     ]
+    }
+   ],
+   "reasoning": "The quote is the exact annual-report link label on Bank of America's official investor-relations page; its publication date was not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Annual Report 2025",
+     "url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+     "excerpts": [
+      "**annual report 2025**",
+      "BANK OF AMERICA 2025 | 1"
+     ]
+    }
+   ],
+   "reasoning": "The opened PDF contains the exact quoted title and identifies Bank of America. Its publication date was not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Annual Report 2025",
+     "url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+     "excerpts": [
+      "**annual report 2025**"
+     ]
+    }
+   ],
+   "reasoning": "The report title establishes the report year. The caveat distinguishes that year from publication dates that were not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The listing's publication date was not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The PDF's publication date was not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Annual Reports & Proxy Statements | Bank of America Corporation (BAC)",
+     "url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+     "excerpts": [
+      "Annual Reports & Proxy Statements 2025 [2025 Annual Report](https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf)"
+     ]
+    }
+   ],
+   "reasoning": "The current official annual-report listing begins with the 2025 Annual Report. The date is the observation date specified by the task.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Annual Reports & Proxy Statements | Bank of America Corporation (BAC)",
+     "url": "https://investor.bankofamerica.com/annual-reports-and-proxy-statements",
+     "excerpts": [
+      "2025 [2025 Annual Report](https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf)"
+     ]
+    },
+    {
+     "title": "Annual Report 2025",
+     "url": "https://d1io3yog0oux5.cloudfront.net/_70906d29aa4da33dea0e8a47c1da9efa/bankofamerica/db/867/10497/annual_report/BAC+2025+Annual+Report.pdf",
+     "excerpts": [
+      "**annual report 2025**"
+     ]
+    }
+   ],
+   "reasoning": "The official page links directly to this PDF, which was opened and identifies itself as the 2025 annual report.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "Where can I find Bank of America's latest annual report?",
+ "input_n": 10,
+ "completed_on": "2026-11-11"
+}
