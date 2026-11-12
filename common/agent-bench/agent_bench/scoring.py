@@ -7,25 +7,16 @@ Truth set = the pooled units verified true and in scope, from any provider. Cove
 provider asserted; accuracy = weighted true / (true + false or off-scope + half of unverifiable) among its own units.
 Combined = F1 of (coverage, accuracy) for decision jobs (accuracy matters as much as coverage), F2 (coverage weighted
 2x) for list and event jobs. Each provider is judged on its own wording of a unit when wordings differ (label_verdicts).
-For ANSWER_JOBS the coverage truth set is only the units that answer the question; "thoroughness" is F1 over all of it.
+
+The job's choices come from its tasks.json entry: "metric" (F1 | F2), "judge_tag.key" (the judge tag that sets a unit's
+weight) and "coverage": "answers" (the coverage truth set is only the units tagged as answering the question, so extra
+true context cannot outscore a short correct answer; F1 over every true unit is kept as "thoroughness") or "all".
 """
 import re
 
 W = {"critical": 6, "useful": 2, "minor": 0.5}
 FRESH = 1.5
 OWNERSHIP = re.compile(r"own|investor|backed|founder|family|bootstrap|private equity|\bpe\b|venture", re.I)
-DECISION = {"fin_due_diligence", "fin_credit_risk", "fin_kyc_screening", "gtm_meeting_prep_research",
-            "fin_hf_company_research", "fin_grounded_answer", "fin_adverse_media", "fin_thesis_test",
-            "dd_question", "le_question"}
-# judge tag that sets a unit's weight, per job (the full tag spec the judge is asked for is in tasks.json)
-TAG_KEY = {"gtm_meeting_prep_research": "materiality", "gtm_signal_tracking": "signal", "fin_due_diligence": "materiality",
-           "fin_credit_risk": "materiality", "fin_kyc_screening": "group", "fin_deal_sourcing_mapping": "criteria",
-           "fin_hf_company_research": "materiality", "fin_grounded_answer": "materiality",
-           "fin_adverse_media": "materiality", "fin_thesis_test": "materiality",
-           "dd_question": "materiality", "le_question": "materiality"}
-# question-set jobs (question_tasks.py): coverage counts only the true facts tagged as answering the question, so extra
-# true context cannot outscore a short correct answer; coverage of every true fact is kept as "thoroughness"
-ANSWER_JOBS = {"dd_question", "le_question"}
 
 
 def f1(cov, acc):
@@ -36,8 +27,9 @@ def f2(cov, acc):
     return 5 * acc * cov / (4 * acc + cov) if (acc + cov) else 0.0
 
 
-def score(sub, i, merged, ver, labels):
-    """Per-provider coverage / accuracy / combined under the v4 rules."""
+def score(task, i, merged, ver, labels):
+    """Per-provider coverage / accuracy / combined for one input of a job (its tasks.json entry), under the v4 rules."""
+    sub, decision = task["id"], task["metric"] == "F1"
     out = {}
 
     def V(c, L=None):
@@ -110,7 +102,7 @@ def score(sub, i, merged, ver, labels):
                      accuracy=acc, combined=f2(cov, acc or 0))
 
         else:  # weighted findings / events
-            key = TAG_KEY[sub]
+            key = task["judge_tag"]["key"]
 
             def w(c):
                 v = V(c)
@@ -127,7 +119,7 @@ def score(sub, i, merged, ver, labels):
             acc = got / (got + badw) if (got + badw) else None
             s.update(true=sum(1 for c in mine if good(V(c, L))), wrong=sum(1 for c in mine if bad(V(c, L))), truth=len(truth),
                      truth_weight=round(tw, 2), coverage=cov, accuracy=acc, combined=f2(cov, acc or 0))
-            if sub in ANSWER_JOBS:
+            if task.get("coverage") == "answers":
                 ans = [c for c in truth if V(c).get("answers") not in (False, "false")]
                 aw = sum(w(c) for c in ans)
                 s.update(thorough_coverage=cov, answer_truth=len(ans),
@@ -136,11 +128,11 @@ def score(sub, i, merged, ver, labels):
                 flags = [c for c in truth if V(c).get("red_flag")]
                 s["red_flag_recall"] = (sum(1 for c in mine if c in flags) / len(flags)) if flags else None
 
-        if sub in DECISION:  # accuracy matters as much as coverage for these jobs
+        if decision:  # accuracy matters as much as coverage for these jobs
             s["combined"] = f1(s["coverage"], s["accuracy"] or 0)
         if "thorough_coverage" in s:
             s["thoroughness"] = f1(s["thorough_coverage"], s["accuracy"] or 0)
-        s["metric"] = "F1" if sub in DECISION else "F2"
+        s["metric"] = task["metric"]
         for k in ("coverage", "accuracy", "combined", "thorough_coverage", "thoroughness"):
             if k in s:
                 s[k] = round(s[k], 3) if s[k] is not None else None

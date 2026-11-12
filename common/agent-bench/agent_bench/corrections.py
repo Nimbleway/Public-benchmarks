@@ -106,7 +106,8 @@ def ownership(j):
     return j, log, cost
 
 
-def one(sub, i):
+def one(task, i):
+    sub = task["id"]
     path = os.path.join(VERIFIED, sub, f"{i}.json")
     if not os.path.exists(path):
         return None
@@ -121,7 +122,7 @@ def one(sub, i):
         j, log, cost = dedup(j)
         entry = {"units_before": before, "units_after": len(j["merged"]), "dedup_groups": log, "cost": round(cost, 3)}
     j["corrections_v2"] = entry
-    j["scores"] = score(sub, i, j["merged"], j["verified"], j["labels"])
+    j["scores"] = score(task, i, j["merged"], j["verified"], j["labels"])
     json.dump(j, open(path, "w"), indent=1, ensure_ascii=False)
     LOG("fix", sub, i, {k: (len(v) if isinstance(v, list) else v) for k, v in entry.items()})
     return entry
@@ -132,7 +133,7 @@ if __name__ == "__main__":
         print(__doc__)
         sys.exit(0)
     only = sys.argv[1:]
-    jobs = [(u["id"], i) for u in load_tasks() for i in range(len(u["inputs"])) if not only or u["id"] in only]
+    jobs = [(u, i) for u in load_tasks() for i in range(len(u["inputs"])) if not only or u["id"] in only]
     with ThreadPoolExecutor(8) as ex:
         log = [e for e in ex.map(lambda a: one(*a), jobs) if e]
     LOG("corrections done, $", round(sum(e["cost"] for e in log), 2))

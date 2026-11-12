@@ -171,6 +171,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\" (critical = needed to answer the question correctly), \"fresh\": true|false, \"answers\": true|false (true = the fact states the answer to the question asked, or part of it; false = context or other facts about the entity)"
   },
   "metric": "F1",
+  "coverage": "answers",
   "answer_key": false,
   "scoring_rule": "Unit = fact the answer states or rests on, weighted by whether it is needed to answer correctly: critical 6, useful 2, minor 0.5; x1.5 when fresh. F1. No answer key: the set is unlabeled. Headline score: coverage of the pooled true facts that answer the question (answers = true). Thoroughness: coverage of all pooled true facts. Both use the same accuracy."
  }

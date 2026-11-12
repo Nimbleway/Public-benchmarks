@@ -263,6 +263,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\", \"fresh\": true|false, \"red_flag\": true|false"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = material finding, weighted for an investment committee deciding today: critical 6, useful 2, minor 0.5; x1.5 when fresh. Red-flag recall reported separately."
  },
@@ -501,6 +502,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\", \"fresh\": true|false"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = credit fact, weighted for a lender deciding today: critical 6 (current defaults, ratings, liquidity, leverage, active proceedings), useful 2, minor 0.5; x1.5 when fresh."
  },
@@ -775,6 +777,7 @@
    "spec": "\"group\": \"registration|people|screening\", \"field\": short field name; for screening units also \"materiality\": \"critical|useful|minor\" (for a compliance officer deciding today) and \"false_hit\": true|false (true ONLY if the finding is about the wrong entity or the event did not happen at all; a wrong date, figure or wording on a real finding is false_hit false); for every unit also \"related_entity\": true|false (true when it is about a group entity other than the TARGET ENTITY: a parent, subsidiary or affiliate)"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = KYC fact, by group: registration 40% (7 fields), officers and owners 20% (capped at 5), screening findings 40% (critical 6, useful 2, minor 0.5). A false hit (wrong entity, or an event that did not happen) weighs 3x in accuracy; a wrong date or figure on a real finding counts 1x."
  },
@@ -916,6 +919,7 @@
    "spec": "\"criteria\": [{\"criterion\": \"...\", \"result\": \"pass|fail|unknown\"}], \"core_pass\": true|false  (core = the sector criterion)"
   },
   "metric": "F2",
+  "coverage": "all",
   "answer_key": false,
   "scoring_rule": "Unit = company. Each thesis criterion is checked pass / fail / unknown. Qualifies if no criterion fails and the sector criterion passes. A company that passes everything except an unprovable ownership criterion counts half (partial) in coverage and accuracy."
  },
@@ -1155,6 +1159,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\" (for a fund analyst deciding today), \"fresh\": true|false"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = research finding (catalyst, result vs guidance, event-driven item, credit or alternative signal, insider move, risk), weighted for a fund analyst deciding today: critical 6, useful 2, minor 0.5; x1.5 when fresh. F1."
  },
@@ -1285,6 +1290,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\" (critical = needed to answer the question correctly), \"fresh\": true|false"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = fact the answer states or rests on, weighted by whether it is needed to answer correctly: critical 6, useful 2, minor 0.5; x1.5 when fresh. F1."
  },
@@ -1441,6 +1447,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\" (for a financial-crime analyst; charges, settlements and convictions are critical), \"fresh\": true|false"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = adverse event (one allegation, charge, settlement or conviction in one jurisdiction) or excluded namesake; a wrong legal status or a namesake event is false. Weighted critical 6, useful 2, minor 0.5; x1.5 when fresh. F1."
  },
@@ -1589,6 +1596,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\" (for deciding whether the thesis holds), \"fresh\": true|false"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = fact of evidence for or against the thesis, weighted by how much it decides whether the thesis holds: critical 6, useful 2, minor 0.5; x1.5 when fresh. F1."
  }

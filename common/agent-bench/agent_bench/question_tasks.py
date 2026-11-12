@@ -47,7 +47,7 @@ def main(folder, job_id, name, n):
     questions = sample(rows, n)
     template = next(u for u in json.load(open(os.path.join(TEMPLATE_SUITE, "tasks.json"))) if u["id"] == TEMPLATE)
     task = {**template, "id": job_id, "name": name, "vertical": os.path.basename(os.path.abspath(folder)),
-            "inputs": questions, "answer_key": False,
+            "inputs": questions, "answer_key": False, "coverage": "answers",
             # a true fact that does not answer the question is context: it neither costs accuracy nor adds coverage
             "unit": {**template["unit"], "verify_rule": "true if the fact is correct and current as of the run date."},
             "judge_tag": {**template["judge_tag"], "spec": template["judge_tag"]["spec"] + ANSWERS_SPEC},

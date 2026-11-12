@@ -213,6 +213,7 @@
    "spec": "\"materiality\": \"critical|useful|minor\", \"fresh\": true|false"
   },
   "metric": "F1",
+  "coverage": "all",
   "answer_key": true,
   "scoring_rule": "Unit = distinct finding, weighted by how much it matters to the seller today: critical 6, useful 2, minor 0.5; x1.5 when fresh (last 90 days or current state)."
  },
@@ -307,6 +308,7 @@
    "spec": "\"signal\": \"buying|minor\"  (buying = funding, leadership change, expansion, hiring push, major launch, M&A, pricing change; minor = routine feature or changelog entry)"
   },
   "metric": "F2",
+  "coverage": "all",
   "answer_key": false,
   "scoring_rule": "Unit = event after the since-date. Buying signals (funding, leadership, expansion, hiring push, major launch, M&A, pricing) weigh 3; minor releases weigh 0.5."
  }

@@ -21,7 +21,7 @@ import statistics as st
 import sys
 
 from .config import NAMES, PROVIDERS, RESULTS, SUITES, load_tasks
-from .scoring import ANSWER_JOBS, score, tally
+from .scoring import score, tally
 
 FC_CREDIT_USD = 99 / 100_000
 # Firecrawl free daily runs report no credits; they are priced at the median billed credits for the same effort over
@@ -65,7 +65,7 @@ def suite_tasks(suite):
             j = load_json(os.path.join(res, "verified", u["id"], f"{i}.json"))
             if not j:
                 continue
-            scores = score(u["id"], i, j["merged"], j["verified"], j["labels"])
+            scores = score(u, i, j["merged"], j["verified"], j["labels"])
             key = load_json(os.path.join(res, "answer_keys", u["id"], f"{i}.json"))
             arms = {}
             for a in PROVIDERS:
@@ -93,7 +93,7 @@ def suite_tasks(suite):
                     s = {**s, "cost_usd": c, "efficiency": round(s["combined"] / c, 2) if c else None}
                 arms[a] = {"status": (r or {}).get("status", "not run"), "tier": (r or {}).get("tier"),
                            "seconds": (r or {}).get("seconds"), "cost_usd": c, "cost_basis": basis, "score": s}
-                if u["id"] in ANSWER_JOBS and words(r) is not None:
+                if u.get("coverage") == "answers" and words(r) is not None:
                     arms[a]["words"] = words(r)
             sc = {a: arms[a]["score"] for a in PROVIDERS if arms[a]["score"]}
             top = max(x["combined"] for x in sc.values())

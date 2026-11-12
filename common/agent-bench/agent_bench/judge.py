@@ -417,7 +417,7 @@ def judge(u, i):
            "evidence_pages": len(pages), "evidence_fetched": sum(1 for t in pages.values() if t),
            "merged": merged, "claims": claims, "verified": ver, "audit": audit, "retried_to_verdict": retried,
            "unverifiable_first_pass": len(unv), "decided_from_passages": len(fast),
-           "scores": score(sub, i, merged, ver, lab), "judge": "v4b", "judge_cost_usd": round(cost, 3)}
+           "scores": score(TASKS[sub], i, merged, ver, lab), "judge": "v4b", "judge_cost_usd": round(cost, 3)}
     os.makedirs(os.path.dirname(path), exist_ok=True)
     json.dump(res, open(path, "w"), indent=1, ensure_ascii=False)
     LOG("judged", sub, i, "units", len(merged), "retry", f"{retried}/{len(unv)}", "$", round(cost, 2),
