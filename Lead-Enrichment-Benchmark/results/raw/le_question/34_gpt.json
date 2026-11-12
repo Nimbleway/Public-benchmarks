@@ -1,0 +1,89 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0acdb6e2a83923bc006af4b0ab075887d282862a9e831a377b",
+ "status": "completed",
+ "seconds": 44,
+ "output": {
+  "question": "Has Ford announced layoffs?",
+  "answer": "Yes. Ford Motor Company\u2019s latest quarterly filing, filed October 29, 2026, confirms ongoing employee-separation programs, primarily in Europe, expected to be substantially complete by the end of 2027. Ford previously announced on November 20, 2024, plans to cut 4,000 European positions by the end of 2027, mainly in Germany and the UK; that figure is the announced target, not a verified count of completed layoffs.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "As of September 30, 2026, Ford reported ongoing separation programs primarily affecting hourly and salaried workers in Europe, expected to be substantially complete by the end of 2027.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+    "date": "2026-09-30"
+   },
+   {
+    "fact": "Ford lists its latest quarterly report as filed October 29, 2026.",
+    "source_url": "https://shareholder.ford.com/financials/default.aspx",
+    "date": "2026-10-29"
+   },
+   {
+    "fact": "As announced November 20, 2024, Ford planned to reduce its European workforce by 4,000 positions by the end of 2027, primarily in Germany and the UK, pending consultations.",
+    "source_url": "https://www.fromtheroad.ford.com/eur/en/articles/2024/ford-announces-measures-to-achieve-long-term-competitiveness-in",
+    "date": "2024-11-20"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "primarily hourly and salaried worker separation programs in Europe, which are expected to be substantially complete by the end of 2027",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+    "publisher": "Ford Motor Company / U.S. Securities and Exchange Commission",
+    "published_date": "2026-10-29"
+   },
+   {
+    "quote": "Form10-Q filing dated 10/29/2026",
+    "source_url": "https://shareholder.ford.com/financials/default.aspx",
+    "publisher": "Ford Motor Company",
+    "published_date": null
+   },
+   {
+    "quote": "The company is planning to further reduce its European workforce by 4,000 positions by the end of 2027",
+    "source_url": "https://www.fromtheroad.ford.com/eur/en/articles/2024/ford-announces-measures-to-achieve-long-term-competitiveness-in",
+    "publisher": "Ford Motor Company",
+    "published_date": "2024-11-20"
+   }
+  ],
+  "caveats": [
+   "The latest filing confirms ongoing restructuring, rather than announcing a new layoff headcount.",
+   "Employee separations can include voluntary departures; they are not necessarily all involuntary layoffs.",
+   "These sources do not establish a current total of completed layoffs or confirm a newly announced U.S. layoff round."
+  ],
+  "missing_fields": [
+   "passages[1].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 38083,
+  "input_tokens_details": {
+   "cache_write_tokens": 11,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 1285,
+  "output_tokens_details": {
+   "reasoning_tokens": 549
+  },
+  "total_tokens": 39368
+ },
+ "search_calls": 5,
+ "search_actions": {
+  "search": 4,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0797,
+ "cost_usd": 0.1297,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Has Ford announced layoffs?",
+ "input_n": 34,
+ "completed_on": "2026-11-11"
+}

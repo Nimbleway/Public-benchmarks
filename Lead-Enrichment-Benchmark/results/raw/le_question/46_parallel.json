@@ -1,0 +1,260 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69bff784af4426ecac",
+ "status": "completed",
+ "seconds": 115,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is the parent company of Rivian?",
+  "passages": [
+   {
+    "quote": "Rivian Automotive, Inc. is an independent, publicly traded company, not a subsidiary.",
+    "publisher": "EVSeekers",
+    "published_date": null,
+    "source_url": "https://evseekers.com/who-makes-rivian"
+   },
+   {
+    "quote": "Volkswagen and Amazon are major shareholders, not parent companies.",
+    "publisher": "EVSeekers",
+    "published_date": null,
+    "source_url": "https://evseekers.com/who-makes-rivian"
+   },
+   {
+    "quote": "We have entered into a joint venture with Volkswagen Group and Volkswagen Group has committed to additional equity investments, subject to certain conditions, including the achievement of certain milestones and obtaining regulatory clearances.",
+    "publisher": "Rivian Automotive, Inc. (SEC filing)",
+    "published_date": "2026-10-29",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   }
+  ],
+  "answer": "Rivian has no parent company: Rivian Automotive, Inc. is an independent, publicly traded company. Volkswagen and Amazon are shareholders, not Rivian\u2019s parent companies.",
+  "caveats": [
+   "The explicit no-parent statement comes from an undated secondary source. Rivian\u2019s October 29, 2026 filing separately describes Volkswagen as an investor and joint-venture partner."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": null,
+    "source_url": "https://evseekers.com/who-makes-rivian",
+    "fact": "Rivian Automotive, Inc. is independent and publicly traded, with no parent company."
+   },
+   {
+    "date": null,
+    "source_url": "https://evseekers.com/who-makes-rivian",
+    "fact": "Volkswagen and Amazon are shareholders rather than parent companies."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "Rivian Automotive, Inc. is an independent, publicly traded company, not a subsidiary.",
+      "Volkswagen and Amazon are major shareholders, not parent companies."
+     ]
+    },
+    {
+     "title": "rivn-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+     "excerpts": [
+      "We have entered into a joint venture with Volkswagen Group and Volkswagen Group has committed to additional equity investments, subject to certain conditions, including the achievement of certain milestones and obtaining regulatory clearances.",
+      "|Dated: October 29, 2026 | | | | | | | | |(Principal Executive Officer) | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "The passages reproduce the independence, shareholder and joint-venture statements. The filing is dated October 29, 2026; no explicit publication date was found for EVSeekers.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "Rivian Automotive, Inc. is an independent, publicly traded company, not a subsidiary.",
+      "It has no parent company and is not a badge-engineered version of another brand\u2019s vehicle.",
+      "Volkswagen and Amazon are major shareholders, not parent companies."
+     ]
+    }
+   ],
+   "reasoning": "The source explicitly states that Rivian is independent, has no parent company, and counts Volkswagen and Amazon as shareholders rather than parents. The direct no-parent wording is from an undated secondary source.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "It has no parent company and is not a badge-engineered version of another brand\u2019s vehicle."
+     ]
+    },
+    {
+     "title": "rivn-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+     "excerpts": [
+      "We have entered into a joint venture with Volkswagen Group and Volkswagen Group has committed to additional equity investments, subject to certain conditions, including the achievement of certain milestones and obtaining regulatory clearances.",
+      "|Dated: October 29, 2026 | | | | | | | | |(Principal Executive Officer) | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "The explicit no-parent statement is in EVSeekers. The dated primary filing instead describes Volkswagen's investment and joint venture; the secondary source's publication date was not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No explicit EVSeekers publication date was established from the page, so both associated passage dates remain null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The date is the user-specified current assessment date, not a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "Rivian Automotive, Inc. is an independent, publicly traded company, not a subsidiary.",
+      "It has no parent company and is not a badge-engineered version of another brand\u2019s vehicle.",
+      "Volkswagen and Amazon are major shareholders, not parent companies."
+     ]
+    }
+   ],
+   "reasoning": "The two facts reflect the source's explicit corporate-status and shareholder statements. Dates remain null because the page's publication date was unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "Rivian Automotive, Inc. is an independent, publicly traded company, not a subsidiary."
+     ]
+    }
+   ],
+   "reasoning": "Exact statement identifying Rivian as independent and publicly traded; publication date was not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "Volkswagen and Amazon are major shareholders, not parent companies."
+     ]
+    }
+   ],
+   "reasoning": "Exact statement distinguishing shareholders from parent companies; publication date was not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "rivn-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+     "excerpts": [
+      "We have entered into a joint venture with Volkswagen Group and Volkswagen Group has committed to additional equity investments, subject to certain conditions, including the achievement of certain milestones and obtaining regulatory clearances.",
+      "|Dated: October 29, 2026 | | | | | | | | |(Principal Executive Officer) | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "The primary filing supplies the quoted investment and joint-venture statement and its October 29, 2026 date.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "It has no parent company and is not a badge-engineered version of another brand\u2019s vehicle."
+     ]
+    },
+    {
+     "title": "rivn-20260930",
+     "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+     "excerpts": [
+      "We have entered into a joint venture with Volkswagen Group and Volkswagen Group has committed to additional equity investments, subject to certain conditions, including the achievement of certain milestones and obtaining regulatory clearances.",
+      "|Dated: October 29, 2026 | | | | | | | | |(Principal Executive Officer) | | | | | |"
+     ]
+    }
+   ],
+   "reasoning": "Separates the secondary source's explicit no-parent statement from the dated primary filing's narrower description of Volkswagen's relationship.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "An explicit publication date was not found for the first EVSeekers passage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "The second passage comes from the same undated EVSeekers page.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "Rivian Automotive, Inc. is an independent, publicly traded company, not a subsidiary.",
+      "It has no parent company and is not a badge-engineered version of another brand\u2019s vehicle."
+     ]
+    }
+   ],
+   "reasoning": "Both independence and absence of a parent are explicitly stated by the secondary source.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Who makes Rivian? Ownership and plants explained",
+     "url": "https://evseekers.com/who-makes-rivian",
+     "excerpts": [
+      "Volkswagen and Amazon are major shareholders, not parent companies."
+     ]
+    }
+   ],
+   "reasoning": "The source explicitly identifies Volkswagen and Amazon as shareholders rather than parents.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Rivian?",
+ "input_n": 46,
+ "completed_on": "2026-11-11"
+}

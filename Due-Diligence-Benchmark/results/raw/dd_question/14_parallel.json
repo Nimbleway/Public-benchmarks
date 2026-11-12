@@ -1,0 +1,327 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b698317b23d13911dc1",
+ "status": "completed",
+ "seconds": 138,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Uber's valuation?",
+  "passages": [
+   {
+    "quote": "As of 11/11/2026, Uber Technologies's market capitalization has reached $143.03 B.",
+    "publisher": "MarketCapWatch",
+    "published_date": null,
+    "source_url": "https://www.marketcapwatch.com/company/uber-marketcap"
+   },
+   {
+    "quote": "Market capitalization, also called net worth, is the total value of all of a company's outstanding shares. It is calculated by multiplying the stock price by the number of shares outstanding.",
+    "publisher": "Stock Analysis",
+    "published_date": null,
+    "source_url": "https://stockanalysis.com/stocks/uber/market-cap/"
+   },
+   {
+    "quote": "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026.",
+    "publisher": "WallStreetZen",
+    "published_date": null,
+    "source_url": "https://www.wallstreetzen.com/stocks/us/nyse/uber"
+   }
+  ],
+  "answer": "Uber Technologies (NYSE: UBER) has an estimated valuation of approximately US$143.03 billion by market capitalization as of November 11, 2026, according to MarketCapWatch. This measures the market value of its outstanding shares\u2014not its enterprise value or a potential acquisition price.",
+  "caveats": [
+   "The November 11 figure is a third-party estimate without an intraday timestamp, not a guaranteed live quote.",
+   "Providers report different dated snapshots: WallStreetZen lists US$145.32 billion as of November 10, 2026."
+  ],
+  "missing_fields": [
+   "passages[0].published_date",
+   "passages[1].published_date",
+   "passages[2].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.marketcapwatch.com/company/uber-marketcap",
+    "fact": "Uber Technologies' estimated market capitalization was US$143.03 billion."
+   },
+   {
+    "date": null,
+    "source_url": "https://stockanalysis.com/stocks/uber/market-cap/",
+    "fact": "Market capitalization is the value of outstanding shares, calculated as share price multiplied by shares outstanding."
+   },
+   {
+    "date": "2026-11-10",
+    "source_url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+    "fact": "WallStreetZen reported Uber's market capitalization at US$145.32 billion."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; valuation is interpreted as public-equity market capitalization.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "As of 11/11/2026, Uber Technologies's market capitalization has reached $143.03 B."
+     ]
+    },
+    {
+     "title": "Uber Technologies (UBER) Market Cap & Net Worth",
+     "url": "https://stockanalysis.com/stocks/uber/market-cap/",
+     "excerpts": [
+      "Market capitalization, also called net worth, is the total value of all of a company's outstanding shares. It is calculated by multiplying the stock price by the number of shares outstanding."
+     ]
+    },
+    {
+     "title": "Uber Stock Price Today (NYSE: UBER) Quote, Market Cap, Chart | WallStreetZen",
+     "url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+     "excerpts": [
+      "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026."
+     ]
+    }
+   ],
+   "reasoning": "These passages directly supply the latest dated valuation, the definition of market capitalization, and the previous-day comparison. Publication dates were not established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "As of 11/11/2026, Uber Technologies (including the parent company, if applicable) has an estimated market capitalization of **$143.03 B USD** ."
+     ]
+    },
+    {
+     "title": "Uber Stock Price Today (NYSE: UBER) Quote, Market Cap, Chart | WallStreetZen",
+     "url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+     "excerpts": [
+      "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026."
+     ]
+    },
+    {
+     "title": "Uber Technologies (UBER) Market Cap & Net Worth",
+     "url": "https://stockanalysis.com/stocks/uber/market-cap/",
+     "excerpts": [
+      "Market capitalization, also called net worth, is the total value of all of a company's outstanding shares. It is calculated by multiplying the stock price by the number of shares outstanding."
+     ]
+    }
+   ],
+   "reasoning": "MarketCapWatch explicitly reports an estimated US$143.03 billion capitalization dated November 11, 2026. WallStreetZen identifies the NYSE ticker. The definition limits this valuation to outstanding equity rather than enterprise or acquisition value. The valuation is a third-party estimate.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "As of 11/11/2026, Uber Technologies (including the parent company, if applicable) has an estimated market capitalization of **$143.03 B USD** ."
+     ]
+    },
+    {
+     "title": "Uber Stock Price Today (NYSE: UBER) Quote, Market Cap, Chart | WallStreetZen",
+     "url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+     "excerpts": [
+      "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The latest source labels the figure an estimate and supplies a date rather than an intraday timestamp. The other provider reports a different figure for the previous day.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The opened pages provided valuation or update dates, but original publication dates for these passages were not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "Data Updated: 11/11/2026"
+     ]
+    }
+   ],
+   "reasoning": "The latest valuation page explicitly states that its data was updated November 11, 2026.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "As of 11/11/2026, Uber Technologies (including the parent company, if applicable) has an estimated market capitalization of **$143.03 B USD** ."
+     ]
+    },
+    {
+     "title": "Uber Technologies (UBER) Market Cap & Net Worth",
+     "url": "https://stockanalysis.com/stocks/uber/market-cap/",
+     "excerpts": [
+      "Market capitalization, also called net worth, is the total value of all of a company's outstanding shares. It is calculated by multiplying the stock price by the number of shares outstanding."
+     ]
+    },
+    {
+     "title": "Uber Stock Price Today (NYSE: UBER) Quote, Market Cap, Chart | WallStreetZen",
+     "url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+     "excerpts": [
+      "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026."
+     ]
+    }
+   ],
+   "reasoning": "Each fact reproduces a directly stated value, date, or definition from an opened page.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "As of 11/11/2026, Uber Technologies's market capitalization has reached $143.03 B."
+     ]
+    }
+   ],
+   "reasoning": "Exact dated market-cap quotation from MarketCapWatch; publication date is unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Uber Technologies (UBER) Market Cap & Net Worth",
+     "url": "https://stockanalysis.com/stocks/uber/market-cap/",
+     "excerpts": [
+      "Market capitalization, also called net worth, is the total value of all of a company's outstanding shares. It is calculated by multiplying the stock price by the number of shares outstanding."
+     ]
+    }
+   ],
+   "reasoning": "The two consecutive sentences define market capitalization and its calculation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "Uber Stock Price Today (NYSE: UBER) Quote, Market Cap, Chart | WallStreetZen",
+     "url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+     "excerpts": [
+      "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026."
+     ]
+    }
+   ],
+   "reasoning": "Exact WallStreetZen quotation containing the ticker, value, and valuation date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "As of 11/11/2026, Uber Technologies (including the parent company, if applicable) has an estimated market capitalization of **$143.03 B USD** ."
+     ]
+    }
+   ],
+   "reasoning": "The source calls the valuation estimated and provides a date without a time; it does not establish a live quote.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.1",
+   "citations": [
+    {
+     "title": "Uber Stock Price Today (NYSE: UBER) Quote, Market Cap, Chart | WallStreetZen",
+     "url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+     "excerpts": [
+      "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026."
+     ]
+    }
+   ],
+   "reasoning": "Direct support for the alternate provider's previous-day snapshot.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "MarketCapWatch's data-update date was available, but an original publication date was not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "Stock Analysis's publication date was not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.2",
+   "citations": [],
+   "reasoning": "WallStreetZen supplied an update date, not a verified original publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Uber Technologies Market Cap ( UBER) & Global Rank",
+     "url": "https://www.marketcapwatch.com/company/uber-marketcap",
+     "excerpts": [
+      "As of 11/11/2026, Uber Technologies (including the parent company, if applicable) has an estimated market capitalization of **$143.03 B USD** ."
+     ]
+    }
+   ],
+   "reasoning": "Directly states the estimated capitalization, USD currency, and November 11 date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Uber Technologies (UBER) Market Cap & Net Worth",
+     "url": "https://stockanalysis.com/stocks/uber/market-cap/",
+     "excerpts": [
+      "Market capitalization, also called net worth, is the total value of all of a company's outstanding shares. It is calculated by multiplying the stock price by the number of shares outstanding."
+     ]
+    }
+   ],
+   "reasoning": "Directly defines the equity valuation measure and formula.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.2",
+   "citations": [
+    {
+     "title": "Uber Stock Price Today (NYSE: UBER) Quote, Market Cap, Chart | WallStreetZen",
+     "url": "https://www.wallstreetzen.com/stocks/us/nyse/uber",
+     "excerpts": [
+      "(NYSE: UBER) Uber's market cap is $145.32B, as of Nov 10, 2026."
+     ]
+    }
+   ],
+   "reasoning": "Directly states the November 10 market capitalization.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "What is Uber's valuation?",
+ "input_n": 14,
+ "completed_on": "2026-11-11"
+}

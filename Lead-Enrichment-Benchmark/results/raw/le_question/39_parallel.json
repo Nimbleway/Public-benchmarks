@@ -1,0 +1,225 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b699df975f16868649e",
+ "status": "completed",
+ "seconds": 86,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is the parent company of Saks?",
+  "passages": [
+   {
+    "quote": "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman.",
+    "publisher": "Exemplar Luxury Group",
+    "published_date": null,
+    "source_url": "https://www.saksglobal.com/company"
+   },
+   {
+    "quote": "Exemplar Luxury Group, formerly Saks Global, is the luxury collective that comprises iconic luxury retailers, Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman.",
+    "publisher": "PR Newswire",
+    "published_date": "2026-06-26",
+    "source_url": "https://www.saksglobal.com/2026-06-26-Saks-Global-Successfully-Emerges-as-Exemplar-Luxury-Group-Offering-Unrivaled-Customer-Experiences-Across-Neiman-Marcus,-Saks-Fifth-Avenue-and-Bergdorf-Goodman"
+   }
+  ],
+  "answer": "As of November 11, 2026, Saks (Saks Fifth Avenue) is part of Exemplar Luxury Group, its parent company. The group was formerly known as Saks Global.",
+  "caveats": [
+   "\u201cSaks\u201d is interpreted here as Saks Fifth Avenue."
+  ],
+  "missing_fields": [
+   "passages[0].published_date: No publication or update date was shown on the company page."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.saksglobal.com/company",
+    "fact": "The current official company page identifies Exemplar Luxury Group as the group encompassing Saks Fifth Avenue."
+   },
+   {
+    "date": "2026-06-26",
+    "source_url": "https://www.saksglobal.com/2026-06-26-Saks-Global-Successfully-Emerges-as-Exemplar-Luxury-Group-Offering-Unrivaled-Customer-Experiences-Across-Neiman-Marcus,-Saks-Fifth-Avenue-and-Bergdorf-Goodman",
+    "fact": "The company's release identifies Exemplar Luxury Group as formerly Saks Global."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Exemplar Luxury Group | Company",
+     "url": "https://www.saksglobal.com/company",
+     "excerpts": [
+      "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    },
+    {
+     "title": "Saks Global Successfully Emerges as Exemplar Luxury Group Offering Unrivaled Customer Experiences Across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman - Jun 26, 2026",
+     "url": "https://www.saksglobal.com/2026-06-26-Saks-Global-Successfully-Emerges-as-Exemplar-Luxury-Group-Offering-Unrivaled-Customer-Experiences-Across-Neiman-Marcus,-Saks-Fifth-Avenue-and-Bergdorf-Goodman",
+     "excerpts": [
+      "**About Exemplar Luxury Group** Exemplar Luxury Group, formerly Saks Global, is the luxury collective that comprises iconic luxury retailers, Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman.",
+      "NEW YORK , June 26, 2026 / [PRNewswire](http://www.prnewswire.com/) / -- Exemplar Luxury Group (\"ELG\" or the \"Company\"), formerly Saks Global"
+     ]
+    }
+   ],
+   "reasoning": "The official company description and release provide the quoted language. The release dateline supplies June 26, 2026 and the PRNewswire attribution; the company page is undated.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Exemplar Luxury Group | Company",
+     "url": "https://www.saksglobal.com/company",
+     "excerpts": [
+      "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    },
+    {
+     "title": "Saks Global Successfully Emerges as Exemplar Luxury Group Offering Unrivaled Customer Experiences Across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman - Jun 26, 2026",
+     "url": "https://www.saksglobal.com/2026-06-26-Saks-Global-Successfully-Emerges-as-Exemplar-Luxury-Group-Offering-Unrivaled-Customer-Experiences-Across-Neiman-Marcus,-Saks-Fifth-Avenue-and-Bergdorf-Goodman",
+     "excerpts": [
+      "**About Exemplar Luxury Group** Exemplar Luxury Group, formerly Saks Global, is the luxury collective that comprises iconic luxury retailers, Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    }
+   ],
+   "reasoning": "Both official descriptions place Saks Fifth Avenue within Exemplar Luxury Group and explicitly identify Saks Global as its former name. The answer interprets the user's shorthand Saks as Saks Fifth Avenue.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Exemplar Luxury Group | Company",
+     "url": "https://www.saksglobal.com/company",
+     "excerpts": [
+      "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    }
+   ],
+   "reasoning": "The cited company description names Saks Fifth Avenue specifically, so the caveat makes the entity interpretation explicit.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The opened company page did not display a publication or update date; this absence is reported rather than supplying an inferred date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "Uses the task's specified current date as the research cutoff, not as a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Exemplar Luxury Group | Company",
+     "url": "https://www.saksglobal.com/company",
+     "excerpts": [
+      "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    },
+    {
+     "title": "Saks Global Successfully Emerges as Exemplar Luxury Group Offering Unrivaled Customer Experiences Across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman - Jun 26, 2026",
+     "url": "https://www.saksglobal.com/2026-06-26-Saks-Global-Successfully-Emerges-as-Exemplar-Luxury-Group-Offering-Unrivaled-Customer-Experiences-Across-Neiman-Marcus,-Saks-Fifth-Avenue-and-Bergdorf-Goodman",
+     "excerpts": [
+      "NEW YORK , June 26, 2026 / [PRNewswire](http://www.prnewswire.com/) / -- Exemplar Luxury Group (\"ELG\" or the \"Company\"), formerly Saks Global"
+     ]
+    }
+   ],
+   "reasoning": "The current company page establishes the group relationship. The dated release establishes the former corporate name.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Exemplar Luxury Group | Company",
+     "url": "https://www.saksglobal.com/company",
+     "excerpts": [
+      "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    }
+   ],
+   "reasoning": "The quotation reproduces the official company's description; no publication date was displayed.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Saks Global Successfully Emerges as Exemplar Luxury Group Offering Unrivaled Customer Experiences Across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman - Jun 26, 2026",
+     "url": "https://www.saksglobal.com/2026-06-26-Saks-Global-Successfully-Emerges-as-Exemplar-Luxury-Group-Offering-Unrivaled-Customer-Experiences-Across-Neiman-Marcus,-Saks-Fifth-Avenue-and-Bergdorf-Goodman",
+     "excerpts": [
+      "**About Exemplar Luxury Group** Exemplar Luxury Group, formerly Saks Global, is the luxury collective that comprises iconic luxury retailers, Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman.",
+      "NEW YORK , June 26, 2026 / [PRNewswire](http://www.prnewswire.com/) / -- Exemplar Luxury Group (\"ELG\" or the \"Company\"), formerly Saks Global"
+     ]
+    }
+   ],
+   "reasoning": "The release's company description supplies the exact quotation, while its dateline supplies the date and PRNewswire attribution.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Exemplar Luxury Group | Company",
+     "url": "https://www.saksglobal.com/company",
+     "excerpts": [
+      "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    }
+   ],
+   "reasoning": "The source explicitly identifies Saks Fifth Avenue, supporting the stated scope of the answer rather than resolving every possible business named Saks.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The company-page reading found no publication or update date, so that metadata field remains null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Exemplar Luxury Group | Company",
+     "url": "https://www.saksglobal.com/company",
+     "excerpts": [
+      "Exemplar Luxury Group, formerly Saks Global, is the luxury collective uniting coveted brands with unrivaled customer experiences across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman."
+     ]
+    }
+   ],
+   "reasoning": "The current official page directly includes Saks Fifth Avenue within Exemplar Luxury Group. The date records the answer's current-information cutoff.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Saks Global Successfully Emerges as Exemplar Luxury Group Offering Unrivaled Customer Experiences Across Neiman Marcus, Saks Fifth Avenue and Bergdorf Goodman - Jun 26, 2026",
+     "url": "https://www.saksglobal.com/2026-06-26-Saks-Global-Successfully-Emerges-as-Exemplar-Luxury-Group-Offering-Unrivaled-Customer-Experiences-Across-Neiman-Marcus,-Saks-Fifth-Avenue-and-Bergdorf-Goodman",
+     "excerpts": [
+      "NEW YORK , June 26, 2026 / [PRNewswire](http://www.prnewswire.com/) / -- Exemplar Luxury Group (\"ELG\" or the \"Company\"), formerly Saks Global"
+     ]
+    }
+   ],
+   "reasoning": "The June 26, 2026 release directly states that Exemplar Luxury Group was formerly Saks Global.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Saks?",
+ "input_n": 39,
+ "completed_on": "2026-11-11"
+}

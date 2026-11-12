@@ -1,0 +1,654 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 20,
+ "task": "What is Best Buy's annual revenue?",
+ "labels": {
+  "gpt": "A",
+  "parallel": "B",
+  "exa": "C",
+  "firecrawl": "D",
+  "nimble": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 7,
+ "evidence_fetched": 7,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Best Buy's revenue for fiscal 2026 (fiscal year ended January 31, 2026) was $41,691 million (~$41.69 billion).",
+   "asserted_by": [
+    "E",
+    "C",
+    "B",
+    "D",
+    "A",
+    "F"
+   ],
+   "variants": {
+    "E": "Best Buy's enterprise revenue for fiscal 2026 (52 weeks ended January 31, 2026) was $41,691 million (~$41.69 billion).",
+    "C": "Best Buy reported total revenue of $41,691 million (about $41.7 billion) for fiscal 2026, the fiscal year ended January 31, 2026.",
+    "B": "Best Buy Co., Inc. reported enterprise revenue of $41,691 million (US$41.691 billion) for fiscal 2026, ended January 31, 2026, its latest reported annual revenue as of November 11, 2026.",
+    "D": "Best Buy Co., Inc.'s annual revenue for the fiscal year ended January 31, 2026 was $41,691 million ($41.691 billion).",
+    "A": "Best Buy Co., Inc.'s consolidated revenue for fiscal 2026 (ended January 31, 2026) was $41.691 billion, its latest reported annual revenue.",
+    "F": "Best Buy's fiscal 2026 revenue (twelve months ended January 31, 2026) was $41.691 billion."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+    "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+    "http://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "https://seekingalpha.com/pr/20421148"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Fiscal 2026 is Best Buy's latest/most recent reported full fiscal year's annual revenue.",
+   "asserted_by": [
+    "A",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "A": "...its latest reported annual revenue.",
+    "B": "...its latest reported annual revenue as of November 11, 2026.",
+    "F": "Best Buy's fiscal 2026 is its most recent full fiscal year, ended January 31, 2026; fiscal 2027 ends around January 2027."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "http://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Best Buy's fiscal 2025 revenue was $41,528 million (~$41.5 billion).",
+   "asserted_by": [
+    "E",
+    "C",
+    "B",
+    "A",
+    "F"
+   ],
+   "variants": {
+    "E": "Best Buy's fiscal 2025 revenue was $41,528 million (~$41.53 billion).",
+    "C": "Best Buy reported total revenue of $41,528 million (about $41.5 billion) for fiscal 2025, the fiscal year ended February 1, 2025.",
+    "B": "Best Buy reported enterprise revenue of $41,528 million for the prior fiscal year (fiscal 2025), per the comparison column in the same release.",
+    "A": "Best Buy Co., Inc.'s consolidated revenue for fiscal 2025 (ended February 1, 2025) was $41.528 billion.",
+    "F": "Best Buy's fiscal 2025 revenue was $41.528 billion."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+    "http://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "https://seekingalpha.com/pr/20421148"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Best Buy's fiscal 2024 revenue was $43,452 million.",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "Best Buy's FY2024 revenue was $43,452 million.",
+    "C": "Best Buy reported revenue of $43,452 million in the fiscal year prior to fiscal 2025 (fiscal 2024)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+    "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Best Buy's FY2026 revenue grew 0.4% from FY2025.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's FY2026 revenue grew 0.4% from FY2025."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Best Buy's revenue declined 4.4% in FY2025 and 6.1% in FY2024.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's revenue declined 4.4% in FY2025 and 6.1% in FY2024."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Best Buy's comparable sales changed +0.5% in FY2026, -2.3% in FY2025, and -6.8% in FY2024.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's comparable sales changed +0.5% in FY2026, -2.3% in FY2025, and -6.8% in FY2024."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Best Buy's Domestic segment revenue was $38,278 million in FY2026 versus $38,238 million in FY2025.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's Domestic segment revenue was $38,278 million in FY2026 versus $38,238 million in FY2025."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Best Buy's International segment revenue was $3,413 million in FY2026 versus $3,290 million in FY2025.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's International segment revenue was $3,413 million in FY2026 versus $3,290 million in FY2025."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Best Buy's Q4 FY26 (13 weeks ended January 31, 2026) enterprise revenue was $13,814 million versus $13,948 million in Q4 FY25.",
+   "asserted_by": [
+    "E",
+    "B",
+    "F"
+   ],
+   "variants": {
+    "E": "Best Buy's Q4 FY26 enterprise revenue was $13,814 million versus $13,948 million in Q4 FY25.",
+    "B": "Best Buy's enterprise revenue for the Q4 FY26 13-week quarter was $13,814 million, versus $13,948 million in the prior-year quarter.",
+    "F": "Best Buy's fourth-quarter fiscal 2026 revenue was $13.814 billion. / Best Buy's fourth-quarter fiscal 2025 revenue was $13.948 billion."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "http://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "https://seekingalpha.com/pr/20421148"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Best Buy's Q4 FY26 Domestic segment revenue was $12,575 million versus $12,715 million in Q4 FY25, and International was $1,239 million versus $1,233 million.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's Q4 FY26 Domestic segment revenue was $12,575 million versus $12,715 million in Q4 FY25, and International was $1,239 million versus $1,233 million."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Best Buy's annual revenue declined in the three fiscal years before FY2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's annual revenue declined in the three fiscal years before FY2026."
+   },
+   "urls": [
+    "https://cnbc.com/2026/03/03/best-buy-bby-q4-2026-earnings.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Best Buy's fiscal 2027 revenue guidance/outlook is $41.2 billion to $42.1 billion.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Best Buy's FY2027 guidance (fiscal year ending late January 2027) is revenue of $41.2 billion to $42.1 billion.",
+    "F": "Best Buy's fiscal 2027 revenue outlook is $41.2 billion to $42.1 billion."
+   },
+   "urls": [
+    "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+    "https://seekingalpha.com/pr/20421148"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Best Buy issued its Q4 FY26 and full-year fiscal 2026 results on March 3, 2026.",
+   "asserted_by": [
+    "E",
+    "B"
+   ],
+   "variants": {
+    "E": "Best Buy's Q4 FY26 earnings release was issued March 3, 2026...",
+    "B": "Best Buy published its fourth-quarter (13 weeks ended January 31, 2026, Q4 FY26) and full-year fiscal 2026 results on March 3, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+    "http://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Best Buy's FY2026 Form 10-K was published around March 16, 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "...its FY2026 Form 10-K was published around March 16, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   ],
+   "conflicts_with": [
+    "c16"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "Best Buy's Form 10-K for the fiscal year ended January 31, 2026 was filed on March 18, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Best Buy Co., Inc.'s latest annual filing (Form 10-K for the fiscal year ended January 31, 2026) was filed on March 18, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm"
+   ],
+   "conflicts_with": [
+    "c15"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Best Buy's fiscal year ends in late January/early February, so FY2026 does not equal calendar 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Best Buy's fiscal year ends in late January/early February, so FY2026 does not equal calendar 2026."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "The $41,691 million figure is consolidated revenue for the completed fiscal year, not trailing-twelve-month revenue or a forecast.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The $41,691 million figure is consolidated revenue for the completed fiscal year, not trailing-twelve-month revenue or a forecast."
+   },
+   "urls": [
+    "http://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Best Buy's fiscal 2027 third-quarter results are expected in late November 2026, so a trailing-twelve-month revenue figure may differ slightly from the fiscal 2026 figure.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Best Buy's fiscal 2027 third-quarter results are expected in late November 2026, so a trailing-twelve-month revenue figure may differ slightly from the fiscal 2026 figure."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "The release and 10-K both show FY26 enterprise revenue of $41,691M, the latest full fiscal year as of 2026-11-11.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+   "note": "FY26 ended Jan 31, 2026 is the most recent completed fiscal year; FY27 ends around Jan 2027 and has not been reported.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "FY25 revenue was $41,528M per the release's comparison column.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+   "note": "FY24 revenue of $43,452M matches my knowledge of the 10-K; the saved passages do not show it directly.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "41,691 versus 41,528 is +0.39%, which rounds to 0.4%.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+   "note": "43,452 versus 41,528 is -4.4%, and 46,298 versus 43,452 is -6.1%; FY24 and FY23 figures are from my knowledge.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "The release gives +0.5% for FY26 and -2.3% for FY25; the -6.8% for FY24 matches my knowledge.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "Domestic revenue was 38,278 in FY26 versus 38,238 in FY25.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "International revenue was 3,413 in FY26 versus 3,290 in FY25.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "Q4 enterprise revenue was 13,814 versus 13,948.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "Q4 Domestic was 12,575 versus 12,715 and International 1,239 versus 1,233.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+   "note": "Revenue fell in FY23, FY24 and FY25 (51.8B to 46.3B to 43.5B to 41.5B), then rose slightly in FY26; FY23 is from my knowledge.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "The March 2026 guidance is $41.2B-$42.1B, but it may have been updated in later quarterly reports; none were in the evidence.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "The release is dated March 3, 2026.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+   "note": "The auditor's report is dated March 18, 2026, so the 10-K was filed on or after March 18, not around March 16.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "confidence": "medium",
+   "source": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000009/bby-20260131.htm",
+   "note": "The auditor's report is dated March 18, 2026, and credit ratings are stated as of March 16, which is consistent with a 10-K filed on March 18, though no passage states the filing date explicitly.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "confidence": "high",
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "FY26 ended January 31, 2026 and FY25 ended February 1, 2025, so the fiscal year does not match the calendar year.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "confidence": "high",
+   "source": "https://investors.bestbuy.com/News--Events/news/news-details/2026/Best-Buy-Reports-Fourth-Quarter-Results/default.aspx",
+   "note": "The Q4 release shows FY26 Enterprise revenue of $41,691M for the 52 weeks ended January 31, 2026 (FY25: $41,528M), which is the completed fiscal-year total and not a TTM figure or forecast.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "confidence": "medium",
+   "source": "https://www.retail-insight-network.com/?p=122234",
+   "note": "Best Buy typically reports Q3 in the last week of November (around Nov 25-26), so Q3 FY27 results are expected after today's date. No passage gives the date, and the FY27 guidance of $41.2-42.1bn supports the 'may differ slightly' caveat.",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "note": "The FY2026 10-K (bby-20260131) reports comparable sales of +0.5% for FY2026, -2.3% for FY2025 and -6.8% for FY2024. These match the claim. The 10-K applies one method to all three years. Earlier filings reported FY2025 and FY2024 under an older method (about -2.9% and -6.9%). FY2026 is the latest fu"
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 19,
+ "scores": {
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 53.75,
+   "coverage": 0.667,
+   "accuracy": 1.0,
+   "combined": 0.8,
+   "thorough_coverage": 0.391,
+   "answer_truth": 3,
+   "thoroughness": 0.562,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 53.75,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.623,
+   "answer_truth": 3,
+   "thoroughness": 0.768,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 53.75,
+   "coverage": 0.333,
+   "accuracy": 1.0,
+   "combined": 0.5,
+   "thorough_coverage": 0.233,
+   "answer_truth": 3,
+   "thoroughness": 0.377,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 53.75,
+   "coverage": 0.333,
+   "accuracy": 1.0,
+   "combined": 0.5,
+   "thorough_coverage": 0.177,
+   "answer_truth": 3,
+   "thoroughness": 0.3,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 1,
+   "truth": 18,
+   "truth_weight": 53.75,
+   "coverage": 0.333,
+   "accuracy": 0.985,
+   "combined": 0.498,
+   "thorough_coverage": 0.6,
+   "answer_truth": 3,
+   "thoroughness": 0.746,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 18,
+   "truth_weight": 53.75,
+   "coverage": 0.667,
+   "accuracy": 1.0,
+   "combined": 0.8,
+   "thorough_coverage": 0.54,
+   "answer_truth": 3,
+   "thoroughness": 0.701,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.488,
+ "corrections_v2": {
+  "units_before": 19,
+  "units_after": 19,
+  "dedup_groups": [],
+  "cost": 0.015
+ }
+}

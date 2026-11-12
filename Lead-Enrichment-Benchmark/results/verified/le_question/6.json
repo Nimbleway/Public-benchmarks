@@ -1,0 +1,541 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 6,
+ "task": "Who is Roblox's CEO?",
+ "labels": {
+  "exa": "A",
+  "firecrawl": "B",
+  "nimble": "C",
+  "gpt": "D",
+  "parallel": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 6,
+ "evidence_fetched": 6,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "David Baszucki is the CEO of Roblox.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "David Baszucki is the CEO of Roblox and is also the company's founder.",
+    "E": "David Baszucki is the CEO of Roblox.",
+    "F": "David Baszucki is the CEO of Roblox Corporation."
+   },
+   "urls": [
+    "https://about.roblox.com/leadership",
+    "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "David Baszucki is the founder of Roblox.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "David Baszucki is the CEO of Roblox and is also the company's founder.",
+    "E": "David Baszucki is the founder of Roblox.",
+    "F": "David Baszucki founded Roblox."
+   },
+   "urls": [
+    "https://about.roblox.com/leadership",
+    "https://about.roblox.com/newsroom/2026/11/david-baszucki-sits-down-with-bloxy-news"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Roblox's official leadership page lists David Baszucki as 'Founder and Chief Executive Officer'.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Roblox's official leadership page lists David Baszucki as 'Founder and Chief Executive Officer' (retrieved 2026-11-11).",
+    "D": "David Baszucki is Roblox's Founder and Chief Executive Officer.",
+    "F": "Roblox's official leadership page lists David Baszucki as \"Founder and Chief Executive Officer.\""
+   },
+   "urls": [
+    "https://about.roblox.com/leadership"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "A Roblox newsroom article published November 9, 2026 identifies David Baszucki as founder and CEO of Roblox.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "A Roblox newsroom post published November 9, 2026 refers to 'Roblox Founder and CEO David Baszucki,' confirming he was still CEO as of that date.",
+    "E": "A Roblox newsroom article published November 9, 2026 identifies David Baszucki as founder and CEO of Roblox."
+   },
+   "urls": [
+    "https://about.roblox.com/newsroom/2026/11/david-baszucki-sits-down-with-bloxy-news"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "In October 2026, Roblox Founder and CEO David Baszucki sat down with Bloxz of Bloxy News for an interview.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "In October 2026, Roblox Founder and CEO David Baszucki sat down with Bloxz of Bloxy News for an interview."
+   },
+   "urls": [
+    "https://about.roblox.com/newsroom/2026/11/david-baszucki-sits-down-with-bloxy-news"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "David Baszucki co-founded Roblox, which was originally Knowledge Revolution and later became Roblox Corporation, and has led it since its founding.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "David Baszucki co-founded Roblox, which was originally Knowledge Revolution and later became Roblox Corporation, and has led it since its founding."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "David Baszucki is Roblox's co-founder, president, and chair of the board.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "David Baszucki is Roblox's co-founder, president, and chair of the board."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Roblox's Q3 2026 quarterly filing (period ended September 30, 2026), filed October 29, 2026, identifies Baszucki as Founder, President, CEO, and Chair of the Board.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Roblox's quarterly filing (Q3 2026, period ended September 30, 2026) was filed October 29, 2026 and identifies Baszucki as Founder, President, CEO, and Chair of the Board."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Roblox's dual class stock structure concentrates voting control in David Baszucki.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Roblox's dual class stock structure concentrates voting control in David Baszucki."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Roblox's Q3 2026 earnings call, dated October 29, 2026, identified David Baszucki as Co-Founder and CEO.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Roblox's Q3 2026 earnings call, dated October 29, 2026, identified David Baszucki as Co-Founder and CEO."
+   },
+   "urls": [
+    "https://s27.q4cdn.com/984876518/files/content_files/Roblox-Q3-2026-Earnings-Conference-Call-Transcript_.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Naveen Chopra is Roblox's Chief Financial Officer, as stated on the Q3 2026 earnings call.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Naveen Chopra is Roblox's Chief Financial Officer, as stated on the Q3 2026 earnings call."
+   },
+   "urls": [
+    "https://s27.q4cdn.com/984876518/files/content_files/Roblox-Q3-2026-Earnings-Conference-Call-Transcript_.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "David Baszucki has served as Roblox's CEO since March 2004, according to Roblox's investor-relations board of directors page.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "David Baszucki has served as Roblox's Chief Executive Officer since March 2004, according to Roblox's investor-relations board of directors page."
+   },
+   "urls": [
+    "https://ir.roblox.com/governance/board-of-directors/default.aspx",
+    "https://www.boardroomalpha.com/sec/rblx-def-14a-2026-04-16-0001104659-26-044362"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Roblox's 2026 proxy statement (DEF 14A) was filed April 16, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Roblox's 2026 proxy statement (DEF 14A) was filed April 16, 2026."
+   },
+   "urls": [
+    "https://www.boardroomalpha.com/sec/rblx-def-14a-2026-04-16-0001104659-26-044362"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "According to Roblox's 2026 proxy statement, David Baszucki currently serves as both Chair of the Board and CEO of Roblox.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "According to Roblox's 2026 proxy statement, David Baszucki currently serves as both Chair of the Board and CEO of Roblox."
+   },
+   "urls": [
+    "https://www.boardroomalpha.com/sec/rblx-def-14a-2026-04-16-0001104659-26-044362"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://about.roblox.com/leadership",
+   "note": "Leadership page, the Nov 9 2026 newsroom post and the Q3 2026 10-Q all list Baszucki as CEO; variants C, E and F are all consistent.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "E": "true",
+    "F": "true",
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://about.roblox.com/leadership",
+   "note": "Roblox pages and the proxy describe him as Founder; the fact is background context, not the answer.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://about.roblox.com/leadership",
+   "note": "The leadership page lists 'David Baszucki, Founder and Chief Executive Officer'.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://about.roblox.com/newsroom/2026/11/david-baszucki-sits-down-with-bloxy-news",
+   "note": "Newsroom post published Nov 9, 2026 says 'Roblox Founder and CEO David Baszucki'.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://about.roblox.com/newsroom/2026/11/david-baszucki-sits-down-with-bloxy-news",
+   "note": "Post states the interview took place in October, with Bloxz of Bloxy News.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.boardroomalpha.com/sec/rblx-def-14a-2026-04-16-0001104659-26-044362",
+   "note": "Proxy shows he founded Knowledge Revolution with his brother and has been CEO since March 2004, and the interview says Roblox grew out of that company. The claim that Knowledge Revolution 'became' Roblox Corporation is loosely worded, since Roblox was a separate company, but it does not change the c",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm",
+   "note": "Filing lists Founder, President, CEO and Chair of the Board; 'co-founder' is supported by the interview naming his brother Greg and Erik Cassel as early collaborators.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm",
+   "note": "10-Q for period ended Sep 30, 2026 identifies him as Founder, President, CEO and Chair; the Oct 29 filing date is consistent with the earnings call date.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm",
+   "note": "Risk factor says the dual class structure concentrates voting control in Baszucki; proxy shows 58.8% of total voting power.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://s27.q4cdn.com/984876518/files/content_files/Roblox-Q3-2026-Earnings-Conference-Call-Transcript_.pdf",
+   "note": "The Q3 2026 call transcript was dated Oct 29, 2026, but the saved passage is raw PDF metadata with no readable text. CEO status is confirmed by the 10-Q and newsroom, and Founder/CEO fits his title.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://about.roblox.com/leadership",
+   "note": "Leadership page lists Naveen Chopra as CFO, and the proxy confirms his appointment on June 30, 2025; the earnings call attribution could not be read.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.boardroomalpha.com/sec/rblx-def-14a-2026-04-16-0001104659-26-044362",
+   "note": "Proxy says he has served as CEO since March 2004; the cited IR board page was not directly shown, but the proxy supports the fact.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.boardroomalpha.com/sec/rblx-def-14a-2026-04-16-0001104659-26-044362",
+   "note": "Page states DEF 14A filed April 16, 2026.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.boardroomalpha.com/sec/rblx-def-14a-2026-04-16-0001104659-26-044362",
+   "note": "The 2026 proxy names David Baszucki as Founder, President, CEO and Chair of the Board, and the Sept 30, 2026 10-Q and a Nov 9, 2026 Roblox newsroom post still call him CEO.",
+   "confidence": "high",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "note": "The EDGAR filing 0001628280-26-068253 is the 10-Q for the quarter ended 9/30/2026, posted 10/29/2026. Exhibit 31.1, signed by Baszucki on Oct 29, 2026, gives his title as President and CEO. The 2026 proxy lists him as Founder, President, CEO and Chair. I couldn't read the 10-Q's own signature page ("
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "The official transcript PDF returned no readable text, so this rests on secondary sources. Press coverage dates the Q3 2026 call to Oct 29, 2026, and MarketBeat's transcript article calls Baszucki 'Co-founder and CEO'."
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "note": "The 2026 DEF 14A (filed 4/16/2026) says Baszucki 'currently serves as both Chair of the Board and CEO'. His Oct 2026 certification as CEO shows this was still current."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 16,
+ "scores": {
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 40.0,
+   "coverage": 0.455,
+   "accuracy": 1.0,
+   "combined": 0.625,
+   "thorough_coverage": 0.431,
+   "answer_truth": 7,
+   "thoroughness": 0.603,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 40.0,
+   "coverage": 0.364,
+   "accuracy": 1.0,
+   "combined": 0.533,
+   "thorough_coverage": 0.3,
+   "answer_truth": 7,
+   "thoroughness": 0.462,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 40.0,
+   "coverage": 0.455,
+   "accuracy": 1.0,
+   "combined": 0.625,
+   "thorough_coverage": 0.481,
+   "answer_truth": 7,
+   "thoroughness": 0.65,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 1,
+   "unverifiable": 0,
+   "true": 1,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 40.0,
+   "coverage": 0.091,
+   "accuracy": 1.0,
+   "combined": 0.167,
+   "thorough_coverage": 0.075,
+   "answer_truth": 7,
+   "thoroughness": 0.14,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 40.0,
+   "coverage": 0.364,
+   "accuracy": 1.0,
+   "combined": 0.533,
+   "thorough_coverage": 0.375,
+   "answer_truth": 7,
+   "thoroughness": 0.545,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 14,
+   "truth_weight": 40.0,
+   "coverage": 0.727,
+   "accuracy": 1.0,
+   "combined": 0.842,
+   "thorough_coverage": 0.688,
+   "answer_truth": 7,
+   "thoroughness": 0.815,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.627,
+ "corrections_v2": {
+  "units_before": 16,
+  "units_after": 14,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c15"
+    ]
+   }
+  ],
+  "cost": 0.016
+ }
+}

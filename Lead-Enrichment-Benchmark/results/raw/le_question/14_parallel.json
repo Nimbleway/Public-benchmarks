@@ -1,0 +1,268 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69969d56d94cc2151a",
+ "status": "completed",
+ "seconds": 92,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Grainger's annual revenue?",
+  "passages": [
+   {
+    "quote": "|Total company net sales | | | | |$ |17,942 |",
+    "publisher": "W.W. Grainger, Inc.",
+    "published_date": "2026-02-19",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm"
+   },
+   {
+    "quote": "The following is revenue by geographic location (in millions of dollars):",
+    "publisher": "W.W. Grainger, Inc.",
+    "published_date": "2026-02-19",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm"
+   },
+   {
+    "quote": "For the fiscal year ended December 31 , 2025",
+    "publisher": "W.W. Grainger, Inc.",
+    "published_date": "2026-02-19",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm"
+   }
+  ],
+  "answer": "W.W. Grainger, Inc.\u2019s annual revenue was US$17.942 billion for the fiscal year ended December 31, 2025. As of November 11, 2026, this is its latest reported full-year revenue, which the company reports as \u201cnet sales.\u201d",
+  "caveats": [
+   "This is completed fiscal-year revenue, not 2026 year-to-date sales or trailing-twelve-month revenue."
+  ],
+  "missing_fields": [],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2025-12-31",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+    "fact": "Consolidated net sales for fiscal 2025 were US$17,942 million, equivalent to US$17.942 billion."
+   },
+   {
+    "date": "2026-02-19",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+    "fact": "Grainger filed its fiscal 2025 annual report on February 19, 2026."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; the entity is interpreted as W.W. Grainger, consistent with the supplied research context.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "gww-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+     "excerpts": [
+      "|Total company net sales | | | | |$ |17,942 |",
+      "The following is revenue by geographic location (in millions of dollars):",
+      "For the fiscal year ended December 31 , 2025"
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v2/company/filings",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "gov/Archives/edgar/data/277135/000027713526000076/gww8kex991q22026.htm filingId: 0001104659-26-089478; documentType: Current Report; secFormType: 8-K; filingDate: 2026-08-03; pdfUrl: https://api.fiscal.ai/v1/filing/0001104659-26-089478/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/277135/000110465926089478/tm2621790d1_8k.htm filingId: 0000277135-26-000056; documentType: Current Report; secFormType: 8-K; filingDate: 2026-05-07; pdfUrl: https://api.fiscal.ai/v1/filing/0000277135-26-000056/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/27"
+     ]
+    }
+   ],
+   "reasoning": "The annual filing supplies the exact quoted total, monetary-unit description, and fiscal-year end. Filing metadata supplies the February 19, 2026 publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "gww-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+     "excerpts": [
+      "|Total company net sales | | | | |$ |17,942 |",
+      "The following is revenue by geographic location (in millions of dollars):",
+      "For the fiscal year ended December 31 , 2025"
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v1/company/financials/income-statement/standardized",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "periodId: 206_Annual_2025-12-31; periodType: Annual; reportDate: 2025-12-31; periodDuration: 12 Months; calendarYear: 2025; calendarQuarter: 4; fiscalYear: 2025; fiscalQuarter: 4; earningsDate: 2026-02-03; earningsTimeOfDay: 13:09:33Z; lastSourceFilingDate: 2026-02-19; lastSourceFilingTimeOfDay: 21:13:40Z; isRestated: True; metricsValues.income_statement_total_revenues.value: 17942000000; metricsValues.income_statement_total_revenues.unit: M; metricsValues.income_statement_total_revenues.currency: USD; metricsValues.income_statement_total_revenues.isCalculated: False; metricsValues.income_stat"
+     ]
+    }
+   ],
+   "reasoning": "The filing reports total company net sales of $17,942 million for fiscal 2025. Dividing millions by 1,000 yields $17.942 billion. The annual financial series identifies 2025 as the latest completed annual period.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Fiscal.ai /v1/company/financials/income-statement/standardized",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "periodId: 206_Annual_2025-12-31; periodType: Annual; reportDate: 2025-12-31; periodDuration: 12 Months; calendarYear: 2025; calendarQuarter: 4; fiscalYear: 2025; fiscalQuarter: 4; earningsDate: 2026-02-03; earningsTimeOfDay: 13:09:33Z; lastSourceFilingDate: 2026-02-19; lastSourceFilingTimeOfDay: 21:13:40Z; isRestated: True; metricsValues.income_statement_total_revenues.value: 17942000000; metricsValues.income_statement_total_revenues.unit: M; metricsValues.income_statement_total_revenues.currency: USD; metricsValues.income_statement_total_revenues.isCalculated: False; metricsValues.income_stat"
+     ]
+    }
+   ],
+   "reasoning": "The supporting revenue record explicitly identifies an annual period ending December 31, 2025, rather than a 2026 interim or trailing period.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No requested factual field is missing: revenue, fiscal period, source passages, source URL, publisher, and filing date were obtained.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The as-of date is the date explicitly supplied in the user's request.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "gww-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+     "excerpts": [
+      "|Total company net sales | | | | |$ |17,942 |"
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v1/company/financials/income-statement/standardized",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "periodId: 206_Annual_2025-12-31; periodType: Annual; reportDate: 2025-12-31; periodDuration: 12 Months; calendarYear: 2025; calendarQuarter: 4; fiscalYear: 2025; fiscalQuarter: 4; earningsDate: 2026-02-03; earningsTimeOfDay: 13:09:33Z; lastSourceFilingDate: 2026-02-19; lastSourceFilingTimeOfDay: 21:13:40Z; isRestated: True; metricsValues.income_statement_total_revenues.value: 17942000000; metricsValues.income_statement_total_revenues.unit: M; metricsValues.income_statement_total_revenues.currency: USD; metricsValues.income_statement_total_revenues.isCalculated: False; metricsValues.income_stat"
+     ]
+    }
+   ],
+   "reasoning": "The primary filing and annual financial record establish the fiscal-year revenue. Filing metadata links the fiscal 2025 annual report to its filing date and SEC source URL.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "gww-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+     "excerpts": [
+      "|Total company net sales | | | | |$ |17,942 |"
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v2/company/filings",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "gov/Archives/edgar/data/277135/000027713526000076/gww8kex991q22026.htm filingId: 0001104659-26-089478; documentType: Current Report; secFormType: 8-K; filingDate: 2026-08-03; pdfUrl: https://api.fiscal.ai/v1/filing/0001104659-26-089478/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/277135/000110465926089478/tm2621790d1_8k.htm filingId: 0000277135-26-000056; documentType: Current Report; secFormType: 8-K; filingDate: 2026-05-07; pdfUrl: https://api.fiscal.ai/v1/filing/0000277135-26-000056/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/27"
+     ]
+    }
+   ],
+   "reasoning": "The first quote reproduces the consolidated net-sales row; filing metadata establishes its publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "gww-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+     "excerpts": [
+      "The following is revenue by geographic location (in millions of dollars):"
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v2/company/filings",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "gov/Archives/edgar/data/277135/000027713526000076/gww8kex991q22026.htm filingId: 0001104659-26-089478; documentType: Current Report; secFormType: 8-K; filingDate: 2026-08-03; pdfUrl: https://api.fiscal.ai/v1/filing/0001104659-26-089478/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/277135/000110465926089478/tm2621790d1_8k.htm filingId: 0000277135-26-000056; documentType: Current Report; secFormType: 8-K; filingDate: 2026-05-07; pdfUrl: https://api.fiscal.ai/v1/filing/0000277135-26-000056/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/27"
+     ]
+    }
+   ],
+   "reasoning": "The second quote establishes the revenue table's units; filing metadata supplies the publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "gww-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+     "excerpts": [
+      "For the fiscal year ended December 31 , 2025"
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v2/company/filings",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "gov/Archives/edgar/data/277135/000027713526000076/gww8kex991q22026.htm filingId: 0001104659-26-089478; documentType: Current Report; secFormType: 8-K; filingDate: 2026-08-03; pdfUrl: https://api.fiscal.ai/v1/filing/0001104659-26-089478/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/277135/000110465926089478/tm2621790d1_8k.htm filingId: 0000277135-26-000056; documentType: Current Report; secFormType: 8-K; filingDate: 2026-05-07; pdfUrl: https://api.fiscal.ai/v1/filing/0000277135-26-000056/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/27"
+     ]
+    }
+   ],
+   "reasoning": "The third quote identifies the annual reporting period; filing metadata supplies the publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Fiscal.ai /v1/company/financials/income-statement/standardized",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "periodId: 206_Annual_2025-12-31; periodType: Annual; reportDate: 2025-12-31; periodDuration: 12 Months; calendarYear: 2025; calendarQuarter: 4; fiscalYear: 2025; fiscalQuarter: 4; earningsDate: 2026-02-03; earningsTimeOfDay: 13:09:33Z; lastSourceFilingDate: 2026-02-19; lastSourceFilingTimeOfDay: 21:13:40Z; isRestated: True; metricsValues.income_statement_total_revenues.value: 17942000000; metricsValues.income_statement_total_revenues.unit: M; metricsValues.income_statement_total_revenues.currency: USD; metricsValues.income_statement_total_revenues.isCalculated: False; metricsValues.income_stat"
+     ]
+    }
+   ],
+   "reasoning": "The record explicitly classifies this revenue as an annual, twelve-month fiscal 2025 figure.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "gww-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000011/gww-20251231.htm",
+     "excerpts": [
+      "|Total company net sales | | | | |$ |17,942 |",
+      "The following is revenue by geographic location (in millions of dollars):"
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v1/company/financials/income-statement/standardized",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "periodId: 206_Annual_2025-12-31; periodType: Annual; reportDate: 2025-12-31; periodDuration: 12 Months; calendarYear: 2025; calendarQuarter: 4; fiscalYear: 2025; fiscalQuarter: 4; earningsDate: 2026-02-03; earningsTimeOfDay: 13:09:33Z; lastSourceFilingDate: 2026-02-19; lastSourceFilingTimeOfDay: 21:13:40Z; isRestated: True; metricsValues.income_statement_total_revenues.value: 17942000000; metricsValues.income_statement_total_revenues.unit: M; metricsValues.income_statement_total_revenues.currency: USD; metricsValues.income_statement_total_revenues.isCalculated: False; metricsValues.income_stat"
+     ]
+    }
+   ],
+   "reasoning": "The consolidated total is $17,942 million, and the annual financial record identifies the period ending December 31, 2025. The billion-dollar equivalent is an exact unit conversion.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Fiscal.ai /v2/company/filings",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "gov/Archives/edgar/data/277135/000027713526000076/gww8kex991q22026.htm filingId: 0001104659-26-089478; documentType: Current Report; secFormType: 8-K; filingDate: 2026-08-03; pdfUrl: https://api.fiscal.ai/v1/filing/0001104659-26-089478/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/277135/000110465926089478/tm2621790d1_8k.htm filingId: 0000277135-26-000056; documentType: Current Report; secFormType: 8-K; filingDate: 2026-05-07; pdfUrl: https://api.fiscal.ai/v1/filing/0000277135-26-000056/pdf?companyKey=NYSE_GWW; sourceUrl: https://www.sec.gov/Archives/edgar/data/27"
+     ]
+    }
+   ],
+   "reasoning": "The filing metadata explicitly associates fiscal 2025's annual report and SEC URL with the February 19, 2026 filing date.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "What is Grainger's annual revenue?",
+ "input_n": 14,
+ "completed_on": "2026-11-11"
+}

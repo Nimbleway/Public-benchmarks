@@ -1,0 +1,269 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69bbf91f861b24fd7b",
+ "status": "completed",
+ "seconds": 146,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Has Walmart announced layoffs?",
+  "passages": [
+   {
+    "quote": "Effective Date\nAugust 21, 2026\nWARN Notice Filed\nJune 19, 2026\nEmployees Affected\n394",
+    "publisher": "WARN Tracker",
+    "published_date": null,
+    "source_url": "https://www.warntracker.com/layoff/walmart-2026-08-21"
+   },
+   {
+    "quote": "America's biggest retailer will lay off or relocate some 1,000 corporate employees as it seeks to streamline its operations, according to the Wall Street Journal.",
+    "publisher": "The Independent, via Yahoo Finance",
+    "published_date": "2026-05-13",
+    "source_url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html"
+   }
+  ],
+  "answer": "Yes\u2014Walmart has announced layoffs. As of November 11, 2026, the most recent notices I found were filed June 19, covering 394 employees in San Bruno and Sunnyvale, California, with layoffs effective August 21, 2026. Earlier, a May 13 report described an internal announcement to lay off or relocate approximately 1,000 corporate employees, affecting Walmart\u2019s global technology and product teams.",
+  "caveats": [
+   "The approximately 1,000-person figure includes relocations, not solely job losses.",
+   "The cited sources are secondary reporting and a WARN tracker, not a Walmart press release. Scheduled layoff dates do not establish how many separations ultimately occurred, and the search may not capture every subsequent workforce action."
+  ],
+  "missing_fields": [
+   "passages[0].published_date: WARN Tracker did not provide a verifiable publication date."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-06-19",
+    "source_url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+    "fact": "WARN Tracker lists Walmart notices covering 394 employees\u201488 in San Bruno and 306 in Sunnyvale\u2014with an effective layoff date of August 21, 2026."
+   },
+   {
+    "date": "2026-05-13",
+    "source_url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+    "fact": "The Independent reported that Walmart would lay off or relocate approximately 1,000 corporate employees, with its global technology and product teams affected, citing an internal memo."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; it is not an externally sourced factual claim.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Walmart Lays Off 394 Workers \u2014 2 locations WARN Notice August 2026",
+     "url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+     "excerpts": [
+      "Effective Date August 21, 2026 WARN Notice Filed June 19, 2026 Employees Affected 394"
+     ]
+    },
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ .",
+      "May 13, 2026 3 min read",
+      "[](http://www.independent.co.uk/ \"The Independent\")"
+     ]
+    }
+   ],
+   "reasoning": "The tracker supplies the quoted date/count labels. The news page supplies the complete layoff-or-relocation sentence, publication date, and original outlet identification. The tracker publication date was not available.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Walmart Lays Off 394 Workers \u2014 2 locations WARN Notice August 2026",
+     "url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+     "excerpts": [
+      "August 21, 2026 WARN Notice Filed June 19, 2026 Employees Affected 394 Locations San Bruno, CA (88) Sunnyvale, CA (306)"
+     ]
+    },
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "May 13, 2026 3 min read",
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ .",
+      "The layoffs will impact [Walmart's](https://finance.yahoo.com/markets/stocks/articles/meet-face-walmart-america-largest-134328478.html) global technology and product teams, according to an internal memo sent Tuesday."
+     ]
+    },
+    {
+     "title": "Walmart layoffs and job cuts: what\u2019s happening \u2014 Talent Risk",
+     "url": "https://talentrisk.com/companies/walmart",
+     "excerpts": [
+      "No announced or filed job cuts in the last 90 days. The label rests on earlier signs, under Events and sources."
+     ]
+    }
+   ],
+   "reasoning": "The WARN record directly supports the June filing, August effective date, affected count, and locations. The May article supports the earlier internal announcement, combined layoff/relocation count, and teams affected. The current tracker reports no new announcement or filing in its last-90-day coverage; consequently the answer qualifies recency as the most recent notices found rather than claiming exhaustive global coverage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ ."
+     ]
+    },
+    {
+     "title": "Walmart Lays Off 394 Workers \u2014 2 locations WARN Notice August 2026",
+     "url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+     "excerpts": [
+      "Effective Date August 21, 2026 WARN Notice Filed June 19, 2026 Employees Affected 394"
+     ]
+    }
+   ],
+   "reasoning": "The article explicitly combines layoffs with relocation. The tracker provides a notice and effective date, not a final completed-separations tally. The source-type and coverage limitations reflect the pages used and avoid treating secondary reporting as a company press release or an exhaustive record.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No verifiable publication date appeared on the opened WARN Tracker page, so that passage's publication date is null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The assessment date is the current date explicitly supplied in the task, not a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Walmart Lays Off 394 Workers \u2014 2 locations WARN Notice August 2026",
+     "url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+     "excerpts": [
+      "August 21, 2026 WARN Notice Filed June 19, 2026 Employees Affected 394 Locations San Bruno, CA (88) Sunnyvale, CA (306)"
+     ]
+    },
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "May 13, 2026 3 min read",
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ .",
+      "The layoffs will impact [Walmart's](https://finance.yahoo.com/markets/stocks/articles/meet-face-walmart-america-largest-134328478.html) global technology and product teams, according to an internal memo sent Tuesday."
+     ]
+    }
+   ],
+   "reasoning": "The two dated facts separately capture the WARN notices and the earlier reported internal announcement, without adding their counts together or treating relocations as confirmed job losses.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Walmart Lays Off 394 Workers \u2014 2 locations WARN Notice August 2026",
+     "url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+     "excerpts": [
+      "Effective Date August 21, 2026 WARN Notice Filed June 19, 2026 Employees Affected 394"
+     ]
+    }
+   ],
+   "reasoning": "The passage reproduces consecutive tracker labels and values. Its publication date is unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ .",
+      "May 13, 2026 3 min read",
+      "[](http://www.independent.co.uk/ \"The Independent\")"
+     ]
+    }
+   ],
+   "reasoning": "The news page contains the quoted sentence, date, and original publisher identification; the source URL identifies its Yahoo Finance distribution.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ ."
+     ]
+    }
+   ],
+   "reasoning": "The source explicitly says 'lay off or relocate,' so the entire count cannot be described as layoffs.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.1",
+   "citations": [
+    {
+     "title": "Walmart Lays Off 394 Workers \u2014 2 locations WARN Notice August 2026",
+     "url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+     "excerpts": [
+      "Effective Date August 21, 2026 WARN Notice Filed June 19, 2026 Employees Affected 394"
+     ]
+    },
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ ."
+     ]
+    }
+   ],
+   "reasoning": "The evidence consists of a notice tracker and attributed news reporting. Neither establishes a completed-separations tally or exhaustive subsequent coverage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "This records an unavailable metadata field on the opened tracker page, rather than asserting an unsupported publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Walmart Lays Off 394 Workers \u2014 2 locations WARN Notice August 2026",
+     "url": "https://www.warntracker.com/layoff/walmart-2026-08-21",
+     "excerpts": [
+      "August 21, 2026 WARN Notice Filed June 19, 2026 Employees Affected 394 Locations San Bruno, CA (88) Sunnyvale, CA (306)"
+     ]
+    }
+   ],
+   "reasoning": "The cited consecutive fields state the filing date, effective date, total, and location breakdown.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Walmart to lay off or relocate 1,000 employees in bid to \u2018simplify\u2019 operations, report says",
+     "url": "https://finance.yahoo.com/news/walmart-lays-off-1-000-134929782.html",
+     "excerpts": [
+      "May 13, 2026 3 min read",
+      "[America's biggest retailer](https://www.yahoo.com/news/why-shoppers-boycotting-walmart-again-184112275.html) will lay off or relocate some [1,000 corporate employees](https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322) as it seeks to streamline its operations, according to the _Wall Street Journal_ .",
+      "The layoffs will impact [Walmart's](https://finance.yahoo.com/markets/stocks/articles/meet-face-walmart-america-largest-134328478.html) global technology and product teams, according to an internal memo sent Tuesday."
+     ]
+    }
+   ],
+   "reasoning": "The dated article reports the combined layoff/relocation count and identifies the affected teams using an internal memo.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Has Walmart announced layoffs?",
+ "input_n": 35,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,89 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0c216f252ad85ffa006af4b0e4326087d2b63339002dc9ddb5",
+ "status": "completed",
+ "seconds": 33,
+ "output": {
+  "question": "Who is the parent company of Bath & Body Works?",
+  "answer": "Bath & Body Works\u2019 corporate parent is Bath & Body Works, Inc., a standalone publicly traded company\u2014not a subsidiary of another corporate parent. It was formerly known as L Brands, Inc., which changed its name in August 2021 when the Victoria\u2019s Secret business was separated.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Bath & Body Works, Inc. is identified as the parent company in its annual report dated March 12, 2026.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+    "date": "2026-03-12"
+   },
+   {
+    "fact": "Bath & Body Works announced its status as a standalone public company following the separation of Victoria\u2019s Secret.",
+    "source_url": "https://investors.bbwinc.com/news-releases/news-release-details/bath-body-works-inc-completes-separation-victorias-secret",
+    "date": "2021-08-03"
+   },
+   {
+    "fact": "L Brands, Inc. changed its corporate name to Bath & Body Works, Inc., effective August 2, 2021.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/701985/000114036121026658/nt10026698x7_8k.htm",
+    "date": "2021-08-02"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "The Notes have been issued by Bath & Body Works, Inc. (the \u201cParent Company\u201d).",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/701985/000070198526000008/bbwi-20260131.htm",
+    "publisher": "Bath & Body Works, Inc. / U.S. Securities and Exchange Commission",
+    "published_date": "2026-03-12"
+   },
+   {
+    "quote": "to launch Bath & Body Works as a standalone public company",
+    "source_url": "https://investors.bbwinc.com/news-releases/news-release-details/bath-body-works-inc-completes-separation-victorias-secret",
+    "publisher": "Bath & Body Works, Inc.",
+    "published_date": "2021-08-03"
+   },
+   {
+    "quote": "change its corporate name from \u201cL Brands, Inc.\u201d to \u201cBath & Body Works, Inc.,\u201d",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/701985/000114036121026658/nt10026698x7_8k.htm",
+    "publisher": "Bath & Body Works, Inc. / U.S. Securities and Exchange Commission",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "The answer distinguishes the Bath & Body Works retail brand from Bath & Body Works, Inc., the standalone corporate parent.",
+   "The most recent primary-source ownership documentation verified here is the annual report dated March 12, 2026."
+  ],
+  "missing_fields": [
+   "passages[2].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 17461,
+  "input_tokens_details": {
+   "cache_write_tokens": 17,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 964,
+  "output_tokens_details": {
+   "reasoning_tokens": 250
+  },
+  "total_tokens": 18425
+ },
+ "search_calls": 4,
+ "search_actions": {
+  "search": 2,
+  "open_page": 1,
+  "find_in_page": 1
+ },
+ "token_cost_usd": 0.0352,
+ "cost_usd": 0.0752,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Bath & Body Works?",
+ "input_n": 44,
+ "completed_on": "2026-11-11"
+}

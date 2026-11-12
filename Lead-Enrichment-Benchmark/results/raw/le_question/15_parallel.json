@@ -1,0 +1,204 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69addd592d4c6185a2",
+ "status": "completed",
+ "seconds": 108,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Sysco's annual revenue?",
+  "passages": [
+   {
+    "quote": "Sales for fiscal year 2026 increased 3.9% to $84.6 billion.",
+    "publisher": "Sysco Corporation (SEC-hosted release)",
+    "published_date": "2026-08-04",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm"
+   },
+   {
+    "quote": "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026.",
+    "publisher": "Sysco Corporation (SEC-hosted release)",
+    "published_date": "2026-08-04",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm"
+   }
+  ],
+  "answer": "Sysco Corporation\u2019s latest reported annual revenue was US$84.6 billion for fiscal 2026, which ended June 27, 2026. That represented 3.9% growth over fiscal 2025, according to its results published August 4, 2026.",
+  "caveats": [
+   "This is consolidated revenue for the completed fiscal year, not quarterly revenue or trailing-twelve-month revenue."
+  ],
+  "missing_fields": [],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-06-27",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+    "fact": "Sysco reported fiscal 2026 consolidated annual revenue of US$84.6 billion for the year ended June 27, 2026."
+   },
+   {
+    "date": "2026-06-27",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+    "fact": "Fiscal 2026 annual sales increased 3.9% year over year."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question reproduces the user's requested entity and metric.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion.",
+      "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The SEC-hosted issuer release directly supplies the quoted annual sales statement, issuer identity, publication date, and fiscal year-end.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion.",
+      "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The primary release directly states fiscal 2026 revenue, annual growth, fiscal year-end, and release date. Identifying this as the latest completed annual period as of November 11, 2026 also uses the annual-period data retrieved during research.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sysco Corporation and its Consolidated Subsidiaries CONSOLIDATED RESULTS OF OPERATIONS (In Millions, Except for Share and Per Share Data) | |13-Week Period Ended / Jun.",
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion."
+     ]
+    }
+   ],
+   "reasoning": "The financial statement heading establishes consolidated scope, and the sales sentence explicitly labels the figure as fiscal-year revenue.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "All requested factual fields were available in the opened primary release; no missing values need to be listed.",
+   "confidence": "high"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The as-of date is the date specified in the user's request, not the fiscal year-end or release date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion.",
+      "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026.",
+      "Sysco Corporation and its Consolidated Subsidiaries CONSOLIDATED RESULTS OF OPERATIONS (In Millions, Except for Share and Per Share Data) | |13-Week Period Ended / Jun."
+     ]
+    }
+   ],
+   "reasoning": "These passages establish annual revenue, growth, the reporting period, and consolidated entity scope.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion.",
+      "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The first quote is verbatim; the dateline identifies its publication date and corporate issuer.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The quoted opening sentence directly names Sysco, the release date, and fiscal year-end.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sysco Corporation and its Consolidated Subsidiaries CONSOLIDATED RESULTS OF OPERATIONS (In Millions, Except for Share and Per Share Data) | |13-Week Period Ended / Jun.",
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion."
+     ]
+    }
+   ],
+   "reasoning": "The heading specifies consolidated results, and the revenue statement specifies a completed fiscal-year measure rather than a quarterly or rolling measure.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion.",
+      "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026.",
+      "Sysco Corporation and its Consolidated Subsidiaries CONSOLIDATED RESULTS OF OPERATIONS (In Millions, Except for Share and Per Share Data) | |13-Week Period Ended / Jun."
+     ]
+    }
+   ],
+   "reasoning": "The release states annual sales and fiscal year-end, while the financial statement heading confirms consolidated scope.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "sec.gov",
+     "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm",
+     "excerpts": [
+      "Sales for fiscal year 2026 increased 3.9% to $84.6 billion.",
+      "HOUSTON, August 4, 2026 - Sysco Corporation (NYSE:SYY) (\u201cSysco\u201d or the \u201ccompany\u201d) today announced financial results for its 13-week fourth fiscal quarter and its fiscal year ended June 27, 2026."
+     ]
+    }
+   ],
+   "reasoning": "The annual sales statement directly gives 3.9% growth; the opening sentence supplies the fiscal period-end date.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "What is Sysco's annual revenue?",
+ "input_n": 15,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,94 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0bf9a6679c0d1f5d006af4b0e6ec0087d29d630b565bbcb6d4",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "What is fuboTV's short interest?",
+  "answer": "As of November 11, 2026, fuboTV (NYSE: FUBO)'s latest reported short interest was 6,838,404 shares, measured on October 30, 2026 and published November 10. ChartExchange reports this as 23.07% of float, with 6.42 days to cover and a 0.11% increase from the preceding report. MarketBeat confirms the share count but reports 23.91% of float, so the percentage differs by provider.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "As of October 30, 2026, short interest was 6,838,404 shares, representing 23.07% of float according to ChartExchange.",
+    "source_url": "https://chartexchange.com/symbol/nyse-fubo/short-interest/",
+    "date": "2026-10-30"
+   },
+   {
+    "fact": "For the October 30, 2026 settlement date, ChartExchange reports 6.42 days to cover and a 0.11% increase in short positions.",
+    "source_url": "https://chartexchange.com/symbol/nyse-fubo/short-interest/",
+    "date": "2026-10-30"
+   },
+   {
+    "fact": "MarketBeat reports the same October 30, 2026 short share count but a short-float percentage of 23.91%.",
+    "source_url": "https://www.marketbeat.com/stocks/NYSE/FUBO/short-interest/",
+    "date": "2026-10-30"
+   },
+   {
+    "fact": "MarketBeat identifies November 10, 2026 as the publication date of the latest short-interest report.",
+    "source_url": "https://www.marketbeat.com/stocks/NYSE/FUBO/short-interest/",
+    "date": "2026-11-10"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "2026-10-30 | 23.07 | 6,838,404 | 6.42 | +7,577 | +0.11 | 30,204,277 | 29,641,413",
+    "source_url": "https://chartexchange.com/symbol/nyse-fubo/short-interest/",
+    "publisher": "ChartExchange",
+    "published_date": null
+   },
+   {
+    "quote": "Short Percent of Float 23.91%",
+    "source_url": "https://www.marketbeat.com/stocks/NYSE/FUBO/short-interest/",
+    "publisher": "MarketBeat",
+    "published_date": null
+   },
+   {
+    "quote": "with the most recent report published on 11/10/2026.",
+    "source_url": "https://www.marketbeat.com/stocks/NYSE/FUBO/short-interest/",
+    "publisher": "MarketBeat",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "These are reported positions as of October 30, 2026, not a real-time measurement for November 11.",
+   "The providers agree on shares sold short but disagree on the percentage of float; the cause of that discrepancy was not verified.",
+   "The figures were verified on data-provider pages, not directly against an exchange or regulator's underlying report."
+  ],
+  "missing_fields": [
+   "passages.published_date: publication dates of the provider webpages were not explicitly available."
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 21402,
+  "input_tokens_details": {
+   "cache_write_tokens": 15,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 983,
+  "output_tokens_details": {
+   "reasoning_tokens": 204
+  },
+  "total_tokens": 22385
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0433,
+ "cost_usd": 0.0633,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "dd_question",
+ "input": "What is fuboTV's short interest?",
+ "input_n": 40,
+ "completed_on": "2026-11-11"
+}

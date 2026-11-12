@@ -1,0 +1,1067 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 26,
+ "task": "Has General Motors announced layoffs?",
+ "labels": {
+  "exa": "A",
+  "firecrawl": "B",
+  "opus": "C",
+  "gpt": "D",
+  "nimble": "E",
+  "parallel": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 16,
+ "evidence_fetched": 16,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "GM Financial, GM's finance arm, cut about 400 jobs worldwide 'to support operating performance' in early November 2026.",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "GM Financial, General Motors' captive finance arm, cut about 400 jobs globally 'to support operating performance', reported November 10, 2026.",
+    "C": "Search results report that GM Financial, GM's lending arm, cut about 400 jobs worldwide in early November 2026 'to support operating performance' (unconfirmed; articles could not be opened)."
+   },
+   "urls": [
+    "https://www.autonews.com/retail/finance-insurance/an-gm-financial-layoffs-1110/",
+    "https://www.autofinancenews.net/allposts/risk-management/gm-financial-lays-off-400-employees/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "GM Financial's Q3 net income was $487 million, down 17% from a year earlier.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "GM Financial's Q3 net income was $487 million, down 17% from a year earlier."
+   },
+   "urls": [
+    "https://www.autonews.com/retail/finance-insurance/an-gm-financial-layoffs-1110/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "GM's May 2026 layoffs (beginning May 11, 2026) affected about 500 to 600 employees.",
+   "asserted_by": [
+    "E",
+    "F",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "E": "GM laid off about 500 to 600 salaried IT employees globally, announced May 11, 2026.",
+    "F": "GM's global reductions began Monday, May 11, 2026, and impact about 500 to 600 employees.",
+    "B": "The May 2026 General Motors layoffs affected about 500 to 600 employees, according to a person familiar with the layoffs quoted by CNBC.",
+    "C": "On May 11, 2026, GM laid off about 500 to 600 employees."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+    "https://www.cnbc.com/2026/05/12/gm-layoffs-ai-severance.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The May 2026 cuts were mostly IT roles (salaried), largely in Austin, Texas, and Warren, Michigan.",
+   "asserted_by": [
+    "E",
+    "F",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "E": "Largely in Austin, Texas, and Warren, Michigan (salaried IT employees).",
+    "F": "The affected salaried employees are largely in Austin, Texas, and Warren, Michigan, per CNBC citing a person familiar with the plans.",
+    "B": "Largely in information technology roles in Austin, Texas, and Warren, Michigan.",
+    "C": "Mostly salaried IT roles in Austin, Texas and Warren, Michigan."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+    "https://www.cnbc.com/2026/05/12/gm-layoffs-ai-severance.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "GM confirmed the May 2026 layoffs.",
+   "asserted_by": [
+    "E",
+    "F",
+    "B"
+   ],
+   "variants": {
+    "E": "GM confirmed the IT cuts.",
+    "F": "GM confirmed global IT job cuts in May 2026.",
+    "B": "General Motors confirmed to TechCrunch that it conducted layoffs in May 2026."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+    "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "GM declined to provide specific details about the May 2026 cuts.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "GM declined to give specific details.",
+    "F": "GM confirmed the May 2026 cuts but declined to provide specific details."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/11/gm-layoffs.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "The 500–600 figure came from an unnamed source rather than GM.",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "F": "The 500–600 figure came from an unnamed source.",
+    "B": "According to a person familiar with the layoffs quoted by CNBC."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+    "https://www.cnbc.com/2026/05/12/gm-layoffs-ai-severance.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "GM said it is transforming its Information Technology organization.",
+   "asserted_by": [
+    "E",
+    "B",
+    "C"
+   ],
+   "variants": {
+    "E": "GM said it is transforming its Information Technology organization and eliminating certain roles globally.",
+    "B": "GM said it is transforming its Information Technology organization.",
+    "C": "GM said it is 'transforming its Information Technology organization to better position the company for the future'."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+    "https://www.cnbc.com/2026/05/12/gm-layoffs-ai-severance.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "GM said it made the difficult decision to eliminate certain roles globally.",
+   "asserted_by": [
+    "F",
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "F": "On May 11, 2026, GM said it made the difficult decision to eliminate certain roles globally.",
+    "B": "GM made the difficult decision to eliminate certain roles globally.",
+    "C": "GM 'made the difficult decision to eliminate certain roles globally.'",
+    "E": "GM said it is eliminating certain roles globally."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+    "https://www.cnbc.com/2026/05/12/gm-layoffs-ai-severance.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "The May 2026 cuts were a skills restructuring, not an end to IT hiring; GM was still seeking AI, data, cloud and model-development skills.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The May 2026 GM cuts were described as a skills restructuring rather than an end to IT hiring; GM was still seeking AI-focused, data, cloud, and model-development skills."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "GM said its May 2026 IT cuts were not all permanent reductions in headcount.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "GM said its May 2026 IT cuts were not all permanent reductions in headcount."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/12/gm-layoffs-ai-severance.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "GM's Lansing layoffs affect 361 workers (per MLive).",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "General Motors announced plans to lay off 361 workers at two Lansing, Michigan plants, as reported by mlive.com on 2026-08-14.",
+    "F": "General Motors announced plans to lay off 361 workers employed at assembly and stamping plants in Lansing (MLive, reported Aug 14, 2026)."
+   },
+   "urls": [
+    "https://www.mlive.com/auto/2026/08/general-motors-files-notice-for-361-layoffs-at-lansing-assembly-sites.html"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "MLive reported the Lansing layoffs effective January 17, 2027.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Effective January 17, 2027, as reported by mlive.com.",
+    "F": "MLive reported the Lansing layoff effective date as January 17, 2027."
+   },
+   "urls": [
+    "https://www.mlive.com/auto/2026/08/general-motors-files-notice-for-361-layoffs-at-lansing-assembly-sites.html"
+   ],
+   "conflicts_with": [
+    "c15"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "GM's Lansing layoffs affect about 350 workers (per CBS Detroit, WILX, and others).",
+   "asserted_by": [
+    "E",
+    "A",
+    "F",
+    "D",
+    "C"
+   ],
+   "variants": {
+    "E": "350 layoffs, per a WARN notice filed with the Michigan Department of Labor and Economic Opportunity.",
+    "A": "CBS Detroit reported 350 affected workers, differing from mlive.com's 361.",
+    "F": "WILX reported the Lansing layoffs affect about 350 workers at GM's Lansing plants.",
+    "D": "GM announced layoffs affecting 350 workers at its Lansing Grand River Assembly/Stamping plant and Lansing Regional Stamping facility.",
+    "C": "Search results mention about 350 layoffs at GM's Lansing plants (Detroit News, August 14, 2026), unconfirmed."
+   },
+   "urls": [
+    "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+    "https://www.wilx.com/2026/08/14/gm-set-lay-off-350-workers-lansing-plants-january",
+    "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp"
+   ],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "The Lansing layoffs are effective/begin January 14, 2027.",
+   "asserted_by": [
+    "E",
+    "A",
+    "F",
+    "D",
+    "C"
+   ],
+   "variants": {
+    "E": "Effective Jan. 14, 2027.",
+    "A": "CBS Detroit reported a January 14, 2027 layoff date.",
+    "F": "WILX reported the Lansing layoff effective date as January 14, 2027.",
+    "D": "Beginning January 14, 2027.",
+    "C": "Starting January 14, 2027."
+   },
+   "urls": [
+    "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+    "https://www.wilx.com/2026/08/14/gm-set-lay-off-350-workers-lansing-plants-january"
+   ],
+   "conflicts_with": [
+    "c13"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "The Lansing layoffs affect the Lansing Grand River Assembly/Stamping and Lansing Regional Stamping sites.",
+   "asserted_by": [
+    "E",
+    "A",
+    "F",
+    "D"
+   ],
+   "variants": {
+    "E": "Lansing Grand River Assembly/Stamping and Lansing Regional Stamping sites.",
+    "A": "Two Lansing plants (Lansing Grand River Assembly/Stamping and Lansing Regional Stamping).",
+    "F": "Lansing Grand River Assembly/Stamping and Lansing Regional Stamping, scheduled for January 2027 during retooling.",
+    "D": "Lansing Grand River Assembly/Stamping plant and Lansing Regional Stamping facility."
+   },
+   "urls": [
+    "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+    "https://www.wilx.com/2026/08/14/gm-set-lay-off-350-workers-lansing-plants-january"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "GM filed a WARN Act notice on Aug. 12, 2026 with the Michigan Department of Labor and Economic Opportunity for the Lansing layoffs.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "GM filed a WARN Act notice on Aug. 12, 2026 with the Michigan Department of Labor and Economic Opportunity for 350 layoffs at its Lansing sites."
+   },
+   "urls": [
+    "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "The Lansing layoffs are tied to retooling downtime for a $1.25 billion investment.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The 350 Lansing layoffs are tied to retooling downtime for a $1.25 billion investment."
+   },
+   "urls": [
+    "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "GM expects to recall/call back affected Lansing employees after the retooling period.",
+   "asserted_by": [
+    "E",
+    "A",
+    "F"
+   ],
+   "variants": {
+    "E": "GM anticipates recalling affected employees at the end of the retooling period.",
+    "A": "GM expects to call back affected employees after the changeover.",
+    "F": "GM said it anticipates recalling affected employees back to Lansing Grand River at the end of the retooling period."
+   },
+   "urls": [
+    "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+    "https://www.mlive.com/auto/2026/08/general-motors-files-notice-for-361-layoffs-at-lansing-assembly-sites.html",
+    "https://www.wilx.com/2026/08/14/gm-set-lay-off-350-workers-lansing-plants-january"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "The GM Lansing facilities will be retooled for future production, including the Cadillac CT5.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The GM Lansing facilities will be retooled for future production, including the Cadillac CT5."
+   },
+   "urls": [
+    "https://www.mlive.com/auto/2026/08/general-motors-files-notice-for-361-layoffs-at-lansing-assembly-sites.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "GM said its skilled-trades team would work during the downtime to prepare Lansing Grand River for production of the next-generation Cadillac CT5.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "GM said its skilled-trades team would work during the production downtime to prepare the Lansing Grand River plant for production of the next-generation Cadillac CT5."
+   },
+   "urls": [
+    "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Affected Lansing workers may receive supplemental unemployment pay equal to 74% of hourly wages under the GM-UAW contract.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Affected Lansing workers may receive supplemental unemployment pay equal to 74% of hourly wages under the GM-UAW contract."
+   },
+   "urls": [
+    "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "GM eliminated the third shift at its Oshawa, Ontario Assembly Complex in late January 2026, cutting more than 700 direct jobs, with hundreds more lost at suppliers.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "GM eliminated the third shift at its Oshawa, Ontario Assembly Complex in late January 2026, cutting more than 700 direct jobs, with hundreds more lost at supply chain companies."
+   },
+   "urls": [
+    "https://apnews.com/press-release/pr-newswire/gm-cuts-oshawa-jobs-as-profits-shares-and-dividends-rise-30664ed947e3b1c7caf9357246379af6"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "GM reported over $12 billion in pre-tax earnings for 2025.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "GM reported over $12 billion in pre-tax earnings for 2025, when it cut the Oshawa third shift."
+   },
+   "urls": [
+    "https://apnews.com/press-release/pr-newswire/gm-cuts-oshawa-jobs-as-profits-shares-and-dividends-rise-30664ed947e3b1c7caf9357246379af6"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "GM laid off approximately 200 workers at Ramos Arizpe, Coahuila, Mexico because ICE Chevrolet Blazer production ends in October 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "GM laid off approximately 200 workers at its Ramos Arizpe, Coahuila, Mexico complex because production of the ICE Chevrolet Blazer ends in October 2026."
+   },
+   "urls": [
+    "https://mexico-now.com/gm-is-restructuring-its-workforce-in-ramos-arizpe/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "About 1,300 workers were laid off in January 2026 at Ultium Cells' Lordstown, Ohio battery plant (GM–LG Energy Solution joint venture).",
+   "asserted_by": [
+    "E",
+    "C"
+   ],
+   "variants": {
+    "E": "Layoffs of more than 1,300 workers began Jan. 5, 2026 at Ultium Cells LLC's Lordstown, Ohio battery plant, a joint venture between GM and LG Energy Solution.",
+    "C": "Search results mention about 1,300 job cuts at Ultium Cells and Lordstown in Ohio in January 2026, unconfirmed."
+   },
+   "urls": [
+    "https://www.warntracker.com/company/general-motors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "WARN notices covered 710 workers at the Ultium Cells facility in Maury County, Tennessee, effective Jan. 5, 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "WARN notices also covered 710 workers at the Ultium Cells facility in Maury County, Tennessee, effective Jan. 5, 2026."
+   },
+   "urls": [
+    "https://www.warntracker.com/company/general-motors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "GM temporarily laid off 1,300 workers at its Detroit Factory ZERO EV plant, idling it in March 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "GM temporarily laid off 1,300 workers at its Detroit Factory ZERO EV plant, idling the plant in March 2026 to align EV production with market demand."
+   },
+   "urls": [
+    "https://www.reuters.com/business/autos-transportation/gm-idles-detroit-ev-plant-temporarily-laying-off-1300-2026-03-30/"
+   ],
+   "conflicts_with": [
+    "c30"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "A GM spokesperson said Factory ZERO will temporarily adjust production to align EV production with market demand.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "A GM spokesperson said Factory ZERO will temporarily adjust production to align EV production with market demand."
+   },
+   "urls": [
+    "https://www.reuters.com/business/autos-transportation/gm-idles-detroit-ev-plant-temporarily-laying-off-1300-2026-03-30/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "About 1,100 job cuts at GM's Factory Zero in Detroit in 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Search results mention about 1,100 job cuts at GM's Factory Zero in Detroit in 2026, unconfirmed."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c28"
+   ]
+  },
+  {
+   "cid": "c31",
+   "claim": "GM confirmed on October 21, 2026 that it will close its Brownstown battery plant near Detroit when the lease ends in summer 2027.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "GM confirmed on October 21, 2026 that it will close its Brownstown battery plant near Detroit when the lease ends in summer 2027."
+   },
+   "urls": [
+    "https://www.wsws.org/en/articles/2026/10/22/ikri-o22.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "The Brownstown battery plant once had about 300 workers and now has fewer than a dozen; GM is offering the remaining workers other placements.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "GM's Brownstown battery plant once had about 300 workers and now has fewer than a dozen; GM is offering the remaining workers other placements."
+   },
+   "urls": [
+    "https://www.wsws.org/en/articles/2026/10/22/ikri-o22.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "GM confirmed the Brownstown closure on the same day it announced a $20 billion stock buyback.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "GM confirmed the Brownstown battery plant closure on the same day it announced a $20 billion stock buyback."
+   },
+   "urls": [
+    "https://www.wsws.org/en/articles/2026/10/22/ikri-o22.html"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.autonews.com/retail/finance-insurance/an-gm-financial-layoffs-1110/",
+   "note": "Auto Finance News (Nov 9) and Automotive News (Nov 10) report GM Financial cut 400 jobs 'to support operating performance'.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.autonews.com/retail/finance-insurance/an-gm-financial-layoffs-1110/",
+   "note": "Image caption states net income of $487 million in Q3, down 17% from a year earlier; it is context, not an answer.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+   "note": "CNBC and Bloomberg report about 500-600 employees affected starting May 11, 2026; the May date is older than 90 days.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+   "note": "Salaried IT employees, largely in Austin, Texas, and Warren, Michigan, per CNBC.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+   "note": "CNBC says 'GM confirmed the cuts'; TechCrunch says GM confirmed it conducted layoffs.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+   "note": "CNBC: GM confirmed the cuts 'but declined to give specific details about the actions'.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+   "note": "The 500-600 figure is attributed to a person familiar with the plans, not to GM.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+   "note": "GM's emailed statement: 'GM is transforming its Information Technology organization to better position the company for the future.'",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/05/11/gm-layoffs.html",
+   "note": "GM statement: 'we have made the difficult decision to eliminate certain roles globally.'",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/",
+   "note": "TechCrunch's source says GM is still hiring IT staff for AI-native development, data engineering, cloud and model-development skills; CNBC also notes 82 open IT roles.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/",
+   "note": "The claim is supported, but the statement came from a person familiar with the layoffs rather than GM itself, so the attribution 'GM said' is loose.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.mlive.com/auto/2026/08/general-motors-files-notice-for-361-layoffs-at-lansing-assembly-sites.html",
+   "note": "MLive reported 361 layoffs on Aug 14, 2026; other outlets say 350 from the same WARN notice.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.mlive.com/auto/2026/08/general-motors-files-notice-for-361-layoffs-at-lansing-assembly-sites.html",
+   "note": "MLive says the mass layoff takes effect Jan. 17, 2027, which conflicts with the Jan. 14 date in other outlets.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+   "note": "CBS Detroit, WILX and WARN tracker report 350 workers; MLive's 361 differs slightly.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+   "note": "CBS, WILX and the WARN tracker give Jan. 14, 2027; MLive's Jan. 17 is the outlier.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+   "note": "CBS, WILX and MLive all name the Lansing Grand River Assembly/Stamping and Lansing Regional Stamping sites; January 2027 retooling downtime is also supported (variant F).",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+   "note": "CBS says the WARN notice was filed Aug. 12 with the Michigan DLEO, and WarnTracker lists a 2026-08-12 notice date for 350 workers.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.wilx.com/2026/08/14/gm-set-lay-off-350-workers-lansing-plants-january",
+   "note": "GM's statement ties the cuts to the $1.25B investment and the retooling downtime.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.wilx.com/2026/08/14/gm-set-lay-off-350-workers-lansing-plants-january",
+   "note": "GM statement: 'We anticipate recalling affected employees back to Lansing Grand River at the end of the retooling period.'",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.mlive.com/auto/2026/08/general-motors-files-notice-for-361-layoffs-at-lansing-assembly-sites.html",
+   "note": "MLive, citing the Detroit News, says the facilities will be retooled for future production including the Cadillac CT5.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.wilx.com/2026/08/17/they-all-come-here-local-business-prepares-life-after-gm-layoffs/?outputType=amp",
+   "note": "A GM spokesperson said the skilled-trades team will prepare the plant for next-gen CT5 production.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cbsnews.com/detroit/news/gm-350-layoffs-lansing-sites/",
+   "note": "GM spokesperson Kevin Kelly said impacted employees may be eligible for SUB pay equal to 74% of hourly wage under the GM-UAW contract.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://apnews.com/press-release/pr-newswire/gm-cuts-oshawa-jobs-as-profits-shares-and-dividends-rise-30664ed947e3b1c7caf9357246379af6",
+   "note": "Unifor release dated Jan. 29, 2026 says the final third shift is Jan. 30, with more than 700 direct jobs cut and hundreds more at suppliers.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://apnews.com/press-release/pr-newswire/gm-cuts-oshawa-jobs-as-profits-shares-and-dividends-rise-30664ed947e3b1c7caf9357246379af6",
+   "note": "The Unifor release says GM reported more than $12 billion that week; the snippet is cut off, but it fits GM's 2025 results, so confidence is medium.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://mexico-now.com/gm-is-restructuring-its-workforce-in-ramos-arizpe/",
+   "note": "The article reports about 200 layoffs at Ramos Arizpe tied to the end of ICE Blazer production in October 2026.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.warntracker.com/company/general-motors",
+   "note": "WarnTracker lists 1,334 affected at Ultium Cells in Warren/Trumbull, Ohio, effective 2026-01-05; variant C's 'unconfirmed' wording is overly hedged but the figure is supported.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.warntracker.com/company/general-motors",
+   "note": "WarnTracker shows 710 at the Ultium Cells facility in Maury County, TN, with layoff date 2026-01-05.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.reuters.com/business/autos-transportation/gm-idles-detroit-ev-plant-temporarily-laying-off-1300-2026-03-30/",
+   "note": "Reuters, March 30, 2026: Factory ZERO idled until April 13, temporarily laying off 1,300 workers.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/business/autos-transportation/gm-idles-detroit-ev-plant-temporarily-laying-off-1300-2026-03-30/",
+   "note": "Direct quote from a GM spokesperson in Reuters.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.wsws.org/en/articles/2026/10/22/ikri-o22.html",
+   "note": "WSWS says about 1,145 positions were eliminated at Factory Zero and WarnTracker lists 1,140, consistent with about 1,100 cuts; this is a secondary source, so confidence is medium.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.wsws.org/en/articles/2026/10/22/ikri-o22.html",
+   "note": "WSWS (dated Oct 21, 2026) says Brownstown closure was confirmed Tuesday, closing when lease expires summer 2027; Oct 21, 2026 is a Wednesday per calendar? Oct 20 is Tuesday, so the exact day is slightly uncertain, but the article is dated 21 Oct.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.wsws.org/en/articles/2026/10/22/ikri-o22.html",
+   "note": "Passage states about 300 once employed, fewer than a dozen remain, and GM offers remaining workers other placements.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.wsws.org/en/articles/2026/10/22/ikri-o22.html",
+   "note": "Passage says GM announced the $20B buyback the same day the Brownstown closure was confirmed.",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "note": "CNBC (May 11, 2026): global cuts began Monday and affect about 500–600 employees, mostly in Austin and Warren."
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "note": "CNBC credits the figure to a person familiar with the plans who was not authorized to speak publicly, not to GM."
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "note": "MLive says the mass layoff takes effect Jan. 17, 2027. WILX and other outlets give Jan. 14, 2027, but the claim is only about what MLive reported."
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "note": "CBS Detroit, WILX and MLive all name Lansing Grand River Assembly/Stamping and Lansing Regional Stamping."
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "note": "GM statement: 'We anticipate recalling affected employees back to Lansing Grand River at the end of the retooling period.'"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "note": "WILX (Aug 17, 2026) quotes a GM spokesperson saying the skilled-trades team will prepare the plant for the next-generation Cadillac CT5."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 33,
+ "scores": {
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 84.0,
+   "coverage": 0.256,
+   "accuracy": 1.0,
+   "combined": 0.408,
+   "thorough_coverage": 0.292,
+   "answer_truth": 19,
+   "thoroughness": 0.452,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 84.0,
+   "coverage": 0.192,
+   "accuracy": 1.0,
+   "combined": 0.322,
+   "thorough_coverage": 0.196,
+   "answer_truth": 19,
+   "thoroughness": 0.328,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 84.0,
+   "coverage": 0.608,
+   "accuracy": 1.0,
+   "combined": 0.756,
+   "thorough_coverage": 0.554,
+   "answer_truth": 19,
+   "thoroughness": 0.713,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 84.0,
+   "coverage": 0.144,
+   "accuracy": 1.0,
+   "combined": 0.252,
+   "thorough_coverage": 0.149,
+   "answer_truth": 19,
+   "thoroughness": 0.259,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 20,
+   "unverifiable": 0,
+   "true": 20,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 84.0,
+   "coverage": 0.696,
+   "accuracy": 1.0,
+   "combined": 0.821,
+   "thorough_coverage": 0.631,
+   "answer_truth": 19,
+   "thoroughness": 0.774,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 33,
+   "truth_weight": 84.0,
+   "coverage": 0.416,
+   "accuracy": 1.0,
+   "combined": 0.588,
+   "thorough_coverage": 0.411,
+   "answer_truth": 19,
+   "thoroughness": 0.582,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.818,
+ "corrections_v2": {
+  "units_before": 33,
+  "units_after": 33,
+  "dedup_groups": [],
+  "cost": 0.019
+ }
+}

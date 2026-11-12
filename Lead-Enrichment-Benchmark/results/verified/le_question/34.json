@@ -1,0 +1,1427 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 34,
+ "task": "Has Ford announced layoffs?",
+ "labels": {
+  "firecrawl": "A",
+  "opus": "B",
+  "gpt": "C",
+  "nimble": "D",
+  "parallel": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 20,
+ "evidence_fetched": 20,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "WDR reported on September 22, 2026 that 500 employees at Ford's Cologne operation still had to leave the company with severance.",
+   "asserted_by": [
+    "D",
+    "F",
+    "E"
+   ],
+   "variants": {
+    "D": "In September 2026 (disclosed September 22, 2026), Ford told a works meeting at its Cologne, Germany plant that another 500 employees must leave the company with severance.",
+    "F": "WDR reported on September 22, 2026 that 500 employees at Ford's Cologne operation still had to leave the company with severance under the cost-cutting program.",
+    "E": "WDR reported on September 22, 2026 that 500 employees at Ford-Werke in Cologne still had to leave the company with severance under an existing reduction program."
+   },
+   "urls": [
+    "https://www1.wdr.de/wirtschaft/ford-koeln-stellenabbau-100.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The 500 Cologne departures are not additional cuts but part of the cost-cutting program Ford launched in 2025.",
+   "asserted_by": [
+    "D",
+    "F",
+    "E"
+   ],
+   "variants": {
+    "D": "The 500 Cologne departures are not additional positions but belong to the savings program Ford launched in 2025, which covers 2,900 Cologne positions.",
+    "F": "The 500 Cologne positions are not additional cuts but part of the cost-cutting program Ford launched the previous year.",
+    "E": "these were not additional cuts (part of an existing reduction program)"
+   },
+   "urls": [
+    "https://www1.wdr.de/wirtschaft/ford-koeln-stellenabbau-100.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "In spring 2026 Ford cut another 750 positions in vehicle production at Cologne because a shift was eliminated.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "In spring 2026 Ford cut another 750 positions in vehicle production at Cologne because a shift was eliminated."
+   },
+   "urls": [
+    "https://www1.wdr.de/wirtschaft/ford-koeln-stellenabbau-100.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "About 1,600 workers were let go at the Ford/BlueOval SK battery plant in Glendale, Kentucky, with a layoff date of February 14, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "About 1,600 workers were let go at the Ford/BlueOval SK joint-venture battery plant in Glendale, Kentucky, with a layoff date of February 14, 2026."
+   },
+   "urls": [
+    "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html"
+   ],
+   "conflicts_with": [
+    "c42",
+    "c20"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "In December 2025 Ford announced it was dissolving its joint venture with SK On and retaining ownership of the two Kentucky battery-plant sites.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "In December 2025 Ford announced it was dissolving its joint venture with SK On and retaining ownership of the two Kentucky battery-plant sites."
+   },
+   "urls": [
+    "https://layoffnext.com/company-intel/ford",
+    "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Ford said it would invest $2 billion to retool the one operating Kentucky battery plant for stationary energy storage batteries, as part of a $19.5 billion plan to redeploy assets slated for EV production.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Ford said it would invest $2 billion to retool the one operating Kentucky battery plant to produce batteries for stationary energy storage, as part of a $19.5 billion plan to redeploy assets slated for EV production."
+   },
+   "urls": [
+    "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "The Ford-SK On battery joint venture being dissolved was an $11.4 billion commitment, Ford's largest manufacturing commitment in its history.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The Ford-SK On battery joint venture being dissolved was an $11.4 billion commitment, Ford's largest manufacturing commitment in its history."
+   },
+   "urls": [
+    "https://www.manufacturingdive.com/news/ford-blueoval-sk-delays-layoffs-in-georgia-battery-joint-venture/815449"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "A final round of Kentucky battery-plant cuts affecting about 10% of the remaining workforce was delayed from mid-February to begin March 31, 2026, per a WARN filing reported March 23, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "A final round of Kentucky battery-plant cuts affecting about 10% of the remaining workforce was delayed from mid-February to begin March 31, 2026, per a WARN filing reported March 23, 2026."
+   },
+   "urls": [
+    "https://electronicsforyou.biz/industry-buzz/ford-delays-us-battery-plant-layoffs-amid-ev-demand-slowdown/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Roughly 155 Kentucky battery-plant employees had their employment extended to at least March 31, 2026 to assist the handover to Ford.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Roughly 155 Kentucky battery-plant employees had their employment extended to at least March 31, 2026 to assist the handover to Ford."
+   },
+   "urls": [
+    "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "On November 20, 2024, Ford announced plans to cut 4,000 European positions by the end of 2027, pending consultations with social partners.",
+   "asserted_by": [
+    "E",
+    "A",
+    "C"
+   ],
+   "variants": {
+    "E": "On November 20, 2024, Ford announced plans to reduce its European workforce by 4,000 positions by the end of 2027, pending consultations with its European social partners.",
+    "A": "Ford said in November 2024 it would cut around 4,000 jobs in Europe, primarily in Germany and Britain, with cuts planned by the end of 2027 pending union discussions.",
+    "C": "On November 20, 2024, Ford announced plans to reduce its European workforce by 4,000 positions by the end of 2027, primarily in Germany and the UK, pending consultations."
+   },
+   "urls": [
+    "https://www.automotiveworld.com/news-releases/ford-announces-measures-to-achieve-long-term-competitiveness-in-europe/",
+    "https://www.reuters.com/business/autos-transportation/ford-cut-14-european-jobs-blaming-ev-shift-rising-competition-2024-11-20/",
+    "https://www.fromtheroad.ford.com/eur/en/articles/2024/ford-announces-measures-to-achieve-long-term-competitiveness-in"
+   ],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Ford announced (around November 2025) it would cut 4,000 jobs in Europe and the UK, citing EV-shift disruption and economic headwinds.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Ford announced (around November 2025) it would cut 4,000 jobs in Europe and the UK, citing disruption from the shift to electric vehicles and economic headwinds."
+   },
+   "urls": [
+    "https://apnews.com/ff53e7060e23605b6568bcf6330f1dbc"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Ford's filings estimate total 2026 charges of $500 million to $1 billion related to initiated actions, primarily attributable to employee separations.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Ford's filings state it expects total 2026 charges of $500 million to $1 billion related to its initiated actions, primarily attributable to employee separations.",
+    "F": "Ford's Form 10-Q for the quarter ended September 30, 2026 estimates total 2026 charges of $500 million to $1 billion related to initiated actions, primarily attributable to employee separations."
+   },
+   "urls": [
+    "https://layoffnext.com/company-intel/ford",
+    "https://www.layoffnext.com/company-intel/ford",
+    "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "In December 2025 Ford said it would cancel three previously planned EVs and end production of the current-generation F-150 Lightning.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "In December 2025 Ford said it would cancel three previously planned EVs and end production of the current-generation F-150 Lightning."
+   },
+   "urls": [
+    "https://layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Ford recorded about $13.8 billion of charges in Q4 2025 across the EV rationalization and BlueOval SK disposal.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Ford recorded about $13.8 billion of charges in Q4 2025 across the EV rationalization and BlueOval SK disposal."
+   },
+   "urls": [
+    "https://layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Ford recalled 18 members from indefinite layoff on November 2, 2026 to support Final Assembly manpower needs (Unifor Local 707 update dated October 31, 2026).",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "On November 2, 2026, Ford recalled 18 members from indefinite layoff at its Oakville, Ontario plant to support Final Assembly manpower needs.",
+    "F": "Unifor Local 707 reported on October 31, 2026 that Ford would recall 18 members from indefinite layoff on November 2, 2026, to support Final Assembly manpower needs."
+   },
+   "urls": [
+    "https://uniforlocal707.org/2026/10/31/message-from-oac-chairperson-latest-recall-from-indefinite-layoff-update-november-2-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "As of November 2, 2026, the most senior Ford Oakville member still on indefinite layoff had a seniority date of July 20, 2015.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "As of November 2, 2026, the most senior Ford Oakville member still on indefinite layoff had a seniority date of July 20, 2015."
+   },
+   "urls": [
+    "https://uniforlocal707.org/2026/10/31/message-from-oac-chairperson-latest-recall-from-indefinite-layoff-update-november-2-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "By October 2026, Ford Energy had begun hiring at the retooled Glendale, Kentucky plant, about ten months after roughly 1,500 workers lost jobs there.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "By October 2026, Ford's Ford Energy spinoff had begun hiring at the retooled Glendale, Kentucky plant for battery energy-storage production, about ten months after roughly 1,500 workers lost jobs there."
+   },
+   "urls": [
+    "https://www.wkyufm.org/news/2026-10-14/ford-updates-community-on-its-second-act-in-hardin-county"
+   ],
+   "conflicts_with": [
+    "c5"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "Ford Energy plans to hire more than 2,100 workers for energy-storage production in Kentucky and is eligible to rehire affected employees.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "D": "Ford Energy plans to hire more than 2,100 workers for energy-storage production in Kentucky and is eligible to rehire affected employees."
+   },
+   "urls": [
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c21",
+    "c43"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Some of Ford's charges relate to plans subject to negotiations with a works council, union, or other social partner.",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "F": "Ford's latest filing says some of the charges relate to plans that are subject to negotiations with a works council, union, or other social partner.",
+    "B": "Some of Ford's restructuring charges relate to plans subject to negotiations with a works council, union, or other social partner, and Ford has not given a headcount for the job cuts."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Ford's separation programs are primarily hourly and salaried worker programs in Europe, expected to be substantially complete by the end of 2027.",
+   "asserted_by": [
+    "F",
+    "C"
+   ],
+   "variants": {
+    "F": "Ford's latest filing says the separation programs are primarily hourly and salaried worker programs in Europe and are expected to be substantially complete by the end of 2027.",
+    "C": "As of September 30, 2026, Ford Motor Company reported ongoing hourly and salaried worker separation programs, primarily in Europe, expected to be substantially complete by the end of 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Ford's Form 10-Q was published on 2026-10-28.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Ford's Form 10-Q was published on 2026-10-28."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm"
+   ],
+   "conflicts_with": [
+    "c25"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "Ford's latest quarterly report (Form 10-Q) was filed October 29, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Ford Motor Company's latest quarterly report (Form 10-Q) was filed October 29, 2026."
+   },
+   "urls": [
+    "https://shareholder.ford.com/financials/default.aspx"
+   ],
+   "conflicts_with": [
+    "c24"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "Ford has not disclosed a global layoff headcount; its filing gives a cost range rather than a number of employees.",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "F": "Ford has not disclosed a single global layoff headcount; its filing gives a projected cost range rather than a number of employees.",
+    "B": "Ford has not given a headcount for the job cuts."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "As of November 11, 2026, no new company-wide Ford layoff announcement with a specific headcount was found for this fall.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "As of November 11, 2026, no new company-wide Ford Motor Co. layoff announcement with a specific headcount was found for this fall."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "The Unifor Local 707 update concerns one Canadian facility and does not establish Ford's companywide layoff count.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The Unifor Local 707 update concerns one Canadian facility and does not establish Ford's companywide layoff count."
+   },
+   "urls": [
+    "https://uniforlocal707.org/2026/10/31/message-from-oac-chairperson-latest-recall-from-indefinite-layoff-update-november-2-2026/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Ford Motor Company has announced job cuts.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Ford Motor Company has announced job cuts."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "On September 16, 2025, Ford announced it would cut up to 1,000 jobs at its EV plant in Cologne, Germany, using voluntary departures and buyouts as far as possible.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On September 16, 2025, Ford announced it would cut up to 1,000 jobs at its electric vehicle plant in Cologne, Germany, using voluntary departures and buyouts as far as possible."
+   },
+   "urls": [
+    "https://apnews.com/article/ford-europe-bev-electric-cars-cologne-f5bbc7e08174c7e6bebd7272fcc96446"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Ford Motor Company of Southern Africa confirmed layoffs of more than 470 employees across Silverton, Struandale and administrative roles (August 28, 2025).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Ford Motor Company of Southern Africa confirmed layoffs affecting more than 470 employees across its Silverton assembly plant, Struandale engine plant and administrative roles (announced August 28, 2025)."
+   },
+   "urls": [
+    "https://www.reuters.com/business/world-at-work/ford-south-africa-lay-off-over-470-workers-car-engine-plants-2025-08-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Ford South Africa said it was making necessary adjustments to its manufacturing operations in both plants.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Ford Motor Company of Southern Africa said in a statement that it was making necessary adjustments to its manufacturing operations in both plants."
+   },
+   "urls": [
+    "https://www.reuters.com/business/world-at-work/ford-south-africa-lay-off-over-470-workers-car-engine-plants-2025-08-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "According to the union, the South Africa layoffs were 391 operator positions at Silverton, 73 at Struandale and 10 administrative roles.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The Ford South Africa layoffs affected 391 operator positions at the Silverton car assembly plant in Pretoria, 73 positions at the Struandale engine plant in Gqeberha and 10 administrative roles, according to the union."
+   },
+   "urls": [
+    "https://www.reuters.com/business/world-at-work/ford-south-africa-lay-off-over-470-workers-car-engine-plants-2025-08-28/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Ford's 4,000 European job cuts represent around 2.3% of its total workforce of 174,000.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Ford's 4,000 European job cuts represent around 2.3% of its total workforce of 174,000."
+   },
+   "urls": [
+    "https://www.reuters.com/business/autos-transportation/ford-cut-14-european-jobs-blaming-ev-shift-rising-competition-2024-11-20/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "In August 2022 Ford announced plans to cut 3,000 jobs across the U.S., Canada and India (2,000 salaried and 1,000 agency).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "In August 2022 Ford announced plans to cut 3,000 jobs across the U.S., Canada and India, comprising 2,000 salaried and 1,000 agency positions."
+   },
+   "urls": [
+    "https://abcnews.com/Business/ford-cutting-3000-jobs-us-canada-india-leans/story?id=88698556"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "Ford described its 2022 job reductions, communicated in a letter to employees, as part of a \"reshaping\" to be more competitive in the EV market.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Ford described its 2022 job reductions, communicated in a letter to employees, as part of a \"reshaping\" to get more competitive in the electric vehicle (EV) market."
+   },
+   "urls": [
+    "https://abcnews.com/Business/ford-cutting-3000-jobs-us-canada-india-leans/story?id=88698556"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "The 4,000-position European cut is an announced target, not a verified count of completed layoffs.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The 4,000-position European cut is an announced target, not a verified count of completed layoffs."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Ford's latest filing confirms ongoing restructuring rather than announcing a new layoff headcount.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Ford's latest filing confirms ongoing restructuring rather than announcing a new layoff headcount."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Ford's employee separations can include voluntary departures and are not necessarily all involuntary layoffs.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Ford's employee separations can include voluntary departures and are not necessarily all involuntary layoffs."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Ford booked $360M of European restructuring special items in H1 2026, versus $50M in H1 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Ford booked $360M of European restructuring special items in H1 2026, compared with $50M in H1 2025."
+   },
+   "urls": [
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "A BlueOval SK WARN notice for Glendale, Kentucky was reported at 1,218 hourly and 300 salaried workers.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "A BlueOval SK (Ford/SK On joint venture) WARN notice for Glendale, Kentucky was reported at 1,218 hourly and 300 salaried workers."
+   },
+   "urls": [
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "BlueOval SK's Glendale battery plant layoffs of about 1,500–1,600 workers began February 14, 2026 so the plant could be retooled for energy-storage batteries.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "BlueOval SK's Glendale, Kentucky battery plant layoffs of about 1,500–1,600 workers began February 14, 2026 so the plant could be retooled for energy-storage batteries."
+   },
+   "urls": [
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": [
+    "c5"
+   ]
+  },
+  {
+   "cid": "c44",
+   "claim": "The largest confirmed 2026 cut was at BlueOval SK, Ford's battery joint venture, not Ford Motor Co. itself.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The largest confirmed 2026 cut was at BlueOval SK, Ford's battery joint venture, not Ford Motor Co. itself."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Ford has cut about 5,300 salaried workers from its 2020 peak, to about 30,700 white-collar employees in 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Ford has cut about 5,300 salaried workers from its 2020 peak, to about 30,700 white-collar employees in 2025."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/05/15/general-motors-ford-stellantis-job-cuts-ai.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "SK Battery America in Commerce, Georgia filed a WARN notice in March 2026 covering 958 workers, effective May 6, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SK Battery America in Commerce, Georgia filed a WARN notice in March 2026 covering 958 workers, effective May 6, 2026."
+   },
+   "urls": [
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "BlueOval SK in Haywood County, Tennessee filed a WARN notice in March 2026 covering 150 workers, effective May 6, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "BlueOval SK in Haywood County, Tennessee filed a WARN notice in March 2026 covering 150 workers, effective May 6, 2026."
+   },
+   "urls": [
+    "https://www.layoffnext.com/company-intel/ford"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "A search summary says Ford's Q3 2026 10-Q (filed about October 28, 2026) repeats the $500M–$1B guidance and shows a $916M separation reserve at September 30, 2026; not verified directly.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "A search summary says Ford's Q3 2026 10-Q (filed about October 28, 2026) repeats the $500M–$1B 2026 guidance and shows a $916M separation reserve at September 30, 2026; this was not verified directly."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000037996/000003799626000191/f-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Analyst estimates of 8,000–11,000 Ford job losses in 2026 are projections that Ford has not confirmed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Analyst estimates of 8,000–11,000 Ford job losses in 2026 are projections that Ford has not confirmed."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Fox 2 Detroit and others report that Ford rehired about 300–350 engineers after earlier cuts (unverified).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Fox 2 Detroit and others report that Ford rehired about 300–350 engineers after earlier cuts (unverified)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www1.wdr.de/wirtschaft/ford-koeln-stellenabbau-100.html",
+   "note": "WDR 22.09.2026 reports 500 Cologne employees must leave with severance, revealed at a works meeting.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www1.wdr.de/wirtschaft/ford-koeln-stellenabbau-100.html",
+   "note": "WDR states the 500 are not additional but part of the savings program launched last year (2,900 positions).",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www1.wdr.de/wirtschaft/ford-koeln-stellenabbau-100.html",
+   "note": "WDR says another 750 vehicle-production positions were cut in spring because a shift was eliminated.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html",
+   "note": "Detroit News/TNS piece says the JV plant lets 1,600 workers go on Valentine's Day (Feb 14); WARN lists 1,518.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html",
+   "note": "Article says in December Ford announced dissolving the JV and retaining the two Kentucky sites; the 10-Q confirms the December 2025 agreement.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html",
+   "note": "Article supports the $2B retool for energy storage and the $19.5B special-items plan; the wording that $19.5B is a redeploy plan is slightly loose but matches the article.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.manufacturingdive.com/news/ford-blueoval-sk-delays-layoffs-in-georgia-battery-joint-venture/815449",
+   "note": "Manufacturing Dive confirms $11.4B JV and Ford calling it its largest manufacturing commitment.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.manufacturingdive.com/news/ford-blueoval-sk-delays-layoffs-in-georgia-battery-joint-venture/815449",
+   "note": "WARN filing delays the ~10% remaining-workforce cuts to March 31; the March 23 report date is consistent with the Tennessee filing date but not directly confirmed.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html",
+   "note": "Article: approx. 155 BlueOval SK employees extended to at least March 31 to assist until handover to Ford.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.fromtheroad.ford.com/eur/en/articles/2024/ford-announces-measures-to-achieve-long-term-competitiveness-in",
+   "note": "Ford's own Nov 20, 2024 release announces 4,000 European cuts by end 2027, mainly Germany and UK, pending consultations.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://apnews.com/ff53e7060e23605b6568bcf6330f1dbc",
+   "note": "The 4,000 European cuts were announced November 20, 2024, not around November 2025.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+   "note": "Q3 2026 10-Q: total 2026 charges of $500M-$1B for initiated actions, primarily employee separations.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+   "note": "10-Q states that in December 2025 Ford announced cancelling three planned EVs and ending current-gen F-150 Lightning production.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://layoffnext.com/company-intel/ford",
+   "note": "About $13.8B of Q4 2025 charges for the EV reset and BOSK disposition, mostly write-downs rather than job cuts.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://uniforlocal707.org/2026/10/31/message-from-oac-chairperson-latest-recall-from-indefinite-layoff-update-november-2-2026/",
+   "note": "Local 707 post dated Oct 31 says Ford recalls 18 members from indefinite layoff on Nov 2 for Final Assembly; both variants match.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://uniforlocal707.org/2026/10/31/message-from-oac-chairperson-latest-recall-from-indefinite-layoff-update-november-2-2026/",
+   "note": "The post states the most senior member on layoff as of Nov 2 has a seniority date of July 20, 2015.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.wkyufm.org/news/2026-10-14/ford-updates-community-on-its-second-act-in-hardin-county",
+   "note": "WKYU, Oct 14, 2026: ten months after 1,500 lost jobs, hiring has begun at Ford Energy's Glendale plant.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html",
+   "note": "Plans to hire more than 2,100 and BOSK employees eligible for rehire; WKYU confirms the 2,100 target in Oct 2026.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true"
+   }
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://layoffnext.com/company-intel/ford",
+   "note": "Ford's filings say some charges depend on works council negotiations, and no headcount is given; the 10-Q text itself was not directly quoted.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+   "note": "Consistent with the European separation programs through end-2027 and the Cologne reductions still under way; the exact 10-Q wording was not quoted.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://layoffnext.com/company-intel/ford",
+   "note": "Ford disclosed 2026 charges of $500M-$1B, primarily employee separations, rather than a global headcount.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://layoffnext.com/company-intel/ford",
+   "note": "No Ford Motor Company WARN filing or companywide headcount announcement turned up in the sources reviewed.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://uniforlocal707.org/2026/10/31/message-from-oac-chairperson-latest-recall-from-indefinite-layoff-update-november-2-2026/",
+   "note": "The Local 707 post covers only the Oakville unit's recall and says nothing about a companywide layoff count.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.fromtheroad.ford.com/eur/en/articles/2024/ford-announces-measures-to-achieve-long-term-competitiveness-in",
+   "note": "Ford announced 4,000 European job cuts by end-2027 and up to 1,000 in Cologne; programs are still running.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://apnews.com/article/ford-europe-bev-electric-cars-cologne-f5bbc7e08174c7e6bebd7272fcc96446",
+   "note": "AP, Sept 16, 2025: Ford to cut up to 1,000 jobs at the Cologne EV plant, with the AP excerpt supporting the buyout detail.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.reuters.com/business/world-at-work/ford-south-africa-lay-off-over-470-workers-car-engine-plants-2025-08-28/",
+   "note": "Reuters confirms Ford SA confirmed layoffs of 391+73+10 (over 470) roles; dated Aug 2025, so not recent.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/business/world-at-work/ford-south-africa-lay-off-over-470-workers-car-engine-plants-2025-08-28/",
+   "note": "Reuters quotes Ford's statement on making necessary adjustments to manufacturing operations in both plants.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/business/world-at-work/ford-south-africa-lay-off-over-470-workers-car-engine-plants-2025-08-28/",
+   "note": "Breakdown of 391, 73 and 10 roles is attributed to the union in Reuters; this is detail on c31.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.reuters.com/business/autos-transportation/ford-cut-14-european-jobs-blaming-ev-shift-rising-competition-2024-11-20/",
+   "note": "Reuters says the 4,000 cuts affect 2.3% of global force; 4,000/174,000 is about 2.3%, though 174,000 is not quoted directly.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://abcnews.com/Business/ford-cutting-3000-jobs-us-canada-india-leans/story?id=88698556",
+   "note": "ABC News confirms 3,000 cuts (2,000 salaried, 1,000 agency) in Aug 2022; stale history.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://abcnews.com/Business/ford-cutting-3000-jobs-us-canada-india-leans/story?id=88698556",
+   "note": "ABC says the letter to employees described a 'reshaping' to be more competitive in EVs; stale 2022 context.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.fromtheroad.ford.com/eur/en/articles/2024/ford-announces-measures-to-achieve-long-term-competitiveness-in",
+   "note": "Ford says it is 'planning to' reduce by 4,000 positions by end of 2027, so this is a target rather than a count of completed layoffs.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.layoffnext.com/company-intel/ford",
+   "note": "No passage quotes the filing directly, but secondary summary of the 10-K/10-Q describes ongoing restructuring charges ($500M-$1B in 2026, mostly separations) without a new headcount.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.layoffnext.com/company-intel/ford",
+   "note": "No direct passage, but it is generally accurate that separation programs at Ford (e.g. buyouts, voluntary programs) include voluntary departures.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.layoffnext.com/company-intel/ford",
+   "note": "Summary of Q2 2026 10-Q cites Europe restructuring special items of $360M in H1 2026 versus $50M in H1 2025.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.layoffnext.com/company-intel/ford",
+   "note": "Murray Ledger report cited: WARN notice lists 1,218 hourly and 300 salaried at Glendale.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.gmtoday.com/autos/hundreds-of-workers-set-for-layoff-as-ford-retools-battery-plant/article_410100e4-cefb-4617-903e-d91feb823fb1.html",
+   "note": "Detroit News says 1,600 workers laid off Feb 14 as the plant is retooled for energy storage; WARN said 1,518. A portion of the layoffs was later postponed to Mar 31 per another source.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.layoffnext.com/company-intel/ford",
+   "note": "BlueOval SK/SK Battery America WARN filings (KY 1,518, GA 958, TN 150) were not Ford Motor Co. filings; 'largest' is plausible but the comparison is only inferred.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/05/15/general-motors-ford-stellantis-job-cuts-ai.html",
+   "note": "CNBC May 2026: Ford scaled back roughly 5,300 salaried workers from its 2020 peak to about 30,700 last year (2025).",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.layoffnext.com/company-intel/ford",
+   "note": "WARN table and Manufacturing Dive confirm SK Battery America filed for 958 workers in Commerce, GA, March 6 notice, May 6 effective; but it is an SK On company, not Ford, so only tangential.",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.layoffnext.com/company-intel/ford",
+   "note": "WARN table shows BlueOval SK (Ford/SK On JV) Haywood County TN, 150 workers, notice March 23, effective May 6, 2026.",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://layoffnext.com/company-intel/ford",
+   "note": "The page says analyst forecasts of 8,000-11,000 further 2026 Ford job losses circulate widely but no Ford statement supports them; Ford's disclosure is a cost range rather than a headcount.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://last10k.com/sec-filings/f/0000037996-26-000191.htm",
+   "confidence": "medium",
+   "note": "The 10-Q was submitted Oct 28, 2026 at 7:21 PM, after hours, so EDGAR's official filing date is probably Oct 29. Oct 28 is the submission date and is defensible.",
+   "via": "agent"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://last10k.com/sec-filings/f/0000037996-26-000191.htm",
+   "confidence": "medium",
+   "note": "The SEC accepted the filing on Oct 29, 2026, so this is the likely official filing date. It is the Q3 10-Q, the latest one.",
+   "via": "agent"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000191/f-20260930.htm",
+   "confidence": "high",
+   "note": "Note 14 says 2026 charges of $500M–$1B are expected, mainly from employee separations. The reserve ending balance is $916M at Sept 30, 2026, mostly European separation programs. The filing date is about Oct 28–29.",
+   "via": "agent"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.fox2detroit.com/news/ford-ai-engineering-challenges-rehiring",
+   "note": "Neither saved page (CNBC, Ford 10-Q) mentions the rehiring, so I confirmed it through a web search. Fox 2 Detroit reported that Ford hired several hundred engineers after AI-related layoffs. Bloomberg put the figure at more than 300. Other outlets (Repairer Driven News, The Next Web, Tom's Guide, Bu",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "retried": true
+  }
+ },
+ "audit": {
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "note": "Ford's FY2025 10-K says that in December 2025 it decided to cancel three previously planned EVs and end production of the current-generation F-150 Lightning. This matches December 2025 news coverage of the EV reset."
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "note": "Secondary reports, including one that quotes the 10-K, put Q4 2025 charges at about $13.8B: roughly $10.7B for EV impairments and cancellations plus $3.2B for the BlueOval SK disposition. Some outlets give $14.4B to $15.5B because they count the items differently."
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "note": "The Unifor Local 707 recall update says that as of November 2, the most senior member still on layoff has a seniority date of July 20, 2015."
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "note": "Searches on Nov 11, 2026 found no new company-wide Ford layoff announcement with a headcount for fall 2026. The latest items are the 2026 separation-charge guidance in Ford's filings and local or European cuts."
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "note": "Ford has announced several job cuts, including up to 1,000 jobs in Cologne (Sept 2025) and 4,000 European positions by 2027 (Nov 2024). It is also still running the Cologne reduction program in 2026."
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "note": "Reuters (Aug 28, 2025) reported layoffs of more than 470 at Ford South Africa: 391 at Silverton, 73 at Struandale and 10 administrative roles. The figures came through the Solidarity union, and Ford acknowledged the consultation process."
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 46,
+ "scores": {
+  "firecrawl": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 45,
+   "truth_weight": 148.25,
+   "coverage": 0.054,
+   "accuracy": 1.0,
+   "combined": 0.103,
+   "thorough_coverage": 0.054,
+   "answer_truth": 26,
+   "thoroughness": 0.102,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 45,
+   "truth_weight": 148.25,
+   "coverage": 0.519,
+   "accuracy": 1.0,
+   "combined": 0.683,
+   "thorough_coverage": 0.465,
+   "answer_truth": 26,
+   "thoroughness": 0.635,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 45,
+   "truth_weight": 148.25,
+   "coverage": 0.142,
+   "accuracy": 1.0,
+   "combined": 0.249,
+   "thorough_coverage": 0.14,
+   "answer_truth": 26,
+   "thoroughness": 0.246,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 17,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 1,
+   "truth": 45,
+   "truth_weight": 148.25,
+   "coverage": 0.285,
+   "accuracy": 0.961,
+   "combined": 0.439,
+   "thorough_coverage": 0.336,
+   "answer_truth": 26,
+   "thoroughness": 0.497,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 45,
+   "truth_weight": 148.25,
+   "coverage": 0.259,
+   "accuracy": 1.0,
+   "combined": 0.412,
+   "thorough_coverage": 0.209,
+   "answer_truth": 26,
+   "thoroughness": 0.346,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 45,
+   "truth_weight": 148.25,
+   "coverage": 0.477,
+   "accuracy": 1.0,
+   "combined": 0.646,
+   "thorough_coverage": 0.43,
+   "answer_truth": 26,
+   "thoroughness": 0.601,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.542,
+ "corrections_v2": {
+  "units_before": 50,
+  "units_after": 46,
+  "dedup_groups": [
+   {
+    "kept": "c3",
+    "merged": [
+     "c4"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c14"
+    ]
+   },
+   {
+    "kept": "c6",
+    "merged": [
+     "c16"
+    ]
+   },
+   {
+    "kept": "c21",
+    "merged": [
+     "c43"
+    ]
+   }
+  ],
+  "cost": 0.027
+ }
+}

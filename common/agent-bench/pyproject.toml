@@ -1,0 +1,32 @@
+[project]
+name = "agent-bench"
+version = "2.0.0"
+description = "Shared runner and judge for benchmarks of web research agents: pooled, page-verified truth and optional fixed answer keys"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+keywords = ["evaluation", "benchmark", "web-research", "agents"]
+
+dependencies = [
+  "nimble-python>=1.2",
+  "httpx>=0.27",
+  "certifi>=2024.2.2",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.6", "pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["agent_bench"]
+
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "SIM", "I"]
+# ported research code: long prompt lines, inline lambdas, and lambdas called inside their loop
+ignore = ["E501", "E731", "B008", "B023", "SIM108", "SIM115", "SIM905"]

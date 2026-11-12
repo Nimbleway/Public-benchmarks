@@ -1,0 +1,307 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69966cfaba40a7bff1",
+ "status": "completed",
+ "seconds": 96,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Amazon's stock split history?",
+  "passages": [
+   {
+    "quote": "a 20-for-1 split of common shares, effective on June 3, 2022",
+    "publisher": "Amazon.com, Inc.",
+    "published_date": null,
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx"
+   },
+   {
+    "quote": "a 2-for-1 split of common shares, effective on September 1, 1999",
+    "publisher": "Amazon.com, Inc.",
+    "published_date": null,
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx"
+   },
+   {
+    "quote": "a 3-for-1 split of common shares, effective on January 5, 1999",
+    "publisher": "Amazon.com, Inc.",
+    "published_date": null,
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx"
+   },
+   {
+    "quote": "a 2-for-1 split of common shares, effective on June 2, 1998",
+    "publisher": "Amazon.com, Inc.",
+    "published_date": null,
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx"
+   }
+  ],
+  "answer": "As of November 11, 2026, Amazon.com, Inc. has split its common stock four times, most recently a 20-for-1 split effective June 3, 2022. Its earlier splits, newest first, were 2-for-1 effective September 1, 1999; 3-for-1 effective January 5, 1999; and 2-for-1 effective June 2, 1998.",
+  "caveats": [
+   "The dates shown are Amazon's stated effective dates, not announcement dates, shareholder record dates, or split-adjusted trading dates."
+  ],
+  "missing_fields": [
+   "passages[0].published_date, passages[1].published_date, passages[2].published_date, passages[3].published_date: Amazon's investor-relations FAQ does not display a publication or update date."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2022-06-03",
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx",
+    "fact": "Amazon's most recent listed stock split was 20-for-1, effective June 3, 2022."
+   },
+   {
+    "date": "1999-09-01",
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx",
+    "fact": "Amazon completed a 2-for-1 stock split effective September 1, 1999."
+   },
+   {
+    "date": "1999-01-05",
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx",
+    "fact": "Amazon completed a 3-for-1 stock split effective January 5, 1999."
+   },
+   {
+    "date": "1998-06-02",
+    "source_url": "https://ir.aboutamazon.com/faqs/default.aspx",
+    "fact": "Amazon completed a 2-for-1 stock split effective June 2, 1998."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no external evidence is needed.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On March 9, 2022, Amazon announced a 20-for-1 split of common shares, effective on June 3, 2022, for stockholders of record on May 27, 2022.",
+      "On July 21, 1999 Amazon announced a 2-for-1 split of common shares, effective on September 1, 1999, for stockholders of record on August 12, 1999.",
+      "On November 19, 1998, Amazon announced a 3-for-1 split of common shares, effective on January 5, 1999, for stockholders of record on December 18, 1998.",
+      "On April 27, 1998, Amazon announced a 2-for-1 split of common shares, effective on June 2, 1998, for stockholders of record on May 20, 1998."
+     ]
+    }
+   ],
+   "reasoning": "Each quotation is a verbatim excerpt from Amazon's investor-relations FAQ. Publication dates are left null because the opened page did not provide them.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On March 9, 2022, Amazon announced a 20-for-1 split of common shares, effective on June 3, 2022, for stockholders of record on May 27, 2022.",
+      "On July 21, 1999 Amazon announced a 2-for-1 split of common shares, effective on September 1, 1999, for stockholders of record on August 12, 1999. On November 19, 1998, Amazon announced a 3-for-1 split of common shares, effective on January 5, 1999, for stockholders of record on December 18, 1998. On April 27, 1998, Amazon announced a 2-for-1 split of common shares, effective on June 2, 1998, for stockholders of record on May 20, 1998."
+     ]
+    },
+    {
+     "title": "Fiscal.ai /v1/company/stock-splits",
+     "url": "https://fiscal.ai",
+     "excerpts": [
+      "announceDate: 2022-03-09; recordDate: 2022-05-27; exDate: 2022-06-06; payDate: 2022-06-03; splitType: Stock Split; rate: 20"
+     ]
+    }
+   ],
+   "reasoning": "Amazon's FAQ lists four splits and their effective dates and ratios. Counting and ordering those entries gives the answer. The separate corporate-action history also identifies the 2022 split as its latest returned split, but the current completeness conclusion requires synthesis.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On March 9, 2022, Amazon announced a 20-for-1 split of common shares, effective on June 3, 2022, for stockholders of record on May 27, 2022."
+     ]
+    },
+    {
+     "title": "amzn-20220309",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000009/amzn-20220309.htm",
+     "excerpts": [
+      "Trading is expected to begin on a split-adjusted basis on June 6, 2022."
+     ]
+    }
+   ],
+   "reasoning": "The FAQ explicitly distinguishes announcement, effective, and record dates. The filing separately identifies the expected split-adjusted trading date, explaining why the answer labels its dates as effective dates.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The opened FAQ did not display a publication or update date. This is an absence observed when reading the page, not a fact established by a quoted passage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "Uses the task's specified current date as the research cutoff, not as a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On March 9, 2022, Amazon announced a 20-for-1 split of common shares, effective on June 3, 2022, for stockholders of record on May 27, 2022.",
+      "On July 21, 1999 Amazon announced a 2-for-1 split of common shares, effective on September 1, 1999, for stockholders of record on August 12, 1999. On November 19, 1998, Amazon announced a 3-for-1 split of common shares, effective on January 5, 1999, for stockholders of record on December 18, 1998. On April 27, 1998, Amazon announced a 2-for-1 split of common shares, effective on June 2, 1998, for stockholders of record on May 20, 1998."
+     ]
+    }
+   ],
+   "reasoning": "The four primary-source entries directly provide every split ratio and effective date. Identifying the most recent listed split follows from their chronological ordering.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On March 9, 2022, Amazon announced a 20-for-1 split of common shares, effective on June 3, 2022, for stockholders of record on May 27, 2022."
+     ]
+    }
+   ],
+   "reasoning": "Verbatim excerpt establishing the 2022 split ratio and effective date; the FAQ's publication date is unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On July 21, 1999 Amazon announced a 2-for-1 split of common shares, effective on September 1, 1999, for stockholders of record on August 12, 1999."
+     ]
+    }
+   ],
+   "reasoning": "Verbatim excerpt establishing the September 1999 split ratio and effective date; the FAQ's publication date is unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On November 19, 1998, Amazon announced a 3-for-1 split of common shares, effective on January 5, 1999, for stockholders of record on December 18, 1998."
+     ]
+    }
+   ],
+   "reasoning": "Verbatim excerpt establishing the January 1999 split ratio and effective date; the FAQ's publication date is unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.3",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On April 27, 1998, Amazon announced a 2-for-1 split of common shares, effective on June 2, 1998, for stockholders of record on May 20, 1998."
+     ]
+    }
+   ],
+   "reasoning": "Verbatim excerpt establishing the June 1998 split ratio and effective date; the FAQ's publication date is unavailable.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On March 9, 2022, Amazon announced a 20-for-1 split of common shares, effective on June 3, 2022, for stockholders of record on May 27, 2022."
+     ]
+    },
+    {
+     "title": "amzn-20220309",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000009/amzn-20220309.htm",
+     "excerpts": [
+      "Trading is expected to begin on a split-adjusted basis on June 6, 2022."
+     ]
+    }
+   ],
+   "reasoning": "The primary sources distinguish effective dates from announcement, record, and split-adjusted trading dates.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "Publication-date metadata was not displayed on the opened FAQ, so all four corresponding fields remain null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On March 9, 2022, Amazon announced a 20-for-1 split of common shares, effective on June 3, 2022, for stockholders of record on May 27, 2022.",
+      "On July 21, 1999 Amazon announced a 2-for-1 split of common shares, effective on September 1, 1999, for stockholders of record on August 12, 1999. On November 19, 1998, Amazon announced a 3-for-1 split of common shares, effective on January 5, 1999, for stockholders of record on December 18, 1998. On April 27, 1998, Amazon announced a 2-for-1 split of common shares, effective on June 2, 1998, for stockholders of record on May 20, 1998."
+     ]
+    }
+   ],
+   "reasoning": "The FAQ gives the 20-for-1 split effective June 3, 2022; all other listed splits are earlier.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On July 21, 1999 Amazon announced a 2-for-1 split of common shares, effective on September 1, 1999, for stockholders of record on August 12, 1999."
+     ]
+    }
+   ],
+   "reasoning": "Directly states the 2-for-1 split effective September 1, 1999.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.2",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On November 19, 1998, Amazon announced a 3-for-1 split of common shares, effective on January 5, 1999, for stockholders of record on December 18, 1998."
+     ]
+    }
+   ],
+   "reasoning": "Directly states the 3-for-1 split effective January 5, 1999.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.3",
+   "citations": [
+    {
+     "title": "\n\tAmazon.com, Inc. - FAQs\n",
+     "url": "https://ir.aboutamazon.com/faqs/default.aspx",
+     "excerpts": [
+      "On April 27, 1998, Amazon announced a 2-for-1 split of common shares, effective on June 2, 1998, for stockholders of record on May 20, 1998."
+     ]
+    }
+   ],
+   "reasoning": "Directly states the 2-for-1 split effective June 2, 1998.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "What is Amazon's stock split history?",
+ "input_n": 36,
+ "completed_on": "2026-11-11"
+}

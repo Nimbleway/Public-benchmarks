@@ -1,0 +1,504 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 32,
+ "task": "How many employees does Coca-Cola have?",
+ "labels": {
+  "gpt": "A",
+  "parallel": "B",
+  "opus": "C",
+  "nimble": "D",
+  "firecrawl": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 7,
+ "evidence_fetched": 7,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "The Coca-Cola Company had approximately 65,900 employees as of December 31, 2025.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "The Coca-Cola Company had approximately 65,900 employees worldwide as of December 31, 2025.",
+    "B": "The Coca-Cola Company had approximately 65,900 employees worldwide as of December 31, 2025.",
+    "C": "The Coca-Cola Company had approximately 65,900 employees as of December 31, 2025, per its Form 10-K for fiscal 2025.",
+    "D": "The Coca-Cola Company had approximately 65,900 employees as of December 31, 2025.",
+    "E": "The Coca-Cola Company had approximately 65,900 employees as of December 31, 2025.",
+    "F": "The Coca-Cola Company had approximately 65,900 employees as of December 31, 2025."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+    "https://sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The Coca-Cola Company had approximately 69,700 employees as of December 31, 2024.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "The Coca-Cola Company had approximately 69,700 employees as of December 31, 2024.",
+    "B": "The Coca-Cola Company had approximately 69,700 employees as of December 31, 2024.",
+    "C": "The Coca-Cola Company had approximately 69,700 employees as of December 31, 2024.",
+    "D": "The Coca-Cola Company had approximately 69,700 employees as of December 31, 2024.",
+    "E": "The Coca-Cola Company had approximately 69,700 employees as of December 31, 2024.",
+    "F": "The Coca-Cola Company had approximately 69,700 employees as of December 31, 2024."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+    "https://sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Approximately 8,900 of The Coca-Cola Company's employees were located in the United States as of December 31, 2025.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Approximately 8,900 of The Coca-Cola Company's employees were located in the United States as of December 31, 2025.",
+    "C": "About 8,900 of The Coca-Cola Company's employees were located in the United States as of December 31, 2025.",
+    "D": "Approximately 8,900 of The Coca-Cola Company's employees were located in the United States as of December 31, 2025.",
+    "E": "Approximately 8,900 of The Coca-Cola Company's employees were located in the United States as of December 31, 2025.",
+    "F": "Approximately 8,900 of The Coca-Cola Company's employees were located in the United States as of December 31, 2025."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+    "https://sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The Coca-Cola Company said the decrease in its total number of employees (2024 to 2025) was primarily due to 2025 divestiture activity.",
+   "asserted_by": [
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "The decrease in Coca-Cola's total number of employees from 2024 to 2025 was primarily due to 2025 divestiture activity.",
+    "E": "The Coca-Cola Company said the decrease in total employees was primarily due to 2025 divestiture activity.",
+    "F": "The Coca-Cola Company said the decrease in its total number of employees was primarily due to 2025 divestiture activity."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "https://sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Coca-Cola's reported employee total excludes employees of its independent bottling partners.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Coca-Cola's reported employee total excludes employees of its independently owned bottling partners.",
+    "F": "The Coca-Cola Company's employee count excludes the broader workforce of independent bottling partners."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "The Coca-Cola Company's fiscal 2025 Form 10-K reporting the employee count was filed/published on February 20, 2026.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "The Coca-Cola Company filed its fiscal 2025 Form 10-K with the SEC on February 20, 2026.",
+    "F": "The Coca-Cola Company's annual filing (10-K for fiscal 2025) reporting the employee count was published on 2026-02-20."
+   },
+   "urls": [
+    "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Coca-Cola announced in December 2025 that it plans to reorganize its workforce throughout 2026, with some jobs eliminated and others added.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Coca-Cola announced in December 2025 that it plans to reorganize its workforce throughout 2026, with some jobs eliminated and others added."
+   },
+   "urls": [
+    "https://ajc.com/business/2025/12/coca-cola-will-reorganize-its-workforce-in-2026-it-starts-with-75-layoffs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Coca-Cola's 2026 workforce reorganization begins with 75 layoffs at its Atlanta headquarters on Feb. 28, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Coca-Cola's 2026 workforce reorganization begins with 75 layoffs at its Atlanta headquarters on Feb. 28, 2026."
+   },
+   "urls": [
+    "https://ajc.com/business/2025/12/coca-cola-will-reorganize-its-workforce-in-2026-it-starts-with-75-layoffs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Coca-Cola's headcount fell by roughly 3,800 (about 5.5%) from the end of 2024 to the end of 2025.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Coca-Cola's headcount fell by roughly 3,800 (about 5.5%) from the end of 2024 to the end of 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "The Coca-Cola Company had about 79,100 employees at year-end 2023.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The Coca-Cola Company had about 79,100 employees at year-end 2023."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/ko/employees/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Coca-Cola reports headcount once a year; the next update is expected with the FY2026 10-K in early 2027 (around February 2027).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Coca-Cola reports headcount once a year; the next update is expected with the FY2026 10-K in early 2027 (around February 2027)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "The drop in Coca-Cola headcount from 79,100 in 2023 to 65,900 in 2025 largely reflects purchases and sales of bottling operations (refranchising), not only layoffs.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The drop in Coca-Cola headcount from 79,100 in 2023 to 65,900 in 2025 largely reflects purchases and sales of bottling operations (refranchising), not only layoffs."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Some data sites label the years differently, e.g. listing 65,900 under 'fiscal 2026', but the 10-K states 65,900 is the December 31, 2025 figure.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Some data sites label the years differently, e.g. listing 65,900 under 'fiscal 2026', but the 10-K states 65,900 is the December 31, 2025 figure."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "10-K states approx. 65,900 employees at Dec 31, 2025; latest annual figure as of today.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "10-K gives 69,700 for Dec 31, 2024; prior-year comparison context.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "10-K says approx. 8,900 of employees are in the US.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "10-K: decrease primarily due to 2025 divestiture activity.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "The count is for the Company and its subsidiaries; independent bottlers are separate companies (10-K lists CCEP, CCHBC, etc. as bottling partners).",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+   "note": "Filing page shows 10-K published February 20, 2026.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ajc.com/business/2025/12/coca-cola-will-reorganize-its-workforce-in-2026-it-starts-with-75-layoffs",
+   "note": "AJC (Dec 31, 2025) reports the plan to reorganize throughout 2026, with some jobs eliminated and others added, per a spokesperson.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ajc.com/business/2025/12/coca-cola-will-reorganize-its-workforce-in-2026-it-starts-with-75-layoffs",
+   "note": "WARN notice: 75 Atlanta HQ layoffs on Feb. 28; the date is now past.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/ko/employees/",
+   "note": "69,700 to 65,900 is -3,800, or -5.45%.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/ko/employees/",
+   "note": "Stockanalysis lists 79,100 for Dec 31, 2023, consistent with the 10-K history I know.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/ko/employees/",
+   "note": "Headcount is reported annually in the 10-K, normally filed in February; the next is expected around February 2027. This is a forecast, not a passage-backed fact.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "10-K attributes the 2025 drop to divestitures; the 2024 drop is consistent with refranchising (e.g. the bottling operations in Vietnam and Ghana). 'Largely' is a reasonable but partly inferred characterization.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+   "note": "The 10-K confirms 65,900 is the Dec 31, 2025 figure; the claim about other sites' labeling is unverified but harmless.",
+   "via": "passages"
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 14,
+ "scores": {
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 30.0,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.367,
+   "answer_truth": 1,
+   "thoroughness": 0.537,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 30.0,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.467,
+   "answer_truth": 1,
+   "thoroughness": 0.636,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 30.0,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.767,
+   "answer_truth": 1,
+   "thoroughness": 0.868,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 30.0,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.8,
+   "answer_truth": 1,
+   "thoroughness": 0.889,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 30.0,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.567,
+   "answer_truth": 1,
+   "thoroughness": 0.723,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 13,
+   "truth_weight": 30.0,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.683,
+   "answer_truth": 1,
+   "thoroughness": 0.812,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.346,
+ "corrections_v2": {
+  "units_before": 14,
+  "units_after": 13,
+  "dedup_groups": [
+   {
+    "kept": "c5",
+    "merged": [
+     "c6"
+    ]
+   }
+  ],
+  "cost": 0.013
+ }
+}

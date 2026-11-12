@@ -1,0 +1,77 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0187cf7f26e5d4d6006af4b05369f887d2996a32814837b198",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "What is Samsung's annual revenue?",
+  "answer": "If you mean Samsung Electronics, its latest full-year consolidated revenue was KRW 333.6 trillion for fiscal 2025, ended December 31, 2025. Samsung announced that result on January 29, 2026.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Samsung Electronics reported consolidated annual revenue of KRW 333.6 trillion for fiscal 2025, ended December 31, 2025.",
+    "source_url": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+    "date": "2026-01-29"
+   },
+   {
+    "fact": "Samsung's current Fast Facts page identifies its annual revenue figure as based on FY 2025 consolidated statements.",
+    "source_url": "https://news.samsung.com/global/fast-facts",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "For the full year, the Company reported KRW 333.6 trillion in annual revenue",
+    "source_url": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+    "publisher": "Samsung Global Newsroom",
+    "published_date": "2026-01-29"
+   },
+   {
+    "quote": "Financial Performance * Based on FY 2025 consolidated statements (KRW trillion)",
+    "source_url": "https://news.samsung.com/global/fast-facts",
+    "publisher": "Samsung Global Newsroom",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "\u201cSamsung\u201d is ambiguous. This figure is for Samsung Electronics, not the broader Samsung Group.",
+   "The figure covers fiscal 2025, not trailing-twelve-month revenue or partial-year 2026 revenue."
+  ],
+  "missing_fields": [
+   "passages[1].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 19541,
+  "input_tokens_details": {
+   "cache_write_tokens": 13,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 629,
+  "output_tokens_details": {
+   "reasoning_tokens": 173
+  },
+  "total_tokens": 20170
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.036,
+ "cost_usd": 0.056,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "What is Samsung's annual revenue?",
+ "input_n": 16,
+ "completed_on": "2026-11-11"
+}

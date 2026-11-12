@@ -1,0 +1,625 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 22,
+ "task": "How many employees does Adobe have?",
+ "labels": {
+  "parallel": "A",
+  "exa": "B",
+  "opus": "C",
+  "firecrawl": "D",
+  "gpt": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 10,
+ "evidence_fetched": 10,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Adobe employed 31,360 people as of November 28, 2025 (end of fiscal 2025).",
+   "asserted_by": [
+    "F",
+    "B",
+    "D",
+    "E",
+    "C"
+   ],
+   "variants": {
+    "F": "Adobe employed 31,360 people as of November 28, 2025 (end of fiscal 2025), per its FY2025 Form 10-K.",
+    "B": "Adobe employed 31,360 people as of November 28, 2025, of which 50% were in the United States and 50% in international locations.",
+    "D": "Adobe employed 31,360 people as of November 28, 2025.",
+    "E": "Adobe employed 31,360 people worldwide as of November 28, 2025.",
+    "C": "Adobe employed 31,360 people as of November 28, 2025, the end of its fiscal 2025."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+    "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+    "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/adbe-10k-fy25-final.pdf"
+   ],
+   "conflicts_with": [
+    "c16",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "As of November 28, 2025, 50% of Adobe's employees were in the United States and 50% at international locations.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Of Adobe's 31,360 employees as of November 28, 2025, 50% were in the United States and 50% were at international locations.",
+    "B": "Adobe employed 31,360 people as of November 28, 2025, of which 50% were in the United States and 50% in international locations.",
+    "D": "Of Adobe's employees as of November 28, 2025, 50% were in the United States and 50% were in international locations."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+    "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/adbe-10k-fy25-final.pdf",
+    "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "Adobe's fiscal 2025 Form 10-K was filed on January 15, 2026.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "Adobe's fiscal 2025 Form 10-K was filed on January 15, 2026.",
+    "E": "Adobe filed its fiscal 2025 annual report on January 15, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/0000796343-26-000003-index.html"
+   ],
+   "conflicts_with": [
+    "c5"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Adobe's fiscal 2025 Form 10-K was filed in January 2026, published 2026-01-09.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Adobe's FY2025 Form 10-K was filed with the SEC in January 2026 (published 2026-01-09)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm"
+   ],
+   "conflicts_with": [
+    "c4"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Adobe's total attrition rate during fiscal 2025 was 9.9%.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Adobe's total attrition rate during fiscal 2025 was 9.9%."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "In fiscal 2025, 78% of Adobe's employees participated in its most recent engagement survey.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "In fiscal 2025, 78% of Adobe's employees participated in its most recent engagement survey."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Adobe had 30,709 employees at the end of fiscal 2024 (November 29, 2024).",
+   "asserted_by": [
+    "F",
+    "C"
+   ],
+   "variants": {
+    "F": "Adobe reported 30,709 employees in its FY2024 10-K.",
+    "C": "Adobe had 30,709 employees as of November 29, 2024, the end of fiscal 2024."
+   },
+   "urls": [
+    "https://altindex.com/ticker/adbe/employees",
+    "https://stockanalysis.com/stocks/adbe/employees/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Adobe's headcount grew about 2% year over year to 31,360.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "headcount grew about 2% year over year to 31,360."
+   },
+   "urls": [
+    "https://altindex.com/ticker/adbe/employees",
+    "https://stockanalysis.com/stocks/adbe/employees/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "AltIndex, a LinkedIn-based tracker, shows about 43,517 people listing Adobe as current employer, roughly flat (+1.6%) over three months; it counts profiles, not official payroll, and runs higher than the filed figure.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "AltIndex, a LinkedIn-based tracker, shows about 43,517 people listing Adobe as their current employer, roughly flat (+1.6%) over the past three months; this counts profiles rather than official payroll and runs higher than the filed figure."
+   },
+   "urls": [
+    "https://altindex.com/ticker/adbe/employees"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Adobe does not report headcount more frequently than annually; the next official headcount will come with the FY2026 10-K, expected January 2027.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Adobe does not report headcount more frequently than annually; its fiscal 2026 ends in late November/early December 2026, so the next official headcount will come with the FY2026 10-K, expected January 2027."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm"
+   ],
+   "conflicts_with": [
+    "c16"
+   ],
+   "merged_from": [
+    "c12",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Adobe had 29,945 employees as of December 1, 2023.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Adobe had 29,945 employees as of December 1, 2023."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/adbe/employees/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "A Fortune listing shows 34,328 employees for Adobe, but the basis of that figure is unclear.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "A Fortune listing shows 34,328 employees for Adobe, but the basis of that figure is unclear."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c1",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "Adobe reported 34,206 worldwide employees for Q3 FY2026 in its investor datasheet.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Adobe reported 34,206 worldwide employees for Q3 FY2026 in its investor datasheet."
+   },
+   "urls": [
+    "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/b75st5a4rwea.pdf"
+   ],
+   "conflicts_with": [
+    "c1",
+    "c12",
+    "c13",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "Adobe's investor datasheet was last updated September 10, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Adobe's investor datasheet was last updated September 10, 2026."
+   },
+   "urls": [
+    "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/b75st5a4rwea.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Adobe states the datasheet information is as of its modification date and makes no commitment to update it subsequently.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Adobe states the datasheet information is as of its modification date and makes no commitment to update it subsequently."
+   },
+   "urls": [
+    "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/b75st5a4rwea.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Adobe's investor-relations page identifies its September 10, 2026 Q3 FY2026 release and investor datasheet as its latest quarterly results.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Adobe's investor-relations page identifies its September 10, 2026 Q3 FY2026 release and investor datasheet as its latest quarterly results."
+   },
+   "urls": [
+    "https://www.adobe.com/investor-relations.html?mv=other&promoid=2XBSC4VN"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+   "note": "10-K states 31,360 employees as of Nov 28, 2025; still the latest official figure.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+   "note": "10-K states 50% in US and 50% international.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true",
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/0000796343-26-000003-index.html",
+   "note": "EDGAR filing detail shows filing date 2026-01-15.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/0000796343-26-000003-index.html",
+   "note": "Filed in January 2026 is correct (Jan 15); the 'published 2026-01-09' date is only the record-holder date in the filing, so it is slightly off but the core claim holds.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+   "note": "10-K: fiscal 2025 total attrition rate was 9.9%.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+   "note": "10-K: 78% participated in the engagement survey.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/adbe/employees/",
+   "note": "Table shows 30,709 at Nov 29, 2024; consistent with the FY2024 10-K.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/adbe/employees/",
+   "note": "Up 651 or 2.12% from 30,709 to 31,360.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/0000796343-26-000003-index.html",
+   "note": "Headcount is disclosed annually in the 10-K; FY2025 was filed in mid-January, so the FY2026 10-K is expected around January 2027 (Q4 earnings Dec 9, 2026).",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/adbe/employees/",
+   "note": "Table shows 29,945 at Dec 1, 2023.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.adobe.com/investor-relations.html?mv=other&promoid=2XBSC4VN",
+   "note": "Datasheet excerpt shows Q3FY26 worldwide employees 34,206, the latest quarterly datasheet (Sept 10, 2026), consistent with the IR page listing it as latest results; datasheet text itself not in the saved passages but excerpt is specific.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.adobe.com/investor-relations.html?mv=other&promoid=2XBSC4VN",
+   "note": "IR page dates the Q3 FY2026 results and datasheet September 10, 2026, matching the 'Last Updated' excerpt.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.adobe.com/investor-relations.html?mv=other&promoid=2XBSC4VN",
+   "note": "IR page lists the Sept 10, 2026 Q3 FY2026 press release and datasheet under 'Latest quarterly results'; the next report is the Dec 9 Q4 call.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://altindex.com/ticker/adbe/employees-linkedin",
+   "confidence": "medium",
+   "note": "AltIndex's LinkedIn page shows 43,517 and 'roughly flat (+1.6%)' over three months. It also cites the filed 30,709, so the tracker figure is higher. The saved /employees page lacks the number; the live /employees-linkedin page has it. The page's 'last updated' date reads Nov 15, 2026, which is odd.",
+   "via": "agent"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://fortune.com/company/adobe-systems/ ; https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+   "note": "Fortune's Adobe profile does list 34,328 employees for the fiscal year it labels as ended Nov 30, 2025. It also lists 15,569 U.S. employees. Adobe's FY2025 10-K (fiscal year ended Nov 28, 2025) gives 31,360 employees, and StockAnalysis, which draws on SEC filings, shows the same number, up 2.12% fro",
+   "label_verdicts": {
+    "C": "true"
+   },
+   "retried": true
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/b75st5a4rwea.pdf",
+   "confidence": "medium",
+   "note": "The datasheet is marked 'Last Updated: September 10, 2026'. A search describes the same disclaimer on Adobe datasheets, but I could not read the PDF text directly to confirm the wording.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "note": "Adobe's FY2025 10-K (sec.gov) says 'we employed 31,360 people' as of Nov 28, 2025. This is still the latest official count: fiscal 2026 ends in late Nov 2026, so the next 10-K isn't filed yet. I found no confirmed large 2026 layoff."
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "note": "The same FY2025 10-K says 50% of employees were in the United States and 50% in international locations as of Nov 28, 2025."
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 16,
+ "scores": {
+  "parallel": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 47.0,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.335,
+   "answer_truth": 3,
+   "thoroughness": 0.502,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 47.0,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.266,
+   "answer_truth": 3,
+   "thoroughness": 0.42,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 47.0,
+   "coverage": 0.571,
+   "accuracy": 1.0,
+   "combined": 0.727,
+   "thorough_coverage": 0.5,
+   "answer_truth": 3,
+   "thoroughness": 0.667,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 47.0,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.255,
+   "answer_truth": 3,
+   "thoroughness": 0.407,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 47.0,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.202,
+   "answer_truth": 3,
+   "thoroughness": 0.336,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 16,
+   "truth_weight": 47.0,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.58,
+   "answer_truth": 3,
+   "thoroughness": 0.734,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.687,
+ "corrections_v2": {
+  "units_before": 19,
+  "units_after": 16,
+  "dedup_groups": [
+   {
+    "kept": "c2",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13"
+    ]
+   }
+  ],
+  "cost": 0.016
+ }
+}

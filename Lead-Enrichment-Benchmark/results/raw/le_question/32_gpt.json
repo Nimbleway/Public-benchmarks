@@ -1,0 +1,70 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0d7702fbb9f49dad006af4b0a1cd0c87d29901d10ee6a56321",
+ "status": "completed",
+ "seconds": 23,
+ "output": {
+  "question": "How many employees does Coca-Cola have?",
+  "answer": "The Coca-Cola Company reported approximately 65,900 employees worldwide as of December 31, 2025. This is the latest reported headcount I could verify as of November 11, 2026. ([investors.coca-colacompany.com](https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm))",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "The Coca-Cola Company had approximately 65,900 employees as of December 31, 2025.",
+    "source_url": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "date": "2025-12-31"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively",
+    "source_url": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+    "publisher": "The Coca-Cola Company",
+    "published_date": "2026-02-20"
+   }
+  ],
+  "caveats": [
+   "This is a reported year-end headcount, not a verified count for November 11, 2026."
+  ],
+  "missing_fields": [
+   "employee_count_as_of_2026-11-11"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": [
+    {
+     "url": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-010047/ko-20251231.htm",
+     "title": "February 20, 2026 - 10-K: Annual report [Section 13 and 15(d), not S-K Item 405] | The Coca-Cola Company (KO)"
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 17373,
+  "input_tokens_details": {
+   "cache_write_tokens": 14,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 627,
+  "output_tokens_details": {
+   "reasoning_tokens": 263
+  },
+  "total_tokens": 18000
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0317,
+ "cost_usd": 0.0517,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "How many employees does Coca-Cola have?",
+ "input_n": 32,
+ "completed_on": "2026-11-11"
+}

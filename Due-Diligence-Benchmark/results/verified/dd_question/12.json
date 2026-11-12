@@ -1,0 +1,1696 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 12,
+ "task": "What are Disney's latest financial statements?",
+ "labels": {
+  "firecrawl": "A",
+  "opus": "B",
+  "nimble": "C",
+  "gpt": "D",
+  "exa": "E",
+  "parallel": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 20,
+ "evidence_fetched": 17,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Disney's latest financial statements as of Nov 11, 2026 are the Form 10-Q for the quarter (and nine months) ended June 27, 2026, filed August 5, 2026.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F",
+    "A"
+   ],
+   "variants": {
+    "C": "Disney filed its Form 10-Q for the quarter ended June 27, 2026 with the SEC on August 5, 2026.",
+    "E": "Disney's latest filed financial statements as of November 11, 2026 are its unaudited Form 10-Q for Q3 FY2026 (quarter and nine months ended June 27, 2026), filed August 5, 2026.",
+    "F": "Disney's latest quarterly financial report is its Q3 FY2026 Form 10-Q, filed August 5, 2026, covering the quarter and nine months ended June 27, 2026.",
+    "A": "Disney's latest available financial statements as of November 11, 2026 are the unaudited Condensed Consolidated Statements in its Form 10-Q filed August 5, 2026, covering the quarter and nine months ended June 27, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/0001744489-26-000057-index.htm",
+    "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/6cb3fe4e-d0ee-4bbf-84e5-17cc436ed37e.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The latest Disney statements (Q3 FY26 10-Q) are unaudited interim statements, not audited annual statements.",
+   "asserted_by": [
+    "A",
+    "D",
+    "F",
+    "E"
+   ],
+   "variants": {
+    "A": "The latest Disney statements are unaudited interim statements, not the audited FY2026 annual Form 10-K.",
+    "D": "Disney's latest Form 10-Q contains unaudited consolidated financial statements for the quarter and nine months ended June 27, 2026.",
+    "F": "Disney's Q3 FY2026 interim financial statements are unaudited, whereas the FY2025 annual statements are audited.",
+    "E": "Unaudited Form 10-Q for Q3 FY2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The Q3 FY2026 10-Q is an interim filing that does not include all information and footnotes required for complete GAAP financial statements.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Q3 FY2026 Form 10-Q is an interim filing that does not include all information and footnotes required for complete GAAP financial statements."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Disney's Form 10-Q is accession number 0001744489-26-000057 for report date June 27, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Disney's latest retrieved filing is Form 10-Q accession 0001744489-26-000057, for the report date June 27, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Disney's investor-relations page identifies fiscal Q3 2026 as its latest quarter as of Nov 11, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Disney's investor-relations page identifies fiscal Q3 2026 as its latest quarter as of November 11, 2026."
+   },
+   "urls": [
+    "https://investors.thewaltdisneycompany.com/financials/quarterly-results/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Disney released Q3 FY2026 results on August 5, 2026 via an 8-K earnings release (Exhibit 99.1), its latest results as of Nov 11, 2026.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's latest financial statements as of Nov 11, 2026 are its fiscal Q3 2026 results (quarter ended June 27, 2026), reported August 5, 2026 via an 8-K earnings release (Exhibit 99.1)."
+   },
+   "urls": [
+    "https://earningswhispers.com/article/DIS/4000000301",
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Disney's Q3 FY26 total revenues were $25.248 billion.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Disney's total revenues for the quarter ended June 27, 2026 were $25.248 billion.",
+    "D": "Disney's revenue for the quarter ended June 27, 2026 was $25,248 million.",
+    "B": "Disney's Q3 FY2026 total revenue was $25.248 billion."
+   },
+   "urls": [
+    "https://blogmickey.com/2026/08/disney-experiences-posts-10-billion-revenue-in-q3-income-jumps-20/",
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Disney's Q3 FY26 revenue rose 7% year over year.",
+   "asserted_by": [
+    "C",
+    "F",
+    "B"
+   ],
+   "variants": {
+    "C": "up 7% from $23,650 million in Q3 FY25",
+    "F": "Disney's revenue for the quarter ended June 27, 2026 was $25.248 billion, up 7% (about $1.6 billion) from the prior-year quarter.",
+    "B": "Disney's Q3 FY2026 revenue rose 7% to $25.2 billion, compared with $23.7 billion in Q3 FY2025."
+   },
+   "urls": [
+    "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/6cb3fe4e-d0ee-4bbf-84e5-17cc436ed37e.pdf",
+    "https://earningswhispers.com/article/DIS/4000000301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Disney's nine-month FY26 revenues of $76.397 billion compare with $71.961 billion in the prior-year period.",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Disney's nine-month FY26 revenues were $76,397 million, up 6% from $71,961 million.",
+    "E": "Disney's nine-month FY2026 total revenues were $76.397 billion (vs. $71.961 billion in the prior-year period)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Disney's nine-month FY26 revenues were up 6%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "up 6% from $71,961 million"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Disney's Q3 FY26 net income attributable to Disney was $2.638 billion versus about $5.262 billion a year earlier.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 net income attributable to Disney was $2,638 million, versus $5,262 million a year earlier.",
+    "E": "Disney's Q3 FY2026 net income attributable to Disney was $2.638 billion (vs. $5.262 billion in the prior-year quarter).",
+    "F": "Net income attributable to Disney for the quarter ended June 27, 2026 was $2.638 billion, down from $5.3 billion in the prior-year quarter."
+   },
+   "urls": [
+    "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/6cb3fe4e-d0ee-4bbf-84e5-17cc436ed37e.pdf",
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c14",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "Disney's nine-month FY26 net income attributable to Disney was $7.287 billion versus $11.091 billion a year earlier.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Disney's nine-month FY26 net income attributable to Disney was $7,287 million, versus $11,091 million a year earlier.",
+    "E": "Disney's nine-month FY2026 net income attributable to Disney was $7.287 billion (vs. $11.091 billion in the prior-year period)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Disney's Q3 FY26 net income (total) was $2.844 billion.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Disney's net income for the quarter ended June 27, 2026 was $2.844 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Disney's nine-month FY26 net income (total) was $7.793 billion.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Disney's net income for the nine months ended June 27, 2026 was $7.793 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Disney's Q3 FY26 GAAP diluted EPS was $1.51.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Disney's diluted earnings per share for the quarter ended June 27, 2026 was $1.51.",
+    "F": "Disney's diluted earnings per share attributable to Disney for the quarter ended June 27, 2026 were $1.51."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+    "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Disney's Q3 FY26 diluted EPS fell from $2.92 in Q3 FY25.",
+   "asserted_by": [
+    "C",
+    "B"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 GAAP diluted EPS was $1.51, down 48% from $2.92 in Q3 FY25.",
+    "B": "Disney's Q3 FY2026 diluted earnings per share decreased to $1.51 from $2.92."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://earningswhispers.com/article/DIS/4000000301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Disney's Q3 FY26 GAAP diluted EPS declined 48%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "down 48% from $2.92"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Disney's Q3 FY26 adjusted EPS was $2.06, up from $1.61 in Q3 FY25.",
+   "asserted_by": [
+    "C",
+    "B"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 adjusted EPS was $2.06, up 28% from $1.61 in Q3 FY25.",
+    "B": "Disney's Q3 FY2026 adjusted earnings per share increased to $2.06 from $1.61."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://earningswhispers.com/article/DIS/4000000301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Adjusted EPS excludes certain items and is not directly comparable to GAAP EPS.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "adjusted EPS excludes certain items and is not directly comparable to GAAP EPS"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "The drop in Q3 FY26 diluted EPS alongside the rise in adjusted EPS reflects items excluded from adjusted figures; specific drivers were not confirmed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The drop in Disney's Q3 FY2026 diluted EPS alongside the rise in adjusted EPS reflects items excluded from adjusted figures; the specific drivers were not confirmed."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Disney's nine-month FY26 diluted EPS was $4.12.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's nine-month FY26 diluted EPS was $4.12."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Disney's Q3 FY26 income before income taxes was $3.6 billion, up 14% from $3.2 billion.",
+   "asserted_by": [
+    "C",
+    "B"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 income before income taxes was $3.6 billion, up 14% from $3.2 billion in Q3 FY25.",
+    "B": "Disney's Q3 FY2026 income before income taxes increased 14% to $3.6 billion, compared with $3.2 billion in the prior-year quarter."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://earningswhispers.com/article/DIS/4000000301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Disney's Q3 FY26 total segment operating income was about $5.6 billion, up 21% from $4.6 billion, modestly exceeding prior guidance.",
+   "asserted_by": [
+    "C",
+    "B"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 total segment operating income was $5,555 million (about $5.6 billion), up 21% from $4.6 billion, and modestly exceeded prior guidance.",
+    "B": "Disney's Q3 FY2026 total segment operating income increased 21% to $5.6 billion from $4.6 billion, modestly exceeding prior guidance."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://earningswhispers.com/article/DIS/4000000301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Disney's nine-month FY26 total segment operating income was $14,758 million, up 5%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's nine-month FY26 total segment operating income was $14,758 million, up 5%."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Disney's Q3 FY26 Entertainment segment revenues were $11,345 million (+6%) and segment operating income was $1,680 million (+64%).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 Entertainment segment revenues were $11,345 million (+6%) and segment operating income was $1,680 million (+64%)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Disney's Q3 FY26 Sports segment revenues were $4,500 million (+4%) and segment operating income was $858 million (-17%).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 Sports segment revenues were $4,500 million (+4%) and segment operating income was $858 million (-17%)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Disney's Q3 FY26 Experiences segment revenues were $9,968 million (+10%).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 Experiences segment revenues were $9,968 million (+10%)"
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Disney's Q3 FY26 Experiences segment operating income was $3.017 billion, up 20%.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "C": "segment operating income was $3,017 million (+20%)",
+    "B": "Disney's Experiences segment operating income in Q3 FY2026 increased 20% to $3.017 billion from $2.516 billion a year earlier, a record."
+   },
+   "urls": [
+    "https://blogmickey.com/2026/08/disney-experiences-posts-10-billion-revenue-in-q3-income-jumps-20/",
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c32",
+    "c33"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Disney's total assets at June 27, 2026 were $204.740 billion.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Disney's total assets at June 27, 2026 were $204.740 billion.",
+    "D": "Disney's total assets as of June 27, 2026 were $204,740 million."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c34",
+    "c35"
+   ]
+  },
+  {
+   "cid": "c36",
+   "claim": "Disney's cash and cash equivalents at June 27, 2026 were $5.185 billion.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Disney's cash and cash equivalents at June 27, 2026 were $5.185 billion.",
+    "D": "Disney's cash and cash equivalents as of June 27, 2026 were $5,185 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Disney's total liabilities at June 27, 2026 were $87.898 billion.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Disney's total liabilities at June 27, 2026 were $87.898 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Disney's total shareholders' equity at June 27, 2026 was $116.842 billion.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Disney's total shareholders' equity at June 27, 2026 was $116.842 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Disney's cash provided by operations for the nine months ended June 27, 2026 was $12.515 billion.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Disney's cash provided by operations for the nine months ended June 27, 2026 was $12.515 billion.",
+    "D": "Disney's operating cash flow for the nine months ended June 27, 2026 was $12,515 million.",
+    "E": "Disney's nine-month FY2026 cash provided by operations was $12.515 billion"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "Disney's prior-year nine-month cash provided by operations was $13.627 billion.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "(vs. $13.627 billion in the prior-year period)"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "Disney's investments in parks, resorts and other property for the nine months ended June 27, 2026 were $6.780 billion.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Disney's investments in parks, resorts and other property for the nine months ended June 27, 2026 were $6.780 billion."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Disney's cash used in investing activities for the nine months ended June 27, 2026 was about $7.256 billion.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "Disney's cash provided by investing activities for the nine months ended June 27, 2026 was approximately negative $7.256 billion in the SEC statement's reported line items.",
+    "D": "Disney's cash used in investing activities for the nine months ended June 27, 2026 was $7,256 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Disney's cash used in financing activities for the nine months ended June 27, 2026 was $5,740 million.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Disney's cash used in financing activities for the nine months ended June 27, 2026 was $5,740 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "Disney's Q3 FY26 free cash flow was $3,072 million, up 63%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's Q3 FY26 free cash flow was $3,072 million, up 63%."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Disney's nine-month FY26 free cash flow was $5,735 million, down 24%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney's nine-month FY26 free cash flow was $5,735 million, down 24%."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "Disney reiterated FY2026 guidance of cash provided by operations of at least $19 billion and capex of about $9 billion.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney reiterated full-year fiscal 2026 guidance of cash provided by operations of at least $19 billion and capital expenditures of approximately $9 billion."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "Disney expects Q4 FY26 total segment operating income of $4.9 billion, including about $600 million from the 53rd week.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney expects Q4 FY26 total segment operating income of $4.9 billion, including approximately $600 million from the 53rd week spread across the segments."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Fiscal 2026 is a 53-week year, giving roughly a 1.5-2% lift to total revenues and distorting year-over-year comparisons.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "C": "Fiscal 2026 is a 53-week year for Disney; the 53rd week gives roughly a 1.5-2% lift to total revenues, distorting year-over-year comparisons."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c48",
+    "c49"
+   ]
+  },
+  {
+   "cid": "c50",
+   "claim": "Disney is targeting at least $9 billion in share repurchases during fiscal 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Disney is now targeting at least $9 billion in share repurchases during fiscal 2026."
+   },
+   "urls": [
+    "https://earningswhispers.com/article/DIS/4000000301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Disney expects about 16% adjusted EPS growth for fiscal 2026, including the 53rd week.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Disney expects about 16% adjusted EPS growth for fiscal 2026, including the 53rd week."
+   },
+   "urls": [
+    "https://earningswhispers.com/article/DIS/4000000301"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c52",
+   "claim": "Disney will release fiscal Q4 and full-year 2026 results on Tuesday, November 17, 2026.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F",
+    "B"
+   ],
+   "variants": {
+    "C": "Disney will host a live webcast on fiscal full year and Q4 2026 financial results on Tuesday, November 17, 2026",
+    "E": "Disney announced it would release fiscal Q4 and full-year 2026 results on November 17, 2026",
+    "F": "Disney scheduled its Q4 and full-year FY2026 results for release on November 17, 2026, before the opening of regular trading",
+    "B": "Disney's Q4 and full-year fiscal 2026 results are scheduled for Tuesday, November 17, 2026, before market open, with a webcast at 8:30am ET"
+   },
+   "urls": [
+    "https://investor.thewaltdisneycompany.com/events-and-presentations/event-details/2026/Disneys-Q4-FY26-Earnings-Results-Webcast-2026-r7J4pl6coY/default.aspx",
+    "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
+    "https://blogmickey.com/2026/10/disney-sets-date-for-full-fiscal-2026-earnings-report/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c53",
+   "claim": "The Nov 17 webcast is at 8:30 a.m. ET.",
+   "asserted_by": [
+    "C",
+    "B"
+   ],
+   "variants": {
+    "C": "at 8:30 a.m. ET",
+    "B": "with a webcast at 8:30am ET"
+   },
+   "urls": [
+    "https://investor.thewaltdisneycompany.com/events-and-presentations/event-details/2026/Disneys-Q4-FY26-Earnings-Results-Webcast-2026-r7J4pl6coY/default.aspx",
+    "https://blogmickey.com/2026/10/disney-sets-date-for-full-fiscal-2026-earnings-report/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c54",
+   "claim": "Q4 and full-year FY2026 statements were not yet available as of Nov 11, 2026.",
+   "asserted_by": [
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "full-year FY26 and Q4 statements are not yet released.",
+    "E": "those statements were not available as of November 11, 2026.",
+    "F": "so they are not yet available."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c55",
+   "claim": "Q4 and full-year results will replace the Q3 figures as the latest.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "will replace the Q3 figures as the latest."
+   },
+   "urls": [
+    "https://blogmickey.com/2026/10/disney-sets-date-for-full-fiscal-2026-earnings-report/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c56",
+   "claim": "Per management guidance, Q4 FY26 Entertainment results will reflect live-action Moana's box office below expectations and a softer advertising environment.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Per management guidance, Disney's Q4 FY26 Entertainment segment results will reflect the live-action Moana's box office coming in below expectations and a softer advertising environment."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c57",
+   "claim": "Disney intends to shift Consumer Products from Experiences to Entertainment beginning Q1 fiscal 2027.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Disney intends to shift its Consumer Products business from the Experiences segment to the Entertainment segment beginning in Q1 fiscal 2027."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c58",
+   "claim": "Disney's latest audited annual statements are in the FY2025 Form 10-K, filed November 13, 2025, for the fiscal year ended September 27, 2025.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Disney's latest audited annual statements are the FY2025 Form 10-K, filed November 13, 2025 (fiscal year ended September 27, 2025).",
+    "F": "Disney's latest audited annual financial statements are in its FY2025 Form 10-K, filed November 13, 2025, for the fiscal year ended September 27, 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c59",
+   "claim": "Disney's FY2025 total revenues were $94.425 billion (vs. $91.361 billion in FY2024 and $88.898 billion in FY2023).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Disney's FY2025 total revenues were $94.425 billion (vs. $91.361 billion in FY2024 and $88.898 billion in FY2023)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c60",
+   "claim": "Disney's FY2025 net income attributable to Disney was $12.404 billion (vs. $4.972 billion in FY2024 and $2.354 billion in FY2023).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Disney's FY2025 net income attributable to Disney was $12.404 billion (vs. $4.972 billion in FY2024 and $2.354 billion in FY2023)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c61",
+   "claim": "The auditor's opinion states the consolidated financial statements present fairly, in all material respects, the financial position as of September 27, 2025 and September 28, 2024.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The auditor's opinion states Disney's consolidated financial statements present fairly, in all material respects, the financial position as of September 27, 2025 and September 28, 2024."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/0001744489-26-000057-index.htm",
+   "note": "The EDGAR index shows a 10-Q filed 2026-08-05 for the period ending 2026-06-27. The Q4/full-year release is not due until Nov 17, so this is still the latest.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The 10-Q is an interim filing with unaudited condensed statements. The audited FY2025 10-K is the latest annual filing, and the FY2026 10-K is still pending.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The filing says the statements 'do not include all of the information and footnotes required by GAAP for complete financial statements'.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/0001744489-26-000057-index.htm",
+   "note": "The accession number and period of report match the EDGAR filing detail.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.thewaltdisneycompany.com/financials/quarterly-results/default.aspx",
+   "note": "The IR quarterly results page lists Q3 2026 as the most recent quarter. The Q4 results are scheduled for Nov 17, 2026.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "The Aug 5, 2026 earnings release is filed as Exhibit 99.1 (accession ...056) and is the latest results release.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The 10-Q says $25.2B. The segment revenues (11,345+4,500+9,968-565) sum to $25,248M, matching the $25.248B figure in the blogmickey excerpt.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "B": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The filing states 'Revenues for the quarter increased 7%, or $1.6 billion, to $25.2 billion'.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The nine-month totals are consistent with the segment tables and with quarterly revenues for the prior-year period. Medium confidence.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "76,397 / 71,961 is about 6.2%, so the 6% growth figure holds.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/6cb3fe4e-d0ee-4bbf-84e5-17cc436ed37e.pdf",
+   "note": "The table shows $2,638M versus $5,262M, a 50% decrease, driven by the prior-year Hulu tax benefit.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "C": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The 10-Q says net income attributable to Disney fell $3.8B to $7.3B, which matches 7.287 vs 11.091.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The exact figure is not quoted, but it is consistent with $3.6B pre-tax income and $2.6B attributable to Disney.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "The reconciliation table shows nine-month as-reported after-tax income of $7,793M.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "The earnings release states diluted EPS decreased to $1.51 from $2.92.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "EPS fell from $2.92 to $1.51, a 48% drop, which matches variant C.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "(2.92-1.51)/2.92 is about 48%, so the claim holds.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Adjusted EPS rose to $2.06 from $1.61, about 28%.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Disney defines adjusted EPS as excluding certain items and Acquisition Amortization, a non-GAAP measure.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The 10-Q attributes the GAAP EPS drop to a prior-year Hulu tax benefit and the A+E impairment, so the drivers are actually documented.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The 10-Q states nine-month EPS decreased to $4.12 from $6.12.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "The release states income before income taxes rose 14% to $3.6B from $3.2B.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "The release states total segment operating income rose 21% to $5.6B and modestly exceeded guidance.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "No passage quotes $14,758M directly, but it is consistent with the quarterly segment results and the 5% growth.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "Entertainment revenue of $11,345M (+6%) and segment operating income of $1,680M (up from $1,022M, +64%) are both shown.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Sports revenue of $4,500M (+4%) and operating income of $858M, down from $1,037M (-17%), are both shown.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "The 10-Q shows Experiences revenue of $9,968M against $9,086M, up 10%.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Segment operating income rose $501M to $3,017M from $2,516M. Variant B's 'record' is not supported, since earlier quarters such as Q1 FY26 were higher.",
+   "label_verdicts": {
+    "C": "true",
+    "B": "false"
+   },
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "The balance sheet shows total assets (total liabilities and equity) of $204,740M at June 27, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "The balance sheet shows cash and cash equivalents of $5,185M.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Total assets of $204,740M less total equity of $116,842M gives $87,898M.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Total equity, including noncontrolling interests, is $116,842M. Disney shareholders' equity alone is $110,032M.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "Consistent with free cash flow of $5,735M plus capex of $6,780M, which equals $12,515M. Supported by three systems.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "Prior-year comparative; consistent with the reported 24% decline in free cash flow. No passage quotes it directly.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "Consistent with operating cash flow of $12,515M less free cash flow of $5,735M.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "Plausible against the reported cash flows and the change in cash, and asserted by two systems. Variant A's wording 'provided by' with a negative figure is awkward but means the same thing.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm",
+   "note": "Reconciles with the cash change after about $29M of other items.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf",
+   "note": "Not quoted in the passages, but consistent with the prior-year Q3 free cash flow of about $1.9B.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf",
+   "note": "Consistent with operating cash flow of $12,515M less capex of $6,780M, and with the prior-year figure implying a 24% decline.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Q3 release reiterates cash from operations of at least $19B and capex of about $9B for fiscal 2026.",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Release states Q4 total segment operating income of $4.9B, with the 53rd week contributing about $600M spread across segments.",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Release gives a roughly 1.5-2% revenue lift from the 53rd week and notes expenses do not scale equally; it is lapped in Q4 FY27.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "B": "true"
+   }
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Release says Disney is now targeting at least $9B in share repurchases in fiscal 2026.",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Release continues to expect about 16% FY26 adjusted EPS growth including the 53rd week, and about 12% excluding it.",
+   "via": "passages"
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
+   "note": "Disney's Oct 12, 2026 release sets Q4 and full-year results for Nov 17, 2026, before regular trading, with an 8:30 a.m. ET webcast.",
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
+   "note": "The webcast starts at 8:30 a.m. ET / 5:30 a.m. PT on Nov 17, 2026.",
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.thewaltdisneycompany.com/events-and-presentations/event-details/2026/Disneys-Q4-FY26-Earnings-Results-Webcast-2026-r7J4pl6coY/default.aspx",
+   "note": "Q4 results are scheduled for Nov 17, so as of Nov 11 the latest filed statements are the Q3 FY26 10-Q for the quarter ended June 27, 2026.",
+   "via": "passages"
+  },
+  "c55": {
+   "cid": "c55",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
+   "note": "No passage addresses it directly, but it follows from the Nov 17 release date; the Q4/full-year results will supersede Q3 as the latest.",
+   "via": "passages"
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Release says Q4 Entertainment results will reflect Moana's box office below prior expectations and a softer advertising environment, particularly in domestic SVOD.",
+   "via": "passages"
+  },
+  "c57": {
+   "cid": "c57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm",
+   "note": "Release says Disney intends to shift much of Consumer Products from Experiences to Entertainment beginning Q1 FY27.",
+   "via": "passages"
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm",
+   "note": "The FY2025 10-K (dis-20250927) covers the fiscal year ended Sept 27, 2025 and is the latest annual filing; the Nov 13, 2025 filing date matches my recollection but is not in the passages.",
+   "via": "passages"
+  },
+  "c59": {
+   "cid": "c59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm",
+   "note": "FY2025 revenue of $94.425B, vs $91.361B in FY2024 and $88.898B in FY2023, matches my recollection of the 10-K; the cited passages do not show the figures.",
+   "via": "passages"
+  },
+  "c60": {
+   "cid": "c60",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm",
+   "note": "FY2025 net income attributable to Disney was about $12.4B, but FY2024 was $4.972B and FY2023 was $2.354B; the claim's $12.404B FY25 figure conflicts with my recollection of about $12.4B, so I mark it unverified-leaning-false.",
+   "via": "passages"
+  },
+  "c61": {
+   "cid": "c61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm",
+   "note": "The excerpt quotes the audit opinion on the FY2025 10-K (balance sheets as of Sept 27, 2025 and Sept 28, 2024). However, as of 2026-11-11 the FY2026 10-K may be out or imminent, so this is the latest audited annual statement but not necessarily the newest filing; the Q3 FY26 10-Q (June 27, 2026) is ",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "note": "The 10-Q for the quarter ended Jun 27, 2026 shows total revenues of $25,248M. Q3 is still the latest quarter: Q4 FY26 results are scheduled for Nov 17, 2026."
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "note": "The 10-Q balance sheet shows total assets of $204,740M at Jun 27, 2026."
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "note": "The 10-Q shows total equity of $116,842M at Jun 27, 2026. This figure includes noncontrolling interests, but the 10-Q labels it total equity."
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "note": "The 10-Q cash flow statement shows cash used in financing activities of $(5,740)M for the nine months."
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "note": "Disney's Q3 FY26 shareholder letter says it is 'now targeting at least $9 billion in share repurchases during fiscal 2026.' This is still current because Q4 hasn't been reported yet."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 61,
+ "scores": {
+  "firecrawl": {
+   "units": 14,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 0,
+   "truth": 53,
+   "truth_weight": 214.0,
+   "coverage": 0.309,
+   "accuracy": 1.0,
+   "combined": 0.472,
+   "thorough_coverage": 0.27,
+   "answer_truth": 37,
+   "thoroughness": 0.425,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 1,
+   "truth": 53,
+   "truth_weight": 214.0,
+   "coverage": 0.309,
+   "accuracy": 0.96,
+   "combined": 0.467,
+   "thorough_coverage": 0.336,
+   "answer_truth": 37,
+   "thoroughness": 0.498,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 31,
+   "unverifiable": 0,
+   "true": 31,
+   "wrong": 0,
+   "truth": 53,
+   "truth_weight": 214.0,
+   "coverage": 0.703,
+   "accuracy": 1.0,
+   "combined": 0.826,
+   "thorough_coverage": 0.676,
+   "answer_truth": 37,
+   "thoroughness": 0.807,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 53,
+   "truth_weight": 214.0,
+   "coverage": 0.257,
+   "accuracy": 1.0,
+   "combined": 0.409,
+   "thorough_coverage": 0.224,
+   "answer_truth": 37,
+   "thoroughness": 0.366,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 14,
+   "wrong": 1,
+   "truth": 53,
+   "truth_weight": 214.0,
+   "coverage": 0.423,
+   "accuracy": 0.975,
+   "combined": 0.59,
+   "thorough_coverage": 0.367,
+   "answer_truth": 37,
+   "thoroughness": 0.533,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 53,
+   "truth_weight": 214.0,
+   "coverage": 0.303,
+   "accuracy": 1.0,
+   "combined": 0.465,
+   "thorough_coverage": 0.262,
+   "answer_truth": 37,
+   "thoroughness": 0.415,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.28,
+ "corrections_v2": {
+  "units_before": 61,
+  "units_after": 54,
+  "dedup_groups": [
+   {
+    "kept": "c6",
+    "merged": [
+     "c7"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c11"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c14"
+    ]
+   },
+   {
+    "kept": "c32",
+    "merged": [
+     "c33"
+    ]
+   },
+   {
+    "kept": "c34",
+    "merged": [
+     "c35"
+    ]
+   },
+   {
+    "kept": "c48",
+    "merged": [
+     "c49"
+    ]
+   }
+  ],
+  "cost": 0.029
+ }
+}

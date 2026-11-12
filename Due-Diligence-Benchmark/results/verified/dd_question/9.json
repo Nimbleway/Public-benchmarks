@@ -1,0 +1,865 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 9,
+ "task": "When is Snap's next earnings report?",
+ "labels": {
+  "parallel": "A",
+  "nimble": "B",
+  "gpt": "C",
+  "firecrawl": "D",
+  "exa": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 16,
+ "evidence_fetched": 15,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Snap announced its Q3 2026 results (quarter ended September 30, 2026) on November 4, 2026.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Snap announced financial results for the quarter ended September 30, 2026 (Q3 2026) on November 4, 2026.",
+    "C": "Snap released its third-quarter 2026 financial results on November 4, 2026.",
+    "F": "Snap released its Q3 2026 results (quarter ended September 30, 2026) on November 4, 2026."
+   },
+   "urls": [
+    "https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+    "https://investor.snap.com/news/news-details/2026/Snap-Inc.-Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000063/snap-20261104xexx991pressr.htm",
+    "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000063/snap-20261104xexx991pressr.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "The Q3 2026 report (Nov 4, 2026) is already past as of November 11, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Snap Inc. announced financial results for the quarter ended September 30, 2026 on November 4, 2026, so that report is already past as of November 11, 2026."
+   },
+   "urls": [
+    "https://investor.snap.com/files/content_files/Snap-Inc-Q3_26-Press-Release.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Snap has not confirmed or announced the date of its next earnings report (Q4/full-year 2026).",
+   "asserted_by": [
+    "B",
+    "C",
+    "F"
+   ],
+   "variants": {
+    "B": "Snap's next earnings report (Q4 and full-year 2026 results) has not been officially scheduled or confirmed by the company.",
+    "C": "As of November 11, 2026, Snap has not confirmed the date of its next earnings report (fourth-quarter 2026 results).",
+    "F": "Snap has not yet announced the date of its next earnings report, which will cover Q4 and full-year 2026."
+   },
+   "urls": [
+    "https://www.wallstreethorizon.com/snap-earnings-calendar",
+    "https://investor.snap.com/events-and-presentations/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "The two earnings calendars checked disagree (Feb 3 vs Feb 4, 2027) and no company-confirmed date was verified, so the date is tentative.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The two earnings calendars disagree on the exact date (February 3 vs. February 4, 2027), and no company-confirmed date for Snap Inc.'s next earnings report was verified, so the date is tentative."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Wall Street Horizon lists Snap's next (Q4 2026) earnings date as Wednesday, February 3, 2027, after market close.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Wall Street Horizon lists Snap's next earnings date as unconfirmed for Wednesday, February 3, 2027, after market close.",
+    "C": "Wall Street Horizon lists February 3, 2027 (Wednesday), after market close, as an inferred date for Snap's fourth-quarter 2026 earnings.",
+    "D": "Snap's next earnings report is expected on February 3, 2027, after market close.",
+    "E": "Snap's next earnings report (for Q4 2026) is projected for Wednesday, February 3, 2027, after the market closes."
+   },
+   "urls": [
+    "https://www.wallstreethorizon.com/snap-earnings-calendar"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "The February 3, 2027 date is unconfirmed / only projected, not confirmed by Snap.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Wall Street Horizon lists ... as unconfirmed for Wednesday, February 3, 2027.",
+    "D": "Wall Street Horizon labels Snap's February 3, 2027 earnings date as unconfirmed.",
+    "E": "The February 3, 2027 Snap earnings date is not yet confirmed by Snap; it is a projected date."
+   },
+   "urls": [
+    "https://www.wallstreethorizon.com/snap-earnings-calendar"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "The after-market-close timing comes from Wall Street Horizon's forecast, not a confirmed Snap event listing.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The after-market-close timing of Snap's next earnings report comes from Wall Street Horizon's forecast, not a confirmed Snap event listing."
+   },
+   "urls": [
+    "https://www.wallstreethorizon.com/snap-earnings-calendar"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Quartr lists Snap's next earnings event as Q4 2026 on February 4, 2027.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Quartr lists Snap's next earnings event as Q4 2026 on February 4, 2027."
+   },
+   "urls": [
+    "https://quartr.com/companies/snap-inc"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c15",
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "TipRanks estimates Snap's next earnings date as February 4, 2027, based on past reporting schedules.",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "TipRanks estimates Snap's next earnings date as February 4, 2027, based on past reporting schedules."
+   },
+   "urls": [
+    "https://www.tipranks.com/stocks/mx:snap/earnings/q3-2026-report",
+    "https://www.tipranks.com/stocks/snap/earnings"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c15",
+    "c17",
+    "c18"
+   ],
+   "merged_from": [
+    "c12",
+    "c13"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Investing.com lists Snap's next earnings report for February 4, 2027, covering the December 2026 period (Q4 2026).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Investing.com lists Snap Inc.'s next earnings report for February 4, 2027, covering the December 2026 reporting period (Q4 2026)."
+   },
+   "urls": [
+    "https://www.investing.com/equities/snap-inc-earnings"
+   ],
+   "conflicts_with": [
+    "c7",
+    "c15",
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "HowManyTradingDays projects Snap will report Fiscal Q4 2026 earnings on Wednesday, February 3, 2027, after market close.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "HowManyTradingDays projects Snap Inc. will report Fiscal Q4 2026 earnings on Wednesday, February 3, 2027, after the market closes."
+   },
+   "urls": [
+    "https://howmanytradingdays.com/earnings/snap"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "HowManyTradingDays says its expected dates are projections based on public SEC filings, not Snap announcements.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "HowManyTradingDays states that its expected earnings dates are projections based on public SEC filings, not announcements by Snap Inc."
+   },
+   "urls": [
+    "https://howmanytradingdays.com/earnings/snap"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Nextearningsdate.com lists Snap's next earnings date as 2/3/2027 after close (projected), last updated 11/9/2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Nextearningsdate.com lists Snap's next earnings date as 2/3/2027 after close (projected), based on its last update on 11/9/2026."
+   },
+   "urls": [
+    "https://www.nextearningsdate.com/snap.html"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "Yahoo Finance flags Snap's February 3, 2027 earnings date as an estimate.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Yahoo Finance flags Snap's February 3, 2027 earnings date as an estimate."
+   },
+   "urls": [
+    "https://finance.yahoo.com/quote/SNAP/analysis/"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c12",
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Snap's investor-relations events page shows the Q3 2026 call (Nov 4, 2026) as the latest event and no upcoming/confirmed Q4 2026 event.",
+   "asserted_by": [
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Snap's investor-relations events page lists the Q3 2026 earnings call on November 4, 2026 as its latest event and shows no upcoming events.",
+    "E": "Snap's investor-relations events page shows the completed November 4, 2026 Q3 call but no confirmed Q4 2026 event.",
+    "F": "When checked, the upcoming events section of Snap's investor relations page listed no events, including no Q4 2026 earnings date."
+   },
+   "urls": [
+    "https://investor.snap.com/events-and-presentations/events/default.aspx",
+    "https://investor.snap.com/events-and-presentations/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Snap typically confirms its exact earnings date roughly two to three weeks in advance via a press release on investor.snap.com.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "Snap typically confirms its exact earnings date roughly two to three weeks in advance via a press release on investor.snap.com."
+   },
+   "urls": [
+    "https://investor.snap.com"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c20",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Calendar services disagree slightly: Wall Street Horizon says Feb 3, 2027, while Quartr and TipRanks show Feb 4, 2027.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Calendar services disagree slightly on Snap's expected Q4 2026 earnings day: Wall Street Horizon says February 3, 2027, while Quartr and TipRanks show February 4, 2027."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Snap's Q4 2026 report would most likely come in early February 2027, an estimate inferred from past timing, not a confirmed date.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Snap's next earnings report (Q4 2026) would most likely come in early February 2027, an estimate inferred from past timing and not a confirmed date."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000011/snap-20260204xexx991pressr.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "The Q3 2026 Snap press release does not give the date of the next earnings report.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The Q3 2026 Snap press release does not give the date of the next earnings report."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000063/snap-20261104xexx991pressr.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Snap's Q3 2026 revenue was $1,722 million, up 14% year over year.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Snap's Q3 2026 revenue was $1,722 million, up 14% year over year."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000063/snap-20261104xexx991pressr.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Snap's Q3 2026 net income was $56 million.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Snap's Q3 2026 net income was $56 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000063/snap-20261104xexx991pressr.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Snap's Q3 2026 Adjusted EBITDA was $383 million.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Snap's Q3 2026 Adjusted EBITDA was $383 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000063/snap-20261104xexx991pressr.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Snap reported Q4 2025 results in early February 2026; an SEC 8-K press-release exhibit is dated 2026-02-04.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Snap reported Q4 2025 results in early February 2026; an SEC 8-K press-release exhibit is dated 2026-02-04 (the filing was not opened)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000011/snap-20260204xexx991pressr.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Some third-party calendars still list Nov 4, 2026 or Oct 15, 2026 as Snap's 'next' report; these are out of date since the Q3 report already occurred.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Some third-party earnings calendars still list November 4, 2026 or other dates such as October 15, 2026 as Snap's 'next' report; these listings are out of date because the Q3 report has already occurred."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000063/snap-20261104xexx991pressr.htm",
+   "note": "Snap's press release is dated Nov 4, 2026 for the quarter ended Sep 30, 2026; this is the past report, not the next one.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000063/snap-20261104xexx991pressr.htm",
+   "note": "The Nov 4 release means the Q3 report is already past as of Nov 11, so the next report is Q4.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.snap.com/events-and-presentations/default.aspx",
+   "note": "The Snap IR page shows no Q4 event scheduled, and the calendars label their dates unconfirmed or estimated.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://howmanytradingdays.com/earnings/snap",
+   "note": "Sources split between Feb 3 (WSH, HowManyTradingDays, NextEarningsDate) and Feb 4 (TipRanks, Investing.com), and none is confirmed by Snap.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.wallstreethorizon.com/snap-earnings-calendar",
+   "note": "WSH shows 02/03/2027 Q4 After Market Wed as UNCONFIRMED, a forecast; variants D and E (expected or projected) are consistent.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.wallstreethorizon.com/snap-earnings-calendar",
+   "note": "WSH marks the Feb 3, 2027 date UNCONFIRMED, and HowManyTradingDays says its dates are projections, not Snap announcements.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.wallstreethorizon.com/snap-earnings-calendar",
+   "note": "The after-market timing appears in WSH's forecast table, and the IR page shows no confirmed event.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.tipranks.com/stocks/snap/earnings",
+   "note": "TipRanks says the next earnings date is estimated for Feb 4, 2027 from past reporting schedules.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.investing.com/equities/snap-inc-earnings",
+   "note": "Investing.com's page says Feb 4, 2027 per the provider excerpt, and Yahoo shows the current quarter as Dec 2026.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://howmanytradingdays.com/earnings/snap",
+   "note": "HowManyTradingDays says Snap is expected to report Fiscal Q4 2026 on Wed Feb 3, 2027, after close, and calls this a projection.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://howmanytradingdays.com/earnings/snap",
+   "note": "The page states: 'Expected dates are projections from public SEC filings, not announcements by Snap Inc.'",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nextearningsdate.com/snap.html",
+   "note": "The projected date of 2/3/2027 after close is correct, but the page says its last update was 11/11/2026, not 11/9/2026.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.snap.com/events-and-presentations/events/default.aspx",
+   "note": "The IR page lists the Nov 4, 2026 Q3 call as the latest event and shows no scheduled upcoming event.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.snap.com/events-and-presentations/events/default.aspx",
+   "note": "No passage addresses this, but it matches Snap's usual practice of announcing the date a few weeks ahead on its IR site.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "F": "true"
+   }
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.wallstreethorizon.com/snap-earnings-calendar",
+   "note": "Wall Street Horizon shows 02/03/2027 and TipRanks shows Feb 4, 2027; Quartr was not checked.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.wallstreethorizon.com/snap-earnings-calendar",
+   "note": "Past reports fell around Feb 4 and every calendar projects early Feb 2027, with no date confirmed by Snap.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000063/snap-20261104xexx991pressr.htm",
+   "note": "The release gives only the same-day call details and no next-report date.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+   "note": "The release states revenue of $1,722M, up 14% year over year.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+   "note": "The release states net income of $56M.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+   "note": "The release states Adjusted EBITDA of $383M.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000011/snap-20260204xexx991pressr.htm",
+   "note": "The Q4 2025 release is dated Feb 4, 2026, which supports the early-February reporting pattern.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "unverifiable",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "confidence": "medium",
+   "source": "https://www.tipranks.com/stocks/snap/earnings",
+   "note": "The Quartr page returned 404 and no saved page or search result mentions Quartr's listing. TipRanks does estimate Feb 4, 2027, and Yahoo and Wall Street Horizon estimate Feb 3, so the date is plausible but not confirmed.",
+   "via": "agent"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "confidence": "high",
+   "source": "https://finance.yahoo.com/quote/SNAP/",
+   "note": "Yahoo's quote page shows Earnings Date (est.) as Feb 3, 2027, so it is flagged as an estimate. Wall Street Horizon also lists 02/03/2027 as unconfirmed.",
+   "via": "agent"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "confidence": "high",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000063/snap-20261104xexx991pressr.htm",
+   "note": "Snap's Q3 2026 results were released Nov 4, 2026, so calendars still showing Nov 4 or Oct 15 as the next report are stale. A search turned up such listings.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "note": "Snap's IR press release and the SEC EX-99.1 filing, both dated November 4, 2026, announce results for the quarter ended September 30, 2026."
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "note": "Snap has not confirmed a date. Wall Street Horizon calls 2/3/2027 'UNCONFIRMED' and NextEarningsDate calls it 'projected'. Last year's Q4 report came out February 4, 2026, which fits an early-February estimate."
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "unverifiable",
+   "note": "No source shows a calendar that still lists Nov 4 or Oct 15, 2026 as the next date. The calendars checked already show 2/3/2027. The Q3 report did happen on Nov 4, so any such listing would be out of date."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 26,
+ "scores": {
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 99.5,
+   "coverage": 0.286,
+   "accuracy": 1.0,
+   "combined": 0.444,
+   "thorough_coverage": 0.271,
+   "answer_truth": 12,
+   "thoroughness": 0.427,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 8,
+   "unverifiable": 1,
+   "true": 7,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 99.5,
+   "coverage": 0.393,
+   "accuracy": 0.963,
+   "combined": 0.558,
+   "thorough_coverage": 0.392,
+   "answer_truth": 12,
+   "thoroughness": 0.557,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 99.5,
+   "coverage": 0.25,
+   "accuracy": 1.0,
+   "combined": 0.4,
+   "thorough_coverage": 0.241,
+   "answer_truth": 12,
+   "thoroughness": 0.389,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 19,
+   "truth_weight": 99.5,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.369,
+   "answer_truth": 12,
+   "thoroughness": 0.539,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 1,
+   "truth": 19,
+   "truth_weight": 99.5,
+   "coverage": 0.321,
+   "accuracy": 0.909,
+   "combined": 0.475,
+   "thorough_coverage": 0.302,
+   "answer_truth": 12,
+   "thoroughness": 0.453,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 3,
+   "truth": 19,
+   "truth_weight": 99.5,
+   "coverage": 0.321,
+   "accuracy": 0.945,
+   "combined": 0.48,
+   "thorough_coverage": 0.389,
+   "answer_truth": 12,
+   "thoroughness": 0.552,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.826,
+ "corrections_v2": {
+  "units_before": 29,
+  "units_after": 24,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13"
+    ]
+   },
+   {
+    "kept": "c20",
+    "merged": [
+     "c21"
+    ]
+   }
+  ],
+  "cost": 0.022
+ }
+}

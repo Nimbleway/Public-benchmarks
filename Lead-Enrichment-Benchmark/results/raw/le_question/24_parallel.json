@@ -1,0 +1,213 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69920a6eb50fb17a6e",
+ "status": "completed",
+ "seconds": 78,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "How many employees does Capital One have?",
+  "passages": [
+   {
+    "quote": "Employees (period-end, in thousands) 77.5",
+    "publisher": "Capital One Financial Corporation",
+    "published_date": "2026-10-20",
+    "source_url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc"
+   }
+  ],
+  "answer": "Capital One reported 77,500 employees as of September 30, 2026. This period-end headcount was included in its third-quarter 2026 results, released on October 20, 2026.",
+  "caveats": [
+   "This is a reported quarter-end headcount, not a live employee count for November 11, 2026."
+  ],
+  "missing_fields": [],
+  "as_of": "2026-09-30",
+  "key_facts": [
+   {
+    "date": "2026-09-30",
+    "source_url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+    "fact": "Capital One reported 77.5 thousand period-end employees, equivalent to 77,500 employees."
+   },
+   {
+    "date": "2026-10-20",
+    "source_url": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+    "fact": "Capital One released its third-quarter 2026 results."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question about Capital One.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "Employees (period-end, in thousands) **77\\.5** 78\\.4 77.1 76.3 77.0 (1) % 1 %"
+     ]
+    },
+    {
+     "title": "Capital One Reports Third Quarter 2026 Net Income of $3.5 billion, or $5.61 per share | Capital One Financial Corp.",
+     "url": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+     "excerpts": [
+      "MCLEAN, Va. \\--(BUSINESS WIRE)--Oct. 20, 2026-- Capital One Financial Corporation (NYSE: COF) today announced net income for the third quarter of 2026 of $3.5 billion , or $5.61 per diluted common share, compared with net income of $3.0 billion , or $4.73 per diluted common share in the second quarter of 2026, and with net income of $3.2 billion , or $4.83 per diluted common share in the third quarter of 2025."
+     ]
+    }
+   ],
+   "reasoning": "The earnings supplement supplies the quoted employee row; the accompanying company release supplies the October 20, 2026 publication date. Formatting has been removed from the short quote.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "Employees (period-end, in thousands) **77\\.5** 78\\.4 77.1 76.3 77.0 (1) % 1 %",
+      "**2026 Q3 Nine Months Ended September 30,"
+     ]
+    },
+    {
+     "title": "Capital One Reports Third Quarter 2026 Net Income of $3.5 billion, or $5.61 per share | Capital One Financial Corp.",
+     "url": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+     "excerpts": [
+      "MCLEAN, Va. \\--(BUSINESS WIRE)--Oct. 20, 2026-- Capital One Financial Corporation (NYSE: COF) today announced net income for the third quarter of 2026 of $3.5 billion , or $5.61 per diluted common share, compared with net income of $3.0 billion , or $4.73 per diluted common share in the second quarter of 2026, and with net income of $3.2 billion , or $4.83 per diluted common share in the third quarter of 2025."
+     ]
+    }
+   ],
+   "reasoning": "The table reports 77.5 thousand period-end employees, which converts to 77,500. Its heading identifies the September 30, 2026 reporting period, and the company release establishes the October 20 release date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "Employees (period-end, in thousands) **77\\.5** 78\\.4 77.1 76.3 77.0 (1) % 1 %"
+     ]
+    }
+   ],
+   "reasoning": "The source explicitly labels the count as period-end, so the answer distinguishes that reported snapshot from a live count.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No requested factual field is missing from the previously verified company materials.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "**2026 Q3 Nine Months Ended September 30,"
+     ]
+    }
+   ],
+   "reasoning": "The earnings table heading identifies the third quarter of 2026 and the September 30 period end.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "Employees (period-end, in thousands) **77\\.5** 78\\.4 77.1 76.3 77.0 (1) % 1 %",
+      "**2026 Q3 Nine Months Ended September 30,"
+     ]
+    },
+    {
+     "title": "Capital One Reports Third Quarter 2026 Net Income of $3.5 billion, or $5.61 per share | Capital One Financial Corp.",
+     "url": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+     "excerpts": [
+      "MCLEAN, Va. \\--(BUSINESS WIRE)--Oct. 20, 2026-- Capital One Financial Corporation (NYSE: COF) today announced net income for the third quarter of 2026 of $3.5 billion , or $5.61 per diluted common share, compared with net income of $3.0 billion , or $4.73 per diluted common share in the second quarter of 2026, and with net income of $3.2 billion , or $4.83 per diluted common share in the third quarter of 2025."
+     ]
+    }
+   ],
+   "reasoning": "The company materials establish the period-end employee count, reporting period, and results release date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "Employees (period-end, in thousands) **77\\.5** 78\\.4 77.1 76.3 77.0 (1) % 1 %"
+     ]
+    },
+    {
+     "title": "Capital One Reports Third Quarter 2026 Net Income of $3.5 billion, or $5.61 per share | Capital One Financial Corp.",
+     "url": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+     "excerpts": [
+      "MCLEAN, Va. \\--(BUSINESS WIRE)--Oct. 20, 2026-- Capital One Financial Corporation (NYSE: COF) today announced net income for the third quarter of 2026 of $3.5 billion , or $5.61 per diluted common share, compared with net income of $3.0 billion , or $4.73 per diluted common share in the second quarter of 2026, and with net income of $3.2 billion , or $4.83 per diluted common share in the third quarter of 2025."
+     ]
+    }
+   ],
+   "reasoning": "The supplement contains the employee-count quote, and the accompanying release establishes its publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "Employees (period-end, in thousands) **77\\.5** 78\\.4 77.1 76.3 77.0 (1) % 1 %"
+     ]
+    }
+   ],
+   "reasoning": "The period-end label limits the count to a reporting-date snapshot.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Ex 99.2 Q3 2026 Earnings Release",
+     "url": "https://investor.capitalone.com/static-files/1246fa80-f190-4b8b-9506-9812da968fcc",
+     "excerpts": [
+      "Employees (period-end, in thousands) **77\\.5** 78\\.4 77.1 76.3 77.0 (1) % 1 %",
+      "**2026 Q3 Nine Months Ended September 30,"
+     ]
+    }
+   ],
+   "reasoning": "The table reports 77.5 thousand employees for the September 30, 2026 period end; multiplying by 1,000 gives 77,500.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Capital One Reports Third Quarter 2026 Net Income of $3.5 billion, or $5.61 per share | Capital One Financial Corp.",
+     "url": "https://www.investor.capitalone.com/news-releases/news-release-details/capital-one-reports-third-quarter-2026-net-income-35-billion-or",
+     "excerpts": [
+      "MCLEAN, Va. \\--(BUSINESS WIRE)--Oct. 20, 2026-- Capital One Financial Corporation (NYSE: COF) today announced net income for the third quarter of 2026 of $3.5 billion , or $5.61 per diluted common share, compared with net income of $3.0 billion , or $4.73 per diluted common share in the second quarter of 2026, and with net income of $3.2 billion , or $4.83 per diluted common share in the third quarter of 2025."
+     ]
+    }
+   ],
+   "reasoning": "The company's dated announcement explicitly identifies its third-quarter 2026 results.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "How many employees does Capital One have?",
+ "input_n": 24,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,1303 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 22,
+ "task": "What is Tesla's valuation?",
+ "labels": {
+  "exa": "A",
+  "nimble": "B",
+  "gpt": "C",
+  "parallel": "D",
+  "firecrawl": "E",
+  "opus": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 20,
+ "evidence_fetched": 20,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "StockAnalysis reports Tesla's market cap at about $1.55 trillion on Nov 11, 2026 (12:58 p.m. EST).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla's market capitalization is approximately $1.55 trillion as of November 11, 2026 (reported at 12:58 p.m. EST by StockAnalysis)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/statistics/"
+   ],
+   "conflicts_with": [
+    "c2",
+    "c14",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "StockAnalysis shows Tesla's market cap at $1.56 trillion as of Nov 11, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "StockAnalysis shows Tesla's market cap at $1.56 trillion as of Nov. 11, 2026."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/statistics/"
+   ],
+   "conflicts_with": [
+    "c1",
+    "c14",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "GuruFocus reports Tesla's market cap as $1,551,616 million (~$1.55 trillion) as of Nov 11, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla (TSLA) market capitalization is $1,551,616 million (~$1.55 trillion) as of Nov. 11, 2026 per GuruFocus."
+   },
+   "urls": [
+    "https://gurufocus.com/term/mktcap/TSLA"
+   ],
+   "conflicts_with": [
+    "c4"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "GuruFocus reports Tesla's market cap as $1,501,179 million (~$1.501 trillion) as of Nov 11, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla's market capitalization is $1,501,179 million (about $1.501 trillion) as of November 11, 2026, per GuruFocus."
+   },
+   "urls": [
+    "https://www.gurufocus.com/term/mktcap/TSLA"
+   ],
+   "conflicts_with": [
+    "c3"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "StockAnalysis reports Tesla's enterprise value as $1.52 trillion as of Nov 11, 2026 (12:58 p.m. EST).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla's enterprise value is $1.52 trillion as of November 11, 2026 (reported at 12:58 p.m. EST by StockAnalysis)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/statistics/"
+   ],
+   "conflicts_with": [
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Tesla's enterprise value is about $1.53 trillion (StockAnalysis).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's enterprise value is about $1.53 trillion."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/statistics/"
+   ],
+   "conflicts_with": [
+    "c5",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "StockAnalysis reports Tesla's enterprise value as $1.47 trillion (Nov 10, 2026 snapshot).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla's enterprise value is $1.47 trillion per Stock Analysis (November 10, 2026 snapshot)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/statistics"
+   ],
+   "conflicts_with": [
+    "c5",
+    "c6"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "GuruFocus reports Tesla's enterprise value as $1,326,106 million as of Nov 11, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "GuruFocus reports Tesla's enterprise value as $1,326,106 million as of November 11, 2026."
+   },
+   "urls": [
+    "https://www.gurufocus.com/term/mktcap/TSLA"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Tesla's equity valuation is approximately $1.5 trillion as of Nov 11, 2026; the exact figure varies with intraday price movements and methodology.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tesla's equity valuation (market cap) is approximately $1.5 trillion as of November 11, 2026; the exact figure varies with intraday price movements and methodology."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Market cap measures the value of equity, while enterprise value also accounts for debt and cash.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Market capitalization measures the value of Tesla's equity, while enterprise value also accounts for debt and cash."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Liquid reports Tesla's market cap as approximately $1.508 trillion as of Nov 11, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla's market capitalization is approximately $1.508 trillion as of November 11, 2026, per Liquid."
+   },
+   "urls": [
+    "https://www.liquid.trade/markets/tesla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Liquid reports Tesla's share price as $381.77 as of Nov 11, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla's share price is $381.77 as of November 11, 2026, per Liquid."
+   },
+   "urls": [
+    "https://www.liquid.trade/markets/tesla"
+   ],
+   "conflicts_with": [
+    "c27"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Tesla has approximately 3.95 billion shares outstanding, per Liquid.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla has approximately 3.95 billion shares outstanding, per Liquid."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla",
+    "https://www.liquid.trade/markets/tesla"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c38"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "StockAnalysis reports Tesla's market cap as $1.50 trillion (Nov 10, 2026 snapshot).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Tesla's market capitalization (net worth) is $1.50 trillion per Stock Analysis (November 10, 2026 snapshot)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/statistics"
+   ],
+   "conflicts_with": [
+    "c1",
+    "c2",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Fiscal.ai reports Tesla's market cap as $1,485,248,798,210 (~$1.485 trillion) as of 2026-11-11.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tesla, Inc. (NASDAQ: TSLA) has a market capitalization of $1,485,248,798,210 (approximately $1.485 trillion) as of 2026-11-11."
+   },
+   "urls": [
+    "https://fiscal.ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Fiscal.ai's Tesla profile was timestamped as updated 2026-11-11 11:32:10 UTC.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Fiscal.ai's Tesla, Inc. profile was timestamped as updated at 2026-11-11 11:32:10 UTC."
+   },
+   "urls": [
+    "https://fiscal.ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Fiscal.ai lists Tesla's primary listing as ticker TSLA on NASDAQ.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Fiscal.ai's company profile lists Tesla, Inc.'s primary listing as ticker TSLA on NASDAQ."
+   },
+   "urls": [
+    "https://fiscal.ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "StockAnalysis reports Tesla's market cap as approximately $1.39 trillion ($1,391,294,310,000) as of Nov 11, 2026, 17:59 UTC.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Tesla's market capitalization is approximately $1.39 trillion as of November 11, 2026, at 17:59 UTC; exactly $1,391,294,310,000 at 17:59:04 UTC."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/market-cap/"
+   ],
+   "conflicts_with": [
+    "c1",
+    "c2",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Market cap is calculated as stock price multiplied by shares outstanding.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Market capitalization is calculated as stock price multiplied by shares outstanding."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/market-cap/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "CompaniesMarketCap shows Tesla's market cap at about $1.5 trillion as of Nov 10–11, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla (TSLA) has a market capitalization of about $1.5 trillion as of November 10–11, 2026."
+   },
+   "urls": [
+    "https://companiesmarketcap.com/tesla/marketcap/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Tesla's end-of-day market cap on Nov 10, 2026 was $1.501 trillion at a share price of $379.78 (CompaniesMarketCap).",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Tesla's end-of-day market cap was $1.501 trillion USD on Nov 10, 2026, with a share price of $379.78."
+   },
+   "urls": [
+    "https://companiesmarketcap.com/tesla/marketcap/",
+    "https://gurufocus.com/term/pettm/TSLA"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c21",
+    "c26"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Motley Fool shows Tesla's market cap at $1.50T in a quote timestamped 1:01 PM ET on 11/11/26.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Motley Fool shows Tesla's market cap at $1.50T in a quote timestamped 1:01 PM ET on 11/11/26."
+   },
+   "urls": [
+    "https://www.fool.com/research/largest-companies-by-market-cap/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "CompaniesMarketCap ranks Tesla as the world's 11th most valuable company by market cap.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "CompaniesMarketCap ranks Tesla as the world's 11th most valuable company by market cap."
+   },
+   "urls": [
+    "https://companiesmarketcap.com/tesla/marketcap/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "CompaniesMarketCap's headline Tesla market cap is $1.556 trillion at a share price of $393.65, labeled only 'As of November 2026'.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "CompaniesMarketCap's headline Tesla market cap is $1.556 trillion at a share price of $393.65, labeled only 'As of November 2026' with no exact timestamp."
+   },
+   "urls": [
+    "https://companiesmarketcap.com/tesla/marketcap/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Motley Fool's Tesla company profile gives a market cap of $1.52 trillion as of Nov 4, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Motley Fool's Tesla company profile gives a market cap of $1.52 trillion as of Nov 4, 2026."
+   },
+   "urls": [
+    "https://www.fool.com/research/largest-companies-by-market-cap/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Tesla stock was trading in the $386-395 range intraday on Nov 11, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla stock was trading in the $386-395 range intraday on Nov. 11, 2026."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c28",
+   "claim": "GuruFocus puts Tesla's trailing P/E at 417.80.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's trailing P/E is 417.80 per GuruFocus."
+   },
+   "urls": [
+    "https://gurufocus.com/term/pettm/TSLA"
+   ],
+   "conflicts_with": [
+    "c32"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "Tesla's trailing twelve months diluted EPS ended Sep 2026 was $0.91 (GuruFocus).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's trailing twelve months diluted EPS ended Sep. 2026 was $0.91."
+   },
+   "urls": [
+    "https://gurufocus.com/term/pettm/TSLA",
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c29",
+    "c36"
+   ]
+  },
+  {
+   "cid": "c30",
+   "claim": "Tesla's 10-year median P/E is 179.20; the current trailing P/E is about 133% above it.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's 10-year median P/E is 179.20; the current trailing P/E is about 133% above it."
+   },
+   "urls": [
+    "https://gurufocus.com/term/pettm/TSLA"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "StockAnalysis puts Tesla's trailing P/E at 432.53.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's trailing P/E is 432.53 per StockAnalysis."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": [
+    "c28"
+   ]
+  },
+  {
+   "cid": "c33",
+   "claim": "Tesla's forward P/E is 184.14.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's forward P/E is 184.14."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Tesla's TTM revenue is $103.57 billion, up 8.3% year over year.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's trailing-twelve-month revenue is $103.57 billion, up 8.3% year over year."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Tesla's TTM net income is $3.22 billion, down 36.7% year over year.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's TTM net income is $3.22 billion, down 36.7% year over year."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Tesla's market cap is up 8.9% per StockAnalysis.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's market cap is up 8.9% per StockAnalysis."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Tesla's EV/EBITDA is 149.64.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla's EV/EBITDA is 149.64."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "GuruFocus's GF Value for TSLA is $359.10, rated 'Fairly Valued'.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "GuruFocus's GF Value for TSLA is $359.10, rated 'Fairly Valued'."
+   },
+   "urls": [
+    "https://gurufocus.com/term/mktcap/TSLA"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "GuruFocus rates TSLA with a GF Score of 88/100 and lists 7 warning signs.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "GuruFocus rates TSLA with a GF Score of 88/100 and lists 7 warning signs."
+   },
+   "urls": [
+    "https://gurufocus.com/term/mktcap/TSLA"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Among 1,367 Vehicles & Parts companies, Tesla ranks better than 99.93% on market cap.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Among 1,367 Vehicles & Parts companies, Tesla ranks better than 99.93% on market cap."
+   },
+   "urls": [
+    "https://gurufocus.com/term/mktcap/TSLA"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "The average analyst 12-month price target for TSLA is $412.48, about 4.78% above the latest price.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The average analyst 12-month price target for TSLA is $412.48, about 4.78% above the latest price."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "TSLA has a consensus 'Buy' rating from 44 analysts.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "TSLA has a consensus 'Buy' rating from 44 analysts."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "TSLA's 52-week range is $297.38-$498.83.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "TSLA's 52-week range is $297.38-$498.83."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tsla"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "TSLA was up 3.36% on Nov 11, 2026 per GuruFocus.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "TSLA was up 3.36% on Nov. 11, 2026 per GuruFocus."
+   },
+   "urls": [
+    "https://gurufocus.com/term/mktcap/TSLA"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "Tesla released its Q3 2026 financial results on October 21, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Tesla released its Q3 2026 financial results on October 21, 2026."
+   },
+   "urls": [
+    "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2026-financial-results"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "Market cap about $1.55-1.56T on Nov 11 across StockAnalysis, GuruFocus and Companiesmarketcap; the 12:58 p.m. timestamp is not shown but the figure is consistent.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "Page states market cap of $1.56 trillion as of Nov 11, 2026.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.gurufocus.com/term/mktcap/TSLA",
+   "note": "GuruFocus states Market Cap is $1,551,616 Mil as of Nov. 11, 2026.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://companiesmarketcap.com/tesla/marketcap/",
+   "note": "The $1.501T figure is the Nov 10 close from Nasdaq/CompaniesMarketCap; GuruFocus reports $1.5516T for Nov 11, so the attribution and date are wrong.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/market-cap/",
+   "note": "StockAnalysis shows enterprise value of $1.53T on Nov 11, not $1.52T; the $1.52T figure comes from a Motley Fool market-cap number as of Nov 4.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "Enterprise value is stated as $1.53 trillion.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics",
+   "note": "An earlier snapshot (market cap $1.50T, EV $1.47T) is consistent with the Nov 10 close of about $1.50T, but it is superseded by the Nov 11 figures.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/market-cap/",
+   "note": "Market cap is about $1.5-1.56T, so a loose '$1.5T approximately' is acceptable, with the caveat that the figure varies by source and time.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "A standard definition: market cap is equity value, enterprise value adds debt and subtracts cash.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.liquid.trade/markets/tesla",
+   "note": "The Liquid page cites $1.556T at a $393.82 price; the $1.508T / $381.77 figure does not appear in the saved page.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.liquid.trade/markets/tesla",
+   "note": "The saved Liquid page shows a price of $393.82, not $381.77.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.liquid.trade/markets/tesla",
+   "note": "Liquid cites 3.95B shares outstanding, and StockAnalysis agrees.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "B": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://companiesmarketcap.com/tesla/marketcap/",
+   "note": "The Nov 10 close was $1.501T per Nasdaq/CompaniesMarketCap, consistent with the $1.50T snapshot, but it is stale relative to the Nov 11 figure.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.gurufocus.com/stock/TSLA/summary",
+   "note": "Tesla is listed on NASDAQ as TSLA; the Fiscal.ai profile itself was not seen, but the fact is correct.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/market-cap/",
+   "note": "StockAnalysis shows $1.56T on Nov 11, 2026, and about $393 x 3.95B shares gives about $1.55T, so $1.39T is wrong.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla/market-cap/",
+   "note": "StockAnalysis defines Market Cap = Stock Price * Shares Outstanding.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://companiesmarketcap.com/tesla/marketcap/",
+   "note": "Nov 10 end-of-day was $1.501T and the Nov 11 headline $1.558T, so 'about $1.5T' is roughly right and the current figure is nearer $1.56T.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://companiesmarketcap.com/tesla/marketcap/",
+   "note": "Nov 10 end-of-day market cap was $1.501T, and the $379.78 previous close times about 3.95B shares matches.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.fool.com/research/largest-companies-by-market-cap/",
+   "note": "Motley Fool shows $1.50T next to the Nov 11 day range; the 1:01 PM ET timestamp is not visible, and its implied cap differs from the roughly $1.556T implied by the price.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://companiesmarketcap.com/tesla/marketcap/",
+   "note": "Page says Tesla is the world's 11th most valuable company; StockAnalysis agrees.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://companiesmarketcap.com/tesla/marketcap/",
+   "note": "The CompaniesMarketCap headline reads $1.558T, not $1.556T, and the $393.65 price is not shown.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.fool.com/research/largest-companies-by-market-cap/",
+   "note": "Motley Fool states a market cap of $1.52 trillion as of Nov. 4.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla",
+   "note": "Day's range was 386.35 - 395.43.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://gurufocus.com/term/pettm/TSLA",
+   "note": "GuruFocus gives a TTM PE of 417.80 as of Nov 11, 2026.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://gurufocus.com/term/pettm/TSLA",
+   "note": "TTM diluted EPS for the period ended Sep 2026 is $0.91.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true"
+   }
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://gurufocus.com/term/pettm/TSLA",
+   "note": "GuruFocus states the PE is 133% above its 10-year median of 179.20.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "StockAnalysis showed a trailing P/E of about 433 on Nov 11 (432.99 to 433.04). 432.53 is within normal intraday drift.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "Forward P/E was 184.34 to 184.35 on the page snapshots. 184.14 is within intraday price drift.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla/revenue/",
+   "note": "TTM revenue of $103.57B, up 8.3%, is shown directly.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla",
+   "note": "Net income of $3.22B, down 36.7%, is shown directly.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla",
+   "note": "The page snapshot shows market cap up 9.1% (about $1.56T). 8.9% is a plausible intraday variation.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "EV/EBITDA of 149.64 is stated directly.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.gurufocus.com/term/gf-value/TSLA",
+   "note": "GF Value of $359.10 and a 'Fairly Valued' label are both stated. The same page also calls the stock 'overvalued' (price 9.4% above GF Value).",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.gurufocus.com/term/gf-score/TSLA",
+   "note": "GF Score of 88/100 with 7 warning signs is stated.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://gurufocus.com/term/mktcap/TSLA",
+   "note": "The page says Tesla ranks better than 99.93% of 1,367 Vehicles & Parts companies on market cap.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla",
+   "note": "The $412.48 target is confirmed. The upside shown was 4.65%. 4.78% is plausible at a slightly different intraday price.",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tsla/statistics/",
+   "note": "Consensus 'Buy' with an analyst count of 44 is shown.",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.gurufocus.com/stock/TSLA/summary",
+   "note": "The 52-week high of $498.83 and low of $297.38 are confirmed.",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://gurufocus.com/term/mktcap/TSLA",
+   "note": "The GuruFocus header shows TSLA +3.36% on Nov 11, 2026.",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2026-financial-results",
+   "note": "Tesla's IR press release is dated Oct 21, 2026 and announces Q3 2026 results; stockanalysis.com also lists the last earnings date as Oct 21, 2026. This is context about the latest earnings, not the valuation figure itself.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.gurufocus.com/term/mktcap/TSLA",
+   "note": "The saved GuruFocus page gives Tesla's enterprise value as $1,376,544 Mil, not $1,326,106 Mil, and the claimed figure appears nowhere in the evidence cache.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tsla/market-cap/",
+   "note": "The fiscal.ai page contains no Tesla data, so the figure can't be confirmed there. Two other sources saved for 2026-11-11 put Tesla's market cap at about $1.56T: stockanalysis.com says $1.56T, and companiesmarketcap.com says $1.558T. $1.485T is about 5% lower. A 11:32 UTC timestamp would reflect the",
+   "label_verdicts": {
+    "E": "false"
+   },
+   "retried": true
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "unverifiable",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://fiscal.ai",
+   "note": "The saved page has no Tesla profile and no 11:32:10 UTC timestamp. It is metadata about the source, not a fact that answers the question.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c8": {
+   "cid": "c8",
+   "verdict": "false",
+   "note": "The cited GuruFocus page shows a market cap of $1,551,616M as of Nov 11, 2026, and does not show $1,326,106M. Tesla's net cash is about $30-40B, so its EV should be about $1.52T; StockAnalysis lists $1.53T. The GuruFocus EV page returned 403, so I couldn't check it directly, but $1.326T doesn't fit "
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "note": "This is the standard definition. GuruFocus and StockAnalysis both describe market cap as the equity value, and EV as market cap plus debt minus cash."
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "note": "The CompaniesMarketCap page says that as of November 2026, Tesla's market cap is $1.558T and it is the world's 11th most valuable company."
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "note": "StockAnalysis shows a trailing P/E of 433.04 to 433.30 on Nov 11, 2026, and the figure moves during the day. 432.53 matches an intraday snapshot that day."
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 2,
+ "decided_from_passages": 43,
+ "scores": {
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 3,
+   "truth": 34,
+   "truth_weight": 102.25,
+   "coverage": 0.265,
+   "accuracy": 0.701,
+   "combined": 0.384,
+   "thorough_coverage": 0.183,
+   "answer_truth": 15,
+   "thoroughness": 0.291,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 23,
+   "unverifiable": 0,
+   "true": 23,
+   "wrong": 0,
+   "truth": 34,
+   "truth_weight": 102.25,
+   "coverage": 0.574,
+   "accuracy": 1.0,
+   "combined": 0.729,
+   "thorough_coverage": 0.66,
+   "answer_truth": 15,
+   "thoroughness": 0.795,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 1,
+   "wrong": 1,
+   "truth": 34,
+   "truth_weight": 102.25,
+   "coverage": 0.0,
+   "accuracy": 0.077,
+   "combined": 0.0,
+   "thorough_coverage": 0.007,
+   "answer_truth": 15,
+   "thoroughness": 0.013,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 2,
+   "truth": 34,
+   "truth_weight": 102.25,
+   "coverage": 0.029,
+   "accuracy": 0.464,
+   "combined": 0.055,
+   "thorough_coverage": 0.032,
+   "answer_truth": 15,
+   "thoroughness": 0.059,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 3,
+   "unverifiable": 1,
+   "true": 1,
+   "wrong": 1,
+   "truth": 34,
+   "truth_weight": 102.25,
+   "coverage": 0.0,
+   "accuracy": 0.074,
+   "combined": 0.0,
+   "thorough_coverage": 0.007,
+   "answer_truth": 15,
+   "thoroughness": 0.013,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 1,
+   "truth": 34,
+   "truth_weight": 102.25,
+   "coverage": 0.176,
+   "accuracy": 0.833,
+   "combined": 0.291,
+   "thorough_coverage": 0.147,
+   "answer_truth": 15,
+   "thoroughness": 0.249,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.117,
+ "corrections_v2": {
+  "units_before": 46,
+  "units_after": 43,
+  "dedup_groups": [
+   {
+    "kept": "c13",
+    "merged": [
+     "c38"
+    ]
+   },
+   {
+    "kept": "c21",
+    "merged": [
+     "c26"
+    ]
+   },
+   {
+    "kept": "c29",
+    "merged": [
+     "c36"
+    ]
+   }
+  ],
+  "cost": 0.025
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0edaf2c5ee4398cd006af4b0742f8487d286e6b3d6bb730363",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "How many employees does Adobe have?",
+  "answer": "Adobe reported 31,360 employees worldwide as of November 28, 2025, the latest exact company-reported headcount I could verify. This figure appears in its fiscal 2025 annual report, filed January 15, 2026.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Adobe employed 31,360 people worldwide as of November 28, 2025.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+    "date": "2025-11-28"
+   },
+   {
+    "fact": "Adobe filed its fiscal 2025 annual report on January 15, 2026.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/0000796343-26-000003-index.html",
+    "date": "2026-01-15"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "As of November 28, 2025, we employed 31,360 people",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+    "publisher": "Adobe Inc., via U.S. Securities and Exchange Commission",
+    "published_date": "2026-01-15"
+   },
+   {
+    "quote": "Filing Date\n2026-01-15",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/0000796343-26-000003-index.html",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "published_date": "2026-01-15"
+   }
+  ],
+  "caveats": [
+   "The verified headcount is dated November 28, 2025, not November 11, 2026; Adobe's current workforce may differ."
+  ],
+  "missing_fields": [
+   "Exact employee count as of November 11, 2026"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 17582,
+  "input_tokens_details": {
+   "cache_write_tokens": 13,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 755,
+  "output_tokens_details": {
+   "reasoning_tokens": 256
+  },
+  "total_tokens": 18337
+ },
+ "search_calls": 3,
+ "search_actions": {
+  "search": 2,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0334,
+ "cost_usd": 0.0634,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "How many employees does Adobe have?",
+ "input_n": 22,
+ "completed_on": "2026-11-11"
+}

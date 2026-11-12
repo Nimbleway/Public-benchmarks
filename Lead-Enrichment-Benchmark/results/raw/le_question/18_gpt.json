@@ -1,0 +1,75 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_057ab9fa8c8a327c006af4b05f326c87d2801ce0cf32d610eb",
+ "status": "completed",
+ "seconds": 34,
+ "output": {
+  "question": "What is Oracle's annual revenue?",
+  "answer": "As of November 11, 2026, Oracle Corporation's latest full-year revenue was $67.4 billion for fiscal 2026, ended May 31, 2026. Revenue increased 17% from the previous fiscal year.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Oracle reported fiscal 2026 annual revenue of $67.4 billion, up 17% year over year.",
+    "source_url": "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/",
+    "date": "2026-05-31"
+   },
+   {
+    "fact": "Oracle's fiscal 2026 ended May 31, 2026.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+    "date": "2026-05-31"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "Fiscal year 2026 total revenues were up 17% to a record $67.4 billion.",
+    "source_url": "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/",
+    "publisher": "Oracle",
+    "published_date": "2026-06-10"
+   },
+   {
+    "quote": "For the Years Ended May 31, 2026, 2025 and 2024",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+    "publisher": "Oracle Corporation / U.S. Securities and Exchange Commission",
+    "published_date": "2026-06-22"
+   }
+  ],
+  "caveats": [
+   "Annual revenue refers to the latest completed fiscal year, not trailing-twelve-month revenue or a forecast."
+  ],
+  "missing_fields": []
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 21531,
+  "input_tokens_details": {
+   "cache_write_tokens": 13,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 687,
+  "output_tokens_details": {
+   "reasoning_tokens": 227
+  },
+  "total_tokens": 22218
+ },
+ "search_calls": 3,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1,
+  "find_in_page": 1
+ },
+ "token_cost_usd": 0.0406,
+ "cost_usd": 0.0706,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "What is Oracle's annual revenue?",
+ "input_n": 18,
+ "completed_on": "2026-11-11"
+}

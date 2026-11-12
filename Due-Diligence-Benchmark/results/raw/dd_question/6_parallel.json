@@ -1,0 +1,208 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69b9cdf8492c06df4d",
+ "status": "completed",
+ "seconds": 78,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Where can I find General Motors' latest 10-K filing?",
+  "passages": [
+   {
+    "quote": "Filing Date Jan 27, 2026",
+    "publisher": "General Motors",
+    "published_date": "2026-01-27",
+    "source_url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013"
+   },
+   {
+    "quote": "For the fiscal year ended December 31, 2025",
+    "publisher": "General Motors",
+    "published_date": "2026-01-27",
+    "source_url": "https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6"
+   }
+  ],
+  "answer": "As of November 11, 2026, General Motors\u2019 latest Form 10-K is its annual report for the year ended December 31, 2025, filed January 27, 2026. You can access it on [GM\u2019s official filing page](https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013) or [download the PDF directly](https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6).",
+  "caveats": [],
+  "missing_fields": [],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-01-27",
+    "source_url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+    "fact": "General Motors\u2019 latest Form 10-K was filed January 27, 2026, covering the fiscal year ended December 31, 2025."
+   },
+   {
+    "date": "2026-11-11",
+    "source_url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+    "fact": "GM\u2019s official filing page provides HTML and PDF versions of the report."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "SEC Filing Details | 10-K | General Motors",
+     "url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+     "excerpts": [
+      "Filing Date Jan 27, 2026"
+     ]
+    },
+    {
+     "title": "Form 10-K for General Motors Co filed 01/27/2026",
+     "url": "https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6",
+     "excerpts": [
+      "ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the fiscal year ended December 31, 2025"
+     ]
+    }
+   ],
+   "reasoning": "The official filing page states the filing date, and the report states the fiscal-year end. The publication date is represented by the filing date rather than a separate webpage-publication timestamp.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "SEC Filing Details | 10-K | General Motors",
+     "url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+     "excerpts": [
+      "[10-K](https://investor.gm.com/node/28141/html) Filing Date Jan 27, 2026 Document Date Dec 31, 2025 Form Description Annual report which provides a comprehensive overview of the company for the past year Filing Group Annual Filings Company General Motors Issuer GENERAL MOTORS CO",
+      "Download PDF](https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6"
+     ]
+    },
+    {
+     "title": "Form 10-K for General Motors Co filed 01/27/2026",
+     "url": "https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6",
+     "excerpts": [
+      "ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the fiscal year ended December 31, 2025"
+     ]
+    }
+   ],
+   "reasoning": "GM\u2019s primary sources establish the exact issuer, form, filing date, reporting period, and PDF destination. The retrieved filing records also listed this as the newest GM annual filing; latest status requires comparison rather than being explicitly stated on the individual filing page.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "No material caveat is needed for the filing identity or access links.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "All requested substantive information was available from the opened official page and previously verified report.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "Uses the reference date explicitly supplied in the task.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "SEC Filing Details | 10-K | General Motors",
+     "url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+     "excerpts": [
+      "[10-K](https://investor.gm.com/node/28141/html) Filing Date Jan 27, 2026 Document Date Dec 31, 2025 Form Description Annual report which provides a comprehensive overview of the company for the past year Filing Group Annual Filings Company General Motors Issuer GENERAL MOTORS CO",
+      "Download PDF](https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6"
+     ]
+    },
+    {
+     "title": "Form 10-K for General Motors Co filed 01/27/2026",
+     "url": "https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6",
+     "excerpts": [
+      "ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the fiscal year ended December 31, 2025"
+     ]
+    }
+   ],
+   "reasoning": "The official filing details and annual report establish the filing date and covered year, while the filing page supplies HTML and PDF access. Latest status additionally rests on comparison with the retrieved filing list.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "SEC Filing Details | 10-K | General Motors",
+     "url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+     "excerpts": [
+      "Filing Date Jan 27, 2026"
+     ]
+    }
+   ],
+   "reasoning": "Quotes the filing-date label and value on GM\u2019s official filing page; published_date uses that filing date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Form 10-K for General Motors Co filed 01/27/2026",
+     "url": "https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6",
+     "excerpts": [
+      "ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the fiscal year ended December 31, 2025"
+     ]
+    },
+    {
+     "title": "SEC Filing Details | 10-K | General Motors",
+     "url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+     "excerpts": [
+      "Filing Date Jan 27, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The report directly contains the quoted reporting period; the associated official filing page establishes its filing date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "SEC Filing Details | 10-K | General Motors",
+     "url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+     "excerpts": [
+      "[10-K](https://investor.gm.com/node/28141/html) Filing Date Jan 27, 2026 Document Date Dec 31, 2025 Form Description Annual report which provides a comprehensive overview of the company for the past year Filing Group Annual Filings Company General Motors Issuer GENERAL MOTORS CO"
+     ]
+    },
+    {
+     "title": "Form 10-K for General Motors Co filed 01/27/2026",
+     "url": "https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6",
+     "excerpts": [
+      "ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the fiscal year ended December 31, 2025"
+     ]
+    }
+   ],
+   "reasoning": "Directly supports the issuer, form, filing date, and fiscal-year end. Its latest status is a synthesis with the retrieved annual-filing records.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "SEC Filing Details | 10-K | General Motors",
+     "url": "https://investor.gm.com/sec-filings/sec-filing/10-k/0001467858-26-000013",
+     "excerpts": [
+      "Form [10-K](https://investor.gm.com/node/28141/html)",
+      "Download PDF](https://investor.gm.com/static-files/90d2621e-4571-4431-87a1-5ff3035894f6"
+     ]
+    }
+   ],
+   "reasoning": "The filing page links to an HTML version and a direct PDF download.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "Where can I find General Motors' latest 10-K filing?",
+ "input_n": 6,
+ "completed_on": "2026-11-11"
+}

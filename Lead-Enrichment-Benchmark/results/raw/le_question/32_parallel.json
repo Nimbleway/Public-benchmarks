@@ -1,0 +1,195 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69bdbad9b01e4c048f",
+ "status": "completed",
+ "seconds": 97,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "How many employees does Coca-Cola have?",
+  "passages": [
+   {
+    "quote": "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States.",
+    "publisher": "The Coca-Cola Company",
+    "published_date": "2026-02-20",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+   }
+  ],
+  "answer": "The Coca-Cola Company\u2019s latest verified reported headcount is approximately 65,900 employees worldwide as of December 31, 2025. Of those, approximately 8,900 were located in the United States.",
+  "caveats": [
+   "This is a year-end 2025 reported figure, not a real-time employee count as of November 11, 2026."
+  ],
+  "missing_fields": [],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2025-12-31",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+    "fact": "The Coca-Cola Company reported approximately 65,900 employees worldwide."
+   },
+   {
+    "date": "2025-12-31",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+    "fact": "Approximately 8,900 employees were located in the United States."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no external evidence is needed.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    },
+    {
+     "title": "Annual Filings (10-K) :: The Coca-Cola Company (KO)",
+     "url": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k/content/0001628280-26-010047/ko-20251231.htm",
+     "excerpts": [
+      "Published on February 20, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The primary filing supplies the exact employee-count passage. The company's investor-relations page for the same filing supplies its publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    },
+    {
+     "title": "The Coca-Cola Company (KO) Number of Employees 1993-2025",
+     "url": "https://stockanalysis.com/stocks/ko/employees",
+     "excerpts": [
+      "The Coca-Cola Company had 65,900 employees as of December 31, 2025."
+     ]
+    }
+   ],
+   "reasoning": "The filing directly states the worldwide and United States employee counts and their measurement date. The opened employee-history page also identifies 65,900 at December 31, 2025 as its most recent count. Calling this the latest verified figure reflects the sources reviewed, not proof that no newer disclosure exists.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    }
+   ],
+   "reasoning": "The source explicitly dates the headcount to December 31, 2025, so it should not be presented as a live November 2026 count.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "All requested fields for the reported headcount were populated. The distinction between the reported measurement date and today's date is disclosed in the caveat.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "November 11, 2026 is the assessment date supplied in the task, not the employee-count measurement date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    }
+   ],
+   "reasoning": "The filing directly supports both headcount facts and their December 31, 2025 measurement date.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    },
+    {
+     "title": "Annual Filings (10-K) :: The Coca-Cola Company (KO)",
+     "url": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k/content/0001628280-26-010047/ko-20251231.htm",
+     "excerpts": [
+      "Published on February 20, 2026"
+     ]
+    }
+   ],
+   "reasoning": "The exact quote comes from the company's filing, whose publication date is identified on its investor-relations page.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    }
+   ],
+   "reasoning": "The explicit year-end measurement date supports warning against treating this as a real-time count.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    }
+   ],
+   "reasoning": "The filing states approximately 65,900 employees for December 31, 2025.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "ko-20251231",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+     "excerpts": [
+      "As of December 31, 2025 and 2024, our Company had approximately 65,900 and 69,700 employees, respectively, of which approximately 8,900 were located in the United States."
+     ]
+    }
+   ],
+   "reasoning": "The same passage states that approximately 8,900 employees were located in the United States.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "How many employees does Coca-Cola have?",
+ "input_n": 32,
+ "completed_on": "2026-11-11"
+}

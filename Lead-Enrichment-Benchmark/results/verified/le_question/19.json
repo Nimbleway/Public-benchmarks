@@ -1,0 +1,596 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 19,
+ "task": "What is IBM's annual revenue?",
+ "labels": {
+  "parallel": "A",
+  "gpt": "B",
+  "exa": "C",
+  "firecrawl": "D",
+  "opus": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 8,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "IBM's revenue for fiscal year 2025 (year ended December 31, 2025) was $67,535 million, about $67.5 billion.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A",
+    "D",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "F": "IBM's full-year 2025 revenue (year ended December 31, 2025) was $67,535 million, about $67.5 billion, per its FY2025 Form 10-K.",
+    "C": "IBM's total revenue was $67.535 billion ($67,535 million) for the fiscal year ended December 31, 2025.",
+    "A": "IBM's total revenue for the year ended December 31, 2025 was $67,535 million (US$67.535 billion).",
+    "D": "IBM reported total revenue of $67.535 billion ($67,535,000,000) for fiscal year 2025, the year ended December 31, 2025.",
+    "B": "IBM reported revenue of $67,535 million (about $67.535 billion) for the fiscal year ended December 31, 2025, its latest completed fiscal year.",
+    "E": "IBM's full-year 2025 revenue was $67.5 billion ($67,535 million), up 8% (6% at constant currency)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "https://www.ibm.com/downloads/documents/us-en/15db52348fc203a4",
+    "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+    "https://www.sec.gov/ix?doc=/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "IBM's fiscal year 2024 revenue was $62,753 million.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "F": "IBM's FY2024 revenue was $62,753 million.",
+    "C": "IBM's total revenue was $62,753 million in the prior fiscal year (2024).",
+    "A": "IBM's total revenue for the prior year (2024) was $62,753 million.",
+    "B": "IBM's fiscal 2025 revenue increased 7.6% from fiscal 2024 revenue of $62,753 million.",
+    "E": "IBM's full-year 2024 revenue was $62,753 million (about $62.75 billion)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "https://www.ibm.com/downloads/documents/us-en/15db52348fc203a4",
+    "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+    "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "IBM's January 28, 2026 release reported full-year 2025 revenue growth of 8% year over year.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Full-year revenue of $67.5 billion, up 8% (up 6% at constant currency).",
+    "C": "Full-year 2025 revenue growth of 8 percent year over year (revenue of $67.5 billion).",
+    "A": "Full-year revenue of $67.5 billion, up 8 percent, up 6 percent at constant currency.",
+    "E": "Full-year 2025 revenue was $67.5 billion, up 8% (6% at constant currency)."
+   },
+   "urls": [
+    "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+    "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+    "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+    "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "IBM's FY2025 revenue growth was about 6% at constant currency.",
+   "asserted_by": [
+    "F",
+    "A",
+    "E"
+   ],
+   "variants": {
+    "F": "About 6% adjusted for currency (constant currency); up 6% at constant currency in the release.",
+    "A": "Up 6 percent at constant currency.",
+    "E": "6% at constant currency."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+    "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "IBM published its Q4 and full-year 2025 results on January 28, 2026.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A"
+   ],
+   "variants": {
+    "F": "In its Q4/full-year 2025 results release on January 28, 2026...",
+    "C": "...in its January 28, 2026 fourth-quarter results release.",
+    "A": "IBM published its fourth-quarter and full-year 2025 results on January 28, 2026."
+   },
+   "urls": [
+    "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+    "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "IBM's fourth-quarter 2025 revenue was $19,686 million, versus $17,553 million in Q4 2024.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "IBM's fourth-quarter 2025 total revenue was $19,686 million, compared with $17,553 million in the fourth quarter of 2024."
+   },
+   "urls": [
+    "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "IBM's fiscal year 2023 revenue was $61,860 million.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "IBM's total revenue was $61,860 million in fiscal year 2023."
+   },
+   "urls": [
+    "https://www.ibm.com/downloads/documents/us-en/15db52348fc203a4"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "In January 2026 IBM guided to more than 5% constant-currency revenue growth for full-year 2026.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "IBM guided to more than 5% constant-currency revenue growth for full-year 2026 (guidance given January 28, 2026).",
+    "E": "In January 2026, IBM's outlook was full-year constant-currency revenue growth of more than 5%."
+   },
+   "urls": [
+    "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+    "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "On October 21, 2026, IBM said it expects full-year 2026 constant-currency revenue growth of 4–5%, with currency neutral.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "On October 21, 2026, IBM said it continues to expect full-year 2026 constant-currency revenue growth of 4–5%, with currency neutral."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm"
+   ],
+   "conflicts_with": [
+    "c9"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "IBM's Q3 2026 revenue was $17.1 billion, up 5% (6% at constant currency).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "IBM's Q3 2026 revenue was $17.1 billion, up 5% (6% at constant currency)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "IBM's revenue for the first nine months of 2026 was $50,182 million.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "IBM's revenue for the first nine months of 2026 was $50,182 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "IBM's revenue for the first nine months of 2025 was $47,849 million.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "IBM's revenue for the first nine months of 2025 was $47,849 million."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "IBM's trailing-twelve-month revenue through Q3 2026 is about $69.9 billion ($69,868 million), a derived figure (67,535 − 47,849 + 50,182), not reported by IBM.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "IBM's trailing-twelve-month revenue through Q3 2026 is about $69.9 billion ($69,868 million), derived as 67,535 − 47,849 + 50,182 (a calculation, not reported by IBM)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "As of November 11, 2026, fiscal 2025 is IBM's most recent completed full-year revenue figure; FY2026 is not yet complete.",
+   "asserted_by": [
+    "F",
+    "C",
+    "A",
+    "D",
+    "B",
+    "E"
+   ],
+   "variants": {
+    "F": "IBM's fiscal year ends December 31, so FY2025 is the most recent full-year figure as of 2026-11-11.",
+    "C": "The fiscal 2025 figure is IBM's most recent completed full-year revenue as of November 11, 2026; a 2026 full-year figure was not yet completed.",
+    "A": "As of November 11, 2026, IBM's latest reported annual revenue is for fiscal 2025 (the latest completed fiscal year), not quarterly or trailing-twelve-month revenue.",
+    "D": "Fiscal 2025 revenue is its most recent completed full-year figure as of November 11, 2026; fiscal 2026 is not yet a completed reporting year.",
+    "B": "...for the fiscal year ended December 31, 2025, its latest completed fiscal year.",
+    "E": "IBM's most recent completed fiscal year is 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "https://www.ibm.com/downloads/documents/us-en/15db52348fc203a4",
+    "http://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+    "https://www.sec.gov/ix?doc=/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "IBM's FY2026 results are expected in January 2027.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "FY2026 revenue will be reported in January 2027.",
+    "E": "Full-year 2026 results will probably come out in late January 2027."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+   "note": "The 10-K gives FY2025 total revenue of $67,535M (about $67.5B), up 8% (6% at constant currency).",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+   "note": "FY2024 total revenue of $62,753M appears in the 10-K comparatives.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+   "note": "The release table shows $67.5B revenue, up 8% (footnote: 6% at constant currency).",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true",
+    "C": "true",
+    "A": "true",
+    "E": "true"
+   }
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+   "note": "The release footnote states 6% at constant currency.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+   "note": "The release URL and the 10-K both reference the January 28, 2026 Q4 results release.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+   "note": "Q4 2025 revenue of $19,686M is consistent with 67,535 − 47,849; the provider excerpt shows 19,686 vs 17,553.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+   "note": "The 10-K income statement shows 2023 total revenue of 61,860.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.ibm.com/2026-01-28-ibm-releases-fourth-quarter-results",
+   "note": "The January 2026 outlook of more than 5% constant-currency growth matches what I recall. The passages don't show it directly, and it may since have been updated.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm",
+   "note": "Q3 revenue of $17,103M vs $16,331M is up 5%; the 6% constant-currency figure is plausible given the segment constant-currency growth rates.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm",
+   "note": "Nine-month 2026 total revenue is $50,182M.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm",
+   "note": "Nine-month 2025 total revenue is $47,849M.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm",
+   "note": "67,535 − 47,849 + 50,182 = 69,868, correctly labelled as derived rather than reported.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+   "note": "IBM's fiscal year ends December 31, so FY2025 is the latest completed year as of 2026-11-11.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm",
+   "note": "The Oct 21, 2026 Q3 release says IBM 'continues to expect full-year constant currency revenue growth in the range of four-to-five percent' and that currency is expected to be neutral to growth. Variant E's 'continues to expect' wording matches the source. The base wording 'expects' is also fine.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+   "note": "No saved page states the FY2026 report date. IBM reported FY2025 on Jan 28, 2026, and Q4 results usually come in late January, so a January 2027 release is the expected pattern. Variant E ('probably late January') is well supported. Variant F ('will be reported') is stated more firmly than the evide",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "note": "IBM's Q4 2025 press release (Jan 28, 2026) gives total revenue of $19,686M for Q4 2025 and $17,553M for Q4 2024."
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "note": "IBM's Q3 2026 earnings exhibit (8-K Ex. 99.1) gives nine-month 2025 revenue of $47,849M. This matches FY2025 revenue of $67,535M minus Q4 2025 revenue of $19,686M."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 14,
+ "scores": {
+  "parallel": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 45.25,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.464,
+   "answer_truth": 2,
+   "thoroughness": 0.634,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 45.25,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.376,
+   "answer_truth": 2,
+   "thoroughness": 0.546,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 45.25,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.398,
+   "answer_truth": 2,
+   "thoroughness": 0.569,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 45.25,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.265,
+   "answer_truth": 2,
+   "thoroughness": 0.419,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 45.25,
+   "coverage": 1.0,
+   "accuracy": 1.0,
+   "combined": 1.0,
+   "thorough_coverage": 0.967,
+   "answer_truth": 2,
+   "thoroughness": 0.983,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 45.25,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.564,
+   "answer_truth": 2,
+   "thoroughness": 0.721,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.492,
+ "corrections_v2": {
+  "units_before": 16,
+  "units_after": 15,
+  "dedup_groups": [
+   {
+    "kept": "c4",
+    "merged": [
+     "c3"
+    ]
+   }
+  ],
+  "cost": 0.014
+ }
+}

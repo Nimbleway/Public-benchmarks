@@ -1,0 +1,937 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 8,
+ "task": "Where can I find Target's latest annual report?",
+ "labels": {
+  "opus": "A",
+  "exa": "B",
+  "parallel": "C",
+  "nimble": "D",
+  "gpt": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 13,
+ "evidence_fetched": 12,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "As of November 11, 2026, Target's latest annual report is the 2025 Annual Report.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "As of November 11, 2026, Target Corporation's latest annual report is the 2025 Annual Report.",
+    "C": "Target Corporation's latest annual report as of November 11, 2026 is its 2025 Annual Report.",
+    "F": "Target's Investor Relations archive lists the 2025 Annual Report as the latest annual report (as of 2026-11-11)",
+    "E": "Target Corporation's latest annual report as of November 11, 2026 is its 2025 Annual Report."
+   },
+   "urls": [
+    "http://corporate.target.com/investors/annual/annual-reports-and-archive",
+    "https://corporate.target.com/investors/annual/2025-annual-report",
+    "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+    "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+    "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Target's Annual Reports & Archive page offers the 2025 annual report as a digital version and a PDF download.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Target Investor Relations' Annual Reports & Archive page identifies the 2025 digital annual report and provides a PDF download.",
+    "E": "Target's 2025 Annual Report is available on its Annual Reports and Archive page, which offers a digital version and a PDF download.",
+    "F": "with links to both a digital version and a PDF download."
+   },
+   "urls": [
+    "http://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf",
+    "https://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf",
+    "https://corporate.target.com/investors/annual/2025-annual-report",
+    "https://corporate.target.com/investors/annual/2025-annual-report/download",
+    "https://corporate.target.com/investors/annual/annual-reports-and-archive"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c7",
+    "c8",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Target's download page offers a PDF of the full 2025 annual report and a custom download that can include the 10-K (707kb), CEO letter, financial highlights, financial summary, directors and management, and shareholder information.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Target's download page offers a PDF of the full 2025 annual report and a custom download that can include the 10-K (707kb), CEO letter, financial highlights, financial summary, directors and management, and shareholder information."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/2025-annual-report/download"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Target's corporate site offers a download of the 10-K report at corporate.target.com/investors/annual-reports/2025/download.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Target's corporate site offers a download of the 10-K report at corporate.target.com/investors/annual-reports/2025/download."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Target's investor-relations site hosts the 2025 Annual Report at corporate.target.com/investors/annual/2025-annual-report, including a full 10-K section and a Download Report link.",
+   "asserted_by": [
+    "A",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Target's investor-relations site hosts the 2025 Annual Report at corporate.target.com/investors/annual/2025-annual-report, including a full 10-K section and a Download Report link."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/2025-annual-report",
+    "https://corporate.target.com/investors/annual/2025-annual-report/report-home"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c12",
+    "c13",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "The digital report is titled '2025 Annual Report Target Corporation.'",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The digital report is titled \"2025 Annual Report Target Corporation.\""
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/2025-annual-report"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Target's Form 10-K for fiscal 2025 can be read online section by section, starting at the 10-K cover page.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Target's Form 10-K for fiscal 2025 can be read online section by section, starting at the 10-K cover page."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Target's annual report includes its Form 10-K filing.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Target's annual report includes its Form 10-K filing.",
+    "F": "Target's annual report includes the 10-K filing (also accessible from SEC Filings) and is available in PDF or digital format."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/annual-reports-and-archive"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "The Form 10-K in Target's 2025 Annual Report covers the fiscal year ended January 31, 2026.",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "E": "The Form 10-K in Target's 2025 Annual Report covers the fiscal year ended January 31, 2026."
+   },
+   "urls": [
+    "https://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf",
+    "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c18",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Target's 2025 Form 10-K is available on the SEC website and covers the fiscal year ended January 31, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Target Corporation's 2025 Form 10-K is available on the SEC website and covers the fiscal year ended January 31, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/tgt-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Target's 2025 Form 10-K was signed on March 11, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Target Corporation's 2025 Form 10-K was signed on March 11, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/tgt-20260131.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "The Form 10-K for the fiscal year ended January 31, 2026 was filed with the SEC on March 11, 2026.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "D": "Target Corporation's Form 10-K for the fiscal year ended January 31, 2026 was filed with the SEC on March 11, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c23"
+   ]
+  },
+  {
+   "cid": "c24",
+   "claim": "The SEC accession number of the fiscal-year-ended-January-31-2026 Form 10-K is 0000027419-26-000016.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The SEC accession number of Target's fiscal-year-ended-January-31-2026 Form 10-K is 0000027419-26-000016."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Target Corporation's SEC CIK is 0000027419.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Target Corporation's SEC CIK is 0000027419."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "On SEC EDGAR, the main document of the 10-K filing is tgt-20260131.htm, under the filing index for accession 0000027419-26-000016.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On SEC EDGAR, the main document of Target's 10-K filing is tgt-20260131.htm, under the filing index for accession 0000027419-26-000016."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "The official Target 10-K is also available on SEC EDGAR by searching Target Corp (ticker TGT, Commission file no. 1-6049).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The official Target 10-K is also available on SEC EDGAR by searching Target Corp (ticker TGT, Commission file no. 1-6049)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "The SEC EDGAR copy of the filing is the stable permanent record if Target's corporate-site download link changes.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The SEC EDGAR copy of the filing is the stable permanent record if Target's corporate-site download link changes."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Target maintains an annual-reports archive page on its corporate site where prior years' annual reports can be found.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Target maintains an annual-reports archive page on its corporate site where prior years' annual reports can be found."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/annual-reports-and-archive"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Target labels the report '2025' by report/publication year, while the included Form 10-K covers the fiscal year ended January 31, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Target's investor-relations page labels the report by publication/report year (2025), while the included Form 10-K covers the fiscal year ended January 31, 2026."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/annual-reports-and-archive"
+   ],
+   "conflicts_with": [
+    "c31",
+    "c32"
+   ]
+  },
+  {
+   "cid": "c31",
+   "claim": "Target labels its annual report as 2025 by fiscal year, although that fiscal year ended in 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Target labels its annual report as 2025 by fiscal year, although that fiscal year ended in 2026."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c30"
+   ]
+  },
+  {
+   "cid": "c32",
+   "claim": "Target names its annual report after the fiscal year, so the '2025' report covers February 2025 to January 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Target names its annual report after the fiscal year, so the '2025' report covers February 2025 to January 2026."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c30"
+   ]
+  },
+  {
+   "cid": "c33",
+   "claim": "Target labels the report '2025 Annual Report' even though it covers the fiscal year ended January 31, 2026, because its fiscal years end near the start of the calendar year.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Target labels the report its '2025 Annual Report' even though it covers the fiscal year ended January 31, 2026, because its fiscal years end near the start of the calendar year."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/2025-annual-report"
+   ],
+   "conflicts_with": [
+    "c30"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Target's fiscal 2025 ended January 31, 2026, and consisted of 52 weeks.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Target's fiscal 2025 ended January 31, 2026, and consisted of 52 weeks."
+   },
+   "urls": [
+    "http://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Target's 10-K cover page lists 452,855,589 shares of common stock (par value $0.0833) outstanding as of March 4, 2026.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Target's 10-K cover page lists 452,855,589 shares of common stock (par value $0.0833) outstanding as of March 4, 2026."
+   },
+   "urls": [
+    "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "Target's fiscal 2026 annual report would normally be published around March 2027.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Target's fiscal 2026 annual report would normally be published around March 2027."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "As of November 2026, the fiscal-2025 10-K is Target's most recent annual report; a newer 10-K for the fiscal year ending late January 2027 would supersede it once filed (after March 2027).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "As of November 2026, the fiscal-2025 10-K is Target's most recent annual report; a newer 10-K for the fiscal year ending late January 2027 would supersede it once filed (after March 2027)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Target's Reports & Filings page (corporate.target.com/investors/reports-filings) returned a 404 error.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Target's Reports & Filings page (corporate.target.com/investors/reports-filings) returned a 404 error."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+   "note": "Archive page lists the 2025 annual report as newest, with the 2024 report below it in the archive.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "F": "true",
+    "E": "true",
+    "A": "true",
+    "D": "true"
+   }
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+   "note": "Page links to both the 2025 digital annual report and a PDF download.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "F": "true",
+    "C": "true",
+    "A": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/download",
+   "note": "Download page lists the full PDF and the customizable sections, including 10-K (707kb).",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+   "note": "10-K cover page has a 'Download the 10-K report' link to that URL.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report",
+   "note": "Page has a 10-K Report section (Cover, Parts I-IV, Signatures) and a Download Report link.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true",
+    "A": "true"
+   }
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report",
+   "note": "Page heading reads '2025 Annual Report Target Corporation'.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+   "note": "Target's digital 2025 annual report has a 10-K section navigation starting at the 10-K cover page.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+   "note": "Target's page states the annual report includes the 10-K filing and is available in PDF or digital format.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+   "note": "The 10-K cover says fiscal year ended January 31, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "B": "true"
+   }
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html",
+   "note": "EDGAR hosts the 10-K with a period of report of 2026-01-31.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "http://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf",
+   "note": "The signature page is dated March 11, 2026.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html",
+   "note": "EDGAR shows a filing date of 2026-03-11.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html",
+   "note": "The EDGAR filing detail shows accession number 0000027419-26-000016.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html",
+   "note": "The EDGAR page lists Target Corp CIK 0000027419.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html",
+   "note": "The filing index lists tgt-20260131.htm as document 1, type 10-K.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/tgt-20260131.htm",
+   "note": "The EDGAR 10-K shows Commission File Number 1-6049 and the TGT ticker.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/0000027419-26-000016-index.html",
+   "note": "EDGAR is the regulator's permanent filing record, a reasonable and generally accurate advisory statement.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+   "note": "Other passages show the Annual Reports and Archive page listing the 2024 report with PDF and digital links.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+   "note": "Target labels it the 2025 annual report (fiscal 2025), while the 10-K covers the year ended January 31, 2026.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+   "note": "The report is branded '2025 Annual Report' and covers the fiscal year ended January 31, 2026.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/tgt-20260131.htm",
+   "note": "Fiscal 2025 ended Jan 31, 2026 and began Feb 2, 2025, which is roughly February 2025 to January 2026.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+   "note": "The label and the period are confirmed; the 'because' reasoning is the fiscal-year convention, which is consistent with the sources.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/tgt-20260131.htm",
+   "note": "The 10-K states fiscal 2025 ended January 31, 2026, with 52 weeks; fiscal 2024 and 2026 are also 52 weeks.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-cover",
+   "note": "The cover page shows 452,855,589 shares outstanding as of March 4, 2026, at par value $0.0833.",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/tgt-20260131.htm",
+   "note": "Fiscal 2026 ends Jan 30, 2027, and the prior 10-K was signed March 11, 2026, so a March 2027 filing is the normal pattern.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://corporate.target.com/investors/annual/annual-reports-and-archive",
+   "note": "The 2025 report is the latest listed, and the fiscal 2026 10-K cannot exist before the year ends on Jan 30, 2027.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "confidence": "high",
+   "source": "https://corporate.target.com/investors/reports-filings",
+   "note": "My WebFetch of that URL returned HTTP 404. The saved evidence pages don't mention it. The correct pages are the annual-reports-and-archive page and the SEC filing, so this fact doesn't help answer the question.",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "note": "Target's archive page puts the 2025 Annual Report first, followed by 2024 back to 2016. The 2026 report won't come out until about March 2027."
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "note": "The PDF at corporate.target.com/getmedia/79214b4b-.../2025-Annual-Report-Target-Corporation.pdf opens. Its metadata shows it was created March 6, 2026, and the cached text says fiscal 2025 ended January 31, 2026."
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "note": "The report-home page opens as the 2025 Annual Report, starting with CEO Fiddelke's letter. The fetch didn't return the page URL, but its title and breadcrumbs match."
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "note": "The 10-K cover page says 'For the fiscal year ended January 31, 2026.'"
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 37,
+ "scores": {
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 95.25,
+   "coverage": 0.343,
+   "accuracy": 1.0,
+   "combined": 0.511,
+   "thorough_coverage": 0.339,
+   "answer_truth": 17,
+   "thoroughness": 0.506,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 95.25,
+   "coverage": 0.381,
+   "accuracy": 1.0,
+   "combined": 0.552,
+   "thorough_coverage": 0.354,
+   "answer_truth": 17,
+   "thoroughness": 0.523,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 95.25,
+   "coverage": 0.152,
+   "accuracy": 1.0,
+   "combined": 0.264,
+   "thorough_coverage": 0.157,
+   "answer_truth": 17,
+   "thoroughness": 0.272,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 95.25,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.425,
+   "answer_truth": 17,
+   "thoroughness": 0.597,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 95.25,
+   "coverage": 0.419,
+   "accuracy": 1.0,
+   "combined": 0.591,
+   "thorough_coverage": 0.346,
+   "answer_truth": 17,
+   "thoroughness": 0.515,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 95.25,
+   "coverage": 0.305,
+   "accuracy": 1.0,
+   "combined": 0.467,
+   "thorough_coverage": 0.26,
+   "answer_truth": 17,
+   "thoroughness": 0.412,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.915,
+ "corrections_v2": {
+  "units_before": 38,
+  "units_after": 27,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3",
+     "c4"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c7",
+     "c8",
+     "c9"
+    ]
+   },
+   {
+    "kept": "c12",
+    "merged": [
+     "c13",
+     "c15"
+    ]
+   },
+   {
+    "kept": "c18",
+    "merged": [
+     "c19"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c23"
+    ]
+   }
+  ],
+  "cost": 0.025
+ }
+}

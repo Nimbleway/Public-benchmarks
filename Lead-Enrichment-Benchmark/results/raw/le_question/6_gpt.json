@@ -1,0 +1,65 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0e5821aacf84c08a006af4b032af7887d2aaff778519c145db",
+ "status": "completed",
+ "seconds": 22,
+ "output": {
+  "question": "Who is Roblox's CEO?",
+  "answer": "Roblox's CEO is David Baszucki. The company's official leadership page lists him as Founder and Chief Executive Officer.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "David Baszucki is Roblox's Founder and Chief Executive Officer.",
+    "source_url": "https://about.roblox.com/leadership",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "David Baszucki\n\nFounder and Chief Executive Officer",
+    "source_url": "https://about.roblox.com/leadership",
+    "publisher": "Roblox",
+    "published_date": null
+   }
+  ],
+  "caveats": [
+   "The official leadership page does not display a publication date."
+  ],
+  "missing_fields": [
+   "passages[0].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 10996,
+  "input_tokens_details": {
+   "cache_write_tokens": 12,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 290,
+  "output_tokens_details": {
+   "reasoning_tokens": 69
+  },
+  "total_tokens": 11286
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0156,
+ "cost_usd": 0.0356,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Who is Roblox's CEO?",
+ "input_n": 6,
+ "completed_on": "2026-11-11"
+}

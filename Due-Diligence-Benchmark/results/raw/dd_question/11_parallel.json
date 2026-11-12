@@ -1,0 +1,189 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69ab5d6584a7b555ca",
+ "status": "completed",
+ "seconds": 78,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Where can I find Herm\u00e8s' latest annual report?",
+  "passages": [
+   {
+    "quote": "2025 Universal Registration Document",
+    "publisher": "Herm\u00e8s",
+    "published_date": null,
+    "source_url": "https://finance.hermes.com/en"
+   },
+   {
+    "quote": "(including the annual financial report)",
+    "publisher": "Herm\u00e8s",
+    "published_date": null,
+    "source_url": "https://finance.hermes.com/en"
+   }
+  ],
+  "answer": "As of November 11, 2026, Herm\u00e8s\u2019 latest annual report is its 2025 Universal Registration Document, which includes the annual financial report and is available on the [official Herm\u00e8s Finance website](https://finance.hermes.com/en). You can [download the PDF directly](https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-04/1777391712/260320_hermes_urd2025_en.pdf?VersionId=jE9NgndClrtsqa.kJW0uyG8NRg4SFCVU) or [read the digital version](https://hermes.fr.digital-report.net/en/report/5309).",
+  "caveats": [
+   "The report\u2019s publication date was not verified; 2025 identifies the reporting year."
+  ],
+  "missing_fields": [
+   "Publication date for the report and quoted webpage passages."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": null,
+    "source_url": "https://finance.hermes.com/en",
+    "fact": "Herm\u00e8s lists its 2025 Universal Registration Document, including the annual financial report, on its official financial-information website."
+   },
+   {
+    "date": null,
+    "source_url": "https://finance.hermes.com/en",
+    "fact": "The official website provides both PDF and digital versions of the report."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user\u2019s question; no external evidence is needed.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Herm\u00e8s financial information | Herm\u00e8s Finance",
+     "url": "https://finance.hermes.com/en",
+     "excerpts": [
+      "2025 Universal Registration Document",
+      "(including the annual financial report)"
+     ]
+    }
+   ],
+   "reasoning": "The two quotations reproduce the report title and its annual-financial-report description on Herm\u00e8s\u2019 official website. No publication date was established.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Herm\u00e8s financial information | Herm\u00e8s Finance",
+     "url": "https://finance.hermes.com/en",
+     "excerpts": [
+      "2025 Universal Registration Document (including the annual financial report)",
+      "[Access in PDF](https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-04/1777391712/260320_hermes_urd2025_en.pdf?VersionId=jE9NgndClrtsqa.kJW0uyG8NRg4SFCVU) [Access the digital format](https://hermes.fr.digital-report.net/en/report/5309)"
+     ]
+    }
+   ],
+   "reasoning": "The freshly opened official financial homepage identifies the 2025 document and confirms it includes the annual financial report. The previously verified official-page passage supplies the PDF and digital URLs, and the PDF was also opened. Calling it the latest annual report relies on the current official listing.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "A publication date was not established from the opened sources. The caveat avoids treating the reporting year as a publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "The publication date remains unverified and is therefore explicitly listed as missing rather than inferred from the URL.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "Uses the reference date explicitly supplied in the task.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Herm\u00e8s financial information | Herm\u00e8s Finance",
+     "url": "https://finance.hermes.com/en",
+     "excerpts": [
+      "2025 Universal Registration Document (including the annual financial report)",
+      "[Access in PDF](https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-04/1777391712/260320_hermes_urd2025_en.pdf?VersionId=jE9NgndClrtsqa.kJW0uyG8NRg4SFCVU) [Access the digital format](https://hermes.fr.digital-report.net/en/report/5309)"
+     ]
+    }
+   ],
+   "reasoning": "The official homepage establishes the report\u2019s identity and scope, while its download links establish availability in PDF and digital formats. Dates are null because no publication date was verified.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Herm\u00e8s financial information | Herm\u00e8s Finance",
+     "url": "https://finance.hermes.com/en",
+     "excerpts": [
+      "2025 Universal Registration Document"
+     ]
+    }
+   ],
+   "reasoning": "Exact report-title quotation from the official Herm\u00e8s financial homepage; the publication date remains unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Herm\u00e8s financial information | Herm\u00e8s Finance",
+     "url": "https://finance.hermes.com/en",
+     "excerpts": [
+      "(including the annual financial report)"
+     ]
+    }
+   ],
+   "reasoning": "Exact description confirming that the document includes the annual financial report; the publication date remains unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Herm\u00e8s financial information | Herm\u00e8s Finance",
+     "url": "https://finance.hermes.com/en",
+     "excerpts": [
+      "2025 Universal Registration Document (including the annual financial report)"
+     ]
+    }
+   ],
+   "reasoning": "The official page directly identifies the document and states that it includes the annual financial report.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Herm\u00e8s financial information | Herm\u00e8s Finance",
+     "url": "https://finance.hermes.com/en",
+     "excerpts": [
+      "[Access in PDF](https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-04/1777391712/260320_hermes_urd2025_en.pdf?VersionId=jE9NgndClrtsqa.kJW0uyG8NRg4SFCVU) [Access the digital format](https://hermes.fr.digital-report.net/en/report/5309)"
+     ]
+    }
+   ],
+   "reasoning": "The official-page passage contains both the PDF download and digital-format links.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [],
+   "reasoning": "Reports a verification limitation rather than asserting an unsupported publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "Explicitly identifies the publication-date information that could not be established.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "Where can I find Herm\u00e8s' latest annual report?",
+ "input_n": 11,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,273 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b698595a38b530a5e90",
+ "status": "completed",
+ "seconds": 112,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who owns Nokia?",
+  "passages": [
+   {
+    "quote": "Nokia Corporation, a public limited liability company incorporated and domiciled in Helsinki, Finland, is the parent company (Parent Company or Parent) for all its subsidiaries (together Nokia or the Group).",
+    "publisher": "Nokia Corporation",
+    "published_date": "2026-03-05",
+    "source_url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf"
+   },
+   {
+    "quote": "The shares of Nokia Corporation are quoted on the following stock exchanges:",
+    "publisher": "Nokia Corporation",
+    "published_date": null,
+    "source_url": "https://www.nokia.com/about-us/investors/stock-information"
+   },
+   {
+    "quote": "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia.",
+    "publisher": "Nokia Corporation",
+    "published_date": "2026-03-05",
+    "source_url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf"
+   }
+  ],
+  "answer": "Nokia Corporation is a publicly traded Finnish company owned by its shareholders. Its shares trade on Nasdaq Helsinki under NOKIA and the New York Stock Exchange under NOK. In its annual report filed on March 5, 2026, Nokia stated that, to its knowledge, it was not directly or indirectly owned or controlled by another corporation or any government.",
+  "caveats": [
+   "The control disclosure is from the annual report filed on March 5, 2026, rather than a real-time ownership statement; individual shareholdings can change."
+  ],
+  "missing_fields": [
+   "passages[1].published_date: no publication date was available on Nokia's stock-information page."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-03-05",
+    "source_url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+    "fact": "Nokia Corporation identifies itself as a Finnish public limited liability company and the parent company of the Nokia group."
+   },
+   {
+    "date": "2026-11-11",
+    "source_url": "https://www.nokia.com/about-us/investors/stock-information",
+    "fact": "Nokia's stock-information page, accessed on this date, lists Nasdaq Helsinki ticker NOKIA and New York Stock Exchange ticker NOK."
+   },
+   {
+    "date": "2026-03-05",
+    "source_url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+    "fact": "In its annual report filed on this date, Nokia states that, to its knowledge, it is not directly or indirectly owned or controlled by another corporation or any government."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question is reproduced from the user's request.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "Nokia Corporation, a public limited liability company incorporated and domiciled in Helsinki, Finland, is the parent company (Parent Company or Parent) for all its subsidiaries (together Nokia or the Group).",
+      "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia.",
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    },
+    {
+     "title": "Stock information | Nokia.com",
+     "url": "https://www.nokia.com/about-us/investors/stock-information",
+     "excerpts": [
+      "The shares of Nokia Corporation are quoted on the following stock exchanges:"
+     ]
+    }
+   ],
+   "reasoning": "The opened Nokia sources contain the quoted corporate identity, listing introduction and control disclosure. The report explicitly gives its filing date; the stock-information page did not provide a publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "Nokia Corporation, a public limited liability company incorporated and domiciled in Helsinki, Finland, is the parent company (Parent Company or Parent) for all its subsidiaries (together Nokia or the Group).",
+      "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia.",
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    },
+    {
+     "title": "Stock information | Nokia.com",
+     "url": "https://www.nokia.com/about-us/investors/stock-information",
+     "excerpts": [
+      "|Nasdaq Helsinki (since 1915) |NOKIA |EUR | |New York Stock Exchange (1994) |NOK |USD |"
+     ]
+    }
+   ],
+   "reasoning": "The public-company identity and exchange listings support describing Nokia as shareholder-owned. The listing table provides both tickers. The control statement is expressly attributed to the dated annual report rather than represented as a new November disclosure.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "As filed with the Securities and Exchange Commission on 5 March 2026",
+      "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia."
+     ]
+    }
+   ],
+   "reasoning": "The filing date establishes the age of the control disclosure. The caveat distinguishes that historical disclosure from a continuously updated ownership register.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No publication date was found on the opened stock-information page, so that metadata is left null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "This is the assessment date supplied in the user's request, not a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "Nokia Corporation, a public limited liability company incorporated and domiciled in Helsinki, Finland, is the parent company (Parent Company or Parent) for all its subsidiaries (together Nokia or the Group).",
+      "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia.",
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    },
+    {
+     "title": "Stock information | Nokia.com",
+     "url": "https://www.nokia.com/about-us/investors/stock-information",
+     "excerpts": [
+      "|Nasdaq Helsinki (since 1915) |NOKIA |EUR | |New York Stock Exchange (1994) |NOK |USD |"
+     ]
+    }
+   ],
+   "reasoning": "The facts separately identify the legal entity, its listings and its dated control disclosure. The stock-page date is explicitly labeled as the access date.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "Nokia Corporation, a public limited liability company incorporated and domiciled in Helsinki, Finland, is the parent company (Parent Company or Parent) for all its subsidiaries (together Nokia or the Group).",
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    }
+   ],
+   "reasoning": "The report supplies the exact corporate-identity quotation and its filing date.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Stock information | Nokia.com",
+     "url": "https://www.nokia.com/about-us/investors/stock-information",
+     "excerpts": [
+      "The shares of Nokia Corporation are quoted on the following stock exchanges:"
+     ]
+    }
+   ],
+   "reasoning": "This is the exact introductory sentence on Nokia's stock-information page; no publication date was available.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia.",
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    }
+   ],
+   "reasoning": "The report contains the exact control statement and identifies its filing date.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    }
+   ],
+   "reasoning": "The filing date supports warning that the control statement is historical rather than real-time.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The publication date could not be verified from the opened stock-information page.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "Nokia Corporation, a public limited liability company incorporated and domiciled in Helsinki, Finland, is the parent company (Parent Company or Parent) for all its subsidiaries (together Nokia or the Group).",
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    }
+   ],
+   "reasoning": "The corporate-information statement identifies Nokia's legal status and parent-company role; the date is the report's filing date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Stock information | Nokia.com",
+     "url": "https://www.nokia.com/about-us/investors/stock-information",
+     "excerpts": [
+      "|Nasdaq Helsinki (since 1915) |NOKIA |EUR | |New York Stock Exchange (1994) |NOK |USD |"
+     ]
+    }
+   ],
+   "reasoning": "The exchange table directly supplies the exchange names and tickers. The date records access during this assessment.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.2",
+   "citations": [
+    {
+     "title": "Nokia Annual Report on Form 20-F 2025",
+     "url": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+     "excerpts": [
+      "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia.",
+      "As filed with the Securities and Exchange Commission on 5 March 2026"
+     ]
+    }
+   ],
+   "reasoning": "The dated report directly supports the qualified statement about corporate or governmental ownership and control.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "Who owns Nokia?",
+ "input_n": 32,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,782 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 16,
+ "task": "When is SpaceX's IPO date?",
+ "labels": {
+  "opus": "A",
+  "nimble": "B",
+  "gpt": "C",
+  "parallel": "D",
+  "exa": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 9,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "SpaceX's Class A common stock began trading on the Nasdaq Global Select Market and Nasdaq Texas on June 12, 2026, under the ticker SPCX.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "SpaceX's Class A common stock began trading on the Nasdaq Global Select Market and Nasdaq Texas on June 12, 2026, under the ticker SPCX.",
+    "D": "SpaceX's Class A common stock began trading on the Nasdaq Global Select Market and Nasdaq Texas on June 12, 2026, under the ticker symbol SPCX.",
+    "C": "SpaceX shares began public trading on June 12, 2026, on the Nasdaq Global Select Market and Nasdaq Texas under the ticker SPCX."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+    "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+    "https://www.nasdaqtrader.com/TraderNews.aspx?id=DTN2026-8"
+   ],
+   "conflicts_with": [
+    "c22"
+   ],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c25",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "At pricing, SpaceX said shares were expected to begin trading on June 12, 2026, on the Nasdaq Global Select Market and Nasdaq Texas under the ticker SPCX.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "SpaceX shares were expected to begin trading on the Nasdaq Global Select Market and Nasdaq Texas on June 12, 2026, under the ticker symbol \"SPCX\".",
+    "F": "SpaceX announced the pricing of its IPO on June 11, 2026, and said shares were expected to begin trading the following day, June 12, 2026. SpaceX shares were expected to trade on the Nasdaq Global Select Market and Nasdaq Texas under the ticker symbol SPCX."
+   },
+   "urls": [
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "SpaceX priced its IPO on June 11, 2026, at $135 per share.",
+   "asserted_by": [
+    "A",
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "SpaceX priced its initial public offering on June 11, 2026, at $135 per share.",
+    "F": "SpaceX's IPO was priced at $135.00 per share on June 11, 2026.",
+    "A": "SpaceX's final IPO price of $135 per share was set on June 11, 2026."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "SpaceX's IPO closed on June 15, 2026.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "C": "SpaceX's initial public offering formally closed on June 15, 2026.",
+    "D": "The issuance of all shares in SpaceX's initial public offering closed on June 15, 2026."
+   },
+   "urls": [
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "At pricing, SpaceX's IPO was expected to close on June 15, 2026, subject to customary closing conditions.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SpaceX's IPO was expected to close on June 15, 2026, subject to customary closing conditions."
+   },
+   "urls": [
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "The SpaceX SEC prospectus is dated June 11, 2026, and states the Class A shares would be ready for delivery on or about June 15, 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The SpaceX SEC prospectus is dated June 11, 2026, and states the Class A shares would be ready for delivery on or about June 15, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "SpaceX's IPO aimed to raise about $75 billion, the most ever for an IPO, valuing the company at about $1.75 trillion.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SpaceX's IPO aimed to raise about $75 billion, the most ever for an IPO, in a deal valuing the company at about $1.75 trillion."
+   },
+   "urls": [
+    "https://www.reuters.com/legal/government/spacex-sets-135-price-blockbuster-ipo-upending-wall-street-convention-2026-06-03"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "SpaceX's IPO raised about $75 billion at $135 per share, per CNBC, valuing SpaceX at about $1.77 trillion at the IPO price.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "SpaceX's IPO raised about $75 billion at $135 per share, per CNBC, and valued SpaceX at about $1.77 trillion at the IPO price."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+   ],
+   "conflicts_with": [
+    "c10",
+    "c20"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "The IPO pricing included a 30-day underwriter option for up to 83,333,333 additional shares.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SpaceX's IPO pricing included a 30-day underwriter option for up to 83,333,333 additional shares."
+   },
+   "urls": [
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "SpaceX launched its IPO roadshow on June 4, 2026, with the IPO price expected to be $135.00 per share.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "SpaceX launched its IPO roadshow on June 4, 2026, with the IPO price expected to be $135.00 per share."
+   },
+   "urls": [
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Launch-of-Initial-Public-Offering/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "The SEC declared SpaceX's registration statement effective on June 11, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The SEC declared SpaceX's registration statement effective on June 11, 2026."
+   },
+   "urls": [
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Goldman Sachs, Morgan Stanley, BofA, Citigroup and J.P. Morgan led the book-running managers for SpaceX's IPO.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Goldman Sachs, Morgan Stanley, BofA, Citigroup and J.P. Morgan led the book-running managers for SpaceX's IPO."
+   },
+   "urls": [
+    "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "No separate Starlink IPO has occurred; Starlink was part of SpaceX's offering.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "No separate Starlink IPO has occurred; Starlink was part of SpaceX's offering."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "CNBC described the SpaceX IPO as the biggest initial public offering ever.",
+   "asserted_by": [
+    "F",
+    "A"
+   ],
+   "variants": {
+    "F": "CNBC described the SpaceX IPO as the biggest initial public offering ever.",
+    "A": "CNBC called the SpaceX IPO the biggest initial public offering ever."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "SpaceX shares jumped 19% on Friday, June 12, 2026, in their Nasdaq debut.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "F": "SpaceX shares jumped 19% on Friday, June 12, 2026, in its Nasdaq debut."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c19",
+    "c20"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "SpaceX shares opened at $150 on the first day of trading.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "SpaceX shares opened at $150 on the first day of trading."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "A TradingView page gave a planned SpaceX IPO date of December 31, 2026, which conflicts with the June 12, 2026 listing and appears out of date.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "A TradingView page gave a planned SpaceX IPO date of December 31, 2026, which conflicts with the June 12, 2026 listing and appears out of date."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Musk and other SpaceX insiders agreed to a 366-day lock-up.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Musk and other SpaceX insiders agreed to a 366-day lock-up."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Other pre-IPO SpaceX investors had a 180-day lock-up with staggered releases.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Other pre-IPO SpaceX investors had a 180-day lock-up with staggered releases."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Wikipedia's lead section cites BBC for an $86 billion SpaceX IPO raise, which conflicts with the $75 billion figure from CNBC; the difference may include the greenshoe option (unconfirmed).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Wikipedia's lead section cites BBC for an $86 billion SpaceX IPO raise, which conflicts with the $75 billion figure from CNBC; the difference may include the greenshoe option (unconfirmed)."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX"
+   ],
+   "conflicts_with": [
+    "c11"
+   ]
+  },
+  {
+   "cid": "c27",
+   "claim": "A third-party blog (Quantral) says the last SpaceX insider lock-up expires December 8; this was not verified.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "A third-party blog (Quantral) says the last SpaceX insider lock-up expires December 8; this was not verified."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "As of November 11, 2026, there is no SpaceX IPO still to come, because SPCX is already a listed stock.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "As of November 11, 2026, there is no SpaceX IPO still to come, because SPCX is already a listed stock."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c22"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
+   "note": "SpaceX closing release states Class A shares began trading on Nasdaq GS Market and Nasdaq Texas on June 12, 2026 as SPCX.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "D": "true",
+    "C": "true",
+    "A": "true",
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": false,
+   "answers": true,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+   "note": "Pricing release dated June 11 says shares expected to begin trading June 12 on Nasdaq GS and Nasdaq Texas as SPCX.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+   "note": "Pricing release dated June 11, 2026 confirms $135.00 per share offering price.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true",
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
+   "note": "Closing release states issuance of all shares closed June 15, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+   "note": "Pricing release says the offering is expected to close June 15, 2026, subject to customary closing conditions.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+   "note": "Prospectus is dated June 11, 2026 and says shares will be ready for delivery on or about June 15, 2026.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/legal/government/spacex-sets-135-price-blockbuster-ipo-upending-wall-street-convention-2026-06-03",
+   "note": "Reuters June 3 says the company is aiming to raise $75B, the most ever for an IPO, at a $1.75T valuation.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+   "note": "CNBC says offering raised $75B at $135 and market cap was $1.77T without the overallotment.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+   "note": "Pricing release grants underwriters a 30-day option for up to 83,333,333 additional shares.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Launch-of-Initial-Public-Offering/default.aspx",
+   "note": "June 4, 2026 release announces roadshow launch with expected price of $135.00 per share.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+   "note": "Release states the registration statement was declared effective by the SEC on June 11, 2026.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+   "note": "Press release lists these five first among ten book-running managers; they are the lead banks.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+   "note": "Starlink is a SpaceX connectivity unit included in the SpaceX offering; the passages show no separate Starlink IPO.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+   "note": "CNBC says SpaceX jumped 19% after the biggest IPO ever.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+   "note": "CNBC says SpaceX jumped 19% on Friday in its Nasdaq debut; Nasdaq lists the new listing on June 12, 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true"
+   }
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+   "note": "CNBC: SpaceX opened Friday at $150 per share.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+   "note": "The December 31, 2026 TradingView date is stale; the company release and Nasdaq confirm June 12, 2026 trading, though the TradingView page itself is not in the passages.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+   "note": "CNBC cites the prospectus: a 366-day lock-up for Musk; Wikipedia says Musk and other insiders.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+   "note": "Wikipedia says other pre-IPO investors had a 180-day lock-up with staggered earlier releases.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+   "note": "CNBC gives $75 billion; the $86B BBC figure is not in the passages, but the unit only flags the discrepancy as uncertain.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
+   "note": "The IPO closed with full exercise of the option and shares trade as SPCX, so no IPO is still to come.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://247wallst.com/investing/2026/06/17/spacex-is-up-49-since-its-ipo-is-december-the-stocks-first-real-test/",
+   "note": "I found no page from Quantral itself, so I could not confirm that it published the claim. The substance, that the final SpaceX insider lock-up expires on December 8, 2026, is confirmed by independent coverage. 24/7 Wall St. (June 17, 2026), citing SpaceX's SEC filing, says the remaining eligible sha",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "retried": true
+  }
+ },
+ "audit": {
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "note": "CNBC's live blog from the June 12, 2026 debut says SpaceX raised $75B at a $135 IPO price, and its correction note puts the IPO valuation at $1.77T. Shares opened at $150 and closed near $161 under the ticker SPCX."
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 27,
+ "scores": {
+  "opus": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 45.0,
+   "coverage": 0.704,
+   "accuracy": 1.0,
+   "combined": 0.826,
+   "thorough_coverage": 0.7,
+   "answer_truth": 6,
+   "thoroughness": 0.824,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 45.0,
+   "coverage": 0.519,
+   "accuracy": 1.0,
+   "combined": 0.683,
+   "thorough_coverage": 0.422,
+   "answer_truth": 6,
+   "thoroughness": 0.594,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 45.0,
+   "coverage": 0.296,
+   "accuracy": 1.0,
+   "combined": 0.457,
+   "thorough_coverage": 0.178,
+   "answer_truth": 6,
+   "thoroughness": 0.302,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 45.0,
+   "coverage": 0.296,
+   "accuracy": 1.0,
+   "combined": 0.457,
+   "thorough_coverage": 0.178,
+   "answer_truth": 6,
+   "thoroughness": 0.302,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 45.0,
+   "coverage": 0.37,
+   "accuracy": 1.0,
+   "combined": 0.541,
+   "thorough_coverage": 0.233,
+   "answer_truth": 6,
+   "thoroughness": 0.378,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 22,
+   "truth_weight": 45.0,
+   "coverage": 0.593,
+   "accuracy": 1.0,
+   "combined": 0.744,
+   "thorough_coverage": 0.4,
+   "answer_truth": 6,
+   "thoroughness": 0.571,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.903,
+ "corrections_v2": {
+  "units_before": 28,
+  "units_after": 22,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c25",
+     "c12"
+    ]
+   },
+   {
+    "kept": "c4",
+    "merged": [
+     "c5"
+    ]
+   },
+   {
+    "kept": "c6",
+    "merged": [
+     "c7"
+    ]
+   },
+   {
+    "kept": "c19",
+    "merged": [
+     "c20"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

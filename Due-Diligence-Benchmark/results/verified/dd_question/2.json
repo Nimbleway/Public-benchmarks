@@ -1,0 +1,1516 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 2,
+ "task": "Who are LinkedIn's main competitors?",
+ "labels": {
+  "firecrawl": "A",
+  "nimble": "B",
+  "opus": "C",
+  "parallel": "D",
+  "gpt": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 39,
+ "evidence_fetched": 38,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Microsoft's annual report says LinkedIn faces competition from online professional networks; recruiting, talent management and HR services companies; job boards; learning and development providers; online and offline advertising/marketing outlets; and lead generation and customer intelligence outlets.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Microsoft's annual report says LinkedIn competes with online professional networks, recruiting/talent management/HR services companies, job boards, learning and development providers, advertising and marketing outlets, and lead generation/customer intelligence providers.",
+    "B": "Microsoft's FY2026 10-K states LinkedIn faces competition from online professional networks, recruiting/talent management/HR services companies, job boards, learning and development providers, online and offline advertising outlets, and lead generation/customer intelligence outlets.",
+    "C": "FY2026 annual report lists online professional networks; recruiting, talent management and HR services companies; job boards; learning and development providers; online and offline outlets generating revenue from advertisers and marketers; and online and offline outlets for lead generation and customer intelligence/insights as competitors (stated across six separate items).",
+    "D": "Microsoft's annual report states LinkedIn faces competition from online professional networks, recruiting, talent management and HR services companies, and job boards. Microsoft's FY2026 report describes LinkedIn competition across professional networking, recruiting, job boards, learning, advertising, and lead generation/customer intelligence.",
+    "E": "Microsoft's annual report states LinkedIn faces competition from online professional networks; recruiting, talent management, and HR services companies; job boards; learning, advertising, lead generation and customer intelligence providers, so job platforms are not substitutes for its entire business.",
+    "F": "Microsoft states LinkedIn faces competition from online professional networks; recruiting, talent management and HR services companies; job boards; learning and development providers; online and offline advertising outlets; and lead generation and customer intelligence outlets."
+   },
+   "urls": [
+    "https://www.microsoft.com/investor/reports/ar26/index.html",
+    "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+    "https://www.microsoft.com/investor/reports/ar25/",
+    "https://www.microsoft.com/investor/reports/ar26/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Microsoft's filings describe LinkedIn's competitors only by category and do not name specific rival companies.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "A": "Microsoft does not publish a ranked, name-by-name list of LinkedIn's competitors; its annual report gives competitive categories only.",
+    "B": "Microsoft's 10-K names no specific LinkedIn competitors; it only describes competitor categories.",
+    "C": "Microsoft's filings name only types of competitors, not specific companies; names such as Indeed, ZipRecruiter, Glassdoor, Coursera or Meta come from outside the source and were not checked.",
+    "D": "Microsoft's FY2026 annual report describes LinkedIn's competitor categories without naming individual rivals."
+   },
+   "urls": [
+    "https://www.microsoft.com/investor/reports/ar26/index.html",
+    "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Microsoft's FY2025 Form 10-K uses the same LinkedIn competitor categories as FY2026, so the list has not changed.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Microsoft's FY2025 Form 10-K uses the same competitor categories for LinkedIn as the FY2026 report, so the list has not changed."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "The competitor categories match LinkedIn's businesses: its network, Talent Solutions, Learning, Marketing Solutions and Sales Solutions.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The competitor categories match LinkedIn's businesses: its network, Talent Solutions (hiring), Learning, Marketing Solutions (ads) and Sales Solutions (lead generation)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "LinkedIn's own pre-acquisition 10-Ks (FY2011–FY2015) named Facebook, Google, Microsoft and Twitter as possible competitors in professional networking.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "LinkedIn's own pre-acquisition 10-Ks (FY2011–FY2015) named Facebook, Google, Microsoft and Twitter as possible competitors in professional networking."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "LinkedIn's own pre-acquisition 10-Ks (FY2011–FY2015) named Xing and Viadeo as smaller international competitors.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "LinkedIn's own pre-acquisition 10-Ks (FY2011–FY2015) named Xing and Viadeo as smaller international competitors."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "LinkedIn is owned by Microsoft.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "LinkedIn is owned by Microsoft."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "LinkedIn has no single dominant/one-for-one competitor; rivals compete for slices of its business.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "LinkedIn faces no single dominant head-to-head rival; competitors each compete for slices of its business.",
+    "F": "LinkedIn has no single one-for-one competitor because it spans networking, recruiting, jobs, content, learning, advertising and sales; the competitive set varies by product and geography."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Competitor sets differ by LinkedIn product area (recruiting, professional networking, learning, advertising, sales/customer intelligence).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Competitor sets differ by LinkedIn product area (recruiting, professional networking, learning, advertising, sales/customer intelligence)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "The competitor list is a segment-based shortlist, not a market-share ranking or list of complete replacements; relevance varies by product and geography.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "The list of LinkedIn competitors is a segment-based shortlist, not a market-share ranking or a list of complete replacements for LinkedIn; relevance varies by product and geography."
+   },
+   "urls": [],
+   "conflicts_with": [],
+   "merged_from": [
+    "c10",
+    "c11"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Built In identifies Indeed, ZipRecruiter and Glassdoor among leading LinkedIn alternatives for recruiting.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Built In (published 2026-03-05) identifies Indeed, ZipRecruiter and Glassdoor as LinkedIn alternatives for recruiting.",
+    "F": "Built In lists Indeed, ZipRecruiter and Glassdoor among leading alternatives to LinkedIn for recruiting."
+   },
+   "urls": [
+    "https://builtin.com/articles/linkedin-alternatives-recruiting"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Built In's list of LinkedIn recruiting alternatives also includes SeekOut, Dice, Wellfound, Findem, Zoho Recruit, Phenom and Greenhouse.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Built In's list of LinkedIn recruiting alternatives also includes SeekOut, Dice, Wellfound, Findem, Zoho Recruit, Phenom and Greenhouse."
+   },
+   "urls": [
+    "https://builtin.com/articles/linkedin-alternatives-recruiting"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Indeed, ZipRecruiter and Glassdoor are among LinkedIn's main competitors, particularly in U.S. job search and recruiting.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Indeed, ZipRecruiter and Glassdoor are among LinkedIn's main competitors, particularly in U.S. job search and recruiting."
+   },
+   "urls": [
+    "https://sensortower.com/blog/your-job-depends-on-it-how-four-top-career-sites-competing-for-users-mobile-app-web"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Sensor Tower analyzed LinkedIn, Indeed, Glassdoor and ZipRecruiter together as four of the top job and career websites (May 2026).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Sensor Tower analyzed LinkedIn, Indeed, Glassdoor, and ZipRecruiter together as four of the top job and career websites (May 2026)."
+   },
+   "urls": [
+    "https://sensortower.com/blog/your-job-depends-on-it-how-four-top-career-sites-competing-for-users-mobile-app-web"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Indeed and ZipRecruiter compete with LinkedIn as job boards/recruiting platforms.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Indeed and ZipRecruiter compete with LinkedIn as job boards/recruiting platforms."
+   },
+   "urls": [
+    "https://snov.io/blog/linkedin-competitors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Snov.io lists LinkedIn competitors as Alignable, Facebook, Indeed, Glassdoor, Meetup, Xing, Quora, Reddit, Slack and ZipRecruiter.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Snov.io lists LinkedIn competitors as Alignable, Facebook, Indeed, Glassdoor, Meetup, Xing, Quora, Reddit, Slack and ZipRecruiter."
+   },
+   "urls": [
+    "https://snov.io/blog/linkedin-competitors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "A February 6, 2025 Business Strategy Hub analysis names Facebook Groups, Slack, Reddit, Indeed.com, Glassdoor, Xing, ZipRecruiter, Jobcase and CareerBuilder among LinkedIn's competitors or alternatives.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "A February 6, 2025 Business Strategy Hub analysis names Facebook Groups, Slack, Reddit, Indeed.com, Glassdoor, Xing, ZipRecruiter, Jobcase and CareerBuilder among LinkedIn's competitors or alternatives."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Business Strategy Hub states LinkedIn faces stiff competition from Facebook, Slack, Reddit, Meetup, Indeed.com, Glassdoor and ZipRecruiter.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Business Strategy Hub states LinkedIn faces stiff competition from Facebook, Slack, Reddit, Meetup, Indeed.com, Glassdoor and ZipRecruiter."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "The named competitor list comes from a third-party analysis published 2025-02-06 and may not reflect every market or changes after publication.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The named competitor list comes from a third-party analysis published 2025-02-06 and may not reflect every market or changes after publication."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Indeed is described as the most direct alternative to LinkedIn for job hunting, with listings across many industries and experience levels.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "F": "Indeed is described as the most direct alternative to LinkedIn for job hunting, with a listing base covering many industries and experience levels."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+    "https://promapranker.com/blog/linkedin-alternatives"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Indeed is one of the largest job marketplaces in the world, letting employers post roles, sponsor listings and search resumes.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Indeed is one of the largest job marketplaces in the world, allowing employers to post roles, sponsor listings and search resumes across a broad candidate base."
+   },
+   "urls": [
+    "https://builtin.com/articles/linkedin-alternatives-recruiting"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "ZipRecruiter is a job distribution platform that syndicates postings across partner sites while also hosting its own marketplace.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "ZipRecruiter is a job distribution platform that syndicates postings across a wide network of partner sites while also hosting its own job marketplace."
+   },
+   "urls": [
+    "https://builtin.com/articles/linkedin-alternatives-recruiting"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "ZipRecruiter is described as a formidable LinkedIn competitor.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "ZipRecruiter is described as a formidable LinkedIn competitor."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Glassdoor competes with LinkedIn by pairing job listings with salary ranges, employee reviews and interview reports.",
+   "asserted_by": [
+    "A",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Glassdoor competes with LinkedIn by pairing job listings with salary ranges, employee reviews and interview reports."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+    "https://builtin.com/articles/linkedin-alternatives-recruiting",
+    "https://promapranker.com/blog/linkedin-alternatives"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c26",
+    "c27",
+    "c28"
+   ]
+  },
+  {
+   "cid": "c29",
+   "claim": "Glassdoor and Fishbowl compete with LinkedIn for employer reviews and candid industry talk; Fishbowl is owned by Glassdoor.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Glassdoor and Fishbowl compete with LinkedIn for employer reviews and candid industry talk; Fishbowl is owned by Glassdoor."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Xing is a regional professional network alternative to LinkedIn offering profiles, contacts, job listings, groups and events, focused on Germany, Austria and Switzerland.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Xing is a regional professional network alternative to LinkedIn, offering profiles, contacts, job listings, groups and events focused on Germany, Austria and Switzerland."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+    "https://promapranker.com/blog/linkedin-alternatives",
+    "https://www.startupbooted.com/linkedin-competitors"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c30",
+    "c31",
+    "c32",
+    "c33"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "CareerBuilder is described as an alternative to LinkedIn for applicants and recruiters.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "CareerBuilder is described as an alternative to LinkedIn for applicants and recruiters."
+   },
+   "urls": [
+    "https://bstrategyhub.com/linkedin-competitors-and-alternatives/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Wellfound is a more specialized LinkedIn alternative suited to startup jobs and hiring.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "F": "Wellfound is a more specialized LinkedIn alternative suited to startup jobs and hiring."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+    "https://promapranker.com/blog/linkedin-alternatives"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c35",
+    "c36"
+   ]
+  },
+  {
+   "cid": "c37",
+   "claim": "G2 lists Monster, Dice, Handshake and Naukri.com among alternatives/competitors to LinkedIn Job Search.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "G2 lists Monster, Dice, Handshake and Naukri.com among alternatives/competitors to LinkedIn Job Search."
+   },
+   "urls": [
+    "https://www.g2.com/products/linkedin-job-search/competitors/alternatives"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "G2 describes Dice as focused on technology professionals (tech recruiting).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "G2 describes Dice as focused on technology professionals (tech recruiting)."
+   },
+   "urls": [
+    "https://www.g2.com/products/linkedin-job-search/competitors/alternatives"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "G2 describes Handshake as a college career network (college recruiting).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "G2 describes Handshake as a college career network (college recruiting)."
+   },
+   "urls": [
+    "https://www.g2.com/products/linkedin-job-search/competitors/alternatives"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c40",
+   "claim": "G2 describes Naukri.com as an Indian employment platform (competitor in India).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "G2 describes Naukri.com as an Indian employment platform (competitor in India)."
+   },
+   "urls": [
+    "https://www.g2.com/products/linkedin-job-search/competitors/alternatives"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c41",
+   "claim": "ZoomInfo is the most widely deployed Sales Navigator competitor among mid-size and enterprise sales teams.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "ZoomInfo is the most widely deployed Sales Navigator competitor among mid-size and enterprise sales teams."
+   },
+   "urls": [
+    "https://www.startupbooted.com/linkedin-competitors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Apollo.io has gained significant traction as a Sales Navigator alternative, particularly among smaller sales teams and startups.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Apollo.io has gained significant traction as a LinkedIn Sales Navigator alternative, particularly among smaller sales teams and startups."
+   },
+   "urls": [
+    "https://www.startupbooted.com/linkedin-competitors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Google Ads competes with LinkedIn on search intent, reaching people actively searching for solutions.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Google Ads competes with LinkedIn on search intent, reaching people actively searching for solutions."
+   },
+   "urls": [
+    "https://www.startupbooted.com/linkedin-competitors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "Meta (Facebook and Instagram) offers broader demographic reach at lower cost-per-click than LinkedIn advertising, but less precise professional targeting.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Meta (Facebook and Instagram) offers broader demographic reach at lower cost-per-click than LinkedIn advertising, but its professional targeting is less precise."
+   },
+   "urls": [
+    "https://www.startupbooted.com/linkedin-competitors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c45",
+   "claim": "Alignable focuses on local small-business referrals in North America, free with paid Premium, with a feed and promoted content.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Alignable focuses on local small-business referrals in North America, free with paid Premium, with a feed and promoted content."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c46",
+   "claim": "Meetup is cited as a LinkedIn competitor for in-person networking.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Meetup is cited as a LinkedIn competitor for in-person networking."
+   },
+   "urls": [
+    "https://snov.io/blog/linkedin-competitors"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c47",
+   "claim": "Facebook, Reddit, Slack and Discord communities, and X are used as general social platforms for professional networking and B2B reach that compete with LinkedIn.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Facebook, Reddit, Slack and Discord communities, and X are used as general social platforms for professional networking and B2B reach that compete with LinkedIn."
+   },
+   "urls": [
+    "https://www.searchenginejournal.com/linkedin-alternatives/297409"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c48",
+   "claim": "Search Engine Journal lists professional-networking alternatives to LinkedIn as Meetup, Eventbrite Communities, Discord, Slack communities, Facebook Groups, Reddit, X (Twitter) and AngelList.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Search Engine Journal lists professional-networking alternatives to LinkedIn as Meetup, Eventbrite Communities, Discord, Slack communities, Facebook Groups, Reddit, X (Twitter) and AngelList."
+   },
+   "urls": [
+    "https://www.searchenginejournal.com/linkedin-alternatives/297409"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c49",
+   "claim": "Peerlist is a free platform for people in tech to show real work, with a light work feed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Peerlist is a free platform for people in tech to show real work, with a light work feed."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c50",
+   "claim": "Contra is a portfolio and marketplace platform for independents selling project work; Pro costs USD 29 a month.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Contra is a portfolio and marketplace platform for independents selling project work; Pro costs USD 29 a month."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c51",
+   "claim": "Skool is a community platform for creators running paid communities, priced at USD 9 plus 10% of sales or USD 99 plus 2.9%, with no ads.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Skool is a community platform for creators running paid communities, priced at USD 9 plus 10% of sales or USD 99 plus 2.9%, with no ads."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c52",
+   "claim": "Mybzz offers free one-to-one AI matching for founders with no feed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Mybzz offers free one-to-one AI matching for founders with no feed."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c53",
+   "claim": "DOER combines network, community, courses and selling; it is free forever, with Pro at USD 30 and Premium at USD 100, zero commission and no ads.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "DOER combines network, community, courses and selling; it is free forever, with Pro at USD 30 and Premium at USD 100, zero commission and no ads."
+   },
+   "urls": [
+    "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c54",
+   "claim": "City A.M. names Naukri as dominating India's job-tech market.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "City A.M. names Naukri as dominating India's job-tech market."
+   },
+   "urls": [
+    "https://www.cityam.com/can-linkedin-survive-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c55",
+   "claim": "City A.M. names Jack and Jill, Welcome to the Jungle, Toptal, Upwork and AngelList as rivals; Jack and Jill searches 10,000 new jobs every hour, and Toptal, Upwork and AngelList cater to project-based and start-up talent.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "City A.M. names Jack and Jill, Welcome to the Jungle, Toptal, Upwork and AngelList as rivals; Jack and Jill searches 10,000 new jobs every hour, and Toptal, Upwork and AngelList cater to project-based and start-up talent."
+   },
+   "urls": [
+    "https://www.cityam.com/can-linkedin-survive-ai"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c56",
+   "claim": "These competitors are experimenting with AI for matching, scoring and verification, and personal AI agents could make reputation and skill data portable and erode platform loyalty.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "These competitors are experimenting with AI for matching, scoring and verification, and personal AI agents could make reputation and skill data portable and erode platform loyalty."
+   },
+   "urls": [
+    "https://www.cityam.com/can-linkedin-survive-ai"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c56",
+    "c57"
+   ]
+  },
+  {
+   "cid": "c58",
+   "claim": "LinkedIn is the world's largest professional network, with over 1.2 billion members in 200 countries and regions, far exceeding all listed rivals.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "LinkedIn is the world's largest professional network, with over 1.2 billion members in 200 countries and regions, far exceeding all listed rivals."
+   },
+   "urls": [
+    "https://www.searchenginejournal.com/linkedin-alternatives/297409"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+   "note": "Microsoft 10-K competition text, quoted by multiple systems, lists these categories; variants A-F all consistent (D and E are abbreviated but not contradictory).",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+   "note": "The quoted 10-K language describes only categories and names no companies.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+   "note": "The FY2025 10-K wording matches FY2026 as far as I know, though the saved passages don't show the competition text.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+   "note": "The 10-K lists LinkedIn's Talent, Marketing, Premium and Sales Solutions, and the categories map to them. Learning is part of Premium subscriptions, so the mapping is loose but reasonable.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+   "note": "From general knowledge, LinkedIn's early 10-Ks named Facebook, Google, Microsoft and Twitter as potential competitors. This is stale history, and no saved passage confirms it.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://snov.io/blog/linkedin-competitors/",
+   "note": "From general knowledge, LinkedIn's early 10-Ks mentioned Xing and Viadeo as international competitors. This is historical, and no saved passage confirms it.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+   "note": "Microsoft's 10-K reports LinkedIn as a Microsoft segment, so Microsoft owns it.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+   "note": "Reasonable inference from the broad competitor categories, though not stated outright. The Promapranker passage also says no single platform replaces a large professional network.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+   "note": "The 10-K categories map to different product areas.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://promapranker.com/blog/linkedin-alternatives",
+   "note": "This is a caveat, and it is consistent with the sources.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://builtin.com/articles/linkedin-alternatives-recruiting",
+   "note": "The Built In list includes Indeed, ZipRecruiter and Glassdoor. The 2026-03-05 date in variant D is not confirmed.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://builtin.com/articles/linkedin-alternatives-recruiting",
+   "note": "The Built In list contains SeekOut, Dice, Wellfound, Findem, Zoho Recruit, Phenom and Greenhouse.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sensortower.com/blog/your-job-depends-on-it-how-four-top-career-sites-competing-for-users-mobile-app-web",
+   "note": "Multiple sources treat Indeed, ZipRecruiter and Glassdoor as LinkedIn's main job-search competitors.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sensortower.com/blog/your-job-depends-on-it-how-four-top-career-sites-competing-for-users-mobile-app-web",
+   "note": "Sensor Tower compared the four career sites, using data through May 15, 2026.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://snov.io/blog/linkedin-competitors",
+   "note": "Snov.io lists Glassdoor, Indeed, ZipRecruiter as alternatives for hiring; widely accepted job-board competitors.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://snov.io/blog/linkedin-competitors",
+   "note": "The Snov.io top-ten list matches exactly: Alignable, Facebook, Indeed, Glassdoor, Meetup, Xing, Quora, Reddit, Slack, ZipRecruiter.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+   "note": "TOC lists all named competitors, and the page shows a Feb 6, 2025 date.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+   "note": "Page text says LinkedIn faces stiff competition from exactly these seven names.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+   "note": "Caveat is accurate: the page is dated Feb 6, 2025 and is third-party, with 2021-2022 data; the date appears alongside it.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://builtin.com/articles/linkedin-alternatives-recruiting",
+   "note": "Built In text matches nearly verbatim.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://builtin.com/articles/linkedin-alternatives-recruiting",
+   "note": "Built In text matches nearly verbatim.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+   "note": "Page states 'ZipRecruiter is a formidable LinkedIn competitor.'",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://builtin.com/articles/linkedin-alternatives-recruiting",
+   "note": "Built In says Glassdoor pairs job postings with transparent employer branding and salary visibility; startupbooted adds salary and review data.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+   "note": "Source says Fishbowl is owned by Glassdoor and is built for candid industry talk about pay and culture.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://promapranker.com/blog/linkedin-alternatives",
+   "note": "Source text matches: profiles, contacts, job listings, groups and events focused on DACH.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true",
+    "D": "true",
+    "A": "true"
+   }
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://bstrategyhub.com/linkedin-competitors-and-alternatives/",
+   "note": "The source calls CareerBuilder the best alternative for applicants and recruiters, an older listicle claim; the claim is only that it is described this way.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://builtin.com/articles/linkedin-alternatives-recruiting",
+   "note": "Wellfound is a startup-focused hiring marketplace, per multiple sources.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "B": "true"
+   }
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.g2.com/products/linkedin-job-search/competitors/alternatives",
+   "note": "G2 lists Monster, Naukri.com, Dice and Handshake for Employers as alternatives.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.g2.com/products/linkedin-job-search/competitors/alternatives",
+   "note": "G2 describes Dice as tech-focused for tech professionals and tech recruiting.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.g2.com/products/linkedin-job-search/competitors/alternatives",
+   "note": "G2 text says Handshake is the college career network of the future.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.g2.com/products/linkedin-job-search/competitors/alternatives",
+   "note": "G2 calls Naukri.com India's premier online employment platform.",
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.startupbooted.com/linkedin-competitors",
+   "note": "Source states ZoomInfo is the most widely deployed Sales Navigator competitor among mid-size and enterprise teams.",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.startupbooted.com/linkedin-competitors",
+   "note": "Source states Apollo.io gained traction among smaller teams and startups.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.startupbooted.com/linkedin-competitors",
+   "note": "Source says Google Ads competes on search intent.",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.startupbooted.com/linkedin-competitors",
+   "note": "Source says Meta has broader reach at lower CPC but less precise professional targeting.",
+   "via": "passages"
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+   "note": "Source matches: local small-business referrals in the US and Canada, free with Premium, feed and promoted content.",
+   "via": "passages"
+  },
+  "c46": {
+   "cid": "c46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://snov.io/blog/linkedin-competitors",
+   "note": "Snov.io lists Meetup as a LinkedIn alternative for local, in-person-style networking; the claim is a loose paraphrase of that.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c47": {
+   "cid": "c47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.searchenginejournal.com/linkedin-alternatives/297409",
+   "note": "SEJ and Snov.io both present Facebook, Reddit, Slack, Discord and X as alternative networking platforms.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c48": {
+   "cid": "c48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.searchenginejournal.com/linkedin-alternatives/297409",
+   "note": "The SEJ article (Oct 2025) lists 8 alternatives; passages confirm Facebook Groups, Reddit and Discord, and the exact list is plausible but not fully shown.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c49": {
+   "cid": "c49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+   "note": "The source recommends Peerlist for people in tech; the free and light-feed wording is plausible but the passage doesn't show it. The source is a competitor's marketing blog.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c50": {
+   "cid": "c50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+   "note": "The passage says Contra is for independents selling project work, with a portfolio and marketplace, and a Pro plan at USD 29 a month.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+   "note": "The comparison table matches the claim exactly: USD 9 plus 10% or USD 99 plus 2.9%, community feed, no ads.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c52": {
+   "cid": "c52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+   "note": "The source recommends Mybzz for introductions only; the free AI one-to-one matching with no feed is plausible but only partly shown.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c53": {
+   "cid": "c53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://itsadoerthing.com/blog/best-linkedin-alternatives-2026",
+   "note": "The pricing and features match the passage, but DOER is a tiny self-promoted startup (under 100 members) and not a meaningful LinkedIn competitor.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c54": {
+   "cid": "c54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.cityam.com/can-linkedin-survive-ai",
+   "note": "City A.M. says 'Naukri dominates India's job-tech market'.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c55": {
+   "cid": "c55",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.cityam.com/can-linkedin-survive-ai",
+   "note": "City A.M. names all of these as competitors, including the 10,000 jobs per hour figure and the project-based and start-up talent description.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c56": {
+   "cid": "c56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cityam.com/can-linkedin-survive-ai",
+   "note": "City A.M. says each rival is experimenting with AI for matching, scoring and verification, and pairs platforms with personal AI; this is commentary.",
+   "confidence": "medium",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true"
+   }
+  },
+  "c58": {
+   "cid": "c58",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.searchenginejournal.com/linkedin-alternatives/297409",
+   "note": "SEJ cites LinkedIn's own page for over 1.2 billion members in 200 countries and regions; 'far exceeding rivals' is a reasonable inference.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://promapranker.com/blog/linkedin-alternatives",
+   "note": "The source says: \"Indeed is the most direct alternative for job hunting. Its listing base covers many industries and experience levels.\" Both variants match this wording. The claim is a source's description, and Indeed is widely regarded as a LinkedIn competitor in jobs.",
+   "confidence": "high",
+   "via": "agent",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true"
+   }
+  }
+ },
+ "audit": {
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "note": "The Built In page on LinkedIn alternatives for recruiting lists Indeed, ZipRecruiter and Glassdoor, plus Dice."
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "note": "Promapranker says Indeed 'is the most direct alternative for job hunting' and that its listings cover many industries and experience levels."
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "note": "Built In uses nearly the same words: one of the largest job marketplaces, where employers post roles, sponsor listings and search resumes."
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "note": "Dice's entry on G2's LinkedIn Job Search alternatives page describes it as a marketplace for tech professionals and the employers hiring them."
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "note": "G2 calls Naukri.com 'India's premier online employment platform', run by Info Edge."
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "note": "The itsadoerthing table lists Alignable as: local small business referrals, North America; free with paid Premium; feed and promoted content."
+  },
+  "c51": {
+   "cid": "c51",
+   "verdict": "true",
+   "note": "The itsadoerthing table (prices checked Oct 2026) lists Skool at USD 9 + 10% or USD 99 + 2.9%, with a community feed and no ads. This matches Skool's Hobby and Pro plans."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 57,
+ "scores": {
+  "firecrawl": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 49,
+   "truth_weight": 118.0,
+   "coverage": 0.291,
+   "accuracy": 1.0,
+   "combined": 0.45,
+   "thorough_coverage": 0.263,
+   "answer_truth": 38,
+   "thoroughness": 0.416,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 22,
+   "unverifiable": 0,
+   "true": 22,
+   "wrong": 0,
+   "truth": 49,
+   "truth_weight": 118.0,
+   "coverage": 0.526,
+   "accuracy": 1.0,
+   "combined": 0.69,
+   "thorough_coverage": 0.508,
+   "answer_truth": 38,
+   "thoroughness": 0.674,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 49,
+   "truth_weight": 118.0,
+   "coverage": 0.13,
+   "accuracy": 1.0,
+   "combined": 0.231,
+   "thorough_coverage": 0.14,
+   "answer_truth": 38,
+   "thoroughness": 0.245,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 49,
+   "truth_weight": 118.0,
+   "coverage": 0.346,
+   "accuracy": 1.0,
+   "combined": 0.514,
+   "thorough_coverage": 0.318,
+   "answer_truth": 38,
+   "thoroughness": 0.482,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 7,
+   "wrong": 0,
+   "truth": 49,
+   "truth_weight": 118.0,
+   "coverage": 0.241,
+   "accuracy": 1.0,
+   "combined": 0.388,
+   "thorough_coverage": 0.222,
+   "answer_truth": 38,
+   "thoroughness": 0.364,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 49,
+   "truth_weight": 118.0,
+   "coverage": 0.278,
+   "accuracy": 1.0,
+   "combined": 0.435,
+   "thorough_coverage": 0.261,
+   "answer_truth": 38,
+   "thoroughness": 0.413,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.55,
+ "corrections_v2": {
+  "units_before": 58,
+  "units_after": 49,
+  "dedup_groups": [
+   {
+    "kept": "c10",
+    "merged": [
+     "c11"
+    ]
+   },
+   {
+    "kept": "c21",
+    "merged": [
+     "c22"
+    ]
+   },
+   {
+    "kept": "c26",
+    "merged": [
+     "c27",
+     "c28"
+    ]
+   },
+   {
+    "kept": "c30",
+    "merged": [
+     "c31",
+     "c32",
+     "c33"
+    ]
+   },
+   {
+    "kept": "c35",
+    "merged": [
+     "c36"
+    ]
+   },
+   {
+    "kept": "c56",
+    "merged": [
+     "c57"
+    ]
+   }
+  ],
+  "cost": 0.032
+ }
+}

@@ -1,0 +1,1323 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 42,
+ "task": "What is Hims & Hers Health's short interest?",
+ "labels": {
+  "opus": "A",
+  "nimble": "B",
+  "gpt": "C",
+  "exa": "D",
+  "parallel": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 11,
+ "evidence_fetched": 10,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "As of the October 30, 2026 settlement date, Hims & Hers Health (NYSE: HIMS) had 51,657,110 shares sold short (about 51.66 million).",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "As of the October 30, 2026 settlement date, Hims & Hers Health (NYSE: HIMS) had 51,657,110 shares sold short.",
+    "B": "As of the October 30, 2026 FINRA settlement date, Hims & Hers Health (HIMS) had short interest of 51,657,110 shares (~51.66 million)",
+    "C": "As of the October 30, 2026 settlement date, Hims & Hers Health (NYSE: HIMS) had 51,657,110 shares sold short, representing 24.38% of its float.",
+    "D": "Hims & Hers Health (NYSE: HIMS) had 51,657,110 shares sold short as of the October 30, 2026 settlement date.",
+    "E": "As of October 30, 2026, Hims & Hers Health (NYSE: HIMS) had 51,657,110 shares sold short (about 51.66 million), representing 25.09% of its public float."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+    "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Short interest as of October 30, 2026 represented 25.09% of the public float (MarketBeat).",
+   "asserted_by": [
+    "B",
+    "E"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health's short interest as of October 30, 2026 represented 25.09% of the public float (MarketBeat)",
+    "E": "...51,657,110 shares sold short (about 51.66 million), representing 25.09% of its public float."
+   },
+   "urls": [
+    "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest"
+   ],
+   "conflicts_with": [
+    "c3",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Short interest as of October 30, 2026 was 24.38% of float (ChartExchange).",
+   "asserted_by": [
+    "A",
+    "C"
+   ],
+   "variants": {
+    "A": "Hims & Hers Health's short interest as of October 30, 2026 was 24.38% of float, based on a float of 211,881,389 shares.",
+    "C": "...had 51,657,110 shares sold short, representing 24.38% of its float."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": [
+    "c2",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "The float used for the 24.38% calculation was 211,881,389 shares.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "...24.38% of float, based on a float of 211,881,389 shares."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Short interest was 24.38% of shares outstanding as of October 30, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Hims & Hers Health's short interest was 24.38% of shares outstanding as of October 30, 2026."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": [
+    "c2",
+    "c3"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Days to cover (short interest ratio) was about 5.84 (5.8) as of October 30, 2026.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Hims & Hers Health's days to cover as of October 30, 2026 was 5.84.",
+    "B": "short interest ratio (days to cover) was 5.8 (5.84) as of October 30, 2026, based on average daily volume of ~22.37 million shares",
+    "C": "days-to-cover ratio was 5.84 as of October 30, 2026.",
+    "D": "short position represented 5.84 days to cover as of October 30, 2026.",
+    "E": "short interest ratio (days to cover) is approximately 5.8 for the October 30, 2026 reporting period."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+    "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Average daily volume used for the days-to-cover figure was about 22.37 million shares (22,365,684).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "based on average daily volume of ~22.37 million shares (22,365,684)"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "The dollar value of shares sold short as of October 30, 2026 was about $1.43 billion.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The dollar value of Hims & Hers Health shares sold short as of October 30, 2026 was about $1.43 billion"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Short interest fell 3.4% from the prior reported total of 53,473,095 shares.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health short interest fell 3.40% from the prior report of 53,473,095 shares (October 15, 2026)",
+    "E": "short interest as of October 30, 2026 was down 3.4% from the previous reported total of 53,473,095 shares."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+    "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "As of October 15, 2026, Hims & Hers had 53,473,095 shares short.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "As of the October 15, 2026 settlement date, Hims & Hers Health had 53,473,095 shares short.",
+    "B": "Hims & Hers Health short interest on October 15, 2026 was 53,473,095 shares (26.0% of float, 5.01 days to cover, -2.4% change, $1.58 billion)"
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "Short interest as of October 15, 2026 was 25.24% of float.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "short interest as of October 15, 2026 was 25.24% of float."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": [
+    "c13"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Short interest as of October 15, 2026 was 26.0% of float.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "...October 15, 2026 was 53,473,095 shares (26.0% of float...)"
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Days to cover as of October 15, 2026 was 5.01.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "days to cover as of October 15, 2026 was 5.01.",
+    "B": "...5.01 days to cover..."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Short interest on October 15, 2026 changed by -2.4% from the prior report.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "...-2.4% change..."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Short interest on October 15, 2026 was valued at $1.58 billion.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "...$1.58 billion"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Hims & Hers had 233,310,000 outstanding shares per MarketBeat.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health had 233,310,000 outstanding shares per MarketBeat"
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c18"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "The October 30, 2026 ChartExchange table row lists 233,313,413 and 211,881,389 alongside the short interest figures.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The October 30, 2026 ChartExchange table row for Hims & Hers Health lists 233,313,413 and 211,881,389 alongside the short interest figures."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": [
+    "c17"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "HIMS price on the October 30, 2026 report date was $27.59.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "HIMS price on the October 30, 2026 report date was $27.59"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Short interest on September 30, 2026 was 54,769,436 shares (26.6% of float, 5.26 days to cover, +3.5% change).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health short interest on September 30, 2026 was 54,769,436 shares (26.6% of float, 5.26 days to cover, +3.5% change)"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Short interest on September 15, 2026 was 52,920,443 shares (25.7% of float, 6.13 days to cover, -3.7% change).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health short interest on September 15, 2026 was 52,920,443 shares (25.7% of float, 6.13 days to cover, -3.7% change)"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Short interest on August 31, 2026 was 54,945,417 shares (26.7% of float, 4.33 days to cover, -6.4% change).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health short interest on August 31, 2026 was 54,945,417 shares (26.7% of float, 4.33 days to cover, -6.4% change)"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "StockAnalysis.com shows short interest of 53.47 million shares (53,473,095).",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "StockAnalysis.com shows Hims & Hers Health short interest of 53.47 million...",
+    "F": "Hims & Hers Health (HIMS) has short interest of 53.47 million shares (53,473,095), as of November 11, 2026."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/hims/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "StockAnalysis's 53.47 million short interest figure is presented as of November 11, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "...as of November 11, 2026."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/hims/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "StockAnalysis: short interest equals 22.81% of shares outstanding.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "...22.81% of shares outstanding...",
+    "F": "Hims & Hers Health's short interest equals 22.81% of shares outstanding."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/hims/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "StockAnalysis: short interest equals 24.89% of the float.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "...24.89% of float...",
+    "F": "Hims & Hers Health's short interest equals 24.89% of the float."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/hims/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "StockAnalysis: short ratio is 5.12 days to cover.",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "...5.12 days to cover...",
+    "F": "Hims & Hers Health's short ratio is 5.12 days to cover."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/hims/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "StockAnalysis: previous month's short interest was 52.92 million shares (52,920,443).",
+   "asserted_by": [
+    "B",
+    "F"
+   ],
+   "variants": {
+    "B": "previous month 52.92M",
+    "F": "Hims & Hers Health's short interest in the previous month was 52.92 million shares (52,920,443)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/hims/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "A Benzinga article from early November 2026 described Hims & Hers as one of the most shorted mid-cap companies with short interest of 23%.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "A Benzinga article (shown on Webull, published around early November 2026) reported Hims & Hers Health short interest of 23% and called HIMS one of the most shorted mid-cap companies.",
+    "B": "Benzinga (Nov 8, 2026) described Hims & Hers as one of the most shorted mid-cap companies with short interest of 23%"
+   },
+   "urls": [
+    "https://www.webull.com/news/15890148288884736"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Short interest peaked at about 41.25% of float on February 27, 2026 and has fallen since.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Hims & Hers Health's short interest peaked at about 41.25% of float on February 27, 2026 and has fallen since."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nyse-hims/short-interest/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Q3 2026 GAAP net loss was $33 million, with adjusted EBITDA of $82 million.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health reported a Q3 2026 GAAP net loss of $33 million, with adjusted EBITDA of $82 million"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Q3 2026 EPS was -$0.14, missing consensus.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health Q3 2026 EPS was -$0.14, missing consensus"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Q3 2026 revenue was $890.373 million, up 48.65% YoY, 0.28% below the $892.888 million consensus.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Health Q3 2026 revenue was $890.373 million, up 48.65% year-over-year, 0.28% below the $892.888 million consensus"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "HIMS fell 1.26% to $22.57 in extended trading after the Q3 release and traded 0.86% lower at $22.74 on Tuesday (Nov 10, 2026).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "HIMS stock fell 1.26% to $22.57 in extended trading after the Q3 2026 release and traded 0.86% lower at $22.74 on Tuesday (Nov 10, 2026)"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Needham cut its price target to $32 from $42, maintaining a Buy rating.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Needham cut its Hims & Hers price target to $32 from $42, maintaining a Buy rating"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "Q3 2026 international revenue quadrupled to $233 million; domestic revenue rose 21%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers Q3 2026 international revenue quadrupled to $233 million; domestic revenue rose 21%"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "FY26 revenue guidance was tightened to $3.13 billion-$3.15 billion.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Hims & Hers FY26 revenue guidance was tightened to $3.13 billion-$3.15 billion"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "JPMorgan and Truist have a $32 price target on Hims; Barclays sees $35; Citigroup $33.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "JPMorgan and Truist have a $32 price target on Hims; Barclays sees $35; Citigroup $33"
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "The mid-November FINRA short interest report (settlement ~Nov 14, 2026) was not yet published as of Nov 11, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The mid-November FINRA short interest report (settlement ~Nov 14, 2026) was not yet published as of Nov 11, 2026"
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c42"
+   ]
+  },
+  {
+   "cid": "c40",
+   "claim": "FINRA scheduled publication of the October 30, 2026 settlement date report for November 10, 2026, making it the latest published report as of November 11, 2026.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "FINRA scheduled publication of the October 30, 2026 settlement date short interest report for November 10, 2026, making it the latest published report as of November 11, 2026."
+   },
+   "urls": [
+    "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+    "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c40",
+    "c41"
+   ]
+  },
+  {
+   "cid": "c42",
+   "claim": "FINRA's next short interest report, for the November 13, 2026 settlement date, is due to be published November 24, 2026 (submission deadline November 17, 6:00 p.m.).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "FINRA's next short interest report, for the November 13, 2026 settlement date, is due to be published November 24, 2026 (position submission deadline November 17, 6:00 p.m.)."
+   },
+   "urls": [
+    "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+   ],
+   "conflicts_with": [
+    "c39"
+   ]
+  },
+  {
+   "cid": "c43",
+   "claim": "Short interest is reported twice monthly and is not real-time; the Hims & Hers figure reflects October 30 settlement, not November 11 positions.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Short interest is reported twice monthly and is not a real-time measure; the Hims & Hers figure reflects October 30 settlement, not November 11 positions."
+   },
+   "urls": [
+    "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c43",
+    "c44"
+   ]
+  },
+  {
+   "cid": "c45",
+   "claim": "Short interest percentage for Hims & Hers can differ across data vendors depending on whether it is calculated against shares outstanding or public float.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The short interest percentage for Hims & Hers can differ across data vendors depending on whether it is calculated against shares outstanding or public float."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "51,657,110 shares short at 2026-10-30 confirmed by MarketBeat and ChartExchange (FINRA data), the latest report. Variant C (24.38% float) and E (25.09% float) each match one source's float figure, so all variants are true under their own source.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat states 25.09% of public float; other providers use a different float so the percentage varies by source.",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "ChartExchange shows 24.38% for 2026-10-30 with float 211,881,389.",
+   "label_verdicts": {
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "Float of 211,881,389 shown in the 2026-10-30 row.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "The 24.38% is short interest as a percent of float (211.9M), not of shares outstanding; 51.66M/233.3M is about 22.1%.",
+   "label_verdicts": {
+    "D": "false"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "Days to cover 5.84 (5.8) as of 10/30/2026 on both MarketBeat and ChartExchange.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat gives average volume of about 22.37M (22,369,842); the 22,365,684 figure differs slightly, but the ~22.37M claim holds.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat lists dollar volume sold short of $1.43 billion for 10/30/2026.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "Down 3.4% from the prior 53,473,095.",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "A": "true",
+    "C": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "The 10/15/2026 figure of 53,473,095 is confirmed, but it is superseded by the 10/30 report, so it is prior context.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "ChartExchange shows 25.24% for 2026-10-15; this is superseded history.",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat shows 26.0% of float for 10/15/2026; this is superseded history.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "Days to cover of 5.01 for 10/15/2026 is confirmed by both sources; superseded history.",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat shows -2.4% for 10/15/2026; superseded history.",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat lists 10/15/2026 at 53,473,095 shares, $1.58 billion; but it is not the latest report (10/30).",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat shows outstanding shares of 233,310,000.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "Adjacent rows show 233,313,413 shares outstanding; the 10/30 row's truncated 211,881,389 is consistent with the neighboring row pattern.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "MarketBeat table shows $27.59 price on 10/30/2026.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "Matches MarketBeat row for 9/30/2026 exactly; historical data point.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "Matches MarketBeat row for 9/15/2026 exactly; older history.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "Matches MarketBeat row for 8/31/2026 exactly; older history.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/hims/statistics/",
+   "note": "StockAnalysis lists short interest 53.47M, though the underlying report is the 10/15 settlement; the 'as of Nov 11' variant describes page check date, while newer 10/30 data (51.66M) exists elsewhere.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "53.47M is the Oct 15 settlement figure; 'Last checked Nov 11' is only the page update date, and the Oct 30 report (51.66M) is newer.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/hims/statistics/",
+   "note": "Page states 22.81% of shares outstanding.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/hims/statistics/",
+   "note": "Page states short % of float 24.89%.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/hims/statistics/",
+   "note": "Page states short ratio 5.12.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/hims/statistics/",
+   "note": "Page lists previous month 52.92M, matching the 9/15 figure of 52,920,443.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.webull.com/news/15890148288884736",
+   "note": "Benzinga article via Webull, ~2 days old, says one of the most shorted mid-caps with short interest of 23%.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "ChartExchange shows 2026-02-27 price column 41.25 and 84.96M shares, the series high; 41.25 is the price column not a float percentage in the row, so the '41.25% of float' wording is likely misread.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://scanx.trade/us-stocks/HIMS-hims-hers-health-inc",
+   "note": "Scanx headline says Q3 loss of 14 cents per share, missing estimates; not about short interest.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://scanx.trade/us-stocks/HIMS-hims-hers-health-inc",
+   "note": "Headline says revenue rose 49% to $890.4M, consistent; consensus detail unverified.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://scanx.trade/us-stocks/HIMS-hims-hers-health-inc",
+   "note": "Scanx: Needham maintains Buy, cuts target from $42 to $32.",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://scanx.trade/us-stocks/HIMS-hims-hers-health-inc",
+   "note": "Scanx confirms FY26 revenue guidance was narrowed; exact range not shown.",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": false,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.webull.com/news/15890148288884736",
+   "note": "Benzinga/Webull text lists JPMorgan and Truist $32, Barclays $35, Citigroup $33.",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "note": "The Nov 13 settlement report is scheduled for Nov 24, so it was not yet published on Nov 11.",
+   "via": "passages"
+  },
+  "c40": {
+   "cid": "c40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "note": "FINRA schedule: Oct 30 settlement, publication Nov 10; MarketBeat confirms latest report published 11/10/2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "note": "The schedule lists Nov 13 settlement, Nov 17 6pm due date and Nov 24 publication.",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.marketbeat.com/stocks/NYSE/HIMS/short-interest",
+   "note": "The latest reporting period is Oct 30, 2026; reporting is twice monthly per FINRA schedule.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c45": {
+   "cid": "c45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nyse-hims/short-interest/",
+   "note": "Chartexchange shows 24.38% while MarketBeat shows 25.09% for the same 51.66M shares, consistent with differing denominators.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.hims.com/news/news-details/2026/Hims--Hers-Health-Inc--Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+   "note": "Q3 2026 release: net loss $33.0M, adjusted EBITDA $82.4M (confirmed via search of release text); the saved scanx page does not contain these figures.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stocktwits.com/news-articles/markets/equity/hims-stock-tumbles-after-hours-on-surprise-q3-loss-and-cut-profit-outlook-retail-demands-answers/cNGrYPWR979",
+   "note": "No saved page or search result contains the figures $22.57, $22.74, -1.26% or -0.86%. Stocktwits (Nov 9, 2026) says Q3 was reported Monday after the close and shares fell about 3% after hours, not 1.26%. The claim's numbers are also inconsistent with each other: $22.57 at -1.26% implies a prior clos",
+   "label_verdicts": {
+    "B": "false"
+   },
+   "retried": true
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investors.hims.com/news/news-details/2026/Hims--Hers-Health-Inc--Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+   "note": "The release shows Rest of World revenue of about $233.3M, domestic revenue up 21% (from $543.5M to $657.1M) and international up more than 300% year over year, which fits 'quadrupled'.",
+   "confidence": "high",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "note": "ChartExchange's 2026-10-30 row shows 51,657,110 shares short, 24.38% of a 211,881,389-share float. This is the latest settlement date. MarketBeat gives 25.09% because it uses a different float."
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "note": "ChartExchange and MarketBeat both show 5.84 days to cover for 10/30/2026, and MarketBeat's text rounds it to 5.8."
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "note": "ChartExchange's 2026-10-30 row lists 233,313,413 shares outstanding and a float of 211,881,389."
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "note": "Zacks gives Q3 revenue of $890.37M, up 49% from $599.0M, which is about 48.65%. I couldn't find the exact $892.888M consensus. Other sources give $892.7M to $893.37M, so a 0.28% miss is plausible."
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 42,
+ "scores": {
+  "opus": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 34,
+   "truth_weight": 75.5,
+   "coverage": 0.44,
+   "accuracy": 1.0,
+   "combined": 0.611,
+   "thorough_coverage": 0.354,
+   "answer_truth": 17,
+   "thoroughness": 0.523,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 31,
+   "unverifiable": 0,
+   "true": 25,
+   "wrong": 6,
+   "truth": 34,
+   "truth_weight": 75.5,
+   "coverage": 0.812,
+   "accuracy": 0.926,
+   "combined": 0.865,
+   "thorough_coverage": 0.748,
+   "answer_truth": 17,
+   "thoroughness": 0.828,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 34,
+   "truth_weight": 75.5,
+   "coverage": 0.377,
+   "accuracy": 1.0,
+   "combined": 0.548,
+   "thorough_coverage": 0.248,
+   "answer_truth": 17,
+   "thoroughness": 0.398,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 7,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 1,
+   "truth": 34,
+   "truth_weight": 75.5,
+   "coverage": 0.377,
+   "accuracy": 0.889,
+   "combined": 0.529,
+   "thorough_coverage": 0.318,
+   "answer_truth": 17,
+   "thoroughness": 0.468,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 34,
+   "truth_weight": 75.5,
+   "coverage": 0.503,
+   "accuracy": 1.0,
+   "combined": 0.669,
+   "thorough_coverage": 0.318,
+   "answer_truth": 17,
+   "thoroughness": 0.482,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 1,
+   "truth": 34,
+   "truth_weight": 75.5,
+   "coverage": 0.267,
+   "accuracy": 0.864,
+   "combined": 0.408,
+   "thorough_coverage": 0.169,
+   "answer_truth": 17,
+   "thoroughness": 0.283,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.347,
+ "corrections_v2": {
+  "units_before": 45,
+  "units_after": 42,
+  "dedup_groups": [
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   },
+   {
+    "kept": "c40",
+    "merged": [
+     "c41"
+    ]
+   },
+   {
+    "kept": "c43",
+    "merged": [
+     "c44"
+    ]
+   }
+  ],
+  "cost": 0.023
+ }
+}

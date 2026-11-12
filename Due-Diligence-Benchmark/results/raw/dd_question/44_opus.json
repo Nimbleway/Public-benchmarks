@@ -1,0 +1,63 @@
+{
+ "arm": "opus",
+ "tier": "medium",
+ "run_id": "78f18a30-8650-475c-9654-37d5089f1cf2",
+ "status": "completed",
+ "seconds": 39,
+ "output": {
+  "question": "What is Beyond Meat's short interest?",
+  "answer": "The latest exchange-reported figure is for October 15, 2026, from FINRA data. About 6.2 million Beyond Meat (BYND) shares were sold short, which is 36.20% of shares outstanding, with 6.86 days to cover (ShortInterestTracker). StockAnalysis, last updated November 11, 2026, shows similar numbers: 6.22M shares short, up from 5.70M the month before. That works out to 34.02% of shares outstanding and 39.96% of float, with a short ratio of 4.93 days. Share counts are small because Beyond Meat did a 1-for-30 reverse stock split on August 14, 2026, and short interest has stayed around 34\u201340% of shares.",
+  "as_of": "2026-10-15 (FINRA settlement date); page data viewed 2026-11-11",
+  "key_facts": [
+   {
+    "fact": "FINRA reported 6.2M BYND shares sold short as of October 15, 2026. That is 36.20% of shares outstanding, with 6.86 days to cover.",
+    "source_url": "https://shortinteresttracker.com/stock/BYND",
+    "date": "2026-10-15"
+   },
+   {
+    "fact": "StockAnalysis shows short interest of 6.22M shares, up from 5.70M the previous month. That is 34.02% of shares outstanding and 39.96% of float, with a short ratio of 4.93.",
+    "source_url": "https://stockanalysis.com/stocks/bynd/statistics/",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "Beyond Meat carried out a 1-for-30 reverse stock split, and split-adjusted trading began August 14, 2026. This is why the share counts are low.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/0001655210/000165521026000059/bynd-ex991pressreleaseanno.htm",
+    "date": "2026-08-13"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "The latest short interest is 6.22 million, so 34.02% of the outstanding shares have been sold short.",
+    "source_url": "https://stockanalysis.com/stocks/bynd/statistics/",
+    "publisher": "StockAnalysis",
+    "published_date": "2026-11-11"
+   },
+   {
+    "quote": "FINRA reported 6.2M shares sold short.",
+    "source_url": "https://shortinteresttracker.com/stock/BYND",
+    "publisher": "ShortInterestTracker",
+    "published_date": "2026-10-15"
+   }
+  ],
+  "caveats": [
+   "The sources disagree on percentages (34.02%, 36.20%, 39.96%) because they divide by different bases (shares outstanding vs. float) and may use different share counts.",
+   "Days to cover differs between sources (6.86 vs. 4.93) because each uses a different average-volume window.",
+   "The October 15, 2026 FINRA figure may already have been replaced by the late-October settlement data (normally published in early November), which I could not confirm.",
+   "A search snippet attributed a 38.5%-of-free-float estimate and a 28.82% cost to borrow to ORTEX as of October 21, 2026. I could not open that page, so those numbers are not verified.",
+   "I could not open the MarketBeat, Benzinga and GuruFocus pages (HTTP 403)."
+  ],
+  "missing_fields": [
+   "Exact settlement date behind StockAnalysis figures",
+   "ORTEX free-float short interest estimate and cost to borrow (not verified)",
+   "Late-October 2026 FINRA settlement figure"
+  ]
+ },
+ "raw_text": null,
+ "cost_usd": 0.12767030000000001,
+ "cost_basis": "Claude Code reported, API-equivalent",
+ "num_turns": 8,
+ "sub_use_case": "dd_question",
+ "input": "What is Beyond Meat's short interest?",
+ "input_n": 44,
+ "completed_on": "2026-11-11"
+}

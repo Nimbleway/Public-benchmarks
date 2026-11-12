@@ -1,0 +1,193 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b699d9f3925440ddad8",
+ "status": "completed",
+ "seconds": 92,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Apple's annual revenue?",
+  "passages": [
+   {
+    "quote": "Total net sales (1) 114,477 102,466 478,834 416,161",
+    "publisher": "Apple Inc.",
+    "published_date": null,
+    "source_url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf"
+   },
+   {
+    "quote": "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+    "publisher": "Apple Inc.",
+    "published_date": null,
+    "source_url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf"
+   }
+  ],
+  "answer": "As of November 11, 2026, Apple\u2019s latest annual revenue was US$478.834 billion for fiscal 2026, which ended September 26, 2026. Apple reports this figure as \u201ctotal net sales.\u201d",
+  "caveats": [
+   "The cited earnings-release financial statements are labeled unaudited."
+  ],
+  "missing_fields": [
+   "passages[0].published_date and passages[1].published_date: the source\u2019s publication date was not verified."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-09-26",
+    "source_url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+    "fact": "Apple reported fiscal 2026 total net sales of US$478,834 million, equivalent to US$478.834 billion, for the twelve months ended September 26, 2026."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question; no external factual evidence is needed.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "Total net sales (1) 114,477 102,466 478,834 416,161",
+      "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+      "**Apple Inc.** **CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)**"
+     ]
+    }
+   ],
+   "reasoning": "The cited statement supplies the exact net-sales row, monetary units, and Apple publisher identification. Publication dates are left null because they were not verified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "Total net sales (1) 114,477 102,466 478,834 416,161",
+      "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+      "**Twelve Months Ended** **September 26,** **2026** **September 27,** **2025**"
+     ]
+    }
+   ],
+   "reasoning": "The twelve-month column ending September 26, 2026 reports total net sales of 478,834 in millions. Dividing by 1,000 gives US$478.834 billion. The current annual financial-data lookup also identified FY2026 as the latest annual period; the primary-source pointers directly support the amount and period.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "**Apple Inc.** **CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)**"
+     ]
+    }
+   ],
+   "reasoning": "The statement heading explicitly labels the cited financial statements unaudited.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "A publication date was not verified in the available source evidence, so both passage publication-date fields are null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "The as-of date is the current date specified in the task, not the financial reporting period or a source publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "Total net sales (1) 114,477 102,466 478,834 416,161",
+      "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+      "**Twelve Months Ended** **September 26,** **2026** **September 27,** **2025**"
+     ]
+    }
+   ],
+   "reasoning": "The statement's period headers, units, and total-net-sales row jointly support the fiscal-year revenue fact and its conversion from millions to billions.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "Total net sales (1) 114,477 102,466 478,834 416,161",
+      "**Apple Inc.** **CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)**"
+     ]
+    }
+   ],
+   "reasoning": "The net-sales quote is copied exactly from Apple's statement. Its publication date remains unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+      "**Apple Inc.** **CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)**"
+     ]
+    }
+   ],
+   "reasoning": "The monetary-unit quote is copied exactly from Apple's statement. Its publication date remains unverified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "**Apple Inc.** **CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)**"
+     ]
+    }
+   ],
+   "reasoning": "The heading directly establishes the unaudited status of the cited statements.",
+   "confidence": "high"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "This identifies an unverified metadata field rather than asserting a sourced publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and",
+     "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+     "excerpts": [
+      "Total net sales (1) 114,477 102,466 478,834 416,161",
+      "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+      "**Twelve Months Ended** **September 26,** **2026** **September 27,** **2025**"
+     ]
+    }
+   ],
+   "reasoning": "The annual column ends September 26, 2026 and reports 478,834 million in total net sales, equivalent to 478.834 billion.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "What is Apple's annual revenue?",
+ "input_n": 17,
+ "completed_on": "2026-11-11"
+}

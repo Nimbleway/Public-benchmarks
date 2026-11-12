@@ -1,0 +1,842 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 16,
+ "task": "What is Samsung's annual revenue?",
+ "labels": {
+  "parallel": "A",
+  "nimble": "B",
+  "exa": "C",
+  "opus": "D",
+  "firecrawl": "E",
+  "gpt": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 8,
+ "evidence_fetched": 8,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Samsung Electronics' consolidated annual revenue for fiscal year 2025 (ended December 31, 2025) was KRW 333.6 trillion.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Samsung Electronics reported KRW 333.6 trillion in annual (consolidated) revenue for FY2025, the year ended December 31, 2025.",
+    "B": "Samsung Electronics reported consolidated annual revenue of KRW 333.6 trillion for fiscal year 2025 (ended December 31, 2025), reported January 29, 2026.",
+    "C": "Samsung Electronics' annual consolidated revenue for the fiscal year ended December 31, 2025 was KRW 333.6 trillion (KRW 333,605,938 million).",
+    "D": "Samsung Electronics' FY2025 (fiscal year ended 2025-12-31) revenue was KRW 333.6 trillion, the highest it has ever reported.",
+    "E": "Samsung Electronics reported KRW 333.6 trillion in annual revenue for full-year 2025 (FY2025), announced January 29, 2026.",
+    "F": "Samsung Electronics reported consolidated annual revenue of KRW 333.6 trillion for fiscal 2025, ended December 31, 2025."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+    "https://news.samsung.com/be/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Samsung Electronics announced its Q4 and FY2025 results on January 29, 2026.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "reported January 29, 2026",
+    "C": "Samsung Electronics announced its Q4 and FY2025 results on 2026-01-29.",
+    "D": "Samsung Electronics released its Q4 and FY2025 results on January 29, 2026.",
+    "E": "announced January 29, 2026",
+    "F": "Samsung Electronics announced its fourth-quarter and full-year fiscal 2025 results on January 29, 2026."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+    "https://news.samsung.com/be/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "FY2025 revenue of KRW 333.6 trillion is the highest annual revenue Samsung Electronics has ever reported.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "revenue was KRW 333.6 trillion, the highest it has ever reported."
+   },
+   "urls": [
+    "https://news.samsung.com/be/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Samsung Electronics' FY2025 operating profit was KRW 43.6 trillion.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Samsung Electronics' FY2025 operating profit was KRW 43.6 trillion, up 33.2% from the previous year.",
+    "C": "Samsung Electronics reported operating profit of KRW 43.6 trillion for full-year 2025.",
+    "D": "Samsung Electronics' FY2025 operating profit was KRW 43.6 trillion.",
+    "E": "Samsung Electronics' FY2025 operating profit was KRW 43.6 trillion."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+    "https://news.samsung.com/be/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+    "https://en.yna.co.kr/view/AEN20260129001100320"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "FY2025 operating profit was up 33.2% from the previous year.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "up 33.2% from the previous year"
+   },
+   "urls": [
+    "https://en.yna.co.kr/view/AEN20260129001100320"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "FY2025 annual revenue was up 10.9% from 2024.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Samsung Electronics' FY2025 annual revenue of KRW 333.6 trillion was up 10.9% from 2024."
+   },
+   "urls": [
+    "https://en.yna.co.kr/view/AEN20260129001100320"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Samsung Electronics' Q4 2025 consolidated revenue was KRW 93.8 trillion, its highest-ever quarterly revenue.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Q4 2025 consolidated revenue was KRW 93.8 trillion, its highest-ever quarterly revenue, up 9% quarter-on-quarter.",
+    "D": "Q4 2025 consolidated revenue was KRW 93.8 trillion, its highest-ever quarterly revenue."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+    "https://news.samsung.com/be/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Q4 2025 revenue was up 9% quarter-on-quarter.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "up 9% quarter-on-quarter"
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Samsung Electronics' Q4 2025 operating profit was KRW 20.1 trillion, an all-time high.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Q4 2025 operating profit was KRW 20.1 trillion, an all-time high."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Samsung Electronics' 2025 net income was KRW 45.2 trillion (US$31.6 billion), up 31.2%.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "2025 net income was KRW 45.2 trillion (US$31.6 billion), up 31.2%."
+   },
+   "urls": [
+    "https://en.yna.co.kr/view/AEN20260129001100320"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "At about 1,430 won per US dollar (January 2026), FY2025 revenue is estimated at about US$233 billion (an estimate; no official USD conversion published).",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The exchange rate implied by Yonhap's reporting is about 1,430 won per US dollar as of January 2026, giving an estimated FY2025 revenue of about US$233 billion (an estimate; no official USD conversion of the annual total was published)."
+   },
+   "urls": [
+    "https://en.yna.co.kr/view/AEN20260129001100320"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Audited consolidated statements report 2025 revenue of KRW 333,605,938 million.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "KRW 333.6 trillion (KRW 333,605,938 million)",
+    "E": "Samsung Electronics' audited consolidated statement reports 2025 revenue of KRW 333,605,938 million."
+   },
+   "urls": [
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf",
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_all.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Samsung Electronics' 2025 revenue in the audited consolidated financial statements was approximately US$234.622 billion (US$234,622,273 thousand).",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Samsung Electronics' 2025 revenue was approximately US$234.622 billion (US$234,622,273 thousand) in the audited consolidated financial statements.",
+    "E": "Samsung Electronics' 2025 revenue in the consolidated statement is approximately USD 234,622,273 thousand."
+   },
+   "urls": [
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_all.pdf",
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf"
+   ],
+   "conflicts_with": [
+    "c12"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Samsung Electronics' 2024 revenue was KRW 300,870,903 million (US$211,599,996 thousand).",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "C": "Samsung Electronics' 2024 revenue was KRW 300,870,903 million (US$211,599,996 thousand).",
+    "E": "Samsung Electronics' prior-year (2024) revenue was KRW 300,870,903 million (USD 211,599,996 thousand)."
+   },
+   "urls": [
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_all.pdf",
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Samsung Electronics' audited consolidated financial statements for 2025 were published around 2026-02-12.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Samsung Electronics' audited consolidated financial statements for 2025 were published around 2026-02-12."
+   },
+   "urls": [
+    "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_all.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Samsung Electronics' Q3 2026 (quarter ended September 30, 2026) consolidated revenue was KRW 195.3 trillion, an all-time quarterly high, up 14% quarter-on-quarter.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Samsung Electronics' Q3 2026 (quarter ended September 30, 2026) consolidated revenue was KRW 195.3 trillion, an all-time quarterly high, up 14% quarter-on-quarter."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Samsung Electronics' Q3 2026 operating profit was KRW 107.4 trillion, the world's first tech company to exceed KRW 100 trillion in quarterly operating profit.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Samsung Electronics' Q3 2026 operating profit was KRW 107.4 trillion, making it the world's first tech company to exceed KRW 100 trillion in quarterly operating profit."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Q3 2026 revenue of 195.25 trillion won was about US$124 billion, against 195.79 trillion won expected, and up 126.9% year-on-year.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Samsung Electronics' Q3 2026 revenue of 195.25 trillion won was about US$124 billion, against 195.79 trillion won expected, and up 126.9% year-on-year."
+   },
+   "urls": [
+    "https://www.cnbc.com/2026/10/29/samsung-electronics-third-quarter-earnings.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Samsung Electronics' full-year 2026 results are due/expected around late January 2027.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Samsung Electronics' FY2026 full-year results are due in late January 2027 and the figure will be substantially higher than FY2025's KRW 333.6 trillion.",
+    "D": "Samsung Electronics' full-year 2026 results are expected around late January 2027."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "FY2026 annual revenue will be substantially higher than FY2025's KRW 333.6 trillion.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "the figure will be substantially higher than FY2025's KRW 333.6 trillion."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "FY2025 is the latest completed fiscal year as of November 11, 2026 (FY2026 not yet complete).",
+   "asserted_by": [
+    "A",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "A": "Samsung Electronics' FY2025 is the latest completed fiscal year as of November 11, 2026.",
+    "C": "FY2026 is not yet a completed fiscal year as of November 11, 2026, so FY2025 is the latest completed annual figure.",
+    "E": "FY2026 was not yet a completed fiscal year as of November 11, 2026, so FY2025 is the latest completed annual figure for Samsung Electronics."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "The KRW 333.6 trillion figure covers fiscal 2025, not trailing-twelve-month revenue or partial-year 2026 revenue.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The KRW 333.6 trillion figure covers fiscal 2025, not trailing-twelve-month revenue or partial-year 2026 revenue."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "The KRW 333.6 trillion figure is Samsung Electronics' consolidated revenue, not that of the broader Samsung Group or other affiliates.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "consolidated revenue for Samsung Electronics and its subsidiaries, not combined revenue across the entire Samsung Group.",
+    "B": "The figures cover Samsung Electronics Co., the flagship listed entity, not other Samsung Group affiliates such as Samsung C&T or Samsung Life Insurance.",
+    "C": "The KRW 333.6 trillion figure is Samsung Electronics Co., Ltd.'s consolidated revenue, not that of a separate Samsung affiliate or the broader Samsung group.",
+    "D": "consolidated, reported in Korean won, and covers Samsung Electronics Co., Ltd. only, not the whole Samsung Group or affiliates such as Samsung C&T, Samsung SDI or Samsung Life.",
+    "E": "The answer interprets 'Samsung' as Samsung Electronics Co., Ltd., not Samsung Group as a whole.",
+    "F": "The KRW 333.6 trillion figure is for Samsung Electronics, not the broader Samsung Group."
+   },
+   "urls": [
+    "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Samsung's Fast Facts page bases its annual revenue figure on FY 2025 consolidated statements.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Samsung's Fast Facts page bases its annual revenue figure on FY 2025 consolidated statements."
+   },
+   "urls": [
+    "https://news.samsung.com/global/fast-facts"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Media conversions of FY2025 revenue to US dollars range from roughly $231 billion to $247 billion depending on exchange rate (not verified against a primary source).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Media conversions of Samsung Electronics' FY2025 revenue to US dollars range from roughly $231 billion to $247 billion, depending on the exchange rate used (not verified against a primary source)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Samsung Electronics has released quarterly results for 2026, including Q3 2026 in late October.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Samsung Electronics has released quarterly results for 2026, including Q3 2026 in late October."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "Samsung's own release states KRW 333.6 trillion in annual revenue for FY2025, still the latest completed fiscal year.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "The release is dated Korea, January 29, 2026.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.yna.co.kr/view/AEN20260129001100320",
+   "note": "Revenue rose 10.9% to 333.6T, above the 2024 figure of 300.9T. Samsung's release does not say 'highest annual ever', but earlier years such as 2022 (about 302T) were lower, so it holds for completed years.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "The release gives full-year operating profit of KRW 43.6 trillion, and Yonhap adds the 33.2% rise.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.yna.co.kr/view/AEN20260129001100320",
+   "note": "Yonhap: operating profit of 43.6T, up 33.2% from the prior year.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.yna.co.kr/view/AEN20260129001100320",
+   "note": "Yonhap: annual sales rose 10.9% to 333.6T won.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "The release gives Q4 2025 revenue of 93.8T as a record quarter. It has since been surpassed by Q3 2026 (195.25T).",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "The release states a 9% quarter-on-quarter increase.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "The release gives Q4 operating profit of 20.1T as an all-time high at the time. Q3 2026 is far higher.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.yna.co.kr/view/AEN20260129001100320",
+   "note": "Yonhap: net income of 45.2T won (US$31.6B), up 31.2%.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://en.yna.co.kr/view/AEN20260129001100320",
+   "note": "45.2T won = US$31.6B implies about 1,430 won per dollar. 333.6T divided by 1,430 gives about US$233B, and it is labelled an estimate.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf",
+   "note": "The PDF text is unreadable here, but 333,605,938 million is consistent with the reported 333.6T.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf",
+   "note": "Not directly visible in the passages. It is consistent with a convenience-translation rate of about 1,422 won per dollar, which also fits the 2024 pair.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_soi.pdf",
+   "note": "The 2024 revenue of 300.87T won matches known results, and the USD figure uses the same rate as the 2025 pair.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+   "note": "Samsung's Oct 29, 2026 release states KRW 195.3T consolidated revenue, an all-time quarterly high, up 14% QoQ.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+   "note": "The release states operating profit of KRW 107.4T and that it is the first tech company above KRW 100T in quarterly operating profit.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.cnbc.com/2026/10/29/samsung-electronics-third-quarter-earnings.html",
+   "note": "CNBC gives revenue of 195.25T won ($124B) vs 195.79T expected, up 126.88% YoY.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+   "note": "The Q3 release says the board will decide shareholder returns at a meeting in late January 2027, with an announcement to follow, and FY2025 results were released on Jan 29, so FY2026 results in late January 2027 are consistent. The 'substantially higher' wording in variant B is supported by Q3 reven",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+   "note": "Q3 2026 revenue alone (195.3T) is far above the FY2025 quarterly run rate (Q4 2025 was 93.8T), so FY2026 will exceed 333.6T by a wide margin.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "Samsung's fiscal year ends Dec 31, so as of Nov 11, 2026 FY2025 (KRW 333.6T) is the latest completed year.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "The release states KRW 333.6T as full-year revenue for FY2025.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+   "note": "The KRW 333.6T figure is Samsung Electronics' consolidated revenue and not Samsung Group-wide.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://news.samsung.com/global/fast-facts",
+   "note": "The Fast Facts page says 'Based on FY 2025 consolidated statements' and lists revenue of 333.6.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+   "note": "Q3 2026 results were released on Oct 29, 2026, and Q3 is only reported after Q1 and Q2 results.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "confidence": "medium",
+   "source": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_con_quarter01_all.pdf",
+   "note": "The saved FY2025 statements PDF shows no date. A search found the auditor's report on the year-end statements dated Feb 12, 2026, as cited in Samsung's 2026 quarterly review reports. This is background and does not state the revenue figure.",
+   "via": "agent"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "confidence": "medium",
+   "source": "https://en.yna.co.kr/view/AEN20260129001100320",
+   "note": "The claim is flagged as unverified and no saved page gives a USD revenue figure. Yonhap's net-income conversion implies about 1,430 KRW/USD, so KRW 333.6T is roughly $233B, inside the stated range. This is an approximate conversion, not a primary-source figure.",
+   "via": "agent"
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 25,
+ "scores": {
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 76.25,
+   "coverage": 0.528,
+   "accuracy": 1.0,
+   "combined": 0.691,
+   "thorough_coverage": 0.275,
+   "answer_truth": 8,
+   "thoroughness": 0.432,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 16,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 76.25,
+   "coverage": 0.604,
+   "accuracy": 1.0,
+   "combined": 0.753,
+   "thorough_coverage": 0.666,
+   "answer_truth": 8,
+   "thoroughness": 0.799,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 76.25,
+   "coverage": 0.623,
+   "accuracy": 1.0,
+   "combined": 0.767,
+   "thorough_coverage": 0.403,
+   "answer_truth": 8,
+   "thoroughness": 0.575,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 76.25,
+   "coverage": 0.302,
+   "accuracy": 1.0,
+   "combined": 0.464,
+   "thorough_coverage": 0.433,
+   "answer_truth": 8,
+   "thoroughness": 0.604,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 76.25,
+   "coverage": 0.623,
+   "accuracy": 1.0,
+   "combined": 0.767,
+   "thorough_coverage": 0.397,
+   "answer_truth": 8,
+   "thoroughness": 0.568,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 26,
+   "truth_weight": 76.25,
+   "coverage": 0.377,
+   "accuracy": 1.0,
+   "combined": 0.548,
+   "thorough_coverage": 0.233,
+   "answer_truth": 8,
+   "thoroughness": 0.378,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.336,
+ "corrections_v2": {
+  "units_before": 27,
+  "units_after": 26,
+  "dedup_groups": [
+   {
+    "kept": "c6",
+    "merged": [
+     "c7"
+    ]
+   }
+  ],
+  "cost": 0.016
+ }
+}

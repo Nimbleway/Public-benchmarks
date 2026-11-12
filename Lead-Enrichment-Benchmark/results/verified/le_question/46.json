@@ -1,0 +1,952 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 46,
+ "task": "Who is the parent company of Rivian?",
+ "labels": {
+  "firecrawl": "A",
+  "exa": "B",
+  "opus": "C",
+  "parallel": "D",
+  "gpt": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 7,
+ "evidence_fetched": 7,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Rivian Automotive, Inc. has no parent company; it is an independent, publicly traded company, not a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "F": "Rivian Automotive, Inc. has no parent company; it is an independent, publicly traded American automaker rather than a subsidiary.",
+    "D": "Rivian Automotive, Inc. is an independent, publicly traded company and not a subsidiary; it has no parent company.",
+    "E": "Rivian does not have a parent company; Rivian Automotive, Inc. is an independent publicly traded company."
+   },
+   "urls": [
+    "https://americancompanies.com/company/rivian-automotive-inc-de",
+    "https://evseekers.com/who-makes-rivian",
+    "https://evseekers.com/who-makes-rivian/",
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": [
+    "c5"
+   ],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Rivian's parent company is Rivian Automotive, Inc.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Rivian's parent company is Rivian Automotive, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000110465926031794/tm269292d1_8k.htm"
+   ],
+   "conflicts_with": [
+    "c1"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Rivian Automotive, Inc. is the parent of Rivian, LLC, a Delaware LLC described in the SEC filing (dated 2026-03-19) as its wholly-owned subsidiary.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Rivian Automotive, Inc. is the parent company of Rivian, LLC, a Delaware limited liability company that the SEC filing describes as a wholly-owned subsidiary of the Company (filing dated 2026-03-19)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000110465926031794/tm269292d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "The SEC filing dated 2026-03-19 names the registrant as Rivian Automotive, Inc.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The SEC filing dated 2026-03-19 names the registrant as Rivian Automotive, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000110465926031794/tm269292d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "The filing uses \"Rivian\" as shorthand for the company and its consolidated subsidiaries, with Rivian Automotive, Inc. as the legal parent in the hierarchy.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The filing uses \"Rivian\" as shorthand for the company and its consolidated subsidiaries, while the legal parent identified in the hierarchy is Rivian Automotive, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000110465926031794/tm269292d1_8k.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Rivian Automotive, Inc. was incorporated as a Delaware corporation on March 26, 2015.",
+   "asserted_by": [
+    "F",
+    "B"
+   ],
+   "variants": {
+    "F": "Rivian Automotive, Inc. was incorporated as a Delaware corporation on March 26, 2015.",
+    "B": "Rivian Automotive, Inc. (together with its consolidated subsidiaries) was incorporated as a Delaware corporation on March 26, 2015."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm",
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Rivian's common stock trades on Nasdaq under the ticker RIVN.",
+   "asserted_by": [
+    "F",
+    "E"
+   ],
+   "variants": {
+    "F": "Rivian's Class A common stock ($0.001 par value) trades on The Nasdaq Stock Market under the ticker RIVN.",
+    "E": "Rivian Automotive, Inc. common stock trades on Nasdaq under the ticker RIVN."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm",
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Rivian files its own financial statements with the SEC, most recently its Form 10-Q for the quarter ended June 30, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Rivian files its own financial statements with the SEC, most recently its Form 10-Q for the quarter ended June 30, 2026."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "The no-parent conclusion reflects the corporate structure disclosed in Rivian's quarterly filing for the period ended September 30, 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The no-parent conclusion reflects the corporate structure disclosed in Rivian's quarterly filing for the period ended September 30, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Amazon (via Amazon.com NV Investment Holdings LLC and Logistics) beneficially owns Rivian stock, including a warrant for 3,723,050 Class A shares, representing 10.9% of voting power as of July 10, 2026; a major shareholder, not a parent.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Amazon (via Amazon.com NV Investment Holdings LLC and Logistics) beneficially owns Rivian capital stock, including shares issuable on exercise of a warrant for 3,723,050 Class A shares, representing 10.9% of Rivian's voting power as of July 10, 2026; it is a major shareholder, not a parent."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Amazon is the parent of Logistics and Amazon.com NV Investment Holdings LLC, which beneficially owns Rivian stock representing 10.8% of voting power as of September 30, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Amazon is the parent company of Logistics and Amazon.com NV Investment Holdings LLC, which beneficially owns Rivian capital stock representing 10.8% of Rivian's voting power as of September 30, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": [
+    "c13"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Amazon, the top Rivian holder since the 2021 IPO, is now the second-largest shareholder at about 12.28%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Amazon, the top Rivian holder since the 2021 IPO, is now the second-largest shareholder at about 12.28%."
+   },
+   "urls": [
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon"
+   ],
+   "conflicts_with": [
+    "c13",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "Volkswagen and Amazon are significant shareholders in Rivian, not its parent companies.",
+   "asserted_by": [
+    "D",
+    "B"
+   ],
+   "variants": {
+    "D": "Volkswagen and Amazon are major shareholders in Rivian, not parent companies.",
+    "B": "Volkswagen AG and Amazon are significant shareholders of Rivian, not its parent."
+   },
+   "urls": [
+    "https://evseekers.com/who-makes-rivian",
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Volkswagen is Rivian's largest shareholder at roughly 15.9% as of May 2026 (secondary-source estimate), but Rivian remains independently run with its own board and CEO.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "Volkswagen is Rivian's largest shareholder at roughly 15.9% as of May 2026 (secondary-source estimate), but Rivian remains independently run with its own board and CEO."
+   },
+   "urls": [
+    "https://evseekers.com/who-makes-rivian/",
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c17",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Volkswagen-US Holding, Inc. (formerly Volkswagen International America, Inc.), a wholly-owned subsidiary of Volkswagen AG, beneficially owns Rivian shares representing 14.1% of voting power as of July 10, 2026, a large minority stake rather than control.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Volkswagen-US Holding, Inc. (formerly Volkswagen International America, Inc.), a wholly-owned subsidiary of Volkswagen AG, beneficially owns Rivian shares representing 14.1% of voting power as of July 10, 2026, a large minority stake rather than a controlling interest."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Volkswagen-US Holding, Inc., a wholly-owned subsidiary of Volkswagen AG, beneficially owned Rivian stock representing 14.0% of voting power as of September 30, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Volkswagen-US Holding, Inc., a wholly-owned subsidiary of Volkswagen AG, beneficially owned shares of Rivian capital stock representing 14.0% of Rivian's voting power as of September 30, 2026."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": [
+    "c19"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "In November 2024 Rivian entered into a joint venture with Volkswagen Group focused on vehicle electrical architecture and software development services (Rivian and VW Group Technologies, LLC).",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "In November 2024 Rivian entered into a joint venture with Volkswagen Group focused on vehicle electrical architecture and software development services (Rivian and VW Group Technologies, LLC)."
+   },
+   "urls": [
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+    "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c21",
+    "c22"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Rivian has a joint venture with Volkswagen Group, and VW Group has committed to additional equity investments subject to conditions including milestones and regulatory clearances (per the filing dated 2026-10-29).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Rivian has entered into a joint venture with Volkswagen Group, and Volkswagen Group has committed to additional equity investments in Rivian, subject to conditions including achievement of certain milestones and obtaining regulatory clearances (per Rivian's SEC filing dated 2026-10-29)."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Volkswagen is an equity investor in and joint-venture partner of Rivian, not its parent.",
+   "asserted_by": [
+    "C",
+    "E"
+   ],
+   "variants": {
+    "E": "Volkswagen is an equity investor in and joint-venture partner of Rivian, not its parent company."
+   },
+   "urls": [
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c24",
+    "c31"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "The Rivian–Volkswagen joint venture is a separate legal entity with its own management and board of directors.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Rivian–Volkswagen joint venture is a separate legal entity with its own management and board of directors."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "A significant portion of Rivian's software and services revenues has been from Volkswagen Group.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "A significant portion of Rivian's software and services revenues has been from Volkswagen Group."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "RJ Scaringe, Rivian's founder, is its CEO.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "RJ Scaringe, Rivian's founder, is its CEO."
+   },
+   "urls": [
+    "https://evseekers.com/who-makes-rivian/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Volkswagen's Rivian stake was 8.6% less than two years before the July 2026 report.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Volkswagen's Rivian stake was 8.6% less than two years before the July 2026 report."
+   },
+   "urls": [
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "EVwire reported Volkswagen's position as Rivian's top shareholder on July 6, 2026.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "EVwire reported Volkswagen's position as Rivian's top shareholder on July 6, 2026."
+   },
+   "urls": [
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Volkswagen committed to invest $5.8 billion in Rivian in total, paid in tranches as milestones are hit, so its stake is set to keep growing.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Volkswagen committed to invest $5.8 billion in Rivian in total, paid in tranches as Rivian hits agreed milestones, so its stake is set to keep growing."
+   },
+   "urls": [
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "The rest of Rivian's shares are spread across the public float, index funds and smaller institutions, so no shareholder has majority control.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "The rest of Rivian's shares are spread across the public float, index funds and smaller institutions, so no shareholder has majority control."
+   },
+   "urls": [
+    "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "One forum-posted table lists Volkswagen's Rivian stake at 16.64%, differing slightly from the 15.9% figure.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "One forum-posted table lists Volkswagen's Rivian stake at 16.64%, differing slightly from the 15.9% figure."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c18"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Sources differ on the third-largest Rivian holder (Abdul Latif Jameel vs. Oryx Global).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Sources differ on the third-largest Rivian holder (Abdul Latif Jameel vs. Oryx Global)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "A Schedule 13G is generally filed by passive investors, consistent with Volkswagen being a minority holder rather than a controlling parent.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "A Schedule 13G is generally filed by passive investors, consistent with Volkswagen being a minority holder rather than a controlling parent."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://evseekers.com/who-makes-rivian/",
+   "note": "Rivian is independent and publicly traded, with no parent. VW (15.9%) and Amazon (about 12%) are shareholders only.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "D": "true",
+    "E": "true",
+    "B": "true",
+    "C": "true"
+   }
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://evseekers.com/who-makes-rivian/",
+   "note": "Rivian Automotive, Inc. is the company itself, not its own parent. The question's answer is that no parent exists.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000110465926031794/tm269292d1_8k.htm",
+   "note": "The 8-K names Rivian, LLC as a party. The wholly-owned subsidiary status is not in the excerpt but matches known structure.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000110465926031794/tm269292d1_8k.htm",
+   "note": "The 8-K names Rivian Automotive, Inc. as the registrant. The event date is March 18, with a press release on March 19.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The 10-Q uses 'Rivian' as shorthand for Rivian Automotive, Inc. and its consolidated subsidiaries.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The 10-Q states incorporation as a Delaware corporation on March 26, 2015.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The 10-Q cover page lists Class A common stock under RIVN on Nasdaq.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "Rivian does file its own statements, but the most recent 10-Q covers the quarter ended Sept 30, 2026 (signed Oct 29, 2026), not June 30.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The Q3 10-Q shows Rivian as the top registrant with consolidated subsidiaries and no parent.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "A Schedule 13G/A shows VW at 15.9% and Amazon second at 12.28%. Amazon was the earliest major backer.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://evseekers.com/who-makes-rivian",
+   "note": "Rivian is independent and publicly traded; VW and Amazon are shareholders, not parents.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "VW at about 15.9% and largest shareholder, corroborated by the Schedule 13G/A report; Rivian stays independently run.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm",
+   "note": "The 10-Q confirms the Volkswagen-US Holding name change; the 14.1% voting figure is not in the passages but is plausible given dilution from the July offering, and the minority stake conclusion holds.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The Q3 10-Q covers the VW-US Holding relationship; 14.0% as of Sept 30 is consistent with the 14.1% in July and subsequent dilution, though the exact figure is not in the passages.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/1874178/000187417826000054/rivn-20260630.htm",
+   "note": "10-Q states the JV was established in November 2024 with a focus on software, ECUs and network architecture.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "Rivian's 10-Q dated Oct 29, 2026 describes the JV and VW's committed equity investments subject to milestones.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "Filings show VW as an equity investor and JV partner with a minority stake, not a parent.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true",
+    "C": "true"
+   }
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The 10-Q reports regulatory credit and software revenues from VW Group; a significant share is consistent with Rivian's filings, though the passages don't state the share.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The 10-Q refers to Robert J. Scaringe as Founder and CEO.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "The wording is garbled, but EVwire says the stake rose to 15.9% from 8.6% less than two years earlier.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "The EVwire article is dated Jul 6, 2026.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "EVwire states a $5.8B total commitment in milestone-based tranches, with the stake contractually set to rise.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "The rest is held across public float and institutions, none above 5% disclosed; the largest holders (VW 15.9%, Amazon 12.28%) are well below majority.",
+   "via": "passages"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "Source names Oryx Global as the vehicle of Abdul Latif Jameel, so the naming difference is real but trivial; the caveat is reasonable.",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://evwire.com/p/volkswagen-rivian-top-shareholder-amazon",
+   "note": "Schedule 13G is the short-form filing for passive holders under SEC rules, consistent with a minority non-controlling stake.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001874178/000187417826000023/rivn-20260427.htm",
+   "note": "The 2026 proxy confirms Amazon, via NV Holdings, holds 3,723,050 warrant shares and is a shareholder, not a parent. I could not find the 10.9% voting-power figure or the July 10 date in the saved pages.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417825000019/rivn-20250429.htm",
+   "note": "NV Holdings is a wholly-owned Amazon subsidiary that holds Rivian stock. I could not confirm the 10.8% figure or the Logistics entity in the saved 10-Q.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm",
+   "note": "The Q3 2026 10-Q says the equally owned joint venture is a separate legal entity with its own management and board of directors.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.rivianforums.com/vw-is-now-rivians-largest-shareholder-overtaking-amazon/",
+   "note": "A forum-posted table (Rivian Forums, May 2026) lists VW at 16.64% and Amazon at 12.56%. The SEC Schedule 13G/A figure is 15.9% (209,769,645 Class A shares), per the evwire page, which does not mention 16.64%. The claim that a forum table differs slightly is accurate. The 16.64% figure itself is seco",
+   "retried": true
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 31,
+ "scores": {
+  "firecrawl": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 1,
+   "truth": 27,
+   "truth_weight": 72.0,
+   "coverage": 0.0,
+   "accuracy": 0.163,
+   "combined": 0.0,
+   "thorough_coverage": 0.024,
+   "answer_truth": 8,
+   "thoroughness": 0.042,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 72.0,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.344,
+   "answer_truth": 8,
+   "thoroughness": 0.512,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 72.0,
+   "coverage": 0.571,
+   "accuracy": 1.0,
+   "combined": 0.727,
+   "thorough_coverage": 0.486,
+   "answer_truth": 8,
+   "thoroughness": 0.654,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 72.0,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.292,
+   "answer_truth": 8,
+   "thoroughness": 0.452,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 27,
+   "truth_weight": 72.0,
+   "coverage": 0.5,
+   "accuracy": 1.0,
+   "combined": 0.667,
+   "thorough_coverage": 0.375,
+   "answer_truth": 8,
+   "thoroughness": 0.545,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 1,
+   "truth": 27,
+   "truth_weight": 72.0,
+   "coverage": 0.357,
+   "accuracy": 0.981,
+   "combined": 0.524,
+   "thorough_coverage": 0.351,
+   "answer_truth": 8,
+   "thoroughness": 0.517,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.868,
+ "corrections_v2": {
+  "units_before": 35,
+  "units_after": 29,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c3",
+     "c4"
+    ]
+   },
+   {
+    "kept": "c21",
+    "merged": [
+     "c22"
+    ]
+   },
+   {
+    "kept": "c24",
+    "merged": [
+     "c31"
+    ]
+   },
+   {
+    "kept": "c17",
+    "merged": [
+     "c18"
+    ]
+   }
+  ],
+  "cost": 0.023
+ }
+}

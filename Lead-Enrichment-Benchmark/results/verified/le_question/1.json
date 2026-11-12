@@ -1,0 +1,979 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 1,
+ "task": "Is Discord publicly traded?",
+ "labels": {
+  "opus": "A",
+  "gpt": "B",
+  "firecrawl": "C",
+  "parallel": "D",
+  "exa": "E",
+  "nimble": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 17,
+ "evidence_fetched": 17,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "As of November 2026, Discord is a private company and is not publicly traded; its shares are not listed or traded on a public exchange.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Discord Inc. is not publicly traded as of mid-November 2026; it is still a private company with no stock ticker and is not listed on any exchange.",
+    "B": "As of November 11, 2026, Discord is privately held and is not publicly traded; its shares do not trade on public stock exchanges.",
+    "D": "Discord is a private company and is not publicly traded. / As of November 2026, Discord is privately held and has no listed shares.",
+    "E": "As of November 11, 2026, Discord is a private company; its shares do not trade on a public stock exchange and it has no ticker symbol."
+   },
+   "urls": [
+    "https://forgeglobal.com/discord_ipo",
+    "https://forgeglobal.com/discord_stock/",
+    "https://stockmarketwatch.com/ipo/discord",
+    "https://useharvest.com/company/discord",
+    "https://valueaddvc.com/blog/discord-ipo-2026-valuation-s1-filing-when-is-it-happening",
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Discord has no public stock ticker symbol.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "still a private company with no stock ticker and is not listed on any exchange",
+    "B": "Discord has no public stock ticker symbol because it is a private company.",
+    "D": "Discord has no public stock ticker.",
+    "E": "it has no ticker symbol"
+   },
+   "urls": [
+    "https://valueaddvc.com/blog/discord-ipo-2026-valuation-s1-filing-when-is-it-happening",
+    "https://www.nasdaqprivatemarket.com/company/discord/",
+    "https://stockmarketwatch.com/ipo/discord",
+    "https://useharvest.com/company/discord"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "Discord's LinkedIn company profile lists its type as Privately Held.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Discord's LinkedIn company profile lists its type as Privately Held."
+   },
+   "urls": [
+    "https://ea.linkedin.com/company/discord"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Discord remains privately owned and its shares are not available through a standard stock brokerage (per Markets.com page published 2026-09-01).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Discord remains privately owned and its shares are not currently available through a standard stock brokerage (as of the Markets.com page published 2026-09-01)."
+   },
+   "urls": [
+    "https://www.markets.com/education-centre/discord-ipo-how-to-invest-in-discord"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "No official Discord IPO date, exchange, ticker symbol, or offer price had been announced as of the Markets.com page published 2026-09-01.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "No official Discord IPO date, exchange, ticker symbol, or offer price had been announced as of the Markets.com page published 2026-09-01."
+   },
+   "urls": [
+    "https://www.markets.com/education-centre/discord-ipo-how-to-invest-in-discord"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Bloomberg reported on January 6, 2026 that Discord filed confidentially for a U.S. IPO.",
+   "asserted_by": [
+    "F",
+    "C"
+   ],
+   "variants": {
+    "F": "Discord filed confidentially for a U.S. IPO, as reported by Bloomberg on January 6, 2026.",
+    "C": "Bloomberg reported that Discord confidentially filed for a U.S. IPO on January 6, 2026."
+   },
+   "urls": [
+    "https://www.bloomberg.com/news/articles/2026-01-06/chat-platform-discord-is-said-to-file-confidentially-for-ipo",
+    "https://forgeglobal.com/insights/discord-upcoming-ipo-news/"
+   ],
+   "conflicts_with": [
+    "c8"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Bloomberg reported on January 7, 2026 that Discord filed confidentially for a US IPO, according to people familiar with the matter.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Bloomberg reported on January 7, 2026 that Discord Inc. filed confidentially for a US initial public offering, according to people familiar with the matter."
+   },
+   "urls": [
+    "https://news.bloomberglaw.com/securities-law/chat-platform-discord-is-said-to-file-confidentially-for-ipo"
+   ],
+   "conflicts_with": [
+    "c7"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "Discord reportedly filed confidentially for a US IPO, per a Bloomberg News report citing people familiar, relayed by Reuters in January 2026.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Discord reportedly filed confidentially for an initial public offering in the United States, per a Bloomberg News report (citing people familiar with the matter) relayed by Reuters in January 2026."
+   },
+   "urls": [
+    "https://www.reuters.com/business/chat-platform-discord-confidentially-file-us-ipo-bloomberg-news-reports-2026-01-06/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Discord's IPO banks are Goldman Sachs and JPMorgan.",
+   "asserted_by": [
+    "F",
+    "A"
+   ],
+   "variants": {
+    "F": "Discord's IPO underwriters are Goldman Sachs and JPMorgan Chase.",
+    "A": "Discord was working with Goldman Sachs and JPMorgan on the IPO, per Bloomberg's January 2026 report."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/01/07/discords-ipo-could-happen-in-march/",
+    "https://news.bloomberglaw.com/securities-law/chat-platform-discord-is-said-to-file-confidentially-for-ipo"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "According to the January 2026 report, Discord could decide not to proceed with the IPO/listing.",
+   "asserted_by": [
+    "E",
+    "A"
+   ],
+   "variants": {
+    "E": "Deliberations on Discord's IPO were ongoing and the company could decide not to proceed with a listing, according to the report.",
+    "A": "People familiar with Discord's IPO plans said the company could decide not to go ahead with the listing."
+   },
+   "urls": [
+    "https://www.reuters.com/business/chat-platform-discord-confidentially-file-us-ipo-bloomberg-news-reports-2026-01-06/",
+    "https://news.bloomberglaw.com/securities-law/chat-platform-discord-is-said-to-file-confidentially-for-ipo"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "As of Forge Global's page dated 2026-07-08, neither IPO pricing nor the exact listing date was confirmed and Discord might not proceed.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "As of Forge Global's page dated 2026-07-08, neither the pricing nor the exact public listing date of Discord's IPO had been confirmed, and the company might not proceed."
+   },
+   "urls": [
+    "https://forgeglobal.com/insights/discord-upcoming-ipo-news/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "A confidential IPO filing or reported IPO preparation does not mean Discord's shares are already publicly listed.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "A confidential IPO filing or reported IPO preparation does not mean Discord's shares are already publicly listed."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "TechCrunch reported on January 7, 2026 that Discord targeted a March 2026 IPO debut; that target slipped.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "TechCrunch reported on January 7, 2026 that Discord targeted a March 2026 IPO debut; that target slipped."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/01/07/discords-ipo-could-happen-in-march/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "The confidential filing and March debut target were reported by Bloomberg and TechCrunch citing people familiar, and were not confirmed by Discord.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "F": "The confidential filing and March debut target were reported by Bloomberg and TechCrunch citing people familiar with the matter, not confirmed by Discord itself."
+   },
+   "urls": [
+    "https://news.bloomberglaw.com/securities-law/chat-platform-discord-is-said-to-file-confidentially-for-ipo",
+    "https://techcrunch.com/2026/01/07/discords-ipo-could-happen-in-march/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c15",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "As of October 30, 2026, ten months after the confidential filing, Discord is still private and its registration statement has not been made public.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "As of October 30, 2026, ten months after the confidential filing, Discord is still private and its registration statement has not been made public."
+   },
+   "urls": [
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c18",
+   "claim": "No new IPO date for Discord has been reported since the March 2026 target slipped.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "No new IPO date for Discord has been reported since the March 2026 target slipped."
+   },
+   "urls": [
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Under SEC rules, a confidential filer must make its registration statement public at least 15 days before marketing shares, so a Discord IPO is weeks away at the earliest.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Under SEC rules, a company that files confidentially must make its registration statement public at least 15 days before starting to market shares to investors, so a Discord IPO is weeks away at the earliest."
+   },
+   "urls": [
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "A May 20, 2026 KuCoin news flash said a 277-page Discord S-1 had been filed, but did not say Discord had listed; the claim conflicts with other reporting.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "A May 20, 2026 KuCoin news flash said a 277-page Discord S-1 had been filed, but it did not say Discord had listed; the claim conflicts with other reporting."
+   },
+   "urls": [
+    "https://www.kucoin.com/news/flash/discord-s-1-filing-boosts-ipo-prospects-before-2027"
+   ],
+   "conflicts_with": [
+    "c17",
+    "c21"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "As of October 21, 2026, no public S-1 for Discord was on SEC EDGAR, only Form D filings.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "As of October 21, 2026, no public S-1 for Discord was on SEC EDGAR, only Form D filings."
+   },
+   "urls": [
+    "https://valueaddvc.com/blog/discord-ipo-2026-valuation-s1-filing-when-is-it-happening"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "Discord's IPO has not priced; an IPO tracker updated November 10, 2026 says Discord is still private.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Discord's IPO has not priced; an IPO tracker updated November 10, 2026 says Discord is still private."
+   },
+   "urls": [
+    "https://valueaddvc.com/blog/discord-ipo-2026-valuation-s1-filing-when-is-it-happening"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "The SEC filing dated 2023-03-15 is a Form D Notice of Exempt Offering of Securities identifying the issuer as Discord Inc.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The SEC filing dated 2023-03-15 is a Form D Notice of Exempt Offering of Securities identifying the issuer as Discord Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1763840/000156761923005083/xslFormDX01/primary_doc.xml"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Forge's Discord IPO page was updated October 28, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Forge's Discord IPO page was updated October 28, 2026."
+   },
+   "urls": [
+    "https://forgeglobal.com/discord_ipo"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Discord has more than 200 million monthly users.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Discord has more than 200 million monthly users."
+   },
+   "urls": [
+    "https://www.bloomberg.com/news/articles/2026-01-06/chat-platform-discord-is-said-to-file-confidentially-for-ipo"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c26",
+   "claim": "Discord was last valued at $14.7 billion in its 2021 funding round, in which it raised $500 million.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Discord was last valued at $14.7 billion in its 2021 funding round, in which it raised $500 million."
+   },
+   "urls": [
+    "https://techcrunch.com/2026/01/07/discords-ipo-could-happen-in-march/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Discord had been working with Goldman Sachs and JPMorgan on a planned IPO as early as March 2025, with no filing or scheduled offering at that time.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Discord had been working with Goldman Sachs and JPMorgan on a planned IPO as early as March 2025, with no filing or scheduled offering at that time."
+   },
+   "urls": [
+    "https://www.bloomberg.com/news/articles/2025-03-26/chat-app-discord-is-said-to-work-with-goldman-jpmorgan-on-planned-ipo"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Fidelity funds valued Discord's Series I preferred shares at $23.51 each as of August 31, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Fidelity funds valued Discord's Series I preferred shares at $23.51 each as of August 31, 2026."
+   },
+   "urls": [
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "Forge put Discord's indicative price at $36.79 per share on October 30, 2026, implying about $10.02 billion.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Secondary-market tracker Forge put Discord's indicative price at $36.79 per share on October 30, 2026, implying a value of about $10.02 billion."
+   },
+   "urls": [
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Discord's 2021 funding round priced shares at about $55.06 per share, roughly a $15 billion valuation, above current investor marks.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Discord's 2021 funding round priced shares at about $55.06 per share, roughly a $15 billion valuation, above current investor marks."
+   },
+   "urls": [
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Recent valuation marks of $23.51–$36.79 per share imply roughly $6.4–$10 billion and come from investor fund reports and secondary trackers, not Discord; there is no verified exchange, price range or share count.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Recent Discord valuation marks of $23.51–$36.79 per share imply roughly $6.4–$10 billion and come from investor fund reports and secondary-market trackers, not from Discord; there is no verified public exchange, price range or share count since the registration statement is confidential."
+   },
+   "urls": [
+    "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Discord shares trade only privately on secondary markets, which have reportedly valued the company at about $8.5B (approximate).",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Discord shares trade only privately on secondary markets, which have reportedly valued the company at about $8.5B (approximate, from unopened snippets and aggregator sites)."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Any 'Discord ticker' seen online is unofficial.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Any 'Discord ticker' seen online is unofficial."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "Oct 30, 2026 report says Discord is still private with no public S-1; stockmarketwatch says no ticker as of Nov 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockmarketwatch.com/ipo/discord",
+   "note": "Forge and stockmarketwatch both state no ticker; consistent with being private.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://ea.linkedin.com/company/discord",
+   "note": "LinkedIn mirror lists Type: Privately held.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.markets.com/education-centre/discord-ipo-how-to-invest-in-discord",
+   "note": "Consistent with the Markets.com page and later sources showing Discord still private; the page's text was not directly visible in the excerpts.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://forgeglobal.com/insights/discord-upcoming-ipo-news/",
+   "note": "No listing date, price, or ticker had been announced, and later sources confirm none by Oct/Nov 2026.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/business/chat-platform-discord-confidentially-file-us-ipo-bloomberg-news-reports-2026-01-06/",
+   "note": "Bloomberg reported the confidential filing on Jan 6, 2026.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news.bloomberglaw.com/securities-law/chat-platform-discord-is-said-to-file-confidentially-for-ipo",
+   "note": "Bloomberg's original was Jan 6; the update was Jan 7, so the Jan 7 date is slightly loose but acceptable.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/business/chat-platform-discord-confidentially-file-us-ipo-bloomberg-news-reports-2026-01-06/",
+   "note": "Reuters relayed Bloomberg's report citing people familiar.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.bloomberg.com/news/articles/2026-01-06/chat-platform-discord-is-said-to-file-confidentially-for-ipo",
+   "note": "Bloomberg says Discord is working with Goldman Sachs and JPMorgan.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news.bloomberglaw.com/securities-law/chat-platform-discord-is-said-to-file-confidentially-for-ipo",
+   "note": "The report says deliberations are ongoing and the company could decide not to proceed.",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://forgeglobal.com/insights/discord-upcoming-ipo-news/",
+   "note": "Forge says pricing and listing date are unconfirmed and Discord may not proceed.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "Filed confidentially in January yet still private ten months later.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "TechCrunch reported the March target on Jan 7; the Oct 30 report says it slipped and no new date has been reported.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://techcrunch.com/2026/01/07/discords-ipo-could-happen-in-march/",
+   "note": "TechCrunch attributes the filing and March target to sources told to Bloomberg; no Discord confirmation appears in the excerpts.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true"
+   }
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "TalkEsport (Oct 30, 2026) says Discord is still private and its paperwork hasn't been made public; consistent with other trackers.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "Article says no new date has been reported and that Discord hasn't said why the March target slipped; stockmarketwatch says no announced IPO as of Nov 2026.",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "The 15-day public-filing rule is correct SEC practice, and the article states this conclusion as of Oct 30; a listing could occur no sooner than weeks out.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.kucoin.com/news/flash/discord-s-1-filing-boosts-ipo-prospects-before-2027",
+   "note": "KuCoin flash (May 20, 2026) mentions a 277-page S-1 filed and says nothing about a listing; it conflicts with EDGAR showing no public S-1.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://valueaddvc.com/blog/discord-ipo-2026-valuation-s1-filing-when-is-it-happening",
+   "note": "The page says no public S-1 and only Form D filings as of Oct 21, with a Nov 10 EDGAR check showing the same.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockmarketwatch.com/ipo/discord",
+   "note": "The tracker says Discord is privately held, has no ticker, and no IPO is announced as of Nov 2026; the valueaddvc tracker says the IPO has not priced.",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/1763840/000156761923005083/xslFormDX01/primary_doc.xml",
+   "note": "The SEC document is a Form D Notice of Exempt Offering for CIK 1763840 (Discord Inc.), with accession 0001567619-23-005083 consistent with a 2023 filing; the first sale date is 2023-01-17.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://forgeglobal.com/discord_ipo",
+   "note": "Forge page shows 'Updated on: Oct 28, 2026'.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.bloomberg.com/news/articles/2026-01-06/chat-platform-discord-is-said-to-file-confidentially-for-ipo",
+   "note": "Bloomberg, TechCrunch and TalkEsport all report Discord saying it has over 200 million monthly users.",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://techcrunch.com/2026/01/07/discords-ipo-could-happen-in-march/",
+   "note": "TechCrunch states last valued at $14.7B in the 2021 round raising $500M; other sources round it to about $15B.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.bloomberg.com/news/articles/2025-03-26/chat-app-discord-is-said-to-work-with-goldman-jpmorgan-on-planned-ipo",
+   "note": "Bloomberg March 2025 reported Discord was working with Goldman and JPMorgan with plans that could still change, and TechCrunch describes early-stage talks; no filing existed then.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "Fidelity valued Series I preferred at $23.51 as of 31 August (the article is from 2026), as reported by TalkEsport from the fund filing.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "TalkEsport states Forge's $36.79 on 30 October and a $10.02B valuation; the Forge page shows the same figures (dated 10/21 on one view).",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://forgeglobal.com/discord_stock/",
+   "note": "Forge lists the Series I at $55.06 per share, $15B post-money; current marks such as $23.51 to $36.79 are lower.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.talkesport.com/news/discord-ipo-stalled-investor-valuations/",
+   "note": "Fidelity's $23.51 mark (about $6.4B) and Forge's $36.79 (about $10.02B) match the article, which says Discord had not made its filing public by 30 October.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://valueaddvc.com/blog/discord-ipo-2026-valuation-s1-filing-when-is-it-happening",
+   "note": "The $8.5B secondary valuation is as of July 2026; Forge later showed about $10.02B in October, so the figure is dated but the claim that shares trade only privately holds.",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockmarketwatch.com/ipo/discord",
+   "note": "Source says Discord has no ticker and no listed security as of November 2026, so any ticker seen online is unofficial.",
+   "via": "passages"
+  }
+ },
+ "audit": {
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "note": "The Markets.com page is dated Sep 1, 2026, but its article text didn't load, so I couldn't read its wording directly. Other sources back the claim: Discord filed confidentially in Jan 2026 (Bloomberg) and no date, ticker or price was set. TalkEsport on Oct 30, 2026 describes the IPO as stalled."
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "note": "The 2021 Series I round raised about $500M at about $15B ($14.7B in some reports). Filings show $550.62 per share before a stock split; Forge lists it as $55.06 adjusted for the split. TalkEsport (Oct 2026) reports current fund and secondary marks of $23.51–$36.79, all below $55.06."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 32,
+ "scores": {
+  "opus": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 85.5,
+   "coverage": 0.704,
+   "accuracy": 1.0,
+   "combined": 0.826,
+   "thorough_coverage": 0.509,
+   "answer_truth": 10,
+   "thoroughness": 0.674,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 85.5,
+   "coverage": 0.377,
+   "accuracy": 1.0,
+   "combined": 0.547,
+   "thorough_coverage": 0.219,
+   "answer_truth": 10,
+   "thoroughness": 0.36,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 85.5,
+   "coverage": 0.101,
+   "accuracy": 1.0,
+   "combined": 0.183,
+   "thorough_coverage": 0.129,
+   "answer_truth": 10,
+   "thoroughness": 0.228,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 85.5,
+   "coverage": 0.362,
+   "accuracy": 1.0,
+   "combined": 0.531,
+   "thorough_coverage": 0.219,
+   "answer_truth": 10,
+   "thoroughness": 0.36,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 85.5,
+   "coverage": 0.362,
+   "accuracy": 1.0,
+   "combined": 0.531,
+   "thorough_coverage": 0.263,
+   "answer_truth": 10,
+   "thoroughness": 0.417,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 15,
+   "unverifiable": 0,
+   "true": 15,
+   "wrong": 0,
+   "truth": 31,
+   "truth_weight": 85.5,
+   "coverage": 0.362,
+   "accuracy": 1.0,
+   "combined": 0.531,
+   "thorough_coverage": 0.491,
+   "answer_truth": 10,
+   "thoroughness": 0.659,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.057,
+ "corrections_v2": {
+  "units_before": 33,
+  "units_after": 31,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2"
+    ]
+   },
+   {
+    "kept": "c15",
+    "merged": [
+     "c16"
+    ]
+   }
+  ],
+  "cost": 0.021
+ }
+}

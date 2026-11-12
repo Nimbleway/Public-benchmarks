@@ -1,0 +1,4442 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 38,
+ "task": "What are Whirlpool's subsidiaries?",
+ "labels": {
+  "gpt": "A",
+  "opus": "B",
+  "nimble": "C",
+  "exa": "D",
+  "parallel": "E",
+  "firecrawl": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 12,
+ "evidence_fetched": 11,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Whirlpool's FY2025 annual report (year ended Dec 31, 2025) was filed Feb 11, 2026 and includes Exhibit 21, the List of Subsidiaries.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Latest verified subsidiary list is Exhibit 21 to the annual report for year ended December 31, 2025, filed February 11, 2026.",
+    "D": "Filed its Form 10-K for the period ended December 31, 2025 on February 11, 2026, including Exhibit 21.",
+    "E": "Filed its 2025 annual report, including Exhibit 21, on 2026-02-11.",
+    "F": "2025 Form 10-K (filed February 11, 2026) includes a formal List of Subsidiaries."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/0000106640-26-000009-index.htm",
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/0000106640-26-000009-index.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "The FY2025 10-K accession number is 0000106640-26-000009.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The FY2025 10-K filing's accession number is 0000106640-26-000009."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "The FY2025 Exhibit 21 names 118 entities.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Exhibit 21 names 118 entities."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": [
+    "c4",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "The FY2025 Exhibit 21 names roughly 117 subsidiaries (count derived from rows; company does not state a total).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Names roughly 117 subsidiaries worldwide (count derived from rows; no total stated)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": [
+    "c3",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "The FY2025 List of Subsidiaries contains 113 legal entities.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Formal List of Subsidiaries containing 113 legal entities, with jurisdiction of each."
+   },
+   "urls": [
+    "https://s202.q4cdn.com/229739679/files/doc_financials/2025/ar/Whirlpool-2025-10K.pdf"
+   ],
+   "conflicts_with": [
+    "c3",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Exhibit 21 lists each subsidiary's name and jurisdiction of organization.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Lists each subsidiary's name and the jurisdiction in which it is organized.",
+    "F": "Lists legal entities with the jurisdiction in which each is organized."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "The Exhibit 21 list is a Dec 31, 2025 snapshot, not a verified/current corporate structure as of Nov 11, 2026; some entities may have changed status.",
+   "asserted_by": [
+    "A",
+    "D"
+   ],
+   "variants": {
+    "A": "The verified subsidiary list reflects December 31, 2025, not a verified corporate structure as of November 11, 2026.",
+    "D": "A December 31, 2025 snapshot, not a fully current legal-entity roster as of November 11, 2026; some listed entities may have changed status."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "The subsidiary schedule does not state ownership percentages or whether entities are held directly or indirectly.",
+   "asserted_by": [
+    "A",
+    "F"
+   ],
+   "variants": {
+    "A": "Exhibit 21 does not specify ownership percentages or distinguish direct from indirect subsidiaries.",
+    "F": "Lists entities and jurisdictions but does not state ownership percentage or direct/indirect holding."
+   },
+   "urls": [
+    "https://s202.q4cdn.com/229739679/files/doc_financials/2025/ar/Whirlpool-2025-10K.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Exhibit 21 lists legal entities rather than consumer brands; Maytag, KitchenAid, InSinkErator and Amana appear as branded legal entities, and many rows are holding/financing vehicles.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Lists legal entities rather than consumer brands; Maytag, KitchenAid, InSinkErator and Amana appear as branded entities; many rows are holding or financing vehicles."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Exhibit 21 subsidiaries are organized across many jurisdictions (US, Brazil, Mexico, Luxembourg, Netherlands, China, HK, India, Canada, Latin America, Asia-Pacific, UK, Germany, Italy, Sweden, Poland, Switzerland, South Africa, Bermuda, Mauritius, UAE, etc.).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Organized across many jurisdictions including the US, Brazil, Mexico, Luxembourg, the Netherlands, China, Hong Kong, India, Canada, Argentina, Colombia, Chile, Peru, Ecuador, Uruguay, Guatemala, Costa Rica, Bangladesh, Thailand, Singapore, Taiwan, Australia, New Zealand, the UK, Germany, Italy, Sweden, Poland, Switzerland, South Africa, Bermuda, Mauritius and the UAE."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Exhibit 21 lists subsidiary units in Argentina, Chile, Ecuador, Peru, Uruguay, Guatemala and Costa Rica.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Also lists subsidiary units in Argentina, Chile, Ecuador, Peru, Uruguay, Guatemala and Costa Rica."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e1",
+   "claim": "Exhibit 21 lists 1900 Holdings LLC as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "1900 Holdings LLC (Delaware)",
+    "D": "1900 Holdings LLC",
+    "F": "1900 Holdings LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e2",
+   "claim": "Exhibit 21 lists Airdun Limited as a subsidiary.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Airdun Limited (UK)",
+    "D": "Airdun Limited",
+    "F": "Airdun Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e3",
+   "claim": "Exhibit 21 lists B. Blend Máquinas e Bebidas S.A. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "B. Blend Máquinas e Bebidas S.A.",
+    "C": "B. Blend",
+    "D": "B. Blend Máquinas e Bebidas S.A.",
+    "F": "B. Blend Máquinas e Bebidas S.A."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e4",
+   "claim": "Exhibit 21 lists BUD Comércio de Eletrodomésticos Ltda. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "BUD Comércio de Eletrodomésticos Ltda.",
+    "F": "BUD Comércio de Eletrodomésticos Ltda."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e5",
+   "claim": "Exhibit 21 lists Bill Page Orchestra, Inc. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Bill Page Orchestra, Inc.",
+    "F": "Bill Page Orchestra, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e6",
+   "claim": "Exhibit 21 lists Brasmotor Ltda. as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Brasmotor Ltda.",
+    "B": "Brasmotor Ltda.",
+    "C": "Brasmotor Ltda.",
+    "D": "Brasmotor Ltda.",
+    "F": "Brasmotor Ltda."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e7",
+   "claim": "Exhibit 21 lists Brunson Place Properties, LLC as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Brunson Place Properties, LLC",
+    "F": "Brunson Place Properties, LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e8",
+   "claim": "Exhibit 21 lists Chieri Italia S.r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Chieri Italia S.r.l.",
+    "F": "Chieri Italia S.r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e9",
+   "claim": "Exhibit 21 lists Comercial Acros Whirlpool, S. de R.L. de C.V. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Comercial Acros Whirlpool",
+    "C": "Comercial Acros Whirlpool",
+    "D": "Comercial Acros Whirlpool, S. de R.L. de C.V.",
+    "F": "Comercial Acros Whirlpool, S. de R.L. de C.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e10",
+   "claim": "Exhibit 21 lists Consumer Appliances Service Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Consumer Appliances Service Limited",
+    "F": "Consumer Appliances Service Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e11",
+   "claim": "Exhibit 21 lists General Domestic Appliances International Ltd as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "General Domestic Appliances International Ltd (UK)",
+    "D": "General Domestic Appliances International Ltd",
+    "F": "General Domestic Appliances International Ltd"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e12",
+   "claim": "Exhibit 21 lists Haceb Whirlpool Industrias S.A.S. (Colombia) as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Haceb Whirlpool Industrias S.A.S. (Colombia)",
+    "C": "Haceb Whirlpool Industrias (Colombia)",
+    "D": "Haceb Whirlpool Industrias S.A.S.",
+    "F": "Haceb Whirlpool Industrias S.A.S."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e13",
+   "claim": "Exhibit 21 lists Hoover Comercial Limitada as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Hoover Comercial Limitada",
+    "F": "Hoover Comercial Limitada"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e14",
+   "claim": "Exhibit 21 lists Indesit Argentina S.A. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Indesit Argentina S.A.",
+    "F": "Indesit Argentina S.A."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e15",
+   "claim": "Exhibit 21 lists Industrias Acros Whirlpool, S. de R.L. de C.V. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Industrias Acros Whirlpool",
+    "C": "Industrias Acros Whirlpool",
+    "D": "Industrias Acros Whirlpool, S. de R.L. de C.V.",
+    "F": "Industrias Acros Whirlpool, S. de R.L. de C.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e16",
+   "claim": "Exhibit 21 lists InSinkErator Appliance (Nanjing) Co. Ltd. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "InSinkErator Appliance (Nanjing) Co. Ltd.",
+    "D": "InSinkErator Appliance (Nanjing) Co. Ltd.",
+    "F": "InSinkErator Appliance (Nanjing) Co. Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e17",
+   "claim": "Exhibit 21 lists InSinkErator (Australia) Pty. Ltd. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "InSinkErator (Australia) Pty. Ltd.",
+    "C": "InSinkErator unit in Australia",
+    "D": "InSinkErator (Australia) Pty. Ltd.",
+    "F": "InSinkErator (Australia) Pty. Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e18",
+   "claim": "Exhibit 21 lists InSinkErator Canada Co. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "InSinkErator Canada Co. (Nova Scotia)",
+    "C": "InSinkErator unit in Canada",
+    "D": "InSinkErator Canada Co.",
+    "F": "InSinkErator Canada Co."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e19",
+   "claim": "Exhibit 21 lists InSinkErator LLC as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "InSinkErator LLC",
+    "B": "InSinkErator LLC (Delaware)",
+    "C": "InSinkErator LLC (Delaware)",
+    "D": "InSinkErator LLC",
+    "E": "InSinkErator LLC, organized in Delaware",
+    "F": "InSinkErator LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e20",
+   "claim": "Exhibit 21 lists InSinkErator Trading (Shanghai) Co. Ltd. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "InSinkErator Trading (Shanghai) Co. Ltd.",
+    "D": "InSinkErator Trading (Shanghai) Co. Ltd.",
+    "F": "InSinkErator Trading (Shanghai) Co. Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e21",
+   "claim": "Exhibit 21 lists InSinkErator UK Ltd. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "InSinkErator UK Ltd.",
+    "C": "InSinkErator unit in the UK",
+    "D": "InSinkErator UK Ltd.",
+    "F": "InSinkErator UK Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e22",
+   "claim": "Exhibit 21 lists KitchenAid Australia, Pty Ltd as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Australia",
+    "C": "KitchenAid unit in Australia",
+    "D": "KitchenAid Australia, Pty Ltd",
+    "E": "KitchenAid Australia, Pty Ltd",
+    "F": "KitchenAid Australia, Pty Ltd"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e23",
+   "claim": "Exhibit 21 lists KitchenAid Europa, Inc. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Europa, Inc. (Delaware)",
+    "D": "KitchenAid Europa, Inc.",
+    "F": "KitchenAid Europa, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e24",
+   "claim": "Exhibit 21 lists KitchenAid FSA Group LLC as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid FSA Group LLC (Delaware)",
+    "D": "KitchenAid FSA Group LLC",
+    "F": "KitchenAid FSA Group LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e25",
+   "claim": "Exhibit 21 lists KitchenAid France SAS as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid France",
+    "C": "KitchenAid unit in France",
+    "D": "KitchenAid France SAS",
+    "E": "KitchenAid France SAS",
+    "F": "KitchenAid France SAS"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e26",
+   "claim": "Exhibit 21 lists KitchenAid Germany GmbH as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Germany",
+    "C": "KitchenAid unit in Germany",
+    "D": "KitchenAid Germany GmbH",
+    "E": "KitchenAid Germany GmbH",
+    "F": "KitchenAid Germany GmbH"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e27",
+   "claim": "Exhibit 21 lists KitchenAid, Inc. as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "KitchenAid, Inc.",
+    "B": "KitchenAid, Inc. (Ohio)",
+    "C": "KitchenAid, Inc. (Ohio)",
+    "D": "KitchenAid, Inc.",
+    "F": "KitchenAid, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e28",
+   "claim": "Exhibit 21 lists KitchenAid Global LLC as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "KitchenAid Global LLC",
+    "B": "KitchenAid Global LLC",
+    "D": "KitchenAid Global LLC",
+    "E": "KitchenAid Global LLC, organized in Delaware",
+    "F": "KitchenAid Global LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e29",
+   "claim": "Exhibit 21 lists KitchenAid Korea Limited as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Korea",
+    "C": "KitchenAid unit in Korea",
+    "D": "KitchenAid Korea Limited",
+    "F": "KitchenAid Korea Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e30",
+   "claim": "Exhibit 21 lists KitchenAid MEEA DMCC as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid MEEA DMCC (UAE)",
+    "D": "KitchenAid MEEA DMCC",
+    "F": "KitchenAid MEEA DMCC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e31",
+   "claim": "Exhibit 21 lists KitchenAid Netherlands B.V. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Netherlands B.V.",
+    "C": "KitchenAid unit in the Netherlands",
+    "D": "KitchenAid Netherlands B.V.",
+    "F": "KitchenAid Netherlands B.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e32",
+   "claim": "Exhibit 21 lists KitchenAid Promotions, LLC as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Promotions, LLC (Michigan)",
+    "D": "KitchenAid Promotions, LLC",
+    "F": "KitchenAid Promotions, LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e33",
+   "claim": "Exhibit 21 lists KitchenAid Sweden Aktiebolag as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Sweden",
+    "C": "KitchenAid unit in Sweden",
+    "D": "KitchenAid Sweden Aktiebolag",
+    "F": "KitchenAid Sweden Aktiebolag"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e34",
+   "claim": "Exhibit 21 lists KitchenAid Trading Co., Ltd. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid Trading Co. (China)",
+    "C": "KitchenAid unit in China",
+    "D": "KitchenAid Trading Co., Ltd.",
+    "F": "KitchenAid Trading Co., Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e35",
+   "claim": "Exhibit 21 lists KitchenAid UK Limited as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "KitchenAid UK",
+    "C": "KitchenAid unit in the UK",
+    "D": "KitchenAid UK Limited",
+    "E": "KitchenAid UK Limited",
+    "F": "KitchenAid UK Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e36",
+   "claim": "Exhibit 21 lists MLOG Armazém Geral Ltda. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "MLOG Armazém Geral Ltda.",
+    "F": "MLOG Armazém Geral Ltda."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e37",
+   "claim": "Exhibit 21 lists Maytag Limited as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Maytag Limited",
+    "B": "Maytag Limited (Ontario)",
+    "D": "Maytag Limited",
+    "E": "Maytag Limited, organized in Ontario",
+    "F": "Maytag Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e38",
+   "claim": "Exhibit 21 lists Maytag Properties, LLC as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Maytag Properties, LLC",
+    "B": "Maytag Properties, LLC (Michigan)",
+    "C": "Maytag Properties LLC",
+    "D": "Maytag Properties, LLC",
+    "F": "Maytag Properties, LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e39",
+   "claim": "Exhibit 21 lists Maytag Sales, Inc. as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Maytag Sales, Inc.",
+    "B": "Maytag Sales, Inc. (Delaware)",
+    "C": "Maytag Sales, Inc. (Delaware)",
+    "D": "Maytag Sales, Inc.",
+    "E": "Maytag Sales, Inc., organized in Delaware",
+    "F": "Maytag Sales, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e40",
+   "claim": "Exhibit 21 lists Maytag Worldwide N.V. as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Maytag Worldwide N.V.",
+    "B": "Maytag Worldwide N.V. (Curaçao)",
+    "D": "Maytag Worldwide N.V.",
+    "F": "Maytag Worldwide N.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e41",
+   "claim": "Exhibit 21 lists Nineteen Hundred Corporation as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Nineteen Hundred Corporation (New York)",
+    "D": "Nineteen Hundred Corporation",
+    "F": "Nineteen Hundred Corporation"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e42",
+   "claim": "Exhibit 21 lists Parex Industries Ltd. as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Parex Industries Ltd.",
+    "D": "Parex Industries Ltd.",
+    "F": "Parex Industries Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e43",
+   "claim": "Exhibit 21 lists South American Sales Partnership as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "South American Sales Partnership",
+    "F": "South American Sales Partnership"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e44",
+   "claim": "Exhibit 21 lists THC Assets Corporation as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "THC Assets Corporation",
+    "F": "THC Assets Corporation"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e45",
+   "claim": "Exhibit 21 lists WCGP Nova Scotia Co. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "WCGP Nova Scotia Co.",
+    "F": "WCGP Nova Scotia Co."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e46",
+   "claim": "Exhibit 21 lists Whirlpool America LLC as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "A": "Whirlpool America LLC",
+    "D": "Whirlpool America LLC",
+    "F": "Whirlpool America LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e47",
+   "claim": "Exhibit 21 lists Whirlpool (Australia) Pty. Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool (Australia) Pty. Limited",
+    "F": "Whirlpool (Australia) Pty. Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e48",
+   "claim": "Exhibit 21 lists Whirlpool (B.V.I.) Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool (B.V.I.) Limited",
+    "F": "Whirlpool (B.V.I.) Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e49",
+   "claim": "Exhibit 21 lists Whirlpool (China) Investment Co., Ltd. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool (China) Investment Co.",
+    "C": "Whirlpool (China) Investment Co., Ltd.",
+    "D": "Whirlpool (China) Investment Co., Ltd.",
+    "F": "Whirlpool (China) Investment Co., Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e50",
+   "claim": "Exhibit 21 lists Whirlpool (Hefei) Trading Co., Ltd as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool (Hefei) Trading Co., Ltd",
+    "F": "Whirlpool (Hefei) Trading Co., Ltd"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e51",
+   "claim": "Exhibit 21 lists Whirlpool (Hong Kong) Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool (Hong Kong) Limited",
+    "F": "Whirlpool (Hong Kong) Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e52",
+   "claim": "Exhibit 21 lists Whirlpool (Thailand) Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool (Thailand) Limited",
+    "F": "Whirlpool (Thailand) Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e53",
+   "claim": "Exhibit 21 lists Whirlpool Argentina S.r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Argentina S.r.l.",
+    "E": "Whirlpool Argentina S.r.l. in Argentina",
+    "F": "Whirlpool Argentina S.r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e54",
+   "claim": "Exhibit 21 lists Whirlpool ASEAN Co. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool ASEAN Co.",
+    "F": "Whirlpool ASEAN Co."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e55",
+   "claim": "Exhibit 21 lists Whirlpool Asia B.V. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Asia B.V.",
+    "F": "Whirlpool Asia B.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e56",
+   "claim": "Exhibit 21 lists Whirlpool Asia Holdings S.à r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Asia Holdings S.à r.l.",
+    "F": "Whirlpool Asia Holdings S.à r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e57",
+   "claim": "Exhibit 21 lists Whirlpool Asia Inc. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Asia Inc.",
+    "F": "Whirlpool Asia Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e58",
+   "claim": "Exhibit 21 lists Whirlpool Asia LLP (India) as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Asia LLP (India)",
+    "C": "Whirlpool Asia LLP (India)",
+    "D": "Whirlpool Asia LLP",
+    "F": "Whirlpool Asia LLP"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e59",
+   "claim": "Exhibit 21 lists Whirlpool Bangladesh Limited as a subsidiary.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Whirlpool Bangladesh Limited",
+    "D": "Whirlpool Bangladesh Limited",
+    "F": "Whirlpool Bangladesh Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e60",
+   "claim": "Exhibit 21 lists Whirlpool Canada Co. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Canada Co./LP",
+    "D": "Whirlpool Canada Co.",
+    "E": "Whirlpool Canada Co., organized in Nova Scotia",
+    "F": "Whirlpool Canada Co."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e61",
+   "claim": "Exhibit 21 lists Whirlpool Canada Holding Co. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Canada Holding Co.",
+    "F": "Whirlpool Canada Holding Co."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e62",
+   "claim": "Exhibit 21 lists Whirlpool Canada LP as a subsidiary.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Whirlpool Canada LP",
+    "B": "Whirlpool Canada Co./LP",
+    "D": "Whirlpool Canada LP",
+    "E": "Whirlpool Canada LP, organized in Ontario",
+    "F": "Whirlpool Canada LP"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e63",
+   "claim": "Exhibit 21 lists Whirlpool Canada Luxembourg Holdings as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Canada Luxembourg Holdings",
+    "F": "Whirlpool Canada Luxembourg Holdings"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e64",
+   "claim": "Exhibit 21 lists Whirlpool Certified Care, Inc. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Certified Care, Inc.",
+    "F": "Whirlpool Certified Care, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e65",
+   "claim": "Exhibit 21 lists Whirlpool Chile Limitada as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Chile Limitada",
+    "F": "Whirlpool Chile Limitada"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e66",
+   "claim": "Exhibit 21 lists Whirlpool Colômbia S.A.S. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Colômbia S.A.S.",
+    "D": "Whirlpool Colômbia S.A.S.",
+    "F": "Whirlpool Colômbia S.A.S."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e67",
+   "claim": "Exhibit 21 lists Whirlpool Comercial Ltda. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Comercial Ltda.",
+    "D": "Whirlpool Comercial Ltda.",
+    "F": "Whirlpool Comercial Ltda."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e68",
+   "claim": "Exhibit 21 lists Whirlpool Costa Rica SRL as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Costa Rica SRL",
+    "F": "Whirlpool Costa Rica SRL"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e69",
+   "claim": "Exhibit 21 lists Whirlpool CSA Holdings S.à r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool CSA Holdings S.à r.l.",
+    "F": "Whirlpool CSA Holdings S.à r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e70",
+   "claim": "Exhibit 21 lists Whirlpool do Brasil Ltda. as a subsidiary in Brazil.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Whirlpool do Brasil Ltda.",
+    "B": "Whirlpool do Brasil Ltda.",
+    "C": "Whirlpool do Brasil Ltda.",
+    "D": "Whirlpool do Brasil Ltda.",
+    "E": "Whirlpool do Brasil Ltda. as a subsidiary in Brazil",
+    "F": "Whirlpool do Brasil Ltda."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e71",
+   "claim": "Exhibit 21 lists Whirlpool Ecuador S.A. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Ecuador S.A.",
+    "F": "Whirlpool Ecuador S.A."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e72",
+   "claim": "Exhibit 21 lists Whirlpool EMEA Finance S.à r.l. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool EMEA Finance S.à r.l.",
+    "D": "Whirlpool EMEA Finance S.à r.l.",
+    "F": "Whirlpool EMEA Finance S.à r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e73",
+   "claim": "Exhibit 21 lists Whirlpool EMEA Holdings LLC as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool EMEA Holdings LLC",
+    "F": "Whirlpool EMEA Holdings LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e74",
+   "claim": "Exhibit 21 lists Whirlpool Enterprises, LLC as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Enterprises, LLC",
+    "F": "Whirlpool Enterprises, LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e75",
+   "claim": "Exhibit 21 lists Whirlpool Euro Holdings B.V. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Euro Holdings B.V. (Netherlands)",
+    "D": "Whirlpool Euro Holdings B.V.",
+    "F": "Whirlpool Euro Holdings B.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e76",
+   "claim": "Exhibit 21 lists Whirlpool Europe B.V. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Europe B.V. (Netherlands)",
+    "D": "Whirlpool Europe B.V.",
+    "F": "Whirlpool Europe B.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e77",
+   "claim": "Exhibit 21 lists Whirlpool Europe Holdings Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Europe Holdings Limited",
+    "F": "Whirlpool Europe Holdings Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e78",
+   "claim": "Exhibit 21 lists Whirlpool Finance Center Corp. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Finance Center Corp.",
+    "F": "Whirlpool Finance Center Corp."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e79",
+   "claim": "Exhibit 21 lists Whirlpool Finance Luxembourg S.à r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Finance Luxembourg S.à r.l.",
+    "F": "Whirlpool Finance Luxembourg S.à r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e80",
+   "claim": "Exhibit 21 lists Whirlpool Floor Care Corp. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Floor Care Corp.",
+    "F": "Whirlpool Floor Care Corp."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e81",
+   "claim": "Exhibit 21 lists Whirlpool GH Group LLC as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool GH Group LLC",
+    "F": "Whirlpool GH Group LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e82",
+   "claim": "Exhibit 21 lists Whirlpool Germany GmbH as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Germany GmbH",
+    "F": "Whirlpool Germany GmbH"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e83",
+   "claim": "Exhibit 21 lists Whirlpool Global Holdings as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Global Holdings",
+    "D": "Whirlpool Global Holdings",
+    "F": "Whirlpool Global Holdings"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e84",
+   "claim": "Exhibit 21 lists Whirlpool Guatemala, S.A. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Guatemala, S.A.",
+    "F": "Whirlpool Guatemala, S.A."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e85",
+   "claim": "Exhibit 21 lists Whirlpool Home Appliances LA, S. de R.L. de C.V. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Home Appliances LA, S. de R.L. de C.V.",
+    "F": "Whirlpool Home Appliances LA, S. de R.L. de C.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e86",
+   "claim": "Exhibit 21 lists Whirlpool India Holdings Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool India Holdings Limited",
+    "F": "Whirlpool India Holdings Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e87",
+   "claim": "Exhibit 21 lists Whirlpool Insurance Company, Ltd. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Insurance Company, Ltd. (Bermuda)",
+    "D": "Whirlpool Insurance Company, Ltd.",
+    "F": "Whirlpool Insurance Company, Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e88",
+   "claim": "Exhibit 21 lists Whirlpool Internacional S. de R.L. de C.V. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Internacional S. de R.L. de C.V.",
+    "F": "Whirlpool Internacional S. de R.L. de C.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e89",
+   "claim": "Exhibit 21 lists Whirlpool International GmbH as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool International GmbH (Switzerland)",
+    "D": "Whirlpool International GmbH",
+    "F": "Whirlpool International GmbH"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e90",
+   "claim": "Exhibit 21 lists Whirlpool International Holdings S.à r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool International Holdings S.à r.l.",
+    "F": "Whirlpool International Holdings S.à r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e91",
+   "claim": "Exhibit 21 lists Whirlpool International Manufacturing S.à r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool International Manufacturing S.à r.l.",
+    "F": "Whirlpool International Manufacturing S.à r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e92",
+   "claim": "Exhibit 21 lists Whirlpool Latin America Corporation as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Latin America Corporation",
+    "F": "Whirlpool Latin America Corporation"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e93",
+   "claim": "Exhibit 21 lists Whirlpool Luxembourg as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Luxembourg",
+    "D": "Whirlpool Luxembourg",
+    "F": "Whirlpool Luxembourg"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e94",
+   "claim": "Exhibit 21 lists Whirlpool MCA Holdings LLC as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool MCA Holdings LLC",
+    "F": "Whirlpool MCA Holdings LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e95",
+   "claim": "Exhibit 21 lists Whirlpool Mauritius Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Mauritius Limited",
+    "F": "Whirlpool Mauritius Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e96",
+   "claim": "Exhibit 21 lists Whirlpool Mexico, S. de R.L. de C.V. as a subsidiary in Mexico.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Whirlpool Mexico, S. de R.L. de C.V.",
+    "B": "Whirlpool Mexico",
+    "C": "other Whirlpool Mexico entities",
+    "D": "Whirlpool Mexico, S. de R.L. de C.V.",
+    "E": "Whirlpool Mexico, S. de R.L. de C.V. in Mexico",
+    "F": "Whirlpool Mexico, S. de R.L. de C.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e97",
+   "claim": "Exhibit 21 lists Whirlpool Mexico Holdings S. de R.L. de C.V. as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool Mexico Holdings",
+    "D": "Whirlpool Mexico Holdings S. de R.L. de C.V.",
+    "F": "Whirlpool Mexico Holdings S. de R.L. de C.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e98",
+   "claim": "Exhibit 21 lists Whirlpool Mexico Ventures S. de R.L. de C.V. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Mexico Ventures S. de R.L. de C.V.",
+    "F": "Whirlpool Mexico Ventures S. de R.L. de C.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e99",
+   "claim": "Exhibit 21 lists Whirlpool Microwave Products Development Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Microwave Products Development Limited",
+    "F": "Whirlpool Microwave Products Development Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e100",
+   "claim": "Exhibit 21 lists Whirlpool NAR Holdings, LLC as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool NAR Holdings, LLC",
+    "F": "Whirlpool NAR Holdings, LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e101",
+   "claim": "Exhibit 21 lists Whirlpool Oceania Inc. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Oceania Inc.",
+    "F": "Whirlpool Oceania Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e102",
+   "claim": "Exhibit 21 lists Whirlpool Overseas Holdings, LLC as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Overseas Holdings, LLC",
+    "F": "Whirlpool Overseas Holdings, LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e103",
+   "claim": "Exhibit 21 lists Whirlpool Overseas Hong Kong Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Overseas Hong Kong Limited",
+    "F": "Whirlpool Overseas Hong Kong Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e104",
+   "claim": "Exhibit 21 lists Whirlpool Overseas Manufacturing S.ár.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Overseas Manufacturing S.ár.l.",
+    "F": "Whirlpool Overseas Manufacturing S.ár.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e105",
+   "claim": "Exhibit 21 lists Whirlpool Peru S.R.L. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Peru S.R.L.",
+    "F": "Whirlpool Peru S.R.L."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e106",
+   "claim": "Exhibit 21 lists Whirlpool Polska Uslugi sp. z o.o as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Polska Uslugi sp. z o.o",
+    "F": "Whirlpool Polska Uslugi sp. z o.o"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e107",
+   "claim": "Exhibit 21 lists Whirlpool Product Development (Shenzhen) Company Limited as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Product Development (Shenzhen) Company Limited",
+    "F": "Whirlpool Product Development (Shenzhen) Company Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e108",
+   "claim": "Exhibit 21 lists Whirlpool Properties, Inc. as a subsidiary.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Whirlpool Properties, Inc. (Michigan)",
+    "D": "Whirlpool Properties, Inc.",
+    "F": "Whirlpool Properties, Inc."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e109",
+   "claim": "Exhibit 21 lists Whirlpool Realty Corporation as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Realty Corporation",
+    "F": "Whirlpool Realty Corporation"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e110",
+   "claim": "Exhibit 21 lists Whirlpool S.A. as a subsidiary in Brazil.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool S.A.",
+    "C": "Whirlpool S.A.",
+    "D": "Whirlpool S.A.",
+    "E": "Whirlpool S.A. as a subsidiary in Brazil",
+    "F": "Whirlpool S.A."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e111",
+   "claim": "Exhibit 21 lists Whirlpool South Africa (Proprietary) Limited as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Whirlpool South Africa",
+    "C": "Whirlpool South Africa",
+    "D": "Whirlpool South Africa (Proprietary) Limited",
+    "F": "Whirlpool South Africa (Proprietary) Limited"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e112",
+   "claim": "Exhibit 21 lists Whirlpool Southeast Asia Pte as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Southeast Asia Pte",
+    "F": "Whirlpool Southeast Asia Pte"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e113",
+   "claim": "Exhibit 21 lists Whirlpool Taiwan Co., Ltd. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Taiwan Co., Ltd.",
+    "F": "Whirlpool Taiwan Co., Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e114",
+   "claim": "Exhibit 21 lists Whirlpool Technologies, LLC as a subsidiary.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Whirlpool Technologies, LLC (Michigan)",
+    "D": "Whirlpool Technologies, LLC",
+    "F": "Whirlpool Technologies, LLC"
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e115",
+   "claim": "Exhibit 21 lists Whirlpool Technology Services S.r.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Technology Services S.r.l.",
+    "F": "Whirlpool Technology Services S.r.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e116",
+   "claim": "Exhibit 21 lists Whirlpool Uruguay S.R.L. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Uruguay S.R.L.",
+    "F": "Whirlpool Uruguay S.R.L."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e117",
+   "claim": "Exhibit 21 lists Whirlpool Worldwide Enterprises S.ár.l. as a subsidiary.",
+   "asserted_by": [
+    "D",
+    "F"
+   ],
+   "variants": {
+    "D": "Whirlpool Worldwide Enterprises S.ár.l.",
+    "F": "Whirlpool Worldwide Enterprises S.ár.l."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "e118",
+   "claim": "Exhibit 21 lists Xpelair Ltd as a subsidiary.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Xpelair Ltd (UK)",
+    "C": "Xpelair Ltd (UK)",
+    "D": "Xpelair Ltd.",
+    "F": "Xpelair Ltd."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "i1",
+   "claim": "Whirlpool of India was deconsolidated after Whirlpool's stake reduction in Nov 2025, so it is not a consolidated subsidiary.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "A": "Deconsolidated Whirlpool of India Limited following its November 2025 stake reduction; should not be treated as a consolidated subsidiary.",
+    "C": "Sale reduced ownership and deconsolidated Whirlpool of India (Nov 27, 2025).",
+    "D": "Whirlpool India was deconsolidated.",
+    "E": "Deconsolidated Whirlpool India during Q4 2025 after losing a controlling financial interest."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "i2",
+   "claim": "Whirlpool's ownership of Whirlpool India fell from 51% to approximately 40%.",
+   "asserted_by": [
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "C": "Sale of 14.3 million shares by Whirlpool Mauritius Limited on Nov 27, 2025 reduced ownership from 51% to approx. 40%.",
+    "D": "Transaction reduced ownership from 51% to approximately 40%."
+   },
+   "urls": [
+    "https://s202.q4cdn.com/229739679/files/doc_financials/2025/ar/Whirlpool-2025-10K.pdf",
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/r18.htm",
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "i2",
+    "i3"
+   ]
+  },
+  {
+   "cid": "i4",
+   "claim": "As of the Sept 30, 2026 filing, Whirlpool holds a 40% equity-method interest in Whirlpool India rather than a controlled subsidiary.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Reports a 40% equity-method interest in Whirlpool India rather than a controlled subsidiary."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "i5",
+   "claim": "Whirlpool of India Limited is not on the FY2025 Exhibit 21 list.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Whirlpool of India Limited is not on the list; Whirlpool cut its stake during 2025."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "i6",
+   "claim": "The fair value of the retained Whirlpool of India investment at deconsolidation was $599 million (Level 1), with gross proceeds of about $166 million.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Fair value of retained investment $599 million (Level 1), gross proceeds about $166 million; ~40% equity-method investment."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/r18.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "i7",
+   "claim": "In 2024 Whirlpool reduced its Whirlpool of India ownership from 75% to 51%.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "In 2024, reduced ownership from 75% to 51% through a market transaction."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "i8",
+   "claim": "Operations previously in the MDA Asia segment are no longer reported as a segment following the India transaction.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "MDA Asia segment operations are no longer reported as a segment."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "i9",
+   "claim": "Whirlpool India held 100% of Elica PB India, which was also deconsolidated in the transaction.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Whirlpool India held 100% controlling equity ownership in Elica PB India, also deconsolidated."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "i9",
+    "i10"
+   ]
+  },
+  {
+   "cid": "b1",
+   "claim": "Whirlpool's European MDA business was contributed to Beko Europe B.V. on April 1, 2024 in the Arcelik transaction, and the MENA business was sold.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Contributed to Beko Europe B.V. on April 1, 2024; MENA business sold as part of the deal."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/r18.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "b2",
+   "claim": "Whirlpool holds a 25% equity interest in Beko Europe, fair value at deconsolidation $186 million (Level 3, DCF, 15.5% discount rate).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "25% equity interest; fair value $186 million (Level 3, 15.5% discount rate)."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/r18.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "b3",
+   "claim": "In June 2026 Whirlpool agreed with Arcelik to sell its remaining 25% interest in Beko Europe B.V.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "In June 2026, executed an agreement with Arcelik to sell its remaining 25% ownership interest in Beko Europe B.V."
+   },
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "b4",
+   "claim": "Beko Europe is not a Whirlpool subsidiary and is not on the Exhibit 21 list; Whirlpool owns part of it.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Whirlpool owns part of Beko Europe, but it is not a subsidiary and is not on the list."
+   },
+   "urls": [
+    ""
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "b5",
+   "claim": "Whirlpool India, Whirlpool China and Beko Europe are discussed as minority/equity-method investments following changes in control, not in the formal List of Subsidiaries.",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "F": "10-K discusses Whirlpool India, China and Beko Europe separately as minority/equity-method investments, not as entries in the List of Subsidiaries."
+   },
+   "urls": [
+    "https://s202.q4cdn.com/229739679/files/doc_financials/2025/ar/Whirlpool-2025-10K.pdf",
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "b5",
+    "b6"
+   ]
+  },
+  {
+   "cid": "o1",
+   "claim": "Whirlpool will continue to evaluate options to reduce debt throughout 2026, so further divestitures could change the subsidiary roster.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Will continue to evaluate all options to further reduce debt throughout 2026; further India stake reduction or divestitures could change the roster."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "o2",
+   "claim": "Q1 2026 10-Q: consolidated net sales fell 9.6% year over year, driven by Whirlpool of India deconsolidation, North American demand decline and unfavorable price/mix, partly offset by favorable Latin America currency.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Net sales decreased 9.6% for the three months ended March 31, 2026, driven primarily by deconsolidation of Whirlpool of India, NA demand decline and unfavorable price/mix, partially offset by favorable currency in Latin America."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000036/whr-20260331.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "o3",
+   "claim": "Yummly, Inc. (Delaware) and Yummly Canada Ltd. (British Columbia), listed in the FY2023 Exhibit 21, no longer appear in the FY2025 list as the recipe-app business was divested.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Yummly entities last listed in FY2023 Exhibit 21 no longer appear; recipe-app business divested."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "o4",
+   "claim": "Quarterly 10-Q reports do not publish a new subsidiary exhibit, so post-Dec 31, 2025 changes would not appear in Exhibit 21.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "10-Q interim reports do not publish a new subsidiary exhibit, so 2026 additions, closures or name changes are not reflected."
+   },
+   "urls": [
+    "https://sec.gov/Archives/edgar/data/106640/000010664026000036/whr-20260331.htm"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/0000106640-26-000009-index.htm",
+   "note": "The EDGAR index shows a 10-K filed 2026-02-11 for the period ending 2025-12-31, with an EX-21 document.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/0000106640-26-000009-index.htm",
+   "note": "The EDGAR index gives SEC Accession No. 0000106640-26-000009.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "The table columns are 'Subsidiary Name' and 'Jurisdiction in Which Organized'.",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000036/whr-20260331.htm",
+   "note": "The list is a December 31, 2025 snapshot. Whirlpool India was deconsolidated in Q4 2025, so later structural changes are possible.",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "The table has only name and jurisdiction columns, with no ownership percentage or direct/indirect designation.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "KitchenAid, InSinkErator and Maytag entities appear, along with many holding and finance entities. An Amana entity is not visible in the excerpts.",
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "The excerpts show Luxembourg, Netherlands, China, Hong Kong, India, Canada, Poland, Singapore, Taiwan, UAE, Germany, Sweden and others. Bermuda, Mauritius and Switzerland are plausible but not shown.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Chile, Ecuador, Peru, Costa Rica and Argentina are seen. Uruguay and Guatemala are not visible but are likely in the list.",
+   "via": "passages"
+  },
+  "e1": {
+   "cid": "e1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "1900 Holdings LLC (Delaware) is the first row of the list.",
+   "via": "passages"
+  },
+  "e2": {
+   "cid": "e2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Airdun Limited (United Kingdom) is listed.",
+   "via": "passages"
+  },
+  "e3": {
+   "cid": "e3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "B. Blend Máquinas e Bebidas S.A. (Brazil) is listed.",
+   "via": "passages"
+  },
+  "e4": {
+   "cid": "e4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "BUD Comércio de Eletrodomésticos Ltda. (Brazil) is listed.",
+   "via": "passages"
+  },
+  "e5": {
+   "cid": "e5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "FY2025 10-K Exhibit 21 lists Bill Page Orchestra, Inc. (California).",
+   "via": "passages"
+  },
+  "e6": {
+   "cid": "e6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Brasmotor Ltda. (Brazil).",
+   "via": "passages"
+  },
+  "e7": {
+   "cid": "e7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Brunson Place Properties, LLC (Michigan).",
+   "via": "passages"
+  },
+  "e8": {
+   "cid": "e8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Chieri Italia S.r.l. (Italy).",
+   "via": "passages"
+  },
+  "e9": {
+   "cid": "e9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Comercial Acros Whirlpool, S. de R.L. de C.V. (Mexico).",
+   "via": "passages"
+  },
+  "e10": {
+   "cid": "e10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Consumer Appliances Service Limited (Hong Kong).",
+   "via": "passages"
+  },
+  "e11": {
+   "cid": "e11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists General Domestic Appliances International Ltd (UK).",
+   "via": "passages"
+  },
+  "e12": {
+   "cid": "e12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Haceb Whirlpool Industrias S.A.S. (Colombia).",
+   "via": "passages"
+  },
+  "e13": {
+   "cid": "e13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Hoover Comercial Limitada (Brazil).",
+   "via": "passages"
+  },
+  "e14": {
+   "cid": "e14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Indesit Argentina S.A. (Argentina).",
+   "via": "passages"
+  },
+  "e15": {
+   "cid": "e15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Industrias Acros Whirlpool, S. de R.L. de C.V. (Mexico).",
+   "via": "passages"
+  },
+  "e16": {
+   "cid": "e16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists InSinkErator Appliance (Nanjing) Co. Ltd. (China).",
+   "via": "passages"
+  },
+  "e17": {
+   "cid": "e17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists InSinkErator (Australia) Pty. Ltd.",
+   "via": "passages"
+  },
+  "e18": {
+   "cid": "e18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists InSinkErator Canada Co. (Nova Scotia).",
+   "via": "passages"
+  },
+  "e19": {
+   "cid": "e19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists InSinkErator LLC (Delaware); the brand is also named in the 2026 10-Q.",
+   "via": "passages"
+  },
+  "e20": {
+   "cid": "e20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 of FY2025 10-K lists InSinkErator Trading (Shanghai) Co. Ltd., China.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e21": {
+   "cid": "e21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists InSinkErator UK Ltd., UK.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e22": {
+   "cid": "e22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Australia, Pty Ltd.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e23": {
+   "cid": "e23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Europa, Inc., Delaware.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e24": {
+   "cid": "e24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid FSA Group LLC, Delaware.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e25": {
+   "cid": "e25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid France SAS.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e26": {
+   "cid": "e26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Germany GmbH.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e27": {
+   "cid": "e27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid, Inc., Ohio.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e28": {
+   "cid": "e28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Global LLC, Delaware.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e29": {
+   "cid": "e29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Korea Limited, S Korea.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e30": {
+   "cid": "e30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid MEEA DMCC, UAE.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e31": {
+   "cid": "e31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Netherlands B.V.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e32": {
+   "cid": "e32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Promotions, LLC, Michigan.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e33": {
+   "cid": "e33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Sweden Aktiebolag.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e34": {
+   "cid": "e34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists KitchenAid Trading Co., Ltd., China.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "e35": {
+   "cid": "e35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 to the FY2025 10-K lists KitchenAid UK Limited (UK).",
+   "via": "passages"
+  },
+  "e36": {
+   "cid": "e36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists MLOG Armazém Geral Ltda. (Brazil).",
+   "via": "passages"
+  },
+  "e37": {
+   "cid": "e37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Maytag Limited (Ontario).",
+   "via": "passages"
+  },
+  "e38": {
+   "cid": "e38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Maytag Properties, LLC (Michigan).",
+   "via": "passages"
+  },
+  "e39": {
+   "cid": "e39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Maytag Sales, Inc. (Delaware).",
+   "via": "passages"
+  },
+  "e40": {
+   "cid": "e40",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Maytag Worldwide N.V. (Curaçao).",
+   "via": "passages"
+  },
+  "e41": {
+   "cid": "e41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Nineteen Hundred Corporation (New York).",
+   "via": "passages"
+  },
+  "e42": {
+   "cid": "e42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Parex Industries Ltd. (New Zealand).",
+   "via": "passages"
+  },
+  "e43": {
+   "cid": "e43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists South American Sales Partnership (Florida).",
+   "via": "passages"
+  },
+  "e44": {
+   "cid": "e44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists THC Assets Corporation (Delaware).",
+   "via": "passages"
+  },
+  "e45": {
+   "cid": "e45",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists WCGP Nova Scotia Co. (Nova Scotia).",
+   "via": "passages"
+  },
+  "e46": {
+   "cid": "e46",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool America LLC (Delaware).",
+   "via": "passages"
+  },
+  "e47": {
+   "cid": "e47",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool (Australia) Pty. Limited (Australia).",
+   "via": "passages"
+  },
+  "e48": {
+   "cid": "e48",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool (B.V.I.) Limited (British Virgin Islands).",
+   "via": "passages"
+  },
+  "e49": {
+   "cid": "e49",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool (China) Investment Co., Ltd. (China); the 10-K notes Whirlpool China is now an equity-method investment, but this entity is still listed in Exhibit 21.",
+   "via": "passages"
+  },
+  "e50": {
+   "cid": "e50",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 to the FY2025 10-K lists Whirlpool (Hefei) Trading Co., Ltd (China).",
+   "via": "passages"
+  },
+  "e51": {
+   "cid": "e51",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool (Hong Kong) Limited (Hong Kong).",
+   "via": "passages"
+  },
+  "e52": {
+   "cid": "e52",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool (Thailand) Limited (Thailand).",
+   "via": "passages"
+  },
+  "e53": {
+   "cid": "e53",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Argentina S.r.l. (Argentina).",
+   "via": "passages"
+  },
+  "e54": {
+   "cid": "e54",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool ASEAN Co. (Delaware).",
+   "via": "passages"
+  },
+  "e55": {
+   "cid": "e55",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Asia B.V. (Netherlands).",
+   "via": "passages"
+  },
+  "e56": {
+   "cid": "e56",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Asia Holdings S.à r.l. (Luxembourg).",
+   "via": "passages"
+  },
+  "e57": {
+   "cid": "e57",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Asia Inc. (Delaware).",
+   "via": "passages"
+  },
+  "e58": {
+   "cid": "e58",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Asia LLP, organized in India.",
+   "via": "passages"
+  },
+  "e59": {
+   "cid": "e59",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Bangladesh Limited (Bangladesh).",
+   "via": "passages"
+  },
+  "e60": {
+   "cid": "e60",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Canada Co. (Nova Scotia); variant B 'Co./LP' is a loose combination of two separately listed entities.",
+   "via": "passages"
+  },
+  "e61": {
+   "cid": "e61",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Canada Holding Co. (Nova Scotia).",
+   "via": "passages"
+  },
+  "e62": {
+   "cid": "e62",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Canada LP (Ontario).",
+   "via": "passages"
+  },
+  "e63": {
+   "cid": "e63",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Canada Luxembourg Holdings (Luxembourg).",
+   "via": "passages"
+  },
+  "e64": {
+   "cid": "e64",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Certified Care, Inc. (Arizona).",
+   "via": "passages"
+  },
+  "e65": {
+   "cid": "e65",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 to the FY2025 10-K lists Whirlpool Chile Limitada (Chile).",
+   "via": "passages"
+  },
+  "e66": {
+   "cid": "e66",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Colômbia S.A.S. (Colombia).",
+   "via": "passages"
+  },
+  "e67": {
+   "cid": "e67",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Comercial Ltda. (Brazil).",
+   "via": "passages"
+  },
+  "e68": {
+   "cid": "e68",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Costa Rica SRL (Costa Rica).",
+   "via": "passages"
+  },
+  "e69": {
+   "cid": "e69",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool CSA Holdings S.à r.l. (Luxembourg).",
+   "via": "passages"
+  },
+  "e70": {
+   "cid": "e70",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool do Brasil Ltda. with jurisdiction Brazil.",
+   "via": "passages"
+  },
+  "e71": {
+   "cid": "e71",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Ecuador S.A. (Ecuador).",
+   "via": "passages"
+  },
+  "e72": {
+   "cid": "e72",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool EMEA Finance S.à r.l. (Luxembourg).",
+   "via": "passages"
+  },
+  "e73": {
+   "cid": "e73",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool EMEA Holdings LLC (Delaware).",
+   "via": "passages"
+  },
+  "e74": {
+   "cid": "e74",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Enterprises, LLC (Delaware).",
+   "via": "passages"
+  },
+  "e75": {
+   "cid": "e75",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Euro Holdings B.V. (Netherlands).",
+   "via": "passages"
+  },
+  "e76": {
+   "cid": "e76",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Europe B.V. (Netherlands); also a borrower under the 2026 credit agreement.",
+   "via": "passages"
+  },
+  "e77": {
+   "cid": "e77",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Europe Holdings Limited (Delaware).",
+   "via": "passages"
+  },
+  "e78": {
+   "cid": "e78",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Finance Center Corp. (Delaware).",
+   "via": "passages"
+  },
+  "e79": {
+   "cid": "e79",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Finance Luxembourg S.à r.l. (Luxembourg); the Q3 2026 10-Q also references its notes.",
+   "via": "passages"
+  },
+  "e80": {
+   "cid": "e80",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 of the FY2025 10-K lists Whirlpool Floor Care Corp. (Delaware).",
+   "via": "passages"
+  },
+  "e81": {
+   "cid": "e81",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool GH Group LLC (Delaware).",
+   "via": "passages"
+  },
+  "e82": {
+   "cid": "e82",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Germany GmbH (Germany).",
+   "via": "passages"
+  },
+  "e83": {
+   "cid": "e83",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Global Holdings (Luxembourg).",
+   "via": "passages"
+  },
+  "e84": {
+   "cid": "e84",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Guatemala, S.A. (Guatemala).",
+   "via": "passages"
+  },
+  "e85": {
+   "cid": "e85",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Home Appliances LA, S. de R.L. de C.V. (Mexico).",
+   "via": "passages"
+  },
+  "e86": {
+   "cid": "e86",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool India Holdings Limited (Delaware); Whirlpool India itself was deconsolidated, but the holding entity is listed.",
+   "via": "passages"
+  },
+  "e87": {
+   "cid": "e87",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Insurance Company, Ltd. (Bermuda).",
+   "via": "passages"
+  },
+  "e88": {
+   "cid": "e88",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Internacional S. de R.L. de C.V. (Mexico).",
+   "via": "passages"
+  },
+  "e89": {
+   "cid": "e89",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool International GmbH (Switzerland).",
+   "via": "passages"
+  },
+  "e90": {
+   "cid": "e90",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool International Holdings S.à r.l. (Luxembourg).",
+   "via": "passages"
+  },
+  "e91": {
+   "cid": "e91",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool International Manufacturing S.à r.l. (Luxembourg).",
+   "via": "passages"
+  },
+  "e92": {
+   "cid": "e92",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Latin America Corporation (Delaware).",
+   "via": "passages"
+  },
+  "e93": {
+   "cid": "e93",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Luxembourg (Luxembourg).",
+   "via": "passages"
+  },
+  "e94": {
+   "cid": "e94",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool MCA Holdings LLC (Delaware).",
+   "via": "passages"
+  },
+  "e95": {
+   "cid": "e95",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 to the FY2025 10-K lists Whirlpool Mauritius Limited (Mauritius); the Q3 2026 10-Q still calls it a wholly-owned subsidiary.",
+   "via": "passages"
+  },
+  "e96": {
+   "cid": "e96",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Mexico, S. de R.L. de C.V. (Mexico).",
+   "via": "passages"
+  },
+  "e97": {
+   "cid": "e97",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Mexico Holdings S. de R.L. de C.V. (Mexico).",
+   "via": "passages"
+  },
+  "e98": {
+   "cid": "e98",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Mexico Ventures S. de R.L. de C.V. (Mexico).",
+   "via": "passages"
+  },
+  "e99": {
+   "cid": "e99",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Microwave Products Development Limited (Hong Kong).",
+   "via": "passages"
+  },
+  "e100": {
+   "cid": "e100",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool NAR Holdings, LLC (Delaware).",
+   "via": "passages"
+  },
+  "e101": {
+   "cid": "e101",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Oceania Inc. (Delaware).",
+   "via": "passages"
+  },
+  "e102": {
+   "cid": "e102",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Overseas Holdings, LLC (Delaware).",
+   "via": "passages"
+  },
+  "e103": {
+   "cid": "e103",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Overseas Hong Kong Limited (Hong Kong).",
+   "via": "passages"
+  },
+  "e104": {
+   "cid": "e104",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Overseas Manufacturing S.ár.l. (Luxembourg).",
+   "via": "passages"
+  },
+  "e105": {
+   "cid": "e105",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Peru S.R.L. (Peru).",
+   "via": "passages"
+  },
+  "e106": {
+   "cid": "e106",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Polska Uslugi sp. z o.o (Poland).",
+   "via": "passages"
+  },
+  "e107": {
+   "cid": "e107",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Product Development (Shenzhen) Company Limited (China).",
+   "via": "passages"
+  },
+  "e108": {
+   "cid": "e108",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Properties, Inc. (Michigan).",
+   "via": "passages"
+  },
+  "e109": {
+   "cid": "e109",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Realty Corporation (Delaware).",
+   "via": "passages"
+  },
+  "e110": {
+   "cid": "e110",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool S.A., Brazil.",
+   "via": "passages"
+  },
+  "e111": {
+   "cid": "e111",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool South Africa (Proprietary) Limited.",
+   "via": "passages"
+  },
+  "e112": {
+   "cid": "e112",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Southeast Asia Pte, Singapore.",
+   "via": "passages"
+  },
+  "e113": {
+   "cid": "e113",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Taiwan Co., Ltd.",
+   "via": "passages"
+  },
+  "e114": {
+   "cid": "e114",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Technologies, LLC (Michigan).",
+   "via": "passages"
+  },
+  "e115": {
+   "cid": "e115",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Exhibit 21 lists Whirlpool Technology Services S.r.l., Italy.",
+   "via": "passages"
+  },
+  "e116": {
+   "cid": "e116",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "The Exhibit 21 table shows Whirlpool U... entries following Technology Services; Uruguay S.R.L. is plausible and consistent with Whirlpool's Uruguay presence, though the snippet is truncated.",
+   "via": "passages"
+  },
+  "e117": {
+   "cid": "e117",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Whirlpool Worldwide Enterprises S.ár.l. is on the Exhibit 21 list per two independent systems; the snippet is truncated, so confidence is medium.",
+   "via": "passages"
+  },
+  "e118": {
+   "cid": "e118",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "Xpelair Ltd is on the Exhibit 21 list per four systems; the snippet is truncated, so confidence is medium.",
+   "via": "passages"
+  },
+  "i1": {
+   "cid": "i1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The filing says Whirlpool deconsolidated Whirlpool India in Q4 2025 after losing a controlling financial interest.",
+   "via": "passages"
+  },
+  "i2": {
+   "cid": "i2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The filing says ownership fell from 51% to approximately 40%.",
+   "via": "passages",
+   "label_verdicts": {
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "i4": {
+   "cid": "i4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The filing describes a retained investment with basis difference and equity method goodwill, consistent with an equity-method interest of about 40%, not a controlled subsidiary.",
+   "via": "passages"
+  },
+  "i5": {
+   "cid": "i5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "The Exhibit 21 excerpts show Whirlpool India Holdings Limited and Whirlpool Asia LLP but no Whirlpool of India Limited, consistent with deconsolidation.",
+   "via": "passages"
+  },
+  "i6": {
+   "cid": "i6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The filing gives $599 million fair value of the retained interest (Level 1) and $166 million of sale proceeds.",
+   "via": "passages"
+  },
+  "i7": {
+   "cid": "i7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm",
+   "note": "The 10-K confirms the Feb 2024 market sale cut ownership from 75% to 51%. It is background on a stake that has since fallen to about 40%.",
+   "via": "passages"
+  },
+  "i8": {
+   "cid": "i8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm",
+   "note": "The 10-K says MDA Asia is no longer reported as a segment because Whirlpool India was deconsolidated.",
+   "via": "passages"
+  },
+  "i9": {
+   "cid": "i9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The filing says Whirlpool India holds 100% of Elica PB India and that it was deconsolidated in the transaction. This is a former subsidiary, not a current one.",
+   "via": "passages",
+   "label_verdicts": {
+    "E": "true"
+   }
+  },
+  "b1": {
+   "cid": "b1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm",
+   "note": "The 10-K says that in April 2024 the MENA business was sold and the European MDA business was contributed to Beko Europe.",
+   "via": "passages"
+  },
+  "b2": {
+   "cid": "b2",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The 25% stake was agreed to be sold in June 2026 and the Q3 2026 table shows 0% ownership, so the present-tense claim is stale. The $186M fair value and 15.5% rate are not in the passages.",
+   "via": "passages"
+  },
+  "b3": {
+   "cid": "b3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The Q3 2026 10-Q confirms the June 2026 agreement with Arcelik to sell the remaining 25% of Beko Europe.",
+   "via": "passages"
+  },
+  "b4": {
+   "cid": "b4",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "Beko Europe is not a subsidiary and is not on Exhibit 21. But 'Whirlpool owns part of it' is out of date, because the stake was sold in June 2026 and the Q3 2026 table shows 0% ownership.",
+   "via": "passages"
+  },
+  "b5": {
+   "cid": "b5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://sec.gov/Archives/edgar/data/106640/000010664026000009/whr-20251231.htm",
+   "note": "The 10-K calls Whirlpool India, Beko Europe and Whirlpool China minority holdings. They are equity-method investments, and Exhibit 21 does not list them as subsidiaries.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "C": "true"
+   }
+  },
+  "o1": {
+   "cid": "o1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000077/whr-20260930.htm",
+   "note": "The Q3 2026 10-Q repeats the intent to evaluate all options to reduce debt throughout 2026. The roster implication is an inference.",
+   "via": "passages"
+  },
+  "o2": {
+   "cid": "o2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/106640/000010664026000036/whr-20260331.htm",
+   "note": "The Q1 2026 10-Q says net sales fell 9.6% for the reasons stated. It is a stale quarter and not about subsidiaries.",
+   "via": "passages"
+  },
+  "o4": {
+   "cid": "o4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://sec.gov/Archives/edgar/data/106640/000010664026000036/whr-20260331.htm",
+   "note": "The Q1 2026 10-Q exhibit list shows no subsidiary list, which is consistent with Exhibit 21 appearing only in the annual 10-K.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "I counted 118 entity rows in the saved Exhibit 21 table, excluding header and separator rows.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "The list has 118 rows, not roughly 117. The count is close, but the claim understates it by one.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "The FY2025 list has 118 entities, not 113. The cited 10-K PDF does not state 113.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "o3": {
+   "cid": "o3",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000009/exb21listofsubsidiaries123.htm",
+   "note": "No Yummly entity appears in the FY2025 list, but searches show Yummly was shut down in Dec 2024, not divested. I could not check whether the FY2023 Exhibit 21 listed it.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "note": "FY2025 Ex.21 includes entities in all of these jurisdictions: US states, Brazil, Mexico, Luxembourg, Netherlands, China, HK, India, Canada, Argentina, Colombia, Chile, Peru, Ecuador, Uruguay, Guatemala, Costa Rica, Bangladesh, Thailand, Singapore, Taiwan, Australia, NZ, UK, Germany, Italy, Sweden, P"
+  },
+  "e11": {
+   "cid": "e11",
+   "verdict": "true",
+   "note": "Listed; jurisdiction UK"
+  },
+  "e26": {
+   "cid": "e26",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Germany"
+  },
+  "e35": {
+   "cid": "e35",
+   "verdict": "true",
+   "note": "Listed; jurisdiction UK"
+  },
+  "e36": {
+   "cid": "e36",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Brazil"
+  },
+  "e48": {
+   "cid": "e48",
+   "verdict": "true",
+   "note": "Listed; jurisdiction British Virgin Islands"
+  },
+  "e51": {
+   "cid": "e51",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Hong Kong"
+  },
+  "e58": {
+   "cid": "e58",
+   "verdict": "true",
+   "note": "Whirlpool Asia LLP is listed; jurisdiction India"
+  },
+  "e59": {
+   "cid": "e59",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Bangladesh"
+  },
+  "e70": {
+   "cid": "e70",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Brazil"
+  },
+  "e72": {
+   "cid": "e72",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Luxembourg"
+  },
+  "e73": {
+   "cid": "e73",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Delaware"
+  },
+  "e74": {
+   "cid": "e74",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Delaware"
+  },
+  "e79": {
+   "cid": "e79",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Luxembourg"
+  },
+  "e86": {
+   "cid": "e86",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Delaware"
+  },
+  "e89": {
+   "cid": "e89",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Switzerland"
+  },
+  "e106": {
+   "cid": "e106",
+   "verdict": "true",
+   "note": "Listed; jurisdiction Poland"
+  },
+  "e117": {
+   "cid": "e117",
+   "verdict": "true",
+   "note": "Listed as 'Whirlpool Worldwide Enterprises S.ár.l' (no final period); jurisdiction Luxembourg"
+  },
+  "i5": {
+   "cid": "i5",
+   "verdict": "true",
+   "note": "Not on the FY2025 Ex.21 list. Whirlpool cut its stake from 51% to about 40% on Nov 27–28, 2025 and deconsolidated the company"
+  },
+  "i10": {
+   "cid": "i10",
+   "verdict": "true",
+   "note": "Q3 2026 10-Q: the sale completed Nov 28, 2025, and Elica PB India (100% owned by Whirlpool India) was deconsolidated with Whirlpool India in Q4 2025. The deconsolidation date given is Dec 1, 2025"
+  },
+  "b5": {
+   "cid": "b5",
+   "verdict": "true",
+   "note": "The FY2025 10-K calls Whirlpool India, Beko Europe and Whirlpool China minority holdings; none is on Ex.21"
+  },
+  "b6": {
+   "cid": "b6",
+   "verdict": "true",
+   "note": "True at YE2025 (Beko 25%, India ~40%, China). Since then the Beko stake was sold to Arcelik in June 2026, so current equity-method holdings are China and India"
+  },
+  "o4": {
+   "cid": "o4",
+   "verdict": "true",
+   "note": "Exhibit 21 is required only with the 10-K. The 2026 10-Qs have no subsidiary list"
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 145,
+ "scores": {
+  "gpt": {
+   "units": 17,
+   "unverifiable": 0,
+   "true": 17,
+   "wrong": 0,
+   "truth": 141,
+   "truth_weight": 408.75,
+   "coverage": 0.123,
+   "accuracy": 1.0,
+   "combined": 0.22,
+   "thorough_coverage": 0.149,
+   "answer_truth": 127,
+   "thoroughness": 0.259,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 56,
+   "unverifiable": 0,
+   "true": 55,
+   "wrong": 1,
+   "truth": 141,
+   "truth_weight": 408.75,
+   "coverage": 0.392,
+   "accuracy": 0.98,
+   "combined": 0.56,
+   "thorough_coverage": 0.365,
+   "answer_truth": 127,
+   "thoroughness": 0.532,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 46,
+   "unverifiable": 0,
+   "true": 43,
+   "wrong": 3,
+   "truth": 141,
+   "truth_weight": 408.75,
+   "coverage": 0.286,
+   "accuracy": 0.972,
+   "combined": 0.442,
+   "thorough_coverage": 0.294,
+   "answer_truth": 127,
+   "thoroughness": 0.452,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 124,
+   "unverifiable": 0,
+   "true": 124,
+   "wrong": 0,
+   "truth": 141,
+   "truth_weight": 408.75,
+   "coverage": 0.944,
+   "accuracy": 1.0,
+   "combined": 0.971,
+   "thorough_coverage": 0.894,
+   "answer_truth": 127,
+   "thoroughness": 0.944,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 18,
+   "unverifiable": 0,
+   "true": 18,
+   "wrong": 0,
+   "truth": 141,
+   "truth_weight": 408.75,
+   "coverage": 0.162,
+   "accuracy": 1.0,
+   "combined": 0.278,
+   "thorough_coverage": 0.159,
+   "answer_truth": 127,
+   "thoroughness": 0.274,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 124,
+   "unverifiable": 0,
+   "true": 123,
+   "wrong": 1,
+   "truth": 141,
+   "truth_weight": 408.75,
+   "coverage": 0.901,
+   "accuracy": 0.998,
+   "combined": 0.947,
+   "thorough_coverage": 0.84,
+   "answer_truth": 127,
+   "thoroughness": 0.912,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 3.272,
+ "corrections_v2": {
+  "units_before": 149,
+  "units_after": 146,
+  "dedup_groups": [
+   {
+    "kept": "i2",
+    "merged": [
+     "i3"
+    ]
+   },
+   {
+    "kept": "i9",
+    "merged": [
+     "i10"
+    ]
+   },
+   {
+    "kept": "b5",
+    "merged": [
+     "b6"
+    ]
+   }
+  ],
+  "cost": 0.05
+ }
+}

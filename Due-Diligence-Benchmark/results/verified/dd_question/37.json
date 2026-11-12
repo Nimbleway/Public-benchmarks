@@ -1,0 +1,1000 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 37,
+ "task": "What is Tonix Pharmaceuticals' short interest?",
+ "labels": {
+  "gpt": "A",
+  "firecrawl": "B",
+  "parallel": "C",
+  "nimble": "D",
+  "opus": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 9,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Tonix (TNXP) had 3,318,461 shares sold short as of the Oct 30, 2026 settlement date.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "3,318,461 shares sold short as of the October 30, 2026 settlement date.",
+    "D": "3,318,461 shares short as of the FINRA settlement date of Oct 30, 2026.",
+    "E": "As of the October 30, 2026 FINRA settlement date, 3,318,461 shares were sold short.",
+    "F": "3,318,461 shares sold short as of the October 30, 2026 settlement date."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/",
+    "https://equibles.com/stocks/tnxp/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Oct 30, 2026 short interest was 19.42% of float.",
+   "asserted_by": [
+    "A",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "3,318,461 shares represented 19.42% of its float as of Oct 30, 2026.",
+    "E": "a short interest of 19.42% of float.",
+    "F": "Short interest was 19.42% of its float as of October 30, 2026."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/"
+   ],
+   "conflicts_with": [
+    "c3"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Oct 30, 2026 short interest was 19.42% of shares outstanding (per ChartExchange).",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "3,318,461 shares short, equal to 19.42% of shares outstanding per ChartExchange."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   ],
+   "conflicts_with": [
+    "c2"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "Days to cover was 4.14 as of Oct 30, 2026.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Days-to-cover ratio was 4.14 as of Oct 30, 2026.",
+    "D": "Days-to-cover as of the Oct 30, 2026 settlement was 4.14 per ChartExchange.",
+    "E": "4.14 days to cover as of October 30, 2026."
+   },
+   "urls": [
+    "https://altindex.com/ticker/tnxp/short-interest",
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/",
+    "https://equibles.com/stocks/tnxp/short-interest"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c4",
+    "c5",
+    "c18"
+   ]
+  },
+  {
+   "cid": "c6",
+   "claim": "Short interest rose by 377,753 shares (+12.85%) from the Oct 15 to the Oct 30, 2026 settlement.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "A": "Increased by 377,753 shares, or 12.85%, from Oct 15 to Oct 30, 2026.",
+    "D": "Rose by 377,753 shares (+12.85%) from the prior Oct 15, 2026 settlement.",
+    "E": "Rose by 377,753 shares (+12.85%) from October 15 to October 30, 2026.",
+    "F": "Increased by 377,753 shares as of the October 30, 2026 settlement date."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/",
+    "https://equibles.com/stocks/tnxp/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Float is 17,089,771 shares.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Uses a float of 17,089,771.",
+    "E": "Float is about 17,089,771 shares (roughly 17.09 million)."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Shares outstanding are 17,151,024.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Uses 17,151,024 shares outstanding.",
+    "E": "Has 17,151,024 shares outstanding."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c9",
+   "claim": "2,940,708 shares were short as of the Oct 15, 2026 settlement.",
+   "asserted_by": [
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "2,940,708 shares sold short (about 2.94 million) as of October 15, 2026.",
+    "C": "2,940,708 shares short as of October 15, 2026, the latest verified report.",
+    "D": "Oct 15, 2026 settlement was 2,940,708 shares.",
+    "E": "As of October 15, 2026, 2,940,708 shares were short."
+   },
+   "urls": [
+    "https://altindex.com/ticker/tnxp/short-interest",
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+    "https://www.chartmill.com/stock/quote/TNXP/ownership/short-interest"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c9",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Oct 15, 2026 short interest was 17.21% of float.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "17.21% of float."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Oct 15, 2026 short interest was 17.21% of shares outstanding.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "2,940,708 shares, or 17.21% of shares outstanding."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "ChartExchange reports Oct 15, 2026 short interest of 17.21%, labeled 'Short Interest %' with no explicit denominator.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "ChartExchange reports 17.21% as of October 15, 2026."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "ChartExchange's 17.21% should not automatically be read as a percentage of float.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "ChartExchange labels 17.21% as 'Short Interest %' without explicitly identifying its denominator, so it should not automatically be read as a percentage of float."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Days to cover was 2.41 as of Oct 15, 2026.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "C": "2.41 days to cover as of the October 15, 2026 report.",
+    "D": "2.41 days to cover at the Oct 15 settlement.",
+    "E": "2.41 days to cover."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   ],
+   "conflicts_with": [
+    "c16"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "ChartMill: Oct 15, 2026 short position was 17.18% of float.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Short position represented 17.18% of its float as of October 15, 2026."
+   },
+   "urls": [
+    "https://www.chartmill.com/stock/quote/TNXP/ownership/short-interest"
+   ],
+   "conflicts_with": [
+    "c10"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "ChartMill: 4.11 days to cover as of Oct 15, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "4.11 days to cover as of October 15, 2026."
+   },
+   "urls": [
+    "https://www.chartmill.com/stock/quote/TNXP/ownership/short-interest"
+   ],
+   "conflicts_with": [
+    "c14"
+   ]
+  },
+  {
+   "cid": "c17",
+   "claim": "AltIndex: 3,318,461 shares short (19.35% of shares outstanding), up 12.8%, from biweekly NASDAQ data with a 2-week lag.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "3,318,461 shares short (19.35% of shares outstanding), up 12.8% from the prior period, based on biweekly NASDAQ-reported data with a 2-week lag."
+   },
+   "urls": [
+    "https://altindex.com/ticker/tnxp/short-interest"
+   ],
+   "conflicts_with": [
+    "c3"
+   ]
+  },
+  {
+   "cid": "c20",
+   "claim": "Finviz: short interest 3.32M shares, short float 19.42%, short ratio 4.81.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Short interest of 3.32M shares, short float of 19.42%, and short ratio of 4.81."
+   },
+   "urls": [
+    "https://finviz.com/stock.ashx?t=TNXP"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Finviz: about 19.15M shares outstanding and a 17.09M float.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "About 19.15M shares outstanding and a 17.09M float."
+   },
+   "urls": [
+    "https://finviz.com/stock.ashx?t=TNXP"
+   ],
+   "conflicts_with": [
+    "c8"
+   ]
+  },
+  {
+   "cid": "c22",
+   "claim": "StockAnalysis: 2.94M shares short, 15.13% of shares outstanding.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Short interest at 2.94 million shares, equal to 15.13% of shares outstanding.",
+    "D": "Prior settlement as of Nov 11, 2026: 2.94M shares, 15.13% of shares outstanding.",
+    "E": "2.94 million shares short, equal to 15.13% of shares outstanding."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tnxp/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "StockAnalysis: 16.14% of float and short ratio of 3.48 days.",
+   "asserted_by": [
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "16.14% of float, 3.48 days to cover.",
+    "E": "16.14% of float, with a short ratio of 3.48 days."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tnxp/statistics/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "StockAnalysis page updated Nov 11, 2026 shows ~2.94M shares short with different ratios and no settlement date.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Updated November 11, 2026, also shows approximately 2.94 million shares short but with different ratios and no short-interest settlement date."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c22"
+   ]
+  },
+  {
+   "cid": "c25",
+   "claim": "Tracker share counts of ~19.15–19.43M put 3.32M shares short at roughly 17% of shares outstanding.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Share count cited by trackers is about 19.15–19.43M, which would put 3.32M shares short at roughly 17%."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c3",
+    "c17"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "During 2026 the biweekly short position ranged from ~2.07M shares (Mar 31) to ~3.60M (Jul 31), roughly 14.7%–29.8% of shares outstanding.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Ranged from about 2.07M shares (Mar 31) to about 3.60M shares (Jul 31), roughly 14.7%–29.8% of shares outstanding."
+   },
+   "urls": [
+    "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "The Oct 30, 2026 figure is the latest official short interest figure as of Nov 11, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "The October 30, 2026 figure is the latest official figure available as of November 11, 2026."
+   },
+   "urls": [
+    "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+   ],
+   "conflicts_with": [
+    "c9"
+   ]
+  },
+  {
+   "cid": "c28",
+   "claim": "The next FINRA report (Nov 13, 2026 settlement) is scheduled for publication on Nov 24, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Scheduled for publication on November 24, 2026."
+   },
+   "urls": [
+    "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "FINRA's submission deadline for the Nov 13, 2026 settlement is Nov 17 at 6:00 p.m.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Deadline is November 17 at 6:00 p.m."
+   },
+   "urls": [
+    "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Short interest is reported biweekly by settlement date and lags (about two weeks), so reported figures may not reflect later positions.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Short interest is a periodic reported figure at a particular date rather than a live measure.",
+    "C": "Settlement-date-based, published twice a month, lags about two weeks.",
+    "E": "FINRA publishes twice a month; the next mid-November settlement will replace current figures.",
+    "F": "Reported biweekly by settlement date, so the October 30 figure may not reflect later positions."
+   },
+   "urls": [
+    "https://altindex.com/ticker/tnxp/short-interest",
+    "https://www.chartmill.com/stock/quote/TNXP/ownership/short-interest"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Nasdaq's TNXP short-interest page currently reports data unavailable.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Nasdaq's TNXP short-interest page currently reports that data is unavailable."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "ChartMill expresses short interest as a percentage of float (17.18%), while StockAnalysis uses shares outstanding (15.13%), so percentages differ by denominator.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "ChartMill expresses short interest as a percentage of float (17.18%), while StockAnalysis uses shares outstanding (15.13%)."
+   },
+   "urls": [
+    "https://stockanalysis.com/stocks/tnxp/statistics/"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://equibles.com/stocks/tnxp/short-interest",
+   "note": "FINRA-based sources (Equibles, ChartExchange, AltIndex) all report 3,318,461 shares short at the Oct 30, 2026 settlement, the latest published report.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/",
+   "note": "3,318,461 / 17,089,771 float = 19.42%, and Finviz also shows a short float of 19.42%.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://altindex.com/ticker/tnxp/short-interest",
+   "note": "19.42% is a float-based figure; against 17,151,024 shares outstanding the ratio is about 19.35%.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/",
+   "note": "Days to cover of 4.14 at the Oct 30 settlement appears in multiple sources.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "E": "true",
+    "F": "true"
+   }
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest/",
+   "note": "+377,753 shares, +12.85% from 2,940,708 on Oct 15 to 3,318,461 on Oct 30.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "ChartExchange lists float of 17,089,771 for the Oct 30 settlement; Finviz shows 17.09M.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "The 17,151,024 figure is the share count ChartExchange uses; other sites show a newer 19.43M count.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "2,940,708 at Oct 15 is correct but superseded by the Oct 30 report; variant C wrongly calls it the latest.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "2,940,708 / 17,089,754 float = 17.21%.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "2,940,708 / 17,151,024 shares outstanding is about 17.15%, so 17.21% is the float-based figure.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "The table shows 17.21 under 'Short Interest %' for 2026-10-15; the denominator is not labeled.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "Oct 15 days to cover of 2.41 appears in ChartExchange, Equibles and AltIndex.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "Oct 15, 2026 days to cover was 2.41, not 4.11. The 4.11 figure appears only as a 2024 percentage on ChartMill.",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://altindex.com/ticker/tnxp/short-interest",
+   "note": "AltIndex shows 3,318,461 shares short, 19.35% of shares outstanding, up 12.8%, as of Oct 30, 2026.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://finviz.com/stock.ashx?t=TNXP",
+   "note": "Finviz lists short interest 3.32M, short float 19.42%, short ratio 4.81.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://finviz.com/stock.ashx?t=TNXP",
+   "note": "Finviz shows 19.15M shares (label truncated in the excerpt) and a 17.09M float. This is context rather than the answer.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tnxp/statistics/",
+   "note": "The page shows 2.94M shares, 15.13% of shares out. That is the Oct 15 position, not the latest (3.32M on Oct 30).",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tnxp/statistics/",
+   "note": "StockAnalysis shows 16.14% of float and a 3.48 short ratio, based on the older Oct 15 position.",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://stockanalysis.com/stocks/tnxp/statistics/",
+   "note": "The page, last checked Nov 11, 2026, shows about 2.94M shares with different ratios and no settlement date.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://stockanalysis.com/stocks/tnxp/statistics/",
+   "note": "3.32M divided by 19.15–19.43M shares is about 17%; the arithmetic checks out.",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "note": "FINRA published the Oct 30 settlement on Nov 10; the Nov 13 settlement is not due out until Nov 24.",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "note": "The FINRA schedule lists Nov 13 settlement, Nov 24 publication.",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "note": "The FINRA schedule lists Nov 17, 6:00 p.m. as the due date for the Nov 13 settlement.",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://equibles.com/stocks/tnxp/short-interest",
+   "note": "Short interest is reported twice monthly by settlement date and lags publication, so reported figures may not reflect later positions.",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nasdaq.com/market-activity/stocks/tnxp/short-interest",
+   "note": "Nasdaq page text says 'Data is currently not available', which supports the claim; it is a data-availability note, not the short-interest figure.",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.chartmill.com/stock/quote/TNXP/ownership/short-interest",
+   "note": "The ChartMill page shows 17.84% of float (Sep 15 data), not 17.18%, so the figure in the claim is not supported. StockAnalysis does show 15.13% of shares outstanding, but the claim as a whole fails on the ChartMill number.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "ChartExchange's table lists a Shares Float column. 2,940,708 / 17,089,754 float = 17.21%, so the figure is float-based. 17.21% is also not the latest reading: Oct 30 shows 19.42%.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.chartmill.com/stock/quote/TNXP/ownership/short-interest",
+   "note": "Live ChartMill page (price as of Nov 11, 2026) shows positions as of Oct 15, 2026: 2.94M shares short, 17.18% of float, 4.11 days to cover. StockAnalysis shows 16.14% of float, 15.13% of shares outstanding (different float denominator or a later report), so figures vary by provider. The Oct 15 repor",
+   "label_verdicts": {
+    "B": "true"
+   },
+   "retried": true
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+   "note": "The share range is right: 2.08M on Mar 31 and 3.60M on Jul 31, which are the low and high through Oct 15. The percentage range is wrong. ChartExchange gives 14.73% (May 15) to 29.76% (Apr 30), and ChartMill gives about 14.6%–22.6% of float. The 14.7%–29.8% range also mixes shares-outstanding and flo",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c9": {
+   "cid": "c9",
+   "verdict": "false",
+   "note": "2,940,708 is correct for the Oct 15, 2026 settlement (ChartExchange, AltIndex), but it is no longer current. The Oct 30, 2026 report shows 3,318,461 shares short, up 12.85%, so calling Oct 15 the 'latest' is wrong."
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "false",
+   "note": "ChartExchange's table does list 17.21% for Oct 15, and it is 2,940,708 ÷ 17,089,754 float shares, so it is effectively a float-based figure. But the site's 'latest' figure is now 19.42% as of Oct 30, 2026, so the claim is out of date."
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "false",
+   "note": "2.41 days to cover is correct for Oct 15, 2026, but it has been replaced. The Oct 30, 2026 settlement shows 4.14 days to cover (ChartExchange and AltIndex)."
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "note": "The ChartExchange 2026 table matches: lowest was 2,075,650 shares (Mar 31) and highest 3,601,417 (Jul 31). The percentages run from 14.73% (May 15) to 29.76% (Apr 30), but they are not the % on those two dates, and ChartExchange doesn't state the denominator. The Oct 30 figure of 3.32M stays within "
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 29,
+ "scores": {
+  "gpt": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 23,
+   "truth_weight": 67.0,
+   "coverage": 0.449,
+   "accuracy": 1.0,
+   "combined": 0.619,
+   "thorough_coverage": 0.358,
+   "answer_truth": 11,
+   "thoroughness": 0.527,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 2,
+   "truth": 23,
+   "truth_weight": 67.0,
+   "coverage": 0.093,
+   "accuracy": 0.897,
+   "combined": 0.169,
+   "thorough_coverage": 0.131,
+   "answer_truth": 11,
+   "thoroughness": 0.228,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 1,
+   "truth": 23,
+   "truth_weight": 67.0,
+   "coverage": 0.0,
+   "accuracy": 0.667,
+   "combined": 0.0,
+   "thorough_coverage": 0.09,
+   "answer_truth": 11,
+   "thoroughness": 0.158,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 16,
+   "unverifiable": 0,
+   "true": 13,
+   "wrong": 3,
+   "truth": 23,
+   "truth_weight": 67.0,
+   "coverage": 0.607,
+   "accuracy": 0.843,
+   "combined": 0.706,
+   "thorough_coverage": 0.541,
+   "answer_truth": 11,
+   "thoroughness": 0.659,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 23,
+   "truth_weight": 67.0,
+   "coverage": 0.495,
+   "accuracy": 1.0,
+   "combined": 0.662,
+   "thorough_coverage": 0.496,
+   "answer_truth": 11,
+   "thoroughness": 0.663,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 23,
+   "truth_weight": 67.0,
+   "coverage": 0.617,
+   "accuracy": 1.0,
+   "combined": 0.763,
+   "thorough_coverage": 0.604,
+   "answer_truth": 11,
+   "thoroughness": 0.753,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.911,
+ "corrections_v2": {
+  "units_before": 32,
+  "units_after": 29,
+  "dedup_groups": [
+   {
+    "kept": "c4",
+    "merged": [
+     "c5",
+     "c18"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c19"
+    ]
+   }
+  ],
+  "cost": 0.022
+ }
+}

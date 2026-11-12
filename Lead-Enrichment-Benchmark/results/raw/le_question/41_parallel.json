@@ -1,0 +1,161 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b699e53fb4b1a8ea606",
+ "status": "completed",
+ "seconds": 49,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is the parent company of Old Navy?",
+  "passages": [
+   {
+    "quote": "Founded in 1994 as a division of San Francisco-based Gap Inc.",
+    "publisher": "Old Navy / Gap Inc.",
+    "published_date": "2026-09-15",
+    "source_url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport"
+   }
+  ],
+  "answer": "Old Navy\u2019s parent company is Gap Inc. Old Navy was founded in 1994 as a division of the San Francisco-based company.",
+  "caveats": [],
+  "missing_fields": [],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-09-15",
+    "source_url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+    "fact": "Old Navy is a division of Gap Inc."
+   },
+   {
+    "date": "1994",
+    "source_url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+    "fact": "Old Navy was founded as a division of San Francisco-based Gap Inc."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question is reproduced from the user's request.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Introducing Old Navy Sport | Old Navy",
+     "url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+     "excerpts": [
+      "Founded in 1994 as a division of San Francisco-based Gap Inc.",
+      "by Old Navy Old Navy September 15, 2026 Introducing Old Navy Sport, a new activewear sub-brand from the largest specialty apparel retailer in the U.S."
+     ]
+    }
+   ],
+   "reasoning": "The official announcement supplies the exact quoted sentence, identifies Old Navy as the publisher, and gives the September 15, 2026 publication date.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Introducing Old Navy Sport | Old Navy",
+     "url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+     "excerpts": [
+      "Founded in 1994 as a division of San Francisco-based Gap Inc."
+     ]
+    },
+    {
+     "title": "Home | Gap Inc.",
+     "url": "https://gapinc.com/en-us",
+     "excerpts": [
+      "About Us Play Pause Old Navy Gap Banana Republic Athleta We inspire self-expression through four of the most iconic American brands \u2014 Old Navy , Gap , Banana Republic , and Athleta . Four brands, one company, one culture."
+     ]
+    }
+   ],
+   "reasoning": "Old Navy's official announcement identifies it as a division of Gap Inc. and states its founding year and the company's location. Gap Inc.'s corporate page also lists Old Navy among its four brands within one company.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "The supplied recent primary sources consistently identify Gap Inc. as the parent; no material caveat was identified.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "All factual values included in the response are available in the supplied verified primary-source material.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "This is the reference date specified by the user, not a publication date from a source.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Introducing Old Navy Sport | Old Navy",
+     "url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+     "excerpts": [
+      "Founded in 1994 as a division of San Francisco-based Gap Inc.",
+      "by Old Navy Old Navy September 15, 2026 Introducing Old Navy Sport, a new activewear sub-brand from the largest specialty apparel retailer in the U.S."
+     ]
+    }
+   ],
+   "reasoning": "The announcement directly supplies the division relationship and 1994 founding year; its header supplies the date of the published ownership description.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Introducing Old Navy Sport | Old Navy",
+     "url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+     "excerpts": [
+      "Founded in 1994 as a division of San Francisco-based Gap Inc.",
+      "by Old Navy Old Navy September 15, 2026 Introducing Old Navy Sport, a new activewear sub-brand from the largest specialty apparel retailer in the U.S."
+     ]
+    }
+   ],
+   "reasoning": "These segments provide the exact quotation and its publisher and publication date on the official company announcement.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Introducing Old Navy Sport | Old Navy",
+     "url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+     "excerpts": [
+      "Founded in 1994 as a division of San Francisco-based Gap Inc.",
+      "by Old Navy Old Navy September 15, 2026 Introducing Old Navy Sport, a new activewear sub-brand from the largest specialty apparel retailer in the U.S."
+     ]
+    }
+   ],
+   "reasoning": "The September 15, 2026 official announcement describes Old Navy as a Gap Inc. division.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Introducing Old Navy Sport | Old Navy",
+     "url": "https://www.gapinc.com/en-us/articles/2026/09/introducing-old-navy-sport",
+     "excerpts": [
+      "Founded in 1994 as a division of San Francisco-based Gap Inc."
+     ]
+    }
+   ],
+   "reasoning": "The source explicitly states that Old Navy was founded in 1994 as a division of San Francisco-based Gap Inc.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Old Navy?",
+ "input_n": 41,
+ "completed_on": "2026-11-11"
+}

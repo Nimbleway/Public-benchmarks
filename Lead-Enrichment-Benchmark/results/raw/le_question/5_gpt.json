@@ -1,0 +1,74 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_00b15f8cef553392006af4b01cafb087d2b573b0511cbb4121",
+ "status": "completed",
+ "seconds": 24,
+ "output": {
+  "question": "Who is Walmart's CEO?",
+  "answer": "As of November 11, 2026, John Furner is president and CEO of Walmart Inc. He succeeded Doug McMillon effective February 1, 2026.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "John Furner is president and CEO of Walmart Inc.",
+    "source_url": "https://corporate.walmart.com/about/leadership/john-furner/",
+    "date": "2026-11-11"
+   },
+   {
+    "fact": "Furner succeeded Doug McMillon effective February 1, 2026.",
+    "source_url": "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-25-000172/pressrelease111425.htm",
+    "date": "2025-11-14"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "John Furner is president and chief executive officer of Walmart Inc.",
+    "source_url": "https://corporate.walmart.com/about/leadership/john-furner/",
+    "publisher": "Walmart Inc.",
+    "published_date": null
+   },
+   {
+    "quote": "to succeed Doug McMillon, 59, as President and Chief Executive Officer of Walmart Inc., effective February 1, 2026.",
+    "source_url": "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-25-000172/pressrelease111425.htm",
+    "publisher": "Walmart Inc.",
+    "published_date": "2025-11-14"
+   }
+  ],
+  "caveats": [],
+  "missing_fields": [
+   "passages[0].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 12996,
+  "input_tokens_details": {
+   "cache_write_tokens": 12,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 478,
+  "output_tokens_details": {
+   "reasoning_tokens": 77
+  },
+  "total_tokens": 13474
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0214,
+ "cost_usd": 0.0414,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Who is Walmart's CEO?",
+ "input_n": 5,
+ "completed_on": "2026-11-11"
+}

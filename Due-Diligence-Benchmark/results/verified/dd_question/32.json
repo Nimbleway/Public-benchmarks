@@ -1,0 +1,1263 @@
+{
+ "sub_use_case": "dd_question",
+ "input_n": 32,
+ "task": "Who owns Nokia?",
+ "labels": {
+  "opus": "A",
+  "nimble": "B",
+  "parallel": "C",
+  "firecrawl": "D",
+  "gpt": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 13,
+ "evidence_fetched": 13,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Nokia is a publicly traded company owned by its shareholders, not by a single person, owner or parent company.",
+   "asserted_by": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "C": "Nokia Corporation is a publicly traded company owned by its shareholders.",
+    "D": "Nokia is a publicly listed company, owned by its shareholders rather than by a single parent company or individual.",
+    "E": "Nokia Corporation is publicly traded and owned by its shareholders rather than a single owner.",
+    "F": "Nokia is a publicly traded company owned by its shareholders, not by one person or a parent company."
+   },
+   "urls": [
+    "https://www.nokia.com/about-us/investors/stock-information",
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+    "https://www.nokia.com/about-us/investors/stock-information/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c2",
+   "claim": "Nokia has no controlling shareholder and is held mainly by institutional and mutual-fund investors.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nokia Corporation is a publicly listed Finnish company (Nasdaq Helsinki: NOKIA, NYSE: NOK) with no controlling shareholder, held mainly by institutional and mutual-fund investors."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c3",
+   "claim": "Nokia has widely spread ownership, no single owner controls it, and no shareholder holds more than about 5%.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Nokia Oyj is a publicly listed company with widely spread ownership, and no single owner controls it; no shareholder holds more than about 5%."
+   },
+   "urls": [
+    "https://www.revenuememo.com/p/who-owns-nokia"
+   ],
+   "conflicts_with": [
+    "c13"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "Nokia's ownership is dispersed among public-market investors.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Nokia's ownership is dispersed among public-market investors."
+   },
+   "urls": [
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Nokia Corporation is a public limited liability company incorporated and domiciled in Helsinki, Finland, and is the parent company of all its subsidiaries (the Nokia Group).",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Nokia Corporation is a public limited liability company incorporated and domiciled in Helsinki, Finland, and is the parent company of all its subsidiaries (the Nokia Group)."
+   },
+   "urls": [
+    "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Nokia's shares trade on Nasdaq Helsinki under the ticker NOKIA.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "B": "Nokia Corporation is a publicly listed Finnish company (Nasdaq Helsinki: NOKIA, NYSE: NOK)...",
+    "C": "Nokia's shares trade on Nasdaq Helsinki under the ticker NOKIA."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.nokia.com/about-us/investors/stock-information",
+    "https://www.nokia.com/about-us/investors/stock-information/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c6",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Nokia's shares trade on the New York Stock Exchange under the ticker NOK.",
+   "asserted_by": [
+    "B",
+    "C",
+    "E"
+   ],
+   "variants": {
+    "B": "Nokia Corporation is a publicly listed Finnish company (Nasdaq Helsinki: NOKIA, NYSE: NOK)...",
+    "C": "Nokia's shares trade on the New York Stock Exchange under the ticker NOK."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.nokia.com/about-us/investors/stock-information",
+    "https://www.nokia.com/about-us/investors/stock-information/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c7",
+    "c9"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control (per its 2025 annual report, 5 March 2026).",
+   "asserted_by": [
+    "C",
+    "F"
+   ],
+   "variants": {
+    "C": "To the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia (per its annual report filed March 5, 2026).",
+    "F": "Nokia's 2025 annual report (published 5 March 2026) states that, to the best of its knowledge, Nokia is not directly or indirectly owned or controlled by any other corporation or any government, and there are no arrangements that may result in a change of control of Nokia."
+   },
+   "urls": [
+    "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+    "https://www.nokia.com/system/files/2026-03/nokia-annual-report-2025.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Solidium Oy is Nokia's largest shareholder registered in Finland (as of 30 September 2026).",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Solidium Oy... is Nokia's largest shareholder registered in Finland...as of 30 September 2026.",
+    "E": "Solidium Oy was Nokia's largest shareholder registered in Finland as of September 30, 2026."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Solidium Oy held 325,000,000 Nokia shares, equal to 5.66% of all shares, in Nokia's shareholder table dated 30 September 2026.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Solidium... holding 325,000,000 shares, or 5.66% of all shares, as of 30 September 2026.",
+    "D": "Solidium Oy was the largest shareholder listed by Nokia, with 325,000,000 shares, representing 5.66% of all shares.",
+    "E": "Solidium Oy held 325,000,000 Nokia shares, representing 5.66% of all shares, as of September 30, 2026.",
+    "F": "In Nokia's shareholder table dated 30 September 2026, Solidium Oy held 325,000,000 Nokia shares, equal to 5.66% of all shares."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": [
+    "c3",
+    "c14"
+   ]
+  },
+  {
+   "cid": "c14",
+   "claim": "Search snippets cite a Nokia register dated 30 June 2026 showing Solidium at 325,000,000 shares (5.66%); unverified.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Search snippets cite a Nokia register dated 30 June 2026 showing Solidium at 325,000,000 shares (5.66%); this is unverified."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c13"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Solidium is the largest registered shareholder of Nokia at roughly 5%.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Solidium Oy, the Finnish state's investment company, is the largest registered shareholder of Nokia at roughly 5%."
+   },
+   "urls": [
+    "https://www.revenuememo.com/p/who-owns-nokia"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "Solidium Oy is wholly owned by the State of Finland.",
+   "asserted_by": [
+    "B",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "B": "Solidium Oy, the investment company wholly owned by the Finnish state...",
+    "E": "Solidium Oy is wholly owned by the State of Finland.",
+    "F": "Solidium Oy is a holding company wholly owned by the State of Finland..."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.solidium.fi/en/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Solidium describes itself as a minority owner in nationally important companies.",
+   "asserted_by": [
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Solidium describes itself as a minority owner in nationally important companies in its portfolio.",
+    "F": "...a minority owner in nationally important companies."
+   },
+   "urls": [
+    "https://www.solidium.fi/en/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Solidium describes itself as a minority owner in twelve companies, eleven of which are listed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Solidium describes itself as a minority owner in twelve companies, eleven of which are listed."
+   },
+   "urls": [
+    "https://solidium.fi/en/holdings"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c19",
+   "claim": "Solidium's holdings page lists its Nokia ownership as 325,000,000 shares, or 5.7%, as of 10 November 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Solidium's holdings page lists its Nokia ownership as 325,000,000 shares, or 5.7%, as of 10 November 2026."
+   },
+   "urls": [
+    "https://www.solidium.fi/en/holdings/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "Solidium's Nokia stake (5.7%, 325,000,000 shares) is valued at EUR 2,517 million, so the Finnish state holds a minority stake, not control.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Solidium holds 5.7% of Nokia Plc (325,000,000 shares) valued at EUR 2,517 million, so the Finnish state holds a minority stake, not control."
+   },
+   "urls": [
+    "https://solidium.fi/en/holdings"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Solidium's stake gives the Finnish state indirect economic exposure to Nokia, but Nokia's disclosure says no corporation or government controls Nokia.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Solidium's stake gives the Finnish state indirect economic exposure to Nokia, but Nokia's disclosure says no corporation or government controls Nokia."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Nokia resolved to issue 166,389,351 new shares to NVIDIA in a directed share issuance for a USD 1.0 billion equity investment.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "Nokia resolved to issue 166,389,351 new shares to NVIDIA in a directed share issuance. / NVIDIA's equity investment in Nokia is USD 1.0 billion, announced in October 2025.",
+    "B": "Nokia's Board resolved to issue 166,389,351 new shares in a directed share issuance to NVIDIA Corporation for a USD 1.0 billion equity investment."
+   },
+   "urls": [
+    "https://www.telecomtv.com/content/5g/nvidia-to-make-1bn-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-54180",
+    "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "Nokia's Board resolved on the NVIDIA share issuance on 28 October 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "On 28 October 2025 Nokia's Board resolved to issue 166,389,351 new shares..."
+   },
+   "urls": [
+    "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "NVIDIA subscribed for the Nokia shares at USD 6.01 per share.",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "B": "NVIDIA subscribed for the Nokia shares at a price of USD 6.01 per share, making it a 2.90% shareholder of Nokia."
+   },
+   "urls": [
+    "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+    "https://www.telecomtv.com/content/5g/nvidia-to-make-1bn-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-54180"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c24",
+    "c25"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "The NVIDIA transaction makes NVIDIA a 2.90% shareholder of Nokia (stake at issuance).",
+   "asserted_by": [
+    "A",
+    "B"
+   ],
+   "variants": {
+    "A": "The NVIDIA transaction makes NVIDIA a 2.90% shareholder of Nokia (stake at issuance).",
+    "B": "NVIDIA subscribed for the Nokia shares at a price of USD 6.01 per share, making it a 2.90% shareholder of Nokia."
+   },
+   "urls": [
+    "https://www.telecomtv.com/content/5g/nvidia-to-make-1bn-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-54180",
+    "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "The NVIDIA investment was part of an AI-networking/AI and data centers strategic partnership announced on 28 October 2025.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "The NVIDIA investment in Nokia was part of an AI-networking/AI and data centers strategic partnership announced on 28 October 2025."
+   },
+   "urls": [
+    "https://www.reuters.com/world/europe/nvidia-make-1-billion-investment-finlands-nokia-2025-10-28"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "Nokia's shares hit their highest level in nearly a decade on 28 October 2025, when the NVIDIA deal was announced.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Nokia's shares hit their highest level in nearly a decade on 28 October 2025, when the NVIDIA deal was announced."
+   },
+   "urls": [
+    "https://www.reuters.com/world/europe/nvidia-make-1-billion-investment-finlands-nokia-2025-10-28"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "No flagging notification from NVIDIA appears on Nokia's list, and NVIDIA's 2.90% figure dates from the Oct–Nov 2025 issuance, so its position may have changed.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "No flagging notification from NVIDIA appears on Nokia's list, and NVIDIA's 2.90% stake figure dates from the October–November 2025 share issuance, so its position may have changed since."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "Ilmarinen held 65,165,653 Nokia shares (1.13%) as of 30 September 2026.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Finnish pension insurer Keskinäinen Eläkevakuutusyhtiö Ilmarinen holds 65,165,653 Nokia shares (1.13%) as of 30 September 2026.",
+    "D": "Ilmarinen held 1.13% of Nokia shares in the table as of September 30, 2026."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Varma held 60,825,945 Nokia shares (1.06%) as of 30 September 2026.",
+   "asserted_by": [
+    "B",
+    "D"
+   ],
+   "variants": {
+    "B": "Finnish pension insurer Keskinäinen Työeläkevakuutusyhtiö Varma holds 60,825,945 Nokia shares (1.06%) as of 30 September 2026.",
+    "D": "Varma held 1.06% of Nokia shares in the table as of September 30, 2026."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Elo held 0.57% of Nokia shares as of 30 September 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Elo held 0.57% of Nokia shares in the table as of September 30, 2026."
+   },
+   "urls": [
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Nokia Oyj held 83,304,077 of its own shares, representing 1.45% of all shares.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Nokia Oyj held 83,304,077 of its own shares, representing 1.45% of all shares."
+   },
+   "urls": [
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": [
+    "c34"
+   ]
+  },
+  {
+   "cid": "c34",
+   "claim": "Search snippets cite Nokia's treasury shares at about 2.3% as of the 30 June 2026 register; unverified.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Search snippets cite Nokia's treasury shares at about 2.3% as of the 30 June 2026 register; this is unverified."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c33"
+   ]
+  },
+  {
+   "cid": "c35",
+   "claim": "Nokia's own shares are treasury shares and not an external owner controlling Nokia.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Nokia's own shares are treasury shares and are not an external owner controlling Nokia."
+   },
+   "urls": [
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c36",
+   "claim": "FMR LLC (Fidelity) held above 5% of Nokia in March 2026 and fell below the 5% flagging threshold per a notification dated 10 July 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "US fund manager FMR LLC (Fidelity) held above 5% of Nokia in March 2026 and its holding decreased below the 5% flagging threshold in July 2026 (notification dated 10 July 2026, referencing 16 Sep 2026 as stated in the notice)."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c37",
+   "claim": "Vanguard, BlackRock, Fidelity (FMR LLC), Artisan Partners and Pzena Investment Management are major institutional holders of Nokia.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Vanguard, BlackRock, Fidelity (FMR LLC), Artisan Partners and Pzena Investment Management are major institutional holders of Nokia."
+   },
+   "urls": [
+    "https://www.revenuememo.com/p/who-owns-nokia"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c38",
+   "claim": "Most Nokia shares are held in nominee accounts at custodian banks.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Most Nokia shares are held in nominee accounts at custodian banks."
+   },
+   "urls": [
+    "https://www.revenuememo.com/p/who-owns-nokia"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c39",
+   "claim": "Nokia's shareholder table covers only shareholders registered in Finland, not a complete global ranking or beneficial-ownership census.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Nokia's biggest shareholders table lists only shareholders registered in Finland; large US and international institutional holders such as BlackRock, Vanguard or NVIDIA are often registered through non-Finnish custodians and do not appear, so the full global ownership picture is not confirmed from an official page.",
+    "D": "Nokia's shareholder page covers only shareholders registered in Finland and is not a complete worldwide beneficial-ownership census.",
+    "E": "Nokia's shareholder table covers shareholders registered in Finland, not a complete global ranking of beneficial owners."
+   },
+   "urls": [
+    "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c39",
+    "c40"
+   ]
+  },
+  {
+   "cid": "c41",
+   "claim": "The shareholding figures are dated 30 September 2026 and may have changed since.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Nokia shareholding figures are dated September 30, 2026 and may have changed since."
+   },
+   "urls": [
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c42",
+   "claim": "Exact Nokia shareholder percentages can change because Nokia is listed and its shares are traded.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Exact Nokia shareholder percentages can change because Nokia is listed and its shares are traded."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c43",
+   "claim": "Under Finnish law, shareholders of listed companies such as Nokia must notify the Finnish Financial Supervisory Authority and the company of certain changes in holdings and voting rights.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Under Finnish law, shareholders of listed companies such as Nokia must notify both the Finnish Financial Supervisory Authority and the company of certain changes in their holdings and voting rights."
+   },
+   "urls": [
+    "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c44",
+   "claim": "The question concerns Nokia Corporation itself, not ownership of businesses producing Nokia-branded consumer products.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The answer concerns Nokia Corporation itself, not ownership of businesses producing Nokia-branded consumer products."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information",
+   "note": "Nokia shares are quoted on Nasdaq Helsinki and NYSE, so it is publicly held with no single owner.",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+   "note": "Nokia states it is not owned or controlled by any corporation or government; the largest holders are institutions.",
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Largest registered holder Solidium is about 5.7%, and FMR fell below 5% in 2026, so no holder is far above 5%.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.revenuememo.com/p/who-owns-nokia",
+   "note": "Ownership is widely dispersed, consistent with Nokia's disclosures.",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/system/files/2026-03/nokia-annual-report-2025.pdf",
+   "note": "The annual report gives this exact description of Nokia Corporation.",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information",
+   "note": "Nokia's stock-information page lists Nasdaq Helsinki, ticker NOKIA.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information",
+   "note": "Nokia's stock-information page lists the NYSE, ticker NOK, as ADSs.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "E": "true"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+   "note": "The no-owner/no-control statement matches Nokia's annual report; the exact 5 March 2026 date is not shown in the passages.",
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Nokia's table of biggest holders registered in Finland is dated 30 Sep 2026, and Solidium holds 5.7% per its own site.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "D": "true",
+    "F": "true"
+   }
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "325M of about 5.74B shares is 5.66%, consistent with Solidium's 5.7%; the table figures themselves are not quoted in the passages.",
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.solidium.fi/en/",
+   "note": "Solidium, wholly owned by the Finnish state, holds about 5.7% of Nokia and is the largest registered holder.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.solidium.fi/en/",
+   "note": "Solidium's own homepage says it is wholly owned by the State of Finland.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.solidium.fi/en/",
+   "note": "Homepage wording: a minority owner in nationally important companies.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.solidium.fi/en/",
+   "note": "Twelve companies, minority in all. The holdings table lists eleven listed ones plus unlisted ICEYE.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.solidium.fi/en/holdings/",
+   "note": "Nokia is shown as 325,000,000 shares and 5.7%. The home page dates the totals 10.11.2026, the holdings page uses the 11.11.2026 closing price.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.solidium.fi/en/holdings/",
+   "note": "The table shows Nokia at 325,000,000 shares, EUR 2,517m and 5.7%, so the state's stake is a minority.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/system/files/2026-03/nokia-form-20-f-2025.pdf",
+   "note": "The 5.7% stake is indirect state exposure. Nokia's 20-F states it is not owned or controlled by another corporation or government; I recall this wording, but the passages shown do not quote it.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+   "note": "Nokia's release confirms 166,389,351 new shares for a USD 1.0bn NVIDIA investment.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+   "note": "The release is dated 28 October 2025 and says the Board resolved on the issuance.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+   "note": "Subscription price USD 6.01 per share and 2.90% stake are both stated in the release.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true"
+   }
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+   "note": "Release says NVIDIA becomes a 2.90% shareholder after the issuance.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+   "note": "The issuance is described as an essential part of the AI-RAN and data-center networking partnership announced 28 Oct 2025.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.reuters.com/world/europe/nvidia-make-1-billion-investment-finlands-nokia-2025-10-28",
+   "note": "Reuters reports shares closed up about 21%, a near-decade high. The 'highest in nearly a decade' wording is from my recollection of the report; the shown passage is truncated.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+   "note": "The flagging list shows no NVIDIA notification, consistent with a stake below 5%. The 2.90% figure dates from the 2025 issuance.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://nokia.com/about-us/investors/stock-information/biggest-shareholders",
+   "note": "The page is dated 30 Sep 2026; 65,165,653 shares is about 1.13% of roughly 5.74bn shares. The Ilmarinen row itself is not in the shown passage.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Nokia's table is dated 30 Sep 2026 and two systems report the same Varma figure; the row itself is not in the excerpts.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Plausible row from the 30 Sep 2026 table; the excerpts do not show the Elo row.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "83.3M shares is consistent with about 1.45% of roughly 5.7bn shares; the excerpts do not show the row.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Treasury shares carry no external control; this is standard under Finnish company law.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c36": {
+   "cid": "c36",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Nokia's flagging list shows FMR exceeded 5% on 4 Mar 2026 and fell below 5% on 10 Jul 2026.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c37": {
+   "cid": "c37",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.revenuememo.com/p/who-owns-nokia",
+   "note": "A secondary newsletter lists these as major institutional holders; there is no primary confirmation.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c38": {
+   "cid": "c38",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.revenuememo.com/p/who-owns-nokia",
+   "note": "The source states this; it is typical for a widely held listed company.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c39": {
+   "cid": "c39",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Nokia's page says the table lists shareholders registered in Finland.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "D": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c41": {
+   "cid": "c41",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "The table is dated 30 Sep 2026; holdings of a traded company can change afterwards.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c42": {
+   "cid": "c42",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/",
+   "note": "Nokia is listed on Nasdaq Helsinki and the NYSE, so holdings shift with trading.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c43": {
+   "cid": "c43",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Nokia's page states this flagging obligation verbatim.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c44": {
+   "cid": "c44",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/",
+   "note": "The question is about Nokia Corporation; the branded phones are made by HMD under a licence.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Nokia's register shows Solidium at 325,000,000 shares (5.66%). The register is dated 30 September 2026, not 30 June, so the claim's date is slightly off and the figures are now confirmed by the primary source.",
+   "confidence": "high",
+   "via": "agent"
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.nokia.com/about-us/investors/stock-information/biggest-shareholders/",
+   "note": "Nokia Oyj's own holding is 83,304,077 shares (1.45%) on the 30 September 2026 register, not about 2.3%. I found no 2.3% figure in the saved pages.",
+   "confidence": "medium",
+   "via": "agent"
+  }
+ },
+ "audit": {},
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 42,
+ "scores": {
+  "opus": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 1,
+   "truth": 38,
+   "truth_weight": 148.5,
+   "coverage": 0.297,
+   "accuracy": 0.98,
+   "combined": 0.455,
+   "thorough_coverage": 0.253,
+   "answer_truth": 23,
+   "thoroughness": 0.402,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 19,
+   "unverifiable": 0,
+   "true": 19,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 148.5,
+   "coverage": 0.441,
+   "accuracy": 1.0,
+   "combined": 0.612,
+   "thorough_coverage": 0.449,
+   "answer_truth": 23,
+   "thoroughness": 0.62,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 5,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 148.5,
+   "coverage": 0.144,
+   "accuracy": 1.0,
+   "combined": 0.252,
+   "thorough_coverage": 0.182,
+   "answer_truth": 23,
+   "thoroughness": 0.308,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 11,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 148.5,
+   "coverage": 0.343,
+   "accuracy": 1.0,
+   "combined": 0.51,
+   "thorough_coverage": 0.313,
+   "answer_truth": 23,
+   "thoroughness": 0.477,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 10,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 148.5,
+   "coverage": 0.265,
+   "accuracy": 1.0,
+   "combined": 0.418,
+   "thorough_coverage": 0.293,
+   "answer_truth": 23,
+   "thoroughness": 0.453,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 9,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 0,
+   "truth": 38,
+   "truth_weight": 148.5,
+   "coverage": 0.361,
+   "accuracy": 1.0,
+   "combined": 0.53,
+   "thorough_coverage": 0.313,
+   "answer_truth": 23,
+   "thoroughness": 0.477,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.386,
+ "corrections_v2": {
+  "units_before": 44,
+  "units_after": 39,
+  "dedup_groups": [
+   {
+    "kept": "c6",
+    "merged": [
+     "c8"
+    ]
+   },
+   {
+    "kept": "c7",
+    "merged": [
+     "c9"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c12"
+    ]
+   },
+   {
+    "kept": "c24",
+    "merged": [
+     "c25"
+    ]
+   },
+   {
+    "kept": "c39",
+    "merged": [
+     "c40"
+    ]
+   }
+  ],
+  "cost": 0.026
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69b94b9f2a264814b6",
+ "status": "completed",
+ "seconds": 63,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "Who is AWS's CTO?",
+  "passages": [
+   {
+    "quote": "Matt returned to AWS as Chief AI & Technology Officer in May 2026",
+    "publisher": "Amazon Web Services (AWS)",
+    "published_date": null,
+    "source_url": "https://aws.amazon.com/blogs/aws-insights/author/mawood"
+   }
+  ],
+  "answer": "Dr. Matt Wood is AWS\u2019s Chief AI & Technology Officer. According to his official AWS biography, he returned to the company in May 2026.",
+  "caveats": [
+   "The official biography does not state a publication date."
+  ],
+  "missing_fields": [
+   "passages[0].published_date"
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-11-11",
+    "source_url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+    "fact": "Dr. Matt Wood holds the AWS title Chief AI & Technology Officer."
+   },
+   {
+    "date": "2026-05",
+    "source_url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+    "fact": "Matt Wood returned to AWS in May 2026."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "Restates the user's question.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "Dr. Matt Wood | AWS Insights",
+     "url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+     "excerpts": [
+      "Matt returned to AWS as Chief AI & Technology Officer in May 2026, after almost 15 years at AWS and most recently leading commercial technology and innovation at PwC.",
+      "AWS Blogs"
+     ]
+    }
+   ],
+   "reasoning": "The official AWS biography supplies the quoted wording, title and return month. The page identifies AWS as publisher; no explicit publication date was found.",
+   "confidence": "high"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "Dr. Matt Wood | AWS Insights",
+     "url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+     "excerpts": [
+      "Matt returned to AWS as Chief AI & Technology Officer in May 2026, after almost 15 years at AWS and most recently leading commercial technology and innovation at PwC."
+     ]
+    }
+   ],
+   "reasoning": "Matt Wood's official AWS biography directly identifies his role as Chief AI & Technology Officer and states that he returned in May 2026.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats",
+   "citations": [],
+   "reasoning": "The opened biography was checked for an explicit publication date, and none was stated. This is a limitation of the available page metadata.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "No explicit publication date could be verified for the biography, so that value is null.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "Uses the date specified in the request as the answer's reference date.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "Dr. Matt Wood | AWS Insights",
+     "url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+     "excerpts": [
+      "Matt returned to AWS as Chief AI & Technology Officer in May 2026, after almost 15 years at AWS and most recently leading commercial technology and innovation at PwC."
+     ]
+    }
+   ],
+   "reasoning": "The official biography supports both the exact role and the May 2026 return. The first fact's date denotes the answer's as-of date, not an appointment date.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "Dr. Matt Wood | AWS Insights",
+     "url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+     "excerpts": [
+      "Matt returned to AWS as Chief AI & Technology Officer in May 2026, after almost 15 years at AWS and most recently leading commercial technology and innovation at PwC.",
+      "AWS Blogs"
+     ]
+    }
+   ],
+   "reasoning": "The quotation is a verbatim excerpt from the official AWS biography, published on AWS Blogs. Its publication date is unstated.",
+   "confidence": "high"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [],
+   "reasoning": "The page review found no explicit publication date; no date is inferred from other content.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "The missing field records the unverified publication date of the biography.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "Dr. Matt Wood | AWS Insights",
+     "url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+     "excerpts": [
+      "Matt returned to AWS as Chief AI & Technology Officer in May 2026, after almost 15 years at AWS and most recently leading commercial technology and innovation at PwC."
+     ]
+    }
+   ],
+   "reasoning": "The current official biography identifies Matt Wood's exact title as Chief AI & Technology Officer.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "Dr. Matt Wood | AWS Insights",
+     "url": "https://aws.amazon.com/blogs/aws-insights/author/mawood",
+     "excerpts": [
+      "Matt returned to AWS as Chief AI & Technology Officer in May 2026, after almost 15 years at AWS and most recently leading commercial technology and innovation at PwC."
+     ]
+    }
+   ],
+   "reasoning": "The biography explicitly dates his return to May 2026; no day is supplied.",
+   "confidence": "high"
+  }
+ ],
+ "sub_use_case": "le_question",
+ "input": "Who is AWS's CTO?",
+ "input_n": 11,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,781 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 2,
+ "task": "Who is Goldman Sachs' CTO?",
+ "labels": {
+  "firecrawl": "A",
+  "exa": "B",
+  "opus": "C",
+  "nimble": "D",
+  "parallel": "E",
+  "gpt": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 11,
+ "evidence_fetched": 11,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "John Madsen is Goldman Sachs' firmwide chief technology officer as of 2026-11-11.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "John Madsen is Goldman Sachs' chief technology officer (firmwide CTO) as of 2026-11-11."
+   },
+   "urls": [
+    "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c2",
+   "claim": "John Madsen is Goldman Sachs' firmwide/global CTO and Head of Core Engineering as of November 11, 2026.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "John Madsen is Goldman Sachs' firmwide/global Chief Technology Officer and Head of Core Engineering as of November 11, 2026."
+   },
+   "urls": [
+    "https://www.linkedin.com/in/john-madsen-b4767573"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c4",
+   "claim": "John Madsen's LinkedIn profile (dated 2026-11-05) lists his title as Chief Technology Officer and Head of Core Engineering.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "John Madsen's current Goldman Sachs title, per his LinkedIn profile (dated 2026-11-05), is Chief Technology Officer and Head of Core Engineering."
+   },
+   "urls": [
+    "https://www.linkedin.com/in/john-madsen-b4767573"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "John Madsen's LinkedIn profile still lists Goldman Sachs as his current employer as of 2026-11-11.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "John Madsen's LinkedIn profile still lists Goldman Sachs as his current employer as of 2026-11-11."
+   },
+   "urls": [
+    "https://linkedin.com/in/john-madsen-b4767573"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "The Official Board lists John Madsen as Chief Technology Officer and Head of Core Engineering at Goldman Sachs (listing updated September 17, 2026).",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "The Official Board lists John Madsen as Chief Technology Officer and Head of Core Engineering at Goldman Sachs (listing updated September 17, 2026)."
+   },
+   "urls": [
+    "https://www.theofficialboard.com/biography/john-madsen-93gd4"
+   ],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Business Insider reported on 2024-08-20 that Goldman Sachs named John Madsen its CTO.",
+   "asserted_by": [
+    "A",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Goldman Sachs named John Madsen chief technology officer in August 2024 (reported by Business Insider on 2024-08-20).",
+    "E": "Business Insider reported on 2024-08-20 that Goldman Sachs named John Madsen its chief technology officer.",
+    "A": "Business Insider reported on August 20, 2024 that Goldman Sachs named John Madsen as CTO."
+   },
+   "urls": [
+    "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8"
+   ],
+   "conflicts_with": [
+    "c20"
+   ],
+   "merged_from": [
+    "c3",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c8",
+   "claim": "Madsen succeeded prior Goldman Sachs CTO Atte Lahtiranta, who left the firm for Ken Griffin's hedge fund Citadel.",
+   "asserted_by": [
+    "A",
+    "C",
+    "D"
+   ],
+   "variants": {
+    "D": "Madsen succeeded prior Goldman Sachs CTO Atte Lahtiranta, who left the firm for Ken Griffin's hedge fund Citadel."
+   },
+   "urls": [
+    "https://news.bloomberglaw.com/artificial-intelligence/citadel-nabs-goldman-tech-chief-in-latest-poach-from-wall-street",
+    "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c8",
+    "c9",
+    "c19"
+   ]
+  },
+  {
+   "cid": "c10",
+   "claim": "Before becoming CTO in 2024, John Madsen was head of core engineering at Goldman Sachs.",
+   "asserted_by": [
+    "D",
+    "A"
+   ],
+   "variants": {
+    "D": "Before becoming CTO in 2024, John Madsen was head of core engineering at Goldman Sachs.",
+    "A": "John Madsen was head of core engineering at Goldman Sachs before transitioning to CTO."
+   },
+   "urls": [
+    "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Madsen reports to Goldman Sachs CIO Marco Argenti and continues to oversee core engineering.",
+   "asserted_by": [
+    "D",
+    "A"
+   ],
+   "variants": {
+    "D": "John Madsen reports to Goldman Sachs Chief Information Officer Marco Argenti and continues to oversee core engineering teams.",
+    "A": "Madsen would continue overseeing core engineering at Goldman Sachs while reporting to CIO Marco Argenti."
+   },
+   "urls": [
+    "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c12",
+   "claim": "John Madsen joined Goldman Sachs in 2003, became a partner in 2014, previously served as CTO from 2017 to 2020, and became head of core engineering in March 2024.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "John Madsen joined Goldman Sachs in 2003, became a partner in 2014, previously served as CTO from 2017 to 2020, and became head of the firm's core engineering unit in March 2024."
+   },
+   "urls": [
+    "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Marco Argenti is Goldman Sachs' CIO, not CTO, per the firm's official leadership page.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "B": "Marco Argenti is Goldman Sachs' chief information officer, not CTO, per the company's official leadership page.",
+    "A": "Marco Argenti is Goldman Sachs' chief information officer (CIO), per the firm's official leadership page, which does not list him as CTO.",
+    "F": "Goldman Sachs identifies Marco Argenti as the firm's chief information officer (CIO), not CTO."
+   },
+   "urls": [
+    "https://businessinsider.com/goldman-sachs-marco-argenti-cio-interview-ai-engineers-careers-2025-9",
+    "https://fortune.com/2026/05/08/goldman-sachs-cio-marco-argenti-tech-ai-future-of-work-employees/",
+    "https://www.goldmansachs.com/our-firm/our-people-and-leadership/leadership/management-committee/marco-argenti"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c13",
+    "c14",
+    "c16"
+   ]
+  },
+  {
+   "cid": "c15",
+   "claim": "Marco Argenti joined Goldman Sachs in 2019 after being a top Amazon executive who helped build its cloud-computing business.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Marco Argenti joined Goldman Sachs in 2019 after being a top Amazon executive who helped build out its cloud-computing business."
+   },
+   "urls": [
+    "https://businessinsider.com/goldman-sachs-marco-argenti-cio-interview-ai-engineers-careers-2025-9"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Roughly 12,000 engineers report to Marco Argenti at Goldman Sachs.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Roughly 12,000 engineers report to Marco Argenti at Goldman Sachs."
+   },
+   "urls": [
+    "https://fortune.com/2026/05/08/goldman-sachs-cio-marco-argenti-tech-ai-future-of-work-employees/"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Goldman Sachs announced in 2019 that Atte Lahtiranta would join as partner and CTO and Marco Argenti as co-CIO.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Goldman Sachs announced in 2019 that Atte Lahtiranta would join as partner and Chief Technology Officer, and that Marco Argenti would join as co-CIO."
+   },
+   "urls": [
+    "https://www.goldmansachs.com/pressroom/press-releases/2019/marco-argenti-atte-lahtiranta-join-goldman-sachs"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c20",
+   "claim": "As of November 2026, no one holding the title of firm-wide CTO at Goldman Sachs was found, and no successor to Lahtiranta has been announced.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "As of November 2026, no one holding the title of firm-wide Chief Technology Officer at Goldman Sachs was found, and no successor to Lahtiranta has been announced."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c1",
+    "c2",
+    "c3",
+    "c6",
+    "c7"
+   ]
+  },
+  {
+   "cid": "c21",
+   "claim": "Goldman Sachs announced on September 3, 2026 that Dinesh Keswani joined as Partner and co-head of The Core Engineering alongside Gopi Parameswaran.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "On September 3, 2026, Goldman Sachs announced Dinesh Keswani joined as a Partner and co-head of The Core Engineering alongside Gopi Parameswaran."
+   },
+   "urls": [
+    "https://marketscreener.com/news/goldman-sachs-dinesh-keswani-joins-goldman-sachs-as-partner-and-co-head-of-the-core-engineering-ce7858d3d081fe27"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "Goldman Sachs announced (2026-09-03) that Dinesh Keswani is co-head and chief technology officer of The Core Engineering.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "B": "Goldman Sachs appointed Dinesh Keswani in September 2026 (press release dated 2026-09-03) as co-head of The Core Engineering, and he also serves as chief technology officer of The Core Engineering.",
+    "E": "Goldman Sachs announced on 2026-09-03 that Dinesh Keswani would serve as chief technology officer of The Core Engineering (and joins as co-head of Core Engineering)."
+   },
+   "urls": [
+    "https://marketscreener.com/news/goldman-sachs-dinesh-keswani-joins-goldman-sachs-as-partner-and-co-head-of-the-core-engineering-ce7858d3d081fe27",
+    "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c22",
+    "c24"
+   ]
+  },
+  {
+   "cid": "c23",
+   "claim": "Keswani's CTO role at The Core Engineering is narrower than, and not explicitly, a firmwide CTO role.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Goldman Sachs announced Dinesh Keswani as chief technology officer of The Core Engineering on September 3, 2026, a narrower role rather than an explicitly firmwide CTO."
+   },
+   "urls": [
+    "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Goldman Sachs uses CTO titles at more than one organizational level: Madsen is firmwide/global CTO, Keswani is CTO of The Core Engineering.",
+   "asserted_by": [
+    "B"
+   ],
+   "variants": {
+    "B": "Goldman Sachs uses CTO titles at more than one organizational level: Madsen is the firmwide/global CTO, while Keswani is CTO of The Core Engineering."
+   },
+   "urls": [],
+   "conflicts_with": [
+    "c20"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "As of November 11, 2026, Goldman Sachs' public leadership page opened in the research does not separately list a CTO.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "A": "As of November 11, 2026, Goldman Sachs' public leadership page opened in the research does not separately list a CTO."
+   },
+   "urls": [
+    "https://www.goldmansachs.com/our-firm/our-people-and-leadership/leadership/management-committee/marco-argenti"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c26",
+    "c27",
+    "c28"
+   ]
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8",
+   "note": "Madsen was named CTO in Aug 2024. Nothing found shows a change, and a Sept 2026 listing still shows him as CTO, but there is no fresh primary confirmation.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c2": {
+   "cid": "c2",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering",
+   "note": "Core Engineering is now co-headed by Keswani and Parameswaran (Sept 2026), so 'Head of Core Engineering' looks outdated; the CTO part is likely still right.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://linkedin.com/in/john-madsen-b4767573",
+   "note": "The LinkedIn top card lists Goldman Sachs as current company.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.theofficialboard.com/biography/john-madsen-93gd4",
+   "note": "The page, last updated Sept 17, 2026, lists him as CTO and Head of Core Engineering at Goldman Sachs.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "source": "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8",
+   "note": "BI reported the CTO appointment in Aug 2024.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true",
+    "D": "true",
+    "E": "true"
+   }
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8",
+   "note": "Lahtiranta left for Citadel and Madsen moved from head of core engineering to CTO.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true",
+    "C": "false"
+   }
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8",
+   "note": "BI says he was 'currently head of core engineering' when appointed CTO.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8",
+   "note": "BI gives joined 2003, partner 2014, CTO 2017-2020, core engineering head in March 2024.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.goldmansachs.com/our-firm/our-people-and-leadership/leadership/management-committee/marco-argenti",
+   "note": "Goldman's own page says Argenti is the firm's chief information officer.",
+   "confidence": "high",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "A": "true",
+    "F": "true",
+    "D": "true",
+    "C": "true"
+   }
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://businessinsider.com/goldman-sachs-marco-argenti-cio-interview-ai-engineers-careers-2025-9",
+   "note": "BI says he joined in 2019 after a top Amazon role in cloud computing; Goldman's page confirms 2019 and AWS.",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://fortune.com/2026/05/08/goldman-sachs-cio-marco-argenti-tech-ai-future-of-work-employees/",
+   "note": "Fortune says Argenti oversees 12,000 engineers. This is background and does not answer who the CTO is.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.goldmansachs.com/pressroom/press-releases/2019/marco-argenti-atte-lahtiranta-join-goldman-sachs",
+   "note": "The Sept 12, 2019 release confirms both hires. This is stale history.",
+   "via": "passages"
+  },
+  "c20": {
+   "cid": "c20",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8",
+   "note": "Goldman named John Madsen CTO in Aug 2024, and a Sept 2026 profile still lists him as CTO. The claim that no CTO was found is contradicted.",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering",
+   "note": "The Sept 3, 2026 press release confirms Keswani joined as Partner and co-head of The Core Engineering alongside Gopi Parameswaran. It is a division-level role.",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering",
+   "note": "The release says Keswani 'will also serve as chief technology officer of The Core Engineering'. This is a division CTO, not the firmwide one.",
+   "via": "passages",
+   "label_verdicts": {
+    "B": "true",
+    "E": "true",
+    "D": "true"
+   }
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering",
+   "note": "The release limits his CTO title to The Core Engineering and does not describe it as firmwide.",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering",
+   "note": "Madsen is the firmwide CTO per Business Insider (2024) and the Sept 2026 profile. Keswani is CTO of The Core Engineering per the Sept 2026 release.",
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering",
+   "note": "The public LinkedIn page for John Madsen is login-walled. It shows only 'Goldman Sachs' as his employer, with no title and no 2026-11-05 date, so the claim can't be confirmed from it. Aggregators (theofficialboard, weaveos, humantic) list 'CTO and Head of Core Engineering', but they are undated and ",
+   "label_verdicts": {
+    "B": "false"
+   },
+   "retried": true
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://www.businessinsider.com/goldman-sachs-names-madsen-new-chief-tech-officer-24-8",
+   "note": "Business Insider (Aug 2024) says Madsen continues to report to CIO Argenti and oversee core engineering. This was true in 2024 and may be outdated now, since Keswani joined in Sept 2026 as co-head of Core Engineering.",
+   "confidence": "medium",
+   "via": "agent"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://www.goldmansachs.com/our-firm/our-people-and-leadership/leadership/management-committee/marco-argenti",
+   "note": "The saved Argenti management-committee page lists him as CIO and has no separate CTO entry.",
+   "confidence": "medium",
+   "via": "agent",
+   "label_verdicts": {
+    "A": "true",
+    "B": "true",
+    "D": "true"
+   }
+  }
+ },
+ "audit": {
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "note": "Business Insider (Aug 20, 2024) reported Madsen's appointment as CTO, reporting to CIO Marco Argenti. No exit was found through Nov 2026, and a profile dated Sep 2026 still lists him as CTO. The Sep 3, 2026 Goldman release names Dinesh Keswani CTO only of 'The Core Engineering' unit, not firm-wide C"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "note": "Business Insider reported on 2024-08-20 that Goldman named Madsen CTO. Several outlets that picked up the memo confirm it."
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "note": "Madsen replaced Atte Lahtiranta, who left for Ken Griffin's Citadel (BI and Bloomberg, Aug 2024)."
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "note": "Bloomberg/BNN reported on Aug 20, 2024 that Lahtiranta was leaving Goldman for Citadel to lead its core engineering group. Later reports put his start in early 2025, but the departure was announced in Aug 2024. Madsen was named right after, so Lahtiranta was the last firm-wide CTO before him."
+  }
+ },
+ "retried_to_verdict": 1,
+ "unverifiable_first_pass": 1,
+ "decided_from_passages": 23,
+ "scores": {
+  "firecrawl": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 6,
+   "wrong": 0,
+   "truth": 17,
+   "truth_weight": 47.5,
+   "coverage": 0.087,
+   "accuracy": 1.0,
+   "combined": 0.16,
+   "thorough_coverage": 0.263,
+   "answer_truth": 4,
+   "thoroughness": 0.417,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 6,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 2,
+   "truth": 17,
+   "truth_weight": 47.5,
+   "coverage": 0.391,
+   "accuracy": 0.5,
+   "combined": 0.439,
+   "thorough_coverage": 0.379,
+   "answer_truth": 4,
+   "thoroughness": 0.431,
+   "metric": "F1"
+  },
+  "opus": {
+   "units": 5,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 2,
+   "truth": 17,
+   "truth_weight": 47.5,
+   "coverage": 0.0,
+   "accuracy": 0.267,
+   "combined": 0.0,
+   "thorough_coverage": 0.084,
+   "answer_truth": 4,
+   "thoroughness": 0.128,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 17,
+   "truth_weight": 47.5,
+   "coverage": 0.478,
+   "accuracy": 1.0,
+   "combined": 0.647,
+   "thorough_coverage": 0.663,
+   "answer_truth": 4,
+   "thoroughness": 0.797,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 17,
+   "truth_weight": 47.5,
+   "coverage": 0.217,
+   "accuracy": 1.0,
+   "combined": 0.357,
+   "thorough_coverage": 0.168,
+   "answer_truth": 4,
+   "thoroughness": 0.288,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 17,
+   "truth_weight": 47.5,
+   "coverage": 0.0,
+   "accuracy": 1.0,
+   "combined": 0.0,
+   "thorough_coverage": 0.126,
+   "answer_truth": 4,
+   "thoroughness": 0.224,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.17,
+ "corrections_v2": {
+  "units_before": 28,
+  "units_after": 20,
+  "dedup_groups": [
+   {
+    "kept": "c7",
+    "merged": [
+     "c3"
+    ]
+   },
+   {
+    "kept": "c8",
+    "merged": [
+     "c9",
+     "c19"
+    ]
+   },
+   {
+    "kept": "c13",
+    "merged": [
+     "c14",
+     "c16"
+    ]
+   },
+   {
+    "kept": "c22",
+    "merged": [
+     "c24"
+    ]
+   },
+   {
+    "kept": "c26",
+    "merged": [
+     "c27",
+     "c28"
+    ]
+   }
+  ],
+  "cost": 0.022
+ }
+}

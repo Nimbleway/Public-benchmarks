@@ -1,0 +1,628 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 12,
+ "task": "Who is Cisco's CTO?",
+ "labels": {
+  "opus": "A",
+  "firecrawl": "B",
+  "parallel": "C",
+  "gpt": "D",
+  "nimble": "E",
+  "exa": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 9,
+ "evidence_fetched": 7,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Tom Gillis is Cisco's SVP and Chief Technology Officer.",
+   "asserted_by": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "variants": {
+    "E": "Tom Gillis is Cisco's Chief Technology Officer, with the title SVP and Chief Technology Officer. Cisco's official Executive Leadership page lists Tom Gillis as 'SVP and Chief Technology Officer'.",
+    "F": "Tom Gillis is Cisco's Chief Technology Officer. He is listed as Senior Vice President (SVP) and Chief Technology Officer at Cisco.",
+    "B": "Tom Gillis is Cisco's Chief Technology Officer and Senior Vice President.",
+    "A": "Tom Gillis is listed as SVP and Chief Technology Officer of Cisco on Cisco's newsroom executive bios page."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives.html",
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+    "https://newsroom.cisco.com/exec-bios"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c1",
+    "c2"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Tom Gillis's CTO title is company-wide, not a unit or regional one.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tom Gillis's Cisco bio gives his title as SVP and Chief Technology Officer, a company-wide CTO title rather than a unit or regional one."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c4",
+   "claim": "As CTO, Tom Gillis drives Cisco's vision for systems-level platform innovation.",
+   "asserted_by": [
+    "F",
+    "C",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "F": "Cisco says Tom Gillis drives the company's vision for systems-level platform innovation.",
+    "C": "Tom Gillis drives Cisco's vision for systems-level platform innovation.",
+    "B": "In his CTO role, Tom Gillis drives Cisco's vision for systems-level platform innovation.",
+    "D": "Tom Gillis drives Cisco's vision for systems-level platform innovation."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c5",
+   "claim": "Tom Gillis's systems-level platform innovation role spans the full stack, from silicon to software.",
+   "asserted_by": [
+    "E",
+    "A"
+   ],
+   "variants": {
+    "E": "As CTO, Tom Gillis drives Cisco's vision for systems-level platform innovation, spanning from the silicon layer through the software and systems layer.",
+    "A": "Tom Gillis's Cisco bio says his role drives Cisco's vision for systems-level platform innovation across the full stack, from silicon to software."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c6",
+   "claim": "Tom Gillis previously served as SVP and General Manager of Cisco's Infrastructure & Security Group and led Cisco's Security Business Group.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tom Gillis previously served as SVP and General Manager of Cisco's Infrastructure & Security Group and led Cisco's Security Business Group."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c7",
+   "claim": "Before Cisco, Tom Gillis was SVP and GM of the Network and Advanced Security Business Group at VMware.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Before Cisco, Tom Gillis was SVP and GM of the Network and Advanced Security Business Group at VMware."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c8",
+   "claim": "Tom Gillis co-founded Bracket Computing and IronPort Systems.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Tom Gillis co-founded Bracket Computing and IronPort Systems."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Jeetu Patel is Cisco's President and Chief Product Officer, a role separate from CTO.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Jeetu Patel is Cisco's President and Chief Product Officer, a separate role from CTO."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c10",
+   "claim": "Chuck Robbins is Cisco's Chair and CEO.",
+   "asserted_by": [
+    "E"
+   ],
+   "variants": {
+    "E": "Chuck Robbins is Cisco's Chair and CEO."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/c/r/newsroom/en/us/executives.html"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c11",
+   "claim": "Cisco has regional CTO roles, such as EMEA CTO Chintan Patel and Cisco Canada CTO Cherif Gress, distinct from the companywide CTO.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "Cisco has regional CTO roles, such as EMEA CTO Chintan Patel and Cisco Canada CTO Cherif Gress, distinct from the companywide CTO."
+   },
+   "urls": [
+    "https://news-blogs.cisco.com/emea/2025/01/30/cisco-appoints-chief-technology-officer-for-europe-middle-east-and-africa/"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c11",
+    "c12"
+   ]
+  },
+  {
+   "cid": "c13",
+   "claim": "Tom Gillis rejoined Cisco in January 2023 to lead the Security Business Group.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tom Gillis rejoined Cisco in January 2023 to lead the Security Business Group."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "By mid-2025 Tom Gillis was SVP and GM of infrastructure and security at Cisco.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "By mid-2025 Tom Gillis was SVP and GM of infrastructure and security at Cisco."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c15",
+   "claim": "Kunal Mukerjee is listed as SVP and CTO of Splunk, a CTO for a Cisco subsidiary rather than for Cisco as a whole.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Kunal Mukerjee is listed as SVP and CTO of Splunk, a CTO for a Cisco subsidiary rather than for Cisco as a whole."
+   },
+   "urls": [
+    "https://newsroom.cisco.com/exec-bios"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c16",
+   "claim": "The aggregator Zonebourse gives Tom Gillis a start date of 01/08/2026 as Cisco CTO, unverified against the original source.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The aggregator Zonebourse gives Tom Gillis a start date of 01/08/2026 as Cisco CTO, unverified against the original source."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "Some third-party sites and older Cisco pages name divisional CTOs as 'Cisco CTO', for example Matthew MacPherson (Wireless) and Roland Acra (Enterprise Networking); these are not the company-wide role.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Some third-party sites and older Cisco pages name divisional CTOs as 'Cisco CTO', for example Matthew MacPherson (Wireless) and Roland Acra (Enterprise Networking); these are not the company-wide role."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Tom Gillis is not on Cisco's 12-person Executive Leadership Team; Cisco lists him among its senior leaders.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Tom Gillis is not on Cisco's 12-person Executive Leadership Team; Cisco lists him among its senior leaders."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "Cisco's own executive page lists Tom Gillis as SVP and Chief Technology Officer.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true",
+    "F": "true",
+    "B": "true",
+    "A": "true",
+    "C": "true",
+    "D": "true"
+   },
+   "via": "passages"
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio says 'Chief Technology Officer at Cisco' with company-wide scope, not a regional or business-unit CTO.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c4": {
+   "cid": "c4",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio says he drives the company's vision for systems-level platform innovation.",
+   "confidence": "high",
+   "label_verdicts": {
+    "B": "true",
+    "C": "true",
+    "D": "true",
+    "F": "true"
+   },
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio says the platform spans from the silicon layer through the software and systems layer.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true",
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c6": {
+   "cid": "c6",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio lists both prior roles: SVP and GM of the Infrastructure & Security Group, and head of the Security Business Group.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio states he was SVP and GM of the Network and Advanced Security Business Group at VMware.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c8": {
+   "cid": "c8",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio says he was co-founder of Bracket Computing and part of the founding team at IronPort.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives.html",
+   "note": "The leadership page lists Jeetu Patel as President and Chief Product Officer, which is separate from the CTO role.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c10": {
+   "cid": "c10",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives.html",
+   "note": "The leadership page lists Chuck Robbins as Chair and CEO.",
+   "confidence": "high",
+   "label_verdicts": {
+    "E": "true"
+   },
+   "via": "passages"
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news-blogs.cisco.com/emea/2025/01/30/cisco-appoints-chief-technology-officer-for-europe-middle-east-and-africa/",
+   "note": "Regional CTO roles are confirmed by the EMEA CTO appointment; the Canada CTO name is not covered by the passages.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio confirms he led the Security Business Group after earlier Cisco roles; the January 2023 date is not in the passages but matches what I know.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "The bio says he previously served as SVP and GM of Infrastructure & Security, consistent with that being his role in 2025; the mid-2025 timing is not stated.",
+   "confidence": "medium",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c15": {
+   "cid": "c15",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives.html",
+   "note": "The leadership page lists Kunal Mukerjee as SVP and CTO, Splunk, a subsidiary-level role.",
+   "confidence": "high",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/tom-gillis.html",
+   "note": "Cisco names Gillis as company CTO; divisional CTOs like MacPherson and Acra are not the company-wide role, though the passages don't mention them directly.",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://newsroom.cisco.com/exec-bios",
+   "note": "The Executive Leadership Team page lists Tom Gillis, SVP and Chief Technology Officer, so he is on the team.",
+   "via": "passages"
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "confidence": "medium",
+   "source": "https://www.zonebourse.com/insider/TOM-GILLIS-A07RMU/",
+   "note": "A search snippet of the Zonebourse profile lists Tom Gillis as Cisco CTO and SVP with a start date of 01/08/2026. I did not open the page itself. Cisco's newsroom bio confirms he is CTO but gives no start date. The date is aggregator-only and could be a day-first or month-first ambiguity, so it is n",
+   "via": "agent"
+  }
+ },
+ "audit": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "note": "Cisco's newsroom bio, checked live, titles Tom Gillis 'SVP and Chief Technology Officer'. Web search results back this up."
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "note": "Zonebourse's insider page lists Gillis as 'Directeur Technique/Scientifique/R&D' at Cisco from 01/08/2026 (1 August 2026), so the claim about the aggregator is accurate. Cisco's own bio gives no start date, so the date itself is unconfirmed by Cisco."
+  }
+ },
+ "retried_to_verdict": 0,
+ "unverifiable_first_pass": 0,
+ "decided_from_passages": 17,
+ "scores": {
+  "opus": {
+   "units": 10,
+   "unverifiable": 0,
+   "true": 9,
+   "wrong": 1,
+   "truth": 15,
+   "truth_weight": 31.5,
+   "coverage": 1.0,
+   "accuracy": 0.882,
+   "combined": 0.938,
+   "thorough_coverage": 0.714,
+   "answer_truth": 2,
+   "thoroughness": 0.789,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 31.5,
+   "coverage": 0.75,
+   "accuracy": 1.0,
+   "combined": 0.857,
+   "thorough_coverage": 0.381,
+   "answer_truth": 2,
+   "thoroughness": 0.552,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 31.5,
+   "coverage": 0.75,
+   "accuracy": 1.0,
+   "combined": 0.857,
+   "thorough_coverage": 0.381,
+   "answer_truth": 2,
+   "thoroughness": 0.552,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 31.5,
+   "coverage": 0.75,
+   "accuracy": 1.0,
+   "combined": 0.857,
+   "thorough_coverage": 0.381,
+   "answer_truth": 2,
+   "thoroughness": 0.552,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 8,
+   "unverifiable": 0,
+   "true": 8,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 31.5,
+   "coverage": 0.75,
+   "accuracy": 1.0,
+   "combined": 0.857,
+   "thorough_coverage": 0.563,
+   "answer_truth": 2,
+   "thoroughness": 0.721,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 15,
+   "truth_weight": 31.5,
+   "coverage": 0.75,
+   "accuracy": 1.0,
+   "combined": 0.857,
+   "thorough_coverage": 0.381,
+   "answer_truth": 2,
+   "thoroughness": 0.552,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 0.579,
+ "corrections_v2": {
+  "units_before": 18,
+  "units_after": 16,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2"
+    ]
+   },
+   {
+    "kept": "c11",
+    "merged": [
+     "c12"
+    ]
+   }
+  ],
+  "cost": 0.013
+ }
+}

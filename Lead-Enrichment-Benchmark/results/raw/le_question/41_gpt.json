@@ -1,0 +1,63 @@
+{
+ "arm": "gpt",
+ "model": "gpt-6.1-sol",
+ "tier": "medium",
+ "run_id": "resp_0a6d694cb65c6bb1006af4b0d7762087d281f1d9411c7deb7f",
+ "status": "completed",
+ "seconds": 23,
+ "output": {
+  "question": "Who is the parent company of Old Navy?",
+  "answer": "Old Navy\u2019s parent company is Gap Inc. Gap Inc.\u2019s brand portfolio also includes Gap, Banana Republic, and Athleta.",
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "fact": "Old Navy is part of Gap Inc., alongside Gap, Banana Republic, and Athleta.",
+    "source_url": "https://www.gapinc.com/en-us/",
+    "date": "2026-11-11"
+   }
+  ],
+  "passages": [
+   {
+    "quote": "We inspire self-expression through four of the most iconic American brands \u2014 Old Navy, Gap, Banana Republic, and Athleta.",
+    "source_url": "https://www.gapinc.com/en-us/",
+    "publisher": "Gap Inc.",
+    "published_date": null
+   }
+  ],
+  "caveats": [],
+  "missing_fields": [
+   "passages[0].published_date"
+  ]
+ },
+ "raw_text": null,
+ "basis": [
+  {
+   "citations": []
+  }
+ ],
+ "usage": {
+  "input_tokens": 10735,
+  "input_tokens_details": {
+   "cache_write_tokens": 15,
+   "cached_tokens": 4908
+  },
+  "output_tokens": 418,
+  "output_tokens_details": {
+   "reasoning_tokens": 190
+  },
+  "total_tokens": 11153
+ },
+ "search_calls": 2,
+ "search_actions": {
+  "search": 1,
+  "open_page": 1
+ },
+ "token_cost_usd": 0.0163,
+ "cost_usd": 0.0363,
+ "cost_basis": "tokens x list price + $10 per 1K web search calls",
+ "error": null,
+ "sub_use_case": "le_question",
+ "input": "Who is the parent company of Old Navy?",
+ "input_n": 41,
+ "completed_on": "2026-11-11"
+}

@@ -1,0 +1,959 @@
+{
+ "sub_use_case": "le_question",
+ "input_n": 42,
+ "task": "Who is the parent company of Lenovo?",
+ "labels": {
+  "opus": "A",
+  "exa": "B",
+  "firecrawl": "C",
+  "nimble": "D",
+  "parallel": "E",
+  "gpt": "F"
+ },
+ "unit": "answer fact",
+ "evidence_pages": 11,
+ "evidence_fetched": 11,
+ "merged": [
+  {
+   "cid": "c1",
+   "claim": "Legend Holdings Corporation is the parent company of Lenovo Group Limited.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D",
+    "F"
+   ],
+   "variants": {
+    "F": "Legend Holdings Corporation is the parent company of Lenovo Group Limited.",
+    "A": "Legend Holdings Corporation (HKEX: 3396) is the parent company of Lenovo Group Limited (HKEX: 992) and its largest and controlling shareholder."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Legend_Holdings",
+    "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf",
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0813/2026081300165.pdf"
+   ],
+   "conflicts_with": [
+    "c18"
+   ],
+   "merged_from": [
+    "c1",
+    "c2",
+    "c4"
+   ]
+  },
+  {
+   "cid": "c3",
+   "claim": "Legend Holdings Corporation is Lenovo's largest and controlling shareholder.",
+   "asserted_by": [
+    "A",
+    "B",
+    "D"
+   ],
+   "variants": {
+    "D": "Legend Holdings Corporation (联想控股股份有限公司) is Lenovo's largest and controlling shareholder.",
+    "A": "Legend Holdings ... is ... its largest and controlling shareholder."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Legend_Holdings",
+    "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf"
+   ],
+   "conflicts_with": [],
+   "merged_from": [
+    "c3",
+    "c20"
+   ]
+  },
+  {
+   "cid": "c5",
+   "claim": "Legend Holdings' 2026 interim report identifies Lenovo Group Limited as its subsidiary.",
+   "asserted_by": [
+    "A",
+    "E"
+   ],
+   "variants": {
+    "E": "Legend Holdings Corporation is the parent company of Lenovo; Legend Holdings' 2026 interim report identifies Lenovo Group Limited as its subsidiary."
+   },
+   "urls": [
+    "https://filingreader.com/news-wire/hongkong/2025-12-09/legend-holdings-boosts-lenovo-stake-to-3234-with-hk11bn-share-acquisition",
+    "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+    "https://www.itiger.com/hant/news/2537999858"
+   ],
+   "conflicts_with": [
+    "c18"
+   ],
+   "merged_from": [
+    "c5",
+    "c6",
+    "c8"
+   ]
+  },
+  {
+   "cid": "c7",
+   "claim": "Lenovo will remain a subsidiary of Legend Holdings, with its financial results continuing to be consolidated.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Lenovo will remain a subsidiary of Legend Holdings, with its financial results continuing to be consolidated."
+   },
+   "urls": [
+    "https://filingreader.com/news-wire/hongkong/2025-12-09/legend-holdings-boosts-lenovo-stake-to-3234-with-hk11bn-share-acquisition"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c9",
+   "claim": "Legend Holdings held approximately 32.04% of Lenovo's issued shares as of March 31, 2026.",
+   "asserted_by": [
+    "B",
+    "D",
+    "E"
+   ],
+   "variants": {
+    "D": "Legend Holdings Corporation held approximately 32.04% of Lenovo Group Limited's issued shares as of March 31, 2026.",
+    "E": "Legend Holdings Corporation held 32.04% of Lenovo's shares as of March 31, 2026, per Lenovo's shareholding disclosure."
+   },
+   "urls": [
+    "https://investor.lenovo.com/en/ir/shareholding.php",
+    "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf"
+   ],
+   "conflicts_with": [
+    "c11",
+    "c14"
+   ],
+   "merged_from": [
+    "c9",
+    "c10"
+   ]
+  },
+  {
+   "cid": "c11",
+   "claim": "Legend Holdings directly and indirectly held a 32.95% equity interest in Lenovo as of June 30, 2026.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Legend Holdings Corporation directly and indirectly held a 32.95% equity interest in Lenovo as of June 30, 2026."
+   },
+   "urls": [
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0922/2026092200438.pdf"
+   ],
+   "conflicts_with": [
+    "c9"
+   ]
+  },
+  {
+   "cid": "c12",
+   "claim": "Lenovo is not wholly owned by Legend Holdings.",
+   "asserted_by": [
+    "F"
+   ],
+   "variants": {
+    "F": "Lenovo is not wholly owned by Legend Holdings."
+   },
+   "urls": [
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0922/2026092200438.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c13",
+   "claim": "Lenovo Group Limited is a publicly listed company (HKEX: 992), not a wholly owned subsidiary; no single entity holds a majority of its shares.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Lenovo Group Limited is a publicly listed company (HKEX: 992) and is not a wholly owned subsidiary; no single entity holds a majority of its shares."
+   },
+   "urls": [
+    "https://investor.lenovo.com/en/ir/shareholding.php"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c14",
+   "claim": "Legend Holdings directly and indirectly held approximately 32.34% of Lenovo's issued share capital as of 9 December 2025, after buying 115,174,000 additional shares.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "After the purchases, as of 9 December 2025, Legend Holdings directly and indirectly held approximately 32.34% of Lenovo's issued share capital."
+   },
+   "urls": [
+    "https://filingreader.com/news-wire/hongkong/2025-12-09/legend-holdings-boosts-lenovo-stake-to-3234-with-hk11bn-share-acquisition"
+   ],
+   "conflicts_with": [
+    "c9"
+   ],
+   "merged_from": [
+    "c14",
+    "c15"
+   ]
+  },
+  {
+   "cid": "c16",
+   "claim": "Lenovo CEO Yang Yuanqing is the next largest shareholder after Legend Holdings, at 6.15% as of March 31, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Lenovo's CEO Yang Yuanqing is the next largest shareholder after Legend Holdings, at 6.15% as of March 31, 2026."
+   },
+   "urls": [
+    "https://investor.lenovo.com/en/ir/shareholding.php"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c17",
+   "claim": "All other Lenovo shareholders together hold 61.05% as of March 31, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "All other Lenovo shareholders together hold 61.05% as of March 31, 2026."
+   },
+   "urls": [
+    "https://investor.lenovo.com/en/ir/shareholding.php"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c18",
+   "claim": "Lenovo's latest annual report does not identify a separate parent company above Lenovo Group Limited.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Lenovo's latest annual report does not identify a separate parent company above Lenovo Group Limited."
+   },
+   "urls": [
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf"
+   ],
+   "conflicts_with": [
+    "c1",
+    "c2",
+    "c5"
+   ]
+  },
+  {
+   "cid": "c19",
+   "claim": "Lenovo Group Limited is the ultimate holding company of the Lenovo Group (and its subsidiaries).",
+   "asserted_by": [
+    "B",
+    "C"
+   ],
+   "variants": {
+    "B": "Lenovo Group Limited is the ultimate holding company of the Lenovo Group and its subsidiaries.",
+    "C": "Lenovo Group Limited is the ultimate holding company of Lenovo Group."
+   },
+   "urls": [
+    "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c21",
+   "claim": "Lenovo's annual report defines Lenovo or Lenovo Group as Lenovo Group Limited together with its subsidiaries; the term Lenovo may refer to the brand, the group, or the legal entity.",
+   "asserted_by": [
+    "C"
+   ],
+   "variants": {
+    "C": "Lenovo's annual report defines Lenovo or Lenovo Group as Lenovo Group Limited together with its subsidiaries. / The term Lenovo may refer to the brand, Lenovo Group, or the legal entity Lenovo Group Limited; the filing distinguishes these by defining Lenovo Group as Lenovo Group Limited and its subsidiaries."
+   },
+   "urls": [
+    "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c22",
+   "claim": "The shareholding percentages are calculated on 12,404,659,302 ordinary shares of Lenovo in issue as of March 31, 2026.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The shareholding percentages are calculated on 12,404,659,302 ordinary shares of Lenovo in issue as of March 31, 2026."
+   },
+   "urls": [
+    "https://investor.lenovo.com/en/ir/shareholding.php"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c23",
+   "claim": "March 31 is Lenovo's fiscal year-end.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "March 31 is Lenovo's fiscal year-end."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c24",
+   "claim": "Legend Holdings is a Chinese investment holding company with interests in finance, real estate, and information technology.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Legend Holdings Corporation is a Chinese investment holding company with interests in finance, real estate, and information technology."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Legend_Holdings"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c25",
+   "claim": "Legend Holdings was formed by the Chinese Academy of Sciences, and Lenovo is its best-known associate company.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Legend Holdings was formed by the Chinese Academy of Sciences, and Lenovo is its best-known associate company."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Legend_Holdings"
+   ],
+   "conflicts_with": [
+    "c6"
+   ]
+  },
+  {
+   "cid": "c26",
+   "claim": "HKEX records Legend Holdings Corporation as a substantial shareholder of Lenovo Group Ltd. (00992), in a notice dated around 2025-08-29/2025-09-03.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Hong Kong Exchanges and Clearing records Legend Holdings Corporation as a substantial shareholder of Lenovo Group Ltd. (stock code 00992), in a notice dated around 2025-08-29/2025-09-03."
+   },
+   "urls": [
+    "https://di.hkex.com.hk/di/NSForm2.aspx?cn=1&corpn=Lenovo+Group+Ltd.&ed=05%2F06%2F2026&fn=CS20250903E00427&lang=EN&sa1=cl&sa2=an&sa2p=7&sced=05%2F06%2F2026&scsd=05%2F06%2F2025"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c27",
+   "claim": "Legend Holdings holds its interest in Lenovo directly and through wholly controlled vehicles including Right Lane Limited, which is 100% controlled by Legend Holdings.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "Legend Holdings holds its interest in Lenovo both directly and through wholly controlled vehicles including Right Lane Limited, which is 100% controlled by Legend Holdings."
+   },
+   "urls": [
+    "https://di.hkex.com.hk/di/NSForm2.aspx?cn=1&corpn=Lenovo+Group+Ltd.&ed=05%2F06%2F2026&fn=CS20250903E00427&lang=EN&sa1=cl&sa2=an&sa2p=7&sced=05%2F06%2F2026&scsd=05%2F06%2F2025"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c28",
+   "claim": "The HKEX substantial-shareholder notice records Lenovo's 'listed parent' as N/A.",
+   "asserted_by": [
+    "D"
+   ],
+   "variants": {
+    "D": "The HKEX substantial-shareholder notice records Lenovo's 'listed parent' as N/A."
+   },
+   "urls": [
+    "https://di.hkex.com.hk/di/NSForm2.aspx?cn=1&corpn=Lenovo+Group+Ltd.&ed=05%2F06%2F2026&fn=CS20250903E00427&lang=EN&sa1=cl&sa2=an&sa2p=7&sced=05%2F06%2F2026&scsd=05%2F06%2F2025"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c29",
+   "claim": "The Chinese Academy of Sciences owns about 29.04% of Legend Holdings (through Chinese Academy of Sciences Holdings), making it Legend's largest shareholder and Lenovo's ultimate largest owner, though only indirectly.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "The Chinese Academy of Sciences, which founded Legend, owns about 29.04% of Legend Holdings (through Chinese Academy of Sciences Holdings), making it Legend's largest shareholder and Lenovo's ultimate largest owner, though only indirectly."
+   },
+   "urls": [
+    "https://en.wikipedia.org/wiki/Legend_Holdings"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c30",
+   "claim": "In a June 2011 Lenovo release, Legend was described as Lenovo's 'largest and only controlling shareholder', and would hold 34.82% of Lenovo shares after a share sale to CEO Yang Yuanqing.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "In a June 2011 Lenovo release, Legend was described as Lenovo's 'largest and only controlling shareholder', and would hold 34.82% of Lenovo shares after a share sale to CEO Yang Yuanqing."
+   },
+   "urls": [
+    "https://news.lenovo.com/?p=3187"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c31",
+   "claim": "Legend controls Lenovo with a minority stake of about 32% rather than majority ownership, so sources variously call Lenovo a 'subsidiary' or an 'associate' of Legend.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Legend controls Lenovo with a minority stake of about 32% rather than majority ownership, so sources variously call Lenovo a 'subsidiary' or an 'associate' of Legend."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c32",
+   "claim": "Reported figures for Legend's stake in Lenovo vary by date and source: 34.82% in 2011, 30.6% and 31.41% on Wikipedia, about 23% in Simply Wall St data, and 32.34% in December 2025.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Reported figures for Legend's stake in Lenovo vary by date and source: 34.82% in 2011, 30.6% and 31.41% on Wikipedia, about 23% in Simply Wall St data, and 32.34% in December 2025."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c33",
+   "claim": "Lenovo's warrants and convertible bonds could dilute Legend's stake.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Lenovo's warrants and convertible bonds could dilute Legend's stake."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c34",
+   "claim": "Simply Wall St reports the Chinese Academy of Sciences' stake in Legend Holdings at about 29%.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Simply Wall St reports the Chinese Academy of Sciences' stake in Legend Holdings at about 29%."
+   },
+   "urls": [],
+   "conflicts_with": []
+  },
+  {
+   "cid": "c35",
+   "claim": "Legend Holdings (HKEX: 3396) should not be confused with Legend Capital, its venture capital affiliate.",
+   "asserted_by": [
+    "A"
+   ],
+   "variants": {
+    "A": "Legend Holdings (HKEX: 3396) should not be confused with Legend Capital, its venture capital affiliate."
+   },
+   "urls": [],
+   "conflicts_with": []
+  }
+ ],
+ "verified": {
+  "c1": {
+   "cid": "c1",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "note": "Legend Holdings is Lenovo's largest/controlling shareholder (32.04% at 31 Mar 2026) and describes Lenovo as its subsidiary; widely cited as parent.",
+   "via": "passages",
+   "label_verdicts": {
+    "F": "true",
+    "A": "true",
+    "B": "true",
+    "D": "true"
+   }
+  },
+  "c3": {
+   "cid": "c3",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "note": "Legend holds 32.04%, far above any other holder listed, and consolidates Lenovo; Wikipedia calls it the controlling shareholder.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "A": "true",
+    "B": "true"
+   }
+  },
+  "c7": {
+   "cid": "c7",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://filingreader.com/news-wire/hongkong/2025-12-09/legend-holdings-boosts-lenovo-stake-to-3234-with-hk11bn-share-acquisition",
+   "note": "Legend's Dec 2025 announcement states Lenovo will remain a subsidiary with continued consolidation.",
+   "via": "passages"
+  },
+  "c9": {
+   "cid": "c9",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "note": "Lenovo's shareholding page shows Legend at 32.04% as of 31 Mar 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "D": "true",
+    "E": "true",
+    "B": "true"
+   }
+  },
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "note": "Legend holds about 32%, and 61% is held by others, so Lenovo is not wholly owned.",
+   "via": "passages"
+  },
+  "c13": {
+   "cid": "c13",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "note": "The claim that Lenovo has no controlling parent contradicts Legend's status as controlling shareholder and its consolidation of Lenovo, though it is correct that no one holds a majority and that Lenovo is listed.",
+   "via": "passages"
+  },
+  "c14": {
+   "cid": "c14",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "source": "https://filingreader.com/news-wire/hongkong/2025-12-09/legend-holdings-boosts-lenovo-stake-to-3234-with-hk11bn-share-acquisition",
+   "note": "The Dec 2025 announcement reports 32.34% after buying 115,174,000 shares; the stake was later reported lower at 32.04% as of Mar 2026.",
+   "via": "passages",
+   "label_verdicts": {
+    "A": "true"
+   }
+  },
+  "c16": {
+   "cid": "c16",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "note": "Lenovo's shareholding page and the annual report both show Yang Yuanqing at 6.15% as of 2026-03-31, behind Legend at 32.04%.",
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c17": {
+   "cid": "c17",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "note": "'Others' is shown as 61.05%, and that bucket excludes Legend, Yang and the other directors.",
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c18": {
+   "cid": "c18",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "note": "Legend Holdings is Lenovo's controlling shareholder and is widely described as its parent. The 'listed parent N/A' item in the HKEX form does not show that there is no parent.",
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c19": {
+   "cid": "c19",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "note": "Lenovo Group Limited is the listed holding company of its subsidiaries, which is consistent with the annual report, though no passage quotes the phrase. It is itself a subsidiary of Legend, which holds 32.04%.",
+   "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c21": {
+   "cid": "c21",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "note": "This matches the usual definition of 'Lenovo Group' in Lenovo's annual reports. The saved passages do not quote the definition directly.",
+   "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c22": {
+   "cid": "c22",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "note": "The note on Lenovo's shareholding page states the 12,404,659,302 share basis as at 2026-03-31.",
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c23": {
+   "cid": "c23",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "note": "The annual report refers to the 'financial year ended March 31', and FY2025/26 ends on that date.",
+   "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600475.pdf",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c24": {
+   "cid": "c24",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": false,
+   "note": "Wikipedia describes Legend Holdings as a Chinese investment holding company with interests in finance, real estate and IT.",
+   "source": "https://en.wikipedia.org/wiki/Legend_Holdings",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c25": {
+   "cid": "c25",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "note": "Wikipedia says Legend was formed by the Chinese Academy of Sciences and is the controlling shareholder of Lenovo.",
+   "source": "https://en.wikipedia.org/wiki/Legend_Holdings",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c26": {
+   "cid": "c26",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "note": "HKEX Form 2 serial CS20250903E00427 names Legend as substantial shareholder of Lenovo (00992), with the event dated 29/08/2025.",
+   "source": "https://di.hkex.com.hk/di/NSForm2.aspx?cn=1&corpn=Lenovo+Group+Ltd.&ed=05%2F06%2F2026&fn=CS20250903E00427&lang=EN&sa1=cl&sa2=an&sa2p=7&sced=05%2F06%2F2026&scsd=05%2F06%2F2025",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c27": {
+   "cid": "c27",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "note": "The notice shows Right Lane Limited at 100% controlled by Legend and holding shares through Legion Elite and Kind Jasper. Legend's own direct holding is not separately shown in the excerpts.",
+   "source": "https://di.hkex.com.hk/di/NSForm2.aspx?cn=1&corpn=Lenovo+Group+Ltd.&ed=05%2F06%2F2026&fn=CS20250903E00427&lang=EN&sa1=cl&sa2=an&sa2p=7&sced=05%2F06%2F2026&scsd=05%2F06%2F2025",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c28": {
+   "cid": "c28",
+   "verdict": "false",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": false,
+   "note": "Item 16 on Form 2 asks for the substantial shareholder's own listed parent. Legend has none, so 'N/A' says nothing about Lenovo's parent.",
+   "source": "https://di.hkex.com.hk/di/NSForm2.aspx?cn=1&corpn=Lenovo+Group+Ltd.&ed=05%2F06%2F2026&fn=CS20250903E00427&lang=EN&sa1=cl&sa2=an&sa2p=7&sced=05%2F06%2F2026&scsd=05%2F06%2F2025",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c29": {
+   "cid": "c29",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": false,
+   "answers": true,
+   "note": "Wikipedia's infobox gives the Chinese Academy of Sciences (via its holdings arm) 29.04% of Legend, which is stale-prone, and the 'ultimate owner' wording is interpretive.",
+   "source": "https://en.wikipedia.org/wiki/Legend_Holdings",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c30": {
+   "cid": "c30",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "note": "Lenovo's 17 June 2011 statement says Legend would hold 34.82% and remain the largest, sole controlling shareholder. It is historical context only.",
+   "source": "https://news.lenovo.com/?p=3187",
+   "confidence": "high",
+   "via": "passages"
+  },
+  "c31": {
+   "cid": "c31",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://filingreader.com/news-wire/hongkong/2025-12-09/legend-holdings-boosts-lenovo-stake-to-3234-with-hk11bn-share-acquisition",
+   "note": "Legend holds about 32.34% and consolidates Lenovo as a subsidiary; the 'associate' wording is not supported by the passages, but the core claim is right.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c32": {
+   "cid": "c32",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://news.lenovo.com/?p=3187",
+   "note": "34.82% in 2011 and 32.34% in Dec 2025 are confirmed; the Wikipedia and Simply Wall St figures are not checked but plausible.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c35": {
+   "cid": "c35",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://en.wikipedia.org/wiki/Legend_Holdings",
+   "note": "Legend Holdings (HKEX 3396) and Legend Capital are separate entities, and Legend Capital is a Legend-affiliated VC firm; this is a disambiguation note rather than an answer.",
+   "confidence": "medium",
+   "via": "passages"
+  },
+  "c5": {
+   "cid": "c5",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "critical",
+   "fresh": true,
+   "answers": true,
+   "source": "https://ir.legendholdings.com.cn/media/1286/2026092200438.pdf",
+   "note": "Legend's 2026 interim document, dated Sept 2026, calls Lenovo Group Limited 'our subsidiary'. Lenovo's IR page lists Legend as its largest shareholder at 32.04% as of Mar 31, 2026.",
+   "confidence": "high",
+   "via": "agent",
+   "label_verdicts": {
+    "E": "true",
+    "A": "true"
+   }
+  },
+  "c11": {
+   "cid": "c11",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "useful",
+   "fresh": true,
+   "answers": true,
+   "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0922/2026092200438.pdf",
+   "note": "Legend's interim announcement for the six months to 30 June 2026 says it directly and indirectly held a 32.95% equity interest in Lenovo. A web search surfaced that text. I could not read the PDF text through the fetch tool. Other figures agree on direction: 32.04% in Lenovo's annual report as of 31",
+   "label_verdicts": {
+    "F": "true"
+   },
+   "retried": true
+  },
+  "c33": {
+   "cid": "c33",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": true,
+   "answers": false,
+   "source": "https://investor.lenovo.com/en/ir/shareholding.php",
+   "note": "Lenovo's annual report states that its shareholding percentages exclude interests in underlying shares. Lenovo has outstanding convertible bonds and has issued warrants, including those tied to the Alat investment. Converting or exercising them would dilute Legend's percentage. This rests on that fo",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "retried": true
+  },
+  "c34": {
+   "cid": "c34",
+   "verdict": "true",
+   "in_scope": true,
+   "materiality": "minor",
+   "fresh": false,
+   "answers": false,
+   "source": "https://simplywall.st/stocks/hk/tech/hkg-3396/legend-holdings-shares/ownership",
+   "note": "Simply Wall St's ownership page lists Chinese Academy of Sciences Holdings Co., Ltd. at about 29.1%, about 684M shares. Other pages show 29% in 2022, 2024 and Oct 2025, and Wikipedia shows 29.04%. The Simply Wall St pages are undated, so the figure may have moved. This is a fact about Legend's share",
+   "label_verdicts": {
+    "A": "true"
+   },
+   "retried": true
+  }
+ },
+ "audit": {
+  "c12": {
+   "cid": "c12",
+   "verdict": "true",
+   "note": "Legend Holdings owns about 32% of Lenovo Group (32.34% after share purchases in Dec 2025), not 100%. It is Lenovo's largest shareholder and consolidates Lenovo as a subsidiary, but Lenovo is publicly listed on the HKEX (0992). The two cached evidence files don't mention Legend, so this verdict rests"
+  }
+ },
+ "retried_to_verdict": 3,
+ "unverifiable_first_pass": 3,
+ "decided_from_passages": 31,
+ "scores": {
+  "opus": {
+   "units": 12,
+   "unverifiable": 0,
+   "true": 12,
+   "wrong": 0,
+   "truth": 25,
+   "truth_weight": 69.0,
+   "coverage": 0.833,
+   "accuracy": 1.0,
+   "combined": 0.909,
+   "thorough_coverage": 0.594,
+   "answer_truth": 9,
+   "thoroughness": 0.745,
+   "metric": "F1"
+  },
+  "exa": {
+   "units": 4,
+   "unverifiable": 0,
+   "true": 4,
+   "wrong": 0,
+   "truth": 25,
+   "truth_weight": 69.0,
+   "coverage": 0.429,
+   "accuracy": 1.0,
+   "combined": 0.6,
+   "thorough_coverage": 0.348,
+   "answer_truth": 9,
+   "thoroughness": 0.516,
+   "metric": "F1"
+  },
+  "firecrawl": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 1,
+   "truth": 25,
+   "truth_weight": 69.0,
+   "coverage": 0.0,
+   "accuracy": 0.294,
+   "combined": 0.0,
+   "thorough_coverage": 0.054,
+   "answer_truth": 9,
+   "thoroughness": 0.092,
+   "metric": "F1"
+  },
+  "nimble": {
+   "units": 13,
+   "unverifiable": 0,
+   "true": 11,
+   "wrong": 2,
+   "truth": 25,
+   "truth_weight": 69.0,
+   "coverage": 0.524,
+   "accuracy": 0.767,
+   "combined": 0.623,
+   "thorough_coverage": 0.525,
+   "answer_truth": 9,
+   "thoroughness": 0.624,
+   "metric": "F1"
+  },
+  "parallel": {
+   "units": 2,
+   "unverifiable": 0,
+   "true": 2,
+   "wrong": 0,
+   "truth": 25,
+   "truth_weight": 69.0,
+   "coverage": 0.214,
+   "accuracy": 1.0,
+   "combined": 0.353,
+   "thorough_coverage": 0.174,
+   "answer_truth": 9,
+   "thoroughness": 0.296,
+   "metric": "F1"
+  },
+  "gpt": {
+   "units": 3,
+   "unverifiable": 0,
+   "true": 3,
+   "wrong": 0,
+   "truth": 25,
+   "truth_weight": 69.0,
+   "coverage": 0.286,
+   "accuracy": 1.0,
+   "combined": 0.444,
+   "thorough_coverage": 0.217,
+   "answer_truth": 9,
+   "thoroughness": 0.357,
+   "metric": "F1"
+  }
+ },
+ "judge": "v4b",
+ "judge_cost_usd": 1.122,
+ "corrections_v2": {
+  "units_before": 35,
+  "units_after": 28,
+  "dedup_groups": [
+   {
+    "kept": "c1",
+    "merged": [
+     "c2",
+     "c4"
+    ]
+   },
+   {
+    "kept": "c3",
+    "merged": [
+     "c20"
+    ]
+   },
+   {
+    "kept": "c5",
+    "merged": [
+     "c6",
+     "c8"
+    ]
+   },
+   {
+    "kept": "c9",
+    "merged": [
+     "c10"
+    ]
+   },
+   {
+    "kept": "c14",
+    "merged": [
+     "c15"
+    ]
+   }
+  ],
+  "cost": 0.019
+ }
+}

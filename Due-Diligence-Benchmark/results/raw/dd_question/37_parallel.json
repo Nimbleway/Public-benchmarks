@@ -1,0 +1,300 @@
+{
+ "arm": "parallel",
+ "tier": "pro",
+ "run_id": "trun_c265ce5863964b69bb5aac7ded1654e4",
+ "status": "completed",
+ "seconds": 160,
+ "cost_usd": 0.1,
+ "cost_basis": "list",
+ "output": {
+  "question": "What is Tonix Pharmaceuticals' short interest?",
+  "passages": [
+   {
+    "quote": "As of 2026-10-15 , there were 2,940,708 shares short with a short interest of 17.21% .",
+    "publisher": "ChartExchange",
+    "published_date": null,
+    "source_url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest"
+   },
+   {
+    "quote": "|Oct 15, 2026 |2,940,708 |+0.1% |2.41 |",
+    "publisher": "AltIndex",
+    "published_date": null,
+    "source_url": "https://altindex.com/ticker/tnxp/short-interest"
+   },
+   {
+    "quote": "The data is settlement-date-based, published twice a month, and lags about two weeks.",
+    "publisher": "AltIndex",
+    "published_date": null,
+    "source_url": "https://altindex.com/ticker/tnxp/short-interest"
+   }
+  ],
+  "answer": "As of November 11, 2026, the latest dated short-interest report I could verify for Tonix Pharmaceuticals Holding Corp. (NASDAQ: TNXP) showed 2,940,708 shares short, with an October 15, 2026 settlement date. ChartExchange lists 17.21% short interest and 2.41 days to cover for that report. These are reported positions, not a live November 11 short-interest count.",
+  "caveats": [
+   "I could not verify a newer settlement-date report; short-interest reporting is delayed.",
+   "ChartExchange labels 17.21% as \u201cShort Interest %\u201d without explicitly identifying its denominator, so it should not automatically be interpreted as a percentage of float.",
+   "Providers differ on percentage and days-to-cover metrics. StockAnalysis's page, updated November 11, also shows approximately 2.94 million shares short but different ratios and no short-interest settlement date."
+  ],
+  "missing_fields": [
+   "A verified short-interest figure with a settlement date after October 15, 2026.",
+   "Publication dates for the quoted source pages."
+  ],
+  "as_of": "2026-11-11",
+  "key_facts": [
+   {
+    "date": "2026-10-15",
+    "source_url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+    "fact": "TNXP had 2,940,708 shares short on the latest settlement date verified."
+   },
+   {
+    "date": "2026-10-15",
+    "source_url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+    "fact": "ChartExchange reported 17.21% short interest and 2.41 days to cover."
+   }
+  ]
+ },
+ "basis": [
+  {
+   "field": "question",
+   "citations": [],
+   "reasoning": "The question is supplied by the user, rather than derived from external evidence.",
+   "confidence": "high"
+  },
+  {
+   "field": "passages",
+   "citations": [
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "As of **2026-10-15** , there were **2,940,708** shares short with a short interest of **17\\.21%** ."
+     ]
+    },
+    {
+     "title": "Tonix Pharmaceuticals (TNXP) Short Interest: 2.9M Shares Short, 2.4 Days to Cover | AltIndex",
+     "url": "https://altindex.com/ticker/tnxp/short-interest",
+     "excerpts": [
+      "|Oct 15, 2026 |2,940,708 |\\+0.1% |2\\.41 |",
+      "The data is settlement-date-based, published twice a month, and lags about two weeks."
+     ]
+    }
+   ],
+   "reasoning": "The passages reproduce the dated share-count statement, the corroborating settlement-date table row, and the reporting-lag explanation. Formatting escapes and emphasis have been removed. Publication dates were not stated.",
+   "confidence": "medium"
+  },
+  {
+   "field": "answer",
+   "citations": [
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "As of **2026-10-15** , there were **2,940,708** shares short with a short interest of **17\\.21%** .",
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-15 |17\\.21 |2,940,708 |2\\.41 |\\+3,209 |\\+0.11 |17,151,024 |17,089,754 |"
+     ]
+    },
+    {
+     "title": "Tonix Pharmaceuticals (TNXP) Short Interest: 2.9M Shares Short, 2.4 Days to Cover | AltIndex",
+     "url": "https://altindex.com/ticker/tnxp/short-interest",
+     "excerpts": [
+      "|Oct 15, 2026 |2,940,708 |\\+0.1% |2\\.41 |",
+      "The data is settlement-date-based, published twice a month, and lags about two weeks."
+     ]
+    }
+   ],
+   "reasoning": "ChartExchange directly supplies the October 15 settlement date, 2,940,708 shares, 17.21% metric and 2.41 days to cover. AltIndex corroborates the dated share count and days to cover and explains that reporting lags. The answer limits freshness to the latest dated report verified, rather than asserting a live position or that no newer report exists.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats",
+   "citations": [
+    {
+     "title": "Tonix Pharmaceuticals (TNXP) Short Interest: 2.9M Shares Short, 2.4 Days to Cover | AltIndex",
+     "url": "https://altindex.com/ticker/tnxp/short-interest",
+     "excerpts": [
+      "The data is settlement-date-based, published twice a month, and lags about two weeks."
+     ]
+    },
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-15 |17\\.21 |2,940,708 |2\\.41 |\\+3,209 |\\+0.11 |17,151,024 |17,089,754 |"
+     ]
+    },
+    {
+     "title": "Tonix Pharmaceuticals Holding (TNXP) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tnxp/statistics/",
+     "excerpts": [
+      "The latest short interest is 2.94 million, so 15.13% of the outstanding shares have been sold short. |Short Interest |2\\.94M | |Short Previous Month |2\\.94M | |Short % of Shares Out |15\\.13% | |Short % of Float |16\\.14% | |Short Ratio (days to cover) |3\\.48 |",
+      "Last checked: Nov 11, 2026"
+     ]
+    }
+   ],
+   "reasoning": "AltIndex establishes reporting delay. ChartExchange's column label does not specify the percentage denominator. StockAnalysis corroborates the rounded share count but reports different ratios without a settlement date; its page was checked November 11. Failure to verify a newer report is a research limitation, not proof that none exists.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields",
+   "citations": [],
+   "reasoning": "These identify limits of the opened pages: no newer settlement-date figure was verified and no publication dates were explicitly stated for the quoted pages. Absence cannot be established by an affirmative source passage.",
+   "confidence": "medium"
+  },
+  {
+   "field": "as_of",
+   "citations": [],
+   "reasoning": "November 11, 2026 is the user-specified research date. The separate settlement date is stated explicitly in the answer and facts.",
+   "confidence": "high"
+  },
+  {
+   "field": "key_facts",
+   "citations": [
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "As of **2026-10-15** , there were **2,940,708** shares short with a short interest of **17\\.21%** .",
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-15 |17\\.21 |2,940,708 |2\\.41 |\\+3,209 |\\+0.11 |17,151,024 |17,089,754 |"
+     ]
+    }
+   ],
+   "reasoning": "The statement and table directly establish the dated share count and the two reported metrics. The source is a secondary market-data provider, so confidence is medium.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.0",
+   "citations": [
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "As of **2026-10-15** , there were **2,940,708** shares short with a short interest of **17\\.21%** ."
+     ]
+    }
+   ],
+   "reasoning": "The quote reproduces the source statement with emphasis and escaping removed; the page has no explicit publication date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.1",
+   "citations": [
+    {
+     "title": "Tonix Pharmaceuticals (TNXP) Short Interest: 2.9M Shares Short, 2.4 Days to Cover | AltIndex",
+     "url": "https://altindex.com/ticker/tnxp/short-interest",
+     "excerpts": [
+      "|Oct 15, 2026 |2,940,708 |\\+0.1% |2\\.41 |"
+     ]
+    }
+   ],
+   "reasoning": "The quoted row lists the settlement date, shares short, period change and days to cover.",
+   "confidence": "medium"
+  },
+  {
+   "field": "passages.2",
+   "citations": [
+    {
+     "title": "Tonix Pharmaceuticals (TNXP) Short Interest: 2.9M Shares Short, 2.4 Days to Cover | AltIndex",
+     "url": "https://altindex.com/ticker/tnxp/short-interest",
+     "excerpts": [
+      "The data is settlement-date-based, published twice a month, and lags about two weeks."
+     ]
+    }
+   ],
+   "reasoning": "This is the source's explicit explanation of reporting frequency and delay.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.0",
+   "citations": [
+    {
+     "title": "Tonix Pharmaceuticals (TNXP) Short Interest: 2.9M Shares Short, 2.4 Days to Cover | AltIndex",
+     "url": "https://altindex.com/ticker/tnxp/short-interest",
+     "excerpts": [
+      "The data is settlement-date-based, published twice a month, and lags about two weeks."
+     ]
+    }
+   ],
+   "reasoning": "The source supports delayed reporting; inability to verify a newer report is explicitly qualified as a limitation.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.1",
+   "citations": [
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-15 |17\\.21 |2,940,708 |2\\.41 |\\+3,209 |\\+0.11 |17,151,024 |17,089,754 |"
+     ]
+    }
+   ],
+   "reasoning": "The table labels the metric Short Interest % but does not explicitly identify its denominator.",
+   "confidence": "medium"
+  },
+  {
+   "field": "caveats.2",
+   "citations": [
+    {
+     "title": "Tonix Pharmaceuticals Holding (TNXP) Statistics & Valuation",
+     "url": "https://stockanalysis.com/stocks/tnxp/statistics/",
+     "excerpts": [
+      "The latest short interest is 2.94 million, so 15.13% of the outstanding shares have been sold short. |Short Interest |2\\.94M | |Short Previous Month |2\\.94M | |Short % of Shares Out |15\\.13% | |Short % of Float |16\\.14% | |Short Ratio (days to cover) |3\\.48 |",
+      "Last checked: Nov 11, 2026"
+     ]
+    },
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-15 |17\\.21 |2,940,708 |2\\.41 |\\+3,209 |\\+0.11 |17,151,024 |17,089,754 |"
+     ]
+    }
+   ],
+   "reasoning": "StockAnalysis reports the same rounded count but 16.14% of float and 3.48 days to cover, differing from ChartExchange. The StockAnalysis section does not provide a settlement date.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.0",
+   "citations": [],
+   "reasoning": "No report with a later settlement date was verified; this does not establish that none exists.",
+   "confidence": "medium"
+  },
+  {
+   "field": "missing_fields.1",
+   "citations": [],
+   "reasoning": "Explicit publication dates were absent from the quoted source pages; settlement dates are not substituted for publication dates.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.0",
+   "citations": [
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "As of **2026-10-15** , there were **2,940,708** shares short with a short interest of **17\\.21%** ."
+     ]
+    }
+   ],
+   "reasoning": "The source directly associates 2,940,708 shares short with October 15, 2026.",
+   "confidence": "medium"
+  },
+  {
+   "field": "key_facts.1",
+   "citations": [
+    {
+     "title": "TNXP Short Interest: 17.21% (Oct 15) - Tonix Pharmaceuticals Holding | ChartExchange",
+     "url": "https://chartexchange.com/symbol/nasdaq-tnxp/short-interest",
+     "excerpts": [
+      "|Settlement Date \u00b9 |Short Interest % |Short Position |Days to Cover \u00b2 |Short Position Change |Short Position Change % |Shares Out |Shares Float | |2026-10-15 |17\\.21 |2,940,708 |2\\.41 |\\+3,209 |\\+0.11 |17,151,024 |17,089,754 |"
+     ]
+    }
+   ],
+   "reasoning": "The table associates 17.21% short interest and 2.41 days to cover with the October 15 settlement date.",
+   "confidence": "medium"
+  }
+ ],
+ "sub_use_case": "dd_question",
+ "input": "What is Tonix Pharmaceuticals' short interest?",
+ "input_n": 37,
+ "completed_on": "2026-11-11"
+}
