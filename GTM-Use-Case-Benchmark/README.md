@@ -10,7 +10,8 @@ is also graded against fixed answer keys written before any answer was seen.
 
 It is the GTM half of a GTM and finance suite; the finance half is in
 [`Finance-Use-Case-Benchmark/`](../Finance-Use-Case-Benchmark). Both were run
-together with the same harness, judge and method.
+together with the same harness, judge and method
+([agent-bench](../common/agent-bench)).
 
 Runs: November 3 to 10, 2026 (per provider, from each result's `completed_on`:
 Nimble Nov 9, Exa Nov 3–9, Parallel Nov 4–9, Firecrawl Nov 3–9, GPT-6.1 Sol Nov 10, Claude Opus 5.5 Nov 10). Judged: November 10, 2026, every run of a task
@@ -98,7 +99,7 @@ not published in v2.
 
 Two jobs, five inputs each. The full instructions, output schema, unit
 definition and judge rules for each job are in
-[`usecase_bench/tasks.json`](usecase_bench/tasks.json).
+[`tasks.json`](tasks.json).
 
 | Job | Tier | Inputs |
 | :--- | :--- | :--- |
@@ -143,78 +144,25 @@ Cost basis per provider:
 
 Seconds are wall-clock from submit to result, including queue time.
 
-## Method
+## How we measured
 
-1. **Run.** Every provider gets the same instructions and the same output
-   schema for a job, plus the task text. Parallel's schema is made strict
-   (all properties required, no extra keys) because its API requires it; the
-   fields are the same. One run per provider per task.
-2. **Extract.** The judge (Claude Sonnet through the Claude Code CLI, no
-   tools) turns each provider's output into units: atomic, checkable facts of
-   the kind the job asks for (one finding a seller would use, one dated
-   event). Process notes, empty fields and statements about what was not
-   found are skipped.
-3. **Merge.** Units from all providers for one task are merged into one
-   canonical list under shuffled anonymous labels. The same company, person,
-   event or value from several providers becomes one unit only when they
-   state the same fact with the same values, dates and attribution. A
-   provider that adds a characterization, quote or figure the others don't
-   make gets its own unit, or its own verdict on its own wording. Conflicting
-   values stay separate. Each label's own wording is kept (`variants`).
-4. **Evidence.** Every URL any provider cited for the task is fetched once,
-   trying four web data layers in turn (Nimble Extract, Exa contents,
-   Firecrawl scrape, Nimble Extract with JS rendering), and saved. 443 of 447
-   cited pages in this suite were fetched.
-5. **Verify.** Claude Sonnet first decides each unit from the passages of the
-   saved pages that best match it (no tools, 15 units per call). Units it
-   cannot decide go to a verifier agent that can read and search the saved
-   pages, search the web and fetch pages (5 units per call). Each unit gets
-   true / false / unverifiable, whether it is in scope, a confidence, and a
-   tag that sets its weight (materiality and freshness for meeting prep,
-   buying or minor signal for signal tracking). When providers word a unit
-   differently in substance, each provider's wording gets its own verdict
-   (`label_verdicts`). The judge is told never to mark a unit false for
-   duplicating another.
-6. **Retry.** Every unit still unverifiable gets a second, thorough attempt
-   (every cited URL read through the fetcher, then other sources). Units left
-   unverifiable count as unsupported claims (half wrong).
-7. **Duplicate merge (correction).** After an external review: the merge step
-   sometimes kept the same fact as several units (for example one Mercury
-   product launch described three ways). Claude Sonnet groups units that
-   state the same fact (same entity, same event or figure, same date); each
-   group becomes one unit asserted by the union of providers
-   (`merged_from`). Each provider keeps the verdict of its own wording
-   (`label_verdicts`), so a wrong date on a real event still counts as
-   wrong. Units in a conflict pair are never merged. (The finance suite also
-   applies one ownership rule to deal sourcing; it does not affect GTM.)
-8. **Score.** The truth set for a task is the pool of units verified true and
-   in scope, from any provider.
-   - **Coverage** = weighted share of the truth set the provider returned. No
-     cap.
-   - **Accuracy** = weighted true / (true + wrong + off scope + 0.5 x
-     unverifiable) among the provider's own units.
-   - **Combined**: meeting prep is a decision job, where an error is costly,
-     and uses F1 = `2 * acc * cov / (acc + cov)`. Signal tracking, where
-     reviewing an extra event is cheap, uses F2 =
-     `5 * acc * cov / (4 * acc + cov)`, coverage weighted twice.
-9. **Answer keys.** For meeting prep (5 tasks), a separate Claude run that
-   never saw any provider output researched the input and wrote the 5 to 8
-   questions any good answer must cover, with the answer, a source and
-   whether it is critical (35 key items). Every run is graded on each
-   question (correct, wrong or missing) in one call per task, with providers
-   under anonymous labels. The task score is
-   `combined x (0.5 + 0.5 x share of critical key items graded correct)`.
-10. **Stale-key audit.** Every key item at least one provider was graded wrong
-    on is re-checked from primary sources by Claude Sonnet 5.5 (effort high),
-    a model that is not a contestant, with provider names hidden. No GTM key
-    item was graded wrong for any provider, so no GTM key changed (14 finance
-    items were audited; see the finance README).
-11. **Audit.** A seeded random ~10% of units is re-checked independently by
-    Claude Opus with web search and page fetch. Its verdicts are stored as
-    `audit` and only used to report agreement; they do not change scores.
+This suite runs on [agent-bench](../common/agent-bench), the runner and judge
+shared with the finance, due diligence and lead enrichment benchmarks. The full method (run, extract,
+merge, evidence, verify, retry, corrections, scoring, answer keys, stale-key
+audit and the audit sample) is in
+[METHOD.md](../common/agent-bench/METHOD.md). What is specific to this suite:
 
-A run that failed or returned nothing scores 0 on its task (none did in v2).
-The win on a task goes to the highest combined score; an exact tie splits it.
+- **Evidence.** 443 of 447 cited pages in this suite were fetched.
+- **Corrections.** The duplicate merge applies (for example one Mercury
+  product launch had been kept as three units); the ownership rule is for
+  finance deal sourcing only.
+- **Combined.** Meeting prep, a decision job, uses F1; signal tracking, where
+  reviewing an extra event is cheap, uses F2.
+- **Answer keys.** Meeting prep (5 tasks) is also graded against answer keys:
+  35 key items.
+- **Stale-key audit.** No GTM key item was graded wrong for any provider, so
+  no GTM key changed (14 finance items were audited; see the finance README).
+- **Failed runs.** None in v2.
 
 Scoring unit per job:
 
@@ -240,7 +188,7 @@ names.
 
 Nimble Extract is one of the four page fetchers the judge uses (with Exa
 contents and Firecrawl scrape), and the verifier can also read a page through
-`usecase_bench/fetch.py` (Nimble Extract with rendering). The fetchers are
+[`fetch.py`](../common/agent-bench/agent_bench/fetch.py) (Nimble Extract with rendering). The fetchers are
 used the same way for every provider's citations and never see which
 provider cited a page.
 
@@ -317,74 +265,25 @@ characters.
 Code: Apache-2.0 (see [LICENSE](LICENSE)). Our annotations (units, verdicts,
 answer keys, audits and scores in `results/`): CC BY 4.0. Source URLs are
 listed, but no third-party page content is redistributed; the judge's page
-cache (`evidence_cache/`) is not shipped. Provider outputs in `results/raw/`
+cache is not shipped. Provider outputs in `results/raw/`
 are as the providers returned them. Provider adapters call third-party APIs
 governed by those providers' own terms.
 
 ## Reproduce
 
-Requires Python 3.11+ and the [Claude Code CLI](https://docs.claude.com/en/docs/claude-code)
-(`claude`, logged in) for the Claude Opus 5.5 arm and the judge.
+Setup, keys and every command are in
+[agent-bench's README](../common/agent-bench/README.md#commands). Recompute
+this suite's tables from the shipped results (offline, no keys needed), from
+`common/agent-bench`:
 
 ```bash
-cd GTM-Use-Case-Benchmark
-uv sync            # or: pip install -e .
-cp .env.example .env   # add your keys
+uv run python -m agent_bench.summary --suite GTM-Use-Case-Benchmark --suite Finance-Use-Case-Benchmark
 ```
 
-Keys: `NIMBLE_API_KEY`, `EXA_API_KEY`, `PARALLEL_API_KEY`,
-`FIRECRAWL_API_KEY`, `OPENAI_API_KEY`. The judge's page fetcher uses the
-Nimble, Exa and Firecrawl keys.
-
-Recompute the tables from the shipped results (offline, no keys needed):
-
-```bash
-python -m usecase_bench.summary      # writes results/summary.json, prints the tables
-```
-
-Run the test (recomputes the summary in a temp copy and compares it with the
-shipped `results/summary.json`):
-
-```bash
-uv run pytest      # or: python -m pytest
-```
-
-**What reproduces exactly.** `usecase_bench.summary` on the shipped results
-reproduces every published number exactly, offline. Rerunning the providers
-or the judge will not reproduce the exact numbers: the live web changes,
-providers update their products and models, and LLM judging is not
-deterministic. Compare relative standings, not third decimals.
-
-To rerun, move the shipped `results/` aside first; every step skips files that
-already exist.
-
-```bash
-# 1. run providers (all, or a subset): results/raw/
-python -m usecase_bench.run
-python -m usecase_bench.run nimble opus
-
-# 2. judge: extract, merge, fetch evidence, verify, retry, audit, score: results/verified/
-python -m usecase_bench.judge
-
-# 3. corrections: duplicate merge (in place, once per task)
-python -m usecase_bench.corrections
-
-# 4. answer keys and grading: results/answer_keys/
-python -m usecase_bench.answer_keys
-
-# 5. stale-key audit, apply, re-grade
-python -m usecase_bench.key_audit
-python -m usecase_bench.key_audit apply
-python -m usecase_bench.answer_keys
-
-# 6. aggregate
-python -m usecase_bench.summary
-```
-
-Each step takes optional job ids (for example `gtm_signal_tracking`) to run a
-subset. `BENCH_TODAY=YYYY-MM-DD` sets the date put into the instructions and
-judge prompts. `run.py` stops submitting to a provider once its spend passes
-a cap (`CAP_<PROVIDER>` in USD).
+`uv run pytest` there checks that every benchmark's shipped
+`results/summary.json` recomputes unchanged. To rerun this suite, run the
+steps in that README with `--suite GTM-Use-Case-Benchmark`. Rerunning will not reproduce the
+exact numbers ([why](../common/agent-bench/METHOD.md#what-reproduces-exactly)).
 
 Approximate cost for all 10 tasks:
 
